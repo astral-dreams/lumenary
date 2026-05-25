@@ -98,9 +98,10 @@ Convergence across independent traditions is a useful signal, but it is not proo
 5. Add citation discipline: every promoted idea needs source cards and claim records.
 6. Add a promotion workflow from draft observation to hypothesis to synthesis.
 7. Build the public website.
-8. Add a daily update job that publishes the strongest new findings to the website.
-9. Add an X posting queue with human review before API posting.
-10. Let Claude Code contribute through `python3 -m engine.import_idea --agent claude <idea.json>`.
+8. Build a Living Map page that brings sources, concepts, findings, contradictions, and promoted claims together.
+9. Add a daily update job that publishes the strongest new findings to the website.
+10. Add an X posting queue with human review before API posting.
+11. Let Claude Code contribute through `python3 -m engine.import_idea --agent claude <idea.json>`.
 
 ## 9. Website And Daily Publication
 
@@ -111,7 +112,7 @@ Recommended content surfaces:
 - daily finding
 - original observations
 - hypotheses under critique
-- cross-tradition convergence maps
+- Living Map page across traditions, concepts, source cards, findings, and promotion stages
 - source cards
 - publishable synthesis essays
 - "epistemic status" labels on every public idea
@@ -125,7 +126,67 @@ Daily publication flow:
 5. Social draft job writes candidate X posts under `publication/x/queue/`.
 6. Human review approves, edits, rejects, or posts.
 
-## 10. X Posting
+## 10. Living Map Page
+
+The website needs a map page that makes the whole research system legible at once. This should be more than a visual flourish; it should be the main way to see how Lumenary is learning over time.
+
+Target route:
+
+- `/map/`
+
+Purpose:
+
+- show how traditions, concepts, sources, observations, contradictions, convergences, and promoted claims connect
+- reveal where the research is well-grounded versus source-light
+- make cross-agent agreement and disagreement visible
+- help the recursive loop choose the next research gaps
+
+Data sources:
+
+- `graph/concept-graph.seed.json` for concept nodes and relationships
+- `sources/sources_index.jsonl` and `notes/source-cards/` for source grounding
+- `hypotheses/ideas.jsonl` for idea records, scores, promotion status, and agent attribution
+- `findings/convergences/` for cross-agent and cross-tradition synthesis notes
+- `publication/daily/` for promoted public outputs
+
+Node types:
+
+- tradition or domain, such as Advaita, Buddhism, Daoism, Sufism, Neoplatonism, consciousness science, and physics of time or matter
+- concept, such as atman, anatta, sunyata, wu wei, barzakh, nous, observer, field, time, and matter
+- source card
+- observation or hypothesis
+- promoted public claim
+- contradiction or unresolved question
+
+Edge types:
+
+- textual support
+- structural parallel
+- contradiction
+- translation strain
+- scientific bridge
+- source citation
+- agent convergence
+- agent disagreement
+- open research direction
+
+MVP implementation:
+
+1. Normalize the existing concept graph schema enough for Astro to read it.
+2. Generate a static map page from graph, source, and idea records.
+3. Color nodes by type and promotion stage.
+4. Show edge labels for contradiction, translation strain, support, and analogy.
+5. Add filters for agent, tradition, epistemic label, promotion stage, and source reliability.
+6. Link every node back to the relevant source card, finding, daily post, or convergence note.
+
+Later implementation:
+
+- add an interactive force-directed graph or layered knowledge atlas
+- add "frontier gaps" where important concepts have few sources, weak counterarguments, or no promoted synthesis
+- add timeline mode so the map shows how ideas changed across recursive runs
+- add a map export for essays and social posts
+
+## 11. X Posting
 
 Posting to X is possible through the official X API v2 manage-post endpoints, including `POST /2/tweets`. Use official API access only.
 
@@ -136,7 +197,7 @@ Do not auto-post unreviewed spiritual/philosophical claims at first. The safer p
 3. Only then call the X API with credentials from environment variables.
 4. Log posted IDs under `publication/x/posted/`.
 
-## 11. Current Important Files
+## 12. Current Important Files
 
 - `AGENTS.md`: project memory and operating rules for Codex-style agents
 - `.codex/skills/spirituality-recursive-research/SKILL.md`: project skill instructions
@@ -150,6 +211,7 @@ Do not auto-post unreviewed spiritual/philosophical claims at first. The safer p
 - `engine/import_idea.py`: shared-schema import path for Claude Code and other agents
 - `engine/source_ingestion.py`: source registry and source-card creation
 - `engine/maintenance.py`: JSONL registry maintenance
+- `graph/concept-graph.seed.json`: current concept graph seed for the future map page
 - `site/`: future website
 - `publication/daily/`: daily website updates
 - `publication/x/queue/`: reviewed social drafts before posting
@@ -157,7 +219,7 @@ Do not auto-post unreviewed spiritual/philosophical claims at first. The safer p
 - `ops/launchd/com.lumenary.daily-publish.plist`: daily publication job
 - `docs/claude-review-incorporation.md`: accepted fixes from Claude Code's review
 
-## 12. Current Idea Artifacts
+## 13. Current Idea Artifacts
 
 `The Interface Invariant Model` is retained as a seed fixture:
 

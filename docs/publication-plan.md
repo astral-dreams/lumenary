@@ -14,10 +14,30 @@ Core sections:
 - latest observations
 - hypotheses under critique
 - convergences
+- Living Map page
 - synthesis essays
 - source cards
 
 Every public idea should show epistemic status so readers can distinguish sourced claims, interpretation, analogy, and speculation. Draft observations remain research artifacts; they do not become public claims unless they pass `config/promotion-rules.json`.
+
+## Living Map Page
+
+The site needs a `/map/` page that brings the research together as a knowledge atlas.
+
+The map should connect:
+
+- traditions and domains
+- concepts
+- source cards
+- observations and hypotheses
+- promoted public claims
+- contradictions
+- convergence notes
+- open research directions
+
+The first version can be a static Astro page generated from `graph/concept-graph.seed.json`, `sources/sources_index.jsonl`, `hypotheses/ideas.jsonl`, and `findings/convergences/`. It should color nodes by type and promotion stage, label edges by relationship type, and link each node back to its source card or finding.
+
+The map is also an operational tool for the recursive loop: sparse or weakly connected areas become next research targets, and high-strain contradictions become prompts for new synthesis.
 
 ## Daily Update Job
 
