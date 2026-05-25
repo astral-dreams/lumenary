@@ -93,12 +93,14 @@ a:hover {
 }
 
 .hero-band {
-  align-items: center;
+  align-items: end;
   display: grid;
   gap: clamp(28px, 5vw, 68px);
   grid-template-columns: minmax(0, 0.9fr) minmax(320px, 1.1fr);
-  min-height: min(760px, 76vh);
-  padding: clamp(52px, 7vw, 96px) clamp(18px, 4vw, 56px);
+  height: calc(100svh - 68px);
+  min-height: 560px;
+  overflow: hidden;
+  padding: clamp(32px, 5vh, 72px) clamp(18px, 4vw, 56px) clamp(38px, 7vh, 76px);
 }
 
 .hero-copy,
@@ -130,7 +132,7 @@ p {
 
 h1 {
   font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(3.2rem, 7vw, 6.8rem);
+  font-size: clamp(3.2rem, 6.2vw, 6rem);
   font-weight: 500;
   line-height: 0.94;
   margin: 0;
@@ -185,6 +187,8 @@ h3 {
 .hero-panel {
   display: grid;
   gap: 16px;
+  max-height: 100%;
+  overflow: hidden;
 }
 
 .daily-snapshot,
@@ -244,7 +248,7 @@ h3 {
   display: grid;
   gap: 10px;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  min-height: 240px;
+  min-height: clamp(150px, 24vh, 240px);
 }
 
 .source-node {
@@ -521,7 +525,9 @@ meter {
   }
 
   .hero-band {
+    height: auto;
     min-height: auto;
+    overflow: visible;
   }
 
   .stat-band {
@@ -530,6 +536,21 @@ meter {
 
   .source-map-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 861px) and (max-height: 700px) {
+  .hero-band {
+    min-height: calc(100svh - 68px);
+    padding-block: 28px 34px;
+  }
+
+  .daily-snapshot {
+    padding: 20px;
+  }
+
+  .hero-actions {
+    margin-top: 22px;
   }
 }
 
