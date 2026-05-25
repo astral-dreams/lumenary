@@ -1,6 +1,6 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
-import { formatLabel, getPromotionRules } from "../../lib/content";
+import { getPromotionRules } from "../../lib/content";
 
 const promotionRules = getPromotionRules();
 const promotionStages = Object.entries(promotionRules.stages);
@@ -39,7 +39,7 @@ const promotionStages = Object.entries(promotionRules.stages);
       <h2>Promotion Rules</h2>
     </div>
     <div class="method-grid">
-      {promotionStages.map(([stage, rule]) => (
+      {promotionStages.map(([, rule]) => (
         <article class="method-block">
           <h3>{rule.label}</h3>
           <p>{rule.description}</p>
@@ -49,7 +49,6 @@ const promotionStages = Object.entries(promotionRules.stages);
             <li>Publishability: {rule.publishability.toFixed(2)}</li>
             <li>Source basis items: {rule.min_source_basis_items}</li>
           </ul>
-          <p>{formatLabel(stage)}</p>
         </article>
       ))}
     </div>
