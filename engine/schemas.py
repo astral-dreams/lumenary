@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import hashlib
 import re
 from dataclasses import asdict, dataclass, field
 from datetime import datetime
@@ -44,8 +45,14 @@ class IdeaRecord:
     next_research_directions: list[str]
     status: str = "draft"
 
+    def identity(self) -> str:
+        basis = f"{self.agent}\n{self.title}\n{self.original_claim}".encode("utf-8")
+        return hashlib.sha256(basis).hexdigest()[:16]
+
     def to_dict(self) -> dict[str, Any]:
-        return asdict(self)
+        record = asdict(self)
+        record["idea_id"] = self.identity()
+        return record
 
     def to_markdown(self) -> str:
         score_lines = "\n".join(
@@ -61,6 +68,7 @@ class IdeaRecord:
 Agent: {self.agent}
 Date: {self.created_at}
 Type: {self.idea_type}
+Idea ID: {self.identity()}
 Status: {self.status}
 
 ## Original Claim
@@ -107,4 +115,3 @@ class RunManifest:
 
     def to_dict(self) -> dict[str, Any]:
         return asdict(self)
-

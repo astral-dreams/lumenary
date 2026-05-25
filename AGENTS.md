@@ -33,3 +33,13 @@ Preferred child-agent posture:
 Wire the continuous loop so it can repeatedly generate, critique, store, and revisit original ideas.
 
 The next product layer is a public website with daily updates. Daily publication artifacts should live under `publication/daily/`. X/social drafts should live under `publication/x/queue/` and require human review before posting.
+
+## Claude Code Interop
+
+Claude Code should either write directly into its attributed directories or generate schema-compatible JSON and import it with:
+
+```bash
+python3 -m engine.import_idea --agent claude <idea.json>
+```
+
+Do not add a Claude API provider until credentials and runtime assumptions are explicit.

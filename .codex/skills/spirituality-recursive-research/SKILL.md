@@ -51,6 +51,18 @@ Preferred posture:
 codex exec --cd /Users/johnforrester/spirituality --sandbox read-only --search --output-schema engine/json_schemas/idea_record.schema.json --output-last-message runs/<run-id>/codex-cli-last-message.json -
 ```
 
+## Publication
+
+Lumenary should become a public website with daily updates. Generate daily Markdown under `publication/daily/`. Generate X drafts under `publication/x/queue/` and require human review before posting.
+
+## Claude Code Interop
+
+Claude Code can contribute ideas by producing JSON that matches `engine/json_schemas/idea_record.schema.json`, then importing it:
+
+```bash
+python3 -m engine.import_idea --agent claude <idea.json>
+```
+
 ## Key Files
 
 - `PLAN.md`: shareable plan for Claude Code and future agents
@@ -62,5 +74,7 @@ codex exec --cd /Users/johnforrester/spirituality --sandbox read-only --search -
 - `engine/scheduler.py`: continuous operation
 - `engine/thinker.py`: offline and Codex CLI providers
 - `engine/publisher.py`: daily publication artifacts
+- `engine/import_idea.py`: Claude/shared-agent idea import
+- `engine/source_ingestion.py`: source-card registry
 - `publication/daily/`: daily website updates
 - `publication/x/queue/`: X drafts awaiting human review

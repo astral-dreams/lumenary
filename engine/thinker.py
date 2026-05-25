@@ -7,11 +7,16 @@ from pathlib import Path
 from typing import Any
 
 from .config import EngineConfig
+from .process_control import register_child, unregister_child
 from .schemas import IdeaRecord, IdeaScores, now_local_iso
 
 
 class OfflineThinker:
-    """Deterministic starter thinker for dry runs before model APIs are wired in."""
+    """Deterministic fixture thinker for smoke tests.
+
+    This provider is not a research generator. It returns a seed fixture so the
+    storage and scheduling code can be tested without spending model calls.
+    """
 
     def generate(
         self,
@@ -28,9 +33,10 @@ class OfflineThinker:
             agent=agent,
             created_at=now_local_iso(),
             source_basis=[
-                "User research goal and methodology notes",
-                "Codex architecture notes on epistemic labels",
-                "Imported Claude Code plan on convergence weighting",
+                "Offline fixture for smoke tests; not a live research result.",
+                "User research goal and methodology notes.",
+                "Codex architecture notes on epistemic labels.",
+                "Imported Claude Code plan on convergence weighting.",
             ],
             original_claim=(
                 "Independent spiritual traditions may converge less because they "
@@ -77,6 +83,7 @@ class OfflineThinker:
                 "Search contemplative neuroscience for attention, self-modeling, and salience-network evidence.",
                 "Create a contradiction note for traditions that insist the convergence is ontological, not phenomenological.",
             ],
+            status="seed-fixture",
         )
 
 
@@ -118,27 +125,42 @@ class CodexCliThinker:
             command.extend(["--model", self.config.codex_model])
         command.append("-")
 
-        result = subprocess.run(
+        process = subprocess.Popen(
             command,
-            input=prompt,
             cwd=root,
+            stdin=subprocess.PIPE,
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE,
             text=True,
-            capture_output=True,
-            timeout=self.config.codex_timeout_seconds,
         )
-        (run_dir / "codex-cli.stdout.log").write_text(result.stdout, encoding="utf-8")
-        (run_dir / "codex-cli.stderr.log").write_text(result.stderr, encoding="utf-8")
+        register_child(process)
+        try:
+            stdout, stderr = process.communicate(
+                input=prompt,
+                timeout=self.config.codex_timeout_seconds,
+            )
+        except subprocess.TimeoutExpired:
+            process.terminate()
+            stdout, stderr = process.communicate(timeout=30)
+            raise TimeoutError(
+                f"codex exec timed out after {self.config.codex_timeout_seconds} seconds."
+            )
+        finally:
+            unregister_child(process)
 
-        if result.returncode != 0:
+        (run_dir / "codex-cli.stdout.log").write_text(stdout, encoding="utf-8")
+        (run_dir / "codex-cli.stderr.log").write_text(stderr, encoding="utf-8")
+
+        if process.returncode != 0:
             raise RuntimeError(
                 "codex exec failed with exit code "
-                f"{result.returncode}. See {run_dir / 'codex-cli.stderr.log'}."
+                f"{process.returncode}. See {run_dir / 'codex-cli.stderr.log'}."
             )
 
         raw_output = (
             output_path.read_text(encoding="utf-8")
             if output_path.exists()
-            else result.stdout
+            else stdout
         )
         data = _extract_json_object(raw_output)
         return _idea_from_dict(data, agent=agent)

@@ -17,6 +17,42 @@
       "type": "quality_control",
       "label": "Epistemic labels",
       "weight": 0.9
+    },
+    {
+      "id": "translation_strain",
+      "type": "methodological_principle",
+      "label": "Translation strain",
+      "weight": 0.85
+    },
+    {
+      "id": "atman",
+      "type": "concept",
+      "label": "Atman",
+      "weight": 0.5
+    },
+    {
+      "id": "anatman",
+      "type": "concept",
+      "label": "Anatman / non-self",
+      "weight": 0.5
+    },
+    {
+      "id": "sunyata",
+      "type": "concept",
+      "label": "Sunyata / emptiness",
+      "weight": 0.45
+    },
+    {
+      "id": "wu_wei",
+      "type": "concept",
+      "label": "Wu wei",
+      "weight": 0.45
+    },
+    {
+      "id": "soul",
+      "type": "compound_concept",
+      "label": "Soul",
+      "weight": 0.45
     }
   ],
   "edges": [
@@ -29,6 +65,31 @@
       "source": "epistemic_labels",
       "target": "originality_as_product",
       "relation": "constrains_speculation"
+    },
+    {
+      "source": "translation_strain",
+      "target": "convergence_weighting",
+      "relation": "refines"
+    },
+    {
+      "source": "translation_strain",
+      "target": "atman",
+      "relation": "analyzes"
+    },
+    {
+      "source": "translation_strain",
+      "target": "anatman",
+      "relation": "analyzes"
+    },
+    {
+      "source": "atman",
+      "target": "anatman",
+      "relation": "tension"
+    },
+    {
+      "source": "soul",
+      "target": "atman",
+      "relation": "requires_decomposition_before_comparison"
     }
   ]
 }

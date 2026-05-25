@@ -101,6 +101,7 @@ Convergence across independent traditions is a useful signal, but it is not proo
 7. Build the public website.
 8. Add a daily update job that publishes the strongest new findings to the website.
 9. Add an X posting queue with human review before API posting.
+10. Let Claude Code contribute through `python3 -m engine.import_idea --agent claude <idea.json>`.
 
 ## 9. Website And Daily Publication
 
@@ -147,16 +148,28 @@ Do not auto-post unreviewed spiritual/philosophical claims at first. The safer p
 - `engine/scheduler.py`: continuous loop entrypoint
 - `engine/thinker.py`: offline and Codex CLI thinking providers
 - `engine/publisher.py`: daily website update and X draft generator
+- `engine/import_idea.py`: shared-schema import path for Claude Code and other agents
+- `engine/source_ingestion.py`: source registry and source-card creation
+- `engine/maintenance.py`: JSONL registry maintenance
 - `site/`: future website
 - `publication/daily/`: daily website updates
 - `publication/x/queue/`: reviewed social drafts before posting
 - `ops/launchd/com.lumenary.research.plist`: continuous research loop
 - `ops/launchd/com.lumenary.daily-publish.plist`: daily publication job
+- `docs/claude-review-incorporation.md`: accepted fixes from Claude Code's review
 
-## 12. First Original Idea Already Produced
+## 12. Current Idea Artifacts
 
-Codex generated `The Interface Invariant Model`:
+`The Interface Invariant Model` is retained as a seed fixture:
 
 `observations/codex/2026-05-25-the-interface-invariant-model.md`
 
-The model proposes that some cross-tradition convergences may reflect recurring invariants in the human interface with experience: attention, identity, salience, agency, and boundary-making. It is marked as draft, source-light, and speculative until supported by direct textual research.
+It is useful for smoke tests, but it should not be treated as a live generated research result.
+
+The first live Codex CLI idea was:
+
+`observations/codex/2026-05-25-convergence-as-translation-strain-not-evidence-weight.md`
+
+The strongest post-review live smoke-test idea was:
+
+`observations/codex/2026-05-25-translation-strain-as-a-load-test-for-convergence.md`

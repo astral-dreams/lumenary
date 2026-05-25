@@ -60,11 +60,46 @@ class Librarian:
             handle.write("\n")
         return path
 
+    def upsert_jsonl_by_key(
+        self,
+        relative_path: str,
+        record: dict[str, Any],
+        *,
+        key: str,
+    ) -> Path:
+        path = self.root / relative_path
+        path.parent.mkdir(parents=True, exist_ok=True)
+        records: list[dict[str, Any]] = []
+        if path.exists():
+            for line in path.read_text(encoding="utf-8").splitlines():
+                if line.strip():
+                    records.append(json.loads(line))
+
+        next_records: list[dict[str, Any]] = []
+        replaced = False
+        for existing in records:
+            if existing.get(key) == record.get(key):
+                next_records.append(record)
+                replaced = True
+            else:
+                next_records.append(existing)
+        if not replaced:
+            next_records.append(record)
+
+        content = "".join(
+            f"{json.dumps(item, ensure_ascii=True, sort_keys=True)}\n"
+            for item in next_records
+        )
+        path.write_text(content, encoding="utf-8")
+        return path
+
     def save_idea(self, idea: IdeaRecord) -> Path:
         filename = f"{idea.created_at[:10]}-{slugify(idea.title)}.md"
         relative = f"observations/{idea.agent}/{filename}"
         path = self.write_text(relative, idea.to_markdown())
-        self.append_jsonl("hypotheses/ideas.jsonl", idea.to_dict())
+        record = idea.to_dict()
+        record["path"] = relative
+        self.upsert_jsonl_by_key("hypotheses/ideas.jsonl", record, key="idea_id")
         return path
 
     def save_run(
@@ -87,4 +122,3 @@ class Librarian:
     def append_exploration_log(self, text: str) -> None:
         stamp = now_local_iso()
         self.append_text("state/exploration_log.md", f"\n## {stamp}\n\n{text}\n")
-

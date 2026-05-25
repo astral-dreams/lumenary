@@ -19,6 +19,8 @@ Each agent should add findings under its own file and summarize major updates he
 - Codex CLI provider and scheduler scaffold added on 2026-05-25.
 - Live `codex exec` smoke test generated `Convergence as Translation Strain, Not Evidence Weight`.
 - Daily publication and X draft scaffold added on 2026-05-25.
+- Claude Code review incorporated on 2026-05-25.
+- Post-review live smoke test generated `Translation Strain as a Load Test for Convergence`.
 - See `findings/codex-findings.md`.
 
 ### Claude Code

@@ -1,0 +1,28 @@
+{
+  "title": "Example Claude Observation",
+  "idea_type": "observation",
+  "source_basis": [
+    "Example only; replace with actual source basis."
+  ],
+  "original_claim": "This example shows the JSON shape Claude Code should produce before importing an idea into Lumenary.",
+  "why_it_might_be_new": "It is not a real idea; it is a collaboration fixture for the shared schema.",
+  "critique": "This should not be imported as a finding because it is only a schema example.",
+  "epistemic_labels": [
+    "speculative"
+  ],
+  "scores": {
+    "novelty": 0.1,
+    "generativity": 0.1,
+    "cross_tradition_support": 0.0,
+    "logical_coherence": 0.5,
+    "explanatory_compression": 0.1,
+    "empirical_adjacency": 0.0,
+    "practice_testability": 0.0,
+    "counterargument_quality": 0.2,
+    "source_reliability": 0.0,
+    "publishability": 0.0
+  },
+  "next_research_directions": [
+    "Replace this file with a real Claude-authored idea record."
+  ]
+}

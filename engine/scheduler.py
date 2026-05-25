@@ -7,6 +7,7 @@ import time
 
 from .config import EngineConfig
 from .librarian import Librarian
+from .process_control import terminate_current_child
 from .run import run_once
 from .schemas import now_local_iso
 
@@ -17,6 +18,7 @@ _SHOULD_STOP = False
 def _request_stop(signum: int, frame: object) -> None:
     global _SHOULD_STOP
     _SHOULD_STOP = True
+    terminate_current_child()
 
 
 def parse_args() -> argparse.Namespace:

@@ -1,0 +1,105 @@
+{
+  "nodes": [
+    {
+      "id": "atman",
+      "label": "Atman",
+      "type": "concept",
+      "traditions": [
+        "Advaita Vedanta",
+        "Hindu philosophy"
+      ]
+    },
+    {
+      "id": "anatman",
+      "label": "Anatman / non-self",
+      "type": "concept",
+      "traditions": [
+        "Buddhism"
+      ]
+    },
+    {
+      "id": "brahman",
+      "label": "Brahman",
+      "type": "concept",
+      "traditions": [
+        "Vedanta"
+      ]
+    },
+    {
+      "id": "sunyata",
+      "label": "Sunyata / emptiness",
+      "type": "concept",
+      "traditions": [
+        "Madhyamaka",
+        "Mahayana Buddhism"
+      ]
+    },
+    {
+      "id": "wu-wei",
+      "label": "Wu wei",
+      "type": "concept",
+      "traditions": [
+        "Daoism"
+      ]
+    },
+    {
+      "id": "soul",
+      "label": "Soul",
+      "type": "compound-concept",
+      "traditions": [
+        "Christianity",
+        "Platonism",
+        "Islamic philosophy",
+        "many others"
+      ]
+    },
+    {
+      "id": "witness-consciousness",
+      "label": "Witness-consciousness",
+      "type": "claim-unit",
+      "traditions": [
+        "Advaita Vedanta",
+        "contemplative phenomenology"
+      ]
+    },
+    {
+      "id": "translation-strain",
+      "label": "Translation strain",
+      "type": "lumenary-method"
+    }
+  ],
+  "edges": [
+    {
+      "source": "atman",
+      "target": "anatman",
+      "relation": "tension",
+      "note": "Useful test case for distinguishing convergence, contradiction, and translation strain."
+    },
+    {
+      "source": "brahman",
+      "target": "sunyata",
+      "relation": "possible-structural-parallel",
+      "note": "Must be handled carefully; structural comparison is not metaphysical identity."
+    },
+    {
+      "source": "witness-consciousness",
+      "target": "atman",
+      "relation": "claim-unit-of"
+    },
+    {
+      "source": "translation-strain",
+      "target": "atman",
+      "relation": "analyzes"
+    },
+    {
+      "source": "translation-strain",
+      "target": "anatman",
+      "relation": "analyzes"
+    },
+    {
+      "source": "translation-strain",
+      "target": "soul",
+      "relation": "decomposes"
+    }
+  ]
+}

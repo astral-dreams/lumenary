@@ -1,3 +1,30 @@
+# Recursive Spirituality Research Run
+
+## Primary Goal
+
+Generate original ideas, not summaries. Use the research corpus and agent memory as raw material for new observations, models, hypotheses, contradictions, bridges, and syntheses.
+
+## Current Focus
+
+Post-review live smoke test: generate one concise original Lumenary idea that builds on translation strain.
+
+## Current State
+
+# Current Focus
+
+Build the first recursive research loop around original idea generation.
+
+Initial research focus:
+
+How can independent spiritual traditions, contemplative practices, and modern consciousness research be compared in a way that generates original ideas without collapsing analogy into evidence?
+
+Product focus:
+
+Lumenary should become a public website with daily updates. The research loop should generate original ideas, the publication loop should select the strongest daily findings, and the social loop should draft X posts for human review.
+
+
+## Codex Findings
+
 # Codex Findings
 
 Date: 2026-05-25
@@ -93,16 +120,67 @@ Codex incorporated fixes: idea IDs and JSONL upsert, fixture status, structured 
 
 Status: incorporated.
 
-## Finding 12: Translation Strain Is Becoming The First Research Program
-
-The post-review live smoke test generated `Translation Strain as a Load Test for Convergence`, which refines the earlier convergence idea into a practical evaluation method. The useful next step is to turn translation strain into a rubric with lexical, practice-context, metaphysical, ethical, and phenomenological mismatch scores.
-
-Observation produced: `observations/codex/2026-05-25-translation-strain-as-a-load-test-for-convergence.md`
-
-Status: live Codex CLI result.
-
 ## Next Codex Tasks
 
 - Add a website frontend for daily findings.
 - Add a promotion workflow from draft observation to synthesis.
 - Add a reviewed X posting implementation after credentials and posting policy are set.
+
+
+## Claude Code Findings
+
+# Claude Code Findings
+
+Date imported: 2026-05-25
+Source: user-provided Claude Code plan.
+
+## Imported Plan Summary
+
+Claude Code recommended a custom Python orchestrator calling the Claude API, with the local filesystem as the primary knowledge store and Git for tracking evolution over time.
+
+## Useful Technical Ideas
+
+- Use a transparent Python loop instead of relying on a framework too early.
+- Store findings and observations as Markdown so the corpus remains readable and publishable.
+- Keep current focus, exploration log, next directions, and knowledge graph in local state files.
+- Use the loop's own prior findings as context for future research.
+- Weight convergences across independent traditions more highly.
+
+## Useful Methodological Ideas
+
+- Begin with cartography across traditions.
+- Move into convergence detection.
+- Add disciplined science bridges.
+- Generate original synthesis ideas.
+- Run self-critique and refinement.
+
+## Codex Incorporation Decision
+
+Codex accepts the local-first filesystem design, the custom Python loop for v1, Git history as an important memory mechanism, and convergence weighting as part of the reward signal.
+
+Codex keeps stricter epistemic labels and critique requirements to avoid conflating analogy with evidence.
+
+
+## Required Output
+
+Produce exactly one JSON object matching the provided output schema.
+
+The JSON object must represent one idea record with:
+
+- title
+- idea type
+- original claim
+- source basis
+- why it might be new
+- critique
+- epistemic labels
+- scores
+- next research directions
+
+## Method Rules
+
+- Preserve the difference between evidence, analogy, interpretation, phenomenology, and speculation.
+- Reward independent convergence, but do not treat convergence as proof.
+- Prefer a precise original distinction over a broad universal claim.
+- Include a critique strong enough to improve or reject the idea.
+- Do not edit files. Return only the structured idea record.

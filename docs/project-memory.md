@@ -48,3 +48,7 @@ Claude Code's useful contributions:
 - convergence weighting as reward signal
 
 Codex incorporated those while adding stricter epistemic labels, adversarial critique, and future room for indexes.
+
+## Claude Code Review Follow-Up
+
+Claude Code reviewed the initial commit and identified valid issues around duplicate idea records, fixture labeling, Markdown score parsing, Claude interop, concept graph placeholders, source ingestion, and scheduler shutdown. Codex incorporated fixes in the follow-up commit. See `docs/claude-review-incorporation.md`.

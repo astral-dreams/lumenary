@@ -1,27 +1,52 @@
 from __future__ import annotations
 
 import argparse
-import re
+import json
 from datetime import datetime
 from pathlib import Path
+from typing import Any
 
 from .config import EngineConfig
 from .librarian import Librarian
 from .schemas import slugify
 
 
-def _publishability_score(path: Path) -> float:
-    content = path.read_text(encoding="utf-8")
-    match = re.search(r"^- publishability:\s*([0-9.]+)\s*$", content, re.MULTILINE)
-    if not match:
-        return 0.0
-    return float(match.group(1))
+def _read_idea_records(root: Path) -> list[dict[str, Any]]:
+    path = root / "hypotheses" / "ideas.jsonl"
+    if not path.exists():
+        return []
+
+    records: list[dict[str, Any]] = []
+    for line in path.read_text(encoding="utf-8").splitlines():
+        if line.strip():
+            records.append(json.loads(line))
+    return records
 
 
-def _best_markdown(paths: list[Path]) -> Path | None:
-    if not paths:
-        return None
-    return max(paths, key=lambda path: (_publishability_score(path), path.stat().st_mtime))
+def _publishability_score(record: dict[str, Any]) -> float:
+    return float((record.get("scores") or {}).get("publishability", 0.0))
+
+
+def _best_idea_path(root: Path) -> Path | None:
+    records = [
+        record
+        for record in _read_idea_records(root)
+        if record.get("path") and (root / str(record["path"])).exists()
+    ]
+    if not records:
+        observation_paths = list((root / "observations").glob("*/*.md"))
+        if not observation_paths:
+            return None
+        return max(observation_paths, key=lambda path: path.stat().st_mtime)
+
+    best = max(
+        records,
+        key=lambda record: (
+            _publishability_score(record),
+            str(record.get("created_at", "")),
+        ),
+    )
+    return root / str(best["path"])
 
 
 def _title_from_markdown(content: str, fallback: str) -> str:
@@ -54,8 +79,7 @@ def generate_daily_update(config: EngineConfig) -> tuple[Path, Path]:
     librarian = Librarian(config.root)
     librarian.ensure_workspace()
 
-    observation_paths = list((config.root / "observations").glob("*/*.md"))
-    latest = _best_markdown(observation_paths)
+    latest = _best_idea_path(config.root)
     if latest is None:
         raise FileNotFoundError("No observations found for publication.")
 
