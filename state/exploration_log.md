@@ -103,3 +103,205 @@
 
 - Published daily draft `publication/daily/2026-05-25-convergence-as-translation-strain-not-evidence-weight.md`.
 - Created X draft `publication/x/queue/2026-05-25-convergence-as-translation-strain-not-evidence-weight.md`.
+
+## 2026-05-25T15:22:56-07:00
+
+- Run `20260525-152120-codex-supervised-lumenary-run-research-one-narrow-sour` generated `Residue Policy in Negative Self-Practice`.
+- Observation file: `observations/codex/2026-05-25-residue-policy-in-negative-self-practice.md`.
+
+## 2026-05-25T15:22:56-07:00
+
+- Scheduler completed run `20260525-152120-codex-supervised-lumenary-run-research-one-narrow-sour`.
+
+## 2026-05-25T15:23:10-07:00
+
+- Run `20260525-152310-claude-generate-an-original-model-for-cross-tradition-c` generated `The Interface Invariant Model`.
+- Observation file: `observations/claude/2026-05-25-the-interface-invariant-model.md`.
+
+## 2026-05-25T15:24:12-07:00
+
+- Run `20260525-152257-codex-supervised-lumenary-run-research-one-narrow-sour` generated `Residual Burden of Proof After Negation`.
+- Observation file: `observations/codex/2026-05-25-residual-burden-of-proof-after-negation.md`.
+
+## 2026-05-25T15:24:12-07:00
+
+- Scheduler completed run `20260525-152257-codex-supervised-lumenary-run-research-one-narrow-sour`.
+
+## 2026-05-25T15:25:31-07:00
+
+- Run `20260525-152413-codex-supervised-lumenary-run-research-one-narrow-sour` generated `Remainder Pressure as the Hidden Variable in Self-Negation`.
+- Observation file: `observations/codex/2026-05-25-remainder-pressure-as-the-hidden-variable-in-self-negation.md`.
+
+## 2026-05-25T15:25:31-07:00
+
+- Scheduler completed run `20260525-152413-codex-supervised-lumenary-run-research-one-narrow-sour`.
+
+## 2026-05-25T15:26:04-07:00
+
+- Published daily draft `publication/daily/2026-05-25-convergence-as-translation-strain-not-evidence-weight.md`.
+- Created X draft `publication/x/queue/2026-05-25-convergence-as-translation-strain-not-evidence-weight.md`.
+
+## 2026-05-25T15:27:25-07:00
+
+- Run `20260525-152406-claude-examine-the-relationship-between-buddhist-anatta` generated `The Inferential Gap: Atman and Anatta as Competing Policies for Objectless Awareness`.
+- Observation file: `observations/claude/2026-05-25-the-inferential-gap-atman-and-anatta-as-competing-policies-for-objectless-awareness.md`.
+
+## 2026-05-25T15:47:54-07:00
+
+- Registered source `advaita-vedanta-brihadaranyaka-upanishad-3-7-23` and source card `notes/source-cards/advaita-vedanta-brihadaranyaka-upanishad-3-7-23.md`.
+
+## 2026-05-25T15:47:54-07:00
+
+- Registered source `advaita-vedanta-chandogya-upanishad-6-8-7-tat-tvam-asi` and source card `notes/source-cards/advaita-vedanta-chandogya-upanishad-6-8-7-tat-tvam-asi.md`.
+
+## 2026-05-25T15:47:54-07:00
+
+- Registered source `advaita-vedanta-mandukya-upanishad` and source card `notes/source-cards/advaita-vedanta-mandukya-upanishad.md`.
+
+## 2026-05-25T15:47:54-07:00
+
+- Registered source `advaita-vedanta-shankara-upadesa-sahasri` and source card `notes/source-cards/advaita-vedanta-shankara-upadesa-sahasri.md`.
+
+## 2026-05-25T15:47:54-07:00
+
+- Registered source `early-buddhism-sn-22-59-anattalakkhana-sutta` and source card `notes/source-cards/early-buddhism-sn-22-59-anattalakkhana-sutta.md`.
+
+## 2026-05-25T15:47:54-07:00
+
+- Registered source `early-buddhism-sn-22-95-phenapindupama-sutta` and source card `notes/source-cards/early-buddhism-sn-22-95-phenapindupama-sutta.md`.
+
+## 2026-05-25T15:47:54-07:00
+
+- Registered source `early-buddhism-mn-1-mulapariyaya-sutta` and source card `notes/source-cards/early-buddhism-mn-1-mulapariyaya-sutta.md`.
+
+## 2026-05-25T15:47:54-07:00
+
+- Registered source `daoism-dao-de-jing` and source card `notes/source-cards/daoism-dao-de-jing.md`.
+
+## 2026-05-25T15:47:54-07:00
+
+- Registered source `daoism-dao-de-jing-chapter-48` and source card `notes/source-cards/daoism-dao-de-jing-chapter-48.md`.
+
+## 2026-05-25T15:47:54-07:00
+
+- Registered source `daoism-zhuangzi` and source card `notes/source-cards/daoism-zhuangzi.md`.
+
+## 2026-05-25T15:47:54-07:00
+
+- Registered source `neoplatonism-plotinus-enneads` and source card `notes/source-cards/neoplatonism-plotinus-enneads.md`.
+
+## 2026-05-25T15:47:54-07:00
+
+- Registered source `neoplatonism-plotinus-enneads-fifth-ennead` and source card `notes/source-cards/neoplatonism-plotinus-enneads-fifth-ennead.md`.
+
+## 2026-05-25T15:47:54-07:00
+
+- Registered source `neoplatonism-stanford-encyclopedia-of-philosophy-plotinus` and source card `notes/source-cards/neoplatonism-stanford-encyclopedia-of-philosophy-plotinus.md`.
+
+## 2026-05-25T15:47:54-07:00
+
+- Registered source `sufism-al-ghazali-the-alchemy-of-happiness` and source card `notes/source-cards/sufism-al-ghazali-the-alchemy-of-happiness.md`.
+
+## 2026-05-25T15:47:54-07:00
+
+- Registered source `sufism-attar-bird-parliament` and source card `notes/source-cards/sufism-attar-bird-parliament.md`.
+
+## 2026-05-25T15:47:54-07:00
+
+- Registered source `sufism-ibn-al-arabi-tarjuman-al-ashwaq` and source card `notes/source-cards/sufism-ibn-al-arabi-tarjuman-al-ashwaq.md`.
+
+## 2026-05-25T15:47:54-07:00
+
+- Registered source `consciousness-science-tononi-information-integration-theory-of-consciousness` and source card `notes/source-cards/consciousness-science-tononi-information-integration-theory-of-consciousness.md`.
+
+## 2026-05-25T15:47:54-07:00
+
+- Registered source `consciousness-science-global-neuronal-workspace-as-a-broadcasting-network` and source card `notes/source-cards/consciousness-science-global-neuronal-workspace-as-a-broadcasting-network.md`.
+
+## 2026-05-25T15:47:54-07:00
+
+- Registered source `consciousness-science-an-interoceptive-predictive-coding-model-of-conscious-presence` and source card `notes/source-cards/consciousness-science-an-interoceptive-predictive-coding-model-of-conscious-presence.md`.
+
+## 2026-05-25T15:47:54-07:00
+
+- Registered source `consciousness-science-i-and-me-the-self-in-the-context-of-consciousness` and source card `notes/source-cards/consciousness-science-i-and-me-the-self-in-the-context-of-consciousness.md`.
+
+## 2026-05-25T15:47:54-07:00
+
+- Registered source `high-energy-physics-cern-the-standard-model` and source card `notes/source-cards/high-energy-physics-cern-the-standard-model.md`.
+
+## 2026-05-25T15:47:54-07:00
+
+- Registered source `high-energy-physics-particle-data-group-review-of-particle-physics` and source card `notes/source-cards/high-energy-physics-particle-data-group-review-of-particle-physics.md`.
+
+## 2026-05-25T15:47:54-07:00
+
+- Registered source `matter-theory-cern-what-is-special-about-the-higgs-boson` and source card `notes/source-cards/matter-theory-cern-what-is-special-about-the-higgs-boson.md`.
+
+## 2026-05-25T15:47:54-07:00
+
+- Registered source `matter-theory-atlas-higgs-boson-discovery-paper` and source card `notes/source-cards/matter-theory-atlas-higgs-boson-discovery-paper.md`.
+
+## 2026-05-25T15:47:54-07:00
+
+- Registered source `matter-theory-cms-higgs-boson-discovery-paper` and source card `notes/source-cards/matter-theory-cms-higgs-boson-discovery-paper.md`.
+
+## 2026-05-25T15:47:54-07:00
+
+- Registered source `matter-theory-weinberg-a-model-of-leptons` and source card `notes/source-cards/matter-theory-weinberg-a-model-of-leptons.md`.
+
+## 2026-05-25T15:47:54-07:00
+
+- Registered source `matter-theory-doe-explains-the-strong-force` and source card `notes/source-cards/matter-theory-doe-explains-the-strong-force.md`.
+
+## 2026-05-25T15:47:54-07:00
+
+- Registered source `matter-theory-cern-heavy-ions-and-quark-gluon-plasma` and source card `notes/source-cards/matter-theory-cern-heavy-ions-and-quark-gluon-plasma.md`.
+
+## 2026-05-25T15:47:54-07:00
+
+- Registered source `physics-time-noether-invariant-variation-problems` and source card `notes/source-cards/physics-time-noether-invariant-variation-problems.md`.
+
+## 2026-05-25T15:47:54-07:00
+
+- Registered source `physics-time-einstein-on-the-electrodynamics-of-moving-bodies` and source card `notes/source-cards/physics-time-einstein-on-the-electrodynamics-of-moving-bodies.md`.
+
+## 2026-05-25T15:47:54-07:00
+
+- Registered source `physics-time-minkowski-space-and-time` and source card `notes/source-cards/physics-time-minkowski-space-and-time.md`.
+
+## 2026-05-25T15:47:54-07:00
+
+- Registered source `physics-time-babar-observation-of-time-reversal-violation` and source card `notes/source-cards/physics-time-babar-observation-of-time-reversal-violation.md`.
+
+## 2026-05-25T15:47:54-07:00
+
+- Registered source `quantum-gravity-time-anderson-the-problem-of-time-in-quantum-gravity` and source card `notes/source-cards/quantum-gravity-time-anderson-the-problem-of-time-in-quantum-gravity.md`.
+
+## 2026-05-25T15:47:54-07:00
+
+- Registered source `quantum-gravity-time-rovelli-partial-observables` and source card `notes/source-cards/quantum-gravity-time-rovelli-partial-observables.md`.
+
+## 2026-05-25T15:47:54-07:00
+
+- Registered source `quantum-gravity-time-page-and-wootters-evolution-without-evolution` and source card `notes/source-cards/quantum-gravity-time-page-and-wootters-evolution-without-evolution.md`.
+
+## 2026-05-25T15:47:54-07:00
+
+- Registered source `quantum-gravity-time-dewitt-quantum-theory-of-gravity-the-canonical-theory` and source card `notes/source-cards/quantum-gravity-time-dewitt-quantum-theory-of-gravity-the-canonical-theory.md`.
+
+## 2026-05-25T15:47:54-07:00
+
+- Registered source `matter-antimatter-sakharov-cp-violation-and-baryon-asymmetry` and source card `notes/source-cards/matter-antimatter-sakharov-cp-violation-and-baryon-asymmetry.md`.
+
+## 2026-05-25T15:47:54-07:00
+
+- Registered source `matter-antimatter-cern-antimatter` and source card `notes/source-cards/matter-antimatter-cern-antimatter.md`.
+
+## 2026-05-25T15:47:54-07:00
+
+- Registered source `particle-cosmology-planck-2018-cosmological-parameters` and source card `notes/source-cards/particle-cosmology-planck-2018-cosmological-parameters.md`.
+
+## 2026-05-25T15:47:54-07:00
+
+- Registered source `high-energy-physics-cern-physics-programme` and source card `notes/source-cards/high-energy-physics-cern-physics-programme.md`.

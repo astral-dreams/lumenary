@@ -1,0 +1,56 @@
+---
+import ScoreBars from "../../components/ScoreBars.astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { formatLabel, getIdeas } from "../../lib/content";
+
+export function getStaticPaths() {
+  return getIdeas().map((idea) => ({
+    params: { slug: idea.slug },
+    props: { idea },
+  }));
+}
+
+const { idea } = Astro.props;
+---
+
+<BaseLayout title={idea.title} description={idea.excerpt}>
+  <article class="article-page">
+    <header class="article-header">
+      <p class="eyebrow">{idea.agent} / {formatLabel(idea.idea_type)} / {idea.status}</p>
+      <h1>{idea.title}</h1>
+      <p class="lead">{idea.original_claim}</p>
+      <div class="label-row">
+        {idea.epistemic_labels.map((label) => <span>{formatLabel(label)}</span>)}
+      </div>
+    </header>
+
+    <section class="article-section">
+      <h2>Why It Might Be New</h2>
+      <p>{idea.why_it_might_be_new}</p>
+    </section>
+
+    <section class="article-section">
+      <h2>Critique</h2>
+      <p>{idea.critique}</p>
+    </section>
+
+    <section class="article-section">
+      <h2>Scores</h2>
+      <ScoreBars scores={idea.scores} />
+    </section>
+
+    <section class="article-section">
+      <h2>Source Basis</h2>
+      <ul class="clean-list">
+        {idea.source_basis.map((source) => <li>{source}</li>)}
+      </ul>
+    </section>
+
+    <section class="article-section">
+      <h2>Next Directions</h2>
+      <ul class="clean-list">
+        {idea.next_research_directions.map((direction) => <li>{direction}</li>)}
+      </ul>
+    </section>
+  </article>
+</BaseLayout>

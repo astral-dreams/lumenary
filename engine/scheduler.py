@@ -27,10 +27,10 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--provider",
         default="codex-cli",
-        help="Thinking provider. Use codex-cli for the local Codex subscription.",
+        help="Thinking provider (codex-cli, claude-code, offline).",
     )
-    parser.add_argument("--model", default=None, help="Model to pass to codex exec.")
-    parser.add_argument("--search", action="store_true", help="Enable Codex web search.")
+    parser.add_argument("--model", default=None, help="Model to pass to the provider.")
+    parser.add_argument("--search", action="store_true", help="Enable Codex web search (codex-cli only).")
     parser.add_argument(
         "--interval-minutes",
         type=float,
@@ -42,6 +42,12 @@ def parse_args() -> argparse.Namespace:
         type=int,
         default=0,
         help="Number of iterations to run. Use 0 for continuous operation.",
+    )
+    parser.add_argument(
+        "--max-failures",
+        type=int,
+        default=3,
+        help="Stop supervised runs after this many consecutive failures.",
     )
     parser.add_argument(
         "--focus",
@@ -61,17 +67,23 @@ def main() -> None:
     signal.signal(signal.SIGTERM, _request_stop)
 
     args = parse_args()
+    model_kwargs: dict[str, str | None] = {}
+    if args.provider == "claude-code":
+        model_kwargs["claude_model"] = args.model
+    else:
+        model_kwargs["codex_model"] = args.model
     config = EngineConfig.load(
         agent=args.agent,
         provider=args.provider,
         dry_run=args.dry_run,
-        codex_model=args.model,
         codex_search=args.search,
+        **model_kwargs,
     )
     librarian = Librarian(config.root)
     librarian.ensure_workspace()
 
     completed = 0
+    consecutive_failures = 0
     while not _SHOULD_STOP:
         try:
             manifest = run_once(config, args.focus)
@@ -79,7 +91,10 @@ def main() -> None:
                 f"- Scheduler completed run `{manifest.run_id}`."
             )
             print(f"{now_local_iso()} completed {manifest.run_id}", flush=True)
+            completed += 1
+            consecutive_failures = 0
         except Exception as exc:
+            consecutive_failures += 1
             error = {
                 "at": now_local_iso(),
                 "provider": config.provider,
@@ -87,8 +102,9 @@ def main() -> None:
             }
             librarian.append_jsonl("runs/scheduler-errors.jsonl", error)
             print(json.dumps(error, sort_keys=True), flush=True)
+            if args.iterations and consecutive_failures >= args.max_failures:
+                break
 
-        completed += 1
         if args.iterations and completed >= args.iterations:
             break
 

@@ -5,7 +5,7 @@ from datetime import datetime
 
 from .config import EngineConfig
 from .librarian import Librarian
-from .prompts import build_originality_prompt
+from .prompts import build_claude_collaborative_prompt, build_originality_prompt
 from .schemas import RunManifest, now_local_iso, slugify
 from .thinker import get_thinker
 
@@ -15,6 +15,16 @@ def build_run_id(agent: str, focus: str) -> str:
     return f"{stamp}-{agent}-{slugify(focus)[:48]}"
 
 
+def _gather_codex_observations(librarian: Librarian) -> str:
+    obs_dir = librarian.root / "observations" / "codex"
+    if not obs_dir.is_dir():
+        return ""
+    parts: list[str] = []
+    for path in sorted(obs_dir.glob("*.md")):
+        parts.append(path.read_text(encoding="utf-8"))
+    return "\n---\n".join(parts)
+
+
 def run_once(config: EngineConfig, focus: str) -> RunManifest:
     librarian = Librarian(config.root)
     librarian.ensure_workspace()
@@ -22,12 +32,27 @@ def run_once(config: EngineConfig, focus: str) -> RunManifest:
     current_state = librarian.read_optional("state/current_focus.md")
     codex_findings = librarian.read_optional("findings/codex-findings.md")
     claude_findings = librarian.read_optional("findings/claude-code-findings.md")
-    prompt = build_originality_prompt(
-        focus=focus,
-        current_state=current_state,
-        prior_codex_findings=codex_findings,
-        prior_claude_findings=claude_findings,
-    )
+
+    if config.provider == "claude-code":
+        codex_observations = _gather_codex_observations(librarian)
+        concept_graph = librarian.read_optional("graph/concept-graph.seed.json")
+        next_directions = librarian.read_optional("state/next_directions.md")
+        prompt = build_claude_collaborative_prompt(
+            focus=focus,
+            current_state=current_state,
+            prior_codex_findings=codex_findings,
+            prior_claude_findings=claude_findings,
+            codex_observations=codex_observations,
+            concept_graph=concept_graph,
+            next_directions=next_directions,
+        )
+    else:
+        prompt = build_originality_prompt(
+            focus=focus,
+            current_state=current_state,
+            prior_codex_findings=codex_findings,
+            prior_claude_findings=claude_findings,
+        )
 
     manifest = RunManifest(
         run_id=build_run_id(config.agent, focus),
@@ -63,9 +88,9 @@ def run_once(config: EngineConfig, focus: str) -> RunManifest:
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Run one recursive research cycle.")
     parser.add_argument("--agent", default=None, help="Attribution agent name.")
-    parser.add_argument("--provider", default=None, help="Thinking provider.")
+    parser.add_argument("--provider", default=None, help="Thinking provider (offline, codex-cli, claude-code).")
     parser.add_argument("--dry-run", action="store_true", help="Use offline dry-run mode.")
-    parser.add_argument("--model", default=None, help="Model to pass to codex exec.")
+    parser.add_argument("--model", default=None, help="Model to pass to the provider.")
     parser.add_argument(
         "--search",
         action="store_true",
@@ -84,12 +109,18 @@ def parse_args() -> argparse.Namespace:
 
 def main() -> None:
     args = parse_args()
+    provider = args.provider
+    model_kwargs: dict[str, str | None] = {}
+    if provider == "claude-code":
+        model_kwargs["claude_model"] = args.model
+    else:
+        model_kwargs["codex_model"] = args.model
     config = EngineConfig.load(
         agent=args.agent,
-        provider=args.provider,
+        provider=provider,
         dry_run=args.dry_run,
-        codex_model=args.model,
         codex_search=args.search,
+        **model_kwargs,
     )
     manifest = run_once(config, args.focus)
     print(f"run_id={manifest.run_id}")

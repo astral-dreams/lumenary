@@ -1,44 +1,49 @@
 # Claude Code Interoperability
 
-Claude Code should use the same idea schema and filesystem attribution as Codex.
+Claude Code is a native engine provider, on equal footing with CodeX.
 
-## Preferred Path
+## Primary Path: Engine Provider
 
-Claude Code can generate a JSON idea record matching:
+Run Claude as a thinker via the engine:
 
-`engine/json_schemas/idea_record.schema.json`
+```bash
+# One-shot research run
+python3 -m engine.run --provider claude-code --agent claude --model opus \
+  --focus "Your research focus here"
 
-Then import it with:
+# Continuous loop
+python3 -m engine.scheduler --provider claude-code --agent claude --model opus \
+  --interval-minutes 120
+
+# Or use the runner script
+./scripts/run_claude_research_loop.sh
+```
+
+The `ClaudeCodeThinker` in `engine/thinker.py` invokes `claude -p` with:
+- `--json-schema` for structured output matching `idea_record.schema.json`
+- `--allowedTools "WebSearch,WebFetch,Read"` for web-grounded research
+- `--output-format json` for reliable parsing
+
+## Alternative Path: JSON Import
+
+For ideas generated interactively in a Claude Code conversation:
 
 ```bash
 python3 -m engine.import_idea --agent claude path/to/idea.json
 ```
 
-or:
+## Collaborative Prompt
 
-```bash
-claude-generated-command | python3 -m engine.import_idea --agent claude -
-```
-
-Validate without writing:
-
-```bash
-python3 -m engine.import_idea --agent claude --validate-only path/to/idea.json
-```
-
-The importer writes to:
-
-- `observations/claude/`
-- `hypotheses/ideas.jsonl`
-- `state/exploration_log.md`
-
-## Rationale
-
-Do not add a fake Claude API provider without credentials and a tested runtime path. A Claude API provider can be added later, but the shared-schema import path lets Claude Code collaborate immediately while preserving attribution.
+When the provider is `claude-code`, the engine uses `build_claude_collaborative_prompt` which includes:
+- All CodeX observations from `observations/codex/`
+- The concept graph from `graph/concept-graph.seed.json`
+- Next research directions from `state/next_directions.md`
+- Explicit instructions to engage with CodeX's work
 
 ## Required Behavior
 
-- Preserve Claude-authored ideas under `observations/claude/`.
-- Use the same epistemic labels and scoring rubric as Codex.
-- Do not overwrite Codex observations.
-- Put disagreements or convergences under `findings/convergences/`.
+- Claude observations stored under `observations/claude/`.
+- Uses the same epistemic labels, scoring rubric, and idea schema as CodeX.
+- Does not overwrite CodeX observations.
+- Agreements and disagreements documented under `findings/convergences/`.
+- Claude findings summary maintained at `findings/claude-code-findings.md`.

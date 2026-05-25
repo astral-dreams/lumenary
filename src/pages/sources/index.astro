@@ -1,0 +1,37 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { formatLabel, getSources, groupBy } from "../../lib/content";
+
+const groups = groupBy(getSources(), (source) => source.tradition);
+---
+
+<BaseLayout title="Sources">
+  <section class="page-band">
+    <p class="eyebrow">Grounding corpus</p>
+    <h1>Source Cards</h1>
+    <p class="lead">The public source foundation behind Lumenary's spiritual, philosophical, consciousness, and physics research.</p>
+  </section>
+  <section class="content-section source-groups">
+    {groups.map(([tradition, sources]) => (
+      <section id={tradition} class="source-group">
+        <div class="section-heading">
+          <p class="eyebrow">{sources.length} cards</p>
+          <h2>{formatLabel(tradition)}</h2>
+        </div>
+        <div class="source-list">
+          {sources.map((source) => (
+            <article class="source-card">
+              <div class="meta-row">
+                <span>{formatLabel(source.source_type)}</span>
+                <span>{source.source_id}</span>
+              </div>
+              <h3>{source.title}</h3>
+              <p>{source.notes}</p>
+              {source.url && <a href={source.url} rel="noreferrer">Open source</a>}
+            </article>
+          ))}
+        </div>
+      </section>
+    ))}
+  </section>
+</BaseLayout>

@@ -15,6 +15,8 @@ class EngineConfig:
     codex_search: bool = False
     codex_sandbox: str = "read-only"
     codex_timeout_seconds: int = 1800
+    claude_model: str | None = None
+    claude_timeout_seconds: int = 1800
     max_sources_per_run: int = 5
     max_ideas_per_run: int = 1
 
@@ -30,6 +32,8 @@ class EngineConfig:
         codex_search: bool | None = None,
         codex_sandbox: str | None = None,
         codex_timeout_seconds: int | None = None,
+        claude_model: str | None = None,
+        claude_timeout_seconds: int | None = None,
         max_sources_per_run: int | None = None,
         max_ideas_per_run: int | None = None,
     ) -> "EngineConfig":
@@ -50,6 +54,9 @@ class EngineConfig:
             or os.getenv("SPIRITUALITY_CODEX_SANDBOX", "read-only"),
             codex_timeout_seconds=codex_timeout_seconds
             or int(os.getenv("SPIRITUALITY_CODEX_TIMEOUT_SECONDS", "1800")),
+            claude_model=claude_model or os.getenv("SPIRITUALITY_CLAUDE_MODEL") or None,
+            claude_timeout_seconds=claude_timeout_seconds
+            or int(os.getenv("SPIRITUALITY_CLAUDE_TIMEOUT_SECONDS", "1800")),
             max_sources_per_run=max_sources_per_run
             or int(os.getenv("SPIRITUALITY_MAX_SOURCES", "5")),
             max_ideas_per_run=max_ideas_per_run

@@ -15,6 +15,7 @@ Working project name: Lumenary.
 - Keep epistemic labels explicit: `textual`, `interpretive`, `phenomenological`, `empirical-adjacent`, `analogical`, `speculative`, and `rejected`.
 - Do not conflate spiritual claims with scientific claims. Mark parallels as analogical unless stronger evidence is available.
 - Every serious idea needs a critique, scores, and next research directions.
+- High-energy physics sources are available for time and matter grounding. Use them as empirical/formal constraints, especially around Standard Model fields, Higgs/QCD mass, antimatter asymmetry, relativity, Noether symmetry, T-violation, and quantum-gravity time.
 
 ## Live Provider Direction
 
@@ -23,9 +24,9 @@ Use the Codex CLI subscription as the live model provider. The Python engine sho
 Preferred child-agent posture:
 
 - `codex exec`
+- top-level `--search` before `exec` when web search is enabled
 - `--cd /Users/johnforrester/spirituality`
 - `--sandbox read-only`
-- `--search`
 - `--output-schema engine/json_schemas/idea_record.schema.json`
 
 ## Current Priority

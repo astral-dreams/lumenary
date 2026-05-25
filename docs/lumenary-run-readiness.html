@@ -1,0 +1,498 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lumenary Run Readiness Review</title>
+  <style>
+    :root {
+      --ink: #1b1d1f;
+      --muted: #656b70;
+      --paper: #fbfaf7;
+      --panel: #ffffff;
+      --line: #ded8cc;
+      --accent: #6f7d45;
+      --accent-2: #a36842;
+      --soft: #f1eee7;
+      --ok: #2f6f4e;
+      --warn: #8a5a18;
+      --block: #8a2f2f;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font: 16px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    main {
+      width: min(1120px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 32px 0 64px;
+    }
+
+    header {
+      border-bottom: 1px solid var(--line);
+      padding: 44px 0 28px;
+      margin-bottom: 28px;
+    }
+
+    .eyebrow {
+      color: var(--accent-2);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      margin: 0 0 10px;
+    }
+
+    h1 {
+      font-size: clamp(36px, 7vw, 78px);
+      line-height: .95;
+      letter-spacing: 0;
+      margin: 0 0 18px;
+      max-width: 780px;
+    }
+
+    .subtitle {
+      color: var(--muted);
+      font-size: 20px;
+      max-width: 860px;
+      margin: 0;
+    }
+
+    h2 {
+      font-size: 24px;
+      margin: 0 0 14px;
+    }
+
+    h3 {
+      font-size: 18px;
+      margin: 0 0 8px;
+    }
+
+    section {
+      margin: 34px 0;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .two {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 18px;
+    }
+
+    .status {
+      display: inline-flex;
+      align-items: center;
+      min-height: 26px;
+      padding: 3px 9px;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .ready {
+      color: var(--ok);
+      background: #e8f1eb;
+    }
+
+    .next {
+      color: var(--warn);
+      background: #f5ebd8;
+    }
+
+    .defer {
+      color: var(--block);
+      background: #f4e4e1;
+    }
+
+    ul, ol {
+      margin: 8px 0 0 20px;
+      padding: 0;
+    }
+
+    li {
+      margin: 7px 0;
+    }
+
+    code {
+      background: var(--soft);
+      border: 1px solid var(--line);
+      border-radius: 5px;
+      padding: 1px 5px;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: .92em;
+    }
+
+    pre {
+      margin: 12px 0 0;
+      overflow-x: auto;
+      white-space: pre;
+      background: #20231f;
+      color: #f8f3e8;
+      border-radius: 8px;
+      padding: 14px;
+      font-size: 13px;
+      line-height: 1.45;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    th, td {
+      border-bottom: 1px solid var(--line);
+      padding: 12px;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      background: var(--soft);
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: .04em;
+    }
+
+    tr:last-child td {
+      border-bottom: 0;
+    }
+
+    a {
+      color: #4e6535;
+      font-weight: 650;
+    }
+
+    .callout {
+      border-left: 4px solid var(--accent);
+      background: #f5f2ea;
+      padding: 14px 16px;
+      border-radius: 0 8px 8px 0;
+    }
+
+    .meta {
+      color: var(--muted);
+      font-size: 14px;
+      margin-top: 12px;
+    }
+
+    @media (max-width: 860px) {
+      .grid,
+      .two {
+        grid-template-columns: 1fr;
+      }
+
+      header {
+        padding-top: 28px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <p class="eyebrow">Lumenary run readiness</p>
+      <h1>What is left before continuous operation?</h1>
+      <p class="subtitle">
+        Lumenary can already run a live Codex CLI research cycle, store original idea records,
+        publish a daily Markdown update, and generate reviewed X drafts. The remaining work is
+        mostly launch discipline: source grounding, cadence, review gates, and a public website.
+      </p>
+      <p class="meta">Generated May 25, 2026. Repo: <code>/Users/johnforrester/spirituality</code>. Latest commit: <code>a6f2e95</code>.</p>
+    </header>
+
+    <section>
+      <h2>Current State</h2>
+      <div class="grid">
+        <div class="card">
+          <span class="status ready">Ready</span>
+          <h3>Live Codex provider</h3>
+          <p><code>codex exec</code> is wired through <code>engine/thinker.py</code> with schema-bound output and read-only child execution.</p>
+        </div>
+        <div class="card">
+          <span class="status ready">Ready</span>
+          <h3>Recursive loop</h3>
+          <p><code>engine/run.py</code> handles one iteration. <code>engine/scheduler.py</code> handles continuous runs and child-process shutdown.</p>
+        </div>
+        <div class="card">
+          <span class="status ready">Ready</span>
+          <h3>Idea memory</h3>
+          <p>Ideas are stored as Markdown plus structured JSONL with stable <code>idea_id</code> dedupe.</p>
+        </div>
+        <div class="card">
+          <span class="status ready">Ready</span>
+          <h3>Daily publication draft</h3>
+          <p><code>engine/publisher.py</code> selects from structured records and writes daily updates plus X drafts.</p>
+        </div>
+        <div class="card">
+          <span class="status ready">Ready</span>
+          <h3>Claude Code interop</h3>
+          <p>Claude can import schema-compatible ideas through <code>engine.import_idea</code> without overwriting Codex findings.</p>
+        </div>
+        <div class="card">
+          <span class="status next">Needs work</span>
+          <h3>External grounding</h3>
+          <p>Source-card registration exists, but the corpus still needs real primary texts and cited research.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>What Is Left Before We Start Running?</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Status</th>
+            <th>Why it matters</th>
+            <th>Recommended action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Decide launch mode</td>
+            <td>Required</td>
+            <td>We should avoid turning on an unsupervised recursive loop before checking output quality for a few cycles.</td>
+            <td>Run supervised for 3 to 5 iterations before installing LaunchAgents.</td>
+          </tr>
+          <tr>
+            <td>Set cadence and budget</td>
+            <td>Required</td>
+            <td>The loop uses your Codex subscription and can run long research calls. Cadence controls cost, noise, and review burden.</td>
+            <td>Start with one live research run every 6 or 12 hours, plus one daily publish draft.</td>
+          </tr>
+          <tr>
+            <td>Seed real sources</td>
+            <td>Required for quality</td>
+            <td>Without source grounding, the system becomes self-referential and rewards its own prior ideas.</td>
+            <td>Add 10 to 20 source cards across Advaita, Buddhism, Daoism, Neoplatonism, Sufism, and consciousness science.</td>
+          </tr>
+          <tr>
+            <td>Define promotion rules</td>
+            <td>Required before public site</td>
+            <td>Draft observations should not automatically become public claims.</td>
+            <td>Create thresholds for source reliability, counterargument quality, and publishability.</td>
+          </tr>
+          <tr>
+            <td>Build the website</td>
+            <td>Next implementation step</td>
+            <td>The public surface does not exist yet. Current outputs are Markdown files.</td>
+            <td>Build a static site reading <code>publication/daily/</code>, <code>observations/</code>, and <code>syntheses/</code>.</td>
+          </tr>
+          <tr>
+            <td>X posting</td>
+            <td>Deferred</td>
+            <td>Posting philosophical claims automatically is reputationally risky and requires X API credentials.</td>
+            <td>Keep X drafts in review queue first. Add API posting only after manual approval policy is clear.</td>
+          </tr>
+          <tr>
+            <td>LaunchAgent install</td>
+            <td>Ready after review</td>
+            <td>The plist files exist, but loading them starts background automation.</td>
+            <td>Install after one supervised run and one daily publish review.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Recommended Start Sequence</h2>
+      <div class="grid two">
+        <div class="card">
+          <span class="status ready">Step 1</span>
+          <h3>Run one supervised live cycle</h3>
+          <pre>python3 -m engine.run \
+  --provider codex-cli \
+  --agent codex \
+  --search \
+  --focus "Research one narrow source-grounded comparison and generate one original Lumenary idea."</pre>
+        </div>
+        <div class="card">
+          <span class="status ready">Step 2</span>
+          <h3>Generate daily publish draft</h3>
+          <pre>python3 -m engine.publisher</pre>
+        </div>
+        <div class="card">
+          <span class="status next">Step 3</span>
+          <h3>Review output manually</h3>
+          <pre>open publication/daily
+open publication/x/queue</pre>
+        </div>
+        <div class="card">
+          <span class="status next">Step 4</span>
+          <h3>Start a supervised scheduler session</h3>
+          <pre>python3 -m engine.scheduler \
+  --provider codex-cli \
+  --search \
+  --interval-minutes 360 \
+  --iterations 3</pre>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Continuous Operation Options</h2>
+      <div class="grid two">
+        <div class="card">
+          <h3>Option A: supervised terminal</h3>
+          <p>Best for the first day. You can stop it with Control-C and inspect every run.</p>
+          <pre>python3 -m engine.scheduler \
+  --provider codex-cli \
+  --search \
+  --interval-minutes 360</pre>
+        </div>
+        <div class="card">
+          <h3>Option B: macOS LaunchAgents</h3>
+          <p>Best after the supervised pass. This runs research continuously and publishes a daily draft at 8 AM.</p>
+          <pre>mkdir -p ~/Library/LaunchAgents
+cp ops/launchd/com.lumenary.research.plist ~/Library/LaunchAgents/
+cp ops/launchd/com.lumenary.daily-publish.plist ~/Library/LaunchAgents/
+launchctl bootstrap gui/$(id -u) ~/Library/LaunchAgents/com.lumenary.research.plist
+launchctl bootstrap gui/$(id -u) ~/Library/LaunchAgents/com.lumenary.daily-publish.plist</pre>
+        </div>
+      </div>
+      <p class="callout">
+        Recommendation: start with Option A for 24 hours, then install LaunchAgents after the output quality and cadence feel right.
+      </p>
+    </section>
+
+    <section>
+      <h2>Source Grounding Plan</h2>
+      <p>The biggest quality gap is not orchestration. It is evidence. Before the loop runs unattended, seed a small corpus with source cards.</p>
+      <div class="grid">
+        <div class="card">
+          <h3>Spiritual texts</h3>
+          <ul>
+            <li>Upanishads or Advaita source excerpts</li>
+            <li>Early Buddhist texts on anatta</li>
+            <li>Dao De Jing or Zhuangzi selections</li>
+            <li>Plotinus or Neoplatonic sources</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Comparative philosophy</h3>
+          <ul>
+            <li>Scholarship on nondualism</li>
+            <li>Comparative mysticism critiques</li>
+            <li>Philosophy of mind and selfhood</li>
+            <li>Phenomenology of attention</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Science adjacency</h3>
+          <ul>
+            <li>Meditation and attention research</li>
+            <li>Self-modeling and salience network papers</li>
+            <li>Consciousness theories with careful limits</li>
+            <li>Explicit anti-pop-science guardrails</li>
+          </ul>
+        </div>
+      </div>
+      <pre>python3 -m engine.source_ingestion \
+  --title "Source Title" \
+  --tradition "Tradition" \
+  --source-type text \
+  --path sources/source-file.md \
+  --notes "Why this source matters."</pre>
+    </section>
+
+    <section>
+      <h2>Website Build Scope</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Feature</th>
+            <th>Build now?</th>
+            <th>Notes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Daily finding page</td>
+            <td>Yes</td>
+            <td>Read from <code>publication/daily/</code>. Show epistemic labels visibly.</td>
+          </tr>
+          <tr>
+            <td>Observation archive</td>
+            <td>Yes</td>
+            <td>Read from <code>observations/codex/</code> and <code>observations/claude/</code>.</td>
+          </tr>
+          <tr>
+            <td>Concept graph view</td>
+            <td>Later</td>
+            <td>Useful after the graph contains enough real sources and relations.</td>
+          </tr>
+          <tr>
+            <td>Public source cards</td>
+            <td>Yes, minimal</td>
+            <td>Start with readable source pages before adding advanced search.</td>
+          </tr>
+          <tr>
+            <td>X auto-posting</td>
+            <td>No</td>
+            <td>Keep reviewed drafts first. API posting can come later.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Decision Checklist</h2>
+      <ol>
+        <li>Confirm the working name: <strong>Lumenary</strong> or choose another.</li>
+        <li>Choose supervised cadence: 6 hours, 12 hours, or daily.</li>
+        <li>Decide whether first website version should be static HTML, Astro, or another stack.</li>
+        <li>Decide what counts as publishable: score threshold, source requirement, and human review requirement.</li>
+        <li>Decide whether Claude Code will import JSON ideas or run a parallel process writing directly to its directories.</li>
+        <li>Decide when X drafts may become posts. Current recommendation: not until website quality is stable.</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>My Recommendation</h2>
+      <p class="callout">
+        Do not install the continuous LaunchAgent yet. First, run three supervised live cycles with web search,
+        add at least ten source cards, generate daily drafts, and review the publication quality. Then build the
+        first website around daily findings and observation archives. After that, turn on background scheduling.
+      </p>
+    </section>
+
+    <section>
+      <h2>Relevant Files</h2>
+      <ul>
+        <li><a href="../PLAN.md">PLAN.md</a></li>
+        <li><a href="../AGENTS.md">AGENTS.md</a></li>
+        <li><a href="project-memory.md">docs/project-memory.md</a></li>
+        <li><a href="publication-plan.md">docs/publication-plan.md</a></li>
+        <li><a href="claude-interoperability.md">docs/claude-interoperability.md</a></li>
+        <li><a href="source-ingestion.md">docs/source-ingestion.md</a></li>
+        <li><a href="../engine/run.py">engine/run.py</a></li>
+        <li><a href="../engine/scheduler.py">engine/scheduler.py</a></li>
+        <li><a href="../engine/publisher.py">engine/publisher.py</a></li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,20 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getDailyPosts } from "../../lib/content";
+
+export function getStaticPaths() {
+  return getDailyPosts().map((post) => ({
+    params: { slug: post.slug },
+    props: { post },
+  }));
+}
+
+const { post } = Astro.props;
+---
+
+<BaseLayout title={post.title}>
+  <article class="article-page">
+    <p class="eyebrow">{post.date}</p>
+    <div class="prose" set:html={post.html} />
+  </article>
+</BaseLayout>

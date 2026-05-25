@@ -3,6 +3,9 @@
 __pycache__/
 *.py[cod]
 .DS_Store
+node_modules/
+dist/
+.astro/
 
 # Local database/index artifacts can be regenerated from Markdown/JSONL source.
 db/*.duckdb

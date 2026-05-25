@@ -1,0 +1,50 @@
+---
+import "../styles/global.css";
+import { siteDescription } from "../lib/content";
+
+type Props = {
+  description?: string;
+  title?: string;
+};
+
+const {
+  description = siteDescription(),
+  title = "The Lumenary",
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <meta name="theme-color" content="#101512" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <title>{title === "The Lumenary" ? title : `${title} | The Lumenary`}</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="/" aria-label="The Lumenary home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>The Lumenary</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="/daily/">Daily</a>
+        <a href="/findings/">Findings</a>
+        <a href="/sources/">Sources</a>
+        <a href="/research/">Method</a>
+      </nav>
+    </header>
+    <main>
+      <slot />
+    </main>
+    <footer class="site-footer">
+      <div>
+        <strong>The Lumenary</strong>
+        <span>Recursive research in spirituality, philosophy, consciousness, and time.</span>
+      </div>
+      <a href="/rss.xml">RSS</a>
+    </footer>
+  </body>
+</html>

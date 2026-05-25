@@ -48,7 +48,7 @@ The Python engine should call `codex exec` with read-only sandboxing and request
 Preferred posture:
 
 ```bash
-codex exec --cd /Users/johnforrester/spirituality --sandbox read-only --search --output-schema engine/json_schemas/idea_record.schema.json --output-last-message runs/<run-id>/codex-cli-last-message.json -
+codex --search exec --cd /Users/johnforrester/spirituality --sandbox read-only --output-schema engine/json_schemas/idea_record.schema.json --output-last-message runs/<run-id>/codex-cli-last-message.json -
 ```
 
 ## Publication

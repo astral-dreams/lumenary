@@ -1,0 +1,27 @@
+---
+import { formatLabel, groupBy, type SourceCard } from "../lib/content";
+
+type Props = {
+  sources: SourceCard[];
+};
+
+const { sources } = Astro.props;
+const groups = groupBy(sources, (source) => source.tradition);
+const max = Math.max(...groups.map(([, cards]) => cards.length), 1);
+---
+
+<figure class="source-map" aria-label="Source foundation by tradition">
+  <figcaption>Source foundation</figcaption>
+  <div class="source-map-grid">
+    {groups.map(([tradition, cards], index) => (
+      <a
+        class={`source-node source-node-${index % 6}`}
+        href={`/sources/#${tradition}`}
+        style={`--node-size:${Math.max(34, 34 + (cards.length / max) * 52)}px`}
+      >
+        <span>{cards.length}</span>
+        <small>{formatLabel(tradition)}</small>
+      </a>
+    ))}
+  </div>
+</figure>

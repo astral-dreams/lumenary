@@ -1,0 +1,20 @@
+---
+import { formatLabel, type Scores } from "../lib/content";
+
+type Props = {
+  scores: Scores;
+};
+
+const { scores } = Astro.props;
+const entries = Object.entries(scores).sort(([a], [b]) => a.localeCompare(b));
+---
+
+<div class="score-bars" aria-label="Idea scores">
+  {entries.map(([name, value]) => (
+    <div class="score-row">
+      <span>{formatLabel(name)}</span>
+      <meter min="0" max="1" value={value}>{value}</meter>
+      <b>{value.toFixed(2)}</b>
+    </div>
+  ))}
+</div>

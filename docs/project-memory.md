@@ -30,6 +30,7 @@ Working name: Lumenary.
 - Separate analogy from evidence.
 - Use convergence across independent traditions as a signal, not proof.
 - Require critique before promoting an idea.
+- Source grounding now includes spiritual traditions, consciousness science, and high-energy physics. Physics sources should be used as empirical/formal constraints on time and matter claims, not as proof of spiritual metaphysics.
 
 ## Current Codex Position
 

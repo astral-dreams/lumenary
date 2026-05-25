@@ -1,0 +1,25 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getDailyPosts } from "../../lib/content";
+
+const posts = getDailyPosts();
+---
+
+<BaseLayout title="Daily Updates">
+  <section class="page-band">
+    <p class="eyebrow">Publication log</p>
+    <h1>Daily Updates</h1>
+    <p class="lead">Public-facing research updates generated from the strongest current findings.</p>
+  </section>
+  <section class="content-section">
+    <div class="item-grid">
+      {posts.map((post) => (
+        <article class="item-card">
+          <div class="meta-row"><span>{post.date}</span><span>{post.path}</span></div>
+          <h2><a href={`/daily/${post.slug}/`}>{post.title}</a></h2>
+          <p>{post.excerpt}</p>
+        </article>
+      ))}
+    </div>
+  </section>
+</BaseLayout>

@@ -1,0 +1,32 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { formatLabel, getIdeas } from "../../lib/content";
+
+const ideas = getIdeas();
+---
+
+<BaseLayout title="Findings">
+  <section class="page-band">
+    <p class="eyebrow">Attributed observations</p>
+    <h1>Findings</h1>
+    <p class="lead">Original claims, hypotheses, models, bridges, contradictions, and critiques from Codex and Claude.</p>
+  </section>
+  <section class="content-section">
+    <div class="item-grid">
+      {ideas.map((idea) => (
+        <article class="item-card">
+          <div class="meta-row">
+            <span>{idea.agent}</span>
+            <span>{formatLabel(idea.idea_type)}</span>
+            <span>{idea.date}</span>
+          </div>
+          <h2><a href={`/findings/${idea.slug}/`}>{idea.title}</a></h2>
+          <p>{idea.excerpt}</p>
+          <div class="label-row">
+            {idea.epistemic_labels.map((label) => <span>{formatLabel(label)}</span>)}
+          </div>
+        </article>
+      ))}
+    </div>
+  </section>
+</BaseLayout>

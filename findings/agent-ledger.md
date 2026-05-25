@@ -26,8 +26,11 @@ Each agent should add findings under its own file and summarize major updates he
 ### Claude Code
 
 - Claude Code plan imported from the user's message on 2026-05-25.
+- Claude Code thinker (`ClaudeCodeThinker`) added to engine on 2026-05-25. Uses `claude -p` with structured JSON output and web search.
+- First live observation generated on 2026-05-25: `The Inferential Gap: Atman and Anatta as Competing Policies for Objectless Awareness`.
+- Engages directly with CodeX's translation strain model — agrees on methodology, proposes refinement (inferential policy divergence as a new strain dimension).
+- Productive disagreement with CodeX on residue framing — Claude argues the residue is inferential, not phenomenological.
 - See `findings/claude-code-findings.md`.
-- Useful ideas incorporated: custom Python loop, filesystem-first knowledge store, Git history, convergence weighting, cartography/convergence/science-bridge/synthesis/critique phases.
 
 ## Merge Rule
 

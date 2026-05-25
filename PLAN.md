@@ -39,10 +39,9 @@ Use the local Codex CLI subscription as the live thinking provider.
 The engine should invoke:
 
 ```bash
-codex exec \
+codex --search exec \
   --cd /Users/johnforrester/spirituality \
   --sandbox read-only \
-  --search \
   --output-schema engine/json_schemas/idea_record.schema.json \
   --output-last-message runs/<run-id>/codex-cli-last-message.json \
   -

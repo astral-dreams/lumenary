@@ -1,0 +1,20 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getConvergenceNotes } from "../../lib/content";
+
+export function getStaticPaths() {
+  return getConvergenceNotes().map((note) => ({
+    params: { slug: note.slug },
+    props: { note },
+  }));
+}
+
+const { note } = Astro.props;
+---
+
+<BaseLayout title={note.title} description={note.excerpt}>
+  <article class="article-page">
+    <p class="eyebrow">{note.path}</p>
+    <div class="prose" set:html={note.html} />
+  </article>
+</BaseLayout>
