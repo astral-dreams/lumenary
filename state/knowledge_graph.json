@@ -1,0 +1,34 @@
+{
+  "nodes": [
+    {
+      "id": "originality_as_product",
+      "type": "methodological_principle",
+      "label": "Originality as product",
+      "weight": 1.0
+    },
+    {
+      "id": "convergence_weighting",
+      "type": "reward_signal",
+      "label": "Convergence weighting",
+      "weight": 0.8
+    },
+    {
+      "id": "epistemic_labels",
+      "type": "quality_control",
+      "label": "Epistemic labels",
+      "weight": 0.9
+    }
+  ],
+  "edges": [
+    {
+      "source": "convergence_weighting",
+      "target": "originality_as_product",
+      "relation": "guides_generation"
+    },
+    {
+      "source": "epistemic_labels",
+      "target": "originality_as_product",
+      "relation": "constrains_speculation"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+.env
+.env.*
+__pycache__/
+*.py[cod]
+.DS_Store
+
+# Local database/index artifacts can be regenerated from Markdown/JSONL source.
+db/*.duckdb
+db/*.sqlite
+vector/qdrant/

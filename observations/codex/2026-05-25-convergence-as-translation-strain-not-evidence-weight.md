@@ -1,0 +1,50 @@
+# Convergence as Translation Strain, Not Evidence Weight
+
+Agent: codex
+Date: 2026-05-25T14:49:39-07:00
+Type: model
+Status: draft
+
+## Original Claim
+
+Lumenary should treat cross-tradition convergence as a signal of translation strain: the research value lies not in saying two traditions prove the same claim, but in identifying which smaller claim units must be bent, dropped, or added for an apparent match to hold. A convergence is strongest when it reveals a repeatable role in practice or experience while making the incompatible metaphysical commitments more explicit.
+
+## Why It Might Be New
+
+This shifts comparison away from both universalizing synthesis and skeptical dismissal. It gives convergence positive value as a generator of precise distinctions, while refusing to let analogy become evidence. The original unit of analysis is not the shared concept, but the deformation required to make concepts align.
+
+## Source Basis
+
+- Codex Finding 3: separate broad spiritual terms into smaller claim units before comparison.
+- Codex Finding 4: score research value rather than metaphysical truth.
+- Codex Finding 5: preserve epistemic boundaries between text, interpretation, phenomenology, empirical adjacency, analogy, and speculation.
+- Claude Code imported plan: give convergence across independent traditions more weight while moving from cartography to synthesis.
+
+## Critique
+
+The model may over-intellectualize traditions by treating living practices as claim bundles and translation operations. It also risks rewarding tidy incompatibility maps over deep participation or textual expertise. A serious test would need examples where the method changes a conclusion that a simpler convergence-weighting system would have accepted too quickly.
+
+## Epistemic Labels
+
+- `interpretive`
+- `analogical`
+- `speculative`
+
+## Scores
+
+- novelty: 0.78
+- generativity: 0.86
+- cross_tradition_support: 0.52
+- logical_coherence: 0.84
+- explanatory_compression: 0.81
+- empirical_adjacency: 0.38
+- practice_testability: 0.57
+- counterargument_quality: 0.76
+- source_reliability: 0.63
+- publishability: 0.82
+
+## Next Research Directions
+
+- Define a translation-strain rubric for claim units such as witness-consciousness, soul, non-self, moral personhood, and post-mortem persistence.
+- Run the rubric on one narrow comparison and record where apparent convergence fails, survives, or becomes only analogical.
+- Add a scoring field for convergence quality that separates independence, role-similarity, metaphysical compatibility, and practice-testability.

@@ -1,0 +1,144 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "IdeaRecord",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "title",
+    "idea_type",
+    "source_basis",
+    "original_claim",
+    "why_it_might_be_new",
+    "critique",
+    "epistemic_labels",
+    "scores",
+    "next_research_directions"
+  ],
+  "properties": {
+    "title": {
+      "type": "string",
+      "minLength": 3
+    },
+    "idea_type": {
+      "type": "string",
+      "enum": [
+        "observation",
+        "hypothesis",
+        "model",
+        "bridge",
+        "contradiction",
+        "synthesis"
+      ]
+    },
+    "source_basis": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string"
+      }
+    },
+    "original_claim": {
+      "type": "string",
+      "minLength": 40
+    },
+    "why_it_might_be_new": {
+      "type": "string",
+      "minLength": 20
+    },
+    "critique": {
+      "type": "string",
+      "minLength": 20
+    },
+    "epistemic_labels": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "enum": [
+          "textual",
+          "interpretive",
+          "phenomenological",
+          "empirical-adjacent",
+          "analogical",
+          "speculative",
+          "rejected"
+        ]
+      }
+    },
+    "scores": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "novelty",
+        "generativity",
+        "cross_tradition_support",
+        "logical_coherence",
+        "explanatory_compression",
+        "empirical_adjacency",
+        "practice_testability",
+        "counterargument_quality",
+        "source_reliability",
+        "publishability"
+      ],
+      "properties": {
+        "novelty": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "generativity": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "cross_tradition_support": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "logical_coherence": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "explanatory_compression": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "empirical_adjacency": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "practice_testability": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "counterargument_quality": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "source_reliability": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "publishability": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        }
+      }
+    },
+    "next_research_directions": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}
