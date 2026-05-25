@@ -1,0 +1,32 @@
+{
+  "version": "2026-05-25",
+  "description": "Promotion gates for moving Lumenary observations from draft research into public claims.",
+  "blocked_statuses": ["seed-fixture", "rejected"],
+  "blocked_epistemic_labels": ["rejected"],
+  "stages": {
+    "review_candidate": {
+      "label": "Review Candidate",
+      "description": "Strong enough for internal review, but not a public claim.",
+      "source_reliability": 0.6,
+      "counterargument_quality": 0.7,
+      "publishability": 0.72,
+      "min_source_basis_items": 2
+    },
+    "public_claim": {
+      "label": "Public Claim",
+      "description": "May be presented publicly as a claim, with visible critique and epistemic labels.",
+      "source_reliability": 0.7,
+      "counterargument_quality": 0.75,
+      "publishability": 0.78,
+      "min_source_basis_items": 2
+    },
+    "synthesis_ready": {
+      "label": "Synthesis Ready",
+      "description": "Strong enough to seed a longer essay or public synthesis.",
+      "source_reliability": 0.8,
+      "counterargument_quality": 0.82,
+      "publishability": 0.85,
+      "min_source_basis_items": 4
+    }
+  }
+}

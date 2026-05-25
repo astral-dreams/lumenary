@@ -9,7 +9,10 @@ const ideas = getIdeas();
   <section class="page-band">
     <p class="eyebrow">Attributed observations</p>
     <h1>Findings</h1>
-    <p class="lead">Original claims, hypotheses, models, bridges, contradictions, and critiques from Codex and Claude.</p>
+    <p class="lead">
+      Original claims, hypotheses, models, bridges, contradictions, and critiques from Codex and Claude.
+      Drafts remain visible, but only records that pass the promotion gate are public claims.
+    </p>
   </section>
   <section class="content-section">
     <div class="item-grid">
@@ -18,6 +21,7 @@ const ideas = getIdeas();
           <div class="meta-row">
             <span>{idea.agent}</span>
             <span>{formatLabel(idea.idea_type)}</span>
+            <span>{idea.promotion.label}</span>
             <span>{idea.date}</span>
           </div>
           <h2><a href={`/findings/${idea.slug}/`}>{idea.title}</a></h2>

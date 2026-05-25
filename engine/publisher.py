@@ -8,6 +8,7 @@ from typing import Any
 
 from .config import EngineConfig
 from .librarian import Librarian
+from .promotion import PromotionDecision, decide_promotion, load_promotion_rules
 from .schemas import slugify
 
 
@@ -27,26 +28,39 @@ def _publishability_score(record: dict[str, Any]) -> float:
     return float((record.get("scores") or {}).get("publishability", 0.0))
 
 
-def _best_idea_path(root: Path) -> Path | None:
+def _score(record: dict[str, Any], key: str) -> float:
+    return float((record.get("scores") or {}).get(key, 0.0))
+
+
+def _best_public_record(root: Path) -> tuple[dict[str, Any], PromotionDecision] | None:
+    rules = load_promotion_rules()
     records = [
         record
         for record in _read_idea_records(root)
         if record.get("path") and (root / str(record["path"])).exists()
     ]
     if not records:
-        observation_paths = list((root / "observations").glob("*/*.md"))
-        if not observation_paths:
-            return None
-        return max(observation_paths, key=lambda path: path.stat().st_mtime)
+        return None
 
-    best = max(
-        records,
-        key=lambda record: (
-            _publishability_score(record),
-            str(record.get("created_at", "")),
+    public_records: list[tuple[dict[str, Any], PromotionDecision]] = []
+    for record in records:
+        decision = decide_promotion(record, rules)
+        if decision.public_claim:
+            public_records.append((record, decision))
+
+    if not public_records:
+        return None
+
+    return max(
+        public_records,
+        key=lambda item: (
+            int(item[1].synthesis_ready),
+            _score(item[0], "source_reliability"),
+            _score(item[0], "counterargument_quality"),
+            _publishability_score(item[0]),
+            str(item[0].get("created_at", "")),
         ),
     )
-    return root / str(best["path"])
 
 
 def _title_from_markdown(content: str, fallback: str) -> str:
@@ -79,20 +93,25 @@ def generate_daily_update(config: EngineConfig) -> tuple[Path, Path]:
     librarian = Librarian(config.root)
     librarian.ensure_workspace()
 
-    latest = _best_idea_path(config.root)
-    if latest is None:
-        raise FileNotFoundError("No observations found for publication.")
+    selected = _best_public_record(config.root)
+    if selected is None:
+        raise FileNotFoundError("No idea records satisfy the public-claim promotion gate.")
 
+    record, decision = selected
+    latest = config.root / str(record["path"])
     content = latest.read_text(encoding="utf-8")
     title = _title_from_markdown(content, latest.stem)
     claim = _section(content, "Original Claim")
     critique = _section(content, "Critique")
     labels = _section(content, "Epistemic Labels")
+    scores = record.get("scores") or {}
+    promotion_reasons = "\n".join(f"- {reason}" for reason in decision.reasons)
 
     today = datetime.now().astimezone().strftime("%Y-%m-%d")
     daily_content = f"""# {today}: {title}
 
 Source observation: `{latest.relative_to(config.root)}`
+Promotion stage: {decision.label}
 
 ## Finding
 
@@ -102,6 +121,14 @@ Source observation: `{latest.relative_to(config.root)}`
 
 {labels}
 
+## Promotion Gate
+
+- source_reliability: {float(scores.get("source_reliability", 0.0)):.2f}
+- counterargument_quality: {float(scores.get("counterargument_quality", 0.0)):.2f}
+- publishability: {float(scores.get("publishability", 0.0)):.2f}
+
+{promotion_reasons}
+
 ## Current Critique
 
 {critique}
@@ -109,12 +136,13 @@ Source observation: `{latest.relative_to(config.root)}`
     daily_path = librarian.write_text(f"publication/daily/{today}-{slugify(title)}.md", daily_content)
 
     post_text = _clip_at_word(
-        f"{title}: {claim} Epistemic status: draft, under critique.",
+        f"{title}: {claim} Epistemic status: {decision.label.lower()}, under critique.",
         275,
     )
     x_draft = f"""# X Draft: {title}
 
-Status: draft
+Status: queued for human review
+Promotion stage: {decision.label}
 Source: `{daily_path.relative_to(config.root)}`
 
 {post_text}

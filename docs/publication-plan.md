@@ -17,14 +17,14 @@ Core sections:
 - synthesis essays
 - source cards
 
-Every public idea should show epistemic status so readers can distinguish sourced claims, interpretation, analogy, and speculation.
+Every public idea should show epistemic status so readers can distinguish sourced claims, interpretation, analogy, and speculation. Draft observations remain research artifacts; they do not become public claims unless they pass `config/promotion-rules.json`.
 
 ## Daily Update Job
 
 The daily job should:
 
 1. Read recent observations, hypotheses, and syntheses.
-2. Select the strongest publishable item.
+2. Select the strongest item that passes the Public Claim promotion gate.
 3. Write a dated Markdown file under `publication/daily/`.
 4. Generate a short website summary.
 5. Generate one or more X drafts under `publication/x/queue/`.
@@ -50,5 +50,15 @@ Credential names should be environment variables, not files:
 - `X_ACCESS_TOKEN_SECRET`
 
 Before enabling auto-posting, add a final approval gate and rate-limit logging.
+
+## Promotion Gate
+
+The current thresholds are documented in `docs/promotion-rules.md` and enforced by `engine/promotion.py`.
+
+- Review Candidate: source reliability >= 0.60, counterargument quality >= 0.70, publishability >= 0.72.
+- Public Claim: source reliability >= 0.70, counterargument quality >= 0.75, publishability >= 0.78.
+- Synthesis Ready: source reliability >= 0.80, counterargument quality >= 0.82, publishability >= 0.85.
+
+Fixtures, rejected records, and records with too little source basis stay draft regardless of score.
 
 Reference checked: https://docs.x.com/x-api/posts/manage-tweets/introduction

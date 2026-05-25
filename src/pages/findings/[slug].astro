@@ -16,7 +16,7 @@ const { idea } = Astro.props;
 <BaseLayout title={idea.title} description={idea.excerpt}>
   <article class="article-page">
     <header class="article-header">
-      <p class="eyebrow">{idea.agent} / {formatLabel(idea.idea_type)} / {idea.status}</p>
+      <p class="eyebrow">{idea.agent} / {formatLabel(idea.idea_type)} / {idea.promotion.label}</p>
       <h1>{idea.title}</h1>
       <p class="lead">{idea.original_claim}</p>
       <div class="label-row">
@@ -32,6 +32,17 @@ const { idea } = Astro.props;
     <section class="article-section">
       <h2>Critique</h2>
       <p>{idea.critique}</p>
+    </section>
+
+    <section class="article-section">
+      <h2>Promotion Gate</h2>
+      <p>
+        Status: {idea.promotion.publicClaim ? "Promoted public claim" : "Not promoted as a public claim"}.
+        Source reliability, counterargument quality, and publishability determine whether this can be featured.
+      </p>
+      <ul class="clean-list">
+        {idea.promotion.reasons.map((reason) => <li>{reason}</li>)}
+      </ul>
     </section>
 
     <section class="article-section">

@@ -11,6 +11,31 @@ const root = process.cwd();
 
 export type Scores = Record<string, number>;
 
+export type PromotionStageRule = {
+  counterargument_quality: number;
+  description: string;
+  label: string;
+  min_source_basis_items: number;
+  publishability: number;
+  source_reliability: number;
+};
+
+export type PromotionRules = {
+  blocked_epistemic_labels: string[];
+  blocked_statuses: string[];
+  description: string;
+  stages: Record<string, PromotionStageRule>;
+  version: string;
+};
+
+export type PromotionDecision = {
+  label: string;
+  publicClaim: boolean;
+  reasons: string[];
+  stage: string;
+  synthesisReady: boolean;
+};
+
 export type IdeaRecord = {
   agent: "codex" | "claude" | string;
   created_at: string;
@@ -32,6 +57,7 @@ export type IdeaView = IdeaRecord & {
   date: string;
   excerpt: string;
   html: string;
+  promotion: PromotionDecision;
   relativePath: string;
   slug: string;
 };
@@ -79,6 +105,91 @@ function readJsonl<T>(relativePath: string): T[] {
     .map((line) => line.trim())
     .filter(Boolean)
     .map((line) => JSON.parse(line) as T);
+}
+
+export function getPromotionRules(): PromotionRules {
+  return JSON.parse(readText("config/promotion-rules.json")) as PromotionRules;
+}
+
+const stageOrder = ["review_candidate", "public_claim", "synthesis_ready"];
+
+function score(record: IdeaRecord, key: string): number {
+  return Number(record.scores?.[key] || 0);
+}
+
+function sourceBasisCount(record: IdeaRecord): number {
+  return (record.source_basis || []).filter((item) => item.trim().length > 0).length;
+}
+
+function stageFailures(record: IdeaRecord, stage?: PromotionStageRule): string[] {
+  if (!stage) {
+    return ["promotion rule is missing"];
+  }
+
+  const failures: string[] = [];
+  for (const key of ["source_reliability", "counterargument_quality", "publishability"] as const) {
+    const value = score(record, key);
+    const threshold = stage[key];
+    if (value < threshold) {
+      failures.push(`${formatLabel(key)} ${value.toFixed(2)} below ${threshold.toFixed(2)}`);
+    }
+  }
+
+  const count = sourceBasisCount(record);
+  if (count < stage.min_source_basis_items) {
+    failures.push(`source basis count ${count} below ${stage.min_source_basis_items}`);
+  }
+  return failures;
+}
+
+export function decideIdeaPromotion(
+  record: IdeaRecord,
+  rules: PromotionRules = getPromotionRules(),
+): PromotionDecision {
+  const blockedStatus = rules.blocked_statuses.includes(record.status);
+  const blockedLabels = record.epistemic_labels.filter((label) =>
+    rules.blocked_epistemic_labels.includes(label),
+  );
+
+  if (blockedStatus || blockedLabels.length > 0) {
+    return {
+      label: "Draft",
+      publicClaim: false,
+      reasons: [
+        ...(blockedStatus ? [`blocked status: ${record.status}`] : []),
+        ...blockedLabels.map((label) => `blocked epistemic label: ${label}`),
+      ],
+      stage: "draft",
+      synthesisReady: false,
+    };
+  }
+
+  let selectedStage = "draft";
+  let selectedLabel = "Draft";
+  let reasons = stageFailures(record, rules.stages.review_candidate);
+
+  for (const stageName of stageOrder) {
+    const stage = rules.stages[stageName];
+    const failures = stageFailures(record, stage);
+    if (failures.length > 0) {
+      reasons =
+        selectedStage === "draft"
+          ? failures
+          : [`meets ${selectedLabel} thresholds`, ...failures.map((failure) => `next gate: ${failure}`)];
+      break;
+    }
+    selectedStage = stageName;
+    selectedLabel = stage.label;
+    reasons = [`meets ${selectedLabel} thresholds`];
+  }
+
+  return {
+    label: selectedLabel,
+    publicClaim: selectedStage === "public_claim" || selectedStage === "synthesis_ready",
+    reasons,
+    stage: selectedStage,
+    synthesisReady: selectedStage === "synthesis_ready",
+  };
 }
 
 function listMarkdown(relativeDir: string): string[] {
@@ -167,6 +278,7 @@ ${record.critique}
 }
 
 export function getIdeas(): IdeaView[] {
+  const promotionRules = getPromotionRules();
   return readJsonl<IdeaRecord>("hypotheses/ideas.jsonl")
     .map((record) => {
       const date = record.created_at.slice(0, 10);
@@ -177,6 +289,7 @@ export function getIdeas(): IdeaView[] {
         date,
         excerpt: excerpt(record.original_claim),
         html: renderMarkdown(markdown),
+        promotion: decideIdeaPromotion(record, promotionRules),
         relativePath: record.path || "",
         slug: `${date}-${slugify(record.title)}${suffix}`,
       };
@@ -245,6 +358,7 @@ export function formatLabel(value: string): string {
 
 export function topIdeas(limit = 6): IdeaView[] {
   return [...getIdeas()]
+    .filter((idea) => idea.promotion.publicClaim)
     .sort((a, b) => (b.scores.publishability || 0) - (a.scores.publishability || 0))
     .slice(0, limit);
 }
@@ -263,6 +377,7 @@ export function researchStats() {
     daily: daily.length,
     ideas: ideas.length,
     labels: labels.size,
+    publicClaims: ideas.filter((idea) => idea.promotion.publicClaim).length,
     sources: sources.length,
   };
 }

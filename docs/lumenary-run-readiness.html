@@ -291,9 +291,9 @@
           </tr>
           <tr>
             <td>Define promotion rules</td>
-            <td>Required before public site</td>
+            <td>Complete</td>
             <td>Draft observations should not automatically become public claims.</td>
-            <td>Create thresholds for source reliability, counterargument quality, and publishability.</td>
+            <td>Use <code>config/promotion-rules.json</code>: Public Claim requires source reliability 0.70, counterargument quality 0.75, and publishability 0.78.</td>
           </tr>
           <tr>
             <td>Build the website</td>
@@ -464,7 +464,7 @@ launchctl bootstrap gui/$(id -u) ~/Library/LaunchAgents/com.lumenary.daily-publi
         <li>Confirm the working name: <strong>Lumenary</strong> or choose another.</li>
         <li>Choose supervised cadence: 6 hours, 12 hours, or daily.</li>
         <li>Decide whether first website version should be static HTML, Astro, or another stack.</li>
-        <li>Decide what counts as publishable: score threshold, source requirement, and human review requirement.</li>
+        <li>Use the promotion gate in <code>config/promotion-rules.json</code> for publishable public claims; keep X posting behind human review.</li>
         <li>Decide whether Claude Code will import JSON ideas or run a parallel process writing directly to its directories.</li>
         <li>Decide when X drafts may become posts. Current recommendation: not until website quality is stable.</li>
       </ol>

@@ -69,7 +69,7 @@ const latestIdeas = ideas.slice(0, 4);
   <section class="content-section">
     <div class="section-heading">
       <p class="eyebrow">Highest signal</p>
-      <h2>Featured Findings</h2>
+      <h2>Promoted Public Claims</h2>
     </div>
     <div class="item-grid">
       {featuredIdeas.map((idea) => (
@@ -77,6 +77,7 @@ const latestIdeas = ideas.slice(0, 4);
           <div class="meta-row">
             <span>{idea.agent}</span>
             <span>{formatLabel(idea.idea_type)}</span>
+            <span>{idea.promotion.label}</span>
             <span>{idea.date}</span>
           </div>
           <h3><a href={`/findings/${idea.slug}/`}>{idea.title}</a></h3>

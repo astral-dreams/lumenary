@@ -15,6 +15,7 @@ Working project name: Lumenary.
 - Keep epistemic labels explicit: `textual`, `interpretive`, `phenomenological`, `empirical-adjacent`, `analogical`, `speculative`, and `rejected`.
 - Do not conflate spiritual claims with scientific claims. Mark parallels as analogical unless stronger evidence is available.
 - Every serious idea needs a critique, scores, and next research directions.
+- Do not treat draft observations as public claims. Promotion requires the shared gate in `config/promotion-rules.json`.
 - High-energy physics sources are available for time and matter grounding. Use them as empirical/formal constraints, especially around Standard Model fields, Higgs/QCD mass, antimatter asymmetry, relativity, Noether symmetry, T-violation, and quantum-gravity time.
 
 ## Live Provider Direction
@@ -33,7 +34,7 @@ Preferred child-agent posture:
 
 Wire the continuous loop so it can repeatedly generate, critique, store, and revisit original ideas.
 
-The next product layer is a public website with daily updates. Daily publication artifacts should live under `publication/daily/`. X/social drafts should live under `publication/x/queue/` and require human review before posting.
+The next product layer is a public website with daily updates. Daily publication artifacts should live under `publication/daily/`. X/social drafts should live under `publication/x/queue/` and require human review before posting. The daily publisher should only promote records that pass the Public Claim threshold.
 
 ## Claude Code Interop
 
