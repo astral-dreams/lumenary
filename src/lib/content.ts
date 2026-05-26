@@ -36,6 +36,76 @@ export type PromotionDecision = {
   synthesisReady: boolean;
 };
 
+export type OriginalityStatus =
+  | "known"
+  | "renamed"
+  | "extended"
+  | "novel_synthesis"
+  | "candidate_discovery"
+  | "strong_original_contribution"
+  | "rejected"
+  | "audit_incomplete";
+
+export type OriginalityNearNeighbor = {
+  source: string;
+  overlap: string;
+  difference: string;
+  novelty_impact: string;
+};
+
+export type OriginalityPrediction = {
+  if_model_is_right: string;
+  expected_observation: string;
+  would_weaken_or_falsify: string;
+  test_surface: string;
+};
+
+export type OriginalityAudit = {
+  agent: string;
+  anomaly_probe?: {
+    anomaly_candidate?: string;
+    why_it_breaks_or_strains_model?: string;
+    confidence_effect?: string;
+  };
+  audit_id: string;
+  confidence: number;
+  created_at: string;
+  cross_domain_prediction?: {
+    domain?: string;
+    structural_translation?: string;
+    prediction?: string;
+    would_count_against_it?: string;
+  };
+  exact_claim: string;
+  falsifiable_predictions?: OriginalityPrediction[];
+  idea_id: string;
+  literature_search_queries?: string[];
+  markdown_path?: string;
+  near_neighbors?: OriginalityNearNeighbor[];
+  novelty_adjustment?: string;
+  originality_status: OriginalityStatus;
+  path?: string;
+  practitioner_test?: {
+    relevant_practitioners?: string[];
+    questions?: string[];
+    answers_that_reduce_originality?: string;
+    answers_that_support_contribution?: string;
+  };
+  recommended_scores?: {
+    novelty?: number;
+    source_reliability?: number;
+    counterargument_quality?: number;
+  };
+  title: string;
+  unlike_statement?: string;
+};
+
+export type OriginalityAuditView = OriginalityAudit & {
+  confidenceLabel: string;
+  label: string;
+  summary: string;
+};
+
 export type IdeaRecord = {
   agent: "codex" | "claude" | string;
   created_at: string;
@@ -62,6 +132,8 @@ export type IdeaView = IdeaRecord & {
   html: string;
   insight: string;
   insightScore: number;
+  legacySlugs: string[];
+  originalityAudit: OriginalityAuditView | null;
   plainSummary: string;
   promotion: PromotionDecision;
   relativePath: string;
@@ -90,6 +162,7 @@ export type DailyPost = {
   date: string;
   excerpt: string;
   html: string;
+  legacySlugs: string[];
   path: string;
   slug: string;
   title: string;
@@ -135,6 +208,7 @@ export type SourceCard = {
 export type TextNote = {
   excerpt: string;
   html: string;
+  legacySlugs: string[];
   path: string;
   slug: string;
   title: string;
@@ -181,6 +255,69 @@ function readJson<T>(relativePath: string, fallback: T): T {
     return fallback;
   }
   return JSON.parse(text) as T;
+}
+
+function originalityStatusLabel(status: string): string {
+  const labels: Record<string, string> = {
+    audit_incomplete: "Audit incomplete",
+    candidate_discovery: "Candidate discovery",
+    extended: "Extended prior work",
+    known: "Known prior work",
+    novel_synthesis: "Novel synthesis",
+    rejected: "Rejected",
+    renamed: "Renamed prior work",
+    strong_original_contribution: "Strong original contribution",
+  };
+  return labels[status] || formatLabel(status);
+}
+
+function auditSummary(audit: OriginalityAudit): string {
+  if (audit.originality_status === "audit_incomplete") {
+    return "The originality check has not finished, so this finding should be treated as a draft until prior art, anomalies, and tests are reviewed.";
+  }
+  if (audit.originality_status === "candidate_discovery") {
+    return "The audit did not find a close prior match and found tests that could make the claim stronger or break it.";
+  }
+  if (audit.originality_status === "strong_original_contribution") {
+    return "The audit marks this as an unusually strong original candidate, with clear differences from prior work and tests that can travel beyond the first domain.";
+  }
+  if (audit.originality_status === "novel_synthesis") {
+    return "The audit treats this as a new joining of known pieces, not a claim that no one has seen any part of it before.";
+  }
+  if (audit.originality_status === "extended") {
+    return "The audit found strong prior neighbors, but also found a narrower contribution that may still be worth developing.";
+  }
+  if (audit.originality_status === "renamed" || audit.originality_status === "known") {
+    return "The audit found close prior work, so the value here is clarity or application rather than discovery.";
+  }
+  if (audit.originality_status === "rejected") {
+    return "The audit found enough strain that this should remain a rejected or cautionary note unless later evidence revives it.";
+  }
+  return audit.novelty_adjustment || audit.exact_claim;
+}
+
+function originalityAuditMap(): Map<string, OriginalityAuditView> {
+  const audits = readJsonl<OriginalityAudit>("reviews/originality/audits.jsonl");
+  const byIdea = new Map<string, OriginalityAuditView>();
+  for (const audit of audits) {
+    if (!audit.idea_id) {
+      continue;
+    }
+    const existing = byIdea.get(audit.idea_id);
+    if (existing && existing.originality_status !== "audit_incomplete" && audit.originality_status === "audit_incomplete") {
+      continue;
+    }
+    if (existing && existing.created_at > audit.created_at) {
+      continue;
+    }
+    byIdea.set(audit.idea_id, {
+      ...audit,
+      confidenceLabel: Number(audit.confidence || 0).toFixed(2),
+      label: originalityStatusLabel(audit.originality_status),
+      summary: auditSummary(audit),
+    });
+  }
+  return byIdea;
 }
 
 export function getPromotionRules(): PromotionRules {
@@ -287,6 +424,69 @@ export function slugify(value: string): string {
     .trim()
     .replace(/[\s_-]+/g, "-")
     .replace(/^-+|-+$/g, "");
+}
+
+const slugStopWords = new Set([
+  "a",
+  "an",
+  "and",
+  "are",
+  "as",
+  "at",
+  "be",
+  "by",
+  "does",
+  "for",
+  "from",
+  "has",
+  "how",
+  "in",
+  "into",
+  "is",
+  "it",
+  "its",
+  "of",
+  "on",
+  "or",
+  "own",
+  "that",
+  "the",
+  "this",
+  "to",
+  "what",
+  "when",
+  "where",
+  "which",
+  "who",
+  "why",
+  "with",
+]);
+
+function shortContentSlug(title: string, maxWords = 7, maxLength = 64): string {
+  const full = slugify(title);
+  const words = full.split("-").filter(Boolean);
+  const meaningful = words.filter((word) => !slugStopWords.has(word));
+  let selected = (meaningful.length >= 2 ? meaningful : words).slice(0, maxWords);
+
+  while (selected.length > 3 && selected.join("-").length > maxLength) {
+    selected = selected.slice(0, -1);
+  }
+
+  let candidate = selected.join("-") || full;
+  if (candidate.length > maxLength) {
+    candidate = candidate.slice(0, maxLength).replace(/-[^-]*$/, "");
+  }
+  return candidate || "untitled";
+}
+
+function titleWithoutDatePrefix(title: string): string {
+  return title.replace(/^\s*\d{4}-\d{2}-\d{2}\s*[:|-]?\s*/i, "").trim();
+}
+
+function uniqueSlug(base: string, used: Map<string, number>): string {
+  const count = used.get(base) || 0;
+  used.set(base, count + 1);
+  return count === 0 ? base : `${base}-${count + 1}`;
 }
 
 function markdownTitle(markdown: string, fallback: string): string {
@@ -747,12 +947,16 @@ ${record.critique}
 
 export function getIdeas(): IdeaView[] {
   const promotionRules = getPromotionRules();
+  const audits = originalityAuditMap();
+  const usedSlugs = new Map<string, number>();
   return readJsonl<IdeaRecord>("hypotheses/ideas.jsonl")
     .map((record) => {
       const date = record.created_at.slice(0, 10);
       const markdown = ideaMarkdown(record);
       const publicArticle = markdownSection(markdown, "Public Article");
       const suffix = record.idea_id ? `-${record.idea_id.slice(0, 6)}` : "";
+      const legacySlug = `${date}-${slugify(record.title)}${suffix}`;
+      const slug = uniqueSlug(shortContentSlug(record.title, 5, 54), usedSlugs);
       const promotion = decideIdeaPromotion(record, promotionRules);
       const distillation = distillationFor(record);
       const traditionTags = inferTraditionTags(record, distillation?.tags || []);
@@ -768,11 +972,13 @@ export function getIdeas(): IdeaView[] {
         html: renderMarkdown(markdown),
         insight: distillation?.insight || firstSentence(record.why_it_might_be_new || record.original_claim, 96),
         insightScore: insightScore(record, promotion),
+        legacySlugs: legacySlug === slug ? [] : [legacySlug],
+        originalityAudit: audits.get(record.idea_id) || null,
         originalClaimHtml: renderMarkdown(record.original_claim),
         plainSummary: cleanPlainSummary(plainSummary),
         promotion,
         relativePath: record.path || "",
-        slug: `${date}-${slugify(record.title)}${suffix}`,
+        slug,
         traditionTags,
         whyItMightBeNewHtml: renderMarkdown(record.why_it_might_be_new),
       };
@@ -809,19 +1015,23 @@ export function getInsights(): InsightView[] {
 }
 
 export function getDailyPosts(): DailyPost[] {
+  const usedSlugs = new Map<string, number>();
   return listMarkdown("publication/daily")
     .map((path) => {
       const markdown = readText(path);
       const fileSlug = basename(path, ".md");
       const date = fileSlug.slice(0, 10);
+      const title = markdownTitle(markdown, fileSlug);
+      const slug = uniqueSlug(`${date}-${shortContentSlug(titleWithoutDatePrefix(title), 3, 34)}`, usedSlugs);
       const updated = statSync(join(root, path)).mtimeMs;
       return {
         date,
         excerpt: excerpt(markdownSection(markdown, "Finding") || markdown),
         html: renderMarkdown(markdown),
+        legacySlugs: fileSlug === slug ? [] : [fileSlug],
         path,
-        slug: fileSlug,
-        title: markdownTitle(markdown, fileSlug),
+        slug,
+        title,
         updated,
       };
     })
@@ -829,19 +1039,23 @@ export function getDailyPosts(): DailyPost[] {
 }
 
 export function getJournalPosts(): JournalPost[] {
+  const usedSlugs = new Map<string, number>();
   return listMarkdown("publication/journal")
     .map((path) => {
       const markdown = readText(path);
       const fileSlug = basename(path, ".md");
       const date = fileSlug.slice(0, 10);
+      const title = markdownTitle(markdown, fileSlug);
+      const slug = uniqueSlug(shortContentSlug(titleWithoutDatePrefix(title), 5, 52), usedSlugs);
       const updated = statSync(join(root, path)).mtimeMs;
       return {
         date,
         excerpt: excerpt(markdownBody(markdown)),
         html: renderMarkdown(markdown),
+        legacySlugs: fileSlug === slug ? [] : [fileSlug],
         path,
-        slug: fileSlug,
-        title: markdownTitle(markdown, fileSlug),
+        slug,
+        title,
         updated,
       };
     })
@@ -981,16 +1195,20 @@ export function getConceptGraph(): ConceptGraph {
 }
 
 export function getConvergenceNotes(): TextNote[] {
+  const usedSlugs = new Map<string, number>();
   return listMarkdown("findings/convergences")
     .map((path) => {
       const markdown = readText(path);
-      const slug = basename(path, ".md");
+      const fileSlug = basename(path, ".md");
+      const title = markdownTitle(markdown, fileSlug);
+      const slug = uniqueSlug(shortContentSlug(titleWithoutDatePrefix(title), 4, 48), usedSlugs);
       return {
         excerpt: excerpt(markdown),
         html: renderMarkdown(markdown),
+        legacySlugs: fileSlug === slug ? [] : [fileSlug],
         path,
         slug,
-        title: markdownTitle(markdown, slug),
+        title,
       };
     })
     .sort((a, b) => b.slug.localeCompare(a.slug));

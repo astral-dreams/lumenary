@@ -14,7 +14,7 @@ from .config import EngineConfig
 from .distill import distill_new_ideas
 from .growth import record_growth
 from .librarian import Librarian
-from .originality_audit import audit_new_ideas
+from .originality_audit import audit_new_ideas, write_incomplete_audits
 from .prompts import build_claude_collaborative_prompt, build_originality_prompt
 from .publisher import generate_daily_update
 from .run import _gather_codex_observations, build_run_id
@@ -419,12 +419,20 @@ def main() -> None:
                         flush=True,
                     )
                 except Exception as exc:
+                    fallback_count = write_incomplete_audits(
+                        root,
+                        [item.idea for item in generated],
+                        run_ids=[item.manifest.run_id for item in generated],
+                        execution_id=execution_id,
+                        reason=repr(exc),
+                    )
                     librarian.append_jsonl(
                         "runs/originality-audit-errors.jsonl",
                         {
                             "at": now_local_iso(),
                             "error": repr(exc),
                             "execution_id": execution_id,
+                            "fallback_count": fallback_count,
                             "titles": [item.idea.title for item in generated],
                         },
                     )
@@ -433,6 +441,7 @@ def main() -> None:
                             {
                                 "event": "originality-audit-error",
                                 "error": repr(exc),
+                                "fallback_count": fallback_count,
                             },
                             sort_keys=True,
                         ),

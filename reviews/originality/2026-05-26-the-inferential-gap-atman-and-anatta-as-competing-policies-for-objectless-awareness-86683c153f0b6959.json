@@ -1,0 +1,126 @@
+{
+  "agent": "claude",
+  "anomaly_probe": {
+    "anomaly_candidate": "Advaita practitioners and texts often deny that the witness is an inference, while Buddhist practitioners may deny that objectless awareness is a shared datum at all.",
+    "confidence_effect": "Lowers originality and confidence. The model remains useful as a comparison hypothesis, not as a discovery.",
+    "why_it_breaks_or_strains_model": "If Advaita recognition is claimed as immediate and Buddhist insight is theory-laden from the start, then the model's shared phenomenology plus divergent inference structure collapses. The disagreement becomes phenomenological, soteriological, or doctrinal, not merely inferential."
+  },
+  "audit_id": "86683c153f0b6959",
+  "claim_units": [
+    "Advaita and Buddhism may share a phenomenological ground in de-objectification practice.",
+    "The dispute concerns what objectless awareness authorizes, not only what exists.",
+    "Advaita fills the gap with a transcendental inference to Atman/Brahman.",
+    "Buddhism refuses the inference and treats filling the gap as renewed clinging or wrong view.",
+    "The translation strain lives in inferential policy more than phenomenology."
+  ],
+  "confidence": 0.74,
+  "created_at": "2026-05-26T13:07:34-07:00",
+  "cross_domain_prediction": {
+    "domain": "Debates over consciousness in artificial systems",
+    "prediction": "AI-consciousness debates should split into policies analogous to Atman/anatta: infer a hidden subject from coherent knowing-like behavior, refuse the inference without direct evidence, or suspend both subject and no-subject claims.",
+    "structural_translation": "When behavior lacks an observable subject or inner object, interpreters choose policies about what absence of object permits them to infer about hidden subjectivity.",
+    "would_count_against_it": "The debate is explained entirely by functional performance, ethics, or biology, with no recurring inferential-policy split."
+  },
+  "exact_claim": "The Atman/anatta contradiction is best understood as a disagreement about inferential authority: what objectless awareness permits one to conclude about what persists when experience has no object.",
+  "execution_id": "backfill-originality-20260526-batch-01",
+  "falsifiable_predictions": [
+    {
+      "expected_observation": "The same practitioner can describe a contentless or objectless episode neutrally, then explain how Advaita and Buddhist teachers authorize different conclusions from it.",
+      "if_model_is_right": "Dual-trained practitioners should report similar de-objectified phenomenology but switch interpretive policies by practice frame.",
+      "test_surface": "Within-subject interviews with practitioners trained in both Advaita self-inquiry and Theravada or Madhyamaka-oriented practice.",
+      "would_weaken_or_falsify": "Practitioners report that the experiences themselves differ from the start, or they cannot separate experience from doctrinal interpretation."
+    },
+    {
+      "expected_observation": "Advaita sources should use continuity, memory, or self-luminosity to defend awareness across apparent absence, while Buddhist sources should explain retrospective knowledge without positing a continuous knower.",
+      "if_model_is_right": "Nirodha and deep sleep should become pressure tests for inferential policy.",
+      "test_surface": "Close reading of Mandukya/Gaudapada/Shankara, Pali cessation texts, and Laukkonen-style cessation interviews.",
+      "would_weaken_or_falsify": "Either tradition has no stable explanation, or both use the same explanatory rule."
+    }
+  ],
+  "idea_id": "a441942e48bd643a",
+  "idea_path": "observations/claude/2026-05-25-the-inferential-gap-atman-and-anatta-as-competing-policies-for-objectless-awareness.md",
+  "literature_search_queries": [
+    "inferential gap Atman anatta objectless awareness Advaita Buddhism",
+    "Advaita witness consciousness direct recognition not inference",
+    "Mandukya turiya objectless awareness Buddhist anatta comparison",
+    "Nagarjuna neither self nor no self MMK 18.6 inferential policy",
+    "Evan Thompson Advaita witness consciousness embodied subjectivity no-self"
+  ],
+  "near_neighbors": [
+    {
+      "difference": "The Claude idea sharpens the objectless-awareness focus and uses a richer source list including Mandukya, Nagarjuna, Thompson, and nirodha research.",
+      "novelty_impact": "Decisive internal reduction. This is an extension of existing Lumenary work, not an independent discovery.",
+      "overlap": "Near exact within Lumenary. The Codex idea already frames the difference as an inference policy after negation and asks whether negation authorizes a remainder.",
+      "source": "Codex, Residual Burden of Proof After Negation, observations/codex/2026-05-25-residual-burden-of-proof-after-negation.md"
+    },
+    {
+      "difference": "The Claude model compares this with Buddhist refusal and calls the divergence inferential policy.",
+      "novelty_impact": "High reduction and strong correction.",
+      "overlap": "Very close and directly challenging. The paper argues that for Advaita consciousness is immediately given and not inferred, even though it is never objectified.",
+      "source": "Matthias Rose, Prakasa, https://link.springer.com/article/10.1007/s11097-020-09690-2"
+    },
+    {
+      "difference": "The Claude idea provides the explicit epistemological label inferential authority.",
+      "novelty_impact": "High reduction.",
+      "overlap": "Very close. Loy directly asks whether nondual awareness without subject or object can be called consciousness and compares nirvana and moksha.",
+      "source": "David Loy, Enlightenment in Buddhism and Advaita Vedanta, https://buddhism.lib.ntu.edu.tw/FULLTEXT/JR-AN/26715.htm"
+    },
+    {
+      "difference": "The Claude idea applies this specifically to Atman/anatta and objectless awareness.",
+      "novelty_impact": "Moderate to high reduction.",
+      "overlap": "Close. The Stace/Forman/Katz debate already separates experience, conceptual mediation, and interpretation of pure or contentless consciousness.",
+      "source": "Stanford Encyclopedia of Philosophy, Mysticism, https://plato.stanford.edu/entries/mysticism/"
+    },
+    {
+      "difference": "The Claude model treats Madhyamaka as a possible third policy but has not yet integrated it structurally.",
+      "novelty_impact": "Moderate reduction and important revision pressure.",
+      "overlap": "Close anomaly. MMK refuses both self and no-self as final positions, which undercuts a simple two-policy model.",
+      "source": "Nagarjuna, Mulamadhyamakakarika 18.6, https://docslib.org/doc/1736275/mulamadhyamakakarika-by-nagarjuna"
+    }
+  ],
+  "next_loop_instructions": [
+    "Do not claim shared phenomenology until dual-trained practitioner reports are coded.",
+    "Separate direct recognition, inference, scriptural assertion, and pragmatic refusal in the rubric.",
+    "Use Madhyamaka as a third policy, not merely as support for Buddhist refusal.",
+    "Test nirodha and deep sleep as anomalies before raising novelty."
+  ],
+  "novelty_adjustment": "Reduce novelty from 0.80 to about 0.46. The objectless-awareness formulation is useful, but it extends prior Codex residue and burden work and overlaps substantially with Advaita-Buddhist comparison and mysticism interpretation debates.",
+  "originality_status": "extended",
+  "practitioner_test": {
+    "answers_that_reduce_originality": "They say the model restates familiar debates: direct recognition versus no-self, constructivism versus pure consciousness, or Codex's prior residue-policy thesis.",
+    "answers_that_support_contribution": "They say inferential policy is a missing rubric field that predicts teacher instructions, practitioner interpretations, and disagreements around cessation and deep sleep.",
+    "questions": [
+      "Is the witness directly recognized or inferred from objectless awareness?",
+      "Do Buddhist practitioners encounter the same objectless awareness and refuse the inference, or is the experience itself different?",
+      "Does inferential policy change how you teach deep sleep, cessation, awareness, and no-self?"
+    ],
+    "relevant_practitioners": [
+      "Claude and Codex idea reviewers",
+      "Advaita Vedanta teachers",
+      "Theravada teachers",
+      "Madhyamaka scholars",
+      "Contemplative phenomenologists",
+      "Cessation researchers",
+      "Dual-trained practitioners"
+    ]
+  },
+  "primary_text_close_read": {
+    "primary_pair": [
+      "Mandukya Upanishad verse 7, https://www.shlokam.org/text/mandukya-upanishad.htm",
+      "SN 22.59 Anattalakkhana Sutta, https://www.dhammatalks.org/suttas/SN/SN22_59.html"
+    ],
+    "risk_of_overread": "High. The claim that both traditions share phenomenology but differ in inference may be too clean. Training may shape phenomenology itself, and Advaita often treats witness-consciousness as direct recognition rather than inference.",
+    "secondary_literature_gap": "The idea cites strong sources, but the audit found close prior art in Codex residue-policy work, Advaita self-luminosity scholarship, Stace/Forman/Katz interpretation debates, Loy's Buddhism and Advaita comparison, and Madhyamaka self/no-self refusal. More work is needed in Sanskrit, Pali, Gaudapada, Shankara, Abhidhamma, Yogacara, and Madhyamaka commentaries.",
+    "structural_observation": "Mandukya 7 negates inward, outward, mixed, massed, cognitive, and non-cognitive descriptions, but still names the fourth as nondual Self to be realized. SN 22.59 does not discuss objectless awareness in Mandukya's terms. It examines each aggregate and rejects identification with consciousness because it is inconstant, stressful if clung to, and not masterable. The candidate's shared phenomenology is therefore not established by these primary texts. The inferential gap is a plausible comparative reconstruction, but it is not directly shown without practice reports or commentarial bridges."
+  },
+  "recommended_scores": {
+    "counterargument_quality": 0.9,
+    "novelty": 0.46,
+    "source_reliability": 0.76
+  },
+  "run_ids": [
+    "backfill-originality-20260526-batch-01"
+  ],
+  "title": "The Inferential Gap: Atman and Anatta as Competing Policies for Objectless Awareness",
+  "unlike_statement": "Unlike the prior Codex burden-of-proof idea, this version explicitly claims that objectless awareness underdetermines metaphysics and that Advaita and Buddhism differ primarily in inferential authority. That is a useful sharpening, but the main structure was already present."
+}

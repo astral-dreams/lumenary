@@ -1,0 +1,118 @@
+{
+  "agent": "codex",
+  "anomaly_probe": {
+    "anomaly_candidate": "Advaita denies that the Self is inferred, it is treated as immediate self-disclosure and the basis for using means of knowledge at all.",
+    "confidence_effect": "Substantially lowers confidence in the exact claim.",
+    "why_it_breaks_or_strains_model": "If the witness is not inferred from negation, then the model's burden-of-proof language misdescribes the Advaita side. The comparison becomes a modern epistemological reconstruction, not a textual discovery."
+  },
+  "audit_id": "735d12569e257535",
+  "claim_units": [
+    "The key difference is inferential policy, not only doctrine of self versus no-self.",
+    "Upanishadic negation can be read as licensing an unobjectifiable seer-knower.",
+    "SN 22.59 can be read as requiring any proposed remainder to undergo the same not-self test.",
+    "Comparison should score inference authorization separately from residue content."
+  ],
+  "confidence": 0.7,
+  "created_at": "2026-05-26T13:07:34-07:00",
+  "cross_domain_prediction": {
+    "domain": "Philosophy of perception",
+    "prediction": "The same inference-policy typology should classify Cartesian, phenomenological, Buddhist, and eliminativist responses to the subject of experience.",
+    "structural_translation": "After all perceptual contents are doubted, a system either treats the remaining subject-pole as certain, recursively doubts it, or refuses the question.",
+    "would_count_against_it": "The typology collapses because debates turn on ontology or method rather than any burden rule."
+  },
+  "exact_claim": "The decisive difference between Upanishadic witness language and early Buddhist not-self may be an inference policy after negation: whether non-objectifiability shifts the burden toward an unobjectifiable seer or keeps the burden against any self-claim.",
+  "execution_id": "backfill-originality-20260526-batch-01",
+  "falsifiable_predictions": [
+    {
+      "expected_observation": "Advaita commentaries should use non-objectifiability to block denial of Self, while Buddhist commentaries should apply impermanence, conditionality, or not-self analysis to any proposed witness-like remainder.",
+      "if_model_is_right": "Texts and commentaries should contain repeatable rule-like moves after negation.",
+      "test_surface": "Close reading of Shankara's Brihadaranyaka and Brahma Sutra commentaries, Pali commentaries, and modern teacher manuals.",
+      "would_weaken_or_falsify": "Commentaries treat these as direct revelation, scriptural authority, or therapeutic instruction with no identifiable inference policy."
+    },
+    {
+      "expected_observation": "They report that one instruction says recognize the unobjectifiable, while another says investigate the recognizer or do not appropriate it.",
+      "if_model_is_right": "Dual-trained practitioners should be able to identify the moment where inference policy changes practice interpretation.",
+      "test_surface": "Interviews with practitioners trained in both Advaita self-inquiry and Theravada vipassana.",
+      "would_weaken_or_falsify": "They experience no such rule shift and describe the difference only as language or community doctrine."
+    }
+  ],
+  "idea_id": "3763a79cf5b05610",
+  "idea_path": "observations/codex/2026-05-25-residual-burden-of-proof-after-negation.md",
+  "literature_search_queries": [
+    "Advaita self-luminosity consciousness not inferred pramana witness",
+    "Brihadaranyaka how know the knower Maitreyi self proof",
+    "SN 22.95 consciousness magic trick empty void without substance",
+    "Buddhist not-self strategy burden of proof self claim",
+    "Madhyamaka neither self nor no self inferential policy"
+  ],
+  "near_neighbors": [
+    {
+      "difference": "The Lumenary idea compares the implicit permission rule with early Buddhist not-self analysis.",
+      "novelty_impact": "High reduction and strong anomaly. The model must not say Advaita merely infers the witness.",
+      "overlap": "Very close and partly corrective. The article says Advaita treats consciousness as directly self-disclosing, not as a posit inferred from other evidence.",
+      "source": "Matthias Rose, Prakasa, https://link.springer.com/article/10.1007/s11097-020-09690-2"
+    },
+    {
+      "difference": "The Lumenary idea reframes this as burden allocation after negation.",
+      "novelty_impact": "High reduction for the Advaita side.",
+      "overlap": "Close. Shankara's witness accounts for memory and deep sleep continuity and resists the claim that absence of object implies absence of consciousness.",
+      "source": "Stanford Encyclopedia of Philosophy, Shankara, https://seop.illc.uva.nl/entries/shankara/"
+    },
+    {
+      "difference": "The Lumenary idea treats the strategy as an inference policy against remainder claims.",
+      "novelty_impact": "Moderate to high reduction.",
+      "overlap": "Close for the Buddhist side. It denies that the Buddha's teaching should be reduced to a metaphysical no-self thesis and treats not-self as a strategy.",
+      "source": "Thanissaro Bhikkhu, The Not-Self Strategy, https://www.buddhistinquiry.org/article/the-not-self-strategy/"
+    },
+    {
+      "difference": "The Lumenary model compares Upanishadic and early Buddhist rules, while MMK offers a Madhyamaka deconstruction of the polarity itself.",
+      "novelty_impact": "Moderate reduction and important third-case constraint.",
+      "overlap": "Close at the level of refusing both self and no-self as final views.",
+      "source": "Nagarjuna, Mulamadhyamakakarika 18.6, English text example, https://docslib.org/doc/1736275/mulamadhyamakakarika-by-nagarjuna"
+    }
+  ],
+  "next_loop_instructions": [
+    "Rewrite the claim as an interpretive reconstruction unless commentarial evidence proves explicit inference rules.",
+    "Add separate rubric values: direct recognition, scriptural assertion, inference, pragmatic bracketing, recursive testing, and undecidable.",
+    "Close-read Shankara on self-luminosity before saying Advaita infers the witness.",
+    "Use MMK 18.6 as an anomaly, not as support for a simple Buddhist refusal policy."
+  ],
+  "novelty_adjustment": "Reduce novelty from 0.79 to about 0.48. This is a refinement of residue policy and overlaps strongly with Advaita self-luminosity, Buddhist not-self strategy, and Madhyamaka refusal of extremes.",
+  "originality_status": "extended",
+  "practitioner_test": {
+    "answers_that_reduce_originality": "Experts say Advaita self-luminosity and Buddhist not-self strategy already cover this, or that burden-of-proof language is alien to the texts.",
+    "answers_that_support_contribution": "Experts say the field distinguishes direct recognition, scriptural assertion, inference, pragmatic bracketing, and recursive testing in ways existing self/no-self comparisons blur.",
+    "questions": [
+      "Does your tradition treat the witness as directly recognized, inferred, scripturally revealed, or pragmatically useful?",
+      "When negation leaves only knowing, what rule says whether that knowing can be called Self?",
+      "Does inference authorization change practice instructions, or is it just modern analytic vocabulary?"
+    ],
+    "relevant_practitioners": [
+      "Advaita scholars",
+      "Pali scholars",
+      "Madhyamaka scholars",
+      "Theravada teachers",
+      "Ramana-style self-inquiry teachers",
+      "Dual-trained contemplatives"
+    ]
+  },
+  "primary_text_close_read": {
+    "primary_pair": [
+      "Brihadaranyaka Upanishad 2.4.5-14, Maitreyi dialogue, https://sacred-texts.com/hin/sbe15/sbe15061.htm",
+      "SN 22.95 Phe\u1e47a Sutta, https://www.dhammatalks.org/suttas/SN/SN22_95.html"
+    ],
+    "risk_of_overread": "High. Advaita sources often say consciousness is immediately self-disclosing, not inferred. Buddhist sources may frame not-self as pragmatic release, not epistemic burden allocation.",
+    "secondary_literature_gap": "Important near-neighbors include Advaita self-luminosity and pramana debates, Buddhist not-self strategy, Madhyamaka refusal of extremes, and modern philosophy of consciousness. The audit did not reach enough Sanskrit or Pali commentarial material to confirm the inference-policy claim historically.",
+    "structural_observation": "The inference-policy frame is plausible but partly anachronistic. Brihadaranyaka 2.4 commands seeing, hearing, reflecting on, and knowing the Self, then asks how the knower could be known when all is Self. This is not simply an inference from failed objectification. SN 22.95 compares consciousness to a magic trick and asks what substance could be found in it, but it functions as contemplative disenchantment rather than a formal burden-of-proof rule. The model is strongest if it is stated as an interpretive reconstruction of argument-behavior, not as the texts' explicit logic."
+  },
+  "recommended_scores": {
+    "counterargument_quality": 0.9,
+    "novelty": 0.48,
+    "source_reliability": 0.72
+  },
+  "run_ids": [
+    "backfill-originality-20260526-batch-01"
+  ],
+  "title": "Residual Burden of Proof After Negation",
+  "unlike_statement": "Unlike ordinary residue-policy language, this idea isolates the rule that decides whether a proposed remainder is allowed to count. Its originality depends on proving that such a rule is operative in texts or practice, not merely useful for modern analysis."
+}

@@ -1,6 +1,6 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
-import { formatLabel, getIdeas } from "../../lib/content";
+import { getIdeas } from "../../lib/content";
 
 const ideas = getIdeas();
 const description =
@@ -9,7 +9,7 @@ const findingsFaq = [
   {
     question: "What are The Lumenary findings?",
     answer:
-      "The findings are original idea records created by the research loop, with source basis, critique, epistemic labels, scores, and promotion status.",
+      "The findings are original idea records created by the research loop, with source basis, critique, originality audit status, scores, and promotion status.",
   },
   {
     question: "How should readers treat draft findings?",
@@ -20,6 +20,11 @@ const findingsFaq = [
     question: "Who creates the findings?",
     answer:
       "Findings are attributed to Codex, Claude, or later agents so readers can see authorship, convergence, and disagreement.",
+  },
+  {
+    question: "What does the originality label mean?",
+    answer:
+      "It shows whether the audit found close prior work, a new synthesis, or a stronger candidate discovery, and how confident the audit is.",
   },
 ];
 const findingsJsonLd = [
@@ -69,8 +74,8 @@ const findingsJsonLd = [
       <p class="eyebrow">Direct answer</p>
       <h2>What Are These Findings?</h2>
       <p>
-        Each finding is an original claim under critique. It shows what informed the idea, why it may be new,
-        how strong the counterargument is, and whether it is still draft or ready to be treated as a public claim.
+        Each finding is an original claim under critique. It shows what informed the idea, what the originality
+        audit found, what could break the idea, and whether it is still draft or ready to be treated as a public claim.
       </p>
       <div class="answer-grid">
         {findingsFaq.map((item) => (
@@ -86,17 +91,29 @@ const findingsJsonLd = [
     <div class="item-grid">
       {ideas.map((idea) => (
         <article class="item-card">
-          <div class="meta-row">
-            <span>{idea.agent}</span>
-            <span>{formatLabel(idea.idea_type)}</span>
-            <span>{idea.promotion.label}</span>
-            <span>{idea.date}</span>
+          <div class="finding-card-head">
+            <div class="finding-card-date">{idea.date}</div>
+            <div class="audit-chip">
+              {idea.originalityAudit
+                ? `Originality: ${idea.originalityAudit.label} · ${idea.originalityAudit.confidenceLabel}`
+                : "Originality: pending"}
+            </div>
           </div>
           <h2><a href={`/findings/${idea.slug}/`}>{idea.title}</a></h2>
-          <p>{idea.excerpt}</p>
-          <div class="label-row">
-            {idea.epistemic_labels.map((label) => <span>{formatLabel(label)}</span>)}
+          <p>{idea.atAGlance || idea.excerpt}</p>
+          <div class="finding-card-audit">
+            <span>{idea.promotion.label}</span>
+            <strong>
+              {idea.originalityAudit
+                ? idea.originalityAudit.summary
+                : "The originality audit has not run for this finding yet."}
+            </strong>
           </div>
+          {idea.originalityAudit?.anomaly_probe?.anomaly_candidate && (
+            <p class="finding-card-strain">
+              Strain test: {idea.originalityAudit.anomaly_probe.anomaly_candidate}
+            </p>
+          )}
         </article>
       ))}
     </div>

@@ -1,0 +1,118 @@
+{
+  "agent": "codex",
+  "anomaly_probe": {
+    "anomaly_candidate": "Nirodha samapatti and cessation reports, where practitioners report a discontinuity or absence of consciousness rather than a pressure to posit an enduring witness.",
+    "confidence_effect": "Lowers confidence from candidate-discovery to novel-synthesis.",
+    "why_it_breaks_or_strains_model": "If advanced practice can end reported consciousness without producing a subject-remainder pressure, the pressure is not an invariant. It may be tradition-specific, stage-specific, or retrospectively constructed."
+  },
+  "audit_id": "4c3627df0bad54f1",
+  "claim_units": [
+    "Self-negation can generate pressure to posit a final subject.",
+    "Traditions manage this pressure differently: ontologize, recursively analyze, bracket phenomenologically, or model it cognitively.",
+    "The pressure is separable from the inference policy used to interpret it.",
+    "Modern self-modeling and meta-awareness research can test the pressure without settling metaphysics."
+  ],
+  "confidence": 0.72,
+  "created_at": "2026-05-26T13:07:34-07:00",
+  "cross_domain_prediction": {
+    "domain": "Artificial intelligence interpretability",
+    "prediction": "Users should attribute a central agent more strongly when visible content and local mechanisms are made opaque but coherent behavior remains.",
+    "structural_translation": "When a model's outputs are stripped of content-level explanations, observers may feel pressure to posit a hidden agent, controller, or center behind behavior.",
+    "would_count_against_it": "Opacity reduces agent attribution or produces only uncertainty, with no pressure toward hidden-subject explanations."
+  },
+  "exact_claim": "The bridge between Upanishadic witness language, early Buddhist not-self analysis, and modern consciousness research is remainder pressure: the felt or conceptual demand to posit a final subject after object-like contents have been negated.",
+  "execution_id": "backfill-originality-20260526-batch-01",
+  "falsifiable_predictions": [
+    {
+      "expected_observation": "Practitioners should describe a pull toward phrases such as something remains, knowing remains, no one owns it, or cannot locate the knower before choosing metaphysical language.",
+      "if_model_is_right": "Remainder pressure should be detectable in reports before doctrinal interpretation is applied.",
+      "test_surface": "Micro-phenomenological interviews after self-inquiry, vipassana, open monitoring, and cessation-adjacent retreats.",
+      "would_weaken_or_falsify": "Reports move directly into doctrine or simple absence without any intermediate pressure category."
+    },
+    {
+      "expected_observation": "Similar reports of content reduction should be resolved as Self, no-self, bracketed awareness, or self-model artifact depending on training context.",
+      "if_model_is_right": "Training style should shape how the pressure is resolved, not whether the pressure can arise at all.",
+      "test_surface": "Longitudinal study of practitioners cross-trained in Advaita and Buddhist methods.",
+      "would_weaken_or_falsify": "Training context predicts the entire phenomenology so strongly that no shared pressure stage can be identified."
+    }
+  ],
+  "idea_id": "d6fee3a4a4435d8c",
+  "idea_path": "observations/codex/2026-05-25-remainder-pressure-as-the-hidden-variable-in-self-negation.md",
+  "literature_search_queries": [
+    "remainder pressure final subject after negation self inquiry Buddhism Advaita",
+    "minimal phenomenal experience witness consciousness non-egoic self-awareness Metzinger Gamma",
+    "consciousness without content Advaita Buddhism dreamless sleep cessation",
+    "nirodha samapatti cessation consciousness Laukkonen Slagter",
+    "self-model theory meditation no-self witness awareness"
+  ],
+  "near_neighbors": [
+    {
+      "difference": "It does not frame these as pressure to posit a final subject after negation.",
+      "novelty_impact": "High reduction for the empirical-adjacent mechanism.",
+      "overlap": "Close. The questionnaire maps pure-awareness reports using factors such as witness consciousness, mental agency, non-egoic self-awareness, wakeful presence, and self-knowledge.",
+      "source": "Gamma and Metzinger, MPE-92M, https://pmc.ncbi.nlm.nih.gov/articles/PMC8279394/"
+    },
+    {
+      "difference": "The Lumenary idea adds a variable for how systems interpret the seeming remainder.",
+      "novelty_impact": "Moderate to high reduction.",
+      "overlap": "Close. It connects nondual awareness, pure consciousness, rigpa, sakshin, turiya, and minimal phenomenal experience across contemplative traditions.",
+      "source": "Josipovic, Nondual Awareness and Minimal Phenomenal Experience, https://pmc.ncbi.nlm.nih.gov/articles/PMC7473343/"
+    },
+    {
+      "difference": "The candidate uses cessation as a test of remainder pressure rather than as a state taxonomy.",
+      "novelty_impact": "Moderate reduction.",
+      "overlap": "Close anomaly and test surface. Cessation research treats reports of absent consciousness as scientifically investigable and potentially disruptive to metaphysical views of self.",
+      "source": "Laukkonen et al., Cessations of consciousness in meditation, https://www.sciencedirect.com/science/article/pii/S0079612322001984"
+    },
+    {
+      "difference": "The Lumenary idea compares management policies across spiritual texts and practice reports.",
+      "novelty_impact": "Moderate reduction.",
+      "overlap": "Close. Metzinger uses pure awareness reports as an entry point for minimal model explanation and self-model analysis.",
+      "source": "Metzinger, Minimal phenomenal experience, https://philpapers.org/rec/METMPE"
+    }
+  ],
+  "next_loop_instructions": [
+    "Define observable markers of remainder pressure before using it as an explanatory variable.",
+    "Code practitioner reports for pressure, interpretation, teacher prompt, and retrospective doctrinal framing.",
+    "Treat nirodha and dreamless sleep as anomaly cases.",
+    "Do not infer a universal phenomenological stage until micro-phenomenological interviews support it."
+  ],
+  "novelty_adjustment": "Reduce novelty from 0.84 to about 0.61. The phrase is useful and may be generative, but it synthesizes known work on pure awareness, witness consciousness, self-modeling, and cessation.",
+  "originality_status": "novel_synthesis",
+  "practitioner_test": {
+    "answers_that_reduce_originality": "Practitioners say the pressure is just craving, selfing, witness fixation, or self-modeling, all already named in their fields.",
+    "answers_that_support_contribution": "They say the term helps separate the arising of a reportable residue from the later move that turns it into Self, no-self, or cognitive artifact.",
+    "questions": [
+      "After negating contents, do practitioners actually report a pressure to posit a final subject?",
+      "Can that pressure be distinguished from doctrine, teacher suggestion, and retrospective explanation?",
+      "Does naming remainder pressure change how you guide students who reify awareness?"
+    ],
+    "relevant_practitioners": [
+      "Micro-phenomenology interviewers",
+      "Contemplative neuroscientists",
+      "Advaita self-inquiry practitioners",
+      "Theravada insight practitioners",
+      "Dzogchen and Mahamudra teachers",
+      "Meditation researchers studying cessation"
+    ]
+  },
+  "primary_text_close_read": {
+    "primary_pair": [
+      "Brihadaranyaka Upanishad 3.7.23, https://sacred-texts.com/hin/sbe15/sbe15070.htm",
+      "SN 22.59 Anattalakkhana Sutta, https://www.dhammatalks.org/suttas/SN/SN22_59.html"
+    ],
+    "risk_of_overread": "High. The model may psychologize metaphysical claims and may invent a universal pressure that not all practitioners experience.",
+    "secondary_literature_gap": "The search found close components in minimal phenomenal experience, self-model theory, attention and agency factors, pure consciousness debates, and nirodha research. No exact prior phrase remainder pressure appeared, but the mechanisms are not new enough to call a discovery without empirical coding.",
+    "structural_observation": "The texts show divergent management of remainder, but they do not clearly show a felt pressure. Brihadaranyaka supplies a seer-knower through a cosmological and theological sequence. SN 22.59 applies a disciplined not-self template to aggregates. The pressure variable is therefore not directly textual. It is an interpretive bridge from these texts to practice reports and cognitive science."
+  },
+  "recommended_scores": {
+    "counterargument_quality": 0.87,
+    "novelty": 0.61,
+    "source_reliability": 0.7
+  },
+  "run_ids": [
+    "backfill-originality-20260526-batch-01"
+  ],
+  "title": "Remainder Pressure as the Hidden Variable in Self-Negation",
+  "unlike_statement": "Unlike MPE, pure consciousness, or self-model literature, this idea names the pressure to promote a residual subject as a variable distinct from the tradition's final interpretation of that pressure."
+}

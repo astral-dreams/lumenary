@@ -1,0 +1,118 @@
+{
+  "agent": "codex",
+  "anomaly_probe": {
+    "anomaly_candidate": "Comparisons where high strain is still historically causal, for example Buddhist and Advaita terms shaped by centuries of polemic and borrowing.",
+    "confidence_effect": "Lowers confidence in the low-strain/high-strain scoring rule.",
+    "why_it_breaks_or_strains_model": "High strain does not necessarily mean merely analogical productivity. A high-strain term may still be historically entangled, polemical, or deliberately inverted."
+  },
+  "audit_id": "7467567c4a12de58",
+  "claim_units": [
+    "Similarity should not be treated as direct evidence of sameness.",
+    "The comparison unit is the translation distortion, not the broad resemblance.",
+    "Bends, drops, and reweightings should be named explicitly.",
+    "Low strain and high strain should have different publication labels."
+  ],
+  "confidence": 0.9,
+  "created_at": "2026-05-26T13:07:34-07:00",
+  "cross_domain_prediction": {
+    "domain": "Legal translation and comparative law",
+    "prediction": "A strain rubric should predict where apparent equivalents such as trust, equity, right, or due process mislead across legal systems.",
+    "structural_translation": "A legal term survives translation only if jurisdictional function, authority, remedy, and procedure are preserved or explicitly marked as distorted.",
+    "would_count_against_it": "Legal translators already use equivalent tools with no added decision value from the strain rubric."
+  },
+  "exact_claim": "When traditions seem to converge, the productive datum is the exact distortion required to translate one claim into the other; low strain may indicate stable overlap, while high strain should be labeled analogical productivity rather than evidence.",
+  "execution_id": "backfill-originality-20260526-batch-01",
+  "falsifiable_predictions": [
+    {
+      "expected_observation": "Some high-similarity pairs should be downgraded because central meanings must be discarded, and some low-verbal-similarity pairs should be retained because functional role survives.",
+      "if_model_is_right": "A strain rubric should change publication decisions compared with ordinary resemblance scoring.",
+      "test_surface": "Blind A/B comparison of 20 cross-tradition comparison records.",
+      "would_weaken_or_falsify": "The rubric produces the same decisions as ordinary expert judgment while adding only terminology."
+    },
+    {
+      "expected_observation": "Independent coders should identify similar lexical, practice-context, metaphysical, ethical, and phenomenological strains.",
+      "if_model_is_right": "Experts should agree on named distortions when the rubric is clear.",
+      "test_surface": "Inter-rater reliability test with Buddhist, Vedanta, Christian, and Sufi scholars.",
+      "would_weaken_or_falsify": "Coder agreement remains low, or identified strains track coder tradition rather than text features."
+    }
+  ],
+  "idea_id": "d92d2f0f6455ac53",
+  "idea_path": "observations/codex/2026-05-25-translation-strain-as-a-load-test-for-convergence.md",
+  "literature_search_queries": [
+    "Jonathan Z Smith comparison redescription rectification difference similarity religion",
+    "Oliver Freiberger comparative methodology selection description juxtaposition redescription rectification",
+    "Raimon Panikkar homeomorphic equivalence comparative religion",
+    "Steven Katz constructivism mystical experience no pure experience",
+    "translation shifts untranslatability religious concepts comparative theology"
+  ],
+  "near_neighbors": [
+    {
+      "difference": "This candidate adds the phrase load test and a low-strain versus high-strain scoring suggestion.",
+      "novelty_impact": "Decisive reduction. As a new Lumenary finding, this is already present.",
+      "overlap": "Near exact. The prior audit already states that convergence should be evaluated by claim-level bends, drops, and additions rather than evidential weight.",
+      "source": "Previous Lumenary audit, Convergence as Translation Strain, Not Evidence Weight, reviews/originality/2026-05-26-convergence-as-translation-strain-not-evidence-weight-eef7e83c44da8b8c.json"
+    },
+    {
+      "difference": "The candidate narrows this into a scoring tool for spiritual convergence and names distortions as strain.",
+      "novelty_impact": "High reduction. The method is an operational adaptation, not a discovery.",
+      "overlap": "Very close structurally. Freiberger already treats comparison as an explicit method with selection, description, juxtaposition, redescription, rectification, and theory formation.",
+      "source": "Oliver Freiberger, Elements of a Comparative Methodology in the Study of Religion, https://www.mdpi.com/2077-1444/9/2/38"
+    },
+    {
+      "difference": "The candidate turns Smith's comparative caution into a publication gate and strain vocabulary.",
+      "novelty_impact": "High reduction.",
+      "overlap": "Very close. Smith warns that scholars project perceived similarity into objective connection and argues for disciplined difference, redescription, and rectification.",
+      "source": "Jonathan Z. Smith, In Comparison a Magic Dwells, https://classics.osu.edu/sites/classics.osu.edu/files/Magic_Dwells.pdf"
+    },
+    {
+      "difference": "The load-test frame adds explicit accounting of what is bent, dropped, or reweighted.",
+      "novelty_impact": "Moderate to high reduction.",
+      "overlap": "Close. Homeomorphic equivalence already compares concepts by functional role within distinct systems while preserving non-identity.",
+      "source": "Raimon Panikkar, homeomorphic equivalence glossary, https://raimon-panikkar.org/english/gloss-homeomorphic.html/"
+    }
+  ],
+  "next_loop_instructions": [
+    "Merge this record into the existing translation-strain finding instead of publishing it as new.",
+    "If retained, define the stopping rule for when high strain means reject rather than analogically productive.",
+    "Add historical-dependence fields so borrowing, polemic, and shared modern discourse are not mistaken for independent convergence.",
+    "Require inter-rater testing before giving the rubric public-claim weight."
+  ],
+  "novelty_adjustment": "Reduce novelty from 0.78 to about 0.22. This is already present in the prior Lumenary originality audit and strongly anticipated by comparative-method literature.",
+  "originality_status": "known",
+  "practitioner_test": {
+    "answers_that_reduce_originality": "Practitioners and scholars say this is standard comparative method, homeomorphic equivalence, translation studies, or the prior Lumenary strain audit.",
+    "answers_that_support_contribution": "They say the load-test scoring rule produces reproducible decisions that ordinary comparison theory does not produce.",
+    "questions": [
+      "Do you already ask what must be bent, dropped, or reweighted before accepting a convergence?",
+      "Does a strain sheet change your judgment, or only rename your existing scholarly method?",
+      "What comparison should be rejected even though its strain is interesting?"
+    ],
+    "relevant_practitioners": [
+      "Comparative religion scholars",
+      "Comparative theologians",
+      "Religious translators",
+      "Buddhist studies scholars",
+      "Advaita Sanskritists",
+      "Contemplative teachers with cross-training"
+    ]
+  },
+  "primary_text_close_read": {
+    "primary_pair": [
+      "SN 22.59 Anattalakkhana Sutta, https://www.dhammatalks.org/suttas/SN/SN22_59.html",
+      "Chandogya Upanishad 6.8.7, Tat tvam asi, https://shlokam.org/texts/Chandogya-6-8-7/"
+    ],
+    "risk_of_overread": "Moderate. The method may make every failed comparison look productive. Without a stopping rule, strain becomes a way to publish any analogy.",
+    "secondary_literature_gap": "The previous Lumenary audit already found Smith, Freiberger, Panikkar, Katz, Sharf, Clooney, Sandmel, and translation studies as close prior art. No stronger search result made the load-test label itself important enough to rescue novelty.",
+    "structural_observation": "The pair illustrates the method but does not make the method original. SN 22.59 refuses ownership and self-identification across all aggregates, including consciousness. Chandogya 6.8.7 uses the recurring formula that the subtle essence is the Self and that the student is that. Any claim that both say the same thing requires bending the status of consciousness, the final pedagogical aim, and the authority of identity-language. This is exactly what comparison theory, constructivism, and homeomorphic equivalence already train scholars to notice."
+  },
+  "recommended_scores": {
+    "counterargument_quality": 0.9,
+    "novelty": 0.22,
+    "source_reliability": 0.82
+  },
+  "run_ids": [
+    "backfill-originality-20260526-batch-01"
+  ],
+  "title": "Translation Strain as a Load Test for Convergence",
+  "unlike_statement": "Unlike Smith, Freiberger, Panikkar, Katz, Sharf, or the earlier Lumenary strain audit, this candidate offers only the load-test metaphor and a possible low-strain versus high-strain publication rule. That difference is too small to count as a new finding."
+}

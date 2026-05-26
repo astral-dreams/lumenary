@@ -12,6 +12,11 @@ export function getStaticPaths() {
 
 const { idea } = Astro.props;
 const description = idea.atAGlance || idea.plainSummary || idea.excerpt;
+const audit = idea.originalityAudit;
+const nearNeighbors = audit?.near_neighbors?.slice(0, 3) || [];
+const firstPrediction = audit?.falsifiable_predictions?.[0] || null;
+const practitionerTest = audit?.practitioner_test || null;
+const crossDomain = audit?.cross_domain_prediction || null;
 const findingFaq = [
   {
     question: `What is the main idea of ${idea.title}?`,
@@ -25,8 +30,9 @@ const findingFaq = [
   },
   {
     question: "How does The Lumenary evaluate this finding?",
-    answer:
-      "The Lumenary evaluates findings with source reliability, counterargument quality, publishability, novelty, coherence, generativity, and explicit epistemic labels.",
+    answer: audit
+      ? `The Lumenary evaluates this finding with scores, critique, promotion rules, and an originality audit that currently marks it as ${audit.label} with ${audit.confidenceLabel} confidence.`
+      : "The Lumenary evaluates findings with source reliability, counterargument quality, publishability, novelty, coherence, generativity, explicit epistemic labels, and an originality audit.",
   },
 ];
 const findingJsonLd = [
@@ -104,6 +110,86 @@ const findingJsonLd = [
     <section class="plain-summary">
       <p class="eyebrow">At a glance</p>
       <p>{idea.atAGlance}</p>
+    </section>
+
+    <section class="article-section originality-audit-panel">
+      <p class="eyebrow">Originality audit</p>
+      {audit ? (
+        <>
+          <div class="audit-stat-grid">
+            <div>
+              <span>Status</span>
+              <strong>{audit.label}</strong>
+            </div>
+            <div>
+              <span>Confidence</span>
+              <strong>{audit.confidenceLabel}</strong>
+            </div>
+            <div>
+              <span>Novelty score</span>
+              <strong>{Number(audit.recommended_scores?.novelty || idea.scores.novelty || 0).toFixed(2)}</strong>
+            </div>
+          </div>
+          <p class="audit-summary">{audit.summary}</p>
+
+          <div class="audit-detail-grid">
+            <div class="audit-detail">
+              <h2>Closest Prior Art</h2>
+              {nearNeighbors.length > 0 ? (
+                <ul class="clean-list audit-list">
+                  {nearNeighbors.map((neighbor) => (
+                    <li>
+                      <strong>{neighbor.source}</strong>
+                      <span>Overlap: {neighbor.overlap}</span>
+                      <span>Difference: {neighbor.difference}</span>
+                    </li>
+                  ))}
+                </ul>
+              ) : (
+                <p>No close near-neighbor was recorded in this audit.</p>
+              )}
+            </div>
+
+            <div class="audit-detail">
+              <h2>What Could Break It</h2>
+              {audit.anomaly_probe?.anomaly_candidate && (
+                <p><strong>Anomaly:</strong> {audit.anomaly_probe.anomaly_candidate}</p>
+              )}
+              {firstPrediction && (
+                <p>
+                  <strong>Test:</strong> If the model is right, {firstPrediction.expected_observation}
+                  {" "}It weakens if {firstPrediction.would_weaken_or_falsify}
+                </p>
+              )}
+            </div>
+
+            <div class="audit-detail">
+              <h2>Practitioner Test</h2>
+              {practitionerTest?.questions?.length ? (
+                <ul class="clean-list">
+                  {practitionerTest.questions.slice(0, 3).map((question) => <li>{question}</li>)}
+                </ul>
+              ) : (
+                <p>No practitioner questions were recorded in this audit.</p>
+              )}
+            </div>
+
+            <div class="audit-detail">
+              <h2>Cross-Domain Test</h2>
+              {crossDomain?.prediction ? (
+                <p>{crossDomain.prediction}</p>
+              ) : (
+                <p>No cross-domain prediction was recorded in this audit.</p>
+              )}
+            </div>
+          </div>
+        </>
+      ) : (
+        <p class="audit-summary">
+          This finding does not have an originality audit yet. Treat it as a draft until prior art,
+          anomaly tests, practitioner tests, and cross-domain predictions are added.
+        </p>
+      )}
     </section>
 
     <section class="article-section answer-panel">

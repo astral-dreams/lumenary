@@ -48,3 +48,50 @@
 - Add Pure Land other-power, Christian grace, and Dzogchen pointing-out as anomaly cases, not footnotes.
 - Ask practitioners whether the model predicts actual screening, sequencing, warning, and verification practices.
 - Search further in Engler, Wilber, Brown, Collins, Harvey, Duerlinger, Siderits, Albahari, Buddhist trauma literature, practice-realization scholarship, fana and baqa sources, and Advaita praptasya prapti discussions.
+
+## Originality Audit Follow-Up 2026-05-26T12:58:21-07:00
+
+### Convergence as Translation Strain, Not Evidence Weight (novel_synthesis)
+- Build a one-page translation-strain rubric with fields for claim unit, role, ontology, agency, practice aim, authority, verification, what is bent, what is dropped, what is added, and whether role-similarity survives.
+- Test the rubric on three narrow pairs: Atman versus anatta, apophatic darkness versus Buddhist emptiness, and fana or baqa versus nondual realization.
+- Add an independence field so convergence caused by borrowing, colonial translation, shared modern discourse, or teacher cross-training is not overvalued.
+- Ask comparative-religion scholars whether this is merely Smith, Katz, Sharf, Panikkar, Freiberger, Clooney, or Sandmel in workflow language.
+- Do not publish as a candidate discovery unless the rubric produces decisions that ordinary convergence scoring would not produce.
+
+## Originality Audit Follow-Up 2026-05-26T13:07:34-07:00
+
+### The Interface Invariant Model (novel_synthesis)
+- Do not publish this as a metaphysical claim.
+- Build a five-variable coding sheet and test it on narrow primary-text pairs before using broad tradition names.
+- Add a devotional anomaly set: grace, surrender, bhakti, tawakkul, and Christian apophasis.
+- Separate interface change, doctrinal interpretation, and claimed ontological referent in all future records.
+
+### Translation Strain as a Load Test for Convergence (known)
+- Merge this record into the existing translation-strain finding instead of publishing it as new.
+- If retained, define the stopping rule for when high strain means reject rather than analogically productive.
+- Add historical-dependence fields so borrowing, polemic, and shared modern discourse are not mistaken for independent convergence.
+- Require inter-rater testing before giving the rubric public-claim weight.
+
+### Residue Policy in Negative Self-Practice (extended)
+- Test the rubric on Brihadaranyaka 2.4, 2.5, 3.7.23, SN 22.59, and SN 22.95 before broader claims.
+- Separate antaryamin cosmology from later Advaita witness practice.
+- Add values for aggregate remainder, non-aggregate remainder, strategic silence, and undecidable.
+- Do not publish without Pali and Sanskrit term checks.
+
+### Residual Burden of Proof After Negation (extended)
+- Rewrite the claim as an interpretive reconstruction unless commentarial evidence proves explicit inference rules.
+- Add separate rubric values: direct recognition, scriptural assertion, inference, pragmatic bracketing, recursive testing, and undecidable.
+- Close-read Shankara on self-luminosity before saying Advaita infers the witness.
+- Use MMK 18.6 as an anomaly, not as support for a simple Buddhist refusal policy.
+
+### Remainder Pressure as the Hidden Variable in Self-Negation (novel_synthesis)
+- Define observable markers of remainder pressure before using it as an explanatory variable.
+- Code practitioner reports for pressure, interpretation, teacher prompt, and retrospective doctrinal framing.
+- Treat nirodha and dreamless sleep as anomaly cases.
+- Do not infer a universal phenomenological stage until micro-phenomenological interviews support it.
+
+### The Inferential Gap: Atman and Anatta as Competing Policies for Objectless Awareness (extended)
+- Do not claim shared phenomenology until dual-trained practitioner reports are coded.
+- Separate direct recognition, inference, scriptural assertion, and pragmatic refusal in the rubric.
+- Use Madhyamaka as a third policy, not merely as support for Buddhist refusal.
+- Test nirodha and deep sleep as anomalies before raising novelty.

@@ -426,38 +426,184 @@ def audit_new_ideas(
     )
 
 
-def _read_latest_ideas(root: Path, limit: int) -> list[IdeaRecord]:
+def _fallback_sources(idea: IdeaRecord) -> list[str]:
+    sources = [source for source in idea.source_basis if str(source).strip()]
+    while len(sources) < 2:
+        sources.append("Source basis requires follow-up during the next originality audit.")
+    return sources[:4]
+
+
+def _incomplete_audit_payload(
+    idea: IdeaRecord,
+    *,
+    execution_id: str,
+    run_ids: list[str],
+    reason: str,
+) -> dict[str, Any]:
+    source_reliability = float(getattr(idea.scores, "source_reliability", 0.0))
+    counterargument_quality = float(getattr(idea.scores, "counterargument_quality", 0.0))
+    novelty = min(float(getattr(idea.scores, "novelty", 0.0)), 0.35)
+    clean_reason = _clean_text(reason)[:500] or "The audit did not complete."
+    return {
+        "idea_id": idea.identity(),
+        "agent": idea.agent,
+        "title": idea.title,
+        "exact_claim": _clean_text(idea.original_claim)[:900] or idea.title,
+        "claim_units": [_clean_text(idea.original_claim)[:600] or idea.title],
+        "primary_text_close_read": {
+            "primary_pair": _fallback_sources(idea)[:2],
+            "structural_observation": "The originality audit did not complete, so no reliable primary-text comparison should be inferred yet.",
+            "secondary_literature_gap": "No literature gap has been established yet. Treat any novelty claim as provisional until prior art is checked.",
+            "risk_of_overread": "High. The finding may be a renamed or extended version of prior work until the audit is completed.",
+        },
+        "literature_search_queries": [
+            f'"{idea.title}" prior art',
+            f'"{idea.title}" comparative religion',
+            f'"{idea.title}" consciousness philosophy',
+        ],
+        "near_neighbors": [],
+        "unlike_statement": "No unlike statement is available until the originality audit completes.",
+        "anomaly_probe": {
+            "anomaly_candidate": "The missing audit itself is the current anomaly: prior work may already contain the claim.",
+            "why_it_breaks_or_strains_model": clean_reason,
+            "confidence_effect": "Confidence is held low until the audit is completed.",
+        },
+        "falsifiable_predictions": [
+            {
+                "if_model_is_right": "A later audit should find a clear difference from the closest prior work.",
+                "expected_observation": "The finding keeps a distinct claim after close prior art, anomaly, practitioner, and cross-domain checks.",
+                "would_weaken_or_falsify": "A close prior source already makes the same structural argument.",
+                "test_surface": "Originality audit backfill and practitioner review.",
+            }
+        ],
+        "practitioner_test": {
+            "relevant_practitioners": ["Practitioners and scholars in the traditions named by the finding"],
+            "questions": [
+                "Is this obvious from inside your practice?",
+                "Does this change how you understand the practice, or only rename what you already know?",
+            ],
+            "answers_that_reduce_originality": "A practitioner or scholar recognizes the claim as standard teaching or standard scholarship.",
+            "answers_that_support_contribution": "A practitioner or scholar finds that the claim changes interpretation or predicts a real practice difference.",
+        },
+        "cross_domain_prediction": {
+            "domain": "Comparative method",
+            "structural_translation": "A genuine structure should travel beyond the first tradition pair that generated it.",
+            "prediction": "If this is more than a redescription, it should generate a useful prediction in another domain.",
+            "would_count_against_it": "The structure only restates the source tradition's own vocabulary.",
+        },
+        "originality_status": "audit_incomplete",
+        "confidence": 0.0,
+        "recommended_scores": {
+            "novelty": novelty,
+            "source_reliability": source_reliability,
+            "counterargument_quality": counterargument_quality,
+        },
+        "novelty_adjustment": "Do not raise novelty until the originality audit is completed.",
+        "next_loop_instructions": [
+            "Run the full originality audit for this finding before treating it as a discovery.",
+            "Search for exact structural near-neighbors, not only the general topic.",
+            "Add at least one anomaly probe, one practitioner test, and one cross-domain prediction.",
+        ],
+    }
+
+
+def write_incomplete_audits(
+    root: Path,
+    ideas: list[IdeaRecord],
+    *,
+    run_ids: list[str],
+    execution_id: str,
+    reason: str,
+) -> int:
+    if not ideas:
+        return 0
+    return _write_audits(
+        root,
+        result={
+            "audits": [
+                _incomplete_audit_payload(
+                    idea,
+                    execution_id=execution_id,
+                    run_ids=run_ids,
+                    reason=reason,
+                )
+                for idea in ideas
+            ]
+        },
+        ideas=ideas,
+        run_ids=run_ids,
+        execution_id=execution_id,
+    )
+
+
+def _record_to_idea(record: dict[str, Any]) -> IdeaRecord:
+    from .schemas import IdeaScores
+
+    return IdeaRecord(
+        title=str(record["title"]),
+        idea_type=str(record["idea_type"]),
+        agent=str(record["agent"]),
+        created_at=str(record["created_at"]),
+        source_basis=list(record.get("source_basis") or []),
+        original_claim=str(record["original_claim"]),
+        why_it_might_be_new=str(record["why_it_might_be_new"]),
+        critique=str(record["critique"]),
+        epistemic_labels=list(record.get("epistemic_labels") or []),
+        scores=IdeaScores(**record["scores"]),
+        next_research_directions=list(record.get("next_research_directions") or []),
+        status=str(record.get("status", "draft")),
+    )
+
+
+def _audited_idea_ids(root: Path) -> set[str]:
+    path = root / AUDIT_LEDGER
+    if not path.exists():
+        return set()
+    ids: set[str] = set()
+    for line in path.read_text(encoding="utf-8").splitlines():
+        if not line.strip():
+            continue
+        try:
+            record = json.loads(line)
+        except json.JSONDecodeError:
+            continue
+        if record.get("originality_status") == "audit_incomplete":
+            continue
+        idea_id = str(record.get("idea_id") or "")
+        if idea_id:
+            ids.add(idea_id)
+    return ids
+
+
+def _read_idea_records(root: Path) -> list[dict[str, Any]]:
     path = root / "hypotheses" / "ideas.jsonl"
     if not path.exists():
         return []
     records = [json.loads(line) for line in path.read_text(encoding="utf-8").splitlines() if line.strip()]
     records.sort(key=lambda item: item.get("created_at", ""))
-    ideas: list[IdeaRecord] = []
-    from .schemas import IdeaScores
+    return records
 
-    for record in records[-limit:]:
-        ideas.append(
-            IdeaRecord(
-                title=str(record["title"]),
-                idea_type=str(record["idea_type"]),
-                agent=str(record["agent"]),
-                created_at=str(record["created_at"]),
-                source_basis=list(record.get("source_basis") or []),
-                original_claim=str(record["original_claim"]),
-                why_it_might_be_new=str(record["why_it_might_be_new"]),
-                critique=str(record["critique"]),
-                epistemic_labels=list(record.get("epistemic_labels") or []),
-                scores=IdeaScores(**record["scores"]),
-                next_research_directions=list(record.get("next_research_directions") or []),
-                status=str(record.get("status", "draft")),
-            )
-        )
+
+def _read_missing_ideas(root: Path, limit: int) -> list[IdeaRecord]:
+    audited = _audited_idea_ids(root)
+    ideas: list[IdeaRecord] = []
+    for record in _read_idea_records(root):
+        idea = _record_to_idea(record)
+        if idea.identity() not in audited:
+            ideas.append(idea)
+        if len(ideas) >= limit:
+            break
     return ideas
+
+
+def _read_latest_ideas(root: Path, limit: int) -> list[IdeaRecord]:
+    return [_record_to_idea(record) for record in _read_idea_records(root)[-limit:]]
 
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Run originality audits for recent ideas.")
     parser.add_argument("--latest", type=int, default=2)
+    parser.add_argument("--missing", action="store_true", help="Audit the oldest findings without audit records.")
     parser.add_argument("--execution-id", default=f"manual-{now_local_iso()}")
     return parser.parse_args()
 
@@ -466,7 +612,7 @@ def main() -> None:
     args = parse_args()
     root = Path.cwd().resolve()
     config = EngineConfig.load(root=root, agent="codex", provider="codex-cli", codex_search=True)
-    ideas = _read_latest_ideas(root, args.latest)
+    ideas = _read_missing_ideas(root, args.latest) if args.missing else _read_latest_ideas(root, args.latest)
     count = audit_new_ideas(
         config,
         ideas,
