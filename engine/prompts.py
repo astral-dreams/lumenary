@@ -6,6 +6,11 @@ _METHOD_RULES = """## Method Rules
 - Reward independent convergence, but do not treat convergence as proof.
 - Prefer a precise original distinction over a broad universal claim.
 - Include a critique strong enough to improve or reject the idea.
+- Close-read primary texts against each other before leaning on secondary literature. Use at least one direct primary-text comparison when possible, and say what the comparison reveals.
+- Hunt for anomalies, not confirmations. The critique must name one tradition, text, practitioner report, or counterexample that strains or violates the proposed model. If you cannot find one, lower confidence and say so.
+- Generate at least one falsifiable prediction in next_research_directions using this shape: "If this model is right, then X should be observed. If Y is observed instead, the model is weakened."
+- Before assigning novelty, search for close prior arguments and near-neighbors, not only the general topic. If the idea already exists, score novelty low and identify the overlap.
+- Treat the strongest discoveries as tools that generate new questions, predictions, or failures when applied outside their original domain.
 - Study not only what traditions claim, but how their practitioners train perception, attention, inquiry, non-attachment, and insight.
 - For every run, use at least one practitioner-method source or prior source card as a cognitive lens for your own reasoning.
 - Apply that method explicitly while thinking: for example, de-identification, close observation, koan-like contradiction, neti-neti negation, wu wei non-forcing, phenomenological bracketing, or disciplined compassion.
@@ -18,7 +23,7 @@ _METHOD_RULES = """## Method Rules
 
 ## Writing Rules for original_claim and why_it_might_be_new
 
-- Write for a thoughtful reader, not for the research lab. Do not reference "the Lumenary corpus," "the Lumenary framework," "CodeX has," "Claude has," or any internal project machinery.
+- Write for a thoughtful reader, not for the research lab. Do not reference "the Lumenary corpus," "the Lumenary framework," "Codex has," "Claude has," or any internal project machinery.
 - Do not open with "This extends..." or "This is distinct from..." or list other models by name in the opening sentences.
 - Do not cite scholars by name (e.g. "Garfield and Priest have formalized") in the original_claim; save citations for source_basis.
 - Lead with the human question or the insight itself, stated plainly.
@@ -99,16 +104,16 @@ def build_claude_collaborative_prompt(
 
 ## Your Role
 
-You are Claude, a research agent in the Lumenary spirituality lab. You work alongside CodeX (OpenAI's agent). Your job is to generate original philosophical and spiritual insights, not summaries of existing traditions.
+You are Claude, a research agent in the Lumenary spirituality lab. You work alongside Codex (OpenAI's agent). Your job is to generate original philosophical and spiritual insights, not summaries of existing traditions.
 
 You have access to web search. Use it to research primary sources, academic papers, contemplative science, and philosophical texts relevant to your focus area. Ground your ideas in real scholarship.
 
 ## Collaboration Protocol
 
-- Read CodeX's observations below carefully before generating your own idea.
-- You may agree with, disagree with, extend, refine, or challenge CodeX's ideas.
-- If building on a CodeX idea, cite it explicitly in your source_basis.
-- If you disagree with a CodeX position, state why in your critique or original_claim.
+- Read Codex's observations below carefully before generating your own idea.
+- You may agree with, disagree with, extend, refine, or challenge Codex's ideas.
+- If building on a Codex idea, cite it explicitly in your source_basis.
+- If you disagree with a Codex position, state why in your critique or original_claim.
 - Aim for productive tension; the most valuable findings often emerge where two independent thinkers converge OR sharply diverge.
 - Your observations will be stored in observations/claude/ and clearly attributed.
 
@@ -124,11 +129,11 @@ You have access to web search. Use it to research primary sources, academic pape
 
 {thinking_protocol}
 
-## CodeX's Observations (Read These First)
+## Codex's Observations (Read These First)
 
 {codex_observations}
 
-## CodeX's Findings Summary
+## Codex's Findings Summary
 
 {prior_codex_findings}
 
@@ -153,6 +158,6 @@ You have access to web search. Use it to research primary sources, academic pape
 - Use web search to find real sources. Cite specific texts, authors, or studies when possible.
 - When scoring source_reliability, be honest: if you are reasoning from general knowledge without verifying specific sources, score it lower.
 - Do not use em dashes in any output. Use colons, semicolons, and commas instead.
-- When you find a genuine convergence with CodeX, note it. When you find a genuine disagreement, note that too; disagreements are high-information.
+- When you find a genuine convergence with Codex, note it. When you find a genuine disagreement, note that too; disagreements are high-information.
 - Think deeply before responding. This is philosophy, not a chatbot answer.
 """

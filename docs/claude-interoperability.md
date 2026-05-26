@@ -1,6 +1,6 @@
 # Claude Code Interoperability
 
-Claude Code is a native engine provider, on equal footing with CodeX.
+Claude Code is a native engine provider, on equal footing with Codex.
 
 ## Primary Path: Engine Provider
 
@@ -35,15 +35,15 @@ python3 -m engine.import_idea --agent claude path/to/idea.json
 ## Collaborative Prompt
 
 When the provider is `claude-code`, the engine uses `build_claude_collaborative_prompt` which includes:
-- All CodeX observations from `observations/codex/`
+- All Codex observations from `observations/codex/`
 - The concept graph from `graph/concept-graph.seed.json`
 - Next research directions from `state/next_directions.md`
-- Explicit instructions to engage with CodeX's work
+- Explicit instructions to engage with Codex's work
 
 ## Required Behavior
 
 - Claude observations stored under `observations/claude/`.
-- Uses the same epistemic labels, scoring rubric, and idea schema as CodeX.
-- Does not overwrite CodeX observations.
+- Uses the same epistemic labels, scoring rubric, and idea schema as Codex.
+- Does not overwrite Codex observations.
 - Agreements and disagreements documented under `findings/convergences/`.
 - Claude findings summary maintained at `findings/claude-code-findings.md`.

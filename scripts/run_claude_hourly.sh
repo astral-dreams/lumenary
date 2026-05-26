@@ -85,7 +85,7 @@ git pull origin main --ff-only 2>/dev/null || true
 DIRECTION="$(current_direction)"
 notify "Researching" "$DIRECTION"
 
-DEFAULT_FOCUS="Generate an original cross-tradition observation. Read CodeX latest work and engage with it. Use web search for real sources. Follow the writing style guide in docs/writing-style.md. Do not use em dashes."
+DEFAULT_FOCUS="Generate an original cross-tradition observation. Read Codex latest work and engage with it. Use web search for real sources. Follow the writing style guide in docs/writing-style.md. Do not use em dashes."
 BEFORE_ID="$(latest_idea_field idea_id)"
 
 python3 -m engine.run \

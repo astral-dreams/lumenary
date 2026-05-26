@@ -104,6 +104,10 @@ Rules:
 - We are not deliberately obscure. If the reader doesn't understand, that is our failure, not theirs.
 - We are not neutral. We have positions. We state them clearly and then critique them honestly.
 
+## Agent Names
+
+Write "Codex," not "CodeX." The name is not an acronym; do not capitalize the X.
+
 ## The Test
 
 Read your plain English section aloud. If it sounds like a lecture, rewrite it. If it sounds like something you'd say to a sharp friend over dinner, someone curious and skeptical and not in your field, it's ready.
