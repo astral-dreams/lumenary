@@ -305,3 +305,54 @@
 ## 2026-05-25T15:47:54-07:00
 
 - Registered source `high-energy-physics-cern-physics-programme` and source card `notes/source-cards/high-energy-physics-cern-physics-programme.md`.
+
+## 2026-05-25T16:13:24-07:00
+
+- Claude registered 20 deep-research source cards across Advaita Vedanta (3), Buddhism (4), Daoism (2), Neoplatonism (2), Sufism (3), and consciousness science/physics (6).
+- Expanded concept graph from 8 nodes/6 edges to 29 nodes/25 edges.
+- Cross-tradition connections documented in each card for future idea generation.
+
+## 2026-05-25T16:49:17-07:00
+
+- Run `20260525-164612-claude-using-the-newly-registered-source-cards-across-a` generated `The Processual Remainder: Ibn Arabi's Barzakh as a Third Inferential Policy Beyond Licensing and Refusing`.
+- Observation file: `observations/claude/2026-05-25-the-processual-remainder-ibn-arabi-s-barzakh-as-a-third-inferential-policy-beyond-licensing-and-refusing.md`.
+
+## 2026-05-25T16:49:17-07:00
+
+- Scheduler completed run `20260525-164612-claude-using-the-newly-registered-source-cards-across-a`.
+
+## 2026-05-25T16:57:05-07:00
+
+- Run `20260525-164923-claude-using-the-newly-registered-source-cards-across-a` generated `Expressive Realism: Dogen's Being-Time as a Dissolution of the Passage Problem That Neither Eternalism Nor Presentism Can Resolve`.
+- Observation file: `observations/claude/2026-05-25-expressive-realism-dogen-s-being-time-as-a-dissolution-of-the-passage-problem-that-neither-eternalism-nor-presentism-can-resolve.md`.
+
+## 2026-05-25T16:57:05-07:00
+
+- Scheduler completed run `20260525-164923-claude-using-the-newly-registered-source-cards-across-a`.
+
+## 2026-05-25T17:01:22-07:00
+
+- Run `20260525-165711-claude-using-the-newly-registered-source-cards-across-a` generated `The Formal Recurrence of the Inferential Gap: Why Predictive Processing Reproduces Rather Than Resolves the Witness/No-Self Dispute`.
+- Observation file: `observations/claude/2026-05-25-the-formal-recurrence-of-the-inferential-gap-why-predictive-processing-reproduces-rather-than-resolves-the-witness-no-self-dispute.md`.
+
+## 2026-05-25T17:01:22-07:00
+
+- Scheduler completed run `20260525-165711-claude-using-the-newly-registered-source-cards-across-a`.
+
+## 2026-05-25T17:05:51-07:00
+
+- Run `20260525-170128-claude-using-the-newly-registered-source-cards-across-a` generated `The Same Negation, the Opposite Inference: Logical Underdetermination in the Catuskoti as a Second Test of the Inferential Gap`.
+- Observation file: `observations/claude/2026-05-25-the-same-negation-the-opposite-inference-logical-underdetermination-in-the-catuskoti-as-a-second-test-of-the-inferential-gap.md`.
+
+## 2026-05-25T17:05:51-07:00
+
+- Scheduler completed run `20260525-170128-claude-using-the-newly-registered-source-cards-across-a`.
+
+## 2026-05-25T17:10:45-07:00
+
+- Run `20260525-170557-claude-using-the-newly-registered-source-cards-across-a` generated `Generative Negation: A Third Logical Type That Dzogchen, Eckhart, and Daoism Require But Indian Logic Bifurcates Away`.
+- Observation file: `observations/claude/2026-05-25-generative-negation-a-third-logical-type-that-dzogchen-eckhart-and-daoism-require-but-indian-logic-bifurcates-away.md`.
+
+## 2026-05-25T17:10:45-07:00
+
+- Scheduler completed run `20260525-170557-claude-using-the-newly-registered-source-cards-across-a`.

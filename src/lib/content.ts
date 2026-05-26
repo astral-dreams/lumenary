@@ -354,6 +354,20 @@ const distillations: Distillation[] = [
       "This finding says scientific models of self-making may repeat the old spiritual question rather than settle it.",
     tags: ["consciousness", "science", "self"],
   },
+  {
+    insight: "The same logic can prove opposite metaphysics.",
+    match: ["same negation", "logical underdetermination", "catuskoti"],
+    plainSummary:
+      "This finding says Nagarjuna and Gaudapada use identical four-cornered logical machinery to reach opposite conclusions — proving that logical form alone cannot settle whether reality has a ground or not.",
+    tags: ["buddhism", "advaita", "method"],
+  },
+  {
+    insight: "Some traditions need a negation that creates rather than destroys.",
+    match: ["generative negation", "third logical type", "dzogchen"],
+    plainSummary:
+      "This finding says Dzogchen, Meister Eckhart, and Daoism all require a kind of negation that neither affirms a remainder nor leaves a void — it clears space for something to spontaneously appear.",
+    tags: ["buddhism", "daoism", "neoplatonism", "method"],
+  },
 ];
 
 function distillationFor(record: IdeaRecord): Distillation | null {

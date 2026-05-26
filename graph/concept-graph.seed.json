@@ -1,105 +1,60 @@
 {
   "nodes": [
-    {
-      "id": "atman",
-      "label": "Atman",
-      "type": "concept",
-      "traditions": [
-        "Advaita Vedanta",
-        "Hindu philosophy"
-      ]
-    },
-    {
-      "id": "anatman",
-      "label": "Anatman / non-self",
-      "type": "concept",
-      "traditions": [
-        "Buddhism"
-      ]
-    },
-    {
-      "id": "brahman",
-      "label": "Brahman",
-      "type": "concept",
-      "traditions": [
-        "Vedanta"
-      ]
-    },
-    {
-      "id": "sunyata",
-      "label": "Sunyata / emptiness",
-      "type": "concept",
-      "traditions": [
-        "Madhyamaka",
-        "Mahayana Buddhism"
-      ]
-    },
-    {
-      "id": "wu-wei",
-      "label": "Wu wei",
-      "type": "concept",
-      "traditions": [
-        "Daoism"
-      ]
-    },
-    {
-      "id": "soul",
-      "label": "Soul",
-      "type": "compound-concept",
-      "traditions": [
-        "Christianity",
-        "Platonism",
-        "Islamic philosophy",
-        "many others"
-      ]
-    },
-    {
-      "id": "witness-consciousness",
-      "label": "Witness-consciousness",
-      "type": "claim-unit",
-      "traditions": [
-        "Advaita Vedanta",
-        "contemplative phenomenology"
-      ]
-    },
-    {
-      "id": "translation-strain",
-      "label": "Translation strain",
-      "type": "lumenary-method"
-    }
+    {"id": "atman", "label": "Atman", "type": "concept", "traditions": ["Advaita Vedanta", "Hindu philosophy"]},
+    {"id": "anatman", "label": "Anatman / non-self", "type": "concept", "traditions": ["Buddhism"]},
+    {"id": "brahman", "label": "Brahman", "type": "concept", "traditions": ["Vedanta"]},
+    {"id": "sunyata", "label": "Sunyata / emptiness", "type": "concept", "traditions": ["Madhyamaka", "Mahayana Buddhism"]},
+    {"id": "wu-wei", "label": "Wu wei", "type": "concept", "traditions": ["Daoism"]},
+    {"id": "soul", "label": "Soul", "type": "compound-concept", "traditions": ["Christianity", "Platonism", "Islamic philosophy"]},
+    {"id": "witness-consciousness", "label": "Witness-consciousness / sakshi", "type": "claim-unit", "traditions": ["Advaita Vedanta", "contemplative phenomenology"]},
+    {"id": "turiya", "label": "Turiya (the Fourth)", "type": "concept", "traditions": ["Advaita Vedanta", "Mandukya Upanishad"]},
+    {"id": "ajativada", "label": "Ajativada (non-origination)", "type": "concept", "traditions": ["Advaita Vedanta", "Gaudapada"]},
+    {"id": "dependent-origination", "label": "Pratityasamutpada / dependent origination", "type": "concept", "traditions": ["Buddhism"]},
+    {"id": "alaya-vijnana", "label": "Alaya-vijnana (storehouse consciousness)", "type": "concept", "traditions": ["Yogacara Buddhism", "Lankavatara Sutra"]},
+    {"id": "citta-matra", "label": "Citta-matra (mind-only)", "type": "concept", "traditions": ["Yogacara Buddhism"]},
+    {"id": "being-time", "label": "Uji (being-time)", "type": "concept", "traditions": ["Soto Zen", "Dogen"]},
+    {"id": "wu", "label": "Wu (non-being)", "type": "concept", "traditions": ["Daoism"]},
+    {"id": "dao", "label": "Dao", "type": "concept", "traditions": ["Daoism"]},
+    {"id": "zuowang", "label": "Zuowang (sitting and forgetting)", "type": "concept", "traditions": ["Daoism", "Zhuangzi"]},
+    {"id": "the-one", "label": "The One (to hen)", "type": "concept", "traditions": ["Neoplatonism", "Plotinus"]},
+    {"id": "emanation", "label": "Emanation / proodos", "type": "concept", "traditions": ["Neoplatonism"]},
+    {"id": "epistrophe", "label": "Epistrophe (return/reversion)", "type": "concept", "traditions": ["Neoplatonism", "Proclus"]},
+    {"id": "wahdat-al-wujud", "label": "Wahdat al-wujud (unity of being)", "type": "concept", "traditions": ["Sufism", "Ibn Arabi"]},
+    {"id": "fana", "label": "Fana (self-annihilation in God)", "type": "concept", "traditions": ["Sufism"]},
+    {"id": "pancha-kosha", "label": "Pancha kosha (five sheaths)", "type": "concept", "traditions": ["Advaita Vedanta", "Vivekachudamani"]},
+    {"id": "phi-iit", "label": "Phi / integrated information", "type": "concept", "traditions": ["consciousness science", "IIT"]},
+    {"id": "markov-blanket", "label": "Markov blanket (self-boundary)", "type": "concept", "traditions": ["computational neuroscience", "Friston"]},
+    {"id": "it-from-bit", "label": "It from Bit (participatory universe)", "type": "concept", "traditions": ["theoretical physics", "Wheeler"]},
+    {"id": "maya", "label": "Maya (illusion/appearance)", "type": "concept", "traditions": ["Advaita Vedanta"]},
+    {"id": "catuskoti", "label": "Catuskoti (tetralemma)", "type": "concept", "traditions": ["Madhyamaka Buddhism", "Nagarjuna"]},
+    {"id": "inferential-gap", "label": "Inferential gap", "type": "lumenary-method"},
+    {"id": "translation-strain", "label": "Translation strain", "type": "lumenary-method"}
   ],
   "edges": [
-    {
-      "source": "atman",
-      "target": "anatman",
-      "relation": "tension",
-      "note": "Useful test case for distinguishing convergence, contradiction, and translation strain."
-    },
-    {
-      "source": "brahman",
-      "target": "sunyata",
-      "relation": "possible-structural-parallel",
-      "note": "Must be handled carefully; structural comparison is not metaphysical identity."
-    },
-    {
-      "source": "witness-consciousness",
-      "target": "atman",
-      "relation": "claim-unit-of"
-    },
-    {
-      "source": "translation-strain",
-      "target": "atman",
-      "relation": "analyzes"
-    },
-    {
-      "source": "translation-strain",
-      "target": "anatman",
-      "relation": "analyzes"
-    },
-    {
-      "source": "translation-strain",
-      "target": "soul",
-      "relation": "decomposes"
-    }
+    {"source": "atman", "target": "anatman", "relation": "tension", "note": "Paradigmatic test case. Claude's inferential gap model: same phenomenology, competing inferential policies."},
+    {"source": "brahman", "target": "sunyata", "relation": "structural-parallel-with-divergence", "note": "Both negate origination (ajativada/MMK 1:1). Diverge on substratum: Brahman affirmed vs. emptiness of emptiness."},
+    {"source": "brahman", "target": "the-one", "relation": "structural-parallel", "note": "Both beyond predication, source of all. Differ on status of matter (mithya vs. evil)."},
+    {"source": "brahman", "target": "dao", "relation": "structural-parallel", "note": "Both ineffable source of all manifestation. Differ on impersonality and processual vs. static character."},
+    {"source": "brahman", "target": "wahdat-al-wujud", "relation": "structural-parallel", "note": "Both posit unity of being. Ibn Arabi's tajalli parallels Brahman's self-disclosure through maya."},
+    {"source": "sunyata", "target": "wu", "relation": "apparent-parallel-high-strain", "note": "Geyi conflation. Wu is cosmogonically generative; sunyata is deconstructive. Different functions despite surface resemblance."},
+    {"source": "ajativada", "target": "catuskoti", "relation": "shared-logical-structure", "note": "Gaudapada 4.22 and MMK 1:1 use identical four-fold negation. Same negation, opposite inference."},
+    {"source": "witness-consciousness", "target": "atman", "relation": "claim-unit-of"},
+    {"source": "turiya", "target": "the-one", "relation": "structural-parallel", "note": "Both defined by negation, both beyond self-knowledge/self-relation."},
+    {"source": "pancha-kosha", "target": "zuowang", "relation": "structural-parallel", "note": "Both describe progressive stripping of identification layers. What remains after negation?"},
+    {"source": "alaya-vijnana", "target": "maya", "relation": "functional-parallel", "note": "Both describe how consciousness projects phenomenal world. Alaya stores seeds; maya veils Brahman."},
+    {"source": "citta-matra", "target": "maya", "relation": "structural-parallel", "note": "Both deny independent external reality. Differ on what underlies appearance (sunyata vs. Brahman)."},
+    {"source": "markov-blanket", "target": "anatman", "relation": "formal-parallel", "note": "FEP: self is statistical boundary, not substance. Buddhist anatta: self is construct, not entity."},
+    {"source": "markov-blanket", "target": "pancha-kosha", "relation": "formal-parallel", "note": "Precision relaxation in meditation = progressive loosening of self-model priors = sheath negation."},
+    {"source": "it-from-bit", "target": "dependent-origination", "relation": "structural-parallel", "note": "Both deny pre-existing determinate reality independent of participatory acts."},
+    {"source": "phi-iit", "target": "brahman", "relation": "partial-parallel", "note": "Both: consciousness is fundamental. But IIT is pluralistic (many Phi values); Vedanta is monistic."},
+    {"source": "emanation", "target": "dao", "relation": "structural-parallel", "note": "DDJ Ch.42 (Dao->One->Two->Three->Many) parallels One->Nous->Soul->Matter."},
+    {"source": "epistrophe", "target": "dao", "relation": "structural-parallel", "note": "DDJ Ch.40 'return is the movement of the Dao' = Neoplatonic reversion to source."},
+    {"source": "fana", "target": "zuowang", "relation": "structural-parallel", "note": "Both describe dissolution of self-identity in the absolute. Different ontological frameworks."},
+    {"source": "being-time", "target": "dependent-origination", "relation": "radical-extension", "note": "Dogen radicalizes DO: things don't arise IN time, the arising IS time."},
+    {"source": "inferential-gap", "target": "atman", "relation": "analyzes"},
+    {"source": "inferential-gap", "target": "anatman", "relation": "analyzes"},
+    {"source": "translation-strain", "target": "sunyata", "relation": "analyzes"},
+    {"source": "translation-strain", "target": "wu", "relation": "analyzes"},
+    {"source": "translation-strain", "target": "soul", "relation": "decomposes"}
   ]
 }
