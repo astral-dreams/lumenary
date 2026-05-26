@@ -36,7 +36,7 @@ Preferred child-agent posture:
 
 Wire the continuous loop so it can repeatedly generate, critique, store, and revisit original ideas.
 
-The next product layer is a public website with hourly research publication during the active day. The scheduler cadence is once per hour in `America/Los_Angeles` from the configured start hour until 5pm, then one end-of-day Journal entry. Daily publication artifacts should live under `publication/daily/`. Journal entries live under `publication/journal/` and are first-person reflections, 350-500 words, written after the day's research closes. X/social drafts should live under `publication/x/queue/` and require human review before posting. The publisher should only promote records that pass the Public Claim threshold.
+The next product layer is a public website with hourly research publication during the active day. The scheduler cadence is once per hour in the machine's current local timezone from 8am until 4pm, then one end-of-day Journal entry. Daily publication artifacts should live under `publication/daily/`. Journal entries live under `publication/journal/` and are first-person reflections, 350-500 words, written after the day's research closes. X/social drafts should live under `publication/x/queue/` and require human review before posting. The publisher should only promote records that pass the Public Claim threshold.
 
 ## Claude Code Interop
 

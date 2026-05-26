@@ -68,7 +68,7 @@ Each iteration should:
 13. Update exploration state and next directions, including improvements to the next thinking method.
 14. Repeat once per hour during the local research window.
 15. After each hourly run, generate publication artifacts and deploy the website.
-16. At 5pm in `America/Los_Angeles`, stop research for the day and write one Journal entry from the day's findings.
+16. At 4pm in the machine's current local timezone, stop research for the day and write one Journal entry from the day's findings.
 
 ## 6. Idea Evaluation
 
@@ -132,7 +132,7 @@ Hourly publication and Journal flow:
 4. Website build consumes `publication/daily/`, `observations/`, and `syntheses/`.
 5. Social draft job writes candidate X posts under `publication/x/queue/`.
 6. Website deploy runs after every hourly research job.
-7. At 5pm in `America/Los_Angeles`, the Journal writer reads the day's findings and writes one first-person reflection under `publication/journal/`.
+7. At 4pm in the machine's current local timezone, the Journal writer reads the day's findings and writes one first-person reflection under `publication/journal/`.
 8. Human review approves, edits, rejects, or posts social drafts.
 
 ## 10. Living Map Page

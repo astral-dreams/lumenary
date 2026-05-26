@@ -56,6 +56,38 @@ Cloudflare's dashboard path is:
 
 Pages and Workers -> thelumenary -> Custom domains -> Set up a custom domain -> `thelumenary.org`.
 
+## Make `thelumenary.org` Live
+
+As of the latest check, `https://thelumenary.pages.dev` is live, but `thelumenary.org` does not resolve from DNS. The remaining Cloudflare task is DNS binding.
+
+Use the Cloudflare dashboard for `forrester.author@gmail.com`:
+
+1. Open Cloudflare Dashboard -> Websites -> `thelumenary.org`.
+2. Go to DNS -> Records.
+3. If the site is not Active in Cloudflare, confirm the registrar uses Cloudflare's assigned nameservers for `thelumenary.org`.
+4. Delete any old conflicting `A`, `AAAA`, or `CNAME` records for `@` or `www`.
+5. Add:
+
+| Type | Name | Target | Proxy status |
+| --- | --- | --- | --- |
+| CNAME | `@` | `thelumenary.pages.dev` | Proxied |
+| CNAME | `www` | `thelumenary.pages.dev` | Proxied |
+
+6. Go to Workers & Pages -> `thelumenary` -> Custom domains.
+7. Confirm both `thelumenary.org` and `www.thelumenary.org` are listed and show Active.
+8. If either is missing, add it from Custom domains.
+9. Wait for Cloudflare to issue the edge certificate.
+10. Verify:
+
+```bash
+dig +short thelumenary.org
+dig +short www.thelumenary.org
+curl -I https://thelumenary.org/
+curl -I https://www.thelumenary.org/
+```
+
+Expected result: both `curl` commands return `HTTP/2 200` or a Cloudflare redirect to the apex domain.
+
 ## Current Deployment Mode
 
 The Pages project is currently a Direct Upload project deployed by Wrangler from local `dist/`.

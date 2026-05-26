@@ -8,9 +8,9 @@ python3 -m engine.scheduler \
   --search \
   --cadence "${SPIRITUALITY_CADENCE:-hourly-day}" \
   --interval-minutes "${SPIRITUALITY_INTERVAL_MINUTES:-60}" \
-  --timezone "${SPIRITUALITY_TIMEZONE:-America/Los_Angeles}" \
+  --timezone "${SPIRITUALITY_TIMEZONE:-local}" \
   --active-start-hour "${SPIRITUALITY_RESEARCH_START_HOUR:-8}" \
-  --end-hour "${SPIRITUALITY_RESEARCH_END_HOUR:-17}" \
+  --end-hour "${SPIRITUALITY_RESEARCH_END_HOUR:-16}" \
   --publish-after-run \
   --journal-after-window \
   --deploy-script "${SPIRITUALITY_DEPLOY_SCRIPT:-scripts/deploy_site.sh}" \

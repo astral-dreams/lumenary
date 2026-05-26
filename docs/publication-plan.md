@@ -42,7 +42,7 @@ The map is also an operational tool for the recursive loop: sparse or weakly con
 
 ## Hourly Research Publication
 
-The active cadence is hourly in `America/Los_Angeles` until 5pm. Each hourly job should:
+The active cadence is hourly in the machine's current local timezone from 8am until 4pm. Each hourly job should:
 
 1. Read recent observations, hypotheses, and syntheses.
 2. Select the strongest item that passes the Public Claim promotion gate.
@@ -53,7 +53,7 @@ The active cadence is hourly in `America/Los_Angeles` until 5pm. Each hourly job
 
 ## Journal Job
 
-After the research window closes at 5pm, write one Journal entry for the day.
+After the research window closes at 4pm local time, write one Journal entry for the day.
 
 The Journal should:
 

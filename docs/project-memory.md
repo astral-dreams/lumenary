@@ -36,7 +36,7 @@ Working name: Lumenary.
 
 The strongest near-term architecture is a custom Python loop that calls `codex exec` for live research and structured idea generation. The child Codex process should be read-only and return JSON; the parent engine should write observations, hypotheses, run logs, and state updates.
 
-The public layer runs on an hourly cadence: research once per hour in `America/Los_Angeles` until 5pm, publish the website after each hourly job, then write one first-person Journal entry from the day's findings and publish again. Social drafts remain reviewed before posting.
+The public layer runs on an hourly cadence: research once per hour in the machine's current local timezone from 8am until 4pm, publish the website after each hourly job, then write one first-person Journal entry from the day's findings and publish again. Social drafts remain reviewed before posting.
 
 ## Imported Claude Code Contributions
 

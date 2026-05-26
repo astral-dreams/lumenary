@@ -4,19 +4,19 @@ import argparse
 import json
 import re
 import subprocess
-from datetime import datetime
+from datetime import datetime, tzinfo
 from pathlib import Path
 from typing import Any
-from zoneinfo import ZoneInfo
 
 from .config import EngineConfig
 from .librarian import Librarian
+from .local_time import resolve_timezone, timezone_label
 from .process_control import register_child, unregister_child
 from .promotion import decide_promotion, load_promotion_rules
 from .schemas import now_local_iso, slugify
 
 
-def _local_date(value: str, timezone: ZoneInfo) -> str | None:
+def _local_date(value: str, timezone: tzinfo) -> str | None:
     try:
         parsed = datetime.fromisoformat(value.replace("Z", "+00:00"))
     except ValueError:
@@ -62,7 +62,7 @@ def _existing_journal_path(root: Path, date: str) -> Path | None:
     return None
 
 
-def _idea_summary(root: Path, date: str, timezone: ZoneInfo) -> str:
+def _idea_summary(root: Path, date: str, timezone: tzinfo) -> str:
     rules = load_promotion_rules()
     parts: list[str] = []
     for record in _read_idea_records(root):
@@ -108,14 +108,14 @@ def _daily_post_summary(root: Path, date: str) -> str:
 
 
 def _build_prompt(root: Path, date: str, timezone_name: str) -> str:
-    timezone = ZoneInfo(timezone_name)
+    timezone = resolve_timezone(timezone_name)
     style = (root / "docs" / "writing-style.md").read_text(encoding="utf-8")
     return f"""# Lumenary Journal Entry
 
 Write the end-of-day Journal entry for The Lumenary.
 
 Date: {date}
-Timezone: {timezone_name}
+Timezone: {timezone_label(timezone_name)}
 
 This is not a research memo. It is the human-facing reflection after the research is done.
 
@@ -306,12 +306,12 @@ def generate_journal_entry(
     config: EngineConfig,
     *,
     date: str | None = None,
-    timezone_name: str = "America/Los_Angeles",
+    timezone_name: str = "local",
     force: bool = False,
 ) -> Path | None:
     librarian = Librarian(config.root)
     librarian.ensure_workspace()
-    local_now = datetime.now(ZoneInfo(timezone_name))
+    local_now = datetime.now(resolve_timezone(timezone_name))
     journal_date = date or local_now.date().isoformat()
 
     existing = _existing_journal_path(config.root, journal_date)
@@ -356,7 +356,11 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--model", default=None, help="Model to pass to Codex CLI.")
     parser.add_argument("--dry-run", action="store_true", help="Use the offline Journal fixture.")
     parser.add_argument("--date", default=None, help="Journal date in YYYY-MM-DD.")
-    parser.add_argument("--timezone", default="America/Los_Angeles", help="Local timezone for cadence.")
+    parser.add_argument(
+        "--timezone",
+        default="local",
+        help="Timezone for cadence. Use local to follow the machine's current timezone.",
+    )
     parser.add_argument("--force", action="store_true", help="Overwrite by creating a new Journal file for the date.")
     return parser.parse_args()
 

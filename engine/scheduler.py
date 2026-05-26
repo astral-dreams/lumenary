@@ -7,11 +7,11 @@ import subprocess
 import time
 from datetime import datetime, timedelta
 from pathlib import Path
-from zoneinfo import ZoneInfo
 
 from .config import EngineConfig
 from .journal import generate_journal_entry
 from .librarian import Librarian
+from .local_time import is_local_timezone, resolve_timezone, timezone_label
 from .process_control import register_child, terminate_current_child, unregister_child
 from .publisher import generate_daily_update
 from .run import run_once
@@ -40,7 +40,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--interval-minutes",
         type=float,
-        default=120.0,
+        default=60.0,
         help="Delay between iterations.",
     )
     parser.add_argument(
@@ -68,8 +68,8 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument(
         "--timezone",
-        default="America/Los_Angeles",
-        help="Timezone for the hourly-day cadence and Journal cutoff.",
+        default="local",
+        help="Timezone for cadence and Journal cutoff. Use local to follow the machine's current timezone.",
     )
     parser.add_argument(
         "--active-start-hour",
@@ -80,8 +80,8 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--end-hour",
         type=int,
-        default=17,
-        help="Local hour when research stops and Journal generation begins. Default: 17 for 5pm.",
+        default=16,
+        help="Local hour when research stops and Journal generation begins. Default: 16 for 4pm.",
     )
     parser.add_argument(
         "--publish-after-run",
@@ -243,9 +243,13 @@ def _run_research_cycle(
     )
 
 
-def _sleep_until(target: datetime, timezone: ZoneInfo) -> None:
+def _sleep_until(target: datetime, timezone_name: str) -> None:
     while not _SHOULD_STOP:
-        remaining = (target - datetime.now(timezone)).total_seconds()
+        if is_local_timezone(timezone_name):
+            current_local = datetime.now().astimezone()
+            if current_local.utcoffset() != target.utcoffset():
+                return
+        remaining = (target - datetime.now(target.tzinfo)).total_seconds()
         if remaining <= 0:
             return
         time.sleep(min(30.0, remaining))
@@ -266,10 +270,10 @@ def _maybe_write_journal(
     config: EngineConfig,
     args: argparse.Namespace,
     librarian: Librarian,
-    timezone: ZoneInfo,
 ) -> None:
     if not args.journal_after_window:
         return
+    timezone = resolve_timezone(args.timezone)
     journal_date = datetime.now(timezone).date().isoformat()
     path = generate_journal_entry(
         config,
@@ -340,11 +344,11 @@ def _run_hourly_day_loop(
     librarian: Librarian,
 ) -> None:
     _validate_window(args)
-    timezone = ZoneInfo(args.timezone)
     completed = 0
     consecutive_failures = 0
 
     while not _SHOULD_STOP:
+        timezone = resolve_timezone(args.timezone)
         now = datetime.now(timezone)
 
         if now.hour < args.active_start_hour:
@@ -358,21 +362,27 @@ def _run_hourly_day_loop(
                 librarian,
                 "sleep",
                 "Waiting for research window to open.",
-                extra={"until": start.isoformat()},
+                extra={
+                    "timezone": timezone_label(args.timezone),
+                    "until": start.isoformat(),
+                },
             )
-            _sleep_until(start, timezone)
+            _sleep_until(start, args.timezone)
             continue
 
         if now.hour >= args.end_hour:
-            _maybe_write_journal(config, args, librarian, timezone)
+            _maybe_write_journal(config, args, librarian)
             start = _next_window_start(now, args.active_start_hour)
             _log_event(
                 librarian,
                 "sleep",
                 "Research window closed; waiting for next day.",
-                extra={"until": start.isoformat()},
+                extra={
+                    "timezone": timezone_label(args.timezone),
+                    "until": start.isoformat(),
+                },
             )
-            _sleep_until(start, timezone)
+            _sleep_until(start, args.timezone)
             continue
 
         try:
@@ -388,6 +398,7 @@ def _run_hourly_day_loop(
         if args.iterations and completed >= args.iterations:
             break
 
+        timezone = resolve_timezone(args.timezone)
         now = datetime.now(timezone)
         if now.hour >= args.end_hour:
             continue
@@ -397,9 +408,12 @@ def _run_hourly_day_loop(
             librarian,
             "sleep",
             "Waiting for next hourly research run.",
-            extra={"until": next_run.isoformat()},
+            extra={
+                "timezone": timezone_label(args.timezone),
+                "until": next_run.isoformat(),
+            },
         )
-        _sleep_until(next_run, timezone)
+        _sleep_until(next_run, args.timezone)
 
 
 def main() -> None:
