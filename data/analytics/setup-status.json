@@ -2,10 +2,10 @@
   "updated_at": "2026-05-25T19:45:00-07:00",
   "site": "https://thelumenary.org",
   "ga4": {
-    "status": "wired_waiting_for_measurement_id",
+    "status": "configured",
     "measurement_env": "PUBLIC_GA_MEASUREMENT_ID",
     "property_env": "GA4_PROPERTY_ID",
-    "notes": "The layout emits GA4 on every page when PUBLIC_GA_MEASUREMENT_ID is present at build time. The client script can also activate GA4 from the Cloudflare runtime config endpoint."
+    "notes": "GA4 measurement ID G-9QXKKHXPK5 is configured in Cloudflare Pages as GA_MEASUREMENT_ID. The site activates GA4 through the runtime config endpoint."
   },
   "gsc": {
     "status": "wired_waiting_for_verification",
