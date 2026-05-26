@@ -588,6 +588,7 @@ meter {
   border-radius: 8px;
   box-shadow: var(--shadow);
   display: grid;
+  grid-template-rows: auto auto 1fr;
   min-height: 190px;
   padding: 18px;
 }
@@ -607,6 +608,46 @@ meter {
   font-size: 0.92rem;
   line-height: 1.45;
   margin: 12px 0 0;
+}
+
+.insight-card-actions {
+  align-self: end;
+  margin-top: 18px;
+}
+
+.insight-vote {
+  align-items: center;
+  background: var(--band);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--ink);
+  cursor: pointer;
+  display: inline-flex;
+  font: inherit;
+  font-size: 0.82rem;
+  font-weight: 800;
+  gap: 7px;
+  min-height: 34px;
+  padding: 6px 11px;
+}
+
+.insight-vote:hover:not(:disabled) {
+  border-color: color-mix(in srgb, var(--green) 55%, var(--line));
+  color: var(--green);
+}
+
+.insight-vote:disabled {
+  color: var(--green);
+  cursor: default;
+}
+
+.insight-vote strong {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  min-width: 24px;
+  padding: 2px 7px;
+  text-align: center;
 }
 
 .empty-filter-message {

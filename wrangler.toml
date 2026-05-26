@@ -1,3 +1,7 @@
 name = "thelumenary"
 compatibility_date = "2026-05-25"
 pages_build_output_dir = "dist"
+
+[[kv_namespaces]]
+binding = "INSIGHT_VOTES"
+id = "4abf77f82ed448348f6b673fc893b0c1"
