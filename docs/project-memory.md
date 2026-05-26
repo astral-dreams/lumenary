@@ -19,7 +19,7 @@ Working name: Lumenary.
 - The live model provider should be the local Codex CLI subscription, not direct API keys for v1.
 - The local filesystem is the durable knowledge store.
 - Git should track how the thinking evolves.
-- A public website should present daily findings and stronger syntheses.
+- A public website should present hourly-published findings during the active research day, end-of-day Journal entries, and stronger syntheses.
 - X posting is desirable eventually, but should start as a reviewed queue.
 
 ## Research Commitments
@@ -36,7 +36,7 @@ Working name: Lumenary.
 
 The strongest near-term architecture is a custom Python loop that calls `codex exec` for live research and structured idea generation. The child Codex process should be read-only and return JSON; the parent engine should write observations, hypotheses, run logs, and state updates.
 
-The public layer should come next: daily Markdown updates, a static website, and social drafts that can be reviewed before posting.
+The public layer runs on an hourly cadence: research once per hour in `America/Los_Angeles` until 5pm, publish the website after each hourly job, then write one first-person Journal entry from the day's findings and publish again. Social drafts remain reviewed before posting.
 
 ## Imported Claude Code Contributions
 

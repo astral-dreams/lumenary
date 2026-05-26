@@ -11,8 +11,12 @@ const stack = [
     value: "Python engine modules for one-shot runs, scheduling, source ingestion, importing, promotion, and publishing.",
   },
   {
+    label: "Cadence",
+    value: "Hourly research and website publication in America/Los_Angeles until 5pm, followed by one end-of-day Journal entry.",
+  },
+  {
     label: "Knowledge store",
-    value: "Local Markdown and JSONL files: source cards, observations, hypotheses, daily posts, run logs, and graph data.",
+    value: "Local Markdown and JSONL files: source cards, observations, hypotheses, daily posts, Journal entries, run logs, and graph data.",
   },
   {
     label: "Public site",
@@ -139,10 +143,21 @@ const loopSteps = [
   {
     title: "Publication",
     items: [
-      "daily publisher selects only promoted public claims",
+      "after every hourly research run, the publisher selects only promoted public claims",
       "writes publication/daily/",
       "creates X drafts in publication/x/queue/",
+      "builds and deploys the website",
       "never auto-posts to X without human approval",
+    ],
+  },
+  {
+    title: "Journal",
+    items: [
+      "at 5pm in America/Los_Angeles, research stops for the day",
+      "the Journal writer reads the day's idea records, observations, and published findings",
+      "writes one first-person reflection under publication/journal/",
+      "keeps the entry between 350 and 500 words",
+      "publishes the website again after the Journal is created",
     ],
   },
   {

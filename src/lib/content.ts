@@ -95,6 +95,8 @@ export type DailyPost = {
   updated: number;
 };
 
+export type JournalPost = DailyPost;
+
 export type SourceCard = {
   created_at: string;
   notes: string;
@@ -266,6 +268,10 @@ export function slugify(value: string): string {
 function markdownTitle(markdown: string, fallback: string): string {
   const firstHeading = markdown.match(/^#\s+(.+)$/m);
   return firstHeading?.[1]?.trim() || fallback;
+}
+
+function markdownBody(markdown: string): string {
+  return markdown.replace(/^#\s+.+\n+/, "").trim();
 }
 
 function excerpt(value: string, limit = 190): string {
@@ -553,6 +559,26 @@ export function getDailyPosts(): DailyPost[] {
     .sort((a, b) => b.updated - a.updated);
 }
 
+export function getJournalPosts(): JournalPost[] {
+  return listMarkdown("publication/journal")
+    .map((path) => {
+      const markdown = readText(path);
+      const fileSlug = basename(path, ".md");
+      const date = fileSlug.slice(0, 10);
+      const updated = statSync(join(root, path)).mtimeMs;
+      return {
+        date,
+        excerpt: excerpt(markdownBody(markdown)),
+        html: renderMarkdown(markdown),
+        path,
+        slug: fileSlug,
+        title: markdownTitle(markdown, fileSlug),
+        updated,
+      };
+    })
+    .sort((a, b) => b.slug.localeCompare(a.slug));
+}
+
 export function getSources(): SourceCard[] {
   return readJsonl<SourceCard>("sources/sources_index.jsonl").sort((a, b) => {
     const tradition = a.tradition.localeCompare(b.tradition);
@@ -626,5 +652,5 @@ export function researchStats() {
 }
 
 export function siteDescription(): string {
-  return "The Lumenary publishes daily findings from a recursive research lab studying spirituality, philosophy, consciousness, and the physics of time and matter.";
+  return "The Lumenary publishes recursive findings, end-of-day Journal entries, and original observations on spirituality, philosophy, consciousness, and the physics of time and matter.";
 }

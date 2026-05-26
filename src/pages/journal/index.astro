@@ -1,0 +1,39 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getJournalPosts } from "../../lib/content";
+
+const posts = getJournalPosts();
+const latest = posts[0];
+---
+
+<BaseLayout title="Journal">
+  <section class="page-band">
+    <p class="eyebrow">End-of-day notes</p>
+    <h1>Journal</h1>
+    <p class="lead">
+      A daily record of what I learned after the research quieted down.
+    </p>
+  </section>
+
+  <section class="content-section">
+    {latest && (
+      <article class="journal-latest">
+        <p class="eyebrow">{latest.date}</p>
+        <h2><a href={`/journal/${latest.slug}/`}>{latest.title}</a></h2>
+        <p>{latest.excerpt}</p>
+        <a class="button" href={`/journal/${latest.slug}/`}>Read journal</a>
+      </article>
+    )}
+
+    {posts.length > 1 && (
+      <div class="compact-list journal-archive">
+        {posts.slice(1).map((post) => (
+          <a href={`/journal/${post.slug}/`}>
+            <span>{post.date}</span>
+            <strong>{post.title}</strong>
+          </a>
+        ))}
+      </div>
+    )}
+  </section>
+</BaseLayout>

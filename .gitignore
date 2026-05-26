@@ -6,6 +6,7 @@ __pycache__/
 node_modules/
 dist/
 .astro/
+.wrangler/
 
 # Local database/index artifacts can be regenerated from Markdown/JSONL source.
 db/*.duckdb

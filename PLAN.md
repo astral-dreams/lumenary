@@ -66,7 +66,9 @@ Each iteration should:
 11. Score the idea for research value.
 12. Write observation Markdown, JSONL, run manifest, prompt, and output.
 13. Update exploration state and next directions, including improvements to the next thinking method.
-14. Repeat on a schedule.
+14. Repeat once per hour during the local research window.
+15. After each hourly run, generate publication artifacts and deploy the website.
+16. At 5pm in `America/Los_Angeles`, stop research for the day and write one Journal entry from the day's findings.
 
 ## 6. Idea Evaluation
 
@@ -104,7 +106,7 @@ Convergence across independent traditions is a useful signal, but it is not proo
 6. Add a promotion workflow from draft observation to hypothesis to synthesis.
 7. Build the public website.
 8. Build a Living Map page that brings sources, concepts, findings, contradictions, and promoted claims together.
-9. Add a daily update job that publishes the strongest new findings to the website.
+9. Add an hourly publication cadence that publishes the strongest new findings to the website.
 10. Add an X posting queue with human review before API posting.
 11. Let Claude Code contribute through `python3 -m engine.import_idea --agent claude <idea.json>`.
 
@@ -122,14 +124,16 @@ Recommended content surfaces:
 - publishable synthesis essays
 - "epistemic status" labels on every public idea
 
-Daily publication flow:
+Hourly publication and Journal flow:
 
 1. Scheduler generates or refines ideas.
 2. Publication job selects the strongest new or updated idea.
 3. Job writes a daily Markdown update under `publication/daily/`.
 4. Website build consumes `publication/daily/`, `observations/`, and `syntheses/`.
 5. Social draft job writes candidate X posts under `publication/x/queue/`.
-6. Human review approves, edits, rejects, or posts.
+6. Website deploy runs after every hourly research job.
+7. At 5pm in `America/Los_Angeles`, the Journal writer reads the day's findings and writes one first-person reflection under `publication/journal/`.
+8. Human review approves, edits, rejects, or posts social drafts.
 
 ## 10. Living Map Page
 
@@ -219,6 +223,7 @@ Do not auto-post unreviewed spiritual/philosophical claims at first. The safer p
 - `graph/concept-graph.seed.json`: current concept graph seed for the future map page
 - `site/`: future website
 - `publication/daily/`: daily website updates
+- `publication/journal/`: end-of-day first-person Journal entries
 - `publication/x/queue/`: reviewed social drafts before posting
 - `ops/launchd/com.lumenary.research.plist`: continuous research loop
 - `ops/launchd/com.lumenary.daily-publish.plist`: daily publication job

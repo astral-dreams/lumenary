@@ -54,6 +54,24 @@ The full finding page can use technical language, cite sources, and go deep. But
 - Every paragraph should be doing work. If you delete it and the argument still stands, delete it.
 - End sections with a sentence that points forward, not one that summarizes backward.
 
+## Journal Entries
+
+Journal entries live under `publication/journal/`.
+
+They are written once per day after the research window closes and the day's findings have been published. They are not summaries. They are first-person reflections on what the day changed in the writer.
+
+Rules:
+
+- 350 to 500 words.
+- First person singular: "I discovered," "I noticed," "I was wrong," "I carried."
+- No Sanskrit, Pali, Arabic, Greek, or Chinese terms.
+- No bullet lists.
+- No academic scaffolding.
+- Lead with the human question.
+- Let one image do more work than five abstractions.
+- Make the reader feel what was learned.
+- Technical detail belongs in findings; the Journal carries the ember.
+
 ## What We Are Not
 
 - We are not an academic journal. No "In this paper, we argue that..."

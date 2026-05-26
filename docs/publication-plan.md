@@ -2,7 +2,7 @@
 
 ## Goal
 
-Turn Lumenary's recursive findings into a public website with daily updates and optional X posts.
+Turn Lumenary's recursive findings into a public website with hourly research publication, end-of-day Journal entries, and optional X posts.
 
 ## Website
 
@@ -17,6 +17,7 @@ Core sections:
 - Living Map page
 - synthesis essays
 - source cards
+- end-of-day Journal entries
 
 Every public idea should show epistemic status so readers can distinguish sourced claims, interpretation, analogy, and speculation. Draft observations remain research artifacts; they do not become public claims unless they pass `config/promotion-rules.json`.
 
@@ -39,15 +40,28 @@ The first version can be a static Astro page generated from `graph/concept-graph
 
 The map is also an operational tool for the recursive loop: sparse or weakly connected areas become next research targets, and high-strain contradictions become prompts for new synthesis.
 
-## Daily Update Job
+## Hourly Research Publication
 
-The daily job should:
+The active cadence is hourly in `America/Los_Angeles` until 5pm. Each hourly job should:
 
 1. Read recent observations, hypotheses, and syntheses.
 2. Select the strongest item that passes the Public Claim promotion gate.
 3. Write a dated Markdown file under `publication/daily/`.
 4. Generate a short website summary.
 5. Generate one or more X drafts under `publication/x/queue/`.
+6. Build and deploy the website so the new findings are public.
+
+## Journal Job
+
+After the research window closes at 5pm, write one Journal entry for the day.
+
+The Journal should:
+
+1. Read all idea records and publication artifacts from the day.
+2. Write a first-person reflection, 350-500 words, under `publication/journal/`.
+3. Use the reader-facing style in `docs/writing-style.md`.
+4. Avoid technical terms that belong in findings.
+5. Deploy the website after the Journal is created.
 
 ## X Posting
 

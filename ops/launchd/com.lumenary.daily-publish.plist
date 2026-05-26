@@ -6,16 +6,16 @@
   <string>com.lumenary.daily-publish</string>
   <key>ProgramArguments</key>
   <array>
-    <string>/Users/johnforrester/spirituality/scripts/generate_daily_update.sh</string>
+    <string>/Users/johnforrester/spirituality/scripts/generate_journal_update.sh</string>
   </array>
   <key>WorkingDirectory</key>
   <string>/Users/johnforrester/spirituality</string>
   <key>StartCalendarInterval</key>
   <dict>
     <key>Hour</key>
-    <integer>8</integer>
+    <integer>17</integer>
     <key>Minute</key>
-    <integer>0</integer>
+    <integer>45</integer>
   </dict>
   <key>StandardOutPath</key>
   <string>/Users/johnforrester/spirituality/runs/daily-publish.stdout.log</string>
