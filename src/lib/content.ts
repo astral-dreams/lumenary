@@ -91,6 +91,25 @@ export type TextNote = {
   title: string;
 };
 
+export type ConceptGraphNode = {
+  id: string;
+  label: string;
+  traditions?: string[];
+  type: string;
+};
+
+export type ConceptGraphEdge = {
+  note?: string;
+  relation: string;
+  source: string;
+  target: string;
+};
+
+export type ConceptGraph = {
+  edges: ConceptGraphEdge[];
+  nodes: ConceptGraphNode[];
+};
+
 function readText(relativePath: string): string {
   const path = join(root, relativePath);
   if (!existsSync(path)) {
@@ -105,6 +124,14 @@ function readJsonl<T>(relativePath: string): T[] {
     .map((line) => line.trim())
     .filter(Boolean)
     .map((line) => JSON.parse(line) as T);
+}
+
+function readJson<T>(relativePath: string, fallback: T): T {
+  const text = readText(relativePath);
+  if (!text) {
+    return fallback;
+  }
+  return JSON.parse(text) as T;
 }
 
 export function getPromotionRules(): PromotionRules {
@@ -324,6 +351,13 @@ export function getSources(): SourceCard[] {
       return tradition;
     }
     return a.title.localeCompare(b.title);
+  });
+}
+
+export function getConceptGraph(): ConceptGraph {
+  return readJson<ConceptGraph>("graph/concept-graph.seed.json", {
+    edges: [],
+    nodes: [],
   });
 }
 

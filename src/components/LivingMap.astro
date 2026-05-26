@@ -1,0 +1,372 @@
+---
+import {
+  formatLabel,
+  slugify,
+  type ConceptGraph,
+  type ConceptGraphNode,
+  type IdeaView,
+  type SourceCard,
+  type TextNote,
+} from "../lib/content";
+
+type Domain = {
+  aliases: string[];
+  color: string;
+  id: string;
+  label: string;
+  x: number;
+  y: number;
+};
+
+type PositionedNode = ConceptGraphNode & {
+  domain: Domain;
+  radius: number;
+  x: number;
+  y: number;
+};
+
+type Props = {
+  convergences: TextNote[];
+  graph: ConceptGraph;
+  ideas: IdeaView[];
+  sources: SourceCard[];
+};
+
+const { convergences, graph, ideas, sources } = Astro.props;
+
+const domains: Domain[] = [
+  {
+    aliases: ["advaita", "vedanta", "hindu", "upanishad", "mandukya", "gaudapada"],
+    color: "#1f6b55",
+    id: "advaita",
+    label: "Advaita",
+    x: 190,
+    y: 190,
+  },
+  {
+    aliases: ["buddh", "madhyamaka", "mahayana", "yogacara", "zen", "dogen", "soto"],
+    color: "#b7533d",
+    id: "buddhism",
+    label: "Buddhism",
+    x: 410,
+    y: 150,
+  },
+  {
+    aliases: ["dao", "tao", "zhuangzi", "wu wei", "wu ", "zuowang"],
+    color: "#ad8430",
+    id: "daoism",
+    label: "Daoism",
+    x: 650,
+    y: 165,
+  },
+  {
+    aliases: ["neoplat", "plotinus", "proclus", "the one", "emanation"],
+    color: "#6c5b8e",
+    id: "neoplatonism",
+    label: "Neoplatonism",
+    x: 880,
+    y: 195,
+  },
+  {
+    aliases: ["sufi", "ibn arabi", "fana", "wahdat", "islamic", "barzakh"],
+    color: "#607247",
+    id: "sufism",
+    label: "Sufism",
+    x: 1085,
+    y: 245,
+  },
+  {
+    aliases: ["consciousness", "neuroscience", "iit", "friston", "markov", "phenomenology"],
+    color: "#345b8c",
+    id: "consciousness",
+    label: "Consciousness Science",
+    x: 280,
+    y: 590,
+  },
+  {
+    aliases: ["physics", "time", "matter", "quantum", "field", "wheeler", "relativity", "cosmology"],
+    color: "#7a5b38",
+    id: "physics",
+    label: "Time & Matter",
+    x: 610,
+    y: 645,
+  },
+  {
+    aliases: ["lumenary", "method", "translation", "inferential", "strain"],
+    color: "#101512",
+    id: "method",
+    label: "Lumenary Method",
+    x: 920,
+    y: 610,
+  },
+];
+
+const center = { x: 640, y: 405 };
+
+function domainForText(value: string): Domain {
+  const lower = value.toLowerCase();
+  return (
+    domains.find((domain) => domain.aliases.some((alias) => lower.includes(alias))) ||
+    domains[domains.length - 1]
+  );
+}
+
+function domainForNode(node: ConceptGraphNode): Domain {
+  return domainForText(`${node.label} ${node.type} ${(node.traditions || []).join(" ")}`);
+}
+
+function wrapText(value: string, limit = 16, maxLines = 3): string[] {
+  const words = value.split(/\s+/).filter(Boolean);
+  const lines: string[] = [];
+  let current = "";
+  for (const word of words) {
+    const next = current ? `${current} ${word}` : word;
+    if (next.length > limit && current) {
+      lines.push(current);
+      current = word;
+    } else {
+      current = next;
+    }
+    if (lines.length === maxLines - 1) {
+      break;
+    }
+  }
+  if (current) {
+    const remaining = words.slice(lines.join(" ").split(/\s+/).filter(Boolean).length).join(" ");
+    lines.push(remaining && lines.length === maxLines - 1 ? `${current.replace(/[.,;:]$/, "")}` : current);
+  }
+  return lines.slice(0, maxLines);
+}
+
+function relationClass(relation: string): string {
+  if (relation.includes("tension") || relation.includes("contradiction")) {
+    return "map-edge-tension";
+  }
+  if (relation.includes("strain") || relation.includes("divergence")) {
+    return "map-edge-strain";
+  }
+  if (relation.includes("formal") || relation.includes("scientific")) {
+    return "map-edge-science";
+  }
+  if (relation.includes("analyzes") || relation.includes("decomposes")) {
+    return "map-edge-method";
+  }
+  return "map-edge-parallel";
+}
+
+function ideaDomains(idea: IdeaView): Domain[] {
+  const text = `${idea.title} ${idea.original_claim} ${idea.source_basis.join(" ")}`;
+  const matches = domains.filter((domain) => domain.aliases.some((alias) => text.toLowerCase().includes(alias)));
+  return matches.length ? matches.slice(0, 3) : [domains[domains.length - 1]];
+}
+
+function countForDomain(items: string[]): Map<string, number> {
+  const counts = new Map(domains.map((domain) => [domain.id, 0]));
+  for (const item of items) {
+    const domain = domainForText(item);
+    counts.set(domain.id, (counts.get(domain.id) || 0) + 1);
+  }
+  return counts;
+}
+
+const nodesByDomain = new Map<string, ConceptGraphNode[]>();
+for (const node of graph.nodes) {
+  const domain = domainForNode(node);
+  nodesByDomain.set(domain.id, [...(nodesByDomain.get(domain.id) || []), node]);
+}
+
+const conceptNodes: PositionedNode[] = [];
+for (const domain of domains) {
+  const group = nodesByDomain.get(domain.id) || [];
+  group.forEach((node, index) => {
+    const angle = -125 + (250 / Math.max(1, group.length - 1 || 1)) * index;
+    const radians = (angle * Math.PI) / 180;
+    const radius = group.length > 5 ? 92 : 78;
+    conceptNodes.push({
+      ...node,
+      domain,
+      radius,
+      x: domain.x + Math.cos(radians) * radius,
+      y: domain.y + Math.sin(radians) * radius,
+    });
+  });
+}
+
+const conceptPositions = new Map(conceptNodes.map((node) => [node.id, node]));
+const sourceCounts = countForDomain(sources.map((source) => `${source.tradition} ${source.title}`));
+const ideaCounts = countForDomain(ideas.map((idea) => `${idea.title} ${idea.original_claim} ${idea.source_basis.join(" ")}`));
+const publicClaimCounts = countForDomain(
+  ideas
+    .filter((idea) => idea.promotion.publicClaim)
+    .map((idea) => `${idea.title} ${idea.original_claim} ${idea.source_basis.join(" ")}`),
+);
+const latestIdeas = ideas.slice(0, 5).map((idea, index) => ({
+  ...idea,
+  mapDomains: ideaDomains(idea),
+  x: 1070,
+  y: 505 + index * 58,
+}));
+const relationEdges = graph.edges
+  .map((edge) => ({
+    ...edge,
+    sourceNode: conceptPositions.get(edge.source),
+    targetNode: conceptPositions.get(edge.target),
+  }))
+  .filter((edge) => edge.sourceNode && edge.targetNode);
+const labeledEdges = relationEdges.slice(0, 14);
+---
+
+<figure class="living-map-frame">
+  <svg
+    aria-labelledby="living-map-title living-map-desc"
+    class="living-map-svg"
+    role="img"
+    viewBox="0 0 1280 820"
+  >
+    <title id="living-map-title">The Lumenary Living Map</title>
+    <desc id="living-map-desc">
+      A generated SVG knowledge map connecting traditions, source cards, concepts, findings, and promoted claims.
+    </desc>
+    <defs>
+      <marker id="map-arrow" markerHeight="7" markerWidth="7" orient="auto" refX="6" refY="3.5">
+        <path d="M0,0 L7,3.5 L0,7 Z" fill="currentColor"></path>
+      </marker>
+    </defs>
+
+    <rect class="map-bg" height="820" rx="8" width="1280" x="0" y="0"></rect>
+
+    <g class="map-center">
+      <circle cx={center.x} cy={center.y} r="82"></circle>
+      <text x={center.x} y={center.y - 10}>Original</text>
+      <text x={center.x} y={center.y + 16}>Synthesis</text>
+      <text class="map-center-small" x={center.x} y={center.y + 42}>
+        {ideas.length} findings / {convergences.length} convergences
+      </text>
+    </g>
+
+    <g class="map-domain-links">
+      {domains.map((domain) => (
+        <path
+          d={`M ${domain.x} ${domain.y} C ${(domain.x + center.x) / 2} ${domain.y}, ${(domain.x + center.x) / 2} ${center.y}, ${center.x} ${center.y}`}
+          style={`--edge-color: ${domain.color}`}
+        ></path>
+      ))}
+    </g>
+
+    <g class="map-relation-edges">
+      {relationEdges.map((edge) => {
+        const source = edge.sourceNode!;
+        const target = edge.targetNode!;
+        const midX = (source.x + target.x) / 2;
+        const midY = (source.y + target.y) / 2;
+        const curveX = (midX + center.x) / 2;
+        const curveY = (midY + center.y) / 2;
+        return (
+          <path
+            class={`map-edge ${relationClass(edge.relation)}`}
+            d={`M ${source.x} ${source.y} Q ${curveX} ${curveY} ${target.x} ${target.y}`}
+          ></path>
+        );
+      })}
+      {labeledEdges.map((edge) => {
+        const source = edge.sourceNode!;
+        const target = edge.targetNode!;
+        return (
+          <text class="map-edge-label" x={(source.x + target.x) / 2} y={(source.y + target.y) / 2}>
+            {formatLabel(edge.relation)}
+          </text>
+        );
+      })}
+    </g>
+
+    <g class="map-domains">
+      {domains.map((domain) => (
+        <a href="/sources/" aria-label={`${domain.label} sources`}>
+          <circle class="map-domain-halo" cx={domain.x} cy={domain.y} r="74" style={`--domain-color: ${domain.color}`}></circle>
+          <circle class="map-domain-node" cx={domain.x} cy={domain.y} r="48" style={`--domain-color: ${domain.color}`}></circle>
+          <text class="map-domain-title" x={domain.x} y={domain.y - 7}>
+            {wrapText(domain.label, 18, 2).map((line, lineIndex) => (
+              <tspan x={domain.x} dy={lineIndex === 0 ? 0 : 16}>{line}</tspan>
+            ))}
+          </text>
+          <text class="map-domain-counts" x={domain.x} y={domain.y + 27}>
+            {sourceCounts.get(domain.id) || 0} sources / {ideaCounts.get(domain.id) || 0} findings
+          </text>
+          {(publicClaimCounts.get(domain.id) || 0) > 0 && (
+            <text class="map-domain-public" x={domain.x} y={domain.y + 91}>
+              {publicClaimCounts.get(domain.id)} public claim{publicClaimCounts.get(domain.id) === 1 ? "" : "s"}
+            </text>
+          )}
+        </a>
+      ))}
+    </g>
+
+    <g class="map-concepts">
+      {conceptNodes.map((node) => (
+        <a href={`/map/#${slugify(node.id)}`} aria-label={`${node.label} concept`}>
+          <circle
+            class={`map-concept-node map-concept-${slugify(node.type)}`}
+            cx={node.x}
+            cy={node.y}
+            r={node.type.includes("method") ? 24 : 20}
+            style={`--domain-color: ${node.domain.color}`}
+          ></circle>
+          <text class="map-concept-label" id={slugify(node.id)} x={node.x} y={node.y + 34}>
+            {wrapText(node.label, 18, 2).map((line, lineIndex) => (
+              <tspan x={node.x} dy={lineIndex === 0 ? 0 : 12}>{line}</tspan>
+            ))}
+          </text>
+        </a>
+      ))}
+    </g>
+
+    <g class="map-findings">
+      <text class="map-panel-title" x="1005" y="440">Newest Learnings</text>
+      {latestIdeas.map((idea) => (
+        <g>
+          {idea.mapDomains.map((domain) => (
+            <path
+              class="map-finding-link"
+              d={`M ${domain.x} ${domain.y} C 970 ${domain.y}, 960 ${idea.y}, ${idea.x - 38} ${idea.y}`}
+              style={`--edge-color: ${domain.color}`}
+            ></path>
+          ))}
+          <a href={`/findings/${idea.slug}/`} aria-label={`${idea.title} finding`}>
+            <rect
+              class={`map-finding-node map-finding-${slugify(idea.promotion.stage)}`}
+              height="48"
+              rx="8"
+              width="218"
+              x={idea.x - 10}
+              y={idea.y - 24}
+            ></rect>
+            <text class="map-finding-stage" x={idea.x + 2} y={idea.y - 7}>
+              {idea.agent} / {idea.promotion.label}
+            </text>
+            <text class="map-finding-title" x={idea.x + 2} y={idea.y + 11}>
+              {wrapText(idea.title, 28, 2).map((line, lineIndex) => (
+                <tspan x={idea.x + 2} dy={lineIndex === 0 ? 0 : 13}>{line}</tspan>
+              ))}
+            </text>
+          </a>
+        </g>
+      ))}
+    </g>
+
+    <g class="map-legend">
+      <rect height="94" rx="8" width="360" x="36" y="690"></rect>
+      <text class="map-panel-title" x="58" y="720">Relationship key</text>
+      <line class="map-edge map-edge-parallel" x1="58" x2="105" y1="742" y2="742"></line>
+      <text x="116" y="747">structural parallel</text>
+      <line class="map-edge map-edge-tension" x1="58" x2="105" y1="764" y2="764"></line>
+      <text x="116" y="769">tension or contradiction</text>
+      <line class="map-edge map-edge-strain" x1="235" x2="282" y1="742" y2="742"></line>
+      <text x="293" y="747">translation strain</text>
+      <line class="map-edge map-edge-science" x1="235" x2="282" y1="764" y2="764"></line>
+      <text x="293" y="769">science bridge</text>
+    </g>
+  </svg>
+  <figcaption>
+    The map is rebuilt from the concept graph, source index, idea records, promotion gates, and convergence notes.
+  </figcaption>
+</figure>

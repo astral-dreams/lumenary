@@ -1,0 +1,39 @@
+---
+import LivingMap from "../../components/LivingMap.astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import {
+  getConceptGraph,
+  getConvergenceNotes,
+  getIdeas,
+  getSources,
+  researchStats,
+} from "../../lib/content";
+
+const graph = getConceptGraph();
+const sources = getSources();
+const ideas = getIdeas();
+const convergences = getConvergenceNotes();
+const stats = researchStats();
+---
+
+<BaseLayout title="Living Map">
+  <section class="page-band">
+    <p class="eyebrow">Living atlas</p>
+    <h1>Research Map</h1>
+    <p class="lead">
+      A generated SVG map of traditions, source grounding, concept relationships, promoted claims, and new findings.
+    </p>
+  </section>
+
+  <section class="content-section map-section">
+    <LivingMap graph={graph} sources={sources} ideas={ideas} convergences={convergences} />
+  </section>
+
+  <section class="stat-band map-stat-band" aria-label="Map counts">
+    <div><strong>{graph.nodes.length}</strong><span>concept nodes</span></div>
+    <div><strong>{graph.edges.length}</strong><span>relationship edges</span></div>
+    <div><strong>{stats.sources}</strong><span>source cards</span></div>
+    <div><strong>{stats.ideas}</strong><span>idea records</span></div>
+    <div><strong>{stats.publicClaims}</strong><span>public claims</span></div>
+  </section>
+</BaseLayout>

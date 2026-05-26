@@ -1,0 +1,185 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+const stack = [
+  {
+    label: "Thinking provider",
+    value: "Codex CLI through the local subscription, with structured JSON output for idea records.",
+  },
+  {
+    label: "Orchestrator",
+    value: "Python engine modules for one-shot runs, scheduling, source ingestion, importing, promotion, and publishing.",
+  },
+  {
+    label: "Knowledge store",
+    value: "Local Markdown and JSONL files: source cards, observations, hypotheses, daily posts, run logs, and graph data.",
+  },
+  {
+    label: "Public site",
+    value: "Astro static site reading the local research corpus at build time.",
+  },
+  {
+    label: "Living map",
+    value: "Generated SVG atlas built from the concept graph, source index, idea records, convergence notes, and promotion gates.",
+  },
+  {
+    label: "Deployment",
+    value: "GitHub repository under astral-dreams and Cloudflare Pages direct upload for the live site.",
+  },
+  {
+    label: "Publication safety",
+    value: "Promotion thresholds for public claims and a human-review queue for X drafts.",
+  },
+];
+
+const loopSteps = [
+  {
+    title: "Load Current Memory",
+    items: [
+      "state/current_focus.md",
+      "state/next_directions.md",
+      "sources/sources_index.jsonl",
+      "notes/source-cards/",
+      "hypotheses/ideas.jsonl",
+      "observations/codex/",
+      "observations/claude/",
+      "graph/concept-graph.seed.json",
+      "config/promotion-rules.json",
+    ],
+  },
+  {
+    title: "Choose The Next Action",
+    items: [
+      "add new source cards if an area is under-grounded",
+      "extract claims from existing source cards",
+      "synthesize across traditions and science",
+      "critique a promising draft",
+      "revisit an idea near promotion threshold",
+      "find contradictions or outliers",
+    ],
+  },
+  {
+    title: "Source Expansion",
+    items: [
+      "search for primary texts, respected translations, academic papers, and scientific references",
+      "add cards under notes/source-cards/",
+      "update sources/sources_index.jsonl",
+      "tag by tradition or domain: Advaita, Buddhism, Daoism, Sufism, Neoplatonism, consciousness science, physics of time and matter",
+      "mark extraction status and whether the source has been cited in observations",
+    ],
+  },
+  {
+    title: "Claim Extraction",
+    items: [
+      "break sources into smaller claim units",
+      "separate textual claims from interpretation",
+      "identify key concepts such as atman, anatta, sunyata, wu wei, barzakh, nous, observer, time, field, and matter",
+      "update the concept graph with parallels, contradictions, dependencies, and translation strain",
+    ],
+  },
+  {
+    title: "Synthesis",
+    items: [
+      "compare claim units across sources",
+      "look for convergence, disagreement, outliers, and translation strain",
+      "generate one original idea record with title, original claim, source basis, novelty argument, critique, epistemic labels, scores, and next research directions",
+    ],
+  },
+  {
+    title: "Critique And Scoring",
+    items: [
+      "challenge the idea directly",
+      "score source reliability, counterargument quality, publishability, novelty, coherence, generativity, and related dimensions",
+      "keep weak ideas as drafts",
+      "reject bad ideas explicitly rather than silently forgetting them",
+    ],
+  },
+  {
+    title: "Store Outputs",
+    items: [
+      "Codex ideas go to observations/codex/",
+      "Claude ideas go to observations/claude/",
+      "structured records go to hypotheses/ideas.jsonl",
+      "run logs go to runs/",
+      "history goes to state/exploration_log.md",
+    ],
+  },
+  {
+    title: "Promotion Gate",
+    items: [
+      "drafts do not become public claims automatically",
+      "Public Claim requires source reliability >= 0.70",
+      "Public Claim requires counterargument quality >= 0.75",
+      "Public Claim requires publishability >= 0.78",
+      "Public Claim requires at least 2 source basis items",
+      "Synthesis Ready requires stricter thresholds",
+    ],
+  },
+  {
+    title: "Publication",
+    items: [
+      "daily publisher selects only promoted public claims",
+      "writes publication/daily/",
+      "creates X drafts in publication/x/queue/",
+      "never auto-posts to X without human approval",
+    ],
+  },
+  {
+    title: "Self-Improvement",
+    items: [
+      "failed critiques become future research directions",
+      "low source reliability triggers source-finding",
+      "weak counterarguments trigger adversarial review",
+      "repeated concepts strengthen graph edges",
+      "disputed concepts create contradiction notes",
+      "high-scoring ideas become seeds for deeper synthesis",
+    ],
+  },
+];
+---
+
+<BaseLayout title="Agent">
+  <section class="page-band">
+    <p class="eyebrow">Recursive system</p>
+    <h1>The Agent</h1>
+    <p class="lead">
+      The Lumenary agent is a local research loop that accumulates source-grounded memory, generates original ideas,
+      critiques them, and promotes only the strongest claims into public artifacts.
+    </p>
+  </section>
+
+  <section class="content-section">
+    <div class="section-heading">
+      <p class="eyebrow">Build surface</p>
+      <h2>Technology Stack</h2>
+    </div>
+    <div class="method-grid">
+      {stack.map((item) => (
+        <article class="method-block agent-stack-card">
+          <h3>{item.label}</h3>
+          <p>{item.value}</p>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <section class="content-section">
+    <div class="section-heading">
+      <p class="eyebrow">Operating loop</p>
+      <h2>Exact Recursion</h2>
+    </div>
+    <div class="agent-loop">
+      {loopSteps.map((step, index) => (
+        <article class="agent-step">
+          <span>{String(index + 1).padStart(2, "0")}</span>
+          <div>
+            <h3>{step.title}</h3>
+            <ul class="clean-list">
+              {step.items.map((item) => <li>{item}</li>)}
+            </ul>
+          </div>
+        </article>
+      ))}
+    </div>
+  </section>
+</BaseLayout>
