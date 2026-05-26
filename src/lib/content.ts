@@ -98,6 +98,29 @@ export type DailyPost = {
 
 export type JournalPost = DailyPost;
 
+export type GrowthRecord = {
+  agents: string[];
+  created_at: string;
+  date: string;
+  execution_id: string;
+  importance: number;
+  knowledge: string[];
+  method: string[];
+  run_ids: string[];
+  titles: string[];
+};
+
+export type GrowthPeriod = {
+  endDate: string;
+  key: string;
+  knowledge: string[];
+  label: string;
+  method: string[];
+  period: "day" | "week" | "month";
+  records: GrowthRecord[];
+  startDate: string;
+};
+
 export type SourceCard = {
   created_at: string;
   notes: string;
@@ -603,6 +626,121 @@ export function getJournalPosts(): JournalPost[] {
       };
     })
     .sort((a, b) => b.slug.localeCompare(a.slug));
+}
+
+function dateFromIsoDate(date: string): Date {
+  return new Date(`${date}T00:00:00`);
+}
+
+function isoDate(date: Date): string {
+  const year = date.getFullYear();
+  const month = String(date.getMonth() + 1).padStart(2, "0");
+  const day = String(date.getDate()).padStart(2, "0");
+  return `${year}-${month}-${day}`;
+}
+
+function formatDate(date: string): string {
+  return dateFromIsoDate(date).toLocaleDateString("en-US", {
+    month: "short",
+    day: "numeric",
+    year: "numeric",
+  });
+}
+
+function weekStart(date: string): string {
+  const current = dateFromIsoDate(date);
+  const day = current.getDay();
+  const mondayOffset = day === 0 ? -6 : 1 - day;
+  current.setDate(current.getDate() + mondayOffset);
+  return isoDate(current);
+}
+
+function weekEnd(start: string): string {
+  const end = dateFromIsoDate(start);
+  end.setDate(end.getDate() + 6);
+  return isoDate(end);
+}
+
+function monthStart(date: string): string {
+  const current = dateFromIsoDate(date);
+  return `${current.getFullYear()}-${String(current.getMonth() + 1).padStart(2, "0")}-01`;
+}
+
+function monthEnd(start: string): string {
+  const current = dateFromIsoDate(start);
+  return isoDate(new Date(current.getFullYear(), current.getMonth() + 1, 0));
+}
+
+function monthLabel(start: string): string {
+  return dateFromIsoDate(start).toLocaleDateString("en-US", {
+    month: "long",
+    year: "numeric",
+  });
+}
+
+function uniqueGrowthItems(records: GrowthRecord[], field: "knowledge" | "method", limit: number): string[] {
+  const seen = new Set<string>();
+  const items: string[] = [];
+  const ranked = [...records].sort(
+    (a, b) => Number(b.importance || 0) - Number(a.importance || 0) || b.created_at.localeCompare(a.created_at),
+  );
+  for (const record of ranked) {
+    for (const item of record[field] || []) {
+      const normalized = item.toLowerCase().replace(/\s+/g, " ").trim();
+      if (!normalized || seen.has(normalized)) {
+        continue;
+      }
+      seen.add(normalized);
+      items.push(item);
+      if (items.length >= limit) {
+        return items;
+      }
+    }
+  }
+  return items;
+}
+
+export function getGrowthRecords(): GrowthRecord[] {
+  return readJsonl<GrowthRecord>("publication/growth/growth.jsonl").sort(
+    (a, b) => b.created_at.localeCompare(a.created_at),
+  );
+}
+
+export function getGrowthPeriods(period: "day" | "week" | "month"): GrowthPeriod[] {
+  const groups = new Map<string, GrowthRecord[]>();
+  for (const record of getGrowthRecords()) {
+    const key =
+      period === "day"
+        ? record.date
+        : period === "week"
+          ? weekStart(record.date)
+          : monthStart(record.date);
+    groups.set(key, [...(groups.get(key) || []), record]);
+  }
+
+  return [...groups.entries()]
+    .map(([key, records]) => {
+      const sortedRecords = [...records].sort((a, b) => b.created_at.localeCompare(a.created_at));
+      const startDate = period === "day" ? key : period === "week" ? key : monthStart(key);
+      const endDate = period === "day" ? key : period === "week" ? weekEnd(key) : monthEnd(key);
+      const limit = period === "day" ? 100 : period === "week" ? 8 : 10;
+      return {
+        endDate,
+        key,
+        knowledge: uniqueGrowthItems(sortedRecords, "knowledge", limit),
+        label:
+          period === "day"
+            ? formatDate(key)
+            : period === "week"
+              ? `${formatDate(startDate)} to ${formatDate(endDate)}`
+              : monthLabel(startDate),
+        method: uniqueGrowthItems(sortedRecords, "method", limit),
+        period,
+        records: sortedRecords,
+        startDate,
+      };
+    })
+    .sort((a, b) => b.startDate.localeCompare(a.startDate));
 }
 
 export function getSources(): SourceCard[] {

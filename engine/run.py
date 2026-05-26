@@ -4,6 +4,7 @@ import argparse
 from datetime import datetime
 
 from .config import EngineConfig
+from .growth import record_growth
 from .librarian import Librarian
 from .prompts import build_claude_collaborative_prompt, build_originality_prompt
 from .schemas import RunManifest, now_local_iso, slugify
@@ -81,6 +82,13 @@ def run_once(config: EngineConfig, focus: str) -> RunManifest:
 
     output = idea.to_markdown()
     librarian.save_run(manifest, prompt=prompt, generated_output=output)
+    record_growth(
+        config.root,
+        execution_id=manifest.run_id,
+        ideas=[idea],
+        run_ids=[manifest.run_id],
+        created_at=manifest.completed_at,
+    )
     librarian.append_exploration_log(
         f"- Run `{manifest.run_id}` generated `{idea.title}`.\n"
         f"- Observation file: `{manifest.generated_observations[0]}`."

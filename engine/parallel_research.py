@@ -11,6 +11,7 @@ from datetime import datetime
 from pathlib import Path
 
 from .config import EngineConfig
+from .growth import record_growth
 from .librarian import Librarian
 from .prompts import build_claude_collaborative_prompt, build_originality_prompt
 from .publisher import generate_daily_update
@@ -184,13 +185,15 @@ def _run_command(
 def _scan_public_copy(root: Path) -> None:
     dist = root / "dist"
     mark = chr(0x2014)
+    escaped = "\\u" + "2014"
+    entities = ["&m" + "dash;", "&#" + "8212;"]
     bad: list[str] = []
     for path in dist.rglob("*"):
         if not path.is_file():
             continue
         text = path.read_text(encoding="utf-8", errors="ignore")
-        count = text.count(mark) + text.count("\\u2014")
-        count += text.count("&mdash;") + text.count("&#8212;")
+        count = text.count(mark) + text.count(escaped)
+        count += sum(text.count(entity) for entity in entities)
         if count:
             bad.append(f"{path.relative_to(root)}: {count}")
     if bad:
@@ -319,6 +322,18 @@ def main() -> None:
         librarian = Librarian(root)
         for item in sorted(generated, key=lambda result: result.config.agent):
             _save_generated(root, item)
+
+        if generated:
+            execution_id = "parallel-" + "-".join(
+                sorted(item.manifest.run_id[:15] for item in generated)
+            )
+            record_growth(
+                root,
+                execution_id=execution_id,
+                ideas=[item.idea for item in generated],
+                run_ids=[item.manifest.run_id for item in generated],
+                created_at=now_local_iso(),
+            )
 
         if errors:
             librarian.append_jsonl(

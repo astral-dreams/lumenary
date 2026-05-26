@@ -1,0 +1,82 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getGrowthPeriods } from "../../lib/content";
+
+const dayPeriods = getGrowthPeriods("day");
+const weekPeriods = getGrowthPeriods("week");
+const monthPeriods = getGrowthPeriods("month");
+const allPeriods = [...dayPeriods, ...weekPeriods, ...monthPeriods];
+const description =
+  "A changelog of The Lumenary's growth in knowledge and growth in method, recorded as the research loop learns.";
+---
+
+<BaseLayout title="Growth" description={description}>
+  <section class="page-band">
+    <p class="eyebrow">Research changelog</p>
+    <h1>Growth</h1>
+    <p class="lead">
+      A daily record of what the research loop learned, and how its way of seeing changed.
+    </p>
+  </section>
+
+  <section class="content-section">
+    <div class="growth-toolbar" aria-label="Growth period filter">
+      <button aria-pressed="true" class="growth-toggle active" data-growth-toggle="day" type="button">Day</button>
+      <button aria-pressed="false" class="growth-toggle" data-growth-toggle="week" type="button">Week</button>
+      <button aria-pressed="false" class="growth-toggle" data-growth-toggle="month" type="button">Month</button>
+    </div>
+
+    <div class="growth-timeline" id="growth-timeline">
+      {allPeriods.map((period) => (
+        <section class="growth-section" data-growth-period={period.period} hidden={period.period !== "day"}>
+          <header class="growth-date">
+            <p class="eyebrow">
+              {period.period === "day" ? "Daily" : period.period === "week" ? "Weekly distillation" : "Monthly distillation"}
+            </p>
+            <h2>{period.label}</h2>
+          </header>
+          <div class="growth-columns">
+            <article class="growth-column">
+              <h3>Growth in knowledge</h3>
+              <ul>
+                {period.knowledge.map((item) => <li>{item}</li>)}
+              </ul>
+            </article>
+            <article class="growth-column">
+              <h3>Growth in method</h3>
+              <ul>
+                {period.method.map((item) => <li>{item}</li>)}
+              </ul>
+            </article>
+          </div>
+        </section>
+      ))}
+    </div>
+
+    {allPeriods.length === 0 && (
+      <p class="empty-filter-message">No growth records have been written yet.</p>
+    )}
+  </section>
+
+  <script>
+    const toggles = [...document.querySelectorAll("[data-growth-toggle]")];
+    const sections = [...document.querySelectorAll("[data-growth-period]")];
+
+    function setGrowthPeriod(period) {
+      for (const toggle of toggles) {
+        const active = toggle.dataset.growthToggle === period;
+        toggle.classList.toggle("active", active);
+        toggle.setAttribute("aria-pressed", active ? "true" : "false");
+      }
+      for (const section of sections) {
+        section.hidden = section.dataset.growthPeriod !== period;
+      }
+    }
+
+    for (const toggle of toggles) {
+      toggle.addEventListener("click", () => setGrowthPeriod(toggle.dataset.growthToggle));
+    }
+
+    setGrowthPeriod("day");
+  </script>
+</BaseLayout>

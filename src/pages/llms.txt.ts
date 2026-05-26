@@ -20,6 +20,7 @@ Important pages:
 - Home: https://thelumenary.org/
 - Insights: https://thelumenary.org/insights/
 - Journal: https://thelumenary.org/journal/
+- Growth: https://thelumenary.org/growth/
 - Map: https://thelumenary.org/map/
 - Findings: https://thelumenary.org/findings/
 - Method: https://thelumenary.org/research/

@@ -27,6 +27,7 @@ class Librarian:
             "observations/claude",
             "observations/codex",
             "publication/daily",
+            "publication/growth",
             "publication/journal",
             "publication/x/queue",
             "runs",
