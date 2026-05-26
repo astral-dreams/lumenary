@@ -434,11 +434,213 @@ const distillations: Distillation[] = [
       "What if many paths keep finding the same doorway in human experience? They name it differently because they step through it from different worlds.",
     tags: ["consciousness", "self", "method"],
   },
+  // New Claude observations
+  {
+    atAGlance:
+      "A tool changes when you point it at itself. A tradition that strips away illusions must eventually ask whether its own method is also an illusion. What it does at that moment reveals what it truly holds sacred.",
+    insight: "Every method changes when it meets itself.",
+    match: ["reflexivity policy"],
+    plainSummary:
+      "A path that questions everything must eventually question its own questioning. Some paths exempt themselves from their own test. Others include themselves and find that the inclusion is the teaching. What a method does when it turns inward tells you what it will never surrender.",
+    tags: ["method", "advaita", "buddhism", "daoism"],
+  },
+  {
+    atAGlance:
+      "Two people can look through different lenses and see different skies. If their reports agree, the agreement is strong. If they disagree, the lenses may matter more than the stars.",
+    insight: "Check the lens before trusting the report.",
+    match: ["instrument problem"],
+    plainSummary:
+      "Different traditions train attention in different ways. When they agree on what they find, that convergence carries real weight. When they disagree, the disagreement may say more about how they trained their looking than about what is there to be seen.",
+    tags: ["method", "consciousness", "comparison"],
+  },
+  {
+    atAGlance:
+      "What a path calls knowing shapes what it can find. If knowing means seeing, you will find light. If knowing means loving, you will find the beloved. The instrument is never neutral.",
+    insight: "What you call knowing shapes what you find.",
+    match: ["epistemic organ"],
+    plainSummary:
+      "Some paths trust the intellect. Others trust the heart, or the body, or a silence deeper than thought. The organ a tradition relies on for knowing is not a neutral tool; it determines what kind of truth can appear and what kind stays invisible.",
+    tags: ["method", "consciousness", "sufism", "advaita"],
+  },
+  {
+    atAGlance:
+      "Some awakenings arrive like lightning. Others unfold like weather. Comparing a flash to a season without noticing the difference in shape will confuse both.",
+    insight: "Some insights strike; others unfold like weather.",
+    match: ["realization topology"],
+    plainSummary:
+      "Not all spiritual breakthroughs have the same shape in time. Some land in a single moment and everything changes. Others grow so slowly you only notice them looking back. Comparing a sudden awakening to a gradual unfolding without naming the difference distorts both.",
+    tags: ["buddhism", "advaita", "practice"],
+  },
+  {
+    atAGlance:
+      "Knowing yourself and knowing the world may not move together. A person can see deeply inward while remaining blind to the room, or read the world with precision while missing what sits behind their own eyes.",
+    insight: "Self-knowledge and world-knowledge travel apart.",
+    match: ["determination gap"],
+    plainSummary:
+      "Some traditions promise that seeing yourself clearly will also reveal the nature of reality. Others treat inner and outer insight as separate skills. This finding says the two can come apart: you can know yourself without knowing the world, and the reverse.",
+    tags: ["consciousness", "method", "practice"],
+  },
+  {
+    atAGlance:
+      "The real test of depth is not the peak but the return. Anyone can touch something vast in a moment of stillness. The question is what survives the walk back to ordinary life.",
+    insight: "The real test is the walk back down.",
+    match: ["shadow of attainment"],
+    plainSummary:
+      "Every spiritual path has a characteristic way of breaking. The healer who becomes proud of healing. The detached one who uses detachment to avoid love. The mystic who collects experiences like trophies. Each path's cure carries the seed of its own disease.",
+    tags: ["practice", "critique", "buddhism", "advaita"],
+  },
+  {
+    atAGlance:
+      "A path proves insight by the kind of proof it already trusts. If the proof is your own recognition, only you can know. If the proof is a teacher's confirmation, insight belongs to the lineage. The method of certification shapes the meaning of what was certified.",
+    insight: "Who certifies awakening shapes what it means.",
+    match: ["verification architecture"],
+    plainSummary:
+      "How does a tradition know that someone has truly woken up? Some say only you can know. Others say a teacher must confirm it. Others test it against scripture, or watch how you live, or ask the community. The method of proof is not separate from the thing being proved.",
+    tags: ["method", "practice", "buddhism", "advaita"],
+  },
+  {
+    atAGlance:
+      "Traditions look most alike when attention is quiet and plain. The deeper the claims, the more they diverge. Agreement at the surface may mean less than we hope.",
+    insight: "Paths agree most where it matters least.",
+    match: ["attentional commons"],
+    plainSummary:
+      "When people from different traditions calm their minds, the early reports sound similar: the chatter fades, a spaciousness opens, the sense of self loosens. But this shared territory may be the shallow end. The traditions diverge precisely where the deepest claims begin.",
+    tags: ["consciousness", "comparison", "method"],
+  },
+  {
+    atAGlance:
+      "Love may know what attention cannot see. A way of knowing that requires you to care about what you study will find things that a detached observer will miss, not because the observer is wrong, but because some doors only open from inside.",
+    insight: "Love sees what detachment cannot.",
+    match: ["devotional remainder"],
+    plainSummary:
+      "Most of our research treats spiritual insight as something you see more clearly by stepping back and looking. But some traditions say the deepest knowing requires stepping closer: not observing but loving. If they are right, any framework built on observation alone will be structurally blind to what love reveals.",
+    tags: ["sufism", "consciousness", "method"],
+  },
+  {
+    atAGlance:
+      "Some things can only be known between people. Not because others help, but because what is known has a shape that does not fit inside a single mind. The meeting is not the means; the meeting is the site.",
+    insight: "Some knowing only happens between people.",
+    match: ["second-personal blind spot"],
+    plainSummary:
+      "Most spiritual analysis asks what happens inside one person's awareness. But several traditions claim that certain realities only exist in the space between people: in encounter, in address, in mutual recognition. If that is true, then studying individuals, however deeply, will always miss it.",
+    tags: ["method", "practice", "consciousness"],
+  },
+  {
+    atAGlance:
+      "The parts of a living tradition hold each other in place. Change one and the others must shift or the whole thing cracks. The traditions that endure are not collections of beliefs but stable patterns where every piece depends on every other.",
+    insight: "No variable stands alone.",
+    match: ["no variable stands alone"],
+    plainSummary:
+      "A tradition's positions on self, proof, practice, danger, and silence are not independent choices. They lock together like bones in a skeleton. Borrow one piece from another tradition without its partners and the structure becomes unstable. This is why mixing paths is harder than it looks.",
+    tags: ["method", "comparison", "practice"],
+  },
+  // New Codex observations
+  {
+    atAGlance:
+      "When the self loosens its grip, someone still has to carry the weight of action. The question of who holds responsibility after letting go is not a side effect; it is the core of what the letting go means.",
+    insight: "After the self loosens, who carries the weight?",
+    match: ["custody policy after self"],
+    plainSummary:
+      "If you let go of your ordinary sense of self, actions still happen. Decisions still get made. Someone or something still holds responsibility. Each tradition answers this differently, and the answer reveals what the tradition thinks is deeper than the ego.",
+    tags: ["advaita", "buddhism", "practice", "self"],
+  },
+  {
+    atAGlance:
+      "After the stripping away, what you are allowed to say about what remains tells you what the path truly believes. Some paths hand you a noun. Others hand you a verb. Others hand you silence.",
+    insight: "The grammar of the remainder reveals the path.",
+    match: ["remainder grammar after negation"],
+    plainSummary:
+      "When a tradition strips away the ordinary self, it leaves the practitioner with a certain way of speaking about what is left. Some traditions give you a name for it. Others say it can only be described by what it does. Others say nothing can be said at all. The grammar is the theology.",
+    tags: ["method", "advaita", "buddhism", "self"],
+  },
+  {
+    atAGlance:
+      "A teaching's no is not aimed at everyone equally. Some denials are medicine for pride; others are medicine for fear. The same word, spoken to different patients, does different work.",
+    insight: "Every no has an address.",
+    match: ["negation has an address"],
+    plainSummary:
+      "When a tradition says 'there is no self' or 'the world is illusion,' it is not making a blanket announcement. It is speaking to a specific kind of suffering in a specific kind of person. The same negation, aimed at a different listener, can heal or harm.",
+    tags: ["method", "buddhism", "practice"],
+  },
+  {
+    atAGlance:
+      "Even the act of comparing traditions can become a subtle way of possessing them. The comparer who stands above, mapping and measuring, may be repeating the very grasping that the traditions warn against.",
+    insight: "Comparison itself can become grasping.",
+    match: ["comparison has a self"],
+    plainSummary:
+      "When you stand outside two traditions and compare them, you occupy a position of authority that neither tradition may recognize. The act of mapping can become its own form of control. A good comparison must ask whether the comparer is doing what the traditions warn against.",
+    tags: ["method", "critique"],
+  },
+  {
+    atAGlance:
+      "The real test of insight is not the height of the climb but the quality of the return. A path that produces radiant peaks and broken ordinary lives has not finished its work.",
+    insight: "Judge depth by the return, not the peak.",
+    match: ["return is the audit"],
+    plainSummary:
+      "Many paths celebrate the moment of breakthrough. Fewer ask what happens next. Can the person who touched something vast come back to ordinary life and be kind, present, and useful? The return is the real exam.",
+    tags: ["practice", "critique", "method"],
+  },
+  {
+    atAGlance:
+      "Every path trains the heart to recognize a particular danger. One fears pride; another fears numbness; another fears attachment to the path itself. The alarm you are trained to hear shapes the territory you can cross.",
+    insight: "Each path trains you to fear a different thing.",
+    match: ["each path has a different alarm"],
+    plainSummary:
+      "Traditions do not just teach what to seek. They teach what to fear. One path watches for spiritual pride. Another watches for emotional coldness. Another watches for clinging to the practice itself. The alarm you learn to hear determines which traps you avoid and which ones you walk into blind.",
+    tags: ["practice", "comparison", "method"],
+  },
+  {
+    atAGlance:
+      "Every insight eventually faces a judge. The question is who that judge is: the self, the teacher, the text, the community, or the way you live. The court shapes the verdict.",
+    insight: "Every insight eventually faces a judge.",
+    match: ["every insight has an appeal court"],
+    plainSummary:
+      "When a practitioner claims to have seen something true, what can overrule that claim? In some traditions, nothing can: the insight is self-certifying. In others, a teacher, a text, or a community holds the right to say no. The appeals process shapes what counts as real.",
+    tags: ["method", "practice", "comparison"],
+  },
+  {
+    atAGlance:
+      "Every silence reaches a moment where more searching becomes noise. Knowing when to stop is as important as knowing how to start. The stopping rule is not a failure of courage; it is a form of respect.",
+    insight: "Knowing when to stop is part of the path.",
+    match: ["silence has a stopping rule"],
+    plainSummary:
+      "Every tradition has a point where it says: go no further. Not because there is nothing beyond, but because pushing past this boundary does more harm than good. Where a tradition draws that line tells you what it believes about the relationship between the seeker and what is sought.",
+    tags: ["method", "practice"],
+  },
+  {
+    atAGlance:
+      "After the silence, after the stripping, each path protects one thing it will not let go. That protected thing is not a weakness. It is the seed the path believes the whole forest grows from.",
+    insight: "Every path has one thing it will not surrender.",
+    match: ["protected variable after silence"],
+    plainSummary:
+      "When everything else has been questioned, each tradition quietly shields one conviction from the fire. For some it is consciousness. For others it is compassion, or love, or the encounter itself. That protected seed is not an oversight; it is the tradition's deepest commitment.",
+    tags: ["method", "comparison", "self"],
+  },
 ];
+
+function loadSidecarDistillations(): Distillation[] {
+  const text = readText("publication/distillations.jsonl");
+  if (!text) return [];
+  return text
+    .split("\n")
+    .filter((line) => line.trim())
+    .map((line) => {
+      const record = JSON.parse(line);
+      return {
+        atAGlance: String(record.atAGlance || record.plainSummary || ""),
+        insight: String(record.insight || ""),
+        match: (record.match || []).map(String),
+        plainSummary: String(record.plainSummary || ""),
+        tags: (record.tags || []).map(String),
+      };
+    });
+}
+
+const allDistillations = [...distillations, ...loadSidecarDistillations()];
 
 function distillationFor(record: IdeaRecord): Distillation | null {
   const haystack = `${record.title} ${record.original_claim}`.toLowerCase();
-  return distillations.find((item) => item.match.some((match) => haystack.includes(match))) || null;
+  return allDistillations.find((item) => item.match.some((match) => haystack.includes(match))) || null;
 }
 
 const traditionMatchers = [

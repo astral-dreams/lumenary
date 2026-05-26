@@ -4,6 +4,7 @@ import argparse
 from datetime import datetime
 
 from .config import EngineConfig
+from .distill import distill_new_ideas
 from .growth import record_growth
 from .librarian import Librarian
 from .prompts import build_claude_collaborative_prompt, build_originality_prompt
@@ -89,6 +90,8 @@ def run_once(config: EngineConfig, focus: str) -> RunManifest:
         run_ids=[manifest.run_id],
         created_at=manifest.completed_at,
     )
+    if config.provider == "claude-code" and not config.dry_run:
+        distill_new_ideas(config, [idea])
     librarian.append_exploration_log(
         f"- Run `{manifest.run_id}` generated `{idea.title}`.\n"
         f"- Observation file: `{manifest.generated_observations[0]}`."
