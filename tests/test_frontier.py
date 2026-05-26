@@ -78,6 +78,60 @@ class FrontierTests(unittest.TestCase):
             self.assertTrue((root / "state" / "frontiers.json").exists())
             self.assertTrue((root / "state" / "next_frontier_prompt.md").exists())
 
+    def test_configurable_topic_routes_without_code_change(self) -> None:
+        with tempfile.TemporaryDirectory() as temp_dir:
+            root = Path(temp_dir)
+            (root / "config").mkdir(parents=True, exist_ok=True)
+            (root / "config" / "frontier-rules.json").write_text(
+                json.dumps(
+                    {
+                        "version": "test",
+                        "topics": [
+                            {
+                                "id": "frontier-fresh-doorway",
+                                "title": "Fresh doorway practice",
+                                "keywords": ["fresh doorway"],
+                            }
+                        ],
+                    }
+                ),
+                encoding="utf-8",
+            )
+            idea = {
+                "agent": "claude",
+                "created_at": "2026-05-26T12:00:00-07:00",
+                "critique": "The new direction might be a one-off metaphor.",
+                "epistemic_labels": ["interpretive"],
+                "idea_id": "idea-doorway",
+                "idea_type": "observation",
+                "next_research_directions": ["Complete the audit before trusting the fresh doorway claim."],
+                "original_claim": "A fresh doorway practice could open a new research direction before it fits older frontier keywords.",
+                "path": "observations/claude/2026-05-26-doorway.md",
+                "scores": {
+                    "counterargument_quality": 0.76,
+                    "cross_tradition_support": 0.64,
+                    "empirical_adjacency": 0.2,
+                    "explanatory_compression": 0.76,
+                    "generativity": 0.88,
+                    "logical_coherence": 0.8,
+                    "novelty": 0.8,
+                    "practice_testability": 0.7,
+                    "publishability": 0.76,
+                    "source_reliability": 0.62,
+                },
+                "source_basis": ["source a"],
+                "status": "draft",
+                "title": "Fresh Doorway Practice",
+                "why_it_might_be_new": "The configurable topic should catch it without editing Python.",
+            }
+            write_jsonl(root / "hypotheses" / "ideas.jsonl", [idea])
+
+            state = refresh_frontiers(root)
+
+            self.assertEqual(state["rules_version"], "test")
+            self.assertEqual(state["frontiers"][0]["frontier_id"], "frontier-fresh-doorway")
+            self.assertTrue(state["frontiers"][0]["configured_topic"])
+
 
 if __name__ == "__main__":
     unittest.main()

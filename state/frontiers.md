@@ -1,6 +1,6 @@
 # Lumenary Frontiers
 
-Generated: 2026-05-26T13:30:21-07:00
+Generated: 2026-05-26T13:45:12-07:00
 
 These are live research agendas derived from idea records, originality audits, publication history, and next-loop instructions.
 
@@ -9,7 +9,7 @@ These are live research agendas derived from idea records, originality audits, p
 - Frontier ID: `frontier-effort-and-practice`
 - Status: `active`
 - Stage: `rubric`
-- Priority: 0.8345
+- Priority: 0.8337
 - Next action: `build_rubric`
 - Agents: claude, codex
 - Idea records: 7
@@ -36,7 +36,7 @@ Recast the model as a graded variable: required receiving capacity, required age
 - Frontier ID: `frontier-inferential-gap`
 - Status: `active`
 - Stage: `rubric`
-- Priority: 0.8268
+- Priority: 0.8260
 - Next action: `build_rubric`
 - Agents: claude, codex
 - Idea records: 11
@@ -63,7 +63,7 @@ Rewrite the claim as an interpretive reconstruction unless commentarial evidence
 - Frontier ID: `frontier-method-reckoning`
 - Status: `active`
 - Stage: `rubric`
-- Priority: 0.8135
+- Priority: 0.8127
 - Next action: `build_rubric`
 - Agents: claude
 - Idea records: 2
@@ -90,7 +90,7 @@ Rebuild the model as two axes: validates versus undermines, and retained versus 
 - Frontier ID: `frontier-gap-report`
 - Status: `active`
 - Stage: `rubric`
-- Priority: 0.7770
+- Priority: 0.7762
 - Next action: `build_rubric`
 - Agents: codex
 - Idea records: 2
@@ -119,7 +119,7 @@ Test the rubric on Brihadaranyaka 2.4, 2.5, 3.7.23, SN 22.59, and SN 22.95 befor
 - Frontier ID: `frontier-attention-custody`
 - Status: `active`
 - Stage: `rubric`
-- Priority: 0.7689
+- Priority: 0.7681
 - Next action: `build_rubric`
 - Agents: codex
 - Idea records: 1
@@ -146,7 +146,7 @@ Close-read Dzogchen and Mahamudra instructions on rigpa or luminous awareness ag
 - Frontier ID: `frontier-remainder-pressure`
 - Status: `active`
 - Stage: `source_grounding`
-- Priority: 0.7475
+- Priority: 0.7468
 - Next action: `complete_audit`
 - Agents: claude, codex
 - Idea records: 4
@@ -165,7 +165,7 @@ Build a protected-variable rubric with fields for protected function, sacrificed
 - Frontier ID: `frontier-love-and-knowing`
 - Status: `active`
 - Stage: `source_grounding`
-- Priority: 0.7424
+- Priority: 0.7417
 - Next action: `complete_audit`
 - Agents: claude, codex
 - Idea records: 6
@@ -184,7 +184,7 @@ Build a second-personal knowing rubric with fields for: unit of knowing (individ
 - Frontier ID: `frontier-translation-strain`
 - Status: `active`
 - Stage: `rubric`
-- Priority: 0.7086
+- Priority: 0.7078
 - Next action: `build_rubric`
 - Agents: claude, codex
 - Idea records: 18

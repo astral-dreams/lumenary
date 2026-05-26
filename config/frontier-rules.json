@@ -1,0 +1,100 @@
+{
+  "version": "2026-05-26",
+  "description": "Configurable topic routing, priority weights, and state-size limits for the Lumenary Frontier Engine.",
+  "topics": [
+    {
+      "id": "frontier-translation-strain",
+      "title": "Translation strain as a test of convergence",
+      "keywords": ["translation strain", "convergence", "bridge", "comparison", "load test"]
+    },
+    {
+      "id": "frontier-inferential-gap",
+      "title": "Inferential policy after objectless awareness",
+      "keywords": ["inferential gap", "burden of proof", "objectless awareness", "atman", "anatta", "witness", "self-luminosity"]
+    },
+    {
+      "id": "frontier-remainder-pressure",
+      "title": "Remainder pressure after self-negation",
+      "keywords": ["remainder", "residue", "negation", "self-negation", "protected variable", "minimum self"]
+    },
+    {
+      "id": "frontier-method-reckoning",
+      "title": "What a method does with its own authority",
+      "keywords": ["method", "licensed training", "reckoning", "authority", "ladder", "raft", "self-canceling"]
+    },
+    {
+      "id": "frontier-gap-report",
+      "title": "How silence becomes evidence after the gap",
+      "keywords": ["gap report", "post-gap", "silence", "cessation", "deep sleep", "objectless", "memory"]
+    },
+    {
+      "id": "frontier-attention-custody",
+      "title": "Where freed attention is allowed to rest",
+      "keywords": ["attention", "custody", "unclaimed attention", "receiver", "revelation", "interruption"]
+    },
+    {
+      "id": "frontier-effort-and-practice",
+      "title": "The boundary between effort and gift",
+      "keywords": ["effort", "practice", "attainment", "produce", "training"]
+    },
+    {
+      "id": "frontier-love-and-knowing",
+      "title": "Love as a way of knowing",
+      "keywords": ["love", "longing", "devotional", "beloved", "relation", "second-person"]
+    },
+    {
+      "id": "frontier-verification",
+      "title": "How insight is verified and overruled",
+      "keywords": ["verification", "appeal court", "judge", "certify", "proof", "authority"]
+    }
+  ],
+  "priority_weights": {
+    "strongest_generativity": 0.22,
+    "audit_pressure": 0.18,
+    "public_value": 0.16,
+    "unresolved_anomaly": 0.14,
+    "source_gap": 0.12,
+    "cross_agent_signal": 0.1,
+    "recency": 0.08,
+    "duplicate_penalty": 0.18,
+    "cooldown_penalty": 0.12
+  },
+  "audit_status_weights": {
+    "audit_incomplete": 0.95,
+    "known": 0.32,
+    "renamed": 0.38,
+    "extended": 0.72,
+    "novel_synthesis": 0.86,
+    "candidate_discovery": 0.9,
+    "strong_original_contribution": 0.82,
+    "rejected": 0.15,
+    "default": 0.55,
+    "none": 0.82
+  },
+  "selection": {
+    "cooldown_penalty": 0.35,
+    "duplicate_penalty": 0.7,
+    "exploration_bonus": 0.09,
+    "exploration_generativity_floor": 0.72,
+    "exploration_novelty_floor": 0.66,
+    "public_value_bonus": 0.08,
+    "single_agent_signal": 0.55,
+    "source_instruction_bonus": 0.22,
+    "source_reliability_target": 0.82,
+    "unresolved_anomaly_default": 0.45
+  },
+  "limits": {
+    "blockers": 3,
+    "closest_prior_art": 3,
+    "core_claim_clip": 460,
+    "cross_domain_tests": 2,
+    "falsifiable_tests": 3,
+    "instructions": 7,
+    "missing_sources": 5,
+    "next_prompt_clip": 720,
+    "open_anomalies": 3,
+    "practitioner_tests": 3,
+    "prior_art_clip": 180,
+    "text_clip": 260
+  }
+}

@@ -17,6 +17,7 @@ FRONTIER_STATE = "state/frontiers.json"
 FRONTIER_MARKDOWN = "state/frontiers.md"
 NEXT_FRONTIER_PROMPT = "state/next_frontier_prompt.md"
 FRONTIER_EVENTS = "runs/frontier-events.jsonl"
+FRONTIER_RULES = "config/frontier-rules.json"
 
 STOPWORDS = {
     "a",
@@ -48,117 +49,138 @@ STOPWORDS = {
     "with",
 }
 
-TOPICS = [
-    {
-        "id": "frontier-translation-strain",
-        "title": "Translation strain as a test of convergence",
-        "keywords": [
-            "translation strain",
-            "convergence",
-            "bridge",
-            "comparison",
-            "load test",
-        ],
+DEFAULT_FRONTIER_RULES: dict[str, Any] = {
+    "version": "default",
+    "topics": [
+        {
+            "id": "frontier-translation-strain",
+            "title": "Translation strain as a test of convergence",
+            "keywords": ["translation strain", "convergence", "bridge", "comparison", "load test"],
+        },
+        {
+            "id": "frontier-inferential-gap",
+            "title": "Inferential policy after objectless awareness",
+            "keywords": [
+                "inferential gap",
+                "burden of proof",
+                "objectless awareness",
+                "atman",
+                "anatta",
+                "witness",
+                "self-luminosity",
+            ],
+        },
+        {
+            "id": "frontier-remainder-pressure",
+            "title": "Remainder pressure after self-negation",
+            "keywords": ["remainder", "residue", "negation", "self-negation", "protected variable", "minimum self"],
+        },
+        {
+            "id": "frontier-method-reckoning",
+            "title": "What a method does with its own authority",
+            "keywords": ["method", "licensed training", "reckoning", "authority", "ladder", "raft", "self-canceling"],
+        },
+        {
+            "id": "frontier-gap-report",
+            "title": "How silence becomes evidence after the gap",
+            "keywords": ["gap report", "post-gap", "silence", "cessation", "deep sleep", "objectless", "memory"],
+        },
+        {
+            "id": "frontier-attention-custody",
+            "title": "Where freed attention is allowed to rest",
+            "keywords": ["attention", "custody", "unclaimed attention", "receiver", "revelation", "interruption"],
+        },
+        {
+            "id": "frontier-effort-and-practice",
+            "title": "The boundary between effort and gift",
+            "keywords": ["effort", "practice", "attainment", "produce", "training"],
+        },
+        {
+            "id": "frontier-love-and-knowing",
+            "title": "Love as a way of knowing",
+            "keywords": ["love", "longing", "devotional", "beloved", "relation", "second-person"],
+        },
+        {
+            "id": "frontier-verification",
+            "title": "How insight is verified and overruled",
+            "keywords": ["verification", "appeal court", "judge", "certify", "proof", "authority"],
+        },
+    ],
+    "priority_weights": {
+        "strongest_generativity": 0.22,
+        "audit_pressure": 0.18,
+        "public_value": 0.16,
+        "unresolved_anomaly": 0.14,
+        "source_gap": 0.12,
+        "cross_agent_signal": 0.10,
+        "recency": 0.08,
+        "duplicate_penalty": 0.18,
+        "cooldown_penalty": 0.12,
     },
-    {
-        "id": "frontier-inferential-gap",
-        "title": "Inferential policy after objectless awareness",
-        "keywords": [
-            "inferential gap",
-            "burden of proof",
-            "objectless awareness",
-            "atman",
-            "anatta",
-            "witness",
-            "self-luminosity",
-        ],
+    "audit_status_weights": {
+        "audit_incomplete": 0.95,
+        "known": 0.32,
+        "renamed": 0.38,
+        "extended": 0.72,
+        "novel_synthesis": 0.86,
+        "candidate_discovery": 0.90,
+        "strong_original_contribution": 0.82,
+        "rejected": 0.15,
+        "default": 0.55,
+        "none": 0.82,
     },
-    {
-        "id": "frontier-remainder-pressure",
-        "title": "Remainder pressure after self-negation",
-        "keywords": [
-            "remainder",
-            "residue",
-            "negation",
-            "self-negation",
-            "protected variable",
-            "minimum self",
-        ],
+    "selection": {
+        "cooldown_penalty": 0.35,
+        "duplicate_penalty": 0.70,
+        "exploration_bonus": 0.09,
+        "exploration_generativity_floor": 0.72,
+        "exploration_novelty_floor": 0.66,
+        "public_value_bonus": 0.08,
+        "single_agent_signal": 0.55,
+        "source_instruction_bonus": 0.22,
+        "source_reliability_target": 0.82,
+        "unresolved_anomaly_default": 0.45,
     },
-    {
-        "id": "frontier-method-reckoning",
-        "title": "What a method does with its own authority",
-        "keywords": [
-            "method",
-            "licensed training",
-            "reckoning",
-            "authority",
-            "ladder",
-            "raft",
-            "self-canceling",
-        ],
+    "limits": {
+        "blockers": 3,
+        "closest_prior_art": 3,
+        "core_claim_clip": 460,
+        "cross_domain_tests": 2,
+        "falsifiable_tests": 3,
+        "instructions": 7,
+        "missing_sources": 5,
+        "next_prompt_clip": 720,
+        "open_anomalies": 3,
+        "practitioner_tests": 3,
+        "prior_art_clip": 180,
+        "text_clip": 260,
     },
-    {
-        "id": "frontier-gap-report",
-        "title": "How silence becomes evidence after the gap",
-        "keywords": [
-            "gap report",
-            "post-gap",
-            "silence",
-            "cessation",
-            "deep sleep",
-            "objectless",
-            "memory",
-        ],
-    },
-    {
-        "id": "frontier-attention-custody",
-        "title": "Where freed attention is allowed to rest",
-        "keywords": [
-            "attention",
-            "custody",
-            "unclaimed attention",
-            "receiver",
-            "revelation",
-            "interruption",
-        ],
-    },
-    {
-        "id": "frontier-effort-and-practice",
-        "title": "The boundary between effort and gift",
-        "keywords": [
-            "effort",
-            "practice",
-            "attainment",
-            "produce",
-            "training",
-        ],
-    },
-    {
-        "id": "frontier-love-and-knowing",
-        "title": "Love as a way of knowing",
-        "keywords": [
-            "love",
-            "longing",
-            "devotional",
-            "beloved",
-            "relation",
-            "second-person",
-        ],
-    },
-    {
-        "id": "frontier-verification",
-        "title": "How insight is verified and overruled",
-        "keywords": [
-            "verification",
-            "appeal court",
-            "judge",
-            "certify",
-            "proof",
-            "authority",
-        ],
-    },
-]
+}
+
+
+def _deep_merge(base: dict[str, Any], override: dict[str, Any]) -> dict[str, Any]:
+    merged = dict(base)
+    for key, value in override.items():
+        if isinstance(value, dict) and isinstance(merged.get(key), dict):
+            merged[key] = _deep_merge(merged[key], value)
+        else:
+            merged[key] = value
+    return merged
+
+
+def load_frontier_rules(root: Path) -> dict[str, Any]:
+    path = root / FRONTIER_RULES
+    if not path.exists():
+        return DEFAULT_FRONTIER_RULES
+    try:
+        configured = json.loads(path.read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        return DEFAULT_FRONTIER_RULES
+    return _deep_merge(DEFAULT_FRONTIER_RULES, configured)
+
+
+def _limit(rules: dict[str, Any], key: str) -> int:
+    return int((rules.get("limits") or {}).get(key, DEFAULT_FRONTIER_RULES["limits"][key]))
 
 
 def _read_jsonl(path: Path) -> list[dict[str, Any]]:
@@ -216,6 +238,7 @@ def _fallback_topic(record: dict[str, Any]) -> dict[str, Any]:
         "id": f"frontier-{slugify('-'.join(words) or label)}",
         "title": label,
         "keywords": words,
+        "configured": False,
     }
 
 
@@ -254,16 +277,20 @@ def _record_haystack(record: dict[str, Any], audit: dict[str, Any] | None) -> st
     return " ".join(str(part) for part in parts).lower()
 
 
-def _topic_for(record: dict[str, Any], audit: dict[str, Any] | None) -> dict[str, Any]:
+def _topic_for(
+    record: dict[str, Any],
+    audit: dict[str, Any] | None,
+    rules: dict[str, Any],
+) -> dict[str, Any]:
     haystack = _record_haystack(record, audit)
     ranked: list[tuple[int, int, dict[str, Any]]] = []
-    for index, topic in enumerate(TOPICS):
+    for index, topic in enumerate(rules.get("topics") or []):
         score = 0
-        for keyword in topic["keywords"]:
+        for keyword in topic.get("keywords") or []:
             if keyword in haystack:
                 score += max(1, len(keyword.split()))
         if score:
-            ranked.append((score, -index, topic))
+            ranked.append((score, -index, {**topic, "configured": True}))
     if ranked:
         return sorted(ranked, reverse=True)[0][2]
     return _fallback_topic(record)
@@ -306,11 +333,11 @@ def _publication_paths(root: Path) -> dict[str, dict[str, Any]]:
     return posts
 
 
-def _latest(items: list[str], limit: int) -> list[str]:
+def _latest(items: list[str], limit: int, *, clip: int = 260) -> list[str]:
     seen: set[str] = set()
     result: list[str] = []
     for item in items:
-        clean = _clean(item, limit=260)
+        clean = _clean(item, limit=clip)
         if not clean:
             continue
         key = clean.lower()
@@ -354,20 +381,12 @@ def _frontier_action(audits: list[dict[str, Any]], ideas: list[dict[str, Any]], 
     return "advance", "probe"
 
 
-def _audit_pressure(audits: list[dict[str, Any]]) -> float:
+def _audit_pressure(audits: list[dict[str, Any]], rules: dict[str, Any]) -> float:
+    weights = rules.get("audit_status_weights") or {}
     if not audits:
-        return 0.82
-    weights = {
-        "audit_incomplete": 0.95,
-        "known": 0.32,
-        "renamed": 0.38,
-        "extended": 0.72,
-        "novel_synthesis": 0.86,
-        "candidate_discovery": 0.9,
-        "strong_original_contribution": 0.82,
-        "rejected": 0.15,
-    }
-    return max(weights.get(str(audit.get("originality_status") or ""), 0.55) for audit in audits)
+        return float(weights.get("none", 0.82))
+    default = float(weights.get("default", 0.55))
+    return max(float(weights.get(str(audit.get("originality_status") or ""), default)) for audit in audits)
 
 
 def _recency_score(records: list[dict[str, Any]], audits: list[dict[str, Any]]) -> float:
@@ -384,16 +403,21 @@ def _recency_score(records: list[dict[str, Any]], audits: list[dict[str, Any]]) 
     return max(0.18, min(1.0, 1.0 / (1.0 + age_days)))
 
 
-def _source_gap_score(records: list[dict[str, Any]], audits: list[dict[str, Any]]) -> float:
+def _source_gap_score(
+    records: list[dict[str, Any]],
+    audits: list[dict[str, Any]],
+    rules: dict[str, Any],
+) -> float:
+    selection = rules.get("selection") or {}
     reliability = max([_score(record, "source_reliability") for record in records] or [0.0])
     instruction_text = " ".join(
         str(item)
         for audit in audits
         for item in audit.get("next_loop_instructions") or []
     ).lower()
-    gap = max(0.0, 0.82 - reliability)
+    gap = max(0.0, float(selection.get("source_reliability_target", 0.82)) - reliability)
     if "source" in instruction_text or "close-read" in instruction_text or "search" in instruction_text:
-        gap += 0.22
+        gap += float(selection.get("source_instruction_bonus", 0.22))
     return min(1.0, gap)
 
 
@@ -403,28 +427,42 @@ def _priority(
     *,
     agents: list[str],
     publication_paths: list[str],
+    rules: dict[str, Any],
+    topic: dict[str, Any],
 ) -> float:
+    weights = rules.get("priority_weights") or {}
+    selection = rules.get("selection") or {}
     strongest_generativity = max([_score(record, "generativity") for record in records] or [0.0])
+    strongest_novelty = max([_score(record, "novelty") for record in records] or [0.0])
     strongest_publishability = max([_score(record, "publishability") for record in records] or [0.0])
-    public_value = min(1.0, strongest_publishability + 0.08)
-    unresolved_anomaly = 1.0 if any((audit.get("anomaly_probe") or {}).get("anomaly_candidate") for audit in audits) else 0.45
-    source_gap = _source_gap_score(records, audits)
-    cross_agent = 1.0 if len(set(agents)) > 1 else 0.55
+    public_value = min(1.0, strongest_publishability + float(selection.get("public_value_bonus", 0.08)))
+    unresolved_anomaly = (
+        1.0
+        if any((audit.get("anomaly_probe") or {}).get("anomaly_candidate") for audit in audits)
+        else float(selection.get("unresolved_anomaly_default", 0.45))
+    )
+    source_gap = _source_gap_score(records, audits, rules)
+    cross_agent = 1.0 if len(set(agents)) > 1 else float(selection.get("single_agent_signal", 0.55))
     recency = _recency_score(records, audits)
     statuses = {str(audit.get("originality_status") or "") for audit in audits}
-    duplicate_penalty = 0.7 if statuses.intersection({"known", "renamed"}) else 0.0
-    cooldown_penalty = 0.35 if publication_paths and not source_gap else 0.0
+    duplicate_penalty = float(selection.get("duplicate_penalty", 0.7)) if statuses.intersection({"known", "renamed"}) else 0.0
+    cooldown_penalty = float(selection.get("cooldown_penalty", 0.35)) if publication_paths and not source_gap else 0.0
     value = (
-        0.22 * strongest_generativity
-        + 0.18 * _audit_pressure(audits)
-        + 0.16 * public_value
-        + 0.14 * unresolved_anomaly
-        + 0.12 * source_gap
-        + 0.10 * cross_agent
-        + 0.08 * recency
-        - 0.18 * duplicate_penalty
-        - 0.12 * cooldown_penalty
+        float(weights.get("strongest_generativity", 0.22)) * strongest_generativity
+        + float(weights.get("audit_pressure", 0.18)) * _audit_pressure(audits, rules)
+        + float(weights.get("public_value", 0.16)) * public_value
+        + float(weights.get("unresolved_anomaly", 0.14)) * unresolved_anomaly
+        + float(weights.get("source_gap", 0.12)) * source_gap
+        + float(weights.get("cross_agent_signal", 0.10)) * cross_agent
+        + float(weights.get("recency", 0.08)) * recency
+        - float(weights.get("duplicate_penalty", 0.18)) * duplicate_penalty
+        - float(weights.get("cooldown_penalty", 0.12)) * cooldown_penalty
     )
+    if not topic.get("configured"):
+        novelty_floor = float(selection.get("exploration_novelty_floor", 0.66))
+        generativity_floor = float(selection.get("exploration_generativity_floor", 0.72))
+        if strongest_novelty >= novelty_floor or strongest_generativity >= generativity_floor:
+            value += float(selection.get("exploration_bonus", 0.09))
     return round(max(0.0, min(1.0, value)), 4)
 
 
@@ -505,7 +543,10 @@ def _frontier_from_group(
     records: list[dict[str, Any]],
     audits_by_idea: dict[str, dict[str, Any]],
     publications: dict[str, dict[str, Any]],
+    rules: dict[str, Any],
 ) -> dict[str, Any]:
+    text_clip = _limit(rules, "text_clip")
+    prior_art_clip = _limit(rules, "prior_art_clip")
     audits = [
         audits_by_idea[str(record.get("idea_id"))]
         for record in records
@@ -534,28 +575,29 @@ def _frontier_from_group(
     seen_neighbors: set[str] = set()
     for audit in audits:
         for neighbor in audit.get("near_neighbors") or []:
-            source = _clean(neighbor.get("source"), limit=180)
+            source = _clean(neighbor.get("source"), limit=prior_art_clip)
             if not source or source.lower() in seen_neighbors:
                 continue
             seen_neighbors.add(source.lower())
             closest_prior_art.append(
                 {
                     "source": source,
-                    "overlap": _clean(neighbor.get("overlap"), limit=180),
-                    "difference": _clean(neighbor.get("difference"), limit=180),
-                    "novelty_impact": _clean(neighbor.get("novelty_impact"), limit=180),
+                    "overlap": _clean(neighbor.get("overlap"), limit=prior_art_clip),
+                    "difference": _clean(neighbor.get("difference"), limit=prior_art_clip),
+                    "novelty_impact": _clean(neighbor.get("novelty_impact"), limit=prior_art_clip),
                 }
             )
-            if len(closest_prior_art) >= 4:
+            if len(closest_prior_art) >= _limit(rules, "closest_prior_art"):
                 break
-        if len(closest_prior_art) >= 4:
+        if len(closest_prior_art) >= _limit(rules, "closest_prior_art"):
             break
     anomalies = _latest(
         [
             (audit.get("anomaly_probe") or {}).get("anomaly_candidate", "")
             for audit in audits
         ],
-        4,
+        _limit(rules, "open_anomalies"),
+        clip=text_clip,
     )
     instructions = _latest(
         [
@@ -568,7 +610,8 @@ def _frontier_from_group(
             for record in records
             for item in record.get("next_research_directions") or []
         ],
-        7,
+        _limit(rules, "instructions"),
+        clip=text_clip,
     )
     missing_sources = _latest(
         [
@@ -576,7 +619,8 @@ def _frontier_from_group(
             for audit in audits
             for item in audit.get("literature_search_queries") or []
         ],
-        5,
+        _limit(rules, "missing_sources"),
+        clip=text_clip,
     )
     falsifiable = _latest(
         [
@@ -584,7 +628,8 @@ def _frontier_from_group(
             for audit in audits
             for prediction in audit.get("falsifiable_predictions") or []
         ],
-        3,
+        _limit(rules, "falsifiable_tests"),
+        clip=text_clip,
     )
     practitioner = _latest(
         [
@@ -592,27 +637,31 @@ def _frontier_from_group(
             for audit in audits
             for question in ((audit.get("practitioner_test") or {}).get("questions") or [])
         ],
-        3,
+        _limit(rules, "practitioner_tests"),
+        clip=text_clip,
     )
     cross_domain = _latest(
         [
             (audit.get("cross_domain_prediction") or {}).get("prediction", "")
             for audit in audits
         ],
-        2,
+        _limit(rules, "cross_domain_tests"),
+        clip=text_clip,
     )
     priority = _priority(
         records,
         audits,
         agents=agents,
         publication_paths=publication_paths,
+        rules=rules,
+        topic=topic,
     )
     statuses = sorted({str(audit.get("originality_status") or "audit_incomplete") for audit in audits})
     if statuses and set(statuses).issubset({"known", "renamed", "rejected"}):
         status = "cooldown"
     else:
         status = "active"
-    core_claim = _clean(best_record.get("original_claim"), limit=460)
+    core_claim = _clean(best_record.get("original_claim"), limit=_limit(rules, "core_claim_clip"))
     next_prompt = instructions[0] if instructions else f"Advance the frontier by testing {topic['title']} against its strongest anomaly."
     why_now_bits = [
         f"priority {priority:.2f}",
@@ -626,6 +675,7 @@ def _frontier_from_group(
     return {
         "frontier_id": topic["id"],
         "title": topic["title"],
+        "configured_topic": bool(topic.get("configured")),
         "status": status,
         "stage": stage,
         "priority": priority,
@@ -650,7 +700,7 @@ def _frontier_from_group(
             "cross_domain": cross_domain,
         },
         "recommended_next_action": action,
-        "next_prompt": _clean(next_prompt, limit=720),
+        "next_prompt": _clean(next_prompt, limit=_limit(rules, "next_prompt_clip")),
         "why_now": "; ".join(why_now_bits),
         "blockers": _latest(
             [
@@ -658,7 +708,8 @@ def _frontier_from_group(
                 for audit in audits
                 if audit.get("novelty_adjustment")
             ],
-            3,
+            _limit(rules, "blockers"),
+            clip=text_clip,
         ),
         "audit_statuses": statuses,
     }
@@ -709,6 +760,7 @@ def _markdown_for_state(state: dict[str, Any]) -> str:
 
 
 def refresh_frontiers(root: Path) -> dict[str, Any]:
+    rules = load_frontier_rules(root)
     ideas = _read_jsonl(root / "hypotheses" / "ideas.jsonl")
     audits_by_idea = _latest_audits_by_idea(root)
     publications = _publication_paths(root)
@@ -718,12 +770,12 @@ def refresh_frontiers(root: Path) -> dict[str, Any]:
         if str(record.get("status") or "") == "seed-fixture":
             continue
         audit = audits_by_idea.get(str(record.get("idea_id") or ""))
-        topic = _topic_for(record, audit)
+        topic = _topic_for(record, audit, rules)
         existing = grouped.setdefault(topic["id"], (topic, []))
         existing[1].append(record)
 
     frontiers = [
-        _frontier_from_group(topic, records, audits_by_idea, publications)
+        _frontier_from_group(topic, records, audits_by_idea, publications, rules)
         for topic, records in grouped.values()
         if records
     ]
@@ -736,6 +788,7 @@ def refresh_frontiers(root: Path) -> dict[str, Any]:
     )
     state = {
         "generated_at": now_local_iso(),
+        "rules_version": rules.get("version", "unknown"),
         "version": "2026-05-26",
         "frontiers": frontiers,
     }
