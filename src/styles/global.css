@@ -64,17 +64,15 @@ a:hover {
   align-items: center;
   display: inline-flex;
   font-weight: 750;
-  gap: 10px;
   text-decoration: none;
 }
 
-.brand-mark {
-  background: linear-gradient(135deg, var(--ink), #29332e);
-  border: 2px solid var(--gold);
-  display: inline-block;
-  height: 24px;
-  rotate: 45deg;
-  width: 24px;
+.brand-logo {
+  display: block;
+  height: 40px;
+  object-fit: cover;
+  object-position: center;
+  width: 180px;
 }
 
 .site-nav {
