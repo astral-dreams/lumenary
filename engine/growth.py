@@ -60,19 +60,17 @@ def _protocol_direction(idea: IdeaRecord) -> str | None:
 
 
 def _knowledge_item(idea: IdeaRecord) -> str:
-    return f"{idea.title}: {_first_sentence(idea.original_claim)}"
+    claim = _first_sentence(idea.original_claim)
+    new = _first_sentence(idea.why_it_might_be_new)
+    return _clip(f"{claim} {new}", 280)
 
 
 def _method_item(idea: IdeaRecord) -> str:
-    method = _method_source(idea)
     direction = _protocol_direction(idea)
-    if method and direction:
-        return _clip(f"{idea.title}: used this lens: {method} Next method improvement: {direction}", 260)
-    if method:
-        return _clip(f"{idea.title}: used {method} as a lens for observation.", 240)
     if direction:
-        return _clip(f"{idea.title}: method improved by carrying forward this protocol change: {direction}", 260)
-    return _clip(f"{idea.title}: critique now becomes part of the next observation method: {idea.critique}", 260)
+        return _clip(f"Next step: {direction}", 240)
+    critique = _first_sentence(idea.critique)
+    return _clip(f"Open question: {critique}", 240)
 
 
 def record_growth(
