@@ -65,10 +65,11 @@ Each iteration should:
 10. Critique the idea strongly, including whether the method revealed a blind spot.
 11. Score the idea for research value.
 12. Write observation Markdown, JSONL, run manifest, prompt, and output.
-13. Update exploration state and next directions, including improvements to the next thinking method.
-14. Repeat every 30 minutes during the local research window.
-15. After each research run, generate publication artifacts and deploy the website.
-16. At 5pm in the machine's current local timezone, stop research for the day and write one Journal entry from the day's findings.
+13. Write or reuse an Insights distillation under `publication/distillations.jsonl`: exact idea link, proverb headline, one-sentence card summary, and 3-4 sentence At a Glance paragraph.
+14. Update exploration state and next directions, including improvements to the next thinking method.
+15. Repeat every 30 minutes during the local research window.
+16. After each research run, generate publication artifacts and deploy the website.
+17. At 5pm in the machine's current local timezone, stop research for the day and write one Journal entry from the day's findings.
 
 ## 6. Idea Evaluation
 
@@ -129,13 +130,14 @@ Hourly publication and Journal flow:
 1. Scheduler generates or refines ideas.
 2. Publication job selects the strongest new or updated idea.
 3. Job writes a daily Markdown update under `publication/daily/`.
-4. Website build consumes `publication/daily/`, `observations/`, and `syntheses/`.
-5. Social draft job writes candidate X posts under `publication/x/queue/`.
-6. Website deploy runs after every 30-minute research job.
-7. Each 30-minute run emits four macOS notifications: start, current direction, new finding title, and published title.
-8. At 5pm in the machine's current local timezone, the Journal writer reads the day's findings and writes one first-person reflection under `publication/journal/`.
-9. At 6pm in the machine's current local timezone, the living-map job rebuilds and deploys the three SVG maps on `/map/`.
-10. Human review approves, edits, rejects, or posts social drafts.
+4. Job writes missing Insights distillations under `publication/distillations.jsonl` before build and deploy.
+5. Website build consumes `publication/daily/`, `publication/distillations.jsonl`, `observations/`, and `syntheses/`.
+6. Social draft job writes candidate X posts under `publication/x/queue/`.
+7. Website deploy runs after every 30-minute research job.
+8. Each 30-minute run emits four macOS notifications: start, current direction, new finding title, and published title.
+9. At 5pm in the machine's current local timezone, the Journal writer reads the day's findings and writes one first-person reflection under `publication/journal/`.
+10. At 6pm in the machine's current local timezone, the living-map job rebuilds and deploys the three SVG maps on `/map/`.
+11. Human review approves, edits, rejects, or posts social drafts.
 
 ## 10. Living Map Page
 

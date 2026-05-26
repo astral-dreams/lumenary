@@ -11,6 +11,7 @@ from datetime import datetime
 from pathlib import Path
 
 from .config import EngineConfig
+from .distill import distill_new_ideas
 from .growth import record_growth
 from .librarian import Librarian
 from .prompts import build_claude_collaborative_prompt, build_originality_prompt
@@ -324,6 +325,55 @@ def main() -> None:
             _save_generated(root, item)
 
         if generated:
+            distill_config = EngineConfig.load(
+                root=root,
+                agent="codex",
+                provider="codex-cli",
+                codex_search=False,
+            )
+            try:
+                distillation_count = distill_new_ideas(
+                    distill_config,
+                    [item.idea for item in generated],
+                )
+                librarian.append_jsonl(
+                    "runs/distillation-events.jsonl",
+                    {
+                        "at": now_local_iso(),
+                        "count": distillation_count,
+                        "titles": [item.idea.title for item in generated],
+                    },
+                )
+                print(
+                    json.dumps(
+                        {
+                            "event": "insight-distillation",
+                            "count": distillation_count,
+                        },
+                        sort_keys=True,
+                    ),
+                    flush=True,
+                )
+            except Exception as exc:
+                librarian.append_jsonl(
+                    "runs/distillation-errors.jsonl",
+                    {
+                        "at": now_local_iso(),
+                        "error": repr(exc),
+                        "titles": [item.idea.title for item in generated],
+                    },
+                )
+                print(
+                    json.dumps(
+                        {
+                            "event": "insight-distillation-error",
+                            "error": repr(exc),
+                        },
+                        sort_keys=True,
+                    ),
+                    flush=True,
+                )
+
             execution_id = "parallel-" + "-".join(
                 sorted(item.manifest.run_id[:15] for item in generated)
             )
