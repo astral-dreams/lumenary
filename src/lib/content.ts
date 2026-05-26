@@ -616,6 +616,24 @@ const distillations: Distillation[] = [
       "When everything else has been questioned, each tradition quietly shields one conviction from the fire. For some it is consciousness. For others it is compassion, or love, or the encounter itself. That protected seed is not an oversight; it is the tradition's deepest commitment.",
     tags: ["method", "comparison", "self"],
   },
+  {
+    atAGlance:
+      "A teaching cannot be separated from the way it is taught. The method of transmission carries assumptions the words never state. A tradition that requires a living teacher embeds a different truth than one that trusts a book.",
+    insight: "How a teaching travels changes what it says.",
+    match: ["transmission paradox"],
+    plainSummary:
+      "Every tradition wraps its insight in a delivery method: a lineage, a text, a practice, a relationship. That wrapping is not neutral. It shapes what the insight can mean. A truth that must be handed from person to person is a different kind of truth than one that can be written down and read by a stranger.",
+    tags: ["method", "practice", "comparison"],
+  },
+  {
+    atAGlance:
+      "Insight does not travel naked. It needs a vehicle: a story, a practice, a relationship, a rhythm. The vehicle is not decoration. It is part of the message. Change the carrier and the cargo shifts.",
+    insight: "The vessel shapes the wine.",
+    match: ["carrier test for insight"],
+    plainSummary:
+      "When a spiritual insight moves from one tradition to another, or from ancient practice to modern life, something carries it: a meditation technique, a teacher's presence, a sacred text, a community ritual. The carrier is not packaging. It is part of what makes the insight true. Strip the carrier away and you may lose the thing you were trying to keep.",
+    tags: ["method", "practice", "comparison"],
+  },
 ];
 
 function loadSidecarDistillations(): Distillation[] {

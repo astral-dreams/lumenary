@@ -15,6 +15,15 @@ _METHOD_RULES = """## Method Rules
 - Let the method improve the next loop: if it reveals a blind spot in how you reasoned, add that as a next research direction or protocol improvement.
 - The goal is an improving reasoning protocol, not uncritical imitation of ancient practices.
 - Do not edit files. Return only the structured idea record.
+
+## Writing Rules for original_claim and why_it_might_be_new
+
+- Write for a thoughtful reader, not for the research lab. Do not reference "the Lumenary corpus," "the Lumenary framework," "CodeX has," "Claude has," or any internal project machinery.
+- Do not open with "This extends..." or "This is distinct from..." or list other models by name in the opening sentences.
+- Do not cite scholars by name (e.g. "Garfield and Priest have formalized") in the original_claim; save citations for source_basis.
+- Lead with the human question or the insight itself, stated plainly.
+- Never use em dashes. Use colons, semicolons, and commas.
+- The claim should be understandable to someone who has never read any other Lumenary finding.
 """
 
 _OUTPUT_SPEC = """## Required Output
