@@ -565,3 +565,18 @@
 
 - Published daily draft `publication/daily/2026-05-26-the-same-negation-the-opposite-inference-logical-underdetermination-in-the-catuskoti-as-a-second-test-of-the-inferential-gap.md`.
 - Created X draft `publication/x/queue/2026-05-26-the-same-negation-the-opposite-inference-logical-underdetermination-in-the-catuskoti-as-a-second-test-of-the-inferential-gap.md`.
+
+## 2026-05-26T10:06:59-07:00
+
+- Parallel run `20260526-100006-claude-generate-original-cross-tradition-observations-c` generated `Some Knowledge Only Exists as the Person It Changed`.
+- Observation file: `observations/claude/2026-05-26-some-knowledge-only-exists-as-the-person-it-changed.md`.
+
+## 2026-05-26T10:06:59-07:00
+
+- Parallel run `20260526-100006-codex-generate-original-cross-tradition-observations-c` generated `Protective Distance`.
+- Observation file: `observations/codex/2026-05-26-protective-distance.md`.
+
+## 2026-05-26T10:07:42-07:00
+
+- Published daily draft `publication/daily/2026-05-26-the-same-negation-the-opposite-inference-logical-underdetermination-in-the-catuskoti-as-a-second-test-of-the-inferential-gap.md`.
+- Created X draft `publication/x/queue/2026-05-26-the-same-negation-the-opposite-inference-logical-underdetermination-in-the-catuskoti-as-a-second-test-of-the-inferential-gap.md`.
