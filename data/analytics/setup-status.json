@@ -3,9 +3,11 @@
   "site": "https://thelumenary.org",
   "ga4": {
     "status": "configured",
+    "measurement_id": "G-9QXKKHXPK5",
+    "stream_id": "14945244690",
     "measurement_env": "PUBLIC_GA_MEASUREMENT_ID",
     "property_env": "GA4_PROPERTY_ID",
-    "notes": "GA4 measurement ID G-9QXKKHXPK5 is configured in Cloudflare Pages as GA_MEASUREMENT_ID. The site activates GA4 through the runtime config endpoint."
+    "notes": "GA4 measurement ID G-9QXKKHXPK5 and web stream ID 14945244690 are recorded. The measurement ID is configured in Cloudflare Pages as GA_MEASUREMENT_ID, and the site activates GA4 through the runtime config endpoint."
   },
   "gsc": {
     "status": "wired_waiting_for_verification",
