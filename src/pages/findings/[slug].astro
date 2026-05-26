@@ -11,11 +11,11 @@ export function getStaticPaths() {
 }
 
 const { idea } = Astro.props;
-const description = idea.plainSummary || idea.excerpt;
+const description = idea.atAGlance || idea.plainSummary || idea.excerpt;
 const findingFaq = [
   {
     question: `What is the main idea of ${idea.title}?`,
-    answer: idea.plainSummary,
+    answer: idea.atAGlance || idea.plainSummary,
   },
   {
     question: "Is this finding a public claim?",
@@ -103,7 +103,7 @@ const findingJsonLd = [
 
     <section class="plain-summary">
       <p class="eyebrow">At a glance</p>
-      <p>{idea.plainSummary}</p>
+      <p>{idea.atAGlance}</p>
     </section>
 
     <section class="article-section answer-panel">

@@ -54,6 +54,7 @@ export type IdeaRecord = {
 };
 
 export type IdeaView = IdeaRecord & {
+  atAGlance: string;
   articleHtml: string;
   critiqueHtml: string;
   date: string;
@@ -301,6 +302,7 @@ function cleanPlainSummary(value: string): string {
 }
 
 type Distillation = {
+  atAGlance: string;
   insight: string;
   match: string[];
   plainSummary: string;
@@ -310,6 +312,8 @@ type Distillation = {
 const distillations: Distillation[] = [
   // Claude observations — match on unique title fragments, ordered most-specific first
   {
+    atAGlance:
+      "When you let go of everything you call yourself, something still seems to remain. It may not be a hidden soul. It may be a doorway, real only while you pass through it.",
     insight: "What remains may be a crossing, not a thing.",
     match: ["processual remainder"],
     plainSummary:
@@ -317,6 +321,8 @@ const distillations: Distillation[] = [
     tags: ["sufism", "advaita", "buddhism"],
   },
   {
+    atAGlance:
+      "We often picture time as a room where life happens. This finding asks for a stranger kind of attention. A moment may not be a box around experience; it may be experience making itself visible.",
     insight: "Time is not the container; it is the showing.",
     match: ["expressive realism"],
     plainSummary:
@@ -324,6 +330,8 @@ const distillations: Distillation[] = [
     tags: ["buddhism", "time", "physics"],
   },
   {
+    atAGlance:
+      "The mind builds a picture of itself so it can move through the world. That picture is useful, but it is not final. When it loosens, the old question returns: is something deeper still present, or was the picture all there ever was?",
     insight: "The self outgrows every model.",
     match: ["formal recurrence of the inferential gap"],
     plainSummary:
@@ -331,6 +339,8 @@ const distillations: Distillation[] = [
     tags: ["consciousness", "science", "self"],
   },
   {
+    atAGlance:
+      "Two paths can use the same act of denial and arrive at opposite doors. The difference is not the denial itself. It is what each path allows the denial to mean after everything obvious has been stripped away.",
     insight: "The same logic can point both ways.",
     match: ["same negation, the opposite inference"],
     plainSummary:
@@ -338,6 +348,8 @@ const distillations: Distillation[] = [
     tags: ["buddhism", "advaita", "method"],
   },
   {
+    atAGlance:
+      "Not every no is an ending. Some forms of letting go clear space for something new to appear. The deepest disagreement may be whether emptiness is a final silence or the place where life keeps beginning.",
     insight: "Some noes make room for birth.",
     match: ["generative negation"],
     plainSummary:
@@ -345,6 +357,8 @@ const distillations: Distillation[] = [
     tags: ["buddhism", "daoism", "neoplatonism", "method"],
   },
   {
+    atAGlance:
+      "A person can reach a silence where the usual self has fallen away. One path may say the silence reveals what was always there. Another may say it proves nothing needs to be added. The silence is powerful, but it does not settle the argument by itself.",
     insight: "The same silence can license opposite beliefs.",
     match: ["atman and anatta as competing policies"],
     plainSummary:
@@ -353,6 +367,8 @@ const distillations: Distillation[] = [
   },
   // Codex observations
   {
+    atAGlance:
+      "Letting go is not the whole test. The harder question comes after the release. What do you do with the faint remainder that still seems to ask for a name?",
     insight: "After letting go, notice what remains.",
     match: ["residue policy in negative self"],
     plainSummary:
@@ -360,6 +376,8 @@ const distillations: Distillation[] = [
     tags: ["advaita", "buddhism", "self"],
   },
   {
+    atAGlance:
+      "When two teachings seem to agree, do not rush to call them the same. Watch what has to bend to make them meet. The bend may teach more than the agreement.",
     insight: "The bend reveals the bridge.",
     match: ["translation strain as a load test", "convergence as translation strain"],
     plainSummary:
@@ -367,6 +385,8 @@ const distillations: Distillation[] = [
     tags: ["method", "comparison", "convergence"],
   },
   {
+    atAGlance:
+      "When a teaching says not this, not that, it still has to face what is left in the room. The leftover may be real, imagined, useful, or dangerous. The way a path handles that leftover tells you what it truly believes.",
     insight: "Every no leaves a remainder to account for.",
     match: ["residual burden of proof"],
     plainSummary:
@@ -374,6 +394,8 @@ const distillations: Distillation[] = [
     tags: ["buddhism", "self", "critique"],
   },
   {
+    atAGlance:
+      "Many paths ask you to stop clinging to the ordinary self. They part ways at the final step. One lets a hidden witness survive; another refuses to let anything stand behind experience. That last allowance reveals the heart of the path.",
     insight: "The deepest teachings differ by what they let survive.",
     match: ["remainder pressure as the hidden variable"],
     plainSummary:
@@ -381,6 +403,8 @@ const distillations: Distillation[] = [
     tags: ["advaita", "buddhism", "practice"],
   },
   {
+    atAGlance:
+      "The self may not be a solid object hidden inside us. It may be an event that keeps happening, like a doorway that exists only while someone passes through. This makes it real enough to matter, but not stable enough to worship.",
     insight: "The self may be a doorway, not a thing.",
     match: ["interface invariant model"],
     plainSummary:
@@ -490,8 +514,10 @@ export function getIdeas(): IdeaView[] {
       const distillation = distillationFor(record);
       const traditionTags = inferTraditionTags(record, distillation?.tags || []);
       const plainSummary = distillation?.plainSummary || firstSentence(record.original_claim, 210);
+      const atAGlance = distillation?.atAGlance || plainSummary;
       return {
         ...record,
+        atAGlance: cleanPlainSummary(atAGlance),
         articleHtml: publicArticle ? renderMarkdown(publicArticle) : "",
         critiqueHtml: renderMarkdown(record.critique),
         date,
