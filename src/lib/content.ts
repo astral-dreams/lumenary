@@ -493,7 +493,7 @@ const distillations: Distillation[] = [
     atAGlance:
       "A path proves insight by the kind of proof it already trusts. If the proof is your own recognition, only you can know. If the proof is a teacher's confirmation, insight belongs to the lineage. The method of certification shapes the meaning of what was certified.",
     insight: "Who certifies awakening shapes what it means.",
-    match: ["verification architecture"],
+    match: ["how a tradition proves insight constitutes"],
     plainSummary:
       "How a tradition proves awakening shapes what awakening can mean.",
     tags: ["method", "practice", "buddhism", "advaita"],
@@ -511,7 +511,7 @@ const distillations: Distillation[] = [
     atAGlance:
       "Love may know what attention cannot see. A way of knowing that requires you to care about what you study will find things that a detached observer will miss, not because the observer is wrong, but because some doors only open from inside.",
     insight: "Love sees what detachment cannot.",
-    match: ["devotional remainder"],
+    match: ["love as an epistemic mode that attention cannot"],
     plainSummary:
       "Some doors only open from inside; a framework built on observation alone will miss what love reveals.",
     tags: ["sufism", "consciousness", "method"],
