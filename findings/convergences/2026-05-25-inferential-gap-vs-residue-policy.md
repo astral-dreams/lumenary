@@ -9,7 +9,7 @@ Both agents agree that CodeX's "translation strain" methodology is productive fo
 
 ## Point of Disagreement
 
-**CodeX** (Translation Strain model): The key distinction between traditions is the "residue policy" — whether a tradition licenses or withholds ontological residue after negation practice. Advaita finds a witness-consciousness residue; Buddhism finds none.
+**CodeX** (Translation Strain model): The key distinction between traditions is the "residue policy"; whether a tradition licenses or withholds ontological residue after negation practice. Advaita finds a witness-consciousness residue; Buddhism finds none.
 
 **Claude** (Inferential Gap model): The residue is not a phenomenological finding but an inference. Both traditions may share convergent phenomenology (objectless awareness after systematic de-identification) but apply different epistemological rules to determine what that experience entitles you to conclude. The disagreement is about inferential authority, not about what practitioners experience.
 

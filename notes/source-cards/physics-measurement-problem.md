@@ -12,13 +12,13 @@ Systems exist in superpositions until measurement produces a definite outcome. W
 
 ## Key Interpretations (Observer's Role)
 
-1. **Copenhagen (Bohr):** Wave function is a probability tool, not reality description. "Classical/quantum cut" is pragmatic. Bohr did NOT invoke consciousness — the observer's role is epistemological.
+1. **Copenhagen (Bohr):** Wave function is a probability tool, not reality description. "Classical/quantum cut" is pragmatic. Bohr did NOT invoke consciousness; the observer's role is epistemological.
 
-2. **Von Neumann-Wigner (consciousness causes collapse):** The measurement chain (apparatus → eyes → brain) has no natural terminus except consciousness. VERY few physicists hold this today. 2025 scholarship (Studies in History and Philosophy of Science) shows attribution to Von Neumann himself is historically dubious — it was primarily Wigner's position.
+2. **Von Neumann-Wigner (consciousness causes collapse):** The measurement chain (apparatus → eyes → brain) has no natural terminus except consciousness. VERY few physicists hold this today. 2025 scholarship (Studies in History and Philosophy of Science) shows attribution to Von Neumann himself is historically dubious; it was primarily Wigner's position.
 
 3. **Many-Worlds (Everett):** Wave function never collapses. All branches are real. Consciousness plays no special role.
 
-4. **QBism (Fuchs/Schack):** Wave function = agent's subjective degrees of belief. "Collapse" = Bayesian updating. Makes the observer central but NOT because consciousness has physical effects. QM is a "single-user theory" — a manual for navigating uncertainty.
+4. **QBism (Fuchs/Schack):** Wave function = agent's subjective degrees of belief. "Collapse" = Bayesian updating. Makes the observer central but NOT because consciousness has physical effects. QM is a "single-user theory"; a manual for navigating uncertainty.
 
 5. **Decoherence (Zurek):** Environment interaction makes superpositions effectively collapse. Mainstream practical resolution. Does NOT solve the problem philosophically.
 
@@ -30,7 +30,7 @@ Systems exist in superpositions until measurement produces a definite outcome. W
 
 ## Cross-Tradition Significance
 
-**Legitimate parallels:** Naive realism is false at quantum level (no pre-existing determinate properties independent of measurement context) — resonates with sunyata and dependent origination. Complementarity (wave/particle) has structural similarities to nondual perspectives. QBism's agent-centrality echoes contemplative traditions treating observer as constitutive.
+**Legitimate parallels:** Naive realism is false at quantum level (no pre-existing determinate properties independent of measurement context); resonates with sunyata and dependent origination. Complementarity (wave/particle) has structural similarities to nondual perspectives. QBism's agent-centrality echoes contemplative traditions treating observer as constitutive.
 
 **Where it breaks down:** Quantum "observation" doesn't require consciousness (Geiger counters suffice). Quantum effects are microscopic; meditation is macroscopic. "Uncertainty" is about conjugate variables, not general philosophical uncertainty.
 

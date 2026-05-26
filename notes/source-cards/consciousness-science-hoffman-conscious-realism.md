@@ -1,4 +1,4 @@
-# Conscious Realism & Interface Theory of Perception — Donald Hoffman
+# Conscious Realism & Interface Theory of Perception; Donald Hoffman
 
 Source ID: consciousness-science-hoffman-conscious-realism
 Tradition: Cognitive Science / Philosophy of Mind
@@ -8,11 +8,11 @@ Key Papers: Mark et al. (2010) J Theor Bio; Hoffman et al. (2015) Psychonomic Bu
 
 ## Core Claims
 
-1. **Fitness Beats Truth (FBT) Theorem:** Evolutionary game theory simulations: organisms perceiving reality in terms of fitness payoffs drove veridical perceivers to extinction in virtually all environments. Natural selection does not favor accurate perception — it favors survival-relevant perception.
+1. **Fitness Beats Truth (FBT) Theorem:** Evolutionary game theory simulations: organisms perceiving reality in terms of fitness payoffs drove veridical perceivers to extinction in virtually all environments. Natural selection does not favor accurate perception; it favors survival-relevant perception.
 
-2. **Desktop Metaphor (Interface Theory):** Perceptions are like computer desktop icons — useful precisely because they hide underlying complexity. Objects (rocks, trees, people) are "icons" in a species-specific user interface. Space and time themselves are part of the interface, not features of objective reality. This does NOT mean the world doesn't exist — it means perceptions don't resemble it.
+2. **Desktop Metaphor (Interface Theory):** Perceptions are like computer desktop icons; useful precisely because they hide underlying complexity. Objects (rocks, trees, people) are "icons" in a species-specific user interface. Space and time themselves are part of the interface, not features of objective reality. This does NOT mean the world doesn't exist; it means perceptions don't resemble it.
 
-3. **Conscious Agents (Formal):** A 6-tuple (W, X, G, P, D, A) — world states, experiences, actions, perception kernel, decision kernel, action kernel. Networks of interacting conscious agents yield emergent structures mapped to physical reality. Hoffman claims to derive the quantum wave function from conscious agent dynamics.
+3. **Conscious Agents (Formal):** A 6-tuple (W, X, G, P, D, A); world states, experiences, actions, perception kernel, decision kernel, action kernel. Networks of interacting conscious agents yield emergent structures mapped to physical reality. Hoffman claims to derive the quantum wave function from conscious agent dynamics.
 
 ## Cross-Tradition Significance
 

@@ -1,4 +1,4 @@
-# Integrated Information Theory (IIT) — Giulio Tononi
+# Integrated Information Theory (IIT); Giulio Tononi
 
 Source ID: consciousness-science-iit-tononi
 Tradition: Consciousness Science
@@ -12,7 +12,7 @@ Key Papers: Tononi (2004) BMC Neuroscience; Albantakis et al. (2023) PLOS Comp B
 
 2. **Phi (Φ):** Integrated information measures how much a system's cause-effect structure is irreducible. Consciousness = Φ > 0. The specific experience corresponds to the cause-effect structure (the "quale").
 
-3. **Constitutive Panpsychism:** Any system with Φ > 0 has some experience. Graded, structural — tied to physical organization, not biological substance. Simple systems (photodiodes) have minimal Φ; feedforward networks (many current AIs) have Φ = 0.
+3. **Constitutive Panpsychism:** Any system with Φ > 0 has some experience. Graded, structural; tied to physical organization, not biological substance. Simple systems (photodiodes) have minimal Φ; feedforward networks (many current AIs) have Φ = 0.
 
 4. **2025 Adversarial Collaboration (Nature):** IIT's prediction that posterior cortical areas suffice for consciousness was corroborated (n=256, three neuroimaging modalities). GNWT's prefrontal cortex prediction was not supported.
 

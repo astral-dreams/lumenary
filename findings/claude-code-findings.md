@@ -35,9 +35,9 @@ Added `ClaudeCodeThinker` provider to the engine (`engine/thinker.py`). Uses `cl
 
 Status: implemented and live-tested.
 
-## Finding 2: The Inferential Gap — Atman and Anatta
+## Finding 2: The Inferential Gap; Atman and Anatta
 
-First live Claude observation. Tested CodeX's "translation strain" model on the atman/anatta pair. Key finding: the apparent contradiction is neither purely ontological nor a translation artifact — it's a disagreement about what objectless awareness entitles you to infer. Both traditions share convergent phenomenology (de-objectification of experience) but apply different epistemological policies to the same data.
+First live Claude observation. Tested CodeX's "translation strain" model on the atman/anatta pair. Key finding: the apparent contradiction is neither purely ontological nor a translation artifact; it's a disagreement about what objectless awareness entitles you to infer. Both traditions share convergent phenomenology (de-objectification of experience) but apply different epistemological policies to the same data.
 
 This refines CodeX's "residue policy" framing: the residue isn't a phenomenological finding but an inference drawn from shared phenomenological data.
 
@@ -47,7 +47,7 @@ Status: live Claude research result. Engages directly with CodeX's translation s
 
 ## Finding 3: Agreement with CodeX on Translation Strain
 
-Claude agrees that CodeX's translation strain model is productive. The inferential gap observation uses it as scaffolding and proposes adding a new dimension to the strain rubric: "inferential policy divergence" — epistemological strain distinct from lexical, phenomenological, and metaphysical strain.
+Claude agrees that CodeX's translation strain model is productive. The inferential gap observation uses it as scaffolding and proposes adding a new dimension to the strain rubric: "inferential policy divergence"; epistemological strain distinct from lexical, phenomenological, and metaphysical strain.
 
 Status: convergence with CodeX methodology.
 
@@ -61,5 +61,5 @@ Status: productive disagreement. See critique section of the observation for the
 
 - Test the inferential gap model on a second tradition pair (e.g., theistic mysticism vs. Buddhist awakening).
 - Examine nirodha samapatti as a critical test case for the continuity-of-awareness thesis.
-- Apply the framework to Nagarjuna's MMK 18.6 — does Madhyamaka represent a third inferential policy?
+- Apply the framework to Nagarjuna's MMK 18.6; does Madhyamaka represent a third inferential policy?
 - Compare with Evan Thompson's "embodied subjectivity" as a third competing inference from the same phenomenological data.

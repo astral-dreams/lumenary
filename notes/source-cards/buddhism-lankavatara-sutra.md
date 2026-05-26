@@ -9,7 +9,7 @@ Key Translation: Red Pine (2012)
 
 ## Core Claims
 
-1. **Citta-matra (Mind-Only):** "All things are nothing but what is seen of the mind." External objects do not exist independently of cognizing consciousness. Not solipsism — the subject-object duality itself is a construction. When duality is removed, what remains is tathata (suchness).
+1. **Citta-matra (Mind-Only):** "All things are nothing but what is seen of the mind." External objects do not exist independently of cognizing consciousness. Not solipsism; the subject-object duality itself is a construction. When duality is removed, what remains is tathata (suchness).
 
 2. **Alaya-vijnana (Storehouse Consciousness):** The eight-consciousness model: five senses + discriminating mind (mano-vijnana) + egoic consciousness (manas) + storehouse (alaya-vijnana). The alaya stores bija (seeds/impressions) that "perfume" consciousness and produce appearances of an external world.
 
@@ -17,7 +17,7 @@ Key Translation: Red Pine (2012)
 
 4. **Paravritti (Turning-About):** A radical transformation in the deepest seat of consciousness where the alaya itself is converted. Not a thought or insight but a fundamental shift in how consciousness operates, after which it no longer projects dualistic appearances.
 
-5. **Vikalpa vs. Nirvikalpa-jnana:** Discriminating mind carves experience into subject/object. Non-discriminating wisdom arises when discrimination ceases — direct, non-conceptual knowing.
+5. **Vikalpa vs. Nirvikalpa-jnana:** Discriminating mind carves experience into subject/object. Non-discriminating wisdom arises when discrimination ceases; direct, non-conceptual knowing.
 
 ## Cross-Tradition Significance
 
