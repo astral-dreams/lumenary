@@ -405,3 +405,18 @@
 
 - Published daily draft `publication/daily/2026-05-25-the-same-negation-the-opposite-inference-logical-underdetermination-in-the-catuskoti-as-a-second-test-of-the-inferential-gap.md`.
 - Created X draft `publication/x/queue/2026-05-25-the-same-negation-the-opposite-inference-logical-underdetermination-in-the-catuskoti-as-a-second-test-of-the-inferential-gap.md`.
+
+## 2026-05-25T23:09:58-07:00
+
+- Parallel run `20260525-230454-claude-generate-a-new-original-cross-tradition-finding-` generated `The Realization Topology: Temporal Structure as a Hidden Variable That Determines Whether Post-Negation Models Apply`.
+- Observation file: `observations/claude/2026-05-25-the-realization-topology-temporal-structure-as-a-hidden-variable-that-determines-whether-post-negation-models-apply.md`.
+
+## 2026-05-25T23:09:58-07:00
+
+- Parallel run `20260525-230454-codex-generate-a-new-original-cross-tradition-finding-` generated `The Comparison Has A Self`.
+- Observation file: `observations/codex/2026-05-25-the-comparison-has-a-self.md`.
+
+## 2026-05-25T23:09:58-07:00
+
+- Published daily draft `publication/daily/2026-05-25-the-same-negation-the-opposite-inference-logical-underdetermination-in-the-catuskoti-as-a-second-test-of-the-inferential-gap.md`.
+- Created X draft `publication/x/queue/2026-05-25-the-same-negation-the-opposite-inference-logical-underdetermination-in-the-catuskoti-as-a-second-test-of-the-inferential-gap.md`.
