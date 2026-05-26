@@ -32,6 +32,10 @@ body {
   min-width: 320px;
 }
 
+[hidden] {
+  display: none !important;
+}
+
 a {
   color: inherit;
   text-decoration-color: color-mix(in srgb, currentColor 35%, transparent);
