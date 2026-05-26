@@ -253,6 +253,13 @@ def _eligible_ideas(
     return ideas
 
 
+def _is_dialogue_generated_idea(record: dict[str, Any]) -> bool:
+    return any(
+        str(item).startswith("Dialogue origin:")
+        for item in record.get("source_basis") or []
+    )
+
+
 def _completed_pair_ids(root: Path) -> set[str]:
     return {
         str(record.get("pair", {}).get("pair_id") or "")
@@ -571,10 +578,13 @@ def detect_tensions(
     max_pairs: int = 1,
     force_pair: tuple[str, str] | None = None,
     ignore_cooldown: bool = False,
+    allowed_idea_ids: set[str] | None = None,
 ) -> list[dict[str, Any]]:
     rules = load_dialectic_rules(root)
     audits = _latest_audits(root)
     ideas = _eligible_ideas(root, rules, audits)
+    if allowed_idea_ids is not None:
+        ideas = [record for record in ideas if _idea_id(record) in allowed_idea_ids]
     ideas_by_id = {_idea_id(record): record for record in ideas}
     if force_pair:
         ideas = [record for idea_id in force_pair if (record := ideas_by_id.get(idea_id))]
@@ -1294,6 +1304,7 @@ def run_dialectic(
     audit_syntheses: bool = True,
     notify: bool = False,
     ignore_cooldown: bool = False,
+    allowed_idea_ids: set[str] | None = None,
 ) -> list[dict[str, Any]]:
     execution_id = execution_id or datetime.now().astimezone().strftime("%Y%m%d-%H%M%S")
     pairs = detect_tensions(
@@ -1301,6 +1312,7 @@ def run_dialectic(
         max_pairs=max_pairs,
         force_pair=force_pair,
         ignore_cooldown=ignore_cooldown,
+        allowed_idea_ids=allowed_idea_ids,
     )
     if detect_only:
         return []
@@ -1328,11 +1340,19 @@ def backfill_dialogues(
     execution_id = execution_id or "backfill-" + datetime.now().astimezone().strftime("%Y%m%d-%H%M%S")
     records: list[dict[str, Any]] = []
     librarian = Librarian(config.root)
+    rules = load_dialectic_rules(config.root)
+    audits = _latest_audits(config.root)
+    snapshot_idea_ids = {
+        _idea_id(record)
+        for record in _eligible_ideas(config.root, rules, audits)
+        if _idea_id(record) and not _is_dialogue_generated_idea(record)
+    }
     while len(records) < max_dialogues:
         pairs = detect_tensions(
             config.root,
             max_pairs=1,
             ignore_cooldown=True,
+            allowed_idea_ids=snapshot_idea_ids,
         )
         if not pairs:
             break
@@ -1364,6 +1384,7 @@ def backfill_dialogues(
             "count": len(records),
             "execution_id": execution_id,
             "max_dialogues": max_dialogues,
+            "snapshot_idea_count": len(snapshot_idea_ids),
         },
     )
     return records

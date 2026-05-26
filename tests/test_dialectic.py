@@ -6,7 +6,7 @@ import unittest
 from pathlib import Path
 
 from engine.config import EngineConfig
-from engine.dialectic import _dialogue_markdown, _idea_from_candidate, detect_tensions, run_dialectic
+from engine.dialectic import _dialogue_markdown, _idea_from_candidate, backfill_dialogues, detect_tensions, run_dialectic
 
 
 def write_jsonl(path: Path, records: list[dict]) -> None:
@@ -206,6 +206,67 @@ class DialecticTests(unittest.TestCase):
                 (root / "hypotheses" / "ideas.jsonl").read_text(encoding="utf-8"),
                 original_ideas,
             )
+
+    def test_backfill_uses_snapshot_and_skips_dialogue_generated_ideas(self) -> None:
+        with tempfile.TemporaryDirectory() as temp_dir:
+            root = Path(temp_dir)
+            codex = idea(
+                "codex",
+                "idea-codex",
+                "Translation Strain As A Load Test",
+                "Translation strain should test whether apparent convergence survives source pressure.",
+            )
+            claude = idea(
+                "claude",
+                "idea-claude",
+                "Protocol Compatibility After Translation Strain",
+                "Protocol compatibility should decide whether translation strain is procedural or propositional.",
+            )
+            generated = idea(
+                "codex",
+                "idea-generated",
+                "Dialogue Generated Candidate",
+                "A prior dialogue synthesis should not expand a historical backfill snapshot.",
+            )
+            generated["source_basis"] = ["Dialogue origin: prior-dialogue.", "Primary source two"]
+            write_jsonl(root / "hypotheses" / "ideas.jsonl", [codex, claude, generated])
+            write_jsonl(
+                root / "reviews" / "originality" / "audits.jsonl",
+                [
+                    audit("codex", "idea-codex", codex["title"]),
+                    audit("claude", "idea-claude", claude["title"]),
+                    audit("codex", "idea-generated", generated["title"]),
+                ],
+            )
+            (root / "state").mkdir(parents=True, exist_ok=True)
+            (root / "state" / "frontiers.json").write_text(
+                json.dumps(
+                    {
+                        "frontiers": [
+                            {
+                                "frontier_id": "frontier-translation",
+                                "idea_ids": ["idea-codex", "idea-claude", "idea-generated"],
+                                "priority": 0.9,
+                                "title": "Translation strain methodology",
+                            }
+                        ]
+                    }
+                ),
+                encoding="utf-8",
+            )
+            (root / "graph").mkdir(parents=True, exist_ok=True)
+            (root / "graph" / "concept-graph.seed.json").write_text(
+                json.dumps({"nodes": [], "edges": []}),
+                encoding="utf-8",
+            )
+            config = EngineConfig.load(root=root, agent="codex", provider="offline", dry_run=True)
+
+            records = backfill_dialogues(config, max_dialogues=2, audit_syntheses=False)
+
+            self.assertEqual(len(records), 1)
+            self.assertEqual({records[0]["pair"]["idea_a"], records[0]["pair"]["idea_b"]}, {"idea-codex", "idea-claude"})
+            event = json.loads((root / "runs" / "dialogue-backfill-events.jsonl").read_text(encoding="utf-8").strip())
+            self.assertEqual(event["snapshot_idea_count"], 2)
 
     def test_dialogue_markdown_quotes_frontmatter_and_strips_banned_dashes(self) -> None:
         mark = chr(0x2014)
