@@ -1,0 +1,65 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getAeoQueries, getAeoReadiness, getAnalyticsSetup } from "../../lib/analytics";
+
+const setup = getAnalyticsSetup();
+const readiness = getAeoReadiness();
+const queries = getAeoQueries();
+const description =
+  "Internal AEO dashboard for The Lumenary, tracking answer-engine readiness, AI referral sources, and citation-check queries.";
+---
+
+<BaseLayout title="AEO Analytics" description={description} noindex>
+  <section class="page-band analytics-hero">
+    <p class="eyebrow">Internal analytics</p>
+    <h1>AEO</h1>
+    <p class="lead">
+      Answer-engine tracking for whether The Lumenary can be found, cited, and understood by AI systems.
+    </p>
+    <nav class="analytics-tabs" aria-label="Analytics navigation">
+      <a class="analytics-tab" href="/analytics/">Overview</a>
+      <a class="analytics-tab" href="/analytics/acquisition/">Acquisition</a>
+      <a class="analytics-tab active" href="/analytics/aeo/">AEO</a>
+    </nav>
+  </section>
+
+  <section class="content-section">
+    <div class="analytics-grid analytics-grid-three">
+      <article class="analytics-card">
+        <span>Tracked Engines</span>
+        <strong>{setup.aeo.engines.length}</strong>
+        <p>{setup.aeo.engines.join(", ")}</p>
+      </article>
+      <article class="analytics-card">
+        <span>Query Inventory</span>
+        <strong>{queries.length}</strong>
+        <p>Questions mapped to expected Lumenary pages.</p>
+      </article>
+      <article class="analytics-card">
+        <span>Readiness Checks</span>
+        <strong>{readiness.checks.length}</strong>
+        <p>Technical surfaces that help answer engines parse the site.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <div class="analytics-panel">
+      <div class="section-heading">
+        <p class="eyebrow">Citation checks</p>
+        <h2>Starter Questions</h2>
+      </div>
+      <div class="analytics-table">
+        {queries.map((item) => (
+          <div class="analytics-row analytics-row-wide">
+            <strong>{item.query}</strong>
+            <span>{item.intent} · {item.topic}</span>
+            <p>Expected page: <a href={item.expected_path}>{item.expected_path}</a></p>
+            <code>{item.expected_path}</code>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+

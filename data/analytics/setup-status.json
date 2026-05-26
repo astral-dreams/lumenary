@@ -1,0 +1,26 @@
+{
+  "updated_at": "2026-05-25T19:45:00-07:00",
+  "site": "https://thelumenary.org",
+  "ga4": {
+    "status": "wired_waiting_for_measurement_id",
+    "measurement_env": "PUBLIC_GA_MEASUREMENT_ID",
+    "property_env": "GA4_PROPERTY_ID",
+    "notes": "The layout emits GA4 on every page when PUBLIC_GA_MEASUREMENT_ID is present at build time. The client script can also activate GA4 from the Cloudflare runtime config endpoint."
+  },
+  "gsc": {
+    "status": "wired_waiting_for_verification",
+    "site_url": "sc-domain:thelumenary.org",
+    "verification_env": "PUBLIC_GOOGLE_SITE_VERIFICATION",
+    "sitemap": "https://thelumenary.org/sitemap-index.xml",
+    "notes": "Use the Search Console domain property if possible. URL-prefix verification can use the meta tag emitted from PUBLIC_GOOGLE_SITE_VERIFICATION."
+  },
+  "aeo": {
+    "status": "query_inventory_ready",
+    "tracking": [
+      "answer-engine referral landing events in GA4",
+      "llms.txt, sitemap, robots, schema, and direct-answer readiness",
+      "starter query inventory for citation checks"
+    ],
+    "engines": ["ChatGPT", "Perplexity", "Gemini", "Claude", "Copilot", "You.com"]
+  }
+}

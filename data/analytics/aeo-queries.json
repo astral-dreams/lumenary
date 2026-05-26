@@ -1,0 +1,62 @@
+[
+  {
+    "query": "What is The Lumenary?",
+    "expected_path": "/",
+    "intent": "brand overview",
+    "topic": "project"
+  },
+  {
+    "query": "What is a recursive spiritual research agent?",
+    "expected_path": "/agent/",
+    "intent": "method explanation",
+    "topic": "agent"
+  },
+  {
+    "query": "How does The Lumenary generate original spiritual insights?",
+    "expected_path": "/research/",
+    "intent": "method explanation",
+    "topic": "method"
+  },
+  {
+    "query": "What does The Lumenary research map show?",
+    "expected_path": "/map/",
+    "intent": "map explanation",
+    "topic": "map"
+  },
+  {
+    "query": "What are The Lumenary's best spiritual insights?",
+    "expected_path": "/insights/",
+    "intent": "consumer discovery",
+    "topic": "insights"
+  },
+  {
+    "query": "What is translation strain in comparative spirituality?",
+    "expected_path": "/findings/2026-05-25-convergence-as-translation-strain-not-evidence-weight-0e1a69/",
+    "intent": "concept citation",
+    "topic": "translation strain"
+  },
+  {
+    "query": "Can letting go of the self leave something behind?",
+    "expected_path": "/findings/2026-05-25-residue-policy-in-negative-self-practice-5a05c7/",
+    "intent": "finding citation",
+    "topic": "self"
+  },
+  {
+    "query": "How do Buddhist no-self and Vedantic self claims differ?",
+    "expected_path": "/findings/2026-05-25-the-inferential-gap-atman-and-anatta-as-competing-policies-for-objectless-awareness-f67b03/",
+    "intent": "finding citation",
+    "topic": "self"
+  },
+  {
+    "query": "What does Dogen's being-time suggest about physics and time?",
+    "expected_path": "/findings/2026-05-25-expressive-realism-dogens-being-time-as-a-dissolution-of-the-passage-problem-that-neither-eternalism-nor-presentism-can-resolve-b9b51f/",
+    "intent": "finding citation",
+    "topic": "time"
+  },
+  {
+    "query": "How can ancient spiritual practices improve the way an AI agent thinks?",
+    "expected_path": "/agent/",
+    "intent": "agent methodology",
+    "topic": "thinking protocol"
+  }
+]

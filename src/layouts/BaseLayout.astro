@@ -23,6 +23,9 @@ const {
 const siteUrl = Astro.site?.toString().replace(/\/$/, "") || "https://thelumenary.org";
 const canonicalUrl = new URL(canonicalPath || Astro.url.pathname, `${siteUrl}/`).toString();
 const pageTitle = title === "The Lumenary" ? title : `${title} | The Lumenary`;
+const gaMeasurementId = String(import.meta.env.PUBLIC_GA_MEASUREMENT_ID || "").trim();
+const hasGaMeasurementId = /^G-[A-Z0-9]+$/.test(gaMeasurementId);
+const googleSiteVerification = String(import.meta.env.PUBLIC_GOOGLE_SITE_VERIFICATION || "").trim();
 const jsonLdItems = [
   {
     "@context": "https://schema.org",
@@ -59,9 +62,12 @@ const jsonLdString = (item: Record<string, unknown>) => JSON.stringify(item).rep
     <meta name="theme-color" content="#101512" />
     <meta name="application-name" content="The Lumenary" />
     <meta name="apple-mobile-web-app-title" content="The Lumenary" />
+    {googleSiteVerification && <meta name="google-site-verification" content={googleSiteVerification} />}
     <link rel="canonical" href={canonicalUrl} />
     <link rel="alternate" type="application/rss+xml" title="The Lumenary RSS" href="/rss.xml" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    {hasGaMeasurementId && <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin />}
+    {hasGaMeasurementId && <link rel="preconnect" href="https://www.google-analytics.com" crossorigin />}
     <meta property="og:site_name" content="The Lumenary" />
     <meta property="og:type" content={ogType} />
     <meta property="og:title" content={pageTitle} />
@@ -73,6 +79,33 @@ const jsonLdString = (item: Record<string, unknown>) => JSON.stringify(item).rep
     <meta name="twitter:description" content={description} />
     {jsonLdItems.map((item) => <script type="application/ld+json" set:html={jsonLdString(item)} />)}
     <title>{pageTitle}</title>
+    {
+      hasGaMeasurementId && (
+        <script
+          is:inline
+          set:html={`window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+window.gtag = window.gtag || gtag;
+gtag('js', new Date());
+gtag('config', '${gaMeasurementId}', { send_page_view: true });
+if ('requestIdleCallback' in window) {
+  requestIdleCallback(function(){
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=${gaMeasurementId}';
+    document.head.appendChild(s);
+  }, { timeout: 3000 });
+} else {
+  window.addEventListener('load', function(){
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=${gaMeasurementId}';
+    document.head.appendChild(s);
+  });
+}`}
+        />
+      )
+    }
   </head>
   <body>
     <header class="site-header">
@@ -99,5 +132,8 @@ const jsonLdString = (item: Record<string, unknown>) => JSON.stringify(item).rep
       </div>
       <a href="/rss.xml">RSS</a>
     </footer>
+    <script>
+      import "../scripts/analytics";
+    </script>
   </body>
 </html>

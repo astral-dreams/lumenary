@@ -1,0 +1,41 @@
+{
+  "updated_at": "2026-05-26T02:43:18.007174+00:00",
+  "checks": [
+    {
+      "label": "llms.txt",
+      "status": "ready",
+      "path": "/llms.txt",
+      "notes": "Plain text summary for language models."
+    },
+    {
+      "label": "robots.txt",
+      "status": "ready",
+      "path": "/robots.txt",
+      "notes": "Allows crawling and points to the sitemap."
+    },
+    {
+      "label": "sitemap",
+      "status": "ready",
+      "path": "/sitemap-index.xml",
+      "notes": "Astro sitemap generated at build time."
+    },
+    {
+      "label": "structured data",
+      "status": "ready",
+      "path": "sitewide",
+      "notes": "Home, Findings, Map, Method, Agent, and article pages emit schema."
+    },
+    {
+      "label": "answer-engine referrals",
+      "status": "wired",
+      "path": "GA4 event: aeo_referral_landing",
+      "notes": "Triggered when the referrer is an answer engine such as ChatGPT, Perplexity, Gemini, Claude, Copilot, You.com, or Phind."
+    },
+    {
+      "label": "citation checks",
+      "status": "inventory_ready",
+      "path": "data/analytics/aeo-queries.json",
+      "notes": "Starter questions and expected destination pages are defined."
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "channel": "Organic Search",
+    "source_rule": "google / organic, bing / organic, duckduckgo / organic, and other search engines",
+    "what_to_watch": "Queries and pages from Google Search Console, then engagement in GA4.",
+    "first_action": "Submit https://thelumenary.org/sitemap-index.xml in Search Console."
+  },
+  {
+    "channel": "Answer Engines",
+    "source_rule": "chatgpt.com, perplexity.ai, gemini.google.com, claude.ai, copilot.microsoft.com, you.com, phind.com",
+    "what_to_watch": "AI referral sessions, landing pages, and whether the visit lands on Insights, Findings, Map, Method, or Agent.",
+    "first_action": "Keep llms.txt, FAQ schema, article schema, and answer sections current."
+  },
+  {
+    "channel": "Direct",
+    "source_rule": "(direct) / (none)",
+    "what_to_watch": "Return readers, memorability of insight titles, and direct visits after social sharing.",
+    "first_action": "Use short, memorable URLs when sharing Findings and Journal entries."
+  },
+  {
+    "channel": "Referral",
+    "source_rule": "External sites linking to thelumenary.org",
+    "what_to_watch": "Which essays, newsletters, communities, and citations send readers who stay.",
+    "first_action": "Track external_link_click and landing page paths in GA4."
+  },
+  {
+    "channel": "Social",
+    "source_rule": "x.com, twitter.com, linkedin.com, reddit.com, facebook.com, and social campaign UTMs",
+    "what_to_watch": "Which short insight cards and Journal reflections create qualified visits.",
+    "first_action": "Use UTM links when posting approved X drafts."
+  }
+]

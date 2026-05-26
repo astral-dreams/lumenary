@@ -1,0 +1,56 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getAcquisitionChannels } from "../../lib/analytics";
+
+const channels = getAcquisitionChannels();
+const description =
+  "Internal acquisition dashboard for The Lumenary, mapping GA4 channels, answer-engine referrals, organic search, direct, referral, and social traffic.";
+---
+
+<BaseLayout title="Acquisition Analytics" description={description} noindex>
+  <section class="page-band analytics-hero">
+    <p class="eyebrow">Internal analytics</p>
+    <h1>Acquisition</h1>
+    <p class="lead">
+      The basic channel map for understanding where readers come from and which pages they enter through.
+    </p>
+    <nav class="analytics-tabs" aria-label="Analytics navigation">
+      <a class="analytics-tab" href="/analytics/">Overview</a>
+      <a class="analytics-tab active" href="/analytics/acquisition/">Acquisition</a>
+      <a class="analytics-tab" href="/analytics/aeo/">AEO</a>
+    </nav>
+  </section>
+
+  <section class="content-section">
+    <div class="analytics-panel">
+      <div class="section-heading">
+        <p class="eyebrow">Channels</p>
+        <h2>Source Rules</h2>
+      </div>
+      <div class="analytics-table">
+        {channels.map((channel) => (
+          <div class="analytics-row analytics-row-wide">
+            <strong>{channel.channel}</strong>
+            <span>{channel.source_rule}</span>
+            <p>{channel.what_to_watch}</p>
+            <code>{channel.first_action}</code>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <div class="answer-panel">
+      <p class="eyebrow">Tracking plan</p>
+      <h2>What This Page Should Show Next</h2>
+      <ol class="answer-steps">
+        <li>Sessions, users, engagement rate, and views by channel from GA4.</li>
+        <li>Top landing pages by source, with Insights and Findings separated from Method and Agent pages.</li>
+        <li>Organic search queries and pages from Google Search Console.</li>
+        <li>Answer-engine referrals grouped under AEO instead of generic referral.</li>
+      </ol>
+    </div>
+  </section>
+</BaseLayout>
+
