@@ -1,0 +1,582 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Codex Review: Dialectical Engine Plan</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #171717;
+      --muted: #5f625f;
+      --paper: #fbfaf7;
+      --panel: #ffffff;
+      --line: #dedbd2;
+      --accent: #0f766e;
+      --accent-soft: #e4f3f0;
+      --warn: #9a3412;
+      --warn-soft: #fff0e6;
+      --blue: #1d4ed8;
+      --blue-soft: #e9f0ff;
+      --green: #166534;
+      --green-soft: #e8f5ea;
+      --code: #f3f1ea;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.55;
+    }
+
+    main {
+      width: min(1120px, calc(100% - 40px));
+      margin: 0 auto;
+      padding: 48px 0 72px;
+    }
+
+    header {
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 28px;
+      margin-bottom: 34px;
+    }
+
+    .eyebrow {
+      color: var(--accent);
+      font-size: 0.78rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin: 0 0 10px;
+    }
+
+    h1 {
+      font-size: clamp(2.1rem, 5vw, 4.7rem);
+      line-height: 0.98;
+      margin: 0 0 18px;
+      letter-spacing: 0;
+      max-width: 980px;
+    }
+
+    .subtitle {
+      color: var(--muted);
+      max-width: 780px;
+      font-size: 1.08rem;
+      margin: 0;
+    }
+
+    section {
+      margin: 34px 0;
+    }
+
+    h2 {
+      font-size: 1.45rem;
+      line-height: 1.15;
+      margin: 0 0 14px;
+    }
+
+    h3 {
+      font-size: 1.05rem;
+      margin: 24px 0 8px;
+    }
+
+    p {
+      margin: 0 0 14px;
+      max-width: 850px;
+    }
+
+    ul, ol {
+      margin-top: 8px;
+      padding-left: 22px;
+    }
+
+    li {
+      margin: 7px 0;
+      max-width: 900px;
+    }
+
+    code {
+      background: var(--code);
+      border-radius: 4px;
+      padding: 1px 5px;
+      font-size: 0.93em;
+    }
+
+    pre {
+      background: #1d1d1b;
+      color: #f8f7f2;
+      overflow-x: auto;
+      border-radius: 8px;
+      padding: 18px;
+      font-size: 0.9rem;
+      line-height: 1.5;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      overflow: hidden;
+      margin: 16px 0 24px;
+    }
+
+    th, td {
+      border-bottom: 1px solid var(--line);
+      padding: 12px 14px;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      background: #f5f3ec;
+      font-size: 0.82rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    tr:last-child td {
+      border-bottom: 0;
+    }
+
+    .callout {
+      border: 1px solid var(--line);
+      border-left: 5px solid var(--accent);
+      background: var(--panel);
+      border-radius: 8px;
+      padding: 18px 20px;
+      margin: 16px 0;
+    }
+
+    .callout.warning {
+      border-left-color: var(--warn);
+      background: var(--warn-soft);
+    }
+
+    .callout.blue {
+      border-left-color: var(--blue);
+      background: var(--blue-soft);
+    }
+
+    .callout.green {
+      border-left-color: var(--green);
+      background: var(--green-soft);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 14px;
+    }
+
+    .mini {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 16px;
+    }
+
+    .mini h3 {
+      margin-top: 0;
+    }
+
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      border-radius: 999px;
+      padding: 4px 9px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-size: 0.78rem;
+      font-weight: 800;
+      margin-right: 6px;
+      margin-bottom: 6px;
+    }
+
+    .footer {
+      color: var(--muted);
+      border-top: 1px solid var(--line);
+      margin-top: 44px;
+      padding-top: 18px;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <p class="eyebrow">Codex review plan</p>
+    <h1>Dialectical Engine, revised for build</h1>
+    <p class="subtitle">
+      Claude's Dialogues proposal is worth building. This review keeps the core
+      idea intact, but tightens the artifact boundaries, evidence gates, scheduler
+      fit, and publication path so the engine strengthens Lumenary without
+      turning debate into performance.
+    </p>
+  </header>
+
+  <section>
+    <h2>Executive Judgment</h2>
+    <div class="callout green">
+      <p>
+        Build it, but build it as a review and synthesis engine first, not as a
+        direct mutation engine. The dialogue should create durable evidence about
+        a claim's pressure points. Any score changes, status changes, and new
+        synthesis ideas should pass through explicit ledgers and the existing
+        promotion and originality gates.
+      </p>
+    </div>
+    <p>
+      The best part of Claude's plan is the shift from parallel output to
+      structured cross-agent pressure. That is exactly the missing layer after
+      the Frontier Engine: frontier steering finds the question, originality audit
+      tests novelty, and dialogue tests whether two agents can force a better
+      claim into existence.
+    </p>
+    <p>
+      The main correction is practical: the current codebase does not have a
+      generic structured thinker interface yet. <code>engine/thinker.py</code>
+      currently returns <code>IdeaRecord</code>. The dialectical runner needs a
+      lower-level <code>generate_structured()</code> path that can use arbitrary
+      schemas for challenge turns, crux extraction, and synthesis verdicts.
+    </p>
+  </section>
+
+  <section>
+    <h2>What Claude Got Right</h2>
+    <div class="grid">
+      <div class="mini">
+        <h3>The product idea is strong</h3>
+        <p>
+          Public dialogues make Lumenary's method legible. Readers can see how a
+          claim is challenged, revised, or rejected instead of only seeing a final
+          card.
+        </p>
+      </div>
+      <div class="mini">
+        <h3>The artifact stack is mostly right</h3>
+        <p>
+          A JSONL ledger, per-dialogue JSON, human-readable Markdown, convergence
+          notes, and website pages are the right durable surfaces.
+        </p>
+      </div>
+      <div class="mini">
+        <h3>The outcome taxonomy is useful</h3>
+        <p>
+          Convergence, revision, demolition, standoff, and transcendence give the
+          engine honest options besides forced synthesis.
+        </p>
+      </div>
+      <div class="mini">
+        <h3>The prompts have the right ethic</h3>
+        <p>
+          The prompts aim for real philosophical engagement, not cheap
+          contradiction or politeness.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Main Critique</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Issue</th>
+          <th>Why It Matters</th>
+          <th>Codex Revision</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Challenge can become role-play</td>
+          <td>Agents can manufacture disagreement even when the real issue is source weakness or scope confusion.</td>
+          <td>Add a required steelman before objection. The challenger must restate the proponent's claim in a form the proponent would accept.</td>
+        </tr>
+        <tr>
+          <td>Direct score mutation is too risky</td>
+          <td>The original idea record is historical evidence. Rewriting it after a dialogue would blur what the agent actually claimed.</td>
+          <td>Write recommended score and status changes to <code>reviews/dialogues/outcomes.jsonl</code>. Promotion views can read them, but source records remain immutable.</td>
+        </tr>
+        <tr>
+          <td>Scheduler section is outdated</td>
+          <td>The live LaunchAgent runs <code>engine.parallel_research</code>, which already runs Codex and Claude in parallel each 30-minute slot.</td>
+          <td>Add dialogues as a sidecar after every N successful parallel runs, not as a replacement for alternating Codex and Claude slots.</td>
+        </tr>
+        <tr>
+          <td>The thinker interface is too narrow</td>
+          <td><code>thinker.generate()</code> returns an <code>IdeaRecord</code>, but dialogue turns need different schemas.</td>
+          <td>Introduce <code>engine/structured_thinker.py</code> or extend thinker classes with <code>generate_json(schema_path, prompt)</code>.</td>
+        </tr>
+        <tr>
+          <td>Transcendence is over-claimed</td>
+          <td>A new phrasing from two agents is not enough to prove original thought.</td>
+          <td>Rename the internal status to <code>candidate_transcendence</code> until the synthesis survives originality audit and later challenge.</td>
+        </tr>
+        <tr>
+          <td>Website may publish too much raw process</td>
+          <td>Raw exchanges can include draft claims, unverified analogies, and brittle source use.</td>
+          <td>Public pages should lead with a distilled dialogue brief and only expose full transcript sections when the underlying claims meet the current public thresholds.</td>
+        </tr>
+        <tr>
+          <td>Path dependency remains</td>
+          <td>Frontier-driven pair selection can deepen only the clusters already favored by the Frontier Engine.</td>
+          <td>Add a configurable wildcard quota: one orphan, low-priority, or cross-frontier tension after every few frontier-led dialogues.</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>Revised Architecture</h2>
+    <p>
+      Keep Claude's high-level architecture, but split the engine into smaller
+      surfaces with explicit review boundaries.
+    </p>
+    <pre>config/dialectic-rules.json
+engine/dialectic.py
+engine/structured_thinker.py
+engine/json_schemas/tension_pair.schema.json
+engine/json_schemas/dialogue_turn.schema.json
+engine/json_schemas/crux.schema.json
+engine/json_schemas/dialogue_verdict.schema.json
+reviews/dialogues/dialogues.jsonl
+reviews/dialogues/outcomes.jsonl
+reviews/dialogues/YYYY-MM-DD-slug.json
+reviews/dialogues/YYYY-MM-DD-slug.md
+state/dialogue_agenda.json
+src/pages/dialogues/index.astro
+src/pages/dialogues/[slug].astro</pre>
+
+    <h3>Data flow</h3>
+    <ol>
+      <li>The Frontier Engine produces or refreshes <code>state/frontiers.json</code>.</li>
+      <li>The Dialogue Engine detects tensions inside the top frontier, plus any due wildcard tensions.</li>
+      <li>The challenger performs a steelman, then a challenge.</li>
+      <li>The proponent rebuts by conceding, defending, revising, and naming the crux.</li>
+      <li>The challenger tests the revision and either accepts, narrows, or rejects the crux.</li>
+      <li>A synthesis pass extracts the outcome, crux, evidence gaps, and optional candidate synthesis idea.</li>
+      <li>The engine writes review artifacts and only appends a new synthesis idea if it has a complete source basis and a post-dialogue audit queue entry.</li>
+      <li>Publication reads dialogue views, promotion decisions, and originality audits before rendering public claims.</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>Protocol Revision</h2>
+    <p>
+      The dialogue should have four reasoning moves, even if the public page
+      still displays three main sections.
+    </p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Turn</th>
+          <th>Agent</th>
+          <th>Required Output</th>
+          <th>Purpose</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>0. Steelman</td>
+          <td>Challenger</td>
+          <td><code>steelman</code>, <code>fairness_check</code>, <code>claim_units</code></td>
+          <td>Proves the challenger understood the claim before objecting.</td>
+        </tr>
+        <tr>
+          <td>1. Challenge</td>
+          <td>Challenger</td>
+          <td><code>strongest_objection</code>, <code>hidden_assumption</code>, <code>counter_model</code>, <code>new_primary_or_practitioner_source</code></td>
+          <td>Finds the load-bearing weakness and introduces fresh evidence.</td>
+        </tr>
+        <tr>
+          <td>2. Rebuttal</td>
+          <td>Proponent</td>
+          <td><code>concessions</code>, <code>defense</code>, <code>revised_claim</code>, <code>crux</code>, <code>test_that_would_settle_it</code></td>
+          <td>Separates real concessions from the claim that survives.</td>
+        </tr>
+        <tr>
+          <td>3. Counter-rebuttal</td>
+          <td>Challenger</td>
+          <td><code>revision_verdict</code>, <code>crux_verdict</code>, <code>remaining_risk</code></td>
+          <td>Checks whether the revision actually improved the idea.</td>
+        </tr>
+        <tr>
+          <td>4. Synthesis</td>
+          <td>Alternating synthesizer</td>
+          <td><code>outcome</code>, <code>convergence_claim</code>, <code>unresolved_crux</code>, <code>candidate_synthesis</code>, <code>recommended_adjustments</code></td>
+          <td>Creates the durable review artifact without overwriting history.</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>Tension Selection</h2>
+    <p>
+      Claude's signals are good, but I would add evidence quality and frontier
+      pressure so the engine debates ideas that matter right now.
+    </p>
+    <pre>{
+  "shared_frontier": 0.24,
+  "frontier_priority": 0.16,
+  "concept_graph_contradiction": 0.18,
+  "translation_strain": 0.12,
+  "audit_anomaly_overlap": 0.12,
+  "near_neighbor_conflict": 0.08,
+  "source_overlap_with_divergent_conclusion": 0.06,
+  "recency": 0.04
+}</pre>
+    <p>
+      The detector should reject pairs when either idea lacks enough source basis,
+      lacks an originality audit, has a blocked epistemic label, or was already
+      demolished by a prior dialogue. It should also alternate direction so Codex
+      and Claude both get chances to be proponent and challenger.
+    </p>
+  </section>
+
+  <section>
+    <h2>Artifact Rules</h2>
+    <div class="callout blue">
+      <p>
+        The dialogue record is a review object. It can recommend a revision, but
+        it does not silently revise the original idea. Historical fidelity is more
+        valuable than neatness.
+      </p>
+    </div>
+    <ul>
+      <li><code>reviews/dialogues/dialogues.jsonl</code> is the append-only source of truth.</li>
+      <li><code>reviews/dialogues/outcomes.jsonl</code> records recommended score and status changes.</li>
+      <li><code>hypotheses/ideas.jsonl</code> receives a new synthesis record only for complete candidate syntheses, with <code>idea_type: "synthesis"</code> and parent dialogue metadata.</li>
+      <li><code>reviews/originality/audits.jsonl</code> must receive a post-dialogue audit for any new synthesis before public promotion.</li>
+      <li><code>findings/convergences/</code> should be written only for convergence, revision, and candidate transcendence outcomes, not for standoffs or demolitions.</li>
+      <li><code>state/frontiers.json</code> should consume dialogue outcomes during refresh: survived claims rise, demolished claims fall, unresolved cruxes become next tests.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Scheduler Fit</h2>
+    <p>
+      Claude's spec describes a scheduler that alternates Codex and Claude. The
+      live system now runs both agents through <code>engine.parallel_research</code>
+      in each 30-minute job, then distills, audits, refreshes frontiers, builds,
+      commits, and deploys.
+    </p>
+    <p>
+      The safer production plan is:
+    </p>
+    <ol>
+      <li>Add <code>python3 -m engine.dialectic --detect-only</code> for cheap agenda validation.</li>
+      <li>Add <code>python3 -m engine.dialectic --max-pairs 1</code> for manual runs.</li>
+      <li>Add a wrapper counter in the LaunchAgent script or <code>engine.parallel_research</code>: after every fourth successful parallel run, call the dialectic sidecar.</li>
+      <li>Do not run dialogues if a research lock is active, if the previous build failed, or if there is no complete originality audit for the candidate pair.</li>
+      <li>Deploy dialogue pages only after <code>npm run build</code>, public-copy scan, and promotion checks pass.</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>Website Revision</h2>
+    <p>
+      Keep the public <code>/dialogues/</code> page, but make it reader-facing
+      and epistemically careful.
+    </p>
+    <ul>
+      <li>The index should show the question, agents, outcome, frontier, and one plain-language sentence about what changed.</li>
+      <li>The detail page should read like a journal symposium, not a chat log.</li>
+      <li>Each page should show clear labels: draft, review candidate, public claim, or synthesis ready.</li>
+      <li>Raw turn text should be available only when it does not expose unpublished or rejected claims as settled conclusions.</li>
+      <li>Finding pages should show "Debated" only when a dialogue is complete, with outcome and crux shown near the originality audit.</li>
+      <li>The Method page should eventually explain Dialogues as the layer after Frontiers: Frontiers chooses where to press, Dialogues applies cross-agent pressure.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Build Plan</h2>
+    <h3>Phase 1: Structured turn infrastructure</h3>
+    <ol>
+      <li>Add a generic structured thinker helper that can call Codex CLI or Claude Code with an arbitrary JSON schema.</li>
+      <li>Add dialogue schemas and tests for schema loading, JSON extraction, and sanitization.</li>
+      <li>Add <code>config/dialectic-rules.json</code> for weights, cooldowns, wildcard cadence, minimum scores, and public rendering rules.</li>
+    </ol>
+
+    <h3>Phase 2: Tension detection</h3>
+    <ol>
+      <li>Read <code>hypotheses/ideas.jsonl</code>, <code>state/frontiers.json</code>, <code>graph/concept-graph.seed.json</code>, and <code>reviews/originality/audits.jsonl</code>.</li>
+      <li>Generate ranked <code>TensionPair</code> objects with explanatory signals, not just numeric priority.</li>
+      <li>Write <code>state/dialogue_agenda.json</code> so the next run is inspectable before model calls are spent.</li>
+    </ol>
+
+    <h3>Phase 3: Dialogue runner</h3>
+    <ol>
+      <li>Implement the steelman, challenge, rebuttal, counter-rebuttal, and synthesis calls.</li>
+      <li>Persist every prompt, output, parsed JSON object, and failure in <code>runs/dialectic-*/</code>.</li>
+      <li>Write append-only review artifacts under <code>reviews/dialogues/</code>.</li>
+    </ol>
+
+    <h3>Phase 4: Post-dialogue gates</h3>
+    <ol>
+      <li>Queue or run an originality audit for any candidate synthesis idea.</li>
+      <li>Refresh frontiers so unresolved cruxes become next tests.</li>
+      <li>Record growth only with reader-facing bullets that match the current Growth style rules.</li>
+    </ol>
+
+    <h3>Phase 5: Website</h3>
+    <ol>
+      <li>Add <code>loadDialogues()</code> and typed dialogue views to <code>src/lib/content.ts</code>.</li>
+      <li>Create <code>/dialogues/</code> and <code>/dialogues/[slug]</code>.</li>
+      <li>Add dialogue links to findings, frontiers, the map, homepage, and Method once the first real dialogue exists.</li>
+    </ol>
+
+    <h3>Phase 6: LaunchAgent integration</h3>
+    <ol>
+      <li>Add the sidecar cadence after manual smoke tests succeed.</li>
+      <li>Keep a <code>--no-dialectic</code> escape hatch for the half-hour job.</li>
+      <li>Emit four macOS notifications: dialogue starting, challenge delivered, synthesis complete, artifacts written.</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>Acceptance Tests</h2>
+    <ul>
+      <li><code>python3 -m engine.dialectic --detect-only</code> finds at least one explainable pair in the current corpus or exits cleanly with a reason.</li>
+      <li>A dry fixture run produces a complete <code>DialogueRecord</code> without calling live models.</li>
+      <li>A live run writes prompts, raw outputs, parsed JSON, Markdown, JSONL ledgers, and an outcome record.</li>
+      <li>No original idea record is overwritten by a dialogue outcome.</li>
+      <li>Any candidate synthesis receives an originality audit before it can be rendered as a public claim.</li>
+      <li><code>python3 -m unittest discover -s tests</code> passes.</li>
+      <li><code>npm run build</code> passes and public copy contains no banned punctuation.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Final Recommendation</h2>
+    <div class="callout">
+      <p>
+        Claude's plan is solid enough to build. The version I would build first is
+        narrower and safer: an append-only Dialogue Review Engine with steelman
+        gating, frontier-aware tension selection, generic structured model calls,
+        post-dialogue originality audits, and public pages that show distilled
+        dialectical movement rather than raw debate as settled truth.
+      </p>
+      <p>
+        Once that is working, we can let the half-hour LaunchAgent run it as a
+        sidecar every few successful research cycles.
+      </p>
+    </div>
+  </section>
+
+  <p class="footer">
+    Prepared by Codex on 2026-05-26. Source reviewed:
+    <code>plans/dialectical-engine-spec.html</code>.
+  </p>
+</main>
+</body>
+</html>

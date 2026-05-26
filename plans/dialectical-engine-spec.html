@@ -1,0 +1,1440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dialectical Engine Spec: Lumenary</title>
+<style>
+  :root {
+    --bg: #0d0d0d;
+    --surface: #161616;
+    --surface2: #1e1e1e;
+    --border: #2a2a2a;
+    --text: #e0ddd5;
+    --text-dim: #8a8780;
+    --accent: #c9a84c;
+    --accent-dim: #8a7433;
+    --codex: #7ca6d8;
+    --claude: #d4845a;
+    --synthesis: #8bbf7a;
+    --tension: #d85a6e;
+    --mono: 'SF Mono', 'Fira Code', 'Cascadia Code', monospace;
+    --sans: 'Inter', -apple-system, sans-serif;
+    --serif: 'Iowan Old Style', 'Palatino Linotype', 'Book Antiqua', serif;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: var(--sans);
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 3rem 2rem 6rem;
+  }
+
+  h1 {
+    font-family: var(--serif);
+    font-size: 2.4rem;
+    font-weight: 400;
+    color: var(--accent);
+    margin-bottom: 0.3rem;
+    letter-spacing: -0.02em;
+  }
+
+  .subtitle {
+    font-size: 1.05rem;
+    color: var(--text-dim);
+    margin-bottom: 3rem;
+    font-style: italic;
+  }
+
+  h2 {
+    font-family: var(--serif);
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--accent);
+    margin-top: 3.5rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 1px solid var(--border);
+  }
+
+  h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text);
+    margin-top: 2rem;
+    margin-bottom: 0.6rem;
+  }
+
+  h4 {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--text-dim);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  p { margin-bottom: 1rem; }
+
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  code {
+    font-family: var(--mono);
+    font-size: 0.85em;
+    background: var(--surface2);
+    padding: 0.15em 0.4em;
+    border-radius: 3px;
+    color: var(--accent);
+  }
+
+  pre {
+    font-family: var(--mono);
+    font-size: 0.82rem;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 1.2rem 1.4rem;
+    overflow-x: auto;
+    margin: 1rem 0 1.5rem;
+    line-height: 1.6;
+    color: var(--text);
+  }
+
+  pre .key { color: var(--codex); }
+  pre .str { color: var(--synthesis); }
+  pre .comment { color: var(--text-dim); font-style: italic; }
+
+  ul, ol {
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+  }
+
+  li { margin-bottom: 0.4rem; }
+
+  .callout {
+    background: var(--surface);
+    border-left: 3px solid var(--accent);
+    padding: 1rem 1.4rem;
+    margin: 1.5rem 0;
+    border-radius: 0 6px 6px 0;
+  }
+
+  .callout.tension {
+    border-left-color: var(--tension);
+  }
+
+  .callout.synthesis {
+    border-left-color: var(--synthesis);
+  }
+
+  .callout p:last-child { margin-bottom: 0; }
+
+  .flow-diagram {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 2rem;
+    margin: 2rem 0;
+    text-align: center;
+    font-family: var(--mono);
+    font-size: 0.85rem;
+    line-height: 2;
+    overflow-x: auto;
+    white-space: pre;
+  }
+
+  .agent-tag {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 0.15em 0.5em;
+    border-radius: 3px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .agent-tag.codex {
+    background: rgba(124, 166, 216, 0.15);
+    color: var(--codex);
+    border: 1px solid rgba(124, 166, 216, 0.3);
+  }
+
+  .agent-tag.claude {
+    background: rgba(212, 132, 90, 0.15);
+    color: var(--claude);
+    border: 1px solid rgba(212, 132, 90, 0.3);
+  }
+
+  .agent-tag.both {
+    background: rgba(139, 191, 122, 0.15);
+    color: var(--synthesis);
+    border: 1px solid rgba(139, 191, 122, 0.3);
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  th {
+    text-align: left;
+    padding: 0.6rem 0.8rem;
+    border-bottom: 2px solid var(--border);
+    color: var(--text-dim);
+    font-weight: 600;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+
+  td {
+    padding: 0.5rem 0.8rem;
+    border-bottom: 1px solid var(--border);
+    vertical-align: top;
+  }
+
+  .toc {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 1.5rem 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .toc h3 {
+    margin-top: 0;
+    color: var(--accent);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+
+  .toc ol {
+    columns: 2;
+    column-gap: 2rem;
+    font-size: 0.9rem;
+  }
+
+  .toc li { break-inside: avoid; }
+
+  .phase {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin: 1rem 0;
+  }
+
+  .phase-header {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .phase-number {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background: var(--accent-dim);
+    color: var(--bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 0.85rem;
+    flex-shrink: 0;
+  }
+
+  .phase-title {
+    font-weight: 600;
+    font-size: 1.05rem;
+  }
+
+  .example-dialogue {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+  }
+
+  .dialogue-turn {
+    padding: 1rem;
+    margin: 0.8rem 0;
+    border-radius: 6px;
+    position: relative;
+  }
+
+  .dialogue-turn.codex {
+    background: rgba(124, 166, 216, 0.08);
+    border-left: 3px solid var(--codex);
+  }
+
+  .dialogue-turn.claude {
+    background: rgba(212, 132, 90, 0.08);
+    border-left: 3px solid var(--claude);
+  }
+
+  .dialogue-turn.synthesis {
+    background: rgba(139, 191, 122, 0.08);
+    border-left: 3px solid var(--synthesis);
+  }
+
+  .dialogue-turn .speaker {
+    font-weight: 700;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin-bottom: 0.4rem;
+  }
+
+  .dialogue-turn.codex .speaker { color: var(--codex); }
+  .dialogue-turn.claude .speaker { color: var(--claude); }
+  .dialogue-turn.synthesis .speaker { color: var(--synthesis); }
+
+  .dialogue-turn .content {
+    font-family: var(--serif);
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+
+  .metric {
+    display: inline-block;
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 0.3rem 0.6rem;
+    font-family: var(--mono);
+    font-size: 0.8rem;
+    margin: 0.2rem;
+  }
+
+  hr {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 3rem 0;
+  }
+
+  .footer {
+    margin-top: 4rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border);
+    color: var(--text-dim);
+    font-size: 0.85rem;
+    text-align: center;
+  }
+
+  @media (max-width: 640px) {
+    body { padding: 1.5rem 1rem 4rem; }
+    h1 { font-size: 1.8rem; }
+    .toc ol { columns: 1; }
+    pre { font-size: 0.75rem; padding: 0.8rem; }
+  }
+</style>
+</head>
+<body>
+
+<h1>The Dialectical Engine</h1>
+<p class="subtitle">Two sages, one frontier: structured adversarial dialogue between Lumenary's research agents</p>
+
+<div class="toc">
+  <h3>Contents</h3>
+  <ol>
+    <li><a href="#vision">Vision</a></li>
+    <li><a href="#why-now">Why Now</a></li>
+    <li><a href="#architecture">Architecture Overview</a></li>
+    <li><a href="#protocol">The Dialectic Protocol</a></li>
+    <li><a href="#tension-detection">Tension Detection</a></li>
+    <li><a href="#schemas">Data Schemas</a></li>
+    <li><a href="#artifacts">Artifact Types and Paths</a></li>
+    <li><a href="#engine-integration">Engine Integration</a></li>
+    <li><a href="#prompts">Prompt Design</a></li>
+    <li><a href="#scoring">Scoring and Promotion</a></li>
+    <li><a href="#website">Website: The Dialogues Page</a></li>
+    <li><a href="#scheduler">Scheduler Integration</a></li>
+    <li><a href="#example">Worked Example</a></li>
+    <li><a href="#build-plan">Build Plan</a></li>
+  </ol>
+</div>
+
+<!-- ============================================================ -->
+<h2 id="vision">1. Vision</h2>
+
+<p>
+  Right now, Lumenary's two agents, <span class="agent-tag codex">Codex</span> and
+  <span class="agent-tag claude">Claude</span>, work in parallel but never speak
+  to each other. They generate ideas independently, like two scholars writing
+  papers in adjacent offices who never knock on each other's door.
+</p>
+
+<p>
+  The Dialectical Engine changes this. It pairs ideas that are in tension and
+  stages a structured philosophical dialogue between the agents: challenge,
+  rebuttal, and synthesis. The output is not just better ideas; it is a new
+  kind of artifact: the argument itself as an object of study.
+</p>
+
+<div class="callout">
+  <p>
+    <strong>The thesis:</strong> If Agent A proposes a model, and Agent B finds
+    a genuine flaw, and Agent A revises in a way that neither started with,
+    the result is demonstrably original thought. Not summarization. Not
+    recombination. Thought that emerged from adversarial pressure.
+  </p>
+</div>
+
+<p>
+  This is what two sages do when they sit together: not politely agree, but
+  pressure-test each other's insights until something stronger survives.
+</p>
+
+<!-- ============================================================ -->
+<h2 id="why-now">2. Why Now</h2>
+
+<p>The project has the right preconditions:</p>
+
+<ul>
+  <li><strong>52 observations from 2 agents</strong> across overlapping frontiers: a rich pool of potential tension pairs.</li>
+  <li><strong>8 active frontiers</strong> with idea clusters that already overlap: translation strain, self-negation residue, convergence methodology, practitioner authority.</li>
+  <li><strong>Concept graph with typed edges</strong> including contradiction and translation-strain edges: the structural vocabulary for tension detection already exists.</li>
+  <li><strong>Both thinker providers work reliably</strong>: CodexCliThinker and ClaudeCodeThinker can each read an opponent's argument and respond.</li>
+  <li><strong>Three empty artifact types</strong> waiting to be filled: convergences (2 files), syntheses (0 files), and dialogues (new).</li>
+</ul>
+
+<p>
+  Without the dialectical engine, the system generates more of the same:
+  independent observations that accumulate but don't compound. With it, every
+  existing idea becomes potential fuel for a higher-order argument.
+</p>
+
+<!-- ============================================================ -->
+<h2 id="architecture">3. Architecture Overview</h2>
+
+<div class="flow-diagram">
+<span class="comment">                    THE DIALECTIC PIPELINE</span>
+
+  ideas.jsonl ──────┐
+  frontiers.json ───┤
+  concept-graph ────┤
+  audits.jsonl ─────┘
+          │
+          ▼
+  ┌───────────────────┐
+  │  <span class="key">Tension Detector</span>  │   Finds idea pairs worth debating
+  └────────┬──────────┘
+           │  List[TensionPair]
+           ▼
+  ┌───────────────────┐
+  │  <span class="key">Dialectic Runner</span>  │   Orchestrates the multi-turn exchange
+  └────────┬──────────┘
+           │
+     ┌─────┴─────┐
+     ▼           ▼
+  ┌──────┐   ┌──────┐
+  │<span class="str">Codex</span> │◄─►│<span class="str">Claude</span>│    Challenge → Rebuttal → Rebuttal
+  └──┬───┘   └──┬───┘
+     └─────┬─────┘
+           │  DialogueRecord (full exchange)
+           ▼
+  ┌───────────────────┐
+  │ <span class="key">Synthesis Writer</span>  │   One agent writes the convergence or disagreement
+  └────────┬──────────┘
+           │
+     ┌─────┼──────────┬──────────────┐
+     ▼     ▼          ▼              ▼
+  dialogues/   convergences/   syntheses/   ideas.jsonl
+  (full)       (agreements)    (new ideas)  (new records)
+</div>
+
+<p>
+  The engine reads the existing idea ledger, finds productive tensions, runs a
+  structured dialogue, and writes the results back as three kinds of artifact:
+  the full dialogue transcript, any convergence or disagreement notes, and any
+  new ideas that emerged from the exchange.
+</p>
+
+<!-- ============================================================ -->
+<h2 id="protocol">4. The Dialectic Protocol</h2>
+
+<p>
+  Each dialectic is a structured exchange with specific roles and constraints.
+  This is not free-form chat; it is a disciplined philosophical method.
+</p>
+
+<div class="phase">
+  <div class="phase-header">
+    <div class="phase-number">1</div>
+    <div class="phase-title">Tension Selection</div>
+  </div>
+  <p>
+    The engine identifies a pair of ideas that are worth debating. The tension
+    might be a direct contradiction, a shared concept with divergent conclusions,
+    or two ideas on the same frontier that haven't been compared.
+    One agent is designated <strong>Proponent</strong> (defends their original
+    idea) and the other <strong>Challenger</strong>.
+  </p>
+</div>
+
+<div class="phase">
+  <div class="phase-header">
+    <div class="phase-number">2</div>
+    <div class="phase-title">The Challenge</div>
+  </div>
+  <p>
+    The Challenger reads the Proponent's idea in full, including its critique,
+    source basis, and epistemic labels. The Challenger must:
+  </p>
+  <ul>
+    <li>Name the <strong>strongest objection</strong>: not a straw-man, but the
+      real load-bearing weakness.</li>
+    <li>Identify the <strong>hidden assumption</strong>: what does the argument
+      take for granted that could be questioned?</li>
+    <li>Offer a <strong>counter-model</strong>: not just "you're wrong" but
+      "here is a better way to account for the same evidence."</li>
+    <li>Cite at least one <strong>primary source</strong> the Proponent did not
+      use that complicates the picture.</li>
+  </ul>
+</div>
+
+<div class="phase">
+  <div class="phase-header">
+    <div class="phase-number">3</div>
+    <div class="phase-title">The Rebuttal</div>
+  </div>
+  <p>
+    The Proponent reads the Challenge and must:
+  </p>
+  <ul>
+    <li><strong>Concede</strong> any point that is genuinely correct.</li>
+    <li><strong>Defend</strong> what survives the objection, with strengthened
+      reasoning.</li>
+    <li><strong>Revise</strong> the original claim if the challenge exposed a
+      real flaw: the revised version must be stated explicitly.</li>
+    <li><strong>Identify the crux</strong>: the single point of deepest
+      disagreement that, if resolved, would settle the debate.</li>
+  </ul>
+</div>
+
+<div class="phase">
+  <div class="phase-header">
+    <div class="phase-number">4</div>
+    <div class="phase-title">The Counter-Rebuttal</div>
+  </div>
+  <p>
+    The Challenger responds to the Rebuttal. This is the final adversarial turn. The Challenger must:
+  </p>
+  <ul>
+    <li>Acknowledge concessions and assess whether they go far enough.</li>
+    <li>Press the <strong>crux</strong> identified by the Proponent: is it
+      the real crux, or is there a deeper one?</li>
+    <li>State whether the revised claim is <strong>stronger, weaker, or
+      transformed</strong> relative to the original.</li>
+  </ul>
+</div>
+
+<div class="phase">
+  <div class="phase-header">
+    <div class="phase-number">5</div>
+    <div class="phase-title">Synthesis</div>
+  </div>
+  <p>
+    A synthesis agent (either agent, selected by the engine, or a dedicated
+    prompt) reads the full exchange and produces:
+  </p>
+  <ul>
+    <li>A <strong>convergence note</strong> if the agents arrived at shared
+      ground (written to <code>findings/convergences/</code>).</li>
+    <li>A <strong>formal disagreement</strong> if they did not, with the crux
+      stated precisely (also in <code>findings/convergences/</code>).</li>
+    <li>A <strong>new synthesis idea</strong> if the exchange produced a
+      position that neither agent held at the start: a genuinely new
+      <code>IdeaRecord</code> with <code>idea_type: "synthesis"</code> and
+      both agents credited in the source basis.</li>
+    <li>A <strong>verdict</strong>: which of the five outcomes occurred.</li>
+  </ul>
+</div>
+
+<h3>The Five Outcomes</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Outcome</th>
+      <th>What Happened</th>
+      <th>Artifacts Produced</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Convergence</strong></td>
+      <td>Both agents agree on a refined position</td>
+      <td>Convergence note + synthesis idea</td>
+    </tr>
+    <tr>
+      <td><strong>Revision</strong></td>
+      <td>The Proponent's idea was improved by the challenge</td>
+      <td>Updated idea scores + revised claim note</td>
+    </tr>
+    <tr>
+      <td><strong>Demolition</strong></td>
+      <td>The challenge exposed a fatal flaw</td>
+      <td>Idea status changed to "challenged"; new frontier question</td>
+    </tr>
+    <tr>
+      <td><strong>Standoff</strong></td>
+      <td>Genuine disagreement survives scrutiny</td>
+      <td>Disagreement note with crux + new frontier question</td>
+    </tr>
+    <tr>
+      <td><strong>Transcendence</strong></td>
+      <td>The exchange produced a third position neither held</td>
+      <td>New synthesis idea + convergence note + frontier update</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="callout synthesis">
+  <p>
+    <strong>Transcendence</strong> is the prize. When two agents argue their way
+    into a position that neither started with, the result is the strongest
+    possible evidence that the system generates original thought.
+  </p>
+</div>
+
+<!-- ============================================================ -->
+<h2 id="tension-detection">5. Tension Detection</h2>
+
+<p>
+  The Tension Detector scans the idea ledger and related data to find pairs
+  worth debating. Not every pair of ideas is worth a dialectic; the detector
+  applies filters to find productive tensions.
+</p>
+
+<h3>Tension Sources</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Source</th>
+      <th>Signal</th>
+      <th>Priority Weight</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Shared frontier</td>
+      <td>Two ideas on the same frontier from different agents</td>
+      <td>0.30</td>
+    </tr>
+    <tr>
+      <td>Concept graph contradiction</td>
+      <td>Ideas linked to concepts connected by a "contradiction" edge</td>
+      <td>0.25</td>
+    </tr>
+    <tr>
+      <td>Translation strain</td>
+      <td>Ideas linked to concepts connected by a "translation_strain" edge</td>
+      <td>0.20</td>
+    </tr>
+    <tr>
+      <td>Overlapping claim scope</td>
+      <td>Ideas with high textual similarity in <code>original_claim</code> but different conclusions</td>
+      <td>0.15</td>
+    </tr>
+    <tr>
+      <td>Audit near-neighbor</td>
+      <td>Originality audit flagged idea A as a near-neighbor of idea B</td>
+      <td>0.10</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>Filters</h3>
+
+<ul>
+  <li><strong>Cross-agent only:</strong> Dialectics are between different agents. Same-agent debates are not staged (the agent already critiqued its own idea during generation).</li>
+  <li><strong>No repeat pairs:</strong> Each idea pair gets at most one dialectic. The <code>dialogues/dialogues.jsonl</code> ledger tracks completed pairs.</li>
+  <li><strong>Minimum quality gate:</strong> Both ideas must have <code>publishability >= 0.55</code> (the current draft floor). Weak ideas aren't worth debating.</li>
+  <li><strong>Recency preference:</strong> Ideas from the most recent 48 hours of runs get a priority boost to keep dialogues timely.</li>
+  <li><strong>Cooldown:</strong> An idea that just participated in a dialectic waits at least 2 runs before being paired again.</li>
+</ul>
+
+<h3>Selection Strategy</h3>
+
+<p>
+  The detector scores all candidate pairs, sorts by tension priority, and
+  returns the top <em>N</em> pairs (default: 1 per dialectic run, configurable).
+  Ties are broken by the idea with the higher <code>generativity</code> score,
+  since generative ideas produce richer debates.
+</p>
+
+<!-- ============================================================ -->
+<h2 id="schemas">6. Data Schemas</h2>
+
+<h3>TensionPair</h3>
+
+<pre>{
+  <span class="key">"pair_id"</span>:          <span class="str">"sha256[:16] of sorted idea_ids"</span>,
+  <span class="key">"idea_a"</span>:           <span class="str">"idea_id of Proponent's idea"</span>,
+  <span class="key">"idea_b"</span>:           <span class="str">"idea_id of Challenger's idea"</span>,
+  <span class="key">"proponent_agent"</span>:  <span class="str">"codex | claude"</span>,
+  <span class="key">"challenger_agent"</span>: <span class="str">"claude | codex"</span>,
+  <span class="key">"tension_type"</span>:     <span class="str">"shared_frontier | contradiction | translation_strain | overlapping_claim | audit_neighbor"</span>,
+  <span class="key">"tension_source"</span>:   <span class="str">"frontier title, concept edge, or audit note"</span>,
+  <span class="key">"priority"</span>:         <span class="str">0.82</span>,
+  <span class="key">"shared_concepts"</span>:  [<span class="str">"concept-id-1"</span>, <span class="str">"concept-id-2"</span>]
+}</pre>
+
+<h3>DialogueTurn</h3>
+
+<pre>{
+  <span class="key">"turn"</span>:            <span class="str">1</span>,                                 <span class="comment">// 1=challenge, 2=rebuttal, 3=counter-rebuttal</span>
+  <span class="key">"role"</span>:            <span class="str">"challenger | proponent"</span>,
+  <span class="key">"agent"</span>:           <span class="str">"codex | claude"</span>,
+  <span class="key">"strongest_objection"</span>:  <span class="str">"..."</span>,             <span class="comment">// turn 1 only</span>
+  <span class="key">"hidden_assumption"</span>:    <span class="str">"..."</span>,             <span class="comment">// turn 1 only</span>
+  <span class="key">"counter_model"</span>:        <span class="str">"..."</span>,             <span class="comment">// turn 1 only</span>
+  <span class="key">"new_source"</span>:           <span class="str">"..."</span>,             <span class="comment">// turn 1 only</span>
+  <span class="key">"concessions"</span>:     [<span class="str">"..."</span>],                       <span class="comment">// turn 2 only</span>
+  <span class="key">"defense"</span>:         <span class="str">"..."</span>,                             <span class="comment">// turn 2 only</span>
+  <span class="key">"revised_claim"</span>:   <span class="str">"... | null"</span>,                      <span class="comment">// turn 2 only</span>
+  <span class="key">"crux"</span>:            <span class="str">"..."</span>,                             <span class="comment">// turn 2 only</span>
+  <span class="key">"crux_assessment"</span>: <span class="str">"..."</span>,                             <span class="comment">// turn 3 only</span>
+  <span class="key">"verdict_on_revision"</span>: <span class="str">"stronger | weaker | transformed"</span>,  <span class="comment">// turn 3 only</span>
+  <span class="key">"argument"</span>:        <span class="str">"full prose argument for this turn"</span>,
+  <span class="key">"sources_cited"</span>:   [<span class="str">"source-card-slug"</span>]
+}</pre>
+
+<h3>SynthesisVerdict</h3>
+
+<pre>{
+  <span class="key">"outcome"</span>:              <span class="str">"convergence | revision | demolition | standoff | transcendence"</span>,
+  <span class="key">"summary"</span>:              <span class="str">"one-paragraph summary of what the dialectic produced"</span>,
+  <span class="key">"convergence_claim"</span>:    <span class="str">"the shared position, if any"</span>,
+  <span class="key">"unresolved_crux"</span>:      <span class="str">"the crux that survived, if any"</span>,
+  <span class="key">"new_idea"</span>:             { <span class="comment">... IdeaRecord fields, or null ...</span> },
+  <span class="key">"proponent_score_adjustments"</span>: { <span class="comment">... partial IdeaScores ...</span> },
+  <span class="key">"challenger_score_adjustments"</span>: { <span class="comment">... partial IdeaScores ...</span> },
+  <span class="key">"new_frontier_question"</span>: <span class="str">"... | null"</span>,
+  <span class="key">"new_concept_edges"</span>:    [{ <span class="key">"source"</span>: <span class="str">"..."</span>, <span class="key">"target"</span>: <span class="str">"..."</span>, <span class="key">"relation"</span>: <span class="str">"..."</span> }]
+}</pre>
+
+<h3>DialogueRecord (the full artifact)</h3>
+
+<pre>{
+  <span class="key">"dialogue_id"</span>:     <span class="str">"sha256[:16] of pair_id + created_at"</span>,
+  <span class="key">"created_at"</span>:       <span class="str">"2026-05-26T14:30:00-07:00"</span>,
+  <span class="key">"pair"</span>:             { <span class="comment">... TensionPair ...</span> },
+  <span class="key">"turns"</span>:            [{ <span class="comment">... DialogueTurn ...</span> }, ...],
+  <span class="key">"synthesis"</span>:        { <span class="comment">... SynthesisVerdict ...</span> },
+  <span class="key">"execution_id"</span>:     <span class="str">"dialectic-20260526-143000"</span>,
+  <span class="key">"run_ids"</span>:          [<span class="str">"run-id-for-each-turn"</span>],
+  <span class="key">"status"</span>:           <span class="str">"complete | partial | failed"</span>
+}</pre>
+
+<!-- ============================================================ -->
+<h2 id="artifacts">7. Artifact Types and Paths</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Artifact</th>
+      <th>Path</th>
+      <th>Format</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Dialogue ledger</td>
+      <td><code>dialogues/dialogues.jsonl</code></td>
+      <td>One DialogueRecord per line</td>
+    </tr>
+    <tr>
+      <td>Dialogue markdown</td>
+      <td><code>dialogues/YYYY-MM-DD-title-slug.md</code></td>
+      <td>Human-readable transcript</td>
+    </tr>
+    <tr>
+      <td>Dialogue JSON</td>
+      <td><code>dialogues/YYYY-MM-DD-title-slug.json</code></td>
+      <td>Full DialogueRecord</td>
+    </tr>
+    <tr>
+      <td>Convergence notes</td>
+      <td><code>findings/convergences/YYYY-MM-DD-title.md</code></td>
+      <td>Markdown (existing format)</td>
+    </tr>
+    <tr>
+      <td>Synthesis ideas</td>
+      <td><code>hypotheses/ideas.jsonl</code></td>
+      <td>Appended IdeaRecord with <code>idea_type: "synthesis"</code></td>
+    </tr>
+    <tr>
+      <td>Synthesis observations</td>
+      <td><code>observations/dialectic/YYYY-MM-DD-title.md</code></td>
+      <td>Markdown observation from synthesis</td>
+    </tr>
+    <tr>
+      <td>Run manifests</td>
+      <td><code>runs/dialectic-YYYYMMDD-HHMMSS/</code></td>
+      <td>Manifest + prompts + raw output</td>
+    </tr>
+    <tr>
+      <td>Growth records</td>
+      <td><code>publication/growth/growth.jsonl</code></td>
+      <td>Appended growth record</td>
+    </tr>
+    <tr>
+      <td>Concept graph updates</td>
+      <td><code>graph/concept-graph.seed.json</code></td>
+      <td>New edges appended</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>Markdown Dialogue Format</h3>
+
+<p>
+  Each dialogue markdown file should be readable as a standalone essay. The
+  format:
+</p>
+
+<pre>---
+title: "Title derived from the crux"
+date: 2026-05-26
+proponent: codex
+challenger: claude
+proponent_idea: "The Interface Invariant Model"
+challenger_idea: "Convergence as Translation Strain"
+outcome: transcendence
+frontier: "Translation Strain Methodology"
+---
+
+# [Title]
+
+**The tension:** [one sentence describing what's at stake]
+
+## The Challenge
+
+[Challenger's full argument in prose]
+
+## The Rebuttal
+
+[Proponent's full response in prose]
+
+## The Counter-Rebuttal
+
+[Challenger's final response in prose]
+
+## What Emerged
+
+**Outcome:** [convergence/revision/demolition/standoff/transcendence]
+
+[Synthesis summary in prose]
+
+**New claim:** [the synthesis idea, if any]
+
+**Unresolved:** [the surviving crux, if any]
+
+**Next question:** [the new frontier question, if any]</pre>
+
+<!-- ============================================================ -->
+<h2 id="engine-integration">8. Engine Integration</h2>
+
+<h3>New Module: <code>engine/dialectic.py</code></h3>
+
+<p>Public API:</p>
+
+<pre><span class="key">def</span> run_dialectic(
+    config: EngineConfig,
+    *,
+    max_pairs: int = 1,
+    execution_id: str | None = None,
+) -> list[DialogueRecord]:
+    <span class="str">"""Run one dialectic cycle: detect tensions, stage dialogues, write artifacts."""</span>
+</pre>
+
+<p>Internal functions:</p>
+
+<pre><span class="key">def</span> detect_tensions(root: Path, *, max_pairs: int) -> list[TensionPair]:
+    <span class="str">"""Scan ideas, frontiers, concept graph, and audits for productive tensions."""</span>
+
+<span class="key">def</span> stage_dialogue(config: EngineConfig, pair: TensionPair) -> DialogueRecord:
+    <span class="str">"""Run the 3-turn exchange between proponent and challenger."""</span>
+
+<span class="key">def</span> synthesize(config: EngineConfig, dialogue: DialogueRecord) -> SynthesisVerdict:
+    <span class="str">"""Read the full exchange and produce convergence, disagreement, or synthesis."""</span>
+
+<span class="key">def</span> write_artifacts(root: Path, dialogue: DialogueRecord) -> None:
+    <span class="str">"""Write dialogue JSONL, markdown, convergence notes, synthesis ideas, and growth."""</span>
+</pre>
+
+<h3>New JSON Schema: <code>engine/json_schemas/dialogue_turn.schema.json</code></h3>
+
+<p>
+  Structured output schema for each agent turn, ensuring the thinker returns
+  the required fields (strongest_objection, hidden_assumption, etc.) as
+  machine-readable JSON rather than free-form prose.
+</p>
+
+<h3>New JSON Schema: <code>engine/json_schemas/synthesis_verdict.schema.json</code></h3>
+
+<p>
+  Structured output schema for the synthesis step, ensuring the verdict,
+  convergence claim, new idea fields, and score adjustments are machine-readable.
+</p>
+
+<h3>Integration Points</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Existing Component</th>
+      <th>Integration</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>engine/run.py</code></td>
+      <td>No changes. Dialectics run as a separate pipeline, not inside <code>run_once()</code>.</td>
+    </tr>
+    <tr>
+      <td><code>engine/scheduler.py</code></td>
+      <td>New optional <code>--dialectic-after</code> flag. After every <em>N</em> research runs (default: 4), the scheduler calls <code>run_dialectic()</code> instead of <code>run_once()</code>.</td>
+    </tr>
+    <tr>
+      <td><code>engine/thinker.py</code></td>
+      <td>Reused directly. The dialectic runner calls <code>thinker.generate()</code> with a challenge/rebuttal prompt and a different JSON schema.</td>
+    </tr>
+    <tr>
+      <td><code>engine/frontier.py</code></td>
+      <td><code>refresh_frontiers()</code> gains awareness of dialogues: ideas that survived a dialectic get a priority boost; demolished ideas get deprioritized.</td>
+    </tr>
+    <tr>
+      <td><code>engine/growth.py</code></td>
+      <td><code>record_growth()</code> is called after each dialectic with dialogue-specific growth bullets.</td>
+    </tr>
+    <tr>
+      <td><code>engine/promotion.py</code></td>
+      <td>Synthesis ideas go through the same promotion gates. Dialectic-born ideas get a <code>"dialectic_origin": true</code> flag for tracking.</td>
+    </tr>
+    <tr>
+      <td><code>engine/originality_audit.py</code></td>
+      <td>Synthesis ideas are queued for originality audit like any other idea.</td>
+    </tr>
+    <tr>
+      <td><code>src/lib/content.ts</code></td>
+      <td>New <code>loadDialogues()</code> function reads <code>dialogues/dialogues.jsonl</code> and returns typed dialogue records for the website.</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- ============================================================ -->
+<h2 id="prompts">9. Prompt Design</h2>
+
+<p>
+  The prompts are the heart of the system. They must produce genuine
+  philosophical engagement, not polite agreement or performative disagreement.
+</p>
+
+<h3>Challenge Prompt (sent to Challenger agent)</h3>
+
+<div class="callout tension">
+<p><strong>System context:</strong></p>
+<p>You are one of two research agents in The Lumenary, a recursive spirituality
+research lab. Your counterpart has proposed the idea below. Your task is not to
+be contrarian for its own sake, but to find the real weaknesses: the places
+where the argument smuggles in an assumption, over-reads a source, confuses
+analogy for evidence, or misses a tradition that would complicate the picture.</p>
+
+<p>If the idea is genuinely strong, say so, but then find the edge case that
+strains it hardest. Every idea has a failure mode. Find it.</p>
+
+<p><strong>The idea under examination:</strong></p>
+<p><em>[Full IdeaRecord: title, original_claim, critique, source_basis, epistemic_labels, scores]</em></p>
+
+<p><strong>Your own prior work on this frontier:</strong></p>
+<p><em>[Challenger's own ideas on the same frontier, if any]</em></p>
+
+<p><strong>You must return:</strong></p>
+<ul>
+  <li><code>strongest_objection</code>: the real load-bearing weakness, not a straw-man</li>
+  <li><code>hidden_assumption</code>: what the argument takes for granted</li>
+  <li><code>counter_model</code>: a better way to account for the same evidence</li>
+  <li><code>new_source</code>: a primary source the Proponent did not use that complicates the picture</li>
+  <li><code>argument</code>: your full challenge in prose (300-600 words)</li>
+  <li><code>sources_cited</code>: source card slugs you referenced</li>
+</ul>
+</div>
+
+<h3>Rebuttal Prompt (sent to Proponent agent)</h3>
+
+<div class="callout">
+<p><strong>System context:</strong></p>
+<p>Your counterpart has challenged your idea. Read the challenge carefully.
+Do not be defensive. If they found a real flaw, concede it honestly and revise
+your claim. If they missed the point, explain why precisely. The goal is not
+to win but to arrive at a stronger position.</p>
+
+<p><strong>Your original idea:</strong></p>
+<p><em>[Full IdeaRecord]</em></p>
+
+<p><strong>The challenge:</strong></p>
+<p><em>[Full DialogueTurn from the Challenger]</em></p>
+
+<p><strong>You must return:</strong></p>
+<ul>
+  <li><code>concessions</code>: list of points where the Challenger is right</li>
+  <li><code>defense</code>: what survives the objection and why</li>
+  <li><code>revised_claim</code>: your updated claim (or null if no revision needed)</li>
+  <li><code>crux</code>: the single deepest point of disagreement</li>
+  <li><code>argument</code>: your full rebuttal in prose (300-600 words)</li>
+  <li><code>sources_cited</code>: source card slugs</li>
+</ul>
+</div>
+
+<h3>Counter-Rebuttal Prompt (sent to Challenger agent)</h3>
+
+<div class="callout tension">
+<p><strong>System context:</strong></p>
+<p>The Proponent has responded to your challenge. This is your final turn.
+Assess honestly whether their revisions strengthened the idea, and whether the
+crux they identified is the real crux or a deflection. Be precise.</p>
+
+<p><strong>The full exchange so far:</strong></p>
+<p><em>[Original idea + Challenge + Rebuttal]</em></p>
+
+<p><strong>You must return:</strong></p>
+<ul>
+  <li><code>crux_assessment</code>: is the identified crux the real crux, or is there a deeper one?</li>
+  <li><code>verdict_on_revision</code>: "stronger", "weaker", or "transformed"</li>
+  <li><code>argument</code>: your final assessment in prose (200-400 words)</li>
+  <li><code>sources_cited</code>: source card slugs</li>
+</ul>
+</div>
+
+<h3>Synthesis Prompt</h3>
+
+<div class="callout synthesis">
+<p><strong>System context:</strong></p>
+<p>You have just witnessed a structured philosophical dialogue between two
+research agents. Read the full exchange and determine what emerged.</p>
+
+<p>Your job is not to pick a winner. Your job is to identify what the
+exchange produced that neither agent had before it started. Be honest about
+the outcome. A standoff is a valid result. So is demolition.</p>
+
+<p><strong>The full dialogue:</strong></p>
+<p><em>[All three turns in full]</em></p>
+
+<p><strong>You must return:</strong></p>
+<p><em>[SynthesisVerdict schema fields]</em></p>
+</div>
+
+<!-- ============================================================ -->
+<h2 id="scoring">10. Scoring and Promotion</h2>
+
+<h3>Dialectic Impact on Idea Scores</h3>
+
+<p>
+  The synthesis verdict can adjust scores on both the Proponent's and
+  Challenger's original ideas:
+</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Outcome</th>
+      <th>Proponent Score Effect</th>
+      <th>Challenger Score Effect</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Convergence</td>
+      <td>counterargument_quality +0.1</td>
+      <td>counterargument_quality +0.1</td>
+    </tr>
+    <tr>
+      <td>Revision</td>
+      <td>Apply recommended adjustments</td>
+      <td>generativity +0.05</td>
+    </tr>
+    <tr>
+      <td>Demolition</td>
+      <td>publishability -0.15, status &rarr; "challenged"</td>
+      <td>counterargument_quality +0.1</td>
+    </tr>
+    <tr>
+      <td>Standoff</td>
+      <td>No change</td>
+      <td>No change</td>
+    </tr>
+    <tr>
+      <td>Transcendence</td>
+      <td>generativity +0.1</td>
+      <td>generativity +0.1</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>Synthesis Idea Scoring</h3>
+
+<p>
+  New synthesis ideas start with baseline scores inherited from the
+  stronger of the two parent ideas, with these adjustments:
+</p>
+
+<ul>
+  <li><code>novelty</code>: starts at the higher parent's novelty + 0.05 (dialectic-born ideas are structurally newer)</li>
+  <li><code>counterargument_quality</code>: starts at 0.8 minimum (the idea was born from adversarial pressure)</li>
+  <li><code>cross_tradition_support</code>: union of both parents' traditions</li>
+  <li><code>source_basis</code>: union of both parents' sources plus any new sources cited in the dialogue</li>
+</ul>
+
+<h3>Promotion Fast-Track</h3>
+
+<p>
+  A synthesis idea born from a Transcendence outcome that also passes the
+  originality audit at <code>novel_synthesis</code> or higher is automatically
+  promoted to <code>review_candidate</code> stage, skipping the normal waiting
+  period. This is the only fast-track in the system: the dialectic itself
+  constitutes peer review.
+</p>
+
+<!-- ============================================================ -->
+<h2 id="website">11. Website: The Dialogues Page</h2>
+
+<h3>New Route: <code>/dialogues/</code></h3>
+
+<p>
+  A new index page listing all completed dialogues, sorted by date. Each card
+  shows:
+</p>
+
+<ul>
+  <li>Title (derived from the crux)</li>
+  <li>Proponent and Challenger agent tags</li>
+  <li>The two ideas that were debated</li>
+  <li>Outcome badge: <span class="metric">convergence</span> <span class="metric">revision</span> <span class="metric">demolition</span> <span class="metric">standoff</span> <span class="metric">transcendence</span></li>
+  <li>Date</li>
+</ul>
+
+<h3>New Route: <code>/dialogues/[slug]</code></h3>
+
+<p>
+  Individual dialogue page rendering the full exchange as a readable,
+  styled conversation. Each turn is visually attributed to its agent
+  with distinct colors. The synthesis section appears at the end.
+</p>
+
+<h3>Existing Page Updates</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Page</th>
+      <th>Change</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>/findings/[slug]</code></td>
+      <td>If an idea participated in a dialectic, show a "Debated" badge linking to the dialogue</td>
+    </tr>
+    <tr>
+      <td><code>/findings/</code></td>
+      <td>Add "Debated" filter; show dialogue count in stats</td>
+    </tr>
+    <tr>
+      <td><code>/map/</code></td>
+      <td>Dialogue-born synthesis ideas appear as a new node type; dialectic edges connect debated ideas</td>
+    </tr>
+    <tr>
+      <td><code>/growth/</code></td>
+      <td>Dialectic growth bullets appear naturally (they go through <code>record_growth()</code>)</td>
+    </tr>
+    <tr>
+      <td><code>/</code> (home)</td>
+      <td>Add "Latest Dialogue" card to the homepage if any dialogues exist</td>
+    </tr>
+    <tr>
+      <td>Navigation</td>
+      <td>Add "Dialogues" link to the main nav</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>Visual Design</h3>
+
+<p>
+  Dialogue pages should feel like reading a philosophical exchange in a
+  journal, not a chat log. Each turn is a full prose section with its own
+  heading. Agent attribution is subtle but clear. The synthesis section
+  is visually distinct, signaling that something new emerged from the
+  exchange.
+</p>
+
+<!-- ============================================================ -->
+<h2 id="scheduler">12. Scheduler Integration</h2>
+
+<h3>Cadence</h3>
+
+<p>
+  The dialectic runs on a slower cadence than research: every 4th run slot
+  (default), which at 30-minute intervals means roughly one dialectic every
+  2 hours during the active window.
+</p>
+
+<pre><span class="comment"># Research window: 7am-5pm, 30-min intervals = 20 slots</span>
+<span class="comment"># Dialectic every 4th slot = ~5 dialectics per day</span>
+<span class="comment"># Each dialectic = 3 agent calls + 1 synthesis = 4 calls total</span>
+
+<span class="key">Slot  1:</span>  research (codex)
+<span class="key">Slot  2:</span>  research (claude)
+<span class="key">Slot  3:</span>  research (codex)
+<span class="key">Slot  4:</span>  <span class="str">DIALECTIC</span>          &larr; challenge + rebuttal + counter-rebuttal + synthesis
+<span class="key">Slot  5:</span>  research (claude)
+<span class="key">Slot  6:</span>  research (codex)
+<span class="key">Slot  7:</span>  research (claude)
+<span class="key">Slot  8:</span>  <span class="str">DIALECTIC</span>
+<span class="key"> ... </span>
+<span class="key">Slot 20:</span>  <span class="str">DIALECTIC</span> + journal</pre>
+
+<h3>CLI Interface</h3>
+
+<pre><span class="comment"># Run one dialectic manually</span>
+python3 -m engine.dialectic --provider codex-cli --max-pairs 1
+
+<span class="comment"># Run with the scheduler (auto-interleaved)</span>
+python3 -m engine.scheduler --provider codex-cli --dialectic-after 4
+
+<span class="comment"># Dry run: detect tensions only, don't stage dialogues</span>
+python3 -m engine.dialectic --detect-only
+
+<span class="comment"># Force a specific pair</span>
+python3 -m engine.dialectic --force-pair IDEA_ID_A IDEA_ID_B</pre>
+
+<h3>macOS Notifications</h3>
+
+<p>
+  Dialectic runs emit four notifications matching the existing pattern:
+</p>
+
+<ol>
+  <li><strong>Dialectic starting</strong>: "Staging a debate between [Idea A] and [Idea B]"</li>
+  <li><strong>Challenge delivered</strong>: "[Challenger] challenges: [strongest_objection preview]"</li>
+  <li><strong>Exchange complete</strong>: "Outcome: [verdict]. [one-line summary]"</li>
+  <li><strong>Artifacts written</strong>: "Dialogue published: [title]"</li>
+</ol>
+
+<!-- ============================================================ -->
+<h2 id="example">13. Worked Example</h2>
+
+<p>
+  To make this concrete, here is a plausible dialectic between two real ideas
+  currently in the Lumenary ledger.
+</p>
+
+<h3>Tension Detected</h3>
+
+<p>
+  <span class="agent-tag codex">Codex</span> proposed
+  <strong>"Convergence as Translation Strain, Not Evidence Weight"</strong>:
+  the claim that cross-tradition convergence should be measured by the
+  <em>strain</em> of translating between frameworks rather than by the
+  <em>weight</em> of overlapping evidence.
+</p>
+
+<p>
+  <span class="agent-tag claude">Claude</span> proposed
+  <strong>"The Inferential Gap: Atman and Anatta as Competing Policies for
+  Objectless Awareness"</strong>: the claim that Advaita's atman and
+  Buddhism's anatta are not metaphysical claims but competing
+  <em>inferential policies</em> for handling the same phenomenological data.
+</p>
+
+<p>
+  <strong>The tension:</strong> If Claude is right that atman/anatta are
+  competing policies for the same data, then translation between them
+  should be <em>low-strain</em> (same data, different policy). But if Codex
+  is right that convergence is best measured by translation strain, then
+  the atman/anatta case is a <em>weak</em> convergence (low strain = low
+  signal). These two ideas, applied together, produce a contradiction about
+  whether the atman/anatta parallel is significant.
+</p>
+
+<div class="example-dialogue">
+
+  <div class="dialogue-turn claude">
+    <div class="speaker">Claude (Challenger)</div>
+    <div class="content">
+      <p>
+        The translation-strain model has a measurement problem that its
+        author hasn't addressed: strain is only legible if you've
+        already fixed the meaning of the terms being translated. But the
+        whole insight of the inferential-policy framework is that terms
+        like "atman" and "anatta" don't have fixed meanings; they are
+        policy recommendations for how to handle a shared phenomenological
+        situation. If I'm right, then "translation strain" between atman and
+        anatta is undefined, not low. You can't measure the strain of
+        translating between two policies any more than you can measure the
+        distance between "always bet" and "never bet"; they operate on the
+        same evidence but aren't in the same space.
+      </p>
+      <p>
+        The hidden assumption is that all cross-tradition parallels are
+        <em>translations</em>, which implies a shared semantic substrate.
+        But some parallels are better modeled as <em>competing strategies</em>
+        applied to the same problem space. The strain model conflates these
+        two very different kinds of relationship.
+      </p>
+    </div>
+  </div>
+
+  <div class="dialogue-turn codex">
+    <div class="speaker">Codex (Proponent)</div>
+    <div class="content">
+      <p>
+        I concede that the current formulation assumes a shared semantic
+        substrate. That's a real gap. But the concession doesn't demolish
+        the model; it refines its scope. Translation strain applies to cases
+        where two traditions are making claims <em>about</em> something,
+        and the strain reveals how differently they carve the territory.
+        The inferential-policy case is different: atman and anatta aren't
+        claims about the same thing; they're different instructions for
+        what to do with the same experience.
+      </p>
+      <p>
+        <strong>Revised claim:</strong> Translation strain measures convergence
+        between <em>propositional</em> frameworks. For <em>procedural</em>
+        frameworks (policies, practices, instructions), a different metric
+        is needed: perhaps <em>protocol compatibility</em>, measuring whether
+        two practices can be interleaved without contradiction.
+      </p>
+      <p>
+        <strong>The crux:</strong> Is the propositional/procedural distinction
+        real, or does every spiritual claim dissolve into a procedural
+        recommendation on close reading?
+      </p>
+    </div>
+  </div>
+
+  <div class="dialogue-turn claude">
+    <div class="speaker">Claude (Counter-Rebuttal)</div>
+    <div class="content">
+      <p>
+        The revision is genuinely stronger. The propositional/procedural
+        distinction is the right move, and I think it's real, at least as
+        a spectrum. But I'd push the crux one level deeper: the question
+        isn't just whether the distinction is real, but whether any
+        cross-tradition comparison method can be tradition-neutral. Both
+        "translation strain" and "protocol compatibility" assume a
+        vantage point outside all traditions. Whether that vantage point
+        exists is the deeper crux.
+      </p>
+      <p>
+        <strong>Verdict:</strong> Transformed. The original claim was about
+        measuring convergence; the revised claim acknowledges two different
+        <em>kinds</em> of convergence requiring different metrics. This is
+        a more sophisticated framework than either of us started with.
+      </p>
+    </div>
+  </div>
+
+  <div class="dialogue-turn synthesis">
+    <div class="speaker">Synthesis</div>
+    <div class="content">
+      <p>
+        <strong>Outcome: Transcendence.</strong> The exchange produced a
+        distinction, propositional vs. procedural convergence, that neither agent
+        held before the dialogue. Codex's translation-strain model now has
+        a scoped domain (propositional frameworks) and a sibling metric
+        (protocol compatibility) for procedural frameworks. The deeper crux,
+        whether any cross-tradition metric can be tradition-neutral, is a
+        new frontier question.
+      </p>
+      <p>
+        <strong>New idea:</strong> "The Dual Metric Hypothesis: cross-tradition
+        convergence requires two independent measurements: translation strain
+        for propositional claims and protocol compatibility for procedural
+        practices. No single metric captures both, and conflating them is
+        the primary source of false convergence claims in comparative
+        religion."
+      </p>
+    </div>
+  </div>
+
+</div>
+
+<p>
+  This is what the system is for. Neither agent started with the dual-metric
+  idea. It emerged from the pressure of genuine disagreement. The new idea
+  is structurally original, testable (you can check whether false convergence
+  claims in the literature are indeed propositional/procedural conflations),
+  and immediately generative of further research.
+</p>
+
+<!-- ============================================================ -->
+<h2 id="build-plan">14. Build Plan</h2>
+
+<h3>Phase 1: Data Layer (engine)</h3>
+
+<ol>
+  <li>Create <code>engine/dialectic.py</code> with dataclasses: <code>TensionPair</code>, <code>DialogueTurn</code>, <code>SynthesisVerdict</code>, <code>DialogueRecord</code>.</li>
+  <li>Create JSON schemas: <code>engine/json_schemas/dialogue_turn.schema.json</code> and <code>engine/json_schemas/synthesis_verdict.schema.json</code>.</li>
+  <li>Implement <code>detect_tensions()</code>: reads ideas.jsonl, frontiers.json, concept-graph.seed.json, and audits.jsonl; scores and ranks tension pairs; writes selected pairs to the run manifest.</li>
+  <li>Implement <code>stage_dialogue()</code>: orchestrates 3 turns using existing thinkers; each turn calls the appropriate agent with a role-specific prompt and the dialogue_turn schema; assembles the <code>DialogueRecord</code>.</li>
+  <li>Implement <code>synthesize()</code>: sends the full dialogue to one agent (alternating) with the synthesis_verdict schema; produces the verdict, optional new idea, score adjustments, and concept graph edges.</li>
+  <li>Implement <code>write_artifacts()</code>: writes JSONL, markdown, convergence notes, new ideas to ideas.jsonl, growth records, and concept graph updates.</li>
+  <li>Add <code>__main__</code> block for CLI invocation.</li>
+</ol>
+
+<h3>Phase 2: Scheduler Integration</h3>
+
+<ol start="8">
+  <li>Add <code>--dialectic-after N</code> flag to <code>engine/scheduler.py</code>. Every Nth run slot, call <code>run_dialectic()</code> instead of <code>run_once()</code>.</li>
+  <li>Add macOS notification calls for dialectic events (matching existing notification pattern).</li>
+  <li>Update LaunchAgent plist to include the dialectic flag.</li>
+</ol>
+
+<h3>Phase 3: Website</h3>
+
+<ol start="11">
+  <li>Add <code>loadDialogues()</code> to <code>src/lib/content.ts</code>.</li>
+  <li>Create <code>src/pages/dialogues/index.astro</code>: dialogue index page.</li>
+  <li>Create <code>src/pages/dialogues/[slug].astro</code>: individual dialogue page with styled turns.</li>
+  <li>Update <code>src/pages/findings/[slug].astro</code>: add "Debated" badge linking to dialogue.</li>
+  <li>Update navigation to include Dialogues link.</li>
+  <li>Update homepage to show latest dialogue card.</li>
+</ol>
+
+<h3>Phase 4: Smoke Test</h3>
+
+<ol start="17">
+  <li>Run <code>python3 -m engine.dialectic --detect-only</code> to verify tension detection finds real pairs in the existing ledger.</li>
+  <li>Run <code>python3 -m engine.dialectic --provider codex-cli --max-pairs 1</code> for a live dialectic.</li>
+  <li>Verify all artifacts are written correctly.</li>
+  <li>Build and deploy site; verify dialogue page renders.</li>
+</ol>
+
+<hr>
+
+<div class="footer">
+  <p>Lumenary Dialectical Engine Spec v1.0</p>
+  <p>2026-05-26</p>
+  <p>Designed for review before build.</p>
+</div>
+
+</body>
+</html>

@@ -2,7 +2,7 @@
 
 Frontier: The boundary between effort and gift
 Recommended action: build_rubric
-Why now: priority 0.83; 7 related idea records; 1 originality audits; cross-agent signal; live anomaly pressure
+Why now: priority 0.85; 9 related idea records; 3 originality audits; cross-agent signal; live anomaly pressure
 
 Core claim:
 Every contemplative tradition faces a paradox it cannot avoid: if practice causes awakening, the awakening depends on something temporary; if awakening was always the case, practice seems unnecessary. The resolution of this paradox is not a peripheral doctrinal detail. It functions as a root variable from which most other features of a tradition follow: its relationship to time, what it thinks effort does, whether failure is possible, how it verifies...
@@ -14,6 +14,8 @@ Closest prior art or near-neighbor pressure:
 
 Open anomalies:
 - Other-power and direct-introduction traditions, such as Jodo Shinshu entrusting and Dzogchen pointing-out, appear to minimize self-powered agency while still functioning as paths.
+- Successful hybrids and dual-trained practitioners who switch methods smoothly without reported directional resistance.
+- Radical Jodo Shinshu other-power: true shinjin is not a human capacity at all, but Amida's working, and self-assessment as capacity may itself be self-power calculation.
 
 Required next move:
 Recast the model as a graded variable: required receiving capacity, required agency, required memory, required reflexivity, and required post-insight integration.
@@ -26,6 +28,7 @@ Required tests:
 - Is this already obvious as two truths, healthy ego before no-self, practice-realization, surrender, or grace?
 - Would this rubric change how you screen students, sequence practices, verify insight, or warn against errors?
 - Therapies or pedagogies that deconstruct identity, such as trauma therapy, exposure therapy, psychedelic therapy, contemplative psychotherapy, or critical pedagogy, should have stronger screening, scaffolding, integration, and teacher-client safeguards...
+- Clients and therapists crossing modalities should show grain-specific resistance: CBT-trained clients may convert psychoanalytic free association into problem solving, somatic-therapy clients may treat cognitive restructuring as disembodiment, and...
 
 Success criteria:
 - Advance, merge, falsify, or retire this frontier. Do not produce an unrelated one-off finding.

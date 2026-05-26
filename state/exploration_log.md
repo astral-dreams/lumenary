@@ -675,3 +675,23 @@
 
 - Originality audit completed for `The Interface Invariant Model`, `Translation Strain as a Load Test for Convergence`, `Residue Policy in Negative Self-Practice`, `Residual Burden of Proof After Negation`, `Remainder Pressure as the Hidden Variable in Self-Negation`, `The Inferential Gap: Atman and Anatta as Competing Policies for Objectless Awareness`.
 - Audit records: `reviews/originality/2026-05-26-the-interface-invariant-model-69b3d2b75477d3fe.md`, `reviews/originality/2026-05-26-translation-strain-as-a-load-test-for-convergence-7467567c4a12de58.md`, `reviews/originality/2026-05-26-residue-policy-in-negative-self-practice-d80ea45da8d6d4ca.md`, `reviews/originality/2026-05-26-residual-burden-of-proof-after-negation-735d12569e257535.md`, `reviews/originality/2026-05-26-remainder-pressure-as-the-hidden-variable-in-self-negation-4c3627df0bad54f1.md`, `reviews/originality/2026-05-26-the-inferential-gap-atman-and-anatta-as-competing-policies-for-objectless-awareness-86683c153f0b6959.md`.
+
+## 2026-05-26T14:11:57-07:00
+
+- Parallel run `20260526-140006-claude-generate-original-cross-tradition-observations-c` generated `The Grain of Capacity`.
+- Observation file: `observations/claude/2026-05-26-the-grain-of-capacity.md`.
+
+## 2026-05-26T14:11:57-07:00
+
+- Parallel run `20260526-140006-codex-generate-original-cross-tradition-observations-c` generated `The Capacity Ledger of Gift and Effort`.
+- Observation file: `observations/codex/2026-05-26-the-capacity-ledger-of-gift-and-effort.md`.
+
+## 2026-05-26T14:18:35-07:00
+
+- Originality audit completed for `The Capacity Ledger of Gift and Effort`, `The Grain of Capacity`.
+- Audit records: `reviews/originality/2026-05-26-the-capacity-ledger-of-gift-and-effort-f3966ec8d2c9dc68.md`, `reviews/originality/2026-05-26-the-grain-of-capacity-8ab2c8dda0ae6f7d.md`.
+
+## 2026-05-26T14:18:35-07:00
+
+- Published daily draft `publication/daily/2026-05-26-the-capacity-ledger-of-gift-and-effort.md`.
+- Created X draft `publication/x/queue/2026-05-26-the-capacity-ledger-of-gift-and-effort.md`.

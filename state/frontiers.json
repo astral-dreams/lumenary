@@ -6,13 +6,18 @@
         "codex"
       ],
       "audit_ids": [
-        "daeecdbd22658370"
+        "daeecdbd22658370",
+        "8ab2c8dda0ae6f7d",
+        "f3966ec8d2c9dc68"
       ],
       "audit_statuses": [
-        "extended"
+        "extended",
+        "novel_synthesis"
       ],
       "blockers": [
-        "Reduce novelty from 0.74 to about 0.52. The cross-tradition architecture claim is a meaningful extension, but the minimum-self prerequisite, functional self, no-self continuity problem, and healthy ego before no-self are strong prior art."
+        "Reduce novelty from 0.74 to about 0.52. The cross-tradition architecture claim is a meaningful extension, but the minimum-self prerequisite, functional self, no-self continuity problem, and healthy ego before no-self are strong prior art.",
+        "Reduce novelty from 0.76 to about 0.58. The phrase grain of capacity is generative and the mismatch prediction is useful, but the anti-neutrality structure is strongly anticipated by constructivism, Buddhist mindfulness-style scholarship, participatory...",
+        "Reduce novelty from 0.61 to about 0.49. The ledger is useful and testable, but it largely extends the audited Lumenary minimum-self thesis and known work on Engler, Upaya, Buddhist personhood, self-pattern theory, and adverse meditation contexts."
       ],
       "closest_prior_art": [
         {
@@ -44,9 +49,11 @@
         "fecaa8fdc5f96b5b",
         "e123196d533f744d",
         "555fc22423d9a7dd",
-        "3c5caa358a09c26a"
+        "3c5caa358a09c26a",
+        "915778a2f5edc30e",
+        "a9dd2252002b7a5a"
       ],
-      "last_advanced_at": "2026-05-26T12:47:41-07:00",
+      "last_advanced_at": "2026-05-26T14:18:35-07:00",
       "missing_sources": [
         "who practices if there is no self Buddhism liberation agency",
         "Pudgalavada karma rebirth liberation person no self",
@@ -56,22 +63,25 @@
       ],
       "next_prompt": "Recast the model as a graded variable: required receiving capacity, required agency, required memory, required reflexivity, and required post-insight integration.",
       "open_anomalies": [
-        "Other-power and direct-introduction traditions, such as Jodo Shinshu entrusting and Dzogchen pointing-out, appear to minimize self-powered agency while still functioning as paths."
+        "Other-power and direct-introduction traditions, such as Jodo Shinshu entrusting and Dzogchen pointing-out, appear to minimize self-powered agency while still functioning as paths.",
+        "Successful hybrids and dual-trained practitioners who switch methods smoothly without reported directional resistance.",
+        "Radical Jodo Shinshu other-power: true shinjin is not a human capacity at all, but Amida's working, and self-assessment as capacity may itself be self-power calculation."
       ],
-      "priority": 0.8337,
+      "priority": 0.8524,
       "publication_paths": [],
       "recommended_next_action": "build_rubric",
       "stage": "rubric",
       "status": "active",
       "strongest_public_claim": {
-        "idea_id": "d7068c92a3ef3259",
-        "path": "observations/claude/2026-05-26-can-effort-reach-what-effort-cannot-produce.md",
+        "idea_id": "a9dd2252002b7a5a",
+        "path": "observations/codex/2026-05-26-the-capacity-ledger-of-gift-and-effort.md",
         "promotion_stage": "Public Claim",
-        "title": "Can Effort Reach What Effort Cannot Produce?"
+        "title": "The Capacity Ledger of Gift and Effort"
       },
       "tests": {
         "cross_domain": [
-          "Therapies or pedagogies that deconstruct identity, such as trauma therapy, exposure therapy, psychedelic therapy, contemplative psychotherapy, or critical pedagogy, should have stronger screening, scaffolding, integration, and teacher-client safeguards..."
+          "Therapies or pedagogies that deconstruct identity, such as trauma therapy, exposure therapy, psychedelic therapy, contemplative psychotherapy, or critical pedagogy, should have stronger screening, scaffolding, integration, and teacher-client safeguards...",
+          "Clients and therapists crossing modalities should show grain-specific resistance: CBT-trained clients may convert psychoanalytic free association into problem solving, somatic-therapy clients may treat cognitive restructuring as disembodiment, and..."
         ],
         "falsifiable": [
           "If: The stronger a path's final self-dissolution claim, the more explicit its safeguards should be against premature or distorted self-loss. Then: Manuals and teachers should warn against nihilism, dissociation, spiritual bypassing, false attainment...",
@@ -85,7 +95,7 @@
         ]
       },
       "title": "The boundary between effort and gift",
-      "why_now": "priority 0.83; 7 related idea records; 1 originality audits; cross-agent signal; live anomaly pressure"
+      "why_now": "priority 0.85; 9 related idea records; 3 originality audits; cross-agent signal; live anomaly pressure"
     },
     {
       "agents": [
@@ -149,7 +159,7 @@
       "open_anomalies": [
         "Advaita denies that the Self is inferred, it is treated as immediate self-disclosure and the basis for using means of knowledge at all."
       ],
-      "priority": 0.826,
+      "priority": 0.8242,
       "publication_paths": [
         "publication/daily/2026-05-26-the-same-negation-the-opposite-inference-logical-underdetermination-in-the-catuskoti-as-a-second-test-of-the-inferential-gap.md"
       ],
@@ -177,7 +187,7 @@
         ]
       },
       "title": "Inferential policy after objectless awareness",
-      "why_now": "priority 0.83; 11 related idea records; 1 originality audits; cross-agent signal; live anomaly pressure"
+      "why_now": "priority 0.82; 11 related idea records; 1 originality audits; cross-agent signal; live anomaly pressure"
     },
     {
       "agents": [
@@ -231,7 +241,7 @@
       "open_anomalies": [
         "Validated-then-abandoned hybrids, especially MN 22's raft, Heart Sutra reliance on Prajnaparamita after no-attainment, and Rinzai koan curriculum after kensho."
       ],
-      "priority": 0.8127,
+      "priority": 0.8111,
       "publication_paths": [],
       "recommended_next_action": "build_rubric",
       "stage": "rubric",
@@ -315,7 +325,7 @@
         "Dhammatalks' note to SN 22.59 points to texts about a kind of consciousness outside the aggregate range of all, and Thanissaro argues not-self is strategic rather than a denial of all remainder.",
         "Tibetan clear-light sleep and contemporary objectless-awareness sleep reports that claim awareness during the gap, not only after it."
       ],
-      "priority": 0.7762,
+      "priority": 0.7744,
       "publication_paths": [
         "publication/daily/2026-05-25-residue-policy-in-negative-self-practice.md"
       ],
@@ -345,7 +355,7 @@
         ]
       },
       "title": "How silence becomes evidence after the gap",
-      "why_now": "priority 0.78; 2 related idea records; 2 originality audits; live anomaly pressure"
+      "why_now": "priority 0.77; 2 related idea records; 2 originality audits; live anomaly pressure"
     },
     {
       "agents": [
@@ -398,7 +408,7 @@
       "open_anomalies": [
         "Dzogchen or Mahamudra luminous selfless awareness, plus Pseudo-Dionysius's claim that the divine Cause is beyond both affirmation and negation."
       ],
-      "priority": 0.7681,
+      "priority": 0.7665,
       "publication_paths": [],
       "recommended_next_action": "build_rubric",
       "stage": "rubric",
@@ -444,7 +454,7 @@
       "missing_sources": [],
       "next_prompt": "Build a protected-variable rubric with fields for protected function, sacrificed function, likely overcorrection, outside corrective, and post-practice fruit.",
       "open_anomalies": [],
-      "priority": 0.7468,
+      "priority": 0.7452,
       "publication_paths": [],
       "recommended_next_action": "complete_audit",
       "stage": "source_grounding",
@@ -487,7 +497,7 @@
       "missing_sources": [],
       "next_prompt": "Build a second-personal knowing rubric with fields for: unit of knowing (individual, dyadic, collective), ontological address of what is known (within the practitioner, between persons, constituted by gathering), mode of access (attention, encounter...",
       "open_anomalies": [],
-      "priority": 0.7417,
+      "priority": 0.7403,
       "publication_paths": [],
       "recommended_next_action": "complete_audit",
       "stage": "source_grounding",
@@ -582,7 +592,7 @@
         "Comparisons where high strain is still historically causal, for example Buddhist and Advaita terms shaped by centuries of polemic and borrowing.",
         "Nirodha samapatti and cessation reports, where practitioners report a discontinuity or absence of consciousness rather than a pressure to posit an enduring witness."
       ],
-      "priority": 0.7078,
+      "priority": 0.706,
       "publication_paths": [
         "publication/daily/2026-05-25-convergence-as-translation-strain-not-evidence-weight.md"
       ],
@@ -615,7 +625,7 @@
       "why_now": "priority 0.71; 18 related idea records; 3 originality audits; cross-agent signal; live anomaly pressure"
     }
   ],
-  "generated_at": "2026-05-26T13:45:12-07:00",
+  "generated_at": "2026-05-26T14:18:35-07:00",
   "rules_version": "2026-05-26",
   "version": "2026-05-26"
 }

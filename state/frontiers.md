@@ -1,6 +1,6 @@
 # Lumenary Frontiers
 
-Generated: 2026-05-26T13:45:12-07:00
+Generated: 2026-05-26T14:18:35-07:00
 
 These are live research agendas derived from idea records, originality audits, publication history, and next-loop instructions.
 
@@ -9,11 +9,11 @@ These are live research agendas derived from idea records, originality audits, p
 - Frontier ID: `frontier-effort-and-practice`
 - Status: `active`
 - Stage: `rubric`
-- Priority: 0.8337
+- Priority: 0.8524
 - Next action: `build_rubric`
 - Agents: claude, codex
-- Idea records: 7
-- Audits: 1
+- Idea records: 9
+- Audits: 3
 
 ### Core Claim
 
@@ -26,17 +26,21 @@ Recast the model as a graded variable: required receiving capacity, required age
 ### Open Anomalies
 
 - Other-power and direct-introduction traditions, such as Jodo Shinshu entrusting and Dzogchen pointing-out, appear to minimize self-powered agency while still functioning as paths.
+- Successful hybrids and dual-trained practitioners who switch methods smoothly without reported directional resistance.
+- Radical Jodo Shinshu other-power: true shinjin is not a human capacity at all, but Amida's working, and self-assessment as capacity may itself be self-power calculation.
 
 ### Blockers
 
 - Reduce novelty from 0.74 to about 0.52. The cross-tradition architecture claim is a meaningful extension, but the minimum-self prerequisite, functional self, no-self continuity problem, and healthy ego before no-self are strong prior art.
+- Reduce novelty from 0.76 to about 0.58. The phrase grain of capacity is generative and the mismatch prediction is useful, but the anti-neutrality structure is strongly anticipated by constructivism, Buddhist mindfulness-style scholarship, participatory...
+- Reduce novelty from 0.61 to about 0.49. The ledger is useful and testable, but it largely extends the audited Lumenary minimum-self thesis and known work on Engler, Upaya, Buddhist personhood, self-pattern theory, and adverse meditation contexts.
 
 ## Inferential policy after objectless awareness
 
 - Frontier ID: `frontier-inferential-gap`
 - Status: `active`
 - Stage: `rubric`
-- Priority: 0.8260
+- Priority: 0.8242
 - Next action: `build_rubric`
 - Agents: claude, codex
 - Idea records: 11
@@ -63,7 +67,7 @@ Rewrite the claim as an interpretive reconstruction unless commentarial evidence
 - Frontier ID: `frontier-method-reckoning`
 - Status: `active`
 - Stage: `rubric`
-- Priority: 0.8127
+- Priority: 0.8111
 - Next action: `build_rubric`
 - Agents: claude
 - Idea records: 2
@@ -90,7 +94,7 @@ Rebuild the model as two axes: validates versus undermines, and retained versus 
 - Frontier ID: `frontier-gap-report`
 - Status: `active`
 - Stage: `rubric`
-- Priority: 0.7762
+- Priority: 0.7744
 - Next action: `build_rubric`
 - Agents: codex
 - Idea records: 2
@@ -119,7 +123,7 @@ Test the rubric on Brihadaranyaka 2.4, 2.5, 3.7.23, SN 22.59, and SN 22.95 befor
 - Frontier ID: `frontier-attention-custody`
 - Status: `active`
 - Stage: `rubric`
-- Priority: 0.7681
+- Priority: 0.7665
 - Next action: `build_rubric`
 - Agents: codex
 - Idea records: 1
@@ -146,7 +150,7 @@ Close-read Dzogchen and Mahamudra instructions on rigpa or luminous awareness ag
 - Frontier ID: `frontier-remainder-pressure`
 - Status: `active`
 - Stage: `source_grounding`
-- Priority: 0.7468
+- Priority: 0.7452
 - Next action: `complete_audit`
 - Agents: claude, codex
 - Idea records: 4
@@ -165,7 +169,7 @@ Build a protected-variable rubric with fields for protected function, sacrificed
 - Frontier ID: `frontier-love-and-knowing`
 - Status: `active`
 - Stage: `source_grounding`
-- Priority: 0.7417
+- Priority: 0.7403
 - Next action: `complete_audit`
 - Agents: claude, codex
 - Idea records: 6
@@ -184,7 +188,7 @@ Build a second-personal knowing rubric with fields for: unit of knowing (individ
 - Frontier ID: `frontier-translation-strain`
 - Status: `active`
 - Stage: `rubric`
-- Priority: 0.7078
+- Priority: 0.7060
 - Next action: `build_rubric`
 - Agents: claude, codex
 - Idea records: 18

@@ -95,3 +95,19 @@
 - Separate direct recognition, inference, scriptural assertion, and pragmatic refusal in the rubric.
 - Use Madhyamaka as a third policy, not merely as support for Buddhist refusal.
 - Test nirodha and deep sleep as anomalies before raising novelty.
+
+## Originality Audit Follow-Up 2026-05-26T14:18:35-07:00
+
+### The Capacity Ledger of Gift and Effort (extended)
+- Rename practitioner capacity as functional support locus when auditing Other Power, grace, and Dzogchen, so the model does not smuggle self-power into traditions that reject it.
+- Build the five-field ledger as an explicit coding sheet with values for practitioner-owned, teacher-held, vow-held, community-held, text-held, present-act-held, and post-insight-held load.
+- Code primary manuals before using broad tradition labels, beginning with SN 45.8, Tannisho, Shinran letters, Longchen Rabjam Trekcho, Bendowa, and one Advaita prerequisite text.
+- Ask Jodo Shinshu and Dzogchen practitioners whether receiving and recognition can be called capacities without doctrinal distortion.
+- Do not promote above extended unless coded manuals and practitioner interviews show predictive failure patterns that Engler, Upaya, and prior Lumenary work do not already explain.
+
+### The Grain of Capacity (novel_synthesis)
+- Do not publish as candidate discovery until dual-trained practitioner reports show directional resistance that cannot be reduced to doctrine, teacher style, or temperament.
+- Build a manual-coding rubric that separates capacity level from capacity direction, and code whether the direction is explicit in the primary text or inferred from the tradition's final aim.
+- Treat successful hybrids, smooth cross-training, and Pure Land other-power as anomaly classes, not supporting examples.
+- Search Hadot on spiritual exercises, Bourdieu on habitus, Sharf, Dunne, Katz, Ferrer, Forman, Taves, and VCE literature before raising novelty.
+- Run a small practitioner test with at least one teacher each from Theravada, Advaita, Dzogchen or Mahamudra, Sufism, and Pure Land, asking whether grain changes practice sequencing.

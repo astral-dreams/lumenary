@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "DialogueTurn",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "turn",
+    "turn_type",
+    "role",
+    "agent",
+    "argument",
+    "sources_cited"
+  ],
+  "properties": {
+    "turn": { "type": "integer", "minimum": 1, "maximum": 3 },
+    "turn_type": {
+      "type": "string",
+      "enum": ["challenge", "rebuttal", "counter_rebuttal"]
+    },
+    "role": {
+      "type": "string",
+      "enum": ["challenger", "proponent"]
+    },
+    "agent": {
+      "type": "string",
+      "enum": ["codex", "claude"]
+    },
+    "steelman": { "type": ["string", "null"] },
+    "fairness_check": { "type": ["string", "null"] },
+    "claim_units": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "strongest_objection": { "type": ["string", "null"] },
+    "hidden_assumption": { "type": ["string", "null"] },
+    "counter_model": { "type": ["string", "null"] },
+    "new_source": { "type": ["string", "null"] },
+    "concessions": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "defense": { "type": ["string", "null"] },
+    "revised_claim": { "type": ["string", "null"] },
+    "crux": { "type": ["string", "null"] },
+    "test_that_would_settle_it": { "type": ["string", "null"] },
+    "crux_assessment": { "type": ["string", "null"] },
+    "verdict_on_revision": {
+      "type": ["string", "null"],
+      "enum": ["stronger", "weaker", "transformed", null]
+    },
+    "remaining_risk": { "type": ["string", "null"] },
+    "argument": { "type": "string", "minLength": 40 },
+    "sources_cited": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  }
+}

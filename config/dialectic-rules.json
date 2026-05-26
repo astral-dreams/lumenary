@@ -1,0 +1,29 @@
+{
+  "version": "2026-05-26",
+  "description": "Rules for selecting and running cross-agent Lumenary dialogues.",
+  "min_publishability": 0.55,
+  "min_source_basis_items": 2,
+  "require_cross_agent": true,
+  "require_originality_audit": true,
+  "cooldown_dialogues": 2,
+  "wildcard_every": 4,
+  "blocked_statuses": ["seed-fixture", "rejected"],
+  "blocked_epistemic_labels": ["rejected"],
+  "demolition_blocks_future_pairing": true,
+  "public_transcript_min_stage": "public_claim",
+  "weights": {
+    "shared_frontier": 0.24,
+    "frontier_priority": 0.16,
+    "concept_graph_contradiction": 0.18,
+    "translation_strain": 0.12,
+    "audit_anomaly_overlap": 0.12,
+    "near_neighbor_conflict": 0.08,
+    "source_overlap_with_divergent_conclusion": 0.06,
+    "recency": 0.04
+  },
+  "outcomes_that_write_convergence": [
+    "convergence",
+    "revision",
+    "candidate_transcendence"
+  ]
+}

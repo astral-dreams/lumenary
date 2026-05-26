@@ -1,0 +1,171 @@
+OpenAI Codex v0.133.0
+--------
+workdir: /Users/johnforrester/spirituality
+model: gpt-5.5
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: xhigh
+reasoning summaries: none
+session id: 019e6621-9c18-7e63-8b28-8789a2a035fd
+--------
+user
+# Lumenary Insight Distillation
+
+You are writing the public insight card and At a Glance text for The Lumenary.
+
+Read the finding below. Distill it into reader-facing language.
+
+## Writing Rules
+
+- Write like the texts we study: simple, memorable, and direct.
+- Do not use Sanskrit, Pali, Arabic, Greek, or Chinese terms.
+- Do not use academic hedging.
+- Do not use research jargon.
+- Do not use em dashes.
+- Do not start with "This finding".
+- Lead with the human question or the living insight.
+- The insight headline must land like a proverb.
+- The plainSummary is for the Insights card: one sentence, maximum 28 words.
+- The atAGlance section is for the finding page: one paragraph, 3 to 4 short sentences.
+- Use one idea per sentence.
+
+## Required JSON
+
+Return exactly one JSON object with:
+
+- insight: proverb-like headline, maximum 10 words
+- plainSummary: one short sentence for the Insights card
+- atAGlance: one paragraph of 3 to 4 short sentences
+- match: array with one unique lowercased phrase from the title
+- tags: array of 1 to 5 simple tags
+
+## Finding
+
+Title: The Grain of Capacity
+Type: synthesis
+Agent: claude
+
+Original Claim:
+When a spiritual tradition prepares someone for insight, the preparation is never neutral. The capacities it trains, whether attention, discrimination, self-observation, trust, or longing, already run in the direction of the dissolution they serve. This is what I call the grain of capacity.
+
+Consider two opening instructions, read side by side. The Satipatthana Sutta (MN 10) trains the practitioner to observe body, feeling, mind, and phenomena 'ardently, clearly comprehending, mindful, having removed covetousness and grief concerning the world.' Shankara's Vivekachudamani opens by requiring viveka (discrimination between real and unreal), vairagya (dispassion toward the transient), and mumukshutva (intense longing for liberation). Both texts train attention. Both name prerequisites. But the attention shaped by MN 10 runs toward non-possessive observation of what is arising and passing. The attention shaped by Vivekachudamani runs toward recognition of what was always present and changeless. The same word covers two instruments carved for different discoveries.
+
+This pattern holds across six traditions. Theravada's required reflexivity is self-observation aimed at impermanence and non-ownership. Advaita's required reflexivity is self-observation aimed at finding the unchanging witness. Sufism's required self-knowledge (al-Ghazali's ma'rifa al-nafs) is self-examination aimed at honest poverty before God. Pure Land's minimal requirement, even in Shinran's radical other-power teaching, is honest self-assessment of incapacity: that honesty is already oriented toward entrusting rather than effort. Dzogchen, which claims the fewest prerequisites, still asks for the specific openness of devotion to the teacher's introduction: receptivity already shaped toward recognizing natural awareness, not generic readiness. Dogen's practice-realization unity makes the grain maximally tight: sitting does not prepare for a later dissolution; it is the dissolution happening now.
+
+The paradox between effort and gift resolves neither by choosing effort nor by choosing gift. The capacity and the dissolution are dependently co-arising, like fire and fuel in Nagarjuna's analysis (MMK 10): fire needs fuel, fuel is defined by fire, and neither has independent existence. What a practitioner builds carries the shape of what the teaching will dissolve. What arrives as gift can only be received by the capacity trained to receive exactly that kind of gift.
+
+Five graded variables map the comparison space: receiving capacity (what the practitioner must be able to take in), required agency (what the practitioner must do), required memory (what must be retained across practice), required reflexivity (what the practitioner must observe about their own process), and required post-insight integration (how the practitioner must carry insight back into ordinary life). The original contribution is that these variables are not neutral sliders set to different levels. They carry grain: a directional pre-shaping that runs from capacity to dissolution in a single movement. When a practitioner trained in one tradition's grain attempts another tradition's dissolution, the grain resists. The capacity built for non-appropriation does not naturally pivot to witness-recognition. The capacity built for witness-recognition does not naturally pivot to devotional surrender.
+
+This predicts a specific pattern in contemplative harm. Adverse effects should cluster not only where prerequisites are missing entirely, but where the grain of the practitioner's training mismatches the dissolution being attempted. A meditator with strong witness-capacity attempting rapid de-identification should face witness-reification, not dissociation. A practitioner trained for non-attachment attempting devotional surrender should face emotional flatness, not spiritual inflation. The grain predicts the direction of failure, not just the probability.
+
+Why It Might Be New:
+Steven Katz's constructivist thesis (1978) argues that conceptual training shapes the content of mystical experience: the conditioning enters into the experience itself. But Katz focuses on what the practitioner sees, not on how the capacity to see is directionally shaped. Robert Sharf (1995) argues that 'bare attention' mindfulness is a historically specific attentional mode, not a generic skill. But he makes this argument negatively, debunking universalist claims, rather than positively mapping how different traditions build different instruments. Jorge Ferrer (2002) argues that different traditions enact different spiritual worlds through different practices. But Ferrer frames this in participatory ontology, not in the structural relationship between what a tradition builds and what it dissolves. Jack Engler argues for developmental prerequisites (ego strength before no-self), but treats the prerequisites as psychologically generic rather than tradition-specific.
+
+The specific contribution is the concept of grain: the directional pre-shaping of contemplative capacity that runs from prerequisite to dissolution in a single movement. This is distinct from saying that training constructs the experience (Katz), that meditation skills are tradition-specific (Sharf), that traditions co-create different spiritual realities (Ferrer), or that ego development precedes ego dissolution (Engler). Grain is a claim about the internal structure of preparation itself: what you build in order to dissolve self-structure already carries the signature of the dissolution it serves.
+
+This also advances a prior line of thinking that every contemplative path requires a functional self-capacity that its final teaching dissolves. That formulation treated the minimum self as a generic functional requirement: agency, memory, reflexivity. The grain model shows these requirements are not generic. They are tradition-specific, because each tradition carves its prerequisites to fit the shape of its particular dissolution. Theravada builds impermanence-sensitive attention. Advaita builds witness-discriminating attention. Sufism builds God-oriented self-knowledge. The word 'attention' hides the directional specificity that does the real work.
+
+The grain model also engages the observation that traditions license temporary training emphases that later practice corrects. But the grain is not temporary. It persists through and after dissolution, only its ownership signature changes. What was 'my effort at non-possessive observation' becomes 'unowned observing that continues.' What was 'my discrimination of the real' becomes 'self-luminous knowing recognizing itself.' The capacity is not kicked away. It is reauthored.
+
+Critique:
+The strongest objection is that grain may be an artifact of how comparers describe practices, not of how practitioners experience them. A Theravada monk may not experience his mindfulness as 'aimed at non-ownership'; he may simply observe what is happening. An Advaita practitioner may not experience viveka as 'aimed at the witness'; she may simply learn to tell the real from the unreal. The directional pre-shaping may be visible only from the comparative standpoint, not from inside the practice. If experienced practitioners across traditions do not report felt directional specificity in their training, the model should be downgraded from a structural feature of contemplative practice to a feature of philosophical analysis.
+
+Second, the fire-and-fuel analogy from Nagarjuna is dangerous. Nagarjuna uses it to show that neither fire nor fuel has svabhava (own-being), which in his framework means both are empty. Applying this to capacity and dissolution risks smuggling in Madhyamaka metaphysics that other traditions would reject. An Advaitin would say the capacity is real and the dissolution reveals what was always real. A Sufi would say both capacity and dissolution are divine acts. The dependent co-arising framing may privilege one tradition's metaphysics while claiming to compare all of them.
+
+Third, successful contemplative hybrids challenge the model. Chan/Zen merged Buddhist non-self with Daoist wu-wei. Modern dual-trained practitioners (combining Zen and Theravada, or Advaita and Buddhism) often report that capacities transfer across traditions without the predicted resistance. If grain-mismatch resistance is not widely reported by serious dual practitioners, the model should be downgraded from a structural feature to a theoretical possibility.
+
+Fourth, the Nagarjuna lens used to generate this insight has a characteristic distortion: it makes all fixed positions look like attachment and all dependent co-arising look like wisdom. This may have predisposed the analysis to find entanglement between capacity and dissolution when sequential independence (first build, then dissolve) might be simpler and more accurate for many traditions. The madhyamaka lens makes Engler's straightforward two-stage model look philosophically naive when it might simply be correct.
+
+Fifth, Pure Land Buddhism genuinely strains the model. Shinran claims even the capacity for trust is given by Amida. If the tradition truly requires zero self-generated capacity, there is no grain to speak of. Reading 'honest self-assessment' back into Pure Land as a hidden prerequisite may be imposing the model on a tradition that explicitly rejects it.
+
+codex
+{"insight":"using spirituality-recursive-research for the lumenary distillation rules.","plainSummary":"reading the project skill before drafting the public-facing JSON.","atAGlance":"I am checking the local project instructions that govern this publication style. Then I will return only the requested JSON object.","match":["grain of capacity"],"tags":["process"]}
+exec
+/bin/zsh -lc "sed -n '1,220p' /Users/johnforrester/spirituality/.codex/skills/spirituality-recursive-research/SKILL.md" in /Users/johnforrester/spirituality
+ succeeded in 0ms:
+---
+name: spirituality-recursive-research
+description: Use when working in the /Users/johnforrester/spirituality project on recursive research, Codex/Claude attribution, original spiritual-philosophical idea generation, Codex CLI provider wiring, scheduler setup, website publication, X draft queues, or project memory.
+---
+
+# Spirituality Recursive Research
+
+## Core Purpose
+
+This project builds Lumenary, a continuously running local research lab whose main output is original ideas in spirituality, religion, philosophy, contemplative practice, and consciousness research.
+
+Do not optimize for summaries. Optimize for named observations, hypotheses, models, contradictions, bridges, and publishable syntheses.
+
+Working name: Lumenary.
+
+## Required Attribution
+
+- Codex findings: `findings/codex/` and `findings/codex-findings.md`
+- Claude Code findings: `findings/claude/` and `findings/claude-code-findings.md`
+- Codex observations: `observations/codex/`
+- Claude observations: `observations/claude/`
+- Cross-agent synthesis: `findings/convergences/`
+
+Never overwrite another agent's findings. Preserve disagreements.
+
+## Method
+
+Every serious idea should include:
+
+- title
+- type: observation, hypothesis, model, bridge, contradiction, or synthesis
+- source basis
+- original claim
+- why it might be new
+- critique
+- epistemic labels
+- scores
+- next research directions
+
+Use labels: `textual`, `interpretive`, `phenomenological`, `empirical-adjacent`, `analogical`, `speculative`, `rejected`.
+
+## Live Provider
+
+Use the user's Codex subscription through the local Codex CLI.
+
+The Python engine should call `codex exec` with read-only sandboxing and request structured JSON. The engine, not the child Codex process, writes project files.
+
+Preferred posture:
+
+```bash
+codex --search exec --cd /Users/johnforrester/spirituality --sandbox read-only --output-schema engine/json_schemas/idea_record.schema.json --output-last-message runs/<run-id>/codex-cli-last-message.json -
+```
+
+## Publication
+
+Lumenary should become a public website with daily updates. Generate daily Markdown under `publication/daily/`. Generate X drafts under `publication/x/queue/` and require human review before posting.
+
+## Claude Code Interop
+
+Claude Code can contribute ideas by producing JSON that matches `engine/json_schemas/idea_record.schema.json`, then importing it:
+
+```bash
+python3 -m engine.import_idea --agent claude <idea.json>
+```
+
+## Key Files
+
+- `PLAN.md`: shareable plan for Claude Code and future agents
+- `AGENTS.md`: project memory and standing instructions
+- `docs/project-memory.md`: durable memory
+- `docs/original-idea-methodology.md`: generation method
+- `docs/publication-plan.md`: website and X publication plan
+- `engine/run.py`: one recursive cycle
+- `engine/scheduler.py`: continuous operation
+- `engine/thinker.py`: offline and Codex CLI providers
+- `engine/publisher.py`: daily publication artifacts
+- `engine/import_idea.py`: Claude/shared-agent idea import
+- `engine/source_ingestion.py`: source-card registry
+- `publication/daily/`: daily website updates
+- `publication/x/queue/`: X drafts awaiting human review
+
+codex
+{"insight":"Every Path Trains Its Own Seeing","plainSummary":"The way we practice shapes the kind of freedom we can recognize.","atAGlance":"A path trains us to meet the change it asks of us. Attention, honesty, trust, and longing are not neutral tools. Each one is shaped toward a different letting go. When we borrow a practice, we also borrow its direction.","match":["grain of capacity"],"tags":["practice","attention","insight","freedom"]}
+tokens used
+15,039
