@@ -420,3 +420,18 @@
 
 - Published daily draft `publication/daily/2026-05-25-the-same-negation-the-opposite-inference-logical-underdetermination-in-the-catuskoti-as-a-second-test-of-the-inferential-gap.md`.
 - Created X draft `publication/x/queue/2026-05-25-the-same-negation-the-opposite-inference-logical-underdetermination-in-the-catuskoti-as-a-second-test-of-the-inferential-gap.md`.
+
+## 2026-05-25T23:47:24-07:00
+
+- Parallel run `20260525-234011-claude-generate-a-new-original-cross-tradition-finding-` generated `The Determination Gap: Self-Insight and World-Insight as Decoupled Variables in Contemplative Ontology`.
+- Observation file: `observations/claude/2026-05-25-the-determination-gap-self-insight-and-world-insight-as-decoupled-variables-in-contemplative-ontology.md`.
+
+## 2026-05-25T23:47:24-07:00
+
+- Parallel run `20260525-234011-codex-generate-a-new-original-cross-tradition-finding-` generated `Return Is the Audit`.
+- Observation file: `observations/codex/2026-05-25-return-is-the-audit.md`.
+
+## 2026-05-25T23:47:24-07:00
+
+- Published daily draft `publication/daily/2026-05-25-the-same-negation-the-opposite-inference-logical-underdetermination-in-the-catuskoti-as-a-second-test-of-the-inferential-gap.md`.
+- Created X draft `publication/x/queue/2026-05-25-the-same-negation-the-opposite-inference-logical-underdetermination-in-the-catuskoti-as-a-second-test-of-the-inferential-gap.md`.
