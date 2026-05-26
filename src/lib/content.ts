@@ -313,7 +313,7 @@ const distillations: Distillation[] = [
   // Claude observations — match on unique title fragments, ordered most-specific first
   {
     atAGlance:
-      "When you let go of everything you call yourself, something still seems to remain. The old mistake is to grab it too quickly and call it a thing. It may be a crossing instead: real while it happens, gone when the movement stops. That makes it precious, but not something you can own.",
+      "When a person lets go of every name, role, and story, something can still seem to remain. The mistake is to grab that remainder too quickly and call it a hidden thing. It may be more like a crossing: real while it is happening, gone when the movement stops. That makes it worth honoring, but not worth turning into another possession.",
     insight: "What remains may be a crossing, not a thing.",
     match: ["processual remainder"],
     plainSummary:
@@ -322,7 +322,7 @@ const distillations: Distillation[] = [
   },
   {
     atAGlance:
-      "We often picture time as a room where life happens. But a moment may not be a box around experience. It may be experience making itself visible, the way a flame is not inside its burning. To understand time this way is to stop looking for the river and start noticing the flow.",
+      "We usually imagine time as the room where life unfolds. This asks us to look again at what a moment is. A moment may not be a container around experience, but experience showing itself in motion. Time may be less like a river we stand beside and more like the flowing by which anything appears at all.",
     insight: "Time is not the container; it is the showing.",
     match: ["expressive realism"],
     plainSummary:
@@ -331,7 +331,7 @@ const distillations: Distillation[] = [
   },
   {
     atAGlance:
-      "The mind builds a picture of itself so it can move through the world. That picture is useful, but it is not final. When it loosens, the old question returns: is something deeper still present, or was the picture all there ever was? The mystery survives every new model we make of it.",
+      "The mind makes a working picture of itself so it can survive, choose, and belong. That picture is useful, but it is not the whole person. When it falls quiet, the old question returns: is there something deeper, or was the picture the only self we had? Better science can sharpen the question, but it cannot make the mystery disappear.",
     insight: "The self outgrows every model.",
     match: ["formal recurrence of the inferential gap"],
     plainSummary:
@@ -340,7 +340,7 @@ const distillations: Distillation[] = [
   },
   {
     atAGlance:
-      "Two paths can use the same act of denial and arrive at opposite doors. One says the stripping reveals what cannot die. Another says the stripping proves there was never anything fixed to find. The lesson is simple and unsettling: a method does not always contain its own answer.",
+      "Two seekers can use the same act of denial and arrive at opposite doors. One says the stripping reveals what cannot die. Another says the stripping shows there was never anything fixed to find. The method opens the way, but the final meaning depends on what the path is willing to let survive.",
     insight: "The same logic can point both ways.",
     match: ["same negation, the opposite inference"],
     plainSummary:
@@ -349,7 +349,7 @@ const distillations: Distillation[] = [
   },
   {
     atAGlance:
-      "Not every no is an ending. Some refusals clear the room so something new can enter. The hardest question is whether emptiness is final silence or fertile ground. If the empty room can give birth, then letting go is not escape from life, but preparation for it.",
+      "Not every no is an ending. Some refusals clear the room so something new can enter. The question is whether emptiness is only silence, or whether it can also be fertile ground. If the empty room can give birth, then letting go is not escape from life, but preparation for it.",
     insight: "Some noes make room for birth.",
     match: ["generative negation"],
     plainSummary:
@@ -358,7 +358,7 @@ const distillations: Distillation[] = [
   },
   {
     atAGlance:
-      "A person can reach a silence where the usual self has fallen away. One path may say the silence reveals what was always there. Another may say it proves nothing needs to be added. The silence is powerful, but it does not settle the argument by itself; the interpretation begins after the quiet.",
+      "A person can reach a silence where the usual self has fallen away. One path may say the silence reveals what was always there. Another may say it proves nothing needs to be added. The silence matters deeply, but it does not tell us by itself what the silence means.",
     insight: "The same silence can license opposite beliefs.",
     match: ["atman and anatta as competing policies"],
     plainSummary:
@@ -377,7 +377,7 @@ const distillations: Distillation[] = [
   },
   {
     atAGlance:
-      "When two teachings seem to agree, do not rush to call them the same. Watch what has to bend to make them meet. The bend may teach more than the agreement. A real bridge does not erase the river beneath it; it shows you exactly where the crossing is hard.",
+      "When two teachings seem to agree, do not rush to call them the same. Watch what has to bend to make them meet. The bend may teach more than the agreement. A real bridge shows where the crossing is hard without pretending the river is gone.",
     insight: "The bend reveals the bridge.",
     match: ["translation strain as a load test", "convergence as translation strain"],
     plainSummary:
@@ -395,7 +395,7 @@ const distillations: Distillation[] = [
   },
   {
     atAGlance:
-      "Many paths ask you to stop clinging to the ordinary self. They part ways at the final step. One lets a hidden witness survive; another refuses to let anything stand behind experience. That last allowance reveals the heart of the path, because what survives the fire is what the path trusts most.",
+      "Many paths ask you to stop clinging to the ordinary self. They part ways at the final step. One lets a hidden witness survive while another refuses to let anything stand behind experience. What survives the fire is what the path trusts most.",
     insight: "The deepest teachings differ by what they let survive.",
     match: ["remainder pressure as the hidden variable"],
     plainSummary:
