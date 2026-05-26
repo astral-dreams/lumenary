@@ -1,0 +1,141 @@
+{
+  "agent": "claude",
+  "anomaly_probe": {
+    "anomaly_candidate": "Validated-then-abandoned hybrids, especially MN 22's raft, Heart Sutra reliance on Prajnaparamita after no-attainment, and Rinzai koan curriculum after kensho.",
+    "confidence_effect": "Substantially lowers confidence in the three-box typology. The contribution survives better as a two-axis or staged model.",
+    "why_it_breaks_or_strains_model": "These cases mix confirmation, cancellation, and dissolution across stages. The raft must be grasped properly before being released. The Heart Sutra negates attainment but retains reliance and mantra. Koan practice may exhaust conceptual striving yet becomes a formal curriculum with tests. If hybrids are normal, the three types are not stable categories."
+  },
+  "audit_id": "54774578d7528e56",
+  "claim_units": [
+    "A method's relation to its own result may be a comparative variable upstream of doctrinal content.",
+    "Mandukya is classified as self-confirming because analysis of waking, dreaming, and deep sleep culminates in turiya as Atman to be known.",
+    "Nagarjuna, Heart Sutra, Zen koan, and Eckhart are classified as self-canceling because their tools undermine graspable thesis, wisdom, attainment, or desire.",
+    "Zhuangzi, Dzogchen, and Sufi fana are classified as self-dissolving because the practitioner or frame of method becomes irrelevant.",
+    "The type should predict verification architecture, teaching strategy, and ethical consequences."
+  ],
+  "confidence": 0.74,
+  "created_at": "2026-05-26T12:19:39-07:00",
+  "cross_domain_prediction": {
+    "domain": "Psychotherapy, education, and research methods",
+    "prediction": "Methods that cancel their own frame should rely more on supervision, case judgment, paradox, and indirect signs than on checklist fidelity. Methods that confirm themselves should tolerate manuals and outcome criteria better. Methods that dissolve into embodiment should prioritize apprenticeship and exemplars.",
+    "structural_translation": "Some methods confirm themselves by producing stable results, some cancel themselves by dissolving the problem frame, and some dissolve into skilled embodiment where the practitioner no longer follows the method explicitly.",
+    "would_count_against_it": "If confirmation, cancellation, and dissolution do not predict training, verification, or institutional form outside contemplative traditions, the proposed structure may be domain-specific rhetoric."
+  },
+  "exact_claim": "At completion, contemplative methods face a self-authority question: some confirm themselves, some cancel themselves, and some dissolve the practitioner beyond method-talk, with consequences for verification and transmission.",
+  "execution_id": "parallel-20260526-120003-20260526-120003",
+  "falsifiable_predictions": [
+    {
+      "expected_observation": "Eckhart and Nagarjuna should share more indirect, anti-possessive verification patterns with each other than Eckhart shares with more kataphatic Christian mystics. Advaita witness practice should use more direct recognition language than Madhyamaka critique.",
+      "if_model_is_right": "Method-type should predict verification architecture better than tradition membership.",
+      "test_surface": "Coded comparison of practice manuals, teacher testing language, and post-realization instructions across at least six traditions.",
+      "would_weaken_or_falsify": "Christian sources cluster together by tradition more strongly than by method-type, or all traditions use the same teacher, lineage, and conduct criteria regardless of method relation."
+    },
+    {
+      "expected_observation": "After Advaita inquiry, practitioners describe recognition as stable witness or Self. After Heart Sutra or Madhyamaka practice, they resist treating any insight as an attained object. After Dzogchen or fana language, they emphasize effortless presence or transformed embodiment over method success.",
+      "if_model_is_right": "Dual-trained practitioners should report different relations to their own insight when switching method-types.",
+      "test_surface": "Structured interviews with practitioners trained in more than one contemplative lineage.",
+      "would_weaken_or_falsify": "Practitioners report no stable difference, or differences track teacher personality and institutional context more than method-type."
+    },
+    {
+      "expected_observation": "Texts should mark when to use, trust, undermine, release, or embody a method. Examples would include raft language, preliminary versus main practice, koan curriculum before and after kensho, or thorn-removing-thorn metaphors.",
+      "if_model_is_right": "Hybrid traditions should show explicit boundary management between method stages.",
+      "test_surface": "Historical and textual analysis of Zen, Dzogchen, Advaita, Madhyamaka, Sufi, and Christian apophatic training sequences.",
+      "would_weaken_or_falsify": "No boundary markers appear, or methods freely confirm, cancel, and dissolve without any pedagogical distinction."
+    }
+  ],
+  "idea_id": "75a5718aa9a991ec",
+  "idea_path": "observations/claude/2026-05-26-the-method-s-reckoning-what-a-practice-does-with-its-own-authority-at-completion.md",
+  "literature_search_queries": [
+    "self-dismantling methods Nagarjuna Wittgenstein therapy liberation",
+    "self-canceling method mysticism apophasis Nagarjuna Eckhart",
+    "therapeutic Nagarjuna Wittgenstein Tractatus ladder",
+    "Mystical Languages of Unsaying meaning event",
+    "method cancels itself dissolves contemplative practice",
+    "spiritual method abandon raft Upanishad Heart Sutra comparison",
+    "Victor Hori Koan and Kensho in the Rinzai Zen Curriculum koan practice curriculum",
+    "Zhuangzi fish trap words meaning forget words text"
+  ],
+  "near_neighbors": [
+    {
+      "difference": "Bilateral comparison only. It does not add self-confirming and self-dissolving alternatives or predict verification architecture across traditions.",
+      "novelty_impact": "High reduction. The strongest part of the Lumenary claim, method succeeds by undoing its own authority, is already explicit prior art.",
+      "overlap": "Very close to the self-canceling core: Nagarjuna and Wittgenstein are read as shared philosophical method without theses, aimed at dissolution of philosophical problems and soteriological disquiet.",
+      "source": "Joshua William Smith, Snakes and Ladders: Therapy as Liberation in Nagarjuna and Wittgenstein's Tractatus, Sophia 2021, https://ueaeprints.uea.ac.uk/id/eprint/80007/"
+    },
+    {
+      "difference": "Sells studies apophatic language as discourse, not a general typology of contemplative method completion.",
+      "novelty_impact": "High reduction for Eckhart and apophasis. Moderate support for the broader synthesis.",
+      "overlap": "Apophatic discourse is described as repeatedly turning back upon its own propositions and names, across Greek, Christian, and Islamic texts including Eckhart and Ibn Arabi.",
+      "source": "Michael A. Sells, Mystical Languages of Unsaying, University of Chicago Press, https://press.uchicago.edu/ucp/books/book/chicago/M/bo3635525.html"
+    },
+    {
+      "difference": "It is not simply canceling or dissolving. It validates proper use, then releases attachment after the crossing.",
+      "novelty_impact": "High reduction and major anomaly. It suggests a fourth pattern or a two-axis framework.",
+      "overlap": "The Dhamma is a raft for crossing, to be grasped properly and then let go. This is a direct prior structure for validated-then-abandoned method.",
+      "source": "MN 22 Alagaddupama Sutta, raft simile, Thanissaro translation, https://www.dhammatalks.org/suttas/MN/MN22.html"
+    },
+    {
+      "difference": "The focus is semantic and argumentative context, not contemplative practice types or cross-tradition transmission.",
+      "novelty_impact": "High reduction for the Nagarjuna unit, but it also sharpens the audit by warning against treating no-thesis as simple self-cancellation.",
+      "overlap": "Closely analyzes Nagarjuna's no-thesis claim and the problem of how a work full of arguments can deny having theses.",
+      "source": "Jan Westerhoff, The No-Thesis View: Making Sense of Verse 29 of Nagarjuna's Vigrahavyavartani, PhilPapers PDF, https://philpapers.org/archive/WESTNV.pdf"
+    },
+    {
+      "difference": "It shows that a self-canceling tool can become a highly structured authorization system, contrary to a simple prediction of transmission difficulty.",
+      "novelty_impact": "High reduction and anomaly for the Zen evidence.",
+      "overlap": "Directly addresses the common model of koan using reason to drive itself into self-contradiction, then complicates it by describing a curriculum after kensho.",
+      "source": "G. Victor Sogen Hori, Koan and Kensho in the Rinzai Zen Curriculum, search-accessible copy, https://docslib.org/doc/1302437/the-koan-is-said-to-pose-to-the-ze-n-practitione-r-a-parado-x-unsolvabl-e-by-the-rational-intellectualizing-mind"
+    },
+    {
+      "difference": "It does not make fana one member of a cross-method typology.",
+      "novelty_impact": "Moderate reduction. The dissolving example is known, but the comparative placement may remain useful.",
+      "overlap": "Already describes Sufi fana as passing away of self followed by being filled with Allah's presence, close to the dissolving pattern.",
+      "source": "Stanford Encyclopedia of Philosophy, Mysticism, discussion of fana and baqa, https://plato.stanford.edu/archives/win2023/entries/mysticism/"
+    }
+  ],
+  "next_loop_instructions": [
+    "Rebuild the model as two axes: validates versus undermines, and retained versus abandoned or embodied.",
+    "Close-read Mandukya, Heart Sutra, MN 22, Vigrahavyavartani 29, and Hori's koan curriculum before treating the three types as stable.",
+    "Search further for upaya, raft, ladder, thorn-removes-thorn, Gelassenheit, fana and baqa, rang grol, and practice-realization as exact structural near-neighbors.",
+    "Ask dual-trained practitioners whether the typology changes how they understand transmission, or whether it merely renames standard stage pedagogy."
+  ],
+  "novelty_adjustment": "Reduce novelty from 0.84 to about 0.64. No exact three-type typology was found in accessible searches, but the self-canceling and method-abandoning structures are well-known, and primary texts show hybrid cases that weaken the clean typology.",
+  "originality_status": "novel_synthesis",
+  "practitioner_test": {
+    "answers_that_reduce_originality": "Practitioners say every serious path already uses all three stages, or identify the model as a familiar upaya, raft, ladder, no-thesis, fana, or Gelassenheit pattern with new labels.",
+    "answers_that_support_contribution": "Practitioners find that the type distinction clarifies why different lineages test realization, authorize teachers, and warn against grasping insight in different ways.",
+    "questions": [
+      "At completion, can the method still authorize its result, or must it be released, denied, or embodied?",
+      "Is confirming, canceling, dissolving an obvious distinction from inside your training, or does it distort the practice?",
+      "Do your verification methods change depending on whether the practice confirms, cancels, or dissolves itself?"
+    ],
+    "relevant_practitioners": [
+      "Rinzai Zen teachers familiar with koan curriculum",
+      "Madhyamaka scholars and monastic teachers",
+      "Advaita Vedanta self-inquiry teachers",
+      "Dzogchen or Mahamudra teachers",
+      "Sufi teachers familiar with fana and baqa",
+      "Christian apophatic spiritual directors"
+    ]
+  },
+  "primary_text_close_read": {
+    "primary_pair": [
+      "Mandukya Upanishad verse 7, Sanskrit and translation, https://texts.wara.in/upanishads/mukhya/mandukya/ and https://gita.pub/upanishad/mandukya/verse/7/",
+      "Heart Sutra, Sanskrit and English, https://sa.wikisource.org/wiki/\u092a\u094d\u0930\u091c\u094d\u091e\u093e\u092a\u093e\u0930\u092e\u093f\u0924\u093e\u0939\u0943\u0926\u092f and https://en.wikisource.org/wiki/Translation:Shorter_Praj\u00f1\u0101p\u0101ramit\u0101_H\u1e5bdaya_S\u016btra"
+    ],
+    "risk_of_overread": "High. The model imposes a modern reflexive category, method's relation to itself, on traditions that may speak instead of upaya, realization, grace, direct recognition, non-grasping, or annihilation of ego. It also risks treating stage-specific pedagogies as stable types.",
+    "secondary_literature_gap": "I did not find an exact three-type typology of contemplative methods as confirming, canceling, and dissolving at completion. But the self-canceling portion has very strong prior art in Nagarjuna, Wittgenstein ladder readings, Buddhist raft discussions, and Sells on apophatic unsaying. The dissolving portion is also standard in fana, zuowang, and Dzogchen descriptions. The new part is the comparative axis and its predicted consequences, not the individual patterns.",
+    "structural_observation": "The Mandukya and Heart Sutra contrast is promising but not clean. Mandukya verse 7 negates ordinary consciousness categories, then ends by saying this is Atman and is to be known, which supports a confirming limit move. Yet Shankara's commentary also says affirmative and negative language fail, so Mandukya contains a self-canceling linguistic element. The Heart Sutra negates aggregates, sense bases, ignorance, the four truths, wisdom, and attainment, which supports the self-canceling reading. Yet it immediately says bodhisattvas rely on Prajnaparamita and gives a mantra, so the method is retained as reliance and recitation, not simply canceled. The close read supports a two-axis model better than a pure three-box typology."
+  },
+  "recommended_scores": {
+    "counterargument_quality": 0.91,
+    "novelty": 0.64,
+    "source_reliability": 0.78
+  },
+  "run_ids": [
+    "20260526-120003-codex-generate-original-cross-tradition-observations-c",
+    "20260526-120003-claude-generate-original-cross-tradition-observations-c"
+  ],
+  "title": "The Method's Reckoning: What a Practice Does With Its Own Authority at Completion",
+  "unlike_statement": "Unlike Smith on Nagarjuna and Wittgenstein, Sells on apophatic unsaying, or the raft and ladder motifs, this idea proposes a three-way comparative axis and claims that the axis predicts verification and transmission better than doctrine alone."
+}

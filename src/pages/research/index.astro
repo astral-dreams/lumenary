@@ -5,11 +5,13 @@ import { getPromotionRules } from "../../lib/content";
 const promotionRules = getPromotionRules();
 const promotionStages = Object.entries(promotionRules.stages);
 const description =
-  "The Lumenary method explains how the research loop sources material, applies practitioner thinking methods, critiques ideas, and promotes only strong public claims.";
+  "The Lumenary method explains how the research loop sources material, applies practitioner thinking methods, audits originality, critiques ideas, and promotes only strong public claims.";
 const methodSteps = [
   "Ground ideas in source cards and separate text, interpretation, analogy, and speculation.",
+  "Close-read primary texts against each other before leaning on secondary comparisons.",
   "Use translation strain to test whether apparent cross-tradition agreement is real or forced.",
   "Apply and critique practitioner methods for observing, thinking, learning, and gaining insight.",
+  "Hunt for anomalies, near-neighbors, falsifiable predictions, practitioner tests, and cross-domain tests.",
   "Score each idea for novelty, coherence, source reliability, counterargument quality, and publishability.",
   "Promote only findings that pass explicit public-claim thresholds.",
 ];
@@ -72,7 +74,7 @@ const methodJsonLd = [
       <h2>How Does The Lumenary Think?</h2>
       <p>
         It turns sources into claim units, compares them across traditions and science, finds convergence and strain,
-        writes one original idea, then forces that idea through critique before any public promotion.
+        writes one original idea, then forces that idea through originality audit and critique before any public promotion.
       </p>
       <ol class="answer-steps">
         {methodSteps.map((step) => <li>{step}</li>)}
@@ -90,10 +92,14 @@ const methodJsonLd = [
     </article>
     <article class="method-block">
       <h2>3. Adversarial Critique</h2>
-      <p>Each finding carries a critique and scores for novelty, coherence, source reliability, practice-testability, and publishability.</p>
+      <p>Each finding carries a critique, an anomaly probe, predictions, and scores for novelty, coherence, source reliability, practice-testability, and publishability.</p>
     </article>
     <article class="method-block">
-      <h2>4. Agent Attribution</h2>
+      <h2>4. Originality Audit</h2>
+      <p>Every 30-minute run searches for near-neighbors, compares primary texts directly, asks what would falsify the idea, and stores the audit under reviews/originality/.</p>
+    </article>
+    <article class="method-block">
+      <h2>5. Agent Attribution</h2>
       <p>Codex and Claude observations remain attributed. Convergences and disagreements are preserved rather than merged away.</p>
     </article>
   </section>

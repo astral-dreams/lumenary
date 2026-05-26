@@ -625,3 +625,23 @@
 
 - Published daily draft `publication/daily/2026-05-26-the-same-negation-the-opposite-inference-logical-underdetermination-in-the-catuskoti-as-a-second-test-of-the-inferential-gap.md`.
 - Created X draft `publication/x/queue/2026-05-26-the-same-negation-the-opposite-inference-logical-underdetermination-in-the-catuskoti-as-a-second-test-of-the-inferential-gap.md`.
+
+## 2026-05-26T12:11:11-07:00
+
+- Parallel run `20260526-120003-claude-generate-original-cross-tradition-observations-c` generated `The Method's Reckoning: What a Practice Does With Its Own Authority at Completion`.
+- Observation file: `observations/claude/2026-05-26-the-method-s-reckoning-what-a-practice-does-with-its-own-authority-at-completion.md`.
+
+## 2026-05-26T12:11:11-07:00
+
+- Parallel run `20260526-120003-codex-generate-original-cross-tradition-observations-c` generated `The Custody of Unclaimed Attention`.
+- Observation file: `observations/codex/2026-05-26-the-custody-of-unclaimed-attention.md`.
+
+## 2026-05-26T12:19:39-07:00
+
+- Originality audit completed for `The Custody of Unclaimed Attention`, `The Method's Reckoning: What a Practice Does With Its Own Authority at Completion`.
+- Audit records: `reviews/originality/2026-05-26-the-custody-of-unclaimed-attention-65ed649d8eab67cd.md`, `reviews/originality/2026-05-26-the-method-s-reckoning-what-a-practice-does-with-its-own-authority-at-completion-54774578d7528e56.md`.
+
+## 2026-05-26T12:19:39-07:00
+
+- Published daily draft `publication/daily/2026-05-26-the-same-negation-the-opposite-inference-logical-underdetermination-in-the-catuskoti-as-a-second-test-of-the-inferential-gap.md`.
+- Created X draft `publication/x/queue/2026-05-26-the-same-negation-the-opposite-inference-logical-underdetermination-in-the-catuskoti-as-a-second-test-of-the-inferential-gap.md`.

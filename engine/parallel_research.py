@@ -14,6 +14,7 @@ from .config import EngineConfig
 from .distill import distill_new_ideas
 from .growth import record_growth
 from .librarian import Librarian
+from .originality_audit import audit_new_ideas
 from .prompts import build_claude_collaborative_prompt, build_originality_prompt
 from .publisher import generate_daily_update
 from .run import _gather_codex_observations, build_run_id
@@ -53,6 +54,7 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument("--unload-after-stop", action="store_true")
     parser.add_argument("--skip-deploy", action="store_true")
+    parser.add_argument("--skip-originality-audit", action="store_true")
     return parser.parse_args()
 
 
@@ -325,6 +327,9 @@ def main() -> None:
             _save_generated(root, item)
 
         if generated:
+            execution_id = "parallel-" + "-".join(
+                sorted(item.manifest.run_id[:15] for item in generated)
+            )
             distill_config = EngineConfig.load(
                 root=root,
                 agent="codex",
@@ -374,9 +379,6 @@ def main() -> None:
                     flush=True,
                 )
 
-            execution_id = "parallel-" + "-".join(
-                sorted(item.manifest.run_id[:15] for item in generated)
-            )
             record_growth(
                 root,
                 execution_id=execution_id,
@@ -384,6 +386,58 @@ def main() -> None:
                 run_ids=[item.manifest.run_id for item in generated],
                 created_at=now_local_iso(),
             )
+
+            if not args.skip_originality_audit:
+                audit_config = EngineConfig.load(
+                    root=root,
+                    agent="codex",
+                    provider="codex-cli",
+                    codex_model=args.codex_model,
+                    codex_search=True,
+                )
+                try:
+                    audit_count = audit_new_ideas(
+                        audit_config,
+                        [item.idea for item in generated],
+                        run_ids=[item.manifest.run_id for item in generated],
+                        execution_id=execution_id,
+                    )
+                    librarian.append_jsonl(
+                        "runs/originality-audit-events.jsonl",
+                        {
+                            "at": now_local_iso(),
+                            "count": audit_count,
+                            "execution_id": execution_id,
+                            "titles": [item.idea.title for item in generated],
+                        },
+                    )
+                    print(
+                        json.dumps(
+                            {"event": "originality-audit", "count": audit_count},
+                            sort_keys=True,
+                        ),
+                        flush=True,
+                    )
+                except Exception as exc:
+                    librarian.append_jsonl(
+                        "runs/originality-audit-errors.jsonl",
+                        {
+                            "at": now_local_iso(),
+                            "error": repr(exc),
+                            "execution_id": execution_id,
+                            "titles": [item.idea.title for item in generated],
+                        },
+                    )
+                    print(
+                        json.dumps(
+                            {
+                                "event": "originality-audit-error",
+                                "error": repr(exc),
+                            },
+                            sort_keys=True,
+                        ),
+                        flush=True,
+                    )
 
         if errors:
             librarian.append_jsonl(

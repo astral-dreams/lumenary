@@ -92,7 +92,7 @@ notify "Research starting" "Pulling latest and beginning a new observation..."
 DIRECTION="$(current_direction)"
 notify "Researching" "$DIRECTION"
 
-DEFAULT_FOCUS="Generate original cross-tradition observations. Codex and Claude should engage each other's latest work, use real sources, follow docs/writing-style.md, improve the method of observation, and avoid em dashes."
+DEFAULT_FOCUS="Generate original cross-tradition observations. Codex and Claude should engage each other's latest work, close-read primary texts against each other, hunt anomalies that could break the model, make falsifiable predictions, use real sources, follow docs/writing-style.md, improve the method of observation, and avoid em dashes."
 
 python3 -m engine.parallel_research \
   --focus "${SPIRITUALITY_FOCUS:-$DEFAULT_FOCUS}" \

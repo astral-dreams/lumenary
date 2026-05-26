@@ -18,6 +18,9 @@ Working project name: Lumenary.
 - Do not treat draft observations as public claims. Promotion requires the shared gate in `config/promotion-rules.json`.
 - Each recursive run should research or reuse a practitioner-method source about how to observe, think, inquire, learn, practice, or gain insight, then apply that method to the agent's own reasoning process.
 - Do not adopt practitioner methods uncritically. Criticize each method, compare it with other practices, synthesize an improved reasoning stance, and carry that stance forward through `state/thinking_protocol.md`.
+- Each 30-minute research run must produce a post-generation originality audit before publication and deploy. Store audits under `reviews/originality/` and index them in `reviews/originality/audits.jsonl`.
+- Originality audits must search for close prior arguments, close-read primary texts against each other, name an anomaly, generate falsifiable predictions, define a practitioner test, define a cross-domain prediction, and recommend score adjustments.
+- Do not call an idea truly unique until it survives the originality audit plus later human or expert challenge.
 - High-energy physics sources are available for time and matter grounding. Use them as empirical/formal constraints, especially around Standard Model fields, Higgs/QCD mass, antimatter asymmetry, relativity, Noether symmetry, T-violation, and quantum-gravity time.
 - Growth page bullets must follow the reader-facing Insights and Journal style: first-person when possible, one short sentence, no titles, no source paths, no scoring language, and no research jargon.
 - Each 30-minute research run must write or reuse an Insights distillation before publishing. New distillations live in `publication/distillations.jsonl`, link to the exact `idea_id`, use a proverb-like headline of 10 words or fewer, keep the Insights card summary to one plain sentence, and keep At a Glance as a plain 3-4 sentence paragraph.

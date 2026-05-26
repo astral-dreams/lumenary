@@ -61,15 +61,18 @@ Each iteration should:
 6. Apply that method as a cognitive lens for the run.
 7. Criticize the method itself and compare it with at least one contrasting practice or reasoning discipline.
 8. Synthesize a provisional improvement to the agent's reasoning stance.
-9. Generate at least one original idea record.
-10. Critique the idea strongly, including whether the method revealed a blind spot.
-11. Score the idea for research value.
-12. Write observation Markdown, JSONL, run manifest, prompt, and output.
-13. Write or reuse an Insights distillation under `publication/distillations.jsonl`: exact idea link, proverb headline, one-sentence card summary, and 3-4 sentence At a Glance paragraph.
-14. Update exploration state and next directions, including improvements to the next thinking method.
-15. Repeat every 30 minutes during the local research window.
-16. After each research run, generate publication artifacts and deploy the website.
-17. At 5pm in the machine's current local timezone, stop research for the day and write one Journal entry from the day's findings.
+9. Close-read at least two primary texts against each other when possible.
+10. Generate at least one original idea record.
+11. Critique the idea strongly, including an anomaly that strains or breaks the model.
+12. Add at least one falsifiable prediction to the follow-up directions.
+13. Score the idea for research value, treating novelty as provisional.
+14. Write observation Markdown, JSONL, run manifest, prompt, and output.
+15. Write or reuse an Insights distillation under `publication/distillations.jsonl`: exact idea link, proverb headline, one-sentence card summary, and 3-4 sentence At a Glance paragraph.
+16. Run the originality audit under `reviews/originality/`: near-neighbor search, primary-text comparison, unlike statement, anomaly probe, falsifiable prediction, practitioner test, cross-domain test, and recommended score adjustments.
+17. Update exploration state and next directions, including improvements to the next thinking method.
+18. Repeat every 30 minutes during the local research window.
+19. After each research run, generate publication artifacts and deploy the website.
+20. At 5pm in the machine's current local timezone, stop research for the day and write one Journal entry from the day's findings.
 
 ## 6. Idea Evaluation
 
@@ -87,6 +90,17 @@ Score candidate ideas on:
 - publishability
 
 Convergence across independent traditions is a useful signal, but it is not proof. Similarity must be labeled as textual, interpretive, phenomenological, empirical-adjacent, analogical, speculative, or rejected.
+
+Novelty is provisional until the originality audit checks:
+
+- exact structural near-neighbors
+- primary-text close reads across traditions
+- an unlike statement against the closest prior source
+- anomaly or framework-breaking evidence
+- falsifiable predictions
+- practitioner tests
+- cross-domain predictions
+- recommended score adjustments
 
 ## 7. Methodology Phases
 
@@ -131,13 +145,14 @@ Hourly publication and Journal flow:
 2. Publication job selects the strongest new or updated idea.
 3. Job writes a daily Markdown update under `publication/daily/`.
 4. Job writes missing Insights distillations under `publication/distillations.jsonl` before build and deploy.
-5. Website build consumes `publication/daily/`, `publication/distillations.jsonl`, `observations/`, and `syntheses/`.
-6. Social draft job writes candidate X posts under `publication/x/queue/`.
-7. Website deploy runs after every 30-minute research job.
-8. Each 30-minute run emits four macOS notifications: start, current direction, new finding title, and published title.
-9. At 5pm in the machine's current local timezone, the Journal writer reads the day's findings and writes one first-person reflection under `publication/journal/`.
-10. At 6pm in the machine's current local timezone, the living-map job rebuilds and deploys the three SVG maps on `/map/`.
-11. Human review approves, edits, rejects, or posts social drafts.
+5. Job writes originality audits under `reviews/originality/` and updates next directions.
+6. Website build consumes `publication/daily/`, `publication/distillations.jsonl`, `observations/`, and `syntheses/`.
+7. Social draft job writes candidate X posts under `publication/x/queue/`.
+8. Website deploy runs after every 30-minute research job.
+9. Each 30-minute run emits four macOS notifications: start, current direction, new finding title, and published title.
+10. At 5pm in the machine's current local timezone, the Journal writer reads the day's findings and writes one first-person reflection under `publication/journal/`.
+11. At 6pm in the machine's current local timezone, the living-map job rebuilds and deploys the three SVG maps on `/map/`.
+12. Human review approves, edits, rejects, or posts social drafts.
 
 ## 10. Living Map Page
 
@@ -227,12 +242,14 @@ Do not auto-post unreviewed spiritual/philosophical claims at first. The safer p
 - `engine/publisher.py`: daily website update and X draft generator
 - `engine/import_idea.py`: shared-schema import path for Claude Code and other agents
 - `engine/source_ingestion.py`: source registry and source-card creation
+- `engine/originality_audit.py`: post-generation originality audit for near-neighbors, anomalies, predictions, practitioner tests, and cross-domain tests
 - `engine/maintenance.py`: JSONL registry maintenance
 - `graph/concept-graph.seed.json`: current concept graph seed for the future map page
 - `site/`: future website
 - `publication/daily/`: daily website updates
 - `publication/journal/`: end-of-day first-person Journal entries
 - `publication/x/queue/`: reviewed social drafts before posting
+- `reviews/originality/`: post-generation originality audit records
 - `ops/launchd/com.lumenary.research.plist`: continuous research loop
 - `ops/launchd/com.lumenary.daily-publish.plist`: daily publication job
 - `docs/claude-review-incorporation.md`: accepted fixes from Claude Code's review

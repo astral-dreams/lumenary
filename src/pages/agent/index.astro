@@ -34,6 +34,10 @@ const stack = [
     label: "Publication safety",
     value: "Promotion thresholds for public claims and a human-review queue for X drafts.",
   },
+  {
+    label: "Originality audit",
+    value: "Every 30-minute run checks near-neighbors, primary text comparisons, anomalies, predictions, practitioner tests, and cross-domain tests.",
+  },
 ];
 
 const loopSteps = [
@@ -120,11 +124,26 @@ const loopSteps = [
     ],
   },
   {
+    title: "Originality Audit",
+    items: [
+      "state the exact claim and break it into smaller claim units",
+      "close-read primary texts against each other before relying on secondary comparisons",
+      "search for exact structural near-neighbors in scholarship and practitioner sources",
+      "write the closest unlike statement against prior work",
+      "hunt for one anomaly that strains or breaks the model",
+      "generate one falsifiable prediction",
+      "define one practitioner test and one cross-domain test",
+      "recommend revised novelty, source reliability, and counterargument scores",
+      "write audit records under reviews/originality/",
+    ],
+  },
+  {
     title: "Store Outputs",
     items: [
       "Codex ideas go to observations/codex/",
       "Claude ideas go to observations/claude/",
       "structured records go to hypotheses/ideas.jsonl",
+      "originality audits go to reviews/originality/",
       "run logs go to runs/",
       "history goes to state/exploration_log.md",
     ],
@@ -173,7 +192,7 @@ const loopSteps = [
   },
 ];
 const description =
-  "The Lumenary agent is the local Codex and Claude research system that runs every 30 minutes, stores findings as Markdown and JSONL, publishes the site, and writes the daily Journal.";
+  "The Lumenary agent is the local Codex and Claude research system that runs every 30 minutes, audits originality, stores findings as Markdown and JSONL, publishes the site, and writes the daily Journal.";
 const agentFaq = [
   {
     question: "What runs The Lumenary agent?",
@@ -188,7 +207,12 @@ const agentFaq = [
   {
     question: "Where does the agent store memory?",
     answer:
-      "It stores source cards, observations, hypotheses, graph data, run logs, daily posts, and Journal entries in local project files.",
+      "It stores source cards, observations, hypotheses, originality audits, graph data, run logs, daily posts, and Journal entries in local project files.",
+  },
+  {
+    question: "How does the agent test whether an idea is original?",
+    answer:
+      "After each run, it searches for near-neighbors, compares primary texts directly, hunts for anomalies, generates predictions, and defines practitioner and cross-domain tests.",
   },
 ];
 const agentJsonLd = [

@@ -1,0 +1,309 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "OriginalityAuditBatch",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["audits"],
+  "properties": {
+    "audits": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "idea_id",
+          "agent",
+          "title",
+          "exact_claim",
+          "claim_units",
+          "primary_text_close_read",
+          "literature_search_queries",
+          "near_neighbors",
+          "unlike_statement",
+          "anomaly_probe",
+          "falsifiable_predictions",
+          "practitioner_test",
+          "cross_domain_prediction",
+          "originality_status",
+          "confidence",
+          "recommended_scores",
+          "novelty_adjustment",
+          "next_loop_instructions"
+        ],
+        "properties": {
+          "idea_id": {
+            "type": "string",
+            "minLength": 8
+          },
+          "agent": {
+            "type": "string",
+            "minLength": 3
+          },
+          "title": {
+            "type": "string",
+            "minLength": 3
+          },
+          "exact_claim": {
+            "type": "string",
+            "minLength": 20
+          },
+          "claim_units": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string",
+              "minLength": 5
+            }
+          },
+          "primary_text_close_read": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "primary_pair",
+              "structural_observation",
+              "secondary_literature_gap",
+              "risk_of_overread"
+            ],
+            "properties": {
+              "primary_pair": {
+                "type": "array",
+                "minItems": 2,
+                "maxItems": 4,
+                "items": {
+                  "type": "string",
+                  "minLength": 3
+                }
+              },
+              "structural_observation": {
+                "type": "string",
+                "minLength": 20
+              },
+              "secondary_literature_gap": {
+                "type": "string",
+                "minLength": 10
+              },
+              "risk_of_overread": {
+                "type": "string",
+                "minLength": 10
+              }
+            }
+          },
+          "literature_search_queries": {
+            "type": "array",
+            "minItems": 3,
+            "items": {
+              "type": "string",
+              "minLength": 8
+            }
+          },
+          "near_neighbors": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["source", "overlap", "difference", "novelty_impact"],
+              "properties": {
+                "source": {
+                  "type": "string",
+                  "minLength": 3
+                },
+                "overlap": {
+                  "type": "string",
+                  "minLength": 5
+                },
+                "difference": {
+                  "type": "string",
+                  "minLength": 5
+                },
+                "novelty_impact": {
+                  "type": "string",
+                  "minLength": 5
+                }
+              }
+            }
+          },
+          "unlike_statement": {
+            "type": "string",
+            "minLength": 20
+          },
+          "anomaly_probe": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "anomaly_candidate",
+              "why_it_breaks_or_strains_model",
+              "confidence_effect"
+            ],
+            "properties": {
+              "anomaly_candidate": {
+                "type": "string",
+                "minLength": 10
+              },
+              "why_it_breaks_or_strains_model": {
+                "type": "string",
+                "minLength": 10
+              },
+              "confidence_effect": {
+                "type": "string",
+                "minLength": 5
+              }
+            }
+          },
+          "falsifiable_predictions": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "if_model_is_right",
+                "expected_observation",
+                "would_weaken_or_falsify",
+                "test_surface"
+              ],
+              "properties": {
+                "if_model_is_right": {
+                  "type": "string",
+                  "minLength": 10
+                },
+                "expected_observation": {
+                  "type": "string",
+                  "minLength": 10
+                },
+                "would_weaken_or_falsify": {
+                  "type": "string",
+                  "minLength": 10
+                },
+                "test_surface": {
+                  "type": "string",
+                  "minLength": 10
+                }
+              }
+            }
+          },
+          "practitioner_test": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "relevant_practitioners",
+              "questions",
+              "answers_that_reduce_originality",
+              "answers_that_support_contribution"
+            ],
+            "properties": {
+              "relevant_practitioners": {
+                "type": "array",
+                "minItems": 1,
+                "items": {
+                  "type": "string",
+                  "minLength": 3
+                }
+              },
+              "questions": {
+                "type": "array",
+                "minItems": 2,
+                "items": {
+                  "type": "string",
+                  "minLength": 10
+                }
+              },
+              "answers_that_reduce_originality": {
+                "type": "string",
+                "minLength": 10
+              },
+              "answers_that_support_contribution": {
+                "type": "string",
+                "minLength": 10
+              }
+            }
+          },
+          "cross_domain_prediction": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "domain",
+              "structural_translation",
+              "prediction",
+              "would_count_against_it"
+            ],
+            "properties": {
+              "domain": {
+                "type": "string",
+                "minLength": 3
+              },
+              "structural_translation": {
+                "type": "string",
+                "minLength": 10
+              },
+              "prediction": {
+                "type": "string",
+                "minLength": 10
+              },
+              "would_count_against_it": {
+                "type": "string",
+                "minLength": 10
+              }
+            }
+          },
+          "originality_status": {
+            "type": "string",
+            "enum": [
+              "known",
+              "renamed",
+              "extended",
+              "novel_synthesis",
+              "candidate_discovery",
+              "strong_original_contribution",
+              "rejected",
+              "audit_incomplete"
+            ]
+          },
+          "confidence": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "recommended_scores": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "novelty",
+              "source_reliability",
+              "counterargument_quality"
+            ],
+            "properties": {
+              "novelty": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1
+              },
+              "source_reliability": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1
+              },
+              "counterargument_quality": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1
+              }
+            }
+          },
+          "novelty_adjustment": {
+            "type": "string",
+            "minLength": 10
+          },
+          "next_loop_instructions": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string",
+              "minLength": 10
+            }
+          }
+        }
+      }
+    }
+  }
+}

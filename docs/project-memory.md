@@ -30,6 +30,8 @@ Working name: Lumenary.
 - Separate analogy from evidence.
 - Use convergence across independent traditions as a signal, not proof.
 - Require critique before promoting an idea.
+- Require an originality audit after every 30-minute research run. The audit should search for prior art, close-read primary texts against each other, hunt anomalies, generate falsifiable predictions, define practitioner tests, and define a cross-domain prediction.
+- Treat novelty scores as provisional until the originality audit has checked near-neighbors and recommended score adjustments.
 - Source grounding now includes spiritual traditions, consciousness science, and high-energy physics. Physics sources should be used as empirical/formal constraints on time and matter claims, not as proof of spiritual metaphysics.
 - Growth entries should read like distilled lessons, not research logs. Use the Insights and Journal voice: short, first-person when possible, plain, memorable, and free of titles, source paths, scores, and jargon.
 

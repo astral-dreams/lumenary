@@ -14,6 +14,9 @@ The agent should not merely ask, "What did tradition X believe?" It should ask, 
 - Boundary-map: identify where similar traditions sharply disagree and treat that boundary as information.
 - Translate carefully: compare structures without claiming identity.
 - Operationalize: look for consequences that could be tested through practice, phenomenology, psychology, neuroscience, or logic.
+- Close-read primary texts against each other: compare source passages directly across traditions before reading only what secondary literature says about them.
+- Hunt anomalies: look for the source, report, or tradition that breaks the current model before looking for more confirming examples.
+- Predict: write at least one "if this is right, then we should see..." test for every serious idea.
 
 ## Cognitive Practice Loop
 
@@ -33,6 +36,39 @@ Each run should:
 The goal is not roleplay or uncritical imitation. The goal is to let traditions improve the agent's way of observing, comparing, and questioning while still subjecting those traditions to criticism.
 
 The persistent protocol lives in `state/thinking_protocol.md`.
+
+## Originality Audit
+
+Every 30-minute parallel research run must add a post-generation originality audit before publication and deploy.
+
+The audit lives under `reviews/originality/` and is indexed in `reviews/originality/audits.jsonl`.
+
+Each audit should:
+
+- state the exact claim being tested
+- break the claim into smaller claim units
+- compare at least two primary texts directly when possible
+- search for close prior arguments and near-neighbors
+- write an "unlike" statement against the closest prior source
+- name an anomaly that strains or breaks the model
+- generate at least one falsifiable prediction
+- define a practitioner test
+- define one cross-domain prediction
+- recommend revised novelty, source reliability, and counterargument scores
+- produce next-loop instructions
+
+Originality labels:
+
+- `known`: already present in a close prior source
+- `renamed`: mostly old work in new language
+- `extended`: meaningfully extends a prior idea
+- `novel_synthesis`: new combination of known elements
+- `candidate_discovery`: no close prior match found and the idea generates tests
+- `strong_original_contribution`: unusually strong candidate with a clear difference, predictions, and cross-domain power
+- `rejected`: pattern fails under critique
+- `audit_incomplete`: search or source access was not strong enough
+
+No finding should be described as truly unique until it has survived this audit, a stronger literature pass, and at least one serious practitioner or domain expert challenge.
 
 ## Idea Record Template
 

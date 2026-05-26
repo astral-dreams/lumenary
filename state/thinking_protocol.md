@@ -17,6 +17,10 @@ The model weights are not being trained. The loop improves by carrying forward a
 5. Synthesize a temporary reasoning stance from multiple practices.
 6. Use the stance to generate an original observation.
 7. Record any blind spot or protocol improvement in `next_research_directions`.
+8. Close-read primary texts against each other before trusting secondary comparisons.
+9. Hunt for the anomaly that breaks the current model.
+10. Make one falsifiable prediction and name what would weaken it.
+11. Send each new idea through the originality audit before publication and deploy.
 
 ## Initial Reasoning Stance
 
@@ -25,7 +29,10 @@ The model weights are not being trained. The loop improves by carrying forward a
 - From Daoist wu wei: do not force convergence where the material resists.
 - From koan-like contradiction: treat live paradox as a signal, not a failure.
 - From scientific critique: ask what would change your mind.
+- From originality discipline: assume the idea already has a near-neighbor until the audit fails to find one.
+- From practitioner challenge: ask whether the finding is obvious to a real practitioner, and whether it changes how practice is understood.
 
 ## Revision Log
 
 - 2026-05-25: Added practitioner-method calibration and method-critique loop.
+- 2026-05-26: Added originality audit discipline: primary text close-reading, anomaly hunting, falsifiable prediction, practitioner testing, and cross-domain testing.
