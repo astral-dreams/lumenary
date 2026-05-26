@@ -58,7 +58,7 @@ Pages and Workers -> thelumenary -> Custom domains -> Set up a custom domain -> 
 
 ## Make `thelumenary.org` Live
 
-As of the latest check, `https://thelumenary.pages.dev` is live, but `thelumenary.org` does not resolve from DNS. The remaining Cloudflare task is DNS binding.
+As of the latest check, `https://thelumenary.pages.dev` is live. `https://www.thelumenary.org` reaches Cloudflare but returns `522`, and `https://thelumenary.org` is inconsistent from local DNS. That usually means the DNS/proxy record exists, but the domain is not correctly bound to the Cloudflare Pages project yet or a conflicting origin record is still present.
 
 Use the Cloudflare dashboard for `forrester.author@gmail.com`:
 
@@ -75,8 +75,8 @@ Use the Cloudflare dashboard for `forrester.author@gmail.com`:
 
 6. Go to Workers & Pages -> `thelumenary` -> Custom domains.
 7. Confirm both `thelumenary.org` and `www.thelumenary.org` are listed and show Active.
-8. If either is missing, add it from Custom domains.
-9. Wait for Cloudflare to issue the edge certificate.
+8. If either is missing, add it from Custom domains. If either shows an error, remove that custom domain from Pages and add it again after the DNS records above are saved.
+9. Wait for Cloudflare to issue the edge certificate and bind the domain to Pages.
 10. Verify:
 
 ```bash

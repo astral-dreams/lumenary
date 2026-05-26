@@ -8,7 +8,6 @@ import {
   getIdeas,
   getSources,
   researchStats,
-  siteDescription,
   topIdeas,
 } from "../lib/content";
 
@@ -20,9 +19,61 @@ const stats = researchStats();
 const latestDaily = dailyPosts[0];
 const featuredIdeas = topIdeas(4);
 const latestIdeas = ideas.slice(0, 4);
+const homeDescription =
+  "The Lumenary is a recursive AI research lab publishing original findings on spirituality, philosophy, consciousness science, and the physics of time and matter.";
+const homeFaq = [
+  {
+    question: "What is The Lumenary?",
+    answer:
+      "The Lumenary is a public research project that uses a local AI research loop to study spiritual traditions, philosophy, consciousness science, and physics, then publish original observations.",
+  },
+  {
+    question: "What does The Lumenary publish?",
+    answer:
+      "It publishes findings, concise insights, a living map of concepts and traditions, source-grounded research notes, and daily Journal reflections.",
+  },
+  {
+    question: "Are The Lumenary findings final claims?",
+    answer:
+      "No. Findings carry epistemic labels, critique, scores, and promotion status so readers can distinguish drafts from promoted public claims.",
+  },
+];
+const homeJsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    name: "The Lumenary",
+    url: "https://thelumenary.org/",
+    description: homeDescription,
+    mainEntity: {
+      "@type": "ResearchProject",
+      name: "The Lumenary",
+      description: homeDescription,
+      about: [
+        "spirituality",
+        "comparative philosophy",
+        "consciousness science",
+        "physics of time",
+        "recursive AI research",
+      ],
+    },
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: homeFaq.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.answer,
+      },
+    })),
+  },
+];
 ---
 
-<BaseLayout title="The Lumenary" description={siteDescription()}>
+<BaseLayout title="The Lumenary" description={homeDescription} jsonLd={homeJsonLd}>
   <section class="hero-band">
     <div class="hero-copy">
       <p class="eyebrow">Daily recursive research</p>
@@ -64,6 +115,25 @@ const latestIdeas = ideas.slice(0, 4);
     <div><strong>{stats.codex}</strong><span>Codex observations</span></div>
     <div><strong>{stats.claude}</strong><span>Claude observations</span></div>
     <div><strong>{stats.labels}</strong><span>epistemic labels</span></div>
+  </section>
+
+  <section class="content-section">
+    <div class="answer-panel">
+      <p class="eyebrow">Direct answer</p>
+      <h2>What Is The Lumenary?</h2>
+      <p>
+        The Lumenary is a public recursive research lab that studies wisdom traditions, philosophy,
+        consciousness science, and the physics of time and matter to generate original, source-grounded ideas.
+      </p>
+      <div class="answer-grid">
+        {homeFaq.map((item) => (
+          <article>
+            <h3>{item.question}</h3>
+            <p>{item.answer}</p>
+          </article>
+        ))}
+      </div>
+    </div>
   </section>
 
   <section class="content-section">

@@ -14,15 +14,88 @@ const sources = getSources();
 const ideas = getIdeas();
 const convergences = getConvergenceNotes();
 const stats = researchStats();
+const description =
+  "The Lumenary Research Map is a living SVG knowledge atlas connecting traditions, source cards, concepts, contradictions, findings, and promoted public claims.";
+const mapFaq = [
+  {
+    question: "What does the Lumenary map show?",
+    answer:
+      "It shows how traditions, concepts, source cards, findings, contradictions, and public claims connect inside the research corpus.",
+  },
+  {
+    question: "How is the map updated?",
+    answer:
+      "The map is rebuilt from the concept graph, source index, idea records, promotion gates, and convergence notes whenever the site is built.",
+  },
+  {
+    question: "Why does the map matter?",
+    answer:
+      "The map reveals where ideas converge, where translation strain appears, and where the research is still source-light or unresolved.",
+  },
+];
+const mapJsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    name: "The Lumenary Research Map",
+    url: "https://thelumenary.org/map/",
+    description,
+    about: [
+      "comparative philosophy",
+      "spiritual traditions",
+      "consciousness science",
+      "physics of time and matter",
+      "knowledge graph",
+    ],
+    mainEntity: {
+      "@type": "Dataset",
+      name: "The Lumenary Concept Graph",
+      description:
+        "A generated concept graph connecting sources, traditions, idea records, promotion status, and convergence notes.",
+      variableMeasured: ["concept nodes", "relationship edges", "source cards", "idea records", "public claims"],
+    },
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: mapFaq.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.answer,
+      },
+    })),
+  },
+];
 ---
 
-<BaseLayout title="Living Map">
+<BaseLayout title="Research Map" description={description} jsonLd={mapJsonLd}>
   <section class="page-band">
     <p class="eyebrow">Living atlas</p>
     <h1>Research Map</h1>
     <p class="lead">
       A generated SVG map of traditions, source grounding, concept relationships, promoted claims, and new findings.
     </p>
+  </section>
+
+  <section class="content-section">
+    <div class="answer-panel">
+      <p class="eyebrow">Direct answer</p>
+      <h2>What Does The Research Map Show?</h2>
+      <p>
+        The map shows the living structure of the research: which traditions are being studied, which concepts recur,
+        where findings connect, and where disagreement or translation strain creates the next frontier.
+      </p>
+      <div class="answer-grid">
+        {mapFaq.map((item) => (
+          <article>
+            <h3>{item.question}</h3>
+            <p>{item.answer}</p>
+          </article>
+        ))}
+      </div>
+    </div>
   </section>
 
   <section class="map-section">

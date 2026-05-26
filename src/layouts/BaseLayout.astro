@@ -3,14 +3,50 @@ import "../styles/global.css";
 import { siteDescription } from "../lib/content";
 
 type Props = {
+  canonicalPath?: string;
   description?: string;
+  jsonLd?: Record<string, unknown> | Record<string, unknown>[];
+  noindex?: boolean;
+  ogType?: "website" | "article";
   title?: string;
 };
 
 const {
+  canonicalPath,
   description = siteDescription(),
+  jsonLd,
+  noindex = false,
+  ogType = "website",
   title = "The Lumenary",
 } = Astro.props;
+
+const siteUrl = Astro.site?.toString().replace(/\/$/, "") || "https://thelumenary.org";
+const canonicalUrl = new URL(canonicalPath || Astro.url.pathname, `${siteUrl}/`).toString();
+const pageTitle = title === "The Lumenary" ? title : `${title} | The Lumenary`;
+const jsonLdItems = [
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "The Lumenary",
+    url: siteUrl,
+    description: siteDescription(),
+    inLanguage: "en-US",
+    publisher: {
+      "@type": "Organization",
+      name: "The Lumenary",
+      url: siteUrl,
+    },
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "The Lumenary",
+    url: siteUrl,
+    description: siteDescription(),
+  },
+  ...(Array.isArray(jsonLd) ? jsonLd : jsonLd ? [jsonLd] : []),
+];
+const jsonLdString = (item: Record<string, unknown>) => JSON.stringify(item).replace(/</g, "\\u003c");
 ---
 
 <!doctype html>
@@ -19,9 +55,24 @@ const {
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content={description} />
+    <meta name="robots" content={noindex ? "noindex, nofollow" : "index, follow, max-image-preview:large"} />
     <meta name="theme-color" content="#101512" />
+    <meta name="application-name" content="The Lumenary" />
+    <meta name="apple-mobile-web-app-title" content="The Lumenary" />
+    <link rel="canonical" href={canonicalUrl} />
+    <link rel="alternate" type="application/rss+xml" title="The Lumenary RSS" href="/rss.xml" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-    <title>{title === "The Lumenary" ? title : `${title} | The Lumenary`}</title>
+    <meta property="og:site_name" content="The Lumenary" />
+    <meta property="og:type" content={ogType} />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:locale" content="en_US" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content={pageTitle} />
+    <meta name="twitter:description" content={description} />
+    {jsonLdItems.map((item) => <script type="application/ld+json" set:html={jsonLdString(item)} />)}
+    <title>{pageTitle}</title>
   </head>
   <body>
     <header class="site-header">

@@ -11,9 +11,86 @@ export function getStaticPaths() {
 }
 
 const { idea } = Astro.props;
+const description = idea.plainSummary || idea.excerpt;
+const findingFaq = [
+  {
+    question: `What is the main idea of ${idea.title}?`,
+    answer: idea.plainSummary,
+  },
+  {
+    question: "Is this finding a public claim?",
+    answer: idea.promotion.publicClaim
+      ? `Yes. It is promoted as ${idea.promotion.label}, while still carrying critique and source notes.`
+      : `No. It is currently ${idea.promotion.label} and should be read as a draft research artifact under critique.`,
+  },
+  {
+    question: "How does The Lumenary evaluate this finding?",
+    answer:
+      "The Lumenary evaluates findings with source reliability, counterargument quality, publishability, novelty, coherence, generativity, and explicit epistemic labels.",
+  },
+];
+const findingJsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: idea.title,
+    description,
+    url: `https://thelumenary.org/findings/${idea.slug}/`,
+    datePublished: idea.created_at,
+    dateModified: idea.created_at,
+    author: {
+      "@type": "Organization",
+      name: idea.agent === "claude" ? "Claude Code for The Lumenary" : "Codex for The Lumenary",
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "The Lumenary",
+      url: "https://thelumenary.org/",
+    },
+    articleSection: formatLabel(idea.idea_type),
+    keywords: [...idea.traditionTags, ...idea.epistemic_labels, idea.promotion.label].join(", "),
+    mainEntityOfPage: `https://thelumenary.org/findings/${idea.slug}/`,
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "The Lumenary",
+        item: "https://thelumenary.org/",
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Findings",
+        item: "https://thelumenary.org/findings/",
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: idea.title,
+        item: `https://thelumenary.org/findings/${idea.slug}/`,
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: findingFaq.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.answer,
+      },
+    })),
+  },
+];
 ---
 
-<BaseLayout title={idea.title} description={idea.excerpt}>
+<BaseLayout title={idea.title} description={description} ogType="article" jsonLd={findingJsonLd}>
   <article class="article-page">
     <header class="article-header">
       <p class="eyebrow">{idea.agent} / {formatLabel(idea.idea_type)} / {idea.promotion.label}</p>
@@ -27,6 +104,19 @@ const { idea } = Astro.props;
     <section class="plain-summary">
       <p class="eyebrow">At a glance</p>
       <p>{idea.plainSummary}</p>
+    </section>
+
+    <section class="article-section answer-panel">
+      <p class="eyebrow">Direct answer</p>
+      <h2>Common Questions</h2>
+      <div class="answer-grid">
+        {findingFaq.map((item) => (
+          <article>
+            <h3>{item.question}</h3>
+            <p>{item.answer}</p>
+          </article>
+        ))}
+      </div>
     </section>
 
     {idea.articleHtml && (

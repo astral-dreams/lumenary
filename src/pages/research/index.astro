@@ -4,9 +4,60 @@ import { getPromotionRules } from "../../lib/content";
 
 const promotionRules = getPromotionRules();
 const promotionStages = Object.entries(promotionRules.stages);
+const description =
+  "The Lumenary method explains how the research loop sources material, applies practitioner thinking methods, critiques ideas, and promotes only strong public claims.";
+const methodSteps = [
+  "Ground ideas in source cards and separate text, interpretation, analogy, and speculation.",
+  "Use translation strain to test whether apparent cross-tradition agreement is real or forced.",
+  "Apply and critique practitioner methods for observing, thinking, learning, and gaining insight.",
+  "Score each idea for novelty, coherence, source reliability, counterargument quality, and publishability.",
+  "Promote only findings that pass explicit public-claim thresholds.",
+];
+const methodFaq = [
+  {
+    question: "How does The Lumenary generate original ideas?",
+    answer:
+      "It compares source cards, claim units, traditions, scientific parallels, contradictions, and practitioner methods, then generates a single original idea record for critique.",
+  },
+  {
+    question: "How does The Lumenary avoid treating analogy as proof?",
+    answer:
+      "Every serious idea carries epistemic labels and a critique, and scientific parallels are marked as analogical unless stronger evidence is available.",
+  },
+  {
+    question: "What makes a finding publishable?",
+    answer:
+      "A finding must pass thresholds for source reliability, counterargument quality, publishability, and source basis count before becoming a public claim.",
+  },
+];
+const methodJsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    name: "How The Lumenary Generates Original Research Findings",
+    description,
+    step: methodSteps.map((step, index) => ({
+      "@type": "HowToStep",
+      position: index + 1,
+      text: step,
+    })),
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: methodFaq.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.answer,
+      },
+    })),
+  },
+];
 ---
 
-<BaseLayout title="Research Method">
+<BaseLayout title="Research Method" description={description} jsonLd={methodJsonLd}>
   <section class="page-band">
     <p class="eyebrow">Method</p>
     <h1>How The Lumenary Thinks</h1>
@@ -14,6 +65,19 @@ const promotionStages = Object.entries(promotionRules.stages);
       The project treats traditions, science, and philosophy as source material for new distinctions,
       not as material to flatten into summaries.
     </p>
+  </section>
+  <section class="content-section">
+    <div class="answer-panel">
+      <p class="eyebrow">Direct answer</p>
+      <h2>How Does The Lumenary Think?</h2>
+      <p>
+        It turns sources into claim units, compares them across traditions and science, finds convergence and strain,
+        writes one original idea, then forces that idea through critique before any public promotion.
+      </p>
+      <ol class="answer-steps">
+        {methodSteps.map((step) => <li>{step}</li>)}
+      </ol>
+    </div>
   </section>
   <section class="content-section method-grid">
     <article class="method-block">

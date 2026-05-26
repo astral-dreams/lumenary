@@ -3,9 +3,28 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import { getDailyPosts } from "../../lib/content";
 
 const posts = getDailyPosts();
+const description =
+  "Daily public research notes from The Lumenary, generated from promoted findings in the recursive spirituality and consciousness research loop.";
+const dailyJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  name: "The Lumenary Daily Log",
+  url: "https://thelumenary.org/daily/",
+  description,
+  mainEntity: {
+    "@type": "ItemList",
+    numberOfItems: posts.length,
+    itemListElement: posts.slice(0, 20).map((post, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: post.title,
+      url: `https://thelumenary.org/daily/${post.slug}/`,
+    })),
+  },
+};
 ---
 
-<BaseLayout title="Daily Log">
+<BaseLayout title="Daily Log" description={description} jsonLd={dailyJsonLd}>
   <section class="page-band">
     <p class="eyebrow">Publication log</p>
     <h1>Daily Log</h1>

@@ -2,10 +2,26 @@
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import { formatLabel, getSources, groupBy } from "../../lib/content";
 
-const groups = groupBy(getSources(), (source) => source.tradition);
+const sources = getSources();
+const groups = groupBy(sources, (source) => source.tradition);
+const description =
+  "Source cards behind The Lumenary research corpus, covering spiritual traditions, comparative philosophy, consciousness science, and physics of time and matter.";
+const sourcesJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  name: "The Lumenary Source Cards",
+  url: "https://thelumenary.org/sources/",
+  description,
+  mainEntity: {
+    "@type": "Dataset",
+    name: "The Lumenary Source Corpus",
+    description,
+    keywords: [...new Set(sources.map((source) => source.tradition))].join(", "),
+  },
+};
 ---
 
-<BaseLayout title="Sources">
+<BaseLayout title="Sources" description={description} jsonLd={sourcesJsonLd}>
   <section class="page-band">
     <p class="eyebrow">Grounding corpus</p>
     <h1>Source Cards</h1>

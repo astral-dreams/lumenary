@@ -10,9 +10,25 @@ export function getStaticPaths() {
 }
 
 const { note } = Astro.props;
+const convergenceJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: note.title,
+  description: note.excerpt,
+  url: `https://thelumenary.org/convergences/${note.slug}/`,
+  author: {
+    "@type": "Organization",
+    name: "The Lumenary",
+  },
+  publisher: {
+    "@type": "Organization",
+    name: "The Lumenary",
+    url: "https://thelumenary.org/",
+  },
+};
 ---
 
-<BaseLayout title={note.title} description={note.excerpt}>
+<BaseLayout title={note.title} description={note.excerpt} ogType="article" jsonLd={convergenceJsonLd}>
   <article class="article-page">
     <p class="eyebrow">{note.path}</p>
     <div class="prose" set:html={note.html} />

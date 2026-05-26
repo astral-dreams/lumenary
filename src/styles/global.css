@@ -578,6 +578,58 @@ meter {
   padding: 24px;
 }
 
+.answer-panel {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  padding: clamp(22px, 4vw, 36px);
+}
+
+.answer-panel > p:not(.eyebrow) {
+  color: #303832;
+  font-size: clamp(1.02rem, 1.6vw, 1.18rem);
+  line-height: 1.62;
+  margin-bottom: 0;
+  max-width: 920px;
+}
+
+.answer-grid {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: 24px;
+}
+
+.answer-grid article {
+  border-top: 1px solid var(--line);
+  padding-top: 16px;
+}
+
+.answer-grid h3 {
+  font-size: 1rem;
+}
+
+.answer-grid p {
+  color: var(--muted);
+  font-size: 0.94rem;
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+
+.answer-steps {
+  color: #303832;
+  display: grid;
+  gap: 10px;
+  margin: 24px 0 0;
+  max-width: 920px;
+  padding-left: 1.3rem;
+}
+
+.answer-steps li {
+  line-height: 1.55;
+}
+
 .insight-filters {
   align-items: end;
   background: var(--panel);
@@ -697,7 +749,7 @@ meter {
 
 .map-section {
   margin-inline: calc(50% - 50vw);
-  padding: 0 clamp(12px, 2vw, 24px) clamp(32px, 5vw, 56px);
+  padding: 0 0 clamp(32px, 5vw, 56px);
   width: 100vw;
 }
 
@@ -709,7 +761,8 @@ meter {
   margin: 0;
   overflow-x: auto;
   overflow-y: hidden;
-  padding: clamp(12px, 2vw, 20px);
+  padding: clamp(8px, 1vw, 14px);
+  width: 100%;
 }
 
 .living-map-frame figcaption {
@@ -722,8 +775,8 @@ meter {
 .living-map-svg {
   display: block;
   height: auto;
-  max-height: 78vh;
-  min-width: 980px;
+  max-height: none;
+  min-width: 1280px;
   width: 100%;
 }
 
@@ -971,6 +1024,7 @@ meter {
   .item-grid,
   .source-list,
   .method-grid,
+  .answer-grid,
   .insight-grid,
   .insight-filters {
     grid-template-columns: 1fr;
