@@ -307,50 +307,50 @@ const distillations: Distillation[] = [
     insight: "What remains may be a crossing, not a thing.",
     match: ["processual remainder"],
     plainSummary:
-      "When you strip away everything you think you are, something lingers. But it may not be a hidden soul or a permanent self. It may be more like a doorway — real only while you are walking through it, gone the moment you stop. Some traditions have known this for centuries. Modern neuroscience is arriving at the same place from a different direction.",
+      "When you let go of everything you call yourself, something still seems to remain. It may not be a hidden soul. It may be a doorway, real only while you pass through it.",
     tags: ["sufism", "advaita", "buddhism"],
   },
   {
     insight: "Time is not the container; it is the showing.",
     match: ["expressive realism"],
     plainSummary:
-      "We tend to think of time as a river that carries us. Things happen in time. But a 13th-century Zen teacher proposed something stranger: time does not hold things — time is what things are. A mountain does not exist inside a moment. The mountain is the moment. Physics has a version of this idea too. Neither tradition arrived at it by copying the other.",
+      "We think time is a river carrying things along. This finding asks you to try the stranger thought: maybe things are not inside time. Maybe each thing is time showing itself.",
     tags: ["buddhism", "time", "physics"],
   },
   {
-    insight: "A model of the self is not the final answer to the self.",
+    insight: "The self outgrows every model.",
     match: ["formal recurrence of the inferential gap"],
     plainSummary:
-      "The brain builds a model of itself to navigate the world. When meditators dissolve that model, one school says they have found a deeper self behind it. Another says they have proven no self was ever there. Now neuroscience has built its own model of the self-model — and it reproduces the exact same disagreement. The question is older than the tools we use to ask it.",
+      "The mind makes a picture of itself so it can move through the world. When that picture falls away, one path says a truer self has been found. Another says no self was ever there. The new tools repeat the old question.",
     tags: ["consciousness", "science", "self"],
   },
   {
-    insight: "The same logic can prove opposite metaphysics.",
+    insight: "The same logic can point both ways.",
     match: ["same negation, the opposite inference"],
     plainSummary:
-      "Two ancient philosophers — one Hindu, one Buddhist — used the same four-step logical proof to demolish the same idea: that anything can truly come into being. Step for step, their arguments are identical. Yet one concluded that an eternal reality must exist behind appearances, and the other concluded that nothing has a fixed nature at all. The logic does not decide. Something else does.",
+      "Two ancient thinkers used the same argument and reached opposite shores. One found something eternal behind change. The other found no fixed thing at all. The argument did not choose the answer. The thinker did.",
     tags: ["buddhism", "advaita", "method"],
   },
   {
-    insight: "Some traditions need a negation that creates rather than destroys.",
+    insight: "Some noes make room for birth.",
     match: ["generative negation"],
     plainSummary:
-      "Most logic gives you two ways to say no. One replaces what you denied with something else. The other just leaves a blank. But several traditions — Tibetan, Christian mystical, Daoist — describe a third kind of no. When you say it, the emptiness itself becomes fertile. Something arrives that you did not put there. This is not a paradox they tolerate. It is the point.",
+      "Some forms of letting go do not leave an empty room. They make room for something that could not arrive while you were holding on.",
     tags: ["buddhism", "daoism", "neoplatonism", "method"],
   },
   {
     insight: "The same silence can license opposite beliefs.",
     match: ["atman and anatta as competing policies"],
     plainSummary:
-      "Hindu and Buddhist contemplatives both describe a state where ordinary self-awareness falls away. What remains feels the same to both. But they draw opposite conclusions from it. One says: you have found your true self. The other says: you have seen that no self was ever there. The experience does not settle the question. The question is about what the experience entitles you to believe.",
+      "Two seekers may enter the same silence and leave with opposite beliefs. One says the true self was found. The other says the self was never there. The silence alone does not decide.",
     tags: ["advaita", "buddhism", "self"],
   },
   // Codex observations
   {
-    insight: "After negation, notice what still gets to remain.",
+    insight: "After letting go, notice what remains.",
     match: ["residue policy in negative self"],
     plainSummary:
-      "Every serious spiritual path asks you to let go of who you think you are. They agree on the letting go. Where they part ways is what they allow to remain afterward — and that difference shapes everything that follows.",
+      "Every serious path asks you to loosen your grip on who you think you are. The real difference comes afterward: what does the path still allow you to keep?",
     tags: ["advaita", "buddhism", "self"],
   },
   {
@@ -364,21 +364,21 @@ const distillations: Distillation[] = [
     insight: "Every no leaves a remainder to account for.",
     match: ["residual burden of proof"],
     plainSummary:
-      "You can deny the self, but you still have to explain why experience continues and why practice works. The denial is the beginning of the problem, not the end.",
+      "You can say no to the self. But then you must explain who hears the no, why life continues, and why practice changes anything.",
     tags: ["buddhism", "self", "critique"],
   },
   {
     insight: "The deepest teachings differ by what they let survive.",
     match: ["remainder pressure as the hidden variable"],
     plainSummary:
-      "Strip any tradition down to its foundations and you find something it refuses to question. That protected remainder — the thing it will not surrender — tells you more about a tradition than anything it puts in its scriptures.",
+      "Strip a path down far enough and you find the thing it protects. That protected thing tells you what the path loves most.",
     tags: ["advaita", "buddhism", "practice"],
   },
   {
-    insight: "The self may be an interface, not a thing.",
+    insight: "The self may be a doorway, not a thing.",
     match: ["interface invariant model"],
     plainSummary:
-      "What if the spiritual insights that keep recurring across cultures are not evidence of a shared hidden truth? What if they are evidence of a shared instrument — the human mind encountering the same limits of attention, identity, and agency, and reporting back in different languages?",
+      "What if many paths keep finding the same doorway in human experience? They name it differently because they step through it from different worlds.",
     tags: ["consciousness", "self", "method"],
   },
 ];

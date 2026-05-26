@@ -28,12 +28,16 @@ const { idea } = Astro.props;
       <p class="eyebrow">At a glance</p>
       <h2>Plain English</h2>
       <p>{idea.plainSummary}</p>
-      <div class="prose compact-prose" set:html={idea.originalClaimHtml} />
     </section>
 
     {idea.articleHtml && (
       <section class="article-section prose public-article" set:html={idea.articleHtml} />
     )}
+
+    <section class="article-section">
+      <h2>Original Claim</h2>
+      <div class="prose compact-prose" set:html={idea.originalClaimHtml} />
+    </section>
 
     <section class="article-section">
       <h2>Why It Might Be New</h2>
