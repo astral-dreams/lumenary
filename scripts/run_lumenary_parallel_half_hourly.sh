@@ -48,6 +48,32 @@ print(choice[:180])
 PY
 }
 
+pause_until() {
+  python3 - <<'PY'
+from datetime import datetime
+from pathlib import Path
+
+path = Path("state/research_pause_until")
+if not path.exists():
+    raise SystemExit(0)
+
+value = path.read_text(encoding="utf-8").strip()
+try:
+    pause_until = datetime.fromisoformat(value)
+except ValueError:
+    path.unlink(missing_ok=True)
+    raise SystemExit(0)
+
+now = datetime.now(pause_until.tzinfo).astimezone()
+if now < pause_until:
+    print(value)
+    raise SystemExit(2)
+
+path.unlink(missing_ok=True)
+raise SystemExit(0)
+PY
+}
+
 latest_agent_titles() {
   python3 - <<'PY'
 import json
@@ -84,6 +110,15 @@ HOUR=$(date +%H)
 
 if [ "$HOUR" -lt 7 ] || [ "$HOUR" -ge 17 ]; then
   echo "$(date): Outside research window (7am-5pm), skipping."
+  exit 0
+fi
+
+set +e
+PAUSE_UNTIL="$(pause_until)"
+PAUSE_STATUS=$?
+set -e
+if [ "$PAUSE_STATUS" -eq 2 ]; then
+  notify "Research paused" "Skipping this run until ${PAUSE_UNTIL}."
   exit 0
 fi
 
