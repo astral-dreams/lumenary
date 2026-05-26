@@ -410,7 +410,25 @@ h3 {
   padding: 26px 0;
 }
 
+.plain-summary {
+  background: var(--band);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  margin-bottom: 22px;
+  padding: clamp(22px, 4vw, 34px);
+}
+
+.plain-summary h2 {
+  margin-bottom: 14px;
+}
+
+.plain-summary p:last-child {
+  color: var(--muted);
+  margin-bottom: 0;
+}
+
 .article-section p,
+.plain-summary p,
 .clean-list,
 .prose {
   color: #303832;
@@ -493,6 +511,81 @@ meter {
 
 .method-block {
   padding: 24px;
+}
+
+.insight-filters {
+  align-items: end;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  display: grid;
+  gap: 14px;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  margin-bottom: 22px;
+  padding: 16px;
+}
+
+.insight-filters label {
+  display: grid;
+  gap: 6px;
+}
+
+.insight-filters span {
+  color: var(--muted);
+  font-size: 0.76rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.insight-filters select {
+  appearance: none;
+  background: var(--band);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  color: var(--ink);
+  font: inherit;
+  font-weight: 700;
+  min-height: 42px;
+  padding: 8px 34px 8px 10px;
+}
+
+.insight-grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.insight-card {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  display: grid;
+  min-height: 260px;
+  padding: 22px;
+}
+
+.insight-card h2 {
+  align-self: start;
+  font-size: clamp(1.55rem, 2.7vw, 2.35rem);
+  line-height: 1.02;
+}
+
+.insight-card h2 a {
+  text-decoration: none;
+}
+
+.insight-card p {
+  color: var(--muted);
+  line-height: 1.58;
+  margin: 16px 0 0;
+}
+
+.empty-filter-message {
+  color: var(--muted);
+  font-weight: 750;
+  padding: 26px 0;
 }
 
 .living-map-frame {
@@ -764,7 +857,9 @@ meter {
   .split-section,
   .item-grid,
   .source-list,
-  .method-grid {
+  .method-grid,
+  .insight-grid,
+  .insight-filters {
     grid-template-columns: 1fr;
   }
 

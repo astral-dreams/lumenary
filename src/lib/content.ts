@@ -57,9 +57,28 @@ export type IdeaView = IdeaRecord & {
   date: string;
   excerpt: string;
   html: string;
+  insight: string;
+  insightScore: number;
+  plainSummary: string;
   promotion: PromotionDecision;
   relativePath: string;
   slug: string;
+  traditionTags: string[];
+};
+
+export type InsightView = {
+  agent: string;
+  date: string;
+  epistemicLabels: string[];
+  ideaType: string;
+  insight: string;
+  insightScore: number;
+  plainSummary: string;
+  promotionLabel: string;
+  promotionStage: string;
+  slug: string;
+  title: string;
+  traditionTags: string[];
 };
 
 export type DailyPost = {
@@ -258,6 +277,128 @@ function excerpt(value: string, limit = 190): string {
   return `${compact.slice(0, limit).trim()}...`;
 }
 
+function firstSentence(value: string, limit = 180): string {
+  const compact = value.replace(/\s+/g, " ").trim();
+  const sentence = compact.match(/^.*?[.!?](\s|$)/)?.[0]?.trim() || compact;
+  return excerpt(sentence, limit);
+}
+
+type Distillation = {
+  insight: string;
+  match: string[];
+  plainSummary: string;
+  tags: string[];
+};
+
+const distillations: Distillation[] = [
+  {
+    insight: "After negation, notice what still gets to remain.",
+    match: ["residue policy", "negative self-practice"],
+    plainSummary:
+      "This finding says traditions may agree on letting go of ordinary identity, while disagreeing about whether anything deeper is allowed to remain afterward.",
+    tags: ["advaita", "buddhism", "self"],
+  },
+  {
+    insight: "The bend reveals the bridge.",
+    match: ["translation strain"],
+    plainSummary:
+      "This finding says comparison is most honest when it names what does not fit, instead of pretending different traditions are saying the same thing.",
+    tags: ["method", "comparison", "convergence"],
+  },
+  {
+    insight: "The same silence can license opposite beliefs.",
+    match: ["inferential gap"],
+    plainSummary:
+      "This finding says two paths can reach a similar quieting of self and then draw very different conclusions from it.",
+    tags: ["advaita", "buddhism", "self"],
+  },
+  {
+    insight: "Every no leaves a remainder to account for.",
+    match: ["residual burden"],
+    plainSummary:
+      "This finding says negating the self is not the end of the question, because a path still has to explain what experience is and how practice works.",
+    tags: ["buddhism", "self", "critique"],
+  },
+  {
+    insight: "The deepest teachings differ by what they let survive.",
+    match: ["remainder pressure"],
+    plainSummary:
+      "This finding says spiritual systems often reveal themselves by the thing they protect after everything else has been questioned.",
+    tags: ["advaita", "buddhism", "practice"],
+  },
+  {
+    insight: "The self may be an interface, not a thing.",
+    match: ["interface invariant"],
+    plainSummary:
+      "This finding says recurring spiritual insights may come from changing attention, identity, agency, and boundaries, not from proving one shared metaphysical object.",
+    tags: ["consciousness", "self", "method"],
+  },
+  {
+    insight: "What remains may be a crossing, not a thing.",
+    match: ["processual remainder", "barzakh"],
+    plainSummary:
+      "This finding says the remainder after self-emptying may be better understood as a living passage between realities than as a fixed hidden substance.",
+    tags: ["sufism", "advaita", "buddhism"],
+  },
+  {
+    insight: "Time is not the container; it is the showing.",
+    match: ["expressive realism", "being-time"],
+    plainSummary:
+      "This finding says Dogen can be read as treating time as the way things disclose themselves, not as a neutral box that events sit inside.",
+    tags: ["buddhism", "time", "physics"],
+  },
+  {
+    insight: "A model of the self is not the final answer to the self.",
+    match: ["predictive processing", "formal recurrence"],
+    plainSummary:
+      "This finding says scientific models of self-making may repeat the old spiritual question rather than settle it.",
+    tags: ["consciousness", "science", "self"],
+  },
+];
+
+function distillationFor(record: IdeaRecord): Distillation | null {
+  const haystack = `${record.title} ${record.original_claim}`.toLowerCase();
+  return distillations.find((item) => item.match.some((match) => haystack.includes(match))) || null;
+}
+
+const traditionMatchers = [
+  { tag: "advaita", terms: ["advaita", "vedanta", "atman", "brahman", "upanishad", "turiya"] },
+  { tag: "buddhism", terms: ["buddh", "anatta", "anatman", "sunyata", "dogen", "zen", "emptiness"] },
+  { tag: "daoism", terms: ["dao", "wu wei", "zhuangzi", "zuowang"] },
+  { tag: "sufism", terms: ["sufi", "ibn arabi", "fana", "barzakh", "wahdat"] },
+  { tag: "neoplatonism", terms: ["neoplat", "plotinus", "proclus", "the one"] },
+  { tag: "consciousness", terms: ["consciousness", "attention", "self-model", "predictive", "friston", "iit"] },
+  { tag: "time and matter", terms: ["time", "matter", "physics", "field", "quantum", "dogen"] },
+  { tag: "method", terms: ["translation strain", "inferential gap", "comparison", "convergence"] },
+];
+
+function inferTraditionTags(record: IdeaRecord, extraTags: string[] = []): string[] {
+  const haystack = `${record.title} ${record.original_claim} ${record.source_basis.join(" ")}`.toLowerCase();
+  const tags = new Set(extraTags);
+  for (const matcher of traditionMatchers) {
+    if (matcher.terms.some((term) => haystack.includes(term))) {
+      tags.add(matcher.tag);
+    }
+  }
+  if (tags.size === 0) {
+    tags.add("general");
+  }
+  return [...tags].sort();
+}
+
+function insightScore(record: IdeaRecord, promotion: PromotionDecision): number {
+  const scores = record.scores || {};
+  const base =
+    Number(scores.publishability || 0) * 0.3 +
+    Number(scores.generativity || 0) * 0.2 +
+    Number(scores.novelty || 0) * 0.18 +
+    Number(scores.logical_coherence || 0) * 0.14 +
+    Number(scores.counterargument_quality || 0) * 0.1 +
+    Number(scores.source_reliability || 0) * 0.08;
+  const promotionBoost = promotion.synthesisReady ? 0.16 : promotion.publicClaim ? 0.1 : promotion.stage === "review_candidate" ? 0.04 : 0;
+  return Number((base + promotionBoost).toFixed(4));
+}
+
 function markdownSection(markdown: string, heading: string): string | null {
   const lines = markdown.split("\n");
   const target = `## ${heading}`.toLowerCase();
@@ -311,17 +452,54 @@ export function getIdeas(): IdeaView[] {
       const date = record.created_at.slice(0, 10);
       const markdown = ideaMarkdown(record);
       const suffix = record.idea_id ? `-${record.idea_id.slice(0, 6)}` : "";
+      const promotion = decideIdeaPromotion(record, promotionRules);
+      const distillation = distillationFor(record);
+      const traditionTags = inferTraditionTags(record, distillation?.tags || []);
       return {
         ...record,
         date,
         excerpt: excerpt(record.original_claim),
         html: renderMarkdown(markdown),
-        promotion: decideIdeaPromotion(record, promotionRules),
+        insight: distillation?.insight || firstSentence(record.why_it_might_be_new || record.original_claim, 96),
+        insightScore: insightScore(record, promotion),
+        plainSummary:
+          distillation?.plainSummary ||
+          `Plainly put: ${firstSentence(record.original_claim, 210)}`,
+        promotion,
         relativePath: record.path || "",
         slug: `${date}-${slugify(record.title)}${suffix}`,
+        traditionTags,
       };
     })
     .sort((a, b) => b.created_at.localeCompare(a.created_at));
+}
+
+export function getInsights(): InsightView[] {
+  const byInsight = new Map<string, InsightView>();
+  for (const insight of getIdeas()
+    .map((idea) => ({
+      agent: idea.agent,
+      date: idea.date,
+      epistemicLabels: idea.epistemic_labels,
+      ideaType: idea.idea_type,
+      insight: idea.insight,
+      insightScore: idea.insightScore,
+      plainSummary: idea.plainSummary,
+      promotionLabel: idea.promotion.label,
+      promotionStage: idea.promotion.stage,
+      slug: idea.slug,
+      title: idea.title,
+      traditionTags: idea.traditionTags,
+    }))) {
+    const existing = byInsight.get(insight.insight);
+    if (!existing || insight.insightScore > existing.insightScore) {
+      byInsight.set(insight.insight, insight);
+    }
+  }
+
+  return [...byInsight.values()].sort(
+    (a, b) => b.insightScore - a.insightScore || b.date.localeCompare(a.date),
+  );
 }
 
 export function getDailyPosts(): DailyPost[] {

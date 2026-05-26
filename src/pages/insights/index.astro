@@ -1,0 +1,127 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { formatLabel, getInsights } from "../../lib/content";
+
+const insights = getInsights();
+const agents = [...new Set(insights.map((insight) => insight.agent))].sort();
+const stages = [...new Set(insights.map((insight) => insight.promotionStage))].sort();
+const types = [...new Set(insights.map((insight) => insight.ideaType))].sort();
+const labels = [...new Set(insights.flatMap((insight) => insight.epistemicLabels))].sort();
+const traditions = [...new Set(insights.flatMap((insight) => insight.traditionTags))].sort();
+---
+
+<BaseLayout title="Insights">
+  <section class="page-band">
+    <p class="eyebrow">Distilled wisdom</p>
+    <h1>Insights</h1>
+    <p class="lead">
+      Short, plainspoken cards distilled from Lumenary's findings. The deeper reasoning remains in each linked finding.
+    </p>
+  </section>
+
+  <section class="content-section">
+    <form class="insight-filters" id="insight-filters" aria-label="Insight filters">
+      <label>
+        <span>View</span>
+        <select name="best">
+          <option value="">Best first</option>
+          <option value="true">Best only</option>
+        </select>
+      </label>
+      <label>
+        <span>Agent</span>
+        <select name="agent">
+          <option value="">All agents</option>
+          {agents.map((agent) => <option value={agent}>{agent}</option>)}
+        </select>
+      </label>
+      <label>
+        <span>Stage</span>
+        <select name="stage">
+          <option value="">All stages</option>
+          {stages.map((stage) => <option value={stage}>{formatLabel(stage)}</option>)}
+        </select>
+      </label>
+      <label>
+        <span>Type</span>
+        <select name="type">
+          <option value="">All types</option>
+          {types.map((type) => <option value={type}>{formatLabel(type)}</option>)}
+        </select>
+      </label>
+      <label>
+        <span>Tradition</span>
+        <select name="tradition">
+          <option value="">All traditions</option>
+          {traditions.map((tradition) => <option value={tradition}>{formatLabel(tradition)}</option>)}
+        </select>
+      </label>
+      <label>
+        <span>Label</span>
+        <select name="label">
+          <option value="">All labels</option>
+          {labels.map((label) => <option value={label}>{formatLabel(label)}</option>)}
+        </select>
+      </label>
+    </form>
+
+    <div class="insight-grid" id="insight-grid">
+      {insights.map((insight, index) => {
+        const best = index < 6 || insight.promotionStage === "public_claim" || insight.promotionStage === "synthesis_ready";
+        return (
+          <article
+            class="insight-card"
+            data-agent={insight.agent}
+            data-best={best ? "true" : "false"}
+            data-labels={insight.epistemicLabels.join(" ")}
+            data-stage={insight.promotionStage}
+            data-traditions={insight.traditionTags.join(" ")}
+            data-type={insight.ideaType}
+          >
+            <div class="meta-row">
+              <span>{insight.agent}</span>
+              <span>{insight.promotionLabel}</span>
+              <span>{formatLabel(insight.ideaType)}</span>
+            </div>
+            <h2><a href={`/findings/${insight.slug}/`}>{insight.insight}</a></h2>
+            <p>{insight.plainSummary}</p>
+            <div class="label-row">
+              {insight.traditionTags.slice(0, 4).map((tag) => <span>{formatLabel(tag)}</span>)}
+            </div>
+          </article>
+        );
+      })}
+    </div>
+
+    <p class="empty-filter-message" id="empty-filter-message" hidden>No insights match these filters.</p>
+  </section>
+
+  <script>
+    const form = document.querySelector("#insight-filters");
+    const cards = [...document.querySelectorAll(".insight-card")];
+    const empty = document.querySelector("#empty-filter-message");
+
+    function includesToken(value, token) {
+      return !token || ` ${value || ""} `.includes(` ${token} `);
+    }
+
+    function updateInsights() {
+      const data = new FormData(form);
+      let visible = 0;
+      for (const card of cards) {
+        const matches =
+          (!data.get("best") || card.dataset.best === data.get("best")) &&
+          (!data.get("agent") || card.dataset.agent === data.get("agent")) &&
+          (!data.get("stage") || card.dataset.stage === data.get("stage")) &&
+          (!data.get("type") || card.dataset.type === data.get("type")) &&
+          includesToken(card.dataset.traditions, data.get("tradition")) &&
+          includesToken(card.dataset.labels, data.get("label"));
+        card.hidden = !matches;
+        if (matches) visible += 1;
+      }
+      empty.hidden = visible !== 0;
+    }
+
+    form?.addEventListener("change", updateInsights);
+  </script>
+</BaseLayout>

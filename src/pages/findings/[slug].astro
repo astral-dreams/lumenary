@@ -18,11 +18,18 @@ const { idea } = Astro.props;
     <header class="article-header">
       <p class="eyebrow">{idea.agent} / {formatLabel(idea.idea_type)} / {idea.promotion.label}</p>
       <h1>{idea.title}</h1>
-      <p class="lead">{idea.original_claim}</p>
+      <p class="lead">{idea.insight}</p>
       <div class="label-row">
         {idea.epistemic_labels.map((label) => <span>{formatLabel(label)}</span>)}
       </div>
     </header>
+
+    <section class="plain-summary">
+      <p class="eyebrow">At a glance</p>
+      <h2>Plain English</h2>
+      <p>{idea.plainSummary}</p>
+      <p>{idea.original_claim}</p>
+    </section>
 
     <section class="article-section">
       <h2>Why It Might Be New</h2>
