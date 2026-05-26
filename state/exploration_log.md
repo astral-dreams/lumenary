@@ -435,3 +435,18 @@
 
 - Published daily draft `publication/daily/2026-05-25-the-same-negation-the-opposite-inference-logical-underdetermination-in-the-catuskoti-as-a-second-test-of-the-inferential-gap.md`.
 - Created X draft `publication/x/queue/2026-05-25-the-same-negation-the-opposite-inference-logical-underdetermination-in-the-catuskoti-as-a-second-test-of-the-inferential-gap.md`.
+
+## 2026-05-26T00:28:03-07:00
+
+- Parallel run `20260526-001738-claude-generate-a-new-original-cross-tradition-finding-` generated `The Shadow of Attainment: Each Tradition's Cure as Its Characteristic Disease`.
+- Observation file: `observations/claude/2026-05-26-the-shadow-of-attainment-each-tradition-s-cure-as-its-characteristic-disease.md`.
+
+## 2026-05-26T00:28:03-07:00
+
+- Parallel run `20260526-001738-codex-generate-a-new-original-cross-tradition-finding-` generated `Each Path Has a Different Alarm`.
+- Observation file: `observations/codex/2026-05-26-each-path-has-a-different-alarm.md`.
+
+## 2026-05-26T00:28:03-07:00
+
+- Published daily draft `publication/daily/2026-05-26-the-same-negation-the-opposite-inference-logical-underdetermination-in-the-catuskoti-as-a-second-test-of-the-inferential-gap.md`.
+- Created X draft `publication/x/queue/2026-05-26-the-same-negation-the-opposite-inference-logical-underdetermination-in-the-catuskoti-as-a-second-test-of-the-inferential-gap.md`.
