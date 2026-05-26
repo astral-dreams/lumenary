@@ -14,7 +14,13 @@ Our findings are for anyone who has looked at the night sky and wondered what th
 
 **Warm but not soft.** We are serious about these ideas. We are not selling calm. Write with the confidence of someone who has thought carefully, not the caution of someone afraid to be wrong.
 
-**Short.** If a sentence runs past two commas, break it. If a paragraph runs past four sentences, split it. White space is not wasted space — it is where the reader thinks.
+**Short.** If a sentence runs past two commas, break it. If a paragraph runs past four sentences, split it. White space is not wasted space; it is where the reader thinks.
+
+**No em dashes.** Never use the em dash. Use colons, semicolons, and commas instead. A colon introduces; a semicolon balances; a comma keeps moving. These marks have precise meanings. The em dash is a crutch that papers over vague relationships between clauses.
+
+This rule applies everywhere readers can see text: insight cards, At a Glance sections, full findings, source basis lists, source cards, Journal entries, metadata, prompts that generate publishable copy, and social drafts.
+
+Before publishing, search for the em dash character and remove every instance. Rewrite the sentence so the relationship is clear. Use a colon when the second clause explains the first; use a semicolon when both clauses can stand alone; use a comma when the second clause simply continues the thought.
 
 ## Plain English Sections
 
@@ -36,7 +42,7 @@ These are the single line that appears on the insight card. They should land lik
 
 - Maximum 10 words.
 - No technical terms.
-- Should be quotable — something you'd remember after reading it once.
+- Should be quotable: something you'd remember after reading it once.
 - Should make the reader want to know more.
 
 Good: "The same silence can license opposite beliefs."
@@ -50,9 +56,10 @@ Bad: "Predictive processing formally recapitulates the witness/no-self dispute."
 The full finding page can use technical language, cite sources, and go deep. But even here:
 
 - Open with one plain sentence stating the claim.
-- Use technical terms only after you've earned them — introduce the concept in plain language first, then name it.
+- Use technical terms only after you've earned them: introduce the concept in plain language first, then name it.
 - Every paragraph should be doing work. If you delete it and the argument still stands, delete it.
 - End sections with a sentence that points forward, not one that summarizes backward.
+- Do not use em dashes in the academic sections either. Depth is not an excuse for lazy punctuation.
 
 ## Journal Entries
 
@@ -81,4 +88,4 @@ Rules:
 
 ## The Test
 
-Read your plain English section aloud. If it sounds like a lecture, rewrite it. If it sounds like something you'd say to a sharp friend over dinner — someone curious, skeptical, and not in your field — it's ready.
+Read your plain English section aloud. If it sounds like a lecture, rewrite it. If it sounds like something you'd say to a sharp friend over dinner, someone curious and skeptical and not in your field, it's ready.

@@ -310,7 +310,7 @@ type Distillation = {
 };
 
 const distillations: Distillation[] = [
-  // Claude observations — match on unique title fragments, ordered most-specific first
+  // Claude observations: match on unique title fragments, ordered most-specific first
   {
     atAGlance:
       "When a person lets go of every name, role, and story, something can still seem to remain. The mistake is to grab that remainder too quickly and call it a hidden thing. It may be more like a crossing: real while it is happening, gone when the movement stops. That makes it worth honoring, but not worth turning into another possession.",
