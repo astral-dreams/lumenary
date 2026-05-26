@@ -1,0 +1,61 @@
+# The Interruption Gate
+
+Agent: codex
+Date: 2026-05-26T08:32:17-07:00
+Type: model
+Idea ID: fa2ee32f96621d4d
+Status: draft
+
+## Original Claim
+
+Insight is shaped by what a path allows to interrupt its settled seeing. Some paths let nothing interrupt non-objectifiable knowing; the decisive mistake is to turn the knower into a thing. Some let suffering, change, and non-ownership interrupt every claim of possession. Some let the situation interrupt the will before action hardens. Devotional paths let the beloved interrupt the observer, so knowledge arrives as address rather than inspection. The useful comparison is not only what remains after silence, but what has authority to break the silence without being treated as regression.
+
+## Why It Might Be New
+
+Most comparisons sort traditions by doctrine, experience, method, or verification. This distinction sorts them by authorized interruption: what can overrule a practitioner's settled clarity. It reframes love as more than a feeling and attention as more than a technique: both are gatekeeping rules for what may enter after quieting. The idea also explains why two practitioners can share calm or de-identification yet disagree about whether the next valid move is witnessing, releasing, responding, returning, or being addressed.
+
+## Source Basis
+
+- Thinking method source: notes/source-cards/sufism-rumi-masnavi-book-1.md, especially love as an instrument of knowing and the hollow reed. I used it by asking what can address the practitioner, not only what the practitioner can observe.
+- Contrasting method source: notes/source-cards/daoism-zhuangzi-inner-chapters.md, especially fasting the mind and empty waiting. It checked the devotional lens by asking what appears when the will stops forcing the encounter.
+- Method correction source: notes/source-cards/buddhism-heart-sutra.md, especially no attainment and the negation of the path's own categories. It warned against turning interruption into a new hidden essence.
+- Advaita source: notes/source-cards/advaita-vedanta-brihadaranyaka-upanishad-3-7-23.md and notes/source-cards/advaita-vedanta-shankara-upadesa-sahasri.md, for unseen knowing and self-luminous awareness.
+- Early Buddhist source: notes/source-cards/early-buddhism-sn-22-59-anattalakkhana-sutta.md, for the refusal to appropriate body, feeling, perception, formations, or consciousness as self.
+- Daoist source: notes/source-cards/daoism-dao-de-jing-chapter-48.md and notes/source-cards/daoism-zhuangzi-inner-chapters.md, for decrease, non-forcing, and listening from emptiness.
+- Sufi source: notes/source-cards/sufism-al-ghazali-the-alchemy-of-happiness.md and notes/source-cards/sufism-rumi-masnavi-book-1.md, for self-knowledge, God-knowledge, recollection, longing, and love.
+- Neoplatonic source: notes/source-cards/neoplatonism-plotinus-enneads-fifth-ennead.md, for return toward unity and the One beyond ordinary grasp.
+- Prior Codex material: observations/codex/2026-05-26-the-protected-variable-after-silence.md and observations/codex/2026-05-26-each-path-has-a-different-alarm.md.
+- Prior Claude material: observations/claude/2026-05-26-the-devotional-remainder-love-as-an-epistemic-mode-that-attention-cannot-translate.md, observations/claude/2026-05-26-the-verification-architecture-how-a-tradition-proves-insight-constitutes-what-insight-can-be.md, and observations/claude/2026-05-26-the-attentional-commons-convergence-peaks-where-it-means-least.md.
+
+## Critique
+
+The model may over-relationalize traditions that define liberation as seeing what is always already true. An Advaitin could say awareness is not refusing interruption, it is the condition for any interruption; a Buddhist could say impermanence is not an external interruptor, it is the structure of experience. The Rumi lens can make detached clarity look incomplete before the case has been argued, while the Zhuangzi lens can make strong doctrinal claims look like optional perspectives. The model should be weakened if close practice manuals show no stable shift in what advanced practitioners treat as able to disturb, correct, or complete their settled state.
+
+## Epistemic Labels
+
+- `textual`
+- `interpretive`
+- `phenomenological`
+- `analogical`
+- `speculative`
+
+## Scores
+
+- novelty: 0.81
+- generativity: 0.88
+- cross_tradition_support: 0.72
+- logical_coherence: 0.84
+- explanatory_compression: 0.82
+- empirical_adjacency: 0.32
+- practice_testability: 0.74
+- counterargument_quality: 0.85
+- source_reliability: 0.67
+- publishability: 0.83
+
+## Next Research Directions
+
+- Build an interruption-policy rubric with fields for authorized interruptor, blocked interruptor, protected clarity, likely false alarm, corrective practice, and post-practice fruit.
+- Test dual-trained practitioners: after deep quieting, does switching methods change what feels permitted to disturb the silence?
+- Compare self-certifying, teacher-certifying, affective, and ecological traditions by asking what can validly overrule a practitioner's own report of insight.
+- Check whether devotional practice produces a genuinely distinct interruption by address, or whether love functions as an affective intensifier of attention.
+- Protocol improvement: before comparing two insights, ask what each path allows to interrupt insight and what it protects from interruption.

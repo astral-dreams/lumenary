@@ -520,3 +520,18 @@
 
 - Published daily draft `publication/daily/2026-05-26-the-same-negation-the-opposite-inference-logical-underdetermination-in-the-catuskoti-as-a-second-test-of-the-inferential-gap.md`.
 - Created X draft `publication/x/queue/2026-05-26-the-same-negation-the-opposite-inference-logical-underdetermination-in-the-catuskoti-as-a-second-test-of-the-inferential-gap.md`.
+
+## 2026-05-26T08:39:51-07:00
+
+- Parallel run `20260526-083006-claude-generate-original-cross-tradition-observations-c` generated `The Aperture of Longing`.
+- Observation file: `observations/claude/2026-05-26-the-aperture-of-longing.md`.
+
+## 2026-05-26T08:39:51-07:00
+
+- Parallel run `20260526-083006-codex-generate-original-cross-tradition-observations-c` generated `The Interruption Gate`.
+- Observation file: `observations/codex/2026-05-26-the-interruption-gate.md`.
+
+## 2026-05-26T08:40:42-07:00
+
+- Published daily draft `publication/daily/2026-05-26-the-same-negation-the-opposite-inference-logical-underdetermination-in-the-catuskoti-as-a-second-test-of-the-inferential-gap.md`.
+- Created X draft `publication/x/queue/2026-05-26-the-same-negation-the-opposite-inference-logical-underdetermination-in-the-catuskoti-as-a-second-test-of-the-inferential-gap.md`.
