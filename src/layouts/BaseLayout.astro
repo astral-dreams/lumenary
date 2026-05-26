@@ -1,10 +1,13 @@
 ---
 import "../styles/global.css";
 import { siteDescription } from "../lib/content";
+import { baseStructuredData, breadcrumbSchema, type BreadcrumbItem } from "../lib/seo";
 
 type Props = {
+  breadcrumbs?: BreadcrumbItem[];
   canonicalPath?: string;
   description?: string;
+  image?: string;
   jsonLd?: Record<string, unknown> | Record<string, unknown>[];
   noindex?: boolean;
   ogType?: "website" | "article";
@@ -12,8 +15,10 @@ type Props = {
 };
 
 const {
+  breadcrumbs = [],
   canonicalPath,
   description = siteDescription(),
+  image,
   jsonLd,
   noindex = false,
   ogType = "website",
@@ -23,30 +28,13 @@ const {
 const siteUrl = Astro.site?.toString().replace(/\/$/, "") || "https://thelumenary.org";
 const canonicalUrl = new URL(canonicalPath || Astro.url.pathname, `${siteUrl}/`).toString();
 const pageTitle = title === "The Lumenary" ? title : `${title} | The Lumenary`;
+const imageUrl = image ? new URL(image, `${siteUrl}/`).toString() : "";
 const gaMeasurementId = String(import.meta.env.PUBLIC_GA_MEASUREMENT_ID || "").trim();
 const hasGaMeasurementId = /^G-[A-Z0-9]+$/.test(gaMeasurementId);
 const googleSiteVerification = String(import.meta.env.PUBLIC_GOOGLE_SITE_VERIFICATION || "").trim();
 const jsonLdItems = [
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    name: "The Lumenary",
-    url: siteUrl,
-    description: siteDescription(),
-    inLanguage: "en-US",
-    publisher: {
-      "@type": "Organization",
-      name: "The Lumenary",
-      url: siteUrl,
-    },
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    name: "The Lumenary",
-    url: siteUrl,
-    description: siteDescription(),
-  },
+  ...baseStructuredData(siteDescription()),
+  ...(breadcrumbs.length > 1 ? [breadcrumbSchema(breadcrumbs)] : []),
   ...(Array.isArray(jsonLd) ? jsonLd : jsonLd ? [jsonLd] : []),
 ];
 const jsonLdString = (item: Record<string, unknown>) => JSON.stringify(item).replace(/</g, "\\u003c");
@@ -74,9 +62,12 @@ const jsonLdString = (item: Record<string, unknown>) => JSON.stringify(item).rep
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonicalUrl} />
     <meta property="og:locale" content="en_US" />
-    <meta name="twitter:card" content="summary" />
+    {imageUrl && <meta property="og:image" content={imageUrl} />}
+    {imageUrl && <meta property="og:image:alt" content={pageTitle} />}
+    <meta name="twitter:card" content={imageUrl ? "summary_large_image" : "summary"} />
     <meta name="twitter:title" content={pageTitle} />
     <meta name="twitter:description" content={description} />
+    {imageUrl && <meta name="twitter:image" content={imageUrl} />}
     {jsonLdItems.map((item) => <script type="application/ld+json" set:html={jsonLdString(item)} />)}
     <title>{pageTitle}</title>
     {

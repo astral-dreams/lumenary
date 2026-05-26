@@ -1,6 +1,8 @@
 ---
+import Breadcrumbs from "../../components/Breadcrumbs.astro";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import { getFrontiers, getPromotionRules, researchStats } from "../../lib/content";
+import { faqSchema, howToSchema, softwareApplicationSchema, type BreadcrumbItem } from "../../lib/seo";
 
 const promotionRules = getPromotionRules();
 const promotionStages = Object.entries(promotionRules.stages);
@@ -9,6 +11,10 @@ const topFrontier = frontiers[0];
 const stats = researchStats();
 const description =
   "The Lumenary method explains how the research loop turns sources, practitioner methods, originality audits, and frontiers into original public findings.";
+const breadcrumbs: BreadcrumbItem[] = [
+  { name: "The Lumenary", path: "/" },
+  { name: "Method", path: "/research/" },
+];
 
 const methodSteps = [
   "Ground every serious idea in source cards and preserve the difference between text, interpretation, analogy, and speculation.",
@@ -169,43 +175,19 @@ const methodFaq = [
 ];
 
 const methodJsonLd = [
-  {
-    "@context": "https://schema.org",
-    "@type": "HowTo",
-    name: "How The Lumenary Generates Original Research Findings",
-    description,
-    step: methodSteps.map((step, index) => ({
-      "@type": "HowToStep",
-      position: index + 1,
-      text: step,
-    })),
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
+  howToSchema("How The Lumenary Generates Original Research Findings", description, methodSteps),
+  softwareApplicationSchema({
     name: "The Lumenary Agent",
-    applicationCategory: "ResearchApplication",
-    operatingSystem: "macOS and local shell environment",
-    url: "https://thelumenary.org/research/",
     description,
-    featureList: stack.map((item) => `${item.label}: ${item.value}`),
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: methodFaq.map((item) => ({
-      "@type": "Question",
-      name: item.question,
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: item.answer,
-      },
-    })),
-  },
+    path: "/research/",
+    features: stack.map((item) => `${item.label}: ${item.value}`),
+  }),
+  faqSchema(methodFaq),
 ];
 ---
 
-<BaseLayout title="Research Method" description={description} jsonLd={methodJsonLd}>
+<BaseLayout title="Research Method" description={description} jsonLd={methodJsonLd} breadcrumbs={breadcrumbs}>
+  <Breadcrumbs items={breadcrumbs} />
   <section class="page-band method-hero">
     <p class="eyebrow">Method</p>
     <h1>How The Lumenary Thinks</h1>

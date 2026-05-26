@@ -1,13 +1,31 @@
 ---
+import Breadcrumbs from "../../components/Breadcrumbs.astro";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import { getFrontiers, researchStats } from "../../lib/content";
 import type { FrontierView } from "../../lib/content";
+import { collectionPageSchema, faqSchema, itemListSchema, type BreadcrumbItem } from "../../lib/seo";
 
 const frontiers = getFrontiers();
 const stats = researchStats();
 const activeFrontiers = frontiers.filter((frontier) => frontier.status === "active");
 const description =
   "The Lumenary Frontiers page shows the live questions that steer the recursive research loop, including anomalies, tests, source gaps, and the next move.";
+const breadcrumbs: BreadcrumbItem[] = [
+  { name: "The Lumenary", path: "/" },
+  { name: "Frontiers", path: "/frontiers/" },
+];
+const frontierFaq = [
+  {
+    question: "What is a Lumenary frontier?",
+    answer:
+      "A frontier is a live research agenda that gathers related findings, prior art, anomalies, source gaps, and the next test.",
+  },
+  {
+    question: "How do frontiers steer the research loop?",
+    answer:
+      "The engine uses frontiers to turn critique into the next prompt, so repeated questions compound instead of becoming disconnected findings.",
+  },
+];
 
 function actionLabel(value: string): string {
   return value.replace(/_/g, " ");
@@ -21,16 +39,27 @@ function primaryFinding(frontier: FrontierView) {
   return frontier.ideaLinks.find((idea) => idea.idea_id === publicClaim.idea_id) || frontier.ideaLinks[0] || null;
 }
 
-const jsonLd = {
-  "@context": "https://schema.org",
-  "@type": "CollectionPage",
-  name: "The Lumenary Frontiers",
-  description,
-  about: frontiers.slice(0, 8).map((frontier) => frontier.title),
-};
+const jsonLd = [
+  collectionPageSchema({
+    name: "The Lumenary Frontiers",
+    path: "/frontiers/",
+    description,
+    about: frontiers.slice(0, 8).map((frontier) => frontier.title),
+    mainEntity: itemListSchema(
+      "The Lumenary Active Frontiers",
+      "/frontiers/",
+      frontiers.slice(0, 20).map((frontier) => ({
+        name: frontier.title,
+        path: `/frontiers/#${frontier.frontier_id}`,
+      })),
+    ),
+  }),
+  faqSchema(frontierFaq),
+];
 ---
 
-<BaseLayout title="Frontiers" description={description} jsonLd={jsonLd}>
+<BaseLayout title="Frontiers" description={description} jsonLd={jsonLd} breadcrumbs={breadcrumbs}>
+  <Breadcrumbs items={breadcrumbs} />
   <section class="page-band frontiers-hero">
     <p class="eyebrow">Frontiers</p>
     <h1>The Questions Steering The Lumenary</h1>
@@ -63,6 +92,14 @@ const jsonLd = {
         originality audits, source gaps, and publication history, then chooses the next research question
         that should receive attention. The goal is not more output. The goal is compounding thought.
       </p>
+      <div class="answer-grid">
+        {frontierFaq.map((item) => (
+          <article>
+            <h3>{item.question}</h3>
+            <p>{item.answer}</p>
+          </article>
+        ))}
+      </div>
       <a class="button" href="/research/#frontier-method">See how frontiers steer the method</a>
     </div>
   </section>
@@ -82,7 +119,7 @@ const jsonLd = {
           frontier.tests.cross_domain?.[0] ||
           frontier.next_prompt;
         return (
-          <article class={`frontier-card frontier-card-${frontier.status}`}>
+          <article id={frontier.frontier_id} class={`frontier-card frontier-card-${frontier.status}`}>
             <div class="frontier-card-head">
               <span>{frontier.statusLabel}</span>
               <strong>{Math.round(Number(frontier.priority || 0) * 100)}%</strong>

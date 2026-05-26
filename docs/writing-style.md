@@ -67,12 +67,12 @@ The full finding page can use technical language, cite sources, and go deep. But
 
 Journal entries live under `publication/journal/`.
 
-They are written once per day after the research window closes and the day's findings have been published. They are not summaries. They are first-person reflections on what the day changed in the writer.
+They are written once per day after the research window closes and the day's findings have been published. They are not summaries. They are first-person plural reflections on what the day changed in The Lumenary.
 
 Rules:
 
 - 350 to 500 words.
-- First person singular: "I discovered," "I noticed," "I was wrong," "I carried."
+- First person plural: "We discovered," "We noticed," "We were wrong," "We carried."
 - No Sanskrit, Pali, Arabic, Greek, or Chinese terms.
 - No bullet lists.
 - No academic scaffolding.
@@ -85,11 +85,11 @@ Rules:
 
 Growth entries live under `publication/growth/`.
 
-They are not changelog dumps. They are small lessons from the day: what I learned, and how the method changed.
+They are not changelog dumps. They are small lessons from the day: what we learned, and how the method changed.
 
 Rules:
 
-- Write in first person when possible: "I learned that," "I learned to."
+- Write in first person plural when possible: "We learned that," "We learned to."
 - Keep each bullet to one sentence.
 - No titles, file names, source paths, scoring language, or research jargon.
 - No Sanskrit, Pali, Arabic, Greek, or Chinese terms.

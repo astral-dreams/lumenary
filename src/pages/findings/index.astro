@@ -1,6 +1,8 @@
 ---
+import Breadcrumbs from "../../components/Breadcrumbs.astro";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import { getIdeas } from "../../lib/content";
+import { collectionPageSchema, faqSchema, itemListSchema, type BreadcrumbItem } from "../../lib/seo";
 
 const ideas = getIdeas();
 const description =
@@ -27,40 +29,30 @@ const findingsFaq = [
       "It shows whether the audit found close prior work, a new synthesis, or a stronger candidate discovery, and how confident the audit is.",
   },
 ];
+const breadcrumbs: BreadcrumbItem[] = [
+  { name: "The Lumenary", path: "/" },
+  { name: "Findings", path: "/findings/" },
+];
 const findingsJsonLd = [
-  {
-    "@context": "https://schema.org",
-    "@type": "CollectionPage",
+  collectionPageSchema({
     name: "The Lumenary Findings",
-    url: "https://thelumenary.org/findings/",
+    path: "/findings/",
     description,
-    mainEntity: {
-      "@type": "ItemList",
-      numberOfItems: ideas.length,
-      itemListElement: ideas.slice(0, 12).map((idea, index) => ({
-        "@type": "ListItem",
-        position: index + 1,
+    mainEntity: itemListSchema(
+      "The Lumenary Findings",
+      "/findings/",
+      ideas.slice(0, 20).map((idea) => ({
         name: idea.title,
-        url: `https://thelumenary.org/findings/${idea.slug}/`,
+        path: `/findings/${idea.slug}/`,
       })),
-    },
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: findingsFaq.map((item) => ({
-      "@type": "Question",
-      name: item.question,
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: item.answer,
-      },
-    })),
-  },
+    ),
+  }),
+  faqSchema(findingsFaq),
 ];
 ---
 
-<BaseLayout title="Findings" description={description} jsonLd={findingsJsonLd}>
+<BaseLayout title="Findings" description={description} jsonLd={findingsJsonLd} breadcrumbs={breadcrumbs}>
+  <Breadcrumbs items={breadcrumbs} />
   <section class="page-band">
     <p class="eyebrow">Attributed observations</p>
     <h1>Findings</h1>
@@ -71,7 +63,6 @@ const findingsJsonLd = [
   </section>
   <section class="content-section">
     <div class="answer-panel">
-      <p class="eyebrow">Direct answer</p>
       <h2>What Are These Findings?</h2>
       <p>
         Each finding is an original claim under critique. It shows what informed the idea, what the originality
@@ -99,7 +90,7 @@ const findingsJsonLd = [
                 : "Originality: pending"}
             </div>
           </div>
-          <h2><a href={`/findings/${idea.slug}/`}>{idea.title}</a></h2>
+          <h3><a href={`/findings/${idea.slug}/`}>{idea.title}</a></h3>
           <p>{idea.atAGlance || idea.excerpt}</p>
           <div class="finding-card-audit">
             <span>{idea.promotion.label}</span>

@@ -1,5 +1,5 @@
 ---
-import { formatLabel, groupBy, type SourceCard } from "../lib/content";
+import { formatLabel, type SourceCard } from "../lib/content";
 
 type Props = {
   sources: SourceCard[];
@@ -20,20 +20,52 @@ const sourceDomains = [
     label: "Daoism",
   },
   {
+    aliases: ["sufi", "ibn", "islamic", "rumi", "hallaj", "ghazali"],
+    label: "Sufism",
+  },
+  {
     aliases: ["neoplat", "plotinus", "proclus"],
     label: "Neoplatonism",
   },
   {
-    aliases: ["sufi", "ibn", "islamic"],
-    label: "Sufism",
+    aliases: ["consciousness-science", "consciousness", "iit", "phenomenology"],
+    label: "Consciousness Science",
   },
   {
-    aliases: ["consciousness", "cognitive", "computational", "neuroscience", "iit", "phenomenology"],
-    label: "Consciousness",
+    aliases: ["cognitive-science", "cognitive", "hoffman"],
+    label: "Cognitive Science",
   },
   {
-    aliases: ["physics", "time", "matter", "quantum", "gravity", "cosmology", "particle", "energy"],
-    label: "Time & Matter",
+    aliases: ["computational-neuroscience", "neuroscience", "friston", "predictive"],
+    label: "Neuroscience",
+  },
+  {
+    aliases: ["high-energy-physics", "particle-data", "cern-physics", "standard-model"],
+    label: "High Energy Physics",
+  },
+  {
+    aliases: ["physics-time", "time-reversal", "minkowski", "einstein", "noether"],
+    label: "Physics Of Time",
+  },
+  {
+    aliases: ["matter-theory", "higgs", "strong-force", "quark", "mass-generation"],
+    label: "Matter Theory",
+  },
+  {
+    aliases: ["quantum-gravity-time", "quantum-gravity", "wheeler-dewitt", "rovelli", "page-and-wootters"],
+    label: "Quantum Gravity",
+  },
+  {
+    aliases: ["matter-antimatter", "antimatter", "baryon", "sakharov"],
+    label: "Matter-Antimatter",
+  },
+  {
+    aliases: ["particle-cosmology", "cosmology", "planck"],
+    label: "Particle Cosmology",
+  },
+  {
+    aliases: ["theoretical-physics", "physics-measurement", "physics", "quantum"],
+    label: "Physics",
   },
   {
     aliases: ["project", "method", "lumenary"],
@@ -42,11 +74,19 @@ const sourceDomains = [
 ];
 
 function sourceDomain(source: SourceCard): string {
-  const text = `${source.tradition} ${source.title}`.toLowerCase();
+  const text = `${source.tradition} ${source.source_id} ${source.title} ${source.notes}`.toLowerCase();
   return sourceDomains.find((domain) => domain.aliases.some((alias) => text.includes(alias)))?.label || "Other";
 }
 
-const groups = groupBy(sources, sourceDomain);
+const groupsByDomain = new Map<string, SourceCard[]>();
+for (const source of sources) {
+  const domain = sourceDomain(source);
+  groupsByDomain.set(domain, [...(groupsByDomain.get(domain) || []), source]);
+}
+const groups = [
+  ...sourceDomains.map((domain) => [domain.label, groupsByDomain.get(domain.label) || []] as const),
+  ["Other", groupsByDomain.get("Other") || []] as const,
+].filter(([, cards]) => cards.length > 0);
 const max = Math.max(...groups.map(([, cards]) => cards.length), 1);
 const total = sources.length;
 ---

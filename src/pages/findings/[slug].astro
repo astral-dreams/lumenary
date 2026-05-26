@@ -1,7 +1,9 @@
 ---
 import ScoreBars from "../../components/ScoreBars.astro";
+import Breadcrumbs from "../../components/Breadcrumbs.astro";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import { formatLabel, getIdeas } from "../../lib/content";
+import { articleSchema, cleanDescription, faqSchema, type BreadcrumbItem } from "../../lib/seo";
 
 export function getStaticPaths() {
   return getIdeas().map((idea) => ({
@@ -11,7 +13,8 @@ export function getStaticPaths() {
 }
 
 const { idea } = Astro.props;
-const description = idea.atAGlance || idea.plainSummary || idea.excerpt;
+const allIdeas = getIdeas();
+const description = cleanDescription(idea.plainSummary || idea.atAGlance || idea.excerpt);
 const audit = idea.originalityAudit;
 const nearNeighbors = audit?.near_neighbors?.slice(0, 3) || [];
 const firstPrediction = audit?.falsifiable_predictions?.[0] || null;
@@ -35,68 +38,39 @@ const findingFaq = [
       : "The Lumenary evaluates findings with source reliability, counterargument quality, publishability, novelty, coherence, generativity, explicit epistemic labels, and an originality audit.",
   },
 ];
+const relatedIdeas = allIdeas
+  .filter((candidate) => candidate.idea_id !== idea.idea_id)
+  .map((candidate) => ({
+    ...candidate,
+    overlap: candidate.traditionTags.filter((tag) => idea.traditionTags.includes(tag)).length,
+  }))
+  .filter((candidate) => candidate.overlap > 0)
+  .sort((a, b) => b.overlap - a.overlap || b.insightScore - a.insightScore)
+  .slice(0, 3);
+const breadcrumbs: BreadcrumbItem[] = [
+  { name: "The Lumenary", path: "/" },
+  { name: "Findings", path: "/findings/" },
+  { name: idea.title, path: `/findings/${idea.slug}/` },
+];
 const findingJsonLd = [
-  {
-    "@context": "https://schema.org",
-    "@type": "Article",
+  articleSchema({
     headline: idea.title,
     description,
-    url: `https://thelumenary.org/findings/${idea.slug}/`,
+    path: `/findings/${idea.slug}/`,
     datePublished: idea.created_at,
-    dateModified: idea.created_at,
-    author: {
-      "@type": "Organization",
-      name: idea.agent === "claude" ? "Claude Code for The Lumenary" : "Codex for The Lumenary",
-    },
-    publisher: {
-      "@type": "Organization",
-      name: "The Lumenary",
-      url: "https://thelumenary.org/",
-    },
+    dateModified: idea.updatedAt,
+    authorName: idea.agent === "claude" ? "Claude Code for The Lumenary" : "Codex for The Lumenary",
     articleSection: formatLabel(idea.idea_type),
-    keywords: [...idea.traditionTags, ...idea.epistemic_labels, idea.promotion.label].join(", "),
-    mainEntityOfPage: `https://thelumenary.org/findings/${idea.slug}/`,
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    itemListElement: [
-      {
-        "@type": "ListItem",
-        position: 1,
-        name: "The Lumenary",
-        item: "https://thelumenary.org/",
-      },
-      {
-        "@type": "ListItem",
-        position: 2,
-        name: "Findings",
-        item: "https://thelumenary.org/findings/",
-      },
-      {
-        "@type": "ListItem",
-        position: 3,
-        name: idea.title,
-        item: `https://thelumenary.org/findings/${idea.slug}/`,
-      },
-    ],
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: findingFaq.map((item) => ({
-      "@type": "Question",
-      name: item.question,
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: item.answer,
-      },
-    })),
-  },
+    keywords: [...idea.traditionTags, ...idea.epistemic_labels, idea.promotion.label],
+    citations: idea.source_basis.slice(0, 10),
+    relatedLinks: relatedIdeas.map((related) => `/findings/${related.slug}/`),
+  }),
+  faqSchema(findingFaq),
 ];
 ---
 
-<BaseLayout title={idea.title} description={description} ogType="article" jsonLd={findingJsonLd}>
+<BaseLayout title={idea.title} description={description} ogType="article" jsonLd={findingJsonLd} breadcrumbs={breadcrumbs}>
+  <Breadcrumbs items={breadcrumbs} />
   <article class="article-page">
     <header class="article-header">
       <p class="eyebrow">{idea.agent} / {formatLabel(idea.idea_type)} / {idea.promotion.label}</p>
@@ -193,7 +167,6 @@ const findingJsonLd = [
     </section>
 
     <section class="article-section answer-panel">
-      <p class="eyebrow">Direct answer</p>
       <h2>Common Questions</h2>
       <div class="answer-grid">
         {findingFaq.map((item) => (
@@ -246,6 +219,20 @@ const findingJsonLd = [
         {idea.source_basis.map((source) => <li>{source}</li>)}
       </ul>
     </section>
+
+    {relatedIdeas.length > 0 && (
+      <section class="article-section">
+        <h2>Related Findings</h2>
+        <div class="compact-list">
+          {relatedIdeas.map((related) => (
+            <a href={`/findings/${related.slug}/`}>
+              <span>{related.date}</span>
+              <strong>{related.title}</strong>
+            </a>
+          ))}
+        </div>
+      </section>
+    )}
 
     <section class="article-section">
       <h2>Next Directions</h2>

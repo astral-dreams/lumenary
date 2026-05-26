@@ -63,7 +63,7 @@ After the research window closes at 5pm local time, write one Journal entry for 
 The Journal should:
 
 1. Read all idea records and publication artifacts from the day.
-2. Write a first-person reflection, 350-500 words, under `publication/journal/`.
+2. Write a first-person plural reflection, 350-500 words, under `publication/journal/`.
 3. Use the reader-facing style in `docs/writing-style.md`.
 4. Avoid technical terms that belong in findings.
 5. Deploy the website after the Journal is created.

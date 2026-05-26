@@ -140,6 +140,7 @@ export type IdeaView = IdeaRecord & {
   originalClaimHtml: string;
   slug: string;
   traditionTags: string[];
+  updatedAt: string;
   whyItMightBeNewHtml: string;
 };
 
@@ -1013,6 +1014,19 @@ export function getIdeas(): IdeaView[] {
       const traditionTags = inferTraditionTags(record, distillation?.tags || []);
       const plainSummary = distillation?.plainSummary || firstSentence(record.original_claim, 210);
       const atAGlance = distillation?.atAGlance || plainSummary;
+      const originalityAudit = audits.get(record.idea_id) || null;
+      const createdAtMs = Date.parse(record.created_at);
+      const observationUpdated = record.path && existsSync(join(root, record.path))
+        ? statSync(join(root, record.path)).mtimeMs
+        : createdAtMs;
+      const auditUpdated = originalityAudit?.created_at ? Date.parse(originalityAudit.created_at) : 0;
+      const updatedAt = new Date(
+        Math.max(
+          Number.isFinite(observationUpdated) ? observationUpdated : 0,
+          Number.isFinite(auditUpdated) ? auditUpdated : 0,
+          Number.isFinite(createdAtMs) ? createdAtMs : 0,
+        ),
+      ).toISOString();
       return {
         ...record,
         atAGlance: cleanPlainSummary(atAGlance),
@@ -1024,13 +1038,14 @@ export function getIdeas(): IdeaView[] {
         insight: distillation?.insight || firstSentence(record.why_it_might_be_new || record.original_claim, 96),
         insightScore: insightScore(record, promotion),
         legacySlugs: legacySlug === slug ? [] : [legacySlug],
-        originalityAudit: audits.get(record.idea_id) || null,
+        originalityAudit,
         originalClaimHtml: renderMarkdown(record.original_claim),
         plainSummary: cleanPlainSummary(plainSummary),
         promotion,
         relativePath: record.path || "",
         slug,
         traditionTags,
+        updatedAt,
         whyItMightBeNewHtml: renderMarkdown(record.why_it_might_be_new),
       };
     })

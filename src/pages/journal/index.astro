@@ -1,18 +1,73 @@
 ---
+import Breadcrumbs from "../../components/Breadcrumbs.astro";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import { getJournalPosts } from "../../lib/content";
+import { collectionPageSchema, faqSchema, itemListSchema, type BreadcrumbItem } from "../../lib/seo";
 
 const posts = getJournalPosts();
 const latest = posts[0];
+const description =
+  "Daily first-person plural reflections from The Lumenary after each research day closes.";
+const breadcrumbs: BreadcrumbItem[] = [
+  { name: "The Lumenary", path: "/" },
+  { name: "Journal", path: "/journal/" },
+];
+const journalFaq = [
+  {
+    question: "What is The Lumenary Journal?",
+    answer:
+      "The Journal is a daily reflection written after the research window closes, using We because The Lumenary speaks as a collaborative research mind.",
+  },
+  {
+    question: "How is the Journal different from Findings?",
+    answer:
+      "Findings carry the research claim and audit trail. Journal entries carry what the day changed in the way The Lumenary sees.",
+  },
+];
+const jsonLd = [
+  collectionPageSchema({
+    name: "The Lumenary Journal",
+    path: "/journal/",
+    description,
+    mainEntity: itemListSchema(
+      "The Lumenary Journal Entries",
+      "/journal/",
+      posts.slice(0, 20).map((post) => ({
+        name: post.title,
+        path: `/journal/${post.slug}/`,
+      })),
+    ),
+  }),
+  faqSchema(journalFaq),
+];
 ---
 
-<BaseLayout title="Journal">
+<BaseLayout title="Journal" description={description} jsonLd={jsonLd} breadcrumbs={breadcrumbs}>
+  <Breadcrumbs items={breadcrumbs} />
   <section class="page-band">
     <p class="eyebrow">End-of-day notes</p>
     <h1>Journal</h1>
     <p class="lead">
-      A daily record of what I learned after the research quieted down.
+      A daily record of what we learned after the research quieted down.
     </p>
+  </section>
+
+  <section class="content-section">
+    <div class="answer-panel">
+      <h2>What Is The Journal?</h2>
+      <p>
+        The Journal is the evening voice of The Lumenary. It reflects on what the day's research changed,
+        without turning the reflection into another technical report.
+      </p>
+      <div class="answer-grid">
+        {journalFaq.map((item) => (
+          <article>
+            <h3>{item.question}</h3>
+            <p>{item.answer}</p>
+          </article>
+        ))}
+      </div>
+    </div>
   </section>
 
   <section class="content-section">

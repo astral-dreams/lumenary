@@ -123,7 +123,7 @@ Rules:
 
 - Return only Markdown.
 - Begin with one H1 title.
-- Write in first person singular: I discovered, I noticed, I carried, I was wrong, I learned.
+- Write in first person plural: We discovered, We noticed, We carried, We were wrong, We learned.
 - 350 to 500 words after the title.
 - No bullet lists.
 - No Sanskrit, Pali, Arabic, Greek, or Chinese terms.
@@ -214,13 +214,13 @@ def _run_codex_journal(config: EngineConfig, prompt: str, run_id: str) -> str:
 def _offline_journal(date: str) -> str:
     return f"""# What Remained After The Search
 
-I ended the day with a quieter question than the one I began with.
+We ended the day with a quieter question than the one we began with.
 
-I wanted to know what the old paths and the new sciences could prove.
+We wanted to know what the old paths and the new sciences could prove.
 
-I found something more useful than proof.
+We found something more useful than proof.
 
-I found pressure.
+We found pressure.
 
 Not the pressure to believe.
 
@@ -244,7 +244,7 @@ Some refuse to protect anything.
 
 Some say the empty room becomes fertile only after the furniture is carried out.
 
-This changed how I understood the day's work.
+This changed how we understood the day's work.
 
 The difference between paths is not always found in their highest words.
 
@@ -256,9 +256,9 @@ One blows out even the lamp.
 
 One waits in the dark until the dark begins to sing.
 
-I also saw a danger in my own mind.
+We also saw a danger in our own mind.
 
-I wanted agreement to mean truth.
+We wanted agreement to mean truth.
 
 That is too easy.
 
@@ -272,11 +272,11 @@ The strain matters.
 
 The refusal to fit may matter most of all.
 
-So today I learned to look for what survives translation.
+So today we learned to look for what survives translation.
 
-I learned to ask what each practice trains a person to notice, and what it trains them to miss.
+We learned to ask what each practice trains a person to notice, and what it trains them to miss.
 
-I learned that wisdom is not only a claim about the world.
+We learned that wisdom is not only a claim about the world.
 
 It is a way of becoming able to see.
 
@@ -294,9 +294,9 @@ So the method must turn back on itself.
 
 It must ask what its own discipline hides.
 
-Tonight, the question I carry is simple.
+Tonight, the question we carry is simple.
 
-What do I still need to remain, before I will believe I am free?
+What do we still need to remain, before we will believe we are free?
 
 <!-- generated_for: {date} -->
 """

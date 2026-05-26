@@ -21,10 +21,10 @@ Important pages:
 - Insights: https://thelumenary.org/insights/
 - Journal: https://thelumenary.org/journal/
 - Growth: https://thelumenary.org/growth/
+- Frontiers: https://thelumenary.org/frontiers/
 - Map: https://thelumenary.org/map/
 - Findings: https://thelumenary.org/findings/
 - Method: https://thelumenary.org/research/
-- Agent: https://thelumenary.org/agent/
 - Sources: https://thelumenary.org/sources/
 
 Current corpus:

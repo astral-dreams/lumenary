@@ -1,6 +1,8 @@
 ---
+import Breadcrumbs from "../../components/Breadcrumbs.astro";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import { formatLabel, getInsights } from "../../lib/content";
+import { collectionPageSchema, faqSchema, itemListSchema, type BreadcrumbItem } from "../../lib/seo";
 
 const insights = getInsights();
 const agents = [...new Set(insights.map((insight) => insight.agent))].sort();
@@ -8,15 +10,68 @@ const stages = [...new Set(insights.map((insight) => insight.promotionStage))].s
 const types = [...new Set(insights.map((insight) => insight.ideaType))].sort();
 const labels = [...new Set(insights.flatMap((insight) => insight.epistemicLabels))].sort();
 const traditions = [...new Set(insights.flatMap((insight) => insight.traditionTags))].sort();
+const description =
+  "Short, plainspoken insights distilled from The Lumenary's source-grounded findings and originality audits.";
+const breadcrumbs: BreadcrumbItem[] = [
+  { name: "The Lumenary", path: "/" },
+  { name: "Insights", path: "/insights/" },
+];
+const insightsFaq = [
+  {
+    question: "What are The Lumenary Insights?",
+    answer:
+      "Insights are short, reader-facing distillations of findings. They point back to the full research record rather than standing alone as separate claims.",
+  },
+  {
+    question: "How are Insights ranked?",
+    answer:
+      "Insights are ranked by quality signals from the underlying finding, promotion status, and reader upvotes.",
+  },
+];
+const jsonLd = [
+  collectionPageSchema({
+    name: "The Lumenary Insights",
+    path: "/insights/",
+    description,
+    mainEntity: itemListSchema(
+      "The Lumenary Insights",
+      "/insights/",
+      insights.slice(0, 24).map((insight) => ({
+        name: insight.insight,
+        path: `/findings/${insight.slug}/`,
+      })),
+    ),
+  }),
+  faqSchema(insightsFaq),
+];
 ---
 
-<BaseLayout title="Insights">
+<BaseLayout title="Insights" description={description} jsonLd={jsonLd} breadcrumbs={breadcrumbs}>
+  <Breadcrumbs items={breadcrumbs} />
   <section class="page-band">
     <p class="eyebrow">Distilled wisdom</p>
     <h1>Insights</h1>
     <p class="lead">
       Short, plainspoken cards distilled from Lumenary's findings. The deeper reasoning remains in each linked finding.
     </p>
+  </section>
+
+  <section class="content-section">
+    <div class="answer-panel">
+      <h2>What Are These Insights?</h2>
+      <p>
+        Insights are the shortest expression of The Lumenary's findings. Each card is meant to be remembered,
+        but the deeper claim, critique, source basis, and originality audit live on the linked Finding page.
+      </p>
+      <div class="answer-grid">
+        {insightsFaq.map((item) => (
+          <article>
+            <h3>{item.question}</h3>
+            <p>{item.answer}</p>
+          </article>
+        ))}
+      </div>
+    </div>
   </section>
 
   <section class="content-section">
@@ -79,6 +134,8 @@ const traditions = [...new Set(insights.flatMap((insight) => insight.traditionTa
             data-stage={insight.promotionStage}
             data-traditions={insight.traditionTags.join(" ")}
             data-type={insight.ideaType}
+            data-vote-aliases={[insight.slug, ...insight.legacySlugs].join(" ")}
+            data-vote-key={insight.ideaId}
             data-votes="0"
           >
             <h2><a href={`/findings/${insight.slug}/`}>{insight.insight}</a></h2>
@@ -109,6 +166,7 @@ const traditions = [...new Set(insights.flatMap((insight) => insight.traditionTa
     const grid = document.querySelector("#insight-grid");
     const cards = [...document.querySelectorAll(".insight-card")];
     const empty = document.querySelector("#empty-filter-message");
+    const localVoteStoreKey = "lumenary.insightVotes.v2";
 
     function includesToken(value, token) {
       return !token || ` ${value || ""} `.includes(` ${token} `);
@@ -117,6 +175,52 @@ const traditions = [...new Set(insights.flatMap((insight) => insight.traditionTa
     function voteCount(card) {
       const votes = Number(card.dataset.votes || 0);
       return Number.isFinite(votes) ? votes : 0;
+    }
+
+    function voteKeys(card) {
+      return [
+        card.dataset.voteKey,
+        card.dataset.slug,
+        ...(card.dataset.voteAliases || "").split(/\s+/),
+      ]
+        .filter(Boolean)
+        .filter((key, index, keys) => keys.indexOf(key) === index);
+    }
+
+    function readLocalVotes() {
+      try {
+        return JSON.parse(window.localStorage.getItem(localVoteStoreKey) || "{}");
+      } catch {
+        return {};
+      }
+    }
+
+    function writeLocalVote(card, votes) {
+      const stored = readLocalVotes();
+      for (const key of voteKeys(card)) {
+        stored[key] = Math.max(Number(stored[key] || 0), votes);
+      }
+      window.localStorage.setItem(localVoteStoreKey, JSON.stringify(stored));
+    }
+
+    function localVoteCount(card) {
+      const stored = readLocalVotes();
+      return voteKeys(card).reduce((max, key) => {
+        const votes = Number(stored[key] || 0);
+        return Number.isFinite(votes) ? Math.max(max, votes) : max;
+      }, 0);
+    }
+
+    function serverVoteCount(card, votesByKey) {
+      const canonical = card.dataset.voteKey;
+      const canonicalVotes = Number(votesByKey?.[canonical] || 0);
+      if (Number.isFinite(canonicalVotes) && canonicalVotes > 0) {
+        return canonicalVotes;
+      }
+      return voteKeys(card).reduce((total, key) => {
+        const votes = Number(votesByKey?.[key] || 0);
+        return Number.isFinite(votes) ? total + votes : total;
+      }, 0);
     }
 
     function qualityScore(card) {
@@ -184,9 +288,10 @@ const traditions = [...new Set(insights.flatMap((insight) => insight.traditionTa
         if (!response.ok) return;
         const data = await response.json();
         for (const card of cards) {
-          const votes = Number(data.votes?.[card.dataset.slug] || 0);
+          const votes = serverVoteCount(card, data.votes || {});
+          const localVotes = localVoteCount(card);
           const currentVotes = voteCount(card);
-          const nextVotes = Number.isFinite(votes) ? Math.max(votes, currentVotes) : currentVotes;
+          const nextVotes = Number.isFinite(votes) ? Math.max(votes, localVotes, currentVotes) : Math.max(localVotes, currentVotes);
           card.dataset.votes = String(nextVotes);
         }
       } finally {
@@ -204,12 +309,15 @@ const traditions = [...new Set(insights.flatMap((insight) => insight.traditionTa
       card.dataset.votes = String(optimisticVotes);
       card.dataset.votedAt = String(Date.now());
       card.dataset.votePending = "true";
+      writeLocalVote(card, optimisticVotes);
       syncVoteButtons();
       updateInsights();
 
       try {
+        const key = card.dataset.voteKey || slug;
+        const aliases = voteKeys(card).filter((candidate) => candidate !== key);
         const response = await fetch("/api/insight-votes", {
-          body: JSON.stringify({ slug }),
+          body: JSON.stringify({ key, slug: key, aliases }),
           headers: {
             "content-type": "application/json",
             accept: "application/json",
@@ -220,6 +328,7 @@ const traditions = [...new Set(insights.flatMap((insight) => insight.traditionTa
         const data = await response.json();
         if (Number.isFinite(Number(data.votes))) {
           card.dataset.votes = String(Math.max(Number(data.votes), voteCount(card)));
+          writeLocalVote(card, voteCount(card));
         }
       } catch {
         card.dataset.voteError = "true";

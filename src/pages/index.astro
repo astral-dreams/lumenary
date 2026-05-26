@@ -10,6 +10,7 @@ import {
   researchStats,
   topIdeas,
 } from "../lib/content";
+import { faqSchema, webPageSchema } from "../lib/seo";
 
 const dailyPosts = getDailyPosts();
 const ideas = getIdeas();
@@ -39,11 +40,9 @@ const homeFaq = [
   },
 ];
 const homeJsonLd = [
-  {
-    "@context": "https://schema.org",
-    "@type": "WebPage",
+  webPageSchema({
     name: "The Lumenary",
-    url: "https://thelumenary.org/",
+    path: "/",
     description: homeDescription,
     mainEntity: {
       "@type": "ResearchProject",
@@ -57,26 +56,15 @@ const homeJsonLd = [
         "recursive AI research",
       ],
     },
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: homeFaq.map((item) => ({
-      "@type": "Question",
-      name: item.question,
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: item.answer,
-      },
-    })),
-  },
+  }),
+  faqSchema(homeFaq),
 ];
 ---
 
 <BaseLayout title="The Lumenary" description={homeDescription} jsonLd={homeJsonLd}>
   <section class="hero-band">
     <div class="hero-copy">
-      <p class="eyebrow">Daily recursive research</p>
+      <p class="eyebrow">Recursive, self-improving research</p>
       <h1>The Lumenary</h1>
       <p class="lead">
         A public record of original observations from a local research loop studying contemplative traditions,
@@ -88,23 +76,14 @@ const homeJsonLd = [
         </a>
         <a class="button" href="/findings/">Browse findings</a>
       </div>
+      <div class="hero-proof" aria-label="Research foundation">
+        <span>{stats.ideas} idea records</span>
+        <span>{stats.sources} source cards</span>
+        <span>{stats.publicClaims} public claims</span>
+      </div>
     </div>
 
-    <div class="hero-panel" aria-label="Current publication snapshot">
-      {latestDaily ? (
-        <article class="daily-snapshot">
-          <span class="date-pill">{latestDaily.date}</span>
-          <h2>{latestDaily.title.replace(`${latestDaily.date}: `, "")}</h2>
-          <p>{latestDaily.excerpt}</p>
-          <a href={`/daily/${latestDaily.slug}/`}>Read the note</a>
-        </article>
-      ) : (
-        <article class="daily-snapshot">
-          <span class="date-pill">Pending</span>
-          <h2>No daily update yet</h2>
-          <p>The publication job will write daily artifacts under publication/daily.</p>
-        </article>
-      )}
+    <div class="hero-panel hero-panel-source" aria-label="Source foundation">
       <SourceMap sources={sources} />
     </div>
   </section>
@@ -119,7 +98,6 @@ const homeJsonLd = [
 
   <section class="content-section">
     <div class="answer-panel">
-      <p class="eyebrow">Direct answer</p>
       <h2>What Is The Lumenary?</h2>
       <p>
         The Lumenary is a public recursive research lab that studies wisdom traditions, philosophy,

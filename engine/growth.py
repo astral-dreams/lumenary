@@ -17,153 +17,153 @@ GROWTH_ITEM_LIMIT = 150
 KNOWN_GROWTH_DISTILLATIONS = [
     {
         "matches": ["convergence as translation strain"],
-        "knowledge": "I learned that agreement matters most when it shows what each side must bend.",
-        "method": "I learned to test every bridge by asking what it distorts.",
+        "knowledge": "We learned that agreement matters most when it shows what each side must bend.",
+        "method": "We learned to test every bridge by asking what it distorts.",
     },
     {
         "matches": ["interface invariant"],
-        "knowledge": "I learned that different paths may meet because human attention keeps presenting the same doors.",
-        "method": "I learned to look for shared human pressures before naming hidden truths.",
+        "knowledge": "We learned that different paths may meet because human attention keeps presenting the same doors.",
+        "method": "We learned to look for shared human pressures before naming hidden truths.",
     },
     {
         "matches": ["translation strain as a load test"],
-        "knowledge": "I learned that a good comparison shows the cost of translation, not just the comfort of agreement.",
-        "method": "I learned to score the bend, not just the bridge.",
+        "knowledge": "We learned that a good comparison shows the cost of translation, not just the comfort of agreement.",
+        "method": "We learned to score the bend, not just the bridge.",
     },
     {
         "matches": ["residue policy"],
-        "knowledge": "I learned that when the self is stripped away, each path decides what may remain.",
-        "method": "I learned to ask who is allowed to speak after letting go.",
+        "knowledge": "We learned that when the self is stripped away, each path decides what may remain.",
+        "method": "We learned to ask who is allowed to speak after letting go.",
     },
     {
         "matches": ["residual burden"],
-        "knowledge": "I learned that after every no, a path still decides what the no permits.",
-        "method": "I learned to watch the move that comes after refusal.",
+        "knowledge": "We learned that after every no, a path still decides what the no permits.",
+        "method": "We learned to watch the move that comes after refusal.",
     },
     {
         "matches": ["remainder pressure"],
-        "knowledge": "I learned that when everything is denied, the mind still feels pressure to name what remains.",
-        "method": "I learned to measure that pressure before calling it truth.",
+        "knowledge": "We learned that when everything is denied, the mind still feels pressure to name what remains.",
+        "method": "We learned to measure that pressure before calling it truth.",
     },
     {
         "matches": ["inferential gap"],
-        "knowledge": "I learned that two paths can share an experience and draw opposite lessons from it.",
-        "method": "I learned to separate what is seen from what is concluded.",
+        "knowledge": "We learned that two paths can share an experience and draw opposite lessons from it.",
+        "method": "We learned to separate what is seen from what is concluded.",
     },
     {
         "matches": ["processual remainder"],
-        "knowledge": "I learned that what remains may be a passage, not a thing.",
-        "method": "I learned to look for the doorway, not only the room.",
+        "knowledge": "We learned that what remains may be a passage, not a thing.",
+        "method": "We learned to look for the doorway, not only the room.",
     },
     {
         "matches": ["expressive realism"],
-        "knowledge": "I learned that time may not carry things; it may be how things shine.",
-        "method": "I learned to test time by asking how life appears, not where it sits.",
+        "knowledge": "We learned that time may not carry things; it may be how things shine.",
+        "method": "We learned to test time by asking how life appears, not where it sits.",
     },
     {
         "matches": ["formal recurrence"],
-        "knowledge": "I learned that modern models can repeat old questions instead of solving them.",
-        "method": "I learned to ask whether a new language has only changed the costume.",
+        "knowledge": "We learned that modern models can repeat old questions instead of solving them.",
+        "method": "We learned to ask whether a new language has only changed the costume.",
     },
     {
         "matches": ["same negation, the opposite inference"],
-        "knowledge": "I learned that the same refusal can open two opposite roads.",
-        "method": "I learned to follow identical methods to their different endings.",
+        "knowledge": "We learned that the same refusal can open two opposite roads.",
+        "method": "We learned to follow identical methods to their different endings.",
     },
     {
         "matches": ["generative negation"],
-        "knowledge": "I learned that some silences do not erase; they make room.",
-        "method": "I learned to ask whether a no clears space for a new kind of yes.",
+        "knowledge": "We learned that some silences do not erase; they make room.",
+        "method": "We learned to ask whether a no clears space for a new kind of yes.",
     },
     {
         "matches": ["reflexivity policy"],
-        "knowledge": "I learned that every method changes when it turns back on itself.",
-        "method": "I learned to ask what a tool does when it becomes the thing examined.",
+        "knowledge": "We learned that every method changes when it turns back on itself.",
+        "method": "We learned to ask what a tool does when it becomes the thing examined.",
     },
     {
         "matches": ["custody policy"],
-        "knowledge": "I learned that when the old owner disappears, care still needs a keeper.",
-        "method": "I learned to ask what carries responsibility after the self loosens.",
+        "knowledge": "We learned that when the old owner disappears, care still needs a keeper.",
+        "method": "We learned to ask what carries responsibility after the self loosens.",
     },
     {
         "matches": ["instrument problem"],
-        "knowledge": "I learned that agreement is stronger when different ways of seeing reach the same place.",
-        "method": "I learned to inspect the instrument before trusting the report.",
+        "knowledge": "We learned that agreement is stronger when different ways of seeing reach the same place.",
+        "method": "We learned to inspect the instrument before trusting the report.",
     },
     {
         "matches": ["remainder grammar"],
-        "knowledge": "I learned that what a path lets you say after silence reveals what it protects.",
-        "method": "I learned to listen for the grammar that survives letting go.",
+        "knowledge": "We learned that what a path lets you say after silence reveals what it protects.",
+        "method": "We learned to listen for the grammar that survives letting go.",
     },
     {
         "matches": ["epistemic organ"],
-        "knowledge": "I learned that a path's idea of knowing shapes what it can find.",
-        "method": "I learned to ask what part of the person a path trusts most.",
+        "knowledge": "We learned that a path's idea of knowing shapes what it can find.",
+        "method": "We learned to ask what part of the person a path trusts most.",
     },
     {
         "matches": ["negation has an address"],
-        "knowledge": "I learned that a teaching's no depends on whom it is trying to free.",
-        "method": "I learned to ask who the medicine is for before naming the cure.",
+        "knowledge": "We learned that a teaching's no depends on whom it is trying to free.",
+        "method": "We learned to ask who the medicine is for before naming the cure.",
     },
     {
         "matches": ["realization topology"],
-        "knowledge": "I learned that some awakenings arrive as events; others unfold as weather.",
-        "method": "I learned to place an insight in time before comparing it.",
+        "knowledge": "We learned that some awakenings arrive as events; others unfold as weather.",
+        "method": "We learned to place an insight in time before comparing it.",
     },
     {
         "matches": ["comparison has a self"],
-        "knowledge": "I learned that even comparison can try to possess what it studies.",
-        "method": "I learned to empty my own grip before building a bridge.",
+        "knowledge": "We learned that even comparison can try to possess what it studies.",
+        "method": "We learned to empty our own grip before building a bridge.",
     },
     {
         "matches": ["determination gap"],
-        "knowledge": "I learned that knowing yourself and knowing the world may not change together.",
-        "method": "I learned to test self-insight and world-insight separately.",
+        "knowledge": "We learned that knowing yourself and knowing the world may not change together.",
+        "method": "We learned to test self-insight and world-insight separately.",
     },
     {
         "matches": ["return is the audit"],
-        "knowledge": "I learned that the real test of insight is how it returns to ordinary life.",
-        "method": "I learned to judge depth by re-entry, not by the peak.",
+        "knowledge": "We learned that the real test of insight is how it returns to ordinary life.",
+        "method": "We learned to judge depth by re-entry, not by the peak.",
     },
     {
         "matches": ["shadow of attainment"],
-        "knowledge": "I learned that every cure can become its own disease.",
-        "method": "I learned to ask what a path breaks when it succeeds.",
+        "knowledge": "We learned that every cure can become its own disease.",
+        "method": "We learned to ask what a path breaks when it succeeds.",
     },
     {
         "matches": ["each path has a different alarm"],
-        "knowledge": "I learned that every path trains the heart to notice a different danger.",
-        "method": "I learned to listen for the alarm before comparing the lesson.",
+        "knowledge": "We learned that every path trains the heart to notice a different danger.",
+        "method": "We learned to listen for the alarm before comparing the lesson.",
     },
     {
         "matches": ["verification architecture"],
-        "knowledge": "I learned that a path proves insight by the kind of proof it already trusts.",
-        "method": "I learned to ask who gets to certify awakening.",
+        "knowledge": "We learned that a path proves insight by the kind of proof it already trusts.",
+        "method": "We learned to ask who gets to certify awakening.",
     },
     {
         "matches": ["every insight has an appeal court"],
-        "knowledge": "I learned that every insight eventually stands before a judge.",
-        "method": "I learned to name the judge before trusting the verdict.",
+        "knowledge": "We learned that every insight eventually stands before a judge.",
+        "method": "We learned to name the judge before trusting the verdict.",
     },
     {
         "matches": ["attentional commons"],
-        "knowledge": "I learned that paths may look most alike where their deepest claims matter least.",
-        "method": "I learned to question agreement when attention becomes quiet and plain.",
+        "knowledge": "We learned that paths may look most alike where their deepest claims matter least.",
+        "method": "We learned to question agreement when attention becomes quiet and plain.",
     },
     {
         "matches": ["silence has a stopping rule"],
-        "knowledge": "I learned that every silence has a moment where more searching becomes noise.",
-        "method": "I learned to ask where inquiry should stop.",
+        "knowledge": "We learned that every silence has a moment where more searching becomes noise.",
+        "method": "We learned to ask where inquiry should stop.",
     },
     {
         "matches": ["devotional remainder"],
-        "knowledge": "I learned that love may know what attention cannot see.",
-        "method": "I learned to stop treating sight as the only form of knowing.",
+        "knowledge": "We learned that love may know what attention cannot see.",
+        "method": "We learned to stop treating sight as the only form of knowing.",
     },
     {
         "matches": ["protected variable"],
-        "knowledge": "I learned that after silence, each path protects one thing it will not surrender.",
-        "method": "I learned to find the protected thing before declaring common ground.",
+        "knowledge": "We learned that after silence, each path protects one thing it will not surrender.",
+        "method": "We learned to find the protected thing before declaring common ground.",
     },
 ]
 
@@ -235,14 +235,14 @@ def _as_learned_that(value: str) -> str:
     plain = _plain_growth_text(value)
     if plain.lower().startswith("i learned that "):
         return _clip(plain, GROWTH_ITEM_LIMIT)
-    return _clip(f"I learned that {_lower_first(plain)}.", GROWTH_ITEM_LIMIT)
+    return _clip(f"We learned that {_lower_first(plain)}.", GROWTH_ITEM_LIMIT)
 
 
 def _as_learned_to(value: str) -> str:
     plain = _plain_growth_text(value)
     if plain.lower().startswith("i learned to "):
         return _clip(plain, GROWTH_ITEM_LIMIT)
-    return _clip(f"I learned to {_lower_first(plain)}.", GROWTH_ITEM_LIMIT)
+    return _clip(f"We learned to {_lower_first(plain)}.", GROWTH_ITEM_LIMIT)
 
 
 def _known_distillation(idea: IdeaRecord, field: str) -> str | None:
@@ -307,8 +307,8 @@ def _method_item(idea: IdeaRecord) -> str:
     if direction:
         return _as_learned_to(direction)
     if _method_source(idea):
-        return "I learned to borrow a practice as a lens, then test where it fails."
-    return "I learned to turn the critique into the next way of seeing."
+        return "We learned to borrow a practice as a lens, then test where it fails."
+    return "We learned to turn the critique into the next way of seeing."
 
 
 def record_growth(

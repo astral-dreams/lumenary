@@ -150,7 +150,7 @@ Hourly publication and Journal flow:
 7. Social draft job writes candidate X posts under `publication/x/queue/`.
 8. Website deploy runs after every 30-minute research job.
 9. Each 30-minute run emits four macOS notifications: start, current direction, new finding title, and published title.
-10. At 5pm in the machine's current local timezone, the Journal writer reads the day's findings and writes one first-person reflection under `publication/journal/`.
+10. At 5pm in the machine's current local timezone, the Journal writer reads the day's findings and writes one first-person plural reflection under `publication/journal/`.
 11. At 6pm in the machine's current local timezone, the living-map job rebuilds and deploys the three SVG maps on `/map/`.
 12. Human review approves, edits, rejects, or posts social drafts.
 
@@ -247,7 +247,7 @@ Do not auto-post unreviewed spiritual/philosophical claims at first. The safer p
 - `graph/concept-graph.seed.json`: current concept graph seed for the future map page
 - `site/`: future website
 - `publication/daily/`: daily website updates
-- `publication/journal/`: end-of-day first-person Journal entries
+- `publication/journal/`: end-of-day first-person plural Journal entries
 - `publication/x/queue/`: reviewed social drafts before posting
 - `reviews/originality/`: post-generation originality audit records
 - `ops/launchd/com.lumenary.research.plist`: continuous research loop

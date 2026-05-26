@@ -1,0 +1,722 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>The Lumenary AEO Template Audit</title>
+    <style>
+      :root {
+        --bg: #f8f7f3;
+        --ink: #101512;
+        --muted: #5f6760;
+        --panel: #ffffff;
+        --line: #d9ddd3;
+        --green: #1f6b55;
+        --red: #b7533d;
+        --gold: #ad8430;
+        --blue: #345b8c;
+        --shadow: 0 18px 50px rgba(16, 21, 18, 0.08);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        background: var(--bg);
+        color: var(--ink);
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        line-height: 1.55;
+        margin: 0;
+      }
+
+      main {
+        margin: 0 auto;
+        max-width: 1180px;
+        padding: 48px 22px 80px;
+      }
+
+      h1,
+      h2,
+      h3 {
+        line-height: 1.08;
+        margin: 0;
+      }
+
+      h1,
+      h2 {
+        font-family: Georgia, "Times New Roman", serif;
+        font-weight: 500;
+      }
+
+      h1 {
+        font-size: clamp(3rem, 7vw, 6.4rem);
+        max-width: 860px;
+      }
+
+      h2 {
+        font-size: clamp(1.7rem, 3vw, 2.7rem);
+        margin-bottom: 16px;
+      }
+
+      h3 {
+        font-size: 1rem;
+        margin-bottom: 8px;
+      }
+
+      p {
+        margin: 0;
+      }
+
+      a {
+        color: inherit;
+        text-decoration-color: color-mix(in srgb, currentColor 35%, transparent);
+        text-underline-offset: 0.2em;
+      }
+
+      .eyebrow {
+        color: var(--red);
+        font-size: 0.78rem;
+        font-weight: 800;
+        letter-spacing: 0.08em;
+        margin-bottom: 12px;
+        text-transform: uppercase;
+      }
+
+      .lead {
+        color: #303832;
+        font-size: clamp(1.08rem, 2vw, 1.32rem);
+        max-width: 840px;
+        margin-top: 22px;
+      }
+
+      .meta {
+        color: var(--muted);
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 28px;
+      }
+
+      .pill {
+        background: var(--panel);
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        font-size: 0.82rem;
+        font-weight: 750;
+        padding: 7px 11px;
+      }
+
+      section {
+        margin-top: 44px;
+      }
+
+      .panel,
+      .card,
+      .finding {
+        background: var(--panel);
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        box-shadow: var(--shadow);
+      }
+
+      .panel {
+        padding: clamp(22px, 4vw, 34px);
+      }
+
+      .grid {
+        display: grid;
+        gap: 16px;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+
+      .two {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .card {
+        padding: 20px;
+      }
+
+      .card p,
+      .finding p,
+      li {
+        color: var(--muted);
+      }
+
+      .score {
+        align-items: baseline;
+        display: flex;
+        gap: 10px;
+        margin-bottom: 10px;
+      }
+
+      .score strong {
+        color: var(--green);
+        font-size: 2.4rem;
+        line-height: 1;
+      }
+
+      .priority {
+        border-left: 4px solid var(--green);
+      }
+
+      .warning {
+        border-left: 4px solid var(--gold);
+      }
+
+      .risk {
+        border-left: 4px solid var(--red);
+      }
+
+      .info {
+        border-left: 4px solid var(--blue);
+      }
+
+      .finding {
+        display: grid;
+        gap: 16px;
+        grid-template-columns: minmax(160px, 0.45fr) minmax(0, 1fr) minmax(220px, 0.7fr);
+        padding: 18px;
+      }
+
+      .finding strong {
+        display: block;
+      }
+
+      .finding small {
+        color: var(--muted);
+        display: block;
+        font-weight: 750;
+        text-transform: uppercase;
+      }
+
+      ul,
+      ol {
+        margin: 12px 0 0;
+        padding-left: 20px;
+      }
+
+      li + li {
+        margin-top: 8px;
+      }
+
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      th,
+      td {
+        border-bottom: 1px solid var(--line);
+        padding: 12px 10px;
+        text-align: left;
+        vertical-align: top;
+      }
+
+      th {
+        color: var(--muted);
+        font-size: 0.78rem;
+        text-transform: uppercase;
+      }
+
+      code {
+        background: #eef2ea;
+        border: 1px solid var(--line);
+        border-radius: 6px;
+        font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+        font-size: 0.9em;
+        padding: 1px 5px;
+      }
+
+      .source-list {
+        color: var(--muted);
+        display: grid;
+        gap: 8px;
+      }
+
+      @media (max-width: 840px) {
+        .grid,
+        .two,
+        .finding {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <p class="eyebrow">AEO template audit</p>
+        <h1>The Lumenary should answer before it explains.</h1>
+        <p class="lead">
+          This audit reviews the current local build of thelumenary.org after the latest template changes.
+          The goal is a clean set of website templates where answer engines, search engines, and human readers
+          can quickly understand what each page is, what claim it makes, what evidence supports it, and where to go next.
+        </p>
+        <div class="meta">
+          <span class="pill">Date: May 26, 2026</span>
+          <span class="pill">Pages built: 70</span>
+          <span class="pill">Findings pages: 52</span>
+          <span class="pill">Audit target: templates first</span>
+        </div>
+      </header>
+
+      <section class="panel">
+        <h2>Executive Read</h2>
+        <div class="grid">
+          <article class="card">
+            <div class="score"><strong>7.2</strong><span>/ 10</span></div>
+            <h3>Current AEO Readiness</h3>
+            <p>
+              The site has strong raw material: original findings, concise summaries, structured data, clean URLs,
+              source cards, audits, and living maps. The main gap is template discipline.
+            </p>
+          </article>
+          <article class="card">
+            <div class="score"><strong>8.4</strong><span>/ 10</span></div>
+            <h3>Individual Findings</h3>
+            <p>
+              Finding pages are the strongest AEO surface because they have Article schema, breadcrumbs, FAQ blocks,
+              At a Glance sections, originality audits, source basis, and critique.
+            </p>
+          </article>
+          <article class="card">
+            <div class="score"><strong>5.8</strong><span>/ 10</span></div>
+            <h3>Section Pages</h3>
+            <p>
+              Section pages vary too much. Insights, Journal, Growth, and Frontiers need their own schema,
+              answer blocks, breadcrumbs, and consistent page purposes.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section>
+        <h2>What AEO Means Here</h2>
+        <div class="panel">
+          <p>
+            For The Lumenary, AEO is not tricking AI systems into quoting the site. It is making each page easy to
+            cite, summarize, and trust. Every important template should have a visible answer, a clear entity,
+            a clean claim, structured support, and a route to deeper evidence.
+          </p>
+          <ul>
+            <li><strong>Answer first:</strong> each page should answer its main question in one plain paragraph near the top.</li>
+            <li><strong>Entity clarity:</strong> the page should state whether it is a project, collection, map, research method, insight card set, journal, or finding.</li>
+            <li><strong>Evidence path:</strong> each claim should lead to source basis, audit notes, publication status, or related findings.</li>
+            <li><strong>Schema mirrors visible content:</strong> structured data should describe what readers can actually see on the page.</li>
+            <li><strong>Snippet discipline:</strong> titles and meta descriptions should be short, unique, and direct enough to survive search rewrites.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <h2>Sitewide Findings</h2>
+        <div class="grid two">
+          <article class="card priority">
+            <h3>Strength: strong base layout</h3>
+            <p>
+              The base template already emits canonical URLs, robots tags, RSS, Open Graph, Twitter metadata,
+              WebSite schema, Organization schema, and GA instrumentation. This is a good foundation.
+            </p>
+          </article>
+          <article class="card warning">
+            <h3>Gap: missing universal breadcrumbs</h3>
+            <p>
+              Individual findings have BreadcrumbList schema, but section pages do not. Add a breadcrumb schema helper
+              to all section pages and render a small visible breadcrumb trail where it helps.
+            </p>
+          </article>
+          <article class="card warning">
+            <h3>Gap: schema is hand-built per page</h3>
+            <p>
+              Schema should be generated from a small library of helpers: WebPage, CollectionPage, Article,
+              BreadcrumbList, FAQPage, ItemList, Dataset, SoftwareApplication, and HowTo.
+            </p>
+          </article>
+          <article class="card risk">
+            <h3>Risk: FAQ schema overuse</h3>
+            <p>
+              FAQPage is useful when questions are visible and natural, but Google limits FAQ rich result visibility.
+              Keep FAQ blocks where they help readers; do not use them as decoration.
+            </p>
+          </article>
+          <article class="card warning">
+            <h3>Gap: no Open Graph image strategy</h3>
+            <p>
+              Most pages have no page-specific social image. Add a default Lumenary image and generated images for
+              Findings, Map, Journal, and Frontiers when possible.
+            </p>
+          </article>
+          <article class="card warning">
+            <h3>Gap: stale route handling</h3>
+            <p>
+              The Agent page has been removed. Add a deliberate redirect or gone rule for <code>/agent/</code> so
+              crawlers do not find a confusing stale page.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section>
+        <h2>Template Audit</h2>
+        <div class="finding">
+          <div>
+            <small>Home</small>
+            <strong>Good entity, needs sharper answer hierarchy</strong>
+          </div>
+          <p>
+            The home page has WebPage and FAQPage schema, one H1, a strong source foundation, and a clear project
+            description. It now avoids the weak recent-finding panel.
+          </p>
+          <p>
+            Add a stronger first answer: "The Lumenary is..." followed by "What it studies," "What it publishes,"
+            and "How to read claims." Move Promoted Public Claims lower or rename it in human language.
+          </p>
+        </div>
+
+        <div class="finding">
+          <div>
+            <small>Insights</small>
+            <strong>Human page is good, AEO layer is thin</strong>
+          </div>
+          <p>
+            Insights is intentionally simple and should stay that way. It currently only receives WebSite and Organization
+            schema from the base layout.
+          </p>
+          <p>
+            Add CollectionPage and ItemList schema for the visible insight cards. Add one concise visible answer block
+            explaining that Insights are short distillations from Findings, not separate claims.
+          </p>
+        </div>
+
+        <div class="finding">
+          <div>
+            <small>Journal</small>
+            <strong>Needs journal-specific schema</strong>
+          </div>
+          <p>
+            The Journal index is clean, but it lacks CollectionPage or Blog schema. Individual Journal posts should
+            carry BlogPosting or Article schema with datePublished, dateModified, author, publisher, and breadcrumb.
+          </p>
+          <p>
+            Keep the voice simple. The AEO addition should be invisible to the tone: one short line saying these are
+            daily reflections written by The Lumenary as "We."
+          </p>
+        </div>
+
+        <div class="finding">
+          <div>
+            <small>Growth</small>
+            <strong>Excellent concept, under-described for machines</strong>
+          </div>
+          <p>
+            Growth is a distinctive page. It tracks growth in knowledge and growth in method, but the template does
+            not yet describe that as a structured recurring record.
+          </p>
+          <p>
+            Add Dataset or CollectionPage schema, ItemList entries for day/week/month records, and a visible answer
+            that says Growth records what The Lumenary learned and how its way of seeing changed.
+          </p>
+        </div>
+
+        <div class="finding">
+          <div>
+            <small>Frontiers</small>
+            <strong>Strong AEO candidate, needs a definition block</strong>
+          </div>
+          <p>
+            Frontiers is valuable because it shows live research agendas, anomalies, tests, source gaps, and next moves.
+            It currently has CollectionPage schema but no FAQ or breadcrumb schema.
+          </p>
+          <p>
+            Add a direct "What is a frontier?" answer at the top, ItemList schema for active frontiers, and breadcrumb
+            schema. Keep the cards, but make each card answer one question: what is being tested next?
+          </p>
+        </div>
+
+        <div class="finding">
+          <div>
+            <small>Map</small>
+            <strong>Good Dataset schema, needs SVG accessibility and entity links</strong>
+          </div>
+          <p>
+            Map has CollectionPage, Dataset, and FAQPage schema. It is one of the better AEO pages because the page
+            has a clear purpose and named maps.
+          </p>
+          <p>
+            Add title and desc tags inside each SVG, expose each map as ImageObject or hasPart, and ensure every major
+            bubble links to the relevant Finding, Source, Frontier, or concept.
+          </p>
+        </div>
+
+        <div class="finding">
+          <div>
+            <small>Findings Index</small>
+            <strong>Good schema, noisy heading structure</strong>
+          </div>
+          <p>
+            Findings has CollectionPage, ItemList, FAQPage, and a strong direct answer section. It currently emits many
+            H2 headings because each finding card uses an H2.
+          </p>
+          <p>
+            Keep one H1 and section-level H2s, then make finding card titles H3s. Add filters as crawlable links or
+            explicit section anchors if topic discovery matters.
+          </p>
+        </div>
+
+        <div class="finding">
+          <div>
+            <small>Individual Findings</small>
+            <strong>Best template, needs tighter metadata</strong>
+          </div>
+          <p>
+            Finding pages have Article, BreadcrumbList, FAQPage, At a Glance, originality audit, source basis, critique,
+            scores, and next directions. This is the strongest page type.
+          </p>
+          <p>
+            Tighten meta descriptions to 140 to 165 characters, set real dateModified when audits or summaries change,
+            add citations or isBasedOn to Article schema, and add relatedLink entries for connected findings.
+          </p>
+        </div>
+
+        <div class="finding">
+          <div>
+            <small>Method</small>
+            <strong>High value, but too many jobs on one page</strong>
+          </div>
+          <p>
+            Method has HowTo, SoftwareApplication, and FAQPage schema. It is useful, but it also carries system,
+            frontier, agent, publication, and runtime content.
+          </p>
+          <p>
+            Keep Method as the single home for the process now that Agent is removed. Make it cleaner: first answer,
+            exact loop, frontier steering, promotion gates, storage, scheduler, and validation.
+          </p>
+        </div>
+
+        <div class="finding">
+          <div>
+            <small>Sources</small>
+            <strong>Needs source catalog schema</strong>
+          </div>
+          <p>
+            Sources is a core trust page, but it is not prominent in the nav and should carry stronger data-catalog
+            semantics.
+          </p>
+          <p>
+            Add Dataset or DataCatalog schema, source type filters, canonical source cards, and an answer block explaining
+            how sources constrain claims.
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <h2>Current Template Signals</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Page</th>
+              <th>Current Schema</th>
+              <th>Main Gap</th>
+              <th>Priority</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Home</td>
+              <td>WebSite, Organization, WebPage, FAQPage</td>
+              <td>Needs stronger answer hierarchy and OG image.</td>
+              <td>High</td>
+            </tr>
+            <tr>
+              <td>Insights</td>
+              <td>WebSite, Organization</td>
+              <td>Add CollectionPage, ItemList, and a short visible definition.</td>
+              <td>High</td>
+            </tr>
+            <tr>
+              <td>Journal</td>
+              <td>WebSite, Organization</td>
+              <td>Add Blog or CollectionPage schema and BlogPosting for entries.</td>
+              <td>Medium</td>
+            </tr>
+            <tr>
+              <td>Growth</td>
+              <td>WebSite, Organization</td>
+              <td>Add Dataset or CollectionPage schema and structured period records.</td>
+              <td>High</td>
+            </tr>
+            <tr>
+              <td>Frontiers</td>
+              <td>WebSite, Organization, CollectionPage</td>
+              <td>Add ItemList, FAQ, breadcrumb, and clearer definition.</td>
+              <td>High</td>
+            </tr>
+            <tr>
+              <td>Map</td>
+              <td>WebSite, Organization, CollectionPage, Dataset, FAQPage</td>
+              <td>Add SVG title/desc, ImageObject or hasPart, and graph links.</td>
+              <td>Medium</td>
+            </tr>
+            <tr>
+              <td>Findings index</td>
+              <td>WebSite, Organization, CollectionPage, ItemList, FAQPage</td>
+              <td>Fix card heading levels and add topic discovery structure.</td>
+              <td>High</td>
+            </tr>
+            <tr>
+              <td>Finding detail</td>
+              <td>WebSite, Organization, Article, BreadcrumbList, FAQPage</td>
+              <td>Trim descriptions, add citations, related links, and true modified dates.</td>
+              <td>Highest</td>
+            </tr>
+            <tr>
+              <td>Method</td>
+              <td>WebSite, Organization, HowTo, SoftwareApplication, FAQPage</td>
+              <td>Clean the sequence and make runtime details readable without an Agent page.</td>
+              <td>Medium</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section>
+        <h2>Recommended Template Architecture</h2>
+        <div class="grid two">
+          <article class="card priority">
+            <h3>1. Create a schema helper layer</h3>
+            <p>
+              Add a small TypeScript module that exports helpers for base graph nodes, breadcrumbs, ItemLists,
+              CollectionPages, Articles, FAQs, Datasets, BlogPostings, and HowTos.
+            </p>
+          </article>
+          <article class="card priority">
+            <h3>2. Create reusable answer components</h3>
+            <p>
+              Add components for AnswerPanel, PageFaq, Breadcrumbs, PageMeta, RelatedLinks, and EvidenceTrail.
+              The labels should be human, not technical.
+            </p>
+          </article>
+          <article class="card priority">
+            <h3>3. Define per-template AEO contracts</h3>
+            <p>
+              Each page type should declare required title, description, H1, answer paragraph, schema types,
+              breadcrumb path, related links, and evidence links.
+            </p>
+          </article>
+          <article class="card warning">
+            <h3>4. Add build-time validation</h3>
+            <p>
+              Add an npm script that fails if a public page lacks a canonical URL, H1, meta description,
+              schema graph, or valid internal links.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section>
+        <h2>Fix Plan</h2>
+        <ol class="panel">
+          <li>
+            <strong>Base layout:</strong> add optional page image metadata, shared breadcrumbs, stable schema IDs,
+            WebSite SearchAction only if a real site search exists, and consistent publisher identity.
+          </li>
+          <li>
+            <strong>Section pages:</strong> add CollectionPage schema, ItemList schema, breadcrumb schema, and one
+            reader-facing answer paragraph to Insights, Journal, Growth, Frontiers, Sources, and Daily.
+          </li>
+          <li>
+            <strong>Finding pages:</strong> tune meta descriptions, set dateModified from the source file or audit,
+            add citation/isBasedOn from source_basis, add relatedLink, and keep At a Glance as the primary answer.
+          </li>
+          <li>
+            <strong>Heading cleanup:</strong> convert repeated card H2s to H3s on Findings and other card grids.
+            Reserve H2 for page sections.
+          </li>
+          <li>
+            <strong>Map page:</strong> add accessible SVG titles and descriptions, link bubbles, and expose each
+            SVG map as a described part of the page.
+          </li>
+          <li>
+            <strong>Removed Agent route:</strong> decide whether <code>/agent/</code> should 301 to <code>/research/</code>
+            or return 410 gone. I recommend 301 to Method for now because the runtime material lives there.
+          </li>
+          <li>
+            <strong>Validation:</strong> add a local audit script that checks titles, descriptions, H1s, schema,
+            canonical URLs, breadcrumb coverage, no stale routes, and internal link health before deploy.
+          </li>
+        </ol>
+      </section>
+
+      <section>
+        <h2>Implementation Order</h2>
+        <div class="grid">
+          <article class="card priority">
+            <h3>Pass 1: Template primitives</h3>
+            <p>
+              Build schema helpers, answer blocks, breadcrumbs, and validation. This prevents future pages from drifting.
+            </p>
+          </article>
+          <article class="card priority">
+            <h3>Pass 2: Finding detail</h3>
+            <p>
+              Improve the highest-value pages first: Finding pages should become citation-ready answer documents.
+            </p>
+          </article>
+          <article class="card warning">
+            <h3>Pass 3: Section pages</h3>
+            <p>
+              Clean Insights, Growth, Journal, Frontiers, Map, Sources, Findings index, and Method against the same contract.
+            </p>
+          </article>
+          <article class="card warning">
+            <h3>Pass 4: Content tone</h3>
+            <p>
+              Keep Insights and Journal simple. Add AEO structure around them, not academic language inside them.
+            </p>
+          </article>
+          <article class="card info">
+            <h3>Pass 5: Rich media</h3>
+            <p>
+              Add default OG images, finding-specific images when possible, and accessible SVG map metadata.
+            </p>
+          </article>
+          <article class="card info">
+            <h3>Pass 6: Monitoring</h3>
+            <p>
+              Wire the local analytics dashboard to watch indexed pages, AI referral traffic, top landing pages,
+              source queries, and pages with low engagement.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section>
+        <h2>Source Notes</h2>
+        <div class="panel source-list">
+          <p>
+            This audit follows Google Search Central guidance that AI features use the same foundational search
+            requirements as Google Search: pages must be indexable, eligible for snippets, technically accessible,
+            and useful to people.
+          </p>
+          <p>
+            Structured data recommendations are constrained by Google guidance that schema should match visible
+            content and should not mark up irrelevant or hidden material.
+          </p>
+          <p>
+            References:
+            <a href="https://developers.google.com/search/docs/appearance/ai-overviews?kgs=aa0bcc3d152ed142">Google AI features and your website</a>,
+            <a href="https://developers.google.com/search/docs/fundamentals/creating-helpful-content">Google helpful content guidance</a>,
+            <a href="https://developers.google.com/search/docs/appearance/structured-data/sd-policies">Google structured data guidelines</a>,
+            <a href="https://developers.google.com/search/docs/fundamentals/seo-starter-guide">Google SEO starter guide</a>,
+            <a href="https://developers.google.com/search/docs/appearance/structured-data/breadcrumb">Google breadcrumb structured data</a>,
+            <a href="https://developers.google.com/search/docs/appearance/structured-data/faqpage">Google FAQ structured data</a>,
+            <a href="https://schema.org/Dataset">Schema.org Dataset</a>,
+            <a href="https://schema.org/FAQPage">Schema.org FAQPage</a>.
+          </p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

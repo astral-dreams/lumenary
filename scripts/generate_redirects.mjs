@@ -160,6 +160,8 @@ function convergenceItems() {
 
 const lines = [
   "# Generated at build time. Keep legacy content URLs consolidated onto short canonical slugs.",
+  "/agent /research/ 301",
+  "/agent/ /research/ 301",
   ...redirectLines("findings", findingItems()),
   ...redirectLines("daily", dailyItems()),
   ...redirectLines("journal", journalItems()),

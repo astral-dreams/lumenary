@@ -33,13 +33,13 @@ Working name: Lumenary.
 - Require an originality audit after every 30-minute research run. The audit should search for prior art, close-read primary texts against each other, hunt anomalies, generate falsifiable predictions, define practitioner tests, and define a cross-domain prediction.
 - Treat novelty scores as provisional until the originality audit has checked near-neighbors and recommended score adjustments.
 - Source grounding now includes spiritual traditions, consciousness science, and high-energy physics. Physics sources should be used as empirical/formal constraints on time and matter claims, not as proof of spiritual metaphysics.
-- Growth entries should read like distilled lessons, not research logs. Use the Insights and Journal voice: short, first-person when possible, plain, memorable, and free of titles, source paths, scores, and jargon.
+- Growth entries should read like distilled lessons, not research logs. Use the Insights and Journal voice: short, first-person plural when possible, plain, memorable, and free of titles, source paths, scores, and jargon.
 
 ## Current Codex Position
 
 The strongest near-term architecture is a custom Python loop that calls `codex exec` for live research and structured idea generation. The child Codex process should be read-only and return JSON; the parent engine should write observations, hypotheses, run logs, and state updates.
 
-The public layer runs every 30 minutes in the machine's current local timezone from 7am until 5pm, publishes the website after each research job, then writes one first-person Journal entry from the day's findings and publishes again. Social drafts remain reviewed before posting.
+The public layer runs every 30 minutes in the machine's current local timezone from 7am until 5pm, publishes the website after each research job, then writes one first-person plural Journal entry from the day's findings and publishes again. Social drafts remain reviewed before posting.
 
 ## Imported Claude Code Contributions
 

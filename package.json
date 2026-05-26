@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build && node scripts/generate_redirects.mjs",
+    "check:aeo": "node scripts/aeo_template_check.mjs",
     "preview": "astro preview",
     "deploy": "npm run build && wrangler pages deploy dist --project-name thelumenary --branch main",
     "analytics:dashboard": "python3 scripts/analytics/local_dashboard.py",

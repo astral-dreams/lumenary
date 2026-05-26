@@ -1,30 +1,33 @@
 ---
+import Breadcrumbs from "../../components/Breadcrumbs.astro";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import { getDailyPosts } from "../../lib/content";
+import { collectionPageSchema, itemListSchema, type BreadcrumbItem } from "../../lib/seo";
 
 const posts = getDailyPosts();
 const description =
   "Daily public research notes from The Lumenary, generated from promoted findings in the recursive spirituality and consciousness research loop.";
-const dailyJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "CollectionPage",
+const breadcrumbs: BreadcrumbItem[] = [
+  { name: "The Lumenary", path: "/" },
+  { name: "Daily Log", path: "/daily/" },
+];
+const dailyJsonLd = collectionPageSchema({
   name: "The Lumenary Daily Log",
-  url: "https://thelumenary.org/daily/",
+  path: "/daily/",
   description,
-  mainEntity: {
-    "@type": "ItemList",
-    numberOfItems: posts.length,
-    itemListElement: posts.slice(0, 20).map((post, index) => ({
-      "@type": "ListItem",
-      position: index + 1,
+  mainEntity: itemListSchema(
+    "The Lumenary Daily Notes",
+    "/daily/",
+    posts.slice(0, 20).map((post) => ({
       name: post.title,
-      url: `https://thelumenary.org/daily/${post.slug}/`,
+      path: `/daily/${post.slug}/`,
     })),
-  },
-};
+  ),
+});
 ---
 
-<BaseLayout title="Daily Log" description={description} jsonLd={dailyJsonLd}>
+<BaseLayout title="Daily Log" description={description} jsonLd={dailyJsonLd} breadcrumbs={breadcrumbs}>
+  <Breadcrumbs items={breadcrumbs} />
   <section class="page-band">
     <p class="eyebrow">Publication log</p>
     <h1>Daily Log</h1>
@@ -35,7 +38,7 @@ const dailyJsonLd = {
       {posts.map((post) => (
         <article class="item-card">
           <div class="meta-row"><span>{post.date}</span><span>{post.path}</span></div>
-          <h2><a href={`/daily/${post.slug}/`}>{post.title}</a></h2>
+          <h3><a href={`/daily/${post.slug}/`}>{post.title}</a></h3>
           <p>{post.excerpt}</p>
         </article>
       ))}

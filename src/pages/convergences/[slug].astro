@@ -1,6 +1,8 @@
 ---
+import Breadcrumbs from "../../components/Breadcrumbs.astro";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import { getConvergenceNotes } from "../../lib/content";
+import { articleSchema, cleanDescription, type BreadcrumbItem } from "../../lib/seo";
 
 export function getStaticPaths() {
   return getConvergenceNotes().map((note) => ({
@@ -10,25 +12,22 @@ export function getStaticPaths() {
 }
 
 const { note } = Astro.props;
-const convergenceJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "Article",
+const description = cleanDescription(note.excerpt);
+const breadcrumbs: BreadcrumbItem[] = [
+  { name: "The Lumenary", path: "/" },
+  { name: "Convergences", path: "/convergences/" },
+  { name: note.title, path: `/convergences/${note.slug}/` },
+];
+const convergenceJsonLd = articleSchema({
   headline: note.title,
-  description: note.excerpt,
-  url: `https://thelumenary.org/convergences/${note.slug}/`,
-  author: {
-    "@type": "Organization",
-    name: "The Lumenary",
-  },
-  publisher: {
-    "@type": "Organization",
-    name: "The Lumenary",
-    url: "https://thelumenary.org/",
-  },
-};
+  description,
+  path: `/convergences/${note.slug}/`,
+  keywords: ["cross-agent synthesis", "convergence", "Codex", "Claude"],
+});
 ---
 
-<BaseLayout title={note.title} description={note.excerpt} ogType="article" jsonLd={convergenceJsonLd}>
+<BaseLayout title={note.title} description={description} ogType="article" jsonLd={convergenceJsonLd} breadcrumbs={breadcrumbs}>
+  <Breadcrumbs items={breadcrumbs} />
   <article class="article-page">
     <p class="eyebrow">{note.path}</p>
     <div class="prose" set:html={note.html} />

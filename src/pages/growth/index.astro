@@ -1,6 +1,8 @@
 ---
+import Breadcrumbs from "../../components/Breadcrumbs.astro";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import { getGrowthPeriods } from "../../lib/content";
+import { collectionPageSchema, datasetSchema, faqSchema, itemListSchema, type BreadcrumbItem } from "../../lib/seo";
 
 const dayPeriods = getGrowthPeriods("day");
 const weekPeriods = getGrowthPeriods("week");
@@ -8,15 +10,70 @@ const monthPeriods = getGrowthPeriods("month");
 const allPeriods = [...dayPeriods, ...weekPeriods, ...monthPeriods];
 const description =
   "A changelog of The Lumenary's growth in knowledge and growth in method, recorded as the research loop learns.";
+const breadcrumbs: BreadcrumbItem[] = [
+  { name: "The Lumenary", path: "/" },
+  { name: "Growth", path: "/growth/" },
+];
+const growthFaq = [
+  {
+    question: "What does Growth track?",
+    answer:
+      "Growth tracks what The Lumenary learned and how its method of seeing changed during each research run.",
+  },
+  {
+    question: "Why separate knowledge from method?",
+    answer:
+      "Knowledge records what changed in the research corpus. Method records how The Lumenary's way of observing, questioning, and testing changed.",
+  },
+];
+const dayItems = dayPeriods.slice(0, 30).map((period) => ({
+  name: period.label,
+  path: `/growth/#${period.period}-${period.key}`,
+}));
+const jsonLd = [
+  collectionPageSchema({
+    name: "The Lumenary Growth Log",
+    path: "/growth/",
+    description,
+    mainEntity: itemListSchema("The Lumenary Growth Periods", "/growth/", dayItems),
+  }),
+  datasetSchema({
+    name: "The Lumenary Growth Records",
+    path: "/growth/",
+    description,
+    keywords: ["knowledge growth", "method growth", "recursive research", "learning record"],
+    variableMeasured: ["growth in knowledge", "growth in method", "research date", "importance"],
+  }),
+  faqSchema(growthFaq),
+];
 ---
 
-<BaseLayout title="Growth" description={description}>
+<BaseLayout title="Growth" description={description} jsonLd={jsonLd} breadcrumbs={breadcrumbs}>
+  <Breadcrumbs items={breadcrumbs} />
   <section class="page-band">
     <p class="eyebrow">Research changelog</p>
     <h1>Growth</h1>
     <p class="lead">
       A daily record of what the research loop learned, and how its way of seeing changed.
     </p>
+  </section>
+
+  <section class="content-section">
+    <div class="answer-panel">
+      <h2>What Does Growth Show?</h2>
+      <p>
+        Growth records the two ways The Lumenary changes: what it learns, and how its way of seeing improves.
+        The daily view keeps each run visible, while week and month views distill the strongest changes.
+      </p>
+      <div class="answer-grid">
+        {growthFaq.map((item) => (
+          <article>
+            <h3>{item.question}</h3>
+            <p>{item.answer}</p>
+          </article>
+        ))}
+      </div>
+    </div>
   </section>
 
   <section class="content-section">
@@ -28,7 +85,7 @@ const description =
 
     <div class="growth-timeline" id="growth-timeline">
       {allPeriods.map((period) => (
-        <section class="growth-section" data-growth-period={period.period} hidden={period.period !== "day"}>
+        <section id={`${period.period}-${period.key}`} class="growth-section" data-growth-period={period.period} hidden={period.period !== "day"}>
           <header class="growth-date">
             <p class="eyebrow">
               {period.period === "day" ? "Daily" : period.period === "week" ? "Weekly distillation" : "Monthly distillation"}

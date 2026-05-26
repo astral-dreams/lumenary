@@ -1,31 +1,68 @@
 ---
+import Breadcrumbs from "../../components/Breadcrumbs.astro";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import { formatLabel, getSources, groupBy } from "../../lib/content";
+import { collectionPageSchema, datasetSchema, faqSchema, type BreadcrumbItem } from "../../lib/seo";
 
 const sources = getSources();
 const groups = groupBy(sources, (source) => source.tradition);
 const description =
   "Source cards behind The Lumenary research corpus, covering spiritual traditions, comparative philosophy, consciousness science, and physics of time and matter.";
-const sourcesJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "CollectionPage",
-  name: "The Lumenary Source Cards",
-  url: "https://thelumenary.org/sources/",
-  description,
-  mainEntity: {
-    "@type": "Dataset",
-    name: "The Lumenary Source Corpus",
-    description,
-    keywords: [...new Set(sources.map((source) => source.tradition))].join(", "),
+const breadcrumbs: BreadcrumbItem[] = [
+  { name: "The Lumenary", path: "/" },
+  { name: "Sources", path: "/sources/" },
+];
+const sourcesFaq = [
+  {
+    question: "What are source cards?",
+    answer:
+      "Source cards are the texts, papers, references, and method notes that ground The Lumenary's findings.",
   },
-};
+  {
+    question: "How do sources constrain findings?",
+    answer:
+      "Sources keep the system from treating analogy as proof by making each finding show what informed the claim.",
+  },
+];
+const sourcesJsonLd = [
+  collectionPageSchema({
+    name: "The Lumenary Source Cards",
+    path: "/sources/",
+    description,
+    mainEntity: datasetSchema({
+    name: "The Lumenary Source Corpus",
+      path: "/sources/",
+    description,
+      keywords: [...new Set(sources.map((source) => source.tradition))],
+    }),
+  }),
+  faqSchema(sourcesFaq),
+];
 ---
 
-<BaseLayout title="Sources" description={description} jsonLd={sourcesJsonLd}>
+<BaseLayout title="Sources" description={description} jsonLd={sourcesJsonLd} breadcrumbs={breadcrumbs}>
+  <Breadcrumbs items={breadcrumbs} />
   <section class="page-band">
     <p class="eyebrow">Grounding corpus</p>
     <h1>Source Cards</h1>
     <p class="lead">The public source foundation behind Lumenary's spiritual, philosophical, consciousness, and physics research.</p>
+  </section>
+  <section class="content-section">
+    <div class="answer-panel">
+      <h2>What Are Source Cards?</h2>
+      <p>
+        Source cards are the grounding layer behind The Lumenary. They show the traditions, texts, papers,
+        and references that constrain the research before an idea can become a public claim.
+      </p>
+      <div class="answer-grid">
+        {sourcesFaq.map((item) => (
+          <article>
+            <h3>{item.question}</h3>
+            <p>{item.answer}</p>
+          </article>
+        ))}
+      </div>
+    </div>
   </section>
   <section class="content-section source-groups">
     {groups.map(([tradition, sources]) => (

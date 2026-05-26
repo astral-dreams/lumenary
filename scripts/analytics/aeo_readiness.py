@@ -48,7 +48,7 @@ def main() -> None:
             "label": "structured data",
             "status": "ready",
             "path": "sitewide",
-            "notes": "Home, Findings, Map, Method, Agent, and article pages emit schema.",
+            "notes": "Home, Findings, Map, Method, and article pages emit schema.",
         },
         {
             "label": "answer-engine referrals",
@@ -72,4 +72,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-

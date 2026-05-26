@@ -1,6 +1,8 @@
 ---
+import Breadcrumbs from "../../components/Breadcrumbs.astro";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import { getDailyPosts } from "../../lib/content";
+import { articleSchema, cleanDescription, type BreadcrumbItem } from "../../lib/seo";
 
 export function getStaticPaths() {
   return getDailyPosts().map((post) => ({
@@ -10,27 +12,24 @@ export function getStaticPaths() {
 }
 
 const { post } = Astro.props;
-const dailyPostJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "Article",
+const description = cleanDescription(post.excerpt);
+const breadcrumbs: BreadcrumbItem[] = [
+  { name: "The Lumenary", path: "/" },
+  { name: "Daily Log", path: "/daily/" },
+  { name: post.title, path: `/daily/${post.slug}/` },
+];
+const dailyPostJsonLd = articleSchema({
   headline: post.title,
-  description: post.excerpt,
-  url: `https://thelumenary.org/daily/${post.slug}/`,
+  description,
+  path: `/daily/${post.slug}/`,
   datePublished: post.date,
   dateModified: new Date(post.updated).toISOString(),
-  author: {
-    "@type": "Organization",
-    name: "The Lumenary",
-  },
-  publisher: {
-    "@type": "Organization",
-    name: "The Lumenary",
-    url: "https://thelumenary.org/",
-  },
-};
+  keywords: ["daily research", "spirituality", "consciousness", "original findings"],
+});
 ---
 
-<BaseLayout title={post.title} description={post.excerpt} ogType="article" jsonLd={dailyPostJsonLd}>
+<BaseLayout title={post.title} description={description} ogType="article" jsonLd={dailyPostJsonLd} breadcrumbs={breadcrumbs}>
+  <Breadcrumbs items={breadcrumbs} />
   <article class="article-page">
     <p class="eyebrow">{post.date}</p>
     <div class="prose" set:html={post.html} />

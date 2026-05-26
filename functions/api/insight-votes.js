@@ -17,6 +17,17 @@ function isValidSlug(value) {
   return typeof value === "string" && /^[a-z0-9-]{8,220}$/.test(value);
 }
 
+function voteKey(value) {
+  return `insight:${value}`;
+}
+
+function normalizedAliases(value, canonical) {
+  if (!Array.isArray(value)) {
+    return [];
+  }
+  return value.filter(isValidSlug).filter((alias, index, aliases) => alias !== canonical && aliases.indexOf(alias) === index);
+}
+
 async function readVotes(kv) {
   const votes = {};
   let cursor;
@@ -57,14 +68,25 @@ export async function onRequestPost({ env, request }) {
   }
 
   const slug = body?.slug;
-  if (!isValidSlug(slug)) {
+  const canonical = body?.key || slug;
+  if (!isValidSlug(canonical)) {
     return jsonResponse({ error: "Invalid insight slug." }, { status: 400 });
   }
 
-  const key = `insight:${slug}`;
-  const current = Number(await env.INSIGHT_VOTES.get(key));
+  const aliases = normalizedAliases(body?.aliases, canonical);
+  const key = voteKey(canonical);
+  const currentRaw = await env.INSIGHT_VOTES.get(key);
+  const currentValue = Number(currentRaw);
+  let current = currentRaw !== null && Number.isFinite(currentValue) ? currentValue : 0;
+  if (currentRaw === null) {
+    const aliasValues = await Promise.all(aliases.map((alias) => env.INSIGHT_VOTES.get(voteKey(alias))));
+    current = aliasValues.reduce((total, value) => {
+      const votes = Number(value);
+      return Number.isFinite(votes) ? total + votes : total;
+    }, 0);
+  }
   const votes = (Number.isFinite(current) ? current : 0) + 1;
   await env.INSIGHT_VOTES.put(key, String(votes));
 
-  return jsonResponse({ slug, votes });
+  return jsonResponse({ slug: canonical, votes });
 }
