@@ -1,13 +1,15 @@
 {
-  "updated_at": "2026-05-25T19:45:00-07:00",
+  "updated_at": "2026-05-25T20:20:57-07:00",
   "site": "https://thelumenary.org",
   "ga4": {
     "status": "configured",
     "measurement_id": "G-9QXKKHXPK5",
+    "property_id": "538957338",
+    "reporting_status": "blocked_waiting_for_google_cloud_quota_project_permission",
     "stream_id": "14945244690",
     "measurement_env": "PUBLIC_GA_MEASUREMENT_ID",
     "property_env": "GA4_PROPERTY_ID",
-    "notes": "GA4 measurement ID G-9QXKKHXPK5 and web stream ID 14945244690 are recorded. The measurement ID is configured in Cloudflare Pages as GA_MEASUREMENT_ID, and the site activates GA4 through the runtime config endpoint."
+    "notes": "GA4 measurement ID G-9QXKKHXPK5, property ID 538957338, and web stream ID 14945244690 are recorded. The measurement ID is configured in Cloudflare Pages as GA_MEASUREMENT_ID, and the site activates GA4 through the runtime config endpoint. Local reporting is waiting on a Google Cloud quota project with serviceusage.services.use permission."
   },
   "gsc": {
     "status": "wired_waiting_for_verification",
