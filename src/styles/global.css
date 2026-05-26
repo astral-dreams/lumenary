@@ -615,6 +615,12 @@ meter {
   padding: 26px 0;
 }
 
+.map-section {
+  margin-inline: calc(50% - 50vw);
+  padding: 0 clamp(12px, 2vw, 24px) clamp(32px, 5vw, 56px);
+  width: 100vw;
+}
+
 .living-map-frame {
   background: #111712;
   border-radius: 8px;
