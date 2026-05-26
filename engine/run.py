@@ -30,6 +30,7 @@ def run_once(config: EngineConfig, focus: str) -> RunManifest:
     librarian.ensure_workspace()
 
     current_state = librarian.read_optional("state/current_focus.md")
+    thinking_protocol = librarian.read_optional("state/thinking_protocol.md")
     codex_findings = librarian.read_optional("findings/codex-findings.md")
     claude_findings = librarian.read_optional("findings/claude-code-findings.md")
 
@@ -40,6 +41,7 @@ def run_once(config: EngineConfig, focus: str) -> RunManifest:
         prompt = build_claude_collaborative_prompt(
             focus=focus,
             current_state=current_state,
+            thinking_protocol=thinking_protocol,
             prior_codex_findings=codex_findings,
             prior_claude_findings=claude_findings,
             codex_observations=codex_observations,
@@ -50,6 +52,7 @@ def run_once(config: EngineConfig, focus: str) -> RunManifest:
         prompt = build_originality_prompt(
             focus=focus,
             current_state=current_state,
+            thinking_protocol=thinking_protocol,
             prior_codex_findings=codex_findings,
             prior_claude_findings=claude_findings,
         )

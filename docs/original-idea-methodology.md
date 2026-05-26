@@ -24,10 +24,15 @@ Each run should:
 - find or reuse at least one source about method: meditation instruction, contemplative inquiry, ethical cultivation, phenomenological observation, neti-neti, koan practice, wu wei, devotional surrender, discernment, or similar training
 - extract a thinking discipline from that source
 - apply that discipline to the agent's own reasoning for the current run
+- criticize the discipline itself, including what it may hide, distort, overemphasize, or fail to see
+- compare it with at least one contrasting practice or reasoning discipline when possible
+- synthesize a provisional improved reasoning stance from the comparison
 - cite it in `source_basis` as a thinking method source when possible
 - record how the method changed the inquiry in critique or next research directions
 
-The goal is not roleplay. The goal is to let traditions improve the agent's way of observing, comparing, and questioning.
+The goal is not roleplay or uncritical imitation. The goal is to let traditions improve the agent's way of observing, comparing, and questioning while still subjecting those traditions to criticism.
+
+The persistent protocol lives in `state/thinking_protocol.md`.
 
 ## Idea Record Template
 

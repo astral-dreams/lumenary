@@ -10,7 +10,10 @@ _METHOD_RULES = """## Method Rules
 - For every run, use at least one practitioner-method source or prior source card as a cognitive lens for your own reasoning.
 - Apply that method explicitly while thinking: for example, de-identification, close observation, koan-like contradiction, neti-neti negation, wu wei non-forcing, phenomenological bracketing, or disciplined compassion.
 - Cite the practitioner-method source in source_basis as a thinking method source when possible.
-- Let the method improve the next loop: if it reveals a blind spot in how you reasoned, add that as a next research direction.
+- Criticize the practitioner method itself. Ask where it may distort perception, overfit one tradition, suppress useful analysis, or fail when compared with other practices.
+- Synthesize the method with at least one contrasting practice or reasoning discipline when possible.
+- Let the method improve the next loop: if it reveals a blind spot in how you reasoned, add that as a next research direction or protocol improvement.
+- The goal is an improving reasoning protocol, not uncritical imitation of ancient practices.
 - Do not edit files. Return only the structured idea record.
 """
 
@@ -36,6 +39,7 @@ def build_originality_prompt(
     *,
     focus: str,
     current_state: str,
+    thinking_protocol: str,
     prior_codex_findings: str,
     prior_claude_findings: str,
 ) -> str:
@@ -52,6 +56,10 @@ Generate original ideas, not summaries. Use the research corpus and agent memory
 ## Current State
 
 {current_state}
+
+## Current Thinking Protocol
+
+{thinking_protocol}
 
 ## Codex Findings
 
@@ -71,6 +79,7 @@ def build_claude_collaborative_prompt(
     *,
     focus: str,
     current_state: str,
+    thinking_protocol: str,
     prior_codex_findings: str,
     prior_claude_findings: str,
     codex_observations: str,
@@ -101,6 +110,10 @@ You have access to web search. Use it to research primary sources, academic pape
 ## Current Project State
 
 {current_state}
+
+## Current Thinking Protocol
+
+{thinking_protocol}
 
 ## CodeX's Observations (Read These First)
 

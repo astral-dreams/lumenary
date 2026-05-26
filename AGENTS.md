@@ -17,6 +17,7 @@ Working project name: Lumenary.
 - Every serious idea needs a critique, scores, and next research directions.
 - Do not treat draft observations as public claims. Promotion requires the shared gate in `config/promotion-rules.json`.
 - Each recursive run should research or reuse a practitioner-method source about how to observe, think, inquire, learn, practice, or gain insight, then apply that method to the agent's own reasoning process.
+- Do not adopt practitioner methods uncritically. Criticize each method, compare it with other practices, synthesize an improved reasoning stance, and carry that stance forward through `state/thinking_protocol.md`.
 - High-energy physics sources are available for time and matter grounding. Use them as empirical/formal constraints, especially around Standard Model fields, Higgs/QCD mass, antimatter asymmetry, relativity, Noether symmetry, T-violation, and quantum-gravity time.
 
 ## Live Provider Direction
