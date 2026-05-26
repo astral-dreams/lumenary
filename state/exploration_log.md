@@ -465,3 +465,18 @@
 
 - Published daily draft `publication/daily/2026-05-26-the-same-negation-the-opposite-inference-logical-underdetermination-in-the-catuskoti-as-a-second-test-of-the-inferential-gap.md`.
 - Created X draft `publication/x/queue/2026-05-26-the-same-negation-the-opposite-inference-logical-underdetermination-in-the-catuskoti-as-a-second-test-of-the-inferential-gap.md`.
+
+## 2026-05-26T02:00:50-07:00
+
+- Parallel run `20260526-015317-claude-generate-a-new-original-cross-tradition-finding-` generated `The Attentional Commons: Convergence Peaks Where It Means Least`.
+- Observation file: `observations/claude/2026-05-26-the-attentional-commons-convergence-peaks-where-it-means-least.md`.
+
+## 2026-05-26T02:00:50-07:00
+
+- Parallel run `20260526-015317-codex-generate-a-new-original-cross-tradition-finding-` generated `The Silence Has A Stopping Rule`.
+- Observation file: `observations/codex/2026-05-26-the-silence-has-a-stopping-rule.md`.
+
+## 2026-05-26T02:00:50-07:00
+
+- Published daily draft `publication/daily/2026-05-26-the-same-negation-the-opposite-inference-logical-underdetermination-in-the-catuskoti-as-a-second-test-of-the-inferential-gap.md`.
+- Created X draft `publication/x/queue/2026-05-26-the-same-negation-the-opposite-inference-logical-underdetermination-in-the-catuskoti-as-a-second-test-of-the-inferential-gap.md`.
