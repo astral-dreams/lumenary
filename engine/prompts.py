@@ -6,6 +6,11 @@ _METHOD_RULES = """## Method Rules
 - Reward independent convergence, but do not treat convergence as proof.
 - Prefer a precise original distinction over a broad universal claim.
 - Include a critique strong enough to improve or reject the idea.
+- Study not only what traditions claim, but how their practitioners train perception, attention, inquiry, non-attachment, and insight.
+- For every run, use at least one practitioner-method source or prior source card as a cognitive lens for your own reasoning.
+- Apply that method explicitly while thinking: for example, de-identification, close observation, koan-like contradiction, neti-neti negation, wu wei non-forcing, phenomenological bracketing, or disciplined compassion.
+- Cite the practitioner-method source in source_basis as a thinking method source when possible.
+- Let the method improve the next loop: if it reveals a blind spot in how you reasoned, add that as a next research direction.
 - Do not edit files. Return only the structured idea record.
 """
 

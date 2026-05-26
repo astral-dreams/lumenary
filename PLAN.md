@@ -56,12 +56,14 @@ Each iteration should:
 1. Read project memory: `AGENTS.md`, `docs/project-memory.md`, `state/current_focus.md`, `state/exploration_log.md`, `state/next_directions.md`, and prior findings.
 2. Choose or accept a frontier question.
 3. Research with Codex CLI and web search enabled.
-4. Generate at least one original idea record.
-5. Critique the idea strongly.
-6. Score the idea for research value.
-7. Write observation Markdown, JSONL, run manifest, prompt, and output.
-8. Update exploration state and next directions.
-9. Repeat on a schedule.
+4. Find or reuse a practitioner-method source about how to observe, think, inquire, learn, practice, or gain insight.
+5. Apply that method as a cognitive lens for the run.
+6. Generate at least one original idea record.
+7. Critique the idea strongly, including whether the method revealed a blind spot.
+8. Score the idea for research value.
+9. Write observation Markdown, JSONL, run manifest, prompt, and output.
+10. Update exploration state and next directions, including improvements to the next thinking method.
+11. Repeat on a schedule.
 
 ## 6. Idea Evaluation
 

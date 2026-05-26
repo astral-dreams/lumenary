@@ -15,6 +15,20 @@ The agent should not merely ask, "What did tradition X believe?" It should ask, 
 - Translate carefully: compare structures without claiming identity.
 - Operationalize: look for consequences that could be tested through practice, phenomenology, psychology, neuroscience, or logic.
 
+## Cognitive Practice Loop
+
+The loop should research how practitioners are trained to think, learn, observe, and transform perception, not only what traditions claim.
+
+Each run should:
+
+- find or reuse at least one source about method: meditation instruction, contemplative inquiry, ethical cultivation, phenomenological observation, neti-neti, koan practice, wu wei, devotional surrender, discernment, or similar training
+- extract a thinking discipline from that source
+- apply that discipline to the agent's own reasoning for the current run
+- cite it in `source_basis` as a thinking method source when possible
+- record how the method changed the inquiry in critique or next research directions
+
+The goal is not roleplay. The goal is to let traditions improve the agent's way of observing, comparing, and questioning.
+
 ## Idea Record Template
 
 Each original idea should include:
