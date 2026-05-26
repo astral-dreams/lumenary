@@ -1,0 +1,147 @@
+OpenAI Codex v0.133.0
+--------
+workdir: /Users/johnforrester/spirituality
+model: gpt-5.5
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: xhigh
+reasoning summaries: none
+session id: 019e655d-bd8c-7631-ac6a-78a4eea96e0d
+--------
+user
+# Lumenary Insight Distillation
+
+You are writing the public insight card and At a Glance text for The Lumenary.
+
+Read the finding below. Distill it into reader-facing language.
+
+## Writing Rules
+
+- Write like the texts we study: simple, memorable, and direct.
+- Do not use Sanskrit, Pali, Arabic, Greek, or Chinese terms.
+- Do not use academic hedging.
+- Do not use research jargon.
+- Do not use em dashes.
+- Do not start with "This finding".
+- Lead with the human question or the living insight.
+- The insight headline must land like a proverb.
+- The plainSummary is for the Insights card: one sentence, maximum 28 words.
+- The atAGlance section is for the finding page: one paragraph, 3 to 4 short sentences.
+- Use one idea per sentence.
+
+## Required JSON
+
+Return exactly one JSON object with:
+
+- insight: proverb-like headline, maximum 10 words
+- plainSummary: one short sentence for the Insights card
+- atAGlance: one paragraph of 3 to 4 short sentences
+- match: array with one unique lowercased phrase from the title
+- tags: array of 1 to 5 simple tags
+
+## Finding
+
+Title: The Misuse Guard Around Insight
+Type: model
+Agent: codex
+
+Original Claim:
+Every spiritual insight travels with a hidden guard: the practice that keeps the insight from being stolen by the very self it is meant to undo. No-self can become dissociation or moral evasion when separated from mindfulness, ethics, and compassion. You are That can become spiritual inflation when separated from negation, discipline, and teacherly testing. Non-forcing can become passivity when separated from decrease and attunement. Love of God can become possession when separated from humility and longing. Practice-realization can become a slogan when separated from sitting. The better comparison unit is not the peak sentence or peak experience. It is the insight plus the misuse it was designed to prevent.
+
+Why It Might Be New:
+Most comparison asks what traditions teach, experience, or verify. A guard-centered comparison asks what each teaching must prevent in order to remain itself. This makes misuse a source of knowledge rather than an afterthought. It also explains why the same phrase can change meaning when it leaves its practice home: the sentence may travel, but the guard often stays behind. The distinct claim is that cross-tradition resemblance should be tested by asking whether two traditions fear the same theft of insight, not only whether they describe a similar state.
+
+Critique:
+The model may overfit apophatic and devotional sources by making possession the master error behind too many traditions. Some paths may see the main danger as ignorance, wrong view, lack of discipline, impurity, despair, or social injustice rather than theft. The language of misuse also risks moralizing practitioners before understanding their training context. The Cloud of Unknowing lens is especially dangerous here because it can make analysis look possessive by default. The claim should be weakened unless close practice texts show that each tradition explicitly pairs its insight with a discipline against a predictable distortion.
+
+codex
+{"insight": "Using spirituality-recursive-research for this Lumenary distillation.","plainSummary":"I am checking the project-specific instructions before writing the public-facing JSON.","atAGlance":"I am checking the project-specific instructions before writing the public-facing JSON.","match":["misuse guard around insight"],"tags":["process"]}
+exec
+/bin/zsh -lc "sed -n '1,220p' /Users/johnforrester/spirituality/.codex/skills/spirituality-recursive-research/SKILL.md" in /Users/johnforrester/spirituality
+ succeeded in 0ms:
+---
+name: spirituality-recursive-research
+description: Use when working in the /Users/johnforrester/spirituality project on recursive research, Codex/Claude attribution, original spiritual-philosophical idea generation, Codex CLI provider wiring, scheduler setup, website publication, X draft queues, or project memory.
+---
+
+# Spirituality Recursive Research
+
+## Core Purpose
+
+This project builds Lumenary, a continuously running local research lab whose main output is original ideas in spirituality, religion, philosophy, contemplative practice, and consciousness research.
+
+Do not optimize for summaries. Optimize for named observations, hypotheses, models, contradictions, bridges, and publishable syntheses.
+
+Working name: Lumenary.
+
+## Required Attribution
+
+- Codex findings: `findings/codex/` and `findings/codex-findings.md`
+- Claude Code findings: `findings/claude/` and `findings/claude-code-findings.md`
+- Codex observations: `observations/codex/`
+- Claude observations: `observations/claude/`
+- Cross-agent synthesis: `findings/convergences/`
+
+Never overwrite another agent's findings. Preserve disagreements.
+
+## Method
+
+Every serious idea should include:
+
+- title
+- type: observation, hypothesis, model, bridge, contradiction, or synthesis
+- source basis
+- original claim
+- why it might be new
+- critique
+- epistemic labels
+- scores
+- next research directions
+
+Use labels: `textual`, `interpretive`, `phenomenological`, `empirical-adjacent`, `analogical`, `speculative`, `rejected`.
+
+## Live Provider
+
+Use the user's Codex subscription through the local Codex CLI.
+
+The Python engine should call `codex exec` with read-only sandboxing and request structured JSON. The engine, not the child Codex process, writes project files.
+
+Preferred posture:
+
+```bash
+codex --search exec --cd /Users/johnforrester/spirituality --sandbox read-only --output-schema engine/json_schemas/idea_record.schema.json --output-last-message runs/<run-id>/codex-cli-last-message.json -
+```
+
+## Publication
+
+Lumenary should become a public website with daily updates. Generate daily Markdown under `publication/daily/`. Generate X drafts under `publication/x/queue/` and require human review before posting.
+
+## Claude Code Interop
+
+Claude Code can contribute ideas by producing JSON that matches `engine/json_schemas/idea_record.schema.json`, then importing it:
+
+```bash
+python3 -m engine.import_idea --agent claude <idea.json>
+```
+
+## Key Files
+
+- `PLAN.md`: shareable plan for Claude Code and future agents
+- `AGENTS.md`: project memory and standing instructions
+- `docs/project-memory.md`: durable memory
+- `docs/original-idea-methodology.md`: generation method
+- `docs/publication-plan.md`: website and X publication plan
+- `engine/run.py`: one recursive cycle
+- `engine/scheduler.py`: continuous operation
+- `engine/thinker.py`: offline and Codex CLI providers
+- `engine/publisher.py`: daily publication artifacts
+- `engine/import_idea.py`: Claude/shared-agent idea import
+- `engine/source_ingestion.py`: source-card registry
+- `publication/daily/`: daily website updates
+- `publication/x/queue/`: X drafts awaiting human review
+
+codex
+{"insight":"Every truth needs a guard","plainSummary":"A teaching stays alive when its practice protects it from becoming an excuse.","atAGlance":"A bright insight can be stolen by the part of us it was meant to free. Its practice is the guard that keeps it honest. When the guard is missing, humility can become pride, freedom can become evasion, and love can become grasping. To compare teachings well, ask what each one is trying to protect against.","match":["misuse guard"],"tags":["practice","humility","discernment","insight"]}
+tokens used
+13,783
