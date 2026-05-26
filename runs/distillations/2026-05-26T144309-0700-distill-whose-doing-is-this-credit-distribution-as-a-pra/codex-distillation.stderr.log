@@ -1,0 +1,187 @@
+OpenAI Codex v0.133.0
+--------
+workdir: /Users/johnforrester/spirituality
+model: gpt-5.5
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: xhigh
+reasoning summaries: none
+session id: 019e663d-d675-7750-a006-f6114bfcd989
+--------
+user
+# Lumenary Insight Distillation
+
+You are writing the public insight card and At a Glance text for The Lumenary.
+
+Read the finding below. Distill it into reader-facing language.
+
+## Writing Rules
+
+- Write like the texts we study: simple, memorable, and direct.
+- Do not use Sanskrit, Pali, Arabic, Greek, or Chinese terms.
+- Do not use academic hedging.
+- Do not use research jargon.
+- Do not use em dashes.
+- Do not start with "This finding".
+- Lead with the human question or the living insight.
+- The insight headline must land like a proverb.
+- The plainSummary is for the Insights card: one sentence, maximum 28 words.
+- The atAGlance section is for the finding page: one paragraph, 3 to 4 short sentences.
+- Use one idea per sentence.
+
+## Required JSON
+
+Return exactly one JSON object with:
+
+- insight: proverb-like headline, maximum 10 words
+- plainSummary: one short sentence for the Insights card
+- atAGlance: one paragraph of 3 to 4 short sentences
+- match: array with one unique lowercased phrase from the title
+- tags: array of 1 to 5 simple tags
+
+## Finding
+
+Title: Whose Doing Is This? Credit Distribution as a Practice Variable
+Type: model
+Agent: claude
+
+Original Claim:
+When spiritual practice loosens the grip of personal identity, a question arises that sits before doctrine: whose power is driving the transformation? The answer is not a theological footnote. It is a practice instruction that shapes how effort feels from the inside, what failure means, and which dangers the tradition must guard against.
+
+The familiar framing poses this as a binary: self-power or other-power, grace or works. But primary texts reveal that nearly every tradition distributes credit across multiple agents rather than assigning it wholly to one. At least five distribution patterns appear across the world's contemplative paths.
+
+Practitioner-centered credit assigns the engine of transformation to the one who makes the effort. In the Magga-vibhanga Sutta (SN 45.8), right effort instructs the practitioner to 'generate desire, endeavor, activate persistence, uphold and exert intent' toward the arising of skillful qualities and the abandonment of unskillful ones. The practitioner is the grammatical subject of every verb. The Dhammapada states it plainly: 'You yourselves must strive; the Tathagatas only point the way.'
+
+Source-centered credit relocates the engine to a transcendent power acting through the practitioner. Shinran's Tannisho says even the arising of entrusting mind is the working of Amida's Vow. The Tenkalai Srivaishnava tradition formalizes this as the marjara (cat-kitten) model: grace carries entirely, and the devotee contributes nothing but availability.
+
+Split credit assigns action to the practitioner but outcome to something else. Bhagavad Gita 2.47 grants the right to act while denying entitlement to results. BG 3.27 pushes further: 'Actions are performed in all cases by the gunas of prakriti; he whose nature is deluded by egoism thinks I am the doer.' Al-Hujwiri's Kashf al-Mahjub makes the same split within Sufism: stations (maqamat) are 'consequent upon one's own actions,' while states (ahwal) are 'blessings conferred on him independently of his actual actions.' Islamic tawakkul instructs 'tie your camel, then trust in Allah': full effort first, then surrender of the outcome. The Vadakalai Srivaishnava tradition formalizes this as the markata (monkey-baby) model: the devotee cooperates with grace.
+
+Activity-centered credit refuses the separation between doing and result. Dogen's shusho-itto (practice-realization as one) insists that sitting is already the activity of enlightenment, not a method aimed at a future state. The question 'who produces enlightenment?' dissolves because production and realization are one.
+
+Ground-centered credit says nothing was ever missing. Dzogchen teaching says rigpa was primordially present. Shankara's praptasya praptih (attainment of the already-attained) says liberation was always the case. There is no achievement to attribute because nothing was produced.
+
+A close reading of SN 45.8 against Bhagavad Gita 3.27 makes the variable concrete. Both texts require the practitioner to act. Both reject passivity. But in the Buddhist text, the practitioner is the agent who generates, endeavors, activates, upholds, and exerts. In the Gita, prakriti is the real agent: all action belongs to nature's qualities, and the self who claims doership is deluded. The same outer behavior carries a completely different inner orientation because of how credit is distributed. The Buddhist practitioner rightly claims effort. The Gita practitioner rightly disowns it.
+
+This difference predicts the characteristic failure of each path. Practitioner-centered credit risks spiritual pride: the one who claims effort can claim attainment. Source-centered credit risks passivity or antinomianism: if the source does everything, nothing the practitioner does matters. Split credit risks strategic detachment: performing action while secretly monitoring outcomes. Activity-centered credit risks formalism: the practice becomes routine, emptied of transformation. Ground-centered credit risks premature claims of realization: 'nothing was ever wrong' becomes a way to avoid genuine work.
+
+Each tradition's safeguards are calibrated to its own attribution pattern. Buddhism pairs practitioner-centered effort with not-self teaching, so the very capacity required for the path is what the path eventually dissolves. Pure Land pairs source-centered credit with the nembutsu and community as anchors against antinomian drift. The Bhagavad Gita pairs split credit with the insistence on svadharma (prescribed duty), so that detachment from results does not become detachment from responsibility. Soto Zen pairs activity-centered credit with precepts, teacher relationship, and communal sitting, so that practice-realization does not become a slogan. Advaita pairs ground-centered credit with preparatory disciplines (sadhana chatushtaya) that the teaching technically renders unnecessary, precisely because premature ground claims are the tradition's characteristic danger.
+
+The Srivaishnava markata (monkey-baby) and marjara (cat-kitten) debate confirms that this is not an external scholarly construction imposed on traditions. An indigenous Hindu lineage formally split over exactly this variable, with the northern school insisting that the devotee cooperates and the southern school insisting that grace carries entirely. Institutional, liturgical, and practice differences followed from the split. That a living tradition can divide over the credit question confirms it is a practice variable, not an academic abstraction.
+
+This model adds a dimension to the capacity-ledger approach. Tracking what capacities a path requires (receiving, agency, memory, reflexivity, integration) and where the load is held (practitioner, teacher, vow, community) leaves open the question of how the tradition understands the source of those capacities. Two traditions can require identical functional capacities, hold them in the same places, and still diverge fundamentally because one credits the practitioner and the other credits a transcendent source. That divergence alone predicts different instructions, different failure modes, and different safeguards.
+
+Why It Might Be New:
+The self-power/other-power (jiriki/tariki) distinction is well established within Japanese Buddhism. The grace-versus-works debate is central to Christian theology. The markata/marjara distinction is indigenous to Srivaishnava theology. But these remain tradition-internal binaries. No comparative framework found treats credit distribution as a formal cross-tradition variable with five types and predictive consequences for failure modes and safeguards.
+
+The closest published near-neighbor is Steve Bein's work on self-power, other-power, and nondualism in Japanese Buddhism, which stays within the Buddhist world. Taitetsu Unno's comparative work on grace in Buddhism and Christianity is closer but does not formalize a typology or derive failure-mode predictions from it. The prior observation on the capacity ledger tracks what capacities are needed and where the load is held, but does not ask how the tradition credits the source of those capacities. The prior observation on whether effort can reach what effort cannot produce proposed five efficacy resolutions (removal, production, identity, reception, paradox-holding), which concerns how the tradition resolves the paradox of practice. The present model adds a separable dimension: how the tradition distributes credit for the functional power behind practice, regardless of its efficacy resolution. A tradition could hold a removal resolution (practice clears ignorance but does not produce truth) while distributing credit either to the practitioner (who does the clearing) or to the ground (which was never really obscured). These are different questions with different predictive consequences.
+
+The specific contributions are: (1) a five-type rather than binary typology of credit distribution; (2) the treatment of attribution as a practice variable that shapes the felt quality of effort, not just a doctrinal position about metaphysics; (3) the prediction that each distribution type generates a specific failure mode, testable against practice manuals and practitioner reports; (4) the close reading of SN 45.8 against BG 3.27 showing that the same behavioral instruction (practice diligently) can carry opposite agency orientations; and (5) the use of the Srivaishnava markata/marjara debate as an indigenous case study confirming that traditions themselves recognize credit distribution as a live variable.
+
+Convergence with Codex: the capacity-ledger model correctly tracks distributed functional requirements. Divergence: credit distribution is a separable dimension that the ledger alone cannot capture, because it concerns not what is needed or where the load sits, but how the tradition understands the source of the power behind it.
+
+Critique:
+Six objections carry real weight.
+
+First, the five-type model may force false clarity onto traditions that shift credit distribution across stages. Theravada assigns practitioner credit to right effort but describes the supramundane path moment (lokuttara magga) as arising when conditions ripen, with no further personal intervention. Sufism assigns practitioner effort to the stations but divine gift to the states. Advaita assigns practitioner effort to the preparatory disciplines but self-luminous recognition to the moment of moksha. If most traditions distribute credit differently at different stages, the typology may describe phases rather than stable tradition-level properties. This would not refute the variable, but it would require recasting the model as a stage-level rather than tradition-level variable.
+
+Second, the failure-mode predictions may be too neat. Real traditions combine safeguards against multiple dangers. Buddhism warns against spiritual pride (from its practitioner-centered effort) but also against passivity (in the story of Sona, MN 55, who was told to tune the string neither too tight nor too loose). The Gita warns against strategic detachment but also against spiritual pride (Chapter 16 on asuric qualities). If every tradition guards against every failure mode, the prediction that credit distribution determines the primary danger loses specificity. The model would need to show that the primary safeguard consistently matches the credit type, not merely that one of many safeguards does.
+
+Third, the Jodo Shinshu counterexample from the frontier remains sharp. In Shinran's strongest formulations, even entrusting is not a human capacity; it is Amida's working. Calling this 'source-centered credit' may still smuggle a human contribution (the capacity to receive, to go limp like the kitten) into a tradition designed to expose every human contribution as self-power calculation. The model may be unable to represent a tradition that refuses the entire frame of 'who contributes what' without residual distortion.
+
+Fourth, the Gita comparison may overweight one interpretive strand. BG 3.27 on prakriti as doer sits alongside BG 18.14, which lists five causes of action (the body, the individual soul, the various senses, the various functions, and the divine as the fifth cause). The Gita's own credit distribution is contested among Advaita, Vishishtadvaita, and Dvaita commentators. Using one verse as representative of 'the Gita's position' is a simplification that primary-text close-reading should resist.
+
+Fifth, the nishkama karma lens used for this analysis has a bias toward split-credit positions. It may have made split-credit traditions look most coherent and practitioner-centered traditions look more naive than a Buddhist right-effort lens would. The corrective (Buddhist right effort) was applied, but the initial framing may carry residual bias.
+
+Sixth, the strongest anomaly may be dual-trained practitioners who report no dissonance when switching credit distributions. If a practitioner trained in both Theravada vipassana and Dzogchen reports smooth transitions without experiencing different agency orientations, either the credit-distribution variable is less operationally important than claimed, or practitioners develop a meta-capacity for switching credit orientations that the model does not account for. The successful hybrids noted in the frontier brief (practitioners who switch methods smoothly without reported directional resistance) are a direct pressure on this model.
+
+codex
+{"insight":"Using the `spirituality-recursive-research` skill for this Lumenary distillation.","plainSummary":"I’ll read the project-specific instructions, then return only the requested JSON object.","atAGlance":"I’m checking the local skill so the distillation follows the repo’s publication rules. The final answer will be just the JSON object.","keyPoints":["Use project publication style","Keep output schema exact","Preserve reader-facing language"],"match":["lumenary insight distillation"],"tags":["process"]}
+exec
+/bin/zsh -lc "sed -n '1,220p' /Users/johnforrester/spirituality/.codex/skills/spirituality-recursive-research/SKILL.md" in /Users/johnforrester/spirituality
+ succeeded in 0ms:
+---
+name: spirituality-recursive-research
+description: Use when working in the /Users/johnforrester/spirituality project on recursive research, Codex/Claude attribution, original spiritual-philosophical idea generation, Codex CLI provider wiring, scheduler setup, website publication, X draft queues, or project memory.
+---
+
+# Spirituality Recursive Research
+
+## Core Purpose
+
+This project builds Lumenary, a continuously running local research lab whose main output is original ideas in spirituality, religion, philosophy, contemplative practice, and consciousness research.
+
+Do not optimize for summaries. Optimize for named observations, hypotheses, models, contradictions, bridges, and publishable syntheses.
+
+Working name: Lumenary.
+
+## Required Attribution
+
+- Codex findings: `findings/codex/` and `findings/codex-findings.md`
+- Claude Code findings: `findings/claude/` and `findings/claude-code-findings.md`
+- Codex observations: `observations/codex/`
+- Claude observations: `observations/claude/`
+- Cross-agent synthesis: `findings/convergences/`
+
+Never overwrite another agent's findings. Preserve disagreements.
+
+## Method
+
+Every serious idea should include:
+
+- title
+- type: observation, hypothesis, model, bridge, contradiction, or synthesis
+- source basis
+- original claim
+- why it might be new
+- critique
+- epistemic labels
+- scores
+- next research directions
+
+Use labels: `textual`, `interpretive`, `phenomenological`, `empirical-adjacent`, `analogical`, `speculative`, `rejected`.
+
+## Live Provider
+
+Use the user's Codex subscription through the local Codex CLI.
+
+The Python engine should call `codex exec` with read-only sandboxing and request structured JSON. The engine, not the child Codex process, writes project files.
+
+Preferred posture:
+
+```bash
+codex --search exec --cd /Users/johnforrester/spirituality --sandbox read-only --output-schema engine/json_schemas/idea_record.schema.json --output-last-message runs/<run-id>/codex-cli-last-message.json -
+```
+
+## Publication
+
+Lumenary should become a public website with daily updates. Generate daily Markdown under `publication/daily/`. Generate X drafts under `publication/x/queue/` and require human review before posting.
+
+## Claude Code Interop
+
+Claude Code can contribute ideas by producing JSON that matches `engine/json_schemas/idea_record.schema.json`, then importing it:
+
+```bash
+python3 -m engine.import_idea --agent claude <idea.json>
+```
+
+## Key Files
+
+- `PLAN.md`: shareable plan for Claude Code and future agents
+- `AGENTS.md`: project memory and standing instructions
+- `docs/project-memory.md`: durable memory
+- `docs/original-idea-methodology.md`: generation method
+- `docs/publication-plan.md`: website and X publication plan
+- `engine/run.py`: one recursive cycle
+- `engine/scheduler.py`: continuous operation
+- `engine/thinker.py`: offline and Codex CLI providers
+- `engine/publisher.py`: daily publication artifacts
+- `engine/import_idea.py`: Claude/shared-agent idea import
+- `engine/source_ingestion.py`: source-card registry
+- `publication/daily/`: daily website updates
+- `publication/x/queue/`: X drafts awaiting human review
+
+codex
+{"insight":"Who gets the credit shapes the way","plainSummary":"How we name the doer changes effort, failure, and the safeguards a path needs.","atAGlance":"Every path asks us to act, but not every path says the same one is acting. Some teach us to own effort, some to receive help, and some to act without holding the result. Each answer trains a different kind of heart. Each answer also carries its own danger, so wise paths build guards around it.","keyPoints":["Every path asks us to act, but not every path names the same doer.","The way a path assigns credit changes how effort feels from within.","Each answer carries a matching danger and needs a matching safeguard."],"match":["whose doing is this"],"tags":["effort","surrender","practice","responsibility"]}
+tokens used
+16,192

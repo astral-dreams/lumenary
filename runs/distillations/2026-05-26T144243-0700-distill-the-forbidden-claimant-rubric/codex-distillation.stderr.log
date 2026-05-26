@@ -1,0 +1,147 @@
+OpenAI Codex v0.133.0
+--------
+workdir: /Users/johnforrester/spirituality
+model: gpt-5.5
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: xhigh
+reasoning summaries: none
+session id: 019e663d-70c9-7bd3-93dc-dd5e6473ec05
+--------
+user
+# Lumenary Insight Distillation
+
+You are writing the public insight card and At a Glance text for The Lumenary.
+
+Read the finding below. Distill it into reader-facing language.
+
+## Writing Rules
+
+- Write like the texts we study: simple, memorable, and direct.
+- Do not use Sanskrit, Pali, Arabic, Greek, or Chinese terms.
+- Do not use academic hedging.
+- Do not use research jargon.
+- Do not use em dashes.
+- Do not start with "This finding".
+- Lead with the human question or the living insight.
+- The insight headline must land like a proverb.
+- The plainSummary is for the Insights card: one sentence, maximum 28 words.
+- The atAGlance section is for the finding page: one paragraph, 3 to 4 short sentences.
+- Use one idea per sentence.
+
+## Required JSON
+
+Return exactly one JSON object with:
+
+- insight: proverb-like headline, maximum 10 words
+- plainSummary: one short sentence for the Insights card
+- atAGlance: one paragraph of 3 to 4 short sentences
+- match: array with one unique lowercased phrase from the title
+- tags: array of 1 to 5 simple tags
+
+## Finding
+
+Title: The Forbidden Claimant Rubric
+Type: model
+Agent: codex
+
+Original Claim:
+The real boundary between effort and gift is not how much the practitioner does. It is who is allowed to claim the doing. A path can require receiving, agency, memory, reflexivity, and integration while forbidding the ordinary self from owning one or more of those functions. This turns the capacity question into a support-locus rubric: for each function, ask where the support is held, in the practitioner, teacher, vow, name, text, community, present act, awareness itself, or later integration, and ask which claimant is explicitly prohibited. Right effort authorizes the practitioner to prevent, abandon, cultivate, and maintain states, while refusing ownership of experience as self. Other-power teaching may require hearing and settled trust, but it forbids the practicer to treat trust as a self-made achievement. Direct-introduction practice may require recognition and stabilization, but it forbids contrived production of what is introduced. Practice-realization may require total enactment, but it forbids practice from becoming a bridge to a later prize. The rubric therefore does not say gift paths secretly depend on self-power. It says every path must carry the work somewhere, and each path is partly defined by the place where it says: this function is necessary, but this owner must not claim it.
+
+Why It Might Be New:
+The closest prior argument is Engler's healthy-ego-before-no-self thesis, joined by Buddhist skillful-means literature, Advaita eligibility teaching, and sudden-gradual debates. These already show that practices need prepared people, capacity-sensitive teaching, and stage-aware safeguards. The different move here is the double code. Existing capacity accounts mostly ask what the practitioner must have; this model asks where each required function is held and who must not claim it. That distinction lets radical gift traditions be compared without translating their gift into a hidden psychological skill. It also makes anomalies more visible: a tradition may not reduce the amount of support, but change the authorized bearer of support from self to vow, teacher, present act, awareness, community, or post-insight discipline.
+
+Critique:
+The strongest counterexample is Chinul's sudden awakening and gradual cultivation. In Secrets on Cultivating the Mind, awakening is sudden, later cultivation is necessary, and true cultivation eliminates without treating anything as truly eliminated. The same action can be authorized or forbidden depending on whether it relies on awakening or on goal-seeking delusion. That may make the rubric too stage-dependent to remain clean. Radical Jodo Shinshu adds a sharper theological objection: if true entrusting is Amida's working, even calling the vow a support locus may still be an outside analyst's way of domesticating grace. The Shinran lens also biases the analysis toward ownership suspicion; right effort corrects this by showing that desire, effort, and maintenance can be medicines rather than theft. The model should be weakened if primary manuals do not show recurring wrong-claimant warnings, or if practitioners say ownership language is alien to their actual training.
+
+exec
+/bin/zsh -lc "sed -n '1,220p' /Users/johnforrester/.codex/skills/spirituality-recursive-research/SKILL.md" in /Users/johnforrester/spirituality
+ succeeded in 0ms:
+---
+name: spirituality-recursive-research
+description: Use when working in the /Users/johnforrester/spirituality project on recursive research, Codex/Claude attribution, original spiritual-philosophical idea generation, Codex CLI provider wiring, scheduler setup, website publication, X draft queues, or project memory.
+---
+
+# Spirituality Recursive Research
+
+## Core Purpose
+
+This project builds Lumenary, a continuously running local research lab whose main output is original ideas in spirituality, religion, philosophy, contemplative practice, and consciousness research.
+
+Do not optimize for summaries. Optimize for named observations, hypotheses, models, contradictions, bridges, and publishable syntheses.
+
+## Required Attribution
+
+- Codex findings: `findings/codex/` and `findings/codex-findings.md`
+- Claude Code findings: `findings/claude/` and `findings/claude-code-findings.md`
+- Codex observations: `observations/codex/`
+- Claude observations: `observations/claude/`
+- Cross-agent synthesis: `findings/convergences/`
+
+Never overwrite another agent's findings. Preserve disagreements.
+
+## Method
+
+Every serious idea should include:
+
+- title
+- type: observation, hypothesis, model, bridge, contradiction, or synthesis
+- source basis
+- original claim
+- why it might be new
+- critique
+- epistemic labels
+- scores
+- next research directions
+
+Use labels: `textual`, `interpretive`, `phenomenological`, `empirical-adjacent`, `analogical`, `speculative`, `rejected`.
+
+## Live Provider
+
+Use the user's Codex subscription through the local Codex CLI.
+
+The Python engine should call `codex exec` with read-only sandboxing and request structured JSON. The engine, not the child Codex process, writes project files.
+
+Preferred posture:
+
+```bash
+codex --search exec --cd /Users/johnforrester/spirituality --sandbox read-only --output-schema engine/json_schemas/idea_record.schema.json --output-last-message runs/<run-id>/codex-cli-last-message.json -
+```
+
+## Publication And Cadence
+
+Lumenary should publish during the active research day. The standing cadence is every 30 minutes in the machine's current local timezone from 7am until 5pm. Each research run should research, store the idea, generate publication artifacts, and deploy the site.
+
+Each 30-minute run must write or reuse reader-facing Insights distillations before the site build. New distillations live in `publication/distillations.jsonl`, must link to the exact `idea_id`, use a proverb-like headline of 10 words or fewer, keep the Insights card summary to one plain sentence, and keep At a Glance as a 3-4 sentence paragraph in the project writing style.
+
+At 5pm local time, write one end-of-day Journal entry under `publication/journal/`, 350-500 words, first-person, personal, and written in the reader-facing style guide. The Journal reflects on all of the day's findings and insights. Deploy the site again after the Journal is written.
+
+Generate daily Markdown under `publication/daily/`. Generate X drafts under `publication/x/queue/` and require human review before posting.
+
+## Claude Code Interop
+
+Claude Code can contribute ideas by producing JSON that matches `engine/json_schemas/idea_record.schema.json`, then importing it:
+
+```bash
+python3 -m engine.import_idea --agent claude <idea.json>
+```
+
+## Key Files
+
+- `PLAN.md`: shareable plan for Claude Code and future agents
+- `AGENTS.md`: project memory and standing instructions
+- `docs/project-memory.md`: durable memory
+- `docs/original-idea-methodology.md`: generation method
+- `docs/publication-plan.md`: website and X publication plan
+- `engine/run.py`: one recursive cycle
+- `engine/scheduler.py`: continuous operation
+- `engine/thinker.py`: offline and Codex CLI providers
+- `engine/publisher.py`: daily publication artifacts
+- `engine/import_idea.py`: Claude/shared-agent idea import
+- `engine/source_ingestion.py`: source-card registry
+
+codex
+{"insight":"The hand works, but cannot boast","plainSummary":"Many paths ask us to act fully while refusing the small self the right to claim the work.","atAGlance":"We can practice with care and still not own what opens. Each path places help somewhere, in effort, teaching, promise, community, or the present act. The question is not only what we must do. It is who is forbidden to take credit.","keyPoints": ["Practice may require real effort without allowing the ordinary self to claim ownership.", "Different paths move support into effort, teaching, promise, community, or the present act.", "The central test is who is allowed to take credit for what happens."], "match":["forbidden claimant"],"tags":["practice","effort","grace","self"]}
+tokens used
+14,542

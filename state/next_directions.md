@@ -111,3 +111,21 @@
 - Treat successful hybrids, smooth cross-training, and Pure Land other-power as anomaly classes, not supporting examples.
 - Search Hadot on spiritual exercises, Bourdieu on habitus, Sharf, Dunne, Katz, Ferrer, Forman, Taves, and VCE literature before raising novelty.
 - Run a small practitioner test with at least one teacher each from Theravada, Advaita, Dzogchen or Mahamudra, Sufism, and Pure Land, asking whether grain changes practice sequencing.
+
+## Originality Audit Follow-Up 2026-05-26T14:48:17-07:00
+
+### The Forbidden Claimant Rubric (extended)
+- Merge this record with the capacity-ledger and credit-distribution records rather than publishing it as independent.
+- Read Pargament et al. on religious problem-solving styles directly before claiming novelty.
+- Build the coding sheet with fields for function, stage, support locus, forbidden claimant, safeguard, and failure mode.
+- Code primary manuals before broad tradition labels, especially SN 45.8, Shinran letters, Tannisho, Bendowa, Chinul, Longchen Rabjam, and Sri Vaishnava prapatti sources.
+- Add an explicit value for traditions or stages that reject the claimant frame itself.
+- Do not promote above extended unless practitioner interviews show the rubric predicts sequencing or failure patterns not already explained by religious coping, upaya, or lineage pedagogy.
+
+### Whose Doing Is This? Credit Distribution as a Practice Variable (extended)
+- Rebuild the model as a stage-level and text-level coding rubric, not a tradition-level typology.
+- Read Pargament's original religious problem-solving work and God-attribution literature before any novelty claim.
+- Close-read Bhagavad Gita 2.47, 3.27, 5.14, and 18.14 together before using the Gita as a split-credit example.
+- Treat activity-centered and ground-centered categories as the only possible novelty zones, and search Dogen, Advaita, Dzogchen, and nondual scholarship for close prior forms.
+- Merge this with The Forbidden Claimant Rubric and The Capacity Ledger unless a separability test proves credit distribution adds independent predictive value.
+- Do not promote above extended until manual coding and practitioner interviews show failure-mode predictions that older agency, grace, coping, and locus-of-control models do not already predict.

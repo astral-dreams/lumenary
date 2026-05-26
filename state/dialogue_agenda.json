@@ -1,0 +1,53 @@
+{
+  "candidate_count": 24,
+  "generated_at": "2026-05-26T14:26:23-07:00",
+  "reason": "selected",
+  "rules_version": "2026-05-26",
+  "selected_pairs": [
+    {
+      "challenger_agent": "claude",
+      "challenger_title": "Every Path Needs What Its Teaching Dissolves",
+      "idea_a": "a9dd2252002b7a5a",
+      "idea_b": "3c5caa358a09c26a",
+      "pair_id": "a2f84949ed5ea485",
+      "priority": 0.6764,
+      "proponent_agent": "codex",
+      "proponent_title": "The Capacity Ledger of Gift and Effort",
+      "shared_concepts": [],
+      "signals": [
+        {
+          "name": "shared_frontier",
+          "reason": "Both ideas sit on The boundary between effort and gift.",
+          "weight": 0.24
+        },
+        {
+          "name": "frontier_priority",
+          "reason": "Shared frontier priority is 0.85.",
+          "weight": 0.1364
+        },
+        {
+          "name": "audit_anomaly_overlap",
+          "reason": "An anomaly or audit instruction for one idea pressures the other idea.",
+          "weight": 0.12
+        },
+        {
+          "name": "near_neighbor_conflict",
+          "reason": "Originality audits share near-neighbor or prior-art pressure.",
+          "weight": 0.08
+        },
+        {
+          "name": "source_overlap_with_divergent_conclusion",
+          "reason": "The ideas draw on overlapping source material but make different moves.",
+          "weight": 0.06
+        },
+        {
+          "name": "recency",
+          "reason": "At least one idea is recent enough to keep the dialogue timely.",
+          "weight": 0.04
+        }
+      ],
+      "tension_source": "Both ideas sit on The boundary between effort and gift.",
+      "tension_type": "shared_frontier"
+    }
+  ]
+}

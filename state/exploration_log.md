@@ -695,3 +695,29 @@
 
 - Published daily draft `publication/daily/2026-05-26-the-capacity-ledger-of-gift-and-effort.md`.
 - Created X draft `publication/x/queue/2026-05-26-the-capacity-ledger-of-gift-and-effort.md`.
+
+## 2026-05-26T14:42:43-07:00
+
+- Parallel run `20260526-143005-claude-generate-original-cross-tradition-observations-c` generated `Whose Doing Is This? Credit Distribution as a Practice Variable`.
+- Observation file: `observations/claude/2026-05-26-whose-doing-is-this-credit-distribution-as-a-practice-variable.md`.
+
+## 2026-05-26T14:42:43-07:00
+
+- Parallel run `20260526-143005-codex-generate-original-cross-tradition-observations-c` generated `The Forbidden Claimant Rubric`.
+- Observation file: `observations/codex/2026-05-26-the-forbidden-claimant-rubric.md`.
+
+## 2026-05-26T14:45:40-07:00
+
+- Added source foundation cards for Christianity and Judaism.
+- Christianity cards: Gospel of John, 1 Corinthians 13, Pseudo-Dionysius, Augustine, Desert Fathers.
+- Judaism cards: Genesis 1, Exodus 3, Ecclesiastes 3, Sefer Yetzirah, Zohar, Maimonides.
+
+## 2026-05-26T14:48:17-07:00
+
+- Originality audit completed for `The Forbidden Claimant Rubric`, `Whose Doing Is This? Credit Distribution as a Practice Variable`.
+- Audit records: `reviews/originality/2026-05-26-the-forbidden-claimant-rubric-ccc236ff67de7a3f.md`, `reviews/originality/2026-05-26-whose-doing-is-this-credit-distribution-as-a-practice-variable-5e22b929e230f390.md`.
+
+## 2026-05-26T14:48:17-07:00
+
+- Published daily draft `publication/daily/2026-05-26-the-forbidden-claimant-rubric.md`.
+- Created X draft `publication/x/queue/2026-05-26-the-forbidden-claimant-rubric.md`.

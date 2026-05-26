@@ -24,6 +24,14 @@ const sourceDomains = [
     label: "Sufism",
   },
   {
+    aliases: ["christian", "gospel", "john", "corinthians", "dionysius", "augustine", "desert-fathers"],
+    label: "Christianity",
+  },
+  {
+    aliases: ["judaism", "jewish", "hebrew", "genesis", "exodus", "ecclesiastes", "yetzirah", "zohar", "maimonides"],
+    label: "Judaism",
+  },
+  {
     aliases: ["neoplat", "plotinus", "proclus"],
     label: "Neoplatonism",
   },
@@ -87,7 +95,6 @@ const groups = [
   ...sourceDomains.map((domain) => [domain.label, groupsByDomain.get(domain.label) || []] as const),
   ["Other", groupsByDomain.get("Other") || []] as const,
 ].filter(([, cards]) => cards.length > 0);
-const max = Math.max(...groups.map(([, cards]) => cards.length), 1);
 const total = sources.length;
 ---
 
@@ -96,19 +103,14 @@ const total = sources.length;
     <span>Source foundation</span>
     <strong>{total} cards</strong>
   </figcaption>
-  <div class="source-map-grid">
-    {groups.map(([tradition, cards], index) => (
-      <a
-        class={`source-row source-node-${index % 6}`}
-        href="/sources/"
-        style={`--bar-width:${Math.max(8, Math.round((cards.length / max) * 100))}%`}
-      >
-        <small>{formatLabel(tradition)}</small>
-        <span class="source-track" aria-hidden="true">
-          <span class="source-fill"></span>
-        </span>
-        <strong>{cards.length}</strong>
-      </a>
+  <ul class="source-count-list">
+    {groups.map(([tradition, cards]) => (
+      <li>
+        <a href="/sources/">
+          <span>{formatLabel(tradition)}</span>
+          <strong>{cards.length}</strong>
+        </a>
+      </li>
     ))}
-  </div>
+  </ul>
 </figure>

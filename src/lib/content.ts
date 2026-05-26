@@ -1109,6 +1109,8 @@ const traditionMatchers = [
   { tag: "buddhism", terms: ["buddh", "anatta", "anatman", "sunyata", "dogen", "zen", "emptiness"] },
   { tag: "daoism", terms: ["dao", "wu wei", "zhuangzi", "zuowang"] },
   { tag: "sufism", terms: ["sufi", "ibn arabi", "fana", "barzakh", "wahdat"] },
+  { tag: "christianity", terms: ["christian", "gospel", "logos", "john", "corinthians", "dionysius", "augustine", "desert fathers"] },
+  { tag: "judaism", terms: ["judaism", "jewish", "hebrew", "genesis", "exodus", "ecclesiastes", "yetzirah", "zohar", "maimonides", "kabbalah"] },
   { tag: "neoplatonism", terms: ["neoplat", "plotinus", "proclus", "the one"] },
   { tag: "consciousness", terms: ["consciousness", "attention", "self-model", "predictive", "friston", "iit"] },
   { tag: "time and matter", terms: ["time", "matter", "physics", "field", "quantum", "dogen"] },

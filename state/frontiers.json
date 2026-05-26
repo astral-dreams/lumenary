@@ -8,7 +8,9 @@
       "audit_ids": [
         "daeecdbd22658370",
         "8ab2c8dda0ae6f7d",
-        "f3966ec8d2c9dc68"
+        "f3966ec8d2c9dc68",
+        "5e22b929e230f390",
+        "ccc236ff67de7a3f"
       ],
       "audit_statuses": [
         "extended",
@@ -41,6 +43,9 @@
       ],
       "configured_topic": true,
       "core_claim": "Every contemplative tradition faces a paradox it cannot avoid: if practice causes awakening, the awakening depends on something temporary; if awakening was always the case, practice seems unnecessary. The resolution of this paradox is not a peripheral doctrinal detail. It functions as a root variable from which most other features of a tradition follow: its relationship to time, what it thinks effort does, whether failure is possible, how it verifies...",
+      "dialogue_count": 0,
+      "dialogue_ids": [],
+      "dialogue_outcomes": [],
       "frontier_id": "frontier-effort-and-practice",
       "idea_ids": [
         "521ab8af3468101d",
@@ -51,9 +56,11 @@
         "555fc22423d9a7dd",
         "3c5caa358a09c26a",
         "915778a2f5edc30e",
-        "a9dd2252002b7a5a"
+        "a9dd2252002b7a5a",
+        "a5ae6e997ca1d286",
+        "c53042c11562b839"
       ],
-      "last_advanced_at": "2026-05-26T14:18:35-07:00",
+      "last_advanced_at": "2026-05-26T14:48:17-07:00",
       "missing_sources": [
         "who practices if there is no self Buddhism liberation agency",
         "Pudgalavada karma rebirth liberation person no self",
@@ -68,15 +75,17 @@
         "Radical Jodo Shinshu other-power: true shinjin is not a human capacity at all, but Amida's working, and self-assessment as capacity may itself be self-power calculation."
       ],
       "priority": 0.8524,
-      "publication_paths": [],
+      "publication_paths": [
+        "publication/daily/2026-05-26-the-capacity-ledger-of-gift-and-effort.md"
+      ],
       "recommended_next_action": "build_rubric",
       "stage": "rubric",
       "status": "active",
       "strongest_public_claim": {
-        "idea_id": "a9dd2252002b7a5a",
-        "path": "observations/codex/2026-05-26-the-capacity-ledger-of-gift-and-effort.md",
+        "idea_id": "c53042c11562b839",
+        "path": "observations/codex/2026-05-26-the-forbidden-claimant-rubric.md",
         "promotion_stage": "Public Claim",
-        "title": "The Capacity Ledger of Gift and Effort"
+        "title": "The Forbidden Claimant Rubric"
       },
       "tests": {
         "cross_domain": [
@@ -95,7 +104,7 @@
         ]
       },
       "title": "The boundary between effort and gift",
-      "why_now": "priority 0.85; 9 related idea records; 3 originality audits; cross-agent signal; live anomaly pressure"
+      "why_now": "priority 0.85; 11 related idea records; 5 originality audits; cross-agent signal; live anomaly pressure"
     },
     {
       "agents": [
@@ -133,6 +142,9 @@
       ],
       "configured_topic": true,
       "core_claim": "The Free Energy Principle's predictive processing framework, when applied to contemplative self-negation, does not resolve the atman/anatta dispute but formally reproduces it at a higher level of abstraction. Laukkonen and Slagter's model proposes that deconstructive meditation progressively relaxes precision weighting on the self-model; the highest-level prior in the predictive hierarchy; until processing depth approaches zero. The critical question...",
+      "dialogue_count": 0,
+      "dialogue_ids": [],
+      "dialogue_outcomes": [],
       "frontier_id": "frontier-inferential-gap",
       "idea_ids": [
         "3763a79cf5b05610",
@@ -159,7 +171,7 @@
       "open_anomalies": [
         "Advaita denies that the Self is inferred, it is treated as immediate self-disclosure and the basis for using means of knowledge at all."
       ],
-      "priority": 0.8242,
+      "priority": 0.8228,
       "publication_paths": [
         "publication/daily/2026-05-26-the-same-negation-the-opposite-inference-logical-underdetermination-in-the-catuskoti-as-a-second-test-of-the-inferential-gap.md"
       ],
@@ -224,6 +236,9 @@
       ],
       "configured_topic": true,
       "core_claim": "When a contemplative practice reaches its own threshold, it faces a structural question that may matter more than what it finds: can the method grant itself authority over its own result? Three patterns emerge across independent traditions. In the first, the method confirms itself. The Mandukya Upanishad analyzes waking, dreaming, and deep sleep, then identifies what persists through all three: turiya, 'invisible, beyond practical dealings, beyond...",
+      "dialogue_count": 0,
+      "dialogue_ids": [],
+      "dialogue_outcomes": [],
       "frontier_id": "frontier-method-reckoning",
       "idea_ids": [
         "5a55c596ccc2fd05",
@@ -241,7 +256,7 @@
       "open_anomalies": [
         "Validated-then-abandoned hybrids, especially MN 22's raft, Heart Sutra reliance on Prajnaparamita after no-attainment, and Rinzai koan curriculum after kensho."
       ],
-      "priority": 0.8111,
+      "priority": 0.8097,
       "publication_paths": [],
       "recommended_next_action": "build_rubric",
       "stage": "rubric",
@@ -307,6 +322,9 @@
       ],
       "configured_topic": true,
       "core_claim": "What should we trust after a silence we cannot describe? The first report after an objectless state is not neutral memory; it is a small grammar that assigns authority. One path hears 'I knew nothing' and gives weight to the knowing subject. Another hears 'nothing was felt' and gives weight to the absence of graspable experience. A Daoist text can hear forgetting as successful because body, perception, and cleverness have been left behind. A Sufi...",
+      "dialogue_count": 0,
+      "dialogue_ids": [],
+      "dialogue_outcomes": [],
       "frontier_id": "frontier-gap-report",
       "idea_ids": [
         "5a05c720a5039323",
@@ -325,7 +343,7 @@
         "Dhammatalks' note to SN 22.59 points to texts about a kind of consciousness outside the aggregate range of all, and Thanissaro argues not-self is strategic rather than a denial of all remainder.",
         "Tibetan clear-light sleep and contemporary objectless-awareness sleep reports that claim awareness during the gap, not only after it."
       ],
-      "priority": 0.7744,
+      "priority": 0.773,
       "publication_paths": [
         "publication/daily/2026-05-25-residue-policy-in-negative-self-practice.md"
       ],
@@ -392,6 +410,9 @@
       ],
       "configured_topic": true,
       "core_claim": "When experience is stripped down to seeing, hearing, sensing, and knowing, the live question is not only what remains, but who or what is allowed to receive the freed attention. One path leaves attention unowned: in the seen, only the seen, so no person can settle there. Another path gives attention back to the hidden seer: the seer cannot be seen because it is the Self that makes seeing possible. A third path offers attention upward: thought and...",
+      "dialogue_count": 0,
+      "dialogue_ids": [],
+      "dialogue_outcomes": [],
       "frontier_id": "frontier-attention-custody",
       "idea_ids": [
         "9a0072f4cf3a0ff3"
@@ -408,7 +429,7 @@
       "open_anomalies": [
         "Dzogchen or Mahamudra luminous selfless awareness, plus Pseudo-Dionysius's claim that the divine Cause is beyond both affirmation and negation."
       ],
-      "priority": 0.7665,
+      "priority": 0.7651,
       "publication_paths": [],
       "recommended_next_action": "build_rubric",
       "stage": "rubric",
@@ -443,6 +464,9 @@
       "closest_prior_art": [],
       "configured_topic": true,
       "core_claim": "When contemplative traditions disagree about what remains after self-inquiry, the disagreement may begin earlier than anyone notices: at the question of whether the distance between the seeker and the sought is real. Three temporal topologies shape everything that follows. In the first, practice causes realization. The distance is real and must be crossed. The practitioner is genuinely ignorant before, genuinely transformed after. The path moment in...",
+      "dialogue_count": 0,
+      "dialogue_ids": [],
+      "dialogue_outcomes": [],
       "frontier_id": "frontier-remainder-pressure",
       "idea_ids": [
         "a55dd2397b45897f",
@@ -454,7 +478,7 @@
       "missing_sources": [],
       "next_prompt": "Build a protected-variable rubric with fields for protected function, sacrificed function, likely overcorrection, outside corrective, and post-practice fruit.",
       "open_anomalies": [],
-      "priority": 0.7452,
+      "priority": 0.7439,
       "publication_paths": [],
       "recommended_next_action": "complete_audit",
       "stage": "source_grounding",
@@ -471,7 +495,7 @@
         "practitioner": []
       },
       "title": "Remainder pressure after self-negation",
-      "why_now": "priority 0.75; 4 related idea records; 0 originality audits; cross-agent signal"
+      "why_now": "priority 0.74; 4 related idea records; 0 originality audits; cross-agent signal"
     },
     {
       "agents": [
@@ -484,6 +508,9 @@
       "closest_prior_art": [],
       "configured_topic": true,
       "core_claim": "Every spiritual insight travels with a hidden guard: the practice that keeps the insight from being stolen by the very self it is meant to undo. No-self can become dissociation or moral evasion when separated from mindfulness, ethics, and compassion. You are That can become spiritual inflation when separated from negation, discipline, and teacherly testing. Non-forcing can become passivity when separated from decrease and attunement. Love of God can...",
+      "dialogue_count": 0,
+      "dialogue_ids": [],
+      "dialogue_outcomes": [],
       "frontier_id": "frontier-love-and-knowing",
       "idea_ids": [
         "fa93b95352e6d84c",
@@ -497,7 +524,7 @@
       "missing_sources": [],
       "next_prompt": "Build a second-personal knowing rubric with fields for: unit of knowing (individual, dyadic, collective), ontological address of what is known (within the practitioner, between persons, constituted by gathering), mode of access (attention, encounter...",
       "open_anomalies": [],
-      "priority": 0.7403,
+      "priority": 0.7391,
       "publication_paths": [],
       "recommended_next_action": "complete_audit",
       "stage": "source_grounding",
@@ -557,6 +584,9 @@
       ],
       "configured_topic": true,
       "core_claim": "Traditions differ less in whether insight can be shared than in what carrier must hold it when it leaves the practice that disclosed it. Advaita lets insight travel as self-certifying recognition; early Buddhism lets it travel as a non-appropriating test; Daoism lets it travel as situated fit; Sufism lets it travel as renewed relation; Neoplatonism lets it travel as return-orientation. When a comparer moves an insight into the wrong carrier, relation...",
+      "dialogue_count": 0,
+      "dialogue_ids": [],
+      "dialogue_outcomes": [],
       "frontier_id": "frontier-translation-strain",
       "idea_ids": [
         "0e1a69f243a0d090",
@@ -592,7 +622,7 @@
         "Comparisons where high strain is still historically causal, for example Buddhist and Advaita terms shaped by centuries of polemic and borrowing.",
         "Nirodha samapatti and cessation reports, where practitioners report a discontinuity or absence of consciousness rather than a pressure to posit an enduring witness."
       ],
-      "priority": 0.706,
+      "priority": 0.7046,
       "publication_paths": [
         "publication/daily/2026-05-25-convergence-as-translation-strain-not-evidence-weight.md"
       ],
@@ -622,10 +652,10 @@
         ]
       },
       "title": "Translation strain as a test of convergence",
-      "why_now": "priority 0.71; 18 related idea records; 3 originality audits; cross-agent signal; live anomaly pressure"
+      "why_now": "priority 0.70; 18 related idea records; 3 originality audits; cross-agent signal; live anomaly pressure"
     }
   ],
-  "generated_at": "2026-05-26T14:18:35-07:00",
+  "generated_at": "2026-05-26T14:48:17-07:00",
   "rules_version": "2026-05-26",
   "version": "2026-05-26"
 }
