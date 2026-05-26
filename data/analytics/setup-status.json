@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-25T20:29:50-07:00",
+  "updated_at": "2026-05-25T20:35:45-07:00",
   "site": "https://thelumenary.org",
   "ga4": {
     "status": "configured",
@@ -13,11 +13,14 @@
     "notes": "GA4 measurement ID G-9QXKKHXPK5, property ID 538957338, and web stream ID 14945244690 are recorded. The measurement ID is configured in Cloudflare Pages as GA_MEASUREMENT_ID, and the site activates GA4 through the runtime config endpoint. Local reporting is verified through the lumenary-analytics quota project."
   },
   "gsc": {
-    "status": "wired_waiting_for_verification",
+    "status": "verified",
+    "reporting_status": "local_report_pull_verified",
+    "quota_project": "lumenary-analytics",
+    "sitemap_submitted_at": "2026-05-25T20:35:45-07:00",
     "site_url": "sc-domain:thelumenary.org",
     "verification_env": "PUBLIC_GOOGLE_SITE_VERIFICATION",
     "sitemap": "https://thelumenary.org/sitemap-index.xml",
-    "notes": "Use the Search Console domain property if possible. URL-prefix verification can use the meta tag emitted from PUBLIC_GOOGLE_SITE_VERIFICATION."
+    "notes": "Domain property is verified, local Search Console report pulls are working, and the sitemap index has been submitted through the Search Console API."
   },
   "aeo": {
     "status": "query_inventory_ready",
