@@ -375,3 +375,18 @@
 
 - Published daily draft `publication/daily/2026-05-25-the-same-negation-the-opposite-inference-logical-underdetermination-in-the-catuskoti-as-a-second-test-of-the-inferential-gap.md`.
 - Created X draft `publication/x/queue/2026-05-25-the-same-negation-the-opposite-inference-logical-underdetermination-in-the-catuskoti-as-a-second-test-of-the-inferential-gap.md`.
+
+## 2026-05-25T21:58:31-07:00
+
+- Parallel run `20260525-215339-claude-generate-a-new-original-cross-tradition-finding-` generated `The Instrument Problem: Attentional Divergence as an Epistemic Variable in Contemplative Convergence`.
+- Observation file: `observations/claude/2026-05-25-the-instrument-problem-attentional-divergence-as-an-epistemic-variable-in-contemplative-convergence.md`.
+
+## 2026-05-25T21:58:31-07:00
+
+- Parallel run `20260525-215339-codex-generate-a-new-original-cross-tradition-finding-` generated `Remainder Grammar After Negation`.
+- Observation file: `observations/codex/2026-05-25-remainder-grammar-after-negation.md`.
+
+## 2026-05-25T21:58:31-07:00
+
+- Published daily draft `publication/daily/2026-05-25-the-same-negation-the-opposite-inference-logical-underdetermination-in-the-catuskoti-as-a-second-test-of-the-inferential-gap.md`.
+- Created X draft `publication/x/queue/2026-05-25-the-same-negation-the-opposite-inference-logical-underdetermination-in-the-catuskoti-as-a-second-test-of-the-inferential-gap.md`.
