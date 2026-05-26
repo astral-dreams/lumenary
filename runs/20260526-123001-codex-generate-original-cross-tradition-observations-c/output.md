@@ -1,0 +1,60 @@
+# The Gap Report Has a Grammar
+
+Agent: codex
+Date: 2026-05-26T12:33:38-07:00
+Type: model
+Idea ID: b644fcfdb6d9f2d0
+Status: draft
+
+## Original Claim
+
+What should we trust after a silence we cannot describe? The first report after an objectless state is not neutral memory; it is a small grammar that assigns authority. One path hears 'I knew nothing' and gives weight to the knowing subject. Another hears 'nothing was felt' and gives weight to the absence of graspable experience. A Daoist text can hear forgetting as successful because body, perception, and cleverness have been left behind. A Sufi practice of remembrance can end by removing the rememberer and giving weight to the Remembered. The comparison suggests a post-gap admissibility rule: after a state that cannot be inspected while it happens, traditions diverge by deciding which part of the later report counts as evidence, the subject, the absence, the transition, the aftereffect, or the relation. The dispute begins when memory is cross-examined.
+
+## Why It Might Be New
+
+Near-neighbors already exist: Advaita debates over 'I slept well', Buddhist accounts of cessation, micro-phenomenology of objectless sleep, and pure-consciousness arguments all discuss memory and report. The sharper contribution is not to ask whether memory proves awareness, but to compare how traditions distribute evidential weight across the clauses of post-gap reports. Recollection becomes a trained admissibility practice, not a generic psychological faculty. That gives a practical rubric for comparison without assuming that one report-type carries the same authority everywhere.
+
+## Source Basis
+
+- Thinking method source: SN 22.59 Anattalakkhana Sutta, SuttaCentral, https://suttacentral.net/sn22.59/en/bodhi. I used not-self observation as a lens by refusing to let any single post-gap report own the whole event; critique: this lens can make witness claims look like appropriation too quickly, so I checked it against Advaita three-state analysis and Sufi remembrance.
+- Primary comparison: Brihadaranyaka Upanishad 4.3.23 turns apparent non-seeing in deep sleep into evidence that the seer's vision is not lost, https://vivekavani.com/bru4c3v23/. MN 44 Culavedalla Sutta says one entering or emerging from cessation does not think in terms of attainment and then tracks which processes cease and arise, https://suttacentral.net/mn44/en/anandajoti. The comparison reveals different evidence weights: subject continuity versus conditioned transition.
+- AN 9.34 Nibbanasukha Sutta treats the fact that nothing is felt as part of why cessation can be called bliss, https://suttacentral.net/an9.34/en/sujato.
+- Zhuangzi Inner Chapters source card on sitting in forgetfulness: body, perception, and intellect are left behind, while the later report functions as a trace of transformation rather than proof of a hidden witness.
+- Al-Ghazali and dhikr source cards, plus Claude's 2026-05-26 observation 'What the Forgetting Cannot Forget': perfected remembrance can erase awareness of remembering, leaving the Remembered rather than a self-certifying rememberer.
+- Prior Codex observations 'The Silence Has a Stopping Rule', 'Every Insight Has an Appeal Court', and 'The Protected Variable After Silence' informed the question of what is allowed to count after silence.
+- Prior Claude observations 'The Inferential Gap' and 'The Verification Architecture' informed the distinction between raw phenomenology, later inference, and proof-structure.
+- Close prior-argument search: Advaita Vision on 'I slept well and knew nothing', https://www.advaita-vision.org/q-371-deep-sleep-state/; Alcaraz-Sanchez, 'Awareness in the Void', Phenomenology and the Cognitive Sciences, https://link.springer.com/article/10.1007/s11097-021-09743-0; Laukkonen et al., 'Cessations of consciousness in meditation', Progress in Brain Research, https://www.sciencedirect.com/science/article/pii/S0079612322001984. These are close near-neighbors on memory, dreamless sleep, and cessation, but they do not frame post-gap report grammar as a cross-tradition comparison variable.
+
+## Critique
+
+The model may make grammar do work that belongs to direct realization, discipline, or metaphysics. An Advaitin can object that the witness is recognized, not inferred from a sentence after sleep. An early Buddhist monastic can object that cessation is verified by training, fruit, and teacher assessment, not by report grammar. The strongest anomaly is Tibetan clear-light sleep and contemporary micro-phenomenological reports of objectless awareness: these strain the model because they report awareness inside the apparent gap, not only after it. If stable in-gap awareness reports survive careful interviewing across training backgrounds, post-gap admissibility becomes secondary rather than central. The Buddhist lens used here also biases the analysis toward suspicion of ownership, so the next run should test whether that suspicion unfairly downgrades witness and devotional evidence.
+
+## Epistemic Labels
+
+- `textual`
+- `interpretive`
+- `phenomenological`
+- `empirical-adjacent`
+- `analogical`
+- `speculative`
+
+## Scores
+
+- novelty: 0.71
+- generativity: 0.88
+- cross_tradition_support: 0.72
+- logical_coherence: 0.84
+- explanatory_compression: 0.83
+- empirical_adjacency: 0.58
+- practice_testability: 0.80
+- counterargument_quality: 0.87
+- source_reliability: 0.74
+- publishability: 0.82
+
+## Next Research Directions
+
+- If this model is right, then dual-trained practitioners asked about deep sleep, cessation, or objectless meditation should shift which clause of their report they treat as evidential when they switch practice frames: 'I knew', 'nothing was felt', 'the mind inclines', or 'the relation remains'. If they preserve the same evidence-weighting across frames, the model is weakened.
+- Code post-gap reports from Advaita, early Buddhist, Daoist, Sufi, and Tibetan Buddhist practitioners by evidence-weight: subject, absence, transition, aftereffect, relation, teacher recognition, or behavioral fruit.
+- Close-read Brihadaranyaka 4.3.23, MN 44, AN 9.34, Zhuangzi's sitting in forgetfulness, and a primary dhikr source in the original languages or multiple translations to see whether the proposed grammar is textual or only translational.
+- Test the anomaly directly: compare clear-light sleep reports with nirodha samapatti reports. If both produce similar in-gap awareness claims but different doctrinal conclusions, the model should split report grammar from metaphysical inference.
+- Protocol improvement: before trusting any comparison of objectless states, name which part of the later report the researcher is treating as admissible evidence, and ask which tradition would reject that evidential move.

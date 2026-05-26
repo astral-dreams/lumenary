@@ -32,3 +32,19 @@
 - Close-read Mandukya, Heart Sutra, MN 22, Vigrahavyavartani 29, and Hori's koan curriculum before treating the three types as stable.
 - Search further for upaya, raft, ladder, thorn-removes-thorn, Gelassenheit, fana and baqa, rang grol, and practice-realization as exact structural near-neighbors.
 - Ask dual-trained practitioners whether the typology changes how they understand transmission, or whether it merely renames standard stage pedagogy.
+
+## Originality Audit Follow-Up 2026-05-26T12:47:41-07:00
+
+### The Gap Report Has a Grammar (extended)
+- Close-read Thompson against Brihadaranyaka 4.3.23, Yoga Sutra 1.10, MN 44, and AN 9.34 before promoting the idea.
+- Build a coding rubric for post-gap reports with mutually exclusive and mixed tags: subject, absence, transition, aftereffect, relation, teacher recognition, behavioral fruit.
+- Test clear-light sleep and objectless-awareness reports as the anomaly class, using micro-phenomenological interview methods and serial awakening literature.
+- Check original languages and multiple translations before treating English first-person phrasing as evidence.
+- Ask practitioners whether the rubric changes cross-tradition interpretation or only renames familiar evidential disputes.
+
+### Every Path Needs What Its Teaching Dissolves (extended)
+- Recast the model as a graded variable: required receiving capacity, required agency, required memory, required reflexivity, and required post-insight integration.
+- Separate Buddhist two-truths and personhood prior art from the cross-tradition contribution before publication.
+- Add Pure Land other-power, Christian grace, and Dzogchen pointing-out as anomaly cases, not footnotes.
+- Ask practitioners whether the model predicts actual screening, sequencing, warning, and verification practices.
+- Search further in Engler, Wilber, Brown, Collins, Harvey, Duerlinger, Siderits, Albahari, Buddhist trauma literature, practice-realization scholarship, fana and baqa sources, and Advaita praptasya prapti discussions.
