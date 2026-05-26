@@ -294,9 +294,9 @@ h3 {
 }
 
 .source-count-list {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   gap: 4px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   list-style: none;
   margin: 0;
   padding: 0;
@@ -312,10 +312,6 @@ h3 {
   justify-content: space-between;
   padding: 5px 0;
   text-decoration: none;
-}
-
-.source-count-list li:last-child a {
-  border-bottom: none;
 }
 
 .source-count-list li a:hover {
