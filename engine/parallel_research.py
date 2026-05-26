@@ -12,6 +12,7 @@ from pathlib import Path
 
 from .config import EngineConfig
 from .distill import distill_new_ideas
+from .dialectic import run_dialectic
 from .frontier import prepare_frontier_brief, refresh_frontiers
 from .growth import record_growth
 from .librarian import Librarian
@@ -57,6 +58,13 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--skip-deploy", action="store_true")
     parser.add_argument("--skip-originality-audit", action="store_true")
     parser.add_argument("--no-frontier", action="store_true")
+    parser.add_argument(
+        "--dialectic-after",
+        type=int,
+        default=int(os.getenv("SPIRITUALITY_DIALECTIC_AFTER", "0")),
+        help="Run one dialogue sidecar after every N successful parallel runs. Use 0 to disable.",
+    )
+    parser.add_argument("--no-dialectic", action="store_true")
     return parser.parse_args()
 
 
@@ -211,6 +219,102 @@ def _scan_public_copy(root: Path) -> None:
             bad.append(f"{path.relative_to(root)}: {count}")
     if bad:
         raise RuntimeError("Public copy contains banned punctuation: " + "; ".join(bad))
+
+
+def _maybe_run_dialectic_sidecar(
+    root: Path,
+    args: argparse.Namespace,
+    *,
+    execution_id: str,
+) -> None:
+    if args.no_dialectic or int(args.dialectic_after or 0) <= 0:
+        return
+
+    state_path = root / "state" / "dialectic_cadence.json"
+    state_path.parent.mkdir(parents=True, exist_ok=True)
+    state = {"successful_parallel_runs": 0}
+    if state_path.exists():
+        try:
+            state = json.loads(state_path.read_text(encoding="utf-8"))
+        except json.JSONDecodeError:
+            state = {"successful_parallel_runs": 0}
+
+    count = int(state.get("successful_parallel_runs") or 0) + 1
+    due = count % int(args.dialectic_after) == 0
+    state.update(
+        {
+            "dialectic_after": int(args.dialectic_after),
+            "last_parallel_execution_id": execution_id,
+            "last_checked_at": now_local_iso(),
+            "successful_parallel_runs": count,
+        }
+    )
+    state_path.write_text(
+        json.dumps(state, indent=2, ensure_ascii=True, sort_keys=True) + "\n",
+        encoding="utf-8",
+    )
+    if not due:
+        return
+
+    dialectic_config = EngineConfig.load(
+        root=root,
+        agent="codex",
+        provider="codex-cli",
+        codex_model=args.codex_model,
+        codex_search=True,
+        claude_model=args.claude_model,
+    )
+    try:
+        dialogues = run_dialectic(
+            dialectic_config,
+            max_pairs=1,
+            execution_id=f"parallel-dialogue-{datetime.now().astimezone().strftime('%Y%m%d-%H%M%S')}",
+            audit_syntheses=not args.skip_originality_audit,
+            notify=True,
+        )
+        state["last_dialogue_at"] = now_local_iso()
+        state["last_dialogue_count"] = len(dialogues)
+        state_path.write_text(
+            json.dumps(state, indent=2, ensure_ascii=True, sort_keys=True) + "\n",
+            encoding="utf-8",
+        )
+        Librarian(root).append_jsonl(
+            "runs/dialogue-sidecar-events.jsonl",
+            {
+                "at": now_local_iso(),
+                "count": len(dialogues),
+                "execution_id": execution_id,
+            },
+        )
+        print(
+            json.dumps(
+                {"event": "dialogue-sidecar", "count": len(dialogues)},
+                sort_keys=True,
+            ),
+            flush=True,
+        )
+    except Exception as exc:
+        state["last_dialogue_error"] = repr(exc)
+        state["last_dialogue_error_at"] = now_local_iso()
+        state_path.write_text(
+            json.dumps(state, indent=2, ensure_ascii=True, sort_keys=True) + "\n",
+            encoding="utf-8",
+        )
+        Librarian(root).append_jsonl(
+            "runs/dialogue-sidecar-errors.jsonl",
+            {
+                "at": now_local_iso(),
+                "error": repr(exc),
+                "execution_id": execution_id,
+            },
+        )
+        print(
+            json.dumps(
+                {"event": "dialogue-sidecar-error", "error": repr(exc)},
+                sort_keys=True,
+            ),
+            flush=True,
+        )
 
 
 def _commit_and_push(root: Path) -> None:
@@ -466,6 +570,8 @@ def main() -> None:
 
             if not args.no_frontier:
                 refresh_frontiers(root)
+
+            _maybe_run_dialectic_sidecar(root, args, execution_id=execution_id)
 
         if errors:
             librarian.append_jsonl(

@@ -18,6 +18,7 @@ FRONTIER_MARKDOWN = "state/frontiers.md"
 NEXT_FRONTIER_PROMPT = "state/next_frontier_prompt.md"
 FRONTIER_EVENTS = "runs/frontier-events.jsonl"
 FRONTIER_RULES = "config/frontier-rules.json"
+DIALOGUE_OUTCOMES = "reviews/dialogues/outcomes.jsonl"
 
 STOPWORDS = {
     "a",
@@ -331,6 +332,63 @@ def _publication_paths(root: Path) -> dict[str, dict[str, Any]]:
             "modified_at": datetime.fromtimestamp(path.stat().st_mtime).astimezone().isoformat(timespec="seconds"),
         }
     return posts
+
+
+def _dialogue_outcomes_by_idea(root: Path) -> dict[str, list[dict[str, Any]]]:
+    outcomes: dict[str, list[dict[str, Any]]] = {}
+    for record in _read_jsonl(root / DIALOGUE_OUTCOMES):
+        for idea_id in record.get("idea_ids") or []:
+            if not idea_id:
+                continue
+            outcomes.setdefault(str(idea_id), []).append(record)
+    return outcomes
+
+
+def _apply_dialogue_pressure(
+    frontier: dict[str, Any],
+    outcomes_by_idea: dict[str, list[dict[str, Any]]],
+) -> dict[str, Any]:
+    outcomes: list[dict[str, Any]] = []
+    seen: set[str] = set()
+    for idea_id in frontier.get("idea_ids") or []:
+        for outcome in outcomes_by_idea.get(str(idea_id), []):
+            dialogue_id = str(outcome.get("dialogue_id") or "")
+            if not dialogue_id or dialogue_id in seen:
+                continue
+            seen.add(dialogue_id)
+            outcomes.append(outcome)
+    if not outcomes:
+        frontier["dialogue_ids"] = []
+        frontier["dialogue_outcomes"] = []
+        frontier["dialogue_count"] = 0
+        return frontier
+
+    labels = [str(outcome.get("outcome") or "unknown") for outcome in outcomes]
+    boost = 0.0
+    if any(label in {"convergence", "revision", "candidate_transcendence"} for label in labels):
+        boost += 0.04
+    if any(label == "standoff" for label in labels):
+        boost += 0.02
+    if any(label == "demolition" for label in labels):
+        boost -= 0.12
+    frontier["priority"] = round(max(0.0, min(1.0, float(frontier.get("priority") or 0.0) + boost)), 4)
+    frontier["dialogue_ids"] = sorted(seen)
+    frontier["dialogue_outcomes"] = sorted(set(labels))
+    frontier["dialogue_count"] = len(outcomes)
+
+    questions = [
+        _clean(outcome.get("new_frontier_question"), limit=260)
+        for outcome in outcomes
+        if outcome.get("new_frontier_question")
+    ]
+    existing_anomalies = list(frontier.get("open_anomalies") or [])
+    for question in questions:
+        if question and question not in existing_anomalies:
+            existing_anomalies.append(question)
+    frontier["open_anomalies"] = existing_anomalies[:5]
+    if labels and "dialogue pressure" not in frontier.get("why_now", ""):
+        frontier["why_now"] = f"{frontier.get('why_now', '')}; dialogue pressure".strip("; ")
+    return frontier
 
 
 def _latest(items: list[str], limit: int, *, clip: int = 260) -> list[str]:
@@ -764,6 +822,7 @@ def refresh_frontiers(root: Path) -> dict[str, Any]:
     ideas = _read_jsonl(root / "hypotheses" / "ideas.jsonl")
     audits_by_idea = _latest_audits_by_idea(root)
     publications = _publication_paths(root)
+    dialogue_outcomes = _dialogue_outcomes_by_idea(root)
     grouped: dict[str, tuple[dict[str, Any], list[dict[str, Any]]]] = {}
 
     for record in ideas:
@@ -775,7 +834,10 @@ def refresh_frontiers(root: Path) -> dict[str, Any]:
         existing[1].append(record)
 
     frontiers = [
-        _frontier_from_group(topic, records, audits_by_idea, publications, rules)
+        _apply_dialogue_pressure(
+            _frontier_from_group(topic, records, audits_by_idea, publications, rules),
+            dialogue_outcomes,
+        )
         for topic, records in grouped.values()
         if records
     ]

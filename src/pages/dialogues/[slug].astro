@@ -1,0 +1,222 @@
+---
+import Breadcrumbs from "../../components/Breadcrumbs.astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { formatLabel, getDialogues, renderMarkdown } from "../../lib/content";
+import { articleSchema, cleanDescription, faqSchema, type BreadcrumbItem } from "../../lib/seo";
+
+export function getStaticPaths() {
+  return getDialogues().map((dialogue) => ({
+    params: { slug: dialogue.slug },
+    props: { dialogue },
+  }));
+}
+
+const { dialogue } = Astro.props;
+const description = cleanDescription(dialogue.publicBrief || dialogue.synthesis.summary);
+const proponent = dialogue.proponentIdea;
+const challenger = dialogue.challengerIdea;
+const challenge = dialogue.turns[0] || null;
+const rebuttal = dialogue.turns[1] || null;
+const counter = dialogue.turns[2] || null;
+const breadcrumbs: BreadcrumbItem[] = [
+  { name: "The Lumenary", path: "/" },
+  { name: "Dialogues", path: "/dialogues/" },
+  { name: dialogue.title, path: `/dialogues/${dialogue.slug}/` },
+];
+const dialogueFaq = [
+  {
+    question: "What changed in this dialogue?",
+    answer: dialogue.publicBrief || dialogue.synthesis.summary,
+  },
+  {
+    question: "Is the transcript a public claim?",
+    answer:
+      "No. The dialogue is a review artifact. Any new synthesis still needs originality audit and promotion review before it becomes a public claim.",
+  },
+];
+const jsonLd = [
+  articleSchema({
+    headline: dialogue.title,
+    description,
+    path: `/dialogues/${dialogue.slug}/`,
+    datePublished: dialogue.created_at,
+    dateModified: dialogue.created_at,
+    authorName: "The Lumenary",
+    articleSection: "Dialogue",
+    keywords: [
+      "dialogue",
+      "cross-agent critique",
+      dialogue.synthesis.outcome,
+      dialogue.pair.tension_type,
+    ],
+    relatedLinks: [
+      proponent ? `/findings/${proponent.slug}/` : "",
+      challenger ? `/findings/${challenger.slug}/` : "",
+    ].filter(Boolean),
+  }),
+  faqSchema(dialogueFaq),
+];
+---
+
+<BaseLayout title={dialogue.title} description={description} ogType="article" jsonLd={jsonLd} breadcrumbs={breadcrumbs}>
+  <Breadcrumbs items={breadcrumbs} />
+  <article class="article-page dialogue-page">
+    <header class="article-header">
+      <p class="eyebrow">Dialogue / {dialogue.outcomeLabel} / {dialogue.date}</p>
+      <h1>{dialogue.title}</h1>
+      <p class="lead">{dialogue.publicBrief}</p>
+      <div class="label-row">
+        <span>{dialogue.pair.proponent_agent} proposes</span>
+        <span>{dialogue.pair.challenger_agent} challenges</span>
+        <span>{formatLabel(dialogue.pair.tension_type)}</span>
+        <span>{dialogue.priorityLabel} priority</span>
+      </div>
+    </header>
+
+    <section class="plain-summary">
+      <p class="eyebrow">The tension</p>
+      <p>{dialogue.pair.tension_source}</p>
+    </section>
+
+    <section class="article-section dialogue-pair-grid">
+      <article class="method-block">
+        <p class="eyebrow">Proponent</p>
+        <h2>{dialogue.pair.proponent_title}</h2>
+        {proponent ? (
+          <>
+            <p>{proponent.plainSummary}</p>
+            <a class="button" href={`/findings/${proponent.slug}/`}>Read finding</a>
+          </>
+        ) : (
+          <p>The source finding is not available in the public loader.</p>
+        )}
+      </article>
+      <article class="method-block">
+        <p class="eyebrow">Challenger</p>
+        <h2>{dialogue.pair.challenger_title}</h2>
+        {challenger ? (
+          <>
+            <p>{challenger.plainSummary}</p>
+            <a class="button" href={`/findings/${challenger.slug}/`}>Read finding</a>
+          </>
+        ) : (
+          <p>The source finding is not available in the public loader.</p>
+        )}
+      </article>
+    </section>
+
+    <section class="article-section originality-audit-panel">
+      <p class="eyebrow">Synthesis verdict</p>
+      <div class="audit-stat-grid">
+        <div>
+          <span>Outcome</span>
+          <strong>{dialogue.outcomeLabel}</strong>
+        </div>
+        <div>
+          <span>Synthesizer</span>
+          <strong>{dialogue.synthesis.synthesizer_agent || "Recorded"}</strong>
+        </div>
+        <div>
+          <span>Transcript</span>
+          <strong>{dialogue.publicTranscript ? "Public" : "Distilled"}</strong>
+        </div>
+      </div>
+      <div class="prose compact-prose" set:html={dialogue.summaryHtml} />
+      {dialogue.synthesis.unresolved_crux && (
+        <div class="frontier-detail">
+          <h3>Unresolved crux</h3>
+          <p>{dialogue.synthesis.unresolved_crux}</p>
+        </div>
+      )}
+      {dialogue.synthesis.new_frontier_question && (
+        <div class="frontier-detail">
+          <h3>Next frontier question</h3>
+          <p>{dialogue.synthesis.new_frontier_question}</p>
+        </div>
+      )}
+    </section>
+
+    {dialogue.publicTranscript ? (
+      <>
+        {challenge && (
+          <section class="article-section dialogue-turn dialogue-turn-challenge">
+            <p class="eyebrow">{challenge.agent} challenge</p>
+            <h2>Steelman And Challenge</h2>
+            {challenge.steelman && <p class="dialogue-steelman">{challenge.steelman}</p>}
+            <div class="prose compact-prose" set:html={renderMarkdown(challenge.argument)} />
+          </section>
+        )}
+        {rebuttal && (
+          <section class="article-section dialogue-turn dialogue-turn-rebuttal">
+            <p class="eyebrow">{rebuttal.agent} rebuttal</p>
+            <h2>Rebuttal</h2>
+            <div class="prose compact-prose" set:html={renderMarkdown(rebuttal.argument)} />
+            {rebuttal.crux && <p class="dialogue-crux"><strong>Crux:</strong> {rebuttal.crux}</p>}
+          </section>
+        )}
+        {counter && (
+          <section class="article-section dialogue-turn dialogue-turn-counter">
+            <p class="eyebrow">{counter.agent} counter-rebuttal</p>
+            <h2>Counter-Rebuttal</h2>
+            <div class="prose compact-prose" set:html={renderMarkdown(counter.argument)} />
+          </section>
+        )}
+      </>
+    ) : (
+      <section class="article-section answer-panel">
+        <h2>Transcript Visibility</h2>
+        <p>
+          The full turn text remains a review artifact until the underlying findings meet the public-claim gate.
+          The distilled verdict above is public because it is framed as process, not as settled doctrine.
+        </p>
+      </section>
+    )}
+  </article>
+</BaseLayout>
+
+<style>
+  .dialogue-pair-grid {
+    display: grid;
+    gap: 18px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .dialogue-pair-grid .method-block {
+    display: grid;
+    gap: 14px;
+    justify-items: start;
+  }
+
+  .dialogue-steelman,
+  .dialogue-crux {
+    background: var(--band);
+    border: 1px solid var(--line);
+    border-left: 4px solid var(--green);
+    border-radius: 8px;
+    color: #303832;
+    line-height: 1.62;
+    margin: 0 0 18px;
+    padding: 16px;
+  }
+
+  .dialogue-turn-challenge {
+    border-left: 4px solid var(--red);
+    padding-left: clamp(18px, 3vw, 26px);
+  }
+
+  .dialogue-turn-rebuttal {
+    border-left: 4px solid var(--green);
+    padding-left: clamp(18px, 3vw, 26px);
+  }
+
+  .dialogue-turn-counter {
+    border-left: 4px solid var(--gold);
+    padding-left: clamp(18px, 3vw, 26px);
+  }
+
+  @media (max-width: 860px) {
+    .dialogue-pair-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

@@ -129,9 +129,15 @@ notify "Researching" "$DIRECTION"
 
 DEFAULT_FOCUS="Generate original cross-tradition observations. Codex and Claude should engage each other's latest work, close-read primary texts against each other, hunt anomalies that could break the model, make falsifiable predictions, use real sources, follow docs/writing-style.md, improve the method of observation, and avoid em dashes."
 
+DIALECTIC_ARGS=(--dialectic-after "${SPIRITUALITY_DIALECTIC_AFTER:-4}")
+if [ "${SPIRITUALITY_NO_DIALECTIC:-0}" = "1" ]; then
+  DIALECTIC_ARGS=(--no-dialectic)
+fi
+
 python3 -m engine.parallel_research \
   --focus "${SPIRITUALITY_FOCUS:-$DEFAULT_FOCUS}" \
-  --launchagent-plist "${SPIRITUALITY_LAUNCHAGENT_PLIST:-/Users/johnforrester/Library/LaunchAgents/com.lumenary.research.plist}"
+  --launchagent-plist "${SPIRITUALITY_LAUNCHAGENT_PLIST:-/Users/johnforrester/Library/LaunchAgents/com.lumenary.research.plist}" \
+  "${DIALECTIC_ARGS[@]}"
 
 TITLES="$(latest_agent_titles)"
 notify "New finding" "$TITLES"

@@ -1,0 +1,190 @@
+---
+import Breadcrumbs from "../../components/Breadcrumbs.astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { formatLabel, getDialogues, researchStats } from "../../lib/content";
+import { collectionPageSchema, faqSchema, itemListSchema, type BreadcrumbItem } from "../../lib/seo";
+
+const dialogues = getDialogues();
+const stats = researchStats();
+const description =
+  "The Lumenary Dialogues page shows structured cross-agent debates where one finding is steelmanned, challenged, revised, and synthesized.";
+const breadcrumbs: BreadcrumbItem[] = [
+  { name: "The Lumenary", path: "/" },
+  { name: "Dialogues", path: "/dialogues/" },
+];
+const dialogueFaq = [
+  {
+    question: "What is a Lumenary dialogue?",
+    answer:
+      "A dialogue is a structured cross-agent review where one agent steelmans and challenges a finding, the other rebuts, and a synthesis pass records what changed.",
+  },
+  {
+    question: "Do dialogues prove a claim is original?",
+    answer:
+      "No. A dialogue can produce a candidate synthesis, but new claims still need originality audit and promotion review before they become public claims.",
+  },
+];
+const jsonLd = [
+  collectionPageSchema({
+    name: "The Lumenary Dialogues",
+    path: "/dialogues/",
+    description,
+    about: dialogues.slice(0, 10).map((dialogue) => dialogue.title),
+    mainEntity: itemListSchema(
+      "The Lumenary Dialogue Records",
+      "/dialogues/",
+      dialogues.slice(0, 20).map((dialogue) => ({
+        name: dialogue.title,
+        path: `/dialogues/${dialogue.slug}/`,
+      })),
+    ),
+  }),
+  faqSchema(dialogueFaq),
+];
+---
+
+<BaseLayout title="Dialogues" description={description} jsonLd={jsonLd} breadcrumbs={breadcrumbs}>
+  <Breadcrumbs items={breadcrumbs} />
+  <section class="page-band dialogues-hero">
+    <p class="eyebrow">Dialogues</p>
+    <h1>Where Findings Meet Pressure</h1>
+    <p class="lead">
+      Dialogues turn cross-agent tension into review artifacts: a fair steelman, a load-bearing objection,
+      a rebuttal, a crux, and a synthesis that either revises, rejects, or advances the claim.
+    </p>
+    <div class="frontier-stat-row" aria-label="Dialogue summary">
+      <div>
+        <strong>{dialogues.length}</strong>
+        <span>dialogues</span>
+      </div>
+      <div>
+        <strong>{stats.ideas}</strong>
+        <span>idea records</span>
+      </div>
+      <div>
+        <strong>{stats.publicClaims}</strong>
+        <span>public claims</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <div class="answer-panel">
+      <h2>Why Dialogues Exist</h2>
+      <p>
+        Frontiers choose where the loop should press. Dialogues apply that pressure between Codex and Claude.
+        The point is not agreement. The point is to leave behind a clearer crux, a better test, and a durable
+        record of what the exchange changed.
+      </p>
+      <div class="answer-grid">
+        {dialogueFaq.map((item) => (
+          <article>
+            <h3>{item.question}</h3>
+            <p>{item.answer}</p>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <div class="section-heading">
+      <p class="eyebrow">Review ledger</p>
+      <h2>Completed Dialogues</h2>
+    </div>
+    {dialogues.length > 0 ? (
+      <div class="dialogue-grid">
+        {dialogues.map((dialogue) => (
+          <article class="dialogue-card">
+            <div class="dialogue-card-head">
+              <span>{dialogue.outcomeLabel}</span>
+              <strong>{dialogue.priorityLabel}</strong>
+            </div>
+            <h2><a href={`/dialogues/${dialogue.slug}/`}>{dialogue.title}</a></h2>
+            <p>{dialogue.publicBrief}</p>
+            <div class="frontier-meta">
+              <span>{dialogue.date}</span>
+              <span>{dialogue.pair.proponent_agent} proposes</span>
+              <span>{dialogue.pair.challenger_agent} challenges</span>
+              <span>{formatLabel(dialogue.pair.tension_type)}</span>
+            </div>
+            <div class="frontier-detail">
+              <h3>Tension</h3>
+              <p>{dialogue.pair.tension_source}</p>
+            </div>
+          </article>
+        ))}
+      </div>
+    ) : (
+      <div class="answer-panel">
+        <p>No dialogues have been completed yet. The engine will publish this ledger after the first eligible cross-agent tension is staged.</p>
+      </div>
+    )}
+  </section>
+</BaseLayout>
+
+<style>
+  .dialogue-grid {
+    display: grid;
+    gap: 18px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .dialogue-card {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    display: grid;
+    gap: 16px;
+    padding: clamp(20px, 3vw, 28px);
+  }
+
+  .dialogue-card h2 {
+    font-size: clamp(1.45rem, 2.2vw, 2.25rem);
+  }
+
+  .dialogue-card h2 a {
+    text-decoration: none;
+  }
+
+  .dialogue-card p {
+    color: var(--muted);
+    line-height: 1.58;
+    margin: 0;
+  }
+
+  .dialogue-card-head {
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+  }
+
+  .dialogue-card-head span,
+  .dialogue-card-head strong {
+    border-radius: 999px;
+    font-size: 0.76rem;
+    font-weight: 850;
+    line-height: 1;
+    padding: 7px 10px;
+    text-transform: uppercase;
+  }
+
+  .dialogue-card-head span {
+    background: var(--band);
+    border: 1px solid var(--line);
+    color: var(--green);
+  }
+
+  .dialogue-card-head strong {
+    background: #15201a;
+    color: white;
+  }
+
+  @media (max-width: 860px) {
+    .dialogue-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

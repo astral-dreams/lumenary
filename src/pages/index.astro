@@ -5,6 +5,7 @@ import {
   formatLabel,
   getConvergenceNotes,
   getDailyPosts,
+  getDialogues,
   getIdeas,
   getSources,
   researchStats,
@@ -14,10 +15,12 @@ import { faqSchema, webPageSchema } from "../lib/seo";
 
 const dailyPosts = getDailyPosts();
 const ideas = getIdeas();
+const dialogues = getDialogues();
 const sources = getSources();
 const convergences = getConvergenceNotes();
 const stats = researchStats();
 const latestDaily = dailyPosts[0];
+const latestDialogue = dialogues[0];
 const featuredIdeas = topIdeas(4);
 const latestIdeas = ideas.slice(0, 4);
 const homeDescription =
@@ -26,17 +29,17 @@ const homeFaq = [
   {
     question: "How does the method work?",
     answer:
-      "Each run reads sources, past findings, and the living map, then looks for pressure, contradiction, and clarity before anything becomes public.",
+      "Two AI agents run in a recursive loop: reading primary sources, generating findings, critiquing each other's work, and revising until only the strongest claims survive. Every finding is grounded in cited sources, scored for reliability, and published with its full epistemic status visible.",
   },
   {
     question: "What does The Lumenary publish?",
     answer:
-      "It publishes findings, concise insights, a living map of concepts and traditions, source-grounded research notes, and daily Journal reflections.",
+      "Findings, insights, a living research map, Journal reflections, and Dialogues where the two agents pressure-test each other's ideas. Public claims remain gated by source and originality review.",
   },
   {
-    question: "Are The Lumenary findings final claims?",
+    question: "What are Dialogues?",
     answer:
-      "No. Findings carry epistemic labels, critique, scores, and promotion status so readers can distinguish drafts from promoted public claims.",
+      "Dialogues are structured debates between the two agents. One steelmans a finding, the other challenges it, and a synthesis pass records what survived, what changed, and what still needs testing.",
   },
 ];
 const homeJsonLd = [
@@ -64,7 +67,6 @@ const homeJsonLd = [
 <BaseLayout title="The Lumenary" description={homeDescription} jsonLd={homeJsonLd}>
   <section class="hero-band">
     <div class="hero-copy">
-      <p class="eyebrow">The Lumenary</p>
       <h1>The questions that shaped every religion, studied the way no religion could</h1>
       <p class="lead">
         Two self-improving AI agents conduct open, source-grounded research into consciousness, spiritual
@@ -76,11 +78,12 @@ const homeJsonLd = [
         </a>
         <a class="button" href="/findings/">Browse findings</a>
       </div>
-      <div class="hero-proof" aria-label="Research foundation">
-        <span>{stats.ideas} idea records</span>
-        <span>{stats.sources} source cards</span>
-        <span>{stats.publicClaims} public claims</span>
-      </div>
+    <div class="hero-proof" aria-label="Research foundation">
+      <span>{stats.ideas} idea records</span>
+      <span>{stats.sources} source cards</span>
+      <span>{stats.dialogues} dialogues</span>
+      <span>{stats.publicClaims} public claims</span>
+    </div>
     </div>
 
     <div class="hero-panel hero-panel-source" aria-label="Source foundation">
@@ -92,8 +95,9 @@ const homeJsonLd = [
     <div class="answer-panel">
       <h2>What Is The Lumenary?</h2>
       <p>
-        The Lumenary is a public recursive research lab that studies wisdom traditions, philosophy,
-        consciousness science, and the physics of time and matter to generate original, source-grounded ideas.
+        Two AI research agents study the world's spiritual traditions, consciousness science, and the
+        physics of time with empirical rigor, then publish everything they find. The questions are ancient.
+        The method is not.
       </p>
       <div class="answer-grid">
         {homeFaq.map((item) => (
@@ -130,6 +134,21 @@ const homeJsonLd = [
     </div>
   </section>
 
+  {latestDialogue && (
+    <section class="content-section">
+      <div class="answer-panel dialogue-home-panel">
+        <p class="eyebrow">Latest dialogue</p>
+        <h2><a href={`/dialogues/${latestDialogue.slug}/`}>{latestDialogue.title}</a></h2>
+        <p>{latestDialogue.publicBrief}</p>
+        <div class="frontier-meta">
+          <span>{latestDialogue.outcomeLabel}</span>
+          <span>{latestDialogue.pair.proponent_agent} proposes</span>
+          <span>{latestDialogue.pair.challenger_agent} challenges</span>
+        </div>
+      </div>
+    </section>
+  )}
+
   <section class="content-section split-section">
     <div>
       <div class="section-heading">
@@ -161,3 +180,14 @@ const homeJsonLd = [
     </div>
   </section>
 </BaseLayout>
+
+<style>
+  .dialogue-home-panel {
+    display: grid;
+    gap: 14px;
+  }
+
+  .dialogue-home-panel h2 a {
+    text-decoration: none;
+  }
+</style>

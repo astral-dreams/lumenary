@@ -30,6 +30,7 @@ class Librarian:
             "publication/growth",
             "publication/journal",
             "publication/x/queue",
+            "reviews/dialogues",
             "reviews/originality",
             "runs",
             "sources",

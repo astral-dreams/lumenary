@@ -2,7 +2,7 @@
 import ScoreBars from "../../components/ScoreBars.astro";
 import Breadcrumbs from "../../components/Breadcrumbs.astro";
 import BaseLayout from "../../layouts/BaseLayout.astro";
-import { formatLabel, getIdeas } from "../../lib/content";
+import { formatLabel, getDialoguesForIdea, getIdeas } from "../../lib/content";
 import { articleSchema, cleanDescription, faqSchema, type BreadcrumbItem } from "../../lib/seo";
 
 export function getStaticPaths() {
@@ -16,6 +16,7 @@ const { idea } = Astro.props;
 const allIdeas = getIdeas();
 const description = cleanDescription(idea.plainSummary || idea.atAGlance || idea.excerpt);
 const audit = idea.originalityAudit;
+const dialoguesForFinding = getDialoguesForIdea(idea.idea_id);
 const nearNeighbors = audit?.near_neighbors?.slice(0, 3) || [];
 const firstPrediction = audit?.falsifiable_predictions?.[0] || null;
 const practitionerTest = audit?.practitioner_test || null;
@@ -85,6 +86,21 @@ const findingJsonLd = [
       <p class="eyebrow">At a glance</p>
       <p>{idea.atAGlance}</p>
     </section>
+
+    {dialoguesForFinding.length > 0 && (
+      <section class="article-section answer-panel">
+        <p class="eyebrow">Dialogue pressure</p>
+        <h2>Debated In Dialogues</h2>
+        <div class="compact-list">
+          {dialoguesForFinding.map((dialogue) => (
+            <a href={`/dialogues/${dialogue.slug}/`}>
+              <span>{dialogue.outcomeLabel} / {dialogue.date}</span>
+              <strong>{dialogue.title}</strong>
+            </a>
+          ))}
+        </div>
+      </section>
+    )}
 
     <section class="article-section originality-audit-panel">
       <p class="eyebrow">Originality audit</p>

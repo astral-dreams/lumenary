@@ -23,6 +23,7 @@ const methodSteps = [
   "Generate one original idea record with critique, scores, epistemic labels, and next research directions.",
   "Run an originality audit that searches near-neighbors, names anomalies, and defines falsifiable, practitioner, and cross-domain tests.",
   "Refresh the Frontier Engine so audits and failures steer the next run.",
+  "Stage Dialogues between Codex and Claude when two audited findings create a productive tension.",
   "Publish only claims that pass the public gate and have not already been published without new advancement.",
 ];
 
@@ -45,6 +46,25 @@ const frontierPrinciples = [
   },
 ];
 
+const dialoguePrinciples = [
+  {
+    title: "Steelman before challenge",
+    text: "The challenger must restate the finding fairly before naming the pressure point.",
+  },
+  {
+    title: "The crux becomes durable",
+    text: "A dialogue is successful when it leaves behind the deepest unresolved question and a test that could settle it.",
+  },
+  {
+    title: "History stays intact",
+    text: "Original findings are not overwritten. Dialogue outcomes are written as review records.",
+  },
+  {
+    title: "Synthesis still gets audited",
+    text: "A candidate synthesis from dialogue must pass originality review before it can become a public claim.",
+  },
+];
+
 const stack = [
   {
     label: "Thinking provider",
@@ -56,7 +76,7 @@ const stack = [
   },
   {
     label: "Orchestrator",
-    value: "Python engine modules for one-shot runs, parallel research, scheduling, frontiers, audits, promotion, and publishing.",
+    value: "Python engine modules for one-shot runs, parallel research, scheduling, frontiers, dialogues, audits, promotion, and publishing.",
   },
   {
     label: "Cadence",
@@ -133,6 +153,15 @@ const loopSteps = [
     ],
   },
   {
+    title: "Stage Productive Tension",
+    items: [
+      "detect audited Codex and Claude findings that share a frontier, contradiction, anomaly, or source pressure",
+      "require a fair steelman before a challenge",
+      "write dialogue records as append-only review artifacts under reviews/dialogues",
+      "turn the unresolved crux back into a frontier test",
+    ],
+  },
+  {
     title: "Publish Carefully",
     items: [
       "write or reuse the Insights distillation before build",
@@ -161,6 +190,11 @@ const methodFaq = [
     question: "What changed with Frontiers?",
     answer:
       "Audits now steer the next run. The system clusters related ideas, names the anomaly or source gap, and writes a narrow prompt before new research begins.",
+  },
+  {
+    question: "What do Dialogues add?",
+    answer:
+      "Dialogues let Codex and Claude apply structured pressure to each other's findings, then store the crux, outcome, and any candidate synthesis as review artifacts.",
   },
   {
     question: "How does The Lumenary avoid treating analogy as proof?",
@@ -205,8 +239,8 @@ const methodJsonLd = [
         <span>frontiers</span>
       </div>
       <div>
-        <strong>{stats.sources}</strong>
-        <span>source cards</span>
+        <strong>{stats.dialogues}</strong>
+        <span>dialogues</span>
       </div>
     </div>
   </section>
@@ -255,6 +289,29 @@ const methodJsonLd = [
     )}
   </section>
 
+  <section id="dialogue-method" class="content-section">
+    <div class="frontier-method-callout dialogue-method-callout">
+      <div>
+        <p class="eyebrow">Dialogue method</p>
+        <h2>Frontiers Choose The Question. Dialogues Apply The Pressure.</h2>
+        <p>
+          Once enough audited findings accumulate, the Dialectical Engine selects a cross-agent tension.
+          One agent steelmans and challenges, the other concedes or revises, and a synthesis pass records
+          the crux without treating the exchange as proof.
+        </p>
+      </div>
+      <a class="button button-primary" href="/dialogues/">View dialogues</a>
+    </div>
+    <div class="method-grid">
+      {dialoguePrinciples.map((item) => (
+        <article class="method-block">
+          <h3>{item.title}</h3>
+          <p>{item.text}</p>
+        </article>
+      ))}
+    </div>
+  </section>
+
   <section class="content-section method-grid">
     <article class="method-block">
       <h2>1. Source Grounding</h2>
@@ -279,6 +336,10 @@ const methodJsonLd = [
     <article class="method-block">
       <h2>6. Agent Attribution</h2>
       <p>Codex and Claude observations remain attributed. Convergences and disagreements are preserved rather than merged away.</p>
+    </article>
+    <article class="method-block">
+      <h2>7. Dialogues</h2>
+      <p>Cross-agent tensions become append-only review records with a steelman, challenge, rebuttal, crux, and synthesis verdict.</p>
     </article>
   </section>
 

@@ -250,6 +250,9 @@ export type FrontierRecord = {
   blockers: string[];
   closest_prior_art: FrontierPriorArt[];
   core_claim: string;
+  dialogue_count?: number;
+  dialogue_ids?: string[];
+  dialogue_outcomes?: string[];
   frontier_id: string;
   idea_ids: string[];
   last_advanced_at: string;
@@ -283,6 +286,92 @@ export type FrontierView = FrontierRecord & {
   publicationLinks: DailyPost[];
   stageLabel: string;
   statusLabel: string;
+};
+
+export type DialogueSignal = {
+  name: string;
+  reason: string;
+  weight: number;
+};
+
+export type DialoguePair = {
+  challenger_agent: string;
+  challenger_title?: string;
+  idea_a: string;
+  idea_b: string;
+  pair_id: string;
+  priority: number;
+  proponent_agent: string;
+  proponent_title?: string;
+  shared_concepts: string[];
+  signals: DialogueSignal[];
+  tension_source: string;
+  tension_type: string;
+};
+
+export type DialogueTurn = {
+  agent: string;
+  argument: string;
+  claim_units?: string[];
+  concessions?: string[];
+  counter_model?: string | null;
+  crux?: string | null;
+  crux_assessment?: string | null;
+  defense?: string | null;
+  fairness_check?: string | null;
+  hidden_assumption?: string | null;
+  new_source?: string | null;
+  remaining_risk?: string | null;
+  revised_claim?: string | null;
+  role: string;
+  sources_cited: string[];
+  steelman?: string | null;
+  strongest_objection?: string | null;
+  test_that_would_settle_it?: string | null;
+  turn: number;
+  turn_type: string;
+  verdict_on_revision?: string | null;
+};
+
+export type DialogueSynthesis = {
+  candidate_synthesis_idea_id?: string;
+  candidate_synthesis_path?: string;
+  convergence_claim?: string | null;
+  method_growth?: string;
+  new_frontier_question?: string | null;
+  outcome: string;
+  public_brief?: string;
+  summary: string;
+  synthesizer_agent?: string;
+  unresolved_crux?: string | null;
+};
+
+export type DialogueRecord = {
+  created_at: string;
+  dialogue_id: string;
+  execution_id: string;
+  json_path?: string;
+  markdown_path?: string;
+  pair: DialoguePair;
+  run_dir?: string;
+  run_ids: string[];
+  slug: string;
+  status: string;
+  synthesis: DialogueSynthesis;
+  title: string;
+  turns: DialogueTurn[];
+};
+
+export type DialogueView = DialogueRecord & {
+  challengerIdea: IdeaView | null;
+  date: string;
+  excerpt: string;
+  outcomeLabel: string;
+  priorityLabel: string;
+  proponentIdea: IdeaView | null;
+  publicBrief: string;
+  publicTranscript: boolean;
+  summaryHtml: string;
 };
 
 function readText(relativePath: string): string {
@@ -1290,6 +1379,44 @@ export function getFrontiers(): FrontierView[] {
     .sort((a, b) => Number(b.priority || 0) - Number(a.priority || 0));
 }
 
+export function getDialogues(): DialogueView[] {
+  const ideasById = new Map(getIdeas().map((idea) => [idea.idea_id, idea]));
+  const usedSlugs = new Map<string, number>();
+  return readJsonl<DialogueRecord>("reviews/dialogues/dialogues.jsonl")
+    .map((record) => {
+      const proponentIdea = ideasById.get(record.pair.idea_a) || null;
+      const challengerIdea = ideasById.get(record.pair.idea_b) || null;
+      const publicBrief = record.synthesis.public_brief || firstSentence(record.synthesis.summary || record.title, 220);
+      const slug = uniqueSlug(record.slug || `${record.created_at.slice(0, 10)}-${shortContentSlug(record.title, 6, 72)}`, usedSlugs);
+      const publicTranscript = Boolean(
+        proponentIdea?.promotion.publicClaim &&
+          challengerIdea?.promotion.publicClaim &&
+          record.status === "complete",
+      );
+      return {
+        ...record,
+        challengerIdea,
+        date: record.created_at.slice(0, 10),
+        excerpt: excerpt(publicBrief || record.synthesis.summary || record.title, 220),
+        outcomeLabel: formatLabel(record.synthesis.outcome || "unknown"),
+        priorityLabel: `${Math.round(Number(record.pair.priority || 0) * 100)}%`,
+        proponentIdea,
+        publicBrief,
+        publicTranscript,
+        slug,
+        summaryHtml: renderMarkdown(record.synthesis.summary || publicBrief),
+      };
+    })
+    .sort((a, b) => b.created_at.localeCompare(a.created_at));
+}
+
+export function getDialoguesForIdea(ideaId: string): DialogueView[] {
+  return getDialogues().filter((dialogue) => {
+    const ids = [dialogue.pair.idea_a, dialogue.pair.idea_b];
+    return ids.includes(ideaId);
+  });
+}
+
 export function getConvergenceNotes(): TextNote[] {
   const usedSlugs = new Map<string, number>();
   return listMarkdown("findings/convergences")
@@ -1334,6 +1461,7 @@ export function researchStats() {
   const ideas = getIdeas();
   const sources = getSources();
   const daily = getDailyPosts();
+  const dialogues = getDialogues();
   const codex = ideas.filter((idea) => idea.agent === "codex").length;
   const claude = ideas.filter((idea) => idea.agent === "claude").length;
   const labels = new Set(ideas.flatMap((idea) => idea.epistemic_labels));
@@ -1342,6 +1470,7 @@ export function researchStats() {
     claude,
     codex,
     daily: daily.length,
+    dialogues: dialogues.length,
     ideas: ideas.length,
     labels: labels.size,
     publicClaims: ideas.filter((idea) => idea.promotion.publicClaim).length,

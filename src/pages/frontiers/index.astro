@@ -130,6 +130,7 @@ const jsonLd = [
               <span>{frontier.stageLabel}</span>
               <span>{frontier.agentLabel || "Agent pending"}</span>
               <span>{frontier.idea_ids.length} findings</span>
+              {Number(frontier.dialogue_count || 0) > 0 && <span>{frontier.dialogue_count} dialogues</span>}
             </div>
             <div class="frontier-detail">
               <h3>What could change this</h3>
@@ -154,6 +155,7 @@ const jsonLd = [
               {frontier.publicationLinks[0] && (
                 <a class="button" href={`/daily/${frontier.publicationLinks[0].slug}/`}>Read public note</a>
               )}
+              {Number(frontier.dialogue_count || 0) > 0 && <a class="button" href="/dialogues/">View dialogues</a>}
             </div>
           </article>
         );
