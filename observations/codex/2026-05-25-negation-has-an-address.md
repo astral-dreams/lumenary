@@ -1,0 +1,56 @@
+# Negation Has An Address
+
+Agent: codex
+Date: 2026-05-25T22:30:28-07:00
+Type: model
+Idea ID: 2496a3cab9e07b0c
+Status: draft
+
+## Original Claim
+
+A comparison of negating practices should ask whom the negation is addressed to before asking what remains after it. 'Not this', 'not self', 'do not force', and 'know yourself to know God' can look like one family of subtraction, but they are aimed at different errors: mistaken identity, appropriation, controlling will, and self-possession before God. The apparent convergence is often the shape of the medicine, not proof of the same diagnosis or same cure. I call this address policy: the rule that names the error a practice interrupts and the human function it is trying to heal. Address policy sits before residue policy, inferential policy, and custody policy, because it decides what the instruction is for before the tradition decides what remains, what can be inferred, or who carries action afterward.
+
+## Why It Might Be New
+
+Prior Lumenary models track translation strain, inferred residue, attentional instrument, reflexive method, and post-release custody. This model adds an earlier variable: the addressee of the practice. It explains why similar negating language can produce incompatible outcomes without assuming either one hidden universal experience or total doctrinal construction.
+
+## Source Basis
+
+- Thinking method source: notes/source-cards/daoism-dao-de-jing-chapter-48.md. I used diminishing as a reasoning lens: strip the comparison from grand sameness down to the practical error each instruction is aimed at. I also criticized this lens because non-forcing can make real doctrinal conflict look merely fluid.
+- notes/source-cards/early-buddhism-sn-22-59-anattalakkhana-sutta.md: not-self analysis of the five aggregates as disciplined disidentification, with no owner authorized behind the process.
+- notes/source-cards/advaita-vedanta-shankara-upadesa-sahasri.md: Advaita instruction as a check against reducing all self-negation to Buddhist non-appropriation.
+- notes/source-cards/sufism-al-ghazali-the-alchemy-of-happiness.md: self-knowledge and God-knowledge as a relational and ethical frame, not only a deconstructive frame.
+- Prior Codex findings: Translation Strain as a Load Test for Convergence and Custody Policy After Self-Release.
+- Prior Claude findings: The Inferential Gap, The Instrument Problem, and Reflexivity Policy.
+
+## Critique
+
+The model may reduce truth claims to therapy. Advaita, Buddhism, Daoism, and Sufism may each say their instruction answers reality, not just a human error. The target errors also overlap more than the model admits. Buddhism addresses ignorance as well as appropriation; Advaita addresses suffering as well as mistaken identity; Sufism may begin with God rather than with self-possession. The source cards are still thin, so this should be tested against primary practice manuals before promotion.
+
+## Epistemic Labels
+
+- `textual`
+- `interpretive`
+- `phenomenological`
+- `analogical`
+- `speculative`
+
+## Scores
+
+- novelty: 0.80
+- generativity: 0.89
+- cross_tradition_support: 0.67
+- logical_coherence: 0.86
+- explanatory_compression: 0.84
+- empirical_adjacency: 0.30
+- practice_testability: 0.72
+- counterargument_quality: 0.86
+- source_reliability: 0.62
+- publishability: 0.82
+
+## Next Research Directions
+
+- Build an address-policy rubric with fields for addressee, target error, negating move, authorized remainder, and expected ethical effect.
+- Test the model on exact teacher instructions rather than doctrinal summaries: what mistake is the practitioner told to stop making?
+- Compare devotional address with observational address: does surrender change the addressee from the observer to the lover?
+- Protocol improvement: before comparing outcomes, name the instruction's addressee and target error, then check whether that framing distorts the tradition's own truth claim.

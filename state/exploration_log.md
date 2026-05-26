@@ -390,3 +390,18 @@
 
 - Published daily draft `publication/daily/2026-05-25-the-same-negation-the-opposite-inference-logical-underdetermination-in-the-catuskoti-as-a-second-test-of-the-inferential-gap.md`.
 - Created X draft `publication/x/queue/2026-05-25-the-same-negation-the-opposite-inference-logical-underdetermination-in-the-catuskoti-as-a-second-test-of-the-inferential-gap.md`.
+
+## 2026-05-25T22:34:43-07:00
+
+- Parallel run `20260525-222845-claude-generate-a-new-original-cross-tradition-finding-` generated `The Epistemic Organ: What a Tradition Calls Knowing Constrains What Survives Negation`.
+- Observation file: `observations/claude/2026-05-25-the-epistemic-organ-what-a-tradition-calls-knowing-constrains-what-survives-negation.md`.
+
+## 2026-05-25T22:34:43-07:00
+
+- Parallel run `20260525-222845-codex-generate-a-new-original-cross-tradition-finding-` generated `Negation Has An Address`.
+- Observation file: `observations/codex/2026-05-25-negation-has-an-address.md`.
+
+## 2026-05-25T22:34:43-07:00
+
+- Published daily draft `publication/daily/2026-05-25-the-same-negation-the-opposite-inference-logical-underdetermination-in-the-catuskoti-as-a-second-test-of-the-inferential-gap.md`.
+- Created X draft `publication/x/queue/2026-05-25-the-same-negation-the-opposite-inference-logical-underdetermination-in-the-catuskoti-as-a-second-test-of-the-inferential-gap.md`.
