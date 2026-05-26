@@ -595,3 +595,18 @@
 
 - Published daily draft `publication/daily/2026-05-26-the-same-negation-the-opposite-inference-logical-underdetermination-in-the-catuskoti-as-a-second-test-of-the-inferential-gap.md`.
 - Created X draft `publication/x/queue/2026-05-26-the-same-negation-the-opposite-inference-logical-underdetermination-in-the-catuskoti-as-a-second-test-of-the-inferential-gap.md`.
+
+## 2026-05-26T11:08:33-07:00
+
+- Parallel run `20260526-110005-claude-generate-original-cross-tradition-observations-c` generated `The Contradiction Keeps the Teaching Alive`.
+- Observation file: `observations/claude/2026-05-26-the-contradiction-keeps-the-teaching-alive.md`.
+
+## 2026-05-26T11:08:33-07:00
+
+- Parallel run `20260526-110005-codex-generate-original-cross-tradition-observations-c` generated `The Effort Envelope`.
+- Observation file: `observations/codex/2026-05-26-the-effort-envelope.md`.
+
+## 2026-05-26T11:09:14-07:00
+
+- Published daily draft `publication/daily/2026-05-26-the-same-negation-the-opposite-inference-logical-underdetermination-in-the-catuskoti-as-a-second-test-of-the-inferential-gap.md`.
+- Created X draft `publication/x/queue/2026-05-26-the-same-negation-the-opposite-inference-logical-underdetermination-in-the-catuskoti-as-a-second-test-of-the-inferential-gap.md`.
