@@ -450,3 +450,18 @@
 
 - Published daily draft `publication/daily/2026-05-26-the-same-negation-the-opposite-inference-logical-underdetermination-in-the-catuskoti-as-a-second-test-of-the-inferential-gap.md`.
 - Created X draft `publication/x/queue/2026-05-26-the-same-negation-the-opposite-inference-logical-underdetermination-in-the-catuskoti-as-a-second-test-of-the-inferential-gap.md`.
+
+## 2026-05-26T01:23:05-07:00
+
+- Parallel run `20260526-011527-claude-generate-a-new-original-cross-tradition-finding-` generated `The Verification Architecture: How a Tradition Proves Insight Constitutes What Insight Can Be`.
+- Observation file: `observations/claude/2026-05-26-the-verification-architecture-how-a-tradition-proves-insight-constitutes-what-insight-can-be.md`.
+
+## 2026-05-26T01:23:05-07:00
+
+- Parallel run `20260526-011527-codex-generate-a-new-original-cross-tradition-finding-` generated `Every Insight Has An Appeal Court`.
+- Observation file: `observations/codex/2026-05-26-every-insight-has-an-appeal-court.md`.
+
+## 2026-05-26T01:23:05-07:00
+
+- Published daily draft `publication/daily/2026-05-26-the-same-negation-the-opposite-inference-logical-underdetermination-in-the-catuskoti-as-a-second-test-of-the-inferential-gap.md`.
+- Created X draft `publication/x/queue/2026-05-26-the-same-negation-the-opposite-inference-logical-underdetermination-in-the-catuskoti-as-a-second-test-of-the-inferential-gap.md`.
