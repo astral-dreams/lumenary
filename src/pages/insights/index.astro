@@ -108,19 +108,6 @@ const traditions = [...new Set(insights.flatMap((insight) => insight.traditionTa
     const grid = document.querySelector("#insight-grid");
     const cards = [...document.querySelectorAll(".insight-card")];
     const empty = document.querySelector("#empty-filter-message");
-    const voteStoreKey = "lumenary:insight-votes:v1";
-
-    function votedSlugs() {
-      try {
-        return new Set(JSON.parse(localStorage.getItem(voteStoreKey) || "[]"));
-      } catch {
-        return new Set();
-      }
-    }
-
-    function saveVotedSlugs(slugs) {
-      localStorage.setItem(voteStoreKey, JSON.stringify([...slugs]));
-    }
 
     function includesToken(value, token) {
       return !token || ` ${value || ""} `.includes(` ${token} `);
@@ -136,10 +123,17 @@ const traditions = [...new Set(insights.flatMap((insight) => insight.traditionTa
       return Number.isFinite(score) ? score : 0;
     }
 
+    function recentVoteTime(card) {
+      const votedAt = Number(card.dataset.votedAt || 0);
+      return Number.isFinite(votedAt) ? votedAt : 0;
+    }
+
     function sortedCards() {
       return [...cards].sort((a, b) => {
         const voteRank = voteCount(b) - voteCount(a);
         if (voteRank !== 0) return voteRank;
+        const recentRank = recentVoteTime(b) - recentVoteTime(a);
+        if (recentRank !== 0) return recentRank;
         const rank = qualityScore(b) - qualityScore(a);
         if (rank !== 0) return rank;
         return (b.dataset.slug || "").localeCompare(a.dataset.slug || "");
@@ -147,16 +141,15 @@ const traditions = [...new Set(insights.flatMap((insight) => insight.traditionTa
     }
 
     function syncVoteButtons() {
-      const slugs = votedSlugs();
       for (const card of cards) {
         const votes = Number(card.dataset.votes || 0);
         const count = card.querySelector("[data-vote-count]");
         const button = card.querySelector("[data-vote-button]");
         if (count) count.textContent = String(votes);
         if (button) {
-          const hasVoted = slugs.has(card.dataset.slug);
-          button.disabled = hasVoted;
-          button.setAttribute("aria-pressed", hasVoted ? "true" : "false");
+          const pending = card.dataset.votePending === "true";
+          button.disabled = pending;
+          button.setAttribute("aria-busy", pending ? "true" : "false");
         }
       }
     }
@@ -191,7 +184,9 @@ const traditions = [...new Set(insights.flatMap((insight) => insight.traditionTa
         const data = await response.json();
         for (const card of cards) {
           const votes = Number(data.votes?.[card.dataset.slug] || 0);
-          card.dataset.votes = String(Number.isFinite(votes) ? votes : 0);
+          const currentVotes = voteCount(card);
+          const nextVotes = Number.isFinite(votes) ? Math.max(votes, currentVotes) : currentVotes;
+          card.dataset.votes = String(nextVotes);
         }
       } finally {
         syncVoteButtons();
@@ -203,13 +198,11 @@ const traditions = [...new Set(insights.flatMap((insight) => insight.traditionTa
       const slug = card.dataset.slug;
       if (!slug) return;
 
-      const slugs = votedSlugs();
-      if (slugs.has(slug)) return;
-
       const priorVotes = Number(card.dataset.votes || 0);
-      card.dataset.votes = String(priorVotes + 1);
-      slugs.add(slug);
-      saveVotedSlugs(slugs);
+      const optimisticVotes = priorVotes + 1;
+      card.dataset.votes = String(optimisticVotes);
+      card.dataset.votedAt = String(Date.now());
+      card.dataset.votePending = "true";
       syncVoteButtons();
       updateInsights();
 
@@ -225,14 +218,12 @@ const traditions = [...new Set(insights.flatMap((insight) => insight.traditionTa
         if (!response.ok) throw new Error("Vote request failed.");
         const data = await response.json();
         if (Number.isFinite(Number(data.votes))) {
-          card.dataset.votes = String(Number(data.votes));
-          syncVoteButtons();
-          updateInsights();
+          card.dataset.votes = String(Math.max(Number(data.votes), voteCount(card)));
         }
       } catch {
-        card.dataset.votes = String(priorVotes);
-        slugs.delete(slug);
-        saveVotedSlugs(slugs);
+        card.dataset.voteError = "true";
+      } finally {
+        card.dataset.votePending = "false";
         syncVoteButtons();
         updateInsights();
       }
