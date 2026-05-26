@@ -115,11 +115,59 @@
       "properties": {
         "proponent": {
           "type": "object",
-          "additionalProperties": { "type": "number", "minimum": -1, "maximum": 1 }
+          "additionalProperties": false,
+          "required": [
+            "novelty",
+            "generativity",
+            "cross_tradition_support",
+            "logical_coherence",
+            "explanatory_compression",
+            "empirical_adjacency",
+            "practice_testability",
+            "counterargument_quality",
+            "source_reliability",
+            "publishability"
+          ],
+          "properties": {
+            "novelty": { "type": ["number", "null"], "minimum": -1, "maximum": 1 },
+            "generativity": { "type": ["number", "null"], "minimum": -1, "maximum": 1 },
+            "cross_tradition_support": { "type": ["number", "null"], "minimum": -1, "maximum": 1 },
+            "logical_coherence": { "type": ["number", "null"], "minimum": -1, "maximum": 1 },
+            "explanatory_compression": { "type": ["number", "null"], "minimum": -1, "maximum": 1 },
+            "empirical_adjacency": { "type": ["number", "null"], "minimum": -1, "maximum": 1 },
+            "practice_testability": { "type": ["number", "null"], "minimum": -1, "maximum": 1 },
+            "counterargument_quality": { "type": ["number", "null"], "minimum": -1, "maximum": 1 },
+            "source_reliability": { "type": ["number", "null"], "minimum": -1, "maximum": 1 },
+            "publishability": { "type": ["number", "null"], "minimum": -1, "maximum": 1 }
+          }
         },
         "challenger": {
           "type": "object",
-          "additionalProperties": { "type": "number", "minimum": -1, "maximum": 1 }
+          "additionalProperties": false,
+          "required": [
+            "novelty",
+            "generativity",
+            "cross_tradition_support",
+            "logical_coherence",
+            "explanatory_compression",
+            "empirical_adjacency",
+            "practice_testability",
+            "counterargument_quality",
+            "source_reliability",
+            "publishability"
+          ],
+          "properties": {
+            "novelty": { "type": ["number", "null"], "minimum": -1, "maximum": 1 },
+            "generativity": { "type": ["number", "null"], "minimum": -1, "maximum": 1 },
+            "cross_tradition_support": { "type": ["number", "null"], "minimum": -1, "maximum": 1 },
+            "logical_coherence": { "type": ["number", "null"], "minimum": -1, "maximum": 1 },
+            "explanatory_compression": { "type": ["number", "null"], "minimum": -1, "maximum": 1 },
+            "empirical_adjacency": { "type": ["number", "null"], "minimum": -1, "maximum": 1 },
+            "practice_testability": { "type": ["number", "null"], "minimum": -1, "maximum": 1 },
+            "counterargument_quality": { "type": ["number", "null"], "minimum": -1, "maximum": 1 },
+            "source_reliability": { "type": ["number", "null"], "minimum": -1, "maximum": 1 },
+            "publishability": { "type": ["number", "null"], "minimum": -1, "maximum": 1 }
+          }
         }
       }
     },

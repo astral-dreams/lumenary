@@ -77,6 +77,32 @@ def audit(agent: str, idea_id: str, title: str) -> dict:
 
 
 class DialecticTests(unittest.TestCase):
+    def test_dialogue_schemas_require_all_declared_properties_for_codex_cli(self) -> None:
+        root = Path(__file__).resolve().parents[1]
+        schema_paths = [
+            root / "engine" / "json_schemas" / "dialogue_turn.schema.json",
+            root / "engine" / "json_schemas" / "dialogue_verdict.schema.json",
+        ]
+
+        def assert_strict_object_shapes(node: object, path: str) -> None:
+            if isinstance(node, dict):
+                properties = node.get("properties")
+                if isinstance(properties, dict):
+                    self.assertEqual(
+                        set(node.get("required") or []),
+                        set(properties.keys()),
+                        msg=f"{path} must require every declared property",
+                    )
+                for key, value in node.items():
+                    assert_strict_object_shapes(value, f"{path}.{key}")
+            elif isinstance(node, list):
+                for index, value in enumerate(node):
+                    assert_strict_object_shapes(value, f"{path}[{index}]")
+
+        for schema_path in schema_paths:
+            with self.subTest(schema=schema_path.name):
+                assert_strict_object_shapes(json.loads(schema_path.read_text(encoding="utf-8")), schema_path.name)
+
     def test_detect_tensions_prefers_shared_frontier_pair(self) -> None:
         with tempfile.TemporaryDirectory() as temp_dir:
             root = Path(temp_dir)
