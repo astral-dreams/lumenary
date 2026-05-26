@@ -356,3 +356,8 @@
 ## 2026-05-25T17:10:45-07:00
 
 - Scheduler completed run `20260525-170557-claude-using-the-newly-registered-source-cards-across-a`.
+
+## 2026-05-25T21:44:31-07:00
+
+- Run `20260525-212846-claude-generate-an-original-cross-tradition-observation` generated `Reflexivity Policy: What a Method Does When It Encounters Itself`.
+- Observation file: `observations/claude/2026-05-25-reflexivity-policy-what-a-method-does-when-it-encounters-itself.md`.
