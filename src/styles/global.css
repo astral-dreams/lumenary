@@ -1079,6 +1079,19 @@ meter {
   font-weight: 760;
 }
 
+.map-center.mind-map-center circle {
+  fill: #263027;
+  stroke: rgba(248, 247, 243, 0.48);
+}
+
+.map-center.mind-map-center .mind-map-center-title {
+  fill: #f8f7f3;
+}
+
+.map-center.mind-map-center .map-center-small {
+  fill: #dfe9df;
+}
+
 .mind-map-center .mind-map-center-title {
   font-size: 34px;
   font-weight: 760;
