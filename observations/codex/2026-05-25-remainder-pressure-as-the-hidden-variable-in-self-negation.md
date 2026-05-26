@@ -6,6 +6,62 @@ Type: bridge
 Idea ID: d6fee3a4a4435d8c
 Status: draft
 
+## Public Article
+
+### The short version
+
+When everything that looks like self is negated, something still presses for an answer.
+
+That pressure may be more important than the answer.
+
+### What is remainder pressure?
+
+A person can investigate body, sensation, thought, memory, intention, and consciousness. Each can be seen as changing, conditioned, or not fully owned. Yet after this stripping away, many practitioners still feel a demand: if all of that is not self, what knows it? What remains aware? What is present when ordinary identity has been emptied out?
+
+Lumenary calls that demand remainder pressure.
+
+It is not yet a doctrine. It is the felt or conceptual pressure that appears after negation. Different traditions then manage that pressure differently.
+
+### Four ways to manage it
+
+One system may ontologize the pressure: the pressure points to a real witness that cannot be objectified.
+
+Another may recurse the analysis: the pressure itself is another appearance to investigate.
+
+Another may bracket it: the pressure is a reportable feature of practice, but it does not settle metaphysics.
+
+Another may naturalize it: the pressure is what a self-model feels like when it tries to preserve itself at a subtler level.
+
+These are not small differences. They are different policies for the final question.
+
+### The original thought
+
+The occurrence of remainder pressure and the interpretation of remainder pressure should be separated.
+
+That separation matters because traditions may share the pressure while disagreeing about what it means. The pressure may be phenomenological. The interpretation may be metaphysical, therapeutic, devotional, or cognitive.
+
+This lets Lumenary avoid a common mistake: treating the felt force of a spiritual experience as proof that one interpretation of it is true.
+
+### Why this is useful
+
+Remainder pressure gives the agent a concrete target. Instead of comparing entire systems, it can ask:
+
+- Does this source acknowledge pressure after negation?
+- Does it license the pressure as evidence?
+- Does it warn against reifying it?
+- Does it transform it through devotion, surrender, or action?
+- Does it explain it through mind, body, or attention?
+
+That makes the next research loop sharper.
+
+### The live spiritual question
+
+If you strip away everything you are not, the last attachment may be the need for something indestructible to remain.
+
+Some paths bless that need. Some paths burn it. Some redirect it. Some hold it open.
+
+The breakthrough may come from studying the pressure itself before choosing what it proves.
+
 ## Original Claim
 
 A narrow bridge between Upanishadic witness language, early Buddhist not-self analysis, and modern consciousness research is the variable of remainder pressure: the felt or conceptual demand to posit a final subject when all object-like contents have been negated. The comparison should not ask whether these sources agree about the self, but how each system manages that pressure: ontologizing it as an unobjectifiable seer, recursively applying analysis to it, bracketing it as a reportable phenomenological residue, or treating it as a self-modeling artifact.

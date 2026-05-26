@@ -54,6 +54,8 @@ export type IdeaRecord = {
 };
 
 export type IdeaView = IdeaRecord & {
+  articleHtml: string;
+  critiqueHtml: string;
   date: string;
   excerpt: string;
   html: string;
@@ -62,8 +64,10 @@ export type IdeaView = IdeaRecord & {
   plainSummary: string;
   promotion: PromotionDecision;
   relativePath: string;
+  originalClaimHtml: string;
   slug: string;
   traditionTags: string[];
+  whyItMightBeNewHtml: string;
 };
 
 export type InsightView = {
@@ -474,6 +478,7 @@ export function getIdeas(): IdeaView[] {
     .map((record) => {
       const date = record.created_at.slice(0, 10);
       const markdown = ideaMarkdown(record);
+      const publicArticle = markdownSection(markdown, "Public Article");
       const suffix = record.idea_id ? `-${record.idea_id.slice(0, 6)}` : "";
       const promotion = decideIdeaPromotion(record, promotionRules);
       const distillation = distillationFor(record);
@@ -481,16 +486,20 @@ export function getIdeas(): IdeaView[] {
       const plainSummary = distillation?.plainSummary || firstSentence(record.original_claim, 210);
       return {
         ...record,
+        articleHtml: publicArticle ? renderMarkdown(publicArticle) : "",
+        critiqueHtml: renderMarkdown(record.critique),
         date,
         excerpt: excerpt(record.original_claim),
         html: renderMarkdown(markdown),
         insight: distillation?.insight || firstSentence(record.why_it_might_be_new || record.original_claim, 96),
         insightScore: insightScore(record, promotion),
+        originalClaimHtml: renderMarkdown(record.original_claim),
         plainSummary: cleanPlainSummary(plainSummary),
         promotion,
         relativePath: record.path || "",
         slug: `${date}-${slugify(record.title)}${suffix}`,
         traditionTags,
+        whyItMightBeNewHtml: renderMarkdown(record.why_it_might_be_new),
       };
     })
     .sort((a, b) => b.created_at.localeCompare(a.created_at));

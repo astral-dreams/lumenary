@@ -448,6 +448,18 @@ h3 {
   max-width: 850px;
 }
 
+.public-article {
+  max-width: 920px;
+}
+
+.compact-prose {
+  max-width: 920px;
+}
+
+.compact-prose p:last-child {
+  margin-bottom: 0;
+}
+
 .prose h1 {
   margin-bottom: 28px;
 }
@@ -456,6 +468,20 @@ h3 {
   font-family: Georgia, "Times New Roman", serif;
   font-size: clamp(1.5rem, 2.5vw, 2.2rem);
   margin-top: 34px;
+}
+
+.prose h3 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.18rem, 1.8vw, 1.45rem);
+  margin: 26px 0 10px;
+}
+
+.prose ul {
+  padding-left: 1.2rem;
+}
+
+.prose li + li {
+  margin-top: 8px;
 }
 
 .prose code {

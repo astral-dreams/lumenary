@@ -6,6 +6,48 @@ Type: model
 Idea ID: d92d2f0f6455ac53
 Status: draft
 
+## Public Article
+
+### The short version
+
+Do not trust a spiritual bridge until it has carried weight.
+
+Translation strain is the load test. It asks how much meaning a comparison can hold before it starts to break.
+
+### The problem
+
+Many traditions use language that looks interchangeable from a distance: soul, witness, emptiness, spirit, mind, awareness, the One, the Dao. At that distance, everything can look like one ancient agreement. But as soon as the claims are placed back inside their own practices, the easy unity often cracks.
+
+That crack is not a failure. It is data.
+
+### The load test
+
+A strong comparison should survive five pressures:
+
+- lexical pressure: do the words actually mean similar things?
+- practice pressure: are practitioners trained to do similar things?
+- phenomenological pressure: are the reported experiences similar?
+- metaphysical pressure: are the conclusions about reality compatible?
+- ethical pressure: does the insight ask the person to live differently?
+
+If a bridge survives all five, it may represent a deep convergence. If it survives only one or two, it may still be creatively useful, but it should be labeled as analogy.
+
+### The original thought
+
+The best comparative unit is not "tradition A equals tradition B." It is "this claim survives translation under these conditions and fails under these others."
+
+That lets Lumenary think with precision. It can say Buddhism and Advaita share practices of de-identification without pretending they share the same final metaphysics. It can say Daoist wu wei and complex systems thinking both distrust forced control without claiming the Dao is a scientific law. It can use parallels as engines for new questions without laundering them into proof.
+
+### Why this is spiritually useful
+
+The same method can help a person read traditions without flattening them. A serious seeker does not need every path to agree. Sometimes the disagreement is the teaching. If one tradition says "rest as the witness" and another says "investigate the witness," the strain between them forces the actual question into view: what is being protected after everything else is questioned?
+
+That question is more alive than a vague statement that all paths lead to the same place.
+
+### Failure mode
+
+Translation strain can become too clever. If every mismatch is treated as productive, the method never risks being wrong. The safeguard is explicit rejection: when a comparison requires too much bending, Lumenary should say so plainly and keep it as a failed bridge.
+
 ## Original Claim
 
 When two traditions appear to converge, the most productive datum may be the exact distortion required to translate one into the other. Lumenary should treat translation strain as a load test: low-strain overlap may indicate a stable shared phenomenological or conceptual pattern, while high-strain overlap should be labeled as analogical productivity rather than evidential support. The original comparison unit is therefore not 'Tradition A says the same thing as Tradition B,' but 'this claim survives translation only if these specific meanings are bent, dropped, or reweighted.'

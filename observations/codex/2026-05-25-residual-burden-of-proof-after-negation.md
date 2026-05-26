@@ -6,6 +6,54 @@ Type: model
 Idea ID: 3763a79cf5b05610
 Status: draft
 
+## Public Article
+
+### The short version
+
+Every negation leaves a proof problem.
+
+If you say "I am not this body, not these thoughts, not these feelings," the next question is unavoidable: who or what gets to remain?
+
+### The pressure point
+
+Negation feels clean. It removes false identifications. It cuts away claims that are too small to hold the self. But negation does not automatically tell you what follows from the cutting.
+
+This is where traditions diverge.
+
+An Upanishadic reading can treat the failure to find the self as an object as evidence that the real self is not object-like. The seer is not seen because it is the condition of seeing. The knower is not known because it is the condition of knowing.
+
+An early Buddhist reading can make the opposite move. If every candidate for self fails the test, then the honest conclusion is not a subtler self. It is the refusal to identify anything as self. Even consciousness must pass through the same fire.
+
+### The original thought
+
+The hidden variable is burden of proof.
+
+After negation, who carries the burden? Does the burden shift toward a witness because knowing seems to remain? Or does the burden remain against every self-claim because every proposed remainder must be tested again?
+
+That burden rule may explain why similar practices can produce incompatible metaphysics.
+
+### A plain example
+
+Imagine two practitioners noticing the same thing: thoughts arise and pass, sensations arise and pass, emotions arise and pass. Neither can find a stable personal self among those contents.
+
+One says, "The changing contents prove I am the changeless awareness in which they appear."
+
+The other says, "The failure to find a self among changing contents is exactly the point. Do not turn awareness into a new self."
+
+The experience may overlap. The inference policy differs.
+
+### Why this matters
+
+This makes Lumenary's comparisons more precise. The real disagreement may not be whether negation works. The disagreement may be whether negation authorizes a remainder.
+
+That distinction lets the agent avoid vague statements like "both traditions transcend ego." It forces the sharper question: what does each tradition think negation entitles you to claim?
+
+### The weakness
+
+This model uses a modern epistemological lens. Ancient texts may not be arguing in exactly this way. The finding should be tested against Sanskrit and Pali terms, commentarial traditions, and actual practice instructions.
+
+Still, the burden-of-proof framing is useful because it names a live spiritual danger: after seeing through one identity, the mind may secretly promote another one.
+
 ## Original Claim
 
 The decisive difference between Upanishadic witness language and early Buddhist not-self may be an inference policy after negation, not only a doctrine of self versus no-self. When ordinary objects of experience are negated, the Upanishadic move can treat non-objectifiability as shifting the burden toward an unobjectifiable seer-knower, while SN 22.59 treats non-mastery and impermanence as leaving the burden against any self-claim, including consciousness. The comparison should therefore score whether a tradition allows negation to authorize a remainder or requires every proposed remainder to undergo the same negation test.

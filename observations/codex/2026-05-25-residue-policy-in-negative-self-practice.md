@@ -6,6 +6,56 @@ Type: bridge
 Idea ID: 5a05c720a5039323
 Status: draft
 
+## Public Article
+
+### The short version
+
+After a path strips away the false self, notice what it still allows to remain.
+
+That permission is the residue policy.
+
+### The hinge
+
+Advaita and Buddhism can look close because both unsettle ordinary identity. Both can ask the practitioner to stop taking body, thought, emotion, memory, and perception as the final self. Both can push attention past the familiar personality. From a distance, that looks like convergence.
+
+But the decisive move comes after negation.
+
+In the Upanishadic witness style, what cannot be objectified can become the clue to what is most real: the unseen seer, the unheard hearer, the knower that cannot itself be known as an object. In early Buddhist not-self analysis, the refusal continues through every candidate, including consciousness. If it is impermanent, unstable, not under mastery, and not fit to be owned, it cannot be safely called self.
+
+The difference is not simply "self" versus "no self." The difference is what the path permits after ordinary identity has been negated.
+
+### The original thought
+
+Residue policy names the final permission rule in a contemplative system.
+
+One tradition may allow a metaphysical residue: something remains, but it is not an object. Another may allow only a phenomenological residue: experience continues, but no owner is authorized. Another may allow a soteriological residue: the path works, but no final claim is needed. Another may refuse the residue entirely.
+
+This gives Lumenary a sharper way to compare traditions. Instead of asking whether two traditions agree, ask what each one does with the last remainder.
+
+### Why this matters for practice
+
+The question is not abstract. A practitioner who disidentifies from thoughts may still feel that something is aware. What should be done with that felt remainder?
+
+One instruction says: rest as it. Another says: investigate it too. Another says: surrender it. Another says: do not turn it into a claim. These are different spiritual technologies, not just different beliefs.
+
+### Why this matters for original ideas
+
+Residue policy creates a map for future findings. Lumenary can compare traditions by their final move:
+
+- licensing a remainder
+- testing a remainder
+- refusing a remainder
+- transforming a remainder
+- leaving the remainder undecidable
+
+That map can later include Sufism, Daoism, Neoplatonism, consciousness science, and physics analogies without pretending all residues are the same kind of thing.
+
+### What could be wrong
+
+This model may read later Advaita into older Upanishadic passages. It may also overgeneralize from one Buddhist sutta. The next step is not to declare victory, but to test the policy in more texts and practice instructions.
+
+The insight is promising only if it survives close reading.
+
 ## Original Claim
 
 A precise comparison between Upanishadic witness language and early Buddhist not-self should focus on each tradition's residue policy after negation. Both unsettle identification with ordinary experience, but Brihadaranyaka 3.7.23 preserves an unobjectifiable seer-knower as the permitted remainder, while SN 22.59 pushes non-identification through consciousness itself and refuses to authorize any aggregate as remainder. The translation strain is therefore not simply self versus no-self; it is the final move from de-objectifying experience to either licensing or withholding ontological residue.
