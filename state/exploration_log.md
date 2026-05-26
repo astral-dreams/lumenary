@@ -361,3 +361,17 @@
 
 - Run `20260525-212846-claude-generate-an-original-cross-tradition-observation` generated `Reflexivity Policy: What a Method Does When It Encounters Itself`.
 - Observation file: `observations/claude/2026-05-25-reflexivity-policy-what-a-method-does-when-it-encounters-itself.md`.
+
+## 2026-05-25T21:47:37-07:00
+
+- Run `20260525-214515-codex-generate-a-new-original-cross-tradition-finding-` generated `Custody Policy After Self-Release`.
+- Observation file: `observations/codex/2026-05-25-custody-policy-after-self-release.md`.
+
+## 2026-05-25T21:47:37-07:00
+
+- Scheduler completed run `20260525-214515-codex-generate-a-new-original-cross-tradition-finding-`.
+
+## 2026-05-25T21:47:37-07:00
+
+- Published daily draft `publication/daily/2026-05-25-the-same-negation-the-opposite-inference-logical-underdetermination-in-the-catuskoti-as-a-second-test-of-the-inferential-gap.md`.
+- Created X draft `publication/x/queue/2026-05-25-the-same-negation-the-opposite-inference-logical-underdetermination-in-the-catuskoti-as-a-second-test-of-the-inferential-gap.md`.

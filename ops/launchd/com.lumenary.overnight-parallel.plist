@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "https://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.lumenary.overnight-parallel</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/Users/johnforrester/spirituality/scripts/run_overnight_parallel_research.sh</string>
+  </array>
+  <key>WorkingDirectory</key>
+  <string>/Users/johnforrester/spirituality</string>
+  <key>RunAtLoad</key>
+  <true/>
+  <key>StartInterval</key>
+  <integer>1800</integer>
+  <key>StandardOutPath</key>
+  <string>/Users/johnforrester/spirituality/runs/overnight-parallel.stdout.log</string>
+  <key>StandardErrorPath</key>
+  <string>/Users/johnforrester/spirituality/runs/overnight-parallel.stderr.log</string>
+  <key>EnvironmentVariables</key>
+  <dict>
+    <key>PATH</key>
+    <string>/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin</string>
+    <key>SPIRITUALITY_STOP_AT</key>
+    <string>2026-05-26T07:00:00-07:00</string>
+    <key>SPIRITUALITY_LAUNCHAGENT_PLIST</key>
+    <string>/Users/johnforrester/Library/LaunchAgents/com.lumenary.overnight-parallel.plist</string>
+  </dict>
+</dict>
+</plist>

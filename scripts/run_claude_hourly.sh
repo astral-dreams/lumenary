@@ -7,7 +7,7 @@ echo "$(date): Claude hourly scheduler starting (timezone: local system timezone
 
 git pull origin main --ff-only 2>/dev/null || true
 
-DEFAULT_FOCUS="Generate an original cross-tradition observation. Read CodeX latest work and engage with it. Use web search for real sources. Follow the writing style guide in docs/writing-style.md."
+DEFAULT_FOCUS="Generate an original cross-tradition observation. Read CodeX latest work and engage with it. Use web search for real sources. Follow the writing style guide in docs/writing-style.md. Do not use em dashes."
 
 python3 -m engine.scheduler \
   --provider claude-code \

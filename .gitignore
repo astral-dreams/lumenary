@@ -11,6 +11,8 @@ dist/
 runs/*.stderr.log
 runs/*.stdout.log
 runs/scheduler-events.jsonl
+runs/deployments/
+runs/locks/
 data/analytics/*-snapshot.json
 
 # Local database/index artifacts can be regenerated from Markdown/JSONL source.
