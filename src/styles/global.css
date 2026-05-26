@@ -805,14 +805,16 @@ meter {
   box-shadow: var(--shadow);
   display: grid;
   gap: 14px;
-  grid-template-columns: repeat(6, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   margin-bottom: 22px;
+  overflow: hidden;
   padding: 16px;
 }
 
 .insight-filters label {
   display: grid;
   gap: 6px;
+  min-width: 0;
 }
 
 .insight-filters span {
@@ -829,9 +831,13 @@ meter {
   border-radius: 8px;
   color: var(--ink);
   font: inherit;
+  font-size: clamp(0.88rem, 1vw, 0.98rem);
   font-weight: 700;
+  line-height: 1.15;
   min-height: 42px;
+  min-width: 0;
   padding: 8px 34px 8px 10px;
+  width: 100%;
 }
 
 .insight-grid {
@@ -869,7 +875,11 @@ meter {
 }
 
 .insight-card-actions {
+  align-items: center;
   align-self: end;
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
   margin-top: 18px;
 }
 
@@ -906,6 +916,17 @@ meter {
   min-width: 24px;
   padding: 2px 7px;
   text-align: center;
+}
+
+.insight-date {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--muted);
+  flex: 0 0 auto;
+  font-size: 0.76rem;
+  font-weight: 800;
+  padding: 6px 9px;
 }
 
 .empty-filter-message {

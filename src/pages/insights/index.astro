@@ -94,6 +94,7 @@ const traditions = [...new Set(insights.flatMap((insight) => insight.traditionTa
                 <span>Up vote</span>
                 <strong data-vote-count>0</strong>
               </button>
+              <time class="insight-date" datetime={insight.date}>{insight.date}</time>
             </div>
           </article>
         );
