@@ -85,6 +85,9 @@ const findingJsonLd = [
     <section class="plain-summary">
       <p class="eyebrow">At a glance</p>
       <p>{idea.atAGlance}</p>
+      <ul class="glance-points" aria-label="Key points">
+        {idea.atAGlancePoints.map((point) => <li>{point}</li>)}
+      </ul>
     </section>
 
     {dialoguesForFinding.length > 0 && (

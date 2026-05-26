@@ -593,6 +593,7 @@ h3 {
   border-radius: 8px;
   box-shadow: var(--shadow);
   margin-bottom: 22px;
+  overflow: hidden;
   padding: clamp(22px, 4vw, 34px);
 }
 
@@ -621,10 +622,11 @@ h3 {
 .audit-stat-grid strong {
   display: block;
   font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(1.3rem, 2vw, 1.85rem);
+  font-size: clamp(1.18rem, 1.65vw, 1.6rem);
   font-weight: 500;
   line-height: 1.08;
   margin-top: 8px;
+  overflow-wrap: anywhere;
 }
 
 .audit-summary {
@@ -642,8 +644,11 @@ h3 {
 }
 
 .audit-detail {
-  border-top: 1px solid var(--line);
-  padding-top: 16px;
+  background: color-mix(in srgb, var(--band) 52%, white);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  min-width: 0;
+  padding: 16px;
 }
 
 .audit-detail h2 {
@@ -659,6 +664,7 @@ h3 {
   color: var(--muted);
   font-size: 0.98rem;
   line-height: 1.58;
+  overflow-wrap: anywhere;
 }
 
 .audit-list li {
@@ -669,6 +675,7 @@ h3 {
 .audit-list strong {
   color: #303832;
   font-size: 0.98rem;
+  overflow-wrap: anywhere;
 }
 
 .audit-list span {
@@ -676,6 +683,7 @@ h3 {
   display: block;
   font-size: 0.94rem;
   line-height: 1.48;
+  overflow-wrap: anywhere;
 }
 
 .plain-summary {
@@ -695,6 +703,42 @@ h3 {
   margin-bottom: 0;
 }
 
+.plain-summary > p:not(.eyebrow) {
+  color: #303832;
+  margin-bottom: 0;
+}
+
+.glance-points {
+  display: grid;
+  gap: 10px;
+  list-style: none;
+  margin: 20px 0 0;
+  padding: 0;
+}
+
+.glance-points li {
+  align-items: start;
+  background: color-mix(in srgb, white 72%, var(--band));
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  color: #303832;
+  display: grid;
+  font-size: 1rem;
+  gap: 10px;
+  grid-template-columns: 10px minmax(0, 1fr);
+  line-height: 1.5;
+  padding: 12px 14px;
+}
+
+.glance-points li::before {
+  background: var(--red);
+  border-radius: 999px;
+  content: "";
+  height: 7px;
+  margin-top: 0.55em;
+  width: 7px;
+}
+
 .article-section p,
 .plain-summary p,
 .clean-list,
@@ -702,6 +746,24 @@ h3 {
   color: #303832;
   font-size: 1.05rem;
   line-height: 1.72;
+}
+
+.article-section .audit-detail p,
+.article-section .audit-list {
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.52;
+}
+
+.article-section .audit-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.article-section .audit-list li + li {
+  border-top: 1px solid var(--line);
+  margin-top: 14px;
+  padding-top: 14px;
 }
 
 .clean-list {

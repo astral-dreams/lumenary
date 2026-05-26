@@ -125,6 +125,7 @@ export type IdeaRecord = {
 
 export type IdeaView = IdeaRecord & {
   atAGlance: string;
+  atAGlancePoints: string[];
   articleHtml: string;
   critiqueHtml: string;
   date: string;
@@ -665,9 +666,109 @@ function cleanPlainSummary(value: string): string {
     .replace(/^\w/, (match) => match.toUpperCase());
 }
 
+const readableReplacements: [RegExp, string][] = [
+  [/\badvaita\b/gi, "one path"],
+  [/\banatta\b/gi, "no fixed self"],
+  [/\batman\b/gi, "self"],
+  [/\bbarzakh\b/gi, "threshold"],
+  [/\bbuddhist?\b/gi, "another path"],
+  [/\bcontemplative\b/gi, "practice"],
+  [/\bconvergence\b/gi, "agreement"],
+  [/\bdaoist?\b/gi, "nature-centered"],
+  [/\bepistemic\b/gi, "about knowing"],
+  [/\binferential\b/gi, "concluding"],
+  [/\bmetaphysical\b/gi, "about what is real"],
+  [/\bnegation\b/gi, "letting go"],
+  [/\bphenomenological\b/gi, "felt"],
+  [/\bsufi(sm)?\b/gi, "love-centered"],
+  [/\bsunyata\b/gi, "emptiness"],
+  [/\btranslation strain\b/gi, "the bend in the bridge"],
+];
+
+function readableText(value: string): string {
+  let text = value
+    .replace(/[\u2013\u2014]/g, ":")
+    .replace(/`([^`]+)`/g, "$1")
+    .replace(/\*\*([^*]+)\*\*/g, "$1")
+    .replace(/\([^)]*\)/g, "")
+    .replace(/\s+/g, " ")
+    .trim();
+  for (const [pattern, replacement] of readableReplacements) {
+    text = text.replace(pattern, replacement);
+  }
+  return text.trim();
+}
+
+function sentenceList(value: string): string[] {
+  const text = readableText(value);
+  const matches = text.match(/[^.!?]+[.!?]/g);
+  if (matches?.length) {
+    return matches.map((sentence) => sentence.trim()).filter(Boolean);
+  }
+  return text ? [text] : [];
+}
+
+function clipWords(value: string, limit: number): string {
+  const words = readableText(value).split(/\s+/).filter(Boolean);
+  if (words.length <= limit) {
+    return readableText(value);
+  }
+  return `${words.slice(0, limit).join(" ").replace(/[.,;:]+$/, "")}.`;
+}
+
+function wordCount(value: string): number {
+  return readableText(value).split(/\s+/).filter(Boolean).length;
+}
+
+function normalizePoint(value: string): string {
+  const point = clipWords(value, 18).replace(/^[-*\s]+/, "").trim();
+  if (!point) return "";
+  return /[.!?]$/.test(point) ? point : `${point}.`;
+}
+
+function fallbackAtAGlancePoints(record: IdeaRecord, atAGlance: string, plainSummary: string): string[] {
+  const candidates = [
+    ...sentenceList(atAGlance),
+    ...sentenceList(plainSummary),
+    ...sentenceList(record.original_claim),
+    ...sentenceList(record.why_it_might_be_new),
+  ];
+  const points: string[] = [];
+  const seen = new Set<string>();
+  for (const candidate of candidates.filter((sentence) => wordCount(sentence) <= 18)) {
+    const point = normalizePoint(candidate);
+    const key = point.toLowerCase();
+    if (point.length < 18 || seen.has(key)) continue;
+    points.push(point);
+    seen.add(key);
+    if (points.length === 3) break;
+  }
+  for (const candidate of candidates) {
+    if (points.length === 3) break;
+    const point = normalizePoint(candidate);
+    const key = point.toLowerCase();
+    if (point.length < 18 || seen.has(key)) continue;
+    points.push(point);
+    seen.add(key);
+  }
+  for (const fallback of [
+    "The idea matters only if it changes how a person sees.",
+    "The strongest version must survive honest objections.",
+    "The next test is whether practice and sources bear its weight.",
+  ]) {
+    if (points.length === 3) break;
+    if (!seen.has(fallback.toLowerCase())) {
+      points.push(fallback);
+      seen.add(fallback.toLowerCase());
+    }
+  }
+  return points.slice(0, 3);
+}
+
 type Distillation = {
   atAGlance: string;
   insight: string;
+  keyPoints?: string[];
   match: string[];
   plainSummary: string;
   tags: string[];
@@ -988,6 +1089,7 @@ function loadSidecarDistillations(): Distillation[] {
       return {
         atAGlance: String(record.atAGlance || record.plainSummary || ""),
         insight: String(record.insight || ""),
+        keyPoints: (record.keyPoints || []).map(String),
         match: (record.match || []).map(String),
         plainSummary: String(record.plainSummary || ""),
         tags: (record.tags || []).map(String),
@@ -1103,6 +1205,14 @@ export function getIdeas(): IdeaView[] {
       const traditionTags = inferTraditionTags(record, distillation?.tags || []);
       const plainSummary = distillation?.plainSummary || firstSentence(record.original_claim, 210);
       const atAGlance = distillation?.atAGlance || plainSummary;
+      const suppliedAtAGlancePoints = (distillation?.keyPoints || [])
+        .map(normalizePoint)
+        .filter(Boolean)
+        .slice(0, 4);
+      const atAGlancePoints =
+        suppliedAtAGlancePoints.length > 0
+          ? suppliedAtAGlancePoints
+          : fallbackAtAGlancePoints(record, atAGlance, plainSummary);
       const originalityAudit = audits.get(record.idea_id) || null;
       const createdAtMs = Date.parse(record.created_at);
       const observationUpdated = record.path && existsSync(join(root, record.path))
@@ -1119,6 +1229,7 @@ export function getIdeas(): IdeaView[] {
       return {
         ...record,
         atAGlance: cleanPlainSummary(atAGlance),
+        atAGlancePoints,
         articleHtml: publicArticle ? renderMarkdown(publicArticle) : "",
         critiqueHtml: renderMarkdown(record.critique),
         date,

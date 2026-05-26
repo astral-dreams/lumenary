@@ -36,6 +36,7 @@ Read the finding below. Distill it into reader-facing language.
 - The insight headline must land like a proverb.
 - The plainSummary is for the Insights card: one sentence, maximum 28 words.
 - The atAGlance section is for the finding page: one paragraph, 3 to 4 short sentences.
+- The keyPoints are for the finding page: 3 short bullets, direct and useful.
 - Use one idea per sentence.
 
 ## Required JSON
@@ -45,6 +46,7 @@ Return exactly one JSON object with:
 - insight: proverb-like headline, maximum 10 words
 - plainSummary: one short sentence for the Insights card
 - atAGlance: one paragraph of 3 to 4 short sentences
+- keyPoints: array of 3 short bullet points, each one sentence and under 18 words
 - match: array with one unique lowercased phrase from the title
 - tags: array of 1 to 5 simple tags
 
@@ -191,6 +193,55 @@ def _fallback_at_a_glance(idea: IdeaRecord) -> str:
     if len(clean) < 3:
         clean.append("A good insight should leave the reader seeing one familiar thing differently.")
     return " ".join(_clip_words(sentence, 22) for sentence in clean[:4])
+
+
+def _normalize_key_point(value: str) -> str:
+    point = _clip_words(_plain_text(value), 18)
+    point = point.strip(" -•\t")
+    if point and not point.endswith((".", "?", "!")):
+        point += "."
+    return point
+
+
+def _fallback_key_points(idea: IdeaRecord, at_a_glance: str = "") -> list[str]:
+    candidates = (
+        _sentences(at_a_glance)
+        + _sentences(idea.original_claim)
+        + _sentences(idea.why_it_might_be_new)
+    )
+    points: list[str] = []
+    seen: set[str] = set()
+    for sentence in [candidate for candidate in candidates if _word_count(candidate) <= 18]:
+        point = _normalize_key_point(sentence)
+        key = point.lower()
+        if len(point) < 18 or key in seen:
+            continue
+        points.append(point)
+        seen.add(key)
+        if len(points) == 3:
+            break
+    for sentence in candidates:
+        if len(points) == 3:
+            break
+        point = _normalize_key_point(sentence)
+        key = point.lower()
+        if len(point) < 18 or key in seen:
+            continue
+        points.append(point)
+        seen.add(key)
+
+    fallbacks = [
+        "The idea matters only if it changes how a person sees.",
+        "The strongest version must survive honest objections.",
+        "The next test is whether practice and sources bear its weight.",
+    ]
+    for fallback in fallbacks:
+        if len(points) == 3:
+            break
+        if fallback.lower() not in seen:
+            points.append(fallback)
+            seen.add(fallback.lower())
+    return points[:3]
 
 
 def _fallback_tags(idea: IdeaRecord) -> list[str]:
@@ -347,6 +398,14 @@ def _normalize_result(raw: dict[str, Any] | None, idea: IdeaRecord) -> dict[str,
     elif len(at_sentences) > 4:
         at_a_glance = " ".join(at_sentences[:4])
 
+    key_points = [
+        _normalize_key_point(str(item))
+        for item in raw.get("keyPoints", [])
+        if _normalize_key_point(str(item))
+    ]
+    if len(key_points) < 3:
+        key_points = _fallback_key_points(idea, at_a_glance)
+
     match = [
         _plain_text(str(item)).lower()
         for item in raw.get("match", [])
@@ -367,6 +426,7 @@ def _normalize_result(raw: dict[str, Any] | None, idea: IdeaRecord) -> dict[str,
         "created_at": now_local_iso(),
         "ideaId": idea.identity(),
         "insight": insight,
+        "keyPoints": key_points[:4],
         "match": match[:3],
         "plainSummary": plain_summary,
         "tags": tags[:5],
@@ -500,9 +560,62 @@ def backfill_distillations(config: EngineConfig, *, limit: int = 0) -> int:
     return distill_new_ideas(config, list(reversed(ideas)))
 
 
+def backfill_key_points(config: EngineConfig, *, refresh: bool = False) -> int:
+    store = config.root / DISTILLATION_STORE
+    if not store.exists():
+        return 0
+
+    ideas_by_id = {
+        str(record.get("idea_id") or ""): _idea_from_record(record)
+        for record in _read_idea_records(config.root)
+        if str(record.get("idea_id") or "")
+    }
+    changed = 0
+    records: list[dict[str, Any]] = []
+    for line in store.read_text(encoding="utf-8").splitlines():
+        if not line.strip():
+            continue
+        record = json.loads(line)
+        key_points = [
+            _normalize_key_point(str(item))
+            for item in record.get("keyPoints", [])
+            if _normalize_key_point(str(item))
+        ]
+        if refresh or len(key_points) < 3:
+            idea = ideas_by_id.get(str(record.get("ideaId") or ""))
+            if idea:
+                key_points = _fallback_key_points(idea, str(record.get("atAGlance") or ""))
+            else:
+                key_points = [
+                    _normalize_key_point(sentence)
+                    for sentence in _sentences(str(record.get("atAGlance") or record.get("plainSummary") or ""))
+                ][:3]
+            while len(key_points) < 3:
+                key_points.append("The strongest version must survive honest objections.")
+            record["keyPoints"] = key_points[:3]
+            changed += 1
+        records.append(record)
+
+    store.write_text(
+        "\n".join(json.dumps(record, ensure_ascii=False) for record in records) + "\n",
+        encoding="utf-8",
+    )
+    return changed
+
+
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Generate Lumenary insight distillations.")
     parser.add_argument("--backfill", action="store_true", help="Create missing distillations from ideas.jsonl.")
+    parser.add_argument(
+        "--backfill-key-points",
+        action="store_true",
+        help="Add finding-page key points to existing distillations.",
+    )
+    parser.add_argument(
+        "--refresh-key-points",
+        action="store_true",
+        help="Regenerate finding-page key points for existing distillations.",
+    )
     parser.add_argument("--limit", type=int, default=0, help="Maximum backfill records. Use 0 for all.")
     parser.add_argument("--provider", default="codex-cli", help="codex-cli, claude-code, or offline.")
     parser.add_argument("--model", default=None, help="Optional provider model.")
@@ -525,6 +638,9 @@ def main() -> None:
     if args.backfill:
         count = backfill_distillations(config, limit=args.limit)
         print(f"distillations={count}")
+    if args.backfill_key_points:
+        count = backfill_key_points(config, refresh=args.refresh_key_points)
+        print(f"key_points={count}")
 
 
 if __name__ == "__main__":

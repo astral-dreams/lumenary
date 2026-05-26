@@ -38,6 +38,16 @@ Rules:
 - Use "you" when it helps. The reader is a person, not an audience.
 - Maximum reading level: a thoughtful 16-year-old who reads widely but has no specialized training.
 
+### At a Glance Key Points
+
+Finding pages include three key points under At a Glance.
+
+- Each bullet should be one short sentence.
+- Start with the discovery, not the apparatus.
+- No scoring language, source names, file paths, or specialist vocabulary.
+- A bullet should help the reader remember what matters.
+- If a bullet sounds like a paper abstract, rewrite it until it sounds like something you would say to a sharp friend.
+
 ## Insight Headlines
 
 These are the single line that appears on the insight card. They should land like a proverb.
