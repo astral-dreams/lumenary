@@ -78,16 +78,8 @@ const traditions = [...new Set(insights.flatMap((insight) => insight.traditionTa
             data-traditions={insight.traditionTags.join(" ")}
             data-type={insight.ideaType}
           >
-            <div class="meta-row">
-              <span>{insight.agent}</span>
-              <span>{insight.promotionLabel}</span>
-              <span>{formatLabel(insight.ideaType)}</span>
-            </div>
             <h2><a href={`/findings/${insight.slug}/`}>{insight.insight}</a></h2>
             <p>{insight.plainSummary}</p>
-            <div class="label-row">
-              {insight.traditionTags.slice(0, 4).map((tag) => <span>{formatLabel(tag)}</span>)}
-            </div>
           </article>
         );
       })}

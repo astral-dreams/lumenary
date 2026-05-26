@@ -562,14 +562,14 @@ meter {
   border-radius: 8px;
   box-shadow: var(--shadow);
   display: grid;
-  min-height: 260px;
-  padding: 22px;
+  min-height: 190px;
+  padding: 18px;
 }
 
 .insight-card h2 {
   align-self: start;
-  font-size: clamp(1.55rem, 2.7vw, 2.35rem);
-  line-height: 1.02;
+  font-size: clamp(1.35rem, 2.2vw, 1.9rem);
+  line-height: 1.04;
 }
 
 .insight-card h2 a {
@@ -578,8 +578,9 @@ meter {
 
 .insight-card p {
   color: var(--muted);
-  line-height: 1.58;
-  margin: 16px 0 0;
+  font-size: 0.92rem;
+  line-height: 1.45;
+  margin: 12px 0 0;
 }
 
 .empty-filter-message {

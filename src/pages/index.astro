@@ -33,7 +33,7 @@ const latestIdeas = ideas.slice(0, 4);
       </p>
       <div class="hero-actions" aria-label="Primary actions">
         <a class="button button-primary" href={latestDaily ? `/daily/${latestDaily.slug}/` : "/daily/"}>
-          Latest daily update
+          Latest daily note
         </a>
         <a class="button" href="/findings/">Browse findings</a>
       </div>
@@ -45,7 +45,7 @@ const latestIdeas = ideas.slice(0, 4);
           <span class="date-pill">{latestDaily.date}</span>
           <h2>{latestDaily.title.replace(`${latestDaily.date}: `, "")}</h2>
           <p>{latestDaily.excerpt}</p>
-          <a href={`/daily/${latestDaily.slug}/`}>Read the update</a>
+          <a href={`/daily/${latestDaily.slug}/`}>Read the note</a>
         </article>
       ) : (
         <article class="daily-snapshot">
