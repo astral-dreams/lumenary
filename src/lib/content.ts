@@ -291,82 +291,84 @@ type Distillation = {
 };
 
 const distillations: Distillation[] = [
-  {
-    insight: "After negation, notice what still gets to remain.",
-    match: ["residue policy", "negative self-practice"],
-    plainSummary:
-      "This finding says traditions may agree on letting go of ordinary identity, while disagreeing about whether anything deeper is allowed to remain afterward.",
-    tags: ["advaita", "buddhism", "self"],
-  },
-  {
-    insight: "The bend reveals the bridge.",
-    match: ["translation strain"],
-    plainSummary:
-      "This finding says comparison is most honest when it names what does not fit, instead of pretending different traditions are saying the same thing.",
-    tags: ["method", "comparison", "convergence"],
-  },
-  {
-    insight: "The same silence can license opposite beliefs.",
-    match: ["inferential gap"],
-    plainSummary:
-      "This finding says two paths can reach a similar quieting of self and then draw very different conclusions from it.",
-    tags: ["advaita", "buddhism", "self"],
-  },
-  {
-    insight: "Every no leaves a remainder to account for.",
-    match: ["residual burden"],
-    plainSummary:
-      "This finding says negating the self is not the end of the question, because a path still has to explain what experience is and how practice works.",
-    tags: ["buddhism", "self", "critique"],
-  },
-  {
-    insight: "The deepest teachings differ by what they let survive.",
-    match: ["remainder pressure"],
-    plainSummary:
-      "This finding says spiritual systems often reveal themselves by the thing they protect after everything else has been questioned.",
-    tags: ["advaita", "buddhism", "practice"],
-  },
-  {
-    insight: "The self may be an interface, not a thing.",
-    match: ["interface invariant"],
-    plainSummary:
-      "This finding says recurring spiritual insights may come from changing attention, identity, agency, and boundaries, not from proving one shared metaphysical object.",
-    tags: ["consciousness", "self", "method"],
-  },
+  // Claude observations — match on unique title fragments, ordered most-specific first
   {
     insight: "What remains may be a crossing, not a thing.",
-    match: ["processual remainder", "barzakh"],
+    match: ["processual remainder"],
     plainSummary:
       "This finding says the remainder after self-emptying may be better understood as a living passage between realities than as a fixed hidden substance.",
     tags: ["sufism", "advaita", "buddhism"],
   },
   {
     insight: "Time is not the container; it is the showing.",
-    match: ["expressive realism", "being-time"],
+    match: ["expressive realism"],
     plainSummary:
       "This finding says Dogen can be read as treating time as the way things disclose themselves, not as a neutral box that events sit inside.",
     tags: ["buddhism", "time", "physics"],
   },
   {
     insight: "A model of the self is not the final answer to the self.",
-    match: ["predictive processing", "formal recurrence"],
+    match: ["formal recurrence of the inferential gap"],
     plainSummary:
       "This finding says scientific models of self-making may repeat the old spiritual question rather than settle it.",
     tags: ["consciousness", "science", "self"],
   },
   {
     insight: "The same logic can prove opposite metaphysics.",
-    match: ["same negation", "logical underdetermination", "catuskoti"],
+    match: ["same negation, the opposite inference"],
     plainSummary:
       "This finding says Nagarjuna and Gaudapada use identical four-cornered logical machinery to reach opposite conclusions — proving that logical form alone cannot settle whether reality has a ground or not.",
     tags: ["buddhism", "advaita", "method"],
   },
   {
     insight: "Some traditions need a negation that creates rather than destroys.",
-    match: ["generative negation", "third logical type", "dzogchen"],
+    match: ["generative negation"],
     plainSummary:
       "This finding says Dzogchen, Meister Eckhart, and Daoism all require a kind of negation that neither affirms a remainder nor leaves a void — it clears space for something to spontaneously appear.",
     tags: ["buddhism", "daoism", "neoplatonism", "method"],
+  },
+  {
+    insight: "The same silence can license opposite beliefs.",
+    match: ["atman and anatta as competing policies"],
+    plainSummary:
+      "This finding says two paths can reach a similar quieting of self and then draw very different conclusions from it.",
+    tags: ["advaita", "buddhism", "self"],
+  },
+  // Codex observations
+  {
+    insight: "After negation, notice what still gets to remain.",
+    match: ["residue policy in negative self"],
+    plainSummary:
+      "This finding says traditions may agree on letting go of ordinary identity, while disagreeing about whether anything deeper is allowed to remain afterward.",
+    tags: ["advaita", "buddhism", "self"],
+  },
+  {
+    insight: "The bend reveals the bridge.",
+    match: ["translation strain as a load test", "convergence as translation strain"],
+    plainSummary:
+      "This finding says comparison is most honest when it names what does not fit, instead of pretending different traditions are saying the same thing.",
+    tags: ["method", "comparison", "convergence"],
+  },
+  {
+    insight: "Every no leaves a remainder to account for.",
+    match: ["residual burden of proof"],
+    plainSummary:
+      "This finding says negating the self is not the end of the question, because a path still has to explain what experience is and how practice works.",
+    tags: ["buddhism", "self", "critique"],
+  },
+  {
+    insight: "The deepest teachings differ by what they let survive.",
+    match: ["remainder pressure as the hidden variable"],
+    plainSummary:
+      "This finding says spiritual systems often reveal themselves by the thing they protect after everything else has been questioned.",
+    tags: ["advaita", "buddhism", "practice"],
+  },
+  {
+    insight: "The self may be an interface, not a thing.",
+    match: ["interface invariant model"],
+    plainSummary:
+      "This finding says recurring spiritual insights may come from changing attention, identity, agency, and boundaries, not from proving one shared metaphysical object.",
+    tags: ["consciousness", "self", "method"],
   },
 ];
 
