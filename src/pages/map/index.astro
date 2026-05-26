@@ -18,17 +18,17 @@ const convergences = getConvergenceNotes();
 const growthRecords = getGrowthRecords();
 const stats = researchStats();
 const description =
-  "The Lumenary Living Map updates daily at 6pm local time with three SVG knowledge graphs for knowledge growth, method growth, sources, concepts, and findings.";
+  "The Lumenary Living Map updates daily at 6pm local time with maps of knowledge, method, sources, concepts, and findings.";
 const mapFaq = [
   {
     question: "What is The Lumenary's Knowledge Map?",
     answer:
-      "It shows what The Lumenary learned from Growth records and Findings, grouped into themes that gained weight during the research day.",
+      "It shows the knowledge that influences The Lumenary, drawn from Growth records, Findings, and source-backed idea records.",
   },
   {
     question: "What is The Lumenary's Method Map?",
     answer:
-      "It shows how The Lumenary changed its way of seeing, questioning, criticizing, and returning to sources.",
+      "It shows the methods that influence The Lumenary's way of seeing, questioning, criticizing, and returning to sources.",
   },
   {
     question: "What is the Research Map?",
@@ -41,14 +41,14 @@ const mapFaq = [
       "A launchd job refreshes the Map page every day at 6pm local time by rebuilding and deploying all three SVG graphs.",
   },
   {
-    question: "What data updates the SVG maps?",
+    question: "What data updates the maps?",
     answer:
       "The maps are rebuilt from Growth records, Findings, idea records, the concept graph, source index, promotion gates, and convergence notes.",
   },
   {
     question: "Why do the maps matter?",
     answer:
-      "They reveal what the system learned, how its method changed, where ideas converge, and where the research is still unresolved.",
+      "They reveal the knowledge, methods, sources, and tensions that influence the system's work.",
   },
 ];
 const mapJsonLd = [
@@ -69,10 +69,10 @@ const mapJsonLd = [
       "@type": "Dataset",
       name: "The Lumenary Living Map",
       description:
-        "A living map rebuilt daily from Growth records, Findings, sources, concept relationships, promotion status, and convergence notes.",
+        "A living map rebuilt daily from knowledge records, method records, sources, concept relationships, promotion status, and convergence notes.",
       variableMeasured: [
-        "knowledge growth",
-        "method growth",
+        "knowledge influence",
+        "method influence",
         "concept nodes",
         "relationship edges",
         "source cards",
@@ -101,7 +101,7 @@ const mapJsonLd = [
     <p class="eyebrow">Living atlas</p>
     <h1>Living Map</h1>
     <p class="lead">
-      Three SVG maps of The Lumenary's growing mind: what it knows, how it learns, and how the research corpus connects.
+      Maps of The Lumenary's growing mind: what it knows, how it learns, and how the research corpus connects.
       They refresh every day at 6pm local time.
     </p>
   </section>
@@ -111,7 +111,7 @@ const mapJsonLd = [
       <p class="eyebrow">Mind of knowledge</p>
       <h2>The Lumenary's Knowledge Map</h2>
       <p>
-        A living graph of what the research loop has learned each day, drawn from Growth records and linked Findings.
+        A living graph of the knowledge influencing the research loop, drawn from Growth records, linked Findings, and source-backed idea records.
       </p>
     </div>
     <LumenaryMindMap mode="knowledge" records={growthRecords} ideas={ideas} />
@@ -122,7 +122,7 @@ const mapJsonLd = [
       <p class="eyebrow">Mind of method</p>
       <h2>The Lumenary's Method Map</h2>
       <p>
-        A living graph of how the research loop is changing its way of observing, questioning, criticizing, and returning to the sources.
+        A living graph of the methods influencing how the research loop observes, questions, criticizes, and returns to the sources.
       </p>
     </div>
     <LumenaryMindMap mode="method" records={growthRecords} ideas={ideas} />
@@ -133,7 +133,7 @@ const mapJsonLd = [
       <p class="eyebrow">Research graph</p>
       <h2>Research Map</h2>
       <p>
-        A living knowledge graph of source research, concepts, methods, promoted claims, contradictions, and findings.
+        A living graph of the sources influencing the research map, plus concepts, methods, promoted claims, contradictions, and findings.
       </p>
     </div>
     <LivingMap graph={graph} sources={sources} ideas={ideas} convergences={convergences} />
@@ -153,9 +153,9 @@ const mapJsonLd = [
       <h2>What Do The Lumenary Maps Show?</h2>
       <p>
         The Lumenary's three living maps are rebuilt every day at 6pm local time from Growth records, Findings,
-        source cards, concept relationships, convergence notes, and promotion gates. The first map shows what changed
-        in knowledge. The second map shows how the method changed. The third map is the living knowledge graph of sources,
-        concepts, methods, and findings.
+        source cards, concept relationships, convergence notes, and promotion gates. The first map shows the knowledge
+        influencing The Lumenary. The second map shows the methods influencing its way of seeing. The third map shows the
+        sources influencing the research map, alongside concepts, methods, and findings.
       </p>
       <div class="answer-grid">
         {mapFaq.map((item) => (

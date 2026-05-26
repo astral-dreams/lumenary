@@ -153,19 +153,19 @@ const config = mode === "knowledge"
       field: "knowledge" as const,
       title: "The Lumenary's Knowledge Map",
       centerTitle: "Knowledge",
-      centerLabel: "what changed today",
+      centerLabel: "knowledge influence",
       themes: knowledgeThemes,
       caption:
-        "The knowledge map is rebuilt from Growth records, Findings, and source-backed idea records. Click a bubble to open the finding that currently anchors that part of the map.",
+        "The knowledge map is rebuilt from all knowledge signals in Growth records, Findings, and source-backed idea records. Click a bubble to open the finding that currently anchors that part of the map.",
     }
   : {
       field: "method" as const,
       title: "The Lumenary's Method Map",
       centerTitle: "Method",
-      centerLabel: "how seeing changed",
+      centerLabel: "method influence",
       themes: methodThemes,
       caption:
-        "The method map is rebuilt from Growth records, Findings, and source-backed idea records. Click a bubble to open the finding that currently anchors that part of the map.",
+        "The method map is rebuilt from all method signals in Growth records, Findings, and source-backed idea records. Click a bubble to open the finding that currently anchors that part of the map.",
     };
 
 function wrapText(value: string, limit = 18, maxLines = 3): string[] {
