@@ -209,6 +209,136 @@ export type SourceCard = {
   url: string | null;
 };
 
+export type SourceFoundationDomain = {
+  aliases: string[];
+  id: string;
+  label: string;
+  traditions: string[];
+};
+
+export type SourceFoundationGroup = {
+  domain: SourceFoundationDomain;
+  sources: SourceCard[];
+};
+
+export const SOURCE_FOUNDATION_DOMAINS: SourceFoundationDomain[] = [
+  {
+    aliases: ["advaita", "vedanta", "hindu", "upanishad", "mandukya", "gaudapada"],
+    id: "advaita-vedanta",
+    label: "Advaita Vedanta",
+    traditions: ["advaita-vedanta", "advaita vedanta"],
+  },
+  {
+    aliases: ["buddh", "madhyamaka", "mahayana", "yogacara", "zen", "dogen"],
+    id: "buddhism",
+    label: "Buddhism",
+    traditions: ["early-buddhism", "madhyamaka buddhism", "mahayana buddhism", "yogacara buddhism", "soto zen"],
+  },
+  {
+    aliases: ["dao", "tao", "zhuangzi"],
+    id: "daoism",
+    label: "Daoism",
+    traditions: ["daoism"],
+  },
+  {
+    aliases: ["sufi", "ibn", "islamic", "rumi", "hallaj", "ghazali"],
+    id: "sufism",
+    label: "Sufism",
+    traditions: ["sufism"],
+  },
+  {
+    aliases: ["christian", "gospel", "logos", "john", "corinthians", "dionysius", "augustine", "desert-fathers"],
+    id: "christianity",
+    label: "Christianity",
+    traditions: ["christianity", "christian"],
+  },
+  {
+    aliases: ["judaism", "jewish", "hebrew", "genesis", "exodus", "ecclesiastes", "yetzirah", "zohar", "maimonides"],
+    id: "judaism",
+    label: "Judaism",
+    traditions: ["judaism", "jewish"],
+  },
+  {
+    aliases: ["neoplat", "plotinus", "proclus"],
+    id: "neoplatonism",
+    label: "Neoplatonism",
+    traditions: ["neoplatonism"],
+  },
+  {
+    aliases: ["consciousness-science", "consciousness", "iit", "phenomenology"],
+    id: "consciousness-science",
+    label: "Consciousness Science",
+    traditions: ["consciousness-science", "consciousness science"],
+  },
+  {
+    aliases: ["cognitive-science", "cognitive", "hoffman"],
+    id: "cognitive-science",
+    label: "Cognitive Science",
+    traditions: ["cognitive-science", "cognitive science"],
+  },
+  {
+    aliases: ["computational-neuroscience", "neuroscience", "friston", "predictive"],
+    id: "neuroscience",
+    label: "Neuroscience",
+    traditions: ["computational-neuroscience", "computational neuroscience", "neuroscience"],
+  },
+  {
+    aliases: ["high-energy-physics", "particle-data", "cern-physics", "standard-model"],
+    id: "high-energy-physics",
+    label: "High Energy Physics",
+    traditions: ["high-energy-physics", "high energy physics"],
+  },
+  {
+    aliases: ["physics-time", "time-reversal", "minkowski", "einstein", "noether"],
+    id: "physics-of-time",
+    label: "Physics of Time",
+    traditions: ["physics-time", "physics of time"],
+  },
+  {
+    aliases: ["matter-theory", "higgs", "strong-force", "quark", "mass-generation"],
+    id: "matter-theory",
+    label: "Matter Theory",
+    traditions: ["matter-theory", "matter theory"],
+  },
+  {
+    aliases: ["quantum-gravity-time", "quantum-gravity", "wheeler-dewitt", "rovelli", "page-and-wootters"],
+    id: "quantum-gravity",
+    label: "Quantum Gravity",
+    traditions: ["quantum-gravity-time", "quantum gravity time", "quantum gravity"],
+  },
+  {
+    aliases: ["matter-antimatter", "antimatter", "baryon", "sakharov"],
+    id: "matter-antimatter",
+    label: "Matter and Antimatter",
+    traditions: ["matter-antimatter", "matter antimatter", "matter and antimatter"],
+  },
+  {
+    aliases: ["particle-cosmology", "cosmology", "planck"],
+    id: "particle-cosmology",
+    label: "Particle Cosmology",
+    traditions: ["particle-cosmology", "particle cosmology"],
+  },
+  {
+    aliases: ["theoretical-physics", "physics-measurement", "physics", "quantum"],
+    id: "physics",
+    label: "Physics",
+    traditions: ["theoretical-physics", "theoretical physics", "physics"],
+  },
+  {
+    aliases: ["project", "method", "lumenary"],
+    id: "method",
+    label: "Method",
+    traditions: ["project-method", "project method", "method"],
+  },
+];
+
+const OTHER_SOURCE_FOUNDATION: SourceFoundationDomain = {
+  aliases: [],
+  id: "other",
+  label: "Other",
+  traditions: [],
+};
+
 export type TextNote = {
   excerpt: string;
   html: string;
@@ -1449,12 +1579,51 @@ export function getGrowthPeriods(period: "day" | "week" | "month"): GrowthPeriod
 
 export function getSources(): SourceCard[] {
   return readJsonl<SourceCard>("sources/sources_index.jsonl").sort((a, b) => {
-    const tradition = a.tradition.localeCompare(b.tradition);
+    const aFoundation = sourceFoundationForSource(a);
+    const bFoundation = sourceFoundationForSource(b);
+    const tradition = aFoundation.label.localeCompare(bFoundation.label);
     if (tradition !== 0) {
       return tradition;
     }
     return a.title.localeCompare(b.title);
   });
+}
+
+function normalizeSourceFoundationValue(value: string): string {
+  return value.toLowerCase().replace(/[-_]+/g, " ").replace(/\s+/g, " ").trim();
+}
+
+export function sourceFoundationForSource(source: SourceCard): SourceFoundationDomain {
+  const tradition = normalizeSourceFoundationValue(source.tradition);
+  const exact = SOURCE_FOUNDATION_DOMAINS.find((domain) =>
+    domain.traditions.some((value) => normalizeSourceFoundationValue(value) === tradition),
+  );
+  if (exact) {
+    return exact;
+  }
+
+  const text = normalizeSourceFoundationValue(`${source.tradition} ${source.source_id} ${source.title} ${source.notes}`);
+  return (
+    SOURCE_FOUNDATION_DOMAINS.find((domain) =>
+      domain.aliases.some((alias) => text.includes(normalizeSourceFoundationValue(alias))),
+    ) || OTHER_SOURCE_FOUNDATION
+  );
+}
+
+export function groupSourcesByFoundation(sources: SourceCard[]): SourceFoundationGroup[] {
+  const groupsById = new Map<string, SourceFoundationGroup>();
+  for (const source of sources) {
+    const domain = sourceFoundationForSource(source);
+    const group = groupsById.get(domain.id) || { domain, sources: [] };
+    group.sources.push(source);
+    groupsById.set(domain.id, group);
+  }
+
+  const orderedGroups = SOURCE_FOUNDATION_DOMAINS.map((domain) => groupsById.get(domain.id)).filter(
+    (group): group is SourceFoundationGroup => Boolean(group && group.sources.length > 0),
+  );
+  const other = groupsById.get(OTHER_SOURCE_FOUNDATION.id);
+  return other && other.sources.length > 0 ? [...orderedGroups, other] : orderedGroups;
 }
 
 export function getConceptGraph(): ConceptGraph {

@@ -1,11 +1,11 @@
 ---
 import Breadcrumbs from "../../components/Breadcrumbs.astro";
 import BaseLayout from "../../layouts/BaseLayout.astro";
-import { formatLabel, getSources, groupBy } from "../../lib/content";
+import { formatLabel, getSources, groupSourcesByFoundation } from "../../lib/content";
 import { collectionPageSchema, datasetSchema, faqSchema, type BreadcrumbItem } from "../../lib/seo";
 
 const sources = getSources();
-const groups = groupBy(sources, (source) => source.tradition);
+const groups = groupSourcesByFoundation(sources);
 const description =
   "Source cards behind The Lumenary research corpus, covering spiritual traditions, comparative philosophy, consciousness science, and physics of time and matter.";
 const breadcrumbs: BreadcrumbItem[] = [
@@ -30,10 +30,10 @@ const sourcesJsonLd = [
     path: "/sources/",
     description,
     mainEntity: datasetSchema({
-    name: "The Lumenary Source Corpus",
+      name: "The Lumenary Source Corpus",
       path: "/sources/",
-    description,
-      keywords: [...new Set(sources.map((source) => source.tradition))],
+      description,
+      keywords: groups.map(({ domain }) => domain.label),
     }),
   }),
   faqSchema(sourcesFaq),
@@ -64,12 +64,22 @@ const sourcesJsonLd = [
       </div>
     </div>
   </section>
+  <section class="content-section">
+    <nav class="source-index-list" aria-label="Source foundation links">
+      {groups.map(({ domain, sources }) => (
+        <a href={`#${domain.id}`}>
+          <span>{domain.label}</span>
+          <strong>{sources.length}</strong>
+        </a>
+      ))}
+    </nav>
+  </section>
   <section class="content-section source-groups">
-    {groups.map(([tradition, sources]) => (
-      <section id={tradition} class="source-group">
+    {groups.map(({ domain, sources }) => (
+      <section id={domain.id} class="source-group">
         <div class="section-heading">
-          <p class="eyebrow">{sources.length} cards</p>
-          <h2>{formatLabel(tradition)}</h2>
+          <p class="eyebrow">{sources.length} {sources.length === 1 ? "card" : "cards"}</p>
+          <h2>{domain.label}</h2>
         </div>
         <div class="source-list">
           {sources.map((source) => (

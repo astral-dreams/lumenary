@@ -841,6 +841,35 @@ meter {
   gap: 28px;
 }
 
+.source-index-list {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.source-index-list a {
+  align-items: center;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  color: var(--ink);
+  display: flex;
+  font-weight: 800;
+  justify-content: space-between;
+  padding: 12px 14px;
+  text-decoration: none;
+}
+
+.source-index-list a:hover {
+  border-color: var(--green);
+  color: var(--green);
+}
+
+.source-index-list strong {
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
 .source-list {
   display: grid;
   gap: 14px;
@@ -1838,6 +1867,7 @@ meter {
   .item-grid,
     .audit-detail-grid,
     .audit-stat-grid,
+    .source-index-list,
     .source-list,
     .source-count-list,
     .method-grid,
