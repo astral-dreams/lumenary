@@ -73,7 +73,7 @@ def _self_unload(plist_path: str) -> None:
 
 
 def _acquire_lock(root: Path) -> Path | None:
-    lock_dir = root / "runs" / "locks" / "overnight-parallel.lock"
+    lock_dir = root / "runs" / "locks" / "parallel-research.lock"
     lock_dir.parent.mkdir(parents=True, exist_ok=True)
     try:
         lock_dir.mkdir()
@@ -170,8 +170,8 @@ def _run_command(
         stderr=subprocess.PIPE,
         check=False,
     )
-    stdout_path = root / "runs" / f"overnight-{label}.stdout.log"
-    stderr_path = root / "runs" / f"overnight-{label}.stderr.log"
+    stdout_path = root / "runs" / f"parallel-{label}.stdout.log"
+    stderr_path = root / "runs" / f"parallel-{label}.stderr.log"
     stdout_path.write_text(process.stdout, encoding="utf-8")
     stderr_path.write_text(process.stderr, encoding="utf-8")
     if check and process.returncode != 0:
@@ -214,7 +214,7 @@ def _commit_and_push(root: Path) -> None:
     stamp = datetime.now().astimezone().strftime("%Y-%m-%d %H:%M")
     _run_command(
         root,
-        ["git", "commit", "-m", f"Overnight parallel research run {stamp}"],
+        ["git", "commit", "-m", f"Parallel research run {stamp}"],
         label="git-commit",
     )
     _run_command(root, ["git", "push", "origin", "main"], label="git-push")
