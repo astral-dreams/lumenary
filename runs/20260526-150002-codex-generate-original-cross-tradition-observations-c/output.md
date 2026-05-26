@@ -1,0 +1,61 @@
+# The Handoff Point Is The Variable
+
+Agent: codex
+Date: 2026-05-26T15:03:45-07:00
+Type: synthesis
+Idea ID: 433dd83d436b0b13
+Status: draft
+
+## Original Claim
+
+The boundary between effort and gift is best treated as a timed transfer, not a fixed scale. A path may train receiving, agency, memory, reflexivity, and integration, then tell the practitioner that the very capacity just trained cannot be owned by the ordinary self. Effort paths keep cultivation visible until ownership is stripped from what was cultivated. Other-power paths move the transfer to the entrance: hearing, saying, and entrusting remain visible, but calculation is forbidden from the start. Direct-introduction paths remove production at the recognition point, then require stabilization, conduct, and guidance after recognition. Practice-realization collapses transfer into the act itself: practice is not a bridge to later gain, but it must still be enacted. The useful rubric is therefore not effort versus gift. It is function, stage, support holder, credited source, forbidden claimant, safeguard, and repair when the transfer fails.
+
+## Why It Might Be New
+
+What may be new is narrower than the main idea first appears. Existing work already discusses healthy ego before no-self, self-power and other-power, grace and works, religious coping styles, and forbidden ownership of practice. The exact difference is the stage-sensitive transfer rule: for each required capacity, ask when it is trained, when it becomes unclaimable, who or what carries it after that, and which safeguards appear at the transfer point. That makes the model a coding rubric for manuals and interviews, not a broad claim that all traditions secretly agree.
+
+## Source Basis
+
+- Thinking method source: Bhagavad Gita 2.47, https://www.holy-bhagavad-gita.org/chapter/2/verse/47/. I used action without attachment to fruit as a lens: work the comparison carefully, but do not grasp novelty as the fruit. Critique: this lens biases toward split-credit readings, so I corrected it with early Buddhist right effort.
+- Primary close-reading: SN 45.8, https://suttacentral.net/sn45.8/en/bodhi, against Tannisho and Shinran's Notes on Once-Calling and Many-Calling, https://jodoshinshu.faith/tannisho-a-record-in-lament-of-divergences/ and https://shinranworks.com/commentaries/notes-on-once-calling-and-many-calling/. SN 45.8 assigns desire, effort, energy, mind-application, and striving to the practitioner. Shinran's texts make saying and entrusting human-facing while removing calculation from the practitioner's side. The comparison reveals a stage and claimant difference, not merely more or less effort.
+- Primary close-reading: Longchen Rabjam, Instruction on Trekcho, Lotsawa House, https://www.lotsawahouse.org/tibetan-masters/longchen-rabjam/lama-yangtik-trekcho-instruction. The text rejects contrived effort at recognition, yet gives instructions for recognition, undistracted continuation, vows, devotion, conduct, and guidance.
+- Dogen practice-realization source: St Andrews Encyclopaedia of Theology on Dogen, https://www.saet.ac.uk/Buddhism/Dogen. Practice and realization are treated as one activity, which makes the present act both support and fruit.
+- Near-neighbor pressure: Jack Engler, You Must Be Somebody Before You Can Be Nobody, https://inquiringmind.com/article/0501_1_engler-interview/. Overlap: self-observation and affect tolerance are prerequisites for no-self practice. Difference: this record tracks when a trained function becomes unclaimable, not only whether ego strength is needed.
+- Near-neighbor pressure: Pargament et al. religious coping styles, summarized at https://pmc.ncbi.nlm.nih.gov/articles/PMC1630686/. Overlap: self-directing, deferring, and collaborative styles already allocate responsibility between person and God. Difference: this record codes contemplative practice functions by stage, claimant, safeguard, and repair.
+- Near-neighbor pressure: Steve Bein, Self Power, Other Power, and Non-dualism in Japanese Buddhism, https://philpapers.org/rec/BEISPO. Overlap: self-power and other-power are treated as nondual rather than simply opposed. Difference: this record treats the transfer point as a cross-tradition practice variable, not only a Japanese Buddhist doctrinal issue.
+- Local agent basis with attribution: Codex, observations/codex/2026-05-26-the-capacity-ledger-of-gift-and-effort.md and observations/codex/2026-05-26-the-forbidden-claimant-rubric.md; Claude, observations/claude/2026-05-26-the-grain-of-capacity.md and observations/claude/2026-05-26-whose-doing-is-this-credit-distribution-as-a-practice-variable.md.
+
+## Critique
+
+Radical Jodo Shinshu is the strongest anomaly. If entrusting itself is Amida's working, then even calling the entrance a transfer point may smuggle calculation into a teaching meant to end calculation. Successful hybrids and dual-trained practitioners also strain the model: if they switch between effort, surrender, recognition, and just-sitting without felt change in agency or ownership, the transfer variable may be less important than teacher style, temperament, or institutional language. A further weakness is prior art: religious coping and locus-of-control research may already explain much of the responsibility allocation this model tries to name.
+
+## Epistemic Labels
+
+- `textual`
+- `interpretive`
+- `phenomenological`
+- `empirical-adjacent`
+- `analogical`
+- `speculative`
+
+## Scores
+
+- novelty: 0.53
+- generativity: 0.91
+- cross_tradition_support: 0.83
+- logical_coherence: 0.86
+- explanatory_compression: 0.88
+- empirical_adjacency: 0.55
+- practice_testability: 0.88
+- counterargument_quality: 0.91
+- source_reliability: 0.84
+- publishability: 0.79
+
+## Next Research Directions
+
+- Build the rubric as a coding sheet with these fields: capacity, stage, support holder, credited source, forbidden claimant, transfer instruction, safeguard, failure mode, and repair practice.
+- If this model is right, then manuals should mark the transfer point with special warnings: self-power calculation in Pure Land, ownership of aggregates in early Buddhism, contrivance after direct introduction, gaining idea in Soto Zen. If warnings cluster only around generic ethics or obedience, the model is weakened.
+- If this model is right, then dual-trained practitioners should report a felt shift in permitted first-person grammar when switching methods: I cultivate, I entrust, recognition happens, or just sitting is enough. If practitioners report no such shift after careful interview, the model is weakened.
+- If this model is right, then radical other-power texts should still show human-facing contact points such as hearing, saying, gratitude, or community, while refusing to credit them as causes. If practitioners say even this distinction violates the teaching, the rubric needs a refusal category for traditions that reject the analyst's frame.
+- If this model is right, then identity-transforming therapies should show similar transfer safeguards when agency moves among client, therapist, group, medicine, protocol, or integration. If ordinary skills training shows the same safeguards, the analogy is weakened.
+- Protocol improvement: before comparing effort and gift, name the transfer rule assumed by the research method itself, then pair it with a method that distrusts that rule. The action-without-fruit lens needs right effort as its corrective.

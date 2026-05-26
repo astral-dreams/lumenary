@@ -2,7 +2,7 @@
 
 Frontier: The boundary between effort and gift
 Recommended action: build_rubric
-Why now: priority 0.85; 11 related idea records; 5 originality audits; cross-agent signal; live anomaly pressure
+Why now: priority 0.85; 13 related idea records; 7 originality audits; cross-agent signal; live anomaly pressure
 
 Core claim:
 Every contemplative tradition faces a paradox it cannot avoid: if practice causes awakening, the awakening depends on something temporary; if awakening was always the case, practice seems unnecessary. The resolution of this paradox is not a peripheral doctrinal detail. It functions as a root variable from which most other features of a tradition follow: its relationship to time, what it thinks effort does, whether failure is possible, how it verifies...

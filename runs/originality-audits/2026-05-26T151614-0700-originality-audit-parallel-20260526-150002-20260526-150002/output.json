@@ -1,0 +1,322 @@
+{
+  "audits": [
+    {
+      "agent": "codex",
+      "anomaly_probe": {
+        "anomaly_candidate": "Radical Jodo Shinshu, especially Tannisho chapters 8 and 10, where nembutsu is not the practitioner's practice or good act and no working is true working.",
+        "confidence_effect": "Lowers confidence in universality and requires a refusal-category. The idea remains useful as a coding heuristic, but not as a claim that all traditions perform a handoff.",
+        "why_it_breaks_or_strains_model": "If even hearing, saying, entrusting, and gratitude are Amida's working rather than trained human functions, then the analyst's transfer language may smuggle self-power into a tradition built to reject that framing. Dogen also strains the model because practice-realization collapses bridge and arrival rather than transferring ownership from one holder to another."
+      },
+      "claim_units": [
+        "Effort and gift should be modeled as timed transfer rather than fixed opposition.",
+        "Traditions train functions such as receiving, agency, memory, reflexivity, and integration, then may forbid ordinary-self ownership of those same functions.",
+        "Other-power, direct-introduction, effort-centered, and practice-realization paths differ by transfer point, support holder, credited source, forbidden claimant, safeguard, and repair.",
+        "This can become a coding rubric for manuals and practitioner interviews."
+      ],
+      "confidence": 0.82,
+      "cross_domain_prediction": {
+        "domain": "Psychotherapy and transformative education",
+        "prediction": "Methods that move agency from therapist or group to client, or from willpower to acceptance, should show special safeguards at transfer points, such as relapse planning, integration, alliance repair, and warnings against premature independence.",
+        "structural_translation": "Identity-changing work trains capacities that later must be relocated from client ego, therapist, group, medication, protocol, insight, or ongoing practice.",
+        "would_count_against_it": "Ordinary skill acquisition shows the same warnings, or outcomes are fully explained by severity, alliance, dosage, social support, and resources without any transfer-specific signal."
+      },
+      "exact_claim": "The useful comparative variable is not effort versus gift on a fixed scale, but the stage at which a trained function becomes unclaimable by the practitioner, who or what then carries it, and which safeguards appear when that transfer fails.",
+      "falsifiable_predictions": [
+        {
+          "expected_observation": "Pure Land texts should warn against calculation, Dzogchen texts against contrivance and premature recognition, Soto texts against gaining idea, early Buddhist texts against appropriation of aggregates or attainment ownership, and Gita-style karma-yoga texts against fruit ownership.",
+          "if_model_is_right": "Manuals should mark transfer points with special safeguards rather than generic warnings.",
+          "test_surface": "Blind stage-coded manual analysis across at least three texts per tradition.",
+          "would_weaken_or_falsify": "Warnings cluster by institution, teacher temperament, ethics, or historical polemic rather than by transfer point."
+        },
+        {
+          "expected_observation": "Interviewees can distinguish I cultivate, I entrust, recognition happens, and just sitting enacts, without being prompted with the rubric.",
+          "if_model_is_right": "Dual-trained practitioners should report shifts in permitted first-person grammar when changing methods.",
+          "test_surface": "Micro-phenomenological interviews with dual-trained practitioners and teachers.",
+          "would_weaken_or_falsify": "Practitioners report no felt shift, or shifts are fully explained by vocabulary, teacher style, temperament, or institutional identity."
+        },
+        {
+          "expected_observation": "Two practices with the same broad credit type but different transfer timing show different safeguards and repair instructions.",
+          "if_model_is_right": "The handoff rubric should add predictive value beyond Pargament-style responsibility allocation and the local capacity ledger.",
+          "test_surface": "Inter-rater coding of matched pairs such as Soto and Dzogchen, Pure Land and Christian grace, Theravada and karma-yoga.",
+          "would_weaken_or_falsify": "Support locus and credit-distribution coding predict the same outcomes without needing handoff timing."
+        },
+        {
+          "expected_observation": "Self-power calculation is repaired by hearing or entrusting, contrivance by relaxing into introduced awareness, gaining idea by just-sitting correction, and attainment ownership by no-self or humility teachings.",
+          "if_model_is_right": "Failed transfers should produce type-specific repair practices.",
+          "test_surface": "Teacher interviews and case reports from retreat, pastoral, and sangha settings.",
+          "would_weaken_or_falsify": "Repair practices do not map to transfer failures, or all traditions prescribe the same repairs for the same student problems."
+        }
+      ],
+      "idea_id": "433dd83d436b0b13",
+      "literature_search_queries": [
+        "Pargament self-directing deferring collaborative religious coping styles problem solving responsibility God",
+        "Steve Bein Self Power Other Power and Non-Dualism in Japanese Buddhism",
+        "Shinran Tannisho chapter 1 nembutsu mind arises Amida working",
+        "Longchen Rabjam Trekcho instruction recognition effort conduct vows",
+        "Dogen practice-realization not means to end shusho",
+        "Buddhist raft parable abandon teachings MN 22 upaya",
+        "Engler You must be somebody before you can be nobody no-self practice",
+        "religious coping styles locus of responsibility God collaborative deferring self-directing"
+      ],
+      "near_neighbors": [
+        {
+          "difference": "The candidate adds stage-level transfer, contemplative manuals, forbidden claimant, safeguard, and repair fields rather than measuring coping style in stress response.",
+          "novelty_impact": "High reduction. The main variable is not new, though the manual-coding form may extend it.",
+          "overlap": "Very close for allocating responsibility among self, God, and collaboration. This already formalizes who carries agency and how responsibility is distributed.",
+          "source": "Pargament et al., religious problem-solving styles, summarized at https://pmc.ncbi.nlm.nih.gov/articles/PMC1630686/ and https://icmglt.org/icmlibrary/religion-and-the-problem-solving-process-three-styles-of-coping/"
+        },
+        {
+          "difference": "The candidate generalizes beyond Japanese Buddhism and asks where the transfer occurs for each trained function.",
+          "novelty_impact": "High reduction for the effort-gift architecture, moderate reduction for stage-sensitive coding.",
+          "overlap": "Very close for treating self-power, other-power, and non-dualism as structured alternatives rather than a simple binary.",
+          "source": "Steve Bein, Self Power, Other Power, and Non-Dualism in Japanese Buddhism, https://philpapers.org/rec/BEISPO"
+        },
+        {
+          "difference": "Tannisho is a primary instance, not a comparative rubric. It may actually break the model by refusing the idea that a human function is first trained and then handed off.",
+          "novelty_impact": "High reduction and a major anomaly.",
+          "overlap": "Near exact for forbidden claimant language. The nembutsu is said to arise from Other Power, and even disciple ownership is rejected.",
+          "source": "Shinran, Tannisho chapters 1, 6, 8, and 11, https://shinranworks.com/related-works-by-other-authors/a-record-in-lament-of-divergences/"
+        },
+        {
+          "difference": "The candidate turns this into one value in a broader cross-tradition rubric.",
+          "novelty_impact": "Moderate reduction. The stage distinction is already present inside the practice manual.",
+          "overlap": "Close for direct introduction: the text rejects effort, contrivance, and grasping at the recognition point while prescribing investigation, guru reliance, vows, devotion, conduct, and stabilization.",
+          "source": "Longchen Rabjam, Instruction on Trekcho, https://www.lotsawahouse.org/tibetan-masters/longchen-rabjam/lama-yangtik-trekcho-instruction"
+        },
+        {
+          "difference": "Dogen is one type within the proposed rubric, not the whole comparative model.",
+          "novelty_impact": "Moderate reduction for the practice-realization category.",
+          "overlap": "Close for collapsing practice and realization, removing practice as a bridge to later gain.",
+          "source": "Dogen practice-realization, St Andrews Encyclopaedia of Theology, https://www.saet.ac.uk/Buddhism/Dogen and Stanford Encyclopedia of Philosophy, https://plato.stanford.edu/entries/japanese-zen/"
+        },
+        {
+          "difference": "The raft model is about non-clinging to the Dhamma after crossing, not a full transfer ledger of capacities, support holders, and repair practices.",
+          "novelty_impact": "Moderate reduction for the handoff-after-use pattern.",
+          "overlap": "Close for a method or teaching that must not be possessed after its work is done.",
+          "source": "MN 22, Alagadd\u016bpama Sutta, raft parable, https://suttacentral.net/mn22/en/bodhi"
+        },
+        {
+          "difference": "Engler focuses on ego strength and developmental risk, not claimant transfer across gift, effort, and direct-recognition paths.",
+          "novelty_impact": "Moderate to high reduction for the train-capacity-then-dissolve-self pattern.",
+          "overlap": "Close for the claim that psychological capacities may be prerequisites for practices that later undermine self-identification.",
+          "source": "Jack Engler, You Have to Be Somebody Before You Can Be Nobody, https://inquiringmind.com/article/0501_1_engler-interview/"
+        },
+        {
+          "difference": "The current idea integrates them as a timed handoff point and makes stage more explicit.",
+          "novelty_impact": "Very high internal reduction. Publish only as a consolidation or revision unless the new rubric predicts cases the prior rubrics did not.",
+          "overlap": "Near exact internal prior. These already name capacity location, forbidden claimant, support locus, and credit distribution.",
+          "source": "Local Lumenary priors: Capacity Ledger of Gift and Effort, Forbidden Claimant Rubric, Grain of Capacity, Credit Distribution as a Practice Variable"
+        }
+      ],
+      "next_loop_instructions": [
+        "Merge this with Capacity Ledger, Forbidden Claimant Rubric, and Credit Distribution unless a separability test shows independent predictive value.",
+        "Add rubric values for no-transfer, collapsed-transfer, continuous-transfer, analyst-frame-refused, and undecidable.",
+        "Code primary manuals before broad tradition labels, beginning with SN 45.8, Tannisho chapters 1, 6, 8, and 11, Longchen Rabjam Trekcho, Bendowa or Dogen practice-realization sources, and one Christian grace manual.",
+        "Do not publish as metaphysics. Publish only as an interpretive and practitioner-facing coding heuristic.",
+        "Run practitioner interviews that ask for actual student failure cases and repair instructions, not agreement with the model.",
+        "Use inter-rater coding to test whether transfer timing predicts safeguards beyond support locus and credit distribution."
+      ],
+      "novelty_adjustment": "Reduce novelty from 0.53 to about 0.44. The rubric is generative, but its parts are heavily anticipated by religious coping styles, self-power and other-power discourse, Dogen, Dzogchen manuals, the raft and upaya pattern, Engler, and local Lumenary priors. Treat as a consolidation unless inter-rater coding shows new predictive value.",
+      "originality_status": "extended",
+      "practitioner_test": {
+        "answers_that_reduce_originality": "Practitioners say the idea is obvious stage pedagogy, already covered by self-power and other-power, grace and works, upaya, no-gaining, or religious coping. Pure Land teachers say the transfer frame itself is doctrinally misleading.",
+        "answers_that_support_contribution": "Practitioners say the rubric predicts concrete failure points and repair instructions better than effort-gift language, especially in cross-training cases and direct-introduction settings.",
+        "questions": [
+          "Does the handoff-point rubric describe something you actively teach, or does it rename familiar self-power, other-power, grace, effort, and no-gaining language?",
+          "Where in your training sequence does a student become especially likely to claim what the practice says cannot be claimed?",
+          "Does naming support holder, credited source, forbidden claimant, safeguard, and repair change how you would guide a student?"
+        ],
+        "relevant_practitioners": [
+          "Jodo Shinshu ministers",
+          "Theravada monastics and insight teachers",
+          "Dzogchen or Mahamudra teachers",
+          "Soto Zen teachers",
+          "Advaita Vedanta teachers",
+          "Christian theologians of grace and sanctification",
+          "Sufi teachers familiar with fana and baqa",
+          "Psychologists of religion familiar with religious coping styles"
+        ]
+      },
+      "primary_text_close_read": {
+        "primary_pair": [
+          "SN 45.8, Magga-vibhanga Sutta, https://www.accesstoinsight.org/tipitaka/sn/sn45/sn45.008.than.html",
+          "Shinran, Tannisho, A Record in Lament of Divergences, https://shinranworks.com/related-works-by-other-authors/a-record-in-lament-of-divergences/"
+        ],
+        "risk_of_overread": "High. The model risks imposing a staged transfer on traditions that deny transfer, collapse before and after, or shift grammar by genre and audience. Longchenpa's Trekcho gives recognition without contrived effort but also gives preliminaries, devotion, vows, conduct, and post-recognition practice, which means production is denied only at some moments, not globally.",
+        "secondary_literature_gap": "The search found close prior structures in religious coping styles, self-power and other-power, Dogen practice-realization, Dzogchen direct introduction, Engler on ego strength before no-self, the Buddhist raft and upaya pattern, and local Lumenary capacity-ledger and credit-distribution work. I did not find the exact field list as a cross-tradition coding sheet, but the core agency-allocation and means-end reversal are well established.",
+        "structural_observation": "SN 45.8 makes right effort operational and practitioner-facing: desire, endeavor, persistence, intent, and maintenance of skillful qualities are all assigned to the monk's practice field. Tannisho reverses the claimant grammar: nembutsu is not a practice or good act when it arises from Other Power, and claims such as my disciples are rejected because the working belongs to Amida. The comparison supports a real difference in claimant policy, but Tannisho is not a late handoff after training. It often refuses self-claim from the entrance, so the model needs a no-transfer or analyst-frame-refused value."
+      },
+      "recommended_scores": {
+        "counterargument_quality": 0.9,
+        "novelty": 0.44,
+        "source_reliability": 0.84
+      },
+      "title": "The Handoff Point Is The Variable",
+      "unlike_statement": "Unlike Pargament, self-power and other-power debates, Dogen practice-realization, and local Lumenary credit models, this idea says the decisive unit is a timed transfer for each required function, with observable safeguards and repairs at that transfer point."
+    },
+    {
+      "agent": "claude",
+      "anomaly_probe": {
+        "anomaly_candidate": "Mencian Confucian cultivation and inherited ritual traditions, where the path starts from innate moral sprouts, family formation, ritual participation, or ordinary socialization rather than a dramatic break in incapacity.",
+        "confidence_effect": "Lowers confidence in the universality claim but strengthens the model if revised as a variable with none, mild, gradual, social, gift, grace, and self-disclosure values.",
+        "why_it_breaks_or_strains_model": "If some traditions assume an already-open moral capacity, then first-break is not universal. Also, SN 55.5 strains the model because social encounter comes first, but appropriate attention and practice are immediately active. This leaves a residual question: what enables recognition of the person of integrity? The model either needs latent capacity, no-break, or gradual-break values, or it generates infinite regress."
+      },
+      "claim_units": [
+        "There is a structural circularity at the beginning of transformative spiritual practice.",
+        "Traditions can be compared by their first-break mechanism: social encounter, cosmic gift, prevenient grace, self-disclosure, and possibly no-break or gradual-break cases.",
+        "The severity of the circularity tracks anthropology, especially whether human nature is seen as capable, impaired, bound, sinful, or already endowed.",
+        "The entry solution predicts effort theory, verification, characteristic failure, and safeguards later in the path."
+      ],
+      "confidence": 0.78,
+      "cross_domain_prediction": {
+        "domain": "Psychotherapy, education, and recovery programs",
+        "prediction": "Programs aimed at distorted thinking, addiction, trauma, or critical thinking should have identifiable first-break mechanisms and entry safeguards. For example, readiness work, alliance formation, motivational interviewing, peer sponsor encounter, or disorienting dilemma should predict downstream practice architecture.",
+        "structural_translation": "A process that changes the very capacities needed to enter it must explain how participation begins: through trusted encounter, crisis, institutional scaffolding, latent capacity, surrender, medication, group containment, or gradual readiness building.",
+        "would_count_against_it": "Entry success and downstream structure are fully explained by alliance, severity, resources, coercion, incentives, dosage, and social support, with no added predictive power from first-break type."
+      },
+      "exact_claim": "Spiritual paths face an upstream circularity: the very person needing transformation lacks the wisdom, freedom, faith, or recognition needed to begin. Traditions solve this first-break problem through mechanisms such as social encounter, cosmic gift, prevenient grace, or self-disclosure, and the chosen solution predicts downstream practice architecture.",
+      "falsifiable_predictions": [
+        {
+          "expected_observation": "Jodo Shinshu warns against self-power calculation, Orange-Augustinian grace traditions warn against pride and presumption, Dzogchen warns against premature recognition and fabrication, and social-encounter models warn against isolation from good friends or teachers.",
+          "if_model_is_right": "Traditions with severe first-break solutions should show entry-point safeguards that match the feared false beginning.",
+          "test_surface": "Stage-coded analysis of entry instructions, initiation manuals, sermons, and teacher warnings.",
+          "would_weaken_or_falsify": "Entry warnings are no stronger or more type-specific than in mild or no-break traditions, or they track institution and polemic better than first-break mechanism."
+        },
+        {
+          "expected_observation": "Traditions with deep incapacity, sin, mappo, avidya as pervasive delusion, or ordinary mind as unreliable should use more external, prior, or self-disclosing breaks than traditions with innate goodness or workable capacities.",
+          "if_model_is_right": "Anthropology should predict first-break severity.",
+          "test_surface": "Comparative coding of primary texts and doctrinal manuals across Confucian, Theravada, Pure Land, Christian, Dzogchen, Yogacara, and Zen sources.",
+          "would_weaken_or_falsify": "Optimistic anthropologies use severe external first-break mechanisms just as often, or pessimistic anthropologies use ordinary self-cultivation without special entry safeguards."
+        },
+        {
+          "expected_observation": "Movements that combine social encounter with gradual cultivation, or self-disclosure with original-endowment views, should stabilize more readily than hybrids that combine radical other-power with strongly self-powered entry practice.",
+          "if_model_is_right": "Historical hybrids should be more stable when their first-break mechanisms are compatible.",
+          "test_surface": "Historical comparison of Chan, Pure Land-Zen syntheses, Christian contemplative revivals, and modern nondual movements.",
+          "would_weaken_or_falsify": "Hybrid success is better predicted by patronage, institutions, language, politics, charisma, or ritual compatibility than by first-break type."
+        },
+        {
+          "expected_observation": "They can describe whether the first move is meeting, hearing, being called, being enabled, surrendering, recognizing what was present, cultivating a seed, or simply continuing inherited practice.",
+          "if_model_is_right": "Practitioners should recognize entry grammar differences even when they do not use philosophical circularity language.",
+          "test_surface": "Practitioner and teacher interviews, coded without revealing the typology.",
+          "would_weaken_or_falsify": "Practitioners across traditions describe entry in generic terms, and teacher guidance does not change according to first-break grammar."
+        }
+      ],
+      "idea_id": "e2faec9c39c6a653",
+      "literature_search_queries": [
+        "Meno's paradox inquiry what you do not know recollection Plato primary text",
+        "Council of Orange canon 5 beginning of faith desire for faith grace",
+        "Augustine On the Predestination of the Saints beginning of faith gift of God",
+        "William James Varieties of Religious Experience self-surrender conversion volitional",
+        "Lewis Rambo religious conversion stages context crisis quest encounter commitment consequences",
+        "Rahner supernatural existential condition makes acceptance possible grace",
+        "Simone Kotva Effort and Grace spiritual exercise negative effort",
+        "Yogacara asraya paravrtti transformation of the basis circularity",
+        "Dzogchen pointing out instruction recognition rigpa awareness recognizes itself",
+        "Mencius four beginnings innate moral sprouts 2A6"
+      ],
+      "near_neighbors": [
+        {
+          "difference": "The candidate applies the structure to soteriological transformation, will, faith, and practice architecture rather than knowledge of virtue alone.",
+          "novelty_impact": "High reduction for the core circularity, moderate remaining novelty for the cross-tradition practice mapping.",
+          "overlap": "Very close for the formal bootstrapping problem: how one can inquire into what one does not know, and how one will recognize it when found.",
+          "source": "Plato, Meno, 80d-e and recollection argument, https://classics.mit.edu/Plato/meno.html"
+        },
+        {
+          "difference": "Augustine is a single-tradition theological solution, not a comparative typology across Buddhist, Pure Land, Christian, and Dzogchen cases.",
+          "novelty_impact": "Very high reduction for the prevenient-grace category.",
+          "overlap": "Near exact for the Christian version: the beginning of faith is God's gift, and even thinking with assent requires divine sufficiency.",
+          "source": "Augustine, On the Predestination of the Saints, Book I, https://www.newadvent.org/fathers/15121.htm"
+        },
+        {
+          "difference": "The candidate uses Orange as one value in a broader model and predicts downstream safeguards.",
+          "novelty_impact": "Very high reduction for any claim that first-break grace is new.",
+          "overlap": "Near exact for first-break logic. The canons deny that prayer, desire, striving, seeking, assent, or the beginning of faith arise by unaided nature.",
+          "source": "Second Council of Orange, canons 3-7 and conclusion, https://www.crivoice.org/creedorange.html"
+        },
+        {
+          "difference": "James offers a psychology of conversion, not a typology of first-break mechanisms across practice manuals with anthropological severity predictions.",
+          "novelty_impact": "High reduction for active versus surrender entry patterns.",
+          "overlap": "Close. James already distinguishes volitional and self-surrender conversion and treats conversion as the unification of a divided self, gradual or sudden.",
+          "source": "William James, The Varieties of Religious Experience, conversion lectures, https://gutenberg.org/files/621/621-h/621-h.html"
+        },
+        {
+          "difference": "Rambo's model is social-psychological and process-oriented. It does not organize traditions by metaphysical first-break solution or use anthropology severity as the main variable.",
+          "novelty_impact": "High reduction for the claim that entry conditions predict later conversion process.",
+          "overlap": "Close for conversion architecture: context, crisis, quest, encounter, interaction, commitment, and consequences already map entry conditions and downstream change.",
+          "source": "Lewis R. Rambo, Understanding Religious Conversion, Google Books preview, https://books.google.com/books/about/Understanding_Religious_Conversion.html?id=pySGlzsdgAkC"
+        },
+        {
+          "difference": "Rahner gives one Christian ontological solution, while the candidate compares multiple traditions.",
+          "novelty_impact": "High reduction for the acceptance-made-possible structure.",
+          "overlap": "Close for the claim that God's self-communication is also the condition that makes acceptance possible.",
+          "source": "Karl Rahner, supernatural existential summary, https://people.bu.edu/wwildman/bce/rahner.htm"
+        },
+        {
+          "difference": "Kotva's frame is Western philosophical and Weil-centered, not a four-type cross-tradition first-break model.",
+          "novelty_impact": "Moderate to high reduction.",
+          "overlap": "Close for the paradox of will, receptivity, negative effort, and grace in spiritual exercise.",
+          "source": "Simone Kotva, Effort and Grace, reviewed at https://attentionsw.org/the-paradox-of-will-and-grace-a-review-of-kotvas-effort-and-grace/"
+        },
+        {
+          "difference": "Yogacara is a gradual transformation model rather than a single entry break, which exposes a missing gradual-break category.",
+          "novelty_impact": "Moderate reduction and a typology correction.",
+          "overlap": "Close for transformation of the basis, where the cognitive basis that generates delusion must be overturned for awakening.",
+          "source": "Yogacara asraya-paravrtti, overview at https://encyclopediaofbuddhism.org/wiki/%C4%80%C5%9Brayapar%C4%81v%E1%B9%9Btti"
+        },
+        {
+          "difference": "Mencius addresses moral cultivation, not the same liberation or salvation problem as Buddhist and Christian sources.",
+          "novelty_impact": "Moderate reduction to universality. It forces a no-break or already-open category.",
+          "overlap": "Close anomaly and possible fifth solution. Moral cultivation begins from innate sprouts, so the path does not need an external rupture in the same way.",
+          "source": "Mencius 2A6 four beginnings, summary and source links at https://plato.stanford.edu/archives/spr2013/entries/ethics-chinese/ and https://afe.easia.columbia.edu/ps/cup/mencius_human_nature.pdf"
+        }
+      ],
+      "next_loop_instructions": [
+        "Revise the typology to include no-break, gradual-break, inherited-practice, social-encounter, cosmic-gift, prevenient-grace, self-disclosure, and undecidable values.",
+        "Separate the formal circularity from practitioner-lived salience. A tradition may structurally imply a first-break without practitioners treating it as a problem.",
+        "Close-read Tannisho chapter 1, Orange canons 3-7, SN 55.5, Mencius 2A6, Longchenpa Trekcho, and a Yogacara transformation-of-basis source before publication.",
+        "Read Rambo and William James directly before claiming novelty in conversion architecture.",
+        "Test whether anthropology predicts first-break type without circular scoring. Define anthropology independently before coding break mechanism.",
+        "Use practitioner interviews to ask for entry failure cases, not abstract agreement with the paradox.",
+        "Do not promote above novel_synthesis unless the model predicts safeguards or hybrid stability better than conversion studies, grace theology, and transformative learning theory."
+      ],
+      "novelty_adjustment": "Reduce novelty from 0.78 to about 0.62. The cross-tradition variable and downstream prediction are promising, but the first-break circularity is strongly anticipated by Meno's paradox, Augustine and Orange on the beginning of faith, James and Rambo on conversion, Rahner, Kotva, Yogacara, Dzogchen pointing-out, and transformative learning. Do not call it a discovery until the typology outperforms these prior frames in manual coding and practitioner tests.",
+      "originality_status": "novel_synthesis",
+      "practitioner_test": {
+        "answers_that_reduce_originality": "Practitioners and scholars say this is already Meno, initium fidei, conversion studies, self-power and other-power, original enlightenment, or transformative learning. Practitioners do not recognize the circularity as guiding actual pedagogy.",
+        "answers_that_support_contribution": "Practitioners can identify type-specific entry risks and say the rubric clarifies why methods that look similar later in the path diverge sharply at entry, especially in cross-training and hybrid settings.",
+        "questions": [
+          "Is the first-break problem a live practical issue in your tradition, or mainly an outsider's philosophical reconstruction?",
+          "What first move is possible for someone still trapped in the condition the path diagnoses?",
+          "Does your tradition's answer to that question predict later warnings, verification methods, and failure modes?",
+          "Would this typology change how you compare traditions, or does it rename known categories such as grace, conversion, encounter, original enlightenment, and moral sprouts?"
+        ],
+        "relevant_practitioners": [
+          "Jodo Shinshu ministers",
+          "Augustinian, Catholic, Orthodox, Wesleyan, and Reformed theologians of grace",
+          "Theravada monastics and teachers",
+          "Dzogchen and Mahamudra teachers",
+          "Yogacara scholars and practitioners",
+          "Confucian ethics scholars and ritual practitioners",
+          "Conversion-studies scholars familiar with James and Rambo",
+          "Transformative learning educators and psychotherapists"
+        ]
+      },
+      "primary_text_close_read": {
+        "primary_pair": [
+          "SN 55.5, To Sariputta, https://www.dhammatalks.org/suttas/SN/SN55_5.html",
+          "Second Council of Orange, canons 3-7, https://www.crivoice.org/creedorange.html"
+        ],
+        "risk_of_overread": "Moderate to high. The model may project a philosophical bootstrapping problem onto practitioners who begin through family, ritual, obedience, attraction, crisis, community, or habit without experiencing a paradox. It may also collapse distinct cases: Shinran's Other Power and Orange's prevenient grace are structurally close, while Dzogchen self-disclosure and Platonic recollection may be closer than the typology admits.",
+        "secondary_literature_gap": "The strongest prior art includes Plato's Meno on inquiry into what one does not know, Augustine and Orange on initium fidei, William James on volitional and self-surrender conversion, Rambo's conversion stages, Rahner's supernatural existential, Simone Kotva on effort and grace, Yogacara asraya-paravrtti, Dzogchen pointing-out literature, and transformative learning theory. The audit did not find the exact four-value cross-tradition typology with downstream predictions, but most structural ingredients are already named in adjacent literatures.",
+        "structural_observation": "SN 55.5 lists association with people of integrity first, followed by listening, appropriate attention, and practice in accordance with the Dhamma. This supports an external entry condition, but it does not explicitly say the practitioner is incapable of appropriate attention without grace. Orange is much stronger: even prayer, will, desire, striving, seeking, and the beginning of faith are gifts of grace. The comparison supports a spectrum of first-break severity, but weakens the claim that the same paradox is equally live in both texts. SN 55.5 may be a conditional path model, while Orange is an explicit anti-self-initiation doctrine."
+      },
+      "recommended_scores": {
+        "counterargument_quality": 0.88,
+        "novelty": 0.62,
+        "source_reliability": 0.82
+      },
+      "title": "The First-Break Problem",
+      "unlike_statement": "Unlike Meno, Augustine, Orange, James, Rambo, Rahner, Kotva, Yogacara, and Dzogchen sources, this idea claims that the first-break mechanism is a cross-tradition variable that predicts later effort theory, verification, safeguards, and failure modes. That comparative-predictive use is the main contribution, not the circularity itself."
+    }
+  ]
+}

@@ -129,3 +129,22 @@
 - Treat activity-centered and ground-centered categories as the only possible novelty zones, and search Dogen, Advaita, Dzogchen, and nondual scholarship for close prior forms.
 - Merge this with The Forbidden Claimant Rubric and The Capacity Ledger unless a separability test proves credit distribution adds independent predictive value.
 - Do not promote above extended until manual coding and practitioner interviews show failure-mode predictions that older agency, grace, coping, and locus-of-control models do not already predict.
+
+## Originality Audit Follow-Up 2026-05-26T15:20:58-07:00
+
+### The Handoff Point Is The Variable (extended)
+- Merge this with Capacity Ledger, Forbidden Claimant Rubric, and Credit Distribution unless a separability test shows independent predictive value.
+- Add rubric values for no-transfer, collapsed-transfer, continuous-transfer, analyst-frame-refused, and undecidable.
+- Code primary manuals before broad tradition labels, beginning with SN 45.8, Tannisho chapters 1, 6, 8, and 11, Longchen Rabjam Trekcho, Bendowa or Dogen practice-realization sources, and one Christian grace manual.
+- Do not publish as metaphysics. Publish only as an interpretive and practitioner-facing coding heuristic.
+- Run practitioner interviews that ask for actual student failure cases and repair instructions, not agreement with the model.
+- Use inter-rater coding to test whether transfer timing predicts safeguards beyond support locus and credit distribution.
+
+### The First-Break Problem (novel_synthesis)
+- Revise the typology to include no-break, gradual-break, inherited-practice, social-encounter, cosmic-gift, prevenient-grace, self-disclosure, and undecidable values.
+- Separate the formal circularity from practitioner-lived salience. A tradition may structurally imply a first-break without practitioners treating it as a problem.
+- Close-read Tannisho chapter 1, Orange canons 3-7, SN 55.5, Mencius 2A6, Longchenpa Trekcho, and a Yogacara transformation-of-basis source before publication.
+- Read Rambo and William James directly before claiming novelty in conversion architecture.
+- Test whether anthropology predicts first-break type without circular scoring. Define anthropology independently before coding break mechanism.
+- Use practitioner interviews to ask for entry failure cases, not abstract agreement with the paradox.
+- Do not promote above novel_synthesis unless the model predicts safeguards or hybrid stability better than conversion studies, grace theology, and transformative learning theory.

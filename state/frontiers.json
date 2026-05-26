@@ -10,7 +10,9 @@
         "8ab2c8dda0ae6f7d",
         "f3966ec8d2c9dc68",
         "5e22b929e230f390",
-        "ccc236ff67de7a3f"
+        "ccc236ff67de7a3f",
+        "a1081d3f97040016",
+        "2942cf211db9ae34"
       ],
       "audit_statuses": [
         "extended",
@@ -58,9 +60,11 @@
         "915778a2f5edc30e",
         "a9dd2252002b7a5a",
         "a5ae6e997ca1d286",
-        "c53042c11562b839"
+        "c53042c11562b839",
+        "e2faec9c39c6a653",
+        "433dd83d436b0b13"
       ],
-      "last_advanced_at": "2026-05-26T14:48:17-07:00",
+      "last_advanced_at": "2026-05-26T15:20:58-07:00",
       "missing_sources": [
         "who practices if there is no self Buddhism liberation agency",
         "Pudgalavada karma rebirth liberation person no self",
@@ -76,7 +80,8 @@
       ],
       "priority": 0.8524,
       "publication_paths": [
-        "publication/daily/2026-05-26-the-capacity-ledger-of-gift-and-effort.md"
+        "publication/daily/2026-05-26-the-capacity-ledger-of-gift-and-effort.md",
+        "publication/daily/2026-05-26-the-forbidden-claimant-rubric.md"
       ],
       "recommended_next_action": "build_rubric",
       "stage": "rubric",
@@ -104,7 +109,7 @@
         ]
       },
       "title": "The boundary between effort and gift",
-      "why_now": "priority 0.85; 11 related idea records; 5 originality audits; cross-agent signal; live anomaly pressure"
+      "why_now": "priority 0.85; 13 related idea records; 7 originality audits; cross-agent signal; live anomaly pressure"
     },
     {
       "agents": [
@@ -171,7 +176,7 @@
       "open_anomalies": [
         "Advaita denies that the Self is inferred, it is treated as immediate self-disclosure and the basis for using means of knowledge at all."
       ],
-      "priority": 0.8228,
+      "priority": 0.8212,
       "publication_paths": [
         "publication/daily/2026-05-26-the-same-negation-the-opposite-inference-logical-underdetermination-in-the-catuskoti-as-a-second-test-of-the-inferential-gap.md"
       ],
@@ -256,7 +261,7 @@
       "open_anomalies": [
         "Validated-then-abandoned hybrids, especially MN 22's raft, Heart Sutra reliance on Prajnaparamita after no-attainment, and Rinzai koan curriculum after kensho."
       ],
-      "priority": 0.8097,
+      "priority": 0.8083,
       "publication_paths": [],
       "recommended_next_action": "build_rubric",
       "stage": "rubric",
@@ -343,7 +348,7 @@
         "Dhammatalks' note to SN 22.59 points to texts about a kind of consciousness outside the aggregate range of all, and Thanissaro argues not-self is strategic rather than a denial of all remainder.",
         "Tibetan clear-light sleep and contemporary objectless-awareness sleep reports that claim awareness during the gap, not only after it."
       ],
-      "priority": 0.773,
+      "priority": 0.7714,
       "publication_paths": [
         "publication/daily/2026-05-25-residue-policy-in-negative-self-practice.md"
       ],
@@ -429,7 +434,7 @@
       "open_anomalies": [
         "Dzogchen or Mahamudra luminous selfless awareness, plus Pseudo-Dionysius's claim that the divine Cause is beyond both affirmation and negation."
       ],
-      "priority": 0.7651,
+      "priority": 0.7637,
       "publication_paths": [],
       "recommended_next_action": "build_rubric",
       "stage": "rubric",
@@ -451,7 +456,7 @@
         ]
       },
       "title": "Where freed attention is allowed to rest",
-      "why_now": "priority 0.77; 1 related idea records; 1 originality audits; live anomaly pressure"
+      "why_now": "priority 0.76; 1 related idea records; 1 originality audits; live anomaly pressure"
     },
     {
       "agents": [
@@ -478,7 +483,7 @@
       "missing_sources": [],
       "next_prompt": "Build a protected-variable rubric with fields for protected function, sacrificed function, likely overcorrection, outside corrective, and post-practice fruit.",
       "open_anomalies": [],
-      "priority": 0.7439,
+      "priority": 0.7425,
       "publication_paths": [],
       "recommended_next_action": "complete_audit",
       "stage": "source_grounding",
@@ -524,7 +529,7 @@
       "missing_sources": [],
       "next_prompt": "Build a second-personal knowing rubric with fields for: unit of knowing (individual, dyadic, collective), ontological address of what is known (within the practitioner, between persons, constituted by gathering), mode of access (attention, encounter...",
       "open_anomalies": [],
-      "priority": 0.7391,
+      "priority": 0.7378,
       "publication_paths": [],
       "recommended_next_action": "complete_audit",
       "stage": "source_grounding",
@@ -622,7 +627,7 @@
         "Comparisons where high strain is still historically causal, for example Buddhist and Advaita terms shaped by centuries of polemic and borrowing.",
         "Nirodha samapatti and cessation reports, where practitioners report a discontinuity or absence of consciousness rather than a pressure to posit an enduring witness."
       ],
-      "priority": 0.7046,
+      "priority": 0.703,
       "publication_paths": [
         "publication/daily/2026-05-25-convergence-as-translation-strain-not-evidence-weight.md"
       ],
@@ -655,7 +660,7 @@
       "why_now": "priority 0.70; 18 related idea records; 3 originality audits; cross-agent signal; live anomaly pressure"
     }
   ],
-  "generated_at": "2026-05-26T14:48:17-07:00",
+  "generated_at": "2026-05-26T15:20:58-07:00",
   "rules_version": "2026-05-26",
   "version": "2026-05-26"
 }
