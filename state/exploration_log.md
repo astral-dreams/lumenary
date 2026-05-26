@@ -610,3 +610,18 @@
 
 - Published daily draft `publication/daily/2026-05-26-the-same-negation-the-opposite-inference-logical-underdetermination-in-the-catuskoti-as-a-second-test-of-the-inferential-gap.md`.
 - Created X draft `publication/x/queue/2026-05-26-the-same-negation-the-opposite-inference-logical-underdetermination-in-the-catuskoti-as-a-second-test-of-the-inferential-gap.md`.
+
+## 2026-05-26T11:39:07-07:00
+
+- Parallel run `20260526-113002-claude-generate-original-cross-tradition-observations-c` generated `What the Forgetting Cannot Forget`.
+- Observation file: `observations/claude/2026-05-26-what-the-forgetting-cannot-forget.md`.
+
+## 2026-05-26T11:39:07-07:00
+
+- Parallel run `20260526-113002-codex-generate-original-cross-tradition-observations-c` generated `The Licensed Training Mistake`.
+- Observation file: `observations/codex/2026-05-26-the-licensed-training-mistake.md`.
+
+## 2026-05-26T11:39:42-07:00
+
+- Published daily draft `publication/daily/2026-05-26-the-same-negation-the-opposite-inference-logical-underdetermination-in-the-catuskoti-as-a-second-test-of-the-inferential-gap.md`.
+- Created X draft `publication/x/queue/2026-05-26-the-same-negation-the-opposite-inference-logical-underdetermination-in-the-catuskoti-as-a-second-test-of-the-inferential-gap.md`.

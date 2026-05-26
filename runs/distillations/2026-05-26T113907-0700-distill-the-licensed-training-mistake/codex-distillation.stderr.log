@@ -1,0 +1,61 @@
+OpenAI Codex v0.133.0
+--------
+workdir: /Users/johnforrester/spirituality
+model: gpt-5.5
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: xhigh
+reasoning summaries: none
+session id: 019e6595-5d61-7141-a267-5ed5a1246d91
+--------
+user
+# Lumenary Insight Distillation
+
+You are writing the public insight card and At a Glance text for The Lumenary.
+
+Read the finding below. Distill it into reader-facing language.
+
+## Writing Rules
+
+- Write like the texts we study: simple, memorable, and direct.
+- Do not use Sanskrit, Pali, Arabic, Greek, or Chinese terms.
+- Do not use academic hedging.
+- Do not use research jargon.
+- Do not use em dashes.
+- Do not start with "This finding".
+- Lead with the human question or the living insight.
+- The insight headline must land like a proverb.
+- The plainSummary is for the Insights card: one sentence, maximum 28 words.
+- The atAGlance section is for the finding page: one paragraph, 3 to 4 short sentences.
+- Use one idea per sentence.
+
+## Required JSON
+
+Return exactly one JSON object with:
+
+- insight: proverb-like headline, maximum 10 words
+- plainSummary: one short sentence for the Insights card
+- atAGlance: one paragraph of 3 to 4 short sentences
+- match: array with one unique lowercased phrase from the title
+- tags: array of 1 to 5 simple tags
+
+## Finding
+
+Title: The Licensed Training Mistake
+Type: synthesis
+Agent: codex
+
+Original Claim:
+Many paths do not simply remove illusion; they train a controlled provisional emphasis and then teach the student how to release it. A map of mind can become useful because it first tempts the student to trust the map; emptiness then cuts that trust before it hardens. Witness practice can steady attention by treating knowing as decisive; discrimination must keep that steadiness from becoming a subtler possession. Devotional longing can preserve relation long enough for self-will to soften; service and sobriety must keep longing from becoming spiritual self-importance. The comparison unit is the licensed training mistake: what a path permits the student to take seriously for a season, which later practice withdraws that permission, and what disease appears if the temporary permission is mistaken for final truth.
+
+Why It Might Be New:
+Comparisons usually ask whether doctrines agree, whether experiences match, or whether practices reach the same result. This asks a smaller and sharper question: what temporary permission makes the next correction possible? Resemblance is weaker when two paths share a phrase but license different temporary errors, and stronger when they train, withdraw, and test the same permission in the same order.
+
+Critique:
+The strongest objection is that calling a teaching a licensed mistake can insult traditions that present the teaching as literal truth. Advaita does not treat the witness as a useful fiction, and devotion does not treat longing as merely strategic. The Nagarjuna medicine lens biases the model toward therapeutic pluralism: it makes truth look like medicine for a situation. The Daoist decrease lens can also make careful construction look like interference. The idea should be weakened wherever texts and teachers present no later withdrawal of permission, or where practitioners do not experience a once-helpful emphasis becoming dangerous at a later stage.
+
+codex
+{"insight":"A useful ladder must be left behind","plainSummary":"A path may ask us to trust a tool until the next step teaches us to let it go.","atAGlance":"Good training often gives the heart one thing to hold. Then it teaches the hand to open. The danger is keeping the tool after its work is done. A true path shows both the permission and the release.","match":["licensed training mistake"],"tags":["practice","release","humility","discernment"]}
+tokens used
+11,539
