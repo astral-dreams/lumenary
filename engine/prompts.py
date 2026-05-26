@@ -56,7 +56,12 @@ def build_originality_prompt(
     thinking_protocol: str,
     prior_codex_findings: str,
     prior_claude_findings: str,
+    frontier_brief: str = "",
 ) -> str:
+    frontier_section = f"""## Active Frontier
+
+{frontier_brief}
+""" if frontier_brief else ""
     return f"""# Recursive Spirituality Research Run
 
 ## Primary Goal
@@ -67,6 +72,7 @@ Generate original ideas, not summaries. Use the research corpus and agent memory
 
 {focus}
 
+{frontier_section}
 ## Current State
 
 {current_state}
@@ -99,7 +105,12 @@ def build_claude_collaborative_prompt(
     codex_observations: str,
     concept_graph: str,
     next_directions: str,
+    frontier_brief: str = "",
 ) -> str:
+    frontier_section = f"""## Active Frontier
+
+{frontier_brief}
+""" if frontier_brief else ""
     return f"""# Lumenary Recursive Research: Claude Research Run
 
 ## Your Role
@@ -121,6 +132,7 @@ You have access to web search. Use it to research primary sources, academic pape
 
 {focus}
 
+{frontier_section}
 ## Current Project State
 
 {current_state}

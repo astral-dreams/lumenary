@@ -12,6 +12,7 @@ from pathlib import Path
 
 from .config import EngineConfig
 from .distill import distill_new_ideas
+from .frontier import prepare_frontier_brief, refresh_frontiers
 from .growth import record_growth
 from .librarian import Librarian
 from .originality_audit import audit_new_ideas, write_incomplete_audits
@@ -55,6 +56,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--unload-after-stop", action="store_true")
     parser.add_argument("--skip-deploy", action="store_true")
     parser.add_argument("--skip-originality-audit", action="store_true")
+    parser.add_argument("--no-frontier", action="store_true")
     return parser.parse_args()
 
 
@@ -91,7 +93,13 @@ def _release_lock(lock_dir: Path) -> None:
     shutil.rmtree(lock_dir, ignore_errors=True)
 
 
-def _build_prompt(config: EngineConfig, focus: str, librarian: Librarian) -> str:
+def _build_prompt(
+    config: EngineConfig,
+    focus: str,
+    librarian: Librarian,
+    *,
+    frontier_brief: str = "",
+) -> str:
     current_state = librarian.read_optional("state/current_focus.md")
     thinking_protocol = librarian.read_optional("state/thinking_protocol.md")
     codex_findings = librarian.read_optional("findings/codex-findings.md")
@@ -107,6 +115,7 @@ def _build_prompt(config: EngineConfig, focus: str, librarian: Librarian) -> str
             codex_observations=_gather_codex_observations(librarian),
             concept_graph=librarian.read_optional("graph/concept-graph.seed.json"),
             next_directions=librarian.read_optional("state/next_directions.md"),
+            frontier_brief=frontier_brief,
         )
 
     return build_originality_prompt(
@@ -115,13 +124,14 @@ def _build_prompt(config: EngineConfig, focus: str, librarian: Librarian) -> str
         thinking_protocol=thinking_protocol,
         prior_codex_findings=codex_findings,
         prior_claude_findings=claude_findings,
+        frontier_brief=frontier_brief,
     )
 
 
-def _generate(config: EngineConfig, focus: str) -> GeneratedIdea:
+def _generate(config: EngineConfig, focus: str, frontier_brief: str = "") -> GeneratedIdea:
     librarian = Librarian(config.root)
     librarian.ensure_workspace()
-    prompt = _build_prompt(config, focus, librarian)
+    prompt = _build_prompt(config, focus, librarian, frontier_brief=frontier_brief)
     manifest = RunManifest(
         run_id=build_run_id(config.agent, focus),
         agent=config.agent,
@@ -306,13 +316,19 @@ def main() -> None:
             provider="claude-code",
             claude_model=args.claude_model,
         )
+        frontier_brief = prepare_frontier_brief(
+            root,
+            focus=args.focus,
+            execution_id=f"parallel-{datetime.now().astimezone().strftime('%Y%m%d-%H%M%S')}",
+            enabled=not args.no_frontier,
+        )
         configs = [codex_config, claude_config]
         generated: list[GeneratedIdea] = []
         errors: list[str] = []
 
         with ThreadPoolExecutor(max_workers=len(configs)) as executor:
             futures = {
-                executor.submit(_generate, config, args.focus): config
+                executor.submit(_generate, config, args.focus, frontier_brief): config
                 for config in configs
             }
             for future in as_completed(futures):
@@ -447,6 +463,9 @@ def main() -> None:
                         ),
                         flush=True,
                     )
+
+            if not args.no_frontier:
+                refresh_frontiers(root)
 
         if errors:
             librarian.append_jsonl(

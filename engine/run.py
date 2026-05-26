@@ -5,6 +5,7 @@ from datetime import datetime
 
 from .config import EngineConfig
 from .distill import distill_new_ideas
+from .frontier import prepare_frontier_brief, refresh_frontiers
 from .growth import record_growth
 from .librarian import Librarian
 from .prompts import build_claude_collaborative_prompt, build_originality_prompt
@@ -27,9 +28,24 @@ def _gather_codex_observations(librarian: Librarian) -> str:
     return "\n---\n".join(parts)
 
 
-def run_once(config: EngineConfig, focus: str) -> RunManifest:
+def run_once(config: EngineConfig, focus: str, *, use_frontier: bool = True) -> RunManifest:
     librarian = Librarian(config.root)
     librarian.ensure_workspace()
+
+    manifest = RunManifest(
+        run_id=build_run_id(config.agent, focus),
+        agent=config.agent,
+        provider=config.provider,
+        dry_run=config.dry_run or config.provider == "offline",
+        focus=focus,
+        started_at=now_local_iso(),
+    )
+    frontier_brief = prepare_frontier_brief(
+        config.root,
+        focus=focus,
+        execution_id=manifest.run_id,
+        enabled=use_frontier,
+    )
 
     current_state = librarian.read_optional("state/current_focus.md")
     thinking_protocol = librarian.read_optional("state/thinking_protocol.md")
@@ -49,6 +65,7 @@ def run_once(config: EngineConfig, focus: str) -> RunManifest:
             codex_observations=codex_observations,
             concept_graph=concept_graph,
             next_directions=next_directions,
+            frontier_brief=frontier_brief,
         )
     else:
         prompt = build_originality_prompt(
@@ -57,16 +74,8 @@ def run_once(config: EngineConfig, focus: str) -> RunManifest:
             thinking_protocol=thinking_protocol,
             prior_codex_findings=codex_findings,
             prior_claude_findings=claude_findings,
+            frontier_brief=frontier_brief,
         )
-
-    manifest = RunManifest(
-        run_id=build_run_id(config.agent, focus),
-        agent=config.agent,
-        provider=config.provider,
-        dry_run=config.dry_run or config.provider == "offline",
-        focus=focus,
-        started_at=now_local_iso(),
-    )
 
     thinker = get_thinker(config)
     idea = thinker.generate(
@@ -92,6 +101,8 @@ def run_once(config: EngineConfig, focus: str) -> RunManifest:
     )
     if config.provider == "claude-code" and not config.dry_run:
         distill_new_ideas(config, [idea])
+    if use_frontier:
+        refresh_frontiers(config.root)
     librarian.append_exploration_log(
         f"- Run `{manifest.run_id}` generated `{idea.title}`.\n"
         f"- Observation file: `{manifest.generated_observations[0]}`."
@@ -118,6 +129,11 @@ def parse_args() -> argparse.Namespace:
         ),
         help="Research focus for this iteration.",
     )
+    parser.add_argument(
+        "--no-frontier",
+        action="store_true",
+        help="Do not steer this run with the generated frontier brief.",
+    )
     return parser.parse_args()
 
 
@@ -136,7 +152,7 @@ def main() -> None:
         codex_search=args.search,
         **model_kwargs,
     )
-    manifest = run_once(config, args.focus)
+    manifest = run_once(config, args.focus, use_frontier=not args.no_frontier)
     print(f"run_id={manifest.run_id}")
     for observation in manifest.generated_observations:
         print(f"observation={observation}")

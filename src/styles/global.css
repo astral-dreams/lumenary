@@ -192,13 +192,16 @@ h3 {
   align-self: stretch;
   display: grid;
   gap: 16px;
-  grid-template-rows: minmax(0, auto) auto;
   justify-self: end;
   max-height: 100%;
-  max-width: 680px;
+  max-width: 760px;
   min-height: 0;
   overflow: visible;
   width: 100%;
+}
+
+.hero-panel-source {
+  align-content: center;
 }
 
 .daily-snapshot,
@@ -244,7 +247,7 @@ h3 {
   color: white;
   justify-self: end;
   margin: 0;
-  max-width: 620px;
+  max-width: 760px;
   overflow: visible;
   padding: 16px;
   width: 100%;
@@ -268,7 +271,7 @@ h3 {
 .source-map-grid {
   display: grid;
   gap: 8px;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .source-row {
@@ -278,9 +281,9 @@ h3 {
   border-radius: 8px;
   display: grid;
   gap: 10px;
-  grid-template-columns: minmax(118px, 0.8fr) minmax(120px, 1.2fr) 38px;
-  min-height: 34px;
-  padding: 7px 9px;
+  grid-template-columns: minmax(94px, 0.9fr) minmax(72px, 1.1fr) 34px;
+  min-height: 32px;
+  padding: 7px 8px;
   text-decoration: none;
 }
 
@@ -822,6 +825,190 @@ meter {
 
 .answer-steps li {
   line-height: 1.55;
+}
+
+.frontiers-hero,
+.method-hero {
+  padding-bottom: clamp(28px, 5vw, 52px);
+}
+
+.frontier-stat-row {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: 30px;
+  max-width: 720px;
+}
+
+.frontier-stat-row div {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  min-height: 104px;
+  padding: 18px;
+}
+
+.frontier-stat-row strong {
+  display: block;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.9rem, 4vw, 3rem);
+  font-weight: 500;
+  line-height: 1;
+}
+
+.frontier-stat-row span {
+  color: var(--muted);
+  display: block;
+  font-size: 0.82rem;
+  font-weight: 800;
+  margin-top: 8px;
+  text-transform: uppercase;
+}
+
+.frontier-method-panel {
+  display: grid;
+  gap: 18px;
+  justify-items: start;
+}
+
+.frontier-method-callout {
+  align-items: end;
+  background: var(--ink);
+  border-radius: 8px;
+  color: white;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: minmax(0, 1fr) auto;
+  margin-bottom: 20px;
+  padding: clamp(24px, 4vw, 38px);
+}
+
+.frontier-method-callout .eyebrow {
+  color: #e0a68e;
+}
+
+.frontier-method-callout p:not(.eyebrow) {
+  color: #dce6df;
+  font-size: clamp(1.02rem, 1.7vw, 1.18rem);
+  line-height: 1.62;
+  margin: 16px 0 0;
+  max-width: 860px;
+}
+
+.frontier-inline-card {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--green);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  margin-top: 18px;
+  padding: 22px;
+}
+
+.frontier-inline-card p:not(.eyebrow) {
+  color: var(--muted);
+  line-height: 1.58;
+}
+
+.frontier-grid {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.frontier-card {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  display: grid;
+  gap: 16px;
+  padding: clamp(20px, 3vw, 28px);
+}
+
+.frontier-card-cooldown {
+  opacity: 0.82;
+}
+
+.frontier-card-head {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.frontier-card-head span,
+.frontier-card-head strong {
+  border-radius: 999px;
+  font-size: 0.76rem;
+  font-weight: 850;
+  line-height: 1;
+  padding: 7px 10px;
+  text-transform: uppercase;
+}
+
+.frontier-card-head span {
+  background: var(--band);
+  border: 1px solid var(--line);
+  color: var(--green);
+}
+
+.frontier-card-head strong {
+  background: #15201a;
+  color: white;
+}
+
+.frontier-card h2 {
+  font-size: clamp(1.45rem, 2.2vw, 2.25rem);
+}
+
+.frontier-claim {
+  color: #303832;
+  font-size: clamp(1.02rem, 1.5vw, 1.14rem);
+  line-height: 1.62;
+  margin: 0;
+}
+
+.frontier-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.frontier-meta span {
+  background: var(--band);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 800;
+  padding: 6px 9px;
+  text-transform: uppercase;
+}
+
+.frontier-detail {
+  border-top: 1px solid var(--line);
+  padding-top: 14px;
+}
+
+.frontier-detail h3 {
+  font-size: 0.86rem;
+  letter-spacing: 0.04em;
+  margin-bottom: 7px;
+  text-transform: uppercase;
+}
+
+.frontier-detail p {
+  color: var(--muted);
+  line-height: 1.56;
+  margin: 0;
+}
+
+.frontier-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .analytics-hero {
@@ -1566,8 +1753,12 @@ meter {
     .audit-detail-grid,
     .audit-stat-grid,
     .source-list,
+    .source-map-grid,
     .method-grid,
     .answer-grid,
+    .frontier-grid,
+    .frontier-method-callout,
+    .frontier-stat-row,
     .analytics-grid-four,
     .analytics-grid-three,
     .insight-grid,

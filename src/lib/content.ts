@@ -147,9 +147,11 @@ export type InsightView = {
   agent: string;
   date: string;
   epistemicLabels: string[];
+  ideaId: string;
   ideaType: string;
   insight: string;
   insightScore: number;
+  legacySlugs: string[];
   plainSummary: string;
   promotionLabel: string;
   promotionStage: string;
@@ -231,6 +233,55 @@ export type ConceptGraphEdge = {
 export type ConceptGraph = {
   edges: ConceptGraphEdge[];
   nodes: ConceptGraphNode[];
+};
+
+export type FrontierPriorArt = {
+  source: string;
+  overlap: string;
+  difference: string;
+  novelty_impact: string;
+};
+
+export type FrontierRecord = {
+  agents: string[];
+  audit_ids: string[];
+  audit_statuses: string[];
+  blockers: string[];
+  closest_prior_art: FrontierPriorArt[];
+  core_claim: string;
+  frontier_id: string;
+  idea_ids: string[];
+  last_advanced_at: string;
+  missing_sources: string[];
+  next_prompt: string;
+  open_anomalies: string[];
+  priority: number;
+  publication_paths: string[];
+  recommended_next_action: string;
+  stage: string;
+  status: string;
+  strongest_public_claim: {
+    idea_id?: string;
+    path?: string;
+    promotion_stage?: string;
+    title?: string;
+  } | null;
+  tests: {
+    cross_domain?: string[];
+    falsifiable?: string[];
+    practitioner?: string[];
+  };
+  title: string;
+  why_now: string;
+};
+
+export type FrontierView = FrontierRecord & {
+  agentLabel: string;
+  ideaLinks: IdeaView[];
+  latestDate: string;
+  publicationLinks: DailyPost[];
+  stageLabel: string;
+  statusLabel: string;
 };
 
 function readText(relativePath: string): string {
@@ -993,9 +1044,11 @@ export function getInsights(): InsightView[] {
       agent: idea.agent,
       date: idea.date,
       epistemicLabels: idea.epistemic_labels,
+      ideaId: idea.idea_id,
       ideaType: idea.idea_type,
       insight: idea.insight,
       insightScore: idea.insightScore,
+      legacySlugs: idea.legacySlugs,
       plainSummary: idea.plainSummary,
       promotionLabel: idea.promotion.label,
       promotionStage: idea.promotion.stage,
@@ -1192,6 +1245,34 @@ export function getConceptGraph(): ConceptGraph {
     edges: [],
     nodes: [],
   });
+}
+
+export function getFrontiers(): FrontierView[] {
+  const state = readJson<{ frontiers: FrontierRecord[] }>("state/frontiers.json", {
+    frontiers: [],
+  });
+  const ideasById = new Map(getIdeas().map((idea) => [idea.idea_id, idea]));
+  const dailyByPath = new Map(getDailyPosts().map((post) => [post.path, post]));
+
+  return (state.frontiers || [])
+    .map((frontier) => {
+      const ideaLinks = (frontier.idea_ids || [])
+        .map((ideaId) => ideasById.get(ideaId))
+        .filter((idea): idea is IdeaView => Boolean(idea));
+      const publicationLinks = (frontier.publication_paths || [])
+        .map((path) => dailyByPath.get(path))
+        .filter((post): post is DailyPost => Boolean(post));
+      return {
+        ...frontier,
+        agentLabel: (frontier.agents || []).map((agent) => agent === "claude" ? "Claude" : "Codex").join(" and "),
+        ideaLinks,
+        latestDate: String(frontier.last_advanced_at || "").slice(0, 10),
+        publicationLinks,
+        stageLabel: formatLabel(frontier.stage || "unknown"),
+        statusLabel: formatLabel(frontier.status || "unknown"),
+      };
+    })
+    .sort((a, b) => Number(b.priority || 0) - Number(a.priority || 0));
 }
 
 export function getConvergenceNotes(): TextNote[] {

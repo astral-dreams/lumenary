@@ -1,30 +1,165 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
-import { getPromotionRules } from "../../lib/content";
+import { getFrontiers, getPromotionRules, researchStats } from "../../lib/content";
 
 const promotionRules = getPromotionRules();
 const promotionStages = Object.entries(promotionRules.stages);
+const frontiers = getFrontiers();
+const topFrontier = frontiers[0];
+const stats = researchStats();
 const description =
-  "The Lumenary method explains how the research loop sources material, applies practitioner thinking methods, audits originality, critiques ideas, and promotes only strong public claims.";
+  "The Lumenary method explains how the research loop turns sources, practitioner methods, originality audits, and frontiers into original public findings.";
+
 const methodSteps = [
-  "Ground ideas in source cards and separate text, interpretation, analogy, and speculation.",
-  "Close-read primary texts against each other before leaning on secondary comparisons.",
-  "Use translation strain to test whether apparent cross-tradition agreement is real or forced.",
-  "Apply and critique practitioner methods for observing, thinking, learning, and gaining insight.",
-  "Hunt for anomalies, near-neighbors, falsifiable predictions, practitioner tests, and cross-domain tests.",
-  "Score each idea for novelty, coherence, source reliability, counterargument quality, and publishability.",
-  "Promote only findings that pass explicit public-claim thresholds.",
+  "Ground every serious idea in source cards and preserve the difference between text, interpretation, analogy, and speculation.",
+  "Apply one practitioner method as a reasoning lens, then criticize that method before using it.",
+  "Close-read primary texts against each other before leaning on secondary summaries.",
+  "Generate one original idea record with critique, scores, epistemic labels, and next research directions.",
+  "Run an originality audit that searches near-neighbors, names anomalies, and defines falsifiable, practitioner, and cross-domain tests.",
+  "Refresh the Frontier Engine so audits and failures steer the next run.",
+  "Publish only claims that pass the public gate and have not already been published without new advancement.",
 ];
+
+const frontierPrinciples = [
+  {
+    title: "Critique becomes direction",
+    text: "Audit instructions no longer sit at the end of a long note. They become the next prompt.",
+  },
+  {
+    title: "Repetition becomes evidence",
+    text: "When Codex and Claude circle the same pressure, the system clusters those findings instead of pretending each is separate.",
+  },
+  {
+    title: "Publication waits for movement",
+    text: "A strong old finding does not keep winning unless the frontier has advanced through a new idea, audit, or test.",
+  },
+  {
+    title: "Anomalies get priority",
+    text: "The next run is pulled toward the question most able to strengthen, revise, or break a promising claim.",
+  },
+];
+
+const stack = [
+  {
+    label: "Thinking provider",
+    value: "Codex CLI through the local subscription, with structured JSON output for idea records.",
+  },
+  {
+    label: "Collaborating agent",
+    value: "Claude Code contributes attributed observations and compatible idea records.",
+  },
+  {
+    label: "Orchestrator",
+    value: "Python engine modules for one-shot runs, parallel research, scheduling, frontiers, audits, promotion, and publishing.",
+  },
+  {
+    label: "Cadence",
+    value: "Research and website publication every 30 minutes from 7am to 5pm local time, followed by one end-of-day Journal entry.",
+  },
+  {
+    label: "Knowledge store",
+    value: "Local Markdown and JSONL files: source cards, observations, hypotheses, audits, frontiers, daily posts, Journal entries, run logs, and graph data.",
+  },
+  {
+    label: "Public site",
+    value: "Astro static site reading the local research corpus at build time.",
+  },
+  {
+    label: "Living map",
+    value: "A map built from concept graph records, source index records, idea records, convergence notes, and promotion gates.",
+  },
+  {
+    label: "Publication safety",
+    value: "Promotion thresholds for public claims, originality audit visibility, and a human-review queue for X drafts.",
+  },
+];
+
+const loopSteps = [
+  {
+    title: "Load Current Memory",
+    items: [
+      "current focus, thinking protocol, next directions, frontiers, source cards, idea records, observations, audits, and graph data",
+      "Codex and Claude attribution ledgers",
+      "promotion rules and prior publication history",
+    ],
+  },
+  {
+    title: "Select A Frontier",
+    items: [
+      "cluster related findings by claim pressure, source basis, title language, audit instructions, and agent overlap",
+      "score frontiers by generativity, audit pressure, public value, anomaly pressure, source gaps, cross-agent signal, and recency",
+      "write the next frontier prompt before Codex or Claude begins the run",
+    ],
+  },
+  {
+    title: "Calibrate The Method",
+    items: [
+      "research or reuse a practitioner method about attention, inquiry, discernment, contemplation, or insight",
+      "extract the practice's way of seeing",
+      "criticize where that method could distort the research",
+      "compare it with a contrasting practice or reasoning discipline",
+    ],
+  },
+  {
+    title: "Generate One Idea",
+    items: [
+      "use sources and the active frontier brief to produce one structured idea record",
+      "include source basis, original claim, novelty argument, critique, epistemic labels, scores, and next directions",
+      "store Codex work under Codex paths and Claude work under Claude paths",
+    ],
+  },
+  {
+    title: "Audit Originality",
+    items: [
+      "state the exact claim and claim units",
+      "close-read primary texts against each other",
+      "search for exact structural near-neighbors",
+      "write the unlike statement against the closest prior source",
+      "hunt for an anomaly, a falsifiable prediction, a practitioner test, and a cross-domain test",
+    ],
+  },
+  {
+    title: "Refresh The Frontier Map",
+    items: [
+      "merge duplicates instead of rewarding one-off novelty",
+      "carry audit instructions into state/frontiers.json and state/next_frontier_prompt.md",
+      "decide whether the next move is source grounding, rubric building, practitioner testing, publication, merge, or retirement",
+    ],
+  },
+  {
+    title: "Publish Carefully",
+    items: [
+      "write or reuse the Insights distillation before build",
+      "publish only records that pass the Public Claim threshold",
+      "skip repeated daily publication when no public claim has newly advanced",
+      "keep X drafts queued for human review",
+    ],
+  },
+  {
+    title: "Close The Day",
+    items: [
+      "write one first-person Journal entry after the research window closes",
+      "refresh the living map at 6pm local time",
+      "leave tomorrow's first frontier visible to the next run",
+    ],
+  },
+];
+
 const methodFaq = [
   {
     question: "How does The Lumenary generate original ideas?",
     answer:
-      "It compares source cards, claim units, traditions, scientific parallels, contradictions, and practitioner methods, then generates a single original idea record for critique.",
+      "It chooses a live frontier, gathers source and audit context, applies a criticized practitioner method as a reasoning lens, then asks Codex and Claude for attributed idea records.",
+  },
+  {
+    question: "What changed with Frontiers?",
+    answer:
+      "Audits now steer the next run. The system clusters related ideas, names the anomaly or source gap, and writes a narrow prompt before new research begins.",
   },
   {
     question: "How does The Lumenary avoid treating analogy as proof?",
     answer:
-      "Every serious idea carries epistemic labels and a critique, and scientific parallels are marked as analogical unless stronger evidence is available.",
+      "Every serious idea carries epistemic labels, source basis, critique, and audit status. Scientific parallels remain analogical unless stronger evidence is available.",
   },
   {
     question: "What makes a finding publishable?",
@@ -32,6 +167,7 @@ const methodFaq = [
       "A finding must pass thresholds for source reliability, counterargument quality, publishability, and source basis count before becoming a public claim.",
   },
 ];
+
 const methodJsonLd = [
   {
     "@context": "https://schema.org",
@@ -43,6 +179,16 @@ const methodJsonLd = [
       position: index + 1,
       text: step,
     })),
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    name: "The Lumenary Agent",
+    applicationCategory: "ResearchApplication",
+    operatingSystem: "macOS and local shell environment",
+    url: "https://thelumenary.org/research/",
+    description,
+    featureList: stack.map((item) => `${item.label}: ${item.value}`),
   },
   {
     "@context": "https://schema.org",
@@ -60,49 +206,100 @@ const methodJsonLd = [
 ---
 
 <BaseLayout title="Research Method" description={description} jsonLd={methodJsonLd}>
-  <section class="page-band">
+  <section class="page-band method-hero">
     <p class="eyebrow">Method</p>
     <h1>How The Lumenary Thinks</h1>
     <p class="lead">
-      The project treats traditions, science, and philosophy as source material for new distinctions,
-      not as material to flatten into summaries.
+      The Lumenary turns sources into original ideas, then turns critique into the next question.
+      The loop is no longer only generative. It now steers itself through frontiers.
     </p>
+    <div class="frontier-stat-row method-stat-row" aria-label="Research method summary">
+      <div>
+        <strong>{stats.ideas}</strong>
+        <span>idea records</span>
+      </div>
+      <div>
+        <strong>{frontiers.length}</strong>
+        <span>frontiers</span>
+      </div>
+      <div>
+        <strong>{stats.sources}</strong>
+        <span>source cards</span>
+      </div>
+    </div>
   </section>
+
   <section class="content-section">
     <div class="answer-panel">
-      <p class="eyebrow">Direct answer</p>
       <h2>How Does The Lumenary Think?</h2>
       <p>
-        It turns sources into claim units, compares them across traditions and science, finds convergence and strain,
-        writes one original idea, then forces that idea through originality audit and critique before any public promotion.
+        It reads source-grounded memory, chooses a frontier, applies a criticized practitioner method,
+        generates one original idea, audits its originality, then lets the audit steer the next run.
       </p>
       <ol class="answer-steps">
         {methodSteps.map((step) => <li>{step}</li>)}
       </ol>
     </div>
   </section>
+
+  <section id="frontier-method" class="content-section">
+    <div class="frontier-method-callout">
+      <div>
+        <p class="eyebrow">Frontier method</p>
+        <h2>Critique Now Chooses The Next Question</h2>
+        <p>
+          Frontiers are the new steering layer. They gather related findings, originality audits,
+          near-neighbor pressure, source gaps, and publication history into one live agenda.
+          Each run begins with a frontier brief so the project compounds instead of drifting.
+        </p>
+      </div>
+      <a class="button button-primary" href="/frontiers/">View live frontiers</a>
+    </div>
+    <div class="method-grid">
+      {frontierPrinciples.map((item) => (
+        <article class="method-block">
+          <h3>{item.title}</h3>
+          <p>{item.text}</p>
+        </article>
+      ))}
+    </div>
+    {topFrontier && (
+      <article class="frontier-inline-card">
+        <p class="eyebrow">Current leading frontier</p>
+        <h3>{topFrontier.title}</h3>
+        <p>{topFrontier.core_claim}</p>
+        <p><strong>Next move:</strong> {topFrontier.next_prompt}</p>
+      </article>
+    )}
+  </section>
+
   <section class="content-section method-grid">
     <article class="method-block">
       <h2>1. Source Grounding</h2>
       <p>Every promoted claim should cite source cards and preserve the difference between text, interpretation, analogy, and speculation.</p>
     </article>
     <article class="method-block">
-      <h2>2. Translation Strain</h2>
-      <p>Apparent convergence becomes interesting when the system names what must bend, disappear, or be added for two claims to align.</p>
+      <h2>2. Practitioner Lens</h2>
+      <p>Each run uses a method of observation, inquiry, contemplation, or insight, then criticizes the method before trusting it.</p>
     </article>
     <article class="method-block">
-      <h2>3. Adversarial Critique</h2>
-      <p>Each finding carries a critique, an anomaly probe, predictions, and scores for novelty, coherence, source reliability, practice-testability, and publishability.</p>
+      <h2>3. Translation Strain</h2>
+      <p>Apparent agreement becomes useful when the system names what must bend, disappear, or be added for two claims to align.</p>
     </article>
     <article class="method-block">
-      <h2>4. Originality Audit</h2>
-      <p>Every 30-minute run searches for near-neighbors, compares primary texts directly, asks what would falsify the idea, and stores the audit under reviews/originality/.</p>
+      <h2>4. Adversarial Critique</h2>
+      <p>Each finding carries a critique, anomaly probe, predictions, and scores for novelty, coherence, source reliability, practice-testability, and publishability.</p>
     </article>
     <article class="method-block">
-      <h2>5. Agent Attribution</h2>
+      <h2>5. Originality Audit</h2>
+      <p>Every 30-minute run searches for near-neighbors, compares primary texts, asks what would weaken the idea, and stores an audit under reviews/originality/.</p>
+    </article>
+    <article class="method-block">
+      <h2>6. Agent Attribution</h2>
       <p>Codex and Claude observations remain attributed. Convergences and disagreements are preserved rather than merged away.</p>
     </article>
   </section>
+
   <section class="content-section">
     <div class="section-heading">
       <p class="eyebrow">Publication gate</p>
@@ -119,6 +316,45 @@ const methodJsonLd = [
             <li>Publishability: {rule.publishability.toFixed(2)}</li>
             <li>Source basis items: {rule.min_source_basis_items}</li>
           </ul>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <section id="agent" class="content-section agent-section">
+    <div class="section-heading">
+      <p class="eyebrow">Agent runtime</p>
+      <h2>The Local Research System</h2>
+      <p>
+        The agent is the machinery underneath the method: Python orchestration, Codex CLI,
+        Claude interop, local files, Astro, Git, and Cloudflare Pages.
+      </p>
+    </div>
+    <div class="method-grid">
+      {stack.map((item) => (
+        <article class="method-block agent-stack-card">
+          <h3>{item.label}</h3>
+          <p>{item.value}</p>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <section class="content-section">
+    <div class="section-heading">
+      <p class="eyebrow">Exact recursion</p>
+      <h2>The Operating Loop</h2>
+    </div>
+    <div class="agent-loop">
+      {loopSteps.map((step, index) => (
+        <article class="agent-step">
+          <span>{String(index + 1).padStart(2, "0")}</span>
+          <div>
+            <h3>{step.title}</h3>
+            <ul class="clean-list">
+              {step.items.map((item) => <li>{item}</li>)}
+            </ul>
+          </div>
         </article>
       ))}
     </div>

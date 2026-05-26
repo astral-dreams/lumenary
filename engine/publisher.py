@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 from datetime import datetime
 from pathlib import Path
 from typing import Any
@@ -32,6 +33,66 @@ def _score(record: dict[str, Any], key: str) -> float:
     return float((record.get("scores") or {}).get(key, 0.0))
 
 
+def _timestamp(value: str | None) -> float:
+    if not value:
+        return 0.0
+    try:
+        return datetime.fromisoformat(value).timestamp()
+    except ValueError:
+        return 0.0
+
+
+def _published_observation_times(root: Path) -> dict[str, float]:
+    published: dict[str, float] = {}
+    daily_dir = root / "publication" / "daily"
+    if not daily_dir.exists():
+        return published
+    for path in daily_dir.glob("*.md"):
+        text = path.read_text(encoding="utf-8")
+        match = re.search(r"Source observation:\s*`([^`]+)`", text)
+        if match:
+            published[match.group(1)] = max(
+                published.get(match.group(1), 0.0),
+                path.stat().st_mtime,
+            )
+    return published
+
+
+def _audit_times_by_idea(root: Path) -> dict[str, float]:
+    path = root / "reviews" / "originality" / "audits.jsonl"
+    if not path.exists():
+        return {}
+    latest: dict[str, float] = {}
+    for line in path.read_text(encoding="utf-8").splitlines():
+        if not line.strip():
+            continue
+        try:
+            audit = json.loads(line)
+        except json.JSONDecodeError:
+            continue
+        idea_id = str(audit.get("idea_id") or "")
+        if not idea_id:
+            continue
+        latest[idea_id] = max(latest.get(idea_id, 0.0), _timestamp(str(audit.get("created_at") or "")))
+    return latest
+
+
+def _frontier_priority_by_idea(root: Path) -> dict[str, float]:
+    path = root / "state" / "frontiers.json"
+    if not path.exists():
+        return {}
+    try:
+        state = json.loads(path.read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        return {}
+    priority: dict[str, float] = {}
+    for frontier in state.get("frontiers") or []:
+        value = float(frontier.get("priority") or 0.0)
+        for idea_id in frontier.get("idea_ids") or []:
+            priority[str(idea_id)] = max(priority.get(str(idea_id), 0.0), value)
+    return priority
+
+
 def _best_public_record(root: Path) -> tuple[dict[str, Any], PromotionDecision] | None:
     rules = load_promotion_rules()
     records = [
@@ -51,9 +112,25 @@ def _best_public_record(root: Path) -> tuple[dict[str, Any], PromotionDecision] 
     if not public_records:
         return None
 
+    published_times = _published_observation_times(root)
+    audit_times = _audit_times_by_idea(root)
+    frontier_priorities = _frontier_priority_by_idea(root)
+    eligible: list[tuple[dict[str, Any], PromotionDecision]] = []
+    for record, decision in public_records:
+        record_path = str(record.get("path") or "")
+        idea_id = str(record.get("idea_id") or "")
+        published_at = published_times.get(record_path, 0.0)
+        audit_at = audit_times.get(idea_id, 0.0)
+        if not published_at or audit_at > published_at:
+            eligible.append((record, decision))
+
+    if not eligible:
+        return None
+
     return max(
-        public_records,
+        eligible,
         key=lambda item: (
+            frontier_priorities.get(str(item[0].get("idea_id") or ""), 0.0),
             int(item[1].synthesis_ready),
             _score(item[0], "source_reliability"),
             _score(item[0], "counterargument_quality"),
@@ -95,7 +172,9 @@ def generate_daily_update(config: EngineConfig) -> tuple[Path, Path]:
 
     selected = _best_public_record(config.root)
     if selected is None:
-        raise FileNotFoundError("No idea records satisfy the public-claim promotion gate.")
+        raise FileNotFoundError(
+            "No unpublished or newly advanced idea records satisfy the public-claim promotion gate."
+        )
 
     record, decision = selected
     latest = config.root / str(record["path"])

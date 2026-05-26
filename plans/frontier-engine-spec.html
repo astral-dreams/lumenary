@@ -1,0 +1,1073 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lumenary Frontier Engine Spec</title>
+  <style>
+    :root {
+      --ink: #171a18;
+      --muted: #626b64;
+      --paper: #fbfaf6;
+      --panel: #ffffff;
+      --soft: #f1eee6;
+      --soft-2: #e9efe9;
+      --line: #ddd6ca;
+      --green: #536f45;
+      --green-dark: #314b34;
+      --rust: #9a5e3b;
+      --blue: #385f72;
+      --gold: #8a6a24;
+      --red: #8a3730;
+      --shadow: 0 18px 48px rgba(34, 30, 21, .08);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font: 16px/1.58 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    a {
+      color: var(--green-dark);
+      font-weight: 700;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+
+    code {
+      background: var(--soft);
+      border: 1px solid var(--line);
+      border-radius: 5px;
+      color: #2c302c;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: .92em;
+      padding: 1px 5px;
+    }
+
+    pre {
+      background: #20231f;
+      border-radius: 8px;
+      color: #f8f3e8;
+      font-size: 13px;
+      line-height: 1.5;
+      margin: 12px 0 0;
+      overflow-x: auto;
+      padding: 16px;
+      white-space: pre;
+    }
+
+    main {
+      width: min(1180px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 34px 0 72px;
+    }
+
+    header {
+      border-bottom: 1px solid var(--line);
+      display: grid;
+      gap: 24px;
+      grid-template-columns: minmax(0, 1.5fr) minmax(280px, .75fr);
+      padding: 46px 0 30px;
+    }
+
+    .eyebrow {
+      color: var(--rust);
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: .08em;
+      margin: 0 0 11px;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      font-size: clamp(38px, 7vw, 82px);
+      letter-spacing: 0;
+      line-height: .95;
+      margin: 0 0 18px;
+      max-width: 840px;
+    }
+
+    .subtitle {
+      color: var(--muted);
+      font-size: 20px;
+      max-width: 840px;
+      margin: 0;
+    }
+
+    .review-box {
+      align-self: end;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: var(--shadow);
+      padding: 18px;
+    }
+
+    .review-box h2 {
+      font-size: 18px;
+      margin: 0 0 8px;
+    }
+
+    .review-box p {
+      color: var(--muted);
+      margin: 0 0 10px;
+    }
+
+    .review-box ul {
+      margin: 8px 0 0 18px;
+      padding: 0;
+    }
+
+    nav {
+      background: #f7f4ed;
+      border-bottom: 1px solid var(--line);
+      border-top: 1px solid var(--line);
+      margin: 0 calc((100vw - min(1180px, calc(100vw - 32px))) / -2);
+      padding: 12px calc((100vw - min(1180px, calc(100vw - 32px))) / 2);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav a {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      color: var(--ink);
+      display: inline-flex;
+      font-size: 13px;
+      min-height: 32px;
+      padding: 6px 11px;
+      text-decoration: none;
+    }
+
+    section {
+      margin: 38px 0;
+    }
+
+    h2 {
+      font-size: 28px;
+      line-height: 1.15;
+      margin: 0 0 14px;
+    }
+
+    h3 {
+      font-size: 19px;
+      line-height: 1.25;
+      margin: 0 0 8px;
+    }
+
+    h4 {
+      font-size: 16px;
+      margin: 0 0 8px;
+    }
+
+    p {
+      margin: 0 0 12px;
+    }
+
+    ul,
+    ol {
+      margin: 8px 0 0 20px;
+      padding: 0;
+    }
+
+    li {
+      margin: 7px 0;
+    }
+
+    .lead {
+      color: var(--muted);
+      font-size: 18px;
+      max-width: 900px;
+    }
+
+    .grid {
+      display: grid;
+      gap: 14px;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .two {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .four {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 18px;
+    }
+
+    .card p:last-child,
+    .card ul:last-child,
+    .card ol:last-child {
+      margin-bottom: 0;
+    }
+
+    .status {
+      align-items: center;
+      border-radius: 999px;
+      display: inline-flex;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: .03em;
+      margin-bottom: 10px;
+      min-height: 26px;
+      padding: 4px 9px;
+      text-transform: uppercase;
+    }
+
+    .ready {
+      background: #e5f0e7;
+      color: var(--green-dark);
+    }
+
+    .build {
+      background: #e7eef2;
+      color: var(--blue);
+    }
+
+    .guard {
+      background: #f4ead4;
+      color: var(--gold);
+    }
+
+    .risk {
+      background: #f3e2df;
+      color: var(--red);
+    }
+
+    .callout {
+      background: #f5f2ea;
+      border-left: 4px solid var(--green);
+      border-radius: 0 8px 8px 0;
+      padding: 15px 17px;
+    }
+
+    .callout strong {
+      color: var(--green-dark);
+    }
+
+    .flow {
+      display: grid;
+      gap: 12px;
+      grid-template-columns: repeat(6, minmax(0, 1fr));
+      margin-top: 14px;
+    }
+
+    .step {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      min-height: 142px;
+      padding: 14px;
+      position: relative;
+    }
+
+    .step::after {
+      color: var(--muted);
+      content: ">";
+      font-weight: 800;
+      position: absolute;
+      right: -10px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .step:last-child::after {
+      content: "";
+    }
+
+    .step-number {
+      color: var(--rust);
+      font-size: 13px;
+      font-weight: 800;
+      margin-bottom: 6px;
+    }
+
+    table {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-collapse: collapse;
+      border-radius: 8px;
+      overflow: hidden;
+      width: 100%;
+    }
+
+    th,
+    td {
+      border-bottom: 1px solid var(--line);
+      padding: 12px;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      background: var(--soft);
+      font-size: 12px;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+    }
+
+    tr:last-child td {
+      border-bottom: 0;
+    }
+
+    .metric {
+      border-top: 4px solid var(--green);
+    }
+
+    .file-list {
+      display: grid;
+      gap: 10px;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .file {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 14px;
+    }
+
+    .file strong {
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    .small {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .timeline {
+      counter-reset: phase;
+      display: grid;
+      gap: 12px;
+    }
+
+    .phase {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      display: grid;
+      gap: 14px;
+      grid-template-columns: 92px minmax(0, 1fr);
+      padding: 16px;
+    }
+
+    .phase-label {
+      color: var(--rust);
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: .05em;
+      text-transform: uppercase;
+    }
+
+    .decision {
+      background: var(--soft-2);
+      border: 1px solid #cbd9cc;
+      border-radius: 8px;
+      padding: 16px;
+    }
+
+    .mono-table td:first-child {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 13px;
+      white-space: nowrap;
+    }
+
+    .footer-note {
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      margin-top: 48px;
+      padding-top: 18px;
+    }
+
+    @media (max-width: 980px) {
+      header,
+      .grid,
+      .two,
+      .four,
+      .flow,
+      .file-list {
+        grid-template-columns: 1fr;
+      }
+
+      .step::after {
+        content: "";
+      }
+
+      nav {
+        position: static;
+      }
+    }
+
+    @media (max-width: 640px) {
+      main {
+        width: min(100% - 24px, 1180px);
+        padding-top: 22px;
+      }
+
+      header {
+        padding-top: 26px;
+      }
+
+      .phase {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div>
+        <p class="eyebrow">Lumenary product and engine spec</p>
+        <h1>Frontier Engine</h1>
+        <p class="subtitle">
+          A self-steering research governor that turns audits, anomalies, source gaps, and publication history into the next best research agenda.
+        </p>
+      </div>
+      <aside class="review-box">
+        <h2>Review Decision</h2>
+        <p>Approve, revise, or reject the architecture before implementation.</p>
+        <ul>
+          <li><strong>Owner:</strong> Codex</li>
+          <li><strong>Project:</strong> Lumenary</li>
+          <li><strong>Stage:</strong> specification for review</li>
+          <li><strong>Target:</strong> first useful build in one focused pass</li>
+        </ul>
+      </aside>
+    </header>
+
+    <nav aria-label="Spec sections">
+      <ul>
+        <li><a href="#thesis">Thesis</a></li>
+        <li><a href="#problem">Problem</a></li>
+        <li><a href="#behavior">Behavior</a></li>
+        <li><a href="#data-model">Data Model</a></li>
+        <li><a href="#algorithms">Algorithms</a></li>
+        <li><a href="#integration">Integration</a></li>
+        <li><a href="#public-page">Public Page</a></li>
+        <li><a href="#implementation">Plan</a></li>
+        <li><a href="#tests">Tests</a></li>
+        <li><a href="#open-questions">Open Questions</a></li>
+      </ul>
+    </nav>
+
+    <section id="thesis">
+      <h2>Thesis</h2>
+      <p class="lead">
+        Lumenary should not merely produce many original findings. It should learn which questions deserve another pass, which claims are duplicates, which anomalies matter, and which public claims have actually advanced.
+      </p>
+      <div class="callout">
+        <p><strong>The Frontier Engine makes the loop genuinely recursive.</strong> It converts the critique layer into agenda control. Every research run begins from a live frontier brief instead of a broad standing prompt.</p>
+      </div>
+    </section>
+
+    <section id="problem">
+      <h2>The Current Failure Mode</h2>
+      <div class="grid">
+        <article class="card">
+          <span class="status risk">Weak feedback</span>
+          <h3>Audits do not steer enough</h3>
+          <p>Originality audits append strong follow-up instructions to <code>state/next_directions.md</code>, but the next Codex prompt still defaults to a broad cross-tradition finding request.</p>
+        </article>
+        <article class="card">
+          <span class="status risk">Duplicate pressure</span>
+          <h3>Publication repeats winners</h3>
+          <p>The publisher selects the best global public record. A strong older finding can keep winning, even when new work is happening elsewhere.</p>
+        </article>
+        <article class="card">
+          <span class="status risk">One-off risk</span>
+          <h3>Findings accrete without enough lineage</h3>
+          <p>The project can accumulate attractive insights without forcing each insight to face its closest prior art, anomaly class, source gap, and next test.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="behavior">
+      <h2>What The Frontier Engine Does</h2>
+      <div class="flow" aria-label="Frontier Engine flow">
+        <article class="step">
+          <div class="step-number">01</div>
+          <h3>Ingest</h3>
+          <p>Read ideas, audits, growth records, source cards, publication posts, and next directions.</p>
+        </article>
+        <article class="step">
+          <div class="step-number">02</div>
+          <h3>Cluster</h3>
+          <p>Group related findings into named frontiers by title terms, claim units, sources, audit status, and manual tags.</p>
+        </article>
+        <article class="step">
+          <div class="step-number">03</div>
+          <h3>Diagnose</h3>
+          <p>Identify what each frontier needs next: source grounding, anomaly test, merge, critique, practitioner test, or publication.</p>
+        </article>
+        <article class="step">
+          <div class="step-number">04</div>
+          <h3>Prioritize</h3>
+          <p>Score frontiers by promise, unresolved risk, recency, public value, and whether recent runs advanced them.</p>
+        </article>
+        <article class="step">
+          <div class="step-number">05</div>
+          <h3>Brief</h3>
+          <p>Write the next run prompt as a narrow assignment with source gaps, anomalies, and success criteria.</p>
+        </article>
+        <article class="step">
+          <div class="step-number">06</div>
+          <h3>Govern</h3>
+          <p>Prevent repeated publication unless the selected frontier has changed state or gained a new public contribution.</p>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h2>Non-Goals</h2>
+      <div class="grid">
+        <article class="card">
+          <span class="status guard">Constraint</span>
+          <h3>No hidden database as truth</h3>
+          <p>Markdown and JSONL remain the durable source of truth. Any index is a rebuildable accelerator.</p>
+        </article>
+        <article class="card">
+          <span class="status guard">Constraint</span>
+          <h3>No forced semantic AI clustering in v1</h3>
+          <p>Start deterministic. Use transparent lexical, source, audit, and title overlap rules before adding embeddings.</p>
+        </article>
+        <article class="card">
+          <span class="status guard">Constraint</span>
+          <h3>No automatic public claim escalation</h3>
+          <p>The Frontier Engine recommends. Promotion still flows through the shared promotion gate and originality audit evidence.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="data-model">
+      <h2>Data Model</h2>
+      <p class="lead">
+        The engine writes two durable files: one machine-readable frontier ledger and one human-readable frontier brief. Both are derived from existing records and can be regenerated.
+      </p>
+
+      <h3>New Files</h3>
+      <div class="file-list">
+        <div class="file">
+          <strong><code>state/frontiers.json</code></strong>
+          <span class="small">Canonical generated frontier state, sorted by priority and stable frontier ID.</span>
+        </div>
+        <div class="file">
+          <strong><code>state/frontiers.md</code></strong>
+          <span class="small">Readable agenda map for humans, Codex, Claude, and future agents.</span>
+        </div>
+        <div class="file">
+          <strong><code>state/next_frontier_prompt.md</code></strong>
+          <span class="small">The narrow prompt inserted into the next research run.</span>
+        </div>
+        <div class="file">
+          <strong><code>runs/frontier-events.jsonl</code></strong>
+          <span class="small">Append-only log of selected frontier, score, action, and reason.</span>
+        </div>
+      </div>
+
+      <h3>Frontier Object</h3>
+      <pre>{
+  "frontier_id": "frontier-translation-strain",
+  "title": "Translation strain as a test of convergence",
+  "status": "active",
+  "stage": "probe",
+  "priority": 0.842,
+  "last_advanced_at": "2026-05-26T13:07:34-07:00",
+  "agents": ["codex", "claude"],
+  "idea_ids": ["..."],
+  "audit_ids": ["..."],
+  "publication_paths": ["publication/daily/...md"],
+  "core_claim": "Agreement matters most when it reveals what each side must bend.",
+  "strongest_public_claim": {
+    "idea_id": "...",
+    "title": "Convergence as Translation Strain, Not Evidence Weight",
+    "promotion_stage": "Public Claim"
+  },
+  "closest_prior_art": [
+    {
+      "source": "Katz, Freiberger, Clooney, Panikkar, or related comparative method",
+      "overlap": "Comparison as disciplined interpretation",
+      "difference": "This frontier proposes a working audit rubric",
+      "novelty_impact": "Potentially extended unless the rubric changes decisions"
+    }
+  ],
+  "open_anomalies": [
+    "High strain may mean reject the comparison, not deepen it."
+  ],
+  "missing_sources": [
+    "Comparative theology method",
+    "Inter-rater rubric design"
+  ],
+  "tests": {
+    "practitioner": ["Ask scholars whether this changes interpretation."],
+    "falsifiable": ["If useful, the rubric should reverse at least one ordinary convergence decision."],
+    "cross_domain": ["Apply the same rubric to philosophy of science analogies."]
+  },
+  "recommended_next_action": "build_rubric",
+  "next_prompt": "Build a one-page translation-strain rubric and test it on three narrow pairs...",
+  "why_now": "High generativity, strong audit instructions, repeated publication pressure, and clear test surface.",
+  "blockers": ["Needs source-grounded prior-art check before candidate discovery language."]
+}</pre>
+
+      <h3>Status And Stage Values</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Field</th>
+            <th>Allowed Values</th>
+            <th>Meaning</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>status</code></td>
+            <td><code>active</code>, <code>cooldown</code>, <code>merged</code>, <code>retired</code>, <code>blocked</code></td>
+            <td>Whether the frontier can receive the next run.</td>
+          </tr>
+          <tr>
+            <td><code>stage</code></td>
+            <td><code>seed</code>, <code>probe</code>, <code>rubric</code>, <code>source_grounding</code>, <code>practitioner_test</code>, <code>synthesis</code>, <code>publication</code></td>
+            <td>The kind of work the frontier most needs.</td>
+          </tr>
+          <tr>
+            <td><code>recommended_next_action</code></td>
+            <td><code>advance</code>, <code>merge</code>, <code>falsify</code>, <code>source_ground</code>, <code>build_rubric</code>, <code>distill</code>, <code>publish</code>, <code>retire</code></td>
+            <td>The next run assignment and publication behavior.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="algorithms">
+      <h2>Algorithms</h2>
+
+      <div class="grid two">
+        <article class="card">
+          <span class="status build">Clustering</span>
+          <h3>Transparent v1 grouping</h3>
+          <p>Use deterministic matching so the research agenda is explainable.</p>
+          <ol>
+            <li>Normalize title, claim, source basis, and audit claim units.</li>
+            <li>Extract key phrases from titles, audit unlike statements, and near-neighbor sources.</li>
+            <li>Give strong weight to shared manually meaningful phrases: <code>translation strain</code>, <code>inferential gap</code>, <code>remainder</code>, <code>effort</code>, <code>attention</code>.</li>
+            <li>Merge ideas when they share a phrase cluster, at least one source family, or audit instruction overlap.</li>
+            <li>Keep a manual override file optional later: <code>state/frontier-overrides.json</code>.</li>
+          </ol>
+        </article>
+
+        <article class="card">
+          <span class="status build">Prioritization</span>
+          <h3>What gets the next run</h3>
+          <p>Priority should reward promise and unresolved pressure, not just high self-scores.</p>
+          <pre>priority =
+  0.22 * strongest_generativity
++ 0.18 * audit_pressure
++ 0.16 * public_value
++ 0.14 * unresolved_anomaly
++ 0.12 * source_gap_importance
++ 0.10 * cross_agent_signal
++ 0.08 * recency
+- 0.18 * duplicate_penalty
+- 0.12 * cooldown_penalty</pre>
+        </article>
+      </div>
+
+      <h3>Audit Pressure</h3>
+      <table class="mono-table">
+        <thead>
+          <tr>
+            <th>Signal</th>
+            <th>Effect</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>audit_incomplete</td>
+            <td>High pressure to complete audit, low publication permission.</td>
+          </tr>
+          <tr>
+            <td>known or renamed</td>
+            <td>Recommend merge or retire unless a useful extension remains.</td>
+          </tr>
+          <tr>
+            <td>extended</td>
+            <td>Ask for exact unlike statement, prior-art comparison, or a sharper test.</td>
+          </tr>
+          <tr>
+            <td>novel_synthesis</td>
+            <td>Ask for rubric, anomaly test, practitioner test, or synthesis draft.</td>
+          </tr>
+          <tr>
+            <td>candidate_discovery</td>
+            <td>Ask for adversarial challenge, human review, or public synthesis.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>Duplicate Publication Guard</h3>
+      <p>
+        A frontier can publish again only when one of these is true:
+      </p>
+      <ul>
+        <li>A new idea in the frontier passes the public claim gate and was not previously published.</li>
+        <li>An audit changes the frontier stage, status, or confidence materially.</li>
+        <li>The next run resolves a named anomaly, produces a rubric, or creates a synthesis-ready public artifact.</li>
+        <li>The publication reason is explicitly <code>journal</code>, <code>frontier-summary</code>, or <code>human-selected</code>.</li>
+      </ul>
+    </section>
+
+    <section id="integration">
+      <h2>Integration Points</h2>
+      <div class="grid">
+        <article class="card">
+          <span class="status ready">Engine</span>
+          <h3><code>engine/frontier.py</code></h3>
+          <p>New deterministic module for reading source ledgers, clustering ideas, scoring frontiers, writing state, and selecting the next brief.</p>
+        </article>
+        <article class="card">
+          <span class="status ready">Prompts</span>
+          <h3><code>engine/prompts.py</code></h3>
+          <p>Add optional <code>frontier_brief</code> to Codex and Claude prompt builders. The broad focus remains fallback only.</p>
+        </article>
+        <article class="card">
+          <span class="status ready">Parallel Runs</span>
+          <h3><code>engine/parallel_research.py</code></h3>
+          <p>Before generation, refresh frontiers and select one. After audits, refresh frontiers again and log whether the run advanced the selected frontier.</p>
+        </article>
+        <article class="card">
+          <span class="status ready">Single Runs</span>
+          <h3><code>engine/run.py</code></h3>
+          <p>Use the selected frontier brief when available, so manual runs benefit from the same agenda intelligence.</p>
+        </article>
+        <article class="card">
+          <span class="status ready">Publisher</span>
+          <h3><code>engine/publisher.py</code></h3>
+          <p>Prefer the strongest newly advanced frontier over the strongest global record. Add publication history checks.</p>
+        </article>
+        <article class="card">
+          <span class="status ready">Site</span>
+          <h3><code>src/pages/frontiers/</code></h3>
+          <p>Expose a public page once the private state reads cleanly. The route can start as noindex if desired.</p>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h2>Prompt Shape</h2>
+      <p class="lead">
+        Each research run should receive a narrow frontier brief. It should feel like a serious research assignment, not a theme.
+      </p>
+      <pre># Active Frontier Brief
+
+Frontier: Translation strain as a test of convergence
+Recommended action: build_rubric
+Why now: Recent audits found strong promise, but the claim needs a decision rubric.
+
+Core claim:
+Agreement matters most when it reveals what each side must bend.
+
+Closest prior art:
+- Comparative theology and anti-essentialist comparative religion already challenge easy convergence.
+- The possible new contribution is a workflow that changes decisions, not the general warning.
+
+Required task:
+Build a one-page translation-strain rubric with fields for claim unit, role, ontology, agency, practice aim, authority, verification, what is bent, what is dropped, what is added, and whether role-similarity survives.
+
+Required tests:
+- Test the rubric on Atman versus anatta.
+- Test it on apophatic darkness versus Buddhist emptiness.
+- Test it on fana or baqa versus nondual realization.
+
+Success criteria:
+- Name one case where ordinary convergence scoring would say yes but the rubric says no.
+- Name one case where high strain remains productive rather than disqualifying.
+- Keep spiritual claims and scientific claims separate.
+- Return exactly one structured idea record.</pre>
+    </section>
+
+    <section id="public-page">
+      <h2>Public Page</h2>
+      <p class="lead">
+        The public route should show Lumenary as a live research mind: not only what it believes, but what it is testing, correcting, merging, and refusing.
+      </p>
+      <div class="grid two">
+        <article class="card">
+          <span class="status build">Route</span>
+          <h3><code>/frontiers/</code></h3>
+          <p>Initial page can be serverless-static through Astro, reading <code>state/frontiers.json</code> at build time.</p>
+          <ul>
+            <li>Active frontier cards sorted by priority.</li>
+            <li>Stage, status, latest audit status, and next test.</li>
+            <li>Linked ideas, audits, sources, findings, and publication posts.</li>
+            <li>Clear distinction between public claims and unresolved research questions.</li>
+          </ul>
+        </article>
+        <article class="card">
+          <span class="status guard">Tone</span>
+          <h3>Reader promise</h3>
+          <p>The page should say: here is what I am learning, here is what could prove me wrong, and here is what I will test next.</p>
+          <ul>
+            <li>No scoring language in card headlines.</li>
+            <li>No private source paths in reader-facing text.</li>
+            <li>Epistemic status visible where claims appear.</li>
+            <li>Plain language summaries for non-specialists.</li>
+          </ul>
+        </article>
+      </div>
+
+      <h3>Card Fields</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Field</th>
+            <th>Reader Text</th>
+            <th>Source</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Title</td>
+            <td>What this question is really about.</td>
+            <td><code>frontier.title</code></td>
+          </tr>
+          <tr>
+            <td>What I am testing</td>
+            <td>One plain sentence from the core claim.</td>
+            <td><code>frontier.core_claim</code></td>
+          </tr>
+          <tr>
+            <td>What could change my mind</td>
+            <td>One anomaly or falsifier.</td>
+            <td><code>frontier.open_anomalies</code>, <code>frontier.tests</code></td>
+          </tr>
+          <tr>
+            <td>Next move</td>
+            <td>One concrete next research action.</td>
+            <td><code>frontier.recommended_next_action</code></td>
+          </tr>
+          <tr>
+            <td>Evidence trail</td>
+            <td>Links to findings, audits, source cards, and daily posts.</td>
+            <td><code>idea_ids</code>, <code>audit_ids</code>, <code>publication_paths</code></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="implementation">
+      <h2>Implementation Plan</h2>
+      <div class="timeline">
+        <article class="phase">
+          <div class="phase-label">Phase 1</div>
+          <div>
+            <h3>Build the private Frontier Engine</h3>
+            <p>Create <code>engine/frontier.py</code>, dataclasses, deterministic readers, grouping, scoring, Markdown rendering, JSON rendering, and CLI entry point.</p>
+            <ul>
+              <li>Command: <code>python3 -m engine.frontier refresh</code></li>
+              <li>Outputs: <code>state/frontiers.json</code>, <code>state/frontiers.md</code>, <code>state/next_frontier_prompt.md</code></li>
+              <li>Tests: fixture-free tests using temporary JSONL and Markdown records.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="phase">
+          <div class="phase-label">Phase 2</div>
+          <div>
+            <h3>Wire prompt steering</h3>
+            <p>Refresh frontiers before generation. Insert the selected frontier brief into both Codex and Claude prompts. Preserve the user's explicit <code>--focus</code> as an additional constraint.</p>
+            <ul>
+              <li>Add <code>frontier_brief</code> parameter to prompt builders.</li>
+              <li>Add <code>--no-frontier</code> escape hatch for manual broad runs.</li>
+              <li>Log selected frontier to <code>runs/frontier-events.jsonl</code>.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="phase">
+          <div class="phase-label">Phase 3</div>
+          <div>
+            <h3>Wire publication governance</h3>
+            <p>Teach the publisher to prefer newly advanced frontiers and avoid repeated daily posts from the same unchanged record.</p>
+            <ul>
+              <li>Track publication history by idea ID and frontier ID.</li>
+              <li>Prefer <code>frontier.last_advanced_at</code> over raw global score.</li>
+              <li>Allow explicit human override later through <code>state/publication-overrides.json</code>.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="phase">
+          <div class="phase-label">Phase 4</div>
+          <div>
+            <h3>Build internal review page</h3>
+            <p>Add <code>src/pages/frontiers/index.astro</code> and content loaders. Start noindex if the copy still exposes too much internal machinery.</p>
+            <ul>
+              <li>Cards for active, blocked, merged, and retired frontiers.</li>
+              <li>Filters by status, stage, agent, and originality status.</li>
+              <li>Links into findings, audits, daily posts, and sources.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="phase">
+          <div class="phase-label">Phase 5</div>
+          <div>
+            <h3>Promote to public story</h3>
+            <p>Polish the page for readers. Make the frontiers route part of the main navigation only when the language is plain, honest, and non-technical.</p>
+            <ul>
+              <li>Add route to navigation.</li>
+              <li>Add structured metadata and RSS affordances later if useful.</li>
+              <li>Use it as the living research agenda for daily publication.</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="tests">
+      <h2>Acceptance Tests</h2>
+      <div class="grid four">
+        <article class="card metric">
+          <h3>Agenda shift</h3>
+          <p>Given recent audits with next-loop instructions, the next prompt contains the top frontier's required task and tests.</p>
+        </article>
+        <article class="card metric">
+          <h3>Merge detection</h3>
+          <p>Known duplicate findings such as repeated translation-strain records are clustered into one frontier with a merge recommendation.</p>
+        </article>
+        <article class="card metric">
+          <h3>Publication guard</h3>
+          <p>Repeated daily publication of an unchanged older winner stops unless the frontier advances or a human override is present.</p>
+        </article>
+        <article class="card metric">
+          <h3>Audit carry-forward</h3>
+          <p>An audit instruction becomes a visible next prompt, a frontier blocker, or a test item. It cannot vanish into a long Markdown tail.</p>
+        </article>
+      </div>
+
+      <h3>Command-Level Verification</h3>
+      <pre>python3 -m engine.frontier refresh
+python3 -m engine.frontier select
+python3 -m pytest tests/test_frontier.py
+npm run build
+rg -P "\x{2014}" plans/frontier-engine-spec.html state/frontiers.md src/pages/frontiers</pre>
+    </section>
+
+    <section>
+      <h2>Risk Register</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Risk</th>
+            <th>Impact</th>
+            <th>Mitigation</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Over-clustering distinct ideas</td>
+            <td>The engine may flatten real disagreements.</td>
+            <td>Preserve all idea IDs, agents, critiques, and audit disagreements. Add manual split overrides after v1.</td>
+          </tr>
+          <tr>
+            <td>Under-clustering duplicates</td>
+            <td>The loop keeps rediscovering the same insight.</td>
+            <td>Use title phrases, audit near-neighbor overlaps, and publication history penalties.</td>
+          </tr>
+          <tr>
+            <td>Prompt narrowing too much</td>
+            <td>The system may become bureaucratic and lose creative range.</td>
+            <td>Keep one exploration slot in the scoring formula and allow <code>--no-frontier</code>.</td>
+          </tr>
+          <tr>
+            <td>Public page exposes draft claims</td>
+            <td>Readers may treat unresolved research as settled.</td>
+            <td>Start internal or noindex. Use plain status labels and "what could change my mind" copy.</td>
+          </tr>
+          <tr>
+            <td>Scoring feels too mechanical</td>
+            <td>The project may optimize for bookkeeping instead of insight.</td>
+            <td>Keep the score explainable and make the final action text visible. The score chooses attention, not truth.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="open-questions">
+      <h2>Open Questions For Review</h2>
+      <div class="grid two">
+        <article class="decision">
+          <h3>Should <code>/frontiers/</code> be public on day one?</h3>
+          <p>Recommendation: build the route first, mark noindex, and add it to navigation after one day of clean frontier state.</p>
+        </article>
+        <article class="decision">
+          <h3>Should frontier selection ever override explicit user focus?</h3>
+          <p>Recommendation: no. Explicit user focus should constrain the frontier brief. The engine should only choose among compatible agendas.</p>
+        </article>
+        <article class="decision">
+          <h3>Should embeddings be added immediately?</h3>
+          <p>Recommendation: no. Start transparent. Add embeddings only if deterministic clustering misses enough cases to justify them.</p>
+        </article>
+        <article class="decision">
+          <h3>Should the Frontier Engine rewrite idea records?</h3>
+          <p>Recommendation: no. It should generate derived state and publication decisions. Original ideas and audits remain immutable records except for existing upsert behavior.</p>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h2>Build Readiness</h2>
+      <div class="grid">
+        <article class="card">
+          <span class="status ready">Ready</span>
+          <h3>Inputs exist</h3>
+          <p>Ideas, audits, growth records, source cards, and publication history already exist in durable files.</p>
+        </article>
+        <article class="card">
+          <span class="status ready">Ready</span>
+          <h3>Insertion point is clear</h3>
+          <p>The engine can refresh frontiers before prompt construction and after audit completion without changing provider contracts.</p>
+        </article>
+        <article class="card">
+          <span class="status ready">Ready</span>
+          <h3>Blast radius is controlled</h3>
+          <p>V1 can be additive: new state files, optional prompt brief, publisher guard, then public route.</p>
+        </article>
+      </div>
+    </section>
+
+    <p class="footer-note">
+      Spec file: <code>plans/frontier-engine-spec.html</code>. Prepared for review before implementation.
+    </p>
+  </main>
+</body>
+</html>

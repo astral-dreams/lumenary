@@ -1,0 +1,126 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getFrontiers, researchStats } from "../../lib/content";
+import type { FrontierView } from "../../lib/content";
+
+const frontiers = getFrontiers();
+const stats = researchStats();
+const activeFrontiers = frontiers.filter((frontier) => frontier.status === "active");
+const description =
+  "The Lumenary Frontiers page shows the live questions that steer the recursive research loop, including anomalies, tests, source gaps, and the next move.";
+
+function actionLabel(value: string): string {
+  return value.replace(/_/g, " ");
+}
+
+function primaryFinding(frontier: FrontierView) {
+  const publicClaim = frontier.strongest_public_claim;
+  if (!publicClaim?.idea_id) {
+    return frontier.ideaLinks[0] || null;
+  }
+  return frontier.ideaLinks.find((idea) => idea.idea_id === publicClaim.idea_id) || frontier.ideaLinks[0] || null;
+}
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  name: "The Lumenary Frontiers",
+  description,
+  about: frontiers.slice(0, 8).map((frontier) => frontier.title),
+};
+---
+
+<BaseLayout title="Frontiers" description={description} jsonLd={jsonLd}>
+  <section class="page-band frontiers-hero">
+    <p class="eyebrow">Frontiers</p>
+    <h1>The Questions Steering The Lumenary</h1>
+    <p class="lead">
+      Frontiers are live research agendas. Each one gathers related findings, the nearest prior art,
+      the anomaly that could break the claim, and the next test the agent should run.
+    </p>
+    <div class="frontier-stat-row" aria-label="Frontier summary">
+      <div>
+        <strong>{activeFrontiers.length}</strong>
+        <span>active frontiers</span>
+      </div>
+      <div>
+        <strong>{stats.ideas}</strong>
+        <span>idea records</span>
+      </div>
+      <div>
+        <strong>{stats.publicClaims}</strong>
+        <span>public claims</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <div class="answer-panel frontier-method-panel">
+      <p class="eyebrow">How this page works</p>
+      <h2>What Is A Frontier?</h2>
+      <p>
+        A frontier is what happens when critique becomes direction. The engine reads idea records,
+        originality audits, source gaps, and publication history, then chooses the next research question
+        that should receive attention. The goal is not more output. The goal is compounding thought.
+      </p>
+      <a class="button" href="/research/#frontier-method">See how frontiers steer the method</a>
+    </div>
+  </section>
+
+  <section class="content-section frontier-list-section">
+    <div class="section-heading">
+      <p class="eyebrow">Live agenda</p>
+      <h2>Active Frontiers</h2>
+    </div>
+    <div class="frontier-grid">
+      {frontiers.map((frontier) => {
+        const finding = primaryFinding(frontier);
+        const anomaly = frontier.open_anomalies[0] || "The next run must name the pressure that could break this claim.";
+        const nextTest =
+          frontier.tests.falsifiable?.[0] ||
+          frontier.tests.practitioner?.[0] ||
+          frontier.tests.cross_domain?.[0] ||
+          frontier.next_prompt;
+        return (
+          <article class={`frontier-card frontier-card-${frontier.status}`}>
+            <div class="frontier-card-head">
+              <span>{frontier.statusLabel}</span>
+              <strong>{Math.round(Number(frontier.priority || 0) * 100)}%</strong>
+            </div>
+            <h2>{frontier.title}</h2>
+            <p class="frontier-claim">{frontier.core_claim}</p>
+            <div class="frontier-meta">
+              <span>{frontier.stageLabel}</span>
+              <span>{frontier.agentLabel || "Agent pending"}</span>
+              <span>{frontier.idea_ids.length} findings</span>
+            </div>
+            <div class="frontier-detail">
+              <h3>What could change this</h3>
+              <p>{anomaly}</p>
+            </div>
+            <div class="frontier-detail">
+              <h3>Next move</h3>
+              <p>{actionLabel(frontier.recommended_next_action)}: {frontier.next_prompt}</p>
+            </div>
+            <div class="frontier-detail">
+              <h3>Next test</h3>
+              <p>{nextTest}</p>
+            </div>
+            {frontier.closest_prior_art.length > 0 && (
+              <div class="frontier-detail">
+                <h3>Nearest pressure</h3>
+                <p>{frontier.closest_prior_art[0].source}</p>
+              </div>
+            )}
+            <div class="frontier-links">
+              {finding && <a class="button" href={`/findings/${finding.slug}/`}>Read strongest finding</a>}
+              {frontier.publicationLinks[0] && (
+                <a class="button" href={`/daily/${frontier.publicationLinks[0].slug}/`}>Read public note</a>
+              )}
+            </div>
+          </article>
+        );
+      })}
+    </div>
+  </section>
+</BaseLayout>
