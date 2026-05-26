@@ -48,19 +48,26 @@ function sourceDomain(source: SourceCard): string {
 
 const groups = groupBy(sources, sourceDomain);
 const max = Math.max(...groups.map(([, cards]) => cards.length), 1);
+const total = sources.length;
 ---
 
 <figure class="source-map" aria-label="Source foundation by tradition">
-  <figcaption>Source foundation</figcaption>
+  <figcaption>
+    <span>Source foundation</span>
+    <strong>{total} cards</strong>
+  </figcaption>
   <div class="source-map-grid">
     {groups.map(([tradition, cards], index) => (
       <a
-        class={`source-node source-node-${index % 6}`}
+        class={`source-row source-node-${index % 6}`}
         href="/sources/"
-        style={`--node-size:${Math.round(Math.max(54, 48 + (cards.length / max) * 26))}px`}
+        style={`--bar-width:${Math.max(8, Math.round((cards.length / max) * 100))}%`}
       >
-        <span>{cards.length}</span>
         <small>{formatLabel(tradition)}</small>
+        <span class="source-track" aria-hidden="true">
+          <span class="source-fill"></span>
+        </span>
+        <strong>{cards.length}</strong>
       </a>
     ))}
   </div>
