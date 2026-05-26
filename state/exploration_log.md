@@ -495,3 +495,13 @@
 
 - Published daily draft `publication/daily/2026-05-26-the-same-negation-the-opposite-inference-logical-underdetermination-in-the-catuskoti-as-a-second-test-of-the-inferential-gap.md`.
 - Created X draft `publication/x/queue/2026-05-26-the-same-negation-the-opposite-inference-logical-underdetermination-in-the-catuskoti-as-a-second-test-of-the-inferential-gap.md`.
+
+## 2026-05-26T07:05:48-07:00
+
+- Run `20260526-070004-claude-generate-an-original-cross-tradition-observation` generated `The Second-Personal Blind Spot: Spiritual Knowing That Can Only Arise Between Persons`.
+- Observation file: `observations/claude/2026-05-26-the-second-personal-blind-spot-spiritual-knowing-that-can-only-arise-between-persons.md`.
+
+## 2026-05-26T07:37:21-07:00
+
+- Run `20260526-073001-claude-generate-an-original-cross-tradition-observation` generated `No Variable Stands Alone`.
+- Observation file: `observations/claude/2026-05-26-no-variable-stands-alone.md`.

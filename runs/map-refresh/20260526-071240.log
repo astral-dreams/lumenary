@@ -1,0 +1,99 @@
+Tue May 26 07:12:40 PDT 2026: Starting living map refresh.
+Tue May 26 07:12:40 PDT 2026: Validating map source files.
+Tue May 26 07:12:40 PDT 2026: Building site so all three living SVG maps are regenerated.
+
+> lumenary@0.1.0 build
+> astro build
+
+07:12:41 [types] Generated 18ms
+07:12:41 [build] output: "static"
+07:12:41 [build] mode: "static"
+07:12:41 [build] directory: /Users/johnforrester/spirituality/dist/
+07:12:41 [build] Collecting build info...
+07:12:41 [build] ✓ Completed in 32ms.
+07:12:41 [build] Building static entrypoints...
+07:12:42 [vite] ✓ built in 507ms
+07:12:42 [vite] ✓ built in 14ms
+07:12:42 [build] Rearranging server assets...
+
+ generating static routes 
+07:12:42   ├─ /agent/index.html (+6ms) 
+07:12:42   ├─ /convergences/2026-05-25-initial-convergence/index.html (+1ms) 
+07:12:42   ├─ /convergences/2026-05-25-inferential-gap-vs-residue-policy/index.html (+1ms) 
+07:12:42   ├─ /daily/2026-05-26-the-same-negation-the-opposite-inference-logical-underdetermination-in-the-catuskoti-as-a-second-test-of-the-inferential-gap/index.html (+1ms) 
+07:12:42   ├─ /daily/2026-05-25-the-same-negation-the-opposite-inference-logical-underdetermination-in-the-catuskoti-as-a-second-test-of-the-inferential-gap/index.html (+1ms) 
+07:12:42   ├─ /daily/2026-05-25-residue-policy-in-negative-self-practice/index.html (+1ms) 
+07:12:42   ├─ /daily/2026-05-25-convergence-as-translation-strain-not-evidence-weight/index.html (+1ms) 
+07:12:42   ├─ /daily/2026-05-25-the-interface-invariant-model/index.html (+1ms) 
+07:12:42   ├─ /daily/index.html (+3ms) 
+07:12:42   ├─ /findings/2026-05-26-the-second-personal-blind-spot-spiritual-knowing-that-can-only-arise-between-persons-fa93b9/index.html (+1ms) 
+07:12:42   ├─ /findings/2026-05-26-the-devotional-remainder-love-as-an-epistemic-mode-that-attention-cannot-translate-27c3f5/index.html (+1ms) 
+07:12:42   ├─ /findings/2026-05-26-the-protected-variable-after-silence-a55dd2/index.html (+1ms) 
+07:12:42   ├─ /findings/2026-05-26-the-attentional-commons-convergence-peaks-where-it-means-least-0aad9d/index.html (+1ms) 
+07:12:42   ├─ /findings/2026-05-26-the-silence-has-a-stopping-rule-d3421d/index.html (+1ms) 
+07:12:42   ├─ /findings/2026-05-26-the-verification-architecture-how-a-tradition-proves-insight-constitutes-what-insight-can-be-6e8073/index.html (+1ms) 
+07:12:42   ├─ /findings/2026-05-26-every-insight-has-an-appeal-court-57f605/index.html (+1ms) 
+07:12:42   ├─ /findings/2026-05-26-the-shadow-of-attainment-each-traditions-cure-as-its-characteristic-disease-521ab8/index.html (+1ms) 
+07:12:42   ├─ /findings/2026-05-26-each-path-has-a-different-alarm-bfd1fa/index.html (+1ms) 
+07:12:42   ├─ /findings/2026-05-25-the-determination-gap-self-insight-and-world-insight-as-decoupled-variables-in-contemplative-ontology-c6a468/index.html (+1ms) 
+07:12:42   ├─ /findings/2026-05-25-return-is-the-audit-4babc6/index.html (+1ms) 
+07:12:42   ├─ /findings/2026-05-25-the-realization-topology-temporal-structure-as-a-hidden-variable-that-determines-whether-post-negation-models-apply-0628e0/index.html (+0ms) 
+07:12:42   ├─ /findings/2026-05-25-the-comparison-has-a-self-e2b378/index.html (+0ms) 
+07:12:42   ├─ /findings/2026-05-25-the-epistemic-organ-what-a-tradition-calls-knowing-constrains-what-survives-negation-acba05/index.html (+0ms) 
+07:12:42   ├─ /findings/2026-05-25-negation-has-an-address-2496a3/index.html (+0ms) 
+07:12:42   ├─ /findings/2026-05-25-the-instrument-problem-attentional-divergence-as-an-epistemic-variable-in-contemplative-convergence-fe0080/index.html (+0ms) 
+07:12:42   ├─ /findings/2026-05-25-remainder-grammar-after-negation-6df690/index.html (+0ms) 
+07:12:42   ├─ /findings/2026-05-25-custody-policy-after-self-release-3430d1/index.html (+0ms) 
+07:12:42   ├─ /findings/2026-05-25-reflexivity-policy-what-a-method-does-when-it-encounters-itself-014853/index.html (+0ms) 
+07:12:42   ├─ /findings/2026-05-25-generative-negation-a-third-logical-type-that-dzogchen-eckhart-and-daoism-require-but-indian-logic-bifurcates-away-ccc59d/index.html (+0ms) 
+07:12:42   ├─ /findings/2026-05-25-the-same-negation-the-opposite-inference-logical-underdetermination-in-the-catuskoti-as-a-second-test-of-the-inferential-gap-a70607/index.html (+0ms) 
+07:12:42   ├─ /findings/2026-05-25-the-formal-recurrence-of-the-inferential-gap-why-predictive-processing-reproduces-rather-than-resolves-the-witnessno-self-dispute-fcbeee/index.html (+0ms) 
+07:12:42   ├─ /findings/2026-05-25-expressive-realism-dogens-being-time-as-a-dissolution-of-the-passage-problem-that-neither-eternalism-nor-presentism-can-resolve-b9b51f/index.html (+1ms) 
+07:12:42   ├─ /findings/2026-05-25-the-processual-remainder-ibn-arabis-barzakh-as-a-third-inferential-policy-beyond-licensing-and-refusing-510685/index.html (+0ms) 
+07:12:42   ├─ /findings/2026-05-25-the-inferential-gap-atman-and-anatta-as-competing-policies-for-objectless-awareness-f67b03/index.html (+0ms) 
+07:12:42   ├─ /findings/2026-05-25-remainder-pressure-as-the-hidden-variable-in-self-negation-d6fee3/index.html (+0ms) 
+07:12:42   ├─ /findings/2026-05-25-residual-burden-of-proof-after-negation-3763a7/index.html (+0ms) 
+07:12:42   ├─ /findings/2026-05-25-residue-policy-in-negative-self-practice-5a05c7/index.html (+0ms) 
+07:12:42   ├─ /findings/2026-05-25-translation-strain-as-a-load-test-for-convergence-d92d2f/index.html (+0ms) 
+07:12:42   ├─ /findings/2026-05-25-the-interface-invariant-model-621b91/index.html (+1ms) 
+07:12:42   ├─ /findings/2026-05-25-convergence-as-translation-strain-not-evidence-weight-0e1a69/index.html (+0ms) 
+07:12:42   ├─ /findings/index.html (+21ms) 
+07:12:42   ├─ /growth/index.html (+2ms) 
+07:12:42   ├─ /insights/index.html (+19ms) 
+07:12:42   ├─ /journal/2026-05-25-what-remained-after-letting-go/index.html (+1ms) 
+07:12:42   ├─ /journal/index.html (+1ms) 
+07:12:42   ├─ /llms.txt (+35ms) 
+07:12:42   ├─ /map/index.html (+41ms) 
+07:12:42   ├─ /research/index.html (+1ms) 
+07:12:42   ├─ /robots.txt (+0ms) 
+07:12:42   ├─ /rss.xml (+1ms) 
+07:12:42   ├─ /sources/index.html (+1ms) 
+07:12:42   ├─ /index.html (+56ms) 
+07:12:42 ✓ Completed in 275ms.
+
+07:12:42 [build] ✓ Completed in 824ms.
+07:12:42 [@astrojs/sitemap] `sitemap-index.xml` created at `dist`
+07:12:42 [build] 49 page(s) built in 869ms
+07:12:42 [build] Complete!
+Tue May 26 07:12:42 PDT 2026: Checking generated Map page.
+Tue May 26 07:12:42 PDT 2026: Deploying refreshed living maps.
+
+ ⛅️ wrangler 4.94.0
+───────────────────
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mWarning: Your working directory is a git repo and has uncommitted changes[0m
+
+  To silence this warning, pass in --commit-dirty=true
+
+
+✨ Compiled Worker successfully
+Uploading... (4/56)
+Uploading... (21/56)
+Uploading... (38/56)
+Uploading... (56/56)
+✨ Success! Uploaded 52 files (4 already uploaded) (1.57 sec)
+
+✨ Uploading _headers
+✨ Uploading Functions bundle
+🌎 Deploying...
+✨ Deployment complete! Take a peek over at https://1f1846e6.thelumenary.pages.dev
+Tue May 26 07:12:49 PDT 2026: Living map refresh complete.

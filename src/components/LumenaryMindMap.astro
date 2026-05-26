@@ -1,0 +1,379 @@
+---
+import {
+  type GrowthRecord,
+  type IdeaView,
+} from "../lib/content";
+
+type Mode = "knowledge" | "method";
+
+type Theme = {
+  aliases: string[];
+  color: string;
+  id: string;
+  label: string;
+};
+
+type Props = {
+  ideas: IdeaView[];
+  mode: Mode;
+  records: GrowthRecord[];
+};
+
+const { ideas, mode, records } = Astro.props as Props;
+
+const center = { x: 640, y: 360 };
+
+const positions = [
+  { x: 385, y: 140 },
+  { x: 640, y: 112 },
+  { x: 895, y: 140 },
+  { x: 1070, y: 340 },
+  { x: 935, y: 585 },
+  { x: 640, y: 622 },
+  { x: 350, y: 560 },
+  { x: 230, y: 335 },
+];
+
+const knowledgeThemes: Theme[] = [
+  {
+    aliases: ["self", "owner", "person", "old owner"],
+    color: "#9f6a4d",
+    id: "self",
+    label: "Self",
+  },
+  {
+    aliases: ["silence", "no", "refusal", "denied", "letting go", "clears space"],
+    color: "#d5af55",
+    id: "silence",
+    label: "Silence And No",
+  },
+  {
+    aliases: ["remain", "remainder", "passage", "doorway", "protects", "protected"],
+    color: "#607247",
+    id: "remainder",
+    label: "What Remains",
+  },
+  {
+    aliases: ["time", "weather", "events"],
+    color: "#7a5b38",
+    id: "time",
+    label: "Time",
+  },
+  {
+    aliases: ["love", "heart"],
+    color: "#b7533d",
+    id: "love",
+    label: "Love",
+  },
+  {
+    aliases: ["proof", "judge", "certify", "appeal", "verdict"],
+    color: "#6c5b8e",
+    id: "verification",
+    label: "Verification",
+  },
+  {
+    aliases: ["agreement", "bridge", "comparison", "translation", "cost"],
+    color: "#1f6b55",
+    id: "comparison",
+    label: "Comparison",
+  },
+  {
+    aliases: ["attention", "seeing", "sight", "instrument"],
+    color: "#345b8c",
+    id: "attention",
+    label: "Attention",
+  },
+  {
+    aliases: ["return", "ordinary life", "life"],
+    color: "#ad8430",
+    id: "return",
+    label: "Return",
+  },
+];
+
+const methodThemes: Theme[] = [
+  {
+    aliases: ["bridge", "bend", "translation", "distorts", "agreement"],
+    color: "#1f6b55",
+    id: "bridge-testing",
+    label: "Test Bridges",
+  },
+  {
+    aliases: ["protected", "surrender", "common ground"],
+    color: "#607247",
+    id: "protected-variable",
+    label: "Find What Is Protected",
+  },
+  {
+    aliases: ["instrument", "sight", "seeing", "attention"],
+    color: "#345b8c",
+    id: "instrument",
+    label: "Inspect The Instrument",
+  },
+  {
+    aliases: ["proof", "judge", "certify", "verdict"],
+    color: "#6c5b8e",
+    id: "verification",
+    label: "Name The Judge",
+  },
+  {
+    aliases: ["stop", "inquiry", "searching", "noise"],
+    color: "#d5af55",
+    id: "inquiry",
+    label: "Stop Cleanly",
+  },
+  {
+    aliases: ["return", "ordinary life", "re-entry", "peak"],
+    color: "#ad8430",
+    id: "return",
+    label: "Return To Life",
+  },
+  {
+    aliases: ["seen", "concluded", "conclusion"],
+    color: "#9f6a4d",
+    id: "conclusion",
+    label: "Separate Seeing",
+  },
+  {
+    aliases: ["medicine", "cure", "breaks", "disease"],
+    color: "#b7533d",
+    id: "medicine",
+    label: "Question The Cure",
+  },
+  {
+    aliases: ["language", "costume", "model"],
+    color: "#101512",
+    id: "language",
+    label: "Check The Language",
+  },
+];
+
+const config = mode === "knowledge"
+  ? {
+      field: "knowledge" as const,
+      title: "The Lumenary's Knowledge Map",
+      centerTitle: "Knowledge",
+      centerLabel: "what changed today",
+      themes: knowledgeThemes,
+      caption:
+        "The knowledge map is rebuilt from Growth records, Findings, and source-backed idea records. Click a bubble to open the finding that currently anchors that part of the map.",
+    }
+  : {
+      field: "method" as const,
+      title: "The Lumenary's Method Map",
+      centerTitle: "Method",
+      centerLabel: "how seeing changed",
+      themes: methodThemes,
+      caption:
+        "The method map is rebuilt from Growth records, Findings, and source-backed idea records. Click a bubble to open the finding that currently anchors that part of the map.",
+    };
+
+function wrapText(value: string, limit = 18, maxLines = 3): string[] {
+  const words = value.split(/\s+/).filter(Boolean);
+  const lines: string[] = [];
+  let current = "";
+  for (const word of words) {
+    const next = current ? `${current} ${word}` : word;
+    if (next.length > limit && current) {
+      lines.push(current);
+      current = word;
+      if (lines.length === maxLines - 1) {
+        break;
+      }
+    } else {
+      current = next;
+    }
+  }
+  if (current && lines.length < maxLines) {
+    lines.push(current);
+  }
+  const consumed = lines.join(" ").split(/\s+/).filter(Boolean).length;
+  if (consumed < words.length && lines.length) {
+    lines[lines.length - 1] = `${lines[lines.length - 1].replace(/[.,;:]$/, "")}...`;
+  }
+  return lines;
+}
+
+function firstFieldItem(record: GrowthRecord): string {
+  return (record[config.field] || [])[0] || "";
+}
+
+function themeForText(value: string): Theme {
+  const lower = value.toLowerCase();
+  const matchesAlias = (alias: string) => {
+    if (alias.length <= 3) {
+      return new RegExp(`\\b${alias.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\\b`).test(lower);
+    }
+    return lower.includes(alias);
+  };
+  return (
+    config.themes.find((theme) => theme.aliases.some(matchesAlias)) ||
+    config.themes[0]
+  );
+}
+
+const ideaByTitle = new Map(ideas.map((idea) => [idea.title.toLowerCase(), idea]));
+const recordsWithText = records
+  .filter((record) => firstFieldItem(record))
+  .slice(0, 34);
+
+type ThemeLink = {
+  createdAt: string;
+  idea: IdeaView;
+  importance: number;
+  item: string;
+};
+
+const themeLinkById = new Map<string, ThemeLink>();
+for (const record of recordsWithText) {
+  const idea = record.titles.map((title) => ideaByTitle.get(title.toLowerCase())).find(Boolean);
+  if (!idea) {
+    continue;
+  }
+  for (const item of record[config.field] || []) {
+    const theme = themeForText(item);
+    const current = themeLinkById.get(theme.id);
+    const candidate = {
+      createdAt: record.created_at,
+      idea,
+      importance: Number(record.importance || 0),
+      item,
+    };
+    if (
+      !current ||
+      candidate.importance > current.importance ||
+      (candidate.importance === current.importance && candidate.createdAt > current.createdAt)
+    ) {
+      themeLinkById.set(theme.id, candidate);
+    }
+  }
+}
+
+const themeStats = new Map(config.themes.map((theme) => [theme.id, { count: 0, examples: [] as string[], theme }]));
+for (const record of recordsWithText) {
+  for (const item of record[config.field] || []) {
+    const theme = themeForText(item);
+    const stat = themeStats.get(theme.id)!;
+    stat.count += 1;
+    if (stat.examples.length < 2) {
+      stat.examples.push(item);
+    }
+  }
+}
+
+const activeThemes = [...themeStats.values()]
+  .filter((stat) => stat.count > 0)
+  .sort((a, b) => b.count - a.count || a.theme.label.localeCompare(b.theme.label))
+  .slice(0, positions.length)
+  .map((stat, index) => ({
+    ...stat,
+    href: themeLinkById.get(stat.theme.id)?.idea.slug
+      ? `/findings/${themeLinkById.get(stat.theme.id)!.idea.slug}/`
+      : "/findings/",
+    linkItem: themeLinkById.get(stat.theme.id)?.item || stat.examples[0] || stat.theme.label,
+    linkTitle: themeLinkById.get(stat.theme.id)?.idea.title || `${stat.theme.label} findings`,
+    ...positions[index],
+    radius: 43 + Math.min(14, stat.count * 2),
+    titleLines: wrapText(stat.theme.label, 15, 2),
+  }));
+
+const activeThemeById = new Map(activeThemes.map((theme) => [theme.theme.id, theme]));
+const linkedThemeIdeas = [
+  ...new Map(
+    activeThemes
+      .map((theme) => themeLinkById.get(theme.theme.id)?.idea)
+      .filter(Boolean)
+      .map((idea) => [idea!.slug, idea!]),
+  ).values(),
+];
+const sourceBasisCount = new Set(linkedThemeIdeas.flatMap((idea) => idea.source_basis || [])).size;
+
+const relationshipEdgeMap = new Map<string, {
+  count: number;
+  from: (typeof activeThemes)[number];
+  to: (typeof activeThemes)[number];
+}>();
+
+for (let index = 0; index < recordsWithText.length - 1; index += 1) {
+  const from = activeThemeById.get(themeForText(firstFieldItem(recordsWithText[index])).id);
+  const to = activeThemeById.get(themeForText(firstFieldItem(recordsWithText[index + 1])).id);
+  if (!from || !to || from.theme.id === to.theme.id) {
+    continue;
+  }
+  const key = [from.theme.id, to.theme.id].sort().join(":");
+  const current = relationshipEdgeMap.get(key);
+  relationshipEdgeMap.set(key, current ? { ...current, count: current.count + 1 } : { count: 1, from, to });
+}
+
+const relationshipEdges = [...relationshipEdgeMap.values()]
+  .sort((a, b) => b.count - a.count)
+  .slice(0, 10);
+
+const linkedThemeCount = activeThemes.filter((theme) => themeLinkById.has(theme.theme.id)).length;
+const mapTitleId = `${mode}-mind-map-title`;
+const mapDescId = `${mode}-mind-map-desc`;
+---
+
+<figure class={`living-map-frame mind-map-frame mind-map-${mode}`}>
+  <svg
+    aria-labelledby={`${mapTitleId} ${mapDescId}`}
+    class="living-map-svg mind-map-svg"
+    role="img"
+    viewBox="0 0 1280 760"
+  >
+    <title id={mapTitleId}>{config.title}</title>
+    <desc id={mapDescId}>
+      A map connecting daily Growth records, themes, source-backed idea records, and Findings for the Lumenary.
+    </desc>
+    <rect class="map-bg" height="760" rx="8" width="1280" x="0" y="0"></rect>
+
+    <g class="map-center mind-map-center">
+      <circle cx={center.x} cy={center.y} r="78"></circle>
+      <text class="mind-map-center-title" x={center.x} y={center.y - 22}>{config.centerTitle}</text>
+      <text class="map-center-small" x={center.x} y={center.y + 6}>{config.centerLabel}</text>
+      <text class="map-center-small mind-map-center-stat" x={center.x} y={center.y + 30}>
+        {activeThemes.length} themes / {linkedThemeCount} links
+      </text>
+      <text class="map-center-small mind-map-center-stat" x={center.x} y={center.y + 49}>
+        {sourceBasisCount} sources
+      </text>
+    </g>
+
+    <g class="mind-map-theme-links">
+      {activeThemes.map((theme) => (
+        <path
+          d={`M ${center.x} ${center.y} C ${(center.x + theme.x) / 2} ${center.y}, ${(center.x + theme.x) / 2} ${theme.y}, ${theme.x} ${theme.y}`}
+          style={`--edge-color: ${theme.theme.color}`}
+        ></path>
+      ))}
+    </g>
+
+    <g class="mind-map-growth-links">
+      {relationshipEdges.map((edge) => (
+        <path
+          d={`M ${edge.from.x} ${edge.from.y} C ${(edge.from.x + edge.to.x) / 2} ${edge.from.y - 72}, ${(edge.from.x + edge.to.x) / 2} ${edge.to.y + 72}, ${edge.to.x} ${edge.to.y}`}
+          style={`--edge-color: ${edge.from.theme.color}`}
+        ></path>
+      ))}
+    </g>
+
+    <g class="mind-map-themes">
+      {activeThemes.map((theme) => (
+        <a class="mind-map-theme-anchor" href={theme.href} aria-label={`${theme.linkTitle} finding`}>
+          <title>{theme.linkTitle}: {theme.linkItem}</title>
+          <circle class="map-domain-halo" cx={theme.x} cy={theme.y} r={theme.radius + 24} style={`--domain-color: ${theme.theme.color}`}></circle>
+          <circle class="map-domain-node" cx={theme.x} cy={theme.y} r={theme.radius} style={`--domain-color: ${theme.theme.color}`}></circle>
+          <text class="map-domain-title mind-map-theme-title" x={theme.x} y={theme.y - (theme.titleLines.length - 1) * 8 - 4}>
+            {theme.titleLines.map((line, lineIndex) => (
+              <tspan x={theme.x} dy={lineIndex === 0 ? 0 : 15}>{line}</tspan>
+            ))}
+          </text>
+          <text class="map-domain-counts mind-map-theme-count" x={theme.x} y={theme.y + 30}>
+            {theme.count} signal{theme.count === 1 ? "" : "s"}
+          </text>
+        </a>
+      ))}
+    </g>
+  </svg>
+  <figcaption>{config.caption}</figcaption>
+</figure>

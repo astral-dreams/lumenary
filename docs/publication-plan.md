@@ -2,7 +2,7 @@
 
 ## Goal
 
-Turn Lumenary's recursive findings into a public website with hourly research publication, end-of-day Journal entries, and optional X posts.
+Turn Lumenary's recursive findings into a public website with 30-minute research publication, end-of-day Journal entries, and optional X posts.
 
 ## Website
 
@@ -23,10 +23,12 @@ Every public idea should show epistemic status so readers can distinguish source
 
 ## Living Map Page
 
-The site needs a `/map/` page that brings the research together as a knowledge atlas.
+The site needs a `/map/` page that brings the research together as a living knowledge atlas.
 
 The map should connect:
 
+- daily knowledge growth
+- daily method growth
 - traditions and domains
 - concepts
 - source cards
@@ -36,13 +38,15 @@ The map should connect:
 - convergence notes
 - open research directions
 
-The first version can be a static Astro page generated from `graph/concept-graph.seed.json`, `sources/sources_index.jsonl`, `hypotheses/ideas.jsonl`, and `findings/convergences/`. It should color nodes by type and promotion stage, label edges by relationship type, and link each node back to its source card or finding.
+The first version can be a static Astro page generated from `publication/growth/growth.jsonl`, `graph/concept-graph.seed.json`, `sources/sources_index.jsonl`, `hypotheses/ideas.jsonl`, and `findings/convergences/`. It should render three SVG maps: knowledge growth, method growth, and the research corpus. It should color nodes by type and promotion stage, label edges by relationship type, and link each node back to its source card or finding.
 
 The map is also an operational tool for the recursive loop: sparse or weakly connected areas become next research targets, and high-strain contradictions become prompts for new synthesis.
 
-## Hourly Research Publication
+A dedicated 6pm local-time launchd job rebuilds and deploys the Map page after the research day, so the public map reflects the day's knowledge growth, method growth, and corpus changes.
 
-The active cadence is hourly in the machine's current local timezone from 8am until 4pm. Each hourly job should:
+## Research Publication Cadence
+
+The active cadence is every 30 minutes in the machine's current local timezone from 7am until 5pm. Each research job should:
 
 1. Read recent observations, hypotheses, and syntheses.
 2. Select the strongest item that passes the Public Claim promotion gate.
@@ -50,10 +54,11 @@ The active cadence is hourly in the machine's current local timezone from 8am un
 4. Generate a short website summary.
 5. Generate one or more X drafts under `publication/x/queue/`.
 6. Build and deploy the website so the new findings are public.
+7. Send four macOS notifications: Research starting, Researching, New finding, and Run complete.
 
 ## Journal Job
 
-After the research window closes at 4pm local time, write one Journal entry for the day.
+After the research window closes at 5pm local time, write one Journal entry for the day.
 
 The Journal should:
 

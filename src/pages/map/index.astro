@@ -1,9 +1,11 @@
 ---
 import LivingMap from "../../components/LivingMap.astro";
+import LumenaryMindMap from "../../components/LumenaryMindMap.astro";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import {
   getConceptGraph,
   getConvergenceNotes,
+  getGrowthRecords,
   getIdeas,
   getSources,
   researchStats,
@@ -13,31 +15,47 @@ const graph = getConceptGraph();
 const sources = getSources();
 const ideas = getIdeas();
 const convergences = getConvergenceNotes();
+const growthRecords = getGrowthRecords();
 const stats = researchStats();
 const description =
-  "The Lumenary Research Map connects traditions, source cards, concepts, contradictions, findings, and promoted public claims.";
+  "The Lumenary Living Map updates daily at 6pm local time with three SVG knowledge graphs for knowledge growth, method growth, sources, concepts, and findings.";
 const mapFaq = [
   {
-    question: "What does the Lumenary map show?",
+    question: "What is The Lumenary's Knowledge Map?",
     answer:
-      "It shows how traditions, concepts, source cards, findings, contradictions, and public claims connect inside the research corpus.",
+      "It shows what The Lumenary learned from Growth records and Findings, grouped into themes that gained weight during the research day.",
   },
   {
-    question: "How is the map updated?",
+    question: "What is The Lumenary's Method Map?",
     answer:
-      "The map is rebuilt from the concept graph, source index, idea records, promotion gates, and convergence notes whenever the site is built.",
+      "It shows how The Lumenary changed its way of seeing, questioning, criticizing, and returning to sources.",
   },
   {
-    question: "Why does the map matter?",
+    question: "What is the Research Map?",
     answer:
-      "The map reveals where ideas converge, where translation strain appears, and where the research is still source-light or unresolved.",
+      "It is the living knowledge graph for the research corpus: sources, traditions, concepts, methods, promoted claims, contradictions, and findings.",
+  },
+  {
+    question: "How often are the living maps updated?",
+    answer:
+      "A launchd job refreshes the Map page every day at 6pm local time by rebuilding and deploying all three SVG graphs.",
+  },
+  {
+    question: "What data updates the SVG maps?",
+    answer:
+      "The maps are rebuilt from Growth records, Findings, idea records, the concept graph, source index, promotion gates, and convergence notes.",
+  },
+  {
+    question: "Why do the maps matter?",
+    answer:
+      "They reveal what the system learned, how its method changed, where ideas converge, and where the research is still unresolved.",
   },
 ];
 const mapJsonLd = [
   {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
-    name: "The Lumenary Research Map",
+    name: "The Lumenary Map",
     url: "https://thelumenary.org/map/",
     description,
     about: [
@@ -49,10 +67,18 @@ const mapJsonLd = [
     ],
     mainEntity: {
       "@type": "Dataset",
-      name: "The Lumenary Concept Graph",
+      name: "The Lumenary Living Map",
       description:
-        "A generated concept graph connecting sources, traditions, idea records, promotion status, and convergence notes.",
-      variableMeasured: ["concept nodes", "relationship edges", "source cards", "idea records", "public claims"],
+        "A living map rebuilt daily from Growth records, Findings, sources, concept relationships, promotion status, and convergence notes.",
+      variableMeasured: [
+        "knowledge growth",
+        "method growth",
+        "concept nodes",
+        "relationship edges",
+        "source cards",
+        "idea records",
+        "public claims",
+      ],
     },
   },
   {
@@ -70,22 +96,66 @@ const mapJsonLd = [
 ];
 ---
 
-<BaseLayout title="Research Map" description={description} jsonLd={mapJsonLd}>
+<BaseLayout title="Living Map" description={description} jsonLd={mapJsonLd}>
   <section class="page-band">
     <p class="eyebrow">Living atlas</p>
-    <h1>Research Map</h1>
+    <h1>Living Map</h1>
     <p class="lead">
-      A map of traditions, source grounding, concept relationships, promoted claims, and new findings.
+      Three SVG maps of The Lumenary's growing mind: what it knows, how it learns, and how the research corpus connects.
+      They refresh every day at 6pm local time.
     </p>
+  </section>
+
+  <section class="map-section">
+    <div class="map-section-heading">
+      <p class="eyebrow">Mind of knowledge</p>
+      <h2>The Lumenary's Knowledge Map</h2>
+      <p>
+        A living graph of what the research loop has learned each day, drawn from Growth records and linked Findings.
+      </p>
+    </div>
+    <LumenaryMindMap mode="knowledge" records={growthRecords} ideas={ideas} />
+  </section>
+
+  <section class="map-section">
+    <div class="map-section-heading">
+      <p class="eyebrow">Mind of method</p>
+      <h2>The Lumenary's Method Map</h2>
+      <p>
+        A living graph of how the research loop is changing its way of observing, questioning, criticizing, and returning to the sources.
+      </p>
+    </div>
+    <LumenaryMindMap mode="method" records={growthRecords} ideas={ideas} />
+  </section>
+
+  <section class="map-section map-section-last">
+    <div class="map-section-heading">
+      <p class="eyebrow">Research graph</p>
+      <h2>Research Map</h2>
+      <p>
+        A living knowledge graph of source research, concepts, methods, promoted claims, contradictions, and findings.
+      </p>
+    </div>
+    <LivingMap graph={graph} sources={sources} ideas={ideas} convergences={convergences} />
+  </section>
+
+  <section class="stat-band map-stat-band" aria-label="Map counts">
+    <div><strong>{graph.nodes.length}</strong><span>concept nodes</span></div>
+    <div><strong>{graph.edges.length}</strong><span>relationship edges</span></div>
+    <div><strong>{stats.sources}</strong><span>source cards</span></div>
+    <div><strong>{stats.ideas}</strong><span>idea records</span></div>
+    <div><strong>{stats.publicClaims}</strong><span>public claims</span></div>
   </section>
 
   <section class="content-section">
     <div class="answer-panel">
       <p class="eyebrow">Direct answer</p>
-      <h2>What Does The Research Map Show?</h2>
+      <h2>What Do The Lumenary Maps Show?</h2>
       <p>
-        The map shows the living structure of the research: which traditions are being studied, which concepts recur,
-        where findings connect, and where disagreement or translation strain creates the next frontier.
+        The Lumenary's three living maps are rebuilt every day at 6pm local time from Growth records, Findings,
+        source cards, concept relationships, convergence notes, and promotion gates. The first map shows what changed
+        in knowledge. The second map shows how the method changed. The third map is the living knowledge graph of sources,
+        concepts, methods, and findings.
       </p>
       <div class="answer-grid">
         {mapFaq.map((item) => (
@@ -96,17 +166,5 @@ const mapJsonLd = [
         ))}
       </div>
     </div>
-  </section>
-
-  <section class="map-section">
-    <LivingMap graph={graph} sources={sources} ideas={ideas} convergences={convergences} />
-  </section>
-
-  <section class="stat-band map-stat-band" aria-label="Map counts">
-    <div><strong>{graph.nodes.length}</strong><span>concept nodes</span></div>
-    <div><strong>{graph.edges.length}</strong><span>relationship edges</span></div>
-    <div><strong>{stats.sources}</strong><span>source cards</span></div>
-    <div><strong>{stats.ideas}</strong><span>idea records</span></div>
-    <div><strong>{stats.publicClaims}</strong><span>public claims</span></div>
   </section>
 </BaseLayout>

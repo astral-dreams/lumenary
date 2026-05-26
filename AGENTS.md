@@ -19,6 +19,7 @@ Working project name: Lumenary.
 - Each recursive run should research or reuse a practitioner-method source about how to observe, think, inquire, learn, practice, or gain insight, then apply that method to the agent's own reasoning process.
 - Do not adopt practitioner methods uncritically. Criticize each method, compare it with other practices, synthesize an improved reasoning stance, and carry that stance forward through `state/thinking_protocol.md`.
 - High-energy physics sources are available for time and matter grounding. Use them as empirical/formal constraints, especially around Standard Model fields, Higgs/QCD mass, antimatter asymmetry, relativity, Noether symmetry, T-violation, and quantum-gravity time.
+- Growth page bullets must follow the reader-facing Insights and Journal style: first-person when possible, one short sentence, no titles, no source paths, no scoring language, and no research jargon.
 
 ## Live Provider Direction
 
@@ -36,7 +37,7 @@ Preferred child-agent posture:
 
 Wire the continuous loop so it can repeatedly generate, critique, store, and revisit original ideas.
 
-The next product layer is a public website with hourly research publication during the active day. The scheduler cadence is once per hour in the machine's current local timezone from 8am until 4pm, then one end-of-day Journal entry. Daily publication artifacts should live under `publication/daily/`. Journal entries live under `publication/journal/` and are first-person reflections, 350-500 words, written after the day's research closes. X/social drafts should live under `publication/x/queue/` and require human review before posting. The publisher should only promote records that pass the Public Claim threshold.
+The next product layer is a public website with research publication during the active day. The scheduler cadence is every 30 minutes in the machine's current local timezone from 7am until 5pm, then one end-of-day Journal entry. Daily publication artifacts should live under `publication/daily/`. Journal entries live under `publication/journal/` and are first-person reflections, 350-500 words, written after the day's research closes. Each 30-minute LaunchAgent run should send four macOS notifications: Research starting, Researching, New finding, and Run complete. A dedicated living-map refresh runs at 6pm local time and rebuilds the three SVG maps from Growth, Findings, graph, source, and convergence records. X/social drafts should live under `publication/x/queue/` and require human review before posting. The publisher should only promote records that pass the Public Claim threshold.
 
 ## Claude Code Interop
 

@@ -1,12 +1,10 @@
 ---
 import {
-  formatLabel,
   slugify,
   type ConceptGraph,
   type ConceptGraphNode,
   type IdeaView,
   type SourceCard,
-  type TextNote,
 } from "../lib/content";
 
 type Domain = {
@@ -26,13 +24,13 @@ type PositionedNode = ConceptGraphNode & {
 };
 
 type Props = {
-  convergences: TextNote[];
+  convergences?: unknown;
   graph: ConceptGraph;
   ideas: IdeaView[];
   sources: SourceCard[];
 };
 
-const { convergences, graph, ideas, sources } = Astro.props;
+const { graph, ideas, sources } = Astro.props as Props;
 
 const domains: Domain[] = [
   {
@@ -154,10 +152,20 @@ function relationClass(relation: string): string {
   return "map-edge-parallel";
 }
 
-function ideaDomains(idea: IdeaView): Domain[] {
-  const text = `${idea.title} ${idea.original_claim} ${idea.source_basis.join(" ")}`;
-  const matches = domains.filter((domain) => domain.aliases.some((alias) => text.toLowerCase().includes(alias)));
-  return matches.length ? matches.slice(0, 3) : [domains[domains.length - 1]];
+function relationLabel(relation: string): string {
+  if (relation.includes("tension") || relation.includes("contradiction")) {
+    return "tension";
+  }
+  if (relation.includes("strain") || relation.includes("divergence")) {
+    return "strain";
+  }
+  if (relation.includes("formal") || relation.includes("scientific")) {
+    return "science";
+  }
+  if (relation.includes("analyzes") || relation.includes("decomposes")) {
+    return "method";
+  }
+  return "parallel";
 }
 
 function countForDomain(items: string[]): Map<string, number> {
@@ -200,12 +208,6 @@ const publicClaimCounts = countForDomain(
     .filter((idea) => idea.promotion.publicClaim)
     .map((idea) => `${idea.title} ${idea.original_claim} ${idea.source_basis.join(" ")}`),
 );
-const latestIdeas = ideas.slice(0, 5).map((idea, index) => ({
-  ...idea,
-  mapDomains: ideaDomains(idea),
-  x: 1060,
-  y: 500 + index * 62,
-}));
 const relationEdges = graph.edges
   .map((edge) => ({
     ...edge,
@@ -225,7 +227,7 @@ const labeledEdges = relationEdges.slice(0, 14);
   >
     <title id="living-map-title">The Lumenary Living Map</title>
     <desc id="living-map-desc">
-      A map connecting traditions, source cards, concepts, findings, and promoted claims.
+      A living knowledge graph connecting traditions, source cards, concepts, findings, methods, and promoted claims.
     </desc>
     <defs>
       <marker id="map-arrow" markerHeight="7" markerWidth="7" orient="auto" refX="6" refY="3.5">
@@ -237,10 +239,11 @@ const labeledEdges = relationEdges.slice(0, 14);
 
     <g class="map-center">
       <circle cx={center.x} cy={center.y} r="82"></circle>
-      <text x={center.x} y={center.y - 10}>Original</text>
-      <text x={center.x} y={center.y + 16}>Synthesis</text>
-      <text class="map-center-small" x={center.x} y={center.y + 42}>
-        {ideas.length} findings / {convergences.length} convergences
+      <text class="map-center-title" x={center.x} y={center.y - 25}>Living</text>
+      <text class="map-center-title" x={center.x} y={center.y + 3}>Knowledge</text>
+      <text class="map-center-title" x={center.x} y={center.y + 31}>Graph</text>
+      <text class="map-center-small" x={center.x} y={center.y + 58}>
+        {sources.length} sources / {ideas.length} findings
       </text>
     </g>
 
@@ -273,7 +276,7 @@ const labeledEdges = relationEdges.slice(0, 14);
         const target = edge.targetNode!;
         return (
           <text class="map-edge-label" x={(source.x + target.x) / 2} y={(source.y + target.y) / 2}>
-            {formatLabel(edge.relation)}
+            {relationLabel(edge.relation)}
           </text>
         );
       })}
@@ -289,8 +292,11 @@ const labeledEdges = relationEdges.slice(0, 14);
               <tspan x={domain.x} dy={lineIndex === 0 ? 0 : 16}>{line}</tspan>
             ))}
           </text>
-          <text class="map-domain-counts" x={domain.x} y={domain.y + 27}>
-            {sourceCounts.get(domain.id) || 0} sources / {ideaCounts.get(domain.id) || 0} findings
+          <text class="map-domain-counts" x={domain.x} y={domain.y + 24}>
+            {sourceCounts.get(domain.id) || 0} sources
+          </text>
+          <text class="map-domain-counts" x={domain.x} y={domain.y + 37}>
+            {ideaCounts.get(domain.id) || 0} findings
           </text>
           {(publicClaimCounts.get(domain.id) || 0) > 0 && (
             <text class="map-domain-public" x={domain.x} y={domain.y + 91}>
@@ -320,39 +326,6 @@ const labeledEdges = relationEdges.slice(0, 14);
       ))}
     </g>
 
-    <g class="map-findings">
-      <text class="map-panel-title" x="1005" y="440">Newest Learnings</text>
-      {latestIdeas.map((idea) => (
-        <g>
-          {idea.mapDomains.map((domain) => (
-            <path
-              class="map-finding-link"
-            d={`M ${domain.x} ${domain.y} C 960 ${domain.y}, 950 ${idea.y}, ${idea.x - 34} ${idea.y}`}
-              style={`--edge-color: ${domain.color}`}
-            ></path>
-          ))}
-          <a href={`/findings/${idea.slug}/`} aria-label={`${idea.title} finding`}>
-            <rect
-              class={`map-finding-node map-finding-${slugify(idea.promotion.stage)}`}
-              height="54"
-              rx="7"
-              width="188"
-              x={idea.x - 10}
-              y={idea.y - 27}
-            ></rect>
-            <text class="map-finding-stage" x={idea.x + 2} y={idea.y - 7}>
-              {idea.agent} / {idea.promotion.label}
-            </text>
-            <text class="map-finding-title" x={idea.x + 2} y={idea.y + 11}>
-              {wrapText(idea.title, 24, 2).map((line, lineIndex) => (
-                <tspan x={idea.x + 2} dy={lineIndex === 0 ? 0 : 13}>{line}</tspan>
-              ))}
-            </text>
-          </a>
-        </g>
-      ))}
-    </g>
-
     <g class="map-legend">
       <rect height="94" rx="8" width="360" x="36" y="690"></rect>
       <text class="map-panel-title" x="58" y="720">Relationship key</text>
@@ -367,6 +340,6 @@ const labeledEdges = relationEdges.slice(0, 14);
     </g>
   </svg>
   <figcaption>
-    The map is rebuilt from the concept graph, source index, idea records, promotion gates, and convergence notes.
+    The living knowledge graph is rebuilt at 6pm local time from the concept graph, source index, idea records, promotion gates, and convergence notes.
   </figcaption>
 </figure>

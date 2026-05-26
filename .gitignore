@@ -14,6 +14,7 @@ runs/scheduler-events.jsonl
 runs/deployments/
 runs/locks/
 data/analytics/*-snapshot.json
+data/analytics/update-status.json
 
 # Local database/index artifacts can be regenerated from Markdown/JSONL source.
 db/*.duckdb

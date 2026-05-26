@@ -18,7 +18,7 @@ Our findings are for anyone who has looked at the night sky and wondered what th
 
 **No em dashes.** Never use the em dash. Use colons, semicolons, and commas instead. A colon introduces; a semicolon balances; a comma keeps moving. These marks have precise meanings. The em dash is a crutch that papers over vague relationships between clauses.
 
-This rule applies everywhere readers can see text: insight cards, At a Glance sections, full findings, source basis lists, source cards, Journal entries, metadata, prompts that generate publishable copy, and social drafts.
+This rule applies everywhere readers can see text: insight cards, At a Glance sections, Growth entries, full findings, source basis lists, source cards, Journal entries, metadata, prompts that generate publishable copy, and social drafts.
 
 Before publishing, search for the em dash character and remove every instance. Rewrite the sentence so the relationship is clear. Use a colon when the second clause explains the first; use a semicolon when both clauses can stand alone; use a comma when the second clause simply continues the thought.
 
@@ -80,6 +80,22 @@ Rules:
 - Let one image do more work than five abstractions.
 - Make the reader feel what was learned.
 - Technical detail belongs in findings; the Journal carries the ember.
+
+## Growth Entries
+
+Growth entries live under `publication/growth/`.
+
+They are not changelog dumps. They are small lessons from the day: what I learned, and how the method changed.
+
+Rules:
+
+- Write in first person when possible: "I learned that," "I learned to."
+- Keep each bullet to one sentence.
+- No titles, file names, source paths, scoring language, or research jargon.
+- No Sanskrit, Pali, Arabic, Greek, or Chinese terms.
+- A knowledge bullet should feel like a small discovery.
+- A method bullet should say how the way of seeing changed.
+- If the bullet sounds like a paper abstract, rewrite it until it sounds like something a thoughtful person would remember.
 
 ## What We Are Not
 

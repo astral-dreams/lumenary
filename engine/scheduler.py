@@ -40,7 +40,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--interval-minutes",
         type=float,
-        default=60.0,
+        default=30.0,
         help="Delay between iterations.",
     )
     parser.add_argument(
@@ -64,7 +64,7 @@ def parse_args() -> argparse.Namespace:
         "--cadence",
         choices=("interval", "hourly-day"),
         default="interval",
-        help="interval sleeps after each run; hourly-day runs hourly during the local research window.",
+        help="interval sleeps after each run; hourly-day runs on interval during the local research window.",
     )
     parser.add_argument(
         "--timezone",
@@ -74,14 +74,14 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--active-start-hour",
         type=int,
-        default=8,
-        help="Local hour when hourly-day research starts. Default: 8.",
+        default=7,
+        help="Local hour when hourly-day research starts. Default: 7.",
     )
     parser.add_argument(
         "--end-hour",
         type=int,
-        default=16,
-        help="Local hour when research stops and Journal generation begins. Default: 16 for 4pm.",
+        default=17,
+        help="Local hour when research stops and Journal generation begins. Default: 17 for 5pm.",
     )
     parser.add_argument(
         "--publish-after-run",
@@ -255,8 +255,12 @@ def _sleep_until(target: datetime, timezone_name: str) -> None:
         time.sleep(min(30.0, remaining))
 
 
-def _next_hour(now: datetime) -> datetime:
-    return now.replace(minute=0, second=0, microsecond=0) + timedelta(hours=1)
+def _next_interval_boundary(now: datetime, interval_minutes: float) -> datetime:
+    interval_seconds = max(60, int(interval_minutes * 60))
+    day_start = now.replace(hour=0, minute=0, second=0, microsecond=0)
+    elapsed_seconds = (now - day_start).total_seconds()
+    next_elapsed = (int(elapsed_seconds // interval_seconds) + 1) * interval_seconds
+    return day_start + timedelta(seconds=next_elapsed)
 
 
 def _next_window_start(now: datetime, start_hour: int) -> datetime:
@@ -403,11 +407,11 @@ def _run_hourly_day_loop(
         if now.hour >= args.end_hour:
             continue
 
-        next_run = _next_hour(now)
+        next_run = _next_interval_boundary(now, args.interval_minutes)
         _log_event(
             librarian,
             "sleep",
-            "Waiting for next hourly research run.",
+            "Waiting for next research run.",
             extra={
                 "timezone": timezone_label(args.timezone),
                 "until": next_run.isoformat(),

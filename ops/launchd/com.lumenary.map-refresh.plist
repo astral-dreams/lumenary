@@ -3,23 +3,28 @@
 <plist version="1.0">
 <dict>
   <key>Label</key>
-  <string>com.lumenary.daily-publish</string>
+  <string>com.lumenary.map-refresh</string>
   <key>ProgramArguments</key>
   <array>
-    <string>/Users/johnforrester/spirituality/scripts/generate_journal_update.sh</string>
+    <string>/Users/johnforrester/spirituality/scripts/update_living_map.sh</string>
   </array>
   <key>WorkingDirectory</key>
   <string>/Users/johnforrester/spirituality</string>
   <key>StartCalendarInterval</key>
   <dict>
     <key>Hour</key>
-    <integer>17</integer>
+    <integer>18</integer>
     <key>Minute</key>
-    <integer>15</integer>
+    <integer>0</integer>
   </dict>
   <key>StandardOutPath</key>
-  <string>/Users/johnforrester/spirituality/runs/daily-publish.stdout.log</string>
+  <string>/Users/johnforrester/spirituality/runs/map-refresh.stdout.log</string>
   <key>StandardErrorPath</key>
-  <string>/Users/johnforrester/spirituality/runs/daily-publish.stderr.log</string>
+  <string>/Users/johnforrester/spirituality/runs/map-refresh.stderr.log</string>
+  <key>EnvironmentVariables</key>
+  <dict>
+    <key>PATH</key>
+    <string>/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin</string>
+  </dict>
 </dict>
 </plist>

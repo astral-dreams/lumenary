@@ -9,6 +9,9 @@ from __future__ import annotations
 
 import json
 import os
+import subprocess
+import time
+from datetime import datetime, timezone
 from html import escape
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
@@ -16,6 +19,7 @@ from urllib.parse import urlparse
 
 ROOT = Path(__file__).resolve().parents[2]
 PORT = int(os.environ.get("LUMENARY_ANALYTICS_PORT", "8789"))
+UPDATE_STATUS_PATH = ROOT / "data" / "analytics" / "update-status.json"
 
 
 def read_json(relative_path: str, fallback):
@@ -23,6 +27,11 @@ def read_json(relative_path: str, fallback):
     if not path.exists():
         return fallback
     return json.loads(path.read_text(encoding="utf-8"))
+
+
+def write_json(path: Path, payload: dict) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(payload, indent=2), encoding="utf-8")
 
 
 def read_jsonl(relative_path: str):
@@ -110,6 +119,99 @@ def gsc_snapshot():
     return read_json("data/analytics/gsc-snapshot.json", {})
 
 
+def update_status():
+    return read_json("data/analytics/update-status.json", {})
+
+
+def analytics_env() -> dict[str, str]:
+    setup = read_json("data/analytics/setup-status.json", {})
+    env = os.environ.copy()
+    property_id = str(setup.get("ga4", {}).get("property_id", "538957338")).strip()
+    site_url = str(setup.get("gsc", {}).get("site_url", "sc-domain:thelumenary.org")).strip()
+    if property_id:
+        env.setdefault("GA4_PROPERTY_ID", property_id)
+    if site_url:
+        env.setdefault("GSC_SITE_URL", site_url)
+    return env
+
+
+def run_analytics_update() -> dict:
+    started = datetime.now(timezone.utc).isoformat()
+    steps = [
+        {
+            "id": "ga4",
+            "label": "GA4",
+            "command": ["python3", "scripts/analytics/ga4_report.py"],
+        },
+        {
+            "id": "gsc",
+            "label": "Search Console",
+            "command": ["python3", "scripts/analytics/gsc_report.py"],
+        },
+        {
+            "id": "aeo",
+            "label": "AEO readiness",
+            "command": ["python3", "scripts/analytics/aeo_readiness.py"],
+        },
+    ]
+    status = {
+        "status": "running",
+        "started_at": started,
+        "finished_at": None,
+        "duration_seconds": None,
+        "steps": {},
+    }
+    write_json(UPDATE_STATUS_PATH, status)
+
+    start_time = time.monotonic()
+    env = analytics_env()
+    for step in steps:
+        step_started = datetime.now(timezone.utc).isoformat()
+        status["steps"][step["id"]] = {
+            "label": step["label"],
+            "status": "running",
+            "started_at": step_started,
+        }
+        write_json(UPDATE_STATUS_PATH, status)
+        try:
+            result = subprocess.run(
+                step["command"],
+                cwd=ROOT,
+                env=env,
+                capture_output=True,
+                text=True,
+                timeout=240,
+                check=False,
+            )
+            status["steps"][step["id"]].update(
+                {
+                    "status": "complete" if result.returncode == 0 else "error",
+                    "returncode": result.returncode,
+                    "finished_at": datetime.now(timezone.utc).isoformat(),
+                    "stdout": result.stdout.strip(),
+                    "stderr": result.stderr.strip(),
+                }
+            )
+        except subprocess.TimeoutExpired as exc:
+            status["steps"][step["id"]].update(
+                {
+                    "status": "error",
+                    "returncode": None,
+                    "finished_at": datetime.now(timezone.utc).isoformat(),
+                    "stdout": (exc.stdout or "").strip() if isinstance(exc.stdout, str) else "",
+                    "stderr": "Timed out after 240 seconds.",
+                }
+            )
+        write_json(UPDATE_STATUS_PATH, status)
+
+    failed = [step for step in status["steps"].values() if step.get("status") != "complete"]
+    status["status"] = "error" if failed else "complete"
+    status["finished_at"] = datetime.now(timezone.utc).isoformat()
+    status["duration_seconds"] = round(time.monotonic() - start_time, 2)
+    write_json(UPDATE_STATUS_PATH, status)
+    return status
+
+
 def ga4_event_count(snapshot: dict, event_name: str) -> float:
     for row in snapshot.get("events", {}).get("rows", []):
         if row.get("eventName") == event_name:
@@ -127,6 +229,14 @@ def page_shell(title: str, active: str, body: str) -> bytes:
         f'<a class="{"active" if label == active else ""}" href="{href}">{label}</a>'
         for label, href in tabs
     )
+    status = update_status()
+    status_value = status.get("status", "idle")
+    status_class = "ok" if status_value == "complete" else "error" if status_value == "error" else "idle"
+    finished_at = status.get("finished_at") or status.get("started_at")
+    if finished_at:
+        status_text = f"Last update: {finished_at}"
+    else:
+        status_text = "No local update has run yet."
     html = f"""<!doctype html>
 <html lang="en">
   <head>
@@ -136,13 +246,17 @@ def page_shell(title: str, active: str, body: str) -> bytes:
     <title>{escape(title)} | Lumenary Local Analytics</title>
     <style>
       :root {{
-        color-scheme: dark;
-        --bg: #101512;
-        --panel: #17201b;
-        --line: #35483c;
-        --text: #f1efe7;
-        --muted: #b4c1b8;
-        --accent: #d9bd76;
+        color-scheme: light;
+        --bg: #f8fafc;
+        --panel: #ffffff;
+        --line: #dbe3e8;
+        --text: #0f172a;
+        --muted: #64748b;
+        --soft: #eef5f4;
+        --accent: #0e7490;
+        --accent-strong: #155e75;
+        --danger: #b91c1c;
+        --success: #15803d;
       }}
       * {{ box-sizing: border-box; }}
       body {{
@@ -152,58 +266,117 @@ def page_shell(title: str, active: str, body: str) -> bytes:
         font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
         line-height: 1.5;
       }}
-      main {{
-        width: min(1120px, calc(100% - 32px));
+      header {{
+        background: var(--panel);
+        border-bottom: 1px solid var(--line);
+      }}
+      .header-inner {{
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        gap: 18px;
         margin: 0 auto;
-        padding: 42px 0 64px;
+        padding: 18px 24px;
+        width: min(1280px, 100%);
+      }}
+      main {{
+        width: min(1280px, calc(100% - 32px));
+        margin: 0 auto;
+        padding: 24px 0 64px;
       }}
       .kicker {{
-        color: var(--accent);
+        color: var(--muted);
         font-size: 0.76rem;
-        letter-spacing: 0.08em;
-        margin: 0 0 10px;
+        letter-spacing: 0.04em;
+        margin: 0 0 4px;
         text-transform: uppercase;
       }}
       h1 {{
-        font-family: Georgia, "Times New Roman", serif;
-        font-size: clamp(2.4rem, 8vw, 5.5rem);
-        line-height: 0.94;
+        font-size: 1.35rem;
+        letter-spacing: 0;
+        line-height: 1.15;
         margin: 0;
       }}
       .lead {{
         color: var(--muted);
-        font-size: 1.1rem;
-        max-width: 720px;
-        margin: 18px 0 24px;
+        font-size: 0.82rem;
+        margin: 4px 0 0;
+      }}
+      .header-actions {{
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: flex-end;
+      }}
+      .update-button {{
+        appearance: none;
+        background: var(--accent);
+        border: 1px solid var(--accent);
+        border-radius: 8px;
+        color: #ffffff;
+        cursor: pointer;
+        font: inherit;
+        font-size: 0.88rem;
+        font-weight: 700;
+        padding: 9px 14px;
+      }}
+      .update-button:hover {{ background: var(--accent-strong); }}
+      .update-button[disabled] {{
+        background: #e2e8f0;
+        border-color: #e2e8f0;
+        color: #94a3b8;
+        cursor: wait;
+      }}
+      .update-status {{
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        color: var(--muted);
+        font-size: 0.78rem;
+        max-width: 360px;
+        padding: 8px 10px;
+      }}
+      .update-status.ok {{
+        background: #ecfdf5;
+        border-color: #bbf7d0;
+        color: var(--success);
+      }}
+      .update-status.error {{
+        background: #fef2f2;
+        border-color: #fecaca;
+        color: var(--danger);
       }}
       nav {{
         display: flex;
         flex-wrap: wrap;
-        gap: 10px;
-        margin: 0 0 34px;
+        gap: 4px;
+        margin: 0 0 18px;
+        overflow-x: auto;
+        border-bottom: 1px solid var(--line);
       }}
       nav a {{
-        border: 1px solid var(--line);
-        color: var(--text);
-        padding: 9px 12px;
+        border-bottom: 2px solid transparent;
+        color: var(--muted);
+        padding: 10px 14px;
         text-decoration: none;
+        white-space: nowrap;
       }}
       nav a.active {{
-        background: var(--accent);
         border-color: var(--accent);
-        color: #17130a;
+        color: var(--accent);
       }}
       .grid {{
         display: grid;
-        gap: 14px;
-        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 12px;
+        grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
         margin: 0 0 18px;
       }}
       .card, .panel {{
         background: var(--panel);
         border: 1px solid var(--line);
         border-radius: 8px;
-        padding: 18px;
+        box-shadow: 0 1px 2px rgb(15 23 42 / 0.04);
+        padding: 16px;
       }}
       .card span, .row span {{
         color: var(--muted);
@@ -212,7 +385,7 @@ def page_shell(title: str, active: str, body: str) -> bytes:
       }}
       .card strong {{
         display: block;
-        font-size: 2.1rem;
+        font-size: 1.9rem;
         line-height: 1;
         margin: 8px 0;
       }}
@@ -225,7 +398,7 @@ def page_shell(title: str, active: str, body: str) -> bytes:
         margin: 0;
       }}
       h2 {{
-        font-size: 1.35rem;
+        font-size: 1.05rem;
         margin: 0 0 14px;
       }}
       .row {{
@@ -237,23 +410,67 @@ def page_shell(title: str, active: str, body: str) -> bytes:
       }}
       .row:first-of-type {{ border-top: 0; }}
       code {{
-        color: #f5dfa5;
+        color: var(--accent-strong);
         overflow-wrap: anywhere;
       }}
-      a {{ color: #f5dfa5; }}
+      a {{ color: var(--accent-strong); }}
       @media (max-width: 760px) {{
+        .header-inner {{
+          align-items: flex-start;
+          flex-direction: column;
+        }}
+        .header-actions {{ justify-content: flex-start; }}
         .row {{ grid-template-columns: 1fr; }}
       }}
     </style>
   </head>
   <body>
+    <header>
+      <div class="header-inner">
+        <div>
+          <p class="kicker">Localhost only</p>
+          <h1>Lumenary Marketing Dashboard</h1>
+          <p class="lead">GA4, Search Console, acquisition, and AEO reporting for thelumenary.org.</p>
+        </div>
+        <div class="header-actions">
+          <button class="update-button" data-update type="button">Update</button>
+          <span class="update-status {status_class}" data-update-status>{escape(status_text)}</span>
+        </div>
+      </div>
+    </header>
     <main>
-      <p class="kicker">Localhost only</p>
-      <h1>{escape(title)}</h1>
-      <p class="lead">Private analytics control room for setup status, acquisition rules, and answer-engine visibility. This dashboard is not part of the public Cloudflare Pages build.</p>
       <nav aria-label="Analytics navigation">{tab_html}</nav>
       {body}
     </main>
+    <script>
+      const updateButton = document.querySelector('[data-update]');
+      const updateStatus = document.querySelector('[data-update-status]');
+      updateButton?.addEventListener('click', async () => {{
+        updateButton.disabled = true;
+        updateButton.textContent = 'Updating...';
+        updateStatus.textContent = 'Pulling GA4, Search Console, and AEO readiness data.';
+        updateStatus.className = 'update-status idle';
+        try {{
+          const response = await fetch('/analytics/update', {{ method: 'POST' }});
+          const data = await response.json();
+          if (!response.ok || data.status === 'error') {{
+            const failed = Object.values(data.steps || {{}})
+              .filter(step => step.status !== 'complete')
+              .map(step => step.label || 'step')
+              .join(', ');
+            throw new Error(failed ? `Update issue: ${{failed}}` : 'Update failed.');
+          }}
+          updateStatus.className = 'update-status ok';
+          updateStatus.textContent = `Updated in ${{data.duration_seconds || 0}} seconds. Reloading.`;
+          window.setTimeout(() => window.location.reload(), 700);
+        }} catch (error) {{
+          updateStatus.className = 'update-status error';
+          updateStatus.textContent = error.message || 'Update failed.';
+          updateButton.disabled = false;
+          updateButton.textContent = 'Update';
+        }}
+      }});
+    </script>
   </body>
 </html>"""
     return html.encode("utf-8")
@@ -438,6 +655,16 @@ def aeo_page():
 
 
 class Handler(BaseHTTPRequestHandler):
+    def send_json(self, payload: dict, status: int = 200, include_body: bool = True):
+        body = json.dumps(payload, indent=2).encode("utf-8")
+        self.send_response(status)
+        self.send_header("Content-Type", "application/json; charset=utf-8")
+        self.send_header("Cache-Control", "no-store")
+        self.send_header("Content-Length", str(len(body)))
+        self.end_headers()
+        if include_body:
+            self.wfile.write(body)
+
     def send_dashboard(self, include_body=True):
         path = urlparse(self.path).path.rstrip("/") + "/"
         if path == "/analytics/":
@@ -468,7 +695,19 @@ class Handler(BaseHTTPRequestHandler):
         self.send_dashboard(include_body=False)
 
     def do_GET(self):
-        self.send_dashboard()
+        path = urlparse(self.path).path.rstrip("/") + "/"
+        if path == "/analytics/update/status/":
+            self.send_json(update_status())
+        else:
+            self.send_dashboard()
+
+    def do_POST(self):
+        path = urlparse(self.path).path.rstrip("/") + "/"
+        if path == "/analytics/update/":
+            payload = run_analytics_update()
+            self.send_json(payload, status=200 if payload.get("status") == "complete" else 500)
+            return
+        self.send_json({"error": "Not found"}, status=404)
 
     def log_message(self, fmt, *args):
         print("%s - %s" % (self.address_string(), fmt % args))

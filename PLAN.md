@@ -66,9 +66,9 @@ Each iteration should:
 11. Score the idea for research value.
 12. Write observation Markdown, JSONL, run manifest, prompt, and output.
 13. Update exploration state and next directions, including improvements to the next thinking method.
-14. Repeat once per hour during the local research window.
-15. After each hourly run, generate publication artifacts and deploy the website.
-16. At 4pm in the machine's current local timezone, stop research for the day and write one Journal entry from the day's findings.
+14. Repeat every 30 minutes during the local research window.
+15. After each research run, generate publication artifacts and deploy the website.
+16. At 5pm in the machine's current local timezone, stop research for the day and write one Journal entry from the day's findings.
 
 ## 6. Idea Evaluation
 
@@ -106,7 +106,7 @@ Convergence across independent traditions is a useful signal, but it is not proo
 6. Add a promotion workflow from draft observation to hypothesis to synthesis.
 7. Build the public website.
 8. Build a Living Map page that brings sources, concepts, findings, contradictions, and promoted claims together.
-9. Add an hourly publication cadence that publishes the strongest new findings to the website.
+9. Add a 30-minute publication cadence that publishes the strongest new findings to the website.
 10. Add an X posting queue with human review before API posting.
 11. Let Claude Code contribute through `python3 -m engine.import_idea --agent claude <idea.json>`.
 
@@ -131,9 +131,11 @@ Hourly publication and Journal flow:
 3. Job writes a daily Markdown update under `publication/daily/`.
 4. Website build consumes `publication/daily/`, `observations/`, and `syntheses/`.
 5. Social draft job writes candidate X posts under `publication/x/queue/`.
-6. Website deploy runs after every hourly research job.
-7. At 4pm in the machine's current local timezone, the Journal writer reads the day's findings and writes one first-person reflection under `publication/journal/`.
-8. Human review approves, edits, rejects, or posts social drafts.
+6. Website deploy runs after every 30-minute research job.
+7. Each 30-minute run emits four macOS notifications: start, current direction, new finding title, and published title.
+8. At 5pm in the machine's current local timezone, the Journal writer reads the day's findings and writes one first-person reflection under `publication/journal/`.
+9. At 6pm in the machine's current local timezone, the living-map job rebuilds and deploys the three SVG maps on `/map/`.
+10. Human review approves, edits, rejects, or posts social drafts.
 
 ## 10. Living Map Page
 
@@ -145,6 +147,8 @@ Target route:
 
 Purpose:
 
+- show daily changes in The Lumenary's knowledge from Growth records and Findings
+- show daily changes in The Lumenary's method from Growth records and Findings
 - show how traditions, concepts, sources, observations, contradictions, convergences, and promoted claims connect
 - reveal where the research is well-grounded versus source-light
 - make cross-agent agreement and disagreement visible
@@ -157,6 +161,7 @@ Data sources:
 - `hypotheses/ideas.jsonl` for idea records, scores, promotion status, and agent attribution
 - `findings/convergences/` for cross-agent and cross-tradition synthesis notes
 - `publication/daily/` for promoted public outputs
+- `publication/growth/growth.jsonl` for daily knowledge and method changes
 
 Node types:
 
@@ -187,6 +192,7 @@ MVP implementation:
 4. Show edge labels for contradiction, translation strain, support, and analogy.
 5. Add filters for agent, tradition, epistemic label, promotion stage, and source reliability.
 6. Link every node back to the relevant source card, finding, daily post, or convergence note.
+7. Refresh and deploy the living maps daily at 6pm local time through `ops/launchd/com.lumenary.map-refresh.plist`.
 
 Later implementation:
 
