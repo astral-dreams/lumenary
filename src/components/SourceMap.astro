@@ -6,7 +6,47 @@ type Props = {
 };
 
 const { sources } = Astro.props;
-const groups = groupBy(sources, (source) => source.tradition);
+const sourceDomains = [
+  {
+    aliases: ["advaita", "vedanta", "hindu", "upanishad", "mandukya", "gaudapada"],
+    label: "Advaita",
+  },
+  {
+    aliases: ["buddh", "madhyamaka", "mahayana", "yogacara", "zen", "dogen"],
+    label: "Buddhism",
+  },
+  {
+    aliases: ["dao", "tao", "zhuangzi"],
+    label: "Daoism",
+  },
+  {
+    aliases: ["neoplat", "plotinus", "proclus"],
+    label: "Neoplatonism",
+  },
+  {
+    aliases: ["sufi", "ibn", "islamic"],
+    label: "Sufism",
+  },
+  {
+    aliases: ["consciousness", "cognitive", "computational", "neuroscience", "iit", "phenomenology"],
+    label: "Consciousness",
+  },
+  {
+    aliases: ["physics", "time", "matter", "quantum", "gravity", "cosmology", "particle", "energy"],
+    label: "Time & Matter",
+  },
+  {
+    aliases: ["project", "method", "lumenary"],
+    label: "Method",
+  },
+];
+
+function sourceDomain(source: SourceCard): string {
+  const text = `${source.tradition} ${source.title}`.toLowerCase();
+  return sourceDomains.find((domain) => domain.aliases.some((alias) => text.includes(alias)))?.label || "Other";
+}
+
+const groups = groupBy(sources, sourceDomain);
 const max = Math.max(...groups.map(([, cards]) => cards.length), 1);
 ---
 
@@ -16,7 +56,7 @@ const max = Math.max(...groups.map(([, cards]) => cards.length), 1);
     {groups.map(([tradition, cards], index) => (
       <a
         class={`source-node source-node-${index % 6}`}
-        href={`/sources/#${tradition}`}
+        href="/sources/"
         style={`--node-size:${Math.round(Math.max(54, 48 + (cards.length / max) * 26))}px`}
       >
         <span>{cards.length}</span>
