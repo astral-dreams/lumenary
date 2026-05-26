@@ -91,6 +91,13 @@ def main() -> None:
             ["sessions", "totalUsers", "engagedSessions", "screenPageViews"],
             "28daysAgo",
         ),
+        "events": _run_report(
+            client,
+            property_id,
+            ["eventName"],
+            ["eventCount", "totalUsers"],
+            "28daysAgo",
+        ),
     }
 
     OUT_DIR.mkdir(parents=True, exist_ok=True)
@@ -100,4 +107,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-

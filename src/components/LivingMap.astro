@@ -203,8 +203,8 @@ const publicClaimCounts = countForDomain(
 const latestIdeas = ideas.slice(0, 5).map((idea, index) => ({
   ...idea,
   mapDomains: ideaDomains(idea),
-  x: 1070,
-  y: 505 + index * 58,
+  x: 1060,
+  y: 500 + index * 62,
 }));
 const relationEdges = graph.edges
   .map((edge) => ({
@@ -327,24 +327,24 @@ const labeledEdges = relationEdges.slice(0, 14);
           {idea.mapDomains.map((domain) => (
             <path
               class="map-finding-link"
-              d={`M ${domain.x} ${domain.y} C 970 ${domain.y}, 960 ${idea.y}, ${idea.x - 38} ${idea.y}`}
+            d={`M ${domain.x} ${domain.y} C 960 ${domain.y}, 950 ${idea.y}, ${idea.x - 34} ${idea.y}`}
               style={`--edge-color: ${domain.color}`}
             ></path>
           ))}
           <a href={`/findings/${idea.slug}/`} aria-label={`${idea.title} finding`}>
             <rect
               class={`map-finding-node map-finding-${slugify(idea.promotion.stage)}`}
-              height="48"
-              rx="8"
-              width="218"
+              height="54"
+              rx="7"
+              width="188"
               x={idea.x - 10}
-              y={idea.y - 24}
+              y={idea.y - 27}
             ></rect>
             <text class="map-finding-stage" x={idea.x + 2} y={idea.y - 7}>
               {idea.agent} / {idea.promotion.label}
             </text>
             <text class="map-finding-title" x={idea.x + 2} y={idea.y + 11}>
-              {wrapText(idea.title, 28, 2).map((line, lineIndex) => (
+              {wrapText(idea.title, 24, 2).map((line, lineIndex) => (
                 <tspan x={idea.x + 2} dy={lineIndex === 0 ? 0 : 13}>{line}</tspan>
               ))}
             </text>

@@ -17,7 +17,7 @@ const max = Math.max(...groups.map(([, cards]) => cards.length), 1);
       <a
         class={`source-node source-node-${index % 6}`}
         href={`/sources/#${tradition}`}
-        style={`--node-size:${Math.max(34, 34 + (cards.length / max) * 52)}px`}
+        style={`--node-size:${Math.round(Math.max(54, 48 + (cards.length / max) * 26))}px`}
       >
         <span>{cards.length}</span>
         <small>{formatLabel(tradition)}</small>
