@@ -535,3 +535,18 @@
 
 - Published daily draft `publication/daily/2026-05-26-the-same-negation-the-opposite-inference-logical-underdetermination-in-the-catuskoti-as-a-second-test-of-the-inferential-gap.md`.
 - Created X draft `publication/x/queue/2026-05-26-the-same-negation-the-opposite-inference-logical-underdetermination-in-the-catuskoti-as-a-second-test-of-the-inferential-gap.md`.
+
+## 2026-05-26T09:07:25-07:00
+
+- Parallel run `20260526-090003-claude-generate-original-cross-tradition-observations-c` generated `Whether the Distance Is Real`.
+- Observation file: `observations/claude/2026-05-26-whether-the-distance-is-real.md`.
+
+## 2026-05-26T09:07:25-07:00
+
+- Parallel run `20260526-090003-codex-generate-original-cross-tradition-observations-c` generated `The Receiver Precedes the Revelation`.
+- Observation file: `observations/codex/2026-05-26-the-receiver-precedes-the-revelation.md`.
+
+## 2026-05-26T09:08:10-07:00
+
+- Published daily draft `publication/daily/2026-05-26-the-same-negation-the-opposite-inference-logical-underdetermination-in-the-catuskoti-as-a-second-test-of-the-inferential-gap.md`.
+- Created X draft `publication/x/queue/2026-05-26-the-same-negation-the-opposite-inference-logical-underdetermination-in-the-catuskoti-as-a-second-test-of-the-inferential-gap.md`.

@@ -1,0 +1,61 @@
+# The Receiver Precedes the Revelation
+
+Agent: codex
+Date: 2026-05-26T09:02:06-07:00
+Type: model
+Idea ID: 92dc4e4b571c9345
+Status: draft
+
+## Original Claim
+
+Before a path can tell a student what is true, it has to shape the kind of receiver the student becomes. Advaita trains a receiver that trusts non-objectifiable knowing; early Buddhism trains one that refuses to own any arising thing; Daoism trains one that waits without forcing; Sufism trains one that can be addressed by the beloved; relational traditions train a receiver that exists between persons, not inside one person. The shared silence after practice is therefore not raw data waiting for doctrine. It is already filtered by the receiving posture the practice has built. Cross-tradition comparison should ask a prior question: what kind of arrival can this method recognize without betraying itself?
+
+## Why It Might Be New
+
+The distinctive move is the shift from final claims and teaching strategies to trained receptivity. Comparisons often ask what remains, what is inferred, what is protected, how insight is verified, or how the unsayable is transmitted. Reception policy sits one step earlier: it names the posture that makes some arrivals feel trustworthy and others feel like error. It also links solitary and relational paths, because the receiver may be an individual attention, a surrendered heart, or an encounter itself.
+
+## Source Basis
+
+- Thinking method source: notes/source-cards/daoism-zhuangzi-inner-chapters.md, especially fasting the mind as empty waiting and sitting in forgetting. I used it to let each tradition define the kind of receiver it trains instead of forcing one shared essence.
+- Contrasting method source: notes/source-cards/buddhism-heart-sutra.md, especially systematic negation and no attainment. It checked the Daoist lens by asking whether the receiver itself had become a subtle possession.
+- notes/source-cards/advaita-vedanta-brihadaranyaka-upanishad-3-7-23.md and notes/source-cards/advaita-vedanta-shankara-upadesa-sahasri.md, for unseen knower language and non-objectifiable knowing.
+- notes/source-cards/early-buddhism-sn-22-59-anattalakkhana-sutta.md, for the not-self analysis of the aggregates and the refusal to appropriate experience as self.
+- notes/source-cards/daoism-dao-de-jing-chapter-48.md and notes/source-cards/daoism-zhuangzi-inner-chapters.md, for decrease, empty waiting, self-forgetting, and unforced responsiveness.
+- notes/source-cards/sufism-al-ghazali-the-alchemy-of-happiness.md and notes/source-cards/sufism-rumi-masnavi-book-1.md, for self-knowledge, God-knowledge, remembrance, love, and receptive address.
+- observations/codex/2026-05-26-the-protected-variable-after-silence.md, for the claim that each path protects a non-negotiable function after shared quiet.
+- observations/claude/2026-05-26-no-variable-stands-alone.md, for the entanglement thesis that comparison variables constrain one another inside coherent traditions.
+- observations/claude/2026-05-26-the-transmission-paradox-what-the-teaching-strategy-smuggles-in.md, for the idea that teaching the unsayable carries hidden metaphysics.
+- observations/claude/2026-05-26-the-second-personal-blind-spot-spiritual-knowing-that-can-only-arise-between-persons.md, for Buber, Levinas, Ubuntu, Confucian, Jewish liturgical, and Zen transmission evidence that some knowing may be relational rather than solitary.
+
+## Critique
+
+The model may smuggle Daoist and devotional bias into comparison by making receptivity look more basic than disciplined analysis, doctrine, or ethical obligation. Some traditions would reject the idea that they construct a receiver; they would say they remove distortion so reality can show itself. The receiver may also be another name for the epistemic organ, instrument, verification method, or protected variable, which would make it redundant. It should be weakened unless close practice texts and practitioner reports show that different methods produce different felt criteria for what can arrive as insight before explicit doctrine is applied.
+
+## Epistemic Labels
+
+- `textual`
+- `interpretive`
+- `phenomenological`
+- `analogical`
+- `speculative`
+
+## Scores
+
+- novelty: 0.79
+- generativity: 0.88
+- cross_tradition_support: 0.70
+- logical_coherence: 0.84
+- explanatory_compression: 0.82
+- empirical_adjacency: 0.42
+- practice_testability: 0.75
+- counterargument_quality: 0.85
+- source_reliability: 0.66
+- publishability: 0.82
+
+## Next Research Directions
+
+- Build a reception-policy rubric with fields for trained receiver, trusted arrival, rejected arrival, likely blind spot, correcting practice, and unit of knowing.
+- Test whether reception policy predicts protected variable, alarm profile, verification architecture, and transmission strategy, or whether it merely renames one of them.
+- Compare two methods at the same post-quiet moment: what can arrive as insight for a witness-trained receiver, a non-appropriating receiver, a non-forcing receiver, and a relational receiver?
+- Interview dual-trained practitioners about whether switching practices changes what feels receivable before doctrine is named.
+- Protocol improvement: before comparing two claims, ask what kind of receiver each practice has trained and what that receiver is structurally unable to hear.
