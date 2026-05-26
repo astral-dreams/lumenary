@@ -1,14 +1,54 @@
 # Lumenary Analytics Setup
 
-This project now has the tracking code and internal analytics pages wired. GA4 and Search Console still need the Google-side property values before real traffic data can flow.
+This project has public tracking code and a private local analytics dashboard. GA4 and Search Console still need the Google-side property values before real traffic data can flow.
 
-## Pages
+## Private Dashboard
 
-- Overview: `/analytics/`
-- Acquisition: `/analytics/acquisition/`
-- AEO: `/analytics/aeo/`
+The analytics UI must stay localhost-only. It is not built by Astro and must not live under `src/pages` or `public`.
 
-These pages are marked `noindex`.
+Run it locally:
+
+```bash
+npm run analytics:dashboard
+```
+
+Then open:
+
+- Overview: `http://127.0.0.1:8789/analytics/`
+- Acquisition: `http://127.0.0.1:8789/analytics/acquisition/`
+- AEO: `http://127.0.0.1:8789/analytics/aeo/`
+
+The live site returns 404 for `/analytics/*`.
+
+The public site still loads GA4 when the measurement ID is configured. The private dashboard is only for viewing setup status and local reporting snapshots.
+
+## What I Need From You
+
+GA4:
+
+- The Web stream Measurement ID, formatted like `G-XXXXXXXXXX`.
+- The numeric GA4 Property ID if you want local report pulls.
+- Permission for this Google account to read the GA4 property, or a service-account JSON file you want used locally.
+
+Google Search Console:
+
+- A domain property for `thelumenary.org`, preferably verified by DNS TXT.
+- The exact TXT verification value Google gives you if you want me to add/check it in Cloudflare.
+- Confirmation after the property verifies, then I can submit `https://thelumenary.org/sitemap-index.xml`.
+- Search Console access for the same Google account if you want local query reports.
+
+AEO:
+
+- The answer engines you care about tracking first. Current starter list: ChatGPT, Perplexity, Gemini, Claude, Copilot, You.com, and Phind.
+- The 10-20 questions you most want The Lumenary to be cited for, or approval for me to keep expanding the current query inventory.
+- Approval before any paid/API-based citation checker. The baseline AEO tracking does not need a secret.
+
+Local reporting dependencies:
+
+```bash
+python3 -m pip install -r requirements-analytics.txt
+gcloud auth application-default login
+```
 
 ## GA4
 
