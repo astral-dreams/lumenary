@@ -109,7 +109,6 @@ const traditions = [...new Set(insights.flatMap((insight) => insight.traditionTa
     const cards = [...document.querySelectorAll(".insight-card")];
     const empty = document.querySelector("#empty-filter-message");
     const voteStoreKey = "lumenary:insight-votes:v1";
-    const voteWeight = 0.08;
 
     function votedSlugs() {
       try {
@@ -127,15 +126,21 @@ const traditions = [...new Set(insights.flatMap((insight) => insight.traditionTa
       return !token || ` ${value || ""} `.includes(` ${token} `);
     }
 
-    function weightedScore(card) {
-      const baseScore = Number(card.dataset.score || 0);
+    function voteCount(card) {
       const votes = Number(card.dataset.votes || 0);
-      return baseScore + Math.log1p(votes) * voteWeight;
+      return Number.isFinite(votes) ? votes : 0;
+    }
+
+    function qualityScore(card) {
+      const score = Number(card.dataset.score || 0);
+      return Number.isFinite(score) ? score : 0;
     }
 
     function sortedCards() {
       return [...cards].sort((a, b) => {
-        const rank = weightedScore(b) - weightedScore(a);
+        const voteRank = voteCount(b) - voteCount(a);
+        if (voteRank !== 0) return voteRank;
+        const rank = qualityScore(b) - qualityScore(a);
         if (rank !== 0) return rank;
         return (b.dataset.slug || "").localeCompare(a.dataset.slug || "");
       });
