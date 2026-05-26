@@ -313,7 +313,7 @@ const distillations: Distillation[] = [
   // Claude observations — match on unique title fragments, ordered most-specific first
   {
     atAGlance:
-      "When you let go of everything you call yourself, something still seems to remain. It may not be a hidden soul. It may be a doorway, real only while you pass through it.",
+      "When you let go of everything you call yourself, something still seems to remain. The old mistake is to grab it too quickly and call it a thing. It may be a crossing instead: real while it happens, gone when the movement stops. That makes it precious, but not something you can own.",
     insight: "What remains may be a crossing, not a thing.",
     match: ["processual remainder"],
     plainSummary:
@@ -322,7 +322,7 @@ const distillations: Distillation[] = [
   },
   {
     atAGlance:
-      "We often picture time as a room where life happens. This finding asks for a stranger kind of attention. A moment may not be a box around experience; it may be experience making itself visible.",
+      "We often picture time as a room where life happens. But a moment may not be a box around experience. It may be experience making itself visible, the way a flame is not inside its burning. To understand time this way is to stop looking for the river and start noticing the flow.",
     insight: "Time is not the container; it is the showing.",
     match: ["expressive realism"],
     plainSummary:
@@ -331,7 +331,7 @@ const distillations: Distillation[] = [
   },
   {
     atAGlance:
-      "The mind builds a picture of itself so it can move through the world. That picture is useful, but it is not final. When it loosens, the old question returns: is something deeper still present, or was the picture all there ever was?",
+      "The mind builds a picture of itself so it can move through the world. That picture is useful, but it is not final. When it loosens, the old question returns: is something deeper still present, or was the picture all there ever was? The mystery survives every new model we make of it.",
     insight: "The self outgrows every model.",
     match: ["formal recurrence of the inferential gap"],
     plainSummary:
@@ -340,7 +340,7 @@ const distillations: Distillation[] = [
   },
   {
     atAGlance:
-      "Two paths can use the same act of denial and arrive at opposite doors. The difference is not the denial itself. It is what each path allows the denial to mean after everything obvious has been stripped away.",
+      "Two paths can use the same act of denial and arrive at opposite doors. One says the stripping reveals what cannot die. Another says the stripping proves there was never anything fixed to find. The lesson is simple and unsettling: a method does not always contain its own answer.",
     insight: "The same logic can point both ways.",
     match: ["same negation, the opposite inference"],
     plainSummary:
@@ -349,7 +349,7 @@ const distillations: Distillation[] = [
   },
   {
     atAGlance:
-      "Not every no is an ending. Some forms of letting go clear space for something new to appear. The deepest disagreement may be whether emptiness is a final silence or the place where life keeps beginning.",
+      "Not every no is an ending. Some refusals clear the room so something new can enter. The hardest question is whether emptiness is final silence or fertile ground. If the empty room can give birth, then letting go is not escape from life, but preparation for it.",
     insight: "Some noes make room for birth.",
     match: ["generative negation"],
     plainSummary:
@@ -358,7 +358,7 @@ const distillations: Distillation[] = [
   },
   {
     atAGlance:
-      "A person can reach a silence where the usual self has fallen away. One path may say the silence reveals what was always there. Another may say it proves nothing needs to be added. The silence is powerful, but it does not settle the argument by itself.",
+      "A person can reach a silence where the usual self has fallen away. One path may say the silence reveals what was always there. Another may say it proves nothing needs to be added. The silence is powerful, but it does not settle the argument by itself; the interpretation begins after the quiet.",
     insight: "The same silence can license opposite beliefs.",
     match: ["atman and anatta as competing policies"],
     plainSummary:
@@ -368,7 +368,7 @@ const distillations: Distillation[] = [
   // Codex observations
   {
     atAGlance:
-      "Letting go is not the whole test. The harder question comes after the release. What do you do with the faint remainder that still seems to ask for a name?",
+      "Letting go is not the whole test. The harder question comes after the release. What do you do with the faint remainder that still seems to ask for a name? A path shows its true character by what it protects, rejects, or leaves unnamed at that moment.",
     insight: "After letting go, notice what remains.",
     match: ["residue policy in negative self"],
     plainSummary:
@@ -377,7 +377,7 @@ const distillations: Distillation[] = [
   },
   {
     atAGlance:
-      "When two teachings seem to agree, do not rush to call them the same. Watch what has to bend to make them meet. The bend may teach more than the agreement.",
+      "When two teachings seem to agree, do not rush to call them the same. Watch what has to bend to make them meet. The bend may teach more than the agreement. A real bridge does not erase the river beneath it; it shows you exactly where the crossing is hard.",
     insight: "The bend reveals the bridge.",
     match: ["translation strain as a load test", "convergence as translation strain"],
     plainSummary:
@@ -386,7 +386,7 @@ const distillations: Distillation[] = [
   },
   {
     atAGlance:
-      "When a teaching says not this, not that, it still has to face what is left in the room. The leftover may be real, imagined, useful, or dangerous. The way a path handles that leftover tells you what it truly believes.",
+      "When a teaching says not this, not that, it still has to face what is left in the room. The leftover may be real, imagined, useful, or dangerous. It may be the last shadow of the self, or the first sign of a deeper truth. The way a path handles that leftover tells you what it truly believes.",
     insight: "Every no leaves a remainder to account for.",
     match: ["residual burden of proof"],
     plainSummary:
@@ -395,7 +395,7 @@ const distillations: Distillation[] = [
   },
   {
     atAGlance:
-      "Many paths ask you to stop clinging to the ordinary self. They part ways at the final step. One lets a hidden witness survive; another refuses to let anything stand behind experience. That last allowance reveals the heart of the path.",
+      "Many paths ask you to stop clinging to the ordinary self. They part ways at the final step. One lets a hidden witness survive; another refuses to let anything stand behind experience. That last allowance reveals the heart of the path, because what survives the fire is what the path trusts most.",
     insight: "The deepest teachings differ by what they let survive.",
     match: ["remainder pressure as the hidden variable"],
     plainSummary:
@@ -404,7 +404,7 @@ const distillations: Distillation[] = [
   },
   {
     atAGlance:
-      "The self may not be a solid object hidden inside us. It may be an event that keeps happening, like a doorway that exists only while someone passes through. This makes it real enough to matter, but not stable enough to worship.",
+      "The self may not be a solid object hidden inside us. It may be an event that keeps happening, like a doorway that exists only while someone passes through. This makes it real enough to matter, but not stable enough to worship. You can use the doorway without pretending it is a house.",
     insight: "The self may be a doorway, not a thing.",
     match: ["interface invariant model"],
     plainSummary:
