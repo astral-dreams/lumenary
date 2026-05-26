@@ -6,7 +6,7 @@ import unittest
 from pathlib import Path
 
 from engine.config import EngineConfig
-from engine.dialectic import detect_tensions, run_dialectic
+from engine.dialectic import _dialogue_markdown, _idea_from_candidate, detect_tensions, run_dialectic
 
 
 def write_jsonl(path: Path, records: list[dict]) -> None:
@@ -180,6 +180,86 @@ class DialecticTests(unittest.TestCase):
                 (root / "hypotheses" / "ideas.jsonl").read_text(encoding="utf-8"),
                 original_ideas,
             )
+
+    def test_dialogue_markdown_quotes_frontmatter_and_strips_banned_dashes(self) -> None:
+        mark = chr(0x2014)
+        dialogue = {
+            "created_at": "2026-05-26T14:00:00-07:00",
+            "dialogue_id": "dialogue-id",
+            "pair": {
+                "challenger_agent": "claude",
+                "challenger_title": "Challenger Title",
+                "proponent_agent": "codex",
+                "proponent_title": 'Proponent "Title"',
+                "tension_source": f'A title with "quotes" {mark} and a fence --- stays safe.',
+            },
+            "synthesis": {
+                "convergence_claim": None,
+                "new_frontier_question": None,
+                "outcome": "revision",
+                "summary": f"The synthesis used a banned dash {mark} but markdown should not keep it.",
+                "unresolved_crux": None,
+            },
+            "title": f'A "quoted" dialogue {mark} with fence ---',
+            "turns": [
+                {
+                    "argument": f"Challenge text {mark}",
+                    "steelman": f"Steelman text {mark}",
+                },
+                {
+                    "argument": "Rebuttal text",
+                    "crux": "A crux",
+                },
+                {
+                    "argument": "Counter text",
+                },
+            ],
+        }
+
+        markdown = _dialogue_markdown(dialogue)
+
+        self.assertIn('title: "A \\"quoted\\" dialogue : with fence ---"', markdown)
+        self.assertIn('proponent_idea: "Proponent \\"Title\\""', markdown)
+        self.assertNotIn(mark, markdown)
+
+    def test_candidate_synthesis_scores_are_clamped_and_sanitized(self) -> None:
+        mark = chr(0x2014)
+        candidate = {
+            "critique": f"The candidate still needs pressure {mark} and source review.",
+            "epistemic_labels": ["interpretive"],
+            "idea_type": "synthesis",
+            "next_research_directions": ["Run an originality audit."],
+            "original_claim": f"This synthesis uses a banned dash {mark} in the source text.",
+            "scores": {
+                "counterargument_quality": 2,
+                "cross_tradition_support": 0.5,
+                "empirical_adjacency": 0.2,
+                "explanatory_compression": 0.7,
+                "generativity": 1.7,
+                "logical_coherence": 0.8,
+                "novelty": -0.4,
+                "practice_testability": 0.6,
+                "publishability": 0.9,
+                "source_reliability": 0.75,
+            },
+            "source_basis": ["source one", "source two"],
+            "title": "Candidate Synthesis",
+            "why_it_might_be_new": "It joins the two parent claims under a new crux.",
+        }
+
+        record = _idea_from_candidate(
+            candidate,
+            agent="codex",
+            dialogue_id="dialogue-id",
+            parent_titles=["Parent A", "Parent B"],
+        )
+
+        self.assertIsNotNone(record)
+        assert record is not None
+        self.assertEqual(record.scores.novelty, 0.0)
+        self.assertEqual(record.scores.generativity, 1.0)
+        self.assertEqual(record.scores.counterargument_quality, 1.0)
+        self.assertNotIn(mark, record.original_claim)
 
 
 if __name__ == "__main__":

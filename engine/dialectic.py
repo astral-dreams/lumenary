@@ -24,6 +24,14 @@ DIALECTIC_RULES = "config/dialectic-rules.json"
 DIALOGUE_LEDGER = "reviews/dialogues/dialogues.jsonl"
 DIALOGUE_OUTCOMES = "reviews/dialogues/outcomes.jsonl"
 DIALOGUE_AGENDA = "state/dialogue_agenda.json"
+DASH_REPLACEMENTS = {
+    "\u2014": ":",
+    "\u2013": "-",
+    "&mdash;": ":",
+    "&#8212;": ":",
+    "&#x2014;": ":",
+    "&#x2014": ":",
+}
 
 
 @dataclass(frozen=True)
@@ -94,11 +102,39 @@ def load_dialectic_rules(root: Path) -> dict[str, Any]:
 
 
 def _clean(value: Any, *, limit: int = 1000) -> str:
-    text = re.sub(r"\s+", " ", str(value or "")).strip()
-    text = text.replace("\u2014", ":").replace("\u2013", "-")
+    text = re.sub(r"\s+", " ", _sanitize_text(str(value or ""))).strip()
     if len(text) <= limit:
         return text
     return text[: max(0, limit - 3)].rstrip() + "..."
+
+
+def _sanitize_text(value: str) -> str:
+    text = str(value)
+    for needle, replacement in DASH_REPLACEMENTS.items():
+        text = text.replace(needle, replacement)
+    return text
+
+
+def _sanitize_value(value: Any) -> Any:
+    if isinstance(value, str):
+        return _sanitize_text(value)
+    if isinstance(value, list):
+        return [_sanitize_value(item) for item in value]
+    if isinstance(value, dict):
+        return {str(key): _sanitize_value(item) for key, item in value.items()}
+    return value
+
+
+def _yaml_string(value: Any, *, limit: int = 500) -> str:
+    return json.dumps(_clean(value, limit=limit), ensure_ascii=True)
+
+
+def _clamp_score(value: Any) -> float:
+    try:
+        number = float(value)
+    except (TypeError, ValueError):
+        return 0.0
+    return max(0.0, min(1.0, number))
 
 
 def _tokens(value: str) -> set[str]:
@@ -534,6 +570,7 @@ def detect_tensions(
     *,
     max_pairs: int = 1,
     force_pair: tuple[str, str] | None = None,
+    ignore_cooldown: bool = False,
 ) -> list[dict[str, Any]]:
     rules = load_dialectic_rules(root)
     audits = _latest_audits(root)
@@ -559,7 +596,7 @@ def detect_tensions(
                 continue
             if pair_id in completed and not force_pair:
                 continue
-            if not force_pair and (a_id in cooldown or b_id in cooldown):
+            if not force_pair and not ignore_cooldown and (a_id in cooldown or b_id in cooldown):
                 continue
             if a_id in dialogue_blocked or b_id in dialogue_blocked:
                 continue
@@ -771,7 +808,7 @@ def _normalize_turn(
     role: str,
     agent: str,
 ) -> dict[str, Any]:
-    normalized = dict(turn)
+    normalized = _sanitize_value(dict(turn))
     normalized["turn"] = turn_number
     normalized["turn_type"] = turn_type
     normalized["role"] = role
@@ -797,7 +834,42 @@ def _normalize_turn(
     ]:
         normalized.setdefault(key, None)
     normalized["argument"] = _clean(normalized.get("argument"), limit=4000)
+    return _sanitize_value(normalized)
+
+
+def _normalize_synthesis(synthesis: dict[str, Any], *, synthesizer_agent: str) -> dict[str, Any]:
+    normalized = _sanitize_value(dict(synthesis))
+    normalized["synthesizer_agent"] = synthesizer_agent
+    normalized.setdefault("candidate_synthesis", None)
+    normalized.setdefault("new_concept_edges", [])
+    normalized.setdefault("recommended_adjustments", {"proponent": {}, "challenger": {}})
+    adjustments = normalized.get("recommended_adjustments")
+    if not isinstance(adjustments, dict):
+        normalized["recommended_adjustments"] = {"proponent": {}, "challenger": {}}
+    else:
+        for role in ("proponent", "challenger"):
+            role_adjustments = adjustments.get(role)
+            if not isinstance(role_adjustments, dict):
+                adjustments[role] = {}
+                continue
+            cleaned_adjustments: dict[str, float] = {}
+            for key, value in role_adjustments.items():
+                try:
+                    cleaned_adjustments[str(key)] = max(-1.0, min(1.0, float(value)))
+                except (TypeError, ValueError):
+                    continue
+            adjustments[role] = cleaned_adjustments
     return normalized
+
+
+def _next_synthesizer(root: Path) -> str:
+    for record in reversed(_read_jsonl(root / DIALOGUE_LEDGER)):
+        last = str((record.get("synthesis") or {}).get("synthesizer_agent") or "")
+        if last == "codex":
+            return "claude"
+        if last == "claude":
+            return "codex"
+    return "codex"
 
 
 def _notify(enabled: bool, title: str, body: str) -> None:
@@ -835,6 +907,7 @@ def _idea_from_candidate(
     dialogue_id: str,
     parent_titles: list[str],
 ) -> IdeaRecord | None:
+    candidate = _sanitize_value(candidate)
     required = [
         "title",
         "idea_type",
@@ -880,7 +953,7 @@ def _idea_from_candidate(
         why_it_might_be_new=str(candidate["why_it_might_be_new"]),
         critique=str(candidate["critique"]),
         epistemic_labels=[str(item) for item in candidate.get("epistemic_labels") or []],
-        scores=IdeaScores(**{key: float(scores[key]) for key in score_keys}),
+        scores=IdeaScores(**{key: _clamp_score(scores[key]) for key in score_keys}),
         next_research_directions=[str(item) for item in candidate.get("next_research_directions") or []],
         status="draft",
     )
@@ -894,6 +967,7 @@ def stage_dialogue(
     notify: bool = False,
 ) -> dict[str, Any]:
     root = config.root
+    pair = _sanitize_value(dict(pair))
     ideas = {_idea_id(record): record for record in _read_jsonl(root / "hypotheses" / "ideas.jsonl")}
     audits = _latest_audits(root)
     proponent = ideas[pair["idea_a"]]
@@ -964,8 +1038,7 @@ def stage_dialogue(
         agent=str(pair["challenger_agent"]),
     )
 
-    prior_count = len(_read_jsonl(root / DIALOGUE_LEDGER))
-    synth_agent = "codex" if prior_count % 2 == 0 else "claude"
+    synth_agent = _next_synthesizer(root)
     synth_config = _agent_config(config, synth_agent)
     turns = [challenge, rebuttal, counter]
     synthesis = generate_structured_json(
@@ -976,10 +1049,7 @@ def stage_dialogue(
         output_stem="04-synthesis",
         search=True,
     )
-    synthesis["synthesizer_agent"] = synth_agent
-    synthesis.setdefault("candidate_synthesis", None)
-    synthesis.setdefault("new_concept_edges", [])
-    synthesis.setdefault("recommended_adjustments", {"proponent": {}, "challenger": {}})
+    synthesis = _normalize_synthesis(synthesis, synthesizer_agent=synth_agent)
 
     created_at = now_local_iso()
     dialogue_id = hashlib.sha256(f"{pair['pair_id']}:{created_at}".encode("utf-8")).hexdigest()[:16]
@@ -1014,14 +1084,14 @@ def _dialogue_markdown(dialogue: dict[str, Any]) -> str:
     rebuttal = turns[1] if len(turns) > 1 else {}
     counter = turns[2] if len(turns) > 2 else {}
     return f"""---
-title: "{_clean(dialogue.get('title'), limit=180)}"
-date: {str(dialogue.get('created_at'))[:10]}
-dialogue_id: "{dialogue.get('dialogue_id')}"
-outcome: "{synthesis.get('outcome')}"
-proponent: "{pair.get('proponent_agent')}"
-challenger: "{pair.get('challenger_agent')}"
-proponent_idea: "{_clean(pair.get('proponent_title'), limit=180)}"
-challenger_idea: "{_clean(pair.get('challenger_title'), limit=180)}"
+title: {_yaml_string(dialogue.get('title'), limit=180)}
+date: {_yaml_string(str(dialogue.get('created_at'))[:10], limit=32)}
+dialogue_id: {_yaml_string(dialogue.get('dialogue_id'), limit=80)}
+outcome: {_yaml_string(synthesis.get('outcome'), limit=80)}
+proponent: {_yaml_string(pair.get('proponent_agent'), limit=80)}
+challenger: {_yaml_string(pair.get('challenger_agent'), limit=80)}
+proponent_idea: {_yaml_string(pair.get('proponent_title'), limit=180)}
+challenger_idea: {_yaml_string(pair.get('challenger_title'), limit=180)}
 ---
 
 # {_clean(dialogue.get('title'), limit=180)}
@@ -1133,6 +1203,9 @@ def write_artifacts(
     librarian = Librarian(root)
     (root / "reviews" / "dialogues").mkdir(parents=True, exist_ok=True)
 
+    sanitized_dialogue = _sanitize_value(dialogue)
+    dialogue.clear()
+    dialogue.update(sanitized_dialogue)
     synthesis = dialogue["synthesis"]
     candidate = synthesis.get("candidate_synthesis")
     if candidate:
@@ -1220,9 +1293,15 @@ def run_dialectic(
     detect_only: bool = False,
     audit_syntheses: bool = True,
     notify: bool = False,
+    ignore_cooldown: bool = False,
 ) -> list[dict[str, Any]]:
     execution_id = execution_id or datetime.now().astimezone().strftime("%Y%m%d-%H%M%S")
-    pairs = detect_tensions(config.root, max_pairs=max_pairs, force_pair=force_pair)
+    pairs = detect_tensions(
+        config.root,
+        max_pairs=max_pairs,
+        force_pair=force_pair,
+        ignore_cooldown=ignore_cooldown,
+    )
     if detect_only:
         return []
     records: list[dict[str, Any]] = []
@@ -1238,14 +1317,69 @@ def run_dialectic(
     return records
 
 
+def backfill_dialogues(
+    config: EngineConfig,
+    *,
+    max_dialogues: int,
+    execution_id: str | None = None,
+    audit_syntheses: bool = False,
+    notify: bool = False,
+) -> list[dict[str, Any]]:
+    execution_id = execution_id or "backfill-" + datetime.now().astimezone().strftime("%Y%m%d-%H%M%S")
+    records: list[dict[str, Any]] = []
+    librarian = Librarian(config.root)
+    while len(records) < max_dialogues:
+        pairs = detect_tensions(
+            config.root,
+            max_pairs=1,
+            ignore_cooldown=True,
+        )
+        if not pairs:
+            break
+        pair = pairs[0]
+        try:
+            dialogue = stage_dialogue(config, pair, execution_id=execution_id, notify=notify)
+            write_artifacts(
+                config,
+                dialogue,
+                audit_syntheses=audit_syntheses,
+                notify=notify,
+            )
+            records.append(dialogue)
+        except Exception as exc:
+            librarian.append_jsonl(
+                "runs/dialogue-backfill-errors.jsonl",
+                {
+                    "at": now_local_iso(),
+                    "error": repr(exc),
+                    "execution_id": execution_id,
+                    "pair_id": pair.get("pair_id"),
+                },
+            )
+            raise
+    librarian.append_jsonl(
+        "runs/dialogue-backfill-events.jsonl",
+        {
+            "at": now_local_iso(),
+            "count": len(records),
+            "execution_id": execution_id,
+            "max_dialogues": max_dialogues,
+        },
+    )
+    return records
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description="Run or inspect Lumenary cross-agent dialogues.")
     parser.add_argument("--max-pairs", type=int, default=1)
+    parser.add_argument("--max-dialogues", type=int, default=None)
+    parser.add_argument("--backfill", action="store_true")
     parser.add_argument("--detect-only", action="store_true")
     parser.add_argument("--force-pair", nargs=2, metavar=("IDEA_ID_A", "IDEA_ID_B"))
     parser.add_argument("--dry-run", action="store_true")
     parser.add_argument("--skip-originality-audit", action="store_true")
     parser.add_argument("--notify", action="store_true")
+    parser.add_argument("--ignore-cooldown", action="store_true")
     parser.add_argument("--codex-model", default=None)
     parser.add_argument("--claude-model", default="opus")
     parser.add_argument("--provider", default=None, help="Compatibility option. Dialogues use both configured agents.")
@@ -1262,19 +1396,36 @@ def main() -> None:
         codex_search=True,
         claude_model=args.claude_model,
     )
-    records = run_dialectic(
-        config,
-        max_pairs=args.max_pairs,
-        force_pair=tuple(args.force_pair) if args.force_pair else None,
-        detect_only=args.detect_only,
-        audit_syntheses=not args.skip_originality_audit,
-        notify=args.notify,
-    )
+    if args.backfill:
+        records = backfill_dialogues(
+            config,
+            max_dialogues=args.max_dialogues or args.max_pairs,
+            audit_syntheses=not args.skip_originality_audit,
+            notify=args.notify,
+        )
+    else:
+        records = run_dialectic(
+            config,
+            max_pairs=args.max_pairs,
+            force_pair=tuple(args.force_pair) if args.force_pair else None,
+            detect_only=args.detect_only,
+            audit_syntheses=not args.skip_originality_audit,
+            notify=args.notify,
+            ignore_cooldown=args.ignore_cooldown,
+        )
     if args.detect_only:
         agenda = _read_json(root / DIALOGUE_AGENDA, {"selected_pairs": []})
         print(json.dumps({"event": "dialogue-detect", "selected": len(agenda.get("selected_pairs") or [])}, sort_keys=True))
         return
-    print(json.dumps({"event": "dialogue-complete", "count": len(records)}, sort_keys=True))
+    print(
+        json.dumps(
+            {
+                "event": "dialogue-backfill-complete" if args.backfill else "dialogue-complete",
+                "count": len(records),
+            },
+            sort_keys=True,
+        )
+    )
 
 
 if __name__ == "__main__":
