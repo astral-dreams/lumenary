@@ -1,7 +1,7 @@
 ---
 import ScoreBars from "../../components/ScoreBars.astro";
-import Breadcrumbs from "../../components/Breadcrumbs.astro";
 import BaseLayout from "../../layouts/BaseLayout.astro";
+import SourceBasisList from "../../components/SourceBasisList.astro";
 import { formatLabel, getDialoguesForIdea, getIdeas } from "../../lib/content";
 import { articleSchema, cleanDescription, faqSchema, type BreadcrumbItem } from "../../lib/seo";
 
@@ -14,8 +14,12 @@ export function getStaticPaths() {
 
 const { idea } = Astro.props;
 const allIdeas = getIdeas();
-const description = cleanDescription(idea.plainSummary || idea.atAGlance || idea.excerpt);
+const summaryDescription = idea.plainSummary || idea.atAGlance || idea.excerpt;
+const description = cleanDescription(
+  summaryDescription.length >= 70 ? summaryDescription : `${idea.title}: ${idea.original_claim}`,
+);
 const audit = idea.originalityAudit;
+const humanCondition = idea.humanConditionAudit;
 const dialoguesForFinding = getDialoguesForIdea(idea.idea_id);
 const nearNeighbors = audit?.near_neighbors?.slice(0, 3) || [];
 const firstPrediction = audit?.falsifiable_predictions?.[0] || null;
@@ -71,12 +75,11 @@ const findingJsonLd = [
 ---
 
 <BaseLayout title={idea.title} description={description} ogType="article" jsonLd={findingJsonLd} breadcrumbs={breadcrumbs}>
-  <Breadcrumbs items={breadcrumbs} />
   <article class="article-page">
     <header class="article-header">
       <p class="eyebrow">{idea.agent} / {formatLabel(idea.idea_type)} / {idea.promotion.label}</p>
       <h1>{idea.title}</h1>
-      <p class="lead">{idea.insight}</p>
+      <p class="lead">{idea.plainSummary}</p>
       <div class="label-row">
         {idea.epistemic_labels.map((label) => <span>{formatLabel(label)}</span>)}
       </div>
@@ -89,6 +92,39 @@ const findingJsonLd = [
         {idea.atAGlancePoints.map((point) => <li>{point}</li>)}
       </ul>
     </section>
+
+    {humanCondition && (
+      <section class="article-section human-condition-panel">
+        <p class="eyebrow">Human need</p>
+        <h2>What this could help with</h2>
+        <p class="human-condition-problem">{humanCondition.primary_problem}</p>
+        <div class="human-condition-grid">
+          <article>
+            <h3>Who this may be for</h3>
+            <p>{humanCondition.target_cohort}</p>
+          </article>
+          <article>
+            <h3>Where it may not fit</h3>
+            <p>{humanCondition.non_fit}</p>
+          </article>
+          <article>
+            <h3>Why it matters</h3>
+            <p>{humanCondition.why_it_matters}</p>
+          </article>
+          <article>
+            <h3>What to test</h3>
+            <p>{humanCondition.practical_implication}</p>
+          </article>
+        </div>
+        {humanCondition.sourceLinks.length > 0 && (
+          <div class="source-basis-links human-condition-sources" aria-label="Human-condition source cards">
+            {humanCondition.sourceLinks.map((source) => (
+              <a href={`/sources/#${source.source_id}`}>{source.title}</a>
+            ))}
+          </div>
+        )}
+      </section>
+    )}
 
     {dialoguesForFinding.length > 0 && (
       <section class="article-section answer-panel">
@@ -197,24 +233,20 @@ const findingJsonLd = [
       </div>
     </section>
 
-    {idea.articleHtml && (
-      <section class="article-section prose public-article" set:html={idea.articleHtml} />
-    )}
-
-    <section class="article-section">
-      <h2>Original Claim</h2>
-      <div class="prose compact-prose" set:html={idea.originalClaimHtml} />
-    </section>
-
-    <section class="article-section">
-      <h2>Why It Might Be New</h2>
-      <div class="prose compact-prose" set:html={idea.whyItMightBeNewHtml} />
-    </section>
-
-    <section class="article-section">
-      <h2>Critique</h2>
-      <div class="prose compact-prose" set:html={idea.critiqueHtml} />
-    </section>
+    <details class="article-section research-note-disclosure">
+      <summary>Research notes</summary>
+      <div class="research-note-body">
+        {idea.articleHtml && (
+          <div class="prose public-article" set:html={idea.articleHtml} />
+        )}
+        <h3>Original research claim</h3>
+        <div class="prose compact-prose" set:html={idea.originalClaimHtml} />
+        <h3>Why it may be new</h3>
+        <div class="prose compact-prose" set:html={idea.whyItMightBeNewHtml} />
+        <h3>Critique</h3>
+        <div class="prose compact-prose" set:html={idea.critiqueHtml} />
+      </div>
+    </details>
 
     <section class="article-section">
       <h2>Promotion Gate</h2>
@@ -234,9 +266,7 @@ const findingJsonLd = [
 
     <section class="article-section">
       <h2>Source Basis</h2>
-      <ul class="clean-list">
-        {idea.source_basis.map((source) => <li>{source}</li>)}
-      </ul>
+      <SourceBasisList items={idea.source_basis} />
     </section>
 
     {relatedIdeas.length > 0 && (

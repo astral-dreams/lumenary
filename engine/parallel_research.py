@@ -11,10 +11,16 @@ from datetime import datetime
 from pathlib import Path
 
 from .config import EngineConfig
-from .distill import distill_new_ideas
+from .doctrine import write_candidates_from_idea
+from .distill import (
+    backfill_distillations,
+    distill_new_ideas,
+    validate_distillation_store,
+)
 from .dialectic import run_dialectic
 from .frontier import prepare_frontier_brief, refresh_frontiers
 from .growth import record_growth
+from .human_condition import audit_human_condition_fit
 from .librarian import Librarian
 from .originality_audit import audit_new_ideas, write_incomplete_audits
 from .prompts import build_claude_collaborative_prompt, build_originality_prompt
@@ -108,7 +114,14 @@ def _build_prompt(
     *,
     frontier_brief: str = "",
 ) -> str:
-    current_state = librarian.read_optional("state/current_focus.md")
+    current_state = "\n\n".join(
+        part
+        for part in [
+            librarian.read_optional("state/current_focus.md"),
+            librarian.read_optional("docs/modern-human-condition.md"),
+        ]
+        if part.strip()
+    )
     thinking_protocol = librarian.read_optional("state/thinking_protocol.md")
     codex_findings = librarian.read_optional("findings/codex-findings.md")
     claude_findings = librarian.read_optional("findings/claude-code-findings.md")
@@ -163,7 +176,19 @@ def _generate(config: EngineConfig, focus: str, frontier_brief: str = "") -> Gen
 def _save_generated(root: Path, generated: GeneratedIdea) -> None:
     librarian = Librarian(root)
     idea_path = librarian.save_idea(generated.idea)
+    doctrine_counts = write_candidates_from_idea(
+        root,
+        generated.idea,
+        run_id=generated.manifest.run_id,
+    )
     generated.manifest.generated_observations.append(str(idea_path.relative_to(root)))
+    if any(doctrine_counts.values()):
+        generated.manifest.notes.append(
+            "Updated doctrine candidates: "
+            f"{doctrine_counts['teachings']} teaching, "
+            f"{doctrine_counts['practices']} practice, "
+            f"{doctrine_counts['tests']} test."
+        )
     librarian.save_run(
         generated.manifest,
         prompt=generated.prompt,
@@ -355,6 +380,30 @@ def _publish_and_deploy(root: Path, *, skip_deploy: bool) -> None:
     except FileNotFoundError as exc:
         print(json.dumps({"event": "daily-publication-skipped", "error": str(exc)}))
 
+    distill_config = EngineConfig.load(
+        root=root,
+        agent="codex",
+        provider="offline",
+        dry_run=True,
+    )
+    missing_count = backfill_distillations(distill_config)
+    quality_issues = validate_distillation_store(distill_config)
+    if quality_issues:
+        raise RuntimeError(
+            "Refusing to build public site because reader-facing copy failed: "
+            + "; ".join(quality_issues[:5])
+        )
+    print(
+        json.dumps(
+            {
+                "event": "public-copy-gate",
+                "missing_distillations": missing_count,
+            },
+            sort_keys=True,
+        ),
+        flush=True,
+    )
+
     _run_command(root, ["npm", "run", "build"], label="build")
     _scan_public_copy(root)
     _commit_and_push(root)
@@ -446,6 +495,7 @@ def main() -> None:
         for item in sorted(generated, key=lambda result: result.config.agent):
             _save_generated(root, item)
 
+        distillation_ok = True
         if generated:
             execution_id = "parallel-" + "-".join(
                 sorted(item.manifest.run_id[:15] for item in generated)
@@ -461,6 +511,11 @@ def main() -> None:
                     distill_config,
                     [item.idea for item in generated],
                 )
+                quality_issues = validate_distillation_store(distill_config)
+                if quality_issues:
+                    raise RuntimeError(
+                        "Distillation quality gate failed: " + "; ".join(quality_issues[:5])
+                    )
                 librarian.append_jsonl(
                     "runs/distillation-events.jsonl",
                     {
@@ -480,6 +535,7 @@ def main() -> None:
                     flush=True,
                 )
             except Exception as exc:
+                distillation_ok = False
                 librarian.append_jsonl(
                     "runs/distillation-errors.jsonl",
                     {
@@ -505,6 +561,28 @@ def main() -> None:
                 ideas=[item.idea for item in generated],
                 run_ids=[item.manifest.run_id for item in generated],
                 created_at=now_local_iso(),
+            )
+            human_condition_count = audit_human_condition_fit(
+                root,
+                [item.idea for item in generated],
+                execution_id=execution_id,
+                run_ids=[item.manifest.run_id for item in generated],
+            )
+            librarian.append_jsonl(
+                "runs/human-condition-audit-events.jsonl",
+                {
+                    "at": now_local_iso(),
+                    "count": human_condition_count,
+                    "execution_id": execution_id,
+                    "titles": [item.idea.title for item in generated],
+                },
+            )
+            print(
+                json.dumps(
+                    {"event": "human-condition-audit", "count": human_condition_count},
+                    sort_keys=True,
+                ),
+                flush=True,
             )
 
             if not args.skip_originality_audit:
@@ -581,6 +659,8 @@ def main() -> None:
             print(json.dumps({"event": "parallel-errors", "errors": errors}))
 
         if generated:
+            if not distillation_ok:
+                raise RuntimeError("Refusing to deploy because insight distillation failed quality gates.")
             _publish_and_deploy(root, skip_deploy=args.skip_deploy)
         else:
             raise RuntimeError("No agents produced an idea.")

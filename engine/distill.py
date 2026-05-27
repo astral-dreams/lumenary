@@ -33,10 +33,14 @@ Read the finding below. Distill it into reader-facing language.
 - Do not use em dashes.
 - Do not start with "This finding".
 - Lead with the human question or the living insight.
+- Do not repeat the title, the insight headline, or the first At a Glance sentence in the bullets.
+- Do not use machinery language in public copy: no "layered authorization," "distributed affordances," "institutional role," "operationalizes," "formal transfer," "gradient," "rubric," "locus," "claimant," or "grammar."
+- Also avoid internal model words in public copy: no "architecture," "custody," "receiving surface," "residue," "grain," "threshold," "entry," "compound," "upstream," "downstream," "phenomenology," "authorization," "typology," or "taxonomy."
 - The insight headline must land like a proverb.
+- The publicTitle is the finding page title: maximum 10 words, plain, memorable, and not academic.
 - The plainSummary is for the Insights card: one sentence, maximum 28 words.
 - The atAGlance section is for the finding page: one paragraph, 3 to 4 short sentences.
-- The keyPoints are for the finding page: 3 short bullets, direct and useful.
+- The keyPoints are for the finding page: 3 short bullets, direct and useful. Use them for meaning, human risk, and what to test.
 - Use one idea per sentence.
 
 ## Required JSON
@@ -44,6 +48,7 @@ Read the finding below. Distill it into reader-facing language.
 Return exactly one JSON object with:
 
 - insight: proverb-like headline, maximum 10 words
+- publicTitle: finding page title, maximum 10 words
 - plainSummary: one short sentence for the Insights card
 - atAGlance: one paragraph of 3 to 4 short sentences
 - keyPoints: array of 3 short bullet points, each one sentence and under 18 words
@@ -71,6 +76,8 @@ ACADEMIC_REPLACEMENTS = {
     "anatta": "no fixed self",
     "anatman": "no fixed self",
     "atman": "self",
+    "affordance": "support",
+    "affordances": "supports",
     "barzakh": "threshold",
     "brahman": "the ground of being",
     "buddhism": "another path",
@@ -79,21 +86,46 @@ ACADEMIC_REPLACEMENTS = {
     "convergence": "agreement",
     "daoism": "a nature-centered path",
     "daoist": "a nature-centered path",
+    "distributed affordances": "ordinary supports",
     "epistemic": "about knowing",
     "fana": "letting go",
+    "formal transfer": "clear handoff",
+    "gradient": "slow change",
+    "handoff density": "repeated turning points",
     "inferential": "concluding",
+    "institutional role": "the path's role",
+    "layered authorization": "many forms of permission and support",
+    "locus": "place",
     "metaphysical": "about what is real",
     "negation": "letting go",
     "neoplatonic": "ancient philosophical",
     "ontological": "about what is real",
+    "operationalizes": "turns into a test",
     "phenomenological": "felt",
     "prasanga": "testing a claim by its consequences",
+    "claimant": "owner",
+    "compound": "combined",
+    "custody": "care",
+    "downstream": "later",
+    "entry": "beginning",
+    "rubric": "test",
+    "grain": "habit",
+    "layered": "many-sided",
+    "mechanism": "way",
+    "phenomenology": "experience",
+    "policy": "rule",
+    "receiving surface": "human opening",
+    "residue": "what remains",
     "self-negation": "letting go of the self",
     "sufi": "a love-centered path",
     "sufism": "a love-centered path",
     "sunyata": "emptiness",
     "tajalli": "disclosure",
     "translation strain": "the bend in the bridge",
+    "threshold": "beginning",
+    "typology": "set of types",
+    "taxonomy": "set of types",
+    "upstream": "earlier",
     "wu wei": "unforced action",
     "xinzhai": "empty listening",
     "zhuangzi": "an old teacher",
@@ -108,6 +140,54 @@ INSIGHT_STOPWORDS = {
     "the",
     "to",
 }
+
+PUBLIC_BANNED_TERMS = (
+    "layered authorization",
+    "distributed affordances",
+    "institutional role",
+    "operationalizes",
+    "formal transfer",
+    "handoff density",
+    "first-break",
+    "affordance",
+    "affordances",
+    "authorization",
+    "architecture",
+    "claimant",
+    "compound",
+    "contemplative",
+    "custody",
+    "downstream",
+    "entry",
+    "epistemic",
+    "empirically",
+    "framework",
+    "gradient",
+    "grammar",
+    "grain",
+    "inferential",
+    "interface",
+    "institutional",
+    "layered",
+    "ledger",
+    "locus",
+    "mechanism",
+    "metaphysical",
+    "normative",
+    "ontological",
+    "operationalize",
+    "phenomenology",
+    "phenomenological",
+    "policy",
+    "receiving surface",
+    "residue",
+    "rubric",
+    "taxonomy",
+    "threshold",
+    "topology",
+    "typology",
+    "upstream",
+)
 
 
 def _clean_text(value: str) -> str:
@@ -155,6 +235,25 @@ def _clip_words(value: str, limit: int) -> str:
 
 def _word_count(value: str) -> int:
     return len(re.findall(r"\b[\w']+\b", value))
+
+
+def _fingerprint(value: str) -> str:
+    plain = _plain_text(value).lower()
+    plain = re.sub(r"[^a-z0-9\s]", " ", plain)
+    plain = re.sub(
+        r"\b(the|a|an|and|or|but|to|of|in|on|for|with|that|this|it|is|are|was|were|be|being|been)\b",
+        " ",
+        plain,
+    )
+    return re.sub(r"\s+", " ", plain).strip()
+
+
+def _point_repeats_text(point: str, text: str) -> bool:
+    point_key = _fingerprint(point)
+    text_key = _fingerprint(text)
+    if not point_key or not text_key:
+        return False
+    return point_key in text_key
 
 
 def _title_phrase(title: str) -> str:
@@ -205,8 +304,7 @@ def _normalize_key_point(value: str) -> str:
 
 def _fallback_key_points(idea: IdeaRecord, at_a_glance: str = "") -> list[str]:
     candidates = (
-        _sentences(at_a_glance)
-        + _sentences(idea.original_claim)
+        _sentences(idea.original_claim)
         + _sentences(idea.why_it_might_be_new)
     )
     points: list[str] = []
@@ -214,7 +312,7 @@ def _fallback_key_points(idea: IdeaRecord, at_a_glance: str = "") -> list[str]:
     for sentence in [candidate for candidate in candidates if _word_count(candidate) <= 18]:
         point = _normalize_key_point(sentence)
         key = point.lower()
-        if len(point) < 18 or key in seen:
+        if len(point) < 18 or key in seen or _point_repeats_text(point, at_a_glance):
             continue
         points.append(point)
         seen.add(key)
@@ -225,7 +323,7 @@ def _fallback_key_points(idea: IdeaRecord, at_a_glance: str = "") -> list[str]:
             break
         point = _normalize_key_point(sentence)
         key = point.lower()
-        if len(point) < 18 or key in seen:
+        if len(point) < 18 or key in seen or _point_repeats_text(point, at_a_glance):
             continue
         points.append(point)
         seen.add(key)
@@ -260,6 +358,329 @@ def _fallback_tags(idea: IdeaRecord) -> list[str]:
         if any(term in haystack for term in terms):
             tags.append(tag)
     return tags[:5] or ["general"]
+
+
+def _safe_public_copy(idea: IdeaRecord) -> dict[str, Any]:
+    raw_haystack = (
+        f"{idea.title} {idea.original_claim} {idea.why_it_might_be_new} {' '.join(idea.source_basis)}"
+    ).lower()
+    haystack = _fingerprint(
+        f"{idea.title} {idea.original_claim} {idea.why_it_might_be_new} {' '.join(idea.source_basis)}"
+    )
+
+    def build(
+        *,
+        insight: str,
+        plain_summary: str,
+        at_a_glance: str,
+        key_points: list[str],
+        tags: list[str],
+    ) -> dict[str, Any]:
+        return {
+            "agent": idea.agent,
+            "atAGlance": at_a_glance,
+            "created_at": now_local_iso(),
+            "ideaId": idea.identity(),
+            "insight": insight,
+            "publicTitle": insight,
+            "keyPoints": key_points,
+            "match": [_title_phrase(idea.title)],
+            "plainSummary": plain_summary,
+            "tags": tags,
+            "title": idea.title,
+        }
+
+    if "custody and receiving surface" in raw_haystack or "receiving surface" in raw_haystack:
+        return build(
+            insight="Change needs somewhere to land",
+            plain_summary="A practice works only when something in the person can receive and carry the change.",
+            at_a_glance=(
+                "A path can ask a person to change, but something in the person still has to receive the change. "
+                "That may be trust, attention, love, patience, or the willingness to be corrected. "
+                "The useful question is simple: what must remain open for this practice to work? "
+                "A good path protects that opening instead of crushing it."
+            ),
+            key_points=[
+                "A practice needs a human opening.",
+                "Support matters only if change can land.",
+                "The test is whether the person becomes more available.",
+            ],
+            tags=["practice", "support", "change"],
+        )
+    if "threshold grammar" in raw_haystack or "translation strain" in raw_haystack:
+        return build(
+            insight="Every path begins differently",
+            plain_summary="A path's first step often reveals what kind of help, warning, and discipline it will need.",
+            at_a_glance=(
+                "Different paths do not begin in the same way. "
+                "Some begin with discipline, some with trust, some with a teacher, some with crisis, and some with a gift the seeker did not plan. "
+                "Comparing them is useful only when we preserve those differences. "
+                "The test is whether a comparison makes each path clearer, not flatter."
+            ),
+            key_points=[
+                "A beginning carries the shape of the path.",
+                "Comparison should protect difference, not erase it.",
+                "The test is whether warnings become easier to predict.",
+            ],
+            tags=["beginning", "comparison", "practice"],
+        )
+    if "practice architecture" in raw_haystack or "remainder phenomenology" in raw_haystack:
+        return build(
+            insight="The method shapes what remains",
+            plain_summary="A method can shape what a person later believes is left after deep practice.",
+            at_a_glance=(
+                "The way a person practices can shape what they later think remains. "
+                "A method that trains effort, surrender, attention, or trust does not leave the seeker untouched. "
+                "It can make some conclusions feel obvious and others hard to see. "
+                "The test is whether reports from real practitioners show this pattern."
+            ),
+            key_points=[
+                "Practice can shape later belief.",
+                "Reports matter more than elegant theory.",
+                "The test needs real practitioners, not only texts.",
+            ],
+            tags=["practice", "attention", "test"],
+        )
+    if "entry-residue architecture" in raw_haystack or "entry residue architecture" in raw_haystack:
+        return build(
+            insight="Beginnings shape what remains",
+            plain_summary="The way a path starts may predict what it later protects, warns against, or leaves behind.",
+            at_a_glance=(
+                "How a path begins can shape what it allows to remain. "
+                "If the first step is trust, discipline, surrender, or community, the later lesson may carry that beginning inside it. "
+                "This does not prove the path is right or wrong. "
+                "It gives us a better way to test whether beginnings predict later warnings and safeguards."
+            ),
+            key_points=[
+                "The first step can echo later.",
+                "A path's safeguards reveal what it fears.",
+                "The test is whether early patterns predict later warnings.",
+            ],
+            tags=["beginning", "practice", "test"],
+        )
+    if "compound entry grammar" in raw_haystack:
+        return build(
+            insight="Not every path begins the same",
+            plain_summary="Different people and paths need different kinds of help before real change can begin.",
+            at_a_glance=(
+                "Not every path asks for the same first step. "
+                "One may ask for effort, another for trust, another for obedience, another for patient participation. "
+                "The mistake is treating all beginnings as if they solve the same human problem. "
+                "A serious practice must name what blocks the person from beginning and what kind of help fits that block."
+            ),
+            key_points=[
+                "Different wounds need different first steps.",
+                "A beginning should match the real obstacle.",
+                "The test is whether the help fits the person.",
+            ],
+            tags=["beginning", "support", "practice"],
+        )
+    if "prescriptive custody" in raw_haystack:
+        return build(
+            insight="Something holds us before we choose",
+            plain_summary="People often begin changing because something holds them before they fully understand the path.",
+            at_a_glance=(
+                "Before a person understands a path, something may already be holding them. "
+                "A family, teacher, habit, crisis, ritual, or community can keep attention steady long enough for change to start. "
+                "Later, the path may explain what was happening. "
+                "The question is whether that explanation guides the person well or turns help into control."
+            ),
+            key_points=[
+                "Support often comes before understanding.",
+                "A path should guide help without controlling it.",
+                "The test is whether the person gains freedom.",
+            ],
+            tags=["beginning", "community", "support"],
+        )
+    if "residue-to-grain" in raw_haystack or "residue to grain" in raw_haystack or "layered direction" in raw_haystack:
+        return build(
+            insight="A practice teaches the eye",
+            plain_summary="A practice does more than produce an experience; it trains what a person notices next.",
+            at_a_glance=(
+                "A practice teaches a person what to notice, what to ignore, and what to trust. "
+                "Over time, those lessons can become habit. "
+                "That means a method is never just a tool; it also trains a way of seeing. "
+                "The test is whether people carry that trained way of seeing into other parts of life."
+            ),
+            key_points=[
+                "Practice trains attention over time.",
+                "A tool can become a habit of seeing.",
+                "The test is what follows the person afterward.",
+            ],
+            tags=["practice", "attention", "habit"],
+        )
+
+    if any(term in haystack for term in ("begin", "beginning", "entry", "start", "first step", "teacher")):
+        insight = "No one begins alone"
+        plain_summary = "Change often starts when support makes the first honest step possible."
+        at_a_glance = (
+            "A person rarely begins serious change by willpower alone. "
+            "Support, trust, pain, and habit can carry the first step. "
+            "The test is whether that help makes the person more honest and responsible. "
+            "A path should make beginning safer without taking freedom away."
+        )
+        key_points = [
+            "The first step often needs support.",
+            "Help should deepen responsibility, not replace it.",
+            "The test is whether the person becomes freer.",
+        ]
+        tags = ["beginning", "support", "practice"]
+    elif any(term in haystack for term in ("surrender", "release", "letting go", "identity", "self")):
+        insight = "Letting go still needs care"
+        plain_summary = "Release matters only if ordinary life becomes more honest, careful, and whole."
+        at_a_glance = (
+            "Letting go is not the same as disappearing. "
+            "Memory, care, duty, and relationship still have to remain. "
+            "The risk is turning freedom into drift or pride. "
+            "A path should loosen identity without breaking responsibility."
+        )
+        key_points = [
+            "Release should not erase responsibility.",
+            "The return to ordinary life is the test.",
+            "Freedom becomes suspect when care weakens.",
+        ]
+        tags = ["release", "self", "responsibility"]
+    elif any(term in haystack for term in ("effort", "work", "result", "achievement", "credit")):
+        insight = "Do the work without becoming the work"
+        plain_summary = "Careful effort can stay real without turning every result into self-worth."
+        at_a_glance = (
+            "Work can be sincere without becoming an identity. "
+            "A person can take responsibility without making every result a verdict. "
+            "The danger is using effort to prove worth. "
+            "The test is whether care survives when self-judgment loosens."
+        )
+        key_points = [
+            "This helps people trapped in achievement pressure.",
+            "Responsibility remains, but self-judgment loosens.",
+            "The test is whether care stays strong.",
+        ]
+        tags = ["effort", "work", "identity"]
+    elif any(term in haystack for term in ("love", "relation", "relationship", "community", "person")):
+        insight = "Some truths need another person"
+        plain_summary = "Some forms of knowing appear only through love, trust, response, and repair."
+        at_a_glance = (
+            "Not every truth appears from a distance. "
+            "Love, trust, and response can reveal what observation misses. "
+            "The danger is calling detachment the only honest method. "
+            "The test is whether knowing makes a person more available to life."
+        )
+        key_points = [
+            "Distance can miss relational truth.",
+            "Love must be tested by response and repair.",
+            "Knowing should make a person more available.",
+        ]
+        tags = ["love", "relation", "knowing"]
+    elif any(term in haystack for term in ("time", "death", "grief", "change", "loss")):
+        insight = "Change asks how to live"
+        plain_summary = "Ideas about time matter only if they help us meet loss, change, and duty honestly."
+        at_a_glance = (
+            "Time is not only an idea to solve. "
+            "It is where grief, duty, aging, and change arrive. "
+            "A finding about time matters when it changes how we live inside change. "
+            "The test is whether it makes life more truthful, not more abstract."
+        )
+        key_points = [
+            "Time must return to ordinary life.",
+            "Grief should not be rushed by theory.",
+            "The test is more truthful living.",
+        ]
+        tags = ["time", "change", "grief"]
+    elif any(term in haystack for term in ("attention", "awareness", "mind", "seeing", "observer")):
+        insight = "How we look changes what appears"
+        plain_summary = "A trained way of looking changes what a person can notice, trust, and test."
+        at_a_glance = (
+            "The way we look shapes what we find. "
+            "Attention, trust, love, and doubt each reveal different parts of life. "
+            "The danger is mistaking one trained view for the whole truth. "
+            "A path should know what its method helps us see and what it hides."
+        )
+        key_points = [
+            "Attention is never completely neutral.",
+            "Every method reveals and hides.",
+            "The test is what the method corrects.",
+        ]
+        tags = ["attention", "method", "truth"]
+    else:
+        insight = "A finding must change a life"
+        plain_summary = "An idea earns attention when it changes how people see, act, care, or test truth."
+        at_a_glance = (
+            "A finding should do more than sound interesting. "
+            "It should change how a person sees, acts, cares, or tests truth. "
+            "The danger is mistaking a clever frame for real guidance. "
+            "The test is whether the idea survives contact with life."
+        )
+        key_points = [
+            "A clever frame is not enough.",
+            "The idea must meet ordinary life.",
+            "The test is whether it changes conduct.",
+        ]
+        tags = ["method", "practice"]
+
+    return {
+        "agent": idea.agent,
+        "atAGlance": at_a_glance,
+        "created_at": now_local_iso(),
+        "ideaId": idea.identity(),
+        "insight": insight,
+        "publicTitle": insight,
+        "keyPoints": key_points,
+        "match": [_title_phrase(idea.title)],
+        "plainSummary": plain_summary,
+        "tags": tags,
+        "title": idea.title,
+    }
+
+
+def distillation_quality_issues(record: dict[str, Any]) -> list[str]:
+    raw_public_text = " ".join(
+        [
+            str(record.get("insight") or ""),
+            str(record.get("publicTitle") or record.get("insight") or ""),
+            str(record.get("plainSummary") or ""),
+            str(record.get("atAGlance") or ""),
+            *[str(item) for item in record.get("keyPoints", [])],
+        ]
+    )
+    insight = _plain_text(str(record.get("insight") or ""))
+    public_title = _plain_text(str(record.get("publicTitle") or insight))
+    plain_summary = _plain_text(str(record.get("plainSummary") or ""))
+    at_a_glance = _plain_text(str(record.get("atAGlance") or ""))
+    key_points = [
+        _normalize_key_point(str(item))
+        for item in record.get("keyPoints", [])
+        if _normalize_key_point(str(item))
+    ]
+    public_text = raw_public_text.lower()
+    issues: list[str] = []
+    if "\u2014" in public_text:
+        issues.append("contains em dash")
+    if re.search(r"\bthis finding\b", public_text, flags=re.IGNORECASE):
+        issues.append("uses 'This finding'")
+    for term in PUBLIC_BANNED_TERMS:
+        if re.search(rf"\b{re.escape(term)}\b", public_text, flags=re.IGNORECASE):
+            issues.append(f"uses machinery term: {term}")
+    if _word_count(insight) > 10:
+        issues.append("insight exceeds 10 words")
+    if _word_count(public_title) > 10:
+        issues.append("publicTitle exceeds 10 words")
+    if _word_count(plain_summary) > 28:
+        issues.append("plainSummary exceeds 28 words")
+    at_sentences = _sentences(at_a_glance)
+    if len(at_sentences) < 3 or len(at_sentences) > 4:
+        issues.append("atAGlance must be 3 to 4 sentences")
+    if len(key_points) != 3:
+        issues.append("keyPoints must contain exactly 3 bullets")
+    seen_points: set[str] = set()
+    for point in key_points:
+        key = _fingerprint(point)
+        if key in seen_points:
+            issues.append("repeats a key point")
+        seen_points.add(key)
+        if _point_repeats_text(point, at_a_glance):
+            issues.append("key point repeats At a Glance")
+        if insight and _point_repeats_text(point, insight):
+            issues.append("key point repeats insight")
+    return sorted(set(issues))
 
 
 def _extract_json_object(text: str) -> dict[str, Any]:
@@ -384,11 +805,14 @@ def _run_claude_distiller(config: EngineConfig, prompt: str) -> dict[str, Any] |
 def _normalize_result(raw: dict[str, Any] | None, idea: IdeaRecord) -> dict[str, Any]:
     raw = raw or {}
     insight = _plain_text(str(raw.get("insight") or _fallback_insight(idea)))
+    public_title = _plain_text(str(raw.get("publicTitle") or insight))
     plain_summary = _plain_text(str(raw.get("plainSummary") or _fallback_plain_summary(idea)))
     at_a_glance = _plain_text(str(raw.get("atAGlance") or _fallback_at_a_glance(idea)))
 
     if _word_count(insight) > 10:
         insight = _fallback_insight(idea)
+    if _word_count(public_title) > 10:
+        public_title = insight
     if _word_count(plain_summary) > 28:
         plain_summary = _clip_words(plain_summary, 28)
 
@@ -403,6 +827,7 @@ def _normalize_result(raw: dict[str, Any] | None, idea: IdeaRecord) -> dict[str,
         for item in raw.get("keyPoints", [])
         if _normalize_key_point(str(item))
     ]
+    key_points = [point for point in key_points if not _point_repeats_text(point, at_a_glance)]
     if len(key_points) < 3:
         key_points = _fallback_key_points(idea, at_a_glance)
 
@@ -420,18 +845,22 @@ def _normalize_result(raw: dict[str, Any] | None, idea: IdeaRecord) -> dict[str,
         if _plain_text(str(item))
     ] or _fallback_tags(idea)
 
-    return {
+    record = {
         "agent": idea.agent,
         "atAGlance": at_a_glance,
         "created_at": now_local_iso(),
         "ideaId": idea.identity(),
         "insight": insight,
-        "keyPoints": key_points[:4],
+        "publicTitle": public_title,
+        "keyPoints": key_points[:3],
         "match": match[:3],
         "plainSummary": plain_summary,
         "tags": tags[:5],
         "title": idea.title,
     }
+    if distillation_quality_issues(record):
+        return _safe_public_copy(idea)
+    return record
 
 
 def _distill_idea(config: EngineConfig, idea: IdeaRecord) -> dict[str, Any]:
@@ -497,11 +926,8 @@ def distill_new_ideas(config: EngineConfig, ideas: list[IdeaRecord]) -> int:
             continue
         if idea.identity() in existing_ids:
             continue
-        if _has_static_distillation(config.root, idea):
-            continue
-
         record = _distill_idea(config, idea)
-        librarian.upsert_jsonl_by_key(DISTILLATION_STORE, record, key="ideaId")
+        librarian.append_jsonl(DISTILLATION_STORE, record)
         existing_ids.add(idea.identity())
         count += 1
 
@@ -552,7 +978,7 @@ def backfill_distillations(config: EngineConfig, *, limit: int = 0) -> int:
         if not idea_id or idea_id in existing_ids:
             continue
         idea = _idea_from_record(record)
-        if idea.status == "seed-fixture" or _has_static_distillation(config.root, idea):
+        if idea.status == "seed-fixture":
             continue
         ideas.append(idea)
         if limit and len(ideas) >= limit:
@@ -590,6 +1016,8 @@ def backfill_key_points(config: EngineConfig, *, refresh: bool = False) -> int:
                     _normalize_key_point(sentence)
                     for sentence in _sentences(str(record.get("atAGlance") or record.get("plainSummary") or ""))
                 ][:3]
+            at_a_glance = str(record.get("atAGlance") or "")
+            key_points = [point for point in key_points if not _point_repeats_text(point, at_a_glance)]
             while len(key_points) < 3:
                 key_points.append("The strongest version must survive honest objections.")
             record["keyPoints"] = key_points[:3]
@@ -601,6 +1029,78 @@ def backfill_key_points(config: EngineConfig, *, refresh: bool = False) -> int:
         encoding="utf-8",
     )
     return changed
+
+
+def validate_distillation_store(config: EngineConfig) -> list[str]:
+    store = config.root / DISTILLATION_STORE
+    if not store.exists():
+        return [f"{DISTILLATION_STORE} is missing"]
+    issues: list[str] = []
+    seen_ids: set[str] = set()
+    for index, line in enumerate(store.read_text(encoding="utf-8").splitlines(), start=1):
+        if not line.strip():
+            continue
+        try:
+            record = json.loads(line)
+        except json.JSONDecodeError as exc:
+            issues.append(f"line {index}: invalid JSON: {exc}")
+            continue
+        idea_id = str(record.get("ideaId") or record.get("idea_id") or "")
+        if idea_id:
+            seen_ids.add(idea_id)
+        for issue in distillation_quality_issues(record):
+            label = record.get("ideaId") or record.get("title") or f"line {index}"
+            issues.append(f"{label}: {issue}")
+    for record in _read_idea_records(config.root):
+        idea_id = str(record.get("idea_id") or "")
+        if idea_id and idea_id not in seen_ids:
+            issues.append(f"{idea_id}: missing reader-facing distillation")
+    return issues
+
+
+def repair_distillation_store(config: EngineConfig) -> int:
+    store = config.root / DISTILLATION_STORE
+    if not store.exists():
+        return 0
+
+    ideas_by_id = {
+        str(record.get("idea_id") or ""): _idea_from_record(record)
+        for record in _read_idea_records(config.root)
+        if str(record.get("idea_id") or "")
+    }
+    repaired = 0
+    records: list[dict[str, Any]] = []
+    raw_title_repair_terms = (
+        "custody and receiving surface",
+        "threshold grammar",
+        "practice architecture",
+        "entry-residue architecture",
+        "compound entry grammar",
+        "prescriptive custody",
+        "layered direction",
+        "residue-to-grain",
+    )
+    for line in store.read_text(encoding="utf-8").splitlines():
+        if not line.strip():
+            continue
+        record = json.loads(line)
+        idea_id = str(record.get("ideaId") or record.get("idea_id") or "")
+        idea = ideas_by_id.get(idea_id)
+        raw_title = str(record.get("title") or "").lower()
+        needs_reader_repair = any(term in raw_title for term in raw_title_repair_terms)
+        if idea and (distillation_quality_issues(record) or needs_reader_repair):
+            candidate = _safe_public_copy(idea)
+            public_keys = ("atAGlance", "insight", "publicTitle", "keyPoints", "plainSummary", "tags")
+            if any(record.get(key) != candidate.get(key) for key in public_keys):
+                record = candidate
+                repaired += 1
+        records.append(record)
+
+    store.write_text(
+        "\n".join(json.dumps(record, ensure_ascii=False) for record in records) + "\n",
+        encoding="utf-8",
+    )
+    return repaired
 
 
 def parse_args() -> argparse.Namespace:
@@ -615,6 +1115,16 @@ def parse_args() -> argparse.Namespace:
         "--refresh-key-points",
         action="store_true",
         help="Regenerate finding-page key points for existing distillations.",
+    )
+    parser.add_argument(
+        "--validate-store",
+        action="store_true",
+        help="Validate publication/distillations.jsonl against public writing gates.",
+    )
+    parser.add_argument(
+        "--repair-store",
+        action="store_true",
+        help="Replace failing distillations with safe reader-facing fallback copy.",
     )
     parser.add_argument("--limit", type=int, default=0, help="Maximum backfill records. Use 0 for all.")
     parser.add_argument("--provider", default="codex-cli", help="codex-cli, claude-code, or offline.")
@@ -641,6 +1151,16 @@ def main() -> None:
     if args.backfill_key_points:
         count = backfill_key_points(config, refresh=args.refresh_key_points)
         print(f"key_points={count}")
+    if args.repair_store:
+        count = repair_distillation_store(config)
+        print(f"repaired={count}")
+    if args.validate_store:
+        issues = validate_distillation_store(config)
+        if issues:
+            for issue in issues:
+                print(f"distillation_quality_issue={issue}")
+            raise SystemExit(1)
+        print("distillation_quality=true")
 
 
 if __name__ == "__main__":

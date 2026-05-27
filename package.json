@@ -8,7 +8,7 @@
     "build": "astro build && node scripts/generate_redirects.mjs",
     "check:aeo": "node scripts/aeo_template_check.mjs",
     "preview": "astro preview",
-    "deploy": "npm run build && wrangler pages deploy dist --project-name thelumenary --branch main",
+    "deploy": "scripts/deploy_site.sh",
     "analytics:dashboard": "python3 scripts/analytics/local_dashboard.py",
     "analytics:aeo": "python3 scripts/analytics/aeo_readiness.py",
     "analytics:ga4": "python3 scripts/analytics/ga4_report.py",

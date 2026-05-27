@@ -106,6 +106,33 @@ export type OriginalityAuditView = OriginalityAudit & {
   summary: string;
 };
 
+export type HumanConditionAudit = {
+  agent: string;
+  audit_id: string;
+  caution: string;
+  confidence: number;
+  created_at: string;
+  execution_id: string;
+  fit_status: "direct" | "indirect" | "unclear" | string;
+  idea_id: string;
+  keywords_matched: string[];
+  next_question: string;
+  non_fit: string;
+  practical_implication: string;
+  primary_problem: string;
+  run_ids: string[];
+  source_card_ids: string[];
+  target_cohort: string;
+  title: string;
+  why_it_matters: string;
+};
+
+export type HumanConditionAuditView = HumanConditionAudit & {
+  confidenceLabel: string;
+  sourceLinks: SourceCard[];
+  statusLabel: string;
+};
+
 export type IdeaRecord = {
   agent: "codex" | "claude" | string;
   created_at: string;
@@ -131,12 +158,14 @@ export type IdeaView = IdeaRecord & {
   date: string;
   excerpt: string;
   html: string;
+  humanConditionAudit: HumanConditionAuditView | null;
   insight: string;
   insightScore: number;
   legacySlugs: string[];
   originalityAudit: OriginalityAuditView | null;
   plainSummary: string;
   promotion: PromotionDecision;
+  researchTitle: string;
   relativePath: string;
   originalClaimHtml: string;
   slug: string;
@@ -196,6 +225,109 @@ export type GrowthPeriod = {
   period: "day" | "week" | "month";
   records: GrowthRecord[];
   startDate: string;
+};
+
+export type TeachingRecord = {
+  agent: string;
+  created_at: string;
+  dialogue_ids: string[];
+  doctrine_claim: string;
+  falsifying_pressure: string;
+  last_run_id?: string;
+  pressure_survived: string;
+  practice_ids: string[];
+  promoted_at?: string;
+  source_basis: string[];
+  source_idea_ids: string[];
+  status: string;
+  tags: string[];
+  target_cohort?: string;
+  target_human_problem?: string;
+  teaching_body: string;
+  teaching_id: string;
+  teaching_line: string;
+  test_ids: string[];
+  title: string;
+  updated_at: string;
+  version: number;
+};
+
+export type TeachingView = TeachingRecord & {
+  date: string;
+  evidenceIdeas: IdeaView[];
+  excerpt: string;
+  html: string;
+  legacySlugs: string[];
+  linkedPractices: PracticeView[];
+  linkedTests: TestView[];
+  slug: string;
+  statusLabel: string;
+};
+
+export type PracticeRecord = {
+  agent: string;
+  caution: string;
+  created_at: string;
+  duration: string;
+  frequency: string;
+  last_run_id?: string;
+  minimum_attempt: string;
+  notice: string[];
+  practice_id: string;
+  practice_line: string;
+  published_at?: string;
+  purpose: string;
+  risk_level: string;
+  source_basis: string[];
+  source_idea_ids: string[];
+  status: string;
+  steps: string[];
+  tags: string[];
+  target_cohort?: string;
+  target_human_problem?: string;
+  non_fit?: string;
+  teaching_id: string;
+  test_ids: string[];
+  title: string;
+  updated_at: string;
+  weakens_if: string;
+};
+
+export type PracticeView = PracticeRecord & {
+  date: string;
+  evidenceIdeas: IdeaView[];
+  excerpt: string;
+  legacySlugs: string[];
+  linkedTeaching: TeachingRecord | null;
+  linkedTeachingSlug: string;
+  linkedTests: TestView[];
+  slug: string;
+  statusLabel: string;
+};
+
+export type TestRecord = {
+  agent: string;
+  created_at: string;
+  impact: string;
+  last_run_id?: string;
+  next_action: string;
+  prediction: string;
+  result: string;
+  source_basis: string[];
+  source_idea_ids: string[];
+  status: string;
+  target_id: string;
+  target_type: string;
+  test_id: string;
+  test_type: string;
+  title: string;
+  updated_at: string;
+};
+
+export type TestView = TestRecord & {
+  impactLabel: string;
+  statusLabel: string;
+  targetLabel: string;
 };
 
 export type SourceCard = {
@@ -335,6 +467,30 @@ export const SOURCE_FOUNDATION_DOMAINS: SourceFoundationDomain[] = [
     id: "oral-and-shamanic-traditions",
     label: "Oral and Shamanic Traditions",
     traditions: ["oral-and-shamanic-traditions", "oral and shamanic traditions"],
+  },
+  {
+    aliases: [
+      "modern-human-condition",
+      "loneliness",
+      "disconnection",
+      "addiction",
+      "compulsion",
+      "withdrawal",
+      "anxiety",
+      "depression",
+      "burnout",
+      "stress",
+      "perfectionism",
+      "meaning in life",
+      "social media",
+      "suicide",
+      "overdose",
+      "workplace",
+      "happiness report",
+    ],
+    id: "modern-human-condition",
+    label: "Modern Human Condition",
+    traditions: ["modern-human-condition", "modern human condition"],
   },
   {
     aliases: ["consciousness-science", "consciousness", "iit", "phenomenology"],
@@ -664,6 +820,39 @@ function originalityAuditMap(): Map<string, OriginalityAuditView> {
   return byIdea;
 }
 
+function humanConditionStatusLabel(status: string): string {
+  const labels: Record<string, string> = {
+    direct: "Direct human-condition fit",
+    indirect: "Indirect human-condition fit",
+    unclear: "Human-condition fit unclear",
+  };
+  return labels[status] || formatLabel(status);
+}
+
+function humanConditionAuditMap(): Map<string, HumanConditionAuditView> {
+  const audits = readJsonl<HumanConditionAudit>("reviews/human-condition/audits.jsonl");
+  const sourcesById = new Map(getSources().map((source) => [source.source_id, source]));
+  const byIdea = new Map<string, HumanConditionAuditView>();
+  for (const audit of audits) {
+    if (!audit.idea_id) {
+      continue;
+    }
+    const existing = byIdea.get(audit.idea_id);
+    if (existing && existing.created_at > audit.created_at) {
+      continue;
+    }
+    byIdea.set(audit.idea_id, {
+      ...audit,
+      confidenceLabel: Number(audit.confidence || 0).toFixed(2),
+      sourceLinks: (audit.source_card_ids || [])
+        .map((sourceId) => sourcesById.get(sourceId))
+        .filter((source): source is SourceCard => Boolean(source)),
+      statusLabel: humanConditionStatusLabel(audit.fit_status),
+    });
+  }
+  return byIdea;
+}
+
 export function getPromotionRules(): PromotionRules {
   return JSON.parse(readText("config/promotion-rules.json")) as PromotionRules;
 }
@@ -928,9 +1117,24 @@ function normalizePoint(value: string): string {
   return /[.!?]$/.test(point) ? point : `${point}.`;
 }
 
-function fallbackAtAGlancePoints(record: IdeaRecord, atAGlance: string, plainSummary: string): string[] {
+function textFingerprint(value: string): string {
+  return readableText(value)
+    .toLowerCase()
+    .replace(/[^a-z0-9\s]/g, " ")
+    .replace(/\b(the|a|an|and|or|but|to|of|in|on|for|with|that|this|it|is|are|was|were|be|being|been)\b/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function pointRepeatsText(point: string, text: string): boolean {
+  const pointKey = textFingerprint(point);
+  const textKey = textFingerprint(text);
+  if (!pointKey || !textKey) return false;
+  return textKey.includes(pointKey);
+}
+
+function fallbackAtAGlancePoints(record: IdeaRecord, plainSummary: string): string[] {
   const candidates = [
-    ...sentenceList(atAGlance),
     ...sentenceList(plainSummary),
     ...sentenceList(record.original_claim),
     ...sentenceList(record.why_it_might_be_new),
@@ -967,12 +1171,123 @@ function fallbackAtAGlancePoints(record: IdeaRecord, atAGlance: string, plainSum
   return points.slice(0, 3);
 }
 
+const publicCopyBannedTerms = [
+  "architecture",
+  "authorization",
+  "claimant",
+  "compound",
+  "custody",
+  "downstream",
+  "entry",
+  "framework",
+  "gradient",
+  "grammar",
+  "grain",
+  "inferential",
+  "interface",
+  "layered",
+  "ledger",
+  "locus",
+  "mechanism",
+  "ontological",
+  "phenomenological",
+  "phenomenology",
+  "policy",
+  "receiving surface",
+  "residue",
+  "rubric",
+  "taxonomy",
+  "threshold",
+  "topology",
+  "typology",
+  "upstream",
+];
+
+function escapeRegExp(value: string): string {
+  return value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
+
+function hasPublicCopyIssue(value: string): boolean {
+  const text = readableText(value).toLowerCase();
+  if (!text) return false;
+  if (text.includes("—") || /\bthis finding\b/i.test(text)) return true;
+  return publicCopyBannedTerms.some((term) => new RegExp(`\\b${escapeRegExp(term)}\\b`, "i").test(text));
+}
+
+function safePublicDistillation(record: IdeaRecord): Distillation {
+  const haystack = `${record.title} ${record.original_claim} ${record.why_it_might_be_new}`.toLowerCase();
+  if (/\b(begin|beginning|first-break|entry|threshold|custody)\b/.test(haystack)) {
+    return {
+      atAGlance:
+        "A person rarely begins serious change by willpower alone. Support, trust, pain, habit, or community can carry the first step. The question is whether that help makes the person more honest and free. A good path makes beginning possible without taking responsibility away.",
+      insight: "No one begins alone",
+      keyPoints: [
+        "The first step often needs support.",
+        "Help should deepen responsibility, not replace it.",
+        "The test is whether the person becomes freer.",
+      ],
+      match: [record.title.toLowerCase()],
+      plainSummary: "Change often starts when support makes the first honest step possible.",
+      publicTitle: "No one begins alone",
+      tags: ["beginning", "support", "practice"],
+    };
+  }
+  if (/\b(grain|attention|awareness|direction|practice|method)\b/.test(haystack)) {
+    return {
+      atAGlance:
+        "A practice teaches a person what to notice, ignore, and trust. Over time, that lesson can become habit. The danger is mistaking one trained way of seeing for the whole truth. The test is what the practice helps a person see and what it hides.",
+      insight: "A practice teaches the eye",
+      keyPoints: [
+        "Practice trains attention over time.",
+        "A tool can become a habit of seeing.",
+        "The test is what follows the person afterward.",
+      ],
+      match: [record.title.toLowerCase()],
+      plainSummary: "A practice does more than produce an experience; it trains what a person notices next.",
+      publicTitle: "A practice teaches the eye",
+      tags: ["practice", "attention", "habit"],
+    };
+  }
+  if (/\b(residue|remainder|self|negation|release|letting go)\b/.test(haystack)) {
+    return {
+      atAGlance:
+        "Letting go is not the same as disappearing. Memory, care, duty, and relationship still have to remain. The risk is turning freedom into drift or pride. A path should loosen identity without breaking responsibility.",
+      insight: "Letting go still needs care",
+      keyPoints: [
+        "Release should not erase responsibility.",
+        "The return to ordinary life is the test.",
+        "Freedom becomes suspect when care weakens.",
+      ],
+      match: [record.title.toLowerCase()],
+      plainSummary: "Release matters only if ordinary life becomes more honest, careful, and whole.",
+      publicTitle: "Letting go still needs care",
+      tags: ["release", "self", "responsibility"],
+    };
+  }
+  return {
+    atAGlance:
+      "A finding should do more than sound interesting. It should change how a person sees, acts, cares, or tests truth. The danger is mistaking a clever frame for real guidance. The test is whether the idea survives contact with life.",
+    insight: "A finding must change a life",
+    keyPoints: [
+      "A clever frame is not enough.",
+      "The idea must meet ordinary life.",
+      "The test is whether it changes conduct.",
+    ],
+    match: [record.title.toLowerCase()],
+    plainSummary: "An idea earns attention when it changes how people see, act, care, or test truth.",
+    publicTitle: "A finding must change a life",
+    tags: ["method", "practice"],
+  };
+}
+
 type Distillation = {
+  ideaId?: string;
   atAGlance: string;
   insight: string;
   keyPoints?: string[];
   match: string[];
   plainSummary: string;
+  publicTitle?: string;
   tags: string[];
 };
 
@@ -1289,11 +1604,13 @@ function loadSidecarDistillations(): Distillation[] {
     .map((line) => {
       const record = JSON.parse(line);
       return {
+        ideaId: String(record.ideaId || record.idea_id || ""),
         atAGlance: String(record.atAGlance || record.plainSummary || ""),
         insight: String(record.insight || ""),
         keyPoints: (record.keyPoints || []).map(String),
         match: (record.match || []).map(String),
         plainSummary: String(record.plainSummary || ""),
+        publicTitle: String(record.publicTitle || record.insight || ""),
         tags: (record.tags || []).map(String),
       };
     });
@@ -1302,8 +1619,37 @@ function loadSidecarDistillations(): Distillation[] {
 const allDistillations = [...distillations, ...loadSidecarDistillations()];
 
 function distillationFor(record: IdeaRecord): Distillation | null {
+  const exact = allDistillations.find((item) => item.ideaId && item.ideaId === record.idea_id);
+  if (exact) {
+    return exact;
+  }
   const haystack = `${record.title} ${record.original_claim}`.toLowerCase();
   return allDistillations.find((item) => item.match.some((match) => haystack.includes(match))) || null;
+}
+
+function publicDistillationFor(record: IdeaRecord): Distillation {
+  const distillation = distillationFor(record);
+  if (!distillation) {
+    return safePublicDistillation(record);
+  }
+  const publicFields = [
+    distillation.publicTitle || "",
+    distillation.insight || "",
+    distillation.plainSummary || "",
+    distillation.atAGlance || "",
+    ...(distillation.keyPoints || []),
+  ].join(" ");
+  const title = distillation.publicTitle || distillation.insight || "";
+  if (
+    hasPublicCopyIssue(publicFields) ||
+    !title ||
+    wordCount(title) > 10 ||
+    !distillation.atAGlance ||
+    (distillation.keyPoints || []).length < 3
+  ) {
+    return safePublicDistillation(record);
+  }
+  return distillation;
 }
 
 const traditionMatchers = [
@@ -1407,6 +1753,7 @@ ${record.critique}
 export function getIdeas(): IdeaView[] {
   const promotionRules = getPromotionRules();
   const audits = originalityAuditMap();
+  const humanConditionAudits = humanConditionAuditMap();
   const usedSlugs = new Map<string, number>();
   return readJsonl<IdeaRecord>("hypotheses/ideas.jsonl")
     .map((record) => {
@@ -1415,21 +1762,26 @@ export function getIdeas(): IdeaView[] {
       const publicArticle = markdownSection(markdown, "Public Article");
       const suffix = record.idea_id ? `-${record.idea_id.slice(0, 6)}` : "";
       const legacySlug = `${date}-${slugify(record.title)}${suffix}`;
-      const slug = uniqueSlug(shortContentSlug(record.title, 5, 54), usedSlugs);
+      const oldShortSlug = shortContentSlug(record.title, 5, 54);
       const promotion = decideIdeaPromotion(record, promotionRules);
-      const distillation = distillationFor(record);
+      const distillation = publicDistillationFor(record);
+      const researchTitle = record.title;
+      const publicTitle = cleanPlainSummary(distillation?.publicTitle || distillation?.insight || record.title);
+      const slug = uniqueSlug(shortContentSlug(publicTitle, 5, 54), usedSlugs);
       const traditionTags = inferTraditionTags(record, distillation?.tags || []);
       const plainSummary = distillation?.plainSummary || firstSentence(record.original_claim, 210);
       const atAGlance = distillation?.atAGlance || plainSummary;
       const suppliedAtAGlancePoints = (distillation?.keyPoints || [])
         .map(normalizePoint)
         .filter(Boolean)
+        .filter((point) => !pointRepeatsText(point, atAGlance))
         .slice(0, 4);
       const atAGlancePoints =
-        suppliedAtAGlancePoints.length > 0
+        suppliedAtAGlancePoints.length >= 3
           ? suppliedAtAGlancePoints
-          : fallbackAtAGlancePoints(record, atAGlance, plainSummary);
+          : fallbackAtAGlancePoints(record, plainSummary).filter((point) => !pointRepeatsText(point, atAGlance));
       const originalityAudit = audits.get(record.idea_id) || null;
+      const humanConditionAudit = humanConditionAudits.get(record.idea_id) || null;
       const createdAtMs = Date.parse(record.created_at);
       const observationUpdated = record.path && existsSync(join(root, record.path))
         ? statSync(join(root, record.path)).mtimeMs
@@ -1451,15 +1803,18 @@ export function getIdeas(): IdeaView[] {
         date,
         excerpt: excerpt(record.original_claim),
         html: renderMarkdown(markdown),
+        humanConditionAudit,
         insight: distillation?.insight || firstSentence(record.why_it_might_be_new || record.original_claim, 96),
         insightScore: insightScore(record, promotion),
-        legacySlugs: legacySlug === slug ? [] : [legacySlug],
+        legacySlugs: [legacySlug, oldShortSlug].filter((item, index, list) => item && item !== slug && list.indexOf(item) === index),
         originalityAudit,
         originalClaimHtml: renderMarkdown(record.original_claim),
         plainSummary: cleanPlainSummary(plainSummary),
         promotion,
+        researchTitle,
         relativePath: record.path || "",
         slug,
+        title: publicTitle,
         traditionTags,
         updatedAt,
         whyItMightBeNewHtml: renderMarkdown(record.why_it_might_be_new),
@@ -1543,7 +1898,7 @@ export function getJournalPosts(): JournalPost[] {
         updated,
       };
     })
-    .sort((a, b) => b.slug.localeCompare(a.slug));
+    .sort((a, b) => b.date.localeCompare(a.date) || b.updated - a.updated);
 }
 
 function dateFromIsoDate(date: string): Date {
@@ -1659,6 +2014,135 @@ export function getGrowthPeriods(period: "day" | "week" | "month"): GrowthPeriod
       };
     })
     .sort((a, b) => b.startDate.localeCompare(a.startDate));
+}
+
+function rawTeachings(): TeachingRecord[] {
+  return readJsonl<TeachingRecord>("doctrine/teachings.jsonl");
+}
+
+function rawPractices(): PracticeRecord[] {
+  return readJsonl<PracticeRecord>("practices/protocols.jsonl");
+}
+
+function teachingSlugMap(records: TeachingRecord[]): Map<string, string> {
+  const usedSlugs = new Map<string, number>();
+  return new Map(
+    records.map((record) => [
+      record.teaching_id,
+      uniqueSlug(shortContentSlug(record.title || record.teaching_line, 5, 54), usedSlugs),
+    ]),
+  );
+}
+
+export function getTests(): TestView[] {
+  return readJsonl<TestRecord>("tests/tests.jsonl")
+    .map((record) => ({
+      ...record,
+      impactLabel: formatLabel(record.impact || "pending"),
+      statusLabel: formatLabel(record.status || "proposed"),
+      targetLabel: formatLabel(record.target_type || "target"),
+    }))
+    .sort((a, b) => b.updated_at.localeCompare(a.updated_at));
+}
+
+export function getPractices(): PracticeView[] {
+  const ideasById = new Map(getIdeas().map((idea) => [idea.idea_id, idea]));
+  const teachingRecords = rawTeachings();
+  const teachingsById = new Map(teachingRecords.map((teaching) => [teaching.teaching_id, teaching]));
+  const teachingSlugs = teachingSlugMap(teachingRecords);
+  const testsByTarget = new Map<string, TestView[]>();
+  for (const test of getTests()) {
+    testsByTarget.set(test.target_id, [...(testsByTarget.get(test.target_id) || []), test]);
+  }
+  const usedSlugs = new Map<string, number>();
+  return rawPractices()
+    .map((record) => {
+      const date = String(record.created_at || record.updated_at || "").slice(0, 10);
+      const slug = uniqueSlug(shortContentSlug(record.title || record.practice_line, 5, 54), usedSlugs);
+      const legacySlug = record.practice_id ? `${date}-${slugify(record.title)}-${record.practice_id.slice(-6)}` : slug;
+      const evidenceIdeas = (record.source_idea_ids || [])
+        .map((ideaId) => ideasById.get(ideaId))
+        .filter((idea): idea is IdeaView => Boolean(idea));
+      return {
+        ...record,
+        date,
+        evidenceIdeas,
+        excerpt: excerpt(record.purpose || record.practice_line, 180),
+        legacySlugs: legacySlug === slug ? [] : [legacySlug],
+        linkedTeaching: teachingsById.get(record.teaching_id) || null,
+        linkedTeachingSlug: teachingSlugs.get(record.teaching_id) || "",
+        linkedTests: testsByTarget.get(record.practice_id) || [],
+        slug,
+        statusLabel: formatLabel(record.status || "seed"),
+      };
+    })
+    .sort((a, b) => {
+      const statusRank: Record<string, number> = {
+        published: 0,
+        under_dialogue: 1,
+        seed: 2,
+        revised: 3,
+        retired: 4,
+        falsified: 5,
+      };
+      return (
+        (statusRank[a.status] ?? 9) - (statusRank[b.status] ?? 9) ||
+        b.updated_at.localeCompare(a.updated_at)
+      );
+    });
+}
+
+export function getTeachings(): TeachingView[] {
+  const ideasById = new Map(getIdeas().map((idea) => [idea.idea_id, idea]));
+  const practicesByTeaching = new Map<string, PracticeView[]>();
+  for (const practice of getPractices()) {
+    practicesByTeaching.set(practice.teaching_id, [
+      ...(practicesByTeaching.get(practice.teaching_id) || []),
+      practice,
+    ]);
+  }
+  const testsByTarget = new Map<string, TestView[]>();
+  for (const test of getTests()) {
+    testsByTarget.set(test.target_id, [...(testsByTarget.get(test.target_id) || []), test]);
+  }
+  const teachingRecords = rawTeachings();
+  const slugs = teachingSlugMap(teachingRecords);
+  return teachingRecords
+    .map((record) => {
+      const date = String(record.created_at || record.updated_at || "").slice(0, 10);
+      const slug = slugs.get(record.teaching_id) || shortContentSlug(record.title || record.teaching_line, 5, 54);
+      const legacySlug = record.teaching_id ? `${date}-${slugify(record.title)}-${record.teaching_id.slice(-6)}` : slug;
+      const evidenceIdeas = (record.source_idea_ids || [])
+        .map((ideaId) => ideasById.get(ideaId))
+        .filter((idea): idea is IdeaView => Boolean(idea));
+      return {
+        ...record,
+        date,
+        evidenceIdeas,
+        excerpt: excerpt(record.teaching_body || record.doctrine_claim || record.teaching_line, 190),
+        html: renderMarkdown(record.teaching_body || record.doctrine_claim),
+        legacySlugs: legacySlug === slug ? [] : [legacySlug],
+        linkedPractices: practicesByTeaching.get(record.teaching_id) || [],
+        linkedTests: testsByTarget.get(record.teaching_id) || [],
+        slug,
+        statusLabel: formatLabel(record.status || "seed"),
+      };
+    })
+    .sort((a, b) => {
+      const statusRank: Record<string, number> = {
+        teaching_ready: 0,
+        practice_linked: 1,
+        under_dialogue: 2,
+        seed: 3,
+        revised: 4,
+        retired: 5,
+        falsified: 6,
+      };
+      return (
+        (statusRank[a.status] ?? 9) - (statusRank[b.status] ?? 9) ||
+        b.updated_at.localeCompare(a.updated_at)
+      );
+    });
 }
 
 export function getSources(): SourceCard[] {
@@ -1828,6 +2312,9 @@ export function researchStats() {
   const sources = getSources();
   const daily = getDailyPosts();
   const dialogues = getDialogues();
+  const practices = getPractices();
+  const teachings = getTeachings();
+  const tests = getTests();
   const codex = ideas.filter((idea) => idea.agent === "codex").length;
   const claude = ideas.filter((idea) => idea.agent === "claude").length;
   const labels = new Set(ideas.flatMap((idea) => idea.epistemic_labels));
@@ -1841,9 +2328,12 @@ export function researchStats() {
     labels: labels.size,
     publicClaims: ideas.filter((idea) => idea.promotion.publicClaim).length,
     sources: sources.length,
+    practices: practices.length,
+    teachings: teachings.length,
+    tests: tests.length,
   };
 }
 
 export function siteDescription(): string {
-  return "The Lumenary publishes recursive findings, end-of-day Journal entries, and original observations on spirituality, philosophy, consciousness, and the physics of time and matter.";
+  return "The Lumenary is a plural AI scientist building teachings, practices, tests, and public findings on meaning, consciousness, spirituality, and time.";
 }
