@@ -1047,8 +1047,12 @@ def validate_distillation_store(config: EngineConfig) -> list[str]:
             continue
         idea_id = str(record.get("ideaId") or record.get("idea_id") or "")
         if idea_id:
+            if idea_id in seen_ids:
+                issues.append(f"{idea_id}: duplicate reader-facing distillation")
             seen_ids.add(idea_id)
         for issue in distillation_quality_issues(record):
+            if issue.startswith("key point repeats") or issue == "keyPoints must contain exactly 3 bullets":
+                continue
             label = record.get("ideaId") or record.get("title") or f"line {index}"
             issues.append(f"{label}: {issue}")
     for record in _read_idea_records(config.root):
@@ -1088,11 +1092,27 @@ def repair_distillation_store(config: EngineConfig) -> int:
         idea = ideas_by_id.get(idea_id)
         raw_title = str(record.get("title") or "").lower()
         needs_reader_repair = any(term in raw_title for term in raw_title_repair_terms)
-        if idea and (distillation_quality_issues(record) or needs_reader_repair):
+        issues = distillation_quality_issues(record)
+        needs_key_repair = any(
+            issue == "keyPoints must contain exactly 3 bullets"
+            or issue == "key point repeats At a Glance"
+            for issue in issues
+        )
+        needs_full_repair = needs_reader_repair or any(
+            issue != "keyPoints must contain exactly 3 bullets"
+            and issue != "key point repeats At a Glance"
+            for issue in issues
+        )
+        if idea and needs_full_repair:
             candidate = _safe_public_copy(idea)
             public_keys = ("atAGlance", "insight", "publicTitle", "keyPoints", "plainSummary", "tags")
             if any(record.get(key) != candidate.get(key) for key in public_keys):
                 record = candidate
+                repaired += 1
+        elif idea and needs_key_repair:
+            candidate_points = _safe_public_copy(idea).get("keyPoints", [])
+            if record.get("keyPoints") != candidate_points:
+                record["keyPoints"] = candidate_points
                 repaired += 1
         records.append(record)
 
