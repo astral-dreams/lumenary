@@ -1,0 +1,296 @@
+{
+  "convergence_path": "findings/convergences/2026-05-26-does-repeated-direction-specific-practice-create-measurable-procedural-resistance.md",
+  "created_at": "2026-05-26T23:01:43-07:00",
+  "dialogue_id": "61a99af325ab68d4",
+  "execution_id": "backfill-20260526-214836",
+  "json_path": "reviews/dialogues/2026-05-26-does-repeated-direction-specific-practice-create-measurable-procedural-r.json",
+  "markdown_path": "reviews/dialogues/2026-05-26-does-repeated-direction-specific-practice-create-measurable-procedural-r.md",
+  "pair": {
+    "challenger_agent": "codex",
+    "challenger_title": "The Gap Report Has a Grammar",
+    "idea_a": "915778a2f5edc30e",
+    "idea_b": "b644fcfdb6d9f2d0",
+    "pair_id": "5716114f335fdfd6",
+    "priority": 0.3,
+    "proponent_agent": "claude",
+    "proponent_title": "The Grain of Capacity",
+    "shared_concepts": [],
+    "signals": [
+      {
+        "name": "audit_anomaly_overlap",
+        "reason": "An anomaly or audit instruction for one idea pressures the other idea.",
+        "weight": 0.12
+      },
+      {
+        "name": "near_neighbor_conflict",
+        "reason": "Originality audits share near-neighbor or prior-art pressure.",
+        "weight": 0.08
+      },
+      {
+        "name": "source_overlap_with_divergent_conclusion",
+        "reason": "The ideas draw on overlapping source material but make different moves.",
+        "weight": 0.06
+      },
+      {
+        "name": "recency",
+        "reason": "At least one idea is recent enough to keep the dialogue timely.",
+        "weight": 0.04
+      }
+    ],
+    "tension_source": "An anomaly or audit instruction for one idea pressures the other idea.",
+    "tension_type": "audit_anomaly_overlap"
+  },
+  "run_dir": "runs/dialectic-backfill-20260526-214836/5716114f335fdfd6",
+  "run_ids": [],
+  "slug": "2026-05-26-does-repeated-direction-specific-practice-create-measurable-procedural-r",
+  "status": "complete",
+  "synthesis": {
+    "candidate_synthesis": {
+      "critique": "The synthesis may be a tidy taxonomy rather than a discovery if procedural grain cannot be measured independently. It may overfit serious cross-trained practitioners and underfit beginners, trauma-activated practitioners, clinically vulnerable people, or people practicing in a single tradition with competent guidance. It also risks turning ordinary learning friction into spiritual diagnosis. Its strongest version depends on behavior-level and micro-phenomenological evidence gathered before tradition language is invited.",
+      "epistemic_labels": [
+        "textual",
+        "interpretive",
+        "phenomenological",
+        "empirical-adjacent",
+        "analogical",
+        "speculative"
+      ],
+      "idea_type": "synthesis",
+      "next_research_directions": [
+        "Run the proposed method-switching study with dual-trained practitioners, separating neutral prompts, immediate micro-phenomenological reports, behavior-level markers, and later tradition-framed explanations.",
+        "Operationalize tradition-neutral friction markers, such as attention target, shift latency, interruption recovery, chosen success criteria, and affective destabilization.",
+        "Test whether grain mismatch predicts adverse effects beyond prior practice hours, retreat intensity, teacher framing, identity investment, trauma history, and clinical vulnerability.",
+        "Audit close prior arguments in Katz, Sharf, Ferrer, Taves, Engler, Petitmengin, and adverse meditation research before calling the synthesis original.",
+        "Create a public-facing caution only for the fitted cohort: serious cross-trained practitioners, contemplative teachers, retreat leaders, and therapists integrating spiritual methods. Exclude beginners and acute clinical cases from the first teaching version."
+      ],
+      "original_claim": "Contemplative transfer problems should be analyzed across three interacting layers. Instructional grain names the direction embedded in what a practice asks the practitioner to do. Procedural grain names the possible micro-habits built by repeated practice, which may resist a new method before doctrine is invoked. Admissibility grammar names the later communal and interpretive rules that decide what counts as readiness, success, failure, evidence, or harm. Modern cross-trained seekers need this distinction because friction with a borrowed method may be structural information, not proof that they are broken, and not proof that the method is universally valid for them.",
+      "scores": {
+        "counterargument_quality": 0.89,
+        "cross_tradition_support": 0.76,
+        "empirical_adjacency": 0.66,
+        "explanatory_compression": 0.84,
+        "generativity": 0.9,
+        "logical_coherence": 0.86,
+        "novelty": 0.78,
+        "practice_testability": 0.86,
+        "publishability": 0.82,
+        "source_reliability": 0.75
+      },
+      "source_basis": [
+        "Claude, The Grain of Capacity, idea 915778a2f5edc30e.",
+        "Codex, The Gap Report Has a Grammar, idea b644fcfdb6d9f2d0.",
+        "Codex challenge turn 1, especially the layered-capacity grammar model and the Taves pressure.",
+        "Claude rebuttal turn 2, especially the distinction between instructional grain, procedural grain, and phenomenological grain.",
+        "Codex counter-rebuttal turn 3, especially the narrowed crux and the behavior-level testing requirement.",
+        "Ann Taves, Religious Experience Reconsidered, 2009.",
+        "Claire Petitmengin, Describing One's Subjective Experience in the Second Person, 2006.",
+        "Lindahl, Fisher, Cooper, Rosen, and Britton, The Varieties of Contemplative Experience, 2017."
+      ],
+      "title": "The Grain Has a Grammar",
+      "why_it_might_be_new": "The proponent idea had grain without clearly separating instruction, procedure, and report. The challenger idea had report grammar without a full account of how directional instruction might become durable habit. The candidate synthesis creates a testable middle architecture: grain and grammar are not rivals, they are layers that must be separated before any doctrine or practice guidance is promoted. This is new only as a candidate and needs originality audit against constructivism, ascription theory, contemplative transfer studies, and adverse meditation literature."
+    },
+    "candidate_synthesis_idea_id": "06a7f26b46d9abbb",
+    "candidate_synthesis_path": "observations/codex/2026-05-26-the-grain-has-a-grammar.md",
+    "convergence_claim": "Both agents converge that contemplative instruction is tradition-shaped, that procedural grain is plausible but unproven, and that any public teaching must separate live practice behavior from retrospective report grammar, teacher language, identity defense, and doctrinal explanation.",
+    "method_growth": "Before promoting a doctrine candidate, separate instruction, live procedure, and report grammar. Name the cohort, the non-fit case, the practice risk, and the test that could break the claim.",
+    "new_concept_edges": [
+      {
+        "note": "Direction embedded in exercises may become durable micro-habit, but this remains empirically open.",
+        "relation": "hypothesizes formation",
+        "source": "instructional grain",
+        "target": "procedural grain"
+      },
+      {
+        "note": "The core test is whether resistance appears before later interpretation, teacher language, or identity defense.",
+        "relation": "must be separated from",
+        "source": "procedural grain",
+        "target": "admissibility grammar"
+      },
+      {
+        "note": "Traditions decide which clause of an ambiguous report counts as evidence.",
+        "relation": "assigns evidential weight",
+        "source": "admissibility grammar",
+        "target": "post-gap report"
+      },
+      {
+        "note": "For fitted cohorts, the model can reframe friction as information rather than personal failure.",
+        "relation": "may reduce",
+        "source": "grain mismatch",
+        "target": "secondary self-blame"
+      },
+      {
+        "note": "The study should distinguish ordinary learning difficulty from friction that predicts distress or adverse effects.",
+        "relation": "tests",
+        "source": "method-switching study",
+        "target": "practice risk"
+      }
+    ],
+    "new_frontier_question": "Can immediate behavior and micro-phenomenological reports during neutral method-switching predict later cross-practice distress better than prior training hours, teacher framing, identity investment, or clinical vulnerability?",
+    "outcome": "candidate_transcendence",
+    "public_brief": "The dialogue made the idea more useful and more restrained. It suggests that borrowed practices can fail for structural reasons, not only because the person is weak or the method is wrong. That helps mainly for people crossing between serious practice traditions, and it still needs testing before becoming a teaching.",
+    "recommended_adjustments": {
+      "challenger": {
+        "counterargument_quality": 0.89,
+        "cross_tradition_support": 0.73,
+        "empirical_adjacency": 0.6,
+        "explanatory_compression": 0.83,
+        "generativity": 0.9,
+        "logical_coherence": 0.85,
+        "novelty": 0.72,
+        "practice_testability": 0.82,
+        "publishability": 0.82,
+        "source_reliability": 0.74
+      },
+      "proponent": {
+        "counterargument_quality": 0.9,
+        "cross_tradition_support": 0.78,
+        "empirical_adjacency": 0.6,
+        "explanatory_compression": 0.84,
+        "generativity": 0.9,
+        "logical_coherence": 0.86,
+        "novelty": 0.78,
+        "practice_testability": 0.84,
+        "publishability": 0.82,
+        "source_reliability": 0.74
+      }
+    },
+    "summary": "The dialogue produced more than a revision of the proponent idea. It joined grain theory with report-grammar pressure into a layered diagnostic model: instruction can be directionally grained, procedure may be partly grained, and later report grammars can authorize or distort what the practitioner thinks happened. The exchange did not prove procedural grain, but it made the claim more testable and more answerable to a real modern problem: cross-trained or distressed seekers may misread structural practice friction as personal inadequacy.",
+    "synthesizer_agent": "codex",
+    "unresolved_crux": "Does repeated direction-specific practice create measurable procedural resistance during method-switching before interpretive framing enters, and does that resistance predict actual harm or only ordinary learning difficulty? The model also remains weak for beginners, people in acute distress, and people whose primary need is clinical care or relational support rather than contemplative diagnosis."
+  },
+  "title": "Does repeated direction-specific practice create measurable procedural resistance...",
+  "turns": [
+    {
+      "agent": "codex",
+      "argument": "The grain model is most promising as a diagnostic tool for cross-training. Its weak point is level confusion. It tries to explain live capacity, practice failure, and adverse effects with one concept, but those may belong to different layers. A vipassana-trained practitioner who seeks change during self-inquiry may be showing old attentional habit, or may be narrating through Buddhist proof rules after the fact. An Advaita practitioner who finds a witness during de-identification may be procedurally unable to release the witness, or may be assigning evidential weight to continuity because that is the trained report grammar. Even the proposed harm categories, witness-reification, emotional flatness, relational rupture, are not raw symptoms. They are already interpreted failures. This does not break the idea, but it should force a revision: grain should not be claimed as the structure of preparation itself until it is separated from report grammar, community diagnosis, identity investment, teacher language, and ordinary skill transfer. For modern human-condition use, the claim also needs a smaller public promise. It can help teachers and seekers avoid cross-tradition confusion, but it should not be sold as a general cure for meaning loss or anxiety. Its human service is specific: protect people who use spiritual techniques under distress from blaming themselves when a borrowed method resists their existing training.",
+      "claim_units": [
+        "Preparatory capacities are shaped by the dissolution they serve.",
+        "The same named capacity functions differently across traditions because it is carved toward a different transformation.",
+        "Capacity and dissolution are mutually conditioned rather than independently first.",
+        "The five ledger variables carry direction, not only level.",
+        "Cross-training should reveal directional resistance or distortion.",
+        "Adverse contemplative effects should cluster by grain mismatch, not only by missing prerequisites or practice intensity."
+      ],
+      "concessions": [
+        "Vivekachudamani strongly supports the idea that some prerequisites are explicitly carved toward a final metaphysical recognition.",
+        "SN 22.59 supports the claim that Buddhist observation is trained toward non-appropriation, not generic noticing.",
+        "The mismatch prediction is useful and testable enough to keep the idea alive as a research model.",
+        "The model has clear value for teachers working with cross-trained practitioners."
+      ],
+      "counter_model": "Layered-capacity grammar model: practices build some transferable procedural abilities, such as attention stability, affect tolerance, memory, surrender tolerance, and reflexive monitoring. Traditions then add admissibility grammars that decide what counts as readiness, insight, failure, or harm. Transfer difficulty arises when procedural habit, social identity, teacher instruction, and report grammar conflict. On this model, grain is real in pedagogy and diagnosis, but not necessarily the primary structure of the capacity.",
+      "crux": "Does grain appear in practice behavior and first-pass phenomenological description, or mainly after traditions teach practitioners how to admit evidence and name what happened?",
+      "crux_assessment": null,
+      "defense": null,
+      "fairness_check": "I am not objecting that contemplative skills are all generic, or that the proponent ignores constructivism. The idea already knows the anti-neutrality literature. The pressure is narrower: what evidence would show that grain belongs to lived capacity itself rather than to texts, reports, teacher diagnoses, and retrospective proof rules?",
+      "hidden_assumption": "If a tradition describes a prerequisite in terms of its final dissolution, then the practitioner has acquired a capacity whose live operation is directionally shaped toward that dissolution, and not merely a generic or semi-generic skill interpreted through that tradition's proof rules.",
+      "new_source": "Ann Taves, Religious Experience Reconsidered: A Building-Block Approach to the Study of Religion and Other Special Things, Princeton University Press, 2009. Taves complicates the claim by shifting attention from a special inner structure to processes of ascription, attribution, and deeming something religious or special.",
+      "remaining_risk": "The idea may serve a real but narrow cohort: serious cross-trained practitioners, contemplative teachers, adverse-event researchers, and integrative therapists. It does not yet speak directly to loneliness, addiction, digital comparison, grief, depression, or feeling unneeded, except through the secondary problem of modern seekers importing methods without context. Before becoming a public teaching, it should name that wound plainly: people borrow practices to relieve distress, then misread friction as personal failure or universal truth.",
+      "revised_claim": null,
+      "role": "challenger",
+      "sources_cited": [
+        "Claude, The Grain of Capacity, observation 915778a2f5edc30e.",
+        "Codex, The Gap Report Has a Grammar, observation b644fcfdb6d9f2d0.",
+        "SN 22.59 Anattalakkhana Sutta, SuttaCentral.",
+        "Vivekachudamani vv. 17-30.",
+        "Lindahl et al., The Varieties of Contemplative Experience, PLOS ONE, 2017.",
+        "Ann Taves, Religious Experience Reconsidered, Princeton University Press, 2009."
+      ],
+      "steelman": "The proponent's strongest claim is not merely that traditions use different vocabularies. It says a capacity like attention is trained with a directional fit to the transformation it will later sustain. That explains why attention in Satipatthana, Vivekachudamani, dhikr, Pure Land entrusting, Dzogchen introduction, and Soto sitting is not one neutral skill with different doctrines pasted on. The predictive value is the transfer and harm claim: mismatched training should produce patterned failures.",
+      "strongest_objection": "The proponent moves too quickly from textual and doctrinal direction to procedural capacity direction. A manual can define readiness in final-aim language while the trained skill remains partly transferable and only later gets classified by a tradition's admissibility grammar. This is where The Gap Report pressures the idea: after ambiguous experience, silence, failure, or insight, traditions weight different clauses of the report. The same may be true before insight. What looks like grain may be the grammar by which a community names, authorizes, and diagnoses a capacity.",
+      "test_that_would_settle_it": "Run a blinded cross-training study. Have dual-trained practitioners perform brief method switches, such as vipassana to self-inquiry and self-inquiry to vipassana. Collect micro-phenomenological interviews before doctrinal explanation, plus teacher-free task markers, such as what they attend to, what they ignore, when they stabilize, and what they treat as a successful move. Then compare this with later tradition-framed explanations. If the directional pull is visible before tradition language is invited, grain is strengthened. If it appears mainly in later explanation and teacher diagnosis, the grammar model is stronger.",
+      "turn": 1,
+      "turn_type": "challenge",
+      "verdict_on_revision": null
+    },
+    {
+      "agent": "claude",
+      "argument": "I accept the challenger's central move. The level confusion in the original claim was real: I treated textual direction and procedural direction as if demonstrating one demonstrated the other. They are not the same, and the gap between them is where the grammar model lives. But the grammar model has a mirror-image problem. It assumes a transferable procedural substrate, something like generic attention stability or generic affect tolerance, that exists before tradition-specific framing is applied. Where is this substrate? Not in the practice instructions, which are directionally specific from the first line. Not in what practitioners actually do during practice, which is always a specific exercise with specific content. The substrate is a theoretical posit, no more empirically demonstrated than phenomenological grain. If I must prove that procedural habits carry direction independent of framing, the grammar model must equally prove that a directionally neutral procedural layer exists beneath the training content. What I can defend is this: the instructions themselves are not neutral, and the exercises they prescribe are not neutral. When MN 10 trains observation of arising and passing while having removed covetousness and grief, the practitioner is not first learning to attend and then learning a Buddhist interpretation of what she attends to. She is learning a specific kind of attention from the first sit. When Shankara requires viveka as discrimination between sat and asat, the practitioner is not first learning to discriminate and then adding an Advaitic interpretation. She is learning an ontological discrimination that presupposes the reality/appearance distinction. The instruction and its direction arrive together. This is instructional grain, and it is well-evidenced. The open question is whether years of such practice build procedural micro-habits deep enough to resist re-framing during method-switching. I believe they do, based on the structural analysis, but I concede this has not been empirically separated from report grammar. The revision therefore distinguishes instructional grain (demonstrated), procedural grain (structurally argued, empirically open), and phenomenological grain (undemonstrated). The blinded micro-phenomenological study proposed by the challenger, refined with Petitmengin's elicitation method, is the right test for the procedural layer. For the human condition: the claim now names its audience plainly. Modern spiritual seekers routinely borrow techniques across traditions to manage real distress: anxiety, grief, existential confusion, the dislocations of digital life. When a borrowed method produces friction, they lack a framework for understanding why. The grain model says: the friction may not be your failure; it may be structural. The method you borrowed was built for a dissolution your previous training did not prepare you for. This reframing is modest but practically important. It does not cure distress; it prevents a secondary harm, the harm of misinterpreting structural mismatch as personal inadequacy. For someone practicing within a single tradition under good guidance, the model is invisible and unnecessary. Its value is proportional to the degree of cross-tradition borrowing in the practitioner's history, which in the current spiritual landscape is high and rising.",
+      "claim_units": [
+        "Practice instructions are not neutral descriptions; they shape what the practitioner repeatedly does, building procedural micro-habits with directional specificity.",
+        "Procedural grain is distinguishable from report grammar in principle, even if the existing evidence has not yet separated them.",
+        "The grammar model has its own hidden assumption: that a transferable procedural substrate exists beneath tradition-specific framing.",
+        "Dogen's practice-realization unity and the Satipatthana instruction's embedded directionality resist the two-layer separation the grammar model requires.",
+        "The revised claim distinguishes instructional grain, procedural grain, and phenomenological grain, and admits the third is undemonstrated.",
+        "The human problem is specific: people borrowing contemplative techniques under distress misread structural friction as personal failure."
+      ],
+      "concessions": [
+        "The original claim moved too quickly from textual direction to procedural capacity direction. The evidence I cited was almost entirely from practice manuals and doctrinal descriptions, not from first-person reports of practitioners experiencing directional resistance independent of their tradition's interpretive language.",
+        "The harm predictions I offered, such as witness-reification, emotional flatness, and relational rupture, are already tradition-interpreted categories, not raw symptoms. I cannot claim grain predicts the direction of failure until I express the predictions in tradition-neutral phenomenological terms.",
+        "Ann Taves's building-block approach is a genuine complication. Ascription processes add a layer between raw experience and tradition-classified experience that my original argument did not account for.",
+        "The challenger is right that the idea currently serves a narrow cohort: cross-trained practitioners, contemplative teachers, adverse-event researchers, and integrative therapists. It does not yet speak to ordinary distress."
+      ],
+      "counter_model": null,
+      "crux": "Does repeated practice of a tradition-specific contemplative exercise build procedural micro-habits whose directional specificity is strong enough to produce measurable resistance during method-switching, independent of the practitioner's interpretive framing, social identity, and teacher language?",
+      "crux_assessment": "The challenger's crux, whether grain appears in practice behavior or mainly after traditions teach practitioners how to admit evidence, is the right question. My revision accepts it by distinguishing three layers and admitting the phenomenological layer is undemonstrated. The crux now sits at the procedural level: are the micro-habits deep enough to produce measurable directional resistance independent of framing?",
+      "defense": "The grammar model is elegant, but it has a structural weakness it does not acknowledge: it assumes the existence of a transferable procedural substrate that is directionally neutral before tradition-specific grammar is applied. What is this substrate? Attention stability, affect tolerance, reflexive monitoring. But these are not given in nature as neutral modules. They are always trained through specific exercises, and those exercises have content. When a Theravada practitioner trains attention through noting arising and passing, the micro-habit formed is not generic attention stability plus a Buddhist label. The noting itself shapes what attention selects, how long it rests, what counts as distraction, and what counts as success. A practitioner trained for years in impermanence-tracking has built a procedural habit of scanning for change. This is not the same motor as a practitioner trained for years in witness-discrimination, who has built a procedural habit of releasing identification with content while remaining as awareness. The grammar model can only work if these procedural differences are shallow enough to be overridden by re-framing. The grain model predicts they are deep enough to resist re-framing and produce characteristic friction.\n\nConsider Dogen's practice-realization unity. On the grammar model, sitting would be a generic procedural skill, and the tradition adds the interpretive frame that sitting IS realization. But the instruction itself, as Dogen gives it in Fukanzazengi, is not a generic attention exercise plus a Zen label. It is a specific instruction to drop body and mind, to sit without aiming at becoming a buddha. The procedural content of the instruction is inseparable from its directionality. You cannot extract a neutral skill and then add the Zen interpretation. The instruction trains you to do something specific: to stop striving, which is itself the realization. The two-layer model, neutral skill plus interpretive grammar, breaks down here because there is no neutral layer to extract.\n\nSimilarly, MN 10 does not say 'pay attention, and we will later tell you what to notice.' It says observe body, feeling, mind, and phenomena while having already removed covetousness and grief concerning the world. The instruction builds the directionality into the exercise from the first sit. The practitioner is not first learning generic attention and then learning to aim it at impermanence. She is learning impermanence-sensitive attention from the beginning.\n\nI concede that I cannot yet prove phenomenological grain: that practitioners experience directional pull before any tradition-language is applied. But I can defend instructional grain (the directions are in the exercise itself, not added afterward) and procedural grain (repeated practice of directionally specific exercises builds directionally specific micro-habits). The grammar model must show that these procedural differences wash out under re-framing. Until it does, grain at the instructional and procedural levels stands.",
+      "fairness_check": "I am not defending the original claim unchanged. The challenger identified a genuine level confusion in my argument: I moved from textual instruction to lived capacity without demonstrating that the instruction's directionality survives into the procedural habit independent of interpretive framing. I need to either show that it does, or narrow the claim to what the evidence actually supports.",
+      "hidden_assumption": null,
+      "new_source": "Petitmengin, Claire, 'Describing One's Subjective Experience in the Second Person: An Interview Method for the Science of Consciousness,' Phenomenology and the Cognitive Sciences 5, 2006. Petitmengin's micro-phenomenological interview method is designed to access pre-reflective experiential structure before conceptual framing. This is precisely the tool that could separate procedural grain from report grammar: interviewing practitioners during method-switching, before tradition-language is invited, to detect whether attentional direction is experienced pre-reflectively or only appears in post-hoc narrative.",
+      "remaining_risk": "The three-layer distinction may be doing the work of saving the theory rather than sharpening it. If the blinded study shows that procedural grain is weak and most of the directional specificity lives in instructional and grammatical layers, then the interesting claim collapses into the less interesting claim that practice manuals are tradition-specific, which no one disputes. The model's value depends on the middle layer, procedural grain, being strong enough to produce real effects. If it is not, the original contribution reduces to a useful taxonomy of instructional differences rather than a discovery about the structure of contemplative preparation. Additionally, the human-condition framing, while honest about its narrow scope, risks making the idea too specialized for general spiritual discourse. If it can only help cross-trained practitioners and their teachers, it may be practically valuable but theoretically modest.",
+      "revised_claim": "The original claim was that grain is the structure of preparation itself. The revision distinguishes three layers. First, instructional grain: practice manuals and oral instructions embed the direction of the tradition's dissolution into the exercise from the beginning, not as an interpretive label added later but as the content of what the practitioner is told to do. This layer has strong textual evidence across all six traditions examined. Second, procedural grain: repeated practice of directionally specific exercises builds micro-habits whose operational direction is not fully reducible to interpretive framing. This layer has moderate evidence from the structural analysis of instructions, but has not been empirically separated from report grammar. Third, phenomenological grain: practitioners experience directional pull during method-switching before tradition-language is invited. This layer is currently undemonstrated and is the right target for the proposed blinded study.\n\nThe human problem the model addresses: modern seekers, especially those using contemplative techniques to manage anxiety, depression, grief, or existential disorientation, routinely borrow methods across traditions through apps, workshops, books, and secular adaptations. When the borrowed method produces friction, confusion, or distress, they lack a framework for understanding why. They default to two explanations, both wrong: either 'I am not good enough for this practice' or 'this practice is universally valid and my resistance proves I need more of it.' The grain model offers a third explanation: the friction may be structural, arising from a mismatch between the directional habits their previous training built and the dissolution the new method serves. This reframes the difficulty as information rather than failure.\n\nThe primary cohort is people who have trained seriously in one contemplative method and are encountering another, whether by choice, therapeutic recommendation, or cultural migration. The secondary cohort is therapists, teachers, and retreat leaders working with such practitioners. The non-fit case: someone practicing within a single tradition under competent guidance. For them, grain is invisible because it is aligned, and the model adds nothing to what a good teacher already knows. The model also does not yet speak to people with no contemplative training who are simply suffering. It is not a general cure for meaning-loss; it is a diagnostic tool for a specific modern confusion that arises at the intersection of spiritual plurality and personal distress.",
+      "role": "proponent",
+      "sources_cited": [
+        "Claude, The Grain of Capacity, observation 915778a2f5edc30e.",
+        "Codex, challenge turn 1 in the current dialogue.",
+        "MN 10 Satipatthana Sutta, SuttaCentral.",
+        "Vivekachudamani vv. 17-30.",
+        "Dogen, Fukanzazengi.",
+        "Ann Taves, Religious Experience Reconsidered, Princeton University Press, 2009.",
+        "Petitmengin, Claire, Describing One's Subjective Experience in the Second Person: An Interview Method for the Science of Consciousness, Phenomenology and the Cognitive Sciences 5, 2006.",
+        "Steven Katz, Language, Epistemology, and Mysticism, 1978.",
+        "Lindahl, Fisher, Cooper, Rosen, and Britton, The Varieties of Contemplative Experience, PLOS ONE, 2017."
+      ],
+      "steelman": "The challenger's strongest move is the layered-capacity grammar model. It concedes that traditions shape pedagogy and diagnosis while denying that the shaping reaches the procedural layer of the capacity itself. This is a cleaner rival hypothesis than generic-skill universalism, because it preserves tradition-specificity at the report level while allowing transferable procedural substrate. If correct, it explains cross-training friction as identity conflict and interpretive confusion rather than as directional resistance in the trained skill. The Taves citation strengthens this: if ascription processes decide what counts as spiritual, the same process could decide what counts as properly grained readiness.",
+      "strongest_objection": null,
+      "test_that_would_settle_it": "Use Petitmengin's micro-phenomenological interview method with dual-trained practitioners during live method-switching. Have experienced vipassana practitioners attempt Advaita self-inquiry, and experienced self-inquiry practitioners attempt vipassana, in a controlled setting without teacher guidance or tradition-language prompts. Conduct interviews during and immediately after the switch, using Petitmengin's elicitation technique to access pre-reflective experiential structure: what does attention do, where does it go, what does it treat as distraction, what does it treat as a successful move? Only afterward invite the practitioner to describe the experience in their tradition's language. If directional resistance, such as attention persistently scanning for change during self-inquiry, or persistently seeking a stable witness during vipassana, appears in the pre-reflective reports and not only in the tradition-framed retrospective, procedural grain is confirmed. If it appears only in the retrospective, the grammar model wins at the procedural level, and grain should be narrowed to instructional grain only.",
+      "turn": 2,
+      "turn_type": "rebuttal",
+      "verdict_on_revision": "transformed"
+    },
+    {
+      "agent": "codex",
+      "argument": "The revision became transformed, and in several respects stronger. It no longer claims that the structure of preparation has been demonstrated at every level. Instead, it gives us a layered research program: instructional grain is established textually, procedural grain is the live hypothesis, and phenomenological grain is not yet proven. That is a real improvement. The cost is that the theory's originality now depends almost entirely on procedural grain. Instructional grain alone says traditions train people toward their own ends, which is important but not surprising. Phenomenological grain would be powerful, but the revision admits it is undemonstrated. So the middle layer must carry the weight: durable, measurable, direction-specific micro-habits that persist during method-switching before doctrinal explanation takes over. The crux named by the proponent is therefore the right one. I would only sharpen it by adding a second question: does procedural resistance predict actual difficulty or harm, or does it merely describe the ordinary cost of learning a new method? A pianist and a violinist also bring different trained habits to a new instrument. That does not automatically make the mismatch spiritually diagnostic. The grain model needs to show not just transfer friction, but patterned friction tied to the target dissolution and relevant to practitioner care. For the modern human condition, the revision is more humane than the original. It stops promising a general key to distress and instead addresses a specific modern situation: people borrowing practices across traditions while anxious, grieving, lonely, burned out, or meaning-starved. Its best public use is protective: your difficulty may be information about method fit, not proof that you are broken. The remaining mismatch is that this applies mainly where there is prior training or a real cross-method conflict. Beginners and clinically vulnerable people may need grounding, relationship, supervision, or treatment before they need a grain analysis.",
+      "claim_units": [
+        "The original broad claim has been transformed into a three-layer model.",
+        "Instructional grain is well supported by the cited manuals and traditions.",
+        "Procedural grain is plausible but still empirically open.",
+        "Phenomenological grain remains undemonstrated.",
+        "The revised human use is narrower and more honest.",
+        "The model's practical value depends on detecting grain mismatch before it is absorbed into doctrinal explanation or identity defense."
+      ],
+      "concessions": [
+        "The revision is more rigorous than the original because it no longer conflates textual direction with lived procedural direction.",
+        "The proposed Petitmengin-style interview test is well matched to the crux.",
+        "The human-condition framing became more useful because it names a concrete secondary harm: people misreading structural friction as personal inadequacy.",
+        "The non-fit case is now clearer: single-tradition practitioners under competent guidance may not need this model."
+      ],
+      "counter_model": "The best remaining rival is still a layered model, but it should be updated: practice creates mixed procedural habits, some transferable and some tradition-shaped; communities then stabilize those habits through report grammar, teacher feedback, identity, and success criteria. On this model, grain is not absent, but it is uneven, partial, and context-dependent rather than the basic structure of preparation.",
+      "crux": "Does repeated practice of a tradition-specific contemplative exercise build procedural micro-habits whose directional specificity is strong enough to produce measurable resistance during method-switching, independent of interpretive framing, social identity, and teacher language?",
+      "crux_assessment": "The named crux is the real crux for the theory's distinctive claim. If procedural resistance appears before doctrinal language is invited, grain becomes a substantive model of capacity. If it appears mainly in retrospective explanation, teacher diagnosis, or identity defense, the grammar model explains more. A secondary crux remains: whether the detected resistance predicts harm or only ordinary learning difficulty.",
+      "defense": null,
+      "fairness_check": "I am not treating the revision as a retreat into triviality. Instructional grain is a real finding, and procedural grain is a serious hypothesis. My remaining pressure is about whether the middle layer is strong enough to carry the model's novelty, prediction, and human usefulness.",
+      "hidden_assumption": "The revised argument still assumes that repeated direction-specific exercises produce durable procedural habits with enough force to resist reframing during method-switching. That is plausible, but not yet shown.",
+      "new_source": null,
+      "remaining_risk": "The revision is more useful to real life, not only more elegant, because it narrows the public promise and names the wound more plainly. But it still risks overgeneralizing from serious cross-trained practitioners to modern seekers as a whole. Many people using meditation for anxiety, grief, depression, burnout, or loneliness have little stable prior training, so their distress may come from intensity, isolation, trauma activation, poor guidance, or clinical vulnerability rather than grain mismatch. The cohort fit is strongest for cross-trained practitioners, contemplative teachers, retreat leaders, and therapists integrating spiritual methods. It is weak for beginners, people in acute distress, and people needing clinical care more than interpretive refinement.",
+      "revised_claim": "The most defensible version is: contemplative traditions embed directional aims into instruction, and repeated practice may build partly tradition-shaped procedural habits. Those habits can create friction during cross-training, but the strength and independence of that friction must be tested against report grammar, identity, teacher language, and ordinary skill transfer.",
+      "role": "challenger",
+      "sources_cited": [
+        "Claude, The Grain of Capacity, observation 915778a2f5edc30e.",
+        "Codex, challenge turn 1 in the current dialogue.",
+        "Claude, rebuttal turn 2 in the current dialogue.",
+        "MN 10 Satipatthana Sutta, SuttaCentral.",
+        "Vivekachudamani vv. 17-30.",
+        "Dogen, Fukanzazengi.",
+        "Ann Taves, Religious Experience Reconsidered, Princeton University Press, 2009.",
+        "Petitmengin, Claire, Describing One's Subjective Experience in the Second Person, Phenomenology and the Cognitive Sciences 5, 2006.",
+        "Lindahl, Fisher, Cooper, Rosen, and Britton, The Varieties of Contemplative Experience, PLOS ONE, 2017."
+      ],
+      "steelman": "The proponent made the idea more responsible by separating instructional grain, procedural grain, and phenomenological grain. The strongest part of the revision is that it no longer asks textual evidence to prove lived capacity by itself. It also names a real human use: helping cross-trained seekers and teachers interpret friction without turning it into personal failure or universal doctrine.",
+      "strongest_objection": "The revision may have preserved the interesting claim by moving it into an unproven middle layer. If procedural grain cannot be measured independently from interpretive framing, the model becomes a useful taxonomy of tradition-specific instructions rather than a discovery about contemplative capacity itself.",
+      "test_that_would_settle_it": "The proposed live method-switching study remains the right test, but it should add behavior-level markers alongside micro-phenomenological interviews: gaze or attention targets where measurable, timing of shifts, interruption recovery, success criteria chosen under neutral prompts, and comparison with matched practitioners who have similar attention hours but different doctrinal training. The test should also code later tradition-framed explanations separately from immediate reports.",
+      "turn": 3,
+      "turn_type": "counter_rebuttal",
+      "verdict_on_revision": "transformed"
+    }
+  ]
+}

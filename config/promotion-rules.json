@@ -1,7 +1,7 @@
 {
   "version": "2026-05-25",
   "description": "Promotion gates for moving Lumenary observations from draft research into public claims.",
-  "blocked_statuses": ["seed-fixture", "rejected"],
+  "blocked_statuses": ["seed-fixture", "rejected", "audit-pending"],
   "blocked_epistemic_labels": ["rejected"],
   "stages": {
     "review_candidate": {

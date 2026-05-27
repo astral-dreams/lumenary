@@ -677,6 +677,8 @@ def _idea_payload(record: dict[str, Any]) -> str:
         "epistemic_labels",
         "scores",
         "next_research_directions",
+        "teaching_candidate",
+        "practice_candidate",
         "status",
     ]
     return json.dumps({key: record.get(key) for key in keys}, indent=2, ensure_ascii=True)
@@ -692,6 +694,14 @@ idea fairly, then find the real pressure point that could strengthen, revise,
 or break it.
 
 Do not use em dashes. Use commas, colons, semicolons, or periods.
+
+## Modern Human-Condition Pressure
+
+Challenge whether the idea names a real human problem and the people it serves.
+Ask whether it speaks to loneliness, addiction, compulsion, withdrawal, anxiety,
+depression, burnout, grief, meaning loss, digital comparison, feeling unneeded,
+feeling out of place, or achievement-contingent self-worth. If the idea would
+only help a narrow cohort, say so instead of letting it sound universal.
 
 ## Tension Pair
 
@@ -731,6 +741,12 @@ crux.
 
 Do not use em dashes. Use commas, colons, semicolons, or periods.
 
+## Modern Human-Condition Pressure
+
+Revise the claim so it names the human problem, the cohort, and the non-fit case.
+If the idea cannot explain why it matters to ordinary human life, concede that
+gap and make it a next test.
+
 ## Your Original Idea
 
 {_idea_payload(proponent)}
@@ -757,6 +773,11 @@ Do not try to win. Identify the remaining risk and whether the named crux is
 the real crux.
 
 Do not use em dashes. Use commas, colons, semicolons, or periods.
+
+## Modern Human-Condition Pressure
+
+Assess whether the revision became more useful to real human life or only more
+elegant as a theory. Name any cohort mismatch or overgeneralization that remains.
 
 ## Original Idea
 
@@ -789,6 +810,12 @@ only if the exchange creates a new candidate synthesis that neither source idea
 already contained. That candidate still needs originality audit before promotion.
 
 Do not use em dashes. Use commas, colons, semicolons, or periods.
+
+## Modern Human-Condition Pressure
+
+The verdict must say whether the dialogue made the idea more answerable to a
+real human problem, cohort, practice risk, or testable consequence. If not,
+record that as an unresolved crux.
 
 ## Pair
 
@@ -916,6 +943,7 @@ def _idea_from_candidate(
     agent: str,
     dialogue_id: str,
     parent_titles: list[str],
+    status: str = "draft",
 ) -> IdeaRecord | None:
     candidate = _sanitize_value(candidate)
     required = [
@@ -965,7 +993,7 @@ def _idea_from_candidate(
         epistemic_labels=[str(item) for item in candidate.get("epistemic_labels") or []],
         scores=IdeaScores(**{key: _clamp_score(scores[key]) for key in score_keys}),
         next_research_directions=[str(item) for item in candidate.get("next_research_directions") or []],
-        status="draft",
+        status=status,
     )
 
 
@@ -1227,6 +1255,7 @@ def write_artifacts(
                 str(dialogue["pair"].get("proponent_title") or ""),
                 str(dialogue["pair"].get("challenger_title") or ""),
             ],
+            status="draft" if audit_syntheses else "audit-pending",
         )
         if idea:
             idea_path = librarian.save_idea(idea)
@@ -1234,12 +1263,28 @@ def write_artifacts(
             synthesis["candidate_synthesis_path"] = str(idea_path.relative_to(root))
             if audit_syntheses and not config.dry_run and config.provider != "offline":
                 audit_config = _agent_config(config, "codex")
-                audit_new_ideas(
-                    audit_config,
-                    [idea],
-                    run_ids=[],
-                    execution_id=f"dialogue-{dialogue['dialogue_id']}",
-                )
+                try:
+                    audit_new_ideas(
+                        audit_config,
+                        [idea],
+                        run_ids=[],
+                        execution_id=f"dialogue-{dialogue['dialogue_id']}",
+                    )
+                    synthesis["candidate_synthesis_audit_status"] = "complete"
+                except Exception as exc:
+                    synthesis["candidate_synthesis_audit_status"] = "failed"
+                    synthesis["candidate_synthesis_audit_error"] = f"{type(exc).__name__}: {exc}"
+                    _append_jsonl(
+                        root / "runs" / "dialogue-audit-errors.jsonl",
+                        {
+                            "at": now_local_iso(),
+                            "dialogue_id": dialogue["dialogue_id"],
+                            "execution_id": dialogue["execution_id"],
+                            "idea_id": idea.identity(),
+                            "title": idea.title,
+                            "error": synthesis["candidate_synthesis_audit_error"],
+                        },
+                    )
 
     convergence_path = _write_convergence(root, dialogue, rules)
     if convergence_path:

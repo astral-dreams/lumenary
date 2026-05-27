@@ -1,0 +1,278 @@
+{
+  "convergence_path": "findings/convergences/2026-05-26-does-entry-doctrine-have-independent-causal-force-after-controlling-for-founder-b.md",
+  "created_at": "2026-05-26T19:36:45-07:00",
+  "dialogue_id": "ba5bd26446b16e88",
+  "execution_id": "backfill-20260526-154746",
+  "json_path": "reviews/dialogues/2026-05-26-does-entry-doctrine-have-independent-causal-force-after-controlling-for-.json",
+  "markdown_path": "reviews/dialogues/2026-05-26-does-entry-doctrine-have-independent-causal-force-after-controlling-for-.md",
+  "pair": {
+    "challenger_agent": "codex",
+    "challenger_title": "The Custody of Unclaimed Attention",
+    "idea_a": "e2faec9c39c6a653",
+    "idea_b": "9a0072f4cf3a0ff3",
+    "pair_id": "3540e723c110f3d7",
+    "priority": 0.42,
+    "proponent_agent": "claude",
+    "proponent_title": "The First-Break Problem",
+    "shared_concepts": [],
+    "signals": [
+      {
+        "name": "translation_strain",
+        "reason": "translation-strain and soul create translation strain.",
+        "weight": 0.12
+      },
+      {
+        "name": "audit_anomaly_overlap",
+        "reason": "An anomaly or audit instruction for one idea pressures the other idea.",
+        "weight": 0.12
+      },
+      {
+        "name": "near_neighbor_conflict",
+        "reason": "Originality audits share near-neighbor or prior-art pressure.",
+        "weight": 0.08
+      },
+      {
+        "name": "source_overlap_with_divergent_conclusion",
+        "reason": "The ideas draw on overlapping source material but make different moves.",
+        "weight": 0.06
+      },
+      {
+        "name": "recency",
+        "reason": "At least one idea is recent enough to keep the dialogue timely.",
+        "weight": 0.04
+      }
+    ],
+    "tension_source": "translation-strain and soul create translation strain.",
+    "tension_type": "translation_strain"
+  },
+  "run_dir": "runs/dialectic-backfill-20260526-154746/3540e723c110f3d7",
+  "run_ids": [],
+  "slug": "2026-05-26-does-entry-doctrine-have-independent-causal-force-after-controlling-for-",
+  "status": "complete",
+  "synthesis": {
+    "candidate_synthesis": {
+      "critique": "The candidate may still compress a messy causal ecology into one elegant frame. Entry doctrine, custody arrangements, institutional form, and sectarian identity often mature together, so the model could mistake co-development for doctrinal causation. Its key examples, such as Jodo Shinshu versus Jodo Shu or Dzogchen versus gradual Tibetan paths, are promising but not clean controls. The language of custody may also impose modern psychological categories on traditions whose primary terms are grace, liberation, realization, obedience, practice, or union. This candidate should remain research-level until an originality audit and process-tracing tests are completed.",
+      "epistemic_labels": [
+        "textual",
+        "interpretive",
+        "phenomenological",
+        "empirical-adjacent",
+        "analogical",
+        "speculative"
+      ],
+      "idea_type": "synthesis",
+      "next_research_directions": [
+        "Run an originality audit on the prescriptive custody frame, searching for close prior arguments in initiation theory, conversion studies, situated learning, theology of grace, Buddhist transmission studies, and anthropology of apprenticeship.",
+        "Build a coding rubric that separates lived induction, entry doctrine, custody arrangement, effort theory, authority structure, verification method, and characteristic warning language.",
+        "Use matched comparisons, especially Jodo Shinshu versus Jodo Shu, Dzogchen versus gradual Tibetan sutra-path practice, and explicit grace traditions versus neighboring cooperation traditions.",
+        "Add negative cases where explicit incapacity doctrine exists without major institutional divergence, and cases where institutional divergence exists without explicit incapacity doctrine.",
+        "Design practitioner interviews that ask what held attention, trust, and agency before the practitioner could explain the path, then compare those reports with later doctrinal interpretation."
+      ],
+      "original_claim": "Transformative paths begin by placing unstable attention, trust, agency, and interpretation under some form of custody before the practitioner can fully authorize or understand the path. Traditions then give that custody an entry grammar. In inherited, apprenticeship, ritual, and gradual habituation contexts, the grammar may be mostly retrospective, naming a process already underway. In explicit incapacity traditions, the grammar can become prescriptive: it forbids some forms of self-initiation, effort, authority, or verification, and authorizes others. The beginning of a path is therefore not only a first break and not only social induction. It is a contested custody arrangement whose doctrine may be either narration or control surface.",
+      "scores": {
+        "counterargument_quality": 0.87,
+        "cross_tradition_support": 0.72,
+        "empirical_adjacency": 0.58,
+        "explanatory_compression": 0.8,
+        "generativity": 0.91,
+        "logical_coherence": 0.84,
+        "novelty": 0.76,
+        "practice_testability": 0.7,
+        "publishability": 0.76,
+        "source_reliability": 0.72
+      },
+      "source_basis": [
+        "Claude, The First-Break Problem: entry circularity and first-break typologies across social encounter, cosmic gift, prevenient grace, self-disclosure, gradual-break, and no-break traditions.",
+        "Codex, The Custody of Unclaimed Attention: traditions train where loosened attention may belong after ordinary ownership weakens.",
+        "Dialogue challenge: custodial induction, informed by Lave and Wenger's legitimate peripheral participation, shows that many practitioners begin through distributed participation before explicit understanding.",
+        "Dialogue revision: prescriptive versus retrospective entry doctrine distinguishes doctrines that reshape practice from doctrines that narrate an already existing induction.",
+        "Dialogue counter-rebuttal: sectarian compression is a rival explanation, requiring process tracing and matched comparisons before causal claims are promoted."
+      ],
+      "title": "Prescriptive Custody of Beginnings",
+      "why_it_might_be_new": "The source ideas separately treated entry circularity and post-negation attentional ownership. The dialogue adds a third layer: the custody of the beginning itself, before stable agency or understanding is available. The prescriptive versus retrospective distinction gives the model a way to avoid universalizing first-break doctrine while still preserving cases where doctrine reorganizes practice. This synthesis appears stronger than either original idea because it explains why some traditions can begin through ordinary participation while others must regulate the very possibility of beginning."
+    },
+    "candidate_synthesis_idea_id": "0ac1911649477722",
+    "candidate_synthesis_path": "observations/codex/2026-05-26-prescriptive-custody-of-beginnings.md",
+    "convergence_claim": "A tradition's account of beginning and its custody rules for attention, agency, trust, and authority mutually constrain one another. In socially naturalized settings, custody often precedes doctrine. In explicit incapacity traditions, entry doctrine may actively govern the forms of custody that are allowed.",
+    "method_growth": "Future syntheses should separate lived induction, doctrinal grammar, and downstream architecture before making causal claims. The dialogue improved the method by adding matched comparison, negative cases, process tracing, and a prescriptive versus retrospective distinction.",
+    "new_concept_edges": [
+      {
+        "note": "The beginning is often gradual, social, and distributed rather than a punctual entry mechanism.",
+        "relation": "qualified_by",
+        "source": "The First-Break Problem",
+        "target": "Custodial Induction"
+      },
+      {
+        "note": "Custody applies not only after object-loosening, but also at the start, when the beginner's attention and agency are not yet stable.",
+        "relation": "extends_into_entry",
+        "source": "The Custody of Unclaimed Attention",
+        "target": "First-Break Doctrine"
+      },
+      {
+        "note": "In explicit incapacity traditions, doctrine can forbid some forms of effort or self-authorization and authorize others.",
+        "relation": "may_constrain",
+        "source": "Prescriptive Entry Doctrine",
+        "target": "Custodial Arrangements"
+      },
+      {
+        "note": "In inherited or apprenticeship settings, doctrine may explain a participatory process that was already underway.",
+        "relation": "interprets",
+        "source": "Retrospective Entry Doctrine",
+        "target": "Lived Induction"
+      },
+      {
+        "note": "Entry doctrine may be a symbolic control surface for a broader institutional package rather than an independent cause.",
+        "relation": "rival_explanation",
+        "source": "Sectarian Compression Model",
+        "target": "Prescriptive Custody of Beginnings"
+      },
+      {
+        "note": "Temporal sequencing and matched comparison are required before promoting the model beyond typology.",
+        "relation": "tests",
+        "source": "Process Tracing",
+        "target": "Causal Claim"
+      }
+    ],
+    "new_frontier_question": "Before a person can claim, reject, or understand a path, what holds their attention and agency, and when does doctrine merely name that holding versus reshape it?",
+    "outcome": "candidate_transcendence",
+    "public_brief": "We saw that a path may begin before the beginner can explain the beginning. Sometimes a community, teacher, ritual, or crisis holds attention long enough for capacity to form. Sometimes a tradition's doctrine of incapacity reshapes that holding into rules about effort, trust, authority, and verification.",
+    "recommended_adjustments": {
+      "challenger": {
+        "counterargument_quality": 0.87,
+        "cross_tradition_support": 0.7,
+        "empirical_adjacency": 0.51,
+        "explanatory_compression": 0.82,
+        "generativity": 0.9,
+        "logical_coherence": 0.81,
+        "novelty": 0.74,
+        "practice_testability": 0.69,
+        "publishability": 0.75,
+        "source_reliability": 0.7
+      },
+      "proponent": {
+        "counterargument_quality": 0.91,
+        "cross_tradition_support": 0.76,
+        "empirical_adjacency": 0.56,
+        "explanatory_compression": 0.79,
+        "generativity": 0.92,
+        "logical_coherence": 0.87,
+        "novelty": 0.76,
+        "practice_testability": 0.74,
+        "publishability": 0.79,
+        "source_reliability": 0.78
+      }
+    },
+    "summary": "The exchange transformed the proponent's universal first-break model into a restricted causal hypothesis and joined it to the challenger's custody model. Both agents converged that many paths begin through distributed induction before doctrinal explanation, while explicit incapacity traditions may make entry doctrine prescriptive enough to reshape effort, authority, verification, and warning systems. The dialogue produced a new candidate synthesis, but its originality and causal strength remain unaudited.",
+    "synthesizer_agent": "codex",
+    "unresolved_crux": "Does entry doctrine have independent causal force after controlling for founder biography, sectarian boundary making, institutional inheritance, patronage, conversion pattern, and later codification, or is it one expression of a broader sectarian package?"
+  },
+  "title": "Does entry doctrine have independent causal force after controlling for founder b...",
+  "turns": [
+    {
+      "agent": "codex",
+      "argument": "The pressure point is not whether entry circularity exists. It often does. The pressure point is whether the first-break solution is truly upstream. Your own related evidence points toward a different possibility: when ordinary ownership weakens, traditions train where attention may belong. That custody training can precede explicit belief, recognition, or self-understanding. A child formed by ritual, a novice copying a teacher, a patient held by a therapeutic alliance, or a practitioner repeating a prayer may already be inside a formative custody system before any first-break doctrine becomes meaningful. The proponent should therefore separate three things: the lived induction by which practice begins, the doctrinal grammar by which the beginning is later interpreted, and the predictive architecture that follows. The model survives if first-break type predicts architecture without borrowing evidence from the architecture itself. It weakens if grace, encounter, self-disclosure, and no-break turn out to be different narrative custodies imposed on similar processes of gradual participation.",
+      "claim_units": [
+        "Transformative paths face an entry circularity because the needed capacities are damaged or absent at the start.",
+        "Traditions differ by first-break mechanism, such as social encounter, gift, grace, self-disclosure, gradual-break, or no-break.",
+        "First-break type predicts downstream effort theory, verification architecture, entry safeguards, and failure modes.",
+        "Anthropology predicts circularity severity and constrains the available first-break solution."
+      ],
+      "concessions": [
+        "The first-break rubric is still useful as a map of doctrinal self-description and entry warnings.",
+        "The proponent's audit already recognizes no-break, gradual-break, and inherited-practice cases, which makes the model more resilient.",
+        "Traditions with explicit anti-self-initiation doctrines, such as Orange or Shinran, really do require a stronger first-break account than ordinary apprenticeship models."
+      ],
+      "counter_model": "Custodial induction model: paths begin through distributed participation before they begin through a single first-break. Family ritual, teacher proximity, liturgy, imitation, reading, crisis, friendship, shame, attraction, and habit place the beginner's attention under temporary custody before the beginner can explain what has happened. The tradition's doctrine then gives that custody a grammar. On this model, social encounter, grace, and self-disclosure are often not different entry mechanisms, but different authorized descriptions of how unclaimed or unstable attention was held while capacity formed.",
+      "crux": "Can first-break type be coded independently before examining the same tradition's later effort theory, verification methods, and warnings? If not, the model risks circular confirmation.",
+      "crux_assessment": "If blinded entry coding predicts downstream architecture, the proponent's model becomes substantially stronger. If predictions only work after coders already know the tradition's theology or institutional form, the first-break variable is probably a retrospective doctrinal label rather than an independent structural cause.",
+      "defense": null,
+      "fairness_check": "I accept the proponent's revised modest form: the model is a comparative-predictive rubric, not a claim that every practitioner consciously experiences a paradox or that the four original types are exhaustive.",
+      "hidden_assumption": "The hidden assumption is that the beginning of the path is a distinguishable event or mechanism that can be coded independently of the tradition's later custody rules for attention, authority, agency, and interpretation.",
+      "new_source": "Jean Lave and Etienne Wenger, Situated Learning: Legitimate Peripheral Participation (1991). This scholarly source complicates the claim by treating entry into a transformative practice as peripheral participation in a community before full understanding or competence is available, which weakens the need for a single first-break mechanism.",
+      "remaining_risk": "Even with this challenge, the proponent's model may remain valuable as a typology of how traditions authorize beginnings. The main risk is overclaiming causal priority: what looks like the first break may be the first doctrinally legible description of a longer, messier induction.",
+      "revised_claim": "Rather than saying first-break mechanism predicts downstream architecture, the stronger claim is: a tradition's account of entry and its custody rules for attention, agency, and authority mutually constrain one another. In explicit incapacity traditions, entry doctrine may lead. In inherited, ritual, or apprenticeship traditions, participation may lead and doctrine may retrospectively interpret the beginning.",
+      "role": "challenger",
+      "sources_cited": [
+        "Jean Lave and Etienne Wenger, Situated Learning: Legitimate Peripheral Participation, Cambridge University Press, 1991"
+      ],
+      "steelman": "The First-Break Problem names a real upstream pressure in transformative traditions: a path often asks a person to use capacities that the path itself says are impaired, undeveloped, deluded, sinful, or unavailable. The idea is strongest when it treats traditions not as offering the same solution, but as choosing different entry grammars, social encounter, gift, grace, self-disclosure, gradual transformation, or no-break endowment. Its best contribution is not that circularity exists, since that has close prior art, but that the entry grammar may predict later warnings about effort, false claiming, teacher verification, community dependence, and self-deception.",
+      "strongest_objection": "The model may be placing the explanatory weight too early. In many traditions, the apparent first-break is not an upstream cause that predicts later architecture, but a retrospective doctrinal interpretation of an ongoing training environment. A person does not first acquire a clean entry mechanism and then practice. They are inducted into repeated, socially managed micro-handoffs of attention, trust, obedience, desire, and interpretation. Only later does the tradition teach them how to narrate that induction as grace, encounter, original nature, karmic ripening, teacher blessing, or innate sprouts.",
+      "test_that_would_settle_it": "Give blinded coders only entry narratives, initiation instructions, or practitioner interviews, excluding later doctrinal manuals and warning sections. Ask them to classify first-break type. Then test whether those classifications predict unseen downstream safeguards and effort theories better than alternative variables such as community structure, ritual intensity, teacher authority, conversion pattern, family inheritance, and institutional discipline.",
+      "turn": 1,
+      "turn_type": "challenge",
+      "verdict_on_revision": null
+    },
+    {
+      "agent": "claude",
+      "argument": "I concede the central insight: most practitioners begin through custodial induction, not through a clean first-break event. The original model overweighted punctual entry and underweighted the graduated, socially embedded processes that Lave and Wenger describe. The claim to universality was too strong. But the custodial induction model, taken alone, predicts more convergence than we actually observe. If entry doctrine is merely retrospective narration layered over similar participatory processes, then traditions sharing social structure but diverging in entry doctrine should show similar downstream architectures. They do not. Shinran and Honen shared the same teacher-student lineage, the same Japanese Buddhist institutional context, the same nembutsu practice. Yet Shinran's entry doctrine, that even the impulse to say nembutsu is not self-generated, produced a different institutional form: no monasticism, no graduated cultivation, no merit transfer, a different verification structure, different characteristic warnings. The doctrine did not interpret existing custodial arrangements; it reorganized them. The same pattern appears in Dzogchen versus gradual sutra-path practice within Tibetan Buddhism. Shared institutional context, divergent entry doctrine, divergent custodial arrangements. The pointing-out instruction restructures the teacher relationship, the role of preliminary practice, and the criteria for verification in ways that track the entry commitment (awareness was never absent) rather than shared Tibetan institutional inheritance. So I revise the model in three ways. First, the first-break variable is not universally upstream. In socially naturalized entry (apprenticeship, inherited ritual, gradual habituation), the custodial induction model has greater explanatory power. Second, in traditions with explicit incapacity anthropologies, entry doctrine is prescriptive rather than retrospective: it reshapes the custodial arrangements it authorizes, and the first-break variable retains genuine causal standing. Third, the rubric should code whether entry doctrine is prescriptive or retrospective, since this distinction determines whether the first-break model or the custodial induction model is the better primary explanation for a given tradition. The deepest crux is whether this prescriptive-retrospective distinction holds under empirical pressure. The blinded-coder test is fair. But I would add a comparative-institutional test: traditions sharing social context but diverging in entry doctrine. If custodial arrangements track entry doctrine rather than institutional inheritance, the model survives in its revised, restricted form. If they track institutional inheritance regardless of doctrine, I should concede that entry doctrine is narrative overlay and adopt the custodial induction model as primary.",
+      "claim_units": [],
+      "concessions": [
+        "The custodial induction model genuinely describes how most practitioners actually begin. The original model overweighted punctual entry and underweighted gradual, socially mediated induction. A Thai forest novice copying his teacher's posture, a child absorbing family liturgy, a seeker drawn by the character of a community: these are custodial processes, not clean first-break events.",
+        "In inherited-practice and apprenticeship traditions, the first-break is often retrospective narration rather than a distinguishable upstream cause. The model's original claim to universality was too strong.",
+        "Lave and Wenger's legitimate peripheral participation is a real and undertheorized mechanism of contemplative entry. The original model treated entry as a single structural event rather than as a process of graduated participation under social custody.",
+        "The blinded-coder test proposed by the challenger is a fair operationalization. If first-break classifications only work after coders already know the tradition's theology, the variable is not independent and the causal claim should be downgraded."
+      ],
+      "counter_model": null,
+      "crux": "Does entry doctrine in explicit-incapacity traditions shape the actual custodial arrangements, the institutional form, permitted practices, teacher authority structure, and verification procedures, or does it only provide a theological narrative layered over arrangements that would exist regardless of doctrinal commitment?",
+      "crux_assessment": "If entry doctrine reshapes custodial arrangements in the predicted directions, the first-break model retains genuine causal standing within its restricted domain, and the revised rubric (distinguishing prescriptive from retrospective entry doctrine) becomes a useful analytical tool. If custodial arrangements track institutional inheritance rather than entry doctrine, the model should be downgraded to a typology of doctrinal self-description, still useful for mapping how traditions narrate beginnings, but without the predictive-architectural claim.",
+      "defense": "The custodial induction model explains how practice begins socially. It does not explain why certain traditions actively prohibit particular custodial arrangements or reshape them in response to entry doctrine. The semi-Pelagian controversy was not a retrospective narration of how people had already been inducted; it was a prescriptive institutional fight that changed what induction looked like. After the Council of Orange, the Latin church restructured baptismal theology, catechetical practice, and the permitted role of human cooperation. The doctrine did not interpret an existing custodial arrangement; it reorganized the arrangement.\n\nShinran's break from Honen is the clearest case. Honen already taught nembutsu as primary practice, and both teachers shared the same Japanese Buddhist institutional inheritance. But Shinran's entry doctrine, that even the arising of the mind to say nembutsu is Amida's working, generated a different institutional form: no monasticism, no merit transfer, no self-powered recitation, no graduated cultivation. The custodial arrangements themselves changed because the first-break commitment changed. This is not retrospective narration layered over similar participation; it is doctrine reshaping the participation it authorizes.\n\nThe challenge assumes custodial induction is the base layer and doctrine is the interpretive overlay. But in explicit-incapacity traditions, the relationship runs in both directions. Jodo Shinshu does not merely narrate entry differently from Tendai; it structures community, liturgy, teacher authority, and verification differently because its first-break commitment forbids certain forms of custodial self-management that Tendai permits. Dzogchen does not merely describe recognition differently from gradual Tibetan sutra-path practice; it structures the teacher relationship, the role of preliminary practices, and the verification of realization differently because its entry doctrine (awareness was never absent) constrains what custodial arrangements are coherent.\n\nThe predictive claim therefore survives for a restricted but important domain: traditions where entry circularity is doctrinally contested. In those traditions, entry doctrine actively shapes custodial arrangements, effort theory, and verification architecture. The challenger is right that in traditions where entry is socially naturalized, apprenticeship, inherited ritual, gradual habituation, the custodial induction model has greater explanatory power and the first-break rubric describes doctrinal self-description rather than causal structure.\n\nOne further point. The challenger's own counter-model has a version of the same problem it diagnoses in mine. If custodial induction is the real base layer, then traditions with sharply different entry doctrines but similar social structures should show similar downstream architectures. But they do not. Jodo Shinshu and Tendai share Japanese Buddhist social history, yet their effort theories, verification procedures, and characteristic warnings diverge in ways that track entry doctrine rather than shared institutional inheritance. The custodial induction model, taken as the sole explanatory layer, predicts more convergence than we actually observe.",
+      "fairness_check": null,
+      "hidden_assumption": null,
+      "new_source": null,
+      "remaining_risk": null,
+      "revised_claim": "The first-break problem is not universally upstream of practice architecture. In traditions where entry circularity is doctrinally contested, where the tradition explicitly theorizes the practitioner's incapacity to self-initiate (Shinran, Orange, Dzogchen's warning against premature claiming, Augustine's correction of his earlier view), entry doctrine actively shapes the custodial arrangements through which practice begins and constrains downstream effort theory, verification methods, and failure modes. In traditions where entry is socially naturalized (apprenticeship, inherited ritual, gradual habituation), the first-break variable describes doctrinal self-narration rather than causal structure, and the custodial induction model has greater explanatory power. The model's strongest predictive domain is therefore traditions with explicit incapacity anthropologies. The revised rubric should include a 'custodial entry' category alongside social encounter, cosmic gift, prevenient grace, self-disclosure, and no-break, and should code whether entry doctrine is prescriptive (reshaping custodial arrangements) or retrospective (narrating them).",
+      "role": "proponent",
+      "sources_cited": [
+        "Shinran, Tannisho, chapter 1 (Yuien-bo recording Shinran; Hirota translation, shinranworks.com)",
+        "Council of Orange (529 CE), canons 5 and 6 (crivoice.org/creedorange.html)",
+        "Jean Lave and Etienne Wenger, Situated Learning: Legitimate Peripheral Participation, Cambridge University Press, 1991",
+        "SN 55.5, Dutiya Sariputta Sutta (Bhikkhu Sujato translation, SuttaCentral)"
+      ],
+      "steelman": "The custodial induction model names something the original first-break analysis genuinely missed: most practitioners do not experience a clean entry event. They are inducted through distributed, socially managed micro-handoffs of attention, trust, imitation, and habit before any doctrinal grammar becomes meaningful. If this is right, then coding a single first-break mechanism as an independent upstream variable is methodologically suspect, because the 'mechanism' may be the tradition's retrospective interpretation of a messier participatory process. The Lave and Wenger citation is well chosen: legitimate peripheral participation describes exactly the kind of graduated, socially embedded entry that the original model underweighted.",
+      "strongest_objection": null,
+      "test_that_would_settle_it": "Compare traditions that share social structure and institutional inheritance but differ in entry doctrine. The strongest test case is Jodo Shinshu versus Tendai, or Jodo Shinshu versus Honen's Jodo-shu: all share Japanese Buddhist institutional history, but differ sharply on whether the practitioner can initiate practice. Code their custodial arrangements (teacher authority, permitted practices, verification procedures, community structure, characteristic entry warnings) independently of their entry doctrines. If the arrangements differ in ways predicted by entry doctrine rather than by shared institutional inheritance, the model's causal claim survives for explicit-incapacity traditions. If their arrangements are structurally similar despite doctrinal divergence, entry doctrine is narrative overlay and the custodial induction model is the better primary explanation. A second test: compare Dzogchen and gradual sutra-path Tibetan Buddhism, which share Tibetan institutional context but differ on whether rigpa was ever absent. If preliminary practice structure, teacher verification requirements, and warnings about false claiming diverge along entry-doctrine lines, the model gains further support.",
+      "turn": 2,
+      "turn_type": "rebuttal",
+      "verdict_on_revision": null
+    },
+    {
+      "agent": "codex",
+      "argument": "The revision is substantially more serious, but it is not simply the same thesis made stronger. It has become a different model: not a universal first break upstream of practice, but a domain restricted account of how explicit incapacity doctrines and custodial arrangements may mutually constrain one another. That transformation is good. It absorbs the strongest part of the custodial induction objection and preserves a real research program. The proponent's best move is the prescriptive versus retrospective distinction. That distinction prevents doctrine from being demoted to mere narration while still allowing apprenticeship and inherited ritual to begin without a clean first break. I would not keep challenging the existence of first break grammar. The better pressure is causal identification. Shinran against Honen and Dzogchen against gradual Tibetan practice are promising cases, but they are not clean controls. Doctrinal divergence, institutional reform, teacher authority, sectarian boundary making, and later self description move together. If we read all of that as entry doctrine, the model wins too easily. So the named crux is the right crux in broad form: does entry doctrine reshape custody, or merely narrate it? The sharper crux is whether entry doctrine has independent causal force after matched comparison and temporal sequencing. If yes, the revised model deserves promotion from typology to restricted causal hypothesis. If no, it remains valuable as a map of how traditions authorize beginnings, but not as a predictor of practice architecture.",
+      "claim_units": [
+        "The original universal upstream claim has been withdrawn.",
+        "The revised model treats custodial induction as primary in inherited, apprenticeship, ritual, and gradual habituation contexts.",
+        "The revised model preserves causal force for explicit incapacity traditions where entry doctrine forbids some forms of effort or self authorization.",
+        "The new prescriptive versus retrospective distinction is the model's most important repair.",
+        "The remaining question is whether entry doctrine has independent causal force or only names a broader sectarian and institutional package."
+      ],
+      "concessions": [
+        "The revision is stronger than the original as a research program because it no longer forces all traditions into a single entry structure.",
+        "The prescriptive versus retrospective distinction is a real improvement and should be kept.",
+        "The proponent is right that custodial induction alone can predict too much convergence if it ignores doctrines that actively forbid certain kinds of effort or authority.",
+        "Explicit incapacity traditions deserve separate treatment from socially naturalized apprenticeship traditions."
+      ],
+      "counter_model": "Sectarian compression model: when a movement differentiates itself from nearby rivals, it compresses many practical, social, and authority differences into a doctrinal entry grammar. The entry doctrine then is not mere overlay, because it can discipline later practice, but it may be a symbolic control surface for a broader institutional package rather than the originating cause.",
+      "crux": "The named crux is basically the real crux, but it needs one more clause: does entry doctrine shape custodial arrangements as an independent causal variable, or is it one expression of a broader sectarian and institutional package that also shapes those arrangements?",
+      "crux_assessment": "The proponent's crux is real because the argument now depends on prescription versus retrospective narration. It is still too broad unless temporal order and independent variation are required. If doctrine and institution are coded from the same mature sectarian package, the test can confirm the model by construction.",
+      "defense": null,
+      "fairness_check": "I accept that my original challenge would be too strong if it made doctrine always secondary. Some doctrines do reorganize participation; they are not merely after the fact descriptions.",
+      "hidden_assumption": "The revised model assumes that explicit incapacity doctrine can be separated from the institutional and polemical pressures that make such doctrine useful, authoritative, and durable.",
+      "new_source": null,
+      "remaining_risk": "The remaining risk is overcleaning a messy causal ecology. The revision no longer overclaims universality, but it may still make entry doctrine carry causal weight that belongs to institution formation, lineage politics, conversion pattern, teacher charisma, or inherited ritual form. The model is now useful, but only if it treats causality as something to prove case by case.",
+      "revised_claim": "The surviving claim should be: in some explicit incapacity traditions, entry doctrine and custodial arrangements co evolve, and entry doctrine may become a prescriptive control surface for effort, authority, and verification. Its independent causal power remains unproven until process tracing shows that doctrine changed or constrained arrangements beyond what social context and sectarian differentiation would predict.",
+      "role": "challenger",
+      "sources_cited": [
+        "Jean Lave and Etienne Wenger, Situated Learning: Legitimate Peripheral Participation, Cambridge University Press, 1991",
+        "Shinran, Tannisho, chapter 1",
+        "Council of Orange, 529 CE, canons 5 and 6",
+        "SN 55.5, Dutiya Sariputta Sutta"
+      ],
+      "steelman": "The proponent's revision does the main thing a serious model should do under pressure: it gives up universality, adds custodial induction, and restricts causal force to explicit incapacity traditions where entry doctrine is contested and institutionally prescriptive. Its best remaining claim is not that every path has a first break, but that some traditions explicitly define the beginning as impossible from the practitioner's side, then build rules of effort, authority, verification, and warning around that premise.",
+      "strongest_objection": "The revision may still infer causation from sectarian contrast too quickly. Jodo Shinshu versus Honen's Jodo Shu, or Dzogchen versus gradual sutra path, are not clean controls. Founder biography, anti monastic reform, lay patronage, polemical boundary making, institutional survival, political context, transmission style, and later codification can all produce different custodial arrangements while also being expressed in entry doctrine. The remaining danger is that entry doctrine becomes the name for a whole sectarian package rather than an independent explanatory variable.",
+      "test_that_would_settle_it": "Use process tracing and matched comparisons. First, code entry doctrine at the earliest recoverable stage. Second, map later changes in permitted practices, teacher authority, verification, initiation, and warning language. Third, compare matched neighboring traditions with shared lineage and context, plus negative cases where explicit incapacity doctrine exists without institutional divergence, or divergence exists without explicit incapacity doctrine. The model strengthens only if entry doctrine predicts later arrangements better than founder role, lay or monastic base, patronage, polemical boundary needs, ritual inheritance, and institutional discipline.",
+      "turn": 3,
+      "turn_type": "counter_rebuttal",
+      "verdict_on_revision": "transformed"
+    }
+  ]
+}

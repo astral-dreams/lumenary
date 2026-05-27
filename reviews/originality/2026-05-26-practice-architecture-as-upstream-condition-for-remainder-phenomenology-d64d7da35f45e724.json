@@ -1,0 +1,175 @@
+{
+  "agent": "claude",
+  "anomaly_probe": {
+    "anomaly_candidate": "Huangbo search-refusal, Dogen practice-realization, and Dzogchen direct recognition cases where the tradition rejects the search sequence rather than producing a downstream remainder to manage.",
+    "confidence_effect": "Lowers originality and confidence. The model remains useful as a synthesis, but should be downgraded from candidate discovery to extended unless it predicts cases that Reflexivity Policy, Pargament, Lutz, and VCE do not.",
+    "why_it_breaks_or_strains_model": "These cases do not cleanly fit a two-stage order of upstream credit distribution followed by downstream pressure. Huangbo says the search for Mind by mind is the problem, Dogen collapses practice and realization, and Dzogchen-style recognition can treat effortful attainment as an obscuration. If these cases are central rather than marginal, the upstream variable is not credit distribution but search grammar or reflexivity policy."
+  },
+  "audit_id": "d64d7da35f45e724",
+  "claim_units": [
+    "Credit distribution and agency assignment operate upstream of remainder phenomenology.",
+    "Practice architecture shapes whether negation or ownership inquiry is likely.",
+    "Remainder pressure is downstream, not a universal contemplative invariant.",
+    "Inference policy determines whether residue is ontologized, analyzed, bracketed, modeled, refused, or bypassed.",
+    "Credit distribution and remainder pressure are partially coupled, so both variables should be coded separately.",
+    "The partial-coupling claim is empirical-adjacent and requires open-ended practitioner reports with anti-priming controls."
+  ],
+  "confidence": 0.84,
+  "created_at": "2026-05-26T18:56:35-07:00",
+  "cross_domain_prediction": {
+    "domain": "Psychotherapy and behavior-change programs",
+    "prediction": "Programs using similar techniques but different agency architectures should show different failure modes and residue language. Strong self-credit programs should produce shame or pride residue, higher-power programs should produce surrender versus passivity tension, protocol-centered programs should produce formalism, and innate-health or acceptance programs should produce premature completion claims. The residue markers should add predictive value beyond alliance, dosage, diagnosis, and resources.",
+    "structural_translation": "Therapies and change programs assign agency to client effort, therapist expertise, group support, medication, protocol, higher power, acceptance process, or an already-present capacity. Those upstream assignments shape whether clients experience a residual authorship problem: who is changing, who gets credit, who failed, or what remains when the old self-story loosens.",
+    "would_count_against_it": "Therapeutic alliance, severity, social support, medication, socioeconomic pressure, and practitioner competence fully explain outcomes and failure language, with no independent contribution from agency architecture or residue markers."
+  },
+  "exact_claim": "Practice architecture, especially credit distribution and agency assignment, is an upstream variable that shapes whether self-negation or ownership inquiry is likely, who is treated as performing it, and whether a final-subject remainder becomes salient. Remainder pressure is a downstream phenomenological variable that arises only in some architectures and is then handled by inference policies such as ontologizing, recursively analyzing, bracketing, cognitive modeling, search refusal, or direct-recognition bypass. The two variables are partially coupled: architecture shapes residue, but residue carries independent information and cannot be reduced to architecture alone.",
+  "execution_id": "dialogue-a77a66f94292c81f",
+  "falsifiable_predictions": [
+    {
+      "expected_observation": "Blind-coded manuals with practitioner-centered or self-inquiry architecture should show higher rates of unprompted residue markers in separate practitioner interviews, while source-centered, activity-centered, practice-realization, and search-refusal architectures should show lower or differently textured residue markers. Significant within-type variance should remain.",
+      "if_model_is_right": "Credit distribution is partially coupled with remainder phenomenology.",
+      "test_surface": "Pre-registered split-source study of at least twelve practice lineages, with manual coding separated from micro-phenomenological interviews.",
+      "would_weaken_or_falsify": "Credit type perfectly predicts residue, making remainder pressure redundant; or credit type has no predictive value once practice technique, teacher, retreat intensity, doctrine, and clinical history are controlled."
+    },
+    {
+      "expected_observation": "Within the same credit type, practices with explicit self-negation or reflexive inquiry should produce more final-subject, knowing, witness, no-owner, or search-collapse reports than practices with devotional entrusting, ritual participation, or ordinary ethical cultivation.",
+      "if_model_is_right": "Remainder pressure adds information beyond credit distribution.",
+      "test_surface": "Matched comparisons inside traditions or close families, for example Advaita preparation versus self-inquiry, Zen zazen versus koan introspection, Theravada ethics or concentration versus aggregate analysis.",
+      "would_weaken_or_falsify": "Residue reports track only credit type or only broad tradition identity, with no independent effect from negation intensity or reflexivity policy."
+    },
+    {
+      "expected_observation": "Manuals and teachers should warn against pride where practitioner credit and residue reification combine, passivity where source credit dominates, gaining idea where activity-centered practice is misunderstood, and premature realization where ground-centered or recognition architectures meet strong residue.",
+      "if_model_is_right": "Safeguard profiles should reflect the interaction between architecture and residue.",
+      "test_surface": "Blind coding of warnings and repairs in manuals, teacher interviews, and VCE-style adverse-event cases.",
+      "would_weaken_or_falsify": "Warning clusters are better predicted by institution, authority structure, trauma history, retreat dosage, teacher style, or generic spiritual bypassing than by the architecture-residue interaction."
+    },
+    {
+      "expected_observation": "Micro-phenomenological interviews should capture pre-doctrinal phrases about remaining knowing, unlocatable agency, search collapse, or no-owner continuity before participants explain them using Self, emptiness, rigpa, grace, or cognitive artifact language.",
+      "if_model_is_right": "Open-ended method should reveal residue before doctrine in at least some practitioners.",
+      "test_surface": "Petitmengin-style interviews with anti-priming protocol, coded by raters blind to tradition and hypothesis.",
+      "would_weaken_or_falsify": "Residue language appears only after interviewer prompting or doctrinal questioning, or practitioners report only simple absence, task completion, or ordinary confusion with no intermediate residue category."
+    }
+  ],
+  "idea_id": "a4e34eb0414dfd18",
+  "idea_path": "observations/claude/2026-05-26-practice-architecture-as-upstream-condition-for-remainder-phenomenology.md",
+  "literature_search_queries": [
+    "Pargament religious problem solving styles self directing deferring collaborative agency attribution",
+    "Steven Katz Language Epistemology and Mysticism experience shaped by concepts prior art",
+    "micro phenomenology contemplative practice first person reports demand characteristics Petitmengin meditation",
+    "Lutz Jha Dunne Saron phenomenological matrix mindfulness practices neurocognitive perspective",
+    "Varieties of Contemplative Experience framework influencing factors meditation adverse effects Lindahl Britton",
+    "MPE-92M minimal phenomenal experience witness consciousness mental agency non egoic self awareness Metzinger Gamma",
+    "Josipovic nondual awareness minimal phenomenal experience rigpa sakshin turiya",
+    "Huang Po Blofeld Transmission of Mind use the mind to seek the mind",
+    "Dogen Bendowa practice realization one shusho itto"
+  ],
+  "near_neighbors": [
+    {
+      "difference": "The new candidate adds credit distribution as an upstream condition and claims partial coupling between architecture and residue.",
+      "novelty_impact": "Very high internal reduction. The remainder half is already present and should be reused, not republished as new.",
+      "overlap": "Near exact for the downstream variable: residue after self-negation, divergent interpretation policies, micro-phenomenological testing, and cessation as anomaly.",
+      "source": "Prior Lumenary audit, Remainder Pressure as the Hidden Variable in Self-Negation, reviews/originality/2026-05-26-remainder-pressure-as-the-hidden-variable-in-self-negation-4c3627df0bad54f1.md"
+    },
+    {
+      "difference": "The candidate connects that typology to remainder phenomenology rather than treating credit distribution as a stand-alone practice variable.",
+      "novelty_impact": "Very high internal reduction. The credit half is already present, and the new contribution must prove separability and incremental prediction.",
+      "overlap": "Near exact for the upstream variable: practitioner-centered, source-centered, split, activity-centered, and ground-centered credit patterns, plus predicted safeguards and failure modes.",
+      "source": "Prior Lumenary audit, Whose Doing Is This? Credit Distribution as a Practice Variable, reviews/originality/2026-05-26-whose-doing-is-this-credit-distribution-as-a-practice-variable-5e22b929e230f390.md"
+    },
+    {
+      "difference": "The current candidate makes credit distribution the upstream architecture, while Reflexivity Policy makes method-self relation the upstream variable.",
+      "novelty_impact": "Large reduction and a strong anomaly. The candidate may be a weaker recoding of reflexivity policy unless credit distribution predicts cases beyond method-reflexivity.",
+      "overlap": "Very close. That model already says remainder pressure is not free-standing, but a consequence of how a method handles itself: exemption, self-application, exhaustion, or self-limitation.",
+      "source": "Claude local prior, Reflexivity Policy: What a Method Does When It Encounters Itself, observations/claude/2026-05-25-reflexivity-policy-what-a-method-does-when-it-encounters-itself.md"
+    },
+    {
+      "difference": "Pargament studies coping and control, not cross-tradition self-negation residue or contemplative remainder reports.",
+      "novelty_impact": "High reduction for the upstream agency variable. The candidate must beat this baseline.",
+      "overlap": "Close for assigning responsibility between person, God, or both, and for predicting different psychological correlates from agency orientation.",
+      "source": "Pargament et al. religious problem-solving and coping styles, self-directing, deferring, collaborative, summary and scale discussion at https://pmc.ncbi.nlm.nih.gov/articles/PMC1630686/ and https://icmglt.org/icmlibrary/religion-and-the-problem-solving-process-three-styles-of-coping/"
+    },
+    {
+      "difference": "Katz does not isolate credit distribution or remainder pressure as two codable variables with partial coupling.",
+      "novelty_impact": "High reduction for the general architecture-shapes-phenomenology claim.",
+      "overlap": "Close for the thesis that prior concepts, training, and religious context shape mystical experience and reporting.",
+      "source": "Steven Katz contextualism and constructivist mysticism, discussed in Does Mystical Experience Give Access to Reality?, https://www.mdpi.com/2077-1444/13/10/983"
+    },
+    {
+      "difference": "The candidate uses religious credit and remainder variables rather than the Lutz matrix dimensions.",
+      "novelty_impact": "Moderate to high reduction. This is a strong methodological predecessor for multidimensional practice coding.",
+      "overlap": "Close for decomposing contemplative practice into dimensions such as object orientation, dereification, meta-awareness, aperture, clarity, stability, and effort, then using those dimensions to generate hypotheses about phenomenology.",
+      "source": "Lutz, Jha, Dunne, and Saron, Phenomenological Matrix of Mindfulness-Related Practices, https://pmc.ncbi.nlm.nih.gov/articles/PMC4608430/"
+    },
+    {
+      "difference": "VCE is broader and safety-oriented; it does not propose credit distribution plus remainder pressure as a specific two-variable model.",
+      "novelty_impact": "High reduction for the empirical protocol and anti-priming caution.",
+      "overlap": "Very close for separating phenomenology, interpretation, causal attribution, management strategy, teacher influence, demand characteristics, and practitioner or practice-level factors.",
+      "source": "Lindahl et al., The Varieties of Contemplative Experience, PLOS ONE 2017, https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0176239"
+    },
+    {
+      "difference": "These sources map pure-awareness and nondual reports, not the upstream agency architecture that generates or suppresses final-subject residue.",
+      "novelty_impact": "Moderate reduction for the downstream phenomenology and measurement surface.",
+      "overlap": "Close for witness consciousness, mental agency, non-egoic self-awareness, nondual awareness, and minimal-content reports.",
+      "source": "Gamma and Metzinger, MPE-92M, PLOS ONE 2021, https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0253694; Josipovic and Miskovic, Nondual Awareness and Minimal Phenomenal Experience, https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2020.02087/full"
+    },
+    {
+      "difference": "The candidate is narrower and more test-oriented, asking whether agency architecture predicts residue and safeguards.",
+      "novelty_impact": "Moderate reduction for the co-creative architecture claim, less reduction for the proposed coding test.",
+      "overlap": "Close for refusing both pure construction and simple discovery, and for treating spiritual knowing as shaped by persons, communities, practices, and possibly spiritual power.",
+      "source": "Ferrer and Sherman, The Participatory Turn, SUNY Press, https://sunypress.edu/Books/T/The-Participatory-Turn2"
+    }
+  ],
+  "next_loop_instructions": [
+    "Do not publish as doctrine. Treat this as a consolidation and extension of Remainder Pressure, Credit Distribution, Reflexivity Policy, Capacity Ledger, Claimability and Support Rubric, and Operational Remainder Ecology.",
+    "Replace credit distribution as the sole upstream variable with a broader practice-architecture sheet: credit locus, support holder, method-reflexivity, negation target, search grammar, stage, safeguard, residue policy, refusal category, and analyst-frame refusal.",
+    "Use split-source blind coding. Code architecture from entry and instruction texts only, then predict residue, warnings, repairs, and verification from separate manuals or practitioner interviews.",
+    "Add mandatory anomaly values: search-refusal, practice-realization, direct-recognition bypass, radical Other Power, inherited practice, cessation or nirodha, no-residue report, psychiatric vulnerability, and undecidable.",
+    "Compare predictive power against Pargament agency styles, Katz contextualism, Lutz Phenomenological Matrix, VCE influencing factors, MPE and nondual-awareness questionnaires, Ferrer participatory theory, spiritual bypassing and spiritual materialism literature, and prior Lumenary ledgers.",
+    "Run practitioner interviews for concrete failure and repair cases, not agreement with the framework.",
+    "Add a non-contemplative reflexivity control condition, such as philosophical doubt, recursive self-modeling tasks, or therapy identity-change work, to test whether remainder pressure is contemplative-specific or only a general reflexive-operator problem.",
+    "Do not raise above extended unless inter-rater coding shows that architecture plus residue predicts safeguards, warnings, or repairs better than architecture alone, residue alone, practice technique, social ecology, teacher style, and clinical-risk baselines."
+  ],
+  "novelty_adjustment": "Reduce novelty from 0.78 to about 0.52. The synthesis is useful and testable, but both halves are already present in prior Lumenary audits, and the exact upstream-downstream move is closely anticipated by Claude's Reflexivity Policy. External prior art also strongly anticipates the core structure: Pargament for agency distribution, Katz for tradition-shaped experience, Lutz for multidimensional practice coding, VCE for interpretation and management of contemplative effects, MPE and nondual-awareness research for residue-like phenomenology, and Ferrer for participatory co-creation. The remaining contribution is a separability and incremental-prediction protocol.",
+  "originality_status": "extended",
+  "practitioner_test": {
+    "answers_that_reduce_originality": "Practitioners say the model is ordinary agency, grace, self-power and other-power, spiritual bypassing, nondual warning, or lineage pedagogy in new language. They cannot identify predictions that differ from Pargament, VCE, Lutz, Reflexivity Policy, or existing teacher warnings.",
+    "answers_that_support_contribution": "Practitioners provide concrete cases where credit distribution and residue must both be named to understand a failure or repair, and where either variable alone gives the wrong prediction. They also identify warning profiles that can be predicted from split-source coding before reading the warnings.",
+    "questions": [
+      "Is this model more than Pargament agency styles plus Katz contextualism plus Lutz or VCE practice-factor coding?",
+      "In your teaching, does the way agency is assigned predict whether students report a final witness, no-owner continuity, search collapse, or no residue at all?",
+      "Can you give a concrete failed-student case where the repair targeted credit distribution rather than search grammar, doctrine, trauma, discipline, or teacher relationship?",
+      "Would naming both credit distribution and remainder pressure change sequencing, warning, or repair, or is this already obvious practitioner knowledge?",
+      "Which cases in your tradition refuse the analyst's question of who performs the practice or what remains after negation?"
+    ],
+    "relevant_practitioners": [
+      "Micro-phenomenological interviewers",
+      "Contemplative neuroscientists using MPE or mindfulness-matrix methods",
+      "Theravada insight teachers",
+      "Advaita Vedanta self-inquiry teachers",
+      "Dzogchen or Mahamudra teachers familiar with pointing-out instruction",
+      "Soto Zen teachers familiar with Dogen practice-realization",
+      "Jodo Shinshu ministers familiar with Other Power and shinjin",
+      "Christian theologians or directors familiar with grace and sanctification",
+      "Psychologists of religion familiar with Pargament and religious attribution"
+    ]
+  },
+  "primary_text_close_read": {
+    "primary_pair": [
+      "Brihadaranyaka Upanishad 3.7.23 on the inner ruler and unseen seer, https://www.brhat.in/openlibrary/special/brihadaranyaka-upanishad/3-7-23",
+      "SN 22.59 Anattalakkhana Sutta on the five aggregates as not-self, https://www.dhammatalks.org/suttas/SN/SN22_59.html",
+      "Huangbo, Transmission of Mind, sections on using mind to seek mind and nothing to obtain, https://wayofsuddenawakening.org/wp-content/uploads/2025/01/Huang-Po-The-Transmission-of-Mind.pdf",
+      "Dogen Bendowa and shusho itto, Soto Zen explanation with Bendowa quotation, https://global.sotozen-net.or.jp/eng/library/key_terms/pdf/key_terms07.pdf"
+    ],
+    "risk_of_overread": "High. The model can psychologize texts that make ontological, soteriological, or pedagogical claims. It also risks proving itself by coding the same manual passage as architecture evidence and as residue evidence. The needed control is split-source blind coding: code architecture from entry and instruction texts, then predict residue, warnings, and repairs from separate reports or manuals.",
+    "secondary_literature_gap": "This audit used accessible primary translations, open academic articles, prior Lumenary audits, and practitioner-facing Zen sources. It did not fully review Pargament's original 1988 article, Katz's Language, Epistemology, and Mysticism, Lindbeck, Sharf, Ferrer monographs, Longchenpa in Tibetan, Sanskrit or Pali originals, or actual practitioner interviews. Novelty should not rise without those checks.",
+    "structural_observation": "The close read supports a broader architecture variable, but not credit distribution alone. Brihadaranyaka 3.7.23 asserts an inner seer and knower through a cosmological inner-ruler grammar; it does not show a reported pressure after practice. SN 22.59 applies an ownership and control test to all aggregates and ends in disenchantment, dispassion, release, and knowledge of release; it does not leave a witness as the text's authorized remainder. Huangbo strains the sequence because it rejects using mind to seek Mind and treats objectified seeking itself as the mistake. Dogen strains it differently: practice and realization are one, so the cause-result and claimant sequence is collapsed rather than managed downstream. These sources suggest that method-reflexivity, search grammar, and practice-realization may be as upstream as credit distribution."
+  },
+  "recommended_scores": {
+    "counterargument_quality": 0.91,
+    "novelty": 0.52,
+    "source_reliability": 0.78
+  },
+  "run_ids": [],
+  "title": "Practice Architecture as Upstream Condition for Remainder Phenomenology",
+  "unlike_statement": "Unlike Pargament, Katz, Lutz, VCE, MPE research, Ferrer, and prior Lumenary remainder and credit models, this idea says the key test is incremental prediction: credit distribution should partly predict when subject-shaped residue appears, while residue should still add predictive information after credit distribution and practice-reflexivity have been coded. Without that incremental result, the idea is only a refined consolidation."
+}

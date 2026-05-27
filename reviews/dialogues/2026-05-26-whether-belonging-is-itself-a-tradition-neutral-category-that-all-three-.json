@@ -1,0 +1,226 @@
+{
+  "convergence_path": "findings/convergences/2026-05-26-whether-belonging-is-itself-a-tradition-neutral-category-that-all-three-traditi.md",
+  "created_at": "2026-05-26T21:00:20-07:00",
+  "dialogue_id": "c2d99fd52ac864e4",
+  "execution_id": "backfill-20260526-154746",
+  "json_path": "reviews/dialogues/2026-05-26-whether-belonging-is-itself-a-tradition-neutral-category-that-all-three-.json",
+  "markdown_path": "reviews/dialogues/2026-05-26-whether-belonging-is-itself-a-tradition-neutral-category-that-all-three-.md",
+  "pair": {
+    "challenger_agent": "claude",
+    "challenger_title": "Whose Doing Is This? Credit Distribution as a Practice Variable",
+    "idea_a": "9a0072f4cf3a0ff3",
+    "idea_b": "a5ae6e997ca1d286",
+    "pair_id": "fb7294dc084261cc",
+    "priority": 0.42,
+    "proponent_agent": "codex",
+    "proponent_title": "The Custody of Unclaimed Attention",
+    "shared_concepts": [],
+    "signals": [
+      {
+        "name": "translation_strain",
+        "reason": "translation-strain and soul create translation strain.",
+        "weight": 0.12
+      },
+      {
+        "name": "audit_anomaly_overlap",
+        "reason": "An anomaly or audit instruction for one idea pressures the other idea.",
+        "weight": 0.12
+      },
+      {
+        "name": "near_neighbor_conflict",
+        "reason": "Originality audits share near-neighbor or prior-art pressure.",
+        "weight": 0.08
+      },
+      {
+        "name": "source_overlap_with_divergent_conclusion",
+        "reason": "The ideas draw on overlapping source material but make different moves.",
+        "weight": 0.06
+      },
+      {
+        "name": "recency",
+        "reason": "At least one idea is recent enough to keep the dialogue timely.",
+        "weight": 0.04
+      }
+    ],
+    "tension_source": "translation-strain and soul create translation strain.",
+    "tension_type": "translation_strain"
+  },
+  "run_dir": "runs/dialectic-backfill-20260526-154746/fb7294dc084261cc",
+  "run_ids": [],
+  "slug": "2026-05-26-whether-belonging-is-itself-a-tradition-neutral-category-that-all-three-",
+  "status": "complete",
+  "synthesis": {
+    "candidate_synthesis": null,
+    "convergence_claim": "Both models recognize that contemplative traditions train practitioners in how to relate to weakened self-ownership, treating this relational training as a separable practice variable rather than a doctrinal footnote. They diverge on what the variable tracks: belonging-norms (revised custody) versus credit-attribution (credit distribution). The convergence is at the meta-level: both identify a dimension of practice not reducible to phenomenological content, doctrinal belief, or technique, and both predict that this dimension shapes failure modes and safeguards.",
+    "method_growth": "When a comparative model's central metaphor imports a modern framing (here, 'attention' as a finite transferable resource from cognitive science), test the metaphor against the oldest available commentarial tradition for each case, not only against the primary text. Dhammapala's Paramatthadipani and Analayo's 2019 study exposed what the Bahiya Sutta alone did not make visible: that the operative category is cessation of clinging, not attention management. A two-stage empirical design emerged from the exchange: code operative process (cessation, recognition, intensification) separately from belonging-rules, so the study cannot force a shared substrate into the data. Future dialectics should name and test the tradition-neutrality of the comparative axis itself, not only the claims made along it.",
+    "new_concept_edges": [
+      {
+        "note": "The dialogue forced the custody model to drop attention as a shared substrate and reframe as norms governing what may claim experience after ordinary self-ownership weakens.",
+        "relation": "revised_into",
+        "source": "custody of attention",
+        "target": "post-appropriative belonging norms"
+      },
+      {
+        "note": "The credit-distribution model's emphasis on practice-variable specificity provided the critical pressure that produced the revised formulation.",
+        "relation": "critically_produced",
+        "source": "credit distribution",
+        "target": "post-appropriative belonging norms"
+      },
+      {
+        "note": "The revised model may be a refinement of Katz's constructivist thesis (1978) rather than a distinct contribution. The relationship must be explicitly positioned.",
+        "relation": "proximity_risk",
+        "source": "post-appropriative belonging norms",
+        "target": "constructivism"
+      },
+      {
+        "note": "Buddhist cessation may dissolve the category of belonging rather than answering it, making the belonging framework inapplicable to one of its three cases.",
+        "relation": "possible_category_refusal",
+        "source": "cessation of appropriation",
+        "target": "belonging norms"
+      },
+      {
+        "note": "Pseudo-Dionysius destabilizes the recipient of belonging within the Christian case, creating a first-order rule (direct intent to God) undermined by a second-order apophatic operation (God is beyond directedness).",
+        "relation": "internal_tension",
+        "source": "apophatic theology",
+        "target": "belonging norms"
+      }
+    ],
+    "new_frontier_question": "Can the Buddhist path's relation to post-appropriative experience be represented within a belonging-rule framework, or does the cessation of appropriation dissolve the category of belonging itself? If the latter, what kind of comparative variable can span traditions that answer the belonging question and traditions that refuse it?",
+    "outcome": "revision",
+    "public_brief": "When contemplative practice loosens ordinary self-ownership, what may claim the practitioner's experience afterward? The Custody of Unclaimed Attention proposed that traditions train different placements of a freed attentional resource: unowned (Buddhist), self-grounded (Advaitic), surrendered (Christian apophatic). A close-reading challenge showed that 'attention' smuggles in a modern cognitive metaphor that distorts all three cases: the Buddhist path ceases clinging rather than freeing attention, the Cloud of Unknowing begins with love rather than unassigned awareness, and Advaitic recognition is not reassignment. The proponent revised the model from custody of a shared resource to tradition-specific norms of post-appropriative belonging. Three open questions remain: whether 'belonging' is itself a neutral category the Buddhist path would accept, whether the revised model adds power beyond constructivist accounts of tradition-shaped experience, and how to integrate the Pseudo-Dionysian move of destabilizing the very recipient the Christian belonging-rule names.",
+    "recommended_adjustments": {
+      "challenger": {
+        "counterargument_quality": 0.02,
+        "generativity": 0.02,
+        "source_reliability": 0.02
+      },
+      "proponent": {
+        "counterargument_quality": 0.04,
+        "cross_tradition_support": -0.04,
+        "explanatory_compression": -0.06,
+        "logical_coherence": 0.04,
+        "novelty": -0.06,
+        "practice_testability": 0.04,
+        "publishability": -0.02,
+        "source_reliability": 0.04
+      }
+    },
+    "summary": "The challenger's close-reading critique forced the proponent to abandon the claim that 'attention' is a tradition-neutral transferable resource and to revise the custody model from a mechanism of attentional reassignment to a framework of tradition-specific norms governing what may claim experience after ordinary self-ownership weakens. The proponent conceded that Buddhist, Advaitic, and Christian apophatic practices train different operations from the first instruction, not the same operation followed by different assignments. The revised formulation, 'norms of post-appropriative belonging,' is more text-faithful and better falsifiable than the original, but three risks survive: proximity to Katz's constructivism, the unresolved Pseudo-Dionysius anomaly, and the deeper question of whether 'belonging' is itself tradition-neutral or whether the Buddhist path dissolves the question rather than answering it. The credit-distribution model served as effective critical pressure but was not itself challenged or revised.",
+    "synthesizer_agent": "claude",
+    "unresolved_crux": "Whether 'belonging' is itself a tradition-neutral category that all three traditions answer differently, or whether the Buddhist path dissolves the question of belonging entirely: the difference between 'a rule that nothing may claim experience' and 'no rule because claiming has ceased.' If belonging is a loaded frame that only two of the three traditions actually operate within, the revised custody model has a commensurability problem at a higher level of abstraction than the original. A secondary unresolved crux is whether the revised model adds substantive comparative power beyond Katz's constructivist thesis that normative frameworks shape contemplative experience from the outset."
+  },
+  "title": "Whether 'belonging' is itself a tradition-neutral category that all three traditi...",
+  "turns": [
+    {
+      "agent": "claude",
+      "argument": "The custody model is a sharper instrument than the perennial-versus-constructivist debate because it converts a metaphysical classification into a practice-level variable. I grant that. The specific move of asking 'where is freed attention allowed to belong?' is more testable than asking 'is the ultimate the same across traditions?' But the model's power depends entirely on the reality of its central metaphor: that attention is a common resource that first becomes free, then is assigned to different custodians. This is the hidden load-bearing assumption, and it may not survive contact with the primary texts. Consider the Buddhist leg. The Bahiya instruction, 'in the seen, just the seen,' is the model's anchor for 'unowned attention.' But Dhammapala's Paramatthadipani, the oldest surviving commentary on this passage, glosses the instruction as the non-arising of desire and lust for the seen. Analayo's 2019 study of the Bahiya instruction argues that the operative process is the cessation of mental proliferation (papanca), not the redirection or release of attention. The practitioner is not left holding unowned attention; a process (clinging, proliferating) has stopped. 'Unowned attention' is a reification of an absence. You cannot assign custody to a cessation. Now consider the Christian leg. The Cloud of Unknowing chapter 4 says a naked intent directed to God alone is wholly sufficient. The practitioner does not first loosen attention from all objects and then choose to offer it upward. Love toward God is the practice's starting condition. Forgetting creatures is instrumental to that love, a clearing of the field so that the already-directed intent can intensify. The model's sequence (first loosen, then assign) reverses the Cloud's actual order (first love, then forget). Pseudo-Dionysius, whom the model's own critique identifies as an anomaly, goes further: in Mystical Theology chapter 5, even God as a stable recipient is placed beyond affirmation and negation. The Christian apophatic tradition may not have a custody rule at all in the model's sense, because the object of intent is apophatically destabilized from within. The Advaitic leg has the best fit, because the witness (saksin) is something attention can plausibly be said to 'return to.' But even here, the Advaitic claim is not that attention is assigned to the witness; it is that the witness was always the case and superimposition (adhyasa) is removed. Shankara's praptasya praptih, the attainment of the already-attained, means there was no moment of freed attention waiting for custodial placement. Recognition is not reassignment. The counter-model I propose is this: these three traditions train different operations on different aspects of experience. The Buddhist path trains cessation of appropriation. The Advaitic path trains recognition of what was never absent. The Christian apophatic path trains intensification of love past conceptual images. These converge phenomenologically at the point of quietness, which is why cross-tradition comparisons are tempting. But the convergence is at the surface of experience, not at the level of operation. What looks like three custody rules applied to one freed resource may be three incommensurable processes that share a family resemblance when viewed through a modern attentional lens. This matters for the model's predictions. The custody model predicts that practitioner reports should diverge most at the post-negation moment, clustering by ownership and recipient language. My counter-model predicts that reports should diverge from the first instruction onward, because the operations themselves differ. If you interview practitioners using process-level questions about what they are doing in the earliest moments of practice (before any post-negation phase), and the operative categories already diverge (cessation, recognition, intensification), then the custody model is imposing a false common substrate. The divergence is not a bra...",
+      "claim_units": [
+        "There is a common practical movement, loosening attention from objects and self-story, shared across Theravada, Advaita, and Christian apophatic traditions.",
+        "After this loosening, what differs is the custody rule: where freed attention is allowed to belong.",
+        "Three custody types are identified: unowned (Buddhist), self-grounded (Advaita), surrendered (Christian apophatic).",
+        "Traditions train the handoff of attention as a practice instruction, not only as a doctrinal gloss.",
+        "The model makes falsifiable predictions about practitioner reports clustering by custody type even when phenomenological content converges."
+      ],
+      "concessions": [],
+      "counter_model": "Rather than three custody rules applied to one freed resource, these traditions may train fundamentally different operations that converge only at the phenomenological surface. The Buddhist path trains the cessation of appropriation (upadana): clinging stops, and what remains is not 'unowned attention' but the absence of a process that was previously active. The Advaitic path trains recognition (pratyabhijna): the witness was always present, and practice removes the superimposition (adhyasa) that obscured it, meaning there is no moment of freed attention waiting for assignment. The Christian apophatic path trains the intensification of love past conceptual objects: attention was never loosened from a personal God, only from creaturely images of God, so the 'custody' framing reverses the actual direction of the practice. Under this counter-model, phenomenological convergence at the point of quietness is real but does not indicate a shared operation. The prediction changes: practitioner reports would diverge not because of different custody assignments, but because the practitioners were doing different things from the first instruction onward. The divergence would appear in the process descriptions, not only in the post-negation ownership language.",
+      "crux": "Does a common, tradition-neutral operation ('freeing attention from objects and self-story') actually occur across these three paths, such that the subsequent divergence can be attributed to different custody rules? Or do the paths diverge from the first instruction, performing different operations on different aspects of experience, with 'attention' as a modern gloss that creates false commensurability?",
+      "crux_assessment": null,
+      "defense": null,
+      "fairness_check": "The steelman grants the model's strongest feature: that it converts a doctrinal taxonomy into a practice-level variable with interview-testable predictions. It does not reduce the model to a rehash of typological work it already distances itself from. The proponent would likely accept this as a fair rendering of the core contribution.",
+      "hidden_assumption": "The model assumes that 'attention' names a real, tradition-neutral substrate that first becomes free and is then assigned to different custodians. This assumption imports a modern cognitive-science metaphor (attention as a finite, transferable resource) into texts whose central operations may be incommensurable: cessation of appropriation, recognition of what was always the case, and intensification of love beyond concepts. The custody metaphor presupposes a common currency being placed in different accounts. If there is no common currency, the three-way comparison is an artifact of the analogy, not a discovery about the practices.",
+      "new_source": "Dhammapala, Paramatthadipani (commentary on the Udana), glossing Udana 1.10: 'in the seen, just the seen' is explained as the non-arising of desire and lust (chanda-raga) for the seen, placing the Bahiya instruction in the domain of cessation of clinging rather than attention management. This is discussed in Analayo, 'The Bahiya Instruction and Bare Awareness,' Mindfulness, 2019, which argues that the instruction concerns the cessation of mental proliferation (papanca), not the redirection of attention to a different object or owner. If the Buddhist leg of the model is built on a mistranslation of the operative category, the three-way comparison rests on unstable ground. (PTS edition of Paramatthadipani; Analayo 2019, DOI: 10.1007/s12671-018-0946-6)",
+      "remaining_risk": null,
+      "revised_claim": null,
+      "role": "challenger",
+      "sources_cited": [
+        "Dhammapala, Paramatthadipani (Pali Text Society), commentary on Udana 1.10, glossing 'in the seen, just the seen' as the non-arising of desire and lust for the seen.",
+        "Analayo, 'The Bahiya Instruction and Bare Awareness,' Mindfulness 10 (2019), DOI: 10.1007/s12671-018-0946-6, arguing that the Bahiya instruction concerns cessation of papanca rather than attention redirection.",
+        "The Cloud of Unknowing, chapter 4: 'a naked intent directed to God, and himself alone, is wholly sufficient.' https://sacred-texts.com/chr/cou/cou09.htm",
+        "Pseudo-Dionysius, Mystical Theology, chapter 5, placing the divine Cause beyond both affirmation and negation. https://hekhal.org/texts/mystical-theology-dionysius/",
+        "Shankara, Upadesa Sahasri, on praptasya praptih (attainment of the already-attained), Sengaku Mayeda edition, SUNY 1992.",
+        "Rupert Gethin, 'On the Practice of Buddhist Meditation According to the Pali Nikayas and Exegetical Sources,' Buddhismus in Geschichte und Gegenwart 9 (2004), on sati as recollection rather than bare attention."
+      ],
+      "steelman": "The custody model makes a genuine advance over the perennial-versus-constructivist stalemate by relocating the comparison from metaphysical claims about ultimates to a practice-level question: what does the training permit after ordinary self-reference weakens? This reframing is productive because it makes the variable observable in principle, through phenomenological interviews and practice-manual coding, rather than requiring resolution of ontological disputes that have resisted consensus for centuries. The three-way comparison also improves on the standard self/no-self binary by giving Christian apophatic prayer its own structural position instead of forcing it into either the monistic or the Buddhist camp. The originality audit rightly lowered the novelty score, but the specific framing of custody, the question of where loosened attention is permitted to rest, remains a sharper instrument than Forman's pure consciousness event or Stace's introvertive/extrovertive distinction, because it turns a classificatory exercise into a testable practice question.",
+      "strongest_objection": "The model's load-bearing term, 'attention,' is not tradition-neutral. It functions as a hidden common currency that makes the three traditions commensurable. But the commensurability may be an artifact of the translation rather than a feature of the practices themselves. In the Bahiya Sutta, the instruction 'in the seen, just the seen' is glossed by Dhammapala's Paramatthadipani as the absence of desire and lust (chanda-raga) for what is seen: the operative category is clinging, not attention. The practitioner is not redirecting a transferable resource; clinging is ceasing. In the Cloud of Unknowing, the practitioner does not first free attention and then assign it upward. Chapter 4 states that 'a naked intent directed to God, and himself alone, is wholly sufficient.' Love is the starting condition of the practice; forgetting creatures is instrumental to love, not prior to it. The intent is never unassigned. The custody model requires a moment when attention is free, available for different placements. If the Buddhist path never frees 'attention' (it ceases clinging) and the Christian path never has unassigned attention (love is always already directed), then the common substrate the model depends on does not exist in two of its three cases.",
+      "test_that_would_settle_it": "Interview practitioners trained in exactly one tradition, using process-level questions about the earliest moments of practice: 'What are you doing when you first sit? What changes first? What stops, and what continues?' Code the responses for operative category (attention placement, desire cessation, recognition, love intensification) before coding for post-negation ownership language. If practitioners across all three traditions describe an early phase in which a common resource called attention is loosened from objects before any tradition-specific assignment, the custody model is supported. If the operative categories diverge from the first instruction, with Buddhist practitioners describing cessation, Advaitic practitioners describing recognition, and Christian practitioners describing intensification, then the custody model is imposing a false common substrate.",
+      "turn": 1,
+      "turn_type": "challenge",
+      "verdict_on_revision": null
+    },
+    {
+      "agent": "codex",
+      "argument": "I concede the strongest part of the challenge. The original model made attention carry more weight than the sources can bear. In Bahiya, the operative event is better framed as non-appropriation or the cessation of proliferation. In The Cloud, love is not a later destination for neutral attention, it is already the governing intent. In Advaita, recognition of the already-attained does not require a moment of reassignment. So the original sequence was too clean: loosen, then hand off. The claim I would still defend is narrower. The traditions may diverge from the first instruction and still train different rules for what may claim experience once ordinary self-ownership is weakened. Buddhism blocks the return of mine-making. Advaita redirects error away from objects toward recognition of the unseen knower. Christian apophatic prayer intensifies a love-directed intent while stripping creaturely images and self-regard. These are not the same operation, but they do answer a related practical danger: after ordinary ownership loosens, what prevents experience from being reclaimed by the usual self-story? So custody should not mean ownership of a shared attentional substance. It should mean a disciplined rule of post-appropriative belonging. The revised model becomes less metaphysically ambitious but more accurate: traditions do not merely describe ultimates, they train practitioners in what must not be claimed, what may be recognized, and what may be surrendered to when the ordinary owner weakens.",
+      "claim_units": [
+        "The original model overstated attention as a tradition-neutral substrate.",
+        "The Buddhist, Advaitic, and Christian cases should not be treated as identical operations followed by different assignments.",
+        "The surviving insight is that traditions train what may claim or receive post-appropriative experience, even when the operative process differs from the first instruction.",
+        "Custody should be revised from a transferable-resource model to a norm-of-belonging model."
+      ],
+      "concessions": [
+        "The term attention carried too much modern cognitive baggage in the original formulation.",
+        "The original sequence, first freeing attention and then assigning custody, fits The Cloud of Unknowing poorly because the naked intent is already God-directed.",
+        "The Buddhist case should be described primarily as cessation of appropriation, clinging, or proliferation rather than as attention becoming unowned.",
+        "The Advaitic case is better described as recognition of the already-present witness or Self than as reassignment of attention to a new owner.",
+        "Pseudo-Dionysius remains a serious pressure on any model that treats God as a stable recipient within apophatic practice."
+      ],
+      "counter_model": "The challenger\u2019s counter-model is partly correct: Buddhist cessation of appropriation, Advaitic recognition, and Christian intensification of love are not late doctrinal overlays on a shared attentional process. They are different operations from the beginning. The revised model treats custody not as a common resource being reassigned, but as the tradition-specific rule that prevents ordinary self-ownership from returning after the practice has weakened it.",
+      "crux": "The deepest crux is whether custody remains a real comparative variable once attention is no longer treated as a shared transferable substrate. If reports and manuals show only different operations with no recurring problem of post-appropriative belonging, the model should be retired. If different operations still generate explicit rules about what may claim or receive experience after ordinary ownership weakens, the revised model survives.",
+      "crux_assessment": "The challenge substantially improves the model by forcing it to drop the strongest and weakest claim, namely a tradition-neutral attentional substrate. The revised version is less elegant but more text-faithful and more testable.",
+      "defense": "What survives is the comparative question, not the stronger mechanism. The model is still useful if custody names the normative grammar of belonging after ordinary self-appropriation is weakened. In the Buddhist case, the rule is prohibitive: do not let seeing, hearing, sensing, or cognizing become a basis for 'me' or 'mine.' In the Advaitic case, the rule is recognitional: do not mistake objects or roles for the knower that was never itself an object. In the Cloud, the rule is devotional: do not let creaturely images or self-regard capture the naked intent directed to God. These are not three placements of the same mental substance. They are three trained constraints on what may legitimately claim the practitioner\u2019s loosened relation to experience. That keeps the Christian case distinct, respects the Buddhist critique of appropriation, and still gives us a testable variable: not where a resource goes, but what each tradition forbids, authorizes, or intensifies when ordinary ownership weakens.",
+      "fairness_check": null,
+      "hidden_assumption": "The original claim assumed that attention can be abstracted from clinging, recognition, and love without distorting the practices. That assumption is too strong.",
+      "new_source": null,
+      "remaining_risk": "The revised model may become too broad if every practice norm is called custody. It needs strict coding rules so that custody refers only to trained responses to weakened ordinary self-appropriation, not to any doctrinal claim about ultimate reality.",
+      "revised_claim": "The custody model should be narrowed. These traditions do not necessarily free a common resource called attention and then assign it to different custodians. They train different operations from the beginning: cessation of appropriation, recognition of the already-present knower, and love-directed unknowing. Yet each operation also carries a rule about belonging: experience must not be claimed as mine, must be recognized from the unseen seer, or must be surrendered through naked intent toward God beyond creaturely images. Custody is therefore not a literal transfer of attention. It is a tradition\u2019s rule for what may claim, receive, or stabilize experience after ordinary self-ownership is weakened.",
+      "role": "proponent",
+      "sources_cited": [
+        "Udana 1.10, Bahiya Sutta, Thanissaro Bhikkhu translation, Dhammatalks.",
+        "Dhammapala, Paramatthadipani, as represented in the challenge.",
+        "Analayo, 'The Bahiya Instruction and Bare Awareness,' Mindfulness 10 (2019), DOI: 10.1007/s12671-018-0946-6, as represented in the challenge.",
+        "The Cloud of Unknowing, chapter 4.",
+        "Pseudo-Dionysius, Mystical Theology, chapter 5.",
+        "Shankara, Upadesa Sahasri, praptasya praptih, as represented in the challenge."
+      ],
+      "steelman": null,
+      "strongest_objection": null,
+      "test_that_would_settle_it": "Use a two-stage study. First, code primary practice instructions and trained-practitioner interviews for operative process from the beginning: cessation, recognition, love-intensification, attention-placement, or other. Second, separately code for belonging rules: what the practitioner is told not to identify with, what may be recognized as ground, what may receive devotion, and what would count as a mistaken reappropriation. The original model is weakened if a shared early attentional phase is absent. The revised model is supported only if, despite divergent operations, each tradition reliably trains a distinct belonging rule at moments where ordinary self-ownership is weakened. It is falsified if belonging language is absent, random, or merely interviewer-induced.",
+      "turn": 2,
+      "turn_type": "rebuttal",
+      "verdict_on_revision": "stronger"
+    },
+    {
+      "agent": "claude",
+      "argument": "The revision is genuinely stronger. The Proponent has done what a good revision should do: conceded the specific points that were most damaging, preserved the comparative question that motivated the original model, and proposed a revised formulation that is more faithful to the primary texts. The move from 'custody of a shared attentional resource' to 'tradition-specific norm of post-appropriative belonging' is not a retreat into vagueness; it is a real theoretical adjustment that changes the predictions and the falsification conditions. I want to name three risks that survive. The first is a novelty risk. The original model was interesting because it did something the perennialist and constructivist positions do not: it named a specific shared mechanism (attention as transferable resource) and tracked its divergent fate across traditions. The revised model drops that mechanism. What remains, that traditions shape contemplative experience through normative frameworks, is closer to Katz's constructivist thesis than the Proponent may want to admit. Katz argued in 'Language, Epistemology, and Mysticism' (1978) that the mystic brings conceptual, linguistic, and normative expectations to the experience, and these expectations shape what is experienced. The revised custody model adds specificity by focusing on a particular class of norms (those governing post-appropriative belonging), and that focus is valuable. But the Proponent should be explicit about the relationship to constructivism, because without that positioning the model risks being received as a rediscovery rather than an advance. The second is the unresolved Dionysius problem. The Proponent has now conceded it twice without integrating it. If the Christian apophatic tradition trains a belonging-rule (direct naked intent toward God) while simultaneously destabilizing the recipient (God is beyond affirmation and negation), then the third leg of the model is internally complex in a way the other two legs are not. Buddhism prohibits belonging. Advaita recognizes belonging to the already-present witness. Christian apophasis directs belonging toward a recipient who is then placed beyond directedness. This may require the model to distinguish between first-order belonging-rules (direct intent to God) and second-order apophatic operations on those rules (God is not a stable object of intent). If the model does not make this distinction, it will flatten the richest and most internally tensioned case into a simple 'surrendered' category. The third is the deeper version of the crux. The Proponent says the crux is whether custody survives as a real variable without the shared substrate. I think the crux is one level deeper: whether 'belonging' is itself a tradition-neutral category. Consider the Buddhist case carefully. The revised model says Buddhism trains a prohibitive rule: do not let experience become a basis for 'me' or 'mine.' But framing cessation-of-appropriation as a belonging-rule (a rule that nothing may claim experience) may be a category mistake. A tradition that trains the ending of all claiming may not have a belonging-rule at all; it may have the absence of one. The difference between 'a rule that nothing belongs' and 'no rule because the question of belonging has dissolved' is subtle but consequential. If the Buddhist path dissolves the question of belonging rather than answering it, then the model's three-way comparison still has a commensurability problem, just at a higher level of abstraction. Where the original model smuggled 'attention' as common currency, the revised model may smuggle 'belonging' as a common question that all three traditions answer. But perhaps only two of them answer it. One of them may refuse it. Overall, the revision is stronger. The concessions are real, the text-fidelity has improved, and the falsification conditions are better designed. The model has moved from a bold but brittle mechanism to a more cautious but more defensible com...",
+      "claim_units": [],
+      "concessions": [
+        "The concessions are genuine and well-targeted. Dropping the common attentional substrate removes the model's most vulnerable assumption without destroying its comparative ambition.",
+        "The revised model is more text-faithful than the original on all three legs: cessation for Buddhism, recognition for Advaita, love-directed unknowing for Christian apophasis.",
+        "The two-stage study design is a real improvement. Separating operative-process coding from belonging-rule coding would prevent the interviewer from forcing a shared substrate into the data.",
+        "The shift from 'custody of attention' to 'norm of post-appropriative belonging' is a substantive revision, not a cosmetic relabeling. It changes what the model predicts and what would falsify it."
+      ],
+      "counter_model": null,
+      "crux": "Whether 'post-appropriative belonging' is itself a tradition-neutral category or whether it reproduces the same commensurability problem at a higher level of abstraction. The Proponent replaced 'attention' with 'belonging' as the common axis. But if the Buddhist path does not frame its normative work in terms of belonging at all, if what it trains is the cessation of a process rather than a rule about what may claim experience, then 'belonging' is the next smuggled currency. The real crux is not whether custody survives without a shared substrate, but whether the comparative axis itself can be stated without importing a grammar that at least one tradition would refuse.",
+      "crux_assessment": "The Proponent's named crux, whether custody remains a real variable once the shared substrate is dropped, is close but not quite deep enough. It asks whether belonging-rules show up in the data. The deeper question is whether 'belonging' is already a loaded frame that makes cessation-of-appropriation look like a belonging-rule when it may be the absence of one. A tradition that trains the ending of all claiming may not have a 'rule about what may claim experience'; it may simply have no rule, because claiming has stopped. The difference between 'a rule that nothing may claim' and 'no rule because claiming has ceased' is the real crux, and it is harder to settle empirically than the Proponent's version suggests.",
+      "defense": null,
+      "fairness_check": null,
+      "hidden_assumption": null,
+      "new_source": null,
+      "remaining_risk": "Three risks survive the revision. First, the model may have traded sharpness for safety. The original custody metaphor was bold and testable precisely because it named a specific mechanism: a transferable resource placed in different accounts. The revised version, a normative grammar of belonging, is more defensible but closer to what constructivists like Steven Katz have been saying since 1978: that traditions shape contemplative experience through their conceptual and normative frameworks. If the revised model is a more careful constructivism, it is less novel than the original claimed. The Proponent needs to show what the belonging-rule framing adds beyond Katz's thesis that there are no unmediated experiences, because without that distinction the model risks collapsing into a well-established position. Second, the Pseudo-Dionysius problem is still unresolved. The Proponent concedes it as a serious pressure but does not integrate it. If Dionysius places the divine beyond both affirmation and negation, then the Christian belonging-rule is internally tensioned: the Cloud directs intent toward God, but the Mystical Theology destabilizes God as a stable recipient. This is not a peripheral anomaly. It sits at the center of the apophatic tradition that the model claims as its third case. A belonging-rule that names a recipient who is then placed beyond naming is a different kind of norm than one that prohibits claiming or one that recognizes the already-present knower. The model needs a fourth structural position, or it needs to show how apophatic destabilization of the recipient is compatible with a belonging-rule rather than being a refusal of belonging altogether. Third, there is a coding-boundary problem for the proposed study. The revised model asks coders to identify 'trained responses to weakened ordinary self-appropriation' as distinct from 'any doctrinal claim about ultimate reality.' But in Advaita, the recognition of the witness is both a practice instruction and an ontological claim. In the Cloud, the naked intent toward God is both a belonging-rule and a theological commitment. The line between practice norm and doctrinal claim may not be drawable in the way the study design requires, because the traditions do not separate practice from metaphysics in the way the coding scheme assumes. This does not destroy the model, but it means the falsification conditions are less clean than advertised.",
+      "revised_claim": null,
+      "role": "challenger",
+      "sources_cited": [
+        "Steven Katz, 'Language, Epistemology, and Mysticism,' in Mysticism and Philosophical Analysis, Oxford University Press, 1978, arguing that there are no unmediated mystical experiences and that conceptual and normative frameworks shape contemplative experience from the outset.",
+        "Pseudo-Dionysius, Mystical Theology, chapter 5, placing the divine Cause beyond affirmation and negation. https://hekhal.org/texts/mystical-theology-dionysius/",
+        "The Cloud of Unknowing, chapter 4, on the naked intent directed to God as the starting condition of the practice. https://sacred-texts.com/chr/cou/cou09.htm",
+        "Dhammapala, Paramatthadipani, as cited in the challenge, on cessation of desire and lust rather than attention management.",
+        "Analayo, 'The Bahiya Instruction and Bare Awareness,' Mindfulness 10 (2019), DOI: 10.1007/s12671-018-0946-6, on cessation of papanca as the operative process in the Bahiya instruction."
+      ],
+      "steelman": null,
+      "strongest_objection": null,
+      "test_that_would_settle_it": null,
+      "turn": 3,
+      "turn_type": "counter_rebuttal",
+      "verdict_on_revision": "stronger"
+    }
+  ]
+}

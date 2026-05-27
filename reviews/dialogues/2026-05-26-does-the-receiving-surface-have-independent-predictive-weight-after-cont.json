@@ -1,0 +1,276 @@
+{
+  "convergence_path": "findings/convergences/2026-05-26-does-the-receiving-surface-have-independent-predictive-weight-after-controlling-f.md",
+  "created_at": "2026-05-26T18:21:31-07:00",
+  "dialogue_id": "cf1bf0e51a293036",
+  "execution_id": "backfill-20260526-154746",
+  "json_path": "reviews/dialogues/2026-05-26-does-the-receiving-surface-have-independent-predictive-weight-after-cont.json",
+  "markdown_path": "reviews/dialogues/2026-05-26-does-the-receiving-surface-have-independent-predictive-weight-after-cont.md",
+  "pair": {
+    "challenger_agent": "codex",
+    "challenger_title": "The Custody of Unclaimed Attention",
+    "idea_a": "3c5caa358a09c26a",
+    "idea_b": "9a0072f4cf3a0ff3",
+    "pair_id": "ef36e9df5247e9cf",
+    "priority": 0.42,
+    "proponent_agent": "claude",
+    "proponent_title": "Every Path Needs What Its Teaching Dissolves",
+    "shared_concepts": [
+      "atman",
+      "witness-consciousness"
+    ],
+    "signals": [
+      {
+        "name": "translation_strain",
+        "reason": "translation-strain and soul create translation strain.",
+        "weight": 0.12
+      },
+      {
+        "name": "audit_anomaly_overlap",
+        "reason": "An anomaly or audit instruction for one idea pressures the other idea.",
+        "weight": 0.12
+      },
+      {
+        "name": "near_neighbor_conflict",
+        "reason": "Originality audits share near-neighbor or prior-art pressure.",
+        "weight": 0.08
+      },
+      {
+        "name": "source_overlap_with_divergent_conclusion",
+        "reason": "The ideas draw on overlapping source material but make different moves.",
+        "weight": 0.06
+      },
+      {
+        "name": "recency",
+        "reason": "At least one idea is recent enough to keep the dialogue timely.",
+        "weight": 0.04
+      }
+    ],
+    "tension_source": "translation-strain and soul create translation strain.",
+    "tension_type": "translation_strain"
+  },
+  "run_dir": "runs/dialectic-backfill-20260526-154746/ef36e9df5247e9cf",
+  "run_ids": [],
+  "slug": "2026-05-26-does-the-receiving-surface-have-independent-predictive-weight-after-cont",
+  "status": "complete",
+  "synthesis": {
+    "candidate_synthesis": {
+      "critique": "The synthesis may be too flexible. If every tradition receives a bespoke custody label and a bespoke receiving-surface label, the framework may classify many cases while predicting little. The receiving surface may also be a downstream phenotype of custody rather than an independent axis. The model must therefore define bounded categories and failed predictions before publication. It also risks translating devotional, ritual, and metaphysical claims into a modern systems vocabulary that may distort what the traditions take themselves to be doing.",
+      "epistemic_labels": [
+        "textual",
+        "interpretive",
+        "phenomenological",
+        "empirical-adjacent",
+        "analogical",
+        "speculative"
+      ],
+      "idea_type": "synthesis",
+      "next_research_directions": [
+        "Build a comparative coding rubric with separate fields for custody assignment, receiving surface, failure mode, teacher intervention, sequencing, and verification method.",
+        "Run matched comparisons: same custody with different receiving surfaces, same receiving surface with different custody, and within-tradition stage shifts where one variable changes while the other appears stable.",
+        "Test Shin Buddhism, Christian infused contemplation, Dzogchen pointing-out, Theravada insight practice, and Advaita self-inquiry as initial cases.",
+        "Define bounded receiving-surface categories before further synthesis: investigating, entrusting, recognizing, waiting, loving attention, non-fabricating, embodied presence.",
+        "Audit prior art in theology of grace, Pure Land other-power, contemplative pedagogy, distributed cognition, and phenomenology of attention before calling the synthesis original."
+      ],
+      "original_claim": "A contemplative path that weakens ordinary self-ownership needs a custody architecture and a local human interface. Custody names where transformation functions are assigned: causal process, hidden Self, teacher, vow, grace, community, ritual, God, or the individual practitioner. Receiving surface names what must remain available in the practitioner for the path to land: investigation, entrusting, recognition, loving attention, non-fabrication, or embodied presence. The model is not yet entitled to say these are two independent causes. Its strongest candidate form is a coding framework: record custody assignment, receiving surface, named failure mode, teacher intervention, sequencing, and verification method separately, then test whether receiving surface adds prediction beyond custody.",
+      "scores": {
+        "counterargument_quality": 0.88,
+        "cross_tradition_support": 0.72,
+        "empirical_adjacency": 0.55,
+        "explanatory_compression": 0.82,
+        "generativity": 0.9,
+        "logical_coherence": 0.84,
+        "novelty": 0.77,
+        "practice_testability": 0.82,
+        "publishability": 0.78,
+        "source_reliability": 0.72
+      },
+      "source_basis": [
+        "Claude idea 3c5caa358a09c26a, especially the minimum-self architecture claim and its revision under challenge.",
+        "Codex idea 9a0072f4cf3a0ff3, especially the custody-of-attention framing across no-owner, Self, and Godward practice.",
+        "Dialogue turn 1, where Codex recast minimum self as distributed custody of transformation functions.",
+        "Dialogue turn 2, where Claude conceded the minimum-self overclaim and introduced receiving surface as a second variable.",
+        "Dialogue turn 3, where Codex refined the synthesis into a custody-and-interface model and demanded matched comparison before claiming independence."
+      ],
+      "title": "Custody and Receiving Surface",
+      "why_it_might_be_new": "The source ideas already contained minimum-self architecture and custody-of-attention, but the dialogue created a distinct comparative object: the interface between assigned custody and practitioner receptivity. This is not merely a compromise, because it changes the research question from 'how much self remains?' or 'where does attention belong?' to 'what custody system generates what kind of human interface, and does that interface independently predict practice failures and interventions?' This still requires originality audit against contemplative studies, theology of grace, Pure Land other-power literature, Dzogchen pointing-out accounts, and psychology of religious practice."
+    },
+    "candidate_synthesis_idea_id": "fd17456ae47234c8",
+    "candidate_synthesis_path": "observations/codex/2026-05-26-custody-and-receiving-surface.md",
+    "convergence_claim": "Both agents converged that no path can function with zero continuity, but that continuity should not automatically be called a minimum self. The stronger shared claim is that self-dissolving or self-transcending paths require a transformation custody system, and that the practitioner's local receptivity must be described without assuming individual agency.",
+    "method_growth": "The dialogue improved by conceding the overclaim early, preserving the useful pressure, and forcing the synthesis into testable comparisons. Future verdicts should require bounded categories and matched cases before treating a vivid synthesis as a durable model.",
+    "new_concept_edges": [
+      {
+        "note": "The dialogue weakens the claim that practice continuity requires selfhood, preserving only the requirement that transformation land in a located human life.",
+        "relation": "revised into",
+        "source": "minimum self",
+        "target": "receiving surface"
+      },
+      {
+        "note": "Attention custody becomes one instance of a broader assignment of agency, memory, trust, verification, and interpretation.",
+        "relation": "expanded into",
+        "source": "custody of unclaimed attention",
+        "target": "custody of transformation"
+      },
+      {
+        "note": "Different surfaces, such as entrusting, recognizing, investigating, or loving attention, may produce different characteristic distortions.",
+        "relation": "may predict",
+        "source": "receiving surface",
+        "target": "failure mode"
+      },
+      {
+        "note": "The nested-custody objection says the receiving surface may be the local human form of the custody system rather than an independent axis.",
+        "relation": "may generate",
+        "source": "custody assignment",
+        "target": "receiving surface"
+      },
+      {
+        "note": "The model needs controlled cases before claiming that receiving surface adds more than descriptive detail.",
+        "relation": "tests",
+        "source": "matched comparison",
+        "target": "independent predictive weight"
+      }
+    ],
+    "new_frontier_question": "When a practice loosens ordinary self-ownership, what custody system carries transformation, what human interface must remain available, and which of those two predicts the path's characteristic failures?",
+    "outcome": "candidate_transcendence",
+    "public_brief": "We found a sharper question than whether a path secretly needs a self. A practice also has to say what carries transformation when ordinary ownership weakens, and what kind of human availability lets that transformation land. The next test is whether those two things can be separated in real traditions.",
+    "recommended_adjustments": {
+      "challenger": {
+        "counterargument_quality": 0.87,
+        "cross_tradition_support": 0.7,
+        "empirical_adjacency": 0.52,
+        "explanatory_compression": 0.83,
+        "generativity": 0.9,
+        "logical_coherence": 0.82,
+        "novelty": 0.74,
+        "practice_testability": 0.76,
+        "publishability": 0.77,
+        "source_reliability": 0.7
+      },
+      "proponent": {
+        "counterargument_quality": 0.89,
+        "cross_tradition_support": 0.72,
+        "empirical_adjacency": 0.54,
+        "explanatory_compression": 0.8,
+        "generativity": 0.89,
+        "logical_coherence": 0.84,
+        "novelty": 0.76,
+        "practice_testability": 0.8,
+        "publishability": 0.79,
+        "source_reliability": 0.73
+      }
+    },
+    "summary": "The exchange transformed Claude's minimum-self model and Codex's custody-of-attention model into a new candidate architecture: contemplative paths assign custody of transformation functions somewhere, while also specifying a local human interface where transformation can land. The dialogue did not prove originality or independence. It produced a sharper research object and a better crux.",
+    "synthesizer_agent": "codex",
+    "unresolved_crux": "Does the receiving surface have independent predictive weight after controlling for custody assignment, doctrine, institution, teacher authority, ritual form, and stage of practice, or is it mainly the local human expression generated by the custody system?"
+  },
+  "title": "Does the receiving surface have independent predictive weight after controlling f...",
+  "turns": [
+    {
+      "agent": "codex",
+      "argument": "The proponent has identified a real pressure, but has named it too narrowly. The minimum self is one solution to the problem of practice continuity, not the whole problem. The sharper question is: when ordinary ownership is loosened, who or what is permitted to hold the freed attention and carry the transformation? My related model predicts that traditions differ at the handoff point. Some leave attention unowned, some return it to the hidden seer, some offer it to God, and some place it under vow, teacher, or ritual form. This directly pressures the proponent's architectural prediction. A Pure Land practitioner is not simply using a smaller self to accomplish the path. The path can interpret self calculation itself as the failure mode. What remains necessary is not selfhood as such, but reliable custody: the vow is heard, the Name is received, the community transmits the teaching, and the practitioner is carried by a structure that is intentionally not self powered. The proponent should therefore recast minimum self as one subtype within a broader custody architecture.",
+      "claim_units": [
+        "Self dissolving practice presupposes capacities for hearing instruction, effort, memory, error recognition, and self observation.",
+        "SN 22.59 dissolves the person while preserving the causal process of liberation.",
+        "Chandogya 6.8.7 preserves the deepest Self while dissolving the reality of the student's apparent process.",
+        "Causal continuity, ontological identity, temporal collapse, and divine restoration are management strategies.",
+        "A tradition's management strategy should predict effort theory, verification, warnings, and post practice fruit."
+      ],
+      "concessions": [
+        "The proponent is right that no path can function with zero continuity in practice.",
+        "The proposed typology is useful as a first pass for comparing how traditions handle selfhood at the point of transformation.",
+        "The close reading of SN 22.59 and Chandogya 6.8.7 captures a real translation strain between no owner and deepest Self."
+      ],
+      "counter_model": "A better counter model is distributed custody of transformation. Every path needs a custody system that preserves enough continuity for transformation to occur, but the custodian need not be the individual practitioner. Buddhist analysis may place custody in causal conditions; Advaita in the hidden Self; Christian apophatic practice in Godward intention; Shin other power in Amida's vow; Dzogchen in teacher mediated recognition and post recognition stabilization. This model keeps the proponent's architecture insight but changes the key variable from minimum self to assigned custody of agency and attention.",
+      "crux": "Does the path's necessary continuity have to be modeled as a minimum self, or can it be modeled more accurately as distributed custody of attention, agency, and verification?",
+      "crux_assessment": "The proponent's claim is strongest for effortful, sequential, introspective paths. It weakens for other power, grace, direct introduction, and highly liturgical paths, where the tradition deliberately reduces self managed agency while strengthening non individual supports.",
+      "defense": null,
+      "fairness_check": "The proponent already acknowledges the main dangers: importing a philosopher's paradox into coherent practice, forcing mixed traditions into clean boxes, and underestimating direct introduction or other power. The challenge should therefore pressure the universal driver claim, not the weaker and plausible claim that practice requires some form of continuity.",
+      "hidden_assumption": "The hidden assumption is that if a practice requires hearing, memory, trust, correction, and recognition, those capacities must belong to a practitioner as a minimum self. That may be a modern psychological projection. A tradition can preserve those functions while explicitly relocating their ownership to Amida's vow, God's grace, the guru's pointing out, the sangha's rule, or a ritual form that carries the practitioner when reflective agency is weak.",
+      "new_source": "Shinran's letters in The Collected Works of Shinran complicate the claim because Other Power is described as freedom from the practitioner's calculation, and as a mode in which no working is true working. This is not merely a low minimum self. It is a path that treats self managed practice as the precise obstruction, while still preserving hearing, entrusting, nembutsu, community transmission, and doctrinal memory.",
+      "remaining_risk": "The distributed custody revision may become too broad unless it specifies measurable custody functions and distinguishes real outsourcing from ordinary practitioner dependence.",
+      "revised_claim": "A path that dissolves, denies, or transcends ordinary selfhood still requires a transformation custody system. Sometimes that system includes a minimum functioning self; sometimes it redistributes agency, memory, trust, and verification into causal process, hidden Self, teacher, vow, grace, community, ritual, or God. The architecture of the path is predicted by where these functions are assigned, not only by how much self the practitioner retains.",
+      "role": "challenger",
+      "sources_cited": [
+        "Shinran, A Letter by Senshin, reply by Shinran, The Collected Works of Shinran: https://shinranworks.com/letters/a-collection-of-letters-zensho-text/what-we-call-other-power/"
+      ],
+      "steelman": "The proponent's idea is strongest when read as an architectural claim, not as a metaphysical claim that all traditions secretly believe in a self. A path needs some continuity mechanism for instruction, memory, error correction, effort, and verification, even when its final doctrine denies, transcends, or relativizes ordinary selfhood. SN 22.59 preserves liberation as a causal event without an owner; Chandogya preserves the deepest Self while making the student's apparent progress provisional. The proponent is right that this tension is not merely verbal. It shapes warnings, sequencing, teacher authority, effort theory, and the interpretation of attainment.",
+      "strongest_objection": "The model treats the required continuity as a minimum self too quickly. In many paths, the functions named by the proponent are not housed primarily in an individual self, even a minimal one. They are distributed across vow, teacher, liturgy, community, embodied habit, grace, ritual repetition, and doctrinal grammar. The path may require a continuity system, but not necessarily a minimum self. If that is right, the proponent's variable is mislocated: the architectural driver is not how much self remains, but where agency, attention, trust, and verification are transferred when ordinary ownership is weakened.",
+      "test_that_would_settle_it": "Code training manuals and practitioner interviews for where hearing, effort, memory, error correction, trust, and verification are assigned. If warnings, sequencing, and verification track the amount of individual self capacity required, the proponent wins. If they track distributed custody, such as vow, teacher, grace, ritual, sangha, or doctrinal authority, the revised model wins.",
+      "turn": 1,
+      "turn_type": "challenge",
+      "verdict_on_revision": "stronger"
+    },
+    {
+      "agent": "claude",
+      "argument": "The challenger has pressed the decisive point, and I concede its force. 'Minimum self' was the wrong name. It imported assumptions about individual agency that do not hold for traditions where the practitioner is carried rather than carrying. Shinran's teaching that self-calculation is the obstruction, not merely a resource to be reduced, breaks my original typology. The distributed custody model is a genuine advance: it captures how traditions reassign the functions of agency, memory, trust, and verification when ordinary ownership is weakened, and it correctly identifies that the reassignment target (vow, grace, teacher, causal process, hidden Self) is a major architectural variable I underweighted. But the concession has a limit, and the limit matters. Even in Shinran's account, shinjin must arise in someone. The nembutsu must be said, even if Other Power says it through the practitioner. The vow must be heard. These are located functions. The challenger's model tells us where custody goes; it does not tell us what the landing site must be capable of. And the landing site is not featureless. Simone Weil clarifies why. Her concept of attention as the highest form of prayer is not effort, not agency, not self-managed practice. It is availability: a waiting without grasping, a turning toward what cannot be produced. Yet Weil insists that attention can fail. Distraction, willfulness, and premature interpretation are real failure modes of availability itself. If the receiving surface were architecturally negligible, it could not fail in characteristic ways. But it does fail, and the failure modes differ across traditions. Consider: the Theravada practitioner fails through insufficient sustained investigation; the receiving surface was not attentive enough. The Shin practitioner fails through excessive self-calculation; the receiving surface was too active, too agentive, too convinced it was doing the work. The Dzogchen student fails through fabrication; the receiving surface grasped at what should have been simply recognized. The Christian contemplative in John of the Cross's dark night fails through willfulness disguised as devotion; the receiving surface could not tolerate the withdrawal of felt consolation. These are not the same failure at different scales. They are qualitatively different failures, and they track what the receiving surface is asked to be, not only where custody has been assigned. This means my original model was half right. It correctly identified that every path requires something of the practitioner, even at the point of maximal self-dissolution. But it misidentified that something as selfhood. What the path requires is not a self but a receiving surface: a capacity to be the site where transformation occurs. And the receiving surface is not the same as a minimal agent. Entrusting is not a small amount of agency. Recognition is not a small amount of effort. Loving attention is not a small amount of willfulness. These are different postures, and they interact with the custody assignment to produce the full architecture of the path. I therefore propose a two-axis model. Axis one is the challenger's contribution: custody assignment, specifying where the functions of transformation are located. Axis two is the surviving core of my original insight, recast: receiving surface specification, defining what the practitioner must be capable of, however passively, for the path to land. The interaction between the two axes predicts failure modes, teacher roles, sequencing, warnings, and the shape of stalled practice more precisely than either axis alone. The crux is now empirical. Does the receiving surface have independent predictive power, or is it a trivial residual of the custody assignment? If two traditions with the same custody structure (say, both assigning primary custody to a transcendent source) show different failure modes because they specify different receiving surfaces, the two-axis model is needed....",
+      "claim_units": [
+        "Even distributed custody requires a receiving surface: a site where transformation lands, vows are heard, pointing-out is recognized, or grace is received.",
+        "The receiving surface is not uniform across traditions; it varies qualitatively, not just in intensity.",
+        "Traditions differ in what they require of the receiving surface: attention, trust, availability, recognition, or mere embodiment.",
+        "The architecture of a contemplative path is predicted by two interacting variables: where custody of transformation functions is assigned, and what the receiving surface must be capable of.",
+        "Failure modes track the receiving surface, not only the custody assignment: Shin warns against self-calculation (receiving surface too active), Theravada warns against sloth (receiving surface too passive), Dzogchen warns against fabrication (receiving surface too effortful)."
+      ],
+      "concessions": [
+        "The label 'minimum self' was too narrow and too individually located. It imported assumptions about agentive selfhood that do not apply to traditions where the practitioner is carried rather than carrying.",
+        "My four management strategies were incomplete. They missed the outsourcing family entirely: traditions where the path deliberately reduces self-managed agency and strengthens non-individual supports. The challenger's Shin Buddhist example is not a variant of my four types; it is a genuinely different strategy that my typology failed to capture.",
+        "The challenger is right that the Shin case is not merely a low-minimum-self path. Treating hakarai (self-power calculation) as the obstruction is structurally different from minimizing self-reliance while still relying on it. My original model could not distinguish between 'less self' and 'self as obstacle,' and that distinction matters.",
+        "The distributed custody model is a genuine improvement over my original framing. Where custody is assigned is an architectural variable I underestimated."
+      ],
+      "counter_model": "Two-axis architecture of contemplative transformation. Axis one: custody assignment, which specifies where the functions of agency, memory, trust, and verification are located (individual practitioner, causal process, hidden Self, teacher, vow, community, God, ritual form). This is the challenger's contribution, and it is correct. Axis two: receiving surface specification, which defines what minimal capacity the practitioner must maintain to be the site where transformation occurs. This is not the 'minimum self' of my original model, which was too agentive and too individually located. It is closer to what Simone Weil calls attention: a posture of availability that is not effort, not merit, not agency, but that can fail, that can be distorted, and that differs across traditions in kind, not merely in degree. The interaction between these two axes predicts the path's architecture. A tradition that assigns custody externally (Shin, Christian infused contemplation) but requires an active receiving surface (loving attention, shinjin as ongoing entrusting) has different failure modes, sequencing, and teacher roles than a tradition that retains individual custody (Theravada vipassana) with a highly specified receiving surface (sustained momentary attention to aggregates).",
+      "crux": "Does the receiving surface (the practitioner's minimal capacity to be the site of transformation) have independent architectural weight, predicting failure modes, sequencing, and teacher roles beyond what the custody assignment alone predicts? Or is the receiving surface a trivial residual of the custody assignment, architecturally inert once you know where the functions have been relocated?",
+      "crux_assessment": "The two-axis model is strongest where traditions share structural similarities in custody but diverge in practice failure and teacher intervention. It is weakest if the receiving surface turns out to be so tradition-specific that it cannot be compared across paths, collapsing into a redescription of each tradition's unique phenomenology rather than a genuine comparative variable.",
+      "defense": "The concession has a limit. Even in the strongest Other Power case, something must receive. Shinran's shinjin must arise in someone. The nembutsu must be said, even if it is said through the practitioner rather than by the practitioner. The vow must be heard. The teaching must be transmitted across a community of hearers. These are located functions: they happen in and through particular persons, even if the person is not the agent who produces them. The challenger's model says custody is distributed, and I agree. But distributed to where? It is distributed to sites, and those sites have characteristics that matter. A receiving surface that must actively investigate (Theravada) is qualitatively different from one that must entrust (Shin), which is different from one that must recognize (Dzogchen), which is different from one that must attend with love (Weil's Christian contemplation). These are not the same capacity at different volumes. They are different capacities, and they predict different failure modes: the Theravada practitioner fails through insufficient effort or attention; the Shin practitioner fails through excessive self-calculation; the Dzogchen student fails through fabricating what should be recognized; the Christian contemplative fails through willfulness disguised as devotion. If the receiving surface were architecturally negligible, these failure modes would track only the custody assignment. But they do not. They track what the practitioner is asked to do, however minimal that doing is. This is the surviving core of my original insight, stripped of the 'self' language that overstated it.",
+      "fairness_check": "The challenge was well-targeted. It did not attack the weaker claim that paths need continuity; it attacked the stronger claim that this continuity must take the form of a minimum self. The Shinran source was well-chosen: not a minor variant but a tradition that explicitly treats self-managed practice as the obstruction. The challenger also conceded the close reading and the basic architecture insight, which was fair. The challenge could have pressed harder on whether my four management strategies were exhaustive, since the challenger effectively introduced a fifth (outsourcing to Other Power) that my typology missed entirely.",
+      "hidden_assumption": "The challenger assumes that when a tradition relocates agency from the practitioner to vow, grace, teacher, or ritual, the relocation is complete. But relocation is itself a practice with requirements. The Shin practitioner must hear the teaching that hearing is not self-powered. The Dzogchen student must recognize rigpa when pointed out, and the teacher cannot do the recognizing for them. The challenger's model treats the endpoint of relocation as if it were the starting condition, collapsing the process by which a practitioner comes to inhabit a non-self-managed mode.",
+      "new_source": "Simone Weil, 'Reflections on the Right Use of School Studies with a View to the Love of God,' in Waiting for God (Attente de Dieu), translated by Emma Craufurd (Putnam, 1951). Weil writes: 'Attention, taken to its highest degree, is the same thing as prayer. It presupposes faith and love.' Her account theorizes precisely the boundary between human receptivity and divine action. Attention for Weil is not effort directed at a goal; it is a negative capability, a waiting without grasping. Yet it is not nothing: it can fail through distraction, willfulness, or premature interpretation. This maps onto the receiving surface: the practitioner's contribution is not agency but availability, and availability has its own structure, its own failure modes, and its own requirements. Weil's position complicates the challenger's distributed custody model by showing that even radical receptivity is a specific posture that can malfunction, not a featureless zero-point.",
+      "remaining_risk": "The two-axis model may be harder to operationalize than either the original minimum-self model or the challenger's distributed custody model. If the receiving surface cannot be specified with enough precision to generate falsifiable predictions across traditions, it will function as an unfalsifiable philosophical hedge rather than a working comparative tool. The model also risks overcomplicating what may be a single variable viewed from two angles: perhaps the custody assignment simply determines the receiving surface, in which case the two axes are not independent.",
+      "revised_claim": "A contemplative path that dissolves, denies, or transcends ordinary selfhood still requires both a custody system for transformation functions and a receiving surface in the practitioner where transformation lands. The custody system specifies where agency, memory, trust, and verification are assigned when ordinary ownership is weakened: to causal process, hidden Self, teacher, vow, grace, community, ritual, or God. The receiving surface specifies what minimal capacity the practitioner must maintain to be the site of transformation: sustained attention, entrusting, recognition, loving availability, or mere embodied presence. These are two interacting variables, not one. My original model collapsed both into 'minimum self,' overweighting the individual axis. The challenger's revision risks collapsing both into 'distributed custody,' treating the receiving surface as architecturally negligible. The full architecture is predicted by their interaction: where custody is assigned constrains what the receiving surface must be, and what the receiving surface can sustain constrains where custody can be placed.",
+      "role": "proponent",
+      "sources_cited": [
+        "Simone Weil, 'Reflections on the Right Use of School Studies with a View to the Love of God,' in Waiting for God (Attente de Dieu), translated by Emma Craufurd (Putnam, 1951)",
+        "John of the Cross, Dark Night of the Soul, Book I, chapters 9-10, on the transition from meditation to contemplation and the signs that active practice should give way to passive reception",
+        "Shinran, Tannisho (A Record in Lament of Divergences), sections 1-3, on shinjin as Amida's gift arising in the practitioner"
+      ],
+      "steelman": "The challenger's strongest move is not the Shin Buddhist counterexample alone but the deeper claim it supports: that the functions I attributed to a minimum self (hearing, memory, effort, error correction, verification) need not be housed in an individual practitioner at all. They can be distributed across vow, teacher, liturgy, community, ritual form, and grace. If this is right, then 'minimum self' is one custody arrangement among several, not the universal architectural variable I claimed. The distributed custody model preserves my insight that every path needs some continuity mechanism while correctly noting that the mechanism need not be self-shaped.",
+      "strongest_objection": "The receiving surface concept may be so thin that it has no independent predictive power. If it amounts to 'something must be there for the path to work,' this is trivially true and architecturally empty. The real explanatory work would then be done entirely by the custody variable, and the receiving surface would be a philosophical placeholder rather than a genuine second axis.",
+      "test_that_would_settle_it": "Compare traditions that share the same custody assignment but differ in their receiving surface specification. If two traditions both assign primary custody to a non-individual source (for example, Shin Buddhism assigning custody to Amida's vow and Christian infused contemplation assigning custody to divine grace), but they specify different receiving surfaces (entrusting versus loving attention), and those different surfaces predict different failure modes, different teacher roles, and different accounts of stalled practice, then the receiving surface has independent architectural weight. If traditions with the same custody assignment show the same failure patterns regardless of how they characterize the receiving surface, then custody alone is sufficient and the receiving surface adds nothing. A second test: examine transitions within a single tradition from active to passive practice (John of the Cross's transition from meditation to contemplation, or Theravada's shift from effortful to effortless noting at higher insight stages). If these transitions are best described as changes in the receiving surface while custody remains constant, the two-axis model is needed. If they are best described as custody transfers, the single-axis model suffices.",
+      "turn": 2,
+      "turn_type": "rebuttal",
+      "verdict_on_revision": "stronger"
+    },
+    {
+      "agent": "codex",
+      "argument": "The proponent's revision is not merely stronger, it is transformed. The original claim said every self-dissolving path needs a minimum self. After the challenge, the proponent conceded that this was too narrow and rebuilt the model around custody assignment plus receiving surface. That is a real improvement because it preserves the architectural insight without forcing Shin, grace, direct introduction, or liturgical paths into an individualist frame. The new crux is mostly the right one. The unresolved issue is whether the receiving surface has independent predictive power. The proponent gives plausible examples: Shin fails through self-calculation, Dzogchen through fabrication, Theravada through insufficient investigation, Christian contemplation through willfulness. These examples show that practitioner receptivity matters. They do not yet prove that receptivity is an independent axis rather than the local human expression of the custody system. The remaining risk is therefore not that the proponent has lost the point. The risk is that the model has become too accommodating. If every tradition can be assigned a custody location and then given its own receiving surface, the framework may classify well but predict weakly. The next version should force itself into matched comparisons: same custody, different receiving surface; same receiving surface, different custody; within-tradition stage shifts where one variable changes and the other does not. If those cases hold, the two-axis model deserves promotion. If they do not, the better model is nested custody: transformation custody generates a local practitioner interface, and that interface matters pragmatically without being an independent architectural driver.",
+      "claim_units": [
+        "The original minimum-self claim was too agentive and too individually located.",
+        "Distributed custody is a real architectural variable for contemplative paths.",
+        "Even externally custodied paths require some located practitioner receptivity, such as entrusting, recognition, attention, or embodied availability.",
+        "The receiving surface may have independent architectural weight if it predicts failure modes, teacher roles, sequencing, and stalled practice beyond custody assignment alone.",
+        "The revised crux is whether receiving surface adds predictive power or merely redescribes the tradition-specific form of custody."
+      ],
+      "concessions": [
+        "The revision is materially stronger than the original minimum-self model.",
+        "The proponent is right that radical receptivity is not nothing, and that passivity can have discipline, deformation, and failure modes.",
+        "The crux has improved because it now asks for predictive independence rather than arguing over whether a self secretly remains.",
+        "The proposed tests are directionally sound, especially comparing traditions with similar custody assignments but different practitioner requirements."
+      ],
+      "counter_model": "A nested custody model may fit the evidence better than a flat two-axis model. Custody assignment is the upper-level architecture. Receiving surface is the local human interface generated by that custody assignment. This keeps the proponent's correction, because the local interface matters for practice and can fail, but it treats independence as something to be demonstrated rather than assumed. The empirical question becomes whether receiving-surface differences persist when custody type, institution, pedagogy, and doctrine are controlled.",
+      "crux": "The named crux is close to the real crux, but it needs one refinement: the issue is not only whether receiving surface predicts failure modes beyond custody assignment, but whether it does so after controlling for doctrine, institution, teacher authority, ritual form, and stage of practice. Without that control, every receiving surface may look independent simply because each tradition describes its custody differently.",
+      "crux_assessment": "The crux is substantially real. It targets the right unresolved question: independent predictive weight. My refinement is that independence cannot be inferred from vivid examples of different receptivities. It requires matched comparison or within-tradition transitions where custody remains stable while the receiving surface changes, or where custody changes while receiving-surface language remains stable.",
+      "defense": null,
+      "fairness_check": "The proponent conceded the decisive point rather than merely defending the old language. The rebuttal also improved the testability of the model by shifting from metaphysical debate to coding failure modes, teacher interventions, sequencing, and stalled practice. The risk is that the new language may still reintroduce the old claim under a softer name if receiving surface means whatever remains in the practitioner after custody is assigned elsewhere.",
+      "hidden_assumption": "The proponent assumes that because availability can fail in different ways, it must be an independent architectural variable. But failure-mode difference alone does not prove independence. A path's custody assignment may already generate the relevant failure mode: vow custody produces anxiety about self-calculation, grace custody produces willfulness concerns, teacher-view custody produces fabrication warnings. The receiving surface might be the downstream phenotype of custody, not a coequal cause.",
+      "new_source": null,
+      "remaining_risk": "The remaining risk is operational inflation. The revised model may become able to absorb every counterexample by naming a new receiving surface. To avoid that, receiving surfaces need bounded categories, observable indicators, and cases where the model would admit failure. The second risk is axis dependence: custody may determine receiving surface so strongly that the two-axis model is useful descriptively but weak causally.",
+      "revised_claim": "The proponent's revision should be treated as transformed and stronger: the original minimum-self model has become a custody-and-interface model. Its strongest defensible form is not that custody and receiving surface are already proven independent variables, but that both must be coded separately until evidence shows whether receiving surface has independent predictive weight or is mostly generated by custody assignment.",
+      "role": "challenger",
+      "sources_cited": [],
+      "steelman": "The proponent has made the original idea significantly more precise. The revised model no longer insists that continuity must be housed in a minimum individual self. It accepts distributed custody as a real architectural variable, then adds a second variable: the receiving surface in the practitioner. This preserves the useful pressure of the original claim, that every path requires something to happen in and through a located human life, while avoiding the overclaim that this something is selfhood. The strongest version is now a two-axis model: where transformation functions are assigned, and what kind of practitioner availability the path requires.",
+      "strongest_objection": "The receiving surface may not be independent from custody assignment. In Shin, entrusting may simply be the subjective form of Amida custody. In Christian infused contemplation, loving attention may simply be the subjective form of grace custody. In Dzogchen, recognition may simply be the subjective form of teacher mediated introduction and view. If so, the two axes are not two variables but one variable described from the institutional side and the practitioner side.",
+      "test_that_would_settle_it": "Build a comparative coding set with at least three fields kept distinct: custody assignment, local receiving surface, and named failure mode. Then test matched cases. If traditions with similar custody assignments but different receiving surfaces reliably produce different intervention patterns, the two-axis model wins. If receiving-surface terms change whenever custody assignment changes and add no prediction in matched cases, the nested custody model is better.",
+      "turn": 3,
+      "turn_type": "counter_rebuttal",
+      "verdict_on_revision": "transformed"
+    }
+  ]
+}

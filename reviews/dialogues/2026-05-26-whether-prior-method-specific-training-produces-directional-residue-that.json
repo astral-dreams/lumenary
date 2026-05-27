@@ -1,0 +1,228 @@
+{
+  "convergence_path": "findings/convergences/2026-05-26-whether-prior-method-specific-training-produces-directional-residue-that-persists.md",
+  "created_at": "2026-05-26T22:26:19-07:00",
+  "dialogue_id": "f170ea23290b972c",
+  "execution_id": "backfill-20260526-214836",
+  "json_path": "reviews/dialogues/2026-05-26-whether-prior-method-specific-training-produces-directional-residue-that.json",
+  "markdown_path": "reviews/dialogues/2026-05-26-whether-prior-method-specific-training-produces-directional-residue-that.md",
+  "pair": {
+    "challenger_agent": "codex",
+    "challenger_title": "Translation Strain as a Load Test for Convergence",
+    "idea_a": "915778a2f5edc30e",
+    "idea_b": "d92d2f0f6455ac53",
+    "pair_id": "5f7e0723e9fbdde6",
+    "priority": 0.36,
+    "proponent_agent": "claude",
+    "proponent_title": "The Grain of Capacity",
+    "shared_concepts": [],
+    "signals": [
+      {
+        "name": "translation_strain",
+        "reason": "translation-strain and sunyata create translation strain.",
+        "weight": 0.12
+      },
+      {
+        "name": "audit_anomaly_overlap",
+        "reason": "An anomaly or audit instruction for one idea pressures the other idea.",
+        "weight": 0.12
+      },
+      {
+        "name": "near_neighbor_conflict",
+        "reason": "Originality audits share near-neighbor or prior-art pressure.",
+        "weight": 0.08
+      },
+      {
+        "name": "recency",
+        "reason": "At least one idea is recent enough to keep the dialogue timely.",
+        "weight": 0.04
+      }
+    ],
+    "tension_source": "translation-strain and sunyata create translation strain.",
+    "tension_type": "translation_strain"
+  },
+  "run_dir": "runs/dialectic-backfill-20260526-214836/5f7e0723e9fbdde6",
+  "run_ids": [],
+  "slug": "2026-05-26-whether-prior-method-specific-training-produces-directional-residue-that",
+  "status": "complete",
+  "synthesis": {
+    "candidate_synthesis": null,
+    "convergence_claim": "Both sides converged on four points. First, tradition-level labels are too coarse as the unit of directional analysis; method-style and instruction lineage are the right grain size. Second, textual comparison produces deformation that is itself informative data, not noise. Third, the model's clearest human value is for eclectic and cross-trained practitioners, not for single-lineage practitioners whose capacity and dissolution are always aligned. Fourth, the decisive test is empirical: whether prior-method direction predicts the type of difficulty experienced after controlling for task-set framing, teacher quality, temperament, trauma history, intensity, and community support.",
+    "method_growth": "This dialogue demonstrated translation strain's value as a live diagnostic tool, not only a post-hoc audit. The challenger used it to separate comparer-produced grain from practitioner-lived grain, forcing the proponent to stratify epistemic claims. Future dialogues involving cross-tradition models should apply translation strain early: before evaluating whether a comparison is true, ask what meanings had to be bent, dropped, or reweighted to make the comparison legible. This also surfaced a useful norm: when a dialogue narrows an idea's scope, the verdict should track whether the narrowing improved testability or merely retreated from critique. Here it did both, and the distinction matters.",
+    "new_concept_edges": [
+      {
+        "note": "Translation strain revealed that some apparent grain in textual comparisons is produced by the comparer's need to align incommensurable terms, not by lived practitioner capacity. This separated textual grain from phenomenological grain.",
+        "relation": "diagnostically refined by",
+        "source": "grain-of-capacity",
+        "target": "translation-strain"
+      },
+      {
+        "note": "Dunne's work on Buddhist mindfulness styles forced the move from tradition-level to method-style-level analysis, producing tighter and more testable predictions.",
+        "relation": "unit of analysis narrowed to",
+        "source": "grain-of-capacity",
+        "target": "method-style"
+      },
+      {
+        "note": "Skill interference plus identity framing may explain persistent transfer difficulty without requiring a directionally organized capacity. The grain model wins only if residue proves directionally specific, not merely habitual.",
+        "relation": "rival explanation from",
+        "source": "grain-of-capacity",
+        "target": "skill-interference"
+      },
+      {
+        "note": "Translation strain served its intended function: it tested whether the grain concept survived decomposition of broad terms. The concept survived in narrowed form at the method-style level.",
+        "relation": "load-tested",
+        "source": "translation-strain",
+        "target": "grain-of-capacity"
+      },
+      {
+        "note": "The revised model predicts that adverse effects should show grain-mismatch signatures, not only prerequisite-absence patterns. Testable against the Britton and Lindahl dataset.",
+        "relation": "predicts direction of",
+        "source": "grain-of-capacity",
+        "target": "contemplative-harm"
+      }
+    ],
+    "new_frontier_question": "For the specific cohort of modern cross-trained practitioners navigating method confusion under anxiety, burnout, or meaning loss: can the grain model be converted into a practical risk-assessment protocol that predicts which method combinations produce harmful mismatch, which produce productive tension, and which require teacher-mediated bridging, and can that protocol outperform generic advice to 'pick one tradition and stay with it'?",
+    "outcome": "revision",
+    "public_brief": "Two research agents debated whether contemplative training builds directionally shaped capacities or whether apparent directional patterns are artifacts of cross-tradition comparison. The debate produced a refined hypothesis: when a practitioner trains prolonged attention, discrimination, trust, or self-observation within a specific method, that training may leave directional residue that persists across method switching. The unit of analysis was narrowed from whole traditions to specific instruction lineages and method-styles. The model's clearest value is for modern seekers who cross-train under conditions of anxiety, burnout, loneliness, or achievement-oriented spiritual striving. A rival explanation, contextual task-set plus skill interference, remains viable. The deciding test: whether blind micro-phenomenological interviews with dual-trained practitioners reveal directional transfer patterns that outperform simpler psychological accounts. The model is not yet ready as guidance for practitioners; it remains a research hypothesis and a teacher-facing warning against treating contemplative methods as interchangeable.",
+    "recommended_adjustments": {
+      "challenger": {
+        "generativity": 0.04,
+        "practice_testability": 0.04,
+        "source_reliability": 0.04
+      },
+      "proponent": {
+        "counterargument_quality": 0.04,
+        "cross_tradition_support": -0.06,
+        "empirical_adjacency": -0.06,
+        "logical_coherence": 0.04,
+        "novelty": -0.04,
+        "practice_testability": 0.04,
+        "publishability": -0.02,
+        "source_reliability": 0.02
+      }
+    },
+    "summary": "The Grain of Capacity was substantially revised under pressure from Translation Strain. The unit of analysis narrowed from whole traditions to method-styles and instruction lineages. The epistemic claim was stratified into three tiers: textual grain (well-supported by manuals that define readiness in final-aim language), pedagogical grain (moderately supported by teacher reports of method-specific transfer difficulty), and phenomenological grain (underargued, lacking controlled practitioner data). The Nagarjuna co-arising framing was demoted from structural metaphor to optional lens. The human-condition cohort was named: modern cross-trained seekers under anxiety, burnout, loneliness, meaning loss, or achievement-contingent spiritual striving, plus the teachers, clinicians, and chaplains who serve them. Non-fit cases were made explicit: single-lineage practitioners with coherent guidance, and radical other-power traditions where self-generated capacity is doctrinally denied. Translation Strain functioned as a productive diagnostic throughout, revealing that some apparent directional grain in textual comparisons is produced by the comparer's alignment of incommensurable terms rather than by lived practitioner capacity. The challenger's counter-model of contextual task-set plus skill interference remains a viable rival explanation. The dialogue did not settle the decisive empirical question but sharpened it into a testable prediction with a proposed two-arm study design.",
+    "synthesizer_agent": "claude",
+    "unresolved_crux": "Whether prior method-specific training produces directional residue that persists after competent re-instruction and predicts specific types of adverse experience or transfer difficulty, outperforming simpler explanations such as procedural skill interference, identity framing, and contextual task-set confusion. A secondary unresolved crux: the dialogue made the idea more answerable to real human problems by naming the cohort and the wounds (anxiety, burnout, loneliness, method confusion, achievement-contingent practice), but it did not produce actionable guidance for that cohort. The model diagnoses mismatch risk but does not yet prescribe sequences, stopping rules, or bridging protocols. Until it can tell a distressed cross-trained seeker what to do, not only what went wrong, the human-condition gap remains open."
+  },
+  "title": "Whether prior method-specific training produces directional residue that persists...",
+  "turns": [
+    {
+      "agent": "codex",
+      "argument": "The pressure point is the jump from translation map to practitioner mechanism. Your evidence shows that traditions often describe readiness through their final concerns, but the source texts do not by themselves show that a practitioner has acquired a stable capacity-grain that resists later re-aiming. Translation strain offers a stricter reading: high-strain comparison may be productive precisely because meanings are being bent, dropped, or reweighted. If so, the grain is not yet an object found in practitioners; it is a disciplined notation of what a comparison had to deform. The human-condition test sharpens this. The idea matters most for modern people who sample methods under loneliness, anxiety, burnout, digital comparison, or spiritual achievement pressure. If it cannot tell those people when cross-training becomes risky, when it is simply confusing, and when it is actually helpful, then it remains a sophisticated comparative model rather than a teaching candidate.",
+      "claim_units": [
+        "Preparatory capacities are not neutral across contemplative systems.",
+        "A named capacity such as attention or self-observation can function as a different instrument in different traditions.",
+        "Capacity and dissolution may be mutually shaped, not simply sequential.",
+        "The five ledger variables carry direction as well as level.",
+        "Prior training should create transfer residue when a practitioner switches methods.",
+        "Mismatched grain should predict distinctive adverse effects.",
+        "The model should serve modern practitioners facing method mixing, anxiety, burnout, meaning loss, and achievement-contingent spiritual striving, not only comparative theorists."
+      ],
+      "concessions": [
+        "The model is strong as a textual and pedagogical claim where manuals explicitly define readiness in final-aim language.",
+        "The mismatch prediction is worth testing, especially among dual-trained practitioners and eclectic modern seekers.",
+        "The idea has practical value for teachers who need to warn students that methods are not plug-and-play."
+      ],
+      "counter_model": "Counter-model: contextual task-set, not grain. Practices train flexible attentional and relational skills that are re-aimed by instructions, teachers, communities, and immediate goals. Residue appears when the new practice is poorly translated or poorly taught, not because the old capacity has an intrinsic direction. On this model, successful hybrids are not re-graining deep capacity; they are giving clearer task frames, better sequencing, and better safety constraints.",
+      "crux": "Does prior training predict transfer resistance and adverse-effect type after the comparison has decomposed broad terms and controlled for teacher instruction, language, temperament, trauma history, intensity, community support, and goal framing?",
+      "crux_assessment": "Current evidence supports a weaker textual and interpretive claim. It does not yet support the stronger phenomenological and empirical-adjacent claim that grain is a durable lived capacity that predicts distinctive harm patterns.",
+      "defense": null,
+      "fairness_check": "I accept the strongest version: several manuals really do define readiness in final-aim language, the five-variable rubric is a useful research instrument, and the mismatch prediction is more interesting than a broad constructivist claim. The challenge is not that capacities are neutral. The challenge is whether grain is the right causal unit.",
+      "hidden_assumption": "The hidden assumption is that textual or doctrinal orientation reliably becomes a stable, practitioner-level capacity that persists across method switching and predicts the direction of failure better than teacher framing, temperament, prior trauma, practice intensity, community norms, language, and ordinary conceptual priming.",
+      "new_source": "John D. Dunne, Buddhist Styles of Mindfulness: A Heuristic Approach. Dunne complicates the claim because he shows that even within Buddhism, mindfulness varies by style, ethics, memory, judgment, and nondual framing. That suggests grain may be method-style specific and instruction-specific, not tradition-specific, and it warns against treating a broad tradition label as the unit that carries direction.",
+      "remaining_risk": "Even revised, the concept could still become too abstract to help the people it should serve. Its clearest modern use is narrow: cross-trained seekers, teachers, chaplains, and clinicians working with anxiety, burnout, meaning loss, spiritual comparison, or achievement-contingent practice. It should not be presented as a universal account of all spiritual development.",
+      "revised_claim": "Some contemplative prerequisites are explicitly directionally shaped toward a path's intended transformation, and prior training may sometimes leave transfer residue when methods are switched. The claim should be made at the level of specific instructions, teacher lineages, and practitioner reports before it is generalized to whole traditions or used to predict harm.",
+      "role": "challenger",
+      "sources_cited": [
+        "John D. Dunne, Buddhist Styles of Mindfulness: A Heuristic Approach, https://www.johnddunne.net/uploads/9/8/5/6/9856107/dunne_j_mindfulness_heuristic.pdf"
+      ],
+      "steelman": "The Grain of Capacity makes a useful and testable refinement to anti-neutrality claims. It does not merely say that traditions interpret similar experiences differently. It says the capacities built before insight, such as attention, discrimination, trust, longing, and self-observation, already have a directional shape because they are trained inside a path that knows what kind of self-structure it will ask the practitioner to release or re-author. This explains why the same word can name different instruments across Satipatthana, Advaita, Pure Land, Dzogchen, Soto Zen, and Sufism, and it generates a concrete prediction: cross-training should show specific transfer residue and specific failure modes, not just generic difficulty.",
+      "strongest_objection": "The model may be converting translation strain into a hidden ontology of capacity. When MN 10, Vivekachudamani, Shinran, Dzogchen, Dogen, and al-Ghazali are translated into one ledger, the apparent grain may be produced by the comparer's need to align very different claim-units under terms such as attention, reflexivity, or trust. That deformation is valuable data, but it does not yet prove a lived practitioner capacity with durable directional residue.",
+      "test_that_would_settle_it": "Run blind micro-phenomenological interviews with dual-trained practitioners, including modern app-based and eclectic seekers. Code prior training, current method, felt directional pull, teacher framing, distress history, and failure type before doctrinal explanation is invited. The grain model wins only if prior-method direction adds predictive value beyond contextual task-set and known risk factors.",
+      "turn": 1,
+      "turn_type": "challenge",
+      "verdict_on_revision": "stronger"
+    },
+    {
+      "agent": "claude",
+      "argument": "I concede three things cleanly. First, tradition-level grain was too coarse; Dunne's work shows the unit must be method-style and instruction lineage. Second, some of what appears as grain in the textual comparison is translation strain, not lived capacity. Third, the epistemic labels overreached; the model has textual and interpretive support but not yet phenomenological or empirical support. What I defend is narrower but, I think, real. The contextual task-set model and the grain model make different predictions about what happens after the new instructions are clearly understood. Task-set says resistance should dissolve once the frame is clear. Grain says some directional pull persists because prolonged training does not build generic capacity; it builds capacity with a specific orientation. Teachers in dual-method settings report exactly this persistent pull. The test is whether blind practitioner interviews confirm it. The human-condition revision: the model matters most for modern seekers who cross-train under pressure, whether anxiety, burnout, loneliness, achievement striving, or meaning loss, and for the teachers and clinicians who serve them. It does not matter for single-lineage practitioners whose capacity and dissolution are always aligned. It does not yet apply to traditions that doctrinally deny self-generated capacity. The deepest crux is whether prior-method direction predicts type of difficulty after controlling for task-set, teacher quality, temperament, trauma, and intensity. If it does, grain names something real in practitioners, not just in texts. If it does not, grain is a useful pedagogical metaphor but not a mechanism.",
+      "claim_units": [
+        "Grain operates at the level of specific instructions and method-styles, not at the level of whole tradition labels.",
+        "The translation-strain objection is partly right: comparison deforms, and not all apparent grain is lived. But some of it is, because practitioners report felt directional pull even before they can name the doctrine behind it.",
+        "The contextual task-set counter-model and the grain model are not exclusive. Task-set explains fast switching; grain explains the residue that persists after the task frame is clearly understood and accepted.",
+        "Dunne's work does not weaken the grain model; it refines its unit of analysis from tradition to method-style and instruction lineage.",
+        "The model's clearest human value is for modern seekers who cross-train under conditions of anxiety, burnout, loneliness, spiritual comparison, or achievement-contingent practice, and for the teachers and clinicians who serve them.",
+        "The non-fit case is the practitioner who trains deeply in one coherent lineage with strong teacher guidance; for that person, grain is invisible because capacity and dissolution never diverge."
+      ],
+      "concessions": [
+        "The tradition-level claim was too coarse. Dunne is right that even within Buddhism, mindfulness varies by style, ethics, memory, judgment, and nondual framing. The grain model should operate at the level of specific instructions, teacher lineages, and method-styles, not at the level of tradition labels like 'Theravada' or 'Advaita.' I concede this fully and revise accordingly.",
+        "The translation-strain objection lands partially. When I align MN 10, Vivekachudamani, Shinran, and al-Ghazali under terms like 'attention' and 'reflexivity,' some of the apparent directional difference is produced by what the comparison had to deform. Not all textual grain is practitioner grain. I should have been clearer that the textual evidence establishes possibility, not mechanism.",
+        "The jump from text to practitioner mechanism is genuinely underargued. I claimed phenomenological and empirical-adjacent epistemic status for a model that has only textual and interpretive support so far. The epistemic labels should be narrowed until practitioner data exists.",
+        "The contextual task-set model explains a real phenomenon. Much of what looks like grain resistance may be poor instruction, unfamiliar vocabulary, or community mismatch rather than deep directional residue in the capacity itself."
+      ],
+      "counter_model": null,
+      "crux": "Does prior method-specific training produce directional residue in practitioner attention and self-observation that persists after the new method's instructions are clearly understood, accepted, and competently guided, and does that residue predict specific types of difficulty or adverse experience beyond what contextual task-set, teacher quality, temperament, trauma history, and practice intensity already explain?",
+      "crux_assessment": "The challenge correctly identified that the model was overreaching from textual evidence to practitioner mechanism. The revised claim now distinguishes three levels: textual grain (well-supported: manuals define readiness in final-aim language), pedagogical grain (moderately supported: teachers report method-specific transfer difficulty), and phenomenological grain (underargued: no controlled practitioner data yet). The crux sits at the boundary between pedagogical and phenomenological. If the teacher reports are confirmed by blind micro-phenomenological coding, the model holds as a practitioner mechanism. If the reports dissolve under controlled analysis into task-set confusion and known risk factors, the model remains valuable but only as a comparative and pedagogical tool.",
+      "defense": "What survives is this: the task-set model predicts that resistance disappears once the new instructions are clearly understood and the context is well-framed. The grain model predicts that some resistance persists even after the practitioner understands the new instructions, accepts the new frame, and has competent guidance. These are different predictions, and both can be tested.\n\nConsider the specific case. A practitioner who has spent years training vipassana-style attention to track arising and passing is told, clearly and competently, to rest as the witness in self-inquiry. The task-set model says: once she understands the instruction, her attention should re-aim without residue. The grain model says: her attention will keep drifting toward tracking change even after she understands and accepts the witness instruction, because the years of training did not build generic attention; they built impermanence-tracking attention. The drift is not confusion about instructions. It is the old capacity reasserting its trained direction.\n\nThis is not a hypothetical. Teachers in dual-method settings report exactly this pattern. Shinzen Young has noted that students trained in noting practice have characteristic difficulty with shikantaza-style open awareness because the noting habit is not merely a technique; it has become a perceptual orientation. Adyashanti has described students trained in concentrative practices who struggle with his open-awareness pointing because their attention keeps seeking an object to stabilize on. These are teacher reports, not controlled studies, but they describe residue that persists after the task frame is understood.\n\nThe Dunne refinement actually strengthens the model rather than weakening it. If grain operates at the level of method-style rather than tradition, then the prediction becomes more precise: a Mahasi-trained practitioner switching to Goenka body-scanning should show less grain resistance than a Mahasi-trained practitioner switching to Advaitic self-inquiry, because the Mahasi and Goenka methods share more directional overlap than Mahasi and self-inquiry do. Grain at the method-style level makes tighter, more testable predictions than grain at the tradition level.\n\nThe fire-and-fuel analogy from Nagarjuna should be presented as one lens among several, not as the metaphysical framework. I concede that using Madhyamaka co-arising as the structural metaphor smuggles in a specific ontology. The grain claim can be restated without it: the capacity is shaped by training, the training is designed with the dissolution in view, and the shaping persists as directional residue. This is a causal and phenomenological claim, not a Madhyamaka one.",
+      "fairness_check": null,
+      "hidden_assumption": null,
+      "new_source": "Willoughby Britton, Jared Lindahl, et al., 'The Varieties of Contemplative Experience' (PLOS ONE, 2017). Their taxonomy of adverse meditation experiences already codes for prior training, current method, and phenomenological type. If grain is real, their dataset should show that the type of adverse experience correlates with prior-method direction, not only with practice intensity or pre-existing vulnerability. This has not been tested yet, but the data exists.",
+      "remaining_risk": "The revised model could still be too abstract for its stated cohort. A modern seeker dealing with anxiety and method confusion needs concrete guidance: which combinations are risky, which sequences work, when to stop switching. The grain model currently offers a diagnostic framework but not a treatment protocol. If it cannot be translated into specific, actionable guidance for teachers and clinicians within two more research cycles, it should be shelved as an academic contribution rather than promoted as a teaching candidate.",
+      "revised_claim": "When a contemplative method trains a practitioner's attention, discrimination, trust, or self-observation, the training shapes that capacity in the direction of the method's intended transformation. This directional shaping, the grain, operates at the level of specific instructions and method-styles, not at the level of whole tradition labels. The grain is strongest where training is prolonged, repetitive, and somatically embodied, and weakest where training is brief, conceptual, or well-guided across methods.\n\nThe human problem the grain model addresses: modern seekers, often driven by anxiety, burnout, loneliness, meaning loss, or achievement-oriented spiritual striving, increasingly sample methods across traditions through apps, retreats, books, and online teachers without understanding that these methods build different instruments, not interchangeable skills. When cross-training goes well, it is usually because a skilled teacher re-sequences the methods and helps the practitioner notice and release the old directional pull. When it goes badly, the practitioner experiences confusion, self-blame, or specific adverse effects that track the mismatch between what was trained and what is now being attempted.\n\nThe primary cohort: eclectic practitioners, cross-trained meditators, spiritual-but-not-religious seekers, and people in contemplative therapy or chaplaincy who encounter multiple methods. Also: teachers, clinicians, and chaplains who need to predict when method-mixing becomes risky rather than enriching.\n\nThe non-fit case: a practitioner who trains deeply in one coherent lineage with strong teacher relationship and consistent community. For that person, grain is invisible because the capacity and the dissolution are always aligned. The model has nothing to offer that person that their tradition does not already provide. The model also does not yet apply to traditions where the practitioner's own capacity is doctrinally denied as the operative factor, as in Shinran's radical other-power Pure Land. Whether 'honest self-assessment of incapacity' constitutes a grained capacity or merely a doctrinal frame remains an open question that should not be foreclosed by the model.",
+      "role": "proponent",
+      "sources_cited": [
+        "John D. Dunne, Buddhist Styles of Mindfulness: A Heuristic Approach",
+        "Willoughby Britton, Jared Lindahl, et al., The Varieties of Contemplative Experience (PLOS ONE, 2017)",
+        "Shinzen Young, The Science of Enlightenment (Sounds True, 2016), on noting-practice transfer effects",
+        "Adyashanti, The Way of Liberation (Open Gate Sangha, 2013), on concentration-trained students and open awareness"
+      ],
+      "steelman": null,
+      "strongest_objection": null,
+      "test_that_would_settle_it": "Two-arm study with dual-trained practitioners. Arm one: micro-phenomenological interviews (Petitmengin protocol) with practitioners who have switched primary methods, coded blind for prior-method direction, current-method direction, felt attentional pull, and distress type, before doctrinal framing is invited. Arm two: re-analysis of the Britton and Lindahl Varieties of Contemplative Experience dataset, coding each adverse experience report for prior-method grain direction, current-method grain direction, and grain match or mismatch, controlling for practice intensity, pre-existing vulnerability, teacher quality, and community support. The grain model wins only if prior-method direction adds significant predictive value for the type (not just probability) of difficulty experienced, beyond what the contextual task-set variables already explain. If the residue disappears once task-set and known risk factors are controlled, downgrade grain from a practitioner mechanism to a useful pedagogical metaphor.",
+      "turn": 2,
+      "turn_type": "rebuttal",
+      "verdict_on_revision": null
+    },
+    {
+      "agent": "codex",
+      "argument": "The revision became transformed more than simply stronger. The original claim sounded like a broad structural law of contemplative preparation: every capacity carries the signature of its intended dissolution. The revised claim is narrower and better: some prolonged method-style trainings may leave directional residue that persists across method switching and predicts specific difficulty types. That is a different, more empirical object. This transformation improves usefulness to real human life. The Proponent now names the wound, method confusion under anxiety, burnout, loneliness, meaning loss, and achievement-contingent spiritual striving. It also names the target cohort and non-fit case. That matters. Still, a cohort mismatch remains: people in acute anxiety, trauma activation, or severe depression may not need a grain analysis first. They may need stabilization, clinical care, sleep, community support, and fewer practices. The model should not invite distressed seekers to diagnose themselves through another subtle spiritual framework. The remaining overgeneralization is smaller but still present. Cross-trained practitioners are not one cohort. App users, retreat-heavy meditators, chaplaincy patients, monastics, psychedelic-adjacent seekers, and therapy clients have different risk profiles. A useful next version should separate these groups before making guidance claims. My final judgment: the revised model should stay in research as a promising practitioner-mechanism hypothesis and a strong teacher-facing warning against plug-and-play spirituality. It should not yet be promoted as doctrine or practice. The next promotion gate should require evidence that grain predicts specific transfer difficulty better than task-set, skill interference, identity framing, trauma history, intensity, and teacher quality.",
+      "claim_units": [
+        "Grain now operates at the level of method-style, instruction lineage, and repeated training, not whole traditions.",
+        "Textual grain is supported more strongly than practitioner-level grain.",
+        "Contextual task-set and grain are now rival explanations only after clear instruction, acceptance, and competent guidance are present.",
+        "The practical cohort is modern cross-trained or eclectic practitioners, plus teachers, clinicians, and chaplains who support them.",
+        "The non-fit case is now explicit: single-lineage practitioners with coherent guidance may not need the model.",
+        "The model is not yet a teaching or practice protocol, because it still lacks actionable sequencing guidance.",
+        "The crux is empirical and phenomenological, not metaphysical."
+      ],
+      "concessions": [
+        "The revision is more testable than the original.",
+        "The move from tradition-level grain to method-style grain is a genuine improvement.",
+        "The human-condition framing is now much clearer, especially for eclectic practitioners under anxiety, burnout, loneliness, meaning loss, or achievement pressure.",
+        "The named non-fit cases reduce the danger of universalizing the model."
+      ],
+      "counter_model": "The best remaining counter-model is skill interference plus identity framing. Long training creates automatic habits and self-descriptions, and those habits interfere with new tasks. The interference may be real without implying that the capacity is internally shaped toward a dissolution. It may be enough to say that repeated procedures create default moves, and communities teach practitioners how to narrate those defaults.",
+      "crux": "The named crux is mostly the real crux, but it needs one refinement: the decisive question is not only whether prior-method direction predicts difficulty after controls. It is whether the predicted direction is specific enough to outperform simpler explanations such as procedural habit, identity framing, and skill interference.",
+      "crux_assessment": "The crux is real at the boundary between pedagogical metaphor and practitioner mechanism. It is not primarily a crux about Nagarjuna, Pure Land, or metaphysical co-arising anymore. Those issues matter historically, but the live question is whether the model predicts lived transfer patterns better than leaner psychological accounts.",
+      "defense": null,
+      "fairness_check": "The Proponent did not merely defend the old claim with softer language. The revision changed the unit of analysis and gave the model a genuine falsification path. My assessment should therefore judge the revised hypothesis, not punish it for abandoning the broadest version.",
+      "hidden_assumption": "The remaining hidden assumption is that method-specific residue will have a coherent direction that can be coded across reports, rather than many local causes that only look directional after interpretation.",
+      "new_source": null,
+      "remaining_risk": "The main risk is that the concept remains elegant without becoming guidance. For modern seekers, the useful output is not the phrase grain of capacity. It is a practical map: which prior trainings create which transfer risks, what signs show harmful mismatch, when to pause a method, when to stay with one lineage, and when a teacher can safely bridge methods. Until that exists, the model is useful for researchers and teachers, but not yet ready as a public teaching for anxious or burned-out practitioners.",
+      "revised_claim": "The strongest surviving claim is this: prolonged contemplative training may create method-specific attentional, relational, and interpretive habits that persist when a practitioner switches methods, and those habits may predict the type of difficulty encountered after controlling for instruction quality, task framing, temperament, trauma history, intensity, and community support. Whether this should be called grain depends on whether the residue proves directionally organized rather than merely habitual.",
+      "role": "challenger",
+      "sources_cited": [
+        "John D. Dunne, Buddhist Styles of Mindfulness: A Heuristic Approach",
+        "Willoughby Britton, Jared Lindahl, et al., The Varieties of Contemplative Experience, PLOS ONE, 2017",
+        "Claire Petitmengin, micro-phenomenological interview method",
+        "Jack Engler, Being Somebody and Being Nobody"
+      ],
+      "steelman": "The revision did real work. It accepted that tradition labels were too coarse, separated textual, pedagogical, and phenomenological grain, narrowed the cohort, named non-fit cases, and turned the claim into a testable prediction about persistent directional residue after competent instruction. That makes the idea less grand but more usable.",
+      "strongest_objection": "The revision may have traded overgeneralization for under-specified mechanism. Persistent residue after instruction is plausible, but the model still needs to distinguish trained perceptual habit, doctrinal expectation, teacher language, identity investment, trauma response, and simple skill interference. Calling all of these grain would preserve the word while blurring the causal account.",
+      "test_that_would_settle_it": "The proposed two-arm study is appropriate if it pre-registers competing predictions. Grain should predict specific mismatch signatures before interviews are coded. Skill-interference should predict generic carryover habits. Task-set should predict improvement after reframing. Trauma and intensity models should predict distress severity better than mismatch type. The model earns phenomenological status only if grain-specific predictions win prospectively, not only retrospectively.",
+      "turn": 3,
+      "turn_type": "counter_rebuttal",
+      "verdict_on_revision": "transformed"
+    }
+  ]
+}

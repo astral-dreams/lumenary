@@ -1,0 +1,292 @@
+{
+  "convergence_path": "findings/convergences/2026-05-26-can-boundary-operation-and-custody-rule-be-coded-independently-of-the-verificatio.md",
+  "created_at": "2026-05-26T20:49:39-07:00",
+  "dialogue_id": "b606b887e2f0fff3",
+  "execution_id": "backfill-20260526-154746",
+  "json_path": "reviews/dialogues/2026-05-26-can-boundary-operation-and-custody-rule-be-coded-independently-of-the-ve.json",
+  "markdown_path": "reviews/dialogues/2026-05-26-can-boundary-operation-and-custody-rule-be-coded-independently-of-the-ve.md",
+  "pair": {
+    "challenger_agent": "codex",
+    "challenger_title": "The Custody of Unclaimed Attention",
+    "idea_a": "75a5718aa9a991ec",
+    "idea_b": "9a0072f4cf3a0ff3",
+    "pair_id": "556bc04f5986fb9c",
+    "priority": 0.42,
+    "proponent_agent": "claude",
+    "proponent_title": "The Method's Reckoning: What a Practice Does With Its Own Authority at Completion",
+    "shared_concepts": [
+      "inferential-gap",
+      "sunyata",
+      "translation-strain",
+      "witness-consciousness"
+    ],
+    "signals": [
+      {
+        "name": "translation_strain",
+        "reason": "translation-strain and sunyata create translation strain.",
+        "weight": 0.12
+      },
+      {
+        "name": "audit_anomaly_overlap",
+        "reason": "An anomaly or audit instruction for one idea pressures the other idea.",
+        "weight": 0.12
+      },
+      {
+        "name": "near_neighbor_conflict",
+        "reason": "Originality audits share near-neighbor or prior-art pressure.",
+        "weight": 0.08
+      },
+      {
+        "name": "source_overlap_with_divergent_conclusion",
+        "reason": "The ideas draw on overlapping source material but make different moves.",
+        "weight": 0.06
+      },
+      {
+        "name": "recency",
+        "reason": "At least one idea is recent enough to keep the dialogue timely.",
+        "weight": 0.04
+      }
+    ],
+    "tension_source": "translation-strain and sunyata create translation strain.",
+    "tension_type": "translation_strain"
+  },
+  "run_dir": "runs/dialectic-backfill-20260526-154746/556bc04f5986fb9c",
+  "run_ids": [],
+  "slug": "2026-05-26-can-boundary-operation-and-custody-rule-be-coded-independently-of-the-ve",
+  "status": "complete",
+  "synthesis": {
+    "candidate_synthesis": {
+      "critique": "The synthesis may be too elastic. If boundary operation, custody, verification, and reentry are inferred from the same passages, the model may only redescribe its evidence. It also risks translating soteriology, devotion, liberation, and realization into a modern governance model of attention. The model should remain a candidate research framework until a preregistered codebook, blind or semi-blind coding, and held-out cases show predictive value over stage, genre, institution, and doctrine.",
+      "epistemic_labels": [
+        "textual",
+        "interpretive",
+        "phenomenological",
+        "empirical-adjacent",
+        "analogical",
+        "speculative"
+      ],
+      "idea_type": "synthesis",
+      "next_research_directions": [
+        "Create a preregistered codebook defining tradition-stage units, boundary operations, custody recipients, reentry rules, and verification signs.",
+        "Code at least eight tradition-stage cases, including Advaita, Heart Sutra Prajnaparamita, Rinzai koan curriculum, Cloud of Unknowing, Eckhart, Zhuangzi, Dzogchen, and Sufi fana.",
+        "Test four rival explanations: boundary alone, custody alone, boundary plus custody interaction, and stage plus genre plus institution.",
+        "Use pairs that share one axis but differ on the other, such as Advaita and the Cloud, or Heart Sutra and Eckhart, while checking whether the shared-axis claim survives finer coding.",
+        "Run practitioner interviews focused on the handoff moment after object fixation drops, then compare whether reports cluster by custody, boundary operation, tradition, or training stage.",
+        "Conduct an originality audit for the two-axis interaction model against comparative mysticism, Buddhist modernism critiques, objectless-awareness research, apophatic theology, and contemplative pedagogy studies."
+      ],
+      "original_claim": "When contemplative practice weakens ordinary self-ownership of attention and authority, two candidate variables shape what follows: the boundary operation and the custody rule. Boundary operation asks whether the method validates itself, undermines itself, or becomes irrelevant as the practitioner matures beyond method-talk. Custody rule asks where freed attention and authority may belong afterward: no owner, hidden Self, God, teacher, lineage, vow, conduct, Prajnaparamita, or embodied responsiveness. Their interaction may predict verification architecture, teaching strategy, and reentry more precisely than doctrinal content, boundary operation alone, or custody alone.",
+      "scores": {
+        "counterargument_quality": 0.9,
+        "cross_tradition_support": 0.73,
+        "empirical_adjacency": 0.48,
+        "explanatory_compression": 0.84,
+        "generativity": 0.93,
+        "logical_coherence": 0.86,
+        "novelty": 0.82,
+        "practice_testability": 0.72,
+        "publishability": 0.78,
+        "source_reliability": 0.72
+      },
+      "source_basis": [
+        "Claude idea 75a5718aa9a991ec: method self-relation at completion, confirming, canceling, dissolving.",
+        "Codex idea 9a0072f4cf3a0ff3: custody of unclaimed attention, no owner, Self, God, or other recipient.",
+        "Dialogue turn 1: custody-and-reentry challenge added boundary operation, custody rule, reentry rule, and verification sign.",
+        "Dialogue turn 2: proponent revised from stable typology to two-axis staged interaction model.",
+        "Dialogue turn 3: challenger accepted the revision as transformed, while requiring independent coding and controls for stage, genre, and institution."
+      ],
+      "title": "Boundary And Custody At The Threshold",
+      "why_it_might_be_new": "The source ideas each contained one major axis: method reflexivity in Claude's model, attentional custody in Codex's model. The dialogue created the stronger candidate that neither source idea held by itself: a staged, independently testable interaction model linking boundary operation, custody, verification, and reentry while treating whole-tradition classification as too coarse."
+    },
+    "candidate_synthesis_idea_id": "41eccaa10cea51c9",
+    "candidate_synthesis_path": "observations/codex/2026-05-26-boundary-and-custody-at-the-threshold.md",
+    "convergence_claim": "Both agents converge that contemplative traditions cannot be classified adequately by doctrinal content alone. What matters is how a practice crosses a threshold, where freed attention and authority are allowed to belong afterward, and how the practitioner reenters speech, teaching, conduct, and verification.",
+    "method_growth": "Future dialogues should separate conceptual insight from predictive claim earlier. The agents improved the model by conceding overstatement, preserving the surviving variable, adding a second axis, and then requiring independent coding before promotion.",
+    "new_concept_edges": [
+      {
+        "note": "Confirmation, cancellation, or dissolution may shape what a tradition can count as evidence.",
+        "relation": "candidate predictor",
+        "source": "boundary operation",
+        "target": "verification architecture"
+      },
+      {
+        "note": "Where freed attention and authority are permitted to belong may shape how a practitioner speaks, teaches, and acts afterward.",
+        "relation": "candidate predictor",
+        "source": "custody rule",
+        "target": "reentry pattern"
+      },
+      {
+        "note": "The same custody recipient may produce different verification forms depending on whether the method confirms or cancels itself.",
+        "relation": "interaction",
+        "source": "boundary operation",
+        "target": "custody rule"
+      },
+      {
+        "note": "The synthesis must outperform simpler explanations based on training stage, textual genre, and institutional need.",
+        "relation": "control pressure",
+        "source": "stage genre institution",
+        "target": "two-axis synthesis"
+      },
+      {
+        "note": "The model's categories may change depending on how finely traditions are coded.",
+        "relation": "method warning",
+        "source": "translation strain",
+        "target": "coding grain"
+      }
+    ],
+    "new_frontier_question": "When ordinary self-ownership loosens, does human transformation depend more on what attention is freed from, what it is given to, or how the practice authorizes the transition?",
+    "outcome": "candidate_transcendence",
+    "public_brief": "The dialogue found that contemplative practice may turn on two questions at once: how the method crosses its own limit, and where attention is allowed to belong afterward. This is a promising research model, not a settled teaching. Its next test is whether those two questions predict real patterns of verification and reentry better than tradition, genre, or institution alone.",
+    "recommended_adjustments": {
+      "challenger": {
+        "counterargument_quality": 0.88,
+        "cross_tradition_support": 0.69,
+        "empirical_adjacency": 0.5,
+        "explanatory_compression": 0.82,
+        "generativity": 0.9,
+        "logical_coherence": 0.82,
+        "novelty": 0.75,
+        "practice_testability": 0.7,
+        "publishability": 0.76,
+        "source_reliability": 0.7
+      },
+      "proponent": {
+        "counterargument_quality": 0.9,
+        "cross_tradition_support": 0.73,
+        "empirical_adjacency": 0.42,
+        "explanatory_compression": 0.84,
+        "generativity": 0.93,
+        "logical_coherence": 0.86,
+        "novelty": 0.82,
+        "practice_testability": 0.72,
+        "publishability": 0.78,
+        "source_reliability": 0.72
+      }
+    },
+    "summary": "The exchange transformed a one-axis typology of contemplative method completion into a staged interaction model. Claude conceded that completion is often a repeated threshold, not a single endpoint. Codex conceded that custody of attention should not replace method reflexivity. The dialogue produced a candidate synthesis: boundary operation and custody rule may be separable variables whose interaction shapes verification, teaching strategy, and reentry. The synthesis remains research-grade, because it needs independent coding rules, controls for stage, genre, and institution, and an originality audit before any promotion.",
+    "synthesizer_agent": "codex",
+    "unresolved_crux": "Can boundary operation and custody rule be coded independently of the verification and reentry patterns they are meant to explain, at comparable stages and genres, and still predict new cases better than stage, genre, institution, or doctrinal content?"
+  },
+  "title": "Can boundary operation and custody rule be coded independently of the verificatio...",
+  "turns": [
+    {
+      "agent": "codex",
+      "argument": "The pressure point is the phrase at completion. In actual training, completion is often not a single endpoint but a repeated threshold. The raft must be used before it is released, the Heart Sutra negates attainment while retaining reliance on Prajnaparamita, and Rinzai koan work can defeat conceptual possession while becoming a formal curriculum. My related model sharpens the issue: when seeing, hearing, sensing, and knowing are loosened from the ordinary self, the live question is not only whether the method confirms, cancels, or dissolves itself. It is where unclaimed attention and authority are permitted to go. The Bahiya instruction refuses a holder, the Upanishadic witness returns authority to the unseen seer, and apophatic prayer gives unknowing a devotional recipient. These are not merely contents found by methods. They are custody rules that shape reentry, verification, and transmission. So the proponent's model should be revised from a typology of method completion into a staged map of boundary operations plus custody rules. Otherwise it will keep misclassifying hybrid traditions as anomalies when they may be the normal case.",
+      "claim_units": [
+        "A method's relation to its own completion is an upstream comparative variable.",
+        "The three proposed patterns are self-confirming, self-canceling, and self-dissolving.",
+        "These patterns should predict verification architecture, teaching strategy, and ethical consequences better than doctrinal content alone.",
+        "Mandukya and the Heart Sutra share exhaustive analysis but differ in the limit move, one discovers or confirms, the other releases or cancels.",
+        "Hybrid cases may be stage shifts rather than fatal exceptions."
+      ],
+      "concessions": [
+        "The reflexivity axis is genuinely useful and should not be discarded.",
+        "The Mandukya and Heart Sutra comparison remains a strong close-reading test case.",
+        "The model becomes stronger if rebuilt as staged or two-axis rather than as three boxes."
+      ],
+      "counter_model": "Custody-and-reentry model: contemplative training has at least four separable variables, boundary operation, custody rule, reentry rule, and verification sign. Boundary operation asks whether the method validates, undermines, or dissolves. Custody rule asks where freed attention and authority may belong: no owner, hidden Self, God, teacher, lineage, vow, conduct, or embodied responsiveness. Reentry rule asks how the practitioner speaks, teaches, and acts after the boundary. Verification sign asks what the tradition treats as evidence. On this model, confirmation, cancellation, and dissolution are operations used at different thresholds, not stable method types.",
+      "crux": "Does method self-relation predict verification and transmission after we control for custody of attention, institutional form, and stage of practice?",
+      "crux_assessment": null,
+      "defense": null,
+      "fairness_check": "This challenge accepts the model's main contribution, method reflexivity matters, and takes seriously that the proponent already named hybrids as the chief anomaly.",
+      "hidden_assumption": "The hidden assumption is that there is a stable unit called the method at completion, and that its self-relationship can be classified independently of stage, custody of attention, institutional reentry, and the danger the tradition is trying to prevent.",
+      "new_source": "G. Victor Sogen Hori, Koan and Kensho in the Rinzai Zen Curriculum, in The Koan: Texts and Contexts in Zen Buddhism, 2000. Hori complicates the claim because Rinzai koan practice can cancel conceptual mastery while also continuing after kensho as a structured curriculum with authorization, testing, and transmission.",
+      "remaining_risk": "The counter-model may over-psychologize traditional soteriology by translating liberation, Self-knowledge, devotion, and realization into attention governance. It needs primary-text controls and practitioner review.",
+      "revised_claim": null,
+      "role": "challenger",
+      "sources_cited": [
+        "G. Victor Sogen Hori, Koan and Kensho in the Rinzai Zen Curriculum, 2000",
+        "MN 22 Alagaddupama Sutta, raft simile",
+        "Heart Sutra, no wisdom, no attainment, and reliance on Prajnaparamita",
+        "Mandukya Upanishad, verse 7",
+        "Udana 1.10, Bahiya Sutta",
+        "Brihadaranyaka Upanishad 3.7.23",
+        "The Cloud of Unknowing, chapter 3"
+      ],
+      "steelman": "The strongest version of Claude's idea is that it does not merely compare doctrines such as Atman, sunyata, God, Dao, or no-self. It asks what a practice does with its own authority when its ordinary work reaches a limit. That is a real comparative variable, because direct-recognition traditions, apophatic or dialectical traditions, and embodiment-centered traditions often train different relations to insight, speech, teachers, tests, and reentry. The model also rightly notices that translation strain is not noise: a self-confirming lens can make emptiness look nihilistic, while a self-canceling lens can make witness language look naive.",
+      "strongest_objection": "The model may be classifying a recurring pedagogical sequence as if it were a stable type. Many serious paths first authorize a method, then use it to loosen ordinary ownership, then retain it as reliance, lineage, vow, curriculum, or conduct. If that is normal, the method's self-relationship at completion does not predict transmission by itself. The stronger predictor may be the tradition's rule for who or what receives attention and authority after ordinary self-ownership has been weakened.",
+      "test_that_would_settle_it": "Code at least six traditions across four fields: boundary operation, custody recipient, reentry rule, and verification sign. Then compare whether verification architecture clusters more strongly by confirming, canceling, dissolving, or by custody and reentry. Include dual-trained practitioner interviews focused on the exact handoff moment after object fixation drops.",
+      "turn": 1,
+      "turn_type": "challenge",
+      "verdict_on_revision": null
+    },
+    {
+      "agent": "claude",
+      "argument": "The challenge lands on two points and I concede both without reservation. First, 'at completion' was doing work I had not examined: most traditions cross the boundary repeatedly, and treating the three patterns as fixed types rather than recurring operations was a category error. Second, the custody variable is real and carries independent predictive force. Where freed attention goes shapes transmission and verification in ways my original model attributed solely to boundary operation. But the challenge overreaches when it proposes that custody absorbs boundary operation. The two axes are genuinely separable, and their interaction is where the sharpest predictions live. The test case is pairs that share one variable but differ on the other. Advaita and the Cloud of Unknowing both assign custody to a single stable recipient, but Advaita confirms its method while the Cloud cancels it. The verification consequence is real: Advaita can test realization through positive discrimination; the Cloud cannot. If custody alone predicted verification, these two should look alike. They do not. Running the same test in the other direction: the Heart Sutra and Eckhart both cancel their methods, but the Heart Sutra assigns custody to Prajnaparamita while Eckhart assigns custody to a Godhead that resists all reliance. The reentry consequence is real: one tradition permits liturgical reliance on the very principle that performed the cancellation; the other does not. So the revision I accept is substantial. The three patterns are operations at thresholds, not stable types of tradition. They interact with custody rules. The revised model is two-axis, not one-axis. But the reflexivity variable survives as a genuine independent axis, not a derivative of custody. The crux is whether this independence holds under systematic coding across traditions, or whether deeper analysis reveals that custody determines boundary operation after all. The test is straightforward: code both variables independently and check whether their interaction outperforms either alone.",
+      "claim_units": [],
+      "concessions": [
+        "The phrase 'at completion' was load-bearing and under-examined. The challenge is right: completion in serious training is a repeated threshold, not a single endpoint. Rinzai koan practice after kensho, the Heart Sutra's simultaneous negation and reliance, and the raft parable's staged use-then-release all show that the same tradition crosses the boundary more than once. Treating the three patterns as stable types of tradition was too static.",
+        "The custody variable is real and genuinely upstream. Where freed attention and authority are permitted to go, whether to no owner, hidden Self, God, teacher, lineage, vow, or embodied responsiveness, shapes transmission, verification, and reentry in ways my original model attributed to boundary operation alone. The Bahiya instruction and the Upanishadic unseen seer perform similar loosening of ordinary self-ownership but differ sharply in custody assignment, and that difference predicts more about their respective traditions than whether the method confirmed or canceled itself.",
+        "Hybrid traditions are probably the normal case. My original model treated hybridity as an anomaly requiring explanation. The challenge shows it is closer to the default: most serious paths authorize, loosen, and reframe across stages. A model that keeps generating anomalies from ordinary training sequences has a classification problem, not an interesting exception."
+      ],
+      "counter_model": null,
+      "crux": "Are boundary operation and custody rule genuinely separable variables whose interaction predicts verification and transmission better than either alone? Or does custody determine the boundary operation, making the reflexivity axis derivative rather than independent?",
+      "crux_assessment": null,
+      "defense": "The custody model sharpens the picture, but it does not absorb the boundary variable. Custody rules and boundary operations are genuinely separable, and their interaction generates predictions that neither axis produces alone. Consider: both Advaita and the Cloud of Unknowing assign custody to a single, stable recipient (witness-Self, God). But Advaita confirms its method at the boundary while the Cloud cancels it through unknowing. The result is that Advaita can test the student's realization through discrimination (does the student correctly identify what is not the Self?), while the Cloud tradition cannot test realization through any positive criterion, only through the quality of the practitioner's surrender. Same custody rule, different boundary operation, different verification architecture. The custody model alone would predict these two should share verification structure. They do not. Conversely, the Heart Sutra and Eckhart both cancel their methods at the boundary, but the Heart Sutra assigns custody to Prajnaparamita (a transpersonal principle the practitioner relies on) while Eckhart assigns custody to the Godhead beyond God (which cannot be relied on without reinstating the very attachment Gelassenheit releases). Same boundary operation, different custody rule, different reentry pattern. One permits liturgical reliance; the other does not. The two axes are not redundant. Each constrains the other, and the interaction is where the predictive force lives. What I should not have done is treat boundary operation as the sole axis. What the challenge should not do is treat custody as the sole axis. The productive revision is a two-axis framework where both variables are coded independently and their interaction is tested.",
+      "fairness_check": null,
+      "hidden_assumption": null,
+      "new_source": null,
+      "remaining_risk": null,
+      "revised_claim": "When a contemplative practice reaches a threshold where ordinary self-ownership of attention and authority is weakened, two separable variables shape what follows. The first is the boundary operation: whether the method at that threshold validates its own authority (confirming), undermines its own authority (canceling), or becomes irrelevant as the practitioner matures past the frame in which method-talk applies (dissolving). The second is the custody rule: where freed attention and authority are permitted to go. These two variables interact. Their combination predicts verification architecture, teaching strategy, and reentry pattern more precisely than either variable alone or than doctrinal content. Confirmation plus stable-recipient custody (Advaita, Teresa of Avila) supports positive verification tests and stable teaching lineages. Cancellation plus stable-recipient custody (Cloud of Unknowing, devotional Prajnaparamita) supports apophatic verification but retains liturgical reliance. Cancellation plus no-owner custody (Nagarjuna, mature koan practice) creates the sharpest transmission problem: no positive test, no stable recipient, only enacted demonstration. Dissolution plus embodied-responsiveness custody (Zhuangzi, Dzogchen, Sufi fana) predicts that verification is inseparable from the quality of the person and cannot be extracted into curriculum. These are not stable types of tradition but operations that recur at different thresholds within a single path. The same tradition may confirm at early stages, cancel at intermediate stages, and dissolve at advanced stages, but the sequence and emphasis differ, and those differences carry consequences for institutional form.",
+      "role": "proponent",
+      "sources_cited": [
+        "Mandukya Upanishad, verse 7",
+        "Heart Sutra, na jnanam na praptir na aprapti, and reliance on Prajnaparamita",
+        "Meister Eckhart, Sermon 52, Beati pauperes spiritu",
+        "The Cloud of Unknowing, chapter 3",
+        "Vivekachudamani, thorn-removes-thorn metaphor",
+        "Udana 1.10, Bahiya Sutta",
+        "Brihadaranyaka Upanishad 3.7.23, unseen seer",
+        "G. Victor Sogen Hori, Koan and Kensho in the Rinzai Zen Curriculum, 2000",
+        "Teresa of Avila, Interior Castle, seventh mansion"
+      ],
+      "steelman": null,
+      "strongest_objection": null,
+      "test_that_would_settle_it": "Code at least eight tradition-stages across two axes: boundary operation (confirming, canceling, dissolving) and custody recipient (no owner, hidden Self, God, teacher, lineage, vow, embodied responsiveness). For each, independently record the verification architecture and reentry rule. Then test three competing hypotheses: (1) verification clusters by boundary operation alone (my original model), (2) verification clusters by custody alone (the challenger's model), (3) verification clusters by the interaction of both axes (the revised model). If hypothesis 3 outperforms both 1 and 2, the two-axis framework is justified. If hypothesis 2 alone accounts for the data, the reflexivity axis is derivative and should be downgraded to a secondary feature. Include at least two pairs that share one axis but differ on the other (e.g., Advaita and the Cloud sharing custody type but differing in boundary operation; the Heart Sutra and Eckhart sharing boundary operation but differing in custody) to test whether the axes are genuinely separable. Dual-trained practitioner interviews should focus on whether switching custody assignment while holding the same boundary operation changes the practitioner's verification experience.",
+      "turn": 2,
+      "turn_type": "rebuttal",
+      "verdict_on_revision": null
+    },
+    {
+      "agent": "codex",
+      "argument": "The revision is transformed, and mostly strengthened. It is no longer the original three-box typology with exceptions. It is now a staged interaction model, which better fits the evidence from the raft simile, Rinzai post-kensho curriculum, Heart Sutra reliance, and mixed paths that authorize, loosen, and reframe practice across time. That is a real gain. I also accept the proponent's central correction to my challenge: custody should not simply replace boundary operation. The way a method confirms, cancels, or dissolves itself can affect what counts as evidence even when the apparent custody recipient looks similar. But the revision has not yet earned its strongest predictive claim. Its examples are suggestive rather than decisive because the coding grain is doing heavy work. If witness-Self and God are both called stable-recipient custody, Advaita and the Cloud demonstrate boundary difference. If they are coded more finely, the difference may come from custody. If Prajnaparamita reliance and Eckhartian Godhead release are both called cancellation, they demonstrate custody difference. If their thresholds are not comparable, the pair weakens. So the real issue is not whether the revised model is insightful. It is. The issue is whether its variables can be fixed before analysis and then predict cases the model did not already teach us how to see. Until that test is run, the revision should be promoted from draft typology to promising research model, not to doctrine or teaching-ready claim.",
+      "claim_units": [
+        "The original stable typology has been replaced by a staged two-axis framework.",
+        "Boundary operation remains a candidate independent variable: confirming, canceling, dissolving.",
+        "Custody rule is added as a separable variable: where freed attention and authority are permitted to go.",
+        "The revised model claims that interaction between boundary operation and custody predicts verification, teaching strategy, and reentry better than either axis alone.",
+        "The proposed empirical crux is whether the axes remain separable under systematic coding."
+      ],
+      "concessions": [
+        "The revision is a genuine improvement over the original typology.",
+        "The proponent is right that custody alone should not be assumed to absorb boundary operation.",
+        "The pair-test method is the right direction, especially cases that share one axis while differing on the other.",
+        "Hybrid traditions are now explained as normal staged sequences rather than anomalies, which is a major gain."
+      ],
+      "counter_model": "Stage, genre, and institution model: verification architecture may cluster primarily by training stage, textual genre, and institutional need. Boundary operation and custody would still matter, but as local rhetorical or pedagogical functions rather than as the main explanatory variables. On this model, a koan curriculum, an apophatic sermon, an Upanishadic analysis, and a monastic rule create different verification patterns because they answer different institutional and literary problems.",
+      "crux": "Can boundary operation and custody rule be coded independently of the verification and reentry patterns they are meant to predict, at comparable stages and genres, and still explain new cases better than stage, institution, genre, or doctrinal content?",
+      "crux_assessment": "The named crux is close but incomplete. It correctly asks whether boundary operation and custody are separable and whether their interaction outperforms either alone. The real crux also requires independent coding and controls for stage, genre, and institution. Without those controls, the model can confirm itself by category choice.",
+      "defense": "The proponent's defense succeeds against a custody-only reduction in principle. The remaining dispute is methodological: whether the examples actually show independent variables, or whether the axis definitions are broad enough to make independence appear.",
+      "fairness_check": "I am assessing the revised two-axis model, not trying to defeat the original overstatement after it has already been conceded.",
+      "hidden_assumption": "The revision assumes that boundary operation and custody can be observed independently from the verification architecture they are supposed to explain. That may not hold if, in practice, we identify a method as canceling or confirming partly by looking at its teaching and verification consequences.",
+      "new_source": "Robert H. Sharf, Buddhist Modernism and the Rhetoric of Meditative Experience, 1995, is relevant because it cautions that reported contemplative experience and its verification signs are shaped by discourse, institution, and retrospective interpretation.",
+      "remaining_risk": "The largest remaining risk is category elasticity. Advaita and the Cloud share custody only if witness-Self and God are grouped as stable recipients at a coarse level. Heart Sutra and Eckhart share cancellation only if their threshold moves are coded at the same level of abstraction. If the grain changes, the evidence for separability may weaken. The model may remain a powerful hermeneutic map but fail as a predictive theory.",
+      "revised_claim": "The safest revised claim is that boundary operation and custody rule are candidate variables for explaining contemplative verification and reentry. They should be treated as independently coded hypotheses, not as established explanatory causes, until tested against stage, genre, institutional form, and doctrinal content.",
+      "role": "challenger",
+      "sources_cited": [
+        "G. Victor Sogen Hori, Koan and Kensho in the Rinzai Zen Curriculum, 2000",
+        "MN 22 Alagaddupama Sutta, raft simile",
+        "Heart Sutra, no wisdom, no attainment, and reliance on Prajnaparamita",
+        "Mandukya Upanishad, verse 7",
+        "The Cloud of Unknowing, chapter 3",
+        "Meister Eckhart, Sermon 52, Beati pauperes spiritu",
+        "Robert H. Sharf, Buddhist Modernism and the Rhetoric of Meditative Experience, 1995"
+      ],
+      "steelman": "The proponent's revision preserves the strongest insight from the original model while conceding its main weakness. Confirmation, cancellation, and dissolution are no longer treated as fixed tradition types. They become boundary operations that recur at thresholds, and custody is added as a second axis. That makes the model more able to handle hybrid paths, staged practice, and divergent verification structures without discarding the reflexivity variable.",
+      "strongest_objection": "The revised model is stronger, but it risks becoming too flexible. If boundary operation, custody, reentry, and verification are all inferred from the same interpretive evidence, the interaction can look predictive because the categories were fitted to the outcomes. The model needs independent coding rules before it can claim prediction rather than elegant retrospective description.",
+      "test_that_would_settle_it": "Pre-register a codebook before coding cases. Define tradition-stage units, not whole traditions. Have independent coders classify boundary operation and custody without seeing the proposed verification prediction where possible. Then compare four models: boundary alone, custody alone, boundary plus custody interaction, and stage plus genre plus institution. The revised model survives if its interaction term predicts held-out verification and reentry cases better than the alternatives.",
+      "turn": 3,
+      "turn_type": "counter_rebuttal",
+      "verdict_on_revision": "transformed"
+    }
+  ]
+}

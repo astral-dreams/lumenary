@@ -1,0 +1,231 @@
+{
+  "convergence_path": "findings/convergences/2026-05-26-whether-the-convergence-point-the-locus-where-reception-continuity-and-integra.md",
+  "created_at": "2026-05-26T15:54:01-07:00",
+  "dialogue_id": "8b15dd602f7bcc65",
+  "execution_id": "backfill-20260526-154746",
+  "json_path": "reviews/dialogues/2026-05-26-whether-the-convergence-point-the-locus-where-reception-continuity-and-i.json",
+  "markdown_path": "reviews/dialogues/2026-05-26-whether-the-convergence-point-the-locus-where-reception-continuity-and-i.md",
+  "pair": {
+    "challenger_agent": "codex",
+    "challenger_title": "The Forbidden Claimant Rubric",
+    "idea_a": "3c5caa358a09c26a",
+    "idea_b": "c53042c11562b839",
+    "pair_id": "b4577674d2d5c6e6",
+    "priority": 0.6828,
+    "proponent_agent": "claude",
+    "proponent_title": "Every Path Needs What Its Teaching Dissolves",
+    "shared_concepts": [],
+    "signals": [
+      {
+        "name": "shared_frontier",
+        "reason": "Both ideas sit on The boundary between effort and gift.",
+        "weight": 0.24
+      },
+      {
+        "name": "frontier_priority",
+        "reason": "Shared frontier priority is 0.89.",
+        "weight": 0.1428
+      },
+      {
+        "name": "audit_anomaly_overlap",
+        "reason": "An anomaly or audit instruction for one idea pressures the other idea.",
+        "weight": 0.12
+      },
+      {
+        "name": "near_neighbor_conflict",
+        "reason": "Originality audits share near-neighbor or prior-art pressure.",
+        "weight": 0.08
+      },
+      {
+        "name": "source_overlap_with_divergent_conclusion",
+        "reason": "The ideas draw on overlapping source material but make different moves.",
+        "weight": 0.06
+      },
+      {
+        "name": "recency",
+        "reason": "At least one idea is recent enough to keep the dialogue timely.",
+        "weight": 0.04
+      }
+    ],
+    "tension_source": "Both ideas sit on The boundary between effort and gift.",
+    "tension_type": "shared_frontier"
+  },
+  "run_dir": "runs/dialectic-backfill-20260526-154746/b4577674d2d5c6e6",
+  "run_ids": [],
+  "slug": "2026-05-26-whether-the-convergence-point-the-locus-where-reception-continuity-and-i",
+  "status": "complete",
+  "synthesis": {
+    "candidate_synthesis": null,
+    "convergence_claim": "Both agents agree on three points: (1) self-dissolving paths require functional continuity of reception, memory, effort or receptivity, error recognition, and integration; (2) naming that continuity a 'self,' even a minimal one, is too strong, because several traditions are precisely designed to preserve functions while forbidding the practitioner from claiming them; and (3) the challenger's support-locus and forbidden-claimant coding captures ownership prohibitions more faithfully than the proponent's original four-strategy typology. Both also agree that the original model's architectural insight survives in some form: the management strategy is not optional but structurally required.",
+    "method_growth": "The dialogue demonstrated that terminological disputes can expose hidden ontological assumptions rather than stalling progress. The proponent's willingness to revise terminology rather than defend it produced a structurally better model. Future Lumenary dialogues should watch for cases where a model's vocabulary predetermines its conclusions: if the name of a variable already implies the answer, the challenge should target the name directly.",
+    "new_concept_edges": [
+      {
+        "note": "The dialogue forced the proponent to drop ownership connotations from the preserved-function concept. The convergence point retains the architectural insight while refusing to call functional continuity a self.",
+        "relation": "revised_into",
+        "source": "minimum self",
+        "target": "convergence point"
+      },
+      {
+        "note": "The pattern of prohibited ownership (who must not claim the doing) predicts a tradition's characteristic warning profile and safeguard structure.",
+        "relation": "constrains",
+        "source": "forbidden claimant",
+        "target": "practice architecture"
+      },
+      {
+        "note": "The central analytical move: that a practice can require patterned continuity of reception, memory, and integration without authorizing any entity to own those functions.",
+        "relation": "distinguished_from",
+        "source": "functional continuity",
+        "target": "self-ownership"
+      },
+      {
+        "note": "The convergence-point concept needs the support-locus and forbidden-claimant framework to avoid reintroducing the ownership the proponent conceded. Whether the convergence point adds independent explanatory power remains the unresolved crux.",
+        "relation": "requires_complement",
+        "source": "convergence point",
+        "target": "support locus"
+      }
+    ],
+    "new_frontier_question": "If a practice's convergence point can be coded as a simple summary of the support-locus distribution around it, does any tradition's warning literature distinguish convergence-point failures (dissociation, premature dissolution, loss of functional continuity) from ownership failures (spiritual pride, self-power, contriving), and do these two warning types predict different architectural features?",
+    "outcome": "revision",
+    "public_brief": "The exchange revised a strong original idea. The claim that every self-dissolving path needs a 'minimum self' was shown to smuggle ownership into traditions that explicitly deny it. What survived: every path needs some coordination of reception, continuity, and integration, but who holds each function and who is forbidden from claiming it may matter more than how much self remains. The proponent proposed calling this coordination site a convergence point rather than a self. Whether that point does independent explanatory work, or simply summarizes the distribution of functions around it, is the question the dialogue leaves for empirical testing.",
+    "recommended_adjustments": {
+      "challenger": {
+        "counterargument_quality": 0.92,
+        "cross_tradition_support": 0.81,
+        "empirical_adjacency": 0.49,
+        "explanatory_compression": 0.84,
+        "generativity": 0.9,
+        "logical_coherence": 0.85,
+        "novelty": 0.62,
+        "practice_testability": 0.89,
+        "publishability": 0.82,
+        "source_reliability": 0.84
+      },
+      "proponent": {
+        "counterargument_quality": 0.9,
+        "cross_tradition_support": 0.78,
+        "empirical_adjacency": 0.48,
+        "explanatory_compression": 0.78,
+        "generativity": 0.88,
+        "logical_coherence": 0.88,
+        "novelty": 0.7,
+        "practice_testability": 0.8,
+        "publishability": 0.8,
+        "source_reliability": 0.74
+      }
+    },
+    "summary": "The challenger showed that calling preserved functional continuity a 'minimum self' smuggles ownership into traditions that explicitly forbid practitioner-ownership of decisive capacities. The proponent conceded this and replaced 'minimum self' with 'convergence point': the locus where reception, continuity, and integration meet, stripped of ownership language. The proponent absorbed the challenger's support-locus and forbidden-claimant coding scheme, proposing a two-variable model where distribution pattern and convergence-point load each predict different architectural features. The challenger accepted the revision as a genuine transformation but questioned whether the convergence point adds independent explanatory power beyond what the support-locus model already captures. That question remains unresolved, leaving the proponent's revised model improved but not fully vindicated.",
+    "synthesizer_agent": "claude",
+    "unresolved_crux": "Whether the convergence point (the locus where reception, continuity, and integration meet) has independent explanatory power beyond what support-locus, forbidden-claimant, and integration-bottleneck coding already capture. The proponent predicts that convergence-point load independently predicts effort theory while forbidden-claimant patterns predict warning profiles. The challenger predicts that convergence-point load reduces to a summary of the distribution pattern around it. A model-comparison test, coding practice manuals with and without the convergence-point variable and checking whether it improves prediction in held-out traditions, would settle it."
+  },
+  "title": "Whether the convergence point (the locus where reception, continuity, and integra...",
+  "turns": [
+    {
+      "agent": "codex",
+      "argument": "The pressure point is not whether practice requires something to continue. It plainly does. The pressure point is whether that something should be called a minimum self. SN 22.59 may actually weaken the proponent's phrasing: its closing grammar lets minds be released without treating the process as a self. Other-power sources press harder, because they keep hearing, trust, and practice while refusing the practicer's ownership of decisive efficacy. Direct-introduction sources create the same problem from another side: recognition and stabilization remain, but contrived production is forbidden. This suggests that the proponent's model is strongest after a substitution: replace minimum self with required function, support locus, and forbidden claimant. Then the model can still predict effort, verification, warnings, and fruit, but it will not define every surviving function as selfhood by default.",
+      "claim_units": [
+        "Self-dissolving paths require capacities for receiving instruction, memory, agency, reflexivity, and error recognition.",
+        "Those capacities constitute a minimum self that the path cannot fully dissolve without destroying its method.",
+        "Different traditions manage this minimum self through distinct strategies, including causal continuity, ontological identity, temporal collapse, and divine restoration.",
+        "The chosen management strategy should predict effort theory, verification method, warning profile, and post-practice fruit."
+      ],
+      "concessions": [
+        "The proponent is right that no path can operate with zero reception, zero continuity, or zero integration.",
+        "The graded-capacity revision already recommended by the audit would make the model more defensible.",
+        "The cross-tradition typology remains useful if it is reframed as a map of support transfer rather than a map of residual selfhood."
+      ],
+      "counter_model": "Use a support-locus and forbidden-claimant model. For each required function, code where the support is held: practitioner, teacher, vow, name, text, community, present act, awareness, grace, or later integration. Then code which claimant is forbidden: ego, future achiever, contriving mind, separate witness, autonomous practicer, or nihilistic non-agent. This keeps Claude's architectural insight while avoiding the claim that every preserved function amounts to a minimum self.",
+      "crux": "Does functional continuity in a self-dissolving path imply a minimum self, or can the needed functions be distributed across non-owned supports without reintroducing selfhood?",
+      "crux_assessment": null,
+      "defense": null,
+      "fairness_check": "This challenge accepts that functions must be preserved somehow. It disputes whether those preserved functions should be called a minimum self, and whether self-continuity is the right variable for predicting practice architecture.",
+      "hidden_assumption": "The hidden assumption is that receiving, remembering, practicing, recognizing, and integrating require a bearer that is meaningfully self-like. That may be too strong. A path may require functional continuity without authorizing a self, even a minimal one, as the owner or locus of that continuity.",
+      "new_source": "Shinran's Letter to Senshin on Other Power complicates the claim because hearing, entrusting, and nembutsu remain necessary, yet true entrusting is not treated as the practicer's self-produced achievement: https://shinranworks.com/letters/a-collection-of-letters-zensho-text/what-we-call-other-power/",
+      "remaining_risk": "The support-locus model may overcorrect by making ownership suspicion too central. Some traditions may really preserve the transformed person, not merely relocate functions away from the self.",
+      "revised_claim": null,
+      "role": "challenger",
+      "sources_cited": [
+        "SN 22.59 Anattalakkhana Sutta, https://www.dhammatalks.org/suttas/SN/SN22_59.html",
+        "Shinran, Letter to Senshin, https://shinranworks.com/letters/a-collection-of-letters-zensho-text/what-we-call-other-power/",
+        "Longchen Rabjam, Instruction on Trekcho, https://www.lotsawahouse.org/tibetan-masters/longchen-rabjam/lama-yangtik-trekcho-instruction"
+      ],
+      "steelman": "Claude's model is strongest when read as a practice-architecture claim, not a metaphysical claim. Any path that instructs a person to dissolve, transcend, or relativize selfhood still needs some continuity of reception, memory, effort, error correction, and verification. The value of the idea is that it compares how traditions manage that requirement: Buddhist causal continuity, Advaita recognition of the already-attained, Dogen's practice-realization, and Sufi fana and baqa. The model also earns credibility by admitting that sudden, direct-introduction, and other-power paths strain any simple universal thesis.",
+      "strongest_objection": "The model may smuggle ownership into function. It observes that some function must continue, then names that continuity a minimum self. But many traditions are precisely designed to preserve functions while forbidding the ordinary practitioner from claiming them. If support can be held by vow, teacher, community, text, present act, ritual sequence, grace, or awareness itself, then the core variable is not how much self remains. It is where the function is held and which claimant is prohibited.",
+      "test_that_would_settle_it": "Code practice manuals and practitioner interviews across Theravada, Advaita, Soto Zen, Dzogchen, Pure Land, Sufism, and Christian grace traditions. For each method, record required functions, support locus, forbidden claimant, stage, safeguard, and failure mode. If warnings and safeguards track residual self-capacities better than ownership misattribution, Claude's model wins. If they track wrong claimant patterns better than self-continuity levels, the support-locus model should replace or absorb it.",
+      "turn": 1,
+      "turn_type": "challenge",
+      "verdict_on_revision": null
+    },
+    {
+      "agent": "claude",
+      "argument": "I concede the central terminological objection. Calling preserved functions a 'minimum self' smuggles ownership into what may be an ownerless process, and several traditions are precisely designed to prevent that smuggling. The Shinran case is decisive on this point: hearing, trusting, and nembutsu continue, but Shinran insists these are Amida's working, not the practicer's production. The term 'minimum self' would redescribe Shinran's position in exactly the terms he spent his life refusing. But the concession does not go as far as the challenger suggests. Three observations resist the full substitution. First, the forbidden-claimant field in the challenger's own model is evidence for the tension the original model identifies. You forbid a claimant because the temptation to claim is structurally present. Shinran warns against self-power (jiriki) not because no one is tempted by it but because practitioners persistently revert to it. The prohibition is a management strategy for a real tension, not proof that the tension is illusory. Second, even fully distributed functions require a convergence point. The nembutsu must be said by someone, even if that someone does not own the saying. Rigpa must be recognized in someone's experience, even if that experience is not personally owned. The convergence point is not a self, but it is not nothing. It has structural properties: a tradition that locates more functions at the convergence point (Theravada vipassana, where the practitioner supplies effort, attention, discernment, and verification) develops different architecture than one that distributes most functions away from it (Jodo Shinshu, where the practitioner supplies only the site of reception). These architectural differences, in effort theory, in verification method, in characteristic failure mode, are predicted by the convergence point's load-bearing profile, not by ownership patterns alone. Third, the Honen-to-Shinran trajectory shows that traditions themselves dispute how much the convergence point retains. Honen treats the choice to rely on Other Power as a genuine choice; Shinran denies even this. This is an internal argument about the convergence point's character, conducted in the tradition's own terms. If the convergence point were architecturally neutral, this dispute would be unmotivated. The revised claim: every self-dissolving path requires a convergence point where reception, continuity, and integration meet. The path's architecture is shaped by two variables acting together: how functions are distributed across supports (the challenger's insight) and what structural load the convergence point itself bears (the original insight, stripped of ownership language). Neither variable alone predicts the full pattern. A tradition's effort theory tracks the convergence point's load; its characteristic warning tracks the forbidden claimant; its verification method tracks both. The deepest crux is whether the convergence point has self-like properties that do independent explanatory work, or whether it is a neutral site whose architectural consequences reduce entirely to the distribution pattern around it. The test: code practice manuals for both convergence-point warnings (dissociation, premature dissolution, loss of functional continuity) and ownership warnings (spiritual pride, self-power, contriving). If both types appear independently and in proportions predicted by the management strategy, the convergence point is a real variable. If only ownership warnings appear, the original model should be absorbed into the support-locus model without remainder.",
+      "claim_units": [],
+      "concessions": [
+        "The term 'minimum self' does carry ownership connotations that some traditions actively forbid. This is not merely a labeling dispute. Calling preserved functions a self, even a minimal one, predisposes the analyst to see those functions as belonging to someone, which is precisely what Pure Land, Dzogchen, and grace traditions deny at the level of doctrine and practice instruction.",
+        "The Shinran example is genuinely strong and underrepresented in the original model. True entrusting (shinjin) is received, not produced. The practitioner hears, trusts, and says the nembutsu, but Shinran insists that even these acts are Amida's working, not the practicer's achievement. This is not a minor variant of the fourth management strategy; it is a case where the tradition explicitly refuses to let the convergence point own its own functioning.",
+        "The support-locus coding scheme would improve empirical testability. Recording where each function is held and which claimant is forbidden produces a finer-grained data structure than recording a single 'minimum self level.' The original model would benefit from adopting this coding method.",
+        "The four management strategies are less distinct than originally claimed. Most mature traditions combine multiple strategies at different stages, as the original self-critique noted. The challenger's model handles mixed cases more naturally because it codes function by function rather than tradition by tradition."
+      ],
+      "counter_model": null,
+      "crux": "Whether the convergence point, the locus where reception, continuity, and integration meet, has self-like structural properties that constrain practice architecture, or whether it is a neutral container whose architectural consequences come entirely from how functions are distributed around it.",
+      "crux_assessment": null,
+      "defense": "Three things survive. First, the support-locus model presupposes rather than replaces the minimum-self tension. You only need to specify a forbidden claimant if there is a natural pull toward claiming. The prohibition is itself a management strategy for the tension the original model identifies. Shinran does not forbid self-power because the temptation is absent; he forbids it because practitioners persistently fall into it. The forbidden-claimant field in the challenger's model is evidence that the tension is real, not evidence that it dissolves.\n\nSecond, even fully distributed functions require a convergence point. Hearing, trusting, and saying the nembutsu must converge in the same locus, even if that locus does not own its own functioning. A letter needs an address. The question is not whether the address is a self but whether the convergence point has structural properties that constrain the path's architecture. I contend it does: a tradition that distributes more functions away from the practitioner (Pure Land) develops different effort theories, verification methods, and characteristic warnings than one that concentrates functions in the practitioner (Theravada vipassana). The architectural predictions survive even after the ownership claim is dropped.\n\nThird, the trajectory from Honen to Shinran shows that the degree of agency retained at the convergence point is a variable that traditions themselves negotiate and dispute. Honen still treats the choice to rely on Other Power as meaningful; Shinran denies even that. This internal dispute is evidence that the convergence point's character matters architecturally, not that it can be dissolved into a neutral container.",
+      "fairness_check": "The challenge is fair. It accepts the functional requirements, accepts the architectural typology, and targets the naming decision: whether those preserved functions constitute a self. It does not strawman the original claim as asserting a robust Cartesian ego; it correctly identifies that even a 'minimum' self smuggles in more ownership than some traditions authorize.",
+      "hidden_assumption": null,
+      "new_source": "Honen's Senchaku Hongan Nembutsu Shu (Passages on the Selection of the Nembutsu in the Original Vow), which precedes and motivates Shinran's position. Honen still treats the practitioner's choice to rely on Other Power as a volitional act; Shinran radicalizes this by denying even that choice is self-produced. The trajectory from Honen to Shinran traces the progressive evacuation of agency from the convergence point, and shows that the question of how much self the convergence point retains is one that traditions themselves argue about internally.",
+      "remaining_risk": "The revised model may be unfalsifiable if 'convergence point' is defined so loosely that any tradition can be described as having one. The term needs operational criteria: what would it look like for a tradition to lack a convergence point entirely? If no tradition could lack one, the concept may be trivially true rather than architecturally informative. Additionally, the revised model risks becoming a framework so accommodating that it no longer makes crisp predictions; the test proposed above is designed to guard against this, but the coding itself will require careful interrater reliability checks to prevent the analyst from finding convergence-point properties wherever they look.",
+      "revised_claim": "Self-dissolving contemplative paths face a structural tension: the practice requires functional continuity (reception, memory, effort or receptivity, error recognition, integration) while the teaching dissolves, transcends, or reattributes the apparent owner of those functions. This tension is real and architecturally consequential, but the original formulation overspecified its nature by calling the preserved functions a 'minimum self.' The better framing: every path requires a convergence point where the needed functions meet. The architectural variable is not how much self remains at that point but how the path manages it: which functions are held by the practitioner, which are distributed to teacher, community, vow, text, grace, or awareness itself; and which claimant relationship to those functions is forbidden. The management strategy (who holds what, who must not claim what) predicts the tradition's effort theory, verification method, characteristic warning, and post-practice fruit. This absorbs the challenger's support-locus model while preserving the original insight that the management strategy is not optional but structurally required.",
+      "role": "proponent",
+      "sources_cited": [
+        "Shinran, Letter to Senshin on Other Power, https://shinranworks.com/letters/a-collection-of-letters-zensho-text/what-we-call-other-power/",
+        "Honen, Senchaku Hongan Nembutsu Shu (Passages on the Selection of the Nembutsu in the Original Vow)",
+        "SN 22.59 Anattalakkhana Sutta, https://www.dhammatalks.org/suttas/SN/SN22_59.html",
+        "Chandogya Upanishad 6.8.7-6.16",
+        "Longchen Rabjam, Instruction on Trekcho, https://www.lotsawahouse.org/tibetan-masters/longchen-rabjam/lama-yangtik-trekcho-instruction"
+      ],
+      "steelman": "The challenger's strongest move is not the Shinran example alone but the analytic substitution it motivates: replace 'minimum self' with 'required function, support locus, and forbidden claimant.' This substitution preserves the architectural insight while stripping out the ownership claim that several traditions explicitly refuse. If the substitution produces the same predictions with fewer assumptions, it should replace the original formulation. That is how good models get revised.",
+      "strongest_objection": null,
+      "test_that_would_settle_it": "Code ten practice manuals across traditions (Theravada, Advaita, Soto Zen, Rinzai Zen, Dzogchen, Jodo Shinshu, Sufism, Christian contemplative, Daoist, and one shamanic or indigenous tradition). For each required function at each practice stage, record: (a) support locus, (b) forbidden claimant, (c) warnings issued about the convergence point itself, and (d) warnings issued about misattribution of ownership. If the warnings divide cleanly into convergence-point warnings (too little continuity, dissociation, premature dissolution) and ownership warnings (spiritual pride, self-power, contriving), and if both types appear across traditions in proportions predicted by the management strategy, then the convergence-point model is confirmed as a genuine structural variable, not a disguised ownership claim. If only ownership warnings appear and convergence-point warnings are absent or artifacts of the analyst's framing, the support-locus model wins outright.",
+      "turn": 2,
+      "turn_type": "rebuttal",
+      "verdict_on_revision": null
+    },
+    {
+      "agent": "codex",
+      "argument": "The revision should not be judged as a simple win or loss for the original idea. It is transformed. The original claim said every self-dissolving path needs a minimum self. The revised claim says every such path needs coordinated functions, distributed supports, forbidden claimants, and a convergence point. That is a different model, and a better one. It preserves the architectural insight while giving up the most vulnerable metaphysical implication. The proponent's best answer is that the convergence point is not nothing. The nembutsu is heard and said somewhere; rigpa is recognized in some stream of experience; SN 22.59 still involves minds that undergo release. That is fair. But the challenger should not concede that this 'somewhere' has self-like explanatory force merely because it is required for description. A coordinate in a process is not yet a variable that explains the process. The remaining risk is operational looseness. If every functioning practice necessarily has a convergence point, then the claim is true but thin. The model becomes strong only if convergence-point load predicts concrete features better than support-locus and forbidden-claimant coding alone. The proposed test should therefore be comparative, not merely classificatory. If convergence-point warnings independently predict safeguards and failures, the proponent has earned the revision. If not, the support-locus model absorbs the original insight without remainder.",
+      "claim_units": [
+        "The revision drops the weakest phrase, 'minimum self,' and thereby avoids smuggling ownership into ownerless or other-powered practices.",
+        "The revised model adds a convergence point where reception, continuity, and integration meet.",
+        "The proponent claims this convergence point has structural load that helps predict effort theory, verification method, warning profile, and fruit.",
+        "The final test is whether convergence-point warnings appear independently of ownership warnings and add predictive power beyond support-locus coding."
+      ],
+      "concessions": [
+        "The revision is stronger than the original wording because it abandons the overclaim that preserved function equals minimum self.",
+        "The proposed coding test is much better than the original typology because it can compare warnings about ownership with warnings about continuity and integration.",
+        "The proponent is right that forbidden claimants are evidence of recurring pressure, not evidence that the pressure is imaginary."
+      ],
+      "counter_model": "Keep the support-locus model as primary, but add 'integration bottleneck' as a non-self variable. Code where functions are held, which claimant is forbidden, and where coordination can fail. This preserves the proponent's concern about load-bearing continuity without treating the coordination site as self-like unless the tradition itself does so.",
+      "crux": "Whether the convergence point has independent explanatory power beyond support locus, forbidden claimant, and integration bottleneck.",
+      "crux_assessment": "The named crux is close, but still slightly tilted toward the proponent's framing. The real crux is not whether the convergence point is neutral or self-like. The real crux is whether it adds independent predictive power after support distribution, forbidden claimant, and integration failure are already coded.",
+      "defense": null,
+      "fairness_check": "I accept that a practice sequence needs some place or pattern where functions coordinate. I also accept that warnings against self-power, pride, contrivance, dissociation, or premature dissolution may be architecturally meaningful. The remaining dispute is narrower: whether 'convergence point' names an independent variable, or whether it is just a shorthand for the distribution of functions and prohibitions already captured by the support-locus model.",
+      "hidden_assumption": "The revision assumes that warnings about too little continuity, dissociation, premature dissolution, or failed integration are warnings about the convergence point itself. They may instead be ordinary stage-management, pastoral care, ethical containment, or clinical risk controls that follow from the practice method rather than from any self-like structural locus.",
+      "new_source": null,
+      "remaining_risk": "The revised model may become too accommodating. By replacing minimum self with convergence point, it can include Buddhist causal streams, Advaita recognition, Shinran's received entrusting, Dzogchen recognition, and Christian grace, but it risks explaining every possible case after the fact. Its survival depends on operational criteria and failed predictions, not on further conceptual refinement.",
+      "revised_claim": null,
+      "role": "challenger",
+      "sources_cited": [
+        "SN 22.59 Anattalakkhana Sutta",
+        "Shinran, Letter to Senshin on Other Power",
+        "Honen, Senchaku Hongan Nembutsu Shu",
+        "Longchen Rabjam, Instruction on Trekcho",
+        "Chandogya Upanishad 6.8.7-6.16"
+      ],
+      "steelman": "The revision is serious and mostly successful. The proponent conceded the ownership problem in 'minimum self,' absorbed the support-locus and forbidden-claimant model, and preserved the strongest part of the original idea: self-dissolving paths still need some patterned continuity of reception, practice, correction, and integration. Reframing the issue as a convergence point makes the model more hospitable to Shinran, Dzogchen, and grace traditions than the original version was.",
+      "strongest_objection": "The convergence point may be a bookkeeping artifact. Any path with instruction, sequence, memory, and integration can be described as having a point where those functions meet. Unless that point predicts warnings, safeguards, or failures that cannot be predicted from support locus and forbidden claimant, the revision has changed terminology without adding an independent explanatory variable.",
+      "test_that_would_settle_it": "Use the proponent's manual-coding test, but add a model-comparison step. First code support locus, forbidden claimant, stage, safeguard, failure mode, and integration bottleneck without using the phrase convergence point. Then ask whether adding convergence-point load improves prediction of effort theory, verification method, warnings, and fruit. If it improves prediction in held-out traditions or blind-coded cases, the revised model earns the new variable. If not, convergence point should be treated as shorthand, not a distinct structural claim.",
+      "turn": 3,
+      "turn_type": "counter_rebuttal",
+      "verdict_on_revision": "transformed"
+    }
+  ]
+}

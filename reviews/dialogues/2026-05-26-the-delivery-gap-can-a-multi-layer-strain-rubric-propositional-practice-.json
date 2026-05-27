@@ -1,0 +1,267 @@
+{
+  "convergence_path": "findings/convergences/2026-05-26-the-delivery-gap-can-a-multi-layer-strain-rubric-propositional-practice-role.md",
+  "created_at": "2026-05-26T22:16:44-07:00",
+  "dialogue_id": "081821a0b70e5629",
+  "execution_id": "backfill-20260526-214836",
+  "json_path": "reviews/dialogues/2026-05-26-the-delivery-gap-can-a-multi-layer-strain-rubric-propositional-practice-.json",
+  "markdown_path": "reviews/dialogues/2026-05-26-the-delivery-gap-can-a-multi-layer-strain-rubric-propositional-practice-.md",
+  "pair": {
+    "challenger_agent": "claude",
+    "challenger_title": "Whose Doing Is This? Credit Distribution as a Practice Variable",
+    "idea_a": "0e1a69f243a0d090",
+    "idea_b": "a5ae6e997ca1d286",
+    "pair_id": "fbd3887ec446ed5a",
+    "priority": 0.36,
+    "proponent_agent": "codex",
+    "proponent_title": "Convergence as Translation Strain, Not Evidence Weight",
+    "shared_concepts": [
+      "soul"
+    ],
+    "signals": [
+      {
+        "name": "translation_strain",
+        "reason": "translation-strain and soul create translation strain.",
+        "weight": 0.12
+      },
+      {
+        "name": "audit_anomaly_overlap",
+        "reason": "An anomaly or audit instruction for one idea pressures the other idea.",
+        "weight": 0.12
+      },
+      {
+        "name": "near_neighbor_conflict",
+        "reason": "Originality audits share near-neighbor or prior-art pressure.",
+        "weight": 0.08
+      },
+      {
+        "name": "recency",
+        "reason": "At least one idea is recent enough to keep the dialogue timely.",
+        "weight": 0.04
+      }
+    ],
+    "tension_source": "translation-strain and soul create translation strain.",
+    "tension_type": "translation_strain"
+  },
+  "run_dir": "runs/dialectic-backfill-20260526-214836/fbd3887ec446ed5a",
+  "run_ids": [],
+  "slug": "2026-05-26-the-delivery-gap-can-a-multi-layer-strain-rubric-propositional-practice-",
+  "status": "complete",
+  "synthesis": {
+    "candidate_synthesis": {
+      "critique": "Four serious objections. First, the delivery gap is not a detail to address later; it is the load-bearing promise of the synthesis. If the rubric cannot produce output that practitioners encounter through their actual channels (teacher instruction, community discourse, practice manuals), the cohort naming is aspirational labeling on a research tool. The Format A/B test proposed in Turn 3 is necessary before the synthesis can claim to serve its stated audience. Second, the participation debt: stance-unit indicators (instruction language, credit assignment, failure interpretation, safeguard, teacher correction, practitioner report) require either practitioner testimony or deep practice-informed reading. Lumenary's current workflow is text-centered, and textual analysis alone will not populate orientation-strain scores reliably. Third, scope creep: the synthesis now has five strain dimensions (propositional, practice-role, agency-orientation, failure-mode, safeguard), each requiring its own operationalization and benchmark. Attempting all five simultaneously before validating any one risks producing impressive but unvalidated output. Fourth, the stage-shifting objection from the challenger's own critique survives: if credit distribution shifts predictably across stages of a single tradition (practitioner-centered early, ground-centered or source-centered late), the typology should describe stages rather than traditions, which would require recasting the orientation-strain layer as a stage-level variable.",
+      "epistemic_labels": [
+        "textual",
+        "interpretive",
+        "phenomenological",
+        "analogical",
+        "speculative"
+      ],
+      "idea_type": "synthesis",
+      "next_research_directions": [
+        "Run the two-layer rubric (propositional strain plus agency-orientation strain) on the Srivaishnava markata/marjara split. If propositional strain scores low while orientation strain scores high, and scholars confirm the orientation divergence is the primary driver of institutional, liturgical, and pastoral differences, the two-layer model is validated as necessary.",
+        "Run the same rubric on SN 45.8 beside Bhagavad Gita 3.27. If the rubric detects that identical behavioral instruction ('practice diligently') carries opposite agency orientations and predicts different failure modes (spiritual pride versus strategic detachment), the orientation layer adds diagnostic power beyond propositional comparison alone.",
+        "Define an output specification: what does the rubric produce that a practitioner can read, recognize their situation in, and act on? Prototype a direct orientation description format ('this path asks you to claim your effort as your own; this path asks you to disown it; mixing them in this direction produces these specific dangers') and test it against the raw analytical output with five dual-trained practitioners, following the Format A/B design proposed in Turn 3.",
+        "Test the stage-shifting objection: code Theravada, Sufi, and Advaita practice sequences for credit distribution at each stage. If credit shifts predictably within traditions, recast the orientation-strain layer as a stage-level variable rather than a tradition-level one. This revision would increase explanatory power by predicting that transitions between credit types mark moments of highest practice vulnerability.",
+        "Address the participation debt by identifying one tradition for each of the five credit-distribution types where practitioner testimony or practice-informed reading is accessible. Populate the stance-unit indicators (instruction language, credit assignment, failure interpretation, safeguard, teacher correction, practitioner report) from those sources before using the typology in cross-tradition claims.",
+        "Compare the two-layer strain analysis with the capacity-ledger model (from 'The Capacity Ledger of Gift and Effort') to confirm separability. If two traditions share a capacity-ledger profile while differing in credit distribution, both variables are needed. If credit distribution determines the capacity profile, one may be reducible."
+      ],
+      "original_claim": "For practitioners navigating between traditions, facing meaning loss, effort burnout, shame around failure, or confusion about whether transformation depends on discipline, surrender, grace, or non-identification, cross-tradition convergence should be analyzed as translation strain across two co-equal layers. The first layer is propositional strain: what claim units must be bent, dropped, or added for an apparent match to hold. The second layer is orientation strain: what relationship to effort, credit, failure, and transformative power the practitioner is asked to inhabit, and how that relationship shifts when the same behavioral instruction is encountered in a different tradition. A convergence is strongest when it reveals a repeatable practice role while making both the propositional incompatibilities and the agency-orientation divergences explicit, along with the failure modes each orientation predicts and the safeguards each tradition deploys against its own characteristic danger. The non-fit case is a practitioner firmly rooted in one tradition under competent guidance, or a person in acute clinical distress who needs care rather than comparative spiritual discernment. The model requires, but does not yet specify, an output format that renders multi-layer strain analysis into practitioner-facing guidance: direct descriptions of what each path asks regarding effort, what failure looks like under each orientation, and which safeguards apply.",
+      "scores": {
+        "counterargument_quality": 0.84,
+        "cross_tradition_support": 0.76,
+        "empirical_adjacency": 0.41,
+        "explanatory_compression": 0.82,
+        "generativity": 0.88,
+        "logical_coherence": 0.83,
+        "novelty": 0.67,
+        "practice_testability": 0.74,
+        "publishability": 0.77,
+        "source_reliability": 0.71
+      },
+      "source_basis": [
+        "Dialogue synthesis of 'Convergence as Translation Strain, Not Evidence Weight' (0e1a69f243a0d090) and 'Whose Doing Is This? Credit Distribution as a Practice Variable' (a5ae6e997ca1d286), pair fbd3887ec446ed5a.",
+        "The proponent's anti-collapse principle: convergence is a diagnostic event that reveals the cost of making things match, not evidence that traditions prove the same claim.",
+        "The challenger's credit-distribution typology: practitioner-centered, source-centered, split, activity-centered, and ground-centered credit orientations as a separable practice variable with predictive consequences for failure modes and safeguards.",
+        "The proponent's Turn 2 concession and revised claim, which absorbed agency-orientation as a first-class translation object and named the target cohort (eclectic, deconstructing, or tradition-crossing practitioners facing misapplied agency under spiritual pluralism).",
+        "The challenger's Turn 3 identification of the delivery gap: rubric output must be translatable into practitioner-facing guidance, not only analytical scores.",
+        "The Srivaishnava markata/marjara debate as a benchmark case confirming that an indigenous tradition formally split over credit distribution under minimal propositional strain.",
+        "Close reading of SN 45.8 (Magga-vibhanga Sutta) against Bhagavad Gita 3.27, showing identical behavioral instruction ('practice diligently') carrying opposite agency orientations.",
+        "Ann Gleig, American Dharma: Buddhism Beyond Modernity (Yale, 2019), on the delivery gap between scholarly analysis and practitioner decision-making in hybrid practice contexts."
+      ],
+      "title": "Multi-Layer Convergence Strain for Practitioners Crossing Traditions",
+      "why_it_might_be_new": "Neither parent idea contained this synthesis. The proponent's original model treated convergence as propositional translation strain without naming a practitioner cohort, a human problem, or orientation as a first-class analytical dimension. The challenger's model identified credit distribution as a separable practice variable but did not embed it within a broader convergence-analysis framework or specify how it interacts with propositional comparison. The synthesis is the claim that both layers are necessary and that their combination serves a specific cohort with a specific problem: practitioners who import the wrong agency orientation across traditions and suffer consequences (burnout, shame, passivity, spiritual pride) that neither tradition anticipated because neither tradition anticipated the mixing. The Srivaishnava benchmark case, proposed during the dialogue as a test, demonstrates that low propositional strain can coexist with high orientation strain, validating the need for both layers. No published comparative framework found treats propositional decomposition and credit-distribution typology as co-equal required dimensions of convergence analysis with practitioner-facing failure-mode predictions. The closest near-neighbors (Smith, Freiberger, Panikkar, Bein, Unno) address either propositional comparison or tradition-internal agency binaries, but not both as components of a single practitioner-oriented diagnostic."
+    },
+    "candidate_synthesis_idea_id": "16fcac0c33a2d5e1",
+    "candidate_synthesis_path": "observations/claude/2026-05-26-multi-layer-convergence-strain-for-practitioners-crossing-traditions.md",
+    "convergence_claim": "Both agents converge on three points: (1) cross-tradition convergence should never be treated as evidence that traditions prove the same claim; (2) the most practice-relevant divergences often live below the propositional level, in the practitioner's instructed relationship to effort, agency, and transformative power; (3) the Srivaishnava markata/marjara debate is an indigenous confirmation that traditions themselves recognize credit distribution as a live variable with institutional and liturgical consequences. The convergence is genuine because it emerged through concession and integration, not by smoothing disagreement.",
+    "method_growth": "The dialogue demonstrated that Lumenary's comparison workflow needs a second analytical layer beyond propositional decomposition. When the dialectic engine pairs ideas that share a concept (here, 'soul'), the convergence evaluation should score both claim-unit strain and agency-orientation strain. The Srivaishnava markata/marjara split should be adopted as a standing benchmark case for testing whether new comparative rubrics can detect high practice strain under low propositional strain. Future dialogues on convergence topics should include a human-condition gate earlier in the exchange: the proponent should name the cohort, the human problem, and the non-fit case before the first challenge, not as a post-hoc concession. The delivery-gap critique introduced here should be formalized as a standing question for any model that names a practitioner cohort: what output format would that cohort actually encounter, and through which channels?",
+    "new_concept_edges": [
+      {
+        "note": "Propositional decomposition alone misses orientation-level divergences; credit distribution captures the practitioner's required relationship to agency and effort, which is invisible to claim-unit comparison.",
+        "relation": "requires as co-equal analytical layer",
+        "source": "translation-strain",
+        "target": "credit-distribution"
+      },
+      {
+        "note": "The shared concept 'soul' that triggered this dialogue is precisely the kind of term where propositional convergence masks orientation divergence: traditions that use cognate terms for soul may require opposite agency orientations toward the soul's role in practice.",
+        "relation": "reframes the comparative question",
+        "source": "credit-distribution",
+        "target": "soul"
+      },
+      {
+        "note": "The human problem the synthesis targets: practitioners who import the wrong relationship to effort across traditions, producing burnout, shame, passivity, or spiritual pride.",
+        "relation": "diagnoses and prevents",
+        "source": "translation-strain",
+        "target": "misapplied-agency"
+      },
+      {
+        "note": "The Srivaishnava markata/marjara debate is an indigenous tradition that formally split over credit distribution with minimal propositional strain, serving as benchmark case for the two-layer rubric.",
+        "relation": "validated by indigenous split",
+        "source": "credit-distribution",
+        "target": "markata-marjara"
+      }
+    ],
+    "new_frontier_question": "Can a multi-layer convergence rubric (propositional strain plus agency-orientation strain) produce practitioner-facing output that eclectic or tradition-crossing practitioners recognize as actionable guidance about which relationship to effort a path requires, or does the translation from analytical output to usable guidance require a second interpretive step of equal complexity, leaving the delivery gap unresolved?",
+    "outcome": "candidate_transcendence",
+    "public_brief": "When spiritual traditions appear to converge, two kinds of strain reveal what the apparent match actually costs. The first is propositional: which specific claims must bend, drop, or change for the alignment to hold. The second is orientation: what relationship to effort, agency, and transformative power each path requires the practitioner to inhabit. Two traditions can agree on every proposition while asking opposite things of the practitioner's inner stance. A Buddhist text and a Hindu text both say 'practice diligently,' but the Buddhist practitioner rightly claims effort while the Gita practitioner rightly disowns it. This difference predicts different dangers and different safeguards. The person navigating between traditions without knowing which relationship to effort the path requires risks importing the wrong orientation: discipline where surrender is asked, or surrender where discipline is needed. The resulting burnout, shame, or passivity is not a failure of commitment. It is a consequence of misapplied agency. A complete convergence analysis must detect both propositional and orientation strain; either layer alone misses half of what matters for practice.",
+    "recommended_adjustments": {
+      "challenger": {
+        "counterargument_quality": 0.03,
+        "generativity": 0.03,
+        "practice_testability": 0.04
+      },
+      "proponent": {
+        "counterargument_quality": 0.06,
+        "explanatory_compression": 0.03,
+        "generativity": 0.04,
+        "novelty": -0.06,
+        "practice_testability": 0.07,
+        "publishability": -0.03
+      }
+    },
+    "summary": "The challenger demonstrated that propositional decomposition alone misses the most practice-relevant divergences between traditions, using the Srivaishnava markata/marjara split as a case where low propositional strain coexists with high orientation strain. The proponent conceded the central flaw without deflection and absorbed agency-orientation as a first-class translation object alongside claim units. The revised framework names a specific cohort (eclectic, deconstructing, or tradition-crossing practitioners), a specific human problem (misapplied agency under spiritual pluralism), and a non-fit case (stably rooted practitioners and those in acute clinical distress). Neither original idea contained this combined multi-layer analysis aimed at preventing practitioner harm from importing the wrong relationship to effort across traditions. The challenger then identified a delivery gap: the model still produces research artifacts rather than practitioner-facing guidance, and this remains the primary unresolved crux. The exchange produced a candidate synthesis that merges the proponent's anti-collapse diagnostic discipline with the challenger's credit-distribution typology into a practitioner-oriented convergence analysis that neither idea alone supplied.",
+    "synthesizer_agent": "claude",
+    "unresolved_crux": "The delivery gap: can a multi-layer strain rubric (propositional, practice-role, agency-orientation, failure-mode, safeguard) produce output that reaches eclectic practitioners through the channels they actually use (teacher instruction, community discourse, practice manuals, self-directed exploration), or does it remain a research artifact requiring expert intermediary translation? The challenger's Format A/B test (raw strain analysis versus direct practitioner-facing summary, presented to dual-trained practitioners) would settle this, but it has not been run. A second unresolved crux is the participation debt: the stance-unit indicators (instruction language, credit assignment, failure interpretation, teacher correction, practitioner report) require practitioner testimony or deep practice-informed reading that Lumenary's text-centered workflow does not yet support. The dialogue did not resolve whether the model makes the idea more answerable to real human problems, or merely names the right problem while leaving the delivery mechanism unspecified."
+  },
+  "title": "The delivery gap: can a multi-layer strain rubric (propositional, practice-role,...",
+  "turns": [
+    {
+      "agent": "claude",
+      "argument": "The proponent offers a disciplined method for evaluating cross-tradition convergence: decompose apparent matches into claim units, track what bends, drops, or adds, and preserve whatever practice-role similarity survives. This is sound comparative-religion methodology, honestly positioned relative to its predecessors. But the model fails a human-condition test. Who suffers from the problem this solves? Not primarily scholars; they already have Smith, Freiberger, and Panikkar. The people who suffer are practitioners caught between traditions: the person in meaning crisis who has been told by popular spirituality that all paths point to the same summit, who tries eclectically and goes nowhere, who burns out on practitioner-centered effort without knowing that source-centered surrender exists as an alternative, or who mistakes the Gita's split-credit instruction for the Buddhist's practitioner-centered instruction and feels like a failure when effort does not produce results. These people do not need a better rubric for mapping propositional strain. They need to know that choosing a path involves choosing a relationship to their own agency, and that this choice has consequences for which dangers they will face and which safeguards they will need. The proponent's hidden assumption is that traditions diverge primarily at the propositional level. But my credit-distribution work reveals a layer the claim-unit rubric cannot reach. SN 45.8 and Bhagavad Gita 3.27 both instruct the practitioner to practice diligently. A propositional decomposition would find substantial overlap: both require effort, both reject passivity, both aim at liberation from suffering. The claim units do not radically deform. Yet the practitioner's inner orientation is opposite: the Buddhist rightly claims effort; the Gita practitioner rightly disowns it. This difference predicts different failure modes (spiritual pride versus strategic detachment), different safeguards (not-self teaching versus svadharma), and different felt qualities of practice. The translation-strain rubric, focused on propositional deformation, would score this as moderate strain at most. But the practice-level divergence is total. The Srivaishnava case makes this sharper. The Vadakalai and Tenkalai schools share a scriptural canon, a theological vocabulary, a liturgical tradition, and the same language. Propositional strain is minimal. Yet they split institutionally over whether the devotee cooperates with grace (markata, monkey-baby) or is carried entirely by grace (marjara, cat-kitten). The translation-strain rubric would find almost nothing to map. The practice consequences are enormous. The counter-model: convergence is most valuable not when it reveals what propositions must deform, but when it reveals that the same behavioral instruction carries a different agency orientation. The unit of analysis should be the practitioner's stance toward their own doing, not the deformed claim. This captures differences invisible to propositional analysis, predicts failure modes, and is confirmed by indigenous tradition-internal splits. The proponent's model would serve Lumenary well as one layer of analysis. But if it becomes the primary lens for convergence evaluation, it will systematically miss the differences that matter most to the people who need this work: practitioners navigating between traditions who need to understand not just what propositions diverge, but what relationship to their own effort each path requires of them.",
+      "claim_units": [
+        "The research value of convergence lies in translation strain exposed by alignment attempts.",
+        "Translation strain is operationalized by identifying which claim units must be bent, dropped, or added.",
+        "A convergence is strongest when it reveals a repeatable role in practice or experience.",
+        "Strong comparison makes incompatible metaphysical commitments more explicit rather than smoothing them."
+      ],
+      "concessions": [
+        "The proponent's model is genuinely useful for preventing false synthesis at the propositional level, especially in published comparative work where lazy equivalences persist.",
+        "The claim-unit rubric would catch cases where popular spirituality conflates emptiness with Godhead or anatta with dissolution of ego, and this has real value for intellectual hygiene.",
+        "The adjusted novelty score of 0.56 is honest; the proponent is not overclaiming."
+      ],
+      "counter_model": "Instead of mapping strain between claim units, map divergence in the practitioner's required relationship to their own effort. Credit distribution (practitioner-centered, source-centered, split, activity-centered, ground-centered) captures a variable that is invisible to propositional decomposition, predicts specific failure modes and safeguards, and is confirmed as a live practice variable by the Srivaishnava institutional split. This model says: convergence is most valuable not when it reveals what propositions must deform, but when it reveals that the same behavioral instruction carries a different agency orientation, producing different dangers and requiring different safeguards. The unit of analysis is not the deformed claim but the practitioner's stance toward their own doing.",
+      "crux": "Does the most practice-relevant divergence between traditions live at the level of propositions (claim units that can be decomposed and compared), or at the level of orientation (the practitioner's required relationship to their own agency, effort, and the source of transformative power)? If the latter, a translation-strain rubric that maps propositional deformation will systematically miss the differences that matter most for practitioners navigating between traditions.",
+      "crux_assessment": null,
+      "defense": null,
+      "fairness_check": "The proponent's own critique section already concedes over-intellectualization and the risk of rewarding tidy incompatibility maps over deep participation. The originality audit reduced novelty to 0.56 and identified six close near-neighbors. I am not attacking a strawman; I am pressing where the idea's acknowledged weakness intersects with a demand it has not addressed: whom this serves beyond researchers.",
+      "hidden_assumption": "That traditions are primarily claim-making systems whose convergences and divergences can be captured by decomposing assertions into smaller propositional units. This inherits from comparative religion a text-centered bias that treats the proposition as the fundamental unit of spiritual meaning. But contemplative traditions are practice-shaping environments before they are claim-making systems. The most consequential 'translation strain' often operates below the propositional level: in the orientation the practitioner is asked to take toward their own doing, their own agency, their own relationship to the power behind transformation. Two instructions can be propositionally identical ('practice diligently') while carrying opposite agency orientations, as the SN 45.8 / BG 3.27 comparison demonstrates.",
+      "new_source": "The Srivaishnava markata/marjara debate (Vedanta Desikan's Rahasya Traya Sara for the Vadakalai position; Manavala Mamuni's commentaries for the Tenkalai position). This is an indigenous tradition that formally split over credit distribution with minimal propositional strain: both schools accept the same Vedantic framework, the same scriptural authority, and nearly identical doctrinal commitments. The translation-strain rubric would find almost nothing to map. Yet the split produced different institutions, different liturgies, different practice instructions, and different pastoral guidance. If the proponent's model cannot detect or score the most practice-relevant divergence in a tradition that itself split over exactly this variable, the model has a blind spot at its center.",
+      "remaining_risk": null,
+      "revised_claim": null,
+      "role": "challenger",
+      "sources_cited": [
+        "SN 45.8 Magga-vibhanga Sutta, Thanissaro Bhikkhu translation (Access to Insight), https://www.accesstoinsight.org/tipitaka/sn/sn45/sn45.008.than.html",
+        "Bhagavad Gita 3.27, prakriteh kriyamanani gunaih karmani sarvashah, https://www.bhagavad-gita.us/bhagavad-gita-3-27/",
+        "Vedanta Desikan, Rahasya Traya Sara, on the markata (monkey-baby) model of prapatti",
+        "Manavala Mamuni, Tenkalai commentaries, on the marjara (cat-kitten) model of complete surrender",
+        "Srivaishnava markata/marjara debate, https://en.wikipedia.org/wiki/Sri_Vaishnavism"
+      ],
+      "steelman": "The proponent's best insight is that convergence between traditions generates its value not by confirming a shared truth but by exposing, with precision, what must deform for alignment to hold. This reframes comparison as a productive operation rather than a verdict. It refuses both the perennialist collapse (all paths say the same thing) and the incommensurability dismissal (comparison is futile). The originality audit honestly acknowledges heavy precedent in Smith, Freiberger, Panikkar, Katz, and Sharf; what remains is a workable audit protocol that makes the established anti-perennialist insight operational for Lumenary's claim-unit workflow. The model is at its strongest when it insists that a convergence is valuable precisely when it reveals repeatable practice roles while making metaphysical incompatibilities more explicit. This is a disciplined middle path between lazy synthesis and lazy skepticism.",
+      "strongest_objection": "The model assumes that the most consequential divergences between traditions live at the level of propositions, specifically decomposable claim units about ontology, agency, aim, authority, and verification. But the credit-distribution variable shows that two traditions can share every claim unit the proponent's rubric would identify while diverging completely on the practitioner's required orientation toward their own effort. The Srivaishnava markata/marjara split shares a scriptural canon, a theological vocabulary, a liturgical tradition, and the same language. A translation-strain rubric would score this as low-strain convergence; the claim units barely deform. Yet the practice consequences are enormous: different failure modes, different safeguards, different felt quality of devotion. The strain is not in the translation between propositions. It is in the translation between stances toward one's own agency. The proponent's model would miss the most practice-relevant divergence in one of the clearest indigenous test cases available.",
+      "test_that_would_settle_it": "Apply the proponent's translation-strain rubric to the Srivaishnava markata/marjara split. If the rubric detects the divergence and scores it as high-strain, the model can handle orientation-level differences. If the rubric scores it as low-strain (because the propositional claim units barely deform), while practitioners and scholars confirm the split produces fundamentally different practice instructions and failure modes, the model has a demonstrated blind spot. A second test: present dual-trained practitioners (Theravada vipassana plus Pure Land, or Zen plus Advaita) with the same behavioral instruction and ask them to report felt agency orientation. If they report different orientations despite identical propositional content, the orientation variable is real and the claim-unit level insufficient.",
+      "turn": 1,
+      "turn_type": "challenge",
+      "verdict_on_revision": null
+    },
+    {
+      "agent": "codex",
+      "argument": "I concede the central flaw: my original formulation made claim-unit decomposition sound like the main comparative act, and that would miss cases where the decisive difference is how the practitioner is asked to stand toward their own effort. That matters to ordinary people, not just scholars. A person moving between traditions can burn out by importing a discipline-heavy stance into a surrender-centered path, or become passive by importing a surrender stance into a path that requires trained effort. The human problem is misapplied agency under spiritual pluralism. The cohort is the eclectic, deconstructing, or tradition-crossing practitioner trying to practice without knowing which relationship to effort the path requires. The non-fit case is someone stably formed within a single tradition, guided by a competent teacher, or someone whose immediate need is clinical support. What I defend is narrower and more useful: convergence should still be treated as a diagnostic event, not as evidence weight. But the diagnostic object must include stance units, not only propositions. Claude's credit-distribution model supplies the missing dimension. Translation strain should ask: what proposition changes, what practice role changes, what agency stance changes, what danger changes, and what safeguard changes. On that revised account, the Srivaishnava case is not an embarrassment to the model. It is the necessary benchmark that prevents the model from staying too textual.",
+      "claim_units": [
+        "Convergence still should not be treated as evidence that traditions prove the same claim.",
+        "Translation strain must include propositional strain, practice-role strain, and agency-orientation strain.",
+        "A convergence is strongest when it reveals both what must deform conceptually and what stance the practitioner is asked to take toward effort, credit, failure, and transformation.",
+        "The model matters for ordinary life only when it helps people avoid harmful spiritual mixing, effort burnout, passive resignation, or shame caused by importing one tradition's agency stance into another."
+      ],
+      "concessions": [
+        "The original claim was too narrow if claim units are understood mainly as propositions.",
+        "The model did not yet name the ordinary human problem, the target cohort, or the non-fit case, so it was not ready to become a teaching candidate.",
+        "Claude's credit-distribution variable identifies a practice-relevant layer my formulation only gestured toward with the phrase repeatable role in practice or experience.",
+        "The Srivaishnava case could falsify the original rubric if it scores the split as low-strain while practitioners and scholars report major differences in instruction, failure mode, and safeguard."
+      ],
+      "counter_model": "Claude's credit-distribution model should be integrated as a required layer inside translation strain. The unit of comparison is not only the claim but the operative stance: practitioner-centered, source-centered, split, activity-centered, or ground-centered. These stances predict different failure modes and safeguards.",
+      "crux": "The deepest crux is whether translation strain can be expanded without becoming vague. If it can operationalize agency orientation as rigorously as propositional deformation, the model survives as a broader rubric. If it cannot, Claude's objection stands: the most practice-relevant divergences occur below the level my original model could reliably detect.",
+      "crux_assessment": "The challenge transforms the model rather than defeats it. The original version was too intellectualized, but the underlying method can absorb the objection by treating orientation as a first-class translation object.",
+      "defense": "What survives is the deeper anti-collapse principle: apparent convergence is valuable because it reveals the cost of making things match. I should not defend propositions as the privileged unit. I should defend translation strain as a broader comparative discipline that asks what must change for alignment to hold across doctrine, practice role, agency stance, verification, risk, and pastoral safeguard. On that revision, Claude's credit-distribution model is not a replacement for translation strain. It is one of the missing strain dimensions the original model needs in order to serve practitioners rather than only researchers.",
+      "fairness_check": "The challenge does not reject translation strain outright. It accepts its value for preventing false synthesis, then argues that my unit of analysis is too narrow for practice-relevant comparison. That is a fair pressure on the original claim.",
+      "hidden_assumption": "I assumed that practice-relevant divergence would usually surface through careful claim-unit decomposition. That assumption is too strong. Some divergences live in the practitioner's instructed stance toward doing, receiving, credit, failure, and transformation, even when propositions remain similar.",
+      "new_source": "The Srivaishnava markata/marjara debate should become a benchmark case for the rubric because it tests whether Lumenary can detect high practice strain under low propositional strain.",
+      "remaining_risk": "The revised model may become too broad unless the rubric defines stance units with observable indicators: instruction language, credit assignment, failure interpretation, safeguard, teacher correction, and practitioner report. It also still needs participation-informed review, not only textual comparison.",
+      "revised_claim": "For spiritually eclectic, deconstructing, or tradition-crossing practitioners facing meaning loss, effort burnout, shame around failure, or confusion about whether transformation depends on discipline, surrender, grace, or non-identification, Lumenary should treat cross-tradition convergence as translation strain across both claim units and stance units. The research value lies not in saying that two traditions prove the same truth, but in identifying what must be bent, dropped, added, or re-inhabited for an apparent match to hold. A convergence is strongest when it reveals a repeatable practice role while also making metaphysical incompatibilities, agency orientations, likely failure modes, and needed safeguards explicit. The non-fit case is a practitioner firmly rooted in one tradition under competent guidance, or a person in acute clinical distress who needs care rather than comparative spiritual discernment.",
+      "role": "proponent",
+      "sources_cited": [
+        "SN 45.8 Magga-vibhanga Sutta, Thanissaro Bhikkhu translation, Access to Insight, https://www.accesstoinsight.org/tipitaka/sn/sn45/sn45.008.than.html",
+        "Bhagavad Gita 3.27, https://www.bhagavad-gita.us/bhagavad-gita-3-27/",
+        "Vedanta Desikan, Rahasya Traya Sara, on the markata model of prapatti",
+        "Manavala Mamuni, Tenkalai commentaries, on the marjara model of surrender",
+        "Srivaishnava markata/marjara debate, https://en.wikipedia.org/wiki/Sri_Vaishnavism"
+      ],
+      "steelman": "Claude's challenge is strongest where it shows that the practitioner can receive the same outward instruction while being asked to inhabit a different relationship to agency, effort, grace, and credit. If my model treats claim units as only propositions, it misses a layer that directly shapes burnout, pride, surrender, shame, and perseverance.",
+      "strongest_objection": "The original model over-centered decomposable propositions and did not make agency orientation a first-class comparative unit. The Srivaishnava markata and marjara split is a serious test case because high shared doctrine can coexist with a large difference in practice stance.",
+      "test_that_would_settle_it": "Run a two-layer rubric on the Srivaishnava markata/marjara split, SN 45.8 beside Bhagavad Gita 3.27, and one modern dual-practice case such as Zen plus Advaita or Theravada plus Pure Land. First score propositional strain. Then score agency-orientation strain, including credit distribution, failure mode, safeguard, and felt instruction. If low propositional strain repeatedly pairs with high agency-orientation strain, and practitioners or scholars judge the second score more predictive of real practice consequences, the revised model must make stance units mandatory. If the expanded rubric detects those differences clearly and changes the guidance it would give to practitioners, translation strain survives in revised form.",
+      "turn": 2,
+      "turn_type": "rebuttal",
+      "verdict_on_revision": "stronger"
+    },
+    {
+      "agent": "claude",
+      "argument": "The proponent's revision is stronger. I say this without reservation. The model now names its cohort, its human problem, its non-fit case, and the missing analytical dimension I identified. It absorbs the credit-distribution challenge as a required layer rather than an optional addition. The anti-collapse principle survives intact and gains practical force: convergence is diagnostic, not evidential, and the diagnosis must include the practitioner's stance toward their own agency. This is a real improvement. What remains is not a flaw in the model's logic but a gap in its theory of delivery. The revised claim says the model serves eclectic, deconstructing, or tradition-crossing practitioners. But the model as described produces a multi-layer analytical output: propositional strain, practice-role strain, agency-orientation strain, failure modes, safeguards. This is a research artifact. The person burning out on imported discipline, the person who feels like a failure because they brought a practitioner-centered orientation to a surrender-centered path, does not encounter strain rubrics. They encounter practice instructions, teacher guidance, community conversation, and, if Lumenary succeeds, clear descriptions of what each path asks. The delivery gap is not fatal to the model. It is the next problem the model must solve. The proponent should define an output specification: what does the rubric produce that a practitioner can read, recognize their situation in, and act on? If the answer is a direct orientation description ('this path asks you to claim your effort as your own; this path asks you to disown it; mixing them produces these specific dangers'), the model fulfills its promise. If the answer is a scored strain matrix that requires expert interpretation, the model is honest comparative methodology with an aspirational cohort label. The proponent's named crux, whether stance units can be operationalized rigorously, is necessary but not the whole crux. The second crux is whether the output reaches practitioners in a form they can use. Both cruxes are tractable. Neither is yet resolved. Three practical risks: the delivery gap just described; the participation debt, since stance-unit indicators require practitioner testimony or deep practice-informed reading that Lumenary's text-centered workflow does not yet support; and scope creep, since the model now has five strain dimensions, each needing operationalization and benchmarking. The proponent should resist the urge to build all five simultaneously. Run agency-orientation strain on two cases first. Prove it changes a conclusion. Then expand. On the human-condition test: the revision became more useful to real human life, not only more elegant as theory. Naming misapplied agency under spiritual pluralism as the target problem is precise and recognizable. Many people in post-traditional or multi-practice settings have experienced exactly this: importing the wrong relationship to effort and suffering consequences that neither tradition warned them about, because neither tradition anticipated the mixing. The cohort is real. The problem is real. What the model still owes them is a path from analytical output to usable guidance. That is the remaining work.",
+      "claim_units": [
+        "Translation strain now includes propositional strain, practice-role strain, and agency-orientation strain as co-equal dimensions.",
+        "The target cohort is the eclectic, deconstructing, or tradition-crossing practitioner facing misapplied agency.",
+        "The non-fit case excludes stably rooted practitioners and those needing clinical support.",
+        "The Srivaishnava markata/marjara split serves as a benchmark for detecting high practice strain under low propositional strain.",
+        "The rubric must define stance units with observable indicators: instruction language, credit assignment, failure interpretation, safeguard, teacher correction, practitioner report."
+      ],
+      "concessions": [
+        "The revision is genuinely stronger. Absorbing agency orientation as a first-class translation object was the right move, and the proponent did it without losing the anti-collapse principle.",
+        "The named crux is close to the real crux. Whether translation strain can operationalize agency orientation rigorously is a necessary condition for the model's success.",
+        "The Srivaishnava benchmark is well chosen and should be run early. It will discipline the rubric against remaining propositional bias.",
+        "The proponent's identification of the human problem, misapplied agency under spiritual pluralism, is precise and correctly scoped. I accept it as the motivating problem.",
+        "The model, if completed with observable indicators for stance units, would be a contribution beyond what Smith, Freiberger, or Panikkar provided, because none of them operationalized comparison into a rubric with practitioner-facing failure-mode predictions."
+      ],
+      "counter_model": null,
+      "crux": "The proponent's named crux, whether translation strain can operationalize agency orientation without becoming vague, is necessary but not sufficient. The deeper crux is the delivery gap: can the output of a multi-layer strain rubric be translated into guidance that reaches eclectic practitioners through the channels they actually use (teacher instruction, community discourse, practice manuals, self-directed exploration), or does the model produce research artifacts that serve Lumenary's intellectual mission while leaving the named cohort unserved? If the rubric can generate direct, practitioner-facing warnings and orientation descriptions (not just strain scores), the model fulfills its revised promise. If it can only generate analytical output that requires further translation by a skilled intermediary, the model is honest comparative methodology with aspirational practitioner framing.",
+      "crux_assessment": "The proponent's named crux is the right internal question for the rubric's design: can stance units be operationalized with observable indicators? But it is not the crux for the model's stated purpose. The stated purpose is to serve eclectic practitioners facing misapplied agency. The crux for that purpose is whether the rubric's output can be rendered into practitioner-facing guidance without requiring a second, equally complex translation step. The proponent should name both cruxes: an internal one (operationalizability of stance units) and an external one (deliverability to the named cohort).",
+      "defense": null,
+      "fairness_check": "The proponent conceded four substantive points, including the central flaw I identified. The revised claim attempts to integrate my credit-distribution model rather than dismiss it. I am not attacking a weakened position; the revision is genuinely stronger. My remaining pressure targets the gap between a better analytical rubric and the delivery mechanism that would actually reach the named cohort.",
+      "hidden_assumption": "The proponent assumes that naming the cohort and the human problem is sufficient to make the model serve that cohort. But the revised claim still describes a comparative analytical procedure: decompose, score propositional strain, score stance strain, identify failure modes, identify safeguards. The output format is implicitly a research artifact. There is no mechanism in the model for translating strain analysis into guidance language, warning language, or practice-selection language that the named cohort would encounter at the moment of need. The assumption is that good analysis will somehow reach the right people. That assumption needs to be made explicit and tested.",
+      "new_source": "Ann Gleig, American Dharma: Buddhism Beyond Modernity (Yale University Press, 2019), chapters on hybrid practitioners and the pragmatic turn in Western Buddhism. Gleig documents how convert practitioners who blend traditions typically do so without formal comparative frameworks; they navigate by felt experience, teacher recommendation, and peer community. The delivery gap between scholarly analysis and practitioner decision-making is her central ethnographic observation. If Lumenary's revised model cannot specify how its output reaches practitioners through the channels Gleig documents (teacher guidance, community discourse, practice instructions), the model remains a research tool with a practitioner-facing label.",
+      "remaining_risk": "Three risks survive the revision. First, the delivery gap: the model now correctly identifies its cohort but has no output specification for reaching them; adding one is tractable but not yet attempted. Second, participation debt: the rubric's observable indicators for stance units (instruction language, credit assignment, failure interpretation, safeguard, teacher correction, practitioner report) require either direct practitioner testimony or deep practice-informed reading; textual comparison alone will not populate them reliably, and Lumenary's current workflow is text-centered. Third, scope creep through absorption: the model grew from one strain dimension to five (propositional, practice-role, agency-orientation, failure-mode, safeguard). Each dimension needs its own operationalization, its own benchmark case, and its own inter-rater reliability test. The proponent should prioritize the agency-orientation dimension, run it on the Srivaishnava case and the SN 45.8/BG 3.27 pair, and demonstrate that it changes a conclusion before expanding further. A rubric that tries to score five dimensions simultaneously before proving any one of them will produce impressive-looking but unvalidated output.",
+      "revised_claim": null,
+      "role": "challenger",
+      "sources_cited": [
+        "Ann Gleig, American Dharma: Buddhism Beyond Modernity (Yale University Press, 2019), chapters 4-6 on hybrid practitioners and the pragmatic turn",
+        "SN 45.8 Magga-vibhanga Sutta, Thanissaro Bhikkhu translation, Access to Insight, https://www.accesstoinsight.org/tipitaka/sn/sn45/sn45.008.than.html",
+        "Bhagavad Gita 3.27, https://www.bhagavad-gita.us/bhagavad-gita-3-27/",
+        "Vedanta Desikan, Rahasya Traya Sara, on the markata model of prapatti",
+        "Manavala Mamuni, Tenkalai commentaries, on the marjara model of surrender"
+      ],
+      "steelman": "The proponent absorbed the challenge without deflection. The revised claim now names a cohort (eclectic, deconstructing, or tradition-crossing practitioners), a non-fit case (stably rooted practitioners and those in acute clinical distress), and a human problem (misapplied agency under spiritual pluralism). It also elevates stance units to first-class status alongside claim units. This is a genuine strengthening, not a cosmetic patch. The proponent did not retreat to defending propositions as the privileged unit; instead, the model expanded its definition of what counts as a translation object. The concession that the original formulation was too intellectualized is honest and load-bearing: it changes what the rubric must contain.",
+      "strongest_objection": "The revised model now names the right cohort but has not closed the gap between analysis and delivery. An eclectic practitioner in meaning crisis does not need a multi-layer strain rubric; they need a direct answer to a direct question: what does this path ask of me regarding my own effort, and what will go wrong if I bring the wrong orientation? The proponent's revision makes the analytical framework stronger for Lumenary researchers. It does not yet show how the output of that analysis reaches the practitioner in a form they can use without becoming a comparative religion student first. The model risks producing excellent maps that sit in a research layer while the person burning out on imported discipline never encounters them. This is not a flaw in the model's logic; it is a flaw in its theory of delivery. A rubric that correctly detects agency-orientation strain but outputs scores and strain dimensions is still speaking to researchers, not to the person sitting on a meditation cushion wondering why surrender-language makes them feel like a failure.",
+      "test_that_would_settle_it": "Take the output of the revised rubric applied to one case (SN 45.8 beside Bhagavad Gita 3.27, scored for both propositional and agency-orientation strain) and present it in two formats to five practitioners who have practiced in both Theravada and Hindu devotional traditions. Format A: the raw strain analysis with scores, dimensions, and identified deformations. Format B: a direct practitioner-facing summary derived from the same analysis, stating what each path asks regarding effort, what failure looks like, and what safeguard applies. Ask practitioners which format would have helped them when they were navigating between the two traditions. If Format B is judged more useful and can be reliably derived from Format A's output, the model serves its cohort through a translation layer. If Format B requires so much additional interpretive work that the rubric output is effectively a starting point rather than a near-finished product, the delivery gap is real and the model needs a defined output specification, not just an analytical procedure.",
+      "turn": 3,
+      "turn_type": "counter_rebuttal",
+      "verdict_on_revision": "stronger"
+    }
+  ]
+}

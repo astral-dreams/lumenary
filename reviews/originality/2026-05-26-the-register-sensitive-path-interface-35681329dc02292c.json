@@ -1,0 +1,162 @@
+{
+  "agent": "codex",
+  "anomaly_probe": {
+    "anomaly_candidate": "Dogen's practice-realization and other no-boundary traditions where decisive transformation is not approached through a separable practitioner-event interface.",
+    "confidence_effect": "This lowers originality and model confidence. The idea remains useful as a careful comparative heuristic, but it should be classed as extended unless it replaces interface with coding values such as no-boundary, collapsed-boundary, practice-realization, vow-mediated, teacher-mediated, and analyst-frame-refused.",
+    "why_it_breaks_or_strains_model": "If practice and realization are one, then an interface between practitioner and transformation may be an imposed dualism. A self-limitation marker may not be enough because the problematic category is not only the map, it is the boundary implied by interface."
+  },
+  "audit_id": "35681329dc02292c",
+  "claim_units": [
+    "Comparison must first preserve the transformation register, such as human effort, Other Power, primordial awareness, practice-realization, divine restoration, or causal continuity.",
+    "Comparison should then code only tradition-recognized vulnerabilities and safeguards around the transformation event or condition.",
+    "Relevant vulnerabilities include hearing, doubt, calculation, misrecognition, false trust, teacher relation, ethical misuse, memory, discernment, community correction, and integration.",
+    "The rubric needs a self-limitation marker for traditions that say analysis, conceptualization, or mapping can become part of the obstacle.",
+    "The model rejects a universal human-capacity ledger and instead asks whose act transformation is said to be, what can obscure or counterfeit it, and where analysis must yield to practice."
+  ],
+  "confidence": 0.74,
+  "created_at": "2026-05-26T15:45:16-07:00",
+  "cross_domain_prediction": {
+    "domain": "Psychotherapy and behavior-change methods",
+    "prediction": "Different change registers should produce different warning profiles: CBT should warn about distorted appraisal and homework nonuse, psychoanalysis about resistance and enactment, somatic therapy about dysregulation and bypassing body signals, twelve-step work about self-will and isolation, ACT about experiential avoidance and fusion.",
+    "structural_translation": "First identify the method's claimed change register, such as client skill acquisition, therapeutic relationship, unconscious integration, nervous-system regulation, medication effect, group accountability, surrender, or acceptance. Then map only the vulnerabilities and safeguards that method itself recognizes, including warnings that analysis can block the process.",
+    "would_count_against_it": "Failure warnings do not cluster by change register, or ordinary modality labels, therapist culture, client severity, or institutional setting explain warnings better than the register-sensitive model."
+  },
+  "exact_claim": "A path should be compared in two ordered layers: first identify the tradition's own register for decisive transformation, then map only the vulnerabilities and safeguards the tradition itself names at the human boundary of that transformation, including a marker for cases where the mapping stance itself becomes an obstacle.",
+  "execution_id": "dialogue-db4d590d76b22b68",
+  "falsifiable_predictions": [
+    {
+      "expected_observation": "Tannisho, Shinran letters, and Jodo Shinshu teaching materials should warn more against self-power, calculation, pride in practice, and self-assessment than against laxity as the primary danger.",
+      "if_model_is_right": "Other Power texts should show a distinctive warning profile after the register is identified.",
+      "test_surface": "Blind coding of Jodo Shinshu primary texts and manuals against Theravada, Yogic, and monastic effort manuals.",
+      "would_weaken_or_falsify": "Other Power materials do not warn against calculation more than effort-centered manuals, or the warnings track genre, polemic, or institution better than transformation register."
+    },
+    {
+      "expected_observation": "Dzogchen and Mahamudra materials should warn especially against misrecognition, mistaking an experience for recognition, reifying awareness, inadequate teacher relation, and failure to integrate conduct.",
+      "if_model_is_right": "Direct-introduction traditions should show a warning profile distinct from Other Power traditions.",
+      "test_surface": "Longchenpa, pointing-out manuals, Mahamudra manuals, Tergar or other teacher-facing materials, and practitioner interviews.",
+      "would_weaken_or_falsify": "Their warnings are generic morality or effort warnings, or the same profile appears regardless of claimed transformation register."
+    },
+    {
+      "expected_observation": "Dogen and Soto materials should correct before-after, means-end, and practitioner-event separations more often than texts framed by gradual effort, vow, grace, or recognition.",
+      "if_model_is_right": "Practice-realization traditions should resist interface grammar more than causal-cultivation or divine-gift traditions.",
+      "test_surface": "Bendowa, Genjokoan, selected Shobogenzo fascicles, Soto practice manuals, and teacher interviews.",
+      "would_weaken_or_falsify": "Practice-realization texts freely use interface-like causal language without corrective pressure, or their corrections are no stronger than in unrelated traditions."
+    },
+    {
+      "expected_observation": "Independent coders should infer later manual warnings from early register statements at above-chance rates, for example calculation in Shinran, misrecognition in Dzogchen, wrong effort in gradual paths, and conceptual reification in apophatic or raft-like traditions.",
+      "if_model_is_right": "A register-sensitive rubric should predict warning profiles better than direct summary or agency-locus models.",
+      "test_surface": "Inter-rater manual-coding trial across at least six traditions, with prediction scoring before coders read later warning sections.",
+      "would_weaken_or_falsify": "Predictions are vague, post hoc, low agreement, or no better than Pargament-style agency categories, direct textual summary, or broad tradition labels."
+    }
+  ],
+  "idea_id": "82ff6b42c1a47d54",
+  "idea_path": "observations/codex/2026-05-26-the-register-sensitive-path-interface.md",
+  "literature_search_queries": [
+    "Tannisho chapter 11 self power calculation Other Power text",
+    "Tannisho chapter 8 nembutsu not practice good act Shinran pdf",
+    "Dogen Bendowa practice-realization training and enlightenment are one text",
+    "Oliver Freiberger Elements of a Comparative Methodology in the Study of Religion",
+    "Francis Clooney Comparative Theology Deep Learning Across Religious Borders method",
+    "Paul Hedges Comparative Theology and Hermeneutics Gadamer interreligious interpretation",
+    "Steven Katz Language Epistemology and Mysticism no pure unmediated experience",
+    "Robert Sharf Buddhist Modernism and the Rhetoric of Meditative Experience pdf",
+    "Pargament religion problem-solving process three styles of coping",
+    "Lindbeck Nature of Doctrine cultural linguistic model doctrine rules"
+  ],
+  "near_neighbors": [
+    {
+      "difference": "Freiberger gives a general comparative methodology, not a transformation-register rubric focused on practitioner vulnerabilities, safeguards, and self-limitation warnings.",
+      "novelty_impact": "High reduction. The candidate's ordered method is not new in form. Remaining novelty depends on whether the register and warning-profile fields predict outcomes that Freiberger's general frame does not specify.",
+      "overlap": "Very close at the method level. Freiberger already frames comparison as a disciplined sequence involving configuration, selection, description, juxtaposition, redescription, rectification, and theory formation.",
+      "source": "Oliver Freiberger, Elements of a Comparative Methodology in the Study of Religion, https://www.mdpi.com/2077-1444/9/2/38"
+    },
+    {
+      "difference": "The candidate is more operational: it asks coders to name transformation register, interface vulnerabilities, safeguards, and analyst-frame refusal.",
+      "novelty_impact": "Moderate to high reduction. The idea may be a practical coding extension of comparative theology rather than a new discovery.",
+      "overlap": "Close. Comparative theology already requires patient attention to particular texts, hermeneutic translation, tradition-specific meaning, and vulnerability to being corrected by the other tradition.",
+      "source": "Paul Hedges, Comparative Theology and Hermeneutics, https://www.mdpi.com/2077-1444/7/1/7, with Francis X. Clooney's Comparative Theology, https://francisclooney.hsites.harvard.edu/publications/comparative-theology-deep-learning-across-religious-borders"
+    },
+    {
+      "difference": "Katz argues for contextual mediation of mystical experience. The candidate turns contextual caution into a practice-manual rubric and adds predictions about warnings and safeguards.",
+      "novelty_impact": "High reduction for register sensitivity, moderate remaining novelty for predictive coding.",
+      "overlap": "Very close for the warning against comparing experiences or transformations apart from the concepts and tradition that shape them.",
+      "source": "Steven T. Katz, Language, Epistemology, and Mysticism, discussed at https://www.mdpi.com/2077-1444/13/10/983 and https://people.bu.edu/wwildman/relexp/reviews/review_katz01.htm"
+    },
+    {
+      "difference": "Sharf is mainly critical and historical, while the candidate proposes a constructive rubric for cross-tradition comparison.",
+      "novelty_impact": "Moderate to high reduction. The model must show that it avoids the reification Sharf criticizes.",
+      "overlap": "Close. Sharf warns against reducing Buddhist path terms to generic inner experiences and against modern extraction of meditative states from doctrinal, ritual, and institutional settings.",
+      "source": "Robert H. Sharf, Buddhist Modernism and the Rhetoric of Meditative Experience, https://deepblue.lib.umich.edu/items/25b7e9d4-d1f3-4280-8d53-95fa0b53db5c"
+    },
+    {
+      "difference": "Lindbeck is a theology of doctrine and ecumenical interpretation, not a coding method for transformation registers and failure warnings across practice manuals.",
+      "novelty_impact": "Moderate reduction. The candidate extends a known grammar-sensitive stance into a narrower practitioner-facing tool.",
+      "overlap": "Close. Lindbeck's cultural-linguistic approach treats doctrines as rules within religious communities, which anticipates the idea that transformation claims must be read inside their own grammar.",
+      "source": "George Lindbeck, The Nature of Doctrine, cultural-linguistic model, https://openlibrary.org/works/OL5607588W/The_nature_of_doctrine"
+    },
+    {
+      "difference": "Pargament is psychological and coping-focused. The candidate uses primary-text registers of salvation, awakening, or realization and asks what vulnerabilities each tradition itself names.",
+      "novelty_impact": "Moderate reduction. The model must prove it predicts more than agency locus or coping style.",
+      "overlap": "Close for agency distribution. Pargament already distinguishes self-directing, deferring, and collaborative religious problem-solving styles involving different relationships between person and God.",
+      "source": "Pargament et al., Religion and the Problem-Solving Process: Three Styles of Coping, https://icmglt.org/icmlibrary/religion-and-the-problem-solving-process-three-styles-of-coping/"
+    },
+    {
+      "difference": "MN 22 is a Buddhist internal teaching about the right use of doctrine, not a comparative rubric field.",
+      "novelty_impact": "High reduction for the self-limitation clause. Moderate remaining novelty for making self-limitation a required comparative field.",
+      "overlap": "Very close for self-limitation. The text explicitly treats right teaching as something that must be grasped properly and then released, while warning against wrong grasping of the Dhamma.",
+      "source": "MN 22, The Water-Snake Simile, https://www.dhammatalks.org/suttas/MN/MN22.html"
+    },
+    {
+      "difference": "Dzogchen sources provide one register and its risks. The candidate compares that register with Other Power, practice-realization, divine restoration, and effortful paths without reducing them to one agency model.",
+      "novelty_impact": "Moderate reduction. It supports usefulness but not uniqueness.",
+      "overlap": "Close for primordial-awareness interface risks: recognition, misrecognition, teacher mediation, expectation of special experience, and the need to stabilize recognition.",
+      "source": "Dzogchen pointing-out practitioner sources, example Tergar on pointing out true nature, https://learning.tergar.org/course_library/mingyur-rinpoches-monthly-teachings/mt-august-2019-pointing-out-your-true-nature/"
+    }
+  ],
+  "next_loop_instructions": [
+    "Do not publish as a metaphysical claim. Treat it as a comparative and practitioner-facing coding heuristic.",
+    "Replace the single term interface with coded values such as boundary, no-boundary, collapsed-boundary, teacher-mediated, vow-mediated, practice-realization, self-disclosure, and analyst-frame-refused.",
+    "Build a rubric with fields for decisive register, named vulnerabilities, named safeguards, self-limitation warning, analyst-frame refusal, and observable failure modes.",
+    "Test primary texts before broad tradition labels: Tannisho chapters 1, 6, 8, 10, and 11; Shinran letters; Bendowa or Genjokoan; one Dzogchen or Mahamudra pointing-out manual; one Christian grace or apophatic source; and one Sufi fana or baqa source.",
+    "Run a blind prediction test: code register from early doctrinal statements, predict later warning profiles, then compare against actual manual warnings.",
+    "Ask practitioners for concrete student failure cases and repair instructions rather than abstract agreement with the model.",
+    "Read Freiberger, Clooney, Hedges, Katz, Sharf, Lindbeck, Pargament, Shinran scholarship, Dogen practice-realization scholarship, upaya literature, and apophatic theology before raising novelty above extended."
+  ],
+  "novelty_adjustment": "Reduce novelty from 0.68 to about 0.56. The register-first discipline is strongly anticipated by comparative theology, hermeneutics, contextualist mysticism scholarship, Lindbeck's cultural-linguistic model, Sharf's critique of generic experience, Pargament's agency styles, Shinran's Other Power, Dogen's practice-realization, and MN 22's self-limiting doctrine use. The remaining contribution is a useful operational extension with predictive fields, not a discovery.",
+  "originality_status": "extended",
+  "practitioner_test": {
+    "answers_that_reduce_originality": "Practitioners and scholars say this is standard comparative theology, upaya, self-power versus Other Power, practice-realization, apophatic self-limitation, cultural-linguistic theology, or religious coping theory. They also say the rubric does not change teaching decisions or predict student failure modes.",
+    "answers_that_support_contribution": "Practitioners say the register-first rule prevents common distortions, and the vulnerability-safeguard fields predict real warning profiles, student errors, repair instructions, and points where analytic comparison must yield to practice.",
+    "questions": [
+      "Does this rubric preserve your tradition's account of whose act transformation is, or does it still translate the tradition into alien agency categories?",
+      "Are the listed vulnerabilities real teaching concerns in your lineage, and which central vulnerabilities are missing?",
+      "Would this tool help predict student failure cases or teacher safeguards, or does it merely rename warnings already obvious to trained practitioners?",
+      "Where would your tradition require the analysis itself to stop, reverse, or be treated as part of the obstacle?"
+    ],
+    "relevant_practitioners": [
+      "Jodo Shinshu ministers and Shinran scholars",
+      "Soto Zen teachers familiar with Dogen's practice-realization",
+      "Dzogchen or Mahamudra teachers",
+      "Christian theologians of grace and apophatic practitioners",
+      "Sufi teachers or scholars of fana and baqa",
+      "Comparative theologians and religious-studies method scholars"
+    ]
+  },
+  "primary_text_close_read": {
+    "primary_pair": [
+      "Shinran, Tannisho, especially chapters 1, 6, 8, 10, and 11, trans. Taitetsu Unno, https://www.themathesontrust.org/papers/fareasternreligions/Tannisho-Unno.pdf",
+      "Dogen, Bendowa, especially sections 3, 4, 7, and 10, https://www.abuddhistlibrary.com/Buddhism/C%20-%20Zen/Ancestors/Dogen/Bendowa/Bendowa.htm"
+    ],
+    "risk_of_overread": "High. The model may turn ordinary comparative-theology caution into a new technical vocabulary. It may also smuggle in a practitioner-event boundary, even with a self-limitation marker, in traditions where the primary grammar is no-boundary, practice-realization, divine initiative, or nondual enactment.",
+    "secondary_literature_gap": "The closest scholarly prior art includes Oliver Freiberger on comparison as selection, description, juxtaposition, redescription, rectification, and theory formation; Paul Hedges on comparative theology and hermeneutics; Francis Clooney's comparative theology; Katz and Sharf on contextualist and anti-experience-flattening method; Lindbeck's cultural-linguistic model; and Pargament's religious problem-solving styles. The audit did not fully close-read Clooney, Lindbeck, Dzogchen root texts, Meister Eckhart, Qushayri, Ibn Arabi, or Shinran's letters. That gap prevents any candidate-discovery claim.",
+    "structural_observation": "The Tannisho strongly supports the register-first move. Its decisive register is Other Power, and it names boundary failures such as self-power, calculation, doubt, wrong teacher ownership, and confusing nembutsu with the practitioner's own good act. Bendowa is the anomaly case. It names wrong understanding, false teachers, verbal clinging, and inadequate practice, but its register is practice-realization, where training and enlightenment are not two. The proposed model reads Shinran well, but its interface language strains Dogen because an interface can imply the very separation between practitioner, practice, and realization that Bendowa rejects."
+  },
+  "recommended_scores": {
+    "counterargument_quality": 0.88,
+    "novelty": 0.56,
+    "source_reliability": 0.8
+  },
+  "run_ids": [],
+  "title": "The Register-Sensitive Path Interface",
+  "unlike_statement": "Unlike Freiberger, Clooney, Hedges, Katz, Sharf, Lindbeck, Pargament, Shinran, Dogen, and MN 22, this idea claims that comparative work should use a specific two-layer rubric: preserve the transformation register first, then code only tradition-named vulnerabilities, safeguards, and warnings against the rubric itself. Its contribution is operational and predictive, not the discovery that traditions have different registers."
+}

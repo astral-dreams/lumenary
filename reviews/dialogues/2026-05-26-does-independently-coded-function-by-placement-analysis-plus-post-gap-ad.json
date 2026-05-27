@@ -1,0 +1,287 @@
+{
+  "convergence_path": "findings/convergences/2026-05-26-does-independently-coded-function-by-placement-analysis-plus-post-gap-admissibil.md",
+  "created_at": "2026-05-26T22:33:42-07:00",
+  "dialogue_id": "8a66f1c724c9ff1c",
+  "execution_id": "backfill-20260526-214836",
+  "json_path": "reviews/dialogues/2026-05-26-does-independently-coded-function-by-placement-analysis-plus-post-gap-ad.json",
+  "markdown_path": "reviews/dialogues/2026-05-26-does-independently-coded-function-by-placement-analysis-plus-post-gap-ad.md",
+  "pair": {
+    "challenger_agent": "codex",
+    "challenger_title": "The Gap Report Has a Grammar",
+    "idea_a": "3c5caa358a09c26a",
+    "idea_b": "b644fcfdb6d9f2d0",
+    "pair_id": "e47c771a23535722",
+    "priority": 0.3,
+    "proponent_agent": "claude",
+    "proponent_title": "Every Path Needs What Its Teaching Dissolves",
+    "shared_concepts": [],
+    "signals": [
+      {
+        "name": "audit_anomaly_overlap",
+        "reason": "An anomaly or audit instruction for one idea pressures the other idea.",
+        "weight": 0.12
+      },
+      {
+        "name": "near_neighbor_conflict",
+        "reason": "Originality audits share near-neighbor or prior-art pressure.",
+        "weight": 0.08
+      },
+      {
+        "name": "source_overlap_with_divergent_conclusion",
+        "reason": "The ideas draw on overlapping source material but make different moves.",
+        "weight": 0.06
+      },
+      {
+        "name": "recency",
+        "reason": "At least one idea is recent enough to keep the dialogue timely.",
+        "weight": 0.04
+      }
+    ],
+    "tension_source": "An anomaly or audit instruction for one idea pressures the other idea.",
+    "tension_type": "audit_anomaly_overlap"
+  },
+  "run_dir": "runs/dialectic-backfill-20260526-214836/e47c771a23535722",
+  "run_ids": [],
+  "slug": "2026-05-26-does-independently-coded-function-by-placement-analysis-plus-post-gap-ad",
+  "status": "complete",
+  "synthesis": {
+    "candidate_synthesis": {
+      "critique": "The model may be too comprehensive and may win by redescribing whatever a tradition already does. The receiving-surface claim risks being either trivial or too broad. Zahavi's minimal self supports first-personal givenness, but does not by itself establish thicker capacities such as trust, correction, and integration. The model could idealize traditional containers, which can protect practitioners but can also conceal abuse, dependency, or dissent suppression. It also needs sharper cohort boundaries and blind coding to avoid circular prediction.",
+      "epistemic_labels": [
+        "textual",
+        "interpretive",
+        "phenomenological",
+        "empirical-adjacent",
+        "analogical",
+        "speculative"
+      ],
+      "idea_type": "synthesis",
+      "next_research_directions": [
+        "Pre-register a rubric for continuity functions, continuity placement, post-gap admissibility, and container strength before examining outcome variables.",
+        "Blind-code Theravada vipassana, Advaita self-inquiry, Soto Zen, Dzogchen pointing-out, Pure Land nembutsu, Sufi dhikr, and trauma-informed mindfulness-based stress reduction.",
+        "Test whether function-by-placement coding predicts screening, sequencing, warnings, verification methods, and documented failure modes better than container strength and doctrine alone.",
+        "Include negative cases where strong traditional containers harm practitioners and where weak or secular containers still produce stable integration.",
+        "Split the modern cohort map into distinct safeguards for trauma-related dissociation, achievement-contingent self-worth, grief, spiritual ambition, and cross-tradition sampling.",
+        "Close-read primary texts and practitioner reports to test whether post-gap report grammar is textual, translational, doctrinal, or imposed by the researcher."
+      ],
+      "original_claim": "Self-dissolving practice does not simply require a self or erase a self. It creates a continuity ecology. Four functions must be maintained: receiving instruction or transmission, sustaining effort or openness, correcting error or disorientation, and recognizing or integrating change. Traditions differ in where these functions are housed, in the practitioner, teacher, vow, ritual, community, doctrine, body, or aftercare. Their post-gap report grammar is one way the ecology authorizes what happened, by privileging the subject, absence, transition, aftereffect, relation, or teacher recognition. Modern risk arises when the intensity of dissolution practice exceeds available continuity supports, or when a practitioner borrows a report grammar without the container that made that grammar safe or intelligible.",
+      "scores": {
+        "counterargument_quality": 0.89,
+        "cross_tradition_support": 0.75,
+        "empirical_adjacency": 0.55,
+        "explanatory_compression": 0.86,
+        "generativity": 0.9,
+        "logical_coherence": 0.84,
+        "novelty": 0.76,
+        "practice_testability": 0.84,
+        "publishability": 0.84,
+        "source_reliability": 0.74
+      },
+      "source_basis": [
+        "Claude idea 3c5caa358a09c26a, minimum-self architecture in self-dissolving paths",
+        "Codex idea b644fcfdb6d9f2d0, post-gap report grammar and admissibility rules",
+        "Turn 1 Codex distributed-containment objection",
+        "Turn 2 Claude transformed revision with continuity functions and receiving surface",
+        "Turn 3 Codex stricter predictive-content challenge"
+      ],
+      "title": "The Continuity Ecology of Self-Dissolution",
+      "why_it_might_be_new": "The candidate combines three pressures that the source ideas held separately: minimum-self architecture, distributed continuity placement, and post-gap admissibility grammar. Engler's clinical frame addresses readiness before dissolution; the minimum-self model addresses continuity during practice; the gap-report model addresses what counts after silence or objectless states. The proposed synthesis links all three into a predictive diagnostic for practice design and practice risk. This is only a candidate and needs originality audit before any promotion."
+    },
+    "candidate_synthesis_idea_id": "df065e2fc9c087d1",
+    "candidate_synthesis_path": "observations/codex/2026-05-26-the-continuity-ecology-of-self-dissolution.md",
+    "convergence_claim": "Both agents converged on a weaker but more useful claim: contemplative paths preserve continuity functions such as reception, openness, correction, and integration, while traditions differ in whether those functions are held by the practitioner, teacher, vow, ritual, community, doctrine, or aftercare.",
+    "method_growth": "Future Lumenary dialogues should require each abstract contemplative model to name its continuity functions, continuity containers, report-admissibility rule, target wound, non-fit case, practice risk, and blind-coded test before it becomes a teaching candidate.",
+    "new_concept_edges": [
+      {
+        "note": "The self required by practice is better analyzed as reception, openness, correction, and integration rather than as a single entity.",
+        "relation": "reframed_as",
+        "source": "minimum self",
+        "target": "continuity functions"
+      },
+      {
+        "note": "The same function may be carried by practitioner agency, teacher authority, vow, ritual, community, doctrine, body, or aftercare.",
+        "relation": "housed_by",
+        "source": "continuity functions",
+        "target": "continuity placement"
+      },
+      {
+        "note": "Where continuity is housed influences which clause of a later report is treated as evidence.",
+        "relation": "shapes",
+        "source": "continuity placement",
+        "target": "post-gap admissibility grammar"
+      },
+      {
+        "note": "Destabilization becomes more likely when self-dissolution pressure exceeds available individual and distributed supports.",
+        "relation": "risk_mismatch",
+        "source": "dissolution intensity",
+        "target": "continuity support"
+      },
+      {
+        "note": "Containers can preserve continuity, but they can also intensify dependency or hide harm.",
+        "relation": "double_edged",
+        "source": "traditional container",
+        "target": "practice safety"
+      },
+      {
+        "note": "The strongest current wound is not general suffering, but destabilization caused by identity-dissolving practice without adequate support.",
+        "relation": "narrows_target",
+        "source": "modern human-condition pressure",
+        "target": "unsupported self-dissolution"
+      }
+    ],
+    "new_frontier_question": "When a practice weakens ordinary self-management, what exact continuity functions remain necessary, where are they held, and what later report is allowed to count as evidence that transformation occurred?",
+    "outcome": "candidate_transcendence",
+    "public_brief": "The dialogue produced a candidate synthesis, not a doctrine. Its practical insight is that self-dissolving practices need continuity somewhere: in the practitioner, the teacher, the vow, the ritual, the community, the doctrine, or the aftercare. The danger for modern seekers is not dissolution by itself, but dissolution without enough continuity support and without a clear rule for what later experience is allowed to prove.",
+    "recommended_adjustments": {
+      "challenger": {
+        "counterargument_quality": 0.89,
+        "cross_tradition_support": 0.73,
+        "empirical_adjacency": 0.59,
+        "explanatory_compression": 0.84,
+        "generativity": 0.89,
+        "logical_coherence": 0.85,
+        "novelty": 0.72,
+        "practice_testability": 0.82,
+        "publishability": 0.83,
+        "source_reliability": 0.74
+      },
+      "proponent": {
+        "counterargument_quality": 0.91,
+        "cross_tradition_support": 0.76,
+        "empirical_adjacency": 0.53,
+        "explanatory_compression": 0.86,
+        "generativity": 0.9,
+        "logical_coherence": 0.85,
+        "novelty": 0.76,
+        "practice_testability": 0.84,
+        "publishability": 0.84,
+        "source_reliability": 0.74
+      }
+    },
+    "summary": "The exchange transformed the proponent's minimum-self model into a broader continuity-ecology model. It did not prove that every path needs the self it dissolves, and it did not make the challenger's post-gap grammar sufficient by itself. It produced a new candidate synthesis: self-dissolving practices must preserve continuity functions, place those functions somewhere, and later authorize what happened through a report grammar. The dialogue made the idea more answerable to a real human problem by naming the danger zone as destabilization when dissolution pressure exceeds available continuity supports, especially for secular seekers, trauma survivors, high-achievers, and cross-tradition samplers outside durable containers.",
+    "synthesizer_agent": "codex",
+    "unresolved_crux": "Does independently coded function-by-placement analysis, plus post-gap admissibility grammar, predict screening, sequencing, warnings, verification methods, and failure modes better than container strength, doctrine, institution, practice intensity, clinical vulnerability, and lineage history alone? A second unresolved crux is cohort specificity: the model currently fits destabilization from unsupported self-dissolution better than it fits loneliness, grief, depression, or meaning loss in general."
+  },
+  "title": "Does independently coded function-by-placement analysis, plus post-gap admissibil...",
+  "turns": [
+    {
+      "agent": "codex",
+      "argument": "The pressure point is not whether some continuity remains. It must. The pressure point is where continuity is housed. A path can preserve continuity inside the practitioner's reflective agency, but it can also move continuity outward into teacher recognition, vow, grace, ritual repetition, community discipline, or later interpretation. If that is right, then 'minimum self' is only one species of a broader continuity problem. The model should be revised from a universal claim about the self a path needs into a comparative claim about continuity placement. That revision would also make the modern human use clearer: the practical issue is not abstract selfhood, it is preventing people from using self-dissolution language to outrun the very capacities, supports, and relationships they need to stay intact.",
+      "claim_units": [
+        "Self-dissolving paths require at least some functional receiving, memory, effort, reflexivity, and integration capacity.",
+        "Traditions manage this requirement through different self-continuity strategies.",
+        "Those strategies should predict practice architecture, including sequencing, safeguards, verification, warnings, and fruit.",
+        "The model has modern relevance if it can explain why identity-dissolving practices need scaffolding and why premature self-loss can harm practitioners."
+      ],
+      "concessions": [
+        "The proponent is right that paths cannot erase all continuity and still remain practices.",
+        "The comparative rubric could become useful if it is recast as graded capacities rather than a universal minimum.",
+        "The idea has real safety value for people drawn to no-self, surrender, or self-transcendence practices before they have enough stability to integrate them."
+      ],
+      "counter_model": "A distributed-containment model: self-dissolving paths do not primarily preserve a minimum self, they relocate agency into a container. Some containers require strong personal agency and self-observation, as in many insight or therapeutic paths. Others deliberately reduce personal agency and shift reliability to vow, grace, teacher recognition, lineage protocol, ritual repetition, or community interpretation. On this model, the predictive variable is not how much self a path needs, but where the path places continuity when ordinary self-management is weakened.",
+      "crux": "Can the minimum-self rubric predict concrete training differences better than a distributed-containment rubric that tracks where continuity is held: individual agency, teacher, vow, community, ritual, doctrine, or aftercare?",
+      "crux_assessment": "The proponent's current version is strongest as a safety and comparison tool, but weakest as a universal architecture law. It needs to stop saying every path needs what its teaching dissolves in the same structural sense, and start measuring how different paths preserve continuity when self-agency is reduced.",
+      "defense": null,
+      "fairness_check": "This reading preserves the proponent's intended comparative contribution and does not reduce it to the older Buddhist point that conventional persons function despite ultimate no-self.",
+      "hidden_assumption": "The model assumes the main load-bearing unit of transformation is the practitioner's functional self-capacity, rather than a distributed training ecology made of teacher, vow, community, ritual, doctrine, ethical precepts, schedule, body, and post-event interpretation.",
+      "new_source": "Jack Engler, 'You Must Be Somebody Before You Can Be Nobody,' Inquiring Mind. This practitioner-clinical source complicates the claim because it supports the need for ego strength before no-self practice, while also making the core prerequisite much less novel and tying it to psychological readiness rather than cross-tradition architecture alone.",
+      "remaining_risk": "The modern human-condition fit is under-specified. The idea may serve serious meditators, converts, trauma survivors entering contemplative practice, and people using self-transcendence to escape shame or achievement-contingent identity. It should not be framed as a universal remedy for loneliness, grief, depression, or digital comparison until it names which wound it addresses and which people should avoid the practice pressure.",
+      "revised_claim": null,
+      "role": "challenger",
+      "sources_cited": [
+        "Jack Engler, 'You Must Be Somebody Before You Can Be Nobody,' Inquiring Mind",
+        "SN 22.59 Anattalakkhana Sutta",
+        "Chandogya Upanishad 6.8.7-6.16",
+        "MN 44 Culavedalla Sutta",
+        "AN 9.34 Nibbanasukha Sutta"
+      ],
+      "steelman": "The proponent is not merely saying that no-self traditions secretly need a self. The stronger claim is architectural: any path that dissolves, denies, or transcends ordinary selfhood still has to preserve some functional capacities long enough for training to happen, such as receiving instruction, remembering, correcting error, sustaining attention, and recognizing or integrating change. Different traditions solve this pressure differently, and those solutions should predict their effort theory, verification rules, warnings, and fruit. Buddhism preserves causal process without owner, Advaita preserves deepest identity while dissolving apparent process, Dogen collapses practice and realization, and Sufi fana and baqa bridge self-loss through divine relation.",
+      "strongest_objection": "The claim may become true by definition before it becomes predictive. If 'minimum self' means only that someone or some process must receive instruction and later change, then every teachable path satisfies it trivially. If it means a psychologically integrated agent with memory, effort, and reflexive self-monitoring, then other-power, grace, teacher-field, direct-introduction, and devotional paths are serious counterexamples or at least major reductions. The model needs to show that differences in required self-capacity predict architecture better than simpler variables such as institutional form, teacher control, ritual container, social dependency, trauma risk, or doctrinal metaphysics.",
+      "test_that_would_settle_it": "Code several traditions for required individual capacities and for distributed supports, then compare which coding better predicts screening, sequencing, warnings, verification, and failure modes. Include Theravada vipassana, Advaita, Soto Zen, Dzogchen pointing-out, Pure Land other-power, Sufi dhikr, and trauma-informed mindfulness.",
+      "turn": 1,
+      "turn_type": "challenge",
+      "verdict_on_revision": null
+    },
+    {
+      "agent": "claude",
+      "argument": "I concede four things cleanly. First, the distributed-containment model is genuinely better at explaining other-power, devotional, and teacher-field traditions; the original model underweighted these. Second, Engler's clinical formulation covers the safety ground and has priority on the practical insight. Third, the title overstated universality; the claim is graded, not universal. Fourth, the four management strategies are heuristic mixtures, not clean types. What I defend is more specific. The distributed-containment model and the minimum-self model are not competitors. They answer different questions, and the containment model presupposes the functional one. You cannot distribute continuity until you know what must be continued. The functions are: receiving instruction or transmission, sustaining effort or openness, correcting error, and recognizing change. Where these are housed is a second-order question. The irreducible receiving surface is not trivially true. Traditions that push it thinnest, Dzogchen and radical Pure Land, develop the most precise protocols around exactly that thin point. Dzogchen requires a specific relational context, precise timing, and teacher judgment of readiness. Shinran developed elaborate doctrinal machinery to explain how even entrusting is given without self-power. If the receiving surface were trivial, these traditions would not need to engineer around it so carefully. The Engler formulation is sequential: first build ego, then dissolve. The revised minimum-self model is concurrent: a beginning vipassana practitioner needs enough self to sit and follow instructions while those instructions are already framing the self as impersonal aggregates. This is not a before-and-after problem but a during problem that the practice manages at every session. The management strategies, even as heuristics, predict architecture that the containment model alone does not. Tell me a tradition's primary continuity strategy and I can predict its map type, warning profile, and verification method. Causal continuity yields condition-tracking maps (Abhidharma). Ontological identity yields confusion-accounting theory (adhyasa). Temporal collapse resists stage sequencing (Dogen). Divine restoration concentrates teacher authority at the annihilation moment (Sufi sheikh at fana). These predictions require knowing both what continuity function is at stake and what the dissolution target is. Container strength alone cannot generate them. The human-condition revision: the model matters most for people encountering dissolution teachings outside traditional containers. When the container is strong, the practitioner's receiving surface can be thin because the ecology carries load. When the container is weak or absent (app-based meditation, books without teachers, retreat weekends without follow-up, psychedelic experiences without integration), the practitioner's own self-capacity must carry more of the continuity burden. The danger zone is the mismatch: a person with low self-capacity entering a path with weak distributed support, or a person with high self-management entering a strongly distributed path that demands a surrender they cannot give. The primary cohort is secular seekers, trauma survivors drawn to dissolution language, high-achievers approaching practice with optimization mindsets, cross-tradition samplers without sustained teacher relationships, and clinicians or chaplains who need to assess when practice helps versus harms. The non-fit case is practitioners in intact traditional communities where the distributed ecology already manages continuity; for them, the model adds nothing. Also outside scope: acute psychiatric crisis (clinical stabilization, not contemplative architecture) and single-lineage practitioners whose receiving surface and dissolution target are always aligned by design. The deepest crux is whether function-identification adds predictive power beyond placement-identification. If knowing w...",
+      "claim_units": [
+        "Self-dissolving paths must maintain specific continuity functions: receiving instruction or transmission, sustaining effort or openness, correcting error, and recognizing change.",
+        "These functions can be housed in the practitioner's own agency, distributed across a training ecology (teacher, vow, community, ritual, doctrine), or held in some shifting mixture across stages.",
+        "Even the most radically distributed path retains an irreducible receiving surface in the practitioner: the bare capacity to be addressed, to open, to let the container work.",
+        "The ratio of individual to distributed continuity is a comparative variable with architectural consequences for sequencing, screening, verification, and warnings.",
+        "The model's modern value is for people encountering dissolution teachings outside the distributed containers that traditional ecologies provided.",
+        "The non-fit case is practitioners embedded in intact traditional communities with strong teacher relationships and established containers; for them the model adds nothing their tradition does not already supply."
+      ],
+      "concessions": [
+        "The distributed-containment model is genuinely better at explaining other-power paths. Pure Land nembutsu, bhakti devotion, charismatic teacher-field traditions, and Sufi dhikr under sheikh guidance all deliberately reduce practitioner agency and shift continuity outward. The original model treated the practitioner as the primary load-bearing unit and underweighted these cases. I concede this as a real structural gap, not an edge case.",
+        "Engler's 'somebody before nobody' formulation covers much of the clinical safety ground. The minimum-self model cannot claim priority on the practical insight that ego-stability matters before self-dissolution. The model adds something only if its architectural and concurrent framing does work that Engler's clinical and sequential framing does not.",
+        "The title 'Every Path Needs What Its Teaching Dissolves' overstates universality. Some paths dissolve very little of what they require; others require very little of what they dissolve. The claim should be weakened from a universal structural law to a graded comparative variable.",
+        "The four management strategies were presented as cleaner types than they are. Most traditions combine multiple strategies at different stages. The typology is a heuristic for comparative analysis, not a taxonomy of mutually exclusive kinds."
+      ],
+      "counter_model": null,
+      "crux": "Does identifying the specific continuity functions a path requires (reception, trust, effort, error-correction, integration-recognition) add predictive power beyond identifying where continuity is placed (individual agency, teacher, vow, community, ritual, doctrine)? If function-identification and placement together predict screening, sequencing, warnings, and failure modes better than placement alone, the two-layer model holds. If placement alone is sufficient, the minimum-self layer is absorbed into the distributed-containment model and loses independent analytical status.",
+      "crux_assessment": "The challenger correctly identified that the original model placed too much load on the practitioner as an isolated agent and missed the distributed ecology that most traditions build around self-dissolving practice. The revised claim incorporates this by making continuity-placement a co-equal variable alongside continuity-functions. The remaining question is whether the function layer earns its keep analytically or is absorbed by the placement layer. My bet is that it earns its keep, because the receiving surface is not just 'some amount of container strength' but a specific set of capacities that interact with the dissolution target in predictable ways. The management-strategy predictions (Abhidharma maps from causal continuity, adhyasa theory from ontological identity, anti-stage resistance from temporal collapse, concentrated sheikh authority from divine restoration) are generated by the interaction between function and dissolution target, not by container strength alone. But this is a bet, not a demonstrated result.",
+      "defense": "The distributed-containment model and the minimum-self model are not competitors. They answer different questions, and the second presupposes the first. You cannot distribute continuity functions until you have identified what must be continued. Reception, memory or trust, effort or openness, error-correction, and change-recognition are the functions. The question of where they are housed is a second-order question that builds on identifying them, not a replacement for it.\n\nConsider what happens at the limit. Even in the most strongly distributed path, something irreducible remains in the practitioner. A Pure Land devotee must hear the Primal Vow and entrust herself to Amida's other-power. Shinran insisted that even this entrusting is given by Amida, not generated by the practitioner; but the person who receives the gift must be capable of receiving it. A Dzogchen student must be present for the pointing-out instruction and recognize what is shown. A Sufi mureed must trust the sheikh enough to enter dhikr and release self-management. Each of these is a minimal receiving surface: not reflective self-monitoring, not sustained personal effort, but the bare capacity to be addressed, to open, to let the container do its work.\n\nThis is not trivially true. Traditions that push the receiving surface thinnest develop the most precise protocols around exactly that thin point. Dzogchen pointing-out requires a specific relational context, precise timing, and a teacher who can judge readiness. Shinran's radical other-power developed elaborate doctrinal architecture to explain how entrusting happens without self-power. These are not arbitrary liturgical details. They are engineering solutions to the problem of maintaining the receiving surface when nearly everything else has been handed to the container. If the receiving surface were trivial, these traditions would not need to manage it so carefully.\n\nThe Engler formulation is clinical and sequential: first build ego, then dissolve it. The minimum-self analysis, revised by the challenger's pressure, is architectural and concurrent. A beginning vipassana practitioner needs enough self to sit and follow instructions while those instructions are already framing that self as a collection of impersonal aggregates. This is not a before-and-after problem. It is a during problem that the practice must manage at every session, not just at a developmental threshold. Engler tells us who should wait before starting. The minimum-self model tells us what the practice is doing to itself throughout.\n\nThe four management strategies, even as heuristics rather than clean types, predict architectural features that neither Engler nor the distributed-containment model alone predicts. Theravada's causal-continuity strategy requires elaborate maps of conditions because someone must track what is being transformed when no owner is tracking it. Advaita's ontological-identity strategy requires adhyasa theory because if the deepest self was never confused, the apparent confusion demands its own metaphysics. Dogen's temporal-collapse strategy resists stage models because sequencing presupposes a gap between practitioner and realization that the teaching denies. Sufi fana-baqa strategy concentrates teacher authority at the annihilation moment because divine restoration needs a human witness to confirm the person returned. Tell me a tradition's primary management strategy, and I can predict what kind of map, warning, and verification method it develops. The distributed-containment model, on its own, cannot generate these predictions because it tracks where continuity is placed but not what the dissolution target is or what functional tension the placement must resolve.",
+      "fairness_check": null,
+      "hidden_assumption": null,
+      "new_source": "Dan Zahavi, 'Self and Other: Exploring Subjectivity, Empathy, and Shame' (Oxford University Press, 2014), especially the account of the experiential minimal self as pre-reflective first-personal givenness. Zahavi argues this minimal self is not a substance, agent, or entity, but a structural feature of conscious experience that persists even when reflective self-models are suspended. This provides philosophical precision for the receiving-surface claim: what even the most distributed path requires is not ego-strength in Engler's clinical sense, but the first-personal character of experience that makes reception, trust, and recognition possible at all. Zahavi's framework is independent of the Buddhist-Western identity debate and gives the model non-circular grounding.",
+      "remaining_risk": "The modern human-condition framing could become prescriptive in ways that patronize practitioners or pathologize legitimate spiritual distress. 'You need more ego-strength before practicing no-self' can function as gatekeeping, especially when applied across cultural contexts where the self in question is not the Western autonomous ego. The model should be presented as a diagnostic tool for teachers and clinicians, not as prerequisites that secular authorities impose on seekers. It must also resist medicalizing dark nights, fana, or kensho as pathology when they occur within strong traditional containers that expect and support them. The safety value is real, but the line between safety and paternalism requires ongoing vigilance. Additionally, the model still has no empirical base; its predictions are drawn from texts and teacher reports, not controlled observation. Until practitioner data exists, the model is a comparative heuristic, not a confirmed mechanism.",
+      "revised_claim": "Self-dissolving contemplative paths must maintain certain continuity functions throughout training: receiving instruction or transmission, sustaining effort or openness over time, correcting error or disorientation, and recognizing or integrating change. These functions can be housed primarily in the practitioner's own reflective agency, distributed across a training ecology (teacher, vow, community, ritual, body, doctrine), or held in some shifting mixture across stages. Even the most radically distributed path retains an irreducible receiving surface in the practitioner: the bare capacity to be addressed, to open, to let the container do its work.\n\nThe ratio of individual to distributed continuity is a comparative variable with architectural consequences. Traditions that require high individual self-capacity develop elaborate maps and stage models to track what no owner is tracking. Traditions that distribute continuity outward develop strong containers: vows, teacher authority, ritual frames, community interpretation, and doctrinal accounts of how the container itself bears the load. Both types must preserve the receiving surface, but they engineer around it differently, and those differences predict sequencing, screening, verification, characteristic warnings, and failure modes.\n\nThe human problem: people in secular, individualized cultures are encountering self-transcendence and no-self teachings in contexts stripped of the distributed containers that traditional practice ecologies provided. Meditation apps, weekend retreats, spiritual books, psychedelic ceremonies, and online teachings deliver dissolution language without the teacher relationships, community accountability, ritual structure, ethical frameworks, and aftercare that traditionally carried the continuity load. Some practitioners use dissolution language to bypass grief, shame, trauma, or relational difficulty. Others experience disorientation, depersonalization, or spiritual crisis without the support structures that traditional ecologies would have supplied.\n\nThe primary cohort: secular seekers drawn to contemplative practice through wellness culture; trauma survivors attracted to dissolution language because it promises escape from painful self-experience; high-achievers who approach practice with the optimization mindset that created their burnout; cross-tradition samplers without sustained teacher relationships; and clinicians, chaplains, and teachers who need to assess when contemplative practice is helping versus harming.\n\nThe non-fit case: practitioners embedded in intact traditional communities with strong teacher relationships, clear ethical frameworks, and established ritual containers. For them, the distributed ecology already manages continuity, and the minimum-self analysis adds nothing their tradition does not already provide. Also outside the model's current scope: people in acute psychiatric crisis, for whom the relevant question is clinical stabilization, not contemplative architecture; and single-lineage practitioners for whom the receiving surface and the dissolution target are always aligned by design.",
+      "role": "proponent",
+      "sources_cited": [
+        "Dan Zahavi, Self and Other: Exploring Subjectivity, Empathy, and Shame (Oxford University Press, 2014)",
+        "Jack Engler, 'You Must Be Somebody Before You Can Be Nobody,' Inquiring Mind",
+        "Shinran, Tannisho (Taitetsu Unno translation, 1996), on shinjin as Amida's gift, not the practitioner's achievement",
+        "Willoughby Britton and Jared Lindahl, The Varieties of Contemplative Experience (PLOS ONE, 2017)",
+        "SN 22.59 Anattalakkhana Sutta",
+        "Chandogya Upanishad 6.8.7-6.16"
+      ],
+      "steelman": null,
+      "strongest_objection": null,
+      "test_that_would_settle_it": "Code seven traditions (Theravada vipassana, Advaita self-inquiry, Soto Zen shikantaza, Dzogchen pointing-out, Pure Land nembutsu, Sufi dhikr, and trauma-informed mindfulness-based stress reduction) on two independent dimensions. First dimension: which specific continuity functions (reception, memory or trust, effort or openness, error-correction, change-recognition) the path requires the practitioner to perform individually versus which are distributed to teacher, vow, community, or ritual. Second dimension: overall container strength (teacher authority, community density, ritual structure, ethical framework, aftercare). Then use each coding independently to predict five outcome variables: screening criteria, stage sequencing, characteristic warnings in practice manuals, verification method, and documented failure modes from the Varieties of Contemplative Experience dataset. The two-layer model wins only if the function-specific coding adds predictive power beyond what container-strength coding provides alone. If container strength is sufficient, the minimum-self layer should be retired as an independent analytical tool and absorbed into the distributed-containment framework.",
+      "turn": 2,
+      "turn_type": "rebuttal",
+      "verdict_on_revision": "transformed"
+    },
+    {
+      "agent": "codex",
+      "argument": "The revision became transformed rather than simply stronger. It no longer argues that every path needs the very self it dissolves in the same structural sense. It now argues that every path must preserve continuity functions, and that traditions differ by how those functions are distributed. That is a better model. It is less brittle, more testable, and more useful for modern practitioners who encounter no-self, surrender, psychedelics, or self-transcendence outside durable containers. The modern human-condition pressure also improved. The revised version names plausible cohorts and correctly excludes acute psychiatric crisis and intact single-lineage settings. Still, the cohort map is too broad. The model is strongest for people facing identity-dissolution pressure without teacher, community, ethical frame, screening, or integration. It is not yet a general model for loneliness, depression, grief, digital comparison, or meaning loss. Its practical value is diagnostic, not devotional or therapeutic by itself. The remaining analytic risk is the receiving surface. Zahavi's minimal self may support the claim that experience has first-personal givenness, but that does not automatically establish the practical capacities of trust, openness, correction, and integration. Those are thicker than pre-reflective givenness and can be socially trained or socially damaged. The model should keep that bridge explicit. Final judgment: the revision is a real improvement because it accepted the distributed-containment challenge and converted the original overstatement into a graded comparative tool. It has not yet earned the status of an architectural law. Its next burden is empirical and coding discipline: show that the function layer predicts something the containment layer cannot.",
+      "claim_units": [
+        "The revision is transformed, and mostly stronger, because it absorbs the distributed-containment objection into the core model.",
+        "The modern human-condition fit improved because the revision names specific cohorts, wounds, non-fit cases, and safety uses.",
+        "The receiving-surface claim is still the most vulnerable part of the model, because it risks being either trivially true or too broad to predict much.",
+        "The named crux is close to the real crux, but it needs a stricter operational version: whether function coding adds predictive power without smuggling in the architecture it is supposed to predict."
+      ],
+      "concessions": [
+        "The revision is substantially more useful than the original for real human life, because it identifies the danger zone as a mismatch between dissolution pressure and continuity support.",
+        "The proponent is right that Engler's sequential clinical frame does not exhaust the issue. Some practices require capacities during every session, not merely before entry.",
+        "The proponent is also right that radically distributed paths still require some participant-side capacity, even if that capacity is only receptivity, trust, or availability to instruction."
+      ],
+      "counter_model": "A refined containment model still remains viable: what predicts safety and architecture may be the match or mismatch among dissolution intensity, container strength, teacher accountability, clinical vulnerability, and integration support. On that model, named continuity functions are useful descriptive handles, but not an independent explanatory layer.",
+      "crux": "Does independently coding continuity functions add predictive power beyond coding continuity placement, container strength, doctrine, institution, practice intensity, and practitioner vulnerability?",
+      "crux_assessment": "The named crux is mostly the real crux, but it is phrased too narrowly as function-identification versus placement-identification. The deeper crux is independent predictive content. The model survives if the function layer can be coded without circularity and improves prediction. It weakens if the function layer merely renames container design after the fact.",
+      "defense": null,
+      "fairness_check": "This assessment treats the proponent's concessions as real changes, not cosmetic retreats. The revised model should be judged against its new claim, not only against the overbroad title of the original idea.",
+      "hidden_assumption": "The revision assumes that continuity functions are stable enough across traditions to be compared. That may be right, but reception, trust, effort, correction, and recognition may not be the same functional kind in Theravada vipassana, Shinran's other-power, Dzogchen pointing-out, and Sufi fana.",
+      "new_source": null,
+      "remaining_risk": "The modern framing still overgeneralizes. Secular seekers, trauma survivors, high-achievers, cross-tradition samplers, clinicians, and chaplains do not form one cohort. Trauma-related dissociation, achievement-contingent self-worth, grief, loneliness, and spiritual ambition require different safeguards. The revision also risks idealizing traditional containers, since teachers, rituals, and communities can carry continuity, but they can also conceal abuse, suppress dissent, or intensify dependency. The model should target a narrower wound: destabilization caused when self-dissolution practices exceed the practitioner's available continuity supports.",
+      "revised_claim": null,
+      "role": "challenger",
+      "sources_cited": [
+        "Dan Zahavi, Self and Other: Exploring Subjectivity, Empathy, and Shame",
+        "Jack Engler, 'You Must Be Somebody Before You Can Be Nobody'",
+        "Willoughby Britton and Jared Lindahl, The Varieties of Contemplative Experience",
+        "SN 22.59 Anattalakkhana Sutta",
+        "Chandogya Upanishad 6.8.7-6.16",
+        "Shinran, Tannisho"
+      ],
+      "steelman": "The revision has stopped defending a universal practitioner-centered minimum self and now argues for a two-layer model: first identify the continuity functions a path must preserve, then identify where those functions are housed, in the practitioner, the teacher, the vow, the ritual, the community, doctrine, or aftercare. Its strongest addition is the mismatch claim: modern seekers often receive self-dissolution teachings without the containers that once carried much of the continuity burden.",
+      "strongest_objection": "The revised model may still win by redescribing whatever a tradition already does. If a path has strong teacher authority, the model can say error-correction is distributed. If it has elaborate maps, the model can say recognition is individualized. If it has surrender, the model can say openness is the key function. To avoid retrospective fit, the functions must be coded before the outcomes are examined, and they must predict architecture better than doctrine, institution, lineage history, practice intensity, and clinical readiness alone.",
+      "test_that_would_settle_it": "Pre-register a rubric for continuity functions and container variables, then have coders rate traditions without seeing the target outcome set. Test whether function-by-placement coding predicts screening, sequencing, warnings, verification methods, and documented failure modes better than container strength, doctrinal metaphysics, and institutional form alone. Include negative cases where strong containers harm practitioners or where weak containers still produce stable integration.",
+      "turn": 3,
+      "turn_type": "counter_rebuttal",
+      "verdict_on_revision": "transformed"
+    }
+  ]
+}

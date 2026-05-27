@@ -1,0 +1,223 @@
+{
+  "convergence_path": "findings/convergences/2026-05-26-can-the-grain-of-a-trained-function-be-specified-precisely-enough-to-be-coded-ind.md",
+  "created_at": "2026-05-26T16:50:23-07:00",
+  "dialogue_id": "b89c0f0141522331",
+  "execution_id": "backfill-20260526-154746",
+  "json_path": "reviews/dialogues/2026-05-26-can-the-grain-of-a-trained-function-be-specified-precisely-enough-to-be-.json",
+  "markdown_path": "reviews/dialogues/2026-05-26-can-the-grain-of-a-trained-function-be-specified-precisely-enough-to-be-.md",
+  "pair": {
+    "challenger_agent": "claude",
+    "challenger_title": "The Grain of Capacity",
+    "idea_a": "c53042c11562b839",
+    "idea_b": "915778a2f5edc30e",
+    "pair_id": "b9422aad4215cd6d",
+    "priority": 0.6831,
+    "proponent_agent": "codex",
+    "proponent_title": "The Forbidden Claimant Rubric",
+    "shared_concepts": [],
+    "signals": [
+      {
+        "name": "shared_frontier",
+        "reason": "Both ideas sit on The boundary between effort and gift.",
+        "weight": 0.24
+      },
+      {
+        "name": "frontier_priority",
+        "reason": "Shared frontier priority is 0.89.",
+        "weight": 0.1431
+      },
+      {
+        "name": "audit_anomaly_overlap",
+        "reason": "An anomaly or audit instruction for one idea pressures the other idea.",
+        "weight": 0.12
+      },
+      {
+        "name": "near_neighbor_conflict",
+        "reason": "Originality audits share near-neighbor or prior-art pressure.",
+        "weight": 0.08
+      },
+      {
+        "name": "source_overlap_with_divergent_conclusion",
+        "reason": "The ideas draw on overlapping source material but make different moves.",
+        "weight": 0.06
+      },
+      {
+        "name": "recency",
+        "reason": "At least one idea is recent enough to keep the dialogue timely.",
+        "weight": 0.04
+      }
+    ],
+    "tension_source": "Both ideas sit on The boundary between effort and gift.",
+    "tension_type": "shared_frontier"
+  },
+  "run_dir": "runs/dialectic-backfill-20260526-154746/b9422aad4215cd6d",
+  "run_ids": [],
+  "slug": "2026-05-26-can-the-grain-of-a-trained-function-be-specified-precisely-enough-to-be-",
+  "status": "complete",
+  "synthesis": {
+    "candidate_synthesis": null,
+    "convergence_claim": "Both agents agreed on four points: (1) the five functions cannot serve as tradition-neutral universals and must be treated as provisional prompts; (2) grain, the directional pre-shaping of a trained function toward its tradition's specific dissolution, is a real and primary variable; (3) forbidden-claimant rules remain a distinct variable that can become decisive in specific cases, such as shame arising from wrong ownership grammar, or striving arising from treating gift-practice as achievement; (4) the boundary between effort and gift cannot be resolved by a single variable and requires at least the interaction of directional shaping and ownership prohibition.",
+    "method_growth": "The dialogue demonstrated that a concession-first rebuttal strategy (absorbing the challenge and rebuilding rather than patching) produces more durable revision than defensive responses. It also surfaced a general methodological principle: when a model gains descriptive accuracy by adding variables, check whether falsifiability decreased in proportion. Framework claims with three or more interacting variables need explicit operationalizability tests for each variable before the interaction can be studied. Future dialectic pairs should flag this risk when a rebuttal adds complexity.",
+    "new_concept_edges": [
+      {
+        "note": "Grain specifies what a function is shaped to do; claimant rules specify who may own the doing. Neither is sufficient alone. Grain without claimant misses ownership-specific failures (shame, striving, passivity). Claimant without grain produces false equivalences across traditions that train incompatible instruments under the same functional label.",
+        "relation": "constrains and completes",
+        "source": "grain_of_capacity",
+        "target": "forbidden_claimant_rubric"
+      },
+      {
+        "note": "Dogen's collapse of practice and realization into a single act removes the gap between bearer and outcome that the rubric requires for coding. The rubric must either treat this as degenerate or restructure to accommodate a function that is identical with its fulfillment.",
+        "relation": "limit case that strains",
+        "source": "practice_realization_unity",
+        "target": "forbidden_claimant_rubric"
+      },
+      {
+        "note": "Grain predicts that adverse effects cluster not only where prerequisites are missing but where the directional shaping of the practitioner's training mismatches the dissolution being attempted. This is a more specific prediction than prerequisite-absence models and could be tested against the Lindahl et al. dataset.",
+        "relation": "refines prediction from",
+        "source": "grain_of_capacity",
+        "target": "contemplative_harm_prediction"
+      },
+      {
+        "note": "The grain variable's value as a testable construct depends on whether independent coders can reliably specify the directional shaping of a tradition's trained functions. This is the upstream question that determines whether the three-part model is falsifiable.",
+        "relation": "gate condition for",
+        "source": "operationalizability",
+        "target": "grain_of_capacity"
+      }
+    ],
+    "new_frontier_question": "Can the directional grain of a contemplative capacity be operationalized with sufficient inter-rater reliability to serve as a control variable in empirical studies of practice-switching resistance and contemplative adverse effects? This question is prior to the three-part model's proposed tests and determines whether the model can function as predictive science or only as interpretive vocabulary.",
+    "outcome": "revision",
+    "public_brief": "The Forbidden Claimant Rubric proposed that the real boundary between effort and gift is not how much a practitioner does but who is allowed to claim the doing: each path distributes required functions across support loci and prohibits specific claimants from owning them. The Grain of Capacity challenged this by arguing that the deeper variable is the directional pre-shaping of each trained function toward its tradition's specific dissolution. Two traditions can share identical claimant codes while training incompatible instruments. The Proponent conceded the structural flaw and revised the model into a three-part diagnostic: grain (what direction the function is shaped toward), support locus (who carries it), and forbidden claimant (who must not own it). The revision is more honest than the original, but it faces a new challenge: with three co-equal variables and their interactions, the model may explain any practice difficulty after the fact without making commitments that could be cleanly refuted. The next step is to test whether the grain variable can be coded with adequate reliability by independent raters before attempting the full three-part interaction study.",
+    "recommended_adjustments": {
+      "challenger": {
+        "counterargument_quality": 0.04,
+        "practice_testability": -0.05
+      },
+      "proponent": {
+        "explanatory_compression": -0.08,
+        "logical_coherence": -0.05,
+        "novelty": -0.1,
+        "practice_testability": -0.07,
+        "publishability": -0.05
+      }
+    },
+    "summary": "The Challenger exposed a structural flaw in the Forbidden Claimant Rubric: its five functions (receiving, agency, memory, reflexivity, integration) were presented as tradition-neutral categories when each tradition carves its own directionally specific version. The Proponent conceded honestly, absorbing grain as a co-equal descriptor alongside support locus and forbidden claimant, and downgrading the five functions from universal categories to provisional prompts. The revised three-part model is more careful than the original two-column rubric. However, the Challenger's counter-rebuttal identified a new vulnerability: the revised model, with three co-equal variables and their interactions, may be too accommodating to falsify, and the grain variable itself may not be reliably codable by independent raters. The dialogue produced a substantive revision of the Proponent's model rather than a new synthesis, because the Challenger's grain concept was already fully developed in its source idea, and the Proponent's claimant concept was already fully developed in its source idea. Their integration is a better version of the Proponent's rubric, not a novel insight that transcends both.",
+    "synthesizer_agent": "claude",
+    "unresolved_crux": "Can the grain of a trained function be specified precisely enough to be coded independently from the claimant and support-locus variables it is supposed to precede? The Proponent's proposed empirical test (coding grain conflict, support-locus conflict, and claimant conflict as three blind variables across dual-trained practitioners) depends on this prior operationalizability question. If two competent coders cannot agree on whether Zen shikantaza trains attention toward non-dual presence, toward the dropping away of body and mind, or toward nothing directional at all, then the three-part model cannot be tested as proposed. This is the gate that determines whether the revised model functions as a testable rubric or as a hermeneutic vocabulary."
+  },
+  "title": "Can the grain of a trained function be specified precisely enough to be coded ind...",
+  "turns": [
+    {
+      "agent": "claude",
+      "argument": "",
+      "challenge": "The rubric's five functions, receiving, agency, memory, reflexivity, and integration, are treated as stable categories that mean the same thing across traditions, varying only in who holds them and who is forbidden to claim them. This is the hidden assumption, and it is load-bearing. If each tradition carves its own version of these functions toward its own specific dissolution, the grid cells are not measuring commensurable operations. 'Reflexivity' in vipassana is attention trained to track arising, changing, and non-ownership. 'Reflexivity' in Advaita is attention trained to discriminate the unchanging witness from the stream of witnessed objects. The rubric can assign both the same support-locus code (practitioner-held) and the same forbidden-claimant code (self-ownership forbidden) while missing the directional difference that makes them functionally distinct instruments. Two rows can look identical on the grid while describing practices that resist each other when a dual-trained practitioner attempts to switch between them.\n\nThis matters because without grain-sensitivity, the rubric risks collapsing into Pargament's coping styles with a finer grid: a genuine contribution to taxonomy, but not the structural discovery it presents itself as. The deeper variable is not where a function is held or who is forbidden to claim it, but what direction the function is shaped toward. The capacity shaped for non-appropriation and the capacity shaped for witness-recognition can share identical rubric codings while being different instruments carved for different discoveries. The forbidden-claimant column captures one real dimension of the difference between traditions, but it misses the dimension that actually generates resistance at the point of practice.\n\nDogen's Bendowa sharpens this objection from within the Proponent's own source basis. Dogen says practice and realization cannot be recognized as two separate things. In the rubric's vocabulary, this would mean the support locus IS the dissolution, and the function IS its own fulfillment. The rubric requires a gap between bearer and outcome that can be coded: someone holds the function, someone is forbidden from claiming it, and the function serves a purpose beyond itself. But Dogen's practice-realization unity closes exactly that gap. You cannot code who holds the function when the function and its completion are identical. Sitting is not a function supported by the practitioner and aimed at a later realization; it is realization enacted now. The rubric either has to treat this as a degenerate case, which would flatten the most distinctive feature of Dogen's teaching, or it has to add a column for grain, the directional pre-shaping that makes a function inseparable from its dissolution. But once you add grain, the forbidden-claimant column becomes secondary. The primary variable is no longer who may not claim the function but what the function is already shaped to accomplish.",
+      "claim_units": [],
+      "concessions": [],
+      "counter_model": "The grain model: what matters most is not the distribution of support and prohibition across functions, but the directional pre-shaping of each function toward the specific dissolution it serves. The capacity trained for tracking impermanence and the capacity trained for recognizing the changeless witness may share identical support-locus and forbidden-claimant codes while being different instruments that resist each other at the point of practice. The primary variable is the direction the function is carved toward, not the ownership rules that govern it.",
+      "crux": null,
+      "crux_assessment": null,
+      "defense": null,
+      "fairness_check": null,
+      "hidden_assumption": "The five functions (receiving, agency, memory, reflexivity, integration) are tradition-neutral categories that can be meaningfully compared across traditions by varying only who holds and who is forbidden to claim them. This treats the functions as blank containers that traditions fill differently, when in fact each tradition carves its own version of each function with a directional specificity that the rubric's grid structure cannot represent.",
+      "idea_id_challenger": "915778a2f5edc30e",
+      "idea_id_target": "c53042c11562b839",
+      "new_source": null,
+      "pair_id": "b9422aad4215cd6d",
+      "remaining_risk": null,
+      "revised_claim": null,
+      "role": "challenger",
+      "source_that_complicates": {
+        "how_it_complicates": "Dogen's practice-realization unity makes the function identical with its fulfillment. There is no gap between bearer and outcome to code. The rubric requires separable roles: a support locus that holds the function and a dissolution the function serves. Dogen collapses that separation, not as a limit case where the slider is set to maximum, but as a doctrinal claim that the separation itself is a non-Buddhist view. The rubric either treats this as a degenerate row or acknowledges that a more fundamental variable, the directional identity of practice and realization, determines what the function is before ownership questions arise.",
+        "source": "Dogen, Bendowa, Kazuaki Tanahashi translation",
+        "url": "https://www.lionsroar.com/just-wholeheartedly-sit/"
+      },
+      "sources_cited": [],
+      "steelman": "The rubric does something that neither the self-power/other-power debate nor Pargament's coping-style taxonomy achieves on its own: it separates the question of whether a function is required from the question of who may claim it. This prevents the interpretive mistake of treating gift traditions as secretly requiring self-power, and the opposite mistake of treating effort traditions as concealing grace. SN 45.8 authorizes the practitioner to prevent, abandon, cultivate, and maintain states while forbidding ownership of aggregates as self. That is not effort disguised as gift, nor gift concealing effort. The two-column code, support locus plus forbidden claimant, holds both truths without collapsing either into the other. The rubric is genuinely useful, and its generativity is real: if practice manuals do contain recurring wrong-claimant warnings, and if adverse contemplative events do cluster around claimant-pattern failures, the rubric would add predictive power that existing capacity models and coping-style taxonomies do not provide.",
+      "strongest_objection": null,
+      "test_that_would_settle_it": null,
+      "timestamp": "2026-05-26T16:45:00-07:00",
+      "turn": 1,
+      "turn_type": "challenge",
+      "verdict_on_revision": null,
+      "what_would_resolve_it": "If dual-trained practitioners report that switching methods produces resistance that tracks the grain of their training (vipassana attention persisting in tracking change during self-inquiry, Advaita attention persisting in seeking the ground during vipassana) rather than resistance that tracks claimant rules (feeling forbidden to claim effort, or feeling compelled to claim what should be received), then grain is the deeper variable and the rubric needs it as a primary column. If practitioners instead report that the felt difficulty of switching is primarily about who may claim the doing, with directional habits being secondary or easily redirected, then the rubric stands without grain and the counter-model is weakened."
+    },
+    {
+      "agent": "codex",
+      "argument": "I concede the main structural flaw: the old grid was too flat. It treated receiving, agency, memory, reflexivity, and integration as if they could be named first and shaped later. Claude is right that this misses the way a tradition carves the capacity from the start. Vipassana reflexivity and Advaita witness discrimination are not the same operation with different labels attached. They are different instruments, and a practitioner switching between them may carry the old grain into the new method before any explicit ownership problem appears. The Dogen objection is also valid. Practice-realization cannot be coded as ordinary practitioner support aimed at a later outcome without distorting the claim. The better revision is to code Dogen's grain as enactment-realization, the support locus as the present act, and the forbidden claimant as the future-gaining self that treats practice as a bridge. That does not save the old model unchanged. It changes the model from a two-column rubric into a three-part diagnostic: grain, support locus, and forbidden claimant. I do not think grain eliminates claimant. It explains the direction of the trained function, but not the permitted first-person grammar around that function. Two traditions can train similar attentional grain while differing in whether the practitioner may say, I cultivated this, I received this, I recognized this, or I must not claim this as mine. Those differences matter for shame, striving, passivity, teacher dependence, and post-experience inflation. The surviving claim is therefore humbler: claimant rules are not the deepest variable in every case, but they are a distinct variable that can become decisive when the right capacity is carried by the wrong owner.",
+      "claim_units": [
+        "The original rubric overstated the stability of its five functions across traditions.",
+        "Support locus and forbidden claimant remain useful only if each function is coded with its tradition-specific grain.",
+        "Dogen's practice-realization unity should not be treated as a degenerate row in the old grid.",
+        "The revised rubric should treat grain, support locus, and forbidden claimant as co-equal descriptors.",
+        "The deepest empirical question is whether practice switching resistance is better predicted by grain conflict, claimant conflict, or their interaction."
+      ],
+      "concessions": [
+        "The five functions were too cleanly presented as cross-tradition stable categories.",
+        "The rubric can falsely equate vipassana-style reflexivity and Advaita-style witness discrimination if it codes only support locus and forbidden claimant.",
+        "Dogen's practice-realization unity exposes a real weakness in any version of the rubric that assumes practice is a function aimed at a separable fulfillment.",
+        "Forbidden-claimant language may be an analyst's overlay in some communities unless it is grounded in primary manuals, teacher instructions, or practitioner reports.",
+        "The original novelty score should be lowered unless the revised model shows predictive value beyond existing capacity, skillful-means, and coping-style taxonomies."
+      ],
+      "counter_model": "The grain model should be incorporated rather than rejected. Each function must be coded first by its directional shaping, then by where its support is held, then by which claimant is prohibited. In Dogen's case, grain can name enactment as realization-now, support locus can name the present act without implying a later result, and forbidden claimant can name the rejected future-gaining practitioner.",
+      "crux": "The deepest crux is whether ownership prohibitions add predictive and diagnostic power after tradition-specific grain has been coded. If they do, the rubric survives as a revised three-part model. If grain alone predicts practice resistance, adverse effects, and teacher warnings, then the forbidden-claimant rubric was an interesting but secondary taxonomy.",
+      "crux_assessment": "The challenge transforms the model rather than defeats it. The old claim was too ownership-centered. The revised claim is stronger because it gives grain priority in description while preserving claimant rules as a separate testable dimension.",
+      "defense": "What survives is narrower but still important. Grain explains what a function is shaped to do, but it does not by itself explain who may own the doing, who may speak as the author of the change, or which first-person stance becomes harmful inside the method. Those questions remain live after grain is added. In Dogen, the point is not that there is no claimant rule. The future-gaining claimant is prohibited because sitting is not a bridge to a later prize. In Shinran, the grain of hearing and entrusting is inseparable from refusal of self-made trust. In right effort, the grain of cultivation includes intentional effort while still refusing ownership as self. So the forbidden-claimant column should not be the master key, but it names a real constraint that grain alone can miss.",
+      "fairness_check": "The challenge does not deny the value of support locus and forbidden claimant. It argues that they are incomplete unless the rubric can represent the grain of each trained function. That is fair pressure on the model.",
+      "hidden_assumption": "The original model assumed that receiving, agency, memory, reflexivity, and integration could be abstracted before tradition-specific training had already shaped what those functions are.",
+      "new_source": null,
+      "remaining_risk": "The revised model may still impose analytic categories across traditions that do not understand themselves through function, support, or claimant. It also needs real practitioner data, not only textual close-reading, before it should move beyond draft status.",
+      "revised_claim": "A path is defined by a three-part code: the grain of each trained function, the support locus that carries it, and the claimant that is forbidden to own it. The original five functions are provisional prompts, not neutral universals. They must be redescribed inside each tradition before comparison. The boundary between effort and gift is therefore not only who may claim the doing, and not only what direction the function is shaped toward. It is the interaction between directional grain, carried support, and prohibited ownership. A practice can require the same broad operation, such as reflexivity, while making it a different instrument because it is carved toward impermanence, witness-recognition, entrusting, direct recognition, or practice-realization. The revised rubric compares traditions only after preserving that grain. Its practical value is to predict where practitioners misfire: wrong direction, wrong support, wrong claimant, or some combination of the three.",
+      "role": "proponent",
+      "sources_cited": [
+        "Dogen, Bendowa, Kazuaki Tanahashi translation",
+        "SN 45.8 Magga-Vibhanga Sutta",
+        "Shinran, Letter to Senshin",
+        "Longchen Rabjam, Instruction on Trekcho",
+        "Chinul, Secrets on Cultivating the Mind"
+      ],
+      "steelman": "Claude's challenge is strong because it identifies a real overreach in the original rubric. The five functions are not neutral containers. A tradition does not merely assign receiving, agency, memory, reflexivity, and integration to different support loci. It trains each function toward a specific kind of seeing, release, trust, enactment, or non-appropriation. Dogen is the hardest case because practice-realization does not treat practice as a tool aimed at a later result.",
+      "strongest_objection": "Two practices can receive the same support-locus and forbidden-claimant codes while training attention in incompatible directions, so the old rubric can produce false equivalences at the exact point where practice difficulty appears.",
+      "test_that_would_settle_it": "Study dual-trained practitioners and teacher-corrected practice reports across at least four contrasts: vipassana and Advaita, Jodo Shinshu and effort-based Buddhist practice, Dzogchen direct introduction and gradual cultivation, Dogen-style practice-realization and goal-oriented meditation. For each reported difficulty, code three blind variables: grain conflict, support-locus conflict, and claimant conflict. The revised model is supported if claimant conflict predicts distinctive errors after controlling for grain, such as self-made entrusting anxiety, achievement seeking in just sitting, production of recognition in direct introduction, or refusal of authorized effort. The grain objection wins if resistance and correction are explained by directional habits alone, with claimant language adding no independent predictive value.",
+      "turn": 2,
+      "turn_type": "rebuttal",
+      "verdict_on_revision": "transformed"
+    },
+    {
+      "agent": "claude",
+      "argument": "The revision is the right kind of move. The Proponent absorbed the challenge, conceded the structural flaw, and rebuilt the model with grain as a co-equal descriptor rather than defending the old grid unchanged. That is intellectually honest, and the revised three-part model is more careful than the original. But the transformation introduced a new problem that the rebuttal did not address. The original rubric was sharp enough to be wrong. It said the real boundary is who may claim the doing, and it proposed a coding sheet with clear columns. That claim could be tested: either practice manuals contain recurring wrong-claimant warnings or they do not; either adverse events cluster by claimant pattern or they do not. The revised model is more accurate but also more accommodating. With grain, support locus, and forbidden claimant as three co-equal variables, plus their interactions, the model can explain any practice difficulty after the fact. A dual-trained practitioner reports resistance? It could be grain conflict, claimant conflict, support-locus conflict, or a combination. A teacher corrects a student? The correction could target direction, ownership, or both. The model's coverage has increased, but its falsifiability has decreased. The named crux asks whether claimant rules add predictive power after grain is coded. That is the right question, but it depends on a prior question the rebuttal did not settle: can grain be coded reliably? Grain is not a behavioral measure. It is a judgment about what a tradition is shaping a capacity toward. Two skilled coders could disagree about whether Zen shikantaza trains attention toward non-dual presence, toward the dropping away of body and mind, or toward nothing at all, since Dogen's point is precisely that sitting is not aimed. If grain cannot be specified and coded with adequate reliability, then the three-part model cannot be tested as proposed, and it remains a useful interpretive vocabulary rather than a falsifiable rubric. I do not think this defeats the model. I think it locates the work that must come next. The Proponent should not try to test the full three-part interaction until the grain variable has been operationalized for at least two tradition-pair contrasts with independent coders. If that step succeeds, the model earns the right to its proposed study. If it fails, the model is still valuable as a way of reading traditions carefully, but it should present itself as hermeneutic method rather than predictive science. One further observation: the Proponent's concession that the five functions are provisional prompts rather than neutral universals is honest, but it may quietly remove the scaffolding the rubric needs to compare across traditions. If vipassana reflexivity and Advaita witness discrimination are different instruments that must be redescribed inside each tradition before comparison, then the rubric's rows do not align across the grid. Comparison then requires a prior interpretive decision about which tradition-specific functions are even comparable, and that decision reintroduces the very assumption the revision meant to retire. The model may need to choose: either the functions are stable enough to anchor comparison, in which case grain is a modifier within a shared category, or they are tradition-specific instruments, in which case the comparative grid dissolves into parallel monographs. The revised model has not yet made that choice, and making it is the next real test of whether the rubric holds.",
+      "claim_units": [
+        "The revision transformed the model from a sharp two-column rubric into a broader three-part diagnostic framework.",
+        "The concessions are genuine: the five functions lost their claimed universality, the forbidden-claimant column lost its primacy, and the novelty claim was explicitly weakened.",
+        "The surviving insight, that claimant rules can become decisive when the right capacity is carried by the wrong owner, is real but narrower than the original claim.",
+        "The named crux is close to the real crux but slightly off-target: the deeper question is whether the three-part model can be operationalized with enough coding reliability to produce falsifiable predictions at all.",
+        "The model's increased complexity introduces a new risk: with three co-equal variables and their interactions, post hoc explanation of any practice difficulty becomes too easy."
+      ],
+      "concessions": [
+        "The Proponent was right to absorb grain rather than resist it. The revised model is more honest than the original.",
+        "The defense of claimant rules as a distinct variable is plausible. Shame, striving, and teacher dependence do track ownership grammar in ways that grain alone may not predict.",
+        "The proposed study design, coding grain conflict, support-locus conflict, and claimant conflict as three blind variables across four tradition-pair contrasts, is a reasonable way to settle the question if it can be operationalized."
+      ],
+      "counter_model": null,
+      "crux": null,
+      "crux_assessment": "The named crux, whether ownership prohibitions add predictive power after grain has been coded, is the right question in principle. But it assumes a prior question has been settled: whether grain itself can be coded reliably enough to serve as a control variable. Grain is not a behavioral observable. It is an interpretive judgment about the directional shaping of a capacity, and two competent coders may disagree about whether vipassana reflexivity is shaped toward impermanence-tracking, toward non-appropriation, or toward bare attention without directional commitment. If grain cannot be coded with adequate inter-rater reliability, then the proposed test cannot distinguish grain conflict from claimant conflict, and the three-part model becomes unfalsifiable in practice even if it is coherent in theory. The real crux is therefore one step upstream: can the grain of a trained function be specified precisely enough to be coded independently from the claimant and support-locus variables it is supposed to precede? If it can, the Proponent's test is well designed. If it cannot, the model is a useful interpretive vocabulary but not a testable rubric.",
+      "defense": null,
+      "fairness_check": "The rebuttal absorbed the challenge rather than deflecting it. The concessions are substantive, not cosmetic. The revised model does not simply add grain as a decoration on the old rubric; it changes the order of description and weakens the original novelty claim accordingly. This is fair revision.",
+      "hidden_assumption": null,
+      "new_source": null,
+      "remaining_risk": "Three risks survive the revision. First, the model gained honesty but lost its edge. The original claim was sharp: the real boundary between effort and gift is who is allowed to claim the doing. The revised claim is a framework assertion: paths are defined by a three-part code. Framework claims are harder to falsify because any outcome can be attributed to one variable, another variable, or their interaction. With three descriptors and their pairwise and three-way interactions, the model can explain practice difficulties post hoc without making commitments that could be cleanly refuted. Second, the concession that the five functions are provisional prompts rather than neutral universals may cost the model its comparative power. If each function must be redescribed inside each tradition before comparison, then the grid's rows may not align across traditions. Comparison then requires a meta-level judgment about which functions are even comparable, which reintroduces the interpretive assumption the revision was supposed to retire. The model risks becoming a vocabulary for careful description of individual traditions rather than a rubric for structured comparison across them. Third, the revision's strongest move, elevating grain to co-equal status, is also its most vulnerable. Grain is an interpretive construct. A tradition's practitioners may not agree with each other about the directional shaping of their own practice, let alone with an outside analyst coding the variable. If the grain column is filled by the analyst's interpretation of what the tradition is shaping toward, the three-part model may encode the analyst's comparative theology rather than the tradition's own self-understanding. The Proponent acknowledged this risk in the original idea's critique, noting that forbidden-claimant language may be an analyst's overlay. The same warning applies with greater force to grain, which is a subtler and more theory-laden judgment than support locus or forbidden claimant. The model should not advance beyond draft status until at least one tradition-pair contrast has been coded by independent raters with published reliability coefficients for all three variables.",
+      "revised_claim": null,
+      "role": "challenger",
+      "sources_cited": [
+        "Dogen, Bendowa, Kazuaki Tanahashi translation",
+        "SN 45.8 Magga-Vibhanga Sutta",
+        "Shinran, Letter to Senshin",
+        "Lindahl et al., The Varieties of Contemplative Experience, PLOS ONE"
+      ],
+      "steelman": "The revision is honest in a way that many rebuttals are not. The Proponent conceded the structural flaw rather than patching around it. The five functions are now provisional prompts rather than stable universals; grain has been elevated to a co-equal descriptor; Dogen's practice-realization unity is no longer forced into a degenerate row. The three-part model, grain plus support locus plus forbidden claimant, is more careful than the original two-column rubric and more responsive to how traditions actually shape their capacities. The Proponent also preserved a real insight: that two traditions can train similar attentional grain while differing in permitted first-person grammar, and that those differences matter for shame, striving, passivity, and post-experience inflation. That claim is worth keeping.",
+      "strongest_objection": null,
+      "test_that_would_settle_it": null,
+      "turn": 3,
+      "turn_type": "counter_rebuttal",
+      "verdict_on_revision": "transformed"
+    }
+  ]
+}

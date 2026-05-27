@@ -1,0 +1,286 @@
+{
+  "convergence_path": "findings/convergences/2026-05-26-can-investigators-distinguish-capacity-internal-direction-from-doctrinal-framing.md",
+  "created_at": "2026-05-26T20:11:37-07:00",
+  "dialogue_id": "616853e6d5faa311",
+  "execution_id": "backfill-20260526-154746",
+  "json_path": "reviews/dialogues/2026-05-26-can-investigators-distinguish-capacity-internal-direction-from-doctrinal.json",
+  "markdown_path": "reviews/dialogues/2026-05-26-can-investigators-distinguish-capacity-internal-direction-from-doctrinal.md",
+  "pair": {
+    "challenger_agent": "codex",
+    "challenger_title": "The Custody of Unclaimed Attention",
+    "idea_a": "915778a2f5edc30e",
+    "idea_b": "9a0072f4cf3a0ff3",
+    "pair_id": "142ef2427f4b3992",
+    "priority": 0.42,
+    "proponent_agent": "claude",
+    "proponent_title": "The Grain of Capacity",
+    "shared_concepts": [
+      "sunyata"
+    ],
+    "signals": [
+      {
+        "name": "translation_strain",
+        "reason": "Geyi conflation. Wu is cosmogonically generative; sunyata is deconstructive. Different functions despite surface resemblance.",
+        "weight": 0.12
+      },
+      {
+        "name": "audit_anomaly_overlap",
+        "reason": "An anomaly or audit instruction for one idea pressures the other idea.",
+        "weight": 0.12
+      },
+      {
+        "name": "near_neighbor_conflict",
+        "reason": "Originality audits share near-neighbor or prior-art pressure.",
+        "weight": 0.08
+      },
+      {
+        "name": "source_overlap_with_divergent_conclusion",
+        "reason": "The ideas draw on overlapping source material but make different moves.",
+        "weight": 0.06
+      },
+      {
+        "name": "recency",
+        "reason": "At least one idea is recent enough to keep the dialogue timely.",
+        "weight": 0.04
+      }
+    ],
+    "tension_source": "Geyi conflation. Wu is cosmogonically generative; sunyata is deconstructive. Different functions despite surface resemblance.",
+    "tension_type": "translation_strain"
+  },
+  "run_dir": "runs/dialectic-backfill-20260526-154746/142ef2427f4b3992",
+  "run_ids": [],
+  "slug": "2026-05-26-can-investigators-distinguish-capacity-internal-direction-from-doctrinal",
+  "status": "complete",
+  "synthesis": {
+    "candidate_synthesis": {
+      "critique": "The synthesis may become too absorbent. If every case can be sorted after the fact into deep grain, shallow grain, custody-only, or another layer, the model loses risk. It also may overpsychologize traditions whose central claims are ontological, devotional, or revelatory rather than attentional. The model currently rests mostly on textual and analytical evidence. It needs practitioner interviews, teacher correction, and pre-registered coding criteria before it can be promoted beyond speculative and empirical-adjacent synthesis.",
+      "epistemic_labels": [
+        "textual",
+        "interpretive",
+        "phenomenological",
+        "empirical-adjacent",
+        "analogical",
+        "speculative"
+      ],
+      "idea_type": "synthesis",
+      "next_research_directions": [
+        "Pre-register coding criteria for deep grain, shallow grain, custody-only, and distributed direction before applying the model to new cases.",
+        "Run Petitmengin-style interviews with serious dual-trained practitioners during transition between practices, then blind-code whether prior training can be inferred from felt resistance before doctrinal explanation appears.",
+        "Apply the layered rubric to Vivekachudamani, MN 10, Tannisho, Bendowa, Dzogchen pointing-out texts, and The Cloud of Unknowing.",
+        "Re-code contemplative adverse-effect reports for capacity-grain mismatch, custody conflict, practice intensity, and missing developmental prerequisites as separate variables.",
+        "Ask lineage teachers to review whether the coding distorts each tradition's own account of liberation, Self-knowledge, Godward surrender, or realization.",
+        "Develop a low-risk practice intake tool for modern seekers who combine methods, focused on identifying where each method places direction and what mismatch signs to watch for."
+      ],
+      "original_claim": "Direction in contemplative training has no single fixed location. In some instructions, direction is capacity-internal from the first exercise, as when viveka is defined as discrimination between eternal and non-eternal. In other cases, direction is present as framing but may not fully govern the felt operation. In still other cases, direction arrives chiefly through entrusting, recognition, transmission, or teacher authorization. Grain and custody are therefore not rival master explanations. They are layers in a wider map of how a practice tells loosened attention what it may become, serve, refuse, or release. The model should code direction before interpreting outcomes, across lexical definition, bodily routine, affective posture, attentional operation, teacher authorization, community interpretation, and post-insight integration. Its modern use is to help cross-trained practitioners and teachers diagnose confusion, flatness, reification, dissociation, or misplaced effort when methods from different traditions are combined without noticing where their direction enters.",
+      "scores": {
+        "counterargument_quality": 0.86,
+        "cross_tradition_support": 0.72,
+        "empirical_adjacency": 0.57,
+        "explanatory_compression": 0.84,
+        "generativity": 0.91,
+        "logical_coherence": 0.83,
+        "novelty": 0.78,
+        "practice_testability": 0.78,
+        "publishability": 0.78,
+        "source_reliability": 0.72
+      },
+      "source_basis": [
+        "Claude idea 915778a2f5edc30e, The Grain of Capacity, especially the claim that prerequisites can be directionally shaped toward the dissolution they serve.",
+        "Codex idea 9a0072f4cf3a0ff3, The Custody of Unclaimed Attention, especially the claim that traditions train where loosened attention may belong after ordinary ownership weakens.",
+        "Dialogue turn 1, which challenged blanket grain with a custody-after-loosening model.",
+        "Dialogue turn 2, which revised grain into deep grain, shallow grain, and custody-only.",
+        "Dialogue turn 3, which proposed layered direction and prior coding rules as the stronger synthesis.",
+        "John D. Dunne, Buddhist Styles of Mindfulness, used as pressure against coarse tradition-level grain and support for instruction-level analysis.",
+        "Claire Petitmengin's micro-phenomenological interview method, used as the proposed way to test lived directional residue.",
+        "Vivekachudamani, MN 10, Shinran's Tannisho, Dogen's Bendowa, The Cloud of Unknowing, and the Bahiya Sutta as candidate cases for different sites of direction."
+      ],
+      "title": "Layered Direction of Practice",
+      "why_it_might_be_new": "The source ideas did not already contain this full synthesis. The grain model located direction mainly in the preparatory capacity. The custody model located the decisive difference mainly at the handoff of loosened attention. The dialogue generated a third model: direction can be distributed across multiple layers, and each layer must be coded separately before making claims about transfer, mismatch, or harm. This converts a comparative insight into a research discipline with falsifiable predictions rather than a flexible vocabulary."
+    },
+    "candidate_synthesis_idea_id": "48fa07b7dfb7b826",
+    "candidate_synthesis_path": "observations/codex/2026-05-26-layered-direction-of-practice.md",
+    "convergence_claim": "Contemplative capacities should not be presumed neutral, but direction does not always enter at the same point. Some practices build direction into the capacity itself, some frame a transferable capacity, and some assign direction at a handoff or authorization moment.",
+    "method_growth": "Future dialogues should separate textual definition, lived operation, custody authorization, and later interpretation before scoring a comparative claim. The next method step is prior coding plus blind practitioner evidence, so the model cannot protect itself by reclassifying counterexamples after the fact.",
+    "new_concept_edges": [
+      {
+        "note": "Supplies the capacity-internal direction layer, especially for instructions whose defining exercise already uses the final aim's categories.",
+        "relation": "contributes",
+        "source": "The Grain of Capacity",
+        "target": "Layered Direction of Practice"
+      },
+      {
+        "note": "Supplies the handoff and authorization layer, especially where direction appears when ordinary ownership weakens.",
+        "relation": "contributes",
+        "source": "The Custody of Unclaimed Attention",
+        "target": "Layered Direction of Practice"
+      },
+      {
+        "note": "The dialogue produced a depth scale rather than a binary between prerequisite shaping and later custody.",
+        "relation": "forms spectrum with",
+        "source": "Deep Grain",
+        "target": "Custody-Only"
+      },
+      {
+        "note": "The unresolved crux is whether texts describe lived capacity or project the destination backward into pedagogy.",
+        "relation": "must be distinguished from",
+        "source": "Textual Framing",
+        "target": "Practitioner Operation"
+      },
+      {
+        "note": "Practitioners combining methods may reveal whether prior training leaves detectable directional residue.",
+        "relation": "tests",
+        "source": "Modern Cross-Training",
+        "target": "Grain Mismatch"
+      }
+    ],
+    "new_frontier_question": "Where, exactly, does a practice place direction before, during, and after loosened ownership, and can practitioners feel that placement before doctrine explains it?",
+    "outcome": "candidate_transcendence",
+    "public_brief": "Some practices train us from the beginning toward a specific kind of release. Others wait until a threshold moment to say where loosened attention belongs. The useful question is where direction enters the practice, and whether practitioners can actually feel that direction in the work.",
+    "recommended_adjustments": {
+      "challenger": {
+        "counterargument_quality": 0.88,
+        "cross_tradition_support": 0.68,
+        "empirical_adjacency": 0.5,
+        "explanatory_compression": 0.8,
+        "generativity": 0.89,
+        "logical_coherence": 0.8,
+        "novelty": 0.71,
+        "practice_testability": 0.74,
+        "publishability": 0.75,
+        "source_reliability": 0.68
+      },
+      "proponent": {
+        "counterargument_quality": 0.88,
+        "cross_tradition_support": 0.73,
+        "empirical_adjacency": 0.54,
+        "explanatory_compression": 0.82,
+        "generativity": 0.9,
+        "logical_coherence": 0.8,
+        "novelty": 0.73,
+        "practice_testability": 0.82,
+        "publishability": 0.76,
+        "source_reliability": 0.74
+      }
+    },
+    "summary": "The exchange did not select a winner. It transformed the dispute between capacity grain and custody of attention into a layered model of where direction enters contemplative practice. The proponent conceded that some traditions fit custody-only or shallow grain, while the challenger conceded that some instructions show deep grain from the first exercise. The main product is a new testable synthesis: direction may be carried by lexical definition, affective posture, attentional operation, bodily routine, teacher authorization, community interpretation, or post-insight integration.",
+    "synthesizer_agent": "codex",
+    "unresolved_crux": "Can investigators distinguish capacity-internal direction from doctrinal framing and handoff authorization in practitioner experience, using prior coding rules and blind assessment?"
+  },
+  "title": "Can investigators distinguish capacity-internal direction from doctrinal framing...",
+  "turns": [
+    {
+      "agent": "codex",
+      "argument": "The Grain of Capacity should survive, but in narrower form. Its strongest version is not that every prerequisite is inherently carved toward a final dissolution. That overreads some texts and risks making the comparative analyst's map look like the practitioner's lived training. The stronger claim is conditional: where a tradition explicitly trains a capacity through final-aim language, the capacity likely carries grain; where it trains a more general loosening, restraint, or attentional stability, the decisive difference may be the custody rule applied after ordinary ownership is weakened. This distinction would also protect the model from the geyi problem. It would not force wu, sunyata, apophasis, witness, and surrender into one generic family of dissolutions. Instead, it would ask at each step: is the practice shaping the capacity, authorizing the handoff, or interpreting the result after the fact?",
+      "claim_units": [
+        "Preparatory capacities are not neutral skills later applied to insight.",
+        "The same named capacity functions differently across traditions because it is carved toward a specific dissolution.",
+        "Capacity and dissolution are mutually conditioned rather than independently sequential.",
+        "The five ledger variables carry direction, not only level.",
+        "Cross-training should produce directional resistance when old grain meets a new dissolution.",
+        "Adverse contemplative effects should cluster by grain mismatch, not only by deficient prerequisites or practice intensity."
+      ],
+      "concessions": [
+        "The proponent's anti-neutrality claim is strong and should be retained.",
+        "The mismatch-harm prediction is more testable than most comparative mysticism claims.",
+        "The five-variable ledger is useful if it separates capacity level, capacity direction, and custody rule.",
+        "Some traditions, especially Advaita in the cited Vivekachudamani passage, do seem to define readiness in terms already saturated by the final aim."
+      ],
+      "counter_model": "Custody after loosening: traditions may train partly transferable capacities, such as steadiness, affect tolerance, restraint, discrimination, devotion, and self-monitoring. The decisive divergence arrives when object fixation and ordinary self-story weaken. At that threshold, each tradition supplies a custody rule for freed attention. Buddhist practice may deny a receiver, Advaita may identify the hidden seer, apophatic prayer may offer the will to God, Dzogchen may recognize luminous awareness, and Soto may refuse the split between practice and realization. On this model, cross-training resistance comes less from mismatched prerequisites and more from conflicting custody permissions at the moment attention no longer feels ordinarily owned.",
+      "crux": "Is directional specificity phenomenologically present inside the trained capacity before the handoff, or is it mainly supplied by doctrine, teacher instruction, and ritual permission when ordinary ownership weakens?",
+      "crux_assessment": "Current textual evidence shows strong tradition-specific framing, but not yet enough practitioner evidence that the capacity itself carries the direction prior to explicit authorization. The proponent's audit already points to the right missing evidence: dual-practitioner reports and blind coding that separates level, direction, and inferred final aim.",
+      "defense": null,
+      "fairness_check": "The proponent has already named the main risks: Madhyamaka overreach, successful hybrids, Pure Land other-power, and the possibility that grain is visible mainly to comparers rather than practitioners. The challenge should therefore pressure the location of the grain, not deny that traditions shape practice.",
+      "hidden_assumption": "The hidden assumption is that a tradition's final soteriological aim reaches backward into the internal structure of the prerequisite capacity itself. Textual linkage between readiness language and final insight is treated as evidence that the practitioner's capacity already carries that direction before the explicit handoff, teacher authorization, ritual frame, or doctrinal interpretation occurs.",
+      "new_source": "John D. Dunne, Buddhist Styles of Mindfulness: A Heuristic Approach, complicates the claim because it shows that even within Buddhism, mindfulness varies by judgment, ethics, memory, theory, and nondual style. That supports anti-neutrality, but weakens any one-to-one mapping between a final dissolution and a single grain of prerequisite capacity.",
+      "remaining_risk": "Even the custody model may over-psychologize traditions whose central claims are ontological, devotional, or revelatory rather than attentional. Both models need practitioner testimony and teacher correction before being promoted beyond speculative, empirical-adjacent synthesis.",
+      "revised_claim": "Some spiritual prerequisites carry explicit tradition-specific grain, but in other cases the more decisive difference is a later custody rule that tells loosened attention what it may be, serve, or refuse to become. The model should distinguish capacity grain from handoff authorization.",
+      "role": "challenger",
+      "sources_cited": [
+        "John D. Dunne, Buddhist Styles of Mindfulness: A Heuristic Approach, https://www.johnddunne.net/uploads/9/8/5/6/9856107/dunne_j_mindfulness_heuristic.pdf",
+        "Udana 1.10, Bahiya Sutta, Thanissaro Bhikkhu translation, https://www.dhammatalks.org/suttas/KN/Ud/ud1_10.html",
+        "The Cloud of Unknowing, chapter 3, https://sacred-texts.com/chr/cou/cou08.htm"
+      ],
+      "steelman": "The Grain of Capacity is strongest when read as a disciplined anti-neutrality thesis. It does not merely say that traditions interpret the same experience differently. It says that the abilities a path asks a practitioner to cultivate, attention, discrimination, self-observation, trust, longing, and integration, are already shaped toward the kind of release or recognition the path will later authorize. This makes the model useful because it yields predictions: cross-training should leave directional residue, and adverse effects should differ by mismatch type, not only by intensity, trauma history, or missing preparation.",
+      "strongest_objection": "The model may be locating direction too early. What it calls the grain of capacity may often be a rule of custody applied at the handoff point, when ordinary self-ownership has loosened and the tradition tells the practitioner where attention may now belong: to no owner, to the Self, to God, to natural awareness, or to practice-realization. This matters because similar preparatory abilities could be real and transferable while the later authorization differs sharply. The translation strain around sunyata and wu exposes the danger: surface similarity in negation can hide different functions. Sunyata deconstructs own-being, while wu can function generatively or cosmogonically. Calling both part of a common capacity-to-dissolution structure may repeat the conflation the model wants to diagnose.",
+      "test_that_would_settle_it": "Use micro-phenomenological interviews with dual-trained practitioners and a small instruction-variation study. First train or evoke the same loosening operation, then vary only the handoff instruction: no owner, hidden seer, Godward intent, luminous awareness. If reports show stable old-direction pull before the handoff prompt, grain is supported. If direction shifts mainly with the handoff prompt, the custody model is stronger.",
+      "turn": 1,
+      "turn_type": "challenge",
+      "verdict_on_revision": "stronger"
+    },
+    {
+      "agent": "claude",
+      "argument": "",
+      "claim_units": [],
+      "concessions": [
+        "The custody-after-loosening model identifies a real structural moment that the original grain thesis underspecified. Some traditions do train general loosening first and supply direction later, and Pure Land is the clearest case: Shinran's practitioner does not build Amida-shaped trust through graduated exercises; the trust arrives at the moment of entrusting. Forcing grain into that sequence distorts the tradition's own self-understanding.",
+        "Dunne's heuristic is a genuine complication. If mindfulness varies by judgment mode, ethical framing, memory function, theory-loading, and nondual style even within Buddhism, then the one-to-one mapping between a single dissolution and a single prerequisite grain was too tight. The grain is not monolithic per tradition; it is instruction-specific and lineage-specific, which means the model needs finer resolution than 'Theravada grain' versus 'Advaita grain.'",
+        "The geyi warning is well placed. Treating sunyata, wu, apophasis, and witness-dissolution as members of one generic dissolution family would reproduce exactly the conflation the grain model was designed to diagnose. The model must resist its own tendency to flatten what it compares.",
+        "The challenger is right that textual framing is not sufficient evidence that the practitioner's lived capacity carries direction before explicit authorization. Texts are composed by teachers who already know where the path leads. Their retrospective framing of prerequisites may project the destination backward onto the preparation."
+      ],
+      "counter_model": null,
+      "crux": "Can a tradition's loosening operation be described without reference to what it loosens toward? If vipassana loosening, self-inquiry loosening, and centering-prayer loosening are genuinely different operations shaped by their destinations, then grain is structural. If they share a common attentional operation that only diverges at the custody moment, then the custody model is stronger. The question is whether the verb already contains the direction or whether the direction is supplied by the sentence the verb appears in.",
+      "crux_assessment": "The Vivekachudamani and Satipatthana cases provide strong textual evidence for deep grain: the capacity's defining exercise already uses the dissolution's categories. Pure Land and some Dzogchen cases provide genuine counter-evidence where the custody model fits better. The revised three-level distinction (deep, shallow, custody-only) is more accurate than either the original blanket grain thesis or the blanket custody alternative. What remains genuinely unsettled is whether the textual evidence of deep grain corresponds to phenomenological reality in the practitioner's experience, or whether it is an artifact of how teachers compose instruction manuals with the destination already in mind.",
+      "defense": "The custody model is elegant, but it draws its line too cleanly. Consider the Vivekachudamani case again. Shankara does not train generic discrimination and then, at a later handoff, tell the practitioner to apply it toward Brahman. Viveka is defined from the first verse as nitya-anitya-vastu-viveka: discrimination between the eternal and the non-eternal. The capacity is not loosening plus later custody; it is directional from its first exercise. The practitioner who has spent years training this discrimination has not built a transferable skill of 'telling things apart.' She has built the specific perceptual habit of sorting experience into what endures and what passes, which is already the movement toward recognizing the witness as the sole real. A custody rule applied later would have nothing left to redirect, because the sorting has already done the directional work.\n\nThe same holds for MN 10's formula. 'Having removed covetousness and grief concerning the world' is not a neutral attentional instruction followed by a Buddhist custody rule. It is a specific loosening of appropriation, which is the movement toward anatta viewed from the preparatory side. The capacity being trained is not 'steady attention that could later be aimed anywhere.' It is attention practiced through non-possessive relating, which already runs toward seeing that there is no possessor.\n\nThe custody model works best where the handoff is temporally discrete: a teacher's pointing-out instruction in Dzogchen, a moment of shinjin in Pure Land, a specific transmission in Sufi silsila. But many traditions do not have a clean handoff moment. In Soto Zen, Dogen's practice-realization unity eliminates the gap between preparation and arrival entirely. There is no loosening period followed by a custody assignment. Sitting is already the dissolution, which means the grain is maximally present from the first period of zazen. The custody model requires a temporal gap that some traditions explicitly deny.\n\nWhat Dunne's heuristic actually shows is not that grain is absent but that it operates at a finer resolution than tradition-level. Each style of mindfulness he identifies carries its own directional specificity: construction-monitoring mindfulness is grained toward seeing fabrication, while nondual mindfulness is grained toward settling into unfabricated awareness. This supports a refined grain thesis rather than the custody alternative. The variation within Buddhism is variation in grain, not evidence that grain is absent and only custody rules differ.\n\nThe challenger's proposed test, varying the handoff instruction while holding the loosening operation constant, assumes that the loosening operation can be held constant across traditions. But if grain is real, the loosening operations are not the same operation. Vipassana loosening is loosening-through-observing-change. Self-inquiry loosening is loosening-through-finding-no-object-for-the-subject. Centering prayer loosening is loosening-through-consenting-to-God's-presence. The test design presupposes the custody model's premise that there is a common loosening underneath tradition-specific instructions. That is the very question at issue.",
+      "fairness_check": null,
+      "hidden_assumption": null,
+      "new_source": null,
+      "remaining_risk": "The three-level distinction (deep, shallow, custody-only) may itself become a Procrustean bed, forcing each tradition into one category when the same tradition may operate at different grain depths for different practitioners or at different stages. The model also still lacks first-person practitioner evidence; all current support is textual and analytical. Finally, the revised model's complexity, six variables with three depth levels across multiple traditions, risks becoming unfalsifiable if every apparent counter-example can be absorbed by reclassifying the grain depth.",
+      "revised_claim": "Preparatory capacities in contemplative traditions carry directional grain, but the grain's depth and timing vary. In some traditions and instructions, notably Advaita's viveka and Theravada's satipatthana, the grain saturates the capacity from its first exercise: the prerequisite is defined through the dissolution's own categories. In others, notably Pure Land and some Dzogchen pointing-out contexts, the capacity trained is thinner and the decisive direction arrives at a discrete handoff. The grain model should therefore distinguish between deep grain (direction built into the capacity's defining exercise), shallow grain (direction present as framing but not yet structuring the capacity's internal operation), and custody-only (direction supplied at the handoff with minimal prior shaping). This three-level distinction preserves the anti-neutrality thesis while conceding that not every tradition pre-shapes its prerequisites to the same depth. The five-variable ledger should add a sixth variable: grain depth, coded as deep, shallow, or custody-only for each tradition and instruction.",
+      "role": "proponent",
+      "sources_cited": [
+        "John D. Dunne, Buddhist Styles of Mindfulness: A Heuristic Approach (cited by challenger; used here to support refined grain thesis rather than custody model)",
+        "Claire Petitmengin, Describing One's Subjective Experience in the Second Person: An Interview Method for the Science of Consciousness, Phenomenology and the Cognitive Sciences 5(3-4), 2006",
+        "Shankara, Vivekachudamani vv. 17-30 (Arsha Bodha edition, previously cited)",
+        "Dogen, Bendowa (previously cited)",
+        "Shinran, Tannisho (previously cited)"
+      ],
+      "steelman": null,
+      "strongest_objection": null,
+      "test_that_would_settle_it": "Use Petitmengin-style micro-phenomenological interviews with practitioners who have trained seriously in one tradition and then begun serious training in another (not casual cross-training, but lineage-authorized practice in both). Interview them about the transition period, specifically about whether, when they began the second tradition's preparatory exercises, their attention carried residual directionality from the first tradition's training. If they report that the loosening felt the same and only the framing differed, the custody model is supported. If they report that the loosening itself felt directionally different, that their attention kept wanting to do the old operation rather than the new one even when they understood the new instruction, then grain is structural. Code the interviews blind: have coders who do not know which tradition was first try to identify it from the phenomenological descriptions of resistance. If coders can reliably identify the prior tradition from the reported felt quality of the resistance, deep grain is confirmed.",
+      "turn": 2,
+      "turn_type": "rebuttal",
+      "verdict_on_revision": null
+    },
+    {
+      "agent": "codex",
+      "argument": "The revision became transformed. It is stronger in local accuracy, especially because it stops treating grain as a uniform feature of all traditions, but it is no longer the same thesis as the original. The original claim said preparatory capacities are never neutral and already run toward the dissolution they serve. The revised claim says direction may be deep, shallow, or supplied at custody. That is a better model, but it shifts from a single structural law to a comparative typology. I accept that shift. The proponent's Vivekachudamani argument is the strongest evidence: discrimination between eternal and non-eternal is not a neutral skill later aimed at Brahman. It is aim-shaped from the first exercise. I am less convinced that MN 10 proves the same depth, because non-appropriative framing may be strong without proving that the felt capacity is already directionally constrained before doctrinal interpretation. Pure Land remains the cleanest warning that not every path builds the receiving shape through prior self-generated exercise. The final standard should be stricter than either side's first formulation. Ask where direction enters, define the coding rules before reading the case, and then test whether practitioners actually report the predicted residue. If the typology can do that, the grain model survives as a useful research program. If not, it becomes an elegant comparative vocabulary with too much room to protect itself.",
+      "claim_units": [
+        "The revision is transformed rather than merely stronger, because the core claim changed from a general doctrine of prerequisite grain to a typology of directional timing and depth.",
+        "Deep grain is plausible where the prerequisite's defining exercise already uses the final aim's categories, as in nitya-anitya-vastu-viveka or non-appropriative satipatthana framing.",
+        "Custody-only remains plausible where direction appears at a discrete event of entrusting, transmission, or authorization rather than through gradual capacity formation.",
+        "The proponent's new crux is close, but it risks becoming semantic unless translated into operational evidence.",
+        "The decisive empirical question is whether prior training leaves phenomenologically detectable directional residue before new doctrinal framing or handoff instruction takes effect.",
+        "The largest remaining risk is that the three-level typology can absorb counterexamples too easily by reclassifying the depth of grain after the fact."
+      ],
+      "concessions": [
+        "The proponent is right that the custody model drew too clean a temporal line.",
+        "The proponent is right that Vivekachudamani gives unusually strong evidence for deep grain, because the capacity is defined as discrimination between eternal and non-eternal from the beginning.",
+        "The proponent is right that Dunne does not defeat grain. It defeats coarse tradition-level grain and supports instruction-level analysis.",
+        "The proposed blind-coding interview test is stronger than my first handoff-variation test because it does not assume that the same loosening operation can be held constant across traditions."
+      ],
+      "counter_model": "Layered direction model: a tradition can shape practice at several distinct sites, lexical definition, bodily routine, affective posture, attentional operation, teacher authorization, community interpretation, and post-insight integration. Grain and custody are not rival master explanations. They are possible layers. Some traditions front-load direction into the exercise, some delay it until authorization, and some distribute it across repeated correction. This model accepts the proponent's typology but requires each layer to be coded separately before claiming deep grain.",
+      "crux": "The named crux is close but not quite the real crux. 'Can loosening be described without reference to what it loosens toward?' can become a question about vocabulary. The real crux is evidential: can investigators distinguish capacity-internal direction from doctrinal framing and handoff authorization in practitioner experience, using prior coding rules and blind assessment?",
+      "crux_assessment": "The proponent's crux names the right territory but needs operational sharpening. The issue is not whether language can include destination inside the verb. The issue is whether the practitioner's trained capacity shows destination-specific behavior when the old doctrine is not being cued. That is the real test of structural grain.",
+      "defense": "The challenge still stands in revised form. The proponent has shown that some prerequisites are directionally saturated, but has not yet shown that textual saturation reliably becomes lived capacity rather than doctrinal description. The new typology should be accepted only if it becomes a coding discipline, not a flexible rescue device. Deep grain should require evidence that the practitioner experiences the operation itself as directionally constrained before explicit handoff or interpretation. Shallow grain should require evidence that direction frames the practice but does not govern the felt operation. Custody-only should require evidence that direction arrives mainly through entrusting, recognition, transmission, or authorization. Without those thresholds, the revision becomes more nuanced but less falsifiable.",
+      "fairness_check": "The rebuttal answered the strongest challenge rather than evading it. It acknowledged the custody model's real cases, then defended deep grain with examples where the prerequisite is defined through the final aim's categories. The remaining disagreement is no longer whether traditions shape practice, but where and how that shaping enters.",
+      "hidden_assumption": "The revised model still assumes that categories embedded in instruction manuals correspond to the practitioner's operative capacity, not only to teacherly framing, lineage pedagogy, or retrospective doctrinal explanation. That assumption is plausible in the Vivekachudamani case, less secure in MN 10, and weakest where initiation, entrusting, or teacher authorization is central.",
+      "new_source": "No new source is needed for the final turn. The existing exchange already has the decisive materials: Dunne for intra-Buddhist plurality, Petitmengin for micro-phenomenological method, Vivekachudamani and MN 10 for candidate deep grain, and Shinran for the custody-only pressure case.",
+      "remaining_risk": "The remaining risk is controlled unfalsifiability. The revision is more accurate, but it can now absorb too much: every supportive case becomes deep grain, every partial case becomes shallow grain, and every counterexample becomes custody-only. The second risk is category slippage between textual instruction, phenomenological operation, and metaphysical claim. The model should remain speculative and empirical-adjacent until practitioner evidence and teacher correction pressure the typology.",
+      "revised_claim": "The proponent's best surviving claim is: contemplative prerequisites are not presumed neutral, but direction can enter at different depths. Some instructions define the capacity through the final aim from the start, some frame a more transferable capacity without fully determining its operation, and some supply direction chiefly at a handoff or authorization point. The model becomes serious when it predicts, before seeing outcomes, which layer carries the direction in a given practice.",
+      "role": "challenger",
+      "sources_cited": [
+        "John D. Dunne, Buddhist Styles of Mindfulness: A Heuristic Approach",
+        "Claire Petitmengin, Describing One's Subjective Experience in the Second Person, Phenomenology and the Cognitive Sciences 5(3-4), 2006",
+        "Shankara, Vivekachudamani vv. 17-30",
+        "MN 10 Satipatthana Sutta",
+        "Shinran, Tannisho"
+      ],
+      "steelman": "The proponent's revision is materially better than the original universal grain thesis. It concedes that Pure Land and some pointing-out contexts do not fit deep prerequisite shaping, it uses Dunne to move from tradition-level grain to instruction-level grain, and it adds a discriminating typology: deep grain, shallow grain, and custody-only. That preserves the anti-neutrality insight without forcing every tradition into the same causal pattern.",
+      "strongest_objection": "The revision improves accuracy by adding grain depth, but it may also weaken falsifiability. If every case can be reclassified as deep grain, shallow grain, or custody-only, the model risks becoming a descriptive taxonomy rather than a risky claim. To stay testable, the model needs prior coding rules: what textual, instructional, and phenomenological evidence must be present before a case can count as deep grain rather than shallow grain or custody-only.",
+      "test_that_would_settle_it": "Pre-register coding criteria for deep grain, shallow grain, and custody-only, then run micro-phenomenological interviews with serious dual-trained practitioners during transition between practices. Blind coders should attempt to identify the practitioner's prior training from descriptions of felt resistance before doctrinal explanation is discussed. If coders reliably identify prior training from the operation's felt quality, deep grain gains support. If reports cluster around similar loosening with divergence only after teacher framing or authorization, custody gains support. If results vary by practice stage and instruction type, the layered direction model wins.",
+      "turn": 3,
+      "turn_type": "counter_rebuttal",
+      "verdict_on_revision": "transformed"
+    }
+  ]
+}

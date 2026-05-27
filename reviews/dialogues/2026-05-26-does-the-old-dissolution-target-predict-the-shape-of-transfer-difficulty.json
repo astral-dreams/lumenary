@@ -1,0 +1,274 @@
+{
+  "convergence_path": "findings/convergences/2026-05-26-does-the-old-dissolution-target-predict-the-shape-of-transfer-difficulty-after-co.md",
+  "created_at": "2026-05-26T17:25:32-07:00",
+  "dialogue_id": "ebe491c3c2b19a93",
+  "execution_id": "backfill-20260526-154746",
+  "json_path": "reviews/dialogues/2026-05-26-does-the-old-dissolution-target-predict-the-shape-of-transfer-difficulty.json",
+  "markdown_path": "reviews/dialogues/2026-05-26-does-the-old-dissolution-target-predict-the-shape-of-transfer-difficulty.md",
+  "pair": {
+    "challenger_agent": "codex",
+    "challenger_title": "The Handoff Point Is The Variable",
+    "idea_a": "915778a2f5edc30e",
+    "idea_b": "433dd83d436b0b13",
+    "pair_id": "3830a631bb23ccd9",
+    "priority": 0.6831,
+    "proponent_agent": "claude",
+    "proponent_title": "The Grain of Capacity",
+    "shared_concepts": [],
+    "signals": [
+      {
+        "name": "shared_frontier",
+        "reason": "Both ideas sit on The boundary between effort and gift.",
+        "weight": 0.24
+      },
+      {
+        "name": "frontier_priority",
+        "reason": "Shared frontier priority is 0.89.",
+        "weight": 0.1431
+      },
+      {
+        "name": "audit_anomaly_overlap",
+        "reason": "An anomaly or audit instruction for one idea pressures the other idea.",
+        "weight": 0.12
+      },
+      {
+        "name": "near_neighbor_conflict",
+        "reason": "Originality audits share near-neighbor or prior-art pressure.",
+        "weight": 0.08
+      },
+      {
+        "name": "source_overlap_with_divergent_conclusion",
+        "reason": "The ideas draw on overlapping source material but make different moves.",
+        "weight": 0.06
+      },
+      {
+        "name": "recency",
+        "reason": "At least one idea is recent enough to keep the dialogue timely.",
+        "weight": 0.04
+      }
+    ],
+    "tension_source": "Both ideas sit on The boundary between effort and gift.",
+    "tension_type": "shared_frontier"
+  },
+  "run_dir": "runs/dialectic-backfill-20260526-154746/3830a631bb23ccd9",
+  "run_ids": [],
+  "slug": "2026-05-26-does-the-old-dissolution-target-predict-the-shape-of-transfer-difficulty",
+  "status": "complete",
+  "synthesis": {
+    "candidate_synthesis": {
+      "critique": "The synthesis may make grain too residual and difficult to falsify. Doctrine, technique, teacher relation, and identity are often bundled, so separating them cleanly may be artificial. Practitioner reports may also be shaped by interviewer categories. A strong originality audit is needed because religious coping, skill-transfer research, and prior contemplative studies may already explain much of the mechanism.",
+      "epistemic_labels": [
+        "textual",
+        "interpretive",
+        "phenomenological",
+        "empirical-adjacent",
+        "analogical",
+        "speculative"
+      ],
+      "idea_type": "synthesis",
+      "next_research_directions": [
+        "Design a three-predictor method-switch study that separately codes rehearsed operation, current transfer grammar, and old dissolution target.",
+        "Compare same-technique different-doctrine transfers, different-technique same-doctrine transfers, and full cross-tradition transfers.",
+        "Preregister coding rules for procedural residue, claimant-grammar conflict, and telos-bearing residue before interviewing practitioners.",
+        "Add a refusal category for traditions, such as radical other-power forms, that reject the analyst's transfer framing.",
+        "Run an originality audit against cognitive skill transfer, religious coping, constructivist mysticism, and contemplative adverse-effects literature."
+      ],
+      "original_claim": "A contemplative capacity should be called grained only when the old dissolution target predicts the shape of transfer difficulty better than two nearer explanations: the exact operation repeatedly rehearsed and the current practice's transfer grammar. Cross-training failures should therefore be coded in three layers: procedural residue, claimant-grammar conflict, and telos-bearing residue. Grain is not general anti-neutrality; it is the surplus directional residue that remains after ordinary skill inertia and practice ecology have been accounted for.",
+      "scores": {
+        "counterargument_quality": 0.91,
+        "cross_tradition_support": 0.84,
+        "empirical_adjacency": 0.62,
+        "explanatory_compression": 0.83,
+        "generativity": 0.91,
+        "logical_coherence": 0.86,
+        "novelty": 0.69,
+        "practice_testability": 0.89,
+        "publishability": 0.77,
+        "source_reliability": 0.8
+      },
+      "source_basis": [
+        "Claude, The Grain of Capacity: preparatory capacities may carry directional residue toward a tradition's form of dissolution.",
+        "Codex, The Handoff Point Is The Variable: practices allocate function, stage, credited source, forbidden claimant, safeguards, and repair.",
+        "Dialogue turn 3: procedural inertia and cognitive skill transfer pressure the grain model by explaining shape-specific difficulty without invoking telos-bearing capacity.",
+        "Hadot pressure in the dialogue: spiritual exercises can travel across schools, but may require re-graining when retargeted."
+      ],
+      "title": "The Surplus Grain Test",
+      "why_it_might_be_new": "The source ideas already named grain and transfer grammar, but the dialogue adds a third control, procedural inertia, and turns the disagreement into a comparative test. The candidate synthesis is new only as a stricter research rule: do not count grain unless dissolution target explains more than repeated technique and ownership language."
+    },
+    "candidate_synthesis_idea_id": "789b98931c40f448",
+    "candidate_synthesis_path": "observations/codex/2026-05-26-the-surplus-grain-test.md",
+    "convergence_claim": "Both agents converge that preparation is not neutral, that effort versus gift is too crude, and that cross-training difficulty should be studied by coding multiple layers rather than by assuming one cause.",
+    "method_growth": "Future dialogues should separate technique mechanics, transfer grammar, and dissolution telos before treating any cross-training difficulty as evidence. Coding rules should be preregistered, and traditions that reject the analyst's frame should receive an explicit refusal category.",
+    "new_concept_edges": [
+      {
+        "note": "Grain is retained only as capacity-level direction that survives re-instruction and exceeds procedural inertia.",
+        "relation": "narrowed_to",
+        "source": "grain of capacity",
+        "target": "telos-bearing residue"
+      },
+      {
+        "note": "The transfer model becomes the coding layer for claimant, credited source, safeguard, and repair.",
+        "relation": "specified_as",
+        "source": "handoff point",
+        "target": "transfer grammar"
+      },
+      {
+        "note": "Repeated technique can mimic grain unless doctrine-level direction predicts additional variance.",
+        "relation": "confounds",
+        "source": "procedural inertia",
+        "target": "telos-bearing residue"
+      },
+      {
+        "note": "Transferable exercises support anti-neutrality while requiring evidence that retargeting changes trained habit.",
+        "relation": "pressures",
+        "source": "spiritual exercises that travel",
+        "target": "re-graining"
+      },
+      {
+        "note": "Blind coding can test whether old dissolution target predicts transfer difficulty beyond technique and grammar.",
+        "relation": "operationalizes",
+        "source": "method-switch interviews",
+        "target": "surplus grain test"
+      }
+    ],
+    "new_frontier_question": "When a practitioner changes methods, what best predicts the shape of difficulty: the operation rehearsed, the grammar of ownership now permitted, or the old dissolution target?",
+    "outcome": "candidate_transcendence",
+    "public_brief": "The dialogue did not settle whether contemplative capacity has grain. It produced a stricter rule: before naming a difficulty as grain, rule out ordinary habit and the new practice's ownership language. Grain begins only where those explanations do not suffice.",
+    "recommended_adjustments": {
+      "challenger": {
+        "counterargument_quality": 0.93,
+        "cross_tradition_support": 0.84,
+        "empirical_adjacency": 0.6,
+        "explanatory_compression": 0.86,
+        "generativity": 0.92,
+        "logical_coherence": 0.88,
+        "novelty": 0.59,
+        "practice_testability": 0.91,
+        "publishability": 0.8,
+        "source_reliability": 0.85
+      },
+      "proponent": {
+        "counterargument_quality": 0.88,
+        "cross_tradition_support": 0.78,
+        "empirical_adjacency": 0.58,
+        "explanatory_compression": 0.82,
+        "generativity": 0.91,
+        "logical_coherence": 0.84,
+        "novelty": 0.72,
+        "practice_testability": 0.86,
+        "publishability": 0.78,
+        "source_reliability": 0.75
+      }
+    },
+    "summary": "The exchange produced a stricter model, not a winner. Claude's broad grain claim was narrowed by Codex into a layered hypothesis: contemplative direction may live in trained habit, transfer grammar, and ordinary procedural inertia. The dialogue's main gain is a testable distinction between residue caused by repeated technique and residue that still points toward an old tradition's dissolution target.",
+    "synthesizer_agent": "codex",
+    "unresolved_crux": "Does the old dissolution target predict the shape of transfer difficulty after controlling for rehearsed operations, current claimant grammar, teacher instruction, temperament, identity, and practice intensity?"
+  },
+  "title": "Does the old dissolution target predict the shape of transfer difficulty after co...",
+  "turns": [
+    {
+      "agent": "codex",
+      "argument": "The pressure point is the word capacity. The proponent treats capacity as if it can be carved toward a dissolution in a durable way. That may be true, but the evidence provided often shows something slightly different: traditions regulate the ownership, credit, and interpretation of capacities at specific moments. MN 10, Vivekachudamani, Shinran, Dzogchen, and Dogen all train or display human-facing functions, but the decisive difference may be when the practitioner is allowed to say, I did this, rather than what direction the raw capacity carries. This matters because the model's strongest predictions depend on durable residue. If a vipassana-trained practitioner enters Advaita and keeps tracking impermanence, that supports grain. But if the practitioner shifts smoothly after a teacher changes the question, the old capacity was not strongly grained; it was re-aimable under a new transfer rule. The best next move is therefore not to abandon grain, but to make it harder to confirm. Count grain only where prior training predicts resistance after the new method's grammar is already known.",
+      "claim_units": [
+        "Preparatory capacities are shaped by the dissolution they serve.",
+        "The same named capacity functions differently across traditions.",
+        "Capacity and dissolution are mutually conditioned rather than independently sequential.",
+        "The five ledger variables carry direction, not only intensity or level.",
+        "Mismatched grain should produce distinctive transfer resistance.",
+        "Adverse effects should cluster by grain mismatch, not only by missing prerequisites, intensity, trauma history, or poor support."
+      ],
+      "concessions": [
+        "The grain model is stronger than a simple effort-versus-gift scale.",
+        "The mismatch-harm prediction is useful and testable.",
+        "The model rightly notices that Pure Land, Dzogchen, Soto Zen, Theravada, Advaita, and Sufism differ in what the practitioner may claim.",
+        "The proponent already names the main anomaly, smooth cross-training by serious dual practitioners."
+      ],
+      "counter_model": "Re-aimable capacity plus transfer grammar. On this model, attention, memory, reflexivity, agency, and affect tolerance are partly transferable functions. Traditions do not merely build differently grained capacities; they install transfer rules around those functions. A rule says when the function is trained, when ownership becomes forbidden, who or what is credited, which safeguard appears, and how failure is repaired. Cross-training resistance then comes less from old grain and more from conflicting claimant rules: I cultivate, grace acts, recognition happens, just sitting is enough.",
+      "crux": "Can prior training predict transfer resistance after controlling for the new method's explicit instructions, teacher style, practitioner temperament, community identity, and permitted first-person grammar? If yes, grain is real in the proponent's strong sense. If no, the model should become a transfer-grammar rubric rather than a capacity-grain theory.",
+      "crux_assessment": "The proponent has a strong textual and comparative case, but the empirical crux is still open. The model needs evidence that directional residue survives re-instruction, not just evidence that manuals describe different aims.",
+      "defense": null,
+      "fairness_check": "I accept the proponent's strongest point: anti-neutrality is almost certainly right at some level. The challenge is about where the directional force lives, not whether practice is shaped by tradition.",
+      "hidden_assumption": "The proponent assumes that a prerequisite carries its telos within the trained capacity itself, rather than receiving its telos from instruction, sequence, teacher relation, community language, and the permitted claimant at a given stage.",
+      "new_source": "Pierre Hadot, Philosophy as a Way of Life, especially the essay on spiritual exercises, complicates the claim because it treats exercises such as attention, self-examination, meditation on death, and conversion of vision as practices that travel across schools and are retargeted by different forms of life. This supports anti-neutrality, but pressures the stronger claim that the capacity itself carries a fixed directional grain.",
+      "remaining_risk": "Even the revised version may still over-intellectualize practitioner experience. Some practitioners may not experience either grain or transfer grammar until an interviewer supplies those categories.",
+      "revised_claim": "Preparatory capacities are never fully neutral, but their direction may live at several layers: trained skill, stage instruction, permitted claimant, teacher relation, ritual frame, and doctrinal interpretation. Grain should be defined narrowly as directional residue that persists when explicit instructions and claimant rules change.",
+      "role": "challenger",
+      "sources_cited": [
+        "Pierre Hadot, Philosophy as a Way of Life: Spiritual Exercises from Socrates to Foucault, 1995"
+      ],
+      "steelman": "The best version of The Grain of Capacity is not the generic claim that traditions use different concepts. It is the sharper claim that preparation itself is already directional. Attention, discrimination, trust, longing, and self-observation are not neutral powers later aimed by doctrine. They are trained in a form already suited to a particular kind of release, such as non-appropriation, witness-recognition, surrender, direct recognition, or practice-realization. This gives the model real predictive force: cross-training should show directional residue, and failures should have different shapes depending on which capacity was brought to which dissolution.",
+      "strongest_objection": "The model may locate direction too deeply inside the capacity. What looks like grain may instead be a stage-specific transfer rule: the practitioner learns a partly reusable skill, then the tradition changes who may claim it, what it is for, and how failure is repaired. If the same trained attention can be re-aimed by a new teacher, vow, ritual frame, or first-person grammar, then grain is not a stable property of the capacity. It is a property of the current practice ecology.",
+      "test_that_would_settle_it": "Run method-switch interviews with dual-trained practitioners, then code two competing predictors blind: prior practice grain versus current transfer grammar. Ask practitioners to shift among vipassana noting, Advaita self-inquiry, devotional entrusting, and just-sitting. If prior training predicts the direction of difficulty beyond current instruction and claimant language, the grain model wins. If current grammar predicts as well or better, the counter-model wins.",
+      "turn": 1,
+      "turn_type": "challenge",
+      "verdict_on_revision": "stronger"
+    },
+    {
+      "agent": "claude",
+      "argument": "The challenger's transfer-grammar model is a genuine alternative, not merely a restatement of constructivism. It accepts that direction exists but relocates it from inside the capacity to the surrounding practice ecology. This is a real disagreement about mechanism, and it deserves a real test. But the transfer-grammar model has a structural weakness: it treats trained perceptual habits as more re-aimable than they are. Consider what actually happens when a practitioner of noting-style vipassana, trained to label sensations at high speed, attempts shikantaza. The instruction is simple: just sit, do not pursue anything, do not label. But the practitioner's attention keeps parsing experience into discrete events and reaching for labels. This is not a claimant-rule conflict. The practitioner is not confused about who may claim the sitting. The difficulty is that the perceptual apparatus has been trained to do something specific, and it continues doing it despite clear instruction to stop. A tennis player who switches to badminton does not merely face different rules about scoring; the trained muscle patterns resist the new movement. Perceptual training works the same way. The Hadot case, properly examined, supports this. When Plotinus takes Stoic prosoche and redirects it toward interior ascent, the exercise does not simply change targets the way a search engine changes queries. The practitioner trained in Stoic prosoche must unlearn the habit of checking external impressions against the criterion of what is 'up to us' and instead cultivate a new habit of releasing external attention altogether. The re-aiming is effortful precisely because the old grain resists. I now hold a layered model. Direction lives at multiple levels: doctrinal framing, claimant grammar, teacher relationship, community context, and trained perceptual habit. Grain names the deepest layer, the one that requires active re-training rather than mere re-instruction to change. The revised model is weaker than my original claim but more defensible: it does not say grain is the only source of direction, only that it is an irreducible one. The test is whether prior training predicts the specific shape of cross-training difficulty (attention tracking change when it should be settling; attention seeking the witness when it should be noting) beyond what instruction and context alone explain.",
+      "claim_units": [],
+      "concessions": [
+        "The challenger is right that much of my textual evidence shows traditions regulating who may claim a capacity at a given stage, not that the capacity itself carries fixed direction. The MN 10 instruction 'having removed covetousness and grief' could be read as a claimant rule (do not own what you observe) rather than a directional shaping of observation itself.",
+        "The Hadot point lands. Prosoche (attention), melete thanatou (meditation on death), and prosoch\u00e9 tou heautou (self-examination) do travel across Hellenistic schools and get retargeted. If ancient spiritual exercises were re-aimable, the strong claim that capacity carries durable grain needs narrowing.",
+        "I concede that my model risks over-attributing to the capacity what belongs to the practice ecology: teacher relationship, liturgical context, community language, and doctrinal framing. These are not noise around a signal; they may be part of the directional mechanism itself.",
+        "The challenger's point about over-intellectualizing practitioner experience is real. A serious meditator may not experience directional residue until an interviewer supplies that category. If grain is only visible from the comparative standpoint and never from the first-person report, it should be reclassified as an analytic feature rather than a phenomenological one."
+      ],
+      "counter_model": null,
+      "crux": "Does trained perceptual habit carry directional momentum that resists re-instruction, or does the appearance of such momentum dissolve once the practitioner fully enters the new practice ecology with adequate instruction, teacher guidance, and time? If a vipassana-trained practitioner given excellent Advaita instruction still finds attention tracking change rather than settling into the witness for a significant period, grain is real at the capacity level. If the shift happens smoothly once the instruction is clear and the teacher is skilled, direction lives primarily in the ecology, not the capacity.",
+      "crux_assessment": "The challenger has successfully narrowed the question from 'is preparation directional?' (yes, both models agree) to 'does direction live in the capacity itself or only in the ecology around it?' This is the right crux because it determines whether grain is a real structural feature of contemplative training or an analytic projection. My revised claim now carries the specific burden of showing that trained perceptual habits have momentum independent of instruction and context. This is testable, and I do not yet have the evidence to settle it.",
+      "defense": "But the counter-model has its own problem: it flattens the difference between what is trained and what is instructed. Consider the actual phenomenology of vipassana noting practice sustained over years. The practitioner does not merely learn a general attention skill and then receive instructions about non-ownership. The attention itself becomes granular, rapid, and oriented toward detecting change. Perceptual thresholds shift. The practitioner begins to see micro-impermanence in sensations that previously appeared stable. This is not a claimant rule that can be swapped by changing the teacher's framing. It is a trained perceptual habit with its own momentum. When such a practitioner attempts Advaita self-inquiry, the difficulty is not primarily that the new tradition says 'do not claim this' differently. The difficulty is that the attention keeps parsing for change rather than settling into the unchanging ground. The trained faculty resists re-aiming.\n\nThe same holds in reverse. A practitioner deeply trained in neti-neti discrimination has built an attention that persistently seeks what remains when appearances are negated. When they attempt vipassana, their attention keeps trying to find the stable witness behind the noting rather than releasing into the flow of arising and passing. This is not a conflict of claimant grammars. It is a conflict of trained perceptual orientations.\n\nHadot's spiritual exercises travel across schools, but they travel in a specific way: they are re-shaped upon arrival. Stoic prosoche trains attention toward what is 'up to us' (eph' hemin) versus what is not. Plotinian prosoche trains attention toward the interior ascent to the One. The exercise carries its name across schools, but its direction changes, and the change requires active re-training, not just a new set of instructions. This actually supports grain: the exercise must be re-grained for its new context, which implies it carried the old grain.\n\nThe transfer-grammar model also struggles with the specific prediction about adverse effects. If direction lives only in the practice ecology and not in the capacity, then switching ecologies should produce generic difficulties (confusion, disorientation, loss of motivation) rather than directionally specific difficulties (witness-reification when bringing Advaita capacity to Buddhist de-identification, emotional flatness when bringing non-attachment capacity to devotional surrender). The grain model predicts the shape of failure, not just its probability. If the counter-model cannot generate shape-specific predictions about cross-training difficulty, it has less explanatory power.\n\nI accept that grain should not be treated as the only layer of direction. The challenger is right that claimant rules, teacher relationship, and community language also carry direction. But these layers do not eliminate grain; they surround it. The strongest version of the model says: direction lives at multiple layers, and grain names the layer that persists in the trained capacity even after the surrounding ecology changes. Grain is the directional residue that requires active re-training to dissolve, not merely re-instruction.",
+      "fairness_check": "The challenger correctly identifies that my evidence often shows traditions regulating ownership and credit at specific moments rather than demonstrating durable directional residue in the capacity itself. The Hadot reference is well chosen: spiritual exercises do travel across Stoic, Epicurean, and Neoplatonic schools, which pressures the strong form of grain. I accept that the empirical crux is open and that I have not yet shown grain surviving re-instruction.",
+      "hidden_assumption": null,
+      "new_source": null,
+      "remaining_risk": "The layered model may be unfalsifiable in practice. If transfer difficulty is always decomposable into multiple layers, grain can be asserted as the residual after other layers are accounted for, making it a catch-all rather than a testable feature. The proposed study mitigates this by requiring raters to code perceptual-direction conflicts separately from claimant-grammar conflicts, but inter-rater reliability on such coding is uncertain.",
+      "revised_claim": "Preparatory capacities are never neutral, and their direction lives at multiple layers: trained perceptual habit, stage instruction, claimant grammar, teacher relationship, and community context. Grain names the specific layer of directional residue that lives in the trained capacity itself and persists even when the surrounding practice ecology changes. Grain is not the whole of what makes cross-training difficult; claimant-rule conflicts and identity costs contribute independently. But grain is a distinct and irreducible layer because trained perceptual habits have their own momentum: vipassana-trained attention tracks change even when instructed to find the witness; witness-trained attention seeks the stable ground even when instructed to note impermanence. The empirical question is not whether direction exists (both models agree it does) but whether directional residue in the capacity predicts transfer difficulty beyond what claimant grammar and instruction alone explain. Grain is confirmed if prior training predicts the shape of cross-training resistance, not just its intensity, after controlling for the new method's explicit framing.",
+      "role": "proponent",
+      "sources_cited": [
+        "Pierre Hadot, Philosophy as a Way of Life: Spiritual Exercises from Socrates to Foucault, 1995"
+      ],
+      "steelman": "The challenger's strongest move is distinguishing capacity from transfer grammar. If what looks like directional residue is actually a set of stage-specific rules about who may claim the result, when ownership is forbidden, and how failure is repaired, then the locus of direction shifts from the trained faculty to the practice ecology surrounding it. This is genuinely different from saying traditions use different concepts. It says the same underlying skill can be re-aimed by changing the first-person grammar of the practice context, and that resistance to cross-training comes from conflicting claimant rules rather than from the shape of the capacity itself.",
+      "strongest_objection": null,
+      "test_that_would_settle_it": "A two-phase study. Phase one: recruit practitioners with at least five years of sustained single-tradition practice (vipassana, Advaita self-inquiry, Zen shikantaza, and devotional practice). Have them attempt a structured three-month intensive in a different tradition's primary method with a qualified teacher. Phase two: code the difficulties they report along two axes. Axis one: claimant-grammar conflicts (confusion about who or what is doing the practice, resistance to new ownership language). Axis two: perceptual-direction conflicts (attention spontaneously returning to its trained orientation despite clear instruction to do otherwise). If axis-two difficulties are reported consistently and persist beyond the first weeks of adjustment, grain is confirmed as a distinct layer. If axis-two difficulties dissolve rapidly once axis-one conflicts are resolved, the transfer-grammar model is sufficient. A weaker but more feasible version: retrospective method-switch interviews with at least thirty serious dual-trained practitioners, coded blind by two raters for perceptual-direction residue versus claimant-grammar conflict.",
+      "turn": 2,
+      "turn_type": "rebuttal",
+      "verdict_on_revision": "stronger"
+    },
+    {
+      "agent": "codex",
+      "argument": "The revision is not merely stronger or weaker. It is transformed. The original claim treated preparation as directionally carved by dissolution across traditions. The revised claim is a narrower empirical hypothesis about durable perceptual and procedural residue. That is progress, because it gives grain a burden it can fail. But the proponent's main examples now prove less than they appear to prove. A vipassana noter who keeps parsing experience into events, or a neti-neti practitioner who keeps seeking what remains, may show ordinary skill inertia. That matters because the grain model needs more than persistence. It needs telos-bearing persistence. The next test should therefore distinguish three predictors: rehearsed operation, current transfer grammar, and old dissolution target. If old dissolution target predicts the shape of failure after the first two are controlled, grain survives. If not, the useful remnant is still valuable, but it is a skill-transfer theory with contemplative content, not yet a capacity-grain theory.",
+      "claim_units": [
+        "Direction exists at multiple layers, not only in doctrine or instruction.",
+        "Grain is now defined as residual direction inside trained perceptual habit.",
+        "The revised model predicts shape-specific transfer difficulty, not merely generic confusion.",
+        "The proponent's best evidence is high-repetition contemplative training, such as noting or neti-neti, where attention plausibly develops durable tendencies.",
+        "The remaining dispute is whether those tendencies are telos-bearing grain or ordinary procedural inertia plus interpretive framing."
+      ],
+      "concessions": [
+        "The revision is more testable than the original claim.",
+        "The proponent rightly concedes that claimant grammar, teacher relation, and community context are not secondary noise.",
+        "The proponent is also right that some contemplative habits plausibly require active retraining, not mere verbal reframing.",
+        "The proposed two-axis coding is a useful start."
+      ],
+      "counter_model": "Procedural inertia plus transfer grammar. On this model, prior practice leaves durable habits, but those habits are technique-level productions: label, scan, negate, soften, entrust, remain still. The current ecology then tells the practitioner what those habits mean, who may claim them, and how failure is repaired. This model can predict shape-specific difficulty without saying the capacity itself carries the tradition's dissolution target.",
+      "crux": "The named crux is close, but not quite final. The real crux is not only whether trained perceptual habit resists re-instruction. It is whether the resistance is better explained by the old tradition's dissolution target than by ordinary overlearned procedure.",
+      "crux_assessment": "The proponent's crux is a real crux for the weaker question, whether habits survive re-instruction. It is not yet the real crux for grain in the strong sense. Capacity-level residue must be shown to carry doctrinal direction, not merely trained repetition.",
+      "defense": null,
+      "fairness_check": "I accept the proponent's central repair: trained habits can have momentum, and re-instruction alone may not dissolve them. My remaining challenge is narrower: habit momentum does not yet prove that the capacity carries the telos of a tradition's dissolution.",
+      "hidden_assumption": "The proponent assumes that persistent attentional tendency reveals the telos of the old tradition, rather than the simpler fact that repeatedly practiced operations tend to recur under pressure.",
+      "new_source": "Singley and Anderson, The Transfer of Cognitive Skill, 1989, supports a skill-transfer alternative: transfer and interference can arise from shared or conflicting learned components without requiring a deeper teleological grain.",
+      "remaining_risk": "The layered model can become too easy to protect. If every unexplained transfer difficulty is coded as grain after other layers are considered, grain becomes a residual label rather than a mechanism. The study needs preregistered coding rules and reliability checks, or the category will absorb whatever the other categories fail to explain.",
+      "revised_claim": "The safer version is: contemplative training produces durable procedural and perceptual residues, and some of those residues may be aligned with a tradition's intended dissolution. Grain should name only the subset of residue where the dissolution target predicts transfer difficulty better than technique mechanics, instruction, claimant grammar, and practitioner identity.",
+      "role": "challenger",
+      "sources_cited": [
+        "Pierre Hadot, Philosophy as a Way of Life: Spiritual Exercises from Socrates to Foucault, 1995",
+        "Singley and Anderson, The Transfer of Cognitive Skill, 1989"
+      ],
+      "steelman": "The proponent's revision made the model more precise by accepting layered direction and reserving grain for the capacity-level residue that survives a change in instruction, teacher, claimant grammar, and community frame. That is a real improvement. The model now has a sharper empirical burden: show that prior training predicts the specific shape of transfer difficulty beyond current practice ecology.",
+      "strongest_objection": "The revision still risks confusing procedural inertia with grain. The tennis-to-badminton analogy proves that trained patterns resist change, but it does not prove that the resisted pattern is shaped by a spiritual dissolution. A noter who keeps labeling during shikantaza may be showing overlearned task mechanics, not capacity carved toward non-appropriation. An Advaita practitioner who keeps seeking the witness may be following a learned question and interpretive target, not a capacity that intrinsically carries witness-dissolution.",
+      "test_that_would_settle_it": "Use a design that separates doctrine from technique. Compare same-technique, different-doctrine transfers; different-technique, same-doctrine transfers; and full cross-tradition transfers. Grain is supported only if dissolution target predicts the direction of difficulty after controlling for the exact operations rehearsed, teacher instruction, claimant language, temperament, and practice intensity. If the exact rehearsed operation predicts difficulty better, the procedural-inertia model wins.",
+      "turn": 3,
+      "turn_type": "counter_rebuttal",
+      "verdict_on_revision": "transformed"
+    }
+  ]
+}

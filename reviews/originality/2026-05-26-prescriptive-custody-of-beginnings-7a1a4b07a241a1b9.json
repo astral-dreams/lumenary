@@ -1,0 +1,191 @@
+{
+  "agent": "codex",
+  "anomaly_probe": {
+    "anomaly_candidate": "No-threshold practice-realization, inherited religion, and successful dual-practice cases.",
+    "confidence_effect": "This lowers confidence in the model as a general theory. It can survive only as a coding heuristic with mandatory values for no-threshold, inherited-practice, practice-realization, simultaneous-custody, no-custody-frame, analyst-frame-refused, and undecidable.",
+    "why_it_breaks_or_strains_model": "The candidate assumes a distinguishable beginning where some holder takes custody before the practitioner can authorize the path. Dogen-style practice-realization weakens the before-after sequence because practice and realization are not two separate states. Inherited religion can make beginning indistinguishable from ordinary socialization. Successful dual practice can show multiple support systems coexisting without a single contested custody arrangement."
+  },
+  "audit_id": "7a1a4b07a241a1b9",
+  "claim_units": [
+    "Transformative paths begin before stable practitioner authorization or full understanding is available.",
+    "Early attention, trust, agency, and interpretation are held by a support holder, such as grace, vow, teacher, community, ritual, rule, text, institution, or inherited practice.",
+    "Traditions encode this support arrangement in an entry grammar.",
+    "Some entry grammars are retrospective, naming formation already produced by inheritance, apprenticeship, ritual, or habituation.",
+    "Some entry grammars are prescriptive, forbidding self-initiation, self-credit, self-verification, or independent effort while authorizing other support holders.",
+    "The beginning of a path is not reducible to first break, social induction, doctrine, or institution alone, but to an interaction between custody assignment, entry grammar, and practical control surface."
+  ],
+  "confidence": 0.83,
+  "created_at": "2026-05-26T19:43:41-07:00",
+  "cross_domain_prediction": {
+    "domain": "Psychotherapy, recovery programs, and professional apprenticeship",
+    "prediction": "Programs that explicitly diagnose beginners as unable to self-authorize change should display stronger warnings against self-management, stricter sponsor or therapist verification, more relapse narratives tied to self-will, and sharper repair protocols than programs that treat entry as skill acquisition or gradual social learning.",
+    "structural_translation": "A beginner in therapy, recovery, or apprenticeship often cannot yet fully authorize the method, assess progress, or stabilize motivation. Custody may be held by therapist, sponsor, cohort, protocol, diagnosis, supervisor, rule, or practice schedule. Some systems retrospectively name a support ecology already underway, while others prescriptively forbid self-management or self-verification and require surrender to an external frame.",
+    "would_count_against_it": "Warning and repair profiles are predicted better by symptom severity, legal liability, institutional culture, supervision quality, mentor style, or workload than by entry grammar and custody assignment."
+  },
+  "exact_claim": "Transformative paths begin by placing unstable attention, trust, agency, and interpretation under custody before the practitioner can fully authorize or understand the path. Traditions then give that custody an entry grammar. In inherited, apprenticeship, ritual, and gradual habituation contexts, the grammar may be mostly retrospective, naming a process already underway. In explicit incapacity traditions, the grammar can become prescriptive: it forbids some forms of self-initiation, effort, authority, or verification, and authorizes others. The beginning of a path is therefore a contested custody arrangement whose doctrine may be either narration or control surface.",
+  "execution_id": "dialogue-ba5bd26446b16e88",
+  "falsifiable_predictions": [
+    {
+      "expected_observation": "Coders using only entry or doctrinal texts should predict held-out beginner warnings, verification rules, and repair instructions better when custody holder and prescriptive versus retrospective function are added to Rambo-style and Lave-Wenger-style variables.",
+      "if_model_is_right": "Prescriptive custody grammar has incremental predictive force after social, institutional, and conversion-process controls.",
+      "test_surface": "Split-source blind coding across Orange, Tannisho or Ofumi, Benedictine novitiate texts, OCIA, SN 55.5 and related Theravada manuals, one Dzogchen or Mahamudra entry source, and one Sufi or Islamic initiation source.",
+      "would_weaken_or_falsify": "The added fields do not improve prediction, or all signal is absorbed by institution, teacher authority, socialization, ritual process, clinical risk, or tradition identity."
+    },
+    {
+      "expected_observation": "Grace-held and vow-held cases should warn against self-credit, calculation, unaided assent, self-powered effort, premature assurance, or unauthorized verification more specifically than apprenticeship or socialization cases.",
+      "if_model_is_right": "Explicit incapacity traditions should show warnings against the forbidden claimant named by the entry grammar.",
+      "test_surface": "Held-out warnings from Christian grace manuals, Shin Buddhist pastoral texts, Pure Land sermons, and teacher interviews.",
+      "would_weaken_or_falsify": "Warnings are generic beginner warnings, such as laziness, poor ethics, weak motivation, or weak community belonging, and do not track the custody holder after controls."
+    },
+    {
+      "expected_observation": "Practitioners in inherited, ritual, monastic, or apprenticeship contexts should report that routine, community, sponsor, rule, liturgy, or family practice held attention and trust before doctrinal explanation became clear.",
+      "if_model_is_right": "Retrospective custody grammar should appear where lived induction precedes explicit doctrinal understanding.",
+      "test_surface": "Interviews with cradle practitioners, OCIA participants, Orthodox catechumens, Buddhist refuge students, and monastic novices.",
+      "would_weaken_or_falsify": "Reports show doctrine-first authorization, or repair practices target belief assent more than formation ecology."
+    },
+    {
+      "expected_observation": "Switching failures should cluster around self-verification, surrender, teacher trust, vow misunderstanding, grace versus effort, rule obedience, or ritual belonging rather than only technique mismatch.",
+      "if_model_is_right": "Hybrid instability should increase when old and new custody grammars assign agency and verification incompatibly.",
+      "test_surface": "Practitioner switching interviews coded against VCE-style practitioner, practice, relationship, interpretation, and health-factor baselines.",
+      "would_weaken_or_falsify": "Breakdowns are predicted as well or better by intensity, trauma history, community conflict, practice technique, teacher misconduct, or clinical vulnerability."
+    }
+  ],
+  "idea_id": "0ac1911649477722",
+  "idea_path": "observations/codex/2026-05-26-prescriptive-custody-of-beginnings.md",
+  "literature_search_queries": [
+    "\"prescriptive custody\" religious beginnings grace vow apprenticeship",
+    "\"entry grammar\" religion conversion initiation doctrine",
+    "\"legitimate peripheral participation\" religious newcomers ritual Orthodox worshipping community",
+    "Rambo religious conversion context crisis quest encounter interaction commitment consequences",
+    "Lindbeck doctrine as grammar religion practice training participation",
+    "Pargament religion problem-solving self-directing deferring collaborative agency",
+    "Second Council of Orange beginning of faith desire grace canon 5 7",
+    "Tannisho Other Power self-power entrusting Primal Vow",
+    "Rule of St Benedict chapter 58 receiving novices",
+    "SN 55.5 factors for stream-entry association true Dhamma appropriate attention"
+  ],
+  "near_neighbors": [
+    {
+      "difference": "The current candidate renames the support relation as custody and foregrounds the retrospective versus prescriptive distinction more sharply.",
+      "novelty_impact": "Very high reduction. Against internal prior art, this is mostly renamed and consolidated rather than new.",
+      "overlap": "Near exact. It already says a path begins when entry-state capacity is held somewhere in the person-world field, including practitioner, teacher, community, text, ritual, crisis, vow, institution, or latent awareness. It also says grammar is not merely retrospective and tells practitioners what not to claim, what to trust, what to repeat, what to fear, and what must be verified.",
+      "source": "Local prior Lumenary record, observations/codex/2026-05-26-the-entry-state-ledger.md"
+    },
+    {
+      "difference": "The current candidate drops translation-strain scoring and adds the language of custody as the beginning's support holder.",
+      "novelty_impact": "Very high reduction. The operational testing burden is inherited almost unchanged.",
+      "overlap": "Very close. That audit already codes entry grammar, predicts safeguards and beginner warnings, requires split-source testing, and compares grace, vow, stream-entry, and practice-realization under translation strain.",
+      "source": "Local prior Lumenary audit, reviews/originality/2026-05-26-threshold-grammar-under-translation-strain-63091c8c41cd9e28.md"
+    },
+    {
+      "difference": "Rambo does not isolate custody of unstable attention, trust, agency, and interpretation, nor distinguish retrospective from prescriptive entry doctrine as a control surface.",
+      "novelty_impact": "High reduction for the process account. The remaining contribution would need to show predictive lift beyond Rambo-style conversion variables.",
+      "overlap": "Very close for conversion as a multidimensional process shaped by context, crisis, quest, encounter, interaction, commitment, consequences, roles, rituals, rhetoric, and identity change.",
+      "source": "Lewis R. Rambo, Understanding Religious Conversion, Yale University Press, https://yalebooks.yale.edu/book/9780300065152/understanding-religious-conversion/"
+    },
+    {
+      "difference": "Lave and Wenger do not treat spiritual beginning as doctrinally assigned custody, nor do they distinguish prescriptive incapacity doctrines from retrospective formation narratives.",
+      "novelty_impact": "High reduction for apprenticeship, inherited, and gradual habituation cases.",
+      "overlap": "Very close for beginners participating before mastery, full understanding, or stable identity while community practice, artifacts, roles, discourse, and old-timers hold the learning process.",
+      "source": "Jean Lave and Etienne Wenger, Situated Learning, chapter on legitimate peripheral participation, https://www.cambridge.org/highereducation/books/situated-learning/6915ABD21C8E4619F750A4D4ACA616CD/legitimate-peripheral-participation-in-communities-of-practice/B27B920BABACE5EF83276572EA0EF2C7"
+    },
+    {
+      "difference": "It studies micro-sociological ritual learning, not custody assignment across grace, vow, rule, teacher, ritual, and practice-realization grammars.",
+      "novelty_impact": "High reduction for the social-induction side. It pressures the candidate to prove that doctrine adds prediction beyond embodied participation and community learning.",
+      "overlap": "Close empirical near-neighbor. It studies religious newcomers learning embodied Orthodox ritual through real services, old-timer dynamics, and legitimate peripheral participation.",
+      "source": "Helena Kupari and Terhi Utriainen, Newcomers Learning Religious Ritual: Legitimate Peripheral Participation in an Orthodox Worshipping Community, https://doi.org/10.30664/ar.136236"
+    },
+    {
+      "difference": "Lindbeck's grammar model is broader and not specifically about beginnings, custody holders, or predictive testing of warnings and repairs.",
+      "novelty_impact": "High reduction for the entry-grammar concept.",
+      "overlap": "Close for doctrine as grammar that shapes speech, practice, identity, and what counts as coherent religious participation.",
+      "source": "George Lindbeck, doctrine-as-grammar and cultural-linguistic religion, summarized at https://www.saet.ac.uk/Christianity/TheologicalLanguage and https://people.bu.edu/wwildman/bce/mwt_themes_862_lindbeck.htm"
+    },
+    {
+      "difference": "Pargament studies coping and problem solving, not initiation or the first authorization of transformative practice under grace, vow, teacher, rule, ritual, or community custody.",
+      "novelty_impact": "High reduction for agency-distribution and self-agency claims.",
+      "overlap": "Close for distributing agency between person and God through self-directing, deferring, and collaborative styles, with different practical outcomes.",
+      "source": "Kenneth Pargament et al., Religion and the Problem-Solving Process: Three Styles of Coping, https://icmglt.org/icmlibrary/religion-and-the-problem-solving-process-three-styles-of-coping/"
+    },
+    {
+      "difference": "Orange is a Christian theological rule, not a cross-tradition coding rubric.",
+      "novelty_impact": "Very high reduction for grace-held beginning examples.",
+      "overlap": "Near exact for prescriptive incapacity: the beginning of faith, desire, prayer, will, and salvific assent are not assigned to unaided nature.",
+      "source": "Second Council of Orange, canons 3 to 8, https://heavenslight.org/wp-content/uploads/resources/Canons_of_the_Second_Council_of_Orange.pdf"
+    },
+    {
+      "difference": "Pure Land texts are primary cases, not a general theory of prescriptive versus retrospective custody.",
+      "novelty_impact": "Very high reduction for vow-held and anti-self-power examples.",
+      "overlap": "Near exact for vow-held beginning, Other Power, blocked self-credit, critique of calculation, and gratitude rather than self-powered production after entrusting.",
+      "source": "Shinran and Rennyo, Tannisho and Ofumi, https://bdk.or.jp/document/dgtl-dl/dBET_Tannisho-Ofumi_1996.pdf"
+    },
+    {
+      "difference": "Benedict is a formation rule with explicit institutional testing, not a theory of unstable attention and interpretation across traditions.",
+      "novelty_impact": "Moderate to high reduction for rule-held and apprenticeship-held beginning.",
+      "overlap": "Close for institutional custody of beginning: delayed entrance, testing, novice master supervision, rule-reading, free departure before vows, and later binding incorporation.",
+      "source": "Rule of St. Benedict, chapter 58, https://archive.osb.org/rb/text/rbeaad2.html"
+    },
+    {
+      "difference": "OCIA is a specific initiation architecture, not a cross-tradition explanatory rubric.",
+      "novelty_impact": "High reduction for the claim that beginnings are held before full incorporation and later interpreted by doctrine.",
+      "overlap": "Close practitioner-facing near-neighbor for gradual formation, inquiry, catechumenate, readiness discernment, sponsors, parish support, initiation, and mystagogy.",
+      "source": "Catholic catechumenate and OCIA sources, USCCB and Catechism, https://www.usccb.org/beliefs-and-teachings/who-we-teach/christian-initiation-of-adults and https://www.catholicculture.org/culture/library/catechism/index.cfm?recnum=4084"
+    }
+  ],
+  "next_loop_instructions": [
+    "Do not publish as doctrine or as a new standalone discovery. Treat it as a consolidation of existing entry-ledger work unless separability testing proves independent value.",
+    "Merge or cross-index with Entry-State Ledger, Compound Entry Grammar, Entry-Residue Architecture, Layered Authorization of Beginning, Threshold Grammar Under Translation Strain, Capacity Ledger, Claimability and Support Rubric, and Operational Remainder Ecology.",
+    "Build one bounded split-source coding sheet with fields for entry context, custody holder, entry grammar, retrospective versus prescriptive function, forbidden claimant, authorized support holder, verification rule, warning profile, repair practice, evidence passage, source layer, analyst-frame refusal, and confidence.",
+    "Do not let the same passage count as both predictor evidence and predicted warning evidence.",
+    "Add mandatory values for inherited practice, no-threshold, practice-realization, gradual socialization, ritual-held custody, community-held custody, teacher-held custody, vow-held custody, grace-held custody, rule-held custody, text-held custody, self-authorized entry, simultaneous custody, no-custody-frame, analyst-frame-refused, and undecidable.",
+    "Run matched comparisons where social ecology can be partially controlled, especially Jodo Shinshu versus Jodo Shu, Augustinian grace traditions versus synergist neighbors, Benedictine novitiate versus less formal lay formation, OCIA versus inherited Catholic formation, and Dzogchen pointing-out versus gradual Tibetan path training.",
+    "Compare predictive value against Rambo conversion stages, Lofland-Stark conversion conditions, Van Gennep and Turner liminality, Lindbeck doctrine-as-grammar, Lave and Wenger legitimate peripheral participation, Kupari and Utriainen ritual-learning data, Pargament agency styles, catechumenate scholarship, monastic formation scholarship, upaya pedagogy, VCE factor coding, and prior Lumenary ledgers.",
+    "Treat Dogen practice-realization, inherited religion, successful dual practice, and traditions that reject agency accounting as anomaly classes rather than confirming examples.",
+    "Interview practitioners for concrete failed-beginning cases and repair instructions, not agreement with the model.",
+    "Do not raise above renamed or extended unless blind coding shows that custody grammar predicts held-out warning, verification, and repair patterns better than entry-only, socialization-only, agency-style, institution, tradition-identity, teacher-style, and clinical-risk baselines."
+  ],
+  "novelty_adjustment": "Reduce novelty from 0.76 to about 0.43. The candidate is generative, but most of its structure is already present in local Lumenary records, especially Entry-State Ledger, Threshold Grammar Under Translation Strain, Compound Entry Grammar, Layered Authorization of Beginning, and Operational Remainder Ecology. External near-neighbors further reduce the claim: Rambo covers conversion process, Lave and Wenger cover pre-mastery participation, Kupari and Utriainen apply that to religious newcomers, Lindbeck covers doctrine as grammar, Pargament covers agency distribution, Orange and Shinran give near-exact prescriptive beginning cases, Benedict and OCIA give institutional formation cases. The remaining contribution is a sharper label for prescriptive versus retrospective custody, not a discovery-level idea.",
+  "originality_status": "renamed",
+  "practitioner_test": {
+    "answers_that_reduce_originality": "Practitioners and scholars say the frame is ordinary grace theology, Other Power, catechumenate, monastic formation, refuge, initiation, lineage pedagogy, doctrine-as-grammar, religious coping, conversion studies, or legitimate peripheral participation. They cannot identify repairs predicted by custody grammar beyond institution, teacher experience, community ecology, temperament, or clinical risk.",
+    "answers_that_support_contribution": "Practitioners provide concrete failed-beginning cases where repair turned on misplaced authority, unsupported trust, self-verification, effort ownership, vow misunderstanding, teacher dependence, or ritual belonging, and where prescriptive versus retrospective custody predicts warnings or repairs better than standard conversion, formation, coping, or social-learning categories.",
+    "questions": [
+      "Is custody of beginning more than your ordinary language for grace, vow, refuge, obedience, rule, teacher transmission, socialization, apprenticeship, catechesis, or ritual incorporation?",
+      "Can you name a failed beginning where repair depended specifically on who or what was allowed to hold attention, trust, agency, or verification?",
+      "Does the retrospective versus prescriptive distinction change how you would screen, sequence, warn, verify, or repair beginners?",
+      "Which cases in your tradition reject the analyst's categories of custody, authorization, threshold, or beginning?",
+      "Could an outside coder predict your tradition's warning profile from entry texts before reading warning texts or interviewing teachers?"
+    ],
+    "relevant_practitioners": [
+      "Jodo Shinshu ministers",
+      "Christian theologians or spiritual directors familiar with Augustine, Orange, grace, and catechumenal formation",
+      "Benedictine novice masters or monastic formation directors",
+      "Catholic OCIA directors",
+      "Orthodox catechists",
+      "Theravada teachers familiar with refuge and stream-entry",
+      "Soto Zen teachers familiar with practice-realization",
+      "Dzogchen or Mahamudra teachers familiar with direct introduction",
+      "Comparative religion scholars of conversion, initiation, and apprenticeship",
+      "Clinicians familiar with contemplative adverse effects"
+    ]
+  },
+  "primary_text_close_read": {
+    "primary_pair": [
+      "Second Council of Orange, canons 3 to 8, https://heavenslight.org/wp-content/uploads/resources/Canons_of_the_Second_Council_of_Orange.pdf",
+      "Shinran and Rennyo, Tannisho and Ofumi, BDK English Tripitaka, https://bdk.or.jp/document/dgtl-dl/dBET_Tannisho-Ofumi_1996.pdf",
+      "Rule of St. Benedict, chapter 58, https://archive.osb.org/rb/text/rbeaad2.html",
+      "SN 55.5 Sariputta Sutta, factors for stream-entry, https://www.dhammatalks.org/suttas/SN/SN55_5.html"
+    ],
+    "risk_of_overread": "Very high. Custody is a modern analyst term that can flatten grace, vow, obedience, refuge, rule, catechesis, initiation, community socialization, and practice-realization into one psychological metaphor. The model also risks circularity if the same passage is used to infer custody grammar and then to confirm predicted warnings or repairs.",
+    "secondary_literature_gap": "Search and close-reading covered accessible primary texts, local prior Lumenary records, conversion theory, legitimate peripheral participation, doctrine-as-grammar, catechumenate sources, religious coping, ritual learning, and contemplative adverse-experience methodology. It did not fully review Rambo's full monograph, Lindbeck's The Nature of Doctrine, Talal Asad in full, Van Gennep and Turner in full, Japanese Pure Land scholarship, Dogen scholarship, Tibetan pointing-out manuals, Islamic bayah and Sufi tarbiya sources, Sanskrit guru-disciple materials, original-language sources, or practitioner interviews.",
+    "structural_observation": "Orange is the strongest prescriptive incapacity case: faith's beginning, desire, assent, prayer, and right choice are assigned to grace rather than unaided natural power. Tannisho and Ofumi give a vow-held analogue: entrusting is given by Amida's working, nenbutsu after settled faith is gratitude rather than self-powered production, and the warning profile targets calculation and self-power. Benedict gives institutional and apprenticeship custody: the novice is delayed, tested, placed under a senior, repeatedly exposed to the Rule, and only then incorporated. SN 55.5 is a partial anomaly: it names association with people of integrity, hearing true Dhamma, appropriate attention, and practice in accordance with Dhamma. That is distributed support, but not necessarily a doctrine forbidding self-generated beginning. The close-read result is that the candidate's structure exists in several sources, but its categories are analyst abstractions over older grace, vow, rule, apprenticeship, and stream-entry grammars."
+  },
+  "recommended_scores": {
+    "counterargument_quality": 0.94,
+    "novelty": 0.43,
+    "source_reliability": 0.78
+  },
+  "run_ids": [],
+  "title": "Prescriptive Custody of Beginnings",
+  "unlike_statement": "Unlike prior Lumenary entry ledgers, Rambo conversion theory, legitimate peripheral participation, Lindbeck's doctrine-as-grammar, Pargament's agency styles, Orange, Shinran, Benedict, and OCIA, this candidate's only distinct claim is that beginnings should be coded as custody of unstable attention, trust, agency, and interpretation, and that entry doctrine should be classified as either retrospective narration or prescriptive control. That difference is useful but thin, because prior Lumenary records and older sources already contain most of the structure."
+}

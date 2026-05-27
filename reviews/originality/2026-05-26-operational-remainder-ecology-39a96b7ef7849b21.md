@@ -1,0 +1,130 @@
+# Originality Audit: Operational Remainder Ecology
+
+Audit ID: 39a96b7ef7849b21
+Idea ID: 2a66e120bafebae3
+Agent: codex
+Created: 2026-05-26T18:07:48-07:00
+Status: extended
+Confidence: 0.83
+
+## Exact Claim
+
+A contemplative path is shaped by three interacting factors: the operational capacities it requires, the residue policy it applies after negation, and the training ecology that calibrates those demands in lived practice. The model predicts that safeguards, warnings, verification methods, and crisis patterns emerge from the interaction of all three, not from self-doctrine alone.
+
+## Claim Units
+
+- Self-negating or agency-negating contemplative paths still require usable operational capacities such as attention, memory, effort, reflexivity, receptivity, trust, or surrender.
+- A path's residue policy determines what those remaining capacities are allowed to count as, such as causal process, conventional personhood, witness, Self, divine gift, vow, relation, or nothing ultimately ownable.
+- Training ecology, including teacher, community, intensity, duration, screening, interpretation, and support, determines whether the operational demand stabilizes or destabilizes the practitioner.
+- Safeguards, warnings, verification methods, and crisis patterns should be predicted by the interaction of capacity profile, residue policy, and ecology better than by self-doctrine alone.
+
+## Primary Text Close Read
+
+Sources:
+- SN 22.59 Anatta-lakkhana Sutta, https://www.dhammatalks.org/suttas/SN/SN22_59.html
+- Brihadaranyaka Upanishad 3.7.23, https://www.brhat.in/openlibrary/special/brihadaranyaka-upanishad/3-7-23
+- Tannisho, Taitetsu Unno translation, https://www.themathesontrust.org/papers/fareasternreligions/Tannisho-Unno.pdf
+- Mahasi Sayadaw, Manual of Insight, https://wisdomexperience.org/product/manual-insight/
+
+Structural observation: SN 22.59 negates ownership and mastery over the five aggregates, yet the discourse depends on instruction, discernment, memory, and a sequence from seeing to disenchantment and release. Brihadaranyaka 3.7.23 refuses ordinary objectification of the seer and knower, but authorizes the remainder as the inner ruler and Self. Tannisho relocates efficacy away from self-power into Amida's vow and entrusting, while also preserving teacher lineage, warning against license, and refusing ownership of disciples. Mahasi's Manual of Insight makes operational remainder unusually explicit: ethical preparation, concentration, noting, progress mapping, teacher interpretation, and verification are all part of the practice surface. The close read supports the three variables, but also shows that much of the structure is already visible in primary materials.
+
+Secondary literature gap: This audit used accessible primary translations and open academic sources, but did not fully reread Collins, Siderits, Harvey, Albahari, Wilber, Engler's full chapter context, Shinran's Kyogyoshinsho, Dogen scholarship, Dzogchen and Mahamudra manuals, or Britton's full adverse-effects corpus. Pali, Sanskrit, Japanese, and Burmese terms were not checked directly. Stronger novelty would require split-source coding and practitioner interviews.
+
+Risk of overread: High. The model can absorb nearly every tradition by redescribing prerequisites as capacities, doctrine as residue policy, and pedagogy as ecology. It also risks circularity if warnings and crisis patterns are used both to infer the three variables and to confirm that the variables predict those same warnings and crises.
+
+## Literature Search Queries
+
+- operational capacities residue policy contemplative self negation practice ecology
+- meditation adverse effects influencing factors teacher community intensity screening Britton Lindahl
+- Varieties of Contemplative Experience influencing factors practice practitioner relationship health worldview remedies
+- Engler therapeutic aims psychotherapy meditation somebody before nobody self observation ego strength
+- religious coping self-directing deferring collaborative Pargament agency styles
+- doctrine as grammar Lindbeck religion rules practice discourse attitude action
+- Asad discursive tradition religious practice authority discipline
+- upaya skillful means capacity pedagogy Buddhist practice
+- Mahasi Manual of Insight progress of insight noting teacher warnings
+- SN 22.59 anatta operational continuity practice capacity
+- Tannisho Other Power self-power calculation warning license
+- Brihadaranyaka 3.7.23 inner controller unseen seer
+
+## Near Neighbors
+
+- Prior Lumenary records in the prompt, especially Every Path Needs What Its Teaching Dissolves, Residual Burden of Proof After Negation, Capacity Ledger, Forbidden Claimant Rubric, Credit Distribution, Handoff Point, Entry-Claimant Grammar, Claimability and Support Rubric, and Continuity Ecology Under Negation: overlap: Extremely close. The candidate explicitly consolidates operational capacity, residue policy, support locus, training ecology, warnings, verification, and failure-mode prediction already developed across prior Lumenary audits.; difference: The new record adds a cleaner three-factor interaction frame and makes adverse-event prediction more explicit.; novelty impact: Large internal reduction. Treat as consolidation and extension, not an independent discovery.
+- Lindahl, Fisher, Cooper, Rosen, and Britton, The Varieties of Contemplative Experience, https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0176239: overlap: Very close for the training ecology side. VCE studies meditation-related challenges through practice factors, practitioner factors, relationships, health behaviors, teachers, communities, worldviews, appraisals, and remedies.; difference: VCE is a descriptive and clinical taxonomy, not a cross-tradition model linking operational capacities and residue policy after negation to predicted safeguards.; novelty impact: Large reduction. The ecology and adverse-effect claims are already strongly anticipated.
+- Lindahl, Palitsky, Cooper, and Britton, The roles and impacts of worldviews in meditation-related challenges, https://pubmed.ncbi.nlm.nih.gov/36476189/: overlap: Close for the residue-policy component. The paper treats worldviews as risk factors, remedies, and meaning-making frames that shape the trajectory of meditation-related challenges.; difference: It does not formalize residue policy after self-negation or combine worldview with operational capacity coding.; novelty impact: Moderate to large reduction. Residue policy may be a narrower name for worldview and doctrinal interpretation unless it predicts more.
+- Britton et al., The Teacher Matters, https://www.tandfonline.com/doi/abs/10.1080/14639947.2025.2485677: overlap: Close for the role of teacher relationship, guidance quality, support, and interpretive response in meditation-related difficulty trajectories.; difference: It does not provide a self-negation or residue-policy typology.; novelty impact: Moderate reduction. Teacher ecology is prior art, not a novel component.
+- Jack Engler, Therapeutic Aims in Psychotherapy and Meditation, https://www.atpweb.org/jtparchive/trps-16-84-01-025.pdf; interview summary, https://inquiringmind.com/article/0501_1_engler-interview/: overlap: Very close for the claim that no-self practice presupposes functional ego capacities, especially self-observation, and can be destabilizing without them.; difference: Engler's model is developmental and psychotherapeutic rather than a three-axis comparative rubric with residue policy and ecology.; novelty impact: Large reduction for the capacity thesis. The candidate extends, rather than discovers, this pressure.
+- Pargament et al., Religion and the Problem-Solving Process: Three Styles of Coping, https://icmglt.org/icmlibrary/religion-and-the-problem-solving-process-three-styles-of-coping/: overlap: Close for distributing agency and control across self, deity, collaboration, deferral, and surrender, with practical consequences for coping.; difference: Pargament is not focused on contemplative negation or verification after self-dissolution.; novelty impact: Moderate reduction. The support-locus and gift-effort categories need baseline comparison against religious coping styles.
+- George Lindbeck doctrine-as-grammar discussions, https://www.repository.cam.ac.uk/items/351e3c35-6838-49bc-9b33-3ae66dd1fea5: overlap: Close for treating doctrine as rules that regulate religious speech, attitude, action, and communal formation rather than as isolated propositions.; difference: The candidate narrows grammar into residue policy and asks whether it predicts safeguards and crisis patterns.; novelty impact: Moderate reduction. Residue policy may be a specialized rule-theory application.
+- Talal Asad, The Idea of an Anthropology of Islam, https://bpb-ap-se2.wpmucdn.com/thinkspace.csu.edu.au/dist/c/3891/files/2020/10/Asad-Anthropology.pdf: overlap: Close for the claim that practice, discipline, authority, embodiment, institutions, and historical tradition shape religious subject formation, so doctrine alone cannot explain outcomes.; difference: Asad does not build a comparative safety rubric for self-negating contemplative paths.; novelty impact: Moderate to large reduction for the anti-doctrine-alone and practice-ecology claims.
+- Buddhist upaya and capacity pedagogy, for example https://plato.stanford.edu/entries/buddhism-mahayana/ and https://link.springer.com/article/10.1007/s12671-024-02425-3: overlap: Close for adapting teachings to practitioner capacity, stage, disposition, and risk of misunderstanding.; difference: Upaya does not by itself code residue policies across Buddhist, Vedantic, Shin, Christian, and clinical contexts.; novelty impact: Moderate reduction. Capacity calibration is old. The possible novelty is in the comparative interaction test.
+- Schlosser et al., Unpleasant meditation-related experiences in regular meditators, https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0216643; Britton et al., Defining and measuring meditation-related adverse effects, https://pmc.ncbi.nlm.nih.gov/articles/PMC8845498/: overlap: Close for empirical-adjacent prediction of meditation difficulty from complex contextual factors, practice type, arousal, dissociation, and reporting method.; difference: These studies do not focus on spiritual residue policy, but they supply strong rival explanations for crisis patterns.; novelty impact: Moderate to large reduction. The candidate must show added predictive value beyond existing adverse-effect variables.
+
+## Unlike Statement
+
+Unlike VCE, Britton's adverse-effects work, Engler, Pargament, Lindbeck, Asad, upaya pedagogy, and prior Lumenary ledgers, this idea says that self-negating contemplative paths can be coded along three independent axes, operational capacity, residue policy, and training ecology, and that the interaction among those axes will predict safeguards, warnings, verification methods, and crisis patterns better than any one axis alone.
+
+## Anomaly Probe
+
+Candidate: Dogen-style practice-realization, inherited devotional practice, radical Other Power, and secular mindfulness adverse effects strain the model from different sides.
+
+Why it strains the model: Practice-realization can refuse a before-and-after account in which capacity remains and then receives a residue label. Inherited practice may work through ritual and community before explicit doctrine is understood. Other Power can treat naming receptivity as a capacity as a self-power distortion. Secular mindfulness adverse effects can occur without explicit self-negating residue policy, which may mean ecology, dose, arousal, vulnerability, and interpretation explain more than the proposed residue axis.
+
+Confidence effect: The anomaly lowers confidence from candidate_discovery to extended. It does not refute the heuristic, but it requires analyst-frame-refusal values and baseline comparisons against ecology-only and clinical-risk models.
+
+## Falsifiable Predictions
+
+- If: Initial doctrine or entry texts can be coded for operational capacities and residue policy independently from later warnings and repairs. Then: Blind coders should predict later warning clusters, such as striving, nihilism, dissociation, antinomian license, teacher-dependence, inflation, despair, or passivity, above chance and above doctrine-only or ecology-only baselines. Weakens if: Inter-rater reliability on capacity and residue codes is poor, or predictions disappear once intensity, teacher quality, psychiatric vulnerability, social support, and reporting genre are controlled. Test surface: Split-source blind coding of primary manuals, followed by comparison with separate warning sections, adverse-event reports, and teacher interviews.
+- If: Traditions with similar residue policies but different operational capacity profiles should generate different safeguards and crisis patterns. Then: Paths that both deny ultimate self-ownership but train different operations, for example analytic noting and open sitting, should warn against and repair different failure modes. Weakens if: Matched cases show similar warnings and repairs despite different operational profiles, or differences are better explained by retreat intensity, institution, teacher style, or culture. Test surface: Matched comparison of Theravada vipassana manuals, Soto shikantaza sources, and practitioner interviews.
+- If: Traditions with similar operational demands but different residue policies should interpret the same phenomenological event differently and verify it differently. Then: Practices that train attention, disidentification, and stable witnessing should diverge in whether the remainder is framed as conventional process, witness, Self, grace, vow, or non-ownable event, and these labels should forecast verification and warning practices. Weakens if: Practitioner reports and manuals interpret similar events without residue-policy effects, or the interpretive difference has no impact on verification, repair, or safety guidance. Test surface: Cross-coding Advaita self-inquiry, Buddhist de-identification, Mahamudra or Dzogchen recognition, Shin entrusting, and Christian surrender materials.
+- If: Training ecology moderates the risk created by capacity and residue mismatch. Then: High-intensity, low-supervision, weak-community settings should produce more adverse or confused reports when operational demands are high and residue policy is easily misunderstood. Weakens if: Ecology does not moderate outcomes after controlling for baseline vulnerability and practice dose, or mismatch cases do not show distinct repair needs. Test surface: Retreat adverse-event datasets, Cheetah House style case intake data, and prospective Lumenary practice-seed safety tracking.
+
+## Practitioner Test
+
+Relevant practitioners:
+- Theravada vipassana teachers familiar with Mahasi-style noting, progress of insight, and anatta
+- Soto Zen teachers familiar with shikantaza and practice-realization
+- Advaita Vedanta teachers familiar with neti-neti, witness practice, and self-inquiry
+- Jodo Shinshu ministers familiar with shinjin, Other Power, and non-calculation
+- Dzogchen or Mahamudra teachers familiar with recognition, guru relation, and post-recognition conduct
+- Christian contemplative directors familiar with grace, surrender, apophasis, and discernment
+- Contemplative clinicians or researchers familiar with meditation-related difficulties
+
+Questions:
+- Is the three-part distinction between operational capacity, residue policy, and training ecology obvious in your lineage, or does it change diagnosis?
+- Can you name concrete student failures that came from misreading what must remain operational after self, effort, or ownership was negated?
+- Does the model predict safeguards or repairs you would not already derive from upaya, spiritual materialism, trauma-informed care, religious coping, or ordinary teacher experience?
+- Are there practices in your lineage where the language of remainder, capacity, or support locus distorts the path?
+- Would you change screening, sequencing, intensity, or stopping rules if a student's capacity profile and residue interpretation were coded separately?
+
+Answers that reduce originality: Practitioners say this is standard pedagogy: know the student's capacity, avoid nihilism or inflation, provide teacher and community support, and interpret experiences according to doctrine. They cannot name any new screening, sequencing, warning, or repair produced by the three-factor model.
+
+Answers that support contribution: Practitioners independently identify cases where the same self-negating instruction became safe or unsafe depending on the interaction of capacity, permitted meaning, and ecology, and they say the rubric would change screening, sequencing, or repair decisions.
+
+## Cross-Domain Prediction
+
+Domain: Psychotherapy and behavior-change programs that weaken identity claims, such as exposure therapy, addiction recovery, identity-based coaching, or moral injury work.
+
+Structural translation: Operational capacity becomes the psychological function that must stay usable, such as affect tolerance, memory, agency, trust, or self-monitoring. Residue policy becomes what the program says the remaining function means, such as illness process, responsibility, grace, values, role, or non-identification. Training ecology becomes therapist, peer group, dose, monitoring, crisis plan, and interpretive frame.
+
+Prediction: Programs that dissolve maladaptive identity without preserving and authorizing enough operational capacity should show predictable failure modes: passivity, dissociation, shame, dependency, collapse of responsibility, or license. Programs with the same technique but different residue policy and ecology should require different safeguards.
+
+Would count against it: Identity-dissolving interventions show similar outcomes regardless of capacity demands, interpretive policy, and ecology, or ordinary variables such as therapeutic alliance, diagnosis, and dose fully explain failure patterns with no added predictive gain from the translated model.
+
+## Score Recommendations
+
+- novelty: 0.53
+- source_reliability: 0.78
+- counterargument_quality: 0.91
+
+Novelty adjustment: Reduce novelty from 0.82 to about 0.53. The idea is useful and testable, but its main components are strongly anticipated by prior Lumenary ledgers, VCE and Cheetah House style adverse-effects research, Engler's functional ego warning, Pargament's agency and coping styles, Lindbeck's grammar model, Asad's discursive-tradition account, upaya capacity pedagogy, and primary-text evidence. The remaining contribution is a clearer three-factor interaction hypothesis and a split-source testing protocol.
+
+## Next Loop Instructions
+
+- Do not publish as doctrine. Treat as a comparative research heuristic and safety-oriented practice-design control.
+- Reduce the model to a testable coding sheet with fields for operational capacity, residue policy, training ecology, safeguard, warning, verification, crisis pattern, repair, evidence passage, and analyst-frame refusal.
+- Use split-source blind coding: code operational capacity and residue policy from entry or doctrine texts, then predict warnings, safeguards, and repairs from separate manuals or practitioner interviews.
+- Add mandatory anomaly values for practice-realization, inherited practice, no-threshold practice, Other Power refusal, grace-held support, teacher-recognition support, secular extraction, psychiatric vulnerability, and undecidable.
+- Compare predictive power against VCE influencing factors, Cheetah House adverse-event categories, Engler's developmental warning, Pargament agency styles, Lindbeck grammar, Asad discursive tradition, upaya pedagogy, and prior Lumenary ledgers.
+- Run practitioner interviews for concrete failed-student cases and repair instructions rather than agreement with the model.
+- Do not raise above extended unless inter-rater coding shows that the three-factor interaction predicts warning clusters, verification practices, or repairs better than doctrine-only, ecology-only, clinical-risk, and prior-ledger baselines.

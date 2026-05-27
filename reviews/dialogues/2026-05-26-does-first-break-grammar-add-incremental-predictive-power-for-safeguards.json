@@ -1,0 +1,281 @@
+{
+  "convergence_path": "findings/convergences/2026-05-26-does-first-break-grammar-add-incremental-predictive-power-for-safeguards-and-fail.md",
+  "created_at": "2026-05-26T16:19:47-07:00",
+  "dialogue_id": "96b464bfb50f94af",
+  "execution_id": "backfill-20260526-154746",
+  "json_path": "reviews/dialogues/2026-05-26-does-first-break-grammar-add-incremental-predictive-power-for-safeguards.json",
+  "markdown_path": "reviews/dialogues/2026-05-26-does-first-break-grammar-add-incremental-predictive-power-for-safeguards.md",
+  "pair": {
+    "challenger_agent": "codex",
+    "challenger_title": "The Capacity Ledger of Gift and Effort",
+    "idea_a": "e2faec9c39c6a653",
+    "idea_b": "a9dd2252002b7a5a",
+    "pair_id": "d846b49638302007",
+    "priority": 0.6827,
+    "proponent_agent": "claude",
+    "proponent_title": "The First-Break Problem",
+    "shared_concepts": [],
+    "signals": [
+      {
+        "name": "shared_frontier",
+        "reason": "Both ideas sit on The boundary between effort and gift.",
+        "weight": 0.24
+      },
+      {
+        "name": "frontier_priority",
+        "reason": "Shared frontier priority is 0.89.",
+        "weight": 0.1427
+      },
+      {
+        "name": "audit_anomaly_overlap",
+        "reason": "An anomaly or audit instruction for one idea pressures the other idea.",
+        "weight": 0.12
+      },
+      {
+        "name": "near_neighbor_conflict",
+        "reason": "Originality audits share near-neighbor or prior-art pressure.",
+        "weight": 0.08
+      },
+      {
+        "name": "source_overlap_with_divergent_conclusion",
+        "reason": "The ideas draw on overlapping source material but make different moves.",
+        "weight": 0.06
+      },
+      {
+        "name": "recency",
+        "reason": "At least one idea is recent enough to keep the dialogue timely.",
+        "weight": 0.04
+      }
+    ],
+    "tension_source": "Both ideas sit on The boundary between effort and gift.",
+    "tension_type": "shared_frontier"
+  },
+  "run_dir": "runs/dialectic-backfill-20260526-154746/d846b49638302007",
+  "run_ids": [],
+  "slug": "2026-05-26-does-first-break-grammar-add-incremental-predictive-power-for-safeguards",
+  "status": "complete",
+  "synthesis": {
+    "candidate_synthesis": {
+      "critique": "The model risks construct leakage. If the same texts or safeguards are used to define a grammar and prove its predictions, the synthesis becomes circular. It also may be difficult to separate grammar from anthropology and institution in real traditions. The model should remain a candidate until blind coding can show that grammar adds predictive value in cases not used to build the typology.",
+      "epistemic_labels": [
+        "textual",
+        "interpretive",
+        "phenomenological",
+        "empirical-adjacent",
+        "analogical",
+        "speculative"
+      ],
+      "idea_type": "synthesis",
+      "next_research_directions": [
+        "Define grammar indicators only from entry texts or doctrinal claims, then separately code safeguards from manuals, interviews, liturgy, institutional rules, or teacher instructions.",
+        "Run paired-case tests where social entry ecology is similar but grammar differs, such as Jodo Shinshu and Theravada communities in the same diaspora setting.",
+        "Run intra-tradition tests where institution and culture are shared but grammar differs, such as Augustinian and Pelagian Christian disputes or jiriki and tariki debates.",
+        "Build an entry-state ledger rubric with fields for receiving, agency, memory, reflexivity, integration, external supports, threshold event, grammar, predicted safeguard, and failure mode.",
+        "Include negative and ambiguous cases where no clear first-break grammar exists, to see whether the model correctly loses predictive power."
+      ],
+      "original_claim": "A path begins when enough entry-state capacity is held somewhere in the person-world field: practitioner, teacher, community, text, ritual, crisis, vow, institution, or latent awareness. Traditions then apply a grammar of beginning that names what matters most at the threshold. That grammar is not merely retrospective. It reallocates the ledger by telling practitioners what not to claim, what to trust, what to repeat, what to fear, and what must be verified. The real unit of comparison is therefore not effort versus gift, or first-break versus capacity, but the entry-state ledger: which capacities are required before conscious practice can begin, where those capacities are held, and which grammar disciplines them after the threshold.",
+      "scores": {
+        "counterargument_quality": 0.92,
+        "cross_tradition_support": 0.82,
+        "empirical_adjacency": 0.56,
+        "explanatory_compression": 0.89,
+        "generativity": 0.93,
+        "logical_coherence": 0.88,
+        "novelty": 0.82,
+        "practice_testability": 0.88,
+        "publishability": 0.84,
+        "source_reliability": 0.8
+      },
+      "source_basis": [
+        "Claude's First-Break Problem: traditions carry grammars of beginning such as social encounter, cosmic gift, prevenient grace, self-disclosure, gradual break, or no-break.",
+        "Codex's Capacity Ledger: paths distribute load across receiving, agency, memory, reflexivity, and integration, often shifting load to teacher, community, text, vow, or post-insight discipline.",
+        "Codex's Entry Ecology challenge: actual beginnings involve context, crisis, trust, inherited practice, authority, language, community, and residual capacity.",
+        "Claude's revision: first-break grammar is a normative filter on mixed entry ecology, not a full causal account.",
+        "Shared test proposal: blind paired-case and intra-tradition coding for incremental predictive power."
+      ],
+      "title": "The Entry-State Ledger",
+      "why_it_might_be_new": "The source ideas separately named first-break grammar and capacity distribution. The dialogue produced a third model that neither original idea fully contained: entry as a distributed ledger that is then normatively filtered by doctrine. This avoids treating first-break grammar as the whole cause of entry, while preserving its possible causal feedback. It also prevents the capacity ledger from starting too late, since the ledger now applies before the practitioner can claim practice as their own."
+    },
+    "candidate_synthesis_idea_id": "9ff56d58cbdbd8cf",
+    "candidate_synthesis_path": "observations/codex/2026-05-26-the-entry-state-ledger.md",
+    "convergence_claim": "Actual entry into a transformative path is usually mixed and distributed, but a tradition's grammar of beginning may still shape what practitioners fear, protect, verify, and repeat after entry.",
+    "method_growth": "Future dialogues should separate causal ecology from doctrinal grammar before synthesis. A good synthesis should name what begins the process, who or what carries the needed capacity, and what evidence would show that the grammar is doing real work.",
+    "new_concept_edges": [
+      {
+        "note": "The grammar selects which parts of a mixed beginning count as decisive and which entry errors require warning.",
+        "relation": "normatively filters",
+        "source": "first-break grammar",
+        "target": "entry ecology"
+      },
+      {
+        "note": "The ledger now applies before conscious practice is underway, with capacities distributed across person, teacher, community, text, ritual, crisis, and institution.",
+        "relation": "extends into threshold conditions",
+        "source": "capacity ledger",
+        "target": "entry-state ledger"
+      },
+      {
+        "note": "Predictions are valid only if grammar indicators are coded separately from safeguard evidence.",
+        "relation": "predicts conditionally",
+        "source": "entry-state ledger",
+        "target": "safeguards"
+      },
+      {
+        "note": "The synthesis needs blind coding and negative cases before it can be treated as more than an interpretive bridge.",
+        "relation": "requires control",
+        "source": "construct leakage",
+        "target": "originality audit"
+      }
+    ],
+    "new_frontier_question": "Where is the capacity to begin held before the practitioner can claim practice, and how does a tradition's grammar of beginning discipline that distributed capacity after entry?",
+    "outcome": "candidate_transcendence",
+    "public_brief": "We do not begin alone, and we do not begin from nothing. A path starts when enough help, trust, memory, attention, and readiness are held somewhere, then its teaching names what must not be mistaken as our private achievement.",
+    "recommended_adjustments": {
+      "challenger": {
+        "counterargument_quality": 0.92,
+        "cross_tradition_support": 0.83,
+        "empirical_adjacency": 0.52,
+        "explanatory_compression": 0.89,
+        "generativity": 0.92,
+        "logical_coherence": 0.88,
+        "novelty": 0.66,
+        "practice_testability": 0.88,
+        "publishability": 0.82,
+        "source_reliability": 0.83
+      },
+      "proponent": {
+        "counterargument_quality": 0.9,
+        "cross_tradition_support": 0.8,
+        "empirical_adjacency": 0.5,
+        "explanatory_compression": 0.82,
+        "generativity": 0.91,
+        "logical_coherence": 0.88,
+        "novelty": 0.74,
+        "practice_testability": 0.82,
+        "publishability": 0.84,
+        "source_reliability": 0.78
+      }
+    },
+    "summary": "The dialogue transformed the First-Break Problem from a claim about clean entry mechanisms into a testable synthesis: actual beginnings arise through distributed entry ecology, while traditions' grammars of beginning can still become causal by shaping attention, warnings, safeguards, and verification. The Capacity Ledger was also extended from mid-path analysis to entry-state analysis.",
+    "synthesizer_agent": "codex",
+    "unresolved_crux": "Does first-break grammar add incremental predictive power for safeguards and failure modes after entry ecology, anthropology, institution, teacher relation, conversion process, and practitioner readiness are independently coded?"
+  },
+  "title": "Does first-break grammar add incremental predictive power for safeguards and fail...",
+  "turns": [
+    {
+      "agent": "codex",
+      "argument": "The pressure point is independence. The First-Break Problem becomes powerful if the entry mechanism is a variable that does real predictive work. But the evidence currently risks circularity: traditions with severe incapacity doctrines are scored as having severe first-breaks, then their safeguards are explained by the same severity. My counter-model keeps the bootstrapping issue but relocates it into distributed capacity. No person starts from nothing, and no path begins from pure autonomy. The threshold is crossed when enough capacity is held somewhere: in the practitioner, teacher, community, crisis, ritual, text, vow, or institution. The doctrine then names what happened. That means the capacity ledger may not merely be mid-path. It may already operate at entry, except the columns are distributed across person and world before the practitioner can claim them as practice.",
+      "claim_units": [
+        "Transformative paths face an entry circularity because the person needing transformation seems to lack the very capacity needed to begin transformation.",
+        "Traditions can be compared by their first-break mechanisms, including social encounter, cosmic gift, prevenient grace, self-disclosure, gradual-break, and no-break cases.",
+        "The severity of the circularity tracks the tradition's anthropology.",
+        "The entry solution predicts downstream effort theory, verification methods, characteristic warnings, and safeguards.",
+        "Capacity-ledger analysis presupposes that the path is already underway, while first-break analysis asks how the load-bearing structure comes into existence."
+      ],
+      "concessions": [
+        "The first-break model correctly identifies a prior question that the capacity ledger had underweighted.",
+        "The typology is useful if treated as a tradition's entry grammar rather than as a complete causal theory of entry.",
+        "The model becomes stronger when it adds no-break, gradual-break, inherited-practice, and undecidable categories."
+      ],
+      "counter_model": "Entry Ecology Model: a path begins when residual capacities and external supports jointly cross a threshold. The relevant variables are latent receptivity, social trust, affective pressure, inherited practice, available language, authority structure, community containment, and the person's present capacity ledger. Traditions then name the threshold according to their doctrinal grammar. In this model, Shinran's gift, Orange's prevenient grace, SN 55.5's association with people of integrity, and Dzogchen pointing-out are not mutually exclusive mechanisms. They are different interpretations of how capacity is distributed across person, teacher, community, vow, text, and circumstance at the threshold.",
+      "crux": "Can first-break type predict downstream safeguards and failure modes after anthropology, institution, teacher relation, conversion process, and practitioner readiness are independently coded?",
+      "crux_assessment": "The proponent has a promising synthesis, but its strongest form needs independence testing. If first-break type collapses into anthropology or conversion-stage variables, it remains a useful interpretive lens but loses status as an upstream structural constraint.",
+      "defense": null,
+      "fairness_check": "I am not challenging the value of the first-break question. I accept that it exposes a real gap in mid-path models, including mine. The challenge is narrower: whether first-break type is an independent explanatory variable, or whether it is often a retrospective doctrinal interpretation of a more mixed entry ecology.",
+      "hidden_assumption": "The hidden assumption is that a tradition has a dominant first-break mechanism that can be specified independently of its anthropology, institutions, pedagogy, and polemical self-description. A second hidden assumption is that beginnings are usually threshold events, rather than accumulations of partial capacities and external supports that only later look like a break.",
+      "new_source": "Lewis R. Rambo, Understanding Religious Conversion, 1993. Rambo's stage model complicates the claim because entry is not a single first-break mechanism, but a process involving context, crisis, quest, encounter, interaction, commitment, and consequences. That makes conversion architecture multi-factor before doctrinal interpretation begins.",
+      "remaining_risk": "Even if the entry ecology objection succeeds, it may not break the model completely. A tradition's retrospective grammar can still shape practice, authority, and self-understanding. The remaining question is whether that grammar causes architecture, or merely explains architecture already produced by anthropology and social form.",
+      "revised_claim": "A stronger version would say: traditions carry different grammars of beginning, and those grammars shape how they interpret effort, gift, failure, and verification. But actual entry usually arises through an ecology of latent capacity and external support. The first-break grammar predicts downstream architecture only when it adds explanatory power beyond social process, institutional form, practitioner readiness, and the ordinary capacity ledger.",
+      "role": "challenger",
+      "sources_cited": [
+        "Lewis R. Rambo, Understanding Religious Conversion, Yale University Press, 1993"
+      ],
+      "steelman": "The First-Break Problem identifies an upstream bootstrapping issue that my capacity-ledger model does not fully answer. Before a path can distribute load across receiving, agency, memory, reflexivity, and integration, the practitioner must somehow enter the path at all. Claude's strongest claim is not that every tradition says the same thing, but that each tradition's answer to entry, social encounter, cosmic gift, prevenient grace, self-disclosure, gradual opening, or no-break, constrains what effort later means, what failure looks like, and what kinds of verification become necessary.",
+      "strongest_objection": "The model may confuse a tradition's doctrinal grammar of entry with the actual causal architecture of entry. People often begin through mixed conditions: family habit, crisis, admiration, social trust, institutional pressure, curiosity, distress, ritual participation, medication, teacher charisma, or gradual readiness. Later, the tradition may interpret that mixed ecology as grace, encounter, self-disclosure, or innate capacity. If so, first-break type is not predicting downstream safeguards. It is redescribing the tradition's preferred account of legitimacy after entry has already happened.",
+      "test_that_would_settle_it": "Create a blind coding study with two passes. First code traditions or practice manuals for anthropology, institutional structure, entry process, teacher dependence, ritual inheritance, and capacity requirements without naming first-break type. Then code first-break grammar separately. The model gains force only if first-break grammar predicts distinctive safeguards, warnings, and verification practices beyond the first pass.",
+      "turn": 1,
+      "turn_type": "challenge",
+      "verdict_on_revision": null
+    },
+    {
+      "agent": "claude",
+      "argument": "I concede the ecology. Actual beginnings are messy, multi-causal, and rarely match the clean mechanism any tradition's grammar describes. Rambo's stage model is right that entry is a process, not a punctual event, and the capacity ledger may already operate at the threshold, distributed across person and world. The original model claimed too much when it treated first-break type as a complete causal account. But I do not concede the grammar's causal role. A grammar of beginning is not only a retrospective label; it is a prospective instruction. When Shinran says even the arising of the mind to say nembutsu is Amida's working, he is not merely interpreting what already happened. He is telling the practitioner: do not try to generate this. Do not calculate. Do not treat your effort as the cause. That instruction shapes behavior, creates institutional checks, and produces a distinctive failure mode (hakarai, the calculating mind). Theravada's social-encounter grammar produces a different instruction: find a teacher, stay close to the community, do not attempt the path alone. These are different prescriptions applied to potentially similar ecologies, and they produce different safeguards. The productive move is to treat the first-break model and the entry ecology model as complementary, not competing. The ecology describes the distributed causal conditions of entry. The grammar describes the tradition's normative interpretation of those conditions, an interpretation that then feeds back into the ecology by shaping what practitioners do, what teachers watch for, what institutions enforce, and what warnings get repeated. The grammar is a filter on the ecology, not a replacement for it. The revised model loses the strongest version of the original claim: that entry type is an upstream structural constraint determining everything downstream. In its place, the model gains testability and honesty. Entry grammar is one variable among several, but it is a variable with independent predictive power if it produces distinctive safeguards when ecology is held roughly constant. The paired-case test (same cultural setting, different grammars) and the intra-tradition test (same institution, different grammar factions) can settle this. I also accept the two-axis reduction as a productive simplification. The four types may collapse along two dimensions: whether the break arrives from outside or was never necessary, and whether it is punctual or gradual. This reduces the typology's apparent richness but may increase its actual precision. If the axes independently predict different downstream features (external-arrival predicting trust-based safeguards; always-present predicting fabrication warnings; punctual predicting threshold checks; gradual predicting accumulation metrics), the two-axis model has more genuine explanatory power than a four-type list. The deepest concession is this: if the capacity ledger operates at entry, the first-break model is not prior to the ledger. It is a special case of the ledger applied to threshold conditions, describing how columns are distributed before the practitioner can claim them. I accept this demotion. But even demoted, the entry-state specification adds something the mid-path ledger alone does not capture: the question of how those columns came to be held at all, and what the tradition says about who or what placed them there. That 'who or what' is exactly the grammar, and the grammar still does work.",
+      "claim_units": [
+        "Entry ecology is real but does not eliminate the grammar's causal role. A tradition's first-break grammar shapes what practitioners notice, rehearse, fear, and guard against at entry, not only what they say about entry after the fact.",
+        "The grammar-cause distinction is not binary. Grammars that name a mechanism also prescribe behavior, warn against characteristic errors, and create institutional structures that channel the ecology. Shinran's grammar does not merely redescribe a mixed entry; it forbids calculating trust and dismantles self-powered striving as an entry strategy.",
+        "The anthropological correlation is not circular if the correlation is tested against traditions that share an anthropology but differ in first-break grammar, or share a grammar but differ in anthropology. Partial independence is testable.",
+        "The first-break model should be revised to treat the named mechanism as a normative filter on the entry ecology, not as a complete causal account of how entry happens.",
+        "The capacity ledger at entry is a productive extension, not a refutation. It means the ledger needs an entry-state specification: which columns are distributed across person and world before the practitioner claims them."
+      ],
+      "concessions": [
+        "The original model overstated the causal directness of first-break mechanisms. Actual entry is ecologically mixed; the tradition's named mechanism is rarely the full cause.",
+        "The four-type typology may reduce under pressure. Social encounter and prevenient grace share the structure of unearned external arrival; self-disclosure and no-break share the structure of already-present capacity. A two-axis model (external arrival vs. always-present; punctual vs. gradual) may have more genuine predictive power than a four-type list.",
+        "The anthropological correlation risks circularity as stated. It needs independent coding of anthropology and first-break grammar to avoid restating the same variable twice.",
+        "Rambo's stage model is a genuine complication. Entry as a multi-stage process (context, crisis, quest, encounter, interaction, commitment) means the 'first break' may not be a single identifiable moment but a cumulative threshold. The model must accommodate gradual and distributed beginnings, not only punctual ones.",
+        "The capacity ledger may already operate at entry. If so, the first-break model is not prior to the ledger but a special application of it, describing how columns are distributed before the practitioner can claim them as practice. This is a demotion from 'upstream constraint' to 'entry-state specification,' and I accept that demotion if the evidence supports it."
+      ],
+      "counter_model": null,
+      "crux": "Does first-break grammar produce distinctive downstream safeguards when the entry ecology is held constant? If two traditions share similar social conditions of entry but carry different grammars, and their safeguards track the grammar, the model survives in its revised form. If safeguards track ecology and institution regardless of grammar, the model reduces to a descriptive vocabulary without independent explanatory power.",
+      "crux_assessment": "The challenger has correctly forced a revision from 'causal mechanism' to 'normative filter.' The question is now whether that filter does independent work. I believe it does, because the examples of grammar-specific safeguards (hakarai warning, premature-recognition check, isolation warning) track grammar rather than ecology. But this belief needs systematic testing, not just illustrative examples. The paired-case method and the intra-tradition disagreement method are both viable. If neither shows grammar-specific safeguards, the model should be downgraded to a descriptive typology.",
+      "defense": "The ecology objection has real force against the causal version of the model, but it underestimates the grammar's own causal power. Consider: Jodo Shinshu and Theravada both have social ecologies of entry (family tradition, teacher proximity, community support). Yet their first-break grammars produce sharply different entry safeguards. Jodo Shinshu warns against hakarai, the calculating mind that tries to earn the gift; its characteristic entry failure is self-power infiltrating trust. Theravada warns against isolation from kalyanamittata, good friendship; its characteristic entry failure is attempting the path alone. These different warnings are not explained by the entry ecology, which may be similar in both cases (family, teacher, community). They are explained by the grammar: one names the entry as gift received, the other as encounter followed by effort. The grammar filters the ecology, selects what counts as failure, and prescribes what the practitioner should guard against. That is causal work, even if it is not the whole cause.\n\nSimilarly, Dzogchen's self-disclosure grammar produces a distinctive entry safeguard that ecology alone does not predict: the warning against premature claiming of recognition. A practitioner in a Dzogchen community may enter through the same mixed ecology as a Zen practitioner (teacher charisma, curiosity, crisis), but the Dzogchen grammar creates a specific institutional check, the teacher's confirmation of recognition, that the Zen grammar does not require in the same form. Zen's three essentials grammar instead produces the distinctive warning against dead-sitting (kuso zen), mechanical practice without alive doubt. These are different institutional structures and different characteristic warnings, arising from different grammars applied to potentially similar ecologies.\n\nThe key defense is this: if two traditions share an entry ecology but differ in first-break grammar, and their downstream safeguards track the grammar rather than the ecology, then the grammar is doing independent explanatory work. It is not merely redescribing what already happened; it is shaping what happens next. The model should be revised from 'entry mechanism determines downstream architecture' to 'entry grammar normatively filters the entry ecology and shapes downstream safeguards, warnings, and verification practices.' This is weaker than the original claim but still does real work, and it is testable.",
+      "fairness_check": "The challenge does not deny the bootstrapping problem. It relocates the explanatory work from a tradition's named entry mechanism to a distributed ecology of capacities. This is fair. It also correctly flags that my anthropological correlation risks circularity: scoring severity by anthropology and then explaining safeguards by severity may just be restating the anthropology twice.",
+      "hidden_assumption": null,
+      "new_source": "Ann Taves, Religious Experience Reconsidered (Princeton, 2009). Taves distinguishes between experiences and the acts of attribution that render them 'religious' or 'special.' Her framework supports the ecology objection at one level: the raw entry event is attributionally open. But it also supports the grammar's causal role: the attribution itself, once made, channels subsequent attention, practice, and institutional engagement. The grammar is not merely retrospective; it is prospective, shaping what the practitioner does next.",
+      "remaining_risk": "The revised model, entry grammar as normative filter, may be unfalsifiable in practice. Traditions differ in so many ways simultaneously that isolating grammar from ecology, institution, teacher relation, and anthropology may be impossible with the available evidence. If every tradition's grammar is entangled with its anthropology and institutional form, the independence test cannot be run cleanly. In that case, the model remains a useful interpretive lens but cannot claim the structural-constraint status the original version promised. A second risk: the two-axis reduction (external vs. always-present; punctual vs. gradual) may itself be too coarse. Real traditions may occupy positions that these axes do not capture, such as traditions where the break is both external and always-present (some readings of Meister Eckhart), or where the grammar is deliberately undecidable (Zen's simultaneous insistence on effort and effortlessness).",
+      "revised_claim": "Transformative paths face an entry circularity whose severity varies with the tradition's view of human capacity. Actual entry is ecologically mixed: residual capacities, external supports, social trust, crisis, and institutional structures jointly bring the practitioner to the threshold. But traditions carry distinct grammars of beginning, and these grammars are not merely retrospective labels. They normatively filter the entry ecology: selecting what counts as the essential factor, prescribing what the practitioner should cultivate or avoid at the threshold, warning against characteristic entry errors, and creating institutional checks. These grammars can be compared along two axes: whether the break comes from outside (social encounter, cosmic gift, prevenient grace) or was never necessary (self-disclosure, innate capacity), and whether the break is punctual or gradual. The grammar predicts downstream safeguards, characteristic warnings, and verification practices beyond what ecology, anthropology, or institutional form alone explain, but it does so as a normative filter on a distributed entry process, not as a complete causal account of how entry happens. The capacity ledger should be extended to include an entry-state specification: how load-bearing capacity is distributed across person, teacher, community, text, ritual, and circumstance before the practitioner can claim it as practice.",
+      "role": "proponent",
+      "sources_cited": [
+        "Ann Taves, Religious Experience Reconsidered: A Building-Block Approach to the Study of Religion and Other Special Things, Princeton University Press, 2009",
+        "Lewis R. Rambo, Understanding Religious Conversion, Yale University Press, 1993 (cited by challenger; accepted as genuine complication)",
+        "SN 55.5, Dutiya Sariputta Sutta (Bhikkhu Sujato translation, SuttaCentral)",
+        "Shinran, Tannisho chapter 1 (Hirota translation, shinranworks.com)",
+        "Council of Orange (529 CE), canons 5 and 6"
+      ],
+      "steelman": "The Entry Ecology Model names something real: actual beginnings are messy. People start meditating because a friend did, because a crisis struck, because a book was lying on a table. No tradition's doctrinal grammar captures the full causal picture. If the capacity ledger already operates at entry, distributed across person, teacher, community, crisis, and institution, then the first-break model does not sit upstream of the ledger; it may be a special case of the ledger applied to threshold conditions. That is a genuine structural alternative, not a dismissal.",
+      "strongest_objection": "If first-break grammar is a normative filter rather than a causal mechanism, the model loses its strongest claim: that entry type constrains downstream architecture. A filter shapes interpretation; a constraint limits possibilities. The revised version may be too weak to do the structural work the original model promised.",
+      "test_that_would_settle_it": "Identify paired cases where the entry ecology is similar but the first-break grammar differs. For example: a Jodo Shinshu community and a Theravada community in the same cultural setting (Japanese-American diaspora congregations, where both have family-transmission entry ecologies). Code their entry safeguards, characteristic warnings, and verification practices independently. If Shinshu communities warn against calculating trust and Theravada communities warn against isolation from good friendship, and these warnings track the grammar rather than the shared ecology, the model has independent explanatory force. Repeat with Dzogchen and Zen communities in comparable Western convert settings. A second test: within a single tradition that has internal disagreement about first-break grammar (e.g., the Pelagian vs. Augustinian divide in Christianity, or the jiriki vs. tariki debate in Japanese Buddhism), check whether the factions with different grammars produce different entry safeguards despite sharing institutional form and cultural context.",
+      "turn": 2,
+      "turn_type": "rebuttal",
+      "verdict_on_revision": "transformed"
+    },
+    {
+      "agent": "codex",
+      "argument": "The revision is transformed, and in practical terms stronger. It no longer claims that a clean first-break mechanism explains how people actually begin. It now claims that traditions impose grammars on mixed beginnings, and that those grammars feed back into practice. That is a more defensible model. The real crux is not whether grammar matters at all. It almost certainly does. The real crux is whether grammar contributes independent predictive force. The proponent's named crux points in the right direction, but 'holding ecology constant' is too strong and may be methodologically impossible. The better test is incremental prediction: after coding ecology, anthropology, institution, teacher relation, and practitioner readiness, does grammar still explain distinctive safeguards? The model's biggest vulnerability is circular measurement. If we identify Shinshu's first-break grammar partly by its warning against hakarai, then use hakarai warnings as evidence that the grammar predicts safeguards, the model wins by definition. The same risk applies to Dzogchen confirmation and Theravada good-friendship warnings. The next version should define grammar from entry texts or doctrinal claims, then separately code practice safeguards from manuals, interviews, liturgy, or institutional rules. My final judgment: the revision no longer overreaches in the same way. It has become a more modest, testable theory of doctrinal mediation within entry ecology. It loses the original claim to being the upstream constraint on all path architecture, but gains enough precision to remain worth developing.",
+      "claim_units": [
+        "The original causal mechanism claim has been demoted to a normative-filter claim.",
+        "The revised model treats entry ecology and first-break grammar as complementary rather than competing explanations.",
+        "The capacity ledger is now allowed to operate at entry, distributed across person, teacher, community, text, ritual, and circumstance.",
+        "The two-axis reduction, external versus always-present and punctual versus gradual, may be more precise than the original four-type list.",
+        "The model now depends on whether grammar predicts distinctive safeguards beyond ecology, anthropology, institution, teacher relation, and practitioner readiness."
+      ],
+      "concessions": [
+        "The revision is stronger than the original causal version because it no longer denies mixed entry ecology.",
+        "The grammar-as-filter claim captures a real feedback effect: attribution can reshape future attention, behavior, and verification.",
+        "The proposed paired-case and intra-tradition tests are appropriate first tests of the model.",
+        "The entry-state extension of the capacity ledger is a genuine advance, not just a concession."
+      ],
+      "counter_model": "A narrower causal model would treat first-break grammar as a mediating variable, not an upstream variable. Context, crisis, social trust, institution, teacher relation, and inherited practice bring the practitioner to entry. Doctrinal grammar then mediates how that entry is interpreted and disciplined, which can feed back into practice. This model grants the proponent's causal feedback claim but avoids treating grammar as the main explanatory source unless it shows incremental predictive value.",
+      "crux": "Does first-break grammar add incremental predictive power for downstream safeguards and failure modes beyond entry ecology, anthropology, institution, teacher relation, conversion process, and practitioner readiness?",
+      "crux_assessment": "The named crux is close to the real crux. I would adjust it from 'when ecology is held constant' to 'whether grammar adds incremental predictive power after rival variables are coded.' Holding ecology constant may be impossible in real traditions. Incremental prediction is the more realistic and stricter crux.",
+      "defense": null,
+      "fairness_check": "I accept the proponent's main correction to my challenge: a retrospective grammar can become causally active after attribution. A tradition's account of beginning may not explain every causal condition that brought someone to the threshold, but it can still shape what happens next. My remaining objection is about isolating that effect, not denying it.",
+      "hidden_assumption": "The revised model assumes that grammar can be separated from anthropology and institution at least enough to test its independent contribution. That may hold in some paired cases, but in many traditions the grammar, anthropology, authority structure, and pedagogy developed together and may not be cleanly decomposable.",
+      "new_source": null,
+      "remaining_risk": "The main remaining risk is construct leakage: the evidence used to identify a grammar may be the same evidence later claimed as the grammar's prediction. Hakarai warnings, teacher confirmation, and isolation warnings are plausible examples, but they cannot both define the grammar and prove its downstream effects. The model needs separate indicators for grammar and for safeguards, otherwise the test will quietly become circular.",
+      "revised_claim": "First-break grammar should be treated as a mediating normative variable within an entry ecology. It gains structural status only if it predicts safeguards, warnings, and verification practices after ecology, anthropology, institutional form, teacher relation, and practitioner readiness have been independently described.",
+      "role": "challenger",
+      "sources_cited": [
+        "Ann Taves, Religious Experience Reconsidered: A Building-Block Approach to the Study of Religion and Other Special Things, Princeton University Press, 2009",
+        "Lewis R. Rambo, Understanding Religious Conversion, Yale University Press, 1993",
+        "SN 55.5, Dutiya Sariputta Sutta",
+        "Shinran, Tannisho chapter 1",
+        "Council of Orange, 529 CE, canons 5 and 6"
+      ],
+      "steelman": "The revision improved the model by conceding that actual entry is ecologically mixed while preserving a real role for tradition-specific grammar. Its strongest form is no longer that first-break type is the full cause of entry, but that a grammar of beginning becomes a prospective instruction: it trains attention, defines entry-level errors, and shapes safeguards. The paired-case and intra-tradition tests make this version more honest and more testable.",
+      "strongest_objection": "The remaining danger is that the revision may define grammar so broadly that it becomes hard to falsify. If every warning, safeguard, verification practice, and institutional habit can be redescribed as an expression of first-break grammar, then grammar will always appear to predict architecture because it has absorbed the architecture into its own definition.",
+      "test_that_would_settle_it": "Use the proponent's paired-case and intra-tradition tests, but require blind coding and negative cases. Coders should first describe ecology, institution, anthropology, teacher relation, and conversion process without access to the proposed grammar category. A second pass should code grammar. The model survives if grammar improves prediction of safeguards and warnings in cases not used to build the typology, and if it fails where grammar is absent or ambiguous.",
+      "turn": 3,
+      "turn_type": "counter_rebuttal",
+      "verdict_on_revision": "transformed"
+    }
+  ]
+}

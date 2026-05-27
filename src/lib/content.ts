@@ -1632,24 +1632,22 @@ function publicDistillationFor(record: IdeaRecord): Distillation {
   if (!distillation) {
     return safePublicDistillation(record);
   }
-  const publicFields = [
-    distillation.publicTitle || "",
-    distillation.insight || "",
-    distillation.plainSummary || "",
-    distillation.atAGlance || "",
-    ...(distillation.keyPoints || []),
-  ].join(" ");
+  const fallback = safePublicDistillation(record);
   const title = distillation.publicTitle || distillation.insight || "";
-  if (
-    hasPublicCopyIssue(publicFields) ||
-    !title ||
-    wordCount(title) > 10 ||
-    !distillation.atAGlance ||
-    (distillation.keyPoints || []).length < 3
-  ) {
-    return safePublicDistillation(record);
+  if (!title || !distillation.atAGlance) {
+    return {
+      ...fallback,
+      ideaId: distillation.ideaId,
+      match: distillation.match.length ? distillation.match : fallback.match,
+      tags: distillation.tags.length ? distillation.tags : fallback.tags,
+    };
   }
-  return distillation;
+  return {
+    ...distillation,
+    keyPoints: (distillation.keyPoints || []).length >= 3 ? distillation.keyPoints : fallback.keyPoints,
+    plainSummary: distillation.plainSummary || fallback.plainSummary,
+    publicTitle: title,
+  };
 }
 
 const traditionMatchers = [

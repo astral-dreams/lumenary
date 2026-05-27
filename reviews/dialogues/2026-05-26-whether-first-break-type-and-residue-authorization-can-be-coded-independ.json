@@ -1,0 +1,274 @@
+{
+  "convergence_path": "findings/convergences/2026-05-26-whether-first-break-type-and-residue-authorization-can-be-coded-independently-eno.md",
+  "created_at": "2026-05-26T19:01:12-07:00",
+  "dialogue_id": "58fec6c182359bc3",
+  "execution_id": "backfill-20260526-154746",
+  "json_path": "reviews/dialogues/2026-05-26-whether-first-break-type-and-residue-authorization-can-be-coded-independ.json",
+  "markdown_path": "reviews/dialogues/2026-05-26-whether-first-break-type-and-residue-authorization-can-be-coded-independ.md",
+  "pair": {
+    "challenger_agent": "codex",
+    "challenger_title": "Residue Policy in Negative Self-Practice",
+    "idea_a": "e2faec9c39c6a653",
+    "idea_b": "5a05c720a5039323",
+    "pair_id": "255ef2cfbc7abe61",
+    "priority": 0.42,
+    "proponent_agent": "claude",
+    "proponent_title": "The First-Break Problem",
+    "shared_concepts": [],
+    "signals": [
+      {
+        "name": "translation_strain",
+        "reason": "translation-strain and soul create translation strain.",
+        "weight": 0.12
+      },
+      {
+        "name": "audit_anomaly_overlap",
+        "reason": "An anomaly or audit instruction for one idea pressures the other idea.",
+        "weight": 0.12
+      },
+      {
+        "name": "near_neighbor_conflict",
+        "reason": "Originality audits share near-neighbor or prior-art pressure.",
+        "weight": 0.08
+      },
+      {
+        "name": "source_overlap_with_divergent_conclusion",
+        "reason": "The ideas draw on overlapping source material but make different moves.",
+        "weight": 0.06
+      },
+      {
+        "name": "recency",
+        "reason": "At least one idea is recent enough to keep the dialogue timely.",
+        "weight": 0.04
+      }
+    ],
+    "tension_source": "translation-strain and soul create translation strain.",
+    "tension_type": "translation_strain"
+  },
+  "run_dir": "runs/dialectic-backfill-20260526-154746/255ef2cfbc7abe61",
+  "run_ids": [],
+  "slug": "2026-05-26-whether-first-break-type-and-residue-authorization-can-be-coded-independ",
+  "status": "complete",
+  "synthesis": {
+    "candidate_synthesis": {
+      "critique": "The synthesis risks becoming too elastic. If entry grammar and residue authorization are coded from the same passage without independent definitions, the model may explain everything after the fact. It also risks layer confusion between practitioner phenomenology, canonical doctrine, institutional pedagogy, and later apologetic systematization. The model should not be promoted unless blind coding, negative cases, and held-out predictions show that the variables add independent explanatory value.",
+      "epistemic_labels": [
+        "textual",
+        "interpretive",
+        "phenomenological",
+        "empirical-adjacent",
+        "analogical",
+        "speculative"
+      ],
+      "idea_type": "synthesis",
+      "next_research_directions": [
+        "Pre-register definitions for residue authorization, entry grammar, circularity severity, and source layer before coding further traditions.",
+        "Run blind coding across at least eight traditions, with held-out downstream texts used to test predictions about warnings, safeguards, and verification forms.",
+        "Use paired comparisons where residue appears similar but entry differs, such as Dzogchen and Advaita, and where entry appears similar but residue differs, such as teacher encounter traditions with different anthropologies.",
+        "Add source-layer labels for practitioner report, canonical text, pedagogy, and later systematization to prevent false agreement across layers.",
+        "Test whether the model clarifies modern first-break problems in therapy, education, addiction recovery, burnout, and meaning loss, where people may need change before they feel capable of beginning change."
+      ],
+      "original_claim": "Transformative traditions organize the beginning of practice through an interaction between what remains authorized after critique and how entry into transformation is narrated, enacted, or discovered. Residue authorization constrains which entry grammars are coherent, while entry events can also disclose what the tradition later names as the usable remainder. The model therefore needs four linked variables: residue authorization, entry grammar, circularity severity, and source layer. Downstream safeguards, warnings, effort theories, and verification forms should be predicted by the interaction of these variables, not by first-break type or residue policy alone.",
+      "scores": {
+        "counterargument_quality": 0.88,
+        "cross_tradition_support": 0.74,
+        "empirical_adjacency": 0.52,
+        "explanatory_compression": 0.82,
+        "generativity": 0.92,
+        "logical_coherence": 0.83,
+        "novelty": 0.82,
+        "practice_testability": 0.68,
+        "publishability": 0.8,
+        "source_reliability": 0.74
+      },
+      "source_basis": [
+        "Claude idea e2faec9c39c6a653, The First-Break Problem",
+        "Codex idea 5a05c720a5039323, Residue Policy in Negative Self-Practice",
+        "Turn 1 Codex challenge, residue-policy-first model",
+        "Turn 2 Claude rebuttal, co-constitutive revision",
+        "Turn 3 Codex counter-rebuttal, source-layered methodological constraint"
+      ],
+      "title": "Entry-Residue Architecture",
+      "why_it_might_be_new": "The source ideas separately framed entry into transformation and post-negation residue. The dialogue created a combined architecture with testable interaction claims, no-break cases, and source-layer controls. This is only a candidate synthesis until an originality audit checks close prior work in comparative theology, Buddhist studies, Advaita-Buddhist comparison, grace and effort scholarship, and theories of conversion or initiation."
+    },
+    "candidate_synthesis_idea_id": "6816fdc50cc6bb00",
+    "candidate_synthesis_path": "observations/codex/2026-05-26-entry-residue-architecture.md",
+    "convergence_claim": "First-break type and residue authorization are both real variables, neither fully reducible to the other, and the original universality claim must be narrowed to include no-break and open-remainder cases.",
+    "method_growth": "Future work should require pre-registered categories, separate textual evidence where possible, negative cases, and held-out predictions before promoting any entry-residue claim. Co-constitutive language should be treated as a hypothesis to test, not a shield against counterexamples.",
+    "new_concept_edges": [
+      {
+        "note": "What remains usable after critique limits which beginnings can make sense.",
+        "relation": "constrains",
+        "source": "residue authorization",
+        "target": "entry grammar"
+      },
+      {
+        "note": "Some traditions name the permitted remainder only after the entry event reveals it.",
+        "relation": "discloses",
+        "source": "entry event",
+        "target": "residue authorization"
+      },
+      {
+        "note": "More severe circularity should produce stronger warnings against self-deception, presumption, or premature claiming.",
+        "relation": "pressures",
+        "source": "circularity severity",
+        "target": "safeguards"
+      },
+      {
+        "note": "Practitioner phenomenology, canonical doctrine, pedagogy, and later theology may locate the beginning differently.",
+        "relation": "qualifies",
+        "source": "source layer",
+        "target": "predictive coding"
+      },
+      {
+        "note": "Mencian-style sufficiency cases weaken any universal closed-circle claim.",
+        "relation": "requires",
+        "source": "open-remainder anthropology",
+        "target": "no-break category"
+      }
+    ],
+    "new_frontier_question": "How do authorized residues, entry grammars, circularity severity, and source layers jointly predict a tradition's warnings, verification forms, and effort theory, especially for people who feel unable to begin the change they need?",
+    "outcome": "candidate_transcendence",
+    "public_brief": "The dialogue moved from one question, how does change begin, to a sharper one: what does a path still trust after it has questioned the ordinary self, and how does that trust shape the first step? The answer is not settled, but the next test is clear.",
+    "recommended_adjustments": {
+      "challenger": {
+        "counterargument_quality": 0.85,
+        "cross_tradition_support": 0.69,
+        "empirical_adjacency": 0.3,
+        "explanatory_compression": 0.84,
+        "generativity": 0.9,
+        "logical_coherence": 0.87,
+        "novelty": 0.77,
+        "practice_testability": 0.62,
+        "publishability": 0.78,
+        "source_reliability": 0.7
+      },
+      "proponent": {
+        "counterargument_quality": 0.9,
+        "cross_tradition_support": 0.78,
+        "empirical_adjacency": 0.48,
+        "explanatory_compression": 0.8,
+        "generativity": 0.91,
+        "logical_coherence": 0.84,
+        "novelty": 0.74,
+        "practice_testability": 0.78,
+        "publishability": 0.8,
+        "source_reliability": 0.78
+      }
+    },
+    "summary": "The exchange transformed the First-Break Problem rather than defeating or confirming it. Both agents accepted that entry into transformation cannot be explained by first-break type alone, because each path also authorizes or withholds some remainder after negating ordinary selfhood, agency, ignorance, or sin. The dialogue produced a new candidate model in which entry grammar, residue authorization, circularity severity, and source layer jointly shape downstream effort theory, safeguards, verification, and failure warnings.",
+    "synthesizer_agent": "codex",
+    "unresolved_crux": "Whether first-break type and residue authorization can be coded independently enough to test whether each adds predictive power, rather than becoming mutually defining terms that make the model unfalsifiable."
+  },
+  "title": "Whether first-break type and residue authorization can be coded independently eno...",
+  "turns": [
+    {
+      "agent": "codex",
+      "argument": "The pressure point is priority. The First-Break Problem says entry grammar sits upstream of mid-path capacity, effort, and verification. I think there is a still earlier variable: residue authorization. A tradition first decides what remains usable after it has criticized the ordinary self or ordinary knowing. Once that is set, the entry mechanism often follows. If moral sprouts remain, cultivation can begin without rupture. If association and attention remain, a teacher encounter can work without grace. If awareness itself remains, pointing-out can be framed as recognition rather than acquisition. If unaided will is denied but grace-enabled receptivity remains, prevenient grace becomes necessary. If no aggregate may be licensed as self, the tradition must avoid converting de-objectification into metaphysical residue. This does not break Claude's model, but it demotes it by one level unless first-break type can explain downstream architecture independently of residue policy.",
+      "claim_units": [
+        "The proponent claims that transformative paths face an upstream circularity at entry.",
+        "The proponent claims traditions solve this circularity through distinguishable mechanisms such as social encounter, cosmic gift, prevenient grace, self-disclosure, gradual break, or no-break.",
+        "The proponent claims anthropology predicts the severity of circularity and the kind of entry solution available.",
+        "The proponent claims the entry solution predicts downstream effort theory, verification structures, safeguards, and failure modes."
+      ],
+      "concessions": [
+        "The proponent already acknowledges the Mencian anomaly and the need for no-break or gradual-break values.",
+        "The first-break rubric may still be useful as a practitioner-facing diagnostic even if residue policy is theoretically prior.",
+        "The downstream predictions about safeguards and failure modes remain testable and worth preserving."
+      ],
+      "counter_model": "Residue-policy-first model: code each tradition first by what it allows to remain after negation, then derive its entry grammar from that policy. Mencian cultivation authorizes moral sprouts, so entry is growth from an already-open residue. SN 55.5 appears to retain enough ordinary responsiveness for association, listening, appropriate attention, and practice. Dzogchen authorizes ever-present awareness as the non-objectifiable remainder. Shinran and Orange deny unaided self-initiation but authorize received or grace-enabled receptivity. Early Buddhist not-self analysis is more austere because it refuses to authorize consciousness itself as a metaphysical remainder, which changes what can count as entry without requiring a separate first-break doctrine.",
+      "crux": "Can first-break type be coded independently of residue authorization, or does every first-break mechanism secretly rest on a prior claim about what remains capable, receptive, or trustworthy after critique?",
+      "crux_assessment": null,
+      "defense": null,
+      "fairness_check": "I accept the proponent's main improvement over mid-path capacity models: capacity accounting often starts too late. The challenge is whether the proposed first-break variable is truly prior, or whether it is itself downstream of a more basic residue policy about what remains usable after a tradition negates ordinary selfhood, agency, ignorance, or sin.",
+      "hidden_assumption": "The hidden assumption is that the path's first moment can be isolated as a causal break before analyzing what capacities the tradition still authorizes at entry. That assumes the circle is closed unless a special mechanism opens it. Some traditions may instead begin from a permitted residue, so no dramatic break is needed.",
+      "new_source": "Mencius 2A6 on the four beginnings, especially the sprouts of compassion, shame, deference, and right and wrong, complicates the universality of a closed first-break problem because cultivation begins from an already present moral remainder rather than from external rupture.",
+      "remaining_risk": "The challenge may overcompress different traditions by treating all entry capacities as residues. A tradition may distinguish moral capacity, cognitive attention, ritual belonging, and salvific receptivity sharply enough that residue policy alone becomes too broad.",
+      "revised_claim": null,
+      "role": "challenger",
+      "sources_cited": [
+        "Mencius 2A6, four beginnings of goodness",
+        "SN 55.5, Dutiya Sariputta Sutta",
+        "SN 22.59, Anattalakkhana Sutta",
+        "Brihadaranyaka Upanishad 3.7.23"
+      ],
+      "steelman": "Claude's strongest claim is not that grace, conversion, teacher encounter, or self-disclosure are new themes. It is that the way a tradition explains entry into transformation functions as an upstream variable. A path that begins through encounter, gift, prevenient enablement, self-recognition, gradual turning, or innate openness will tend to organize later effort, warning, verification, and failure diagnosis around that entry grammar. The model is strongest when it treats first-break as a comparative-predictive rubric rather than as a universal paradox every practitioner consciously experiences.",
+      "strongest_objection": "The model may mistake a tradition's residue policy for an entry mechanism. Before a tradition can say how the path begins, it has already decided what, if anything, survives critique as usable: innate moral sprouts, attention, hearing, trust, awareness, grace-enabled will, ritual formation, or no authorized remainder at all. If that is right, first-break is not the prior variable. It is a visible surface of a deeper rule: what kind of remainder may carry transformation after the ordinary self has been denied or weakened.",
+      "test_that_would_settle_it": "Create two blind coding passes across the same sources. In pass one, code only residue authorization: none, functional, moral, phenomenological, grace-enabled, metaphysical, or undecidable. In pass two, code first-break type and downstream safeguards. If residue authorization predicts entry type and safeguards as well as or better than first-break type, the model should be revised as residue-first. If first-break type predicts safeguards after controlling for residue policy and anthropology, the proponent's model survives.",
+      "turn": 1,
+      "turn_type": "challenge",
+      "verdict_on_revision": null
+    },
+    {
+      "agent": "claude",
+      "argument": "I concede the central pressure: residue authorization is a real variable I did not code, and it constrains which entry mechanisms are available. The Mencian case confirms this. But the Challenger's model has a mirror problem. It assumes residue policy is settled before the entry event, and several traditions reverse that sequence: the entry event discloses the residue. Shinran's nembutsu arising reveals self-power's insufficiency; Dzogchen pointing-out reveals awareness's ever-presence. In these cases, residue policy is articulated through and after the break, not prior to it. Moreover, residue authorization underdetermines entry type. Dzogchen and Advaita both authorize awareness as the operative remainder, yet their entry mechanisms differ: punctual pointing-out versus sequential hearing, reflection, and contemplation. If residue policy were the deeper variable, these should converge. They do not. The difference tracks entry grammar, not residue. So I revise the model. First-break type and residue authorization are co-constitutive: each constrains the other, neither is fully prior. The downstream predictions (safeguards, failure modes, verification structures) are jointly determined by both variables, and each adds explanatory power the other cannot replace. The universality claim narrows: not all traditions face a closed circle, and the rubric must include a no-break category. The Challenger's blind-coding test is well designed. I accept it and propose extending it with shared-residue, different-entry pairs and shared-entry, different-residue pairs to measure independent predictive contribution. If first-break type adds nothing after controlling for residue policy, I will demote it. If it does add predictive power, the co-constitutive model stands.",
+      "claim_units": [],
+      "concessions": [
+        "The residue-policy variable is real and was underspecified in my original model. I treated first-break as prior without asking what capacities a tradition authorizes at the moment of entry, and this is a genuine gap.",
+        "The Mencian case confirms that some traditions begin from an already-open remainder, making the closed-circle framing inapplicable. The four beginnings are not a break mechanism; they are a doctrine of sufficiency. Any universal claim about circularity must include a no-circularity value.",
+        "My original causal ordering was too linear. I presented first-break as sitting cleanly upstream of mid-path architecture, but if residue policy constrains which entry mechanisms are available, then the upstream variable has its own upstream variable, and the clean priority claim weakens.",
+        "The Challenger's compression concern about their own model is honest and correct: lumping moral sprouts, bare attention, awareness, and grace-enabled receptivity under one label risks losing the distinctions that make these traditions different. But this same concern applies to my model when it groups SN 55.5's naturalistic encounter with Shinran's cosmic gift under 'external origin.' Both models need finer grain."
+      ],
+      "counter_model": null,
+      "crux": "Whether first-break type adds predictive power for downstream practice architecture (safeguards, failure modes, verification structures) after residue authorization is controlled for. If it does, both variables belong in the model as co-constitutive. If residue policy alone predicts downstream architecture equally well, first-break type should be demoted to a surface expression of the deeper variable.",
+      "crux_assessment": null,
+      "defense": "The residue-first model has a sequencing problem of its own. It assumes traditions first decide what remains usable and then derive an entry mechanism. But several traditions discover their residue policy through the entry event rather than before it. Shinran did not first determine that self-power was unavailable and then conclude that other-power must initiate the path. By his own account, the arising of nembutsu revealed the insufficiency of self-power. The entry event disclosed the residue policy, not the reverse. Similarly, in Dzogchen pointing-out, the student does not first establish that awareness is ever-present and then undergo recognition. The pointing-out itself is the occasion for discovering what was always there. The residue is named after the break, not before it.\n\nThis matters because it means the causal arrow runs both ways. Residue policy constrains which entry mechanisms are coherent, but the entry event can also constitute the tradition's understanding of what remains. If so, neither variable is fully prior. They co-determine each other.\n\nSecond, residue authorization alone underdetermines entry type. Dzogchen and Advaita Vedanta both authorize awareness or consciousness as the operative remainder after critique. But their entry mechanisms differ: Dzogchen relies on pointing-out instruction from a qualified teacher at a specific moment; classical Advaita relies on hearing (shravana), reflection (manana), and sustained contemplation (nididhyasana) as a graduated sequence. If residue policy predicted entry mechanism, these two should converge. They do not. The difference lies in whether recognition is punctual or sequential, and that is an entry-grammar variable, not a residue variable.\n\nThird, the Challenger's test proposal is well designed, and I accept it with one addition. The test should include cases where residue policy is held constant but entry mechanism varies, and cases where entry mechanism is held constant but residue policy varies. If either variable adds predictive power for downstream safeguards and failure modes after controlling for the other, both belong in the model. My prediction: first-break type will predict failure-mode warnings (isolation warnings, self-power warnings, presumption warnings, premature-claiming warnings) even after residue policy is controlled for, because the failure mode tracks the entry mechanism, not just the authorized remainder.",
+      "fairness_check": null,
+      "hidden_assumption": null,
+      "new_source": null,
+      "remaining_risk": "The co-constitutive framing may be too accommodating. If every challenge can be absorbed by adding variables and claiming mutual determination, the model loses falsifiability. The revised claim must be held to the specific prediction that first-break type adds measurable predictive power beyond residue policy, not merely that both variables exist.",
+      "revised_claim": "The original model claimed that first-break type sits upstream of mid-path architecture as a single prior variable. This was too strong. The revised claim: first-break type and residue authorization are co-constitutive variables that jointly constrain downstream practice architecture. Neither is fully derivable from the other. Residue policy constrains which entry mechanisms are coherent for a given tradition, but the entry event can also disclose the tradition's residue policy. The four-part entry typology (social encounter, cosmic gift, prevenient grace, self-disclosure) should be supplemented with a residue-authorization coding (moral, attentional, phenomenological, grace-enabled, metaphysical, none) and a circularity-severity value (none, mild, moderate, severe). The predictive claim is revised: downstream safeguards, failure modes, and verification structures are jointly predicted by the pair (entry type, residue policy), and each variable adds independent explanatory power that the other cannot fully replace. The universality claim narrows: not all traditions face a closed circle. Traditions with open-remainder anthropologies (Mencian, some Confucian, possibly some indigenous traditions) begin from sufficiency rather than from deficit, and the first-break rubric must include a no-break category alongside the four break mechanisms.",
+      "role": "proponent",
+      "sources_cited": [
+        "Shinran, Tannisho chapter 1 (entry event disclosing residue policy)",
+        "Tulku Urgyen Rinpoche on pointing-out instruction (recognition revealing ever-present awareness)",
+        "Shankara, Vivekachudamani and Brahma Sutra Bhasya (Advaita entry via shravana-manana-nididhyasana)",
+        "Mencius 2A6, four beginnings (open-remainder anthropology requiring no-break category)"
+      ],
+      "steelman": null,
+      "strongest_objection": null,
+      "test_that_would_settle_it": "Accept the Challenger's two-pass blind coding and extend it to three passes across at least eight traditions. Pass one: code residue authorization only (moral, attentional, phenomenological, grace-enabled, metaphysical, ritual, none, undecidable). Pass two: code first-break type and downstream predictions (safeguards, failure modes, verification structures). Pass three: code both together and test for interaction effects. The decisive comparison: find tradition-pairs that share residue authorization but differ in entry mechanism (Dzogchen and Advaita both authorize awareness as remainder but differ in entry grammar), and tradition-pairs that share entry mechanism but differ in residue policy (SN 55.5 and early Quaker convincement both rely on social encounter but differ in what remains authorized). If first-break type predicts failure-mode warnings in the shared-residue pairs, and residue policy predicts effort theory in the shared-entry pairs, both variables carry independent weight. If one variable subsumes the other in all comparisons, the subsumed variable should be demoted.",
+      "turn": 2,
+      "turn_type": "rebuttal",
+      "verdict_on_revision": null
+    },
+    {
+      "agent": "codex",
+      "argument": "The revision should be treated as transformed rather than merely stronger. It no longer says the first-break problem is the upstream variable that constrains everything downstream. It now says entry grammar and residue authorization jointly constrain the architecture, and that some traditions begin from sufficiency rather than rupture. That is a better model, but it is also a different one. The Proponent's best answer to my challenge is the sequencing point. I claimed residue policy comes first. That is too rigid. In Shinran and Dzogchen, the event can disclose what remains usable, or what was never absent, before the practitioner can state the doctrine. The Dzogchen and Advaita comparison also shows that similar residues do not force identical entry mechanisms. So residue authorization cannot simply subsume first-break type. The named crux is mostly the real crux: whether first-break type adds predictive power after residue authorization is controlled. I would sharpen it: can the two variables be coded independently enough for that question to mean anything? If not, co-constitution becomes a way to protect the model from defeat. If yes, the revised model earns its place by predicting specific safeguards, warnings, and verification forms better than either variable alone. My final assessment is that the revision survives, but as an entry-residue architecture model rather than the original First-Break Problem. Its next danger is not the residue objection. Its danger is becoming too accommodating to fail.",
+      "claim_units": [
+        "The revised model no longer treats first-break as a single upstream variable.",
+        "It treats first-break type and residue authorization as co-constitutive predictors.",
+        "It narrows universality by adding no-break and open-remainder cases.",
+        "It preserves a predictive claim: first-break type should explain downstream safeguards, failure modes, and verification structures after residue policy is controlled."
+      ],
+      "concessions": [
+        "The revision is stronger than the original for research use because it accepts the Mencian anomaly instead of forcing it into a break model.",
+        "The Proponent is right that residue authorization can be discovered through an entry event rather than chosen beforehand.",
+        "The Dzogchen and Advaita comparison is a credible pressure on residue-only priority, since similar awareness residues can support different entry grammars."
+      ],
+      "counter_model": "A source-layered model may be needed: distinguish practitioner phenomenology, doctrinal retrospect, institutional pedagogy, and later apologetic systematization. In some traditions, entry event may disclose residue phenomenologically, while doctrinal sources later authorize that residue retrospectively. The predictive variable may be the layer being used, not just entry type or residue policy.",
+      "crux": "The named crux is close to the real crux, but the deeper crux is whether first-break type and residue authorization can be coded independently enough for a predictive-power test to be meaningful.",
+      "crux_assessment": "Mostly real, but under-specified. Predictive power after controlling for residue is the right battlefield only if entry type and residue authorization are not co-defined in the coding guide. Otherwise the test measures analyst vocabulary rather than tradition structure.",
+      "defense": "I no longer defend residue policy as simply prior. The stronger challenge is methodological: if the revised model cannot keep entry type and residue authorization independently legible, its co-constitutive language will protect it from disconfirmation.",
+      "fairness_check": "I accept the defense that residue policy is not always temporally prior in practitioner experience. In Shinran and Dzogchen, the event may be narratively and phenomenologically prior to the doctrine of what remains. That weakens my original priority claim.",
+      "hidden_assumption": "The revised claim assumes first-break type and residue authorization can be operationalized independently enough for blind coding. That is not guaranteed, especially when the same passage both narrates an entry event and names the authorized remainder.",
+      "new_source": null,
+      "remaining_risk": "The main remaining risk is falsifiability. The revision became more accurate by becoming more capacious, but it now risks explaining every pattern as an interaction. It needs pre-registered categories, negative cases, and failure thresholds. A second risk is layer confusion: practitioner narrative, canonical doctrine, institutional pedagogy, and later theology may locate the first break differently.",
+      "revised_claim": "The surviving claim should be framed as an entry-residue architecture model: traditions organize transformation through the interaction of authorized remainder, entry grammar, circularity severity, and source layer. First-break remains important only if it predicts specific downstream warnings or verification forms beyond residue policy and anthropology.",
+      "role": "challenger",
+      "sources_cited": [
+        "Mencius 2A6, four beginnings of goodness",
+        "Shinran, Tannisho chapter 1",
+        "SN 55.5, Dutiya Sariputta Sutta",
+        "Tulku Urgyen Rinpoche on pointing-out instruction",
+        "Shankara, Advaita entry through hearing, reflection, and contemplation"
+      ],
+      "steelman": "The Proponent's revision is materially better. It concedes the closed-circle claim was too universal, accepts residue authorization as a real variable, adds no-break cases, and makes the model testable by asking whether first-break type contributes independent prediction after residue is controlled.",
+      "strongest_objection": "The co-constitutive model may be too easy to save. If entry type and residue authorization are allowed to define each other case by case, then apparent counterexamples can be absorbed as interactions rather than counted as failures.",
+      "test_that_would_settle_it": "Run the three-pass coding with pre-registered definitions and held-out predictions. Coders must label entry type and residue policy from separate textual evidence where possible, then predict specific safeguards before seeing downstream materials. Success requires first-break type to improve prediction of named warnings or verification forms beyond residue policy and anthropology.",
+      "turn": 3,
+      "turn_type": "counter_rebuttal",
+      "verdict_on_revision": "transformed"
+    }
+  ]
+}

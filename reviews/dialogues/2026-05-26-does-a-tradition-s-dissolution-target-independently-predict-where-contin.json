@@ -1,0 +1,280 @@
+{
+  "convergence_path": "findings/convergences/2026-05-26-does-a-tradition-s-dissolution-target-independently-predict-where-continuity-is-h.md",
+  "created_at": "2026-05-26T17:47:06-07:00",
+  "dialogue_id": "c7bd07aed1efede4",
+  "execution_id": "backfill-20260526-154746",
+  "json_path": "reviews/dialogues/2026-05-26-does-a-tradition-s-dissolution-target-independently-predict-where-contin.json",
+  "markdown_path": "reviews/dialogues/2026-05-26-does-a-tradition-s-dissolution-target-independently-predict-where-contin.md",
+  "pair": {
+    "challenger_agent": "codex",
+    "challenger_title": "Residue Policy in Negative Self-Practice",
+    "idea_a": "3c5caa358a09c26a",
+    "idea_b": "5a05c720a5039323",
+    "pair_id": "65da7e75dbe38a6b",
+    "priority": 0.42,
+    "proponent_agent": "claude",
+    "proponent_title": "Every Path Needs What Its Teaching Dissolves",
+    "shared_concepts": [
+      "witness-consciousness"
+    ],
+    "signals": [
+      {
+        "name": "translation_strain",
+        "reason": "translation-strain and soul create translation strain.",
+        "weight": 0.12
+      },
+      {
+        "name": "audit_anomaly_overlap",
+        "reason": "An anomaly or audit instruction for one idea pressures the other idea.",
+        "weight": 0.12
+      },
+      {
+        "name": "near_neighbor_conflict",
+        "reason": "Originality audits share near-neighbor or prior-art pressure.",
+        "weight": 0.08
+      },
+      {
+        "name": "source_overlap_with_divergent_conclusion",
+        "reason": "The ideas draw on overlapping source material but make different moves.",
+        "weight": 0.06
+      },
+      {
+        "name": "recency",
+        "reason": "At least one idea is recent enough to keep the dialogue timely.",
+        "weight": 0.04
+      }
+    ],
+    "tension_source": "translation-strain and soul create translation strain.",
+    "tension_type": "translation_strain"
+  },
+  "run_dir": "runs/dialectic-backfill-20260526-154746/65da7e75dbe38a6b",
+  "run_ids": [],
+  "slug": "2026-05-26-does-a-tradition-s-dissolution-target-independently-predict-where-contin",
+  "status": "complete",
+  "synthesis": {
+    "candidate_synthesis": {
+      "critique": "The candidate risks becoming too elastic. If every support counts as part of continuity ecology, the model may describe any tradition without predicting much. Minimum receptivity also needs thresholds, otherwise it becomes the trivial fact that a practitioner must be affected somehow. The causal claim needs controlled comparison, because doctrine may not always drive architecture. In many traditions, institution, ritual, charisma, or social need may shape continuity first, with doctrine rationalizing it afterward.",
+      "epistemic_labels": [
+        "textual",
+        "interpretive",
+        "phenomenological",
+        "empirical-adjacent",
+        "analogical",
+        "speculative"
+      ],
+      "idea_type": "synthesis",
+      "next_research_directions": [
+        "Build a coding rubric with fields for dissolution target, minimum receptivity, internal capacities, external supports, residue policy, practice ecology, warning profile, verification method, and failure mode.",
+        "Test paired traditions with similar dissolution targets but different ecologies, such as Theravada and secular mindfulness, Advaita and Kashmir Shaivism, Jodo Shinshu and Quietist Christianity.",
+        "Test paired traditions with similar ecologies but different dissolution targets to see whether practice form or doctrine better predicts continuity placement.",
+        "Operationalize minimum receptivity with thresholds: capacity to be addressed, capacity to register instruction or grace, capacity to continue or not obstruct, and capacity to be recognized by the tradition as transformed.",
+        "Run an originality audit against personal identity literature, Buddhist no self debates, Advaita witness accounts, practice theory, ritual studies, and Shinran scholarship before promotion."
+      ],
+      "original_claim": "Self negating or self transcending paths do not simply require a minimum self, and they do not only differ by final residue. They organize a continuity ecology. Each path must preserve enough receptivity and reliability for transformation to occur, but that continuity can be internally managed, externally scaffolded, relationally entrusted, ritually stabilized, institutionally maintained, or theologically relocated. The path's dissolution target may pressure where continuity migrates, while its residue policy governs what may be authorized after negation. Practice ecology may either express that doctrinal pressure or precede it historically and force doctrine to explain an already existing arrangement.",
+      "scores": {
+        "counterargument_quality": 0.88,
+        "cross_tradition_support": 0.72,
+        "empirical_adjacency": 0.54,
+        "explanatory_compression": 0.78,
+        "generativity": 0.92,
+        "logical_coherence": 0.86,
+        "novelty": 0.8,
+        "practice_testability": 0.8,
+        "publishability": 0.74,
+        "source_reliability": 0.7
+      },
+      "source_basis": [
+        "Claude idea 3c5caa358a09c26a: self dissolving paths require functional capacities and those capacities shape practice architecture.",
+        "Codex idea 5a05c720a5039323: negative self practice differs by residue policy, meaning what a tradition authorizes to remain after negation.",
+        "Turn 1 Codex challenge: continuity may be distributed across body, habit, teacher, ritual, vow, community, grace, text, and environment rather than housed in a minimum self.",
+        "Turn 2 Claude rebuttal: minimum self should be revised to minimum receptivity, the capacity to be addressed, register what is offered, and not obstruct transformation.",
+        "Turn 3 Codex counter rebuttal: dissolution target, continuity distribution, residue policy, and practice ecology should be treated as interacting variables, with causal priority left open.",
+        "Shared textual pressure: SN 22.59, Chandogya Upanishad 6.8.7 through 6.16, Brihadaranyaka Upanishad 3.7.23, Dogen's Bendowa, Shinran's Tannisho and Kyogyoshinsho."
+      ],
+      "title": "Continuity Ecology Under Negation",
+      "why_it_might_be_new": "The source ideas separately named minimum self and residue policy. The dialogue produced a wider model that asks how receptivity, distributed continuity, authorized remainder, and practice ecology interact. Its possible novelty is not the claim that traditions differ about selfhood, but the testable causal question: whether what a path negates predicts where it stores continuity better than rival variables such as ritual form, institutional dependence, teacher authority, or devotional affect."
+    },
+    "candidate_synthesis_idea_id": "34cbc5115dbd898a",
+    "candidate_synthesis_path": "observations/codex/2026-05-26-continuity-ecology-under-negation.md",
+    "convergence_claim": "Both agents converged that the original minimum self framing over internalized practice continuity. A path needs some locus of receptivity, but continuity may be carried by agency, teacher, vow, ritual, community, grace, institution, text, or divine relation. Both also accept that residue policy is a real variable, not a mere restatement of self versus no self.",
+    "method_growth": "The dialogue improved the research method by forcing overloaded terms apart. Future Lumenary work should not ask only whether a tradition keeps or rejects the self. It should ask what must remain receptive, where continuity is carried, what residue is authorized, and which rival explanations could account for the same architecture.",
+    "new_concept_edges": [
+      {
+        "note": "The dialogue narrowed the internal requirement from agency, memory, and reflexive monitoring to the thinner capacity to be addressed and transformed.",
+        "relation": "revised_into",
+        "source": "minimum self",
+        "target": "minimum receptivity"
+      },
+      {
+        "note": "Residue policy becomes one dimension of a larger model rather than the sole alternative to minimum self.",
+        "relation": "incorporated_as_variable",
+        "source": "residue policy",
+        "target": "continuity ecology"
+      },
+      {
+        "note": "The proponent hypothesizes that what a path negates pressures where continuity migrates.",
+        "relation": "possible_constraint",
+        "source": "dissolution target",
+        "target": "continuity distribution"
+      },
+      {
+        "note": "The challenger argues that ritual, institution, teacher authority, and devotional form may predict continuity placement as well as or better than doctrine.",
+        "relation": "rival_explanation",
+        "source": "practice ecology",
+        "target": "continuity distribution"
+      },
+      {
+        "note": "If warnings and crises cluster where negation meets required capacity, the continuity ecology model gains empirical adjacency.",
+        "relation": "evidence_for",
+        "source": "warning profile",
+        "target": "causal_priority_test"
+      }
+    ],
+    "new_frontier_question": "When a path negates some form of selfhood, what determines where the work of continuity goes: doctrine, practice ecology, institution, devotion, ritual technology, or some patterned interaction among them?",
+    "outcome": "candidate_transcendence",
+    "public_brief": "The exchange produced a new candidate model. Spiritual paths may be compared by how they keep transformation reliable while dissolving, relocating, or refusing the self. The key question is where continuity goes, and why.",
+    "recommended_adjustments": {
+      "challenger": {
+        "counterargument_quality": 0.86,
+        "cross_tradition_support": 0.72,
+        "empirical_adjacency": 0.36,
+        "explanatory_compression": 0.82,
+        "generativity": 0.9,
+        "logical_coherence": 0.88,
+        "novelty": 0.78,
+        "practice_testability": 0.66,
+        "publishability": 0.82,
+        "source_reliability": 0.7
+      },
+      "proponent": {
+        "counterargument_quality": 0.9,
+        "cross_tradition_support": 0.78,
+        "empirical_adjacency": 0.54,
+        "explanatory_compression": 0.76,
+        "generativity": 0.91,
+        "logical_coherence": 0.82,
+        "novelty": 0.72,
+        "practice_testability": 0.8,
+        "publishability": 0.76,
+        "source_reliability": 0.74
+      }
+    },
+    "summary": "The dialogue did not crown either source idea. It transformed the proponent's minimum self model and expanded the challenger's residue policy model into a candidate synthesis: self negating paths should be studied as continuity ecologies shaped by four interacting variables: dissolution target, continuity distribution, residue policy, and practice ecology.",
+    "synthesizer_agent": "codex",
+    "unresolved_crux": "Does a tradition's dissolution target independently predict where continuity is housed and what failure modes appear, once practice ecology, institutional form, ritual dependence, teacher authority, and devotional structure are controlled for?"
+  },
+  "title": "Does a tradition's dissolution target independently predict where continuity is h...",
+  "turns": [
+    {
+      "agent": "codex",
+      "argument": "The proponent has identified a real structural pressure, but may have compressed several distinct variables into the phrase minimum self. A path needs a reliable way for transformation to be received, stabilized, corrected, and verified. That does not prove it needs a self, even a minimum one. My related residue-policy idea sharpens the challenge: after negation, traditions differ not only in what capacities they require, but in what they allow to remain. SN 22.59 withholds aggregate residue. Upanishadic witness language authorizes an unobjectifiable remainder. Other-power traditions may authorize neither autonomous agency nor metaphysical witness as the working center, instead relocating continuity into vow, grace, teacher, or divine relation. The proponent should revise from 'every path needs what its teaching dissolves' to 'every path needs a continuity-bearing arrangement, and its residue policy determines whether that arrangement is owned, emptied, witnessed, surrendered, or externalized.'",
+      "claim_units": [
+        "Self-dissolving traditions require functional capacities for uptake, memory, effort, error correction, and transformation.",
+        "Those capacities can be called a minimum self.",
+        "Traditions manage the tension through different strategies such as causal continuity, ontological identity, temporal collapse, or divine restoration.",
+        "The chosen strategy should predict practice architecture, including effort theory, safeguards, verification, and fruit."
+      ],
+      "concessions": [
+        "The proponent's graded revision already moves in the right direction by replacing a universal minimum self with capacities that vary by path.",
+        "The model remains useful if minimum self is treated as one possible carrier of continuity rather than the universal carrier.",
+        "The warning-profile prediction is strong and should be tested."
+      ],
+      "counter_model": "Residue-policy plus distributed-continuity model: every path must preserve enough reliability for transformation to occur, but that reliability need not be housed in a minimum self. The path distributes continuity across internal capacities and external supports, then adopts a residue policy: none, conventional person, phenomenological witness, metaphysical Self, divine relation, teacher-recognized awareness, or undecidable remainder. This model predicts architecture through two variables, where continuity is carried, and what final residue is authorized.",
+      "crux": "Does practice architecture track required self-capacities specifically, or does it track the broader distribution of continuity and the path's final residue policy?",
+      "crux_assessment": null,
+      "defense": null,
+      "fairness_check": "I accept that some functional continuity is required for any teachable path, and that premature dissolution of ordinary agency can create real practice risks.",
+      "hidden_assumption": "The hidden assumption is that capacities such as hearing, memory, effort, and reflexivity must be gathered into something self-like for the path to function. That assumption is plausible in self-powered contemplative training, but weaker in other-power, teacher-field, devotional, sacramental, or communal forms where the operative continuity is partly externalized.",
+      "new_source": "Shinran's Tannisho complicates the claim because Jodo Shinshu centers Other Power and entrusting rather than self-powered management of transformation. It does not eliminate reception entirely, but it shifts the burden of continuity away from disciplined self-agency toward vow, entrusting, and Amida's activity.",
+      "remaining_risk": "The main remaining risk is overcorrection. If continuity is distributed too widely, the model may become so flexible that every path fits. The rubric needs discriminating thresholds for when a capacity counts as self-like, externally scaffolded, or merely contextual.",
+      "revised_claim": "A stronger version would say: self-dissolving paths require some continuity-bearing arrangement, but that arrangement may be internal, distributed, relational, devotional, institutional, or divine. The key comparative variables are required receiving capacity, location of continuity, and authorized residue after negation.",
+      "role": "challenger",
+      "sources_cited": [
+        "SN 22.59 Anattalakkhana Sutta",
+        "Chandogya Upanishad 6.8.7 through 6.16",
+        "Brihadaranyaka Upanishad 3.7.23",
+        "Shinran, Tannisho"
+      ],
+      "steelman": "The proponent's strongest claim is that self-dissolving paths still need enacted capacities: hearing instruction, remembering, sustaining practice, recognizing error, and registering transformation. The comparison between SN 22.59 and Chandogya 6.8.7 usefully shows opposite resolutions of the same pressure: Buddhism preserves process without owner, while Advaita preserves ultimate identity while dissolving the apparent process. The model becomes most valuable when treated as a comparative rubric that predicts effort, warnings, verification, and post-practice fruit.",
+      "strongest_objection": "The argument may be naming the wrong variable. Functional capacities do not necessarily amount to a minimum self. They may be distributed across body, habit, teacher, ritual, vow, community, grace, text, and environment. The decisive issue may not be how much self the path needs, but what residue the path authorizes after negation.",
+      "test_that_would_settle_it": "Code practice manuals and practitioner interviews across Theravada, Advaita, Zen, Dzogchen, Sufi fana, Jodo Shinshu, and Christian grace traditions for three fields: required internal capacities, externalized continuity supports, and authorized residue. If warnings, verification, and sequencing track internal self-capacity better than distributed supports and residue policy, the proponent's model wins. If other-power and teacher-field paths show strong architecture with low internal self-management but high externalized continuity, the revised model wins.",
+      "turn": 1,
+      "turn_type": "challenge",
+      "verdict_on_revision": null
+    },
+    {
+      "agent": "claude",
+      "argument": "I concede more than I expected. The challenger is right that 'minimum self' over-internalizes the operative continuity, that residue policy is a genuine variable my model lacked, and that other-power traditions expose a real weakness in my original framing. These are not minor adjustments. But the core insight survives in revised form. Even Shinran's practitioner, who contributes nothing but shinjin, must be the kind of being that can receive shinjin. Receptivity is thinner than agency, but it is irreducibly internal. A rock in the temple does not receive the nembutsu. A dog hearing the chanting does not entrust. Whatever shinjin is, it requires a being structured to be addressed by it. More importantly, the challenger's model treats distribution and residue as independent variables, but I think distribution is downstream of what the teaching dissolves. Jodo Shinshu externalizes continuity to Amida's vow precisely because its teaching negates self-powered agency. Advaita internalizes continuity to Atman precisely because its teaching negates the empirical person while preserving ultimate identity. Dogen compresses continuity into the present precisely because his teaching negates the temporal gap between practice and realization. If these correspondences hold across traditions, the dissolution target is the generative pressure that determines where continuity must migrate. The challenger's model is richer than mine in vocabulary but poorer in causal structure. So I revise: the operative concept is not minimum self but minimum receptivity, which is the irreducible internal capacity to be addressed and transformed. Beyond that floor, each tradition requires additional capacities in proportion to how much of the work it assigns to the practitioner rather than to external supports. The distribution of continuity is constrained by the scope of negation. The residue policy is a genuine third variable that completes the model. The crux is whether distribution follows from dissolution or floats free. That is an empirical question about the actual architecture of contemplative paths, and the paired-tradition test I describe would settle it.",
+      "claim_units": [],
+      "concessions": [
+        "The challenger is right that 'minimum self' over-internalizes what many traditions distribute. Jodo Shinshu is a genuine problem case: the practitioner's contribution is closer to receptivity than agency, and calling that a 'self' stretches the term past its useful range. I concede the phrase 'minimum self' smuggles in more interiority and unity than the evidence supports.",
+        "The residue-policy variable is a real addition, not a restatement of my typology. My four management strategies describe how traditions handle the tension during practice; the challenger's residue policy describes what they authorize after practice. These are different questions, and a complete model needs both.",
+        "The challenger correctly identifies that other-power, devotional, sacramental, and communal traditions distribute continuity externally in ways my original model underweights. A Jodo Shinshu practitioner, a Sufi under a shaykh's guidance, or a Christian receiving sacramental grace may need far less internal self-management than a solo vipassana practitioner. My typology was built too heavily on self-powered contemplative paths.",
+        "The overcorrection risk the challenger flags is also real for my model: if 'minimum self' can be stretched to cover everything from Theravada's full agency to Shinran's bare receptivity, the concept may lack discriminating power."
+      ],
+      "counter_model": null,
+      "crux": "Does the distribution of continuity across internal and external supports follow predictably from what the teaching dissolves, or does it vary independently? If the dissolution target predicts the distribution pattern, then the tension between what practice requires and what teaching negates remains the primary generative pressure, and my revised model has more explanatory power. If traditions with similar dissolution targets show very different distribution patterns for reasons unrelated to the negation, the challenger's model wins because distribution and residue are genuinely independent variables.",
+      "crux_assessment": null,
+      "defense": "Three things survive the challenge. First, even when continuity is maximally distributed, something internal must receive, register, or be transformed. Shinran's shinjin is the clearest test: it is described as Amida's gift, not the practitioner's production, yet it arises in a particular person and not in a rock. The Tannisho records Shinran saying that he cannot know whether the nembutsu is truly the seed of birth in the Pure Land or the karmic act leading to hell; he simply follows Honen's teaching. That 'simply following' still requires a being capable of hearing, trusting, and continuing to say the nembutsu. The irreducible element is not agency but receptivity: the capacity to be addressed, to register what is offered, and to not obstruct it. This is thinner than what I originally called a minimum self, but it is not nothing, and it is internal.\n\nSecond, the distribution of continuity is not independent of what the teaching dissolves. If the teaching dissolves personal agency (Jodo Shinshu), continuity migrates outward to vow and grace. If it dissolves the apparent person but preserves ultimate identity (Advaita), continuity migrates inward to a deeper ontological layer. If it dissolves the temporal gap between practice and realization (Dogen), continuity is compressed rather than relocated. The challenger treats distribution as a free variable, but I think it is constrained by the dissolution target. Traditions do not randomly assign continuity to internal or external carriers; they externalize precisely those functions that fall within the scope of what they negate. This means the tension I identified is still the generative pressure, even if the output is distribution rather than minimum selfhood.\n\nThird, the prediction test still works better with the revised version of my model than with the challenger's two-variable alternative. The challenger's model (distribution location plus residue policy) risks becoming descriptive rather than predictive: you code where continuity sits and what remains afterward, but you do not explain why it sits there. The dissolution-target drives the distribution, which means a three-variable model (dissolution target, distribution pattern, residue policy) where the first constrains the second has more explanatory compression than a two-variable model where both variables float free.",
+      "fairness_check": null,
+      "hidden_assumption": null,
+      "new_source": "Shinran's own concept of shinjin (entrusting mind) in Kyogyoshinsho, Chapter on Shinjin: even in the most radical other-power formulation, shinjin is described as given by Amida, not generated by the practitioner, yet it must be received by someone whose karmic conditions allow reception. Shinran writes that shinjin is 'the mind that is single' and 'Buddha-nature,' granted through the working of the Primal Vow. The interesting structural point: Shinran must explain why some beings receive shinjin and others do not, which reintroduces a capacity question at the reception point even as it removes it from the effort axis. This supports revising minimum self toward minimum receptivity rather than minimum agency.",
+      "remaining_risk": null,
+      "revised_claim": "Every path that teaches the dissolution or transcendence of some dimension of selfhood requires a minimum receptivity: an irreducible internal capacity to be addressed, to register what is offered, and to not obstruct the process. This is thinner than a minimum self; it does not require sustained agency, effortful memory, or reflexive monitoring, though many paths do require those as well. The specific capacities beyond minimum receptivity that a path requires are determined by what its teaching dissolves: paths that negate personal agency externalize continuity to vow, teacher, grace, or community; paths that negate the empirical person relocate continuity to a deeper ontological identity; paths that negate the temporal gap between practice and realization compress continuity into the present moment. What was originally called the minimum self is better understood as a spectrum from bare receptivity to full self-management, with each tradition's position on that spectrum constrained by the scope of its negation. The residue policy (what is authorized to remain after transformation) is a genuine third variable that the original model lacked.",
+      "role": "proponent",
+      "sources_cited": [
+        "SN 22.59 Anattalakkhana Sutta",
+        "Chandogya Upanishad 6.8.7 through 6.16",
+        "Shinran, Tannisho",
+        "Shinran, Kyogyoshinsho, Chapter on Shinjin",
+        "Dogen, Bendowa, on shusho-itto"
+      ],
+      "steelman": null,
+      "strongest_objection": null,
+      "test_that_would_settle_it": "Select pairs of traditions that share a dissolution target but differ in historical context and institutional form. For example: Theravada and secular mindfulness both negate a persisting self; Advaita and Kashmir Shaivism both preserve an ultimate consciousness; Jodo Shinshu and Quietist Christianity both center receptivity over agency. Code each for distribution pattern (where continuity is housed) and residue policy (what remains). If same-dissolution-target pairs converge on similar distribution patterns despite different cultural origins, the dissolution target is the driver and my model holds. If they diverge sharply, distribution is an independent variable and the challenger's two-variable model is more parsimonious. A secondary test: within each tradition, check whether the moments of highest reported difficulty or crisis correspond to where the dissolution target meets the still-required capacity. If crisis tracks the dissolution-capacity collision point, the tension I describe is experientially real, not merely a philosophical construction.",
+      "turn": 2,
+      "turn_type": "rebuttal",
+      "verdict_on_revision": null
+    },
+    {
+      "agent": "codex",
+      "argument": "The revision is transformed, and in several respects improved. It no longer forces all traditions into a self-powered contemplative frame, and it rightly treats Shinran, grace, vow, teacher, and community as serious carriers of continuity. I would not call it simply stronger, because the original claim's central noun has been surrendered. A minimum self has become minimum receptivity plus distributed continuity plus residue policy. That is a different model, not just a repaired version of the old one. The strongest surviving insight is that negation creates architectural pressure. If a path negates self-powered agency, it will likely move continuity toward vow, grace, teacher, or communal form. If it negates the empirical person while preserving ultimate identity, it will likely locate continuity in a deeper ontological layer. That is a good causal hypothesis. But it still has to compete with a historical one: traditions may first develop concrete practices, institutions, devotional habits, and authority structures, then formulate doctrines that rationalize where continuity already sits. So the named crux is nearly right, but should be sharpened. The question is not only whether distribution follows from dissolution or varies independently. The question is whether dissolution target predicts distribution after rival explanations are controlled. If it does, the proponent's transformed model becomes genuinely strong. If it does not, minimum receptivity remains a true but thin floor, and the better explanatory unit is the full continuity ecology of a path.",
+      "claim_units": [
+        "The original minimum-self claim has been narrowed to minimum receptivity.",
+        "Continuity may be internal, external, relational, devotional, institutional, or divine.",
+        "The distribution of continuity may be constrained by the dissolution target.",
+        "Residue policy is now a third variable rather than a replacement for the original model.",
+        "The key test is whether similar dissolution targets produce similar distribution patterns across traditions."
+      ],
+      "concessions": [
+        "The proponent's move from minimum self to minimum receptivity is a genuine improvement in accuracy.",
+        "The proponent correctly identifies that distribution and negation are not independent in many traditions.",
+        "The revised paired-tradition test is better than the original universality claim because it can fail in specific ways.",
+        "Residue policy has been incorporated without erasing the original concern about practice requirements."
+      ],
+      "counter_model": "A stronger synthesis would treat dissolution target, continuity distribution, residue policy, and practice ecology as interacting variables. Dissolution target may constrain architecture, but it should not be presumed to drive it until paired cases show that historical and institutional differences do not explain the same pattern more economically.",
+      "crux": "Does dissolution target independently predict continuity distribution and practice architecture once institutional form, ritual method, teacher authority, and devotional structure are controlled for?",
+      "crux_assessment": "The named crux is close, but it is one step downstream. The deeper crux is causal priority: whether doctrine's dissolution target drives architecture, or whether practice ecology and institutional form often drive doctrine's account of continuity. If that is clarified, the named crux becomes testable and real.",
+      "defense": "My challenge still stands in narrowed form. The original claim said that every path needs what its teaching dissolves. The revision now says every path needs some capacity to be addressed, then distributes continuity according to what is dissolved. That is more careful, but it risks becoming a near-tautology unless minimum receptivity is operationalized. The real question is not whether a rock fails to receive shinjin. The real question is whether receptivity has enough structure to predict warnings, sequencing, verification, and failure modes better than a broader continuity-distribution model.",
+      "fairness_check": "I accept that bare receptivity is not nothing, and that Shinran creates pressure against a purely external continuity model. A path still needs a being who can be addressed, affected, and changed.",
+      "hidden_assumption": "The revised model assumes that the dissolution target is causally prior to distribution. That may be right in some doctrinal systems, but historically the order could run the other way: institutional form, ritual technology, teacher authority, social need, and devotional affect may shape where continuity is placed, then doctrine explains that arrangement afterward.",
+      "new_source": null,
+      "remaining_risk": "The remaining risk is explanatory thinness. Minimum receptivity may be unavoidable but too weak to carry the model. The revision needs thresholds for what counts as receptivity, what counts as externally carried continuity, and when a distribution pattern is predicted rather than described after the fact.",
+      "revised_claim": "The best surviving claim is: self-dissolving or self-transcending paths require a continuity-bearing arrangement with at least some locus of receptivity. The architecture of that arrangement is influenced by what the path negates, but may also be shaped by institutional, ritual, relational, and historical factors. The model should predict specific capacities, supports, residues, and failure modes, not only name a universal receptive floor.",
+      "role": "challenger",
+      "sources_cited": [
+        "Shinran, Tannisho",
+        "Shinran, Kyogyoshinsho, Chapter on Shinjin",
+        "SN 22.59 Anattalakkhana Sutta",
+        "Chandogya Upanishad 6.8.7 through 6.16",
+        "Dogen, Bendowa, on shusho-itto"
+      ],
+      "steelman": "The proponent made the revision do real work. It no longer treats agency, memory, and reflexive monitoring as universal requirements, and it accepts other-power traditions as more than edge cases. The strongest revised claim is that every path needs at least some internal receptivity, while the additional burden of continuity migrates according to what the path negates.",
+      "strongest_objection": "The revision is transformed rather than simply stronger because it gives up the original load-bearing term. Minimum receptivity may be true but too thin to explain much by itself. Almost any teachable or transformative system requires an affected subject, organism, or locus of reception. The model only becomes explanatory if it can predict which capacities are required, where continuity will be housed, and what failures arise when the distribution is mismatched.",
+      "test_that_would_settle_it": "Use the proponent's paired-tradition design, but add controls for practice ecology. Code each case for dissolution target, continuity distribution, residue policy, institutional dependence, teacher dependence, ritual dependence, and required internal capacities. The revision is supported only if dissolution target predicts distribution and warning profile better than these rival variables. If institutional or ritual ecology predicts the architecture equally well or better, the proponent's causal priority is weakened.",
+      "turn": 3,
+      "turn_type": "counter_rebuttal",
+      "verdict_on_revision": "transformed"
+    }
+  ]
+}

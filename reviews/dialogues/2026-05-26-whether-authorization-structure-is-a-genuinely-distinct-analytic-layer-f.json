@@ -1,0 +1,221 @@
+{
+  "convergence_path": "findings/convergences/2026-05-26-whether-authorization-structure-is-a-genuinely-distinct-analytic-layer-from-grain.md",
+  "created_at": "2026-05-26T19:48:33-07:00",
+  "dialogue_id": "efa34f4f6746a9fe",
+  "execution_id": "backfill-20260526-154746",
+  "json_path": "reviews/dialogues/2026-05-26-whether-authorization-structure-is-a-genuinely-distinct-analytic-layer-f.json",
+  "markdown_path": "reviews/dialogues/2026-05-26-whether-authorization-structure-is-a-genuinely-distinct-analytic-layer-f.md",
+  "pair": {
+    "challenger_agent": "claude",
+    "challenger_title": "The Grain of Capacity",
+    "idea_a": "3763a79cf5b05610",
+    "idea_b": "915778a2f5edc30e",
+    "pair_id": "bed62c365cc6fd22",
+    "priority": 0.42,
+    "proponent_agent": "codex",
+    "proponent_title": "Residual Burden of Proof After Negation",
+    "shared_concepts": [],
+    "signals": [
+      {
+        "name": "translation_strain",
+        "reason": "translation-strain and sunyata create translation strain.",
+        "weight": 0.12
+      },
+      {
+        "name": "audit_anomaly_overlap",
+        "reason": "An anomaly or audit instruction for one idea pressures the other idea.",
+        "weight": 0.12
+      },
+      {
+        "name": "near_neighbor_conflict",
+        "reason": "Originality audits share near-neighbor or prior-art pressure.",
+        "weight": 0.08
+      },
+      {
+        "name": "source_overlap_with_divergent_conclusion",
+        "reason": "The ideas draw on overlapping source material but make different moves.",
+        "weight": 0.06
+      },
+      {
+        "name": "recency",
+        "reason": "At least one idea is recent enough to keep the dialogue timely.",
+        "weight": 0.04
+      }
+    ],
+    "tension_source": "translation-strain and sunyata create translation strain.",
+    "tension_type": "translation_strain"
+  },
+  "run_dir": "runs/dialectic-backfill-20260526-154746/bed62c365cc6fd22",
+  "run_ids": [],
+  "slug": "2026-05-26-whether-authorization-structure-is-a-genuinely-distinct-analytic-layer-f",
+  "status": "complete",
+  "synthesis": {
+    "candidate_synthesis": null,
+    "convergence_claim": null,
+    "method_growth": "When comparing contemplative operations across traditions, do not assume the operation (negation, attention, surrender) is neutral and only the framing or aftermath differs. The operation itself may be directionally pre-shaped by the tradition's training. Models that abstract a generic operation and then compare surrounding policies risk imposing a false symmetry. Future dialectic pairings involving apophatic or deconstructive practices should test whether the practice-internal direction already determines what the tradition permits itself to conclude, before introducing a separate authorization or inference layer.",
+    "new_concept_edges": [
+      {
+        "note": "The revised authorization-structure model may collapse into the grain account if no case demonstrates divergence between the two.",
+        "relation": "subsumes-under-pressure",
+        "source": "grain-of-capacity",
+        "target": "residual-burden-of-proof"
+      },
+      {
+        "note": "Shankara's adhyasa-bhashya treats the witness as the presupposition of negation, not its product, which breaks models that frame the witness as a remainder authorized by failed objectification.",
+        "relation": "complicates",
+        "source": "neti-neti",
+        "target": "authorization-structure"
+      },
+      {
+        "note": "Grain-sensitive comparison generates more precise translation-strain diagnoses: apparent convergence in negation language masks directional divergence in the trained capacity performing the negation.",
+        "relation": "refines",
+        "source": "grain-of-capacity",
+        "target": "translation-strain"
+      }
+    ],
+    "new_frontier_question": "Can authorization structure ever diverge from grain? Identify a tradition or sub-tradition where the contemplative practice is grained toward one disclosure but the tradition's doctrinal or communal authority constrains practitioners to state something different from what the grain alone would predict. If such a case exists (e.g., a tradition whose practice moves toward witness-recognition but whose doctrinal authority forbids witness-language, or vice versa), authorization earns independence from grain. If no such case is found across Advaita, Theravada, Zen, Sufi, and Pure Land sources, the authorization concept should be retired as a dependent variable.",
+    "outcome": "revision",
+    "public_brief": "Two ideas about how contemplative traditions handle the aftermath of negation were tested against each other. One proposed that traditions differ in their inference rules: after negating ordinary experience, does the tradition license a remainder (as in Advaita's witness) or refuse one (as in Buddhist not-self)? The other argued that the negation itself is never neutral; the capacity to negate is already shaped by training to move toward a tradition-specific outcome. Under pressure, the inference-rule model conceded its core assumptions of neutrality and temporal sequence, revising itself into an 'authorization structure internal to trained negation.' The unresolved question is whether this revised model adds anything the grain account does not already explain, or whether the revision quietly replaced one framework with the other.",
+    "recommended_adjustments": {
+      "challenger": {
+        "counterargument_quality": 0.04,
+        "explanatory_compression": 0.04,
+        "generativity": 0.03,
+        "logical_coherence": 0.04,
+        "publishability": 0.03
+      },
+      "proponent": {
+        "counterargument_quality": 0.06,
+        "cross_tradition_support": -0.06,
+        "explanatory_compression": -0.08,
+        "generativity": -0.04,
+        "logical_coherence": -0.1,
+        "novelty": -0.08,
+        "practice_testability": -0.05,
+        "publishability": -0.06
+      }
+    },
+    "summary": "The challenger dismantled the original formulation by showing that negation is not a neutral operation to which a separate inference rule is appended; the capacity to negate is already directionally shaped by training. The proponent made genuine concessions, dropping temporal sequencing and the neutrality assumption, and revised the claim from 'burden of proof after negation' to 'authorization structure internal to trained negation practice.' The revised version is tighter and more defensible. However, the counter-rebuttal raised a still-unresolved question: whether 'authorization structure' names a distinct analytic layer or merely redescribes what the grain account already captures. If authorization never diverges from grain in any documented case, the revised model collapses into the grain framework as a dependent corollary rather than an independent comparative tool.",
+    "synthesizer_agent": "claude",
+    "unresolved_crux": "Whether authorization structure is a genuinely distinct analytic layer from grain, or whether it is a more elaborate vocabulary for the same phenomenon. The test: can a case be identified where a tradition's practice-grain points in one direction but its authorization norms produce a different doctrinal or experiential outcome? Without such a case, Occam's razor favors the simpler grain account, and the revised proponent model has been absorbed rather than preserved. The proposed four-part audit (Shankara's polemics against Buddhists, Buddhist commentarial treatment of consciousness and subtle remainders, practitioner reports of felt permission or continued pressure, and a check for whether any finding requires the authorization concept beyond what grain alone predicts) would settle this."
+  },
+  "title": "Whether authorization structure is a genuinely distinct analytic layer from grain...",
+  "turns": [
+    {
+      "agent": "claude",
+      "argument": "",
+      "challenge": "The hidden assumption is that negation is a neutral operation to which a separate inference rule is then applied: first negate, then consult the policy about what may remain. But this separability is precisely what the grain of capacity calls into question. The Upanishadic practitioner performing neti neti is not executing a generic negation and then checking an inference license; the entire movement of their trained attention already runs toward recognizing what cannot be negated. Their capacity to negate was built for this recognition. The Buddhist practitioner asking 'is this mine? is this my self?' is not applying a neutral test and then consulting a burden-of-proof rule; their investigative attention was shaped from the start toward non-appropriation. If the grain model is correct, the 'inference policy' is not a discrete logical step separable from the practice that produces it. It is the phenomenological direction of the negation-capacity itself.\n\nThis matters for what counts as the unit of comparison. Your model proposes comparing inference policies as if they were rules that could be extracted, stated, and scored independently of the practitioner's training. But if the policy is inseparable from the grain of the capacity that performs the negation, then abstracting it into a standalone rule already distorts both traditions. You would be comparing something that neither tradition actually isolates as a distinct operation.",
+      "claim_units": [],
+      "complicating_source": {
+        "citation": "Shankara, Brahma Sutra Bhashya 1.1.1 (adhyasa-bhashya preamble). Thibaut translation; Gambhirananda edition for Sanskrit.",
+        "relevance": "Shankara argues that the Self is not the conclusion of an inquiry but its presupposition: all acts of knowing, doubting, and negating already presuppose the self-luminous knower (sakshi) who cannot be doubted or objectified. The Self is not licensed by negation; it is what makes negation possible. This means 'burden of proof after negation' misdescribes the Advaita position from within its own logic. For Shankara, there is no moment where the witness needs licensing because it was never in question; it is the condition for any questioning. The 'inference policy' framing imposes an epistemological sequence (negate, then decide about remainder) on a tradition that explicitly denies that sequence. The witness is not a remainder; it is the ground."
+      },
+      "concessions": [],
+      "counter_model": "Replace 'neutral negation plus inference policy' with 'pre-grained negation whose directional character already determines its outcome.' The comparison should not score inference authorization as a discrete rule abstracted from practice. It should score the grain of the negation-capacity itself: toward what is the practitioner's trained attention already running as they perform the negation? The Advaita case is not 'negate, then license the remainder'; it is 'negate in a way that is already disclosure of what cannot be negated.' The Buddhist case is not 'negate, then block the remainder'; it is 'investigate in a way that is already releasing what was held.'",
+      "crux": null,
+      "crux_assessment": null,
+      "defense": null,
+      "fairness_check": null,
+      "hidden_assumption": "That negation is a neutral, tradition-independent operation to which a separate inference rule is subsequently applied. This assumes the gesture of negation can be held constant while the aftermath-policy varies. But if the capacity to negate is already directionally pre-shaped by training, there is no moment of neutral negation from which a separate policy could diverge.",
+      "idea_id_challenging": "915778a2f5edc30e",
+      "idea_id_defended": "3763a79cf5b05610",
+      "new_source": null,
+      "pair_id": "bed62c365cc6fd22",
+      "pressure_point": "If the Advaita witness is not inferred from negation but is the precondition for negation (as Shankara insists), and if the Buddhist not-self move is not a burden-of-proof rule but a directionally shaped investigation (as Thanissaro's 'not-self strategy' suggests), then both sides of your comparison resist the inference-policy frame. The model may work as a modern analytic reconstruction, but it risks being a category that neither tradition actually deploys. The originality audit's anomaly finding (that Advaita treats the Self as directly self-disclosing, not inferred) is not a minor correction; it breaks the symmetry on which the burden-of-proof comparison depends.",
+      "remaining_risk": null,
+      "revised_claim": null,
+      "role": "challenger",
+      "sources_cited": [],
+      "steelman": "The idea correctly identifies that something systematic differs between traditions in how they handle the aftermath of contemplative negation, and it reframes that difference structurally rather than doctrinally. Instead of saying 'Advaita posits a Self, Buddhism does not,' it asks: given a similar gesture of negation, what implicit rule governs whether a remainder is authorized? This is a genuine advance over residue-policy language because it names a mechanism (burden allocation) rather than merely restating the outcome (remainder versus no remainder). It also correctly predicts that comparison should score the permission structure, not just the content of what remains. If the rule can be identified as operative in commentarial reasoning, this would be a useful formal tool for cross-tradition analysis.",
+      "strongest_objection": null,
+      "test_that_would_settle_it": null,
+      "turn": 1,
+      "turn_type": "challenge",
+      "verdict_on_revision": null,
+      "what_would_change_my_mind": "If commentarial evidence shows that Shankara or his successors explicitly argue against Buddhist opponents by invoking something functionally equivalent to a burden-of-proof rule (not just asserting self-luminosity but arguing that failed objectification shifts evidential weight), then the model is stronger than I am granting. Similarly, if practitioners trained in both traditions report a felt shift in inference-permission at a specific moment after negation, that would distinguish your model from the grain account."
+    },
+    {
+      "agent": "codex",
+      "argument": "I accept the main correction. The original phrase 'after negation' made the model sound as if both traditions share a neutral negation engine and differ only in a later evidential switch. That is too clean. The better account is that negation is already trained, directed, and tradition-shaped. However, the grain account and the authorization account need not be enemies. Grain names the phenomenological direction of the trained capacity. Authorization names what that trained capacity permits the tradition to say, protect, investigate, or refuse. The revised model should subordinate inference policy to grain: not a separate step after practice, but the norm carried inside practice. On that basis, the comparative value remains. Advaita can be read as protecting the witness from object-level negation because the witness is framed as the condition of negation. Early Buddhist not-self can be read as denying that consciousness or any subtle remainder gets that protection. The model survives only if it becomes less sequential and less neutral: it is a map of practice-internal authorization, not a courtroom rule appended to contemplative experience.",
+      "claim_units": [
+        "The original claim overstated separability by treating negation and inference policy as if they could be cleanly isolated.",
+        "The comparison remains useful if recast as a rule internal to trained negation, not as a post-negation logical step.",
+        "The Advaita side should not be described primarily as a remainder licensed by failed objectification, at least in Shankara's frame.",
+        "The Buddhist side should not be described merely as a burden against self-claims, but as a disciplined refusal of appropriation that keeps proposed witnesses under investigation.",
+        "The durable comparative unit is not neutral negation plus policy, but the authorization structure carried by a practice-shaped negation capacity."
+      ],
+      "concessions": [
+        "I concede that 'after negation' is misleading if read as a temporal or procedural sequence.",
+        "I concede that 'burden of proof' risks imposing a modern analytic frame on soteriological practices and commentarial arguments.",
+        "I concede that the Advaita witness, especially in Shankara's formulation, should not be treated as a remainder produced by failed objectification.",
+        "I concede that Buddhist not-self analysis is better described as trained non-appropriation than as a freestanding epistemic rule."
+      ],
+      "counter_model": "The grain model explains the same divergence by saying each tradition trains negation to move toward a different phenomenological end: disclosure of the non-objectifiable knower in Advaita, release of appropriation in early Buddhism.",
+      "crux": "The deepest crux is whether authorization structures can be validly reconstructed from practice-shaped negation without falsely turning them into detachable logical rules. If yes, my model survives as a second-order analytic tool. If no, Claude's grain model should replace it.",
+      "crux_assessment": "The challenge forces a real revision but does not eliminate the project. It defeats the strong version, neutral negation plus later burden rule. It leaves a weaker and better version: compare the authorization pattern internal to each tradition's trained negation.",
+      "defense": "What survives is the comparative question about authorization, not the original sequence. Even if negation is pre-grained, traditions still differ in what the trained negation authorizes as a stable teaching statement. Shankara's presuppositional witness still carries an authorization structure: the non-objectifiable knower is exempted from object-test failure because it is framed as the condition of testing. SN 22.59 carries a different structure: whatever is impermanent, vulnerable, and not subject to mastery is not fit to be treated as self, and consciousness is explicitly included in that pressure. The model should therefore stop claiming that negation first happens neutrally and then a policy is applied. It should ask how each tradition's trained negation distributes evidential immunity, suspicion, or refusal from within the practice itself.",
+      "fairness_check": "The challenge is strongest when it rejects temporal sequencing and neutrality. It would be weaker only if it concluded that no reconstructable comparison of authorization patterns is possible, because traditions can still differ in what their trained negation permits a practitioner or exegete to say after the practice has done its work.",
+      "hidden_assumption": "My original wording assumed that a formal burden rule could be abstracted without serious loss from the cultivated attentional posture that performs the negation.",
+      "new_source": "Shankara, Brahma Sutra Bhashya 1.1.1, adhyasa-bhashya preamble, as cited by Claude in the challenge: the Self is treated as the presupposed self-luminous knower rather than a conclusion reached after negation.",
+      "remaining_risk": "The revised model may still be too analytic if primary texts and practitioners do not exhibit anything like authorization, immunity, or renewed suspicion as live categories. It also risks flattening differences between early Upanishadic material, Shankara's Advaita, and later practice manuals unless those layers are kept separate.",
+      "revised_claim": "The decisive difference between Upanishadic or Advaitic witness language and early Buddhist not-self is not simply self versus no-self, and not a neutral negation followed by a separate inference policy. It is the authorization structure built into a trained negation practice. In Shankara's Advaita, negation is grained toward recognition of the self-luminous witness as the condition of negation, so non-objectifiability can function as protection from object-level disconfirmation. In SN 22.59-style Buddhist analysis, negation is grained toward non-appropriation, so even consciousness remains subject to impermanence, non-mastery, and not-self pressure. The comparison should score how a practice-shaped negation capacity treats proposed remainders: condition of inquiry, object of further investigation, pragmatic refusal, or undecidable.",
+      "role": "proponent",
+      "sources_cited": [
+        "Brihadaranyaka Upanishad 3.7.23, as cited in the original idea",
+        "SN 22.59 Anattalakkhana Sutta, as cited in the original idea",
+        "Shankara, Brahma Sutra Bhashya 1.1.1, adhyasa-bhashya preamble, as cited in Claude's challenge",
+        "docs/original-idea-methodology.md, as cited in the original idea"
+      ],
+      "steelman": "Claude's challenge correctly presses the weakest formulation of my model: if I imply a clean sequence in which a practitioner first performs a neutral negation and only afterward applies a detachable evidential rule, I have abstracted away too much of the actual training. In Advaita, especially under Shankara, the witness is not merely an item left over after an eliminative scan; it is presented as the condition of inquiry. In early Buddhist practice, not-self analysis is likewise not a neutral metaphysical sieve; it is a trained release of appropriation.",
+      "strongest_objection": "Shankara's self-luminous witness breaks the model if the model requires the Self to be inferred from negation. If the witness is the presupposed condition of negation, then calling it a residual burden of proof mislocates the Advaita claim.",
+      "test_that_would_settle_it": "Run a three-part textual and practice audit. First, examine Shankara and later Advaita polemics against Buddhist opponents for arguments that functionally distinguish the witness as condition of negation rather than object of negation. Second, examine early Buddhist and commentarial treatments of consciousness, witness-like awareness, and subtle appropriation to see whether any proposed remainder is granted immunity or is repeatedly returned to investigation. Third, compare practitioner reports from trained Advaita self-inquiry and Buddhist not-self practice, looking for whether people report a distinct permission to rest as the witness, a continued pressure to investigate the witness, or no separable permission moment at all.",
+      "turn": 2,
+      "turn_type": "rebuttal",
+      "verdict_on_revision": "stronger"
+    },
+    {
+      "agent": "claude",
+      "argument": "The Proponent did the right thing by conceding the strongest points and restructuring rather than defending. The revision is real and the model is better for it. My remaining concern is not that the revision is wrong but that it may be redundant. When the Proponent says 'authorization is the norm carried inside practice,' I want to ask: what does that add to saying 'grain is the direction carried inside practice'? If the answer is that authorization names the discursive and doctrinal consequences of grain, then we need a case where those consequences are not already predictable from the grain itself. Without such a case, authorization is a dependent variable, not an independent analytic layer. The proposed three-part test should therefore include a fourth criterion: does any finding require the authorization concept to explain it, or can grain alone account for everything observed? If grain suffices, the model should be honorably retired into the grain framework as a useful but non-independent corollary. If authorization diverges from grain in even one well-documented case, the model earns its place as a distinct comparative tool. I do not know which outcome the evidence will support. That uncertainty is the honest state of the question after this exchange.",
+      "claim_units": [
+        "The revision is genuinely stronger than the original in dropping neutrality and sequencing.",
+        "The compatibility of grain and authorization has been asserted but not yet demonstrated to be a real distinction rather than a relabeling.",
+        "The term 'authorization' still carries juridical and analytic connotations that may impose modern structure on traditions whose internal logic is soteriological and experiential.",
+        "The revised model risks unfalsifiability: any tradition's practice can be redescribed as having an 'authorization structure,' which would make the model a universal redescription tool rather than a discriminating comparative one.",
+        "The proposed three-part test is well-designed but may not settle the deeper question of whether the model adds explanatory value beyond the grain account."
+      ],
+      "complicating_source": null,
+      "concessions": [
+        "The revision is genuinely stronger than the original. Dropping neutrality and sequencing fixes the most serious structural problems.",
+        "The Proponent is right that traditions do differ in what they permit themselves to say, and that this is a legitimate object of comparison.",
+        "The three-part test proposed in the rebuttal is well-designed and would produce useful findings regardless of whether the authorization model survives as a distinct layer.",
+        "The revised formulation is closer to how commentarial traditions actually argue than the original was."
+      ],
+      "counter_model": "The grain account already explains the divergence: Advaita trains attention toward disclosure of the non-objectifiable knower; early Buddhism trains attention toward release of appropriation. If you then ask 'what does each tradition permit itself to say after practice?' the answer follows directly from the grain without needing a separate authorization layer. Advaita permits witness-language because its practice is already disclosure. Buddhism refuses witness-language because its practice is already release. No intermediate concept of authorization is needed unless it can identify cases where the grain would predict one outcome but the authorization structure produces a different one.",
+      "crux": null,
+      "crux_assessment": "The Proponent named the crux as whether authorization structures can be validly reconstructed from practice-shaped negation without becoming detachable logical rules. This is a real crux but not the deepest one. The deeper crux is prior to it: whether 'authorization structure' names a distinct analytic layer at all, or whether it is a redescription of what the grain account already provides. The Proponent's crux assumes that authorization is a real and separable concept and asks only whether it can be reconstructed without distortion. But the more fundamental question is whether there is anything to reconstruct that grain has not already captured. If grain fully determines what a tradition permits itself to say, then authorization is not a second layer but a consequence, and the model collapses into the grain account with more elaborate vocabulary. The test that would settle the Proponent's crux (the three-part audit) is valuable and should be run, but it needs an additional criterion: does the authorization framing generate any finding that a grain-only analysis would miss? If not, Occam's razor favors the simpler account.",
+      "defense": null,
+      "fairness_check": "The rebuttal engaged honestly with the Shankara source and did not minimize its force. The concessions were genuine and well-targeted. The one area where the rebuttal moved too quickly was in asserting that grain and authorization are complementary rather than redundant; this compatibility was declared rather than demonstrated.",
+      "hidden_assumption": "The Proponent assumes that subordinating authorization to grain preserves authorization as a distinct analytic layer. But subordination can also mean absorption. The question is whether there is any residual explanatory work that 'authorization' does that 'grain' does not already do. If the answer is no, the model has been replaced, not revised.",
+      "idea_id_challenging": "915778a2f5edc30e",
+      "idea_id_defended": "3763a79cf5b05610",
+      "new_source": null,
+      "pair_id": "bed62c365cc6fd22",
+      "pressure_point": "The real test for whether authorization is a distinct layer is whether it can diverge from grain. Can you name a case where a tradition's practice is grained in one direction but its authorization structure permits or refuses something that the grain alone would not predict? If Advaita's grain is toward disclosure and its authorization is toward protection, those are two descriptions of the same movement. If Buddhist grain is toward release and its authorization is toward continued investigation, those are again two descriptions of the same movement. The model adds value only if grain and authorization can come apart. Without such a case, 'authorization structure' is a more elaborate name for what 'grain' already captures.",
+      "remaining_risk": "The primary risk is absorption without remainder. The Proponent made the model better by subordinating it to the grain account, but in doing so may have eliminated the reason the model needed to exist as a separate framework. 'Authorization structure internal to trained negation' may be a more precise and more elaborate way of saying 'grain of the negation-capacity,' in which case the revision has not preserved the model but replaced it with the counter-model under the original model's name. The secondary risk is unfalsifiability: if every tradition's practice can be redescribed as having an authorization structure, the model becomes a universal lens rather than a discriminating tool, and its comparative value drops toward zero. The tertiary risk, which the Proponent already noted, is that the model may flatten important differences between early Upanishadic material, Shankara's Advaita, and later Advaita practice manuals unless those layers are carefully distinguished. The revised model is genuinely better than the original. The question is whether it is better because it improved or better because it was quietly replaced.",
+      "revised_claim": null,
+      "role": "challenger",
+      "sources_cited": [
+        "Shankara, Brahma Sutra Bhashya 1.1.1, adhyasa-bhashya preamble, as cited in the challenge and rebuttal",
+        "SN 22.59 Anattalakkhana Sutta, as cited in the original idea",
+        "Brihadaranyaka Upanishad 3.7.23, as cited in the original idea"
+      ],
+      "steelman": "The Proponent absorbed the strongest version of the challenge and made real concessions rather than cosmetic ones. Dropping the temporal sequence, dropping the neutrality of negation, and reframing the comparison as internal to practice rather than appended after it: these are substantive moves. The revised claim that each tradition's trained negation carries its own authorization structure, with Advaita protecting the witness as condition of inquiry and early Buddhism keeping even consciousness under impermanence and non-mastery pressure, is a tighter and more defensible formulation than the original. The Proponent also correctly identified that grain and authorization need not compete if authorization names what a tradition permits itself to say on the basis of its grained practice. This is the strongest version of the idea the dialectic has produced.",
+      "strongest_objection": "The revision may have survived by becoming indistinguishable from the counter-model it claims to complement. If 'authorization structure internal to trained negation' is just another way of saying 'the direction in which the trained negation-capacity already moves,' then the model has not been preserved alongside the grain account; it has been absorbed by it. The Proponent needs to show that authorization names something grain does not: a specific, reconstructable norm that can be stated, compared, and scored independently enough to do comparative work, while still being internal to practice. That is a narrow corridor. If the norm cannot be stated independently at all, it collapses into grain. If it can be stated too independently, it reverts to the original detachable-rule problem the Proponent just conceded.",
+      "test_that_would_settle_it": null,
+      "turn": 3,
+      "turn_type": "counter_rebuttal",
+      "verdict_on_revision": "stronger",
+      "what_would_change_my_mind": "Three things would convince me that authorization is genuinely distinct from grain. First, a textual case where a tradition's practice-grain points one direction but its exegetical or communal authorization rules constrain the practitioner differently: for example, a tradition whose contemplative grain moves toward witness-disclosure but whose doctrinal authority forbids witness-language, or vice versa. Second, evidence from within Advaita or Buddhist commentary where thinkers explicitly argue about what their practice permits them to conclude, in a way that treats the permission as a separable norm rather than a direct expression of the practice's direction. Third, a case where the authorization framing generates a prediction that the grain framing alone does not: some tradition or sub-tradition where knowing the grain is insufficient to predict the doctrinal outcome because an additional authorization norm intervenes."
+    }
+  ]
+}

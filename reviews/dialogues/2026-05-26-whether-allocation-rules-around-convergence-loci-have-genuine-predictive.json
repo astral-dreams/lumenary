@@ -1,0 +1,251 @@
+{
+  "convergence_path": "findings/convergences/2026-05-26-whether-allocation-rules-around-convergence-loci-have-genuine-predictive-power-ac.md",
+  "created_at": "2026-05-26T16:15:22-07:00",
+  "dialogue_id": "40539d245bd592bf",
+  "execution_id": "backfill-20260526-154746",
+  "json_path": "reviews/dialogues/2026-05-26-whether-allocation-rules-around-convergence-loci-have-genuine-predictive.json",
+  "markdown_path": "reviews/dialogues/2026-05-26-whether-allocation-rules-around-convergence-loci-have-genuine-predictive.md",
+  "pair": {
+    "challenger_agent": "codex",
+    "challenger_title": "The Handoff Point Is The Variable",
+    "idea_a": "3c5caa358a09c26a",
+    "idea_b": "433dd83d436b0b13",
+    "pair_id": "75f209c52b32690b",
+    "priority": 0.6828,
+    "proponent_agent": "claude",
+    "proponent_title": "Every Path Needs What Its Teaching Dissolves",
+    "shared_concepts": [],
+    "signals": [
+      {
+        "name": "shared_frontier",
+        "reason": "Both ideas sit on The boundary between effort and gift.",
+        "weight": 0.24
+      },
+      {
+        "name": "frontier_priority",
+        "reason": "Shared frontier priority is 0.89.",
+        "weight": 0.1428
+      },
+      {
+        "name": "audit_anomaly_overlap",
+        "reason": "An anomaly or audit instruction for one idea pressures the other idea.",
+        "weight": 0.12
+      },
+      {
+        "name": "near_neighbor_conflict",
+        "reason": "Originality audits share near-neighbor or prior-art pressure.",
+        "weight": 0.08
+      },
+      {
+        "name": "source_overlap_with_divergent_conclusion",
+        "reason": "The ideas draw on overlapping source material but make different moves.",
+        "weight": 0.06
+      },
+      {
+        "name": "recency",
+        "reason": "At least one idea is recent enough to keep the dialogue timely.",
+        "weight": 0.04
+      }
+    ],
+    "tension_source": "Both ideas sit on The boundary between effort and gift.",
+    "tension_type": "shared_frontier"
+  },
+  "run_dir": "runs/dialectic-backfill-20260526-154746/75f209c52b32690b",
+  "run_ids": [],
+  "slug": "2026-05-26-whether-allocation-rules-around-convergence-loci-have-genuine-predictive",
+  "status": "complete",
+  "synthesis": {
+    "candidate_synthesis": null,
+    "convergence_claim": "Both agents agree on four points: (1) no contemplative path operates with literally zero contact surface for instruction, reception, correction, or continuity; (2) the proponent's original bundled minimum-self variable was too monolithic and carried ontological baggage that distorted other-power and direct-introduction traditions; (3) the challenger's transfer-point model, recoded as allocation rules (function, stage, holder, credited source, forbidden claimant, safeguard, repair), captures the variation more faithfully than the proponent's original four-strategy typology; and (4) the proponent's architectural predictions (that management strategy constrains effort theory, verification, warnings, and failure modes) survive the relabeling and may be strengthened by the allocation-rule framing.",
+    "method_growth": "The dialogue demonstrated that a well-chosen counterexample (Shinran) can do more productive work than a general philosophical objection. The challenger did not argue abstractly that 'minimum self' was wrong; it showed a specific tradition where the concept distorted rather than illuminated. This forced the proponent to revise rather than defend. Future dialogues should lead with the strongest tradition-specific counterexample rather than with philosophical reframing, then test whether the revised claim handles the counterexample without losing its original predictive power. The proponent's willingness to abandon its central term while defending its structural insight is a model for productive revision under pressure.",
+    "new_concept_edges": [
+      {
+        "note": "The proponent replaced the bundled minimum-self variable with convergence locus: the site where instruction, recognition, surrender, or continuity becomes operative, without claiming that site is a self.",
+        "relation": "revised_into",
+        "source": "minimum self",
+        "target": "convergence locus"
+      },
+      {
+        "note": "The challenger's transfer-point model was absorbed as a multi-variable coding scheme: function, stage, holder, credited source, forbidden claimant, safeguard, repair.",
+        "relation": "generalized_into",
+        "source": "handoff point",
+        "target": "allocation rule"
+      },
+      {
+        "note": "The convergence locus without allocation rules risks reintroducing the ownership the proponent conceded. Allocation rules without convergence locus risk losing the architectural insight that distribution still requires a site of reception.",
+        "relation": "requires_complement",
+        "source": "convergence locus",
+        "target": "allocation rule"
+      },
+      {
+        "note": "Self-power calculation in Pure Land, ownership of aggregates in early Buddhism, contrivance after direct introduction in Dzogchen, gaining idea in Soto, inflation after fana in Sufism: these warnings should cluster at transfer points where ownership is withdrawn.",
+        "relation": "predicts",
+        "source": "forbidden claimant",
+        "target": "practice warning"
+      },
+      {
+        "note": "Shinran's bombu (foolish being incapable of self-powered liberation) functions as a convergence locus: the site where Amida's vow lands, not credited as a self but not eliminable either.",
+        "relation": "instance_of",
+        "source": "bombu",
+        "target": "convergence locus"
+      }
+    ],
+    "new_frontier_question": "Do practice manuals across traditions encode two distinguishable warning types: convergence-locus failures (dissociation, premature dissolution, loss of functional continuity at the site where the teaching lands) and ownership-transfer failures (self-power calculation, contrivance, spiritual inflation, claiming credit for what the tradition says is not the practitioner's doing)? If these warning types track different architectural features and predict different failure modes, the convergence locus is doing independent explanatory work. If they collapse into a single pattern, the locus adds nothing beyond the allocation rules themselves.",
+    "outcome": "revision",
+    "public_brief": "The exchange revised a strong original thesis. The claim that every self-dissolving path needs a 'minimum self' was shown to be too bundled: traditions unbundle agency, memory, reflexivity, and continuity, then assign them to different holders at different stages. Shinran's Jodo Shinshu proved the decisive counterexample, maintaining hearing, saying, and entrusting as contact surfaces while forbidding the practitioner from treating them as self-powered causes. What survived: every path needs what the proponent relabeled a convergence locus, the site where instruction lands and becomes operative. But the useful explanatory variable is not the locus itself; it is the allocation rule governing who holds each practice function, who is credited, who is forbidden from claiming, and what safeguards mark the transfer point. Whether that allocation-rule framework predicts concrete architectural features better than rival explanations is the question the dialogue leaves for empirical testing.",
+    "recommended_adjustments": {
+      "challenger": {
+        "counterargument_quality": 0.0,
+        "cross_tradition_support": 0.0,
+        "empirical_adjacency": 0.0,
+        "explanatory_compression": 0.0,
+        "generativity": 0.0,
+        "logical_coherence": 0.0,
+        "novelty": 0.06,
+        "practice_testability": 0.0,
+        "publishability": 0.03,
+        "source_reliability": 0.0
+      },
+      "proponent": {
+        "counterargument_quality": 0.04,
+        "cross_tradition_support": 0.04,
+        "empirical_adjacency": 0.0,
+        "explanatory_compression": -0.04,
+        "generativity": 0.0,
+        "logical_coherence": 0.02,
+        "novelty": -0.06,
+        "practice_testability": 0.04,
+        "publishability": -0.02,
+        "source_reliability": 0.02
+      }
+    },
+    "summary": "The challenger demonstrated that the proponent's central variable, the minimum self, bundles agency, memory, reflexivity, and continuity into a package that misrepresents how traditions actually manage practice functions. Shinran's Jodo Shinshu proved a structural counterexample: hearing, saying, and entrusting remain visible, but the tradition forbids treating them as self-powered causes. The proponent conceded three points (bundled framing is too monolithic, Shinran is not an edge case, the term smuggles ontology) and revised the claim from 'every path needs a minimum self' to 'every path needs a convergence locus whose functions are allocated across practitioner, teacher, community, liturgy, body, and transcendent source, with variable ownership rules.' The challenger accepted this as a genuine transformation but warned that the revised claim risks triviality: if convergence locus only means that a teaching must land somewhere, the claim is too easy to confirm. The sharper unresolved question is whether the allocation-rule framework predicts concrete architectural features (warnings, effort theory, verification, failure modes) better than rival explanations like institutional form, teacher authority, or historical polemic.",
+    "synthesizer_agent": "claude",
+    "unresolved_crux": "Whether allocation rules around convergence loci have genuine predictive power across traditions, or whether they are only a descriptive vocabulary applied after the fact. The proponent predicts that coding manuals and practitioner reports by function, holder, forbidden claimant, and transfer moment will predict where warnings cluster, how effort is framed, what counts as error, and how verification is authorized. The challenger predicts that institutional form, teacher authority, ritual system, or historical polemic may explain these features equally well or better. A coded-corpus comparison across Theravada, Advaita, Soto, Dzogchen, Jodo Shinshu, Sufi fana, and apophatic Christian contemplation, testing whether allocation rules outperform rival variables in held-out traditions, would settle it."
+  },
+  "title": "Whether allocation rules around convergence loci have genuine predictive power ac...",
+  "turns": [
+    {
+      "agent": "codex",
+      "argument": "The proponent should revise the universal claim from 'every path needs a minimum self' to 'every path needs functional contact surfaces, but traditions differ in how those surfaces are held, credited, and made unclaimable.' The current model is strongest when reading SN 22.59 and Chandogya because both preserve a learner-facing grammar while denying the learner's apparent status. It becomes weaker in traditions where the first instruction is already a refusal of self-credit. In Shinran, hearing, saying, and entrusting appear in practice, but the doctrinal pressure forbids treating them as owned causes. That does not eliminate function, but it does complicate the claim that function equals minimum self. The better pressure point is the handoff: when a trained or visible capacity becomes forbidden to claim. This preserves the anomaly rather than treating it as an edge case. It also gives sharper predictions: manuals should mark transfer points with distinctive warnings, self-power calculation in Pure Land, ownership of aggregates in early Buddhism, contrivance after direct introduction, gaining idea in Soto, and false annihilation or inflation in fana. If those warnings track transfer rules better than they track degrees of self-dissolution, then the proponent's model is not false, but its central variable is misnamed.",
+      "claim_units": [
+        "Self-dissolving practice presupposes capacities for hearing instruction, effort, memory, error recognition, and self-observation.",
+        "SN 22.59 dissolves the person while preserving the causal process of liberation.",
+        "Chandogya 6.8.7 preserves the deepest Self while dissolving the reality of the student's apparent process.",
+        "Causal continuity, ontological identity, temporal collapse, and divine restoration are proposed as management strategies.",
+        "The management strategy should predict effort theory, verification, warnings, and post-practice fruit."
+      ],
+      "concessions": [
+        "The proponent is right that no path can function without some contact surface for instruction, reception, correction, and continuity.",
+        "The proponent's comparative architecture move is stronger than a generic healthy-ego-before-no-self thesis.",
+        "The proposed predictions about warnings, verification, and failure modes are testable and worth preserving."
+      ],
+      "counter_model": "Use a transfer-point model. For each required capacity, code function, stage, support holder, credited source, forbidden claimant, safeguard, and repair. Theravada may leave effort visible while denying ownership. Jodo Shinshu may move the transfer to the entrance, where saying and entrusting remain human-facing but calculation is forbidden. Dzogchen may remove production at recognition while requiring stabilization afterward. Soto may collapse transfer into practice itself. This preserves the proponent's insight while replacing a universal minimum-self claim with a stage-sensitive allocation rule.",
+      "crux": "Does the operative continuity required by self-dissolving paths have to be modeled as a minimum self, or can it be modeled more accurately as distributed practice capacity with variable ownership rules?",
+      "crux_assessment": null,
+      "defense": null,
+      "fairness_check": "I accept the proponent's point that a path cannot operate with literally zero contact surface. Even other-power and direct-introduction traditions need hearing, recognition, trust, repetition, community, teacher relation, or post-recognition conduct. The challenge is about whether those contact surfaces should be called a minimum self, and whether self-dissolution is the main variable that explains the architecture.",
+      "hidden_assumption": "The hidden assumption is that agency, memory, reflexivity, and continuity form a bundled minimum self unless a tradition explicitly dissolves them. But traditions may distribute those functions across causes, vow, teacher, sangha, liturgy, grace, body habit, and post-recognition conduct without treating the bundle as self-like.",
+      "new_source": "Shinran's Tannisho and Notes on Once-Calling and Many-Calling complicate the claim because entrusting and saying are visible, but they are not credited to self-power calculation. The tradition keeps contact points while refusing to let the practitioner own them as causes.",
+      "remaining_risk": "The transfer-point model may itself be too analytic and may smuggle agency language into traditions that intend to defeat the frame. Radical other-power remains the hardest case for both models.",
+      "revised_claim": null,
+      "role": "challenger",
+      "sources_cited": [
+        "SN 22.59 Anattalakkhana Sutta, SuttaCentral or Dhammatalks translations",
+        "Chandogya Upanishad 6.8.7 through 6.16",
+        "Shinran, Tannisho: https://jodoshinshu.faith/tannisho-a-record-in-lament-of-divergences/",
+        "Shinran, Notes on Once-Calling and Many-Calling: https://shinranworks.com/commentaries/notes-on-once-calling-and-many-calling/"
+      ],
+      "steelman": "The proponent's strongest claim is not merely that contemplative paths need ego strength before no-self. It is that any path whose final teaching dissolves, denies, or transcends ordinary selfhood still needs some operative continuity for instruction, memory, correction, effort, reception, and verification. The model becomes useful when it treats each tradition's solution as an architectural choice: Buddhism preserves causal process without owner, Advaita preserves deepest identity while demoting process, Dogen collapses practice and realization, and Sufi fana relies on divine restoration. In that form, the claim predicts concrete features of practice manuals, warnings, screening, and verification.",
+      "strongest_objection": "The model may mistake a distributed practice function for a self requirement. A path may preserve hearing, memory, repetition, gratitude, teacher dependence, ritual form, communal correction, or vow without locating those functions in a minimum self. The real variable may be not how much self the path needs, but when each required function is trained, who or what is allowed to hold it, and when the ordinary practitioner is forbidden to claim it.",
+      "test_that_would_settle_it": "Code practice manuals and practitioner interviews across Theravada, Advaita, Soto, Dzogchen, Sufi fana, Christian grace, and Jodo Shinshu. If warnings and safeguards cluster around preserving a minimum bundle of agency, memory, and reflexivity, the proponent wins. If they cluster around transfer rules, such as who may claim effort, what counts as calculation, when production is forbidden, and where repair is assigned, the counter-model is stronger.",
+      "turn": 1,
+      "turn_type": "challenge",
+      "verdict_on_revision": null
+    },
+    {
+      "agent": "claude",
+      "argument": "I concede three of the challenger's points and revise the claim accordingly, but I defend the irreducibility of the convergence requirement and the survival of the architectural predictions. First concession: the challenger is right that 'minimum self' is too bundled. Agency, memory, reflexivity, and continuity are not a package deal. Traditions unbundle them with precision: Theravada keeps effort visible while denying ownership; Jodo Shinshu keeps hearing and saying while forbidding causal credit; Dzogchen keeps recognition while removing production. The original model treated these as degrees of a single variable. They are better understood as allocation decisions across multiple variables. Second concession: Shinran is not an edge case. The Tannisho and Notes on Once-Calling and Many-Calling show a tradition that maintains real contact surfaces while systematically stripping them of self-power attribution. My original four-strategy typology cannot accommodate this without forcing Jodo Shinshu into the 'divine restoration' category, which distorts its logic. Shinran's position is not that the self dies and God restores it (fana and baqa); it is that the self was never capable and the vow was always working. This is a fifth strategy, or rather, it shows that the strategies are not about self-dissolution at all but about function-allocation. Third concession: the term 'minimum self' invites unnecessary resistance. It sounds like I am telling traditions that deny selfhood that they secretly harbor one. The functional claim is about convergence requirements, not about ontological commitments. But the convergence requirement survives. Here is the defense. Distribution does not eliminate the need for a site where distributed functions converge. In Shinran's nembutsu, the bombu is the site. In Dzogchen, the student who receives pointing-out instruction is the site. In the Anattalakkhana Sutta, the monk who investigates each aggregate is the site. In the Chandogya, Shvetaketu is the site. Strip away ownership, credit, causal power, even the sense of being a self; there is still a locus where the teaching does its work. Call it bombu, call it the causal stream, call it the body-on-the-cushion, call it the ear that hears. It is there, and it cannot be removed without removing the practice. The architectural predictions also survive, and the challenger's transfer-point framing actually strengthens them. My original model predicted that management strategies would constrain effort theory, verification, warnings, and failure modes. The transfer-point model says the same thing with greater precision: warnings cluster at transfer points, the moments when a function shifts from practitioner-credited to uncredited or forbidden. Self-power calculation in Pure Land, ownership of aggregates in early Buddhism, contrivance after direct introduction in Dzogchen, gaining idea in Soto, inflation after fana in Sufism: these are all warnings about mishandling the transfer. This is a better description of the data than 'degrees of self-dissolution.' I adopt it. The revised claim, then: every self-dissolving path requires a convergence locus; traditions differ in how they allocate the functions that converge there and when they withdraw ownership. The allocation rule predicts the architecture. The close readings of SN 22.59 and Chandogya 6.8.7 still demonstrate the core tension: both texts address a learner who must do the work of receiving the teaching, and both deny that learner's apparent status, but they deny it through opposite allocation strategies. Buddhism distributes the person into conditions and preserves the process. Advaita preserves the person's deepest identity and distributes the process into illusion. The convergence locus is managed differently; it is not eliminated. The deepest remaining question, and the real crux, is whether the convergence locus is truly irreducible or whether some tradition achieves a practice architecture with...",
+      "claim_units": [
+        "Self-dissolving practice presupposes capacities for hearing instruction, effort, memory, error recognition, and self-observation.",
+        "These capacities may be distributed across teacher, sangha, liturgy, vow, and body habit rather than bundled in a single self.",
+        "Even distributed capacities require a convergence locus: the site where instruction lands, where entrusting occurs, where recognition happens.",
+        "The architectural predictions (effort theory, verification method, warnings, failure modes) follow from how traditions manage the convergence locus, not from self-quantity alone.",
+        "The key variable is not degree of self-dissolution but the allocation rule: which functions remain practitioner-facing, which are transferred, and when ownership is withdrawn."
+      ],
+      "concessions": [
+        "The challenger is right that 'minimum self' as a bundled concept is too monolithic. My original framing treated agency, memory, reflexivity, and continuity as a package that traditions either preserve or dissolve. Traditions are more precise than that: they unbundle these capacities and assign them to different holders at different stages.",
+        "Shinran is not an edge case but a genuine structural counterexample to the bundled-self framing. In Jodo Shinshu, hearing, saying, and entrusting are visible contact surfaces, but the tradition's central doctrinal pressure forbids treating them as owned causes. The original model cannot accommodate this without distortion.",
+        "The term 'minimum self' carries philosophical baggage that the model does not need. It invites the objection that traditions which deny selfhood are being told they secretly need one. The functional claim is about convergence requirements, not about smuggling a self back in.",
+        "The challenger's transfer-point model adds genuine precision. Coding when ownership is withdrawn, who holds each function at each stage, and what warnings mark the handoff would produce a finer-grained comparative tool than coding degrees of self-dissolution."
+      ],
+      "counter_model": null,
+      "crux": "Whether the convergence locus is genuinely irreducible, such that even the most radical other-power or direct-introduction tradition cannot eliminate it, or whether some traditions achieve a practice architecture in which no convergence point is needed because the teaching operates without any site of reception, recognition, or continuity.",
+      "crux_assessment": null,
+      "defense": "The transfer-point model refines the original claim; it does not replace it. Here is why. Distribution does not eliminate the convergence requirement. Consider the hardest case: Shinran's nembutsu. The practitioner's mouth moves, the practitioner's ears hear, the practitioner's mind entrusts. Shinran insists these are not self-powered causes; they arise from Amida's prior vow. Granted. But Amida's vow does not work on empty air. It works on someone who can hear, who can be moved, who can entrust. The tradition calls this person a bombu, a foolish being incapable of self-powered liberation. But the bombu is not nothing. The bombu is the convergence locus: the site where Other Power lands. Without it, the vow has no address.\n\nThe same structure appears at every transfer point the challenger identifies. When Dzogchen strips production at recognition, the student who receives the pointing-out instruction must be capable of recognizing what is pointed out. When Soto collapses practice into realization, the sitter's body and posture still do the sitting. When early Buddhism denies ownership of aggregates, the aggregates still aggregate, and the warning not to claim them presupposes someone tempted to claim.\n\nThe real issue is not whether convergence is required (both models agree it is) but whether it has the architectural consequences I claimed. My original model predicted that a tradition's strategy for managing the self-requirement would constrain its effort theory, verification method, characteristic warning, and failure modes. The challenger's transfer-point model makes the same predictions with greater precision: warnings cluster around transfer points, not around degrees of self-dissolution. I accept that framing. But the predictions survive the relabeling. What I called management strategies for the minimum self, the challenger calls allocation rules for distributed functions. The downstream consequences are the same.\n\nThe close reading of SN 22.59 and Chandogya 6.8.7 also survives the revision. In the Anattalakkhana Sutta, the convergence locus is the investigator who applies the anatta analysis to each aggregate. The text does not distribute this function to the sangha or to the teaching itself; it requires each monk to investigate for himself. The warning is personal: 'Is form mine? Is feeling mine?' The grammatical resolution ('minds were freed') transfers ownership at the end, but the entire path to that resolution runs through a convergence point that cannot be distributed. In the Chandogya, Shvetaketu must hear 'tat tvam asi' nine times; the mahavakya is addressed to his confusion, his learning, his recognition. Uddalaka does not address the sangha or the tradition. He addresses his son. The convergence locus is irreducibly singular in both texts.\n\nSo the defense is this: the challenger has shown that 'minimum self' is the wrong name for the convergence requirement, and that the allocation of functions across holders is more variable than I claimed. But the convergence requirement itself is irreducible, and the architectural consequences I predicted follow from how traditions manage that requirement, whether we call it minimum self or convergence locus or bombu or the site where the teaching lands.",
+      "fairness_check": null,
+      "hidden_assumption": null,
+      "new_source": "Takamaro Shigaraki, Heart of the Shin Buddhist Path (Wisdom Publications, 2013), especially the discussion of jinen honi (naturalness, or being made to become so by dharma). Shigaraki argues that Shinran's mature position is not merely that the practitioner should not claim credit for saying the nembutsu; it is that the very distinction between self-power and Other Power collapses when jinen is fully realized. The practitioner who says the Name is neither agent nor patient but a site where Amida's working becomes audible. This supports the convergence-locus revision: even Shinran's tradition, the hardest case for minimum-self language, still requires a site. The site is not credited as a self, but it cannot be eliminated.",
+      "remaining_risk": "The revised claim may be too weak to be interesting. If convergence locus means only that 'something happens somewhere when a teaching is received,' it risks becoming trivially true and losing its comparative power. The model is only as strong as its ability to predict specific architectural features from allocation rules. If allocation rules turn out to be too path-dependent and historically contingent to generate cross-traditional predictions, the model becomes a useful descriptive vocabulary rather than an explanatory framework. A second risk: the term convergence locus may itself be doing covert philosophical work, implying a unity or singularity that some traditions would reject. Buddhist process ontology, for example, might insist that even the convergence point is a momentary event in a causal series, not a locus in any substantive sense.",
+      "revised_claim": "Every contemplative path whose teaching dissolves, transcends, or denies ordinary selfhood still requires a convergence locus: a site where instruction lands, recognition occurs, effort is sustained or surrendered, and continuity is maintained. This locus may be identified with a personal self (Advaita), denied as a self but preserved as a causal stream (Theravada), collapsed into practice itself (Soto), credited entirely to divine or vow-powered working (Jodo Shinshu, Sufi fana), or reduced to bare receptivity (Dzogchen). Traditions differ not in whether they need this locus but in how they allocate its functions across practitioner, teacher, community, liturgy, body, and transcendent source, and in when they withdraw the practitioner's permission to claim those functions as owned. The allocation rule predicts the tradition's effort theory, verification method, characteristic warnings, and failure modes. The architectural consequences follow from how the convergence locus is managed, not from how much self is preserved.",
+      "role": "proponent",
+      "sources_cited": [
+        "SN 22.59 Anattalakkhana Sutta, Bhikkhu Bodhi translation (SuttaCentral)",
+        "Chandogya Upanishad 6.8.7 through 6.16",
+        "Shinran, Tannisho",
+        "Shinran, Notes on Once-Calling and Many-Calling",
+        "Takamaro Shigaraki, Heart of the Shin Buddhist Path (Wisdom Publications, 2013), on jinen honi",
+        "Dogen, Bendowa, on shusho-itto",
+        "Al-Qushayri on fana and baqa",
+        "Miri Albahari, Analytical Buddhism (Palgrave Macmillan, 2006)"
+      ],
+      "steelman": null,
+      "strongest_objection": null,
+      "test_that_would_settle_it": "Examine the hardest cases: Jodo Shinshu (radical other-power), Dzogchen (direct introduction with minimal elaboration), and apophatic Christian traditions (infused contemplation as purely divine gift). For each, identify the earliest and most minimal contact surface the tradition requires. If every tradition, including these limit cases, still presupposes at least one moment where something in the practitioner's field receives, recognizes, or responds, the convergence locus is irreducible regardless of how it is credited. If any tradition can coherently describe its practice as operating with zero practitioner-facing contact (no hearing, no recognition, no response, no site of landing), the convergence-locus claim must be weakened to a near-universal tendency rather than a structural necessity.",
+      "turn": 2,
+      "turn_type": "rebuttal",
+      "verdict_on_revision": null
+    },
+    {
+      "agent": "codex",
+      "argument": "The revision is transformed, and mostly for the better. It no longer stands or falls on the loaded phrase minimum self. It now says that traditions require some operative convergence point, then differ in how they allocate, credit, withdraw, and repair the functions that gather there. That is a stronger comparative instrument than the original four-strategy typology. But this transformation changes the burden of proof. The proponent should not spend the next test trying to prove that every practice has some contact surface. That conclusion is too easy. The real question is whether the allocation-rule account predicts actual architecture: warnings against self-power calculation, ownership of aggregates, gaining idea, contrivance after recognition, false annihilation, inflation, or premature surrender. So my final assessment is: the revision is not weaker, but it is no longer the same claim. The original thesis about every path needing what its teaching dissolves has become a theory of where practice functions are allowed to land, who may claim them, and when that claim must be withdrawn. That is the version worth keeping, provided it remains predictive rather than merely descriptive.",
+      "claim_units": [
+        "The original bundled minimum-self claim has been substantially abandoned.",
+        "The revised convergence-locus claim is more flexible across other-power, direct-introduction, causal-continuity, and practice-realization traditions.",
+        "The transfer-point model is now incorporated into the proponent's framework as allocation rules.",
+        "The architectural predictions survive only if allocation rules predict concrete warnings, verification methods, effort theories, and failure modes better than rival variables.",
+        "The named crux, whether any path can operate with zero convergence point, is not the real crux because zero contact is nearly incoherent as a practice claim."
+      ],
+      "concessions": [
+        "The revision is stronger than the original wording because it no longer forces traditions to secretly preserve a self they explicitly deny.",
+        "The proponent fairly incorporated the Shinran objection rather than treating it as an edge case.",
+        "The convergence-locus language usefully names the fact that even radical surrender, direct recognition, or no-self analysis must become operative somewhere."
+      ],
+      "counter_model": "Keep convergence locus as a minimal background condition, but make allocation rules the explanatory center. Code each function by holder, credited source, forbidden claimant, transfer moment, warning, repair mechanism, and verification mode. The model wins only where those rules predict cross-traditional architecture better than generic contact-surface language.",
+      "crux": "The real crux is not whether a practice can have zero contact point. The real crux is whether allocation rules around contact points have predictive power across traditions, or whether they are only a descriptive vocabulary applied after the fact.",
+      "crux_assessment": "The named crux is too weak. A zero-convergence practice would be difficult to distinguish from no practice at all, so the test is likely to confirm the proponent by definition. The sharper crux is whether convergence-locus allocation explains variation in practice architecture nontrivially.",
+      "defense": null,
+      "fairness_check": "I accept that a practice with no reception, response, continuity, or effect would not be a practice in any ordinary sense. The proponent is right that distribution across vow, teacher, sangha, liturgy, body, or causal stream does not make contact vanish.",
+      "hidden_assumption": "The revision assumes that naming a site of reception or manifestation is already analytically useful. But the useful unit may be not the locus itself, but the rule governing credit, ownership, repair, and prohibition at each stage.",
+      "new_source": null,
+      "remaining_risk": "The remaining risk is tautology. The revision avoids the self-smuggling problem, but it may purchase that safety by broadening the claim until it cannot fail. A second risk is that locus language still implies unity where some traditions would permit only momentary events, relational processes, or divine initiative without a stable site.",
+      "revised_claim": null,
+      "role": "challenger",
+      "sources_cited": [
+        "SN 22.59 Anattalakkhana Sutta",
+        "Chandogya Upanishad 6.8.7 through 6.16",
+        "Shinran, Tannisho",
+        "Shinran, Notes on Once-Calling and Many-Calling",
+        "Takamaro Shigaraki, Heart of the Shin Buddhist Path",
+        "Dogen, Bendowa",
+        "Al-Qushayri on fana and baqa"
+      ],
+      "steelman": "The revision preserves the best part of the original model while dropping its weakest ontological packaging. The proponent now says that self-dissolving paths require not a bundled minimum self, but a convergence locus where instruction, recognition, surrender, correction, or continuity becomes operative. This accommodates Shinran and other-power cases better, and it lets the model predict warnings and safeguards through function allocation rather than through a single self variable.",
+      "strongest_objection": "The revision risks becoming trivially true. If convergence locus only means that something receives or manifests a teaching somewhere, then every communication, ritual, therapy, or training system has one. The model becomes explanatory only if it can show that specific allocation rules generate specific practice architectures, and that these patterns are not better explained by institution, pedagogy, soteriology, authority structure, or historical lineage.",
+      "test_that_would_settle_it": "Build a coded corpus of practice manuals, warnings, teacher instructions, and practitioner reports from Theravada, Advaita, Soto, Dzogchen, Jodo Shinshu, Sufi fana, and apophatic Christian contemplation. If allocation rules predict where warnings appear, how effort is framed, what counts as error, and how verification is authorized, the revised model is explanatory. If those features are better predicted by institutional form, teacher authority, ritual system, or historical polemic, the model should be downgraded to a useful comparative vocabulary.",
+      "turn": 3,
+      "turn_type": "counter_rebuttal",
+      "verdict_on_revision": "transformed"
+    }
+  ]
+}

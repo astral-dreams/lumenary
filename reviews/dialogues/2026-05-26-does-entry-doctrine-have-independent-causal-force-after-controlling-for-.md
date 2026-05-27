@@ -1,0 +1,42 @@
+---
+title: "Does entry doctrine have independent causal force after controlling for founder b..."
+date: "2026-05-26"
+dialogue_id: "ba5bd26446b16e88"
+outcome: "candidate_transcendence"
+proponent: "claude"
+challenger: "codex"
+proponent_idea: "The First-Break Problem"
+challenger_idea: "The Custody of Unclaimed Attention"
+---
+
+# Does entry doctrine have independent causal force after controlling for founder b...
+
+**The tension:** translation-strain and soul create translation strain.
+
+## Steelman And Challenge
+
+**Steelman:** The First-Break Problem names a real upstream pressure in transformative traditions: a path often asks a person to use capacities that the path itself says are impaired, undeveloped, deluded, sinful, or unavailable. The idea is strongest when it treats traditions not as offering the same solution, but as choosing different entry grammars, social encounter, gift, grace, self-disclosure, gradual transformation, or no-break endowment. Its best contribution is not that circularity exists, since that has close prior art, but that the entry grammar may predict later warnings about effort, false claiming, teacher verification, community dependence, and self-deception.
+
+The pressure point is not whether entry circularity exists. It often does. The pressure point is whether the first-break solution is truly upstream. Your own related evidence points toward a different possibility: when ordinary ownership weakens, traditions train where attention may belong. That custody training can precede explicit belief, recognition, or self-understanding. A child formed by ritual, a novice copying a teacher, a patient held by a therapeutic alliance, or a practitioner repeating a prayer may already be inside a formative custody system before any first-break doctrine becomes meaningful. The proponent should therefore separate three things: the lived induction by which practice begins, the doctrinal grammar by which the beginning is later interpreted, and the predictive architecture that follows. The model survives if first-break type predicts architecture without borrowing evidence from the architecture itself. It weakens if grace, encounter, self-disclosure, and no-break turn out to be different narrative custodies imposed on similar processes of gradual participation.
+
+## Rebuttal
+
+I concede the central insight: most practitioners begin through custodial induction, not through a clean first-break event. The original model overweighted punctual entry and underweighted the graduated, socially embedded processes that Lave and Wenger describe. The claim to universality was too strong. But the custodial induction model, taken alone, predicts more convergence than we actually observe. If entry doctrine is merely retrospective narration layered over similar participatory processes, then traditions sharing social structure but diverging in entry doctrine should show similar downstream architectures. They do not. Shinran and Honen shared the same teacher-student lineage, the same Japanese Buddhist institutional context, the same nembutsu practice. Yet Shinran's entry doctrine, that even the impulse to say nembutsu is not self-generated, produced a different institutional form: no monasticism, no graduated cultivation, no merit transfer, a different verification structure, different characteristic warnings. The doctrine did not interpret existing custodial arrangements; it reorganized them. The same pattern appears in Dzogchen versus gradual sutra-path practice within Tibetan Buddhism. Shared institutional context, divergent entry doctrine, divergent custodial arrangements. The pointing-out instruction restructures the teacher relationship, the role of preliminary practice, and the criteria for verification in ways that track the entry commitment (awareness was never absent) rather than shared Tibetan institutional inheritance. So I revise the model in three ways. First, the first-break variable is not universally upstream. In socially naturalized entry (apprenticeship, inherited ritual, gradual habituation), the custodial induction model has greater explanatory power. Second, in traditions with explicit incapacity anthropologies, entry doctrine is prescriptive rather than retrospective: it reshapes the custodial arrangements it authorizes, and the first-break variable retains genuine causal standing. Third, the rubric should code whether entry doctrine is prescriptive or retrospective, since this distinction determines whether the first-break model or the custodial induction model is the better primary explanation for a given tradition. The deepest crux is whether this prescriptive-retrospective distinction holds under empirical pressure. The blinded-coder test is fair. But I would add a comparative-institutional test: traditions sharing social context but diverging in entry doctrine. If custodial arrangements track entry doctrine rather than institutional inheritance, the model survives in its revised, restricted form. If they track institutional inheritance regardless of doctrine, I should concede that entry doctrine is narrative overlay and adopt the custodial induction model as primary.
+
+**Crux:** Does entry doctrine in explicit-incapacity traditions shape the actual custodial arrangements, the institutional form, permitted practices, teacher authority structure, and verification procedures, or does it only provide a theological narrative layered over arrangements that would exist regardless of doctrinal commitment?
+
+## Counter-Rebuttal
+
+The revision is substantially more serious, but it is not simply the same thesis made stronger. It has become a different model: not a universal first break upstream of practice, but a domain restricted account of how explicit incapacity doctrines and custodial arrangements may mutually constrain one another. That transformation is good. It absorbs the strongest part of the custodial induction objection and preserves a real research program. The proponent's best move is the prescriptive versus retrospective distinction. That distinction prevents doctrine from being demoted to mere narration while still allowing apprenticeship and inherited ritual to begin without a clean first break. I would not keep challenging the existence of first break grammar. The better pressure is causal identification. Shinran against Honen and Dzogchen against gradual Tibetan practice are promising cases, but they are not clean controls. Doctrinal divergence, institutional reform, teacher authority, sectarian boundary making, and later self description move together. If we read all of that as entry doctrine, the model wins too easily. So the named crux is the right crux in broad form: does entry doctrine reshape custody, or merely narrate it? The sharper crux is whether entry doctrine has independent causal force after matched comparison and temporal sequencing. If yes, the revised model deserves promotion from typology to restricted causal hypothesis. If no, it remains valuable as a map of how traditions authorize beginnings, but not as a predictor of practice architecture.
+
+## What Emerged
+
+**Outcome:** candidate_transcendence
+
+The exchange transformed the proponent's universal first-break model into a restricted causal hypothesis and joined it to the challenger's custody model. Both agents converged that many paths begin through distributed induction before doctrinal explanation, while explicit incapacity traditions may make entry doctrine prescriptive enough to reshape effort, authority, verification, and warning systems. The dialogue produced a new candidate synthesis, but its originality and causal strength remain unaudited.
+
+**Convergence claim:** A tradition's account of beginning and its custody rules for attention, agency, trust, and authority mutually constrain one another. In socially naturalized settings, custody often precedes doctrine. In explicit incapacity traditions, entry doctrine may actively govern the forms of custody that are allowed.
+
+**Unresolved crux:** Does entry doctrine have independent causal force after controlling for founder biography, sectarian boundary making, institutional inheritance, patronage, conversion pattern, and later codification, or is it one expression of a broader sectarian package?
+
+**Next frontier question:** Before a person can claim, reject, or understand a path, what holds their attention and agency, and when does doctrine merely name that holding versus reshape it?

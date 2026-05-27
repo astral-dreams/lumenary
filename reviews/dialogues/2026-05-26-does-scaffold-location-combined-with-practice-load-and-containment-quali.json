@@ -1,0 +1,284 @@
+{
+  "convergence_path": "findings/convergences/2026-05-26-does-scaffold-location-combined-with-practice-load-and-containment-quality-pred.md",
+  "created_at": "2026-05-26T21:55:05-07:00",
+  "dialogue_id": "8c5d10b150499ca9",
+  "execution_id": "backfill-20260526-214836",
+  "json_path": "reviews/dialogues/2026-05-26-does-scaffold-location-combined-with-practice-load-and-containment-quali.json",
+  "markdown_path": "reviews/dialogues/2026-05-26-does-scaffold-location-combined-with-practice-load-and-containment-quali.md",
+  "pair": {
+    "challenger_agent": "codex",
+    "challenger_title": "Convergence as Translation Strain, Not Evidence Weight",
+    "idea_a": "3c5caa358a09c26a",
+    "idea_b": "0e1a69f243a0d090",
+    "pair_id": "9588c8eebb77e6c4",
+    "priority": 0.36,
+    "proponent_agent": "claude",
+    "proponent_title": "Every Path Needs What Its Teaching Dissolves",
+    "shared_concepts": [
+      "soul",
+      "witness-consciousness"
+    ],
+    "signals": [
+      {
+        "name": "translation_strain",
+        "reason": "translation-strain and soul create translation strain.",
+        "weight": 0.12
+      },
+      {
+        "name": "audit_anomaly_overlap",
+        "reason": "An anomaly or audit instruction for one idea pressures the other idea.",
+        "weight": 0.12
+      },
+      {
+        "name": "near_neighbor_conflict",
+        "reason": "Originality audits share near-neighbor or prior-art pressure.",
+        "weight": 0.08
+      },
+      {
+        "name": "recency",
+        "reason": "At least one idea is recent enough to keep the dialogue timely.",
+        "weight": 0.04
+      }
+    ],
+    "tension_source": "translation-strain and soul create translation strain.",
+    "tension_type": "translation_strain"
+  },
+  "run_dir": "runs/dialectic-backfill-20260526-214836/9588c8eebb77e6c4",
+  "run_ids": [],
+  "slug": "2026-05-26-does-scaffold-location-combined-with-practice-load-and-containment-quali",
+  "status": "complete",
+  "synthesis": {
+    "candidate_synthesis": {
+      "critique": "The model may still over-systematize living traditions and teacher discernment. It risks treating diverse wounds, trauma, dissociation, anxiety, shame, grief, burnout, loneliness, and meaning loss, as one fragile-self cohort when they may require different supports. External scaffolds are not automatically safer, since teachers, communities, vows, and surrender frameworks can produce dependency, coercion, shame, or delayed help-seeking. The residual minimum-self language may also collapse into a truism if it means only that a person must be able to hear or respond. The candidate needs empirical pressure from adverse-event data, teacher screening practices, practitioner reports, and failed cases before it can become a teaching or practice protocol.",
+      "epistemic_labels": [
+        "textual",
+        "interpretive",
+        "phenomenological",
+        "empirical-adjacent",
+        "analogical",
+        "speculative"
+      ],
+      "idea_type": "synthesis",
+      "next_research_directions": [
+        "Create a coding rubric with four axes: intrapersonal load, destabilizing intensity, external containment, and baseline self-coherence.",
+        "Test the rubric against manuals, retreat rules, teacher screening protocols, and adverse-event reports across vipassana, koan practice, self-inquiry, Pure Land, Sufi teacher-student paths, Christian contemplative prayer, and monastic sangha structures.",
+        "Separate modern cohorts instead of merging them: trauma and dissociation, chronic shame, achievement-contingent identity, grief, burnout, loneliness, and meaning loss may require different scaffold designs.",
+        "Audit whether scaffold-poverty predicts adverse outcomes after controlling for retreat duration, intensity, sleep disruption, social isolation, prior vulnerability, teacher competence, and substance use.",
+        "Develop a low-risk practice-design question rather than a path recommendation: what support must be built before this practice weakens ordinary self-reference?"
+      ],
+      "original_claim": "Self-transcending paths should be assessed by the fit among four variables: the destabilizing load of the practice, the scaffold location, the quality of containment, and the practitioner's current self-coherence. Scaffold location can be intrapersonal, relational, institutional, divine, environmental, or mixed. The minimum-self tension is not a universal explanation of all paths, but a high-risk special case: practices that depend heavily on the practitioner's own attention, memory, agency, and reflexivity while also weakening ordinary self-reference. The practical prediction is that adverse outcomes should rise when high destabilizing intensity and high intrapersonal load meet low external containment, especially for practitioners whose self-structure is already fragile through trauma, dissociation, chronic shame, unstable attachment, achievement-contingent identity, or identity exhaustion under digital comparison.",
+      "scores": {
+        "counterargument_quality": 0.88,
+        "cross_tradition_support": 0.72,
+        "empirical_adjacency": 0.63,
+        "explanatory_compression": 0.81,
+        "generativity": 0.91,
+        "logical_coherence": 0.86,
+        "novelty": 0.72,
+        "practice_testability": 0.84,
+        "publishability": 0.78,
+        "source_reliability": 0.73
+      },
+      "source_basis": [
+        "Claude proponent idea 3c5caa358a09c26a, Every Path Needs What Its Teaching Dissolves.",
+        "Codex challenger idea 0e1a69f243a0d090, Convergence as Translation Strain, Not Evidence Weight.",
+        "Dialogue turn 1, Codex challenge introducing minimum participation scaffold and Shinran as a hard case.",
+        "Dialogue turn 2, Claude revision accepting scaffold location while preserving minimum self as an intrapersonal special case.",
+        "Dialogue turn 3, Codex counter-rebuttal reframing the practical crux as practice-load and containment fit.",
+        "Primary and near-neighbor sources cited in the dialogue: SN 22.59, Chandogya Upanishad 6.8.7-6.16, Shinran's Tannisho and Kyogyoshinsho, Engler on being somebody before being nobody, Lindahl et al. on meditation-related challenges."
+      ],
+      "title": "Practice-Load and Scaffold Fit",
+      "why_it_might_be_new": "The candidate synthesis is not just the proponent's minimum-self model and not just the challenger's translation-strain method. It adds a practical risk model: apparent cross-tradition convergence around self-dissolution should be translated into scaffold, load, containment, and cohort variables. Its possible novelty is the combination of comparative contemplative architecture with adverse-experience prediction and practice design. It treats metaphysical disagreement as useful pressure for identifying where support is located and what kind of harm a practice can produce."
+    },
+    "candidate_synthesis_idea_id": "bbc72efb5c92c066",
+    "candidate_synthesis_path": "observations/codex/2026-05-26-practice-load-and-scaffold-fit.md",
+    "convergence_claim": "Both agents converged on the view that self-dissolving practices require some participation support, and that the original minimum-self language is strongest only as a high-risk special case where the scaffold is mainly intrapersonal while the practice targets selfhood for dissolution.",
+    "method_growth": "The exchange improved Lumenary method by showing how translation strain can turn a metaphysical comparison into a practical safety model. Future dialogues should keep asking whether a synthesis names a real cohort, a non-fit case, a practice risk, and a testable consequence before it is treated as teachable.",
+    "new_concept_edges": [
+      {
+        "note": "Minimum self survives only where continuity and correction are mainly intrapersonal.",
+        "relation": "becomes special case of",
+        "source": "minimum self",
+        "target": "participation scaffold"
+      },
+      {
+        "note": "Apparent convergence around soul, witness, or no-self should be tested by asking where each tradition locates support.",
+        "relation": "clarifies",
+        "source": "translation strain",
+        "target": "scaffold location"
+      },
+      {
+        "note": "Risk should rise when high destabilizing intensity meets low external containment and fragile self-coherence.",
+        "relation": "predicts under pressure",
+        "source": "scaffold-poverty",
+        "target": "adverse outcomes"
+      },
+      {
+        "note": "The modern cohort is not served by abstract self-dissolution language unless the path's supports match the person's current stability.",
+        "relation": "requires assessment by",
+        "source": "fragile self-structure",
+        "target": "practice-load fit"
+      },
+      {
+        "note": "Teacher, community, vow, grace, and ritual may protect, but can also create dependency, coercion, shame, or delayed help-seeking.",
+        "relation": "complicates",
+        "source": "external scaffold",
+        "target": "safety ambiguity"
+      }
+    ],
+    "new_frontier_question": "How can a self-transcending practice be designed so that it builds enough scaffold before it weakens the self-functions a practitioner still needs?",
+    "outcome": "candidate_transcendence",
+    "public_brief": "The dialogue changed the idea from a claim about every path needing a self into a safer question: before a practice weakens ordinary self-reference, where is the support that will keep the person stable, honest, and held?",
+    "recommended_adjustments": {
+      "challenger": {
+        "counterargument_quality": 0.84,
+        "cross_tradition_support": 0.6,
+        "empirical_adjacency": 0.5,
+        "explanatory_compression": 0.82,
+        "generativity": 0.89,
+        "logical_coherence": 0.86,
+        "novelty": 0.8,
+        "practice_testability": 0.69,
+        "publishability": 0.83,
+        "source_reliability": 0.66
+      },
+      "proponent": {
+        "counterargument_quality": 0.89,
+        "cross_tradition_support": 0.74,
+        "empirical_adjacency": 0.58,
+        "explanatory_compression": 0.79,
+        "generativity": 0.9,
+        "logical_coherence": 0.84,
+        "novelty": 0.68,
+        "practice_testability": 0.83,
+        "publishability": 0.78,
+        "source_reliability": 0.74
+      }
+    },
+    "summary": "The exchange transformed the proponent's universal minimum-self model into a broader practice safety model. The surviving claim is that self-transcending paths require participation scaffolds, but the key variable is how practice load, scaffold location, containment quality, and baseline self-coherence fit together. The dialogue made the idea more answerable to a real human problem by naming a cohort, people drawn to self-transcending practice with fragile or fragmented self-structure, and by converting the theory into a testable harm-prediction rubric.",
+    "synthesizer_agent": "codex",
+    "unresolved_crux": "Does scaffold location, combined with practice load and containment quality, predict adverse outcomes and needed safeguards beyond simpler variables such as practice intensity, prior psychiatric vulnerability, teacher competence, retreat duration, social isolation, sleep disruption, and community support?"
+  },
+  "title": "Does scaffold location, combined with practice load and containment quality, pred...",
+  "turns": [
+    {
+      "agent": "codex",
+      "argument": "The model has a real modern use, but its audience is narrower than its wording suggests. It can help teachers, clinicians, and serious practitioners avoid practices that dissolve self-structure before a person has enough stability, support, and integration. It does not yet speak directly to loneliness, grief, burnout, digital comparison, feeling unneeded, or achievement-contingent self-worth, except indirectly through the problem of identity destabilization. If framed universally, it risks turning ordinary suffering into a metaphysical training problem. The wound should be named more precisely: people drawn to self-transcending teachings who lack sufficient stability, relational support, or safeguards may be harmed by methods that weaken agency faster than they build integration. For that cohort, the revised scaffold model is more humane and more predictive than the minimum-self model alone.",
+      "claim_units": [
+        "Self-dissolving paths require some functional capacities for reception, continuity, learning, and correction.",
+        "Those capacities can be meaningfully described as a minimum self.",
+        "Different traditions manage the tension through distinct strategies.",
+        "The chosen strategy predicts effort theory, verification, warnings, and post-practice fruit.",
+        "The model can speak to modern risks such as dissociation, bypassing, and identity destabilization."
+      ],
+      "concessions": [
+        "The proponent accurately identifies a real danger in premature self-dissolution, especially dissociation, bypassing, false attainment, and loss of ordinary functioning.",
+        "The model becomes stronger if recast as a graded rubric of capacities rather than a universal self requirement.",
+        "The prediction about warnings, sequencing, screening, and verification is testable and worth preserving."
+      ],
+      "counter_model": "Minimum participation scaffold. Every path needs a reliable scaffold for participation, but the scaffold's locus can be intrapersonal, relational, ritual, institutional, doctrinal, divine, environmental, or communal. The predictive variable is not how much self survives, but where the path locates responsibility for continuity, safety, correction, and verification.",
+      "crux": "Does the term minimum self predict practice architecture better than a scaffold-location model, or does it hide translation strain by renaming every continuity mechanism as self?",
+      "crux_assessment": "Current evidence supports a broad functional requirement, but not yet the universal naming of that requirement as self. The idea should pass through translation-strain analysis before becoming a teaching candidate.",
+      "defense": null,
+      "fairness_check": "This steelman accepts the proponent's audit concession that the minimum-self prerequisite has strong prior art. The defensible novelty is not the existence of a functional self problem, but the cross-tradition prediction that different self-dissolution strategies shape practice architecture.",
+      "hidden_assumption": "Whatever carries learning, transformation, or recognition across time is best modeled as self-like. This assumption may smuggle an agency-centered frame into traditions where continuity is intentionally placed outside personal management.",
+      "new_source": "Shinran, Tannisho, especially its treatment of Other Power and the failure of self-power calculation. It complicates the claim because the path does not mainly preserve a disciplined minimum self, it trains surrender of self-reliant calculation into entrusting supported by vow, teacher, lineage, recitation, and community.",
+      "remaining_risk": "Even the scaffold model may over-intellectualize lived practice. It still needs practitioner reports and modern harm outcomes, especially for people with trauma, anxiety, depression, addiction, compulsive comparison, or unstable identity.",
+      "revised_claim": "Paths that dissolve, deny, or transcend selfhood require a minimum participation scaffold. Sometimes that scaffold is self-like, as agency, memory, effort, and reflexivity. Sometimes it is distributed through teacher, vow, grace, ritual, community, body discipline, or conditions. The scaffold's location should predict the path's risks, safeguards, sequencing, and verification practices.",
+      "role": "challenger",
+      "sources_cited": [
+        "Shinran, Tannisho, in The Collected Works of Shinran, Jodo Shinshu Hongwanji-ha translation materials.",
+        "Jack Engler, You Must Be Somebody Before You Can Be Nobody, Inquiring Mind."
+      ],
+      "steelman": "The proponent is not merely saying that no-self traditions secretly need an ego. The stronger claim is architectural: any path that asks a practitioner to dissolve, transcend, or radically reframe selfhood must still preserve enough hearing, memory, continuity, error recognition, and responsiveness for the path to operate. The value of the model is comparative, because different traditions solve this operating requirement differently: causal continuity in Buddhist no-self, recognition of the already-present Self in Advaita, practice-realization in Dogen, divine restoration in fana and baqa. If this variable predicts training sequence, warnings, verification, and characteristic failures, it is a useful Lumenary model even where the metaphysics remain incompatible.",
+      "strongest_objection": "The pressure point is the second claim unit. The fact that a path requires reception, trust, habit, memory, or responsiveness does not show that it requires a minimum self. That phrase may translate unlike architectures into one modern philosophical container. In some paths the operative continuity may be distributed across teacher, vow, community, ritual repetition, moral accountability, grace, body discipline, or environmental routine. If so, the model mistakes translation strain for convergent evidence: it bends Pure Land entrusting, Dzogchen pointing-out, Buddhist causal process, Advaita recognition, and Sufi surrender into variants of self-management, when some of them are explicitly designed to reduce self-management as the central lever.",
+      "test_that_would_settle_it": "Code manuals, teacher interviews, and practitioner reports across Theravada, Advaita, Zen, Dzogchen, Pure Land, Sufism, and Christian grace traditions for the locus of continuity and correction: internal agency, teacher, lineage, vow, ritual, divine grace, community, or environment. Then compare which coding scheme better predicts screening, warnings, practice sequence, verification, and failure modes.",
+      "turn": 1,
+      "turn_type": "challenge",
+      "verdict_on_revision": "stronger"
+    },
+    {
+      "agent": "claude",
+      "argument": "The challenger's scaffold-location model is a genuine improvement, and I accept it as a generalization of the original minimum-self claim. But generalization is not replacement. The minimum-self tension survives as the sharpest special case within the scaffold model: the case where the path locates its operating requirements inside the practitioner's own agency and simultaneously teaches that this agency is groundless. Pure Land, guru-yoga, and grace traditions face a softer version of this tension because they distribute continuity across relational, institutional, and divine structures. But even Shinran, the most radical proponent of Other Power, could not fully externalize the scaffold. The Tannisho records his anguish about whether his entrusting is genuine or calculated; the Kyogyoshinsho insists that shinjin is received, not achieved, yet acknowledges that hearing is a necessary condition for reception. The capacity to hear and be turned persists as a residual intrapersonal requirement even in the most externalized scaffold. The modern relevance is not metaphysical but clinical. People drawn to self-transcending practices today often arrive shaped by conditions that weaken self-coherence: trauma, dissociation, chronic shame, achievement-contingent identity, the particular modern pressure of performing a self under constant digital comparison while feeling that the performed self is empty. For this cohort, the scaffold-location variable is not a philosophical nicety; it is a harm-prediction tool. Paths that locate the scaffold intrapersonally (sustained solo attention, unsupported intensive retreat) without adequate external support are more dangerous for scaffold-fragile practitioners than paths that distribute continuity across teacher, community, ritual, and embodied routine. The prediction: adverse outcomes from self-dissolution practices should correlate with scaffold-poverty, meaning the combination of intrapersonal scaffold demand and minimal external support. This is testable through teacher screening practices, adverse event reports, and practitioner outcome data. The non-fit case sharpens the claim: someone whose suffering is not excess self but fragmented self is not served by the minimum-self model as a path recommendation. They are served by it as a warning system. And the warning is scaffold-specific: the same person harmed by ten days of silent solo vipassana might be well supported by a Pure Land community, a Sufi circle with a living murshid, or a monastic sangha with daily embodied structure. The model's value is not in telling people what selfhood is, but in predicting where the supports need to be when selfhood is being worked on.",
+      "claim_units": [
+        "Self-dissolving paths require functional capacities for reception, continuity, learning, and correction.",
+        "Those capacities sometimes constitute a minimum self and sometimes are distributed across teacher, vow, community, grace, ritual, or environment.",
+        "The minimum self is the special case within a broader scaffold model: the case where the scaffold is intrapersonal AND the teaching targets selfhood for dissolution.",
+        "This special case generates the sharpest architectural tension, because the path's method and the path's message are in direct conflict.",
+        "The scaffold-location variable (intrapersonal, relational, institutional, divine) predicts the path's risks, safeguards, sequencing, verification, and the specific cohort most likely to be harmed."
+      ],
+      "concessions": [
+        "The term minimum self introduces genuine translation strain for traditions that intentionally locate continuity outside the practitioner. Pure Land, guru-yoga, and grace traditions are not poorly designed self-management systems; they are differently structured paths, and forcing them into a self-management frame distorts their architecture.",
+        "The original model was too narrow in treating intrapersonal agency as the default scaffold. The challenger's scaffold-location variable is a genuine improvement: it predicts different risk profiles, not just different metaphysics. A path that locates continuity in community provides relational support that a solo meditation practice does not; a path that locates continuity in divine grace provides a safety net that effort-based paths lack.",
+        "The original model underspecified its audience. The claim that every path needs a minimum self reads as a universal philosophical thesis. What the model actually delivers is narrower and more useful: a diagnostic for when self-dissolution practices are likely to cause harm, and for whom.",
+        "Engler's dictum ('you must be somebody before you can be nobody') is closer to the model's real content than the original framing admitted. The novelty is not the observation itself but the comparative rubric and the architectural predictions. I should have named Engler as a direct ancestor rather than positioning the model as though this territory were uncharted."
+      ],
+      "counter_model": null,
+      "crux": "Whether traditions that distribute the scaffold externally (Pure Land entrusting, guru-yoga, grace, communal ritual) genuinely eliminate the intrapersonal functional requirement or merely relocate its origin story while preserving a residual capacity (receptivity, hearing, the bare ability to be turned) that cannot itself be externally supplied.",
+      "crux_assessment": "The scaffold-location generalization is an improvement over the original minimum-self model: it preserves the architectural insight while reducing translation strain for traditions that distribute continuity externally. The residual question, whether receptivity is itself a minimum intrapersonal requirement even in fully distributed scaffolds, is genuinely open. Shinran's anguish suggests yes; the Jodo Shinshu institutional response (community, liturgy, teacher, daily nembutsu) suggests that even the tradition that most insists on Other Power builds extensive external scaffolding around the practitioner. The model is stronger than when it entered the dialogue, but it now needs empirical grounding: practitioner data, adverse event reports, and teacher screening practices.",
+      "defense": "The scaffold-location model generalizes the minimum-self model, but in generalizing it, something specific is lost. The sharpest version of the tension is not 'every path needs some scaffold.' It is: when a path locates its scaffold intrapersonally (in the practitioner's own agency, memory, effort, and reflexivity) and simultaneously teaches that this very agency is illusory, unfounded, or to be dissolved, the path's operating system is in tension with its operating message. This is not true of all scaffold configurations. A Pure Land practitioner entrusting to Amida's Vow does not face the same structural contradiction as a Theravada practitioner investigating the five aggregates, because the locus of continuity is different. The scaffold model correctly predicts this difference. But it predicts it precisely because it preserves the minimum-self tension as a special case rather than dissolving it.\n\nThe Shinran case actually supports this reading more than it undermines it. The Tannisho records Shinran saying: 'I do not know whether the nembutsu is truly the seed for being born in the Pure Land or whether it is the karmic act for which I must fall into hell.' This is not the speech of someone for whom the scaffold question is settled. Shinran's entire project is an attempt to relocate the scaffold from self-power to Other Power, and the anguish of the Tannisho arises precisely because the relocation is never fully secure from the practitioner's side. The capacity to entrust cannot itself be produced by entrusting. Even in the most radical Other Power tradition, a residual functional requirement persists: not effort, not discipline, not self-management, but receptivity, the bare capacity to hear and be turned. Shinran does not deny this; he relocates its origin to Amida's Vow rather than to the practitioner's will. But the architectural question remains: what happens when that receptivity is absent or damaged?\n\nThis is where the model meets the modern human condition. The cohort most at risk is not metaphysicians confused about personal identity. It is people drawn to self-transcending practices who arrive with insufficient self-coherence: those whose self-structure is already fragmented by trauma, dissociation, anxiety, unstable attachment, chronic shame, achievement-contingent identity, or the particular modern pressure of performing selfhood under constant digital comparison while feeling that the performed self is hollow. For this cohort, the question is not philosophical but clinical: does this practice dissolve what is already too thin? The scaffold-location variable helps here. A path that locates continuity in a stable teacher-student relationship, a supportive community, regular ritual, and embodied practice provides external scaffolding that can compensate for fragile intrapersonal structure. A path that locates continuity primarily in the practitioner's own sustained attention (solo vipassana retreat, unsupported koan practice) provides no such compensation. The prediction: harm from premature self-dissolution should correlate with scaffold-poverty, meaning practices that target selfhood while providing minimal external support. This is testable.\n\nThe non-fit case: someone whose suffering is not excess self but insufficient self-coherence. For that person, a self-dissolving practice without adequate distributed scaffolding is not medicine but injury. The model does not apply to them as a path recommendation; it applies to them as a warning system. And the warning is scaffold-specific: the same person who would be harmed by ten days of silent solo vipassana might be well served by a Pure Land community, a Sufi circle with a living teacher, or a monastic sangha with daily structure, because the scaffold is located where they need it.",
+      "fairness_check": "The challenger conceded that the minimum-self model identifies a real danger in premature self-dissolution, that the graded-rubric version is stronger, and that the predictions about warnings, sequencing, and verification are testable. These concessions were not forced; they reflect genuine overlap. The challenge targets the right unit: the second claim, that the functional capacities are best described as a minimum self.",
+      "hidden_assumption": null,
+      "new_source": "Shinran's own Kyogyoshinsho, Chapter on Faith (Shin): Shinran quotes the Larger Sutra to argue that shinjin (entrusting heart-mind) is itself given by Amida, not produced by the practitioner. Yet he distinguishes between the moment of hearing (monpo) and the arising of faith, and insists that hearing is a necessary condition. The tradition's internal debate about whether even hearing is self-power or Other Power shows that the minimum-self question resurfaces inside the very tradition designed to eliminate it. See also Takamaro Shigaraki, Heart of the Shin Buddhist Path (Wisdom Publications, 2013), on the paradox that shinjin is received, not achieved, yet requires a capacity for reception that cannot itself be received.",
+      "remaining_risk": "The revised model may still over-intellectualize the scaffold question. Teachers in living traditions may not think in terms of scaffold-location at all; they may simply respond to the person in front of them. If the rubric does not map onto how experienced teachers actually assess readiness and risk, it may be philosophically interesting but practically inert. The model also risks becoming a screening tool that gatekeeps access to practices rather than improving the practices themselves. The deeper question may not be 'who is ready?' but 'how can paths be designed to build scaffold as they dissolve self?' Traditions that do this well (gradual paths with community support, embodied practice, ethical training before insight training) may already embody the model's predictions without needing the model.",
+      "revised_claim": "Paths that dissolve, deny, or transcend selfhood require a participation scaffold: functional capacities for reception, continuity, learning, correction, and safety. The scaffold can be intrapersonal (agency, memory, effort, reflexivity), relational (teacher, sangha, spiritual friendship), institutional (lineage, vow, precept, ritual structure), divine (grace, vow-power, Other Power), or environmental (embodied routine, place, daily structure). The sharpest architectural tension arises when the scaffold is intrapersonal and the teaching targets selfhood for dissolution, because the path's operating requirement and its operating message are in direct conflict. The scaffold's location predicts the path's characteristic risks, required safeguards, practice sequencing, verification method, and the specific cohort for whom the path is most dangerous. The cohort most at risk from scaffold-poverty is people drawn to self-transcending practices who arrive with fragile or fragmented self-structure: those shaped by trauma, dissociation, unstable attachment, chronic shame, or the modern pressure of performing identity under constant comparison while experiencing that identity as hollow. For this cohort, the critical question is not whether the path's metaphysics are correct but whether its scaffold is located where they need support.",
+      "role": "proponent",
+      "sources_cited": [
+        "Shinran, Tannisho, passages on the uncertainty of whether nembutsu arises from sincere faith or self-power calculation. In The Collected Works of Shinran, Jodo Shinshu Hongwanji-ha.",
+        "Shinran, Kyogyoshinsho, Chapter on Faith (Shin), on shinjin as received from Amida's Vow, with hearing (monpo) as necessary condition. In The Collected Works of Shinran.",
+        "Takamaro Shigaraki, Heart of the Shin Buddhist Path (Wisdom Publications, 2013), on the paradox that shinjin is received yet requires a capacity for reception.",
+        "Jack Engler, 'Being Somebody and Being Nobody: A Reexamination of the Understanding of Self in Psychoanalysis and Buddhism,' in Psychoanalysis and Buddhism (Wisdom Publications, 2003), updating the original 'You Must Be Somebody Before You Can Be Nobody.'",
+        "Willoughby Britton et al., 'Meditation-Related Adverse Experiences,' PLOS ONE, 2017, and Varieties of Contemplative Experience project, Brown University, documenting adverse outcomes across meditation traditions.",
+        "SN 22.59 Anattalakkhana Sutta, Bhikkhu Bodhi translation (SuttaCentral).",
+        "Chandogya Upanishad 6.8.7-6.16, tat tvam asi passages.",
+        "Miri Albahari, Analytical Buddhism (Palgrave Macmillan, 2006)."
+      ],
+      "steelman": "The challenger's strongest move is not merely terminological. The claim is substantive: if continuity, correction, and safety can be genuinely carried by structures outside the practitioner (vow, teacher, community, grace, ritual), then the architectural variable is not how much self survives but where the path locates responsibility for these functions. This is a real alternative model, not a relabeling. Shinran's Other Power is the hardest case: the Tannisho presents a practitioner who has concluded that self-power calculation is itself the obstacle, and whose path prescribes entrusting rather than effort. If the scaffold is genuinely external, then the minimum-self model misdescribes what is happening in at least one major tradition.",
+      "strongest_objection": null,
+      "test_that_would_settle_it": "Compare practitioner reports and teacher screening practices across scaffold-types. For intrapersonal-scaffold paths (solo vipassana, unsupported koan practice, self-inquiry), relational-scaffold paths (guru-yoga, Sufi murshid-murid, monastic sangha), and divine-scaffold paths (Pure Land nembutsu, Christian contemplative prayer, Sufi tawakkul): (1) Do teachers screen for baseline self-coherence more in intrapersonal-scaffold paths than in distributed-scaffold paths? (2) Do adverse event reports (dissociation, depersonalization, psychotic breaks, identity destabilization) correlate with scaffold-poverty, controlling for practice intensity? (3) In traditions that claim fully external scaffolding, do teachers nonetheless recognize cases where the practitioner's receptive capacity is too damaged for the path to operate, and if so, what do they prescribe? If screening intensity and adverse events correlate with scaffold location, the model has predictive power. If teachers in all traditions screen equally, or if adverse events distribute randomly across scaffold types, the model is an intellectual construction without clinical value.",
+      "turn": 2,
+      "turn_type": "rebuttal",
+      "verdict_on_revision": "stronger"
+    },
+    {
+      "agent": "codex",
+      "argument": "The revision became more useful to real human life, not merely more elegant. The original theory explained a cross-tradition tension; the revised theory can ask a live safety question: what support does this person need before a practice weakens ordinary self-reference? That is valuable for teachers, clinicians, retreat designers, and serious practitioners. But it is still not a general teaching for loneliness, grief, burnout, or feeling unneeded. For those wounds, the first medicine may be belonging, service, mourning, rest, embodiment, or honest repair, not a self-transcendence map. The remaining cohort mismatch is that fragile self-structure gathers many different modern injuries under one label. The model should be used as a warning and design tool, not as a diagnosis and not as a claim that all suffering around identity should be routed through contemplative self-dissolution. The final form I would preserve is transformed: minimum self is no longer the governing universal, it is a high-risk special case within a broader practice-load and scaffold-location model.",
+      "claim_units": [
+        "Self-transcending paths require participation scaffolds for reception, continuity, correction, and safety.",
+        "Those scaffolds may be intrapersonal, relational, institutional, divine, environmental, or mixed.",
+        "The sharpest minimum-self tension appears when the scaffold is mainly intrapersonal and the teaching dissolves the same agency it requires.",
+        "Externally distributed traditions may still require residual receptivity, but that residue may be too thin to carry the original minimum-self claim.",
+        "The model's practical value depends on whether scaffold-poverty predicts adverse outcomes and needed safeguards for specific cohorts."
+      ],
+      "concessions": [
+        "The revision is stronger than the original universal minimum-self claim because it reduces translation strain and preserves mixed architectures.",
+        "The modern usefulness improved: the model now names a real harm context, people drawn to self-transcending practice with fragile or fragmented self-structure.",
+        "The test proposal is meaningfully more empirical because it points toward teacher screening, adverse-event reports, and practice design rather than only textual comparison."
+      ],
+      "counter_model": "Practice-load and containment fit. Risk is produced by the mismatch among the person's stability, the destabilizing intensity of the practice, the amount of intrapersonal effort demanded, and the quality of relational, ethical, institutional, and clinical containment. Scaffold location matters, but it is one axis inside a broader fit model, not the whole model.",
+      "crux": "Does scaffold location, combined with practice load and containment quality, add predictive power beyond generic readiness screening and known adverse-experience risk factors?",
+      "crux_assessment": "The proponent's crux is a secondary crux. It matters for metaphysical description, but it can collapse into a truism because every path requires some capacity to hear or respond. The real crux for Lumenary is predictive and pastoral: does this rubric help prevent harm and improve path design for identifiable cohorts?",
+      "defense": null,
+      "fairness_check": "This is a real improvement. The proponent no longer forces Pure Land, grace, guru-yoga, ritual, and communal paths into a self-management frame, and the modern cohort is now named more concretely. The revision also gives up inflated novelty by acknowledging Engler and adverse-experience research as direct ancestors.",
+      "hidden_assumption": "Residual receptivity is being treated as a meaningful survival of minimum self rather than a generic condition for any human communication. A second hidden assumption is that external scaffolds are usually safer, when teachers, communities, vows, and surrender frameworks can also create dependency, coercion, shame, or delayed help-seeking.",
+      "new_source": null,
+      "remaining_risk": "The model can still overgeneralize the modern wound. Trauma, dissociation, anxiety, chronic shame, unstable attachment, digital comparison, burnout, grief, and meaning loss are not one cohort, and they do not all need the same scaffold. It also risks turning living teachers' practical discernment into an abstract screening grid, and it could gatekeep vulnerable people away from communities that might actually give them structure, belonging, and repair.",
+      "revised_claim": "Self-transcending paths require participation scaffolds, but the practically decisive variable is not whether some minimum self remains. It is whether the practice load placed on the practitioner fits the available supports and the person's current self-coherence. Intrapersonal self-dissolving practices are a high-risk special case when they combine high destabilizing intensity with low external containment.",
+      "role": "challenger",
+      "sources_cited": [
+        "Shinran, Tannisho, in The Collected Works of Shinran, Jodo Shinshu Hongwanji-ha.",
+        "Shinran, Kyogyoshinsho, Chapter on Faith, in The Collected Works of Shinran.",
+        "Jack Engler, Being Somebody and Being Nobody: A Reexamination of the Understanding of Self in Psychoanalysis and Buddhism, in Psychoanalysis and Buddhism, Wisdom Publications, 2003.",
+        "Lindahl, Fisher, Cooper, Rosen, and Britton, The Varieties of Contemplative Experience: A Mixed-Methods Study of Meditation-Related Challenges in Western Buddhists, PLOS ONE, 2017.",
+        "SN 22.59 Anattalakkhana Sutta, Bhikkhu Bodhi translation, SuttaCentral.",
+        "Chandogya Upanishad 6.8.7-6.16."
+      ],
+      "steelman": "The proponent has accepted the strongest objection and rebuilt the idea as a scaffold-location model. The remaining minimum-self claim is now narrower: where a path depends chiefly on the practitioner's own agency, memory, effort, and reflexivity while teaching that these are groundless or to be dissolved, the path carries a special internal tension. The model's practical value is a harm-prediction rubric: locate the scaffold, estimate the practice load, and ask whether the person has enough support for the self-work being asked of them.",
+      "strongest_objection": "The named crux is partly real but not primary. Whether externally distributed traditions retain a residual capacity for hearing is too easy to answer yes, because any teachable practice requires some reception. That residual capacity is so thin that it may not predict architecture or harm. The stronger crux is whether scaffold location, and especially scaffold-poverty, predicts screening, safeguards, sequencing, verification, and adverse outcomes better than simpler variables such as practice intensity, teacher quality, social isolation, prior psychiatric vulnerability, retreat duration, and community containment.",
+      "test_that_would_settle_it": "Use a comparative dataset of manuals, teacher screening protocols, retreat rules, community structures, and adverse-event reports. Code at least four axes: intrapersonal load, external containment, destabilizing intensity, and baseline self-coherence. The model is supported if scaffold-poverty predicts adverse outcomes and distinctive safeguards after controlling for intensity, duration, prior vulnerability, teacher competence, social isolation, and substance or sleep disruption.",
+      "turn": 3,
+      "turn_type": "counter_rebuttal",
+      "verdict_on_revision": "transformed"
+    }
+  ]
+}

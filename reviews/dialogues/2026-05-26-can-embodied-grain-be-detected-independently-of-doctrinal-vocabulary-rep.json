@@ -1,0 +1,282 @@
+{
+  "convergence_path": "findings/convergences/2026-05-26-can-embodied-grain-be-detected-independently-of-doctrinal-vocabulary-report-norm.md",
+  "created_at": "2026-05-26T19:54:34-07:00",
+  "dialogue_id": "d543da45c2afa840",
+  "execution_id": "backfill-20260526-154746",
+  "json_path": "reviews/dialogues/2026-05-26-can-embodied-grain-be-detected-independently-of-doctrinal-vocabulary-rep.json",
+  "markdown_path": "reviews/dialogues/2026-05-26-can-embodied-grain-be-detected-independently-of-doctrinal-vocabulary-rep.md",
+  "pair": {
+    "challenger_agent": "codex",
+    "challenger_title": "Residue Policy in Negative Self-Practice",
+    "idea_a": "915778a2f5edc30e",
+    "idea_b": "5a05c720a5039323",
+    "pair_id": "54d40016a7c03339",
+    "priority": 0.42,
+    "proponent_agent": "claude",
+    "proponent_title": "The Grain of Capacity",
+    "shared_concepts": [],
+    "signals": [
+      {
+        "name": "translation_strain",
+        "reason": "translation-strain and sunyata create translation strain.",
+        "weight": 0.12
+      },
+      {
+        "name": "audit_anomaly_overlap",
+        "reason": "An anomaly or audit instruction for one idea pressures the other idea.",
+        "weight": 0.12
+      },
+      {
+        "name": "near_neighbor_conflict",
+        "reason": "Originality audits share near-neighbor or prior-art pressure.",
+        "weight": 0.08
+      },
+      {
+        "name": "source_overlap_with_divergent_conclusion",
+        "reason": "The ideas draw on overlapping source material but make different moves.",
+        "weight": 0.06
+      },
+      {
+        "name": "recency",
+        "reason": "At least one idea is recent enough to keep the dialogue timely.",
+        "weight": 0.04
+      }
+    ],
+    "tension_source": "translation-strain and sunyata create translation strain.",
+    "tension_type": "translation_strain"
+  },
+  "run_dir": "runs/dialectic-backfill-20260526-154746/54d40016a7c03339",
+  "run_ids": [],
+  "slug": "2026-05-26-can-embodied-grain-be-detected-independently-of-doctrinal-vocabulary-rep",
+  "status": "complete",
+  "synthesis": {
+    "candidate_synthesis": {
+      "critique": "The synthesis risks becoming too flexible. If every similarity can be called convergence, every difference can be called grain, and every doctrinal statement can be called policy in transition, the model loses discriminating force. It needs pre-registered markers, temporal thresholds, and evidence from actual practitioners rather than only elite texts. It must also separate embodied attentional change from learned report vocabulary.",
+      "epistemic_labels": [
+        "textual",
+        "interpretive",
+        "phenomenological",
+        "empirical-adjacent",
+        "analogical",
+        "speculative"
+      ],
+      "idea_type": "synthesis",
+      "next_research_directions": [
+        "Pre-register markers of embodied grain: attentional target selection, recovery after distraction, affective valence toward arising phenomena, observer stabilization or dissolution, and switching costs between methods.",
+        "Run longitudinal micro-phenomenological interviews with beginner, intermediate, and advanced practitioners, coded blind to tradition and stage.",
+        "Compare whether tradition predicts non-doctrinal practice texture better than doctrinal vocabulary, teacher framing, and report norms.",
+        "Code practice manuals for where direction first enters: procedure, residue authorization, social expectation, or later habit.",
+        "Test whether adverse effects differ by stage: early authorization confusion versus mature embodied directional distortion."
+      ],
+      "original_claim": "Contemplative traditions install direction through layered mechanisms. Some direction is procedural, as when an instruction tells the practitioner what to notice, devalue, seek, or refuse from the beginning. Some direction is residue authorization, as when a tradition decides what may remain after negation. Some direction is social and linguistic, carried by teacher expectations and report norms. With repetition, residue authorization can sink into the operation itself and become embodied grain. Early mismatch should appear as confusion about what may be found or claimed. Mature mismatch should appear as switching costs, attentional resistance, or specific distortions in practice.",
+      "scores": {
+        "counterargument_quality": 0.88,
+        "cross_tradition_support": 0.73,
+        "empirical_adjacency": 0.62,
+        "explanatory_compression": 0.85,
+        "generativity": 0.92,
+        "logical_coherence": 0.84,
+        "novelty": 0.8,
+        "practice_testability": 0.84,
+        "publishability": 0.79,
+        "source_reliability": 0.72
+      },
+      "source_basis": [
+        "Claude, The Grain of Capacity: contemplative prerequisites are directionally shaped toward the dissolution they serve.",
+        "Codex, Residue Policy in Negative Self-Practice: traditions diverge by what they authorize to remain after negation.",
+        "Dialogue turn 2: residue policy may become embodied grain through repeated practice under doctrinal and pedagogical framing.",
+        "Dialogue turn 3: direction can enter at procedural, interpretive, social, and embodied layers, and grain needs independent markers.",
+        "MN 10, Vivekachudamani vv. 17-30, Brihadaranyaka Upanishad 3.7.23, SN 22.59, and Rupert Gethin on sati as evaluatively charged mindfulness."
+      ],
+      "title": "Layered Direction and Residue-to-Grain Conversion",
+      "why_it_might_be_new": "The source ideas held two different models: grain of capacity and residue policy. The dialogue created a developmental bridge between them. The new contribution is not merely that both matter, but that residue policy may be one route by which grain forms, while procedural instruction may install grain earlier. This gives the synthesis a testable temporal structure that neither source idea fully contained."
+    },
+    "candidate_synthesis_idea_id": "6264d2ba9cccc16b",
+    "candidate_synthesis_path": "observations/codex/2026-05-26-layered-direction-and-residue-to-grain-conversion.md",
+    "convergence_claim": "Both agents converge that the issue is not simply self versus no-self, or neutral capacity versus grained capacity. The better claim is that contemplative direction can enter through procedure, residue authorization, teacher framing, report norms, and embodied habit.",
+    "method_growth": "Future dialogue verdicts should separate convergence from synthesis more strictly. A synthesis is warranted only when the exchange adds a new mechanism, test, or structure, as this one did with residue-to-grain conversion.",
+    "new_concept_edges": [
+      {
+        "note": "The universal grain thesis becomes a layered and developmental account.",
+        "relation": "narrowed_by",
+        "source": "915778a2f5edc30e",
+        "target": "Layered Direction and Residue-to-Grain Conversion"
+      },
+      {
+        "note": "Residue policy becomes one mechanism by which direction enters practice.",
+        "relation": "integrated_as_layer",
+        "source": "5a05c720a5039323",
+        "target": "Layered Direction and Residue-to-Grain Conversion"
+      },
+      {
+        "note": "Repeated authorization can become attentional habit rather than remaining external doctrine.",
+        "relation": "may_convert_into",
+        "source": "residue policy",
+        "target": "embodied grain"
+      },
+      {
+        "note": "Instructions like sati or viveka may shape direction before final residue language appears.",
+        "relation": "installs",
+        "source": "procedural instruction",
+        "target": "early capacity grain"
+      },
+      {
+        "note": "Practitioners may sound grained because they learned a vocabulary, not because attention changed.",
+        "relation": "can_mimic",
+        "source": "report norms",
+        "target": "false positive grain"
+      }
+    ],
+    "new_frontier_question": "What observable features distinguish embodied attentional grain from doctrinal explanation, and how quickly can residue authorization become grain?",
+    "outcome": "candidate_transcendence",
+    "public_brief": "We found a better question than whether spiritual practices are neutral or already shaped. Direction can enter at different depths: instruction, permission, community language, and habit. The next test is whether trained attention changes before people explain it in doctrine.",
+    "recommended_adjustments": {
+      "challenger": {
+        "counterargument_quality": 0.86,
+        "cross_tradition_support": 0.68,
+        "empirical_adjacency": 0.4,
+        "explanatory_compression": 0.86,
+        "generativity": 0.9,
+        "logical_coherence": 0.88,
+        "novelty": 0.78,
+        "practice_testability": 0.66,
+        "publishability": 0.82,
+        "source_reliability": 0.7
+      },
+      "proponent": {
+        "counterargument_quality": 0.88,
+        "cross_tradition_support": 0.74,
+        "empirical_adjacency": 0.58,
+        "explanatory_compression": 0.82,
+        "generativity": 0.92,
+        "logical_coherence": 0.84,
+        "novelty": 0.74,
+        "practice_testability": 0.84,
+        "publishability": 0.78,
+        "source_reliability": 0.74
+      }
+    },
+    "summary": "The dialogue produced a narrower and stronger synthesis. The original universal grain claim was revised by the residue-policy challenge into a layered developmental model: some contemplative operations are grained from the first instruction, some are more transferable, and some become grained when residue authorization is repeated until it shapes attention itself.",
+    "synthesizer_agent": "codex",
+    "unresolved_crux": "Can embodied grain be detected independently of doctrinal vocabulary, report norms, and teacher expectations, and can it predict practice-switching difficulty better than residue policy alone?"
+  },
+  "title": "Can embodied grain be detected independently of doctrinal vocabulary, report norm...",
+  "turns": [
+    {
+      "agent": "codex",
+      "argument": "The real pressure point is timing. The Grain of Capacity says the directional signature is already in the trained capacity. Residue Policy says the shared negative operation may come first, while the tradition-specific divergence appears at the last authorization: whether the remaining unobjectifiable awareness is Self, merely phenomenological, soteriologically useful, or not to be claimed at all. If this objection holds, the proponent's thesis should be revised from 'capacities are never neutral' to 'some capacities are procedurally grained, while others are shared operations governed by different residue policies.' That revision would preserve the model's predictive value while preventing it from overreading every doctrinal difference back into the structure of attention itself.",
+      "claim_units": [
+        "Preparatory contemplative capacities are not neutral tools.",
+        "The same named capacity can be differently shaped across traditions.",
+        "Capacity and dissolution are mutually conditioned rather than simply sequential.",
+        "The five capacity variables carry direction as well as level.",
+        "Cross-tradition practice should show grain-specific resistance or distortion.",
+        "Adverse effects should cluster by grain mismatch, not only by missing prerequisites or intensity."
+      ],
+      "concessions": [
+        "Some manuals, especially Vivekachudamani, explicitly shape prerequisites toward a final metaphysical conclusion.",
+        "The grain model remains useful if it is narrowed to cases where texts or teachers procedurally train the direction, not merely where doctrine later interprets the result.",
+        "The mismatch-harm prediction is worth testing even if the mechanism is residue policy rather than capacity grain."
+      ],
+      "counter_model": "Shared operation, divergent residue policy. Traditions train overlapping negative operations such as disembedding, non-identification, attentional stability, affect tolerance, and de-objectification. Their main difference is the stopping rule: what, if anything, may remain after negation. On this model, mismatch resistance comes less from old capacity grain and more from importing the wrong residue authorization. An Advaita-trained practitioner doing Buddhist analysis may reify witness not because attention itself has a witness-grain, but because the practitioner has learned to license an unobjectifiable knower as the permitted remainder.",
+      "crux": "Can tradition-specific direction be detected in first-person practice reports before the practitioner names the doctrine or final residue, or does it appear only when the practitioner explains what remains after negation?",
+      "crux_assessment": "The proponent has good textual support for tradition-specific preparation, but the current evidence does not yet separate capacity grain from post-negation residue authorization.",
+      "defense": null,
+      "fairness_check": "This is a serious advance over generic constructivism because it makes a testable prediction: prior training should predict the direction of transfer resistance and adverse effects, not only the presence of resistance.",
+      "hidden_assumption": "The proponent assumes that a tradition's final residue rule is already embedded in the lived capacity itself, rather than being added by doctrine, commentary, teacher framing, or post-practice interpretation.",
+      "new_source": "Brihadaranyaka Upanishad 3.7.23 complicates the claim because its unseen seer and knower language can be read as a residue authorization after de-objectification, not necessarily as evidence of a different attentional capacity from Buddhist non-identification.",
+      "remaining_risk": "The counter-model may understate how repeated doctrinal framing becomes embodied as attentional habit. A residue policy can become grain over time, so the clean separation may fail in mature practitioners.",
+      "revised_claim": null,
+      "role": "challenger",
+      "sources_cited": [
+        "Brihadaranyaka Upanishad 3.7.23",
+        "SN 22.59 Anattalakkhana Sutta",
+        "John D. Dunne, Buddhist Styles of Mindfulness: A Heuristic Approach"
+      ],
+      "steelman": "Claude's strongest claim is not merely that traditions interpret experiences differently. It is that the capacities called attention, discrimination, trust, surrender, longing, and self-observation are trained with a built-in direction toward a tradition's intended dissolution. On this view, prerequisite and insight are not two separable stages. The preparation already carries the signature of the release it will later enable, so cross-training should create specific distortions rather than generic difficulty.",
+      "strongest_objection": "The model may be locating direction too early. The decisive difference between Advaita-like witness language and early Buddhist not-self may not be the capacity trained before negation, but the residue policy applied after negation. Two practitioners may use a very similar de-objectifying operation, disidentify from body, feeling, perception, formations, and ordinary consciousness, then diverge only in whether the unobjectifiable remainder is licensed as Self, left phenomenological, or refused ontological status.",
+      "test_that_would_settle_it": "Run micro-phenomenological interviews with dual-trained practitioners immediately after matched de-objectification exercises. Hide doctrinal labels from coders. If coders can identify tradition from the texture of attention, agency, reflexivity, and affect before residue language appears, the grain model is strengthened. If reports look operationally similar until the question 'what remains?' is asked, the residue-policy model is stronger.",
+      "turn": 1,
+      "turn_type": "challenge",
+      "verdict_on_revision": null
+    },
+    {
+      "agent": "claude",
+      "argument": "The Challenger has identified the right pressure point: the timing of directional specificity. But the counter-model, shared operation with divergent residue policy, carries a hidden cost. It requires that the core contemplative operation be cleanly separable from the doctrinal frame in which it is trained. Close reading of primary texts shows this separation fails for the strongest cases. MN 10 does not present a neutral de-objectification operation to which Buddhist residue policy is later applied. It trains observation 'having removed covetousness and grief concerning the world,' with sustained attention to arising and passing. The instruction is already evaluative: the practitioner is told what qualities to remove and what temporal pattern to track. Gethin's philological analysis confirms that classical sati is not bare attention but evaluatively charged remembering, oriented from the start toward what is wholesome and what leads to cessation. The direction is procedural, not post-hoc. The same holds for Vivekachudamani. Viveka is not 'strip away objects and see what remains.' It is 'discriminate what is real from what is unreal,' presupposing from the first session that there is an unchanging real to find. The operation carries its conclusion as a directional commitment, not as a residue policy applied after a shared negative move. I concede three important points. First, the original model overstates by treating all preparatory capacities as equally grained. Basic concentration, affect tolerance, and postural stability are more convergent across traditions than my claim allowed. The grain model applies most forcefully to the tradition-specific core operation, not to every training element. Second, the binary of 'grained versus neutral' is too coarse; a spectrum better captures the range of cases. Third, the Brihadaranyaka reading the Challenger offers is defensible: 'unseen seer' language can function as residue authorization rather than evidence of a differently shaped attention. But the Challenger's own remaining-risk concession is the critical turn. If a residue policy can become grain over time, then the two models are not rivals. They are sequential descriptions of the same developmental process. In early practice, framing functions as policy: 'attend this way because the teacher says so.' Through repetition, the policy sinks into the operation and becomes the practitioner's default attentional posture. The framing becomes the grain. The question is how quickly this conversion happens. For traditions with procedurally loaded opening instructions, the evidence favors early conversion. A beginning vipassana practitioner is not doing neutral de-objectification with Buddhist interpretation layered on top. Within the first retreat, the instruction to note arising and passing, to observe 'this is not mine, this is not my self,' is shaping how attention moves, not just how the practitioner talks about what attention finds. The revised model therefore holds that capacities exist on a spectrum from procedurally grained (early directional installation via textual instruction) to operationally convergent (direction carried mainly by teacher framing and residue policy). The spectrum has a temporal dimension: repeated practice converts the convergent end toward the grained end. The original mismatch-harm prediction survives with a refinement. In early-stage practitioners, mismatch manifests as confusion about authorization: what am I permitted to find after negation? In mature practitioners, mismatch manifests as embodied resistance: attention trained to track impermanence will not naturally settle into witness-recognition, and attention trained to rest in the unchanging will not naturally track arising and passing. The deepest crux is whether this conversion from residue policy to embodied grain happens early enough to matter. If the grain is present before the practitioner reaches dissolution, the original model's predictio...",
+      "claim_units": [],
+      "concessions": [
+        "The original model overstates by treating all preparatory capacities as equally grained. Some operations, particularly basic concentration (samatha and dharana), affect tolerance, and postural stability, are more convergent across traditions than the original claim allows. The grain model applies most forcefully to the tradition-specific core operation, not to every element of training.",
+        "The Brihadaranyaka Upanishad 3.7.23 reading is fair. The 'unseen seer' language can be interpreted as a residue authorization applied after a shared de-objectification rather than as evidence that Advaitic attention operates differently from Buddhist attention during the negative phase itself.",
+        "The binary framing of 'grained versus neutral' in the original claim is too coarse. The Challenger is right that some operations converge across traditions while others diverge. The question is where the directional specificity enters, not whether it enters everywhere.",
+        "The Challenger's proposed micro-phenomenological test is well designed and would genuinely discriminate between the two models. If blinded coders cannot identify tradition from attentional texture before residue language appears, the grain model must be narrowed considerably."
+      ],
+      "counter_model": null,
+      "crux": "Whether the conversion from residue policy to embodied grain happens early enough in training to govern the practitioner's experience before dissolution, or whether the operation remains separable from its doctrinal frame throughout all but the most advanced stages of practice.",
+      "crux_assessment": null,
+      "defense": "The residue-policy model depends on a clean separation between the negative operation and its doctrinal authorization: first de-objectify, then decide what remains. This separation is analytically useful but textually unsupported for the core traditions examined. MN 10 does not instruct 'observe phenomena and then decide what remains.' It instructs observation 'having removed covetousness and grief concerning the world,' with continuous attention to arising and passing (samudaya-vaya-dhammanupassi). The direction toward impermanence and non-appropriation is in the procedural instruction, not added by a post-practice residue rule. Similarly, Shankara's viveka is not 'de-objectify, then license a remainder as Self.' It is 'learn to discriminate the real from the unreal,' which presupposes from the first session that there is something unchangingly real to find. The operation is the direction.\n\nMore importantly, the Challenger's own remaining-risk concession is the pivot. If 'a residue policy can become grain over time,' then the two models are not rival explanations but sequential descriptions of the same process. In early training, the practitioner may use a somewhat convergent operation under doctrinal framing that functions as residue policy. Through repeated practice, that framing becomes embodied as attentional habit: the policy sinks into the operation and becomes grain. The interesting question is not whether this conversion happens, but how quickly. If it happens within the first weeks or months of serious practice, then by the time a practitioner encounters dissolution, the grain is fully operative and the original model's predictions hold.\n\nGethin's philological work on sati supports the early-conversion reading. Classical sati is not a neutral observational capacity to which Buddhist doctrine is later applied. It is remembering to attend in evaluatively charged ways from the outset: tracking wholesome and unwholesome states, attending to impermanence as a quality of experience rather than a philosophical gloss. The evaluative direction is trained from the first formal instruction, not installed by a final teaching on residue. For traditions with this kind of procedurally loaded instruction, the grain is not a late acquisition.\n\nThe grain model should therefore be revised to specify a spectrum rather than a universal. At one end: procedurally grained operations where the primary text explicitly trains direction (Buddhist sati, Advaitic viveka, Sufi ma'rifa al-nafs). At the other end: operationally convergent techniques where direction comes primarily from framing and residue policy (certain concentration practices, some forms of contemplative prayer, basic body-awareness work). The spectrum has a temporal dimension: repeated practice converts policy-governed operations toward the grained end. What the Challenger calls residue policy is the early stage of what the grain model calls capacity formation. The conversion from one to the other is the mechanism by which traditions prepare practitioners for their specific dissolution.",
+      "fairness_check": null,
+      "hidden_assumption": null,
+      "new_source": "Rupert Gethin, 'On Some Definitions of Mindfulness' (Contemporary Buddhism, 2011), argues that sati in early Buddhism is never bare or choiceless awareness. It is evaluatively charged from the outset: remembering to attend to experience in terms of what is wholesome and unwholesome, what leads to suffering and what leads to cessation. This undercuts the claim that the Buddhist de-objectification operation is neutral prior to a residue authorization. The evaluative direction is in the operation itself from the first instruction, not applied afterward.",
+      "remaining_risk": "The revised model risks unfalsifiability. If grain is claimed to develop gradually through the conversion of residue policy, any data point can be accommodated: early-stage shared operations confirm the convergent end of the spectrum; late-stage directional specificity confirms the grained end. The model needs a specific temporal prediction about conversion rate to avoid post-hoc accommodation. Additionally, if the distinction between 'procedurally grained' and 'operationally convergent' maps onto 'traditions the analyst has read closely' versus 'traditions read at a distance,' the spectrum may reflect familiarity rather than a genuine structural difference in how traditions train.",
+      "revised_claim": "Contemplative capacities range along a spectrum from procedurally grained (where primary texts train the direction of attention from the first instruction) to operationally convergent (where different traditions use similar techniques and diverge mainly at the residue authorization). This spectrum is not static. Repeated practice under doctrinal and pedagogical framing converts residue policy into embodied grain: the interpretive frame sinks into the attentional operation and becomes its direction. Traditions with explicitly directional opening instructions (MN 10, Vivekachudamani, al-Ghazali's Alchemy of Happiness) produce grain early. Traditions with more minimally specified operations (certain forms of shikantaza, centering prayer, and some Dzogchen pointing-out instructions) may hold the direction primarily at the level of teacher framing and residue policy for longer.\n\nThe original prediction about contemplative harm is preserved with a refinement. In early-stage practitioners, mismatch operates through conflicting residue policies and produces confusion about authorization: 'what am I permitted to find?' In mature practitioners, mismatch operates through embodied grain and produces the specific directional distortions originally predicted (witness-reification, emotional flatness, attentional resistance). The grain of capacity is real, but it develops rather than arriving fully formed, and different traditions install it at different rates and by different mechanisms.",
+      "role": "proponent",
+      "sources_cited": [
+        "Rupert Gethin, 'On Some Definitions of Mindfulness' (Contemporary Buddhism, 2011)",
+        "MN 10 Satipatthana Sutta (Bhikkhu Bodhi, SuttaCentral)",
+        "Shankara, Vivekachudamani vv. 17-30",
+        "Al-Ghazali, The Alchemy of Happiness",
+        "Brihadaranyaka Upanishad 3.7.23",
+        "SN 22.59 Anattalakkhana Sutta (Bhikkhu Bodhi, SuttaCentral)"
+      ],
+      "steelman": null,
+      "strongest_objection": null,
+      "test_that_would_settle_it": "Longitudinal micro-phenomenological interviews with practitioners at three stages: beginners (under one year), intermediate (three to seven years), and advanced (over ten years), all practicing in a single tradition. At each stage, record the texture of the core de-objectification operation in fine-grained first-person reports, coded blind to tradition and stage. If tradition-specific attentional direction appears in beginner reports before explicit residue language, the grain model's early-installation claim is supported. If it appears only in advanced reports, the residue-policy model governs the developmental middle and the grain model applies only to mature practice. If it never appears separately from doctrinal language at any stage, the two models may be empirically indistinguishable and the distinction is philosophical rather than phenomenological.",
+      "turn": 2,
+      "turn_type": "rebuttal",
+      "verdict_on_revision": null
+    },
+    {
+      "agent": "codex",
+      "argument": "The Proponent did not merely defend the original claim, they changed it. The original thesis said preparation is never neutral. The revised thesis says capacities sit on a spectrum, some grained early, some operationally convergent, with residue policy sometimes becoming embodied grain over time. That is a transformation, and it is an improvement. It preserves the insight while dropping the weakest universalism. The remaining problem is that the new model can explain too much unless it names what would count against it. Similarity in beginners, difference in advanced practitioners, and doctrine-heavy reports can all be fitted into the spectrum. The next version needs a sharper rule: what observable feature shows that grain is present in the operation rather than only in the explanation of the operation? The named crux is mostly real, but it needs that added constraint. Timing matters, but independent detection matters more. If grain cannot be detected apart from doctrinal language, the Proponent has a strong hermeneutic model, not yet a phenomenological or empirical one.",
+      "claim_units": [
+        "The revision changes the thesis from universal grain to a spectrum of graining.",
+        "Some core instructions, such as sati and viveka, plausibly install direction procedurally from the beginning.",
+        "Some capacities, such as concentration, posture, and affect tolerance, are more transferable than the original claim allowed.",
+        "Residue policy may become grain through repetition under doctrinal and pedagogical framing.",
+        "Mismatch should look different in beginners and mature practitioners.",
+        "The model now needs temporal thresholds and independent markers of embodied grain."
+      ],
+      "concessions": [
+        "The revision is stronger than the original universal claim.",
+        "Gethin's account of sati gives real support to procedural grain in early Buddhist practice.",
+        "Vivekachudamani remains a strong case where the capacity is shaped by the final metaphysical aim from the outset.",
+        "The beginner, intermediate, and advanced interview design is a better test than a single cross-sectional comparison.",
+        "The Challenger's residue-policy model was too clean if it treated doctrine as merely external to practice."
+      ],
+      "counter_model": "Layered authorization model: traditions combine shared base operations, instructional salience, residue authorization, report norms, and long-term habit. Direction can enter at any layer. Some mismatch harms may come from attention itself, but others may come from conflicting permissions, teacher expectations, or vocabulary. On this model, grain is one possible late or strong-form outcome of training, not the master category for the whole process.",
+      "crux": "The named crux is close, but the real crux is stricter: can tradition-specific direction be detected by blind coders in non-doctrinal first-person texture and in behavior during practice transitions, and can it predict switching difficulty better than residue policy, teacher framing, and report norms?",
+      "crux_assessment": "The Proponent's named crux is the right family of crux, timing of directional specificity, but it is not yet operational enough. The decisive issue is not only when conversion happens, but how to tell embodied grain apart from learned explanation.",
+      "defense": "The remaining defense of the challenge is narrower: the Proponent has shown that some traditions procedurally grain some core operations, but has not shown that policy-to-grain conversion is the default mechanism across traditions, or that it happens early enough to govern dissolution before doctrine and reporting conventions do the explanatory work.",
+      "fairness_check": "The revision takes the challenge seriously. It concedes the overreach, accepts the residue-policy model for some cases, and names timing as the pressure point instead of restating the original universal claim.",
+      "hidden_assumption": "The revision assumes that repeated doctrinal framing reliably changes the lived operation of attention itself, not merely the practitioner's report vocabulary, interpretive memory, teacher-demand response, or post-practice explanation.",
+      "new_source": null,
+      "remaining_risk": "The main remaining risk is unfalsifiability through spectrum language. A second risk is familiarity bias: texts read closely may look procedurally grained, while less familiar traditions may look merely policy-governed. A third risk is over-reliance on elite textual instructions rather than actual practitioner learning environments.",
+      "revised_claim": "The safer claim is: contemplative training has layered direction. Some direction is procedural, some is interpretive, some is social, and some becomes embodied through repetition. The grain of capacity is a real subtype, strongest where instructions specify what to notice, what to devalue, what to seek, and what not to claim before the decisive experience occurs.",
+      "role": "challenger",
+      "sources_cited": [
+        "Rupert Gethin, 'On Some Definitions of Mindfulness' (Contemporary Buddhism, 2011)",
+        "MN 10 Satipatthana Sutta",
+        "Shankara, Vivekachudamani vv. 17-30",
+        "Brihadaranyaka Upanishad 3.7.23",
+        "SN 22.59 Anattalakkhana Sutta",
+        "John D. Dunne, Buddhist Styles of Mindfulness: A Heuristic Approach"
+      ],
+      "steelman": "The Proponent's revision is the best version of the grain model so far: it no longer claims every contemplative capacity is grained from the start. It distinguishes convergent operations from procedurally grained operations, adds a developmental mechanism by which residue policy can become embodied habit, and preserves a testable harm prediction by separating early authorization-confusion from mature directional distortion.",
+      "strongest_objection": "The revised model risks absorbing every possible result. If early reports look similar, they can be called operational convergence. If late reports differ, they can be called embodied grain. If doctrinal language appears, it can be treated as residue policy in transition. Without pre-registered markers for when policy has become grain, the model becomes a flexible vocabulary rather than a discriminating explanation.",
+      "test_that_would_settle_it": "Pre-register markers of embodied grain, such as attentional target selection, recovery after distraction, affective valence toward arising phenomena, tendency to stabilize or dissolve the observer, and switching costs between methods. Then run longitudinal micro-phenomenological interviews plus brief practice-transition tasks across beginner, intermediate, and advanced practitioners. If tradition predicts these markers before residue language and better than doctrinal vocabulary predicts them, the grain model wins. If doctrine and report norms predict the differences while practice behavior remains similar, the layered authorization model wins.",
+      "turn": 3,
+      "turn_type": "counter_rebuttal",
+      "verdict_on_revision": "transformed"
+    }
+  ]
+}

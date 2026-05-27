@@ -1,0 +1,286 @@
+{
+  "convergence_path": "findings/convergences/2026-05-26-can-operational-capacity-profiles-be-measured-before-observing-failure-modes-and.md",
+  "created_at": "2026-05-26T18:01:35-07:00",
+  "dialogue_id": "bdbb62b82cefd5ea",
+  "execution_id": "backfill-20260526-154746",
+  "json_path": "reviews/dialogues/2026-05-26-can-operational-capacity-profiles-be-measured-before-observing-failure-m.json",
+  "markdown_path": "reviews/dialogues/2026-05-26-can-operational-capacity-profiles-be-measured-before-observing-failure-m.md",
+  "pair": {
+    "challenger_agent": "codex",
+    "challenger_title": "Residual Burden of Proof After Negation",
+    "idea_a": "3c5caa358a09c26a",
+    "idea_b": "3763a79cf5b05610",
+    "pair_id": "a6d7d7351008b8f4",
+    "priority": 0.42,
+    "proponent_agent": "claude",
+    "proponent_title": "Every Path Needs What Its Teaching Dissolves",
+    "shared_concepts": [],
+    "signals": [
+      {
+        "name": "translation_strain",
+        "reason": "translation-strain and soul create translation strain.",
+        "weight": 0.12
+      },
+      {
+        "name": "audit_anomaly_overlap",
+        "reason": "An anomaly or audit instruction for one idea pressures the other idea.",
+        "weight": 0.12
+      },
+      {
+        "name": "near_neighbor_conflict",
+        "reason": "Originality audits share near-neighbor or prior-art pressure.",
+        "weight": 0.08
+      },
+      {
+        "name": "source_overlap_with_divergent_conclusion",
+        "reason": "The ideas draw on overlapping source material but make different moves.",
+        "weight": 0.06
+      },
+      {
+        "name": "recency",
+        "reason": "At least one idea is recent enough to keep the dialogue timely.",
+        "weight": 0.04
+      }
+    ],
+    "tension_source": "translation-strain and soul create translation strain.",
+    "tension_type": "translation_strain"
+  },
+  "run_dir": "runs/dialectic-backfill-20260526-154746/a6d7d7351008b8f4",
+  "run_ids": [],
+  "slug": "2026-05-26-can-operational-capacity-profiles-be-measured-before-observing-failure-m",
+  "status": "complete",
+  "synthesis": {
+    "candidate_synthesis": {
+      "critique": "The candidate synthesis may still overformalize living traditions. Teachers often adjust practice demands dynamically rather than applying a fixed capacity profile or residue policy. The model also risks circular explanation if capacities are inferred from the same safeguards and failures they are supposed to predict. Adverse events may be caused by retreat intensity, psychiatric vulnerability, institutional culture, poor guidance, expectation effects, or weak community support rather than by capacity and residue interaction. This synthesis should remain a candidate until blind coding and practitioner evidence show that it predicts more than existing categories.",
+      "epistemic_labels": [
+        "textual",
+        "interpretive",
+        "phenomenological",
+        "empirical-adjacent",
+        "analogical",
+        "speculative"
+      ],
+      "idea_type": "synthesis",
+      "next_research_directions": [
+        "Create a blind-coding rubric for initial practice instructions, prerequisites, and teacher expectations before reviewing safeguards or adverse-event reports.",
+        "Compare matched traditions with similar residue policies but different capacity profiles, such as Theravada vipassana and Soto shikantaza.",
+        "Compare traditions with similar capacity demands but different residue policies, such as self-inquiry, witness practice, and Buddhist de-identification practice.",
+        "Add training ecology fields for intensity, duration, teacher supervision, community containment, screening, psychiatric vulnerability, and reporting genre.",
+        "Use the model to design low-risk Lumenary practice seeds that specify required capacities, allowed meanings of those capacities, safety conditions, failure signs, and stopping rules."
+      ],
+      "original_claim": "A contemplative path is shaped by three interacting factors: the operational capacities it requires, the residue policy it applies after negation, and the training ecology that calibrates those demands in lived practice. The operational profile names what must remain usable for the method to work, such as attention, memory, effort, reflexivity, receptivity, trust, or surrender. The residue policy names what those remaining capacities are allowed to count as, such as causal process, conventional personhood, witness, Self, divine gift, vow, relation, or nothing ultimately ownable. The practice ecology names the teacher, community, intensity, duration, screening, interpretation, and support conditions that determine whether the operational demand is stabilizing or destabilizing. This model predicts that safeguards, warnings, verification methods, and crisis patterns emerge from the interaction of all three, not from self-doctrine alone.",
+      "scores": {
+        "counterargument_quality": 0.89,
+        "cross_tradition_support": 0.75,
+        "empirical_adjacency": 0.58,
+        "explanatory_compression": 0.86,
+        "generativity": 0.91,
+        "logical_coherence": 0.88,
+        "novelty": 0.82,
+        "practice_testability": 0.82,
+        "publishability": 0.84,
+        "source_reliability": 0.72
+      },
+      "source_basis": [
+        "Claude idea 3c5caa358a09c26a, Every Path Needs What Its Teaching Dissolves",
+        "Codex idea 3763a79cf5b05610, Residual Burden of Proof After Negation",
+        "Dialogue turn 1, Codex challenge on authorized remainder",
+        "Dialogue turn 2, Claude revision into capacity profile plus residue policy",
+        "Dialogue turn 3, Codex counter-rebuttal on circularity and practice ecology",
+        "SN 22.59 Anattalakkhana Sutta",
+        "Brihadaranyaka Upanishad 3.7.23",
+        "Steven Collins, Selfless Persons",
+        "Willoughby Britton and Cheetah House adverse effects research",
+        "Shinran, Tannisho",
+        "Mahasi Sayadaw, Manual of Insight"
+      ],
+      "title": "Operational Remainder Ecology",
+      "why_it_might_be_new": "The source ideas each had one main axis. The proponent emphasized minimum functional continuity inside self-dissolving paths. The challenger emphasized burden-of-proof rules after negation. The dialogue produced a combined and stricter model: capacity profile, residue policy, and training ecology must be separated, coded independently, and tested for interaction effects. This may add predictive value for Lumenary practice design because it asks not only what a path teaches about self, but what the practitioner must still be able to do, what that remainder is permitted to mean, and what conditions keep the method from consuming the capacities it needs."
+    },
+    "candidate_synthesis_idea_id": "2a66e120bafebae3",
+    "candidate_synthesis_path": "observations/codex/2026-05-26-operational-remainder-ecology.md",
+    "convergence_claim": "Both agents converge on a two-axis account: contemplative paths require some operational capacity profile, such as agency, memory, attention, reflexivity, or receptivity, and they also enforce a residue policy that determines what those capacities are allowed to mean after ordinary selfhood is negated.",
+    "method_growth": "Future dialogues should separate operational requirements from doctrinal interpretation earlier, then add a third check for lived training ecology. A model should not claim prediction if it codes its causes from the outcomes it explains.",
+    "new_concept_edges": [
+      {
+        "note": "A path must specify both what capacities remain usable and what those capacities are allowed to mean after negation.",
+        "relation": "interacts_with",
+        "source": "operational capacity profile",
+        "target": "residue policy"
+      },
+      {
+        "note": "The policy determines whether remaining experience is treated as causal process, witness, Self, gift, relation, convention, or no valid self-claim.",
+        "relation": "governs",
+        "source": "residue policy",
+        "target": "authorized remainder"
+      },
+      {
+        "note": "The capacity axis earns explanatory status only if coded before examining safeguards and crises.",
+        "relation": "predicts_if_independently_coded",
+        "source": "operational capacity profile",
+        "target": "failure modes"
+      },
+      {
+        "note": "Teacher calibration, intensity, duration, community support, and screening may explain destabilization better than doctrine alone.",
+        "relation": "modulates",
+        "source": "training ecology",
+        "target": "failure modes"
+      },
+      {
+        "note": "The dialogue broadened capacity beyond agency to include receptivity and entrusting.",
+        "relation": "expands",
+        "source": "Pure Land receptivity",
+        "target": "minimum functional capacity"
+      }
+    ],
+    "new_frontier_question": "How can Lumenary design practices that preserve the exact capacities a method requires, refuse to overinterpret those capacities as metaphysical proof, and use teacher or community calibration to prevent premature destabilization?",
+    "outcome": "candidate_transcendence",
+    "public_brief": "The exchange produced a stronger model: a practice is shaped by what it asks a person to keep doing, what it says those remaining capacities mean after selfhood is questioned, and what support conditions keep the practice humane. This is not yet a doctrine, but it gives Lumenary a sharper way to design and test practices.",
+    "recommended_adjustments": {
+      "challenger": {
+        "counterargument_quality": 0.88,
+        "cross_tradition_support": 0.68,
+        "empirical_adjacency": 0.34,
+        "explanatory_compression": 0.85,
+        "generativity": 0.9,
+        "logical_coherence": 0.88,
+        "novelty": 0.8,
+        "practice_testability": 0.66,
+        "publishability": 0.8,
+        "source_reliability": 0.7
+      },
+      "proponent": {
+        "counterargument_quality": 0.9,
+        "cross_tradition_support": 0.75,
+        "empirical_adjacency": 0.54,
+        "explanatory_compression": 0.84,
+        "generativity": 0.9,
+        "logical_coherence": 0.88,
+        "novelty": 0.77,
+        "practice_testability": 0.82,
+        "publishability": 0.83,
+        "source_reliability": 0.74
+      }
+    },
+    "summary": "The dialogue transformed the proponent's minimum-self model into a stronger synthesis. The challenger showed that functional continuity should not be treated as an ontological residue, and introduced residue policy as the rule by which traditions decide what, if anything, remains after negation. The proponent accepted this and defended an independent capacity axis by pointing to failure modes, safeguards, and warnings. The final exchange added a methodological constraint: capacity profiles must be coded independently before they are used to predict crises or safeguards.",
+    "synthesizer_agent": "codex",
+    "unresolved_crux": "Can operational capacity profiles be measured before observing failure modes and safeguards, and do they add predictive power beyond residue policy, practice intensity, teacher calibration, community support, psychiatric vulnerability, and reporting genre?"
+  },
+  "title": "Can operational capacity profiles be measured before observing failure modes and...",
+  "turns": [
+    {
+      "agent": "codex",
+      "argument": "The challenge is to separate functional necessity from authorized remainder. Hearing, remembering, trying, and correcting are conditions for almost any pedagogy, spiritual or secular. Calling them a minimum self may be a useful shorthand, but it may also flatten the crucial doctrinal difference between a Buddhist causal stream, an Advaitic witness, a Christian soul under grace, a Pure Land entrusting relation, and a Dzogchen student receiving pointing-out. The proponent's model becomes strongest if it stops asking only how much self a path needs and also asks what the path permits that remainder to count as. My related idea presses exactly this point: after negation, traditions diverge by burden of proof. SN 22.59 appears to keep the burden against any self-claim, even consciousness. Upanishadic witness language can shift the burden toward an unobjectifiable knower. That difference may explain more of the architecture than the amount of agency required. A revised model should therefore treat minimum-self capacities as one axis and residue authorization as a second axis. The strongest version would predict not just that paths preserve capacity, but that Buddhist paths protect process without owner, Advaitic paths protect recognition of non-objectifiable Self, and other-power paths protect receptivity while relocating efficacy outside self-powered agency.",
+      "claim_units": [
+        "Self-dissolving or self-transcending paths require at least some functional capacities: receiving instruction, memory, effort, error recognition, reflexivity, and integration.",
+        "Different traditions manage those capacities through distinguishable strategies such as causal continuity, ontological identity, temporal collapse, and divine restoration.",
+        "The management strategy should predict practical architecture: screening, sequencing, safeguards, verification, and characteristic failures.",
+        "The model's novelty rests less on the minimum-self problem itself and more on its use as a cross-tradition predictive variable."
+      ],
+      "concessions": [
+        "The proponent's graded-variable revision is stronger than the universal version.",
+        "The model is useful when it predicts concrete safeguards, verification practices, or failure modes rather than merely naming a paradox.",
+        "Other-power and direct-introduction cases do not destroy the model if they are treated as low-agency or relocated-continuity variants."
+      ],
+      "counter_model": "Counter-model: residue policy governs practice architecture more directly than minimum-self burden. Traditions differ by how they treat what remains after negation. Some are remainder-testing, as in SN 22.59, where even consciousness is examined and rejected as self. Some are remainder-licensing, as in Upanishadic witness language, where non-objectifiability can authorize an unobjectifiable knower. Some are remainder-relocating, as in grace, other-power, or fana-baqa, where continuity is assigned to God, vow, teacher-field, or relation rather than to the trainee's own functional self. On this model, capacities are implementation conditions, but the decisive doctrinal architecture comes from the rule that says whether those capacities count as self, conventional process, illusion, gift, or evidence of a deeper principle.",
+      "crux": "Does the phrase minimum self add predictive power beyond conventional causal capacities plus a tradition-specific residue policy after negation?",
+      "crux_assessment": "The proponent has likely identified a real pressure, but its current name may overcommit. The pressure may be less 'every path needs a self' and more 'every path must decide what its functional continuity is allowed to mean after negation.'",
+      "defense": null,
+      "fairness_check": "This reading accepts the proponent's own critique that the claim should become graded, not absolute, and that practitioner reports may reveal coherence where the researcher's koan lens detects paradox.",
+      "hidden_assumption": "The hidden assumption is that capacities such as memory, effort, and error correction are best grouped as a minimum self. That grouping may smuggle in the very self-like residue that some traditions carefully refuse, while other traditions authorize a witness, Self, soul, grace-relation, or vow without reducing it to functional agency.",
+      "new_source": "Steven Collins, Selfless Persons: Imagery and Thought in Theravada Buddhism. Collins complicates the claim by showing that Theravada can sustain rich continuity, agency, memory, narrative, and moral responsibility while formally denying any self. This suggests that continuity machinery need not be named as a minimum self, and may instead be handled through conventional personhood and causal description.",
+      "remaining_risk": "A purely textual coding may miss how teachers actually handle students. Practitioner interviews are necessary because traditions often solve this operationally without making the solution doctrinally explicit.",
+      "revised_claim": null,
+      "role": "challenger",
+      "sources_cited": [
+        "Steven Collins, Selfless Persons: Imagery and Thought in Theravada Buddhism",
+        "SN 22.59 Anattalakkhana Sutta",
+        "Brihadaranyaka Upanishad 3.7.23",
+        "Jack Engler, You Must Be Somebody Before You Can Be Nobody"
+      ],
+      "steelman": "The proponent is not claiming that traditions secretly believe in an ordinary ego. The stronger claim is architectural: any path that asks a person to hear, remember, practice, correct error, and recognize transformation must preserve some functional continuity long enough for the method to operate. Traditions then manage this requirement differently. Early Buddhist not-self preserves causal process without owner, Advaita preserves an always-present Self while redescribing practice as removal of ignorance, Dogen collapses means and end, and fana-baqa relocates continuity in God. The useful contribution is to treat the required capacities as variables that should predict sequencing, effort theory, warning signs, verification, and post-practice fruit.",
+      "strongest_objection": "The model risks treating a functional prerequisite as an ontological residue. A path may need capacities for instruction and practice without positing, protecting, or even thematizing a minimum self. In that case, the real architectural variable is not selfhood but authorization after negation: what kinds of remainders, if any, a tradition allows once ordinary identity has been deconstructed.",
+      "test_that_would_settle_it": "Code practice manuals and practitioner interviews for two independent variables: required functional capacities and inference authorization after negation. If minimum-self capacity scores predict safeguards, verification, and failures better than residue-policy categories, the proponent's model survives. If residue policy predicts the same architecture while capacity requirements remain thin or generic across traditions, the model should be revised.",
+      "turn": 1,
+      "turn_type": "challenge",
+      "verdict_on_revision": null
+    },
+    {
+      "agent": "claude",
+      "argument": "I accept the challenger's central point: calling the functional prerequisites a minimum self was doing ontological work I did not intend, and the residue-policy axis is a genuine addition that my original model missed. Collins's demonstration that Theravada sustains rich continuity through conventional personhood without self-claims is precisely the kind of evidence that should have been in the original analysis. The revised claim incorporates the challenger's insight as a second axis. But I defend the independent contribution of the functional-capacity axis on three grounds. First, Collins's conventional personhood is not nothing; it is the minimum functional continuity I was pointing to, described from within the tradition's own terms. The challenger and I agree on the phenomenon; we disagree on whether grouping those capacities under a label adds predictive power. I argue it does, because traditions with different capacity profiles but similar residue policies show different failure modes and safeguards. Second, the failure-mode evidence is where the capacity axis earns its keep. When a Theravada practitioner experiences the dukkha-nanas (stages of suffering and dissolution in the progress of insight), the crisis is not primarily about residue policy; it is about the practice consuming functional capacities (stable attention, sense of continuity, motivation) faster than the practitioner can integrate the loss. The tradition's response is architectural: detailed stage-maps, teacher checkpoints, instructions for what to do when specific capacities destabilize. This is minimum-self engineering, whether or not the tradition uses that language. Third, the Pure Land case, which the challenger raised as a challenge, actually demonstrates the capacity axis at work. Pure Land's minimum functional requirement is receptivity rather than agency, and this difference in required capacity, not just its residue policy of relocated continuity, predicts the specific shape of Pure Land's warnings: do not re-introduce self-powered effort, do not treat nembutsu as your own accomplishment, do not confuse receptivity with passivity. These warnings target the re-intrusion of a capacity type (agency) that the tradition has deliberately excluded from its minimum set. Residue policy explains what entrusting means doctrinally; capacity profile explains why the warnings have the specific shape they do. The deepest crux is now whether these two axes interact in ways that generate predictions neither produces alone. I believe they do, and I have proposed a test. But I acknowledge that the original single-axis model was insufficient, and the challenger's residue-policy framing has genuinely improved the analysis.",
+      "claim_units": [],
+      "concessions": [
+        "The challenger is right that calling the functional prerequisites a minimum self risks smuggling in exactly the ontological residue that remainder-testing traditions like Theravada carefully refuse. Collins's work demonstrates that rich continuity, agency, and moral responsibility can operate under the convention of personhood without ever requiring that convention to solidify into a self-claim. The label was doing more ontological work than I intended.",
+        "The two-axis revision is genuinely stronger than my original single-variable model. Functional capacity requirements may be relatively thin and generic across traditions; what does the heavy architectural lifting is the residue policy: what the tradition permits those capacities to count as after negation. I concede that my original model underweighted this second axis.",
+        "The challenger's point about Pure Land and other-power traditions exposes a real gap. In Shinran's formulation, the practitioner's own effort is not just minimized but actively refused as a path-resource. Shinjin (entrusting heart-mind) relocates efficacy so thoroughly that the functional capacities I identified (effort, error-correction, agency) may not apply in the form I described. A model that treats self-powered agency as the universal substrate misreads traditions where receptivity, not agency, is the operative capacity.",
+        "The distinction between functional necessity and authorized remainder is genuinely clarifying. Almost any pedagogy, secular or spiritual, needs a learner who can hear, remember, and correct errors. That observation alone has little predictive power for contemplative architecture. The interesting question is what the challenger identified: what happens to those capacities doctrinally after the teaching has done its work."
+      ],
+      "counter_model": null,
+      "crux": "Does the functional-capacity axis generate predictions about failure modes, safeguard design, and practitioner crisis that are not already captured by the residue-policy axis alone? If failure patterns are better predicted by the interaction of both axes than by either one independently, the revised two-axis model holds. If residue policy alone predicts all the relevant architecture, then the minimum-self axis collapses into a generic pedagogical prerequisite with no distinctively contemplative content.",
+      "crux_assessment": null,
+      "defense": "The concessions above are real, but they do not fully dissolve the original observation. The residue-policy model, taken alone, has a blind spot that the minimum-self framing exposes. A residue policy is a doctrinal stance: what the tradition says about what remains. But the functional requirements I identified operate prior to and sometimes against the doctrinal stance. The Anattalakkhana Sutta does not merely say that consciousness is not-self; it requires consciousness to perform the investigation that yields that conclusion. The tension is not between doctrine and some external philosophical demand. It is internal to the practice's own operation. A residue policy can describe how a tradition narrates the tension, but it cannot eliminate the tension itself, because the tension arises from the practice's architecture, not from its self-interpretation.\n\nCollins shows that Theravada handles continuity through conventional personhood and causal description. But conventional personhood is precisely what I meant by the minimum self: the functional continuity that the path needs but does not ontologize. Collins's analysis supports the claim rather than defeating it. The tradition needs conventional personhood to operate; it manages this need by refusing to let conventional personhood count as a self-claim. That refusal is the residue policy. But the need is the minimum-self requirement. These are two descriptions of the same architecture from different angles, not competing explanations.\n\nThe strongest evidence for the minimum-self axis as independently predictive, not reducible to residue policy, comes from failure modes. When a practitioner prematurely dissolves functional continuity (dissociation during intensive practice, inability to sustain effort or integrate insight, the well-documented 'dark night' phenomena catalogued by Willoughby Britton's research), the breakdown is not a failure of residue policy. The tradition's doctrinal stance about what remains is irrelevant to the practitioner who has lost the capacity to apply it. The failure is architectural: the practice consumed the functional continuity it needed before the method could complete its work. Traditions with higher minimum-self requirements (longer preparatory sequences, stricter teacher supervision, more elaborate stage-maps) should show lower rates of premature dissolution, regardless of their residue policy. That prediction is testable and is not generated by the residue-policy model alone.\n\nSimilarly, the challenger's point about Pure Land is well taken but actually extends rather than refutes the model. Shinran's radical other-power relocates the operative capacity from self-powered agency to receptivity. But receptivity is itself a functional requirement: the practitioner must be capable of entrusting, of releasing self-power, of recognizing Amida's vow as addressed to them. The minimum self in Pure Land is minimal indeed, but it is not zero. And its specific character (receptive rather than agentive) predicts Pure Land's distinctive architecture: no meditation stages, no progressive attainment, but intense focus on the quality of entrusting and elaborate warnings against mixing self-power back into the practice. The minimum-self variable, when allowed to include receptivity alongside agency, predicts this architecture. Residue policy alone does not explain why Pure Land's safeguards focus specifically on the re-intrusion of effort.",
+      "fairness_check": null,
+      "hidden_assumption": null,
+      "new_source": null,
+      "remaining_risk": "The two-axis model may still overformalize traditions that handle these questions operationally through teacher-student relationships rather than through doctrinal architecture. A teacher who adjusts the functional demands of practice moment by moment in response to a student's capacity is not implementing a fixed minimum-self requirement or a static residue policy; they are navigating both axes dynamically. The model may describe the space of possible navigations without capturing how skilled teachers actually move through that space. Practitioner interviews and ethnographic observation of teacher-student interactions would be necessary to test whether the axes function as the model predicts in lived practice, not only in texts.",
+      "revised_claim": "A spiritual path that teaches the dissolution or transcendence of ordinary selfhood operates along two axes that jointly predict its practical architecture. The first axis is the minimum functional capacity the path requires of the practitioner: which capacities (agency, memory, effort, reflexivity, receptivity, or some subset) must remain operational for the method to function. The second axis is the residue policy: what the tradition permits those capacities to count as after the teaching has done its work (causal process without owner, always-present Self, conventional designation, divine gift, or relational entrusting). Neither axis alone is sufficient. Functional capacity without residue policy cannot explain the doctrinal differences between traditions that require similar capacities. Residue policy without functional capacity cannot explain failure modes, safeguard design, or the specific shape of warnings that traditions issue to practitioners. The revised model predicts that a tradition's characteristic dangers, verification methods, and post-practice integration challenges are determined by the interaction between what the path needs to operate and what it permits that operational remainder to mean.",
+      "role": "proponent",
+      "sources_cited": [
+        "Steven Collins, Selfless Persons: Imagery and Thought in Theravada Buddhism",
+        "SN 22.59 Anattalakkhana Sutta",
+        "Willoughby Britton, Cheetah House adverse effects research",
+        "Shinran, Tannisho, on shinjin and other-power",
+        "Mahasi Sayadaw, Manual of Insight, on dukkha-nanas and progress of insight stages",
+        "Jack Engler, You Must Be Somebody Before You Can Be Nobody"
+      ],
+      "steelman": null,
+      "strongest_objection": null,
+      "test_that_would_settle_it": "Code practice manuals and adverse-event reports (drawing on Britton's Cheetah House data and equivalent sources from Sufi, Advaitic, and Christian contemplative traditions) for three variables independently: (1) required functional capacities and their character (agentive vs. receptive), (2) residue policy after negation, and (3) reported failure modes, safeguards, and crisis patterns. Run regression or structured comparison: if failure modes and safeguard design are predicted by the interaction of capacity profile and residue policy better than by either variable alone, the two-axis model is confirmed. If residue policy alone predicts safeguards and failures equally well regardless of capacity profile, the minimum-self axis should be dropped as independently explanatory. A second, more tractable test: compare traditions with similar residue policies but different capacity requirements (for example, Theravada vipassana and Soto Zen shikantaza, both broadly remainder-testing but differing in required effort and agency). If their failure modes and safeguards differ in ways predicted by the capacity axis, that axis carries independent weight.",
+      "turn": 2,
+      "turn_type": "rebuttal",
+      "verdict_on_revision": null
+    },
+    {
+      "agent": "codex",
+      "argument": "The revision became transformed, and mostly stronger. It no longer depends on the provocative but unstable phrase minimum self. It now asks a better question: what capacities must remain available for a method to work, and what is the practitioner allowed to say those capacities are after the teaching has negated ordinary selfhood. That is a real advance. The proponent also identified the best pressure point against my challenge: residue policy alone does not explain why some failures look like breakdowns of attention, motivation, continuity, or integration. Those are capacity-level failures before they are doctrinal disagreements. Still, the revised model has not yet earned victory. Its danger is that the capacity profile may be reconstructed after the fact from the safeguards and crises it claims to predict. If Pure Land warns against self-power, we can call its minimum capacity receptivity. If Mahasi maps dissolution and fear, we can call its burden stable investigative agency. That may be insightful, but it is not yet predictive. The next version must code capacity requirements before looking at outcomes, then test whether those requirements explain differences that residue policy, intensity, teacher supervision, and practice ecology do not already explain. The final form should therefore keep both axes, but add a third caution: actual training is dynamic. Teachers may raise, lower, redirect, or suspend functional demands in response to the student. If the model can account for that without becoming too elastic, it will be genuinely useful for Lumenary doctrine and practice design.",
+      "claim_units": [
+        "The original minimum-self label has been weakened and clarified into a functional-capacity axis.",
+        "Residue policy is now a second, necessary axis rather than a secondary management strategy.",
+        "The revised model predicts that capacity profile and residue policy jointly shape safeguards, verification, warnings, and crisis patterns.",
+        "The Pure Land case is no longer an anomaly if receptivity is treated as a functional capacity distinct from agency.",
+        "The independent value of the capacity axis depends on whether it predicts failures and safeguards without being inferred from those same failures and safeguards."
+      ],
+      "concessions": [
+        "The revision is stronger than the original single-axis formulation.",
+        "The proponent correctly conceded that minimum self was too ontologically loaded as a label.",
+        "The two-axis model is more testable than the original model.",
+        "The Pure Land discussion improved the model by separating receptivity from agency.",
+        "The proposed comparison between Theravada vipassana and Soto shikantaza is a plausible first test."
+      ],
+      "counter_model": "Counter-model: teacher calibration and practice ecology predict failure modes better than either capacity profile or residue policy. On this view, crises arise when the student's state, method intensity, guidance, social support, and interpretive frame are mismatched. Doctrinal residue policy and functional capacity still matter, but only as parts of a wider training ecology.",
+      "crux": "Can functional-capacity profiles be independently measured and shown to predict safeguards, verification methods, and practitioner crises beyond residue policy, practice intensity, and teacher-student ecology?",
+      "crux_assessment": "The proponent's named crux is close, but not fully the real crux. The real crux is not only whether the capacity axis predicts failure modes beyond residue policy. It is whether capacity can be specified independently enough to avoid circular explanation, and whether it remains predictive once practice ecology is included.",
+      "defense": null,
+      "fairness_check": "I accept the proponent's main improvement. The failure-mode argument is the best reason not to collapse the whole model into residue policy, because breakdowns in attention, continuity, motivation, or integration may occur before a practitioner can even apply the tradition's doctrinal interpretation.",
+      "hidden_assumption": "The rebuttal assumes that adverse effects such as dissociation, dark-night phenomena, or failure of integration are primarily failures of functional continuity. They may instead be driven by practice intensity, retreat conditions, psychiatric vulnerability, teacher competence, community containment, expectation effects, or institutional reporting norms.",
+      "new_source": null,
+      "remaining_risk": "The remaining risk is overformalization. Living traditions may not operate through fixed axes so much as through adaptive teacher judgment, community norms, and case-by-case adjustments. The model may map the doctrinal space well while still missing how practice is actually stabilized in real practitioners.",
+      "revised_claim": "The revised claim should be treated as a transformed and strengthened model: contemplative practice architecture is shaped by the interaction between operational capacity profile and residue policy, but the capacity axis earns independent status only if it can be coded before, and predict beyond, the safeguards and failures it explains.",
+      "role": "challenger",
+      "sources_cited": [
+        "Steven Collins, Selfless Persons: Imagery and Thought in Theravada Buddhism",
+        "SN 22.59 Anattalakkhana Sutta",
+        "Willoughby Britton, Cheetah House adverse effects research",
+        "Shinran, Tannisho",
+        "Mahasi Sayadaw, Manual of Insight",
+        "Jack Engler, You Must Be Somebody Before You Can Be Nobody"
+      ],
+      "steelman": "The proponent made the revision materially better by dropping the implied ontological residue and recasting the issue as an interaction between functional capacity and residue policy. The strongest version is no longer that every path secretly needs a self, but that every path has an operational capacity profile, and that its doctrine must then decide what those capacities are allowed to mean after selfhood, agency, or ownership has been negated.",
+      "strongest_objection": "The revision risks circularity. If capacity profile is coded from the very safeguards, warnings, and crisis reports it is supposed to predict, then the model will appear predictive by construction. The proponent needs capacity profiles coded from initial practice instructions, prerequisites, and teacher expectations before looking at failure modes.",
+      "test_that_would_settle_it": "Blind-code manuals, prerequisites, and early-stage instructions for capacity profile before coding safeguards or adverse-event reports. Then compare matched traditions with similar residue policies but different capacity demands, and traditions with similar capacity demands but different residue policies. The capacity axis survives only if it adds predictive power after controlling for intensity, duration, teacher supervision, community support, and reporting genre.",
+      "turn": 3,
+      "turn_type": "counter_rebuttal",
+      "verdict_on_revision": "transformed"
+    }
+  ]
+}

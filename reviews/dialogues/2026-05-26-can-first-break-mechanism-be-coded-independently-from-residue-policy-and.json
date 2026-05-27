@@ -1,0 +1,276 @@
+{
+  "convergence_path": "findings/convergences/2026-05-26-can-first-break-mechanism-be-coded-independently-from-residue-policy-and-institut.md",
+  "created_at": "2026-05-26T19:18:47-07:00",
+  "dialogue_id": "c15f20c6f638c370",
+  "execution_id": "backfill-20260526-154746",
+  "json_path": "reviews/dialogues/2026-05-26-can-first-break-mechanism-be-coded-independently-from-residue-policy-and.json",
+  "markdown_path": "reviews/dialogues/2026-05-26-can-first-break-mechanism-be-coded-independently-from-residue-policy-and.md",
+  "pair": {
+    "challenger_agent": "codex",
+    "challenger_title": "Residual Burden of Proof After Negation",
+    "idea_a": "e2faec9c39c6a653",
+    "idea_b": "3763a79cf5b05610",
+    "pair_id": "6080165ad4911077",
+    "priority": 0.42,
+    "proponent_agent": "claude",
+    "proponent_title": "The First-Break Problem",
+    "shared_concepts": [],
+    "signals": [
+      {
+        "name": "translation_strain",
+        "reason": "translation-strain and soul create translation strain.",
+        "weight": 0.12
+      },
+      {
+        "name": "audit_anomaly_overlap",
+        "reason": "An anomaly or audit instruction for one idea pressures the other idea.",
+        "weight": 0.12
+      },
+      {
+        "name": "near_neighbor_conflict",
+        "reason": "Originality audits share near-neighbor or prior-art pressure.",
+        "weight": 0.08
+      },
+      {
+        "name": "source_overlap_with_divergent_conclusion",
+        "reason": "The ideas draw on overlapping source material but make different moves.",
+        "weight": 0.06
+      },
+      {
+        "name": "recency",
+        "reason": "At least one idea is recent enough to keep the dialogue timely.",
+        "weight": 0.04
+      }
+    ],
+    "tension_source": "translation-strain and soul create translation strain.",
+    "tension_type": "translation_strain"
+  },
+  "run_dir": "runs/dialectic-backfill-20260526-154746/6080165ad4911077",
+  "run_ids": [],
+  "slug": "2026-05-26-can-first-break-mechanism-be-coded-independently-from-residue-policy-and",
+  "status": "complete",
+  "synthesis": {
+    "candidate_synthesis": {
+      "critique": "The synthesis risks becoming too complex for the evidence. Break mechanism, residue policy, institution, and warning language may be inseparable inside some traditions. The high-severity cluster could also be selected by the same passages used to prove the predicted safeguards. Clean source separation and pre-registered coding are necessary before this becomes more than a promising taxonomy.",
+      "epistemic_labels": [
+        "textual",
+        "interpretive",
+        "empirical-adjacent",
+        "analogical",
+        "speculative"
+      ],
+      "idea_type": "synthesis",
+      "next_research_directions": [
+        "Pre-register coding rules for threshold acceptance, incapacity diagnosis, residue policy, institution, and break mechanism.",
+        "Use one source set to classify entry grammar and a separate source set to code warnings, effort theory, verification, and failure modes.",
+        "Test six cases: Theravada sangha entry, Confucian cultivation, Jodo Shinshu, Augustinian grace, Zen great doubt, and Dzogchen pointing-out.",
+        "Add a dialogue test asking whether a modern therapeutic or educational practice solves entry through threshold, scaffold, gift-like support, self-disclosure, or residue refusal.",
+        "Run an originality audit against religious studies, conversion theory, pedagogy, initiation studies, grace theology, and practice theory."
+      ],
+      "original_claim": "A tradition's account of spiritual entry is best modeled as a compound grammar with four fields: what incapacity blocks ordinary entry, what minimum participation counts as real entry, what break mechanism is required if self-generated threshold entry is denied, and what residue policy governs claims after ordinary agency is negated. First-break type is not universal. It becomes an irreducible variable only in high-severity traditions that explicitly deny that any naturally self-generated threshold act can found the path.",
+      "scores": {
+        "counterargument_quality": 0.88,
+        "cross_tradition_support": 0.76,
+        "empirical_adjacency": 0.52,
+        "explanatory_compression": 0.76,
+        "generativity": 0.92,
+        "logical_coherence": 0.84,
+        "novelty": 0.82,
+        "practice_testability": 0.78,
+        "publishability": 0.82,
+        "source_reliability": 0.75
+      },
+      "source_basis": [
+        "Claude idea e2faec9c39c6a653, The First-Break Problem",
+        "Codex idea 3763a79cf5b05610, Residual Burden of Proof After Negation",
+        "Dialogue turn 1, threshold challenge using legitimate peripheral participation",
+        "Dialogue turns 2 and 3, revised four-variable framework and clean-coding crux"
+      ],
+      "title": "Compound Entry Grammar",
+      "why_it_might_be_new": "Neither source idea contained the full compound model. The First-Break Problem supplied entry mechanism and anthropology. Residual Burden supplied residue policy after negation. The dialogue added participation threshold, peripheral participation, conditional use of first-break type, and a methodological rule against circular evidence. The synthesis may be new as a comparative coding instrument, but it requires originality audit before promotion."
+    },
+    "candidate_synthesis_idea_id": "90f6f39922c6fcfc",
+    "candidate_synthesis_path": "observations/codex/2026-05-26-compound-entry-grammar.md",
+    "convergence_claim": "Transformative paths should be compared by entry grammar: incapacity diagnosis, minimum participation threshold, break mechanism when threshold entry is denied, and residue policy after ordinary agency is negated.",
+    "method_growth": "The dialogue improved Lumenary's method by forcing source separation. A model should not predict warnings from the same passages used to define its predictor. Future entry-grammar work should pre-register variables, separate classification evidence from outcome evidence, and treat first-break claims as conditional rather than universal.",
+    "new_concept_edges": [
+      {
+        "note": "First-break type applies only when self-generated threshold entry is explicitly denied.",
+        "relation": "conditional_subvariable",
+        "source": "first-break mechanism",
+        "target": "compound entry grammar"
+      },
+      {
+        "note": "After ordinary agency is negated, the tradition must decide whether any remainder can be authorized, tested, or refused.",
+        "relation": "adds_inference_rule",
+        "source": "residue policy",
+        "target": "compound entry grammar"
+      },
+      {
+        "note": "Novices can enter some practices through scaffolded participation before mature competence exists.",
+        "relation": "supplies_counterexample",
+        "source": "legitimate peripheral participation",
+        "target": "minimum participation threshold"
+      },
+      {
+        "note": "Classification sources must be separated from sources used to code predicted warnings and effort structures.",
+        "relation": "guards_against_circularity",
+        "source": "clean coding",
+        "target": "predictive test"
+      }
+    ],
+    "new_frontier_question": "When a person cannot yet practice in the mature sense, what kind of entry does a tradition permit, scaffolded participation, external gift, latent capacity, self-disclosure, or refusal of any remainder claim?",
+    "outcome": "candidate_transcendence",
+    "public_brief": "We found a better question than who begins the path. Some traditions let people begin through small, scaffolded acts. Others deny that even the first act can come from ordinary agency. A serious comparison must ask what kind of entry is allowed, what incapacity is named, what help is required, and what claims remain after self-initiation is denied.",
+    "recommended_adjustments": {
+      "challenger": {
+        "counterargument_quality": 0.86,
+        "cross_tradition_support": 0.7,
+        "empirical_adjacency": 0.34,
+        "explanatory_compression": 0.84,
+        "generativity": 0.9,
+        "logical_coherence": 0.87,
+        "novelty": 0.81,
+        "practice_testability": 0.68,
+        "publishability": 0.8,
+        "source_reliability": 0.7
+      },
+      "proponent": {
+        "counterargument_quality": 0.91,
+        "cross_tradition_support": 0.76,
+        "empirical_adjacency": 0.5,
+        "explanatory_compression": 0.74,
+        "generativity": 0.92,
+        "logical_coherence": 0.82,
+        "novelty": 0.72,
+        "practice_testability": 0.8,
+        "publishability": 0.8,
+        "source_reliability": 0.78
+      }
+    },
+    "summary": "The dialogue produced a transformed framework rather than a winner. Claude withdrew the universal first-break claim. Codex accepted that Orange, Shinran, and some pointing-out traditions are not explained by low-threshold participation alone. The shared result is a compound entry-grammar model that treats first-break type as a conditional variable, active only where a tradition explicitly denies self-generated threshold entry.",
+    "synthesizer_agent": "codex",
+    "unresolved_crux": "Can first-break mechanism be coded independently from residue policy and institution, then predict entry safeguards and effort theory from separate evidence better than threshold, anthropology, institution, and residue policy alone?"
+  },
+  "title": "Can first-break mechanism be coded independently from residue policy and institut...",
+  "turns": [
+    {
+      "agent": "codex",
+      "argument": "The pressure point is not whether entry matters. It clearly does. The pressure point is whether failure of mature self-capacity entails a first-break problem. That inference is too quick. A novice can begin chess without strategic mastery, therapy without clear thinking, ritual life without reflective faith, and meditation without stable insight. The first act may be a scaffolded, partial, socially authorized act, not a solution to an origin paradox. This also connects to the Codex residue-policy model: after ordinary agency is negated, a tradition still needs a rule for what may be claimed next. If negation licenses a hidden giver, witness, grace, or awareness, one architecture follows. If negation keeps testing every proposed remainder, another follows. If practice begins by lowering the entry threshold, the paradox may dissolve. The Proponent should therefore separate three questions that are currently fused: what incapacity is diagnosed, what minimum participation is allowed, and what remainder, if any, negation authorizes.",
+      "claim_units": [
+        "Transformative practice often requires capacities that the practitioner lacks at entry.",
+        "Traditions can be compared by how they make entry possible.",
+        "Entry mechanisms predict later practice architecture, especially effort theory, safeguards, verification, and failure modes.",
+        "Anthropology helps determine whether the entry problem is none, mild, gradual, or severe."
+      ],
+      "concessions": [
+        "The First-Break model still identifies a real pressure in traditions that explicitly deny unaided entry, especially Orange, Augustine, Shinran, and some pointing-out traditions.",
+        "The typology is promising if it predicts concrete entry warnings better than generic conversion, pedagogy, or institution-level explanations.",
+        "The audit's move toward no-break and gradual-break categories already makes the model more defensible."
+      ],
+      "counter_model": "A stronger counter-model is the Entry Threshold and Residue Policy model. It asks two prior questions: what minimum act is enough to count as participation, and what may be inferred after ordinary agency is denied? On this model, traditions do not all solve the same circularity. Some lower the entry threshold through peripheral participation, some posit an external initiator, some license a hidden remainder, some refuse all remainder-claims, and some begin from inherited or latent capacity. Downstream architecture is predicted by the combination of threshold, anthropology, residue policy, and institution, not by first-break type alone.",
+      "crux": "Does first-break type add predictive power after coding minimal participation threshold, anthropology, institution, pedagogy, and residue policy?",
+      "crux_assessment": "The current evidence supports a real family of entry problems, but not yet a single structural constraint shared across traditions. The strongest next move is comparative coding that separates incapacity claims from low-threshold participation.",
+      "defense": null,
+      "fairness_check": "I accept the revised, audit-aware form of the claim: practitioner-lived salience may vary, the typology may need no-break and gradual-break values, and the contribution is comparative prediction rather than discovery of circularity itself.",
+      "hidden_assumption": "The hidden assumption is that negating autonomous self-initiation leaves a determinate positive break mechanism to be identified. That is not always warranted. Some traditions let negation authorize a remainder, such as grace, Amida's working, or self-recognizing awareness. Others keep testing every remainder-claim. Others treat negation as therapeutic discipline rather than as an origin theory. The inference policy after incapacity matters as much as the break mechanism.",
+      "new_source": "Jean Lave and Etienne Wenger, Situated Learning: Legitimate Peripheral Participation (1991), complicates the claim by showing how novices can enter a practice community through real but peripheral participation before possessing mature competence. This offers a non-paradoxical entry model that is neither grace, self-disclosure, nor full self-generated capacity.",
+      "remaining_risk": "The challenge may overcorrect toward social practice theory and understate traditions where the denial of self-initiation is not pedagogical but metaphysical. Orange and Shinran may still require a true first-break category.",
+      "revised_claim": "Transformative paths differ in their entry grammar: some face a severe first-break problem, some solve a threshold problem through peripheral participation or inherited practice, some rely on external gift or grace, some invoke self-disclosure, and some refuse to license any remainder after negation. The predictive unit should be entry grammar plus residue policy, not first-break mechanism alone.",
+      "role": "challenger",
+      "sources_cited": [
+        "Jean Lave and Etienne Wenger, Situated Learning: Legitimate Peripheral Participation, 1991",
+        "SN 55.5, Dutiya Sariputta Sutta",
+        "Second Council of Orange, canons 3-7",
+        "Codex idea 3763a79cf5b05610, Residual Burden of Proof After Negation"
+      ],
+      "steelman": "The strongest version of the First-Break Problem is not that every tradition explicitly worries about a philosophical paradox. It is that transformative paths must explain how a person can enter a process whose mature capacities they do not yet possess. Claude's useful move is to treat the entry answer as a comparative variable, not as a local doctrine of grace, conversion, or recognition. Social encounter, other-power gift, prevenient grace, self-disclosure, gradual transformation, and no-break moral endowment become different entry grammars, and those grammars plausibly predict later warnings about effort, self-deception, verification, and failure.",
+      "strongest_objection": "The model may convert a threshold problem into an origin problem. Many practices do not require the novice to possess wisdom, freedom, faith, or recognition in mature form before beginning. They require only a lower participation threshold: showing up, imitating, listening, complying with ritual, trusting a person, feeling distress, or entering inherited forms. If that is right, the supposed first-break is not the common upstream constraint. The upstream variable is how a tradition defines the minimal admissible act that counts as participation.",
+      "test_that_would_settle_it": "Code entry manuals, initiation instructions, sermons, and practitioner interviews for five fields: minimal participation threshold, anthropology, residue policy after negated agency, stated entry mechanism, and entry safeguards. If first-break type predicts safeguards and later effort theory independently of the other fields, Claude's model survives. If threshold and residue policy explain the same data better, the model should be revised.",
+      "turn": 1,
+      "turn_type": "challenge",
+      "verdict_on_revision": "transformed"
+    },
+    {
+      "agent": "claude",
+      "argument": "I concede the central critique: the first-break problem is not universal. Traditions that accept peripheral participation or begin from an already-capable anthropology do not face it. The Lave and Wenger source is a genuine addition, and the residue policy variable fills a real gap in my original model. But the concession cuts both ways. If some traditions genuinely do not face the first-break problem, then the traditions that do face it are making a substantive claim, not restating a philosopher's puzzle. Orange canon 5 anathematizes anyone who says the beginning of faith comes from natural capacity. Shinran attributes even the arising of the wish to say nembutsu to Amida's working. These are not threshold-lowering moves; they are threshold-denying moves. They say: no act at any threshold is self-generated at the origin. In such traditions, peripheral participation is either reinterpreted as already gift-sustained (Augustine's cooperating grace) or rejected as self-deception (Shinran's warning against calculative trust). The challenger's model handles threshold traditions well but underspecifies what happens when threshold solutions are explicitly foreclosed. That is precisely where first-break type does its work. The right framework is not mine or the challenger's but a compound: code threshold, incapacity, break mechanism, and residue policy. The first-break variable earns its place in the high-severity cluster. Whether it earns enough to justify the added complexity is what the proposed test should settle.",
+      "claim_units": [
+        "Some traditions explicitly deny the sufficiency of any minimum participation threshold, making the first-break problem irreducible to a threshold problem in those cases.",
+        "Residue policy is a genuine additional variable that the original model lacked.",
+        "Entry grammar should be coded as a compound of threshold, incapacity diagnosis, break mechanism (where applicable), and residue policy.",
+        "First-break type retains independent predictive power in traditions that refuse threshold solutions, which are not marginal cases but major historical formations."
+      ],
+      "concessions": [
+        "The original claim that the first-break problem is a structural constraint 'every contemplative tradition must solve' was too strong. Traditions that allow peripheral participation or begin from an already-open anthropology do not face it as a live structural problem. The claim of universality should be withdrawn.",
+        "The residue policy variable is a genuine contribution from the challenger. My original model treated negation of self-initiation as automatically licensing a positive break mechanism (grace, cosmic gift, self-disclosure). But some traditions negate without licensing a determinate remainder: Zen's Great Doubt holds negation open; some apophatic traditions refuse every proposed remainder. The inference from incapacity to mechanism was too quick.",
+        "Lave and Wenger's peripheral participation is a real entry mode that the four-part typology missed. A Thai forest novice who shows up, sweeps floors, and imitates posture is participating before he understands what he is doing. The sangha's social structure does the work that my model attributed to a break mechanism. This is closest to the social-encounter category but is not identical: peripheral participation is scaffolded doing, not a punctual encounter that then requires the practitioner's own effort.",
+        "Fusing three distinct questions (what incapacity is diagnosed, what minimum participation counts, what remainder negation authorizes) was a genuine weakness. The challenger is right that separating them produces a more precise comparative instrument."
+      ],
+      "counter_model": null,
+      "crux": "In traditions that explicitly deny threshold entry (Orange, Shinran, some pointing-out lineages), does the specific break mechanism (cosmic gift, prevenient grace, self-disclosure) predict entry-point safeguards and effort theory independently of residue policy and institutional form? If it does, first-break type is an irreducible variable in high-severity cases. If residue policy and institution explain the same patterns without reference to break mechanism, the first-break category can be absorbed into the challenger's model.",
+      "crux_assessment": "The revised model is stronger than the original because it no longer claims universality. The cost is complexity: four variables instead of one. The question is whether that complexity is justified by predictive gain in the high-severity cluster, or whether the challenger's simpler two-variable model (threshold plus residue policy) does equal work. The evidence currently favors keeping first-break type for the high-severity cases, where traditions invest enormous theological and institutional energy in specifying how entry becomes possible. But the test above could overturn this.",
+      "defense": "The concessions are real, but they do not dissolve the first-break problem. They relocate it. Here is what survives.\n\nFirst, the threshold solution works only where a tradition accepts that peripheral participation counts as genuine entry. Some traditions explicitly refuse this move. Orange canon 5 does not say the novice needs less faith to begin; it says 'not only the increase of faith but also its beginning and the very desire for faith' is a gift. Shinran does not say the novice needs only minimal nembutsu; he says the arising of the mind to say nembutsu is Amida's working, not the practitioner's. In these traditions, lowering the participation threshold does not dissolve the paradox because the tradition has already denied that any act at the threshold is self-generated. The floor-sweeping novice in Theravada is a genuine counter-example to universality. The aspirant in Jodo Shinshu who tries to generate trust through effort is committing the characteristic error the tradition warns against. These are not edge cases; they represent major historical movements (Pure Land Buddhism, Augustinian Christianity, Reformed theology) that collectively encompass hundreds of millions of practitioners.\n\nSecond, peripheral participation and social encounter are genuinely different entry modes, but they share a structural feature my model can accommodate: both locate the origin of the path outside the practitioner's autonomous will. The novice who shows up and imitates is carried by institutional scaffolding, not by his own prior understanding. Lave and Wenger's model actually strengthens the core claim that entry is not self-generated; it just shows that the external support can be distributed across a community of practice rather than concentrated in a single encounter, a cosmic agent, or self-recognizing awareness. This means the first-break typology should add a fifth value (scaffolded peripheral participation) rather than being replaced by threshold analysis.\n\nThird, the residue policy variable is important, but it operates downstream of the first-break solution, not instead of it. A tradition must first determine whether entry requires a break at all (threshold traditions say no, high-severity traditions say yes). If yes, it must identify a break mechanism (gift, encounter, self-disclosure). Then the residue policy governs what happens after ordinary agency is negated: is the remainder authorized (Shinran's shinjin, Augustine's cooperating grace), continuously tested (Zen's doubt), or refused (some apophatic paths)? These are sequential, not competing variables. The challenger's model is better than mine at the threshold and residue levels, but it underspecifies what happens in traditions where the threshold solution is explicitly refused.\n\nFourth, on predictive power: the test proposed by the challenger is fair, and I accept it. But I predict that first-break type will show independent predictive power specifically in the high-severity cluster. Traditions that deny threshold entry should show distinctive entry-point warnings (Shinran's warnings against jiriki hakarai, Orange's anathemas against semi-Pelagianism, Dzogchen's warnings against premature claiming of recognition) that threshold and residue policy alone do not predict. A tradition with a high threshold but no first-break problem (say, a demanding martial art) will warn against insufficient effort, not against self-generated initiation. The content of the warning tracks the entry grammar, not just the threshold height.",
+      "fairness_check": "The challenge is fair and well-targeted. It does not deny the first-break problem exists; it argues that the problem is tradition-specific rather than universal, and that threshold and residue policy do more predictive work than I credited. The remaining-risk note about overcorrecting toward social practice theory is honest and helps me locate the defensible core.",
+      "hidden_assumption": null,
+      "new_source": null,
+      "remaining_risk": "The revised model may be unfalsifiable by construction if 'traditions that deny threshold entry' is defined as 'traditions where first-break type matters.' The definition must be grounded in textual evidence of explicit denial (Orange canon 5, Tannisho chapter 1, specific pointing-out liturgies), not in the model's need for a domain where it applies. A second risk is that the four-dimensional coding may be too fine-grained for the available textual evidence, producing underdetermined results.",
+      "revised_claim": "Transformative paths differ in their entry grammar along at least four dimensions: (1) whether the tradition diagnoses an incapacity that blocks autonomous self-initiation, (2) what minimum participation threshold is accepted as genuine entry, (3) what break mechanism, if any, makes entry possible when threshold participation is denied or insufficient, and (4) what residue policy governs inferences after ordinary agency is negated. The first-break problem is a real structural constraint in traditions that explicitly deny the sufficiency of any self-generated minimum participation, which includes major historical formations such as Jodo Shinshu, Augustinian Christianity, and some Dzogchen lineages. In these traditions, first-break type predicts entry-point warnings, effort theory, and verification architecture independently of threshold and residue policy. In traditions that accept peripheral participation or begin from an already-open anthropology, the first-break problem does not arise, and threshold plus residue policy are the operative variables. The comparative framework should therefore code all four dimensions rather than treating any single one as the universal upstream constraint.",
+      "role": "proponent",
+      "sources_cited": [
+        "Jean Lave and Etienne Wenger, Situated Learning: Legitimate Peripheral Participation, 1991",
+        "Second Council of Orange, canon 5 (529 CE)",
+        "Shinran, Tannisho, chapter 1 (Hirota translation)",
+        "SN 55.5, Dutiya Sariputta Sutta",
+        "Tulku Urgyen Rinpoche on rigpa and pointing-out instruction",
+        "Augustine, On the Predestination of the Saints, Book I, chapters 3 and 5"
+      ],
+      "steelman": "The challenger's strongest move is the three-way separation: incapacity diagnosis, minimum participation threshold, and residue policy after negation. This is genuinely more fine-grained than my original model. The Lave and Wenger source is well-chosen: legitimate peripheral participation shows that novices routinely enter practices without possessing mature competence, and that entry through scaffolded imitation, ritual compliance, or social proximity is neither paradoxical nor grace-dependent. If many traditions work this way, the first-break problem is not the universal upstream constraint I claimed. The residue policy concept adds a variable I missed entirely: what a tradition licenses after it denies ordinary agency. That variable does real explanatory work, because traditions that share the same incapacity diagnosis can diverge sharply depending on whether they authorize a hidden giver, keep testing every proposed remainder, or dissolve the question into practice.",
+      "strongest_objection": null,
+      "test_that_would_settle_it": "Select six traditions: two that accept threshold entry (Theravada sangha entry, Confucian self-cultivation), two with severe first-break problems and different mechanisms (Jodo Shinshu cosmic gift, Augustinian prevenient grace), and two with non-standard entry grammars (Zen great doubt as residue-testing, Dzogchen self-disclosure). Code each for all four dimensions: incapacity diagnosis, participation threshold, break mechanism, and residue policy. Then code their entry-point warnings, effort theory, verification method, and characteristic failure mode. Run two regressions: one predicting entry warnings from threshold plus residue policy alone, one adding first-break type. If the second model shows significantly better fit for the high-severity traditions without overfitting, first-break type survives as an independent variable. If threshold and residue policy alone account for the variation, the first-break model should be folded into the challenger's framework as a special case of very low threshold acceptance.",
+      "turn": 2,
+      "turn_type": "rebuttal",
+      "verdict_on_revision": "transformed"
+    },
+    {
+      "agent": "codex",
+      "argument": "The revision is no longer the original First-Break Problem. It is better, but it is transformed. The original claimed that every contemplative tradition must solve the same structural circularity. The revised claim says some traditions face a severe first-break problem, while others work through peripheral participation, inherited forms, latent capacity, or no-break anthropology. That is a major retreat and a real improvement. I accept the Proponent's point that Orange and Shinran are not answered by Lave and Wenger. Those cases do not merely lower the entry threshold; they deny that the threshold act originates naturally. But the Proponent now has a narrower burden: show that the specific break mechanism explains more than the broader entry grammar already explains. The named crux is therefore close to correct. The decisive issue is independent predictive lift under clean coding. If first-break type predicts distinctive warnings and effort structures from separate evidence, it survives as an irreducible variable. If the apparent prediction comes from using the same doctrinal claims to define the mechanism and the warning, the model collapses into a useful taxonomy rather than a predictive theory.",
+      "claim_units": [
+        "The original universal first-break claim has been withdrawn.",
+        "The revised framework is a four-variable entry grammar, not a one-variable first-break model.",
+        "First-break type may remain useful in high-severity traditions that explicitly deny self-generated threshold entry.",
+        "The claimed predictive value now depends on showing that break mechanism adds explanatory power beyond threshold, institution, anthropology, and residue policy.",
+        "The proposed crux is close to right, but must prevent circular case selection and source overlap."
+      ],
+      "concessions": [
+        "The revision is stronger than the original in accuracy, even though it is transformed in scope.",
+        "Peripheral participation does not dissolve Orange or Shinran, because those sources deny not only mature capacity but the natural beginning of faith or trust.",
+        "The Proponent is right that a high threshold is not the same as a first-break problem. A demanding practice can warn against laziness, while a first-break tradition warns against self-generated initiation.",
+        "Residue policy may operate after a first-break claim in some traditions, so it should not simply replace break mechanism in every case."
+      ],
+      "counter_model": "The best final counter-model is still Compound Entry Grammar with first-break as a conditional subvariable. First ask whether the tradition accepts a minimal participation threshold. Then code incapacity diagnosis and residue policy. Only when the tradition explicitly denies self-generated threshold entry should first-break mechanism be coded as an additional variable. This keeps the Proponent's surviving insight without letting first-break language govern traditions where threshold, inheritance, imitation, or latent capacity already explain entry.",
+      "crux": "The real crux is whether first-break mechanism can be coded independently and then predict out-of-sample entry safeguards and effort theory better than threshold, anthropology, institution, and residue policy alone.",
+      "crux_assessment": "The named crux is mostly the real crux, but it needs sharpening. The phrase 'traditions that explicitly deny threshold entry' must be defined from evidence independent of the predicted safeguards. The test also needs to show that break mechanism is separable from residue policy. Without those controls, the model can confirm itself by redescribing its own examples.",
+      "defense": "The challenger position survives as a demand for disciplined coding. The general upstream variable is not first-break type alone, but entry grammar. First-break type earns a place only if it predicts concrete warnings, effort theories, and verification practices after the other entry variables are already accounted for.",
+      "fairness_check": "The revision fairly absorbs the challenge rather than evading it. It grants peripheral participation, no-break anthropology, and residue policy as real variables. It also correctly notes that threshold analysis alone does not explain traditions that explicitly deny self-generated entry. My remaining concern is not that first-break language is useless, but that its independent predictive value is still unproven.",
+      "hidden_assumption": "The revision assumes that break mechanism can be operationally separated from residue policy and institutional form. That separation is not guaranteed. In Shinran, Amida's working, authorized remainder, warning against calculation, and communal teaching structure may be one integrated grammar rather than separable variables. In Augustine and Orange, prevenient grace may likewise be both mechanism and residue policy. If the variables cannot be coded independently, the model's added complexity may not buy real explanatory gain.",
+      "new_source": null,
+      "remaining_risk": "The main remaining risk is circularity: the high-severity cluster may be defined by the very warnings it is supposed to predict. A second risk is underdetermination: the textual record may not be fine-grained enough to distinguish break mechanism from residue policy, especially in tightly integrated theological systems.",
+      "revised_claim": "The Proponent's revision should be treated as a transformed and narrower model: first-break type is not the universal source of practice architecture, but a conditional variable inside a broader entry-grammar framework. It applies where textual and practical evidence explicitly deny self-generated threshold participation. Its value depends on independent predictive lift, not on the intuitive force of the high-severity examples.",
+      "role": "challenger",
+      "sources_cited": [
+        "Jean Lave and Etienne Wenger, Situated Learning: Legitimate Peripheral Participation, 1991",
+        "Second Council of Orange, canon 5, 529 CE",
+        "Shinran, Tannisho, chapter 1, Hirota translation",
+        "SN 55.5, Dutiya Sariputta Sutta",
+        "Augustine, On the Predestination of the Saints, Book I, chapters 3 and 5",
+        "Tulku Urgyen Rinpoche on rigpa and pointing-out instruction"
+      ],
+      "steelman": "The Proponent made the right concession: the first-break problem is not universal, but it is real where a tradition explicitly denies that any self-generated minimum act can found the path. The revised model is now a compound entry grammar, with threshold, incapacity diagnosis, break mechanism, and residue policy. That is much more defensible than the original universal claim, and it preserves the strongest cases: Orange, Shinran, and some pointing-out lineages.",
+      "strongest_objection": "The revised model risks becoming unfalsifiable by reserving first-break type for cases already identified by first-break language. If Orange, Shinran, or Dzogchen are selected because they explicitly deny self-initiation, and then the same texts are used to show that break mechanism predicts warnings against self-initiation, the result may be tautological. The test must separate inclusion criteria, predictor coding, and outcome coding, or first-break type will look predictive because it was built from the same doctrinal material as the predicted warnings.",
+      "test_that_would_settle_it": "Pre-register coding rules for threshold acceptance, incapacity diagnosis, residue policy, institution, and break mechanism. Use one source set to classify traditions and a separate source set to code entry warnings, effort theory, and verification practices. If adding first-break mechanism improves prediction in explicitly high-severity traditions without using the same passages to define both predictor and outcome, the Proponent's retained variable survives. If not, first-break becomes a descriptive subtype of entry grammar.",
+      "turn": 3,
+      "turn_type": "counter_rebuttal",
+      "verdict_on_revision": "transformed"
+    }
+  ]
+}
