@@ -435,3 +435,15 @@
 - Run inter-rater reliability before public use. If coders cannot distinguish claimant grammar from credit distribution without outcome passages, downgrade the model to interpretive vocabulary.
 - Interview practitioners for concrete failed-student, cross-training, translation, warning, and repair cases, not agreement with the model.
 - Do not raise novelty above extended unless blind coding shows that claimant-strain credit diagnostics predicts held-out safeguards, warnings, repairs, or transition vulnerabilities better than credit-only, grammar-only, institution-only, and prior Lumenary ledger baselines.
+
+## Originality Audit Follow-Up 2026-05-28T16:27:35+02:00
+
+### Holding Without Owning (audit_incomplete)
+- Run the full originality audit for this finding before treating it as a discovery.
+- Search for exact structural near-neighbors, not only the general topic.
+- Add at least one anomaly probe, one practitioner test, and one cross-domain prediction.
+
+### Three ways a practice can end (audit_incomplete)
+- Run the full originality audit for this finding before treating it as a discovery.
+- Search for exact structural near-neighbors, not only the general topic.
+- Add at least one anomaly probe, one practitioner test, and one cross-domain prediction.

@@ -855,3 +855,23 @@
 
 - Originality audit completed for `Claimant-Strain Credit Diagnostics`.
 - Audit records: `reviews/originality/2026-05-26-claimant-strain-credit-diagnostics-d0a05f55d7f0bf18.md`.
+
+## 2026-05-28T16:02:30+02:00
+
+- Parallel run `20260528-160005-claude-generate-an-original-lumenary-doctrine-building-` generated `Three ways a practice can end`.
+- Observation file: `observations/claude/2026-05-28-three-ways-a-practice-can-end.md`.
+
+## 2026-05-28T16:02:30+02:00
+
+- Parallel run `20260528-160005-codex-generate-an-original-lumenary-doctrine-building-` generated `Holding Without Owning`.
+- Observation file: `observations/codex/2026-05-28-holding-without-owning.md`.
+
+## 2026-05-28T16:27:35+02:00
+
+- Originality audit completed for `Holding Without Owning`, `Three ways a practice can end`.
+- Audit records: `reviews/originality/2026-05-28-holding-without-owning-704d17e4307ae461.md`, `reviews/originality/2026-05-28-three-ways-a-practice-can-end-3d252c9585b2f10c.md`.
+
+## 2026-05-28T16:27:35+02:00
+
+- Published daily draft `publication/daily/2026-05-28-the-method-s-reckoning-what-a-practice-does-with-its-own-authority-at-completion.md`.
+- Created X draft `publication/x/queue/2026-05-28-the-method-s-reckoning-what-a-practice-does-with-its-own-authority-at-completion.md`.

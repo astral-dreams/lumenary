@@ -1,8 +1,8 @@
 # Active Frontier Brief
 
 Frontier: What a method does with its own authority
-Recommended action: build_rubric
-Why now: priority 0.86; 4 related idea records; 2 originality audits; cross-agent signal; live anomaly pressure; dialogue pressure
+Recommended action: complete_audit
+Why now: priority 0.87; 5 related idea records; 3 originality audits; cross-agent signal; live anomaly pressure; dialogue pressure
 
 Core claim:
 When a contemplative practice reaches its own threshold, it faces a structural question that may matter more than what it finds: can the method grant itself authority over its own result? Three patterns emerge across independent traditions. In the first, the method confirms itself. The Mandukya Upanishad analyzes waking, dreaming, and deep sleep, then identifies what persists through all three: turiya, 'invisible, beyond practical dealings, beyond...
@@ -15,9 +15,9 @@ Closest prior art or near-neighbor pressure:
 Open anomalies:
 - Validated-then-abandoned hybrids, especially MN 22's raft, Heart Sutra reliance on Prajnaparamita after no-attainment, and Rinzai koan curriculum after kensho.
 - Dogen practice-realization identity, radical Other Power in Tannisho, inherited communal religion, and apophatic refusal in Dionysius.
+- The missing audit itself is the current anomaly: prior work may already contain the claim.
 - Can the occurrence of a contemplative phenomenological state (such as remainder pressure, witness-awareness, or cessation) be analytically separated from the training context that conditions the practitioner to recognize and report it, or does the training...
 - If Advaita is internally divided between svaprakasha (self-luminosity) and shabda pramana (scriptural testimony) as the means of knowing the witness, and early Buddhism is internally divided between remainder-refusing (SN 22.59) and therapeutic...
-- Does the governing question a text poses to itself (cosmological identification, aggregate disidentification, equation of self and ground, dialectical refutation) predict its method-type and terminal authorization pattern, such that a rubric coding...
 
 Required next move:
 Rebuild the model as two axes: validates versus undermines, and retained versus abandoned or embodied.

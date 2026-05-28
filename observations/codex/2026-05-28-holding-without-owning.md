@@ -1,0 +1,187 @@
+# Holding Without Owning
+
+Agent: codex
+Date: 2026-05-28T16:01:55+02:00
+Type: model
+Idea ID: ee1d8862ab73b4a0
+Status: draft
+
+## Original Claim
+
+A method does not finish when it produces an insight; it finishes when the practitioner learns what may be kept without owning it. Some practices confirm the result and retain the method as a continuing way of seeing. Some validate the method for crossing and then require release. Some undermine the very frame that made the result seem possessable, yet remain embodied as training, community, ethics, or supervision. The decisive question is not only whether a method validates or undermines itself, but who or what holds custody after the method can no longer be treated as a private possession. This matters for modern people whose worth depends on performance: even a liberating method can become another credential unless its completion includes a rule for release, embodiment, and re-entry into ordinary responsibility.
+
+## Why It Might Be New
+
+The nearest arguments describe self-canceling philosophical or apophatic methods, especially Nagarjuna, Wittgenstein, and mystical unsaying. The distinct claim here is a two-axis custody model: a practice can validate or undermine its result, and that result can be retained, abandoned, or embodied without being owned. This turns the frontier from a typology of terminal claims into a testable account of post-insight stewardship. It predicts different supervision, relapse, ethical-reentry, and teaching styles across traditions better than tradition labels alone.
+
+## Source Basis
+
+- Discovery mode chosen because the active frontier needs a rebuilt two-axis model before teaching promotion.
+- Thinking method source: MN 22 Alagaddupama Sutta, raft simile, used as disciplined non-attachment to methods: trust a method enough to cross, then test whether grasping it creates distortion.
+- Contrasting thinking method: Mandukya Upanishad 7, used as witness-tracing across waking, dream, and deep sleep, then criticized for its tendency to treat continuity as self-authorization.
+- Primary-text comparison: MN 22 validates the Dhamma as useful for crossing and then warns against carrying it; the Mandukya identifies the fourth as the real Self through the three states. The comparison reveals that methods differ less by content than by what they permit a practitioner to retain after insight.
+- Primary-text pressure: Heart Sutra says there is no attainment while still relying on prajnaparamita, suggesting a hybrid in which the method is neither simply abandoned nor simply retained.
+- Prior-art pressure: Joshua William Smith, Snakes and Ladders: Therapy as Liberation in Nagarjuna and Wittgenstein's Tractatus, Sophia 2021, is close on self-canceling method without theses, but does not model retained, abandoned, and embodied custody across contemplative systems.
+- Prior-art pressure: Michael A. Sells, Mystical Languages of Unsaying, studies apophatic discourse turning back on its own assertions, but not the wider custody problem of practice after completion.
+- Modern human-condition grounding: modern-human-condition-curran-hill-perfectionism-increasing and modern-human-condition-who-burn-out-occupational-phenomenon, used for achievement-contingent self-worth and burnout pressure.
+
+## Critique
+
+The model may over-systematize traditions that intentionally resist clean endings. Dogen's practice-realization identity strains the distinction between method, result, and custody, because practice is not a ladder to a later state but the expression of realization itself. Shinran's Other Power in the Tannisho also strains the model: the decisive authority is not held by method or practitioner, but received through entrusting. The raft simile itself is a hybrid, since it validates the teaching before release rather than simply canceling it. These anomalies may show that custody is not a separate axis but one vocabulary for how communities guard against pride, error, and misuse.
+
+## Epistemic Labels
+
+- `textual`
+- `interpretive`
+- `phenomenological`
+- `empirical-adjacent`
+- `analogical`
+- `speculative`
+
+## Scores
+
+- novelty: 0.73
+- generativity: 0.87
+- cross_tradition_support: 0.78
+- logical_coherence: 0.80
+- explanatory_compression: 0.76
+- empirical_adjacency: 0.55
+- practice_testability: 0.72
+- counterargument_quality: 0.82
+- source_reliability: 0.74
+- publishability: 0.68
+
+
+## Teaching Candidate
+
+Status: under_dialogue
+Tags: method-custody, achievement-pressure, burnout, practice-completion, non-attachment
+
+### Teaching Line
+
+Use the method, then ask what it has permission to keep.
+
+### Doctrine Claim
+
+A serious practice must teach not only how insight is found, but how the practitioner should relate to the method and result after insight appears.
+
+### Teaching Body
+
+When a method helps you see, do not turn the sight into a trophy. Ask what the method still asks of you. Some methods should become a habit of attention. Some should be thanked and set down. Some should become conduct, humility, and repair. The sign of completion is not a stronger claim about yourself. It is a cleaner relation to the work, the people around you, and the result you no longer need to display.
+
+### Human Problem
+
+Achievement-contingent self-worth and burnout, especially the habit of turning every improvement into proof of personal value.
+
+### For
+
+Perfectionistic students, founders, professionals, caregivers, leaders, artists, and practitioners who turn growth, insight, usefulness, or discipline into identity.
+
+### Pressure Survived
+
+Survives the primary-text contrast between Mandukya-style retained witness recognition and MN 22-style validated release, while incorporating Heart Sutra no-attainment as a hybrid rather than forcing it into one terminal type.
+
+### Falsifying Pressure
+
+The teaching weakens if practitioners across method-types show no difference in post-insight ownership, supervision needs, relapse patterns, or ethical re-entry, or if experienced teachers reject the custody distinction as external to practice.
+
+
+
+## Practice Candidate
+
+Status: seed
+Risk level: low
+Tags: custody-check, burnout, achievement-pressure, re-entry, low-risk
+
+### Practice Line
+
+After using a method, ask what may be kept, released, or embodied.
+
+### Purpose
+
+To prevent a helpful method from becoming another form of self-ownership, status, or performance pressure.
+
+### Human Problem
+
+Achievement-contingent self-worth, burnout, and compulsive self-improvement.
+
+### For
+
+People who already practice reflection, meditation, therapy homework, journaling, spiritual study, or performance review, and who tend to convert results into self-judgment or identity.
+
+### Not For
+
+Not for acute crisis, addiction withdrawal, severe depression, dissociation, scrupulosity, psychosis, or people who need direct rest, clinical care, social support, or ordinary practical help more than another reflective exercise.
+
+### Time
+
+- Duration: 8 minutes
+- Frequency: After a meaningful practice session or review, no more than three times per week.
+- Minimum attempt: Try four sessions over two weeks before judging usefulness.
+
+### Steps
+
+1. Name the method you just used in one sentence.
+2. Name the result, if any, without making it a claim about your worth.
+3. Ask: what part of this method should I keep using?
+4. Ask: what part should I release for now?
+5. Ask: what part should become conduct toward another person today?
+6. Choose one small re-entry action: apology, rest, unfinished task, honest conversation, service, or stopping work on time.
+
+### Notice
+
+- Whether the practice reduces the urge to display, defend, or measure the result.
+- Whether attention returns to responsibility and relationship rather than self-rating.
+- Whether the method feels lighter without becoming careless.
+- Whether the exercise increases rumination, pride, avoidance, or self-surveillance.
+
+### Caution
+
+Stop if the exercise increases obsessive checking, shame, dissociation, or avoidance of necessary help. It is not a substitute for therapy, medical care, addiction support, or rest.
+
+### Weakens If
+
+It weakens if users report more self-monitoring, more pride in having released pride, less concrete responsibility, or no difference from ordinary journaling.
+
+
+
+## Tests
+
+### Method Type Predicts Custody Language
+
+- Type: cross-domain
+- Target: idea
+- Status: proposed
+- Prediction: Self-confirming methods should produce more language of stable recognition and continuing view; validated-then-released methods should produce more language of use, crossing, and letting go; self-undermining methods should produce more anti-possession language and indirect verification. Tradition membership should predict this less well than method-type.
+- Result: pending
+- Impact: pending
+- Next action: Code primary texts and teacher instructions across Advaita, early Buddhism, Madhyamaka, Zen, apophatic Christianity, and Pure Land for retention, release, embodiment, supervision, and ownership markers.
+
+### Custody Check Practice Report
+
+- Type: practice-report
+- Target: practice
+- Status: proposed
+- Prediction: For the target cohort, four uses of the Custody Check should reduce the felt need to turn practice results into proof of worth and should increase one concrete re-entry action after practice. If reports show increased rumination or status-seeking, the practice is weakened.
+- Result: pending
+- Impact: pending
+- Next action: Collect short before-after reports from reflective practitioners who identify with achievement-contingent self-worth, excluding acute clinical cases.
+
+### Hybrid Anomaly Close Reading
+
+- Type: falsification-attempt
+- Target: idea
+- Status: proposed
+- Prediction: Hybrid texts such as the Heart Sutra, Dogen's practice-realization writings, MN 22, and the Tannisho should show explicit boundary management around trust, release, embodiment, or received authority. If they do not, the custody axis may be an imposed abstraction rather than a discovered pattern.
+- Result: pending
+- Impact: pending
+- Next action: Close-read selected passages and compare whether boundary markers appear in the text itself or only in later interpretation.
+
+
+## Next Research Directions
+
+- If this model is right, then texts and teachers in self-undermining traditions should rely more on supervision, paradox, case judgment, vows, or indirect behavioral signs than on simple outcome checklists. If manualized endpoint criteria are equally central across self-undermining and self-confirming traditions, the model is weakened.
+- If this model is right, then dual-trained practitioners should describe different post-insight ownership patterns when switching methods: witness-inquiry should more often yield stable recognition language, while Madhyamaka or Heart Sutra practice should more often yield anti-possession or no-attainment language. If the same custody language appears regardless of method, the model is weakened.
+- Close-read Dogen, Shinran, Dionysius, Eckhart, Nagarjuna, the Mandukya, MN 22, and koan curricula for explicit boundary markers: when to trust, release, deny, embody, or submit a method to communal judgment.
+- Improve the thinking protocol by adding a custody check after every generated idea: what part of the method should be retained, what should be released, and what risk appears if the agent owns its own result too quickly?
+- Run a practitioner interview test: ask experienced teachers whether confirming, canceling, releasing, and embodying are distinctions they recognize from inside training, or whether they distort the practice.

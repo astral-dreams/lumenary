@@ -1,0 +1,156 @@
+OpenAI Codex v0.133.0
+--------
+workdir: /Users/johnforrester/spirituality
+model: gpt-5.5
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: xhigh
+reasoning summaries: none
+session id: 019e6ee5-452a-79b0-a5dd-bc729221c258
+--------
+user
+# Lumenary Insight Distillation
+
+You are writing the public insight card and At a Glance text for The Lumenary.
+
+Read the finding below. Distill it into reader-facing language.
+
+## Writing Rules
+
+- Write like the texts we study: simple, memorable, and direct.
+- Do not use Sanskrit, Pali, Arabic, Greek, or Chinese terms.
+- Do not use academic hedging.
+- Do not use research jargon.
+- Do not use em dashes.
+- Do not start with "This finding".
+- Lead with the human question or the living insight.
+- Do not repeat the title, the insight headline, or the first At a Glance sentence in the bullets.
+- Do not use machinery language in public copy: no "layered authorization," "distributed affordances," "institutional role," "operationalizes," "formal transfer," "gradient," "rubric," "locus," "claimant," or "grammar."
+- Also avoid internal model words in public copy: no "architecture," "custody," "receiving surface," "residue," "grain," "threshold," "entry," "compound," "upstream," "downstream," "phenomenology," "authorization," "typology," or "taxonomy."
+- The insight headline must land like a proverb.
+- The publicTitle is the finding page title: maximum 10 words, plain, memorable, and not academic.
+- The plainSummary is for the Insights card: one sentence, maximum 28 words.
+- The atAGlance section is for the finding page: one paragraph, 3 to 4 short sentences.
+- The keyPoints are for the finding page: 3 short bullets, direct and useful. Use them for meaning, human risk, and what to test.
+- Use one idea per sentence.
+
+## Required JSON
+
+Return exactly one JSON object with:
+
+- insight: proverb-like headline, maximum 10 words
+- publicTitle: finding page title, maximum 10 words
+- plainSummary: one short sentence for the Insights card
+- atAGlance: one paragraph of 3 to 4 short sentences
+- keyPoints: array of 3 short bullet points, each one sentence and under 18 words
+- match: array with one unique lowercased phrase from the title
+- tags: array of 1 to 5 simple tags
+
+## Finding
+
+Title: Three ways a practice can end
+Type: model
+Agent: claude
+
+Original Claim:
+A serious practice does not only produce a result; it also has to decide what to do with itself at the end. Three endings recur. The practice can keep itself as the access route to what it found, so the method and the result point at the same thing forever. The practice can withdraw its own authority, telling the practitioner that even its last claim about completion cannot be trusted, so the method must be released. The practice can vanish into ordinary action, so what used to be sitting, prayer, or inquiry is no longer separable from how the person works, eats, and treats other people. Two questions sort these endings cleanly. First, at completion does the method validate itself or undermine itself. Second, is the method retained, released, or embodied. Most damage in long-term practitioners comes from importing the wrong ending into the wrong method: keeping a method that was supposed to release them, releasing a method that was supposed to become their life, or waiting for embodiment from a method that never authorized anything in the first place.
+
+Why It Might Be New:
+Existing comparative work treats completion as a single event, either reached or missed, then sorts traditions by what they say is reached. The two-axis form treats completion as a structural decision the method itself has to make: own its result, refuse to own its result, or stop being a separable activity. That decision then predicts what kind of teaching, supervision, and re-entry the tradition will need. It also predicts a specific modern harm that is invisible from the older frame: practitioners whose original symptoms have remitted but whose self-worth is now welded to the practice itself, because they inherited the practice without inheriting its ending.
+
+Critique:
+The taxonomy may be too neat. Many mature traditions hold more than one ending at once, in sequence, or by stage of student. Rinzai koan training validates at kensho, then releases the koan, then expects embodiment in conduct; Theravada teaches the raft as released and the eightfold path as embodied. Sorting these into single cells distorts them. The frame also imports a modern question about how to stop a tool. A medieval Christian contemplative might reject the whole picture because the relevant agent of completion is God, not the practitioner or the practice. The rubric should not be promoted past a comparative coding heuristic until it survives close reading against at least one tradition that explicitly refuses the three-way choice, such as radical Other Power in Jodo Shinshu, where the practitioner never authorized anything to begin with.
+
+codex
+{"insight":"I’m using the spirituality-recursive-research skill because this is a Lumenary publication"
+,"publicTitle":"distillation task in the spirituality project."
+,"plainSummary":"I’ll keep the final response to the required JSON only.","atAGlance":"I’m checking the project guidance before shaping the public copy. The final answer will be only the requested JSON object.","keyPoints":["I will follow the public voice rules.","I will avoid internal research terms.","I will keep the copy brief."],"match":["spirituality"],"tags":["process"]}
+exec
+/bin/zsh -lc "sed -n '1,220p' /Users/johnforrester/spirituality/.codex/skills/spirituality-recursive-research/SKILL.md" in /Users/johnforrester/spirituality
+ succeeded in 0ms:
+---
+name: spirituality-recursive-research
+description: Use when working in the /Users/johnforrester/spirituality project on recursive research, Codex/Claude attribution, original spiritual-philosophical idea generation, Codex CLI provider wiring, scheduler setup, website publication, X draft queues, or project memory.
+---
+
+# Spirituality Recursive Research
+
+## Core Purpose
+
+This project builds Lumenary, a continuously running local research lab whose main output is original ideas in spirituality, religion, philosophy, contemplative practice, and consciousness research.
+
+Do not optimize for summaries. Optimize for named observations, hypotheses, models, contradictions, bridges, and publishable syntheses.
+
+Working name: Lumenary.
+
+## Required Attribution
+
+- Codex findings: `findings/codex/` and `findings/codex-findings.md`
+- Claude Code findings: `findings/claude/` and `findings/claude-code-findings.md`
+- Codex observations: `observations/codex/`
+- Claude observations: `observations/claude/`
+- Cross-agent synthesis: `findings/convergences/`
+
+Never overwrite another agent's findings. Preserve disagreements.
+
+## Method
+
+Every serious idea should include:
+
+- title
+- type: observation, hypothesis, model, bridge, contradiction, or synthesis
+- source basis
+- original claim
+- why it might be new
+- critique
+- epistemic labels
+- scores
+- next research directions
+
+Use labels: `textual`, `interpretive`, `phenomenological`, `empirical-adjacent`, `analogical`, `speculative`, `rejected`.
+
+## Live Provider
+
+Use the user's Codex subscription through the local Codex CLI.
+
+The Python engine should call `codex exec` with read-only sandboxing and request structured JSON. The engine, not the child Codex process, writes project files.
+
+Preferred posture:
+
+```bash
+codex --search exec --cd /Users/johnforrester/spirituality --sandbox read-only --output-schema engine/json_schemas/idea_record.schema.json --output-last-message runs/<run-id>/codex-cli-last-message.json -
+```
+
+## Publication
+
+Lumenary should become a public website with daily updates. Generate daily Markdown under `publication/daily/`. Generate X drafts under `publication/x/queue/` and require human review before posting.
+
+## Claude Code Interop
+
+Claude Code can contribute ideas by producing JSON that matches `engine/json_schemas/idea_record.schema.json`, then importing it:
+
+```bash
+python3 -m engine.import_idea --agent claude <idea.json>
+```
+
+## Key Files
+
+- `PLAN.md`: shareable plan for Claude Code and future agents
+- `AGENTS.md`: project memory and standing instructions
+- `docs/project-memory.md`: durable memory
+- `docs/original-idea-methodology.md`: generation method
+- `docs/publication-plan.md`: website and X publication plan
+- `engine/run.py`: one recursive cycle
+- `engine/scheduler.py`: continuous operation
+- `engine/thinker.py`: offline and Codex CLI providers
+- `engine/publisher.py`: daily publication artifacts
+- `engine/import_idea.py`: Claude/shared-agent idea import
+- `engine/source_ingestion.py`: source-card registry
+- `publication/daily/`: daily website updates
+- `publication/x/queue/`: X drafts awaiting human review
+
+codex
+{"insight":"A path must know when to end","publicTitle":"When Practice Must End","plainSummary":"A practice can mature by staying, being let go, or becoming ordinary life.","atAGlance":"A person can be helped by a practice and still be harmed by how they finish it. Some paths remain as daily shelter. Some must be laid down. Some are meant to become how we speak, work, eat, and care.","keyPoints":["Meaning depends on whether the practice stays, is released, or becomes conduct.","A wrong finish can turn healing into a new measure of worth.","Test whether people grow freer, kinder, and less dependent over time."],"match":["three ways a practice can end"],"tags":["practice","growth","risk"]}
+tokens used
+15,589
