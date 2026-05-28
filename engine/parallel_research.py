@@ -15,6 +15,7 @@ from .doctrine import write_candidates_from_idea
 from .distill import (
     backfill_distillations,
     distill_new_ideas,
+    repair_distillation_store,
     validate_distillation_store,
 )
 from .dialectic import run_dialectic
@@ -228,6 +229,43 @@ def _run_command(
     return process
 
 
+def _pull_latest_if_available(root: Path) -> None:
+    process = _run_command(
+        root,
+        ["git", "pull", "origin", "main", "--ff-only"],
+        label="git-pull",
+        check=False,
+    )
+    if process.returncode == 0:
+        return
+
+    stderr = process.stderr.lower()
+    hard_fail_markers = (
+        "would be overwritten",
+        "not possible to fast-forward",
+        "not possible to fast forward",
+        "divergent branches",
+        "merge conflict",
+        "needs merge",
+    )
+    if any(marker in stderr for marker in hard_fail_markers):
+        raise RuntimeError(
+            "git-pull failed with a local repository conflict. "
+            "See runs/parallel-git-pull.stderr.log."
+        )
+
+    print(
+        json.dumps(
+            {
+                "event": "git-pull-warning",
+                "message": "Continuing with local checkout after transient git pull failure.",
+            },
+            sort_keys=True,
+        ),
+        flush=True,
+    )
+
+
 def _scan_public_copy(root: Path) -> None:
     dist = root / "dist"
     mark = chr(0x2014)
@@ -387,6 +425,7 @@ def _publish_and_deploy(root: Path, *, skip_deploy: bool) -> None:
         dry_run=True,
     )
     missing_count = backfill_distillations(distill_config)
+    repaired_count = repair_distillation_store(distill_config)
     quality_issues = validate_distillation_store(distill_config)
     if quality_issues:
         raise RuntimeError(
@@ -398,6 +437,7 @@ def _publish_and_deploy(root: Path, *, skip_deploy: bool) -> None:
             {
                 "event": "public-copy-gate",
                 "missing_distillations": missing_count,
+                "repaired_distillations": repaired_count,
             },
             sort_keys=True,
         ),
@@ -455,7 +495,7 @@ def main() -> None:
         return
 
     try:
-        _run_command(root, ["git", "pull", "origin", "main", "--ff-only"], label="git-pull")
+        _pull_latest_if_available(root)
         codex_config = EngineConfig.load(
             root=root,
             agent="codex",

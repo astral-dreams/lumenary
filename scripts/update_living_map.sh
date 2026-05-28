@@ -4,7 +4,7 @@ set -euo pipefail
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 cd "$ROOT"
 
-export PATH="/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:${PATH:-}"
+. scripts/lumenary_env.sh
 
 mkdir -p runs/map-refresh
 
@@ -37,6 +37,7 @@ done
 
   echo "$(date): Backfilling missing reader-facing finding copy and validating existing copy."
   python3 -m engine.distill --backfill --provider offline
+  python3 -m engine.distill --repair-store --provider offline
   python3 -m engine.distill --validate-store
 
   echo "$(date): Building site so all three living SVG maps are regenerated."

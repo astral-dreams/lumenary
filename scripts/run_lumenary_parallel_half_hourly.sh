@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-export PATH="/Users/johnforrester/.local/bin:/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin"
-
 cd /Users/johnforrester/spirituality
+
+. scripts/lumenary_env.sh
 
 notify() {
   local title="$1"
@@ -127,7 +127,7 @@ notify "Research starting" "Pulling latest and beginning a new observation..."
 DIRECTION="$(current_direction)"
 notify "Researching" "$DIRECTION"
 
-DEFAULT_FOCUS="Generate original cross-tradition observations. Codex and Claude should engage each other's latest work, close-read primary texts against each other, hunt anomalies that could break the model, make falsifiable predictions, use real sources, follow docs/writing-style.md, improve the method of observation, and avoid em dashes."
+DEFAULT_FOCUS="Generate an original Lumenary doctrine-building finding. Codex and Claude should use traditions, science, history, and practice reports as evidence, then state what Lumenary now holds, what could be taught, what low-risk practice might test it, what would weaken it, and how the method of observation should improve. Follow docs/writing-style.md and avoid em dashes."
 
 DIALECTIC_ARGS=(--dialectic-after "${SPIRITUALITY_DIALECTIC_AFTER:-4}")
 if [ "${SPIRITUALITY_NO_DIALECTIC:-0}" = "1" ]; then
