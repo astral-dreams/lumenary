@@ -741,3 +741,117 @@
 
 - Published daily draft `publication/daily/2026-05-26-the-handoff-point-is-the-variable.md`.
 - Created X draft `publication/x/queue/2026-05-26-the-handoff-point-is-the-variable.md`.
+
+## 2026-05-26T15:45:16-07:00
+
+- Originality audit completed for `The Register-Sensitive Path Interface`.
+- Audit records: `reviews/originality/2026-05-26-the-register-sensitive-path-interface-35681329dc02292c.md`.
+
+## 2026-05-26T16:09:55-07:00
+
+- Originality audit completed for `The Vector Capacity Ledger`.
+- Audit records: `reviews/originality/2026-05-26-the-vector-capacity-ledger-08ac38c26b5e49aa.md`.
+
+## 2026-05-26T16:23:53-07:00
+
+- Originality audit completed for `The Entry-State Ledger`.
+- Audit records: `reviews/originality/2026-05-26-the-entry-state-ledger-4299246a4ab81e4e.md`.
+
+## 2026-05-26T16:44:13-07:00
+
+- Originality audit completed for `The Entry-Claimant Grammar`.
+- Audit records: `reviews/originality/2026-05-26-the-entry-claimant-grammar-756dc4935ec9d174.md`.
+
+## 2026-05-26T17:05:59-07:00
+
+- Originality audit completed for `Layered Authorization of Beginning`.
+- Audit records: `reviews/originality/2026-05-26-layered-authorization-of-beginning-8a8d544ce3b6f17a.md`.
+
+## 2026-05-26T17:20:45-07:00
+
+- Originality audit completed for `The Claimability and Support Rubric`.
+- Audit records: `reviews/originality/2026-05-26-the-claimability-and-support-rubric-baeaa976a10337e6.md`.
+
+## 2026-05-26T17:30:05-07:00
+
+- Originality audit completed for `The Surplus Grain Test`.
+- Audit records: `reviews/originality/2026-05-26-the-surplus-grain-test-3d2d262887cc1740.md`.
+
+## 2026-05-26T17:42:50-07:00
+
+- Originality audit completed for `The Transfer Profile: Formal Boundaries and Dissolution Gradients in Contemplative Practice`.
+- Audit records: `reviews/originality/2026-05-26-the-transfer-profile-formal-boundaries-and-dissolution-gradients-in-contemplative-practice-92ca8dca94e1acc0.md`.
+
+## 2026-05-26T17:52:23-07:00
+
+- Originality audit completed for `Continuity Ecology Under Negation`.
+- Audit records: `reviews/originality/2026-05-26-continuity-ecology-under-negation-fd9108753ae68e6a.md`.
+
+## 2026-05-26T18:07:48-07:00
+
+- Originality audit completed for `Operational Remainder Ecology`.
+- Audit records: `reviews/originality/2026-05-26-operational-remainder-ecology-39a96b7ef7849b21.md`.
+
+## 2026-05-26T18:26:38-07:00
+
+- Originality audit completed for `Custody and Receiving Surface`.
+- Audit records: `reviews/originality/2026-05-26-custody-and-receiving-surface-255ec907071592a1.md`.
+
+## 2026-05-26T18:43:02-07:00
+
+- Originality audit completed for `Threshold Grammar Under Translation Strain`.
+- Audit records: `reviews/originality/2026-05-26-threshold-grammar-under-translation-strain-63091c8c41cd9e28.md`.
+
+## 2026-05-26T18:56:03-07:00
+
+- Wrote Journal entry `publication/journal/2026-05-26-the-hand-that-must-open.md` after the day's research.
+
+## 2026-05-26T18:56:35-07:00
+
+- Originality audit completed for `Practice Architecture as Upstream Condition for Remainder Phenomenology`.
+- Audit records: `reviews/originality/2026-05-26-practice-architecture-as-upstream-condition-for-remainder-phenomenology-d64d7da35f45e724.md`.
+
+## 2026-05-26T19:06:54-07:00
+
+- Originality audit completed for `Entry-Residue Architecture`.
+- Audit records: `reviews/originality/2026-05-26-entry-residue-architecture-a9cd647fde0147c2.md`.
+
+## 2026-05-26T19:24:26-07:00
+
+- Originality audit completed for `Compound Entry Grammar`.
+- Audit records: `reviews/originality/2026-05-26-compound-entry-grammar-f417ef646f5066fa.md`.
+
+## 2026-05-26T19:43:41-07:00
+
+- Originality audit completed for `Prescriptive Custody of Beginnings`.
+- Audit records: `reviews/originality/2026-05-26-prescriptive-custody-of-beginnings-7a1a4b07a241a1b9.md`.
+
+## 2026-05-26T19:59:11-07:00
+
+- Originality audit completed for `Layered Direction and Residue-to-Grain Conversion`.
+- Audit records: `reviews/originality/2026-05-26-layered-direction-and-residue-to-grain-conversion-0d0b8fe11600872e.md`.
+
+## 2026-05-26T20:17:38-07:00
+
+- Originality audit completed for `Layered Direction of Practice`.
+- Audit records: `reviews/originality/2026-05-26-layered-direction-of-practice-e59e1c607fa2dc18.md`.
+
+## 2026-05-26T20:31:59-07:00
+
+- Originality audit completed for `Authority-Boundary Ecology`.
+- Audit records: `reviews/originality/2026-05-26-authority-boundary-ecology-0739a5567c106853.md`.
+
+## 2026-05-26T20:45:07-07:00
+
+- Originality audit completed for `Credit-Constrained Residue Authorization as a Two-Variable Model of Post-Negation Translation Strain`.
+- Audit records: `reviews/originality/2026-05-26-credit-constrained-residue-authorization-as-a-two-variable-model-of-post-negation-translation-strain-a66d453d1d56cbe8.md`.
+
+## 2026-05-26T20:53:53-07:00
+
+- Originality audit completed for `Boundary And Custody At The Threshold`.
+- Audit records: `reviews/originality/2026-05-26-boundary-and-custody-at-the-threshold-c79517a2a7daa9cc.md`.
+
+## 2026-05-26T21:09:18-07:00
+
+- Originality audit completed for `Claimant-Strain Credit Diagnostics`.
+- Audit records: `reviews/originality/2026-05-26-claimant-strain-credit-diagnostics-d0a05f55d7f0bf18.md`.

@@ -9,6 +9,7 @@ from datetime import datetime, timedelta
 from pathlib import Path
 
 from .config import EngineConfig
+from .doctrine import run_doctrine_council
 from .journal import generate_journal_entry
 from .librarian import Librarian
 from .local_time import is_local_timezone, resolve_timezone, timezone_label
@@ -279,6 +280,13 @@ def _maybe_write_journal(
         return
     timezone = resolve_timezone(args.timezone)
     journal_date = datetime.now(timezone).date().isoformat()
+    council_path = run_doctrine_council(config.root, date=journal_date)
+    _log_event(
+        librarian,
+        "doctrine-council",
+        "Reviewed teaching and practice candidates.",
+        extra={"council": str(council_path.relative_to(config.root))},
+    )
     path = generate_journal_entry(
         config,
         date=journal_date,

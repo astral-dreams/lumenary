@@ -1,0 +1,38 @@
+---
+import { getSources, sourceFoundationForSource, type SourceCard } from "../lib/content";
+
+type Props = {
+  items: string[];
+};
+
+const { items } = Astro.props as Props;
+const sourceCards = getSources();
+
+function linkedSourcesFor(item: string): SourceCard[] {
+  const lower = item.toLowerCase();
+  return sourceCards.filter((source) => lower.includes(source.source_id.toLowerCase()));
+}
+---
+
+<ul class="clean-list source-basis-list">
+  {items.map((item) => {
+    const linkedSources = linkedSourcesFor(item);
+    return (
+      <li>
+        <span>{item}</span>
+        {linkedSources.length > 0 && (
+          <span class="source-basis-links">
+            {linkedSources.map((source) => {
+              const foundation = sourceFoundationForSource(source);
+              return (
+                <a href={`/sources/#${source.source_id}`}>
+                  {foundation.label}: {source.title}
+                </a>
+              );
+            })}
+          </span>
+        )}
+      </li>
+    );
+  })}
+</ul>

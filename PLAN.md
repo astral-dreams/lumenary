@@ -1,4 +1,4 @@
-# Lumenary: Recursive Spirituality Research Lab Plan
+# Lumenary: Recursive Plural AI Scientist For Meaning Plan
 
 Audience: Claude Code, Codex, and future agents working in this repo.
 Primary builder: Codex.
@@ -6,11 +6,17 @@ Current date: 2026-05-25.
 
 ## 1. Goal
 
-Build **Lumenary**, a continuously running local research system whose main product is original thought.
+Build **Lumenary**, a continuously running local plural AI scientist whose main product is original doctrine, teaching, and eventually practice.
 
-The system should research religious, spiritual, philosophical, contemplative, and consciousness-related material, then generate new observations, hypotheses, models, bridges, contradictions, and publishable syntheses.
+The system should research religious, spiritual, philosophical, contemplative, historical, scientific, and consciousness-related material, then generate new observations, hypotheses, doctrines, teachings, practices, tests, contradictions, and publishable syntheses.
 
-The point is not to summarize traditions. Research and corpus-building are inputs. Original ideas are the output.
+The point is not to summarize traditions or perform comparative studies. Research, source grounding, and comparison are inputs. The output is a new body of meaning: doctrine that can be criticized, teaching that can be understood, practice that can be tried, and claims that can be observed or tested wherever possible.
+
+The long-range aim is religion-like, but scientifically disciplined: a living teaching system grounded in science, history, tradition, logic, research, practice reports, and the scientific method. Lumenary should never claim authority because it sounds profound. It earns promotion through evidence, coherence, lived usefulness, criticism, debate, and tests.
+
+Lumenary is not an "I." Lumenary is a "we": Codex and Claude Code working as two AI researchers in dialogue. The system should preserve their separate arguments, force disagreement where useful, and synthesize only what survives testing.
+
+The recursive loop is mode-based. It should choose Discovery, Doctrine, or Practice mode based on pressure, not march through a fixed pipeline.
 
 ## 2. Collaboration Rule
 
@@ -23,6 +29,8 @@ Keep agent attribution explicit.
 - Cross-agent synthesis: `findings/convergences/` and `findings/cross-agent-synthesis.md`
 
 Do not overwrite another agent's work. If Codex and Claude disagree, preserve both positions and create a convergence or disagreement note.
+
+The goal is not politeness between agents. The goal is pressure. Codex and Claude should test each other's claims, name weak points, search for counterexamples, and improve the doctrine candidate before it becomes public Lumenary output.
 
 ## 3. Current Architecture Decision
 
@@ -51,28 +59,102 @@ Design principle: nested `codex exec` should research and return structured JSON
 
 ## 5. Recursive Loop
 
+Each 30-minute iteration should first choose a mode:
+
+- Discovery mode: use when a frontier is source-light, stale, or too abstract.
+- Doctrine mode: use when a finding is near teaching promotion or under strong disagreement.
+- Practice mode: use when a Teaching Ready record may imply a low-risk protocol.
+
 Each iteration should:
 
 1. Read project memory: `AGENTS.md`, `docs/project-memory.md`, `state/current_focus.md`, `state/exploration_log.md`, `state/next_directions.md`, and prior findings.
 2. Choose or accept a frontier question.
-3. Research with Codex CLI and web search enabled.
-4. Read `state/thinking_protocol.md`.
-5. Find or reuse a practitioner-method source about how to observe, think, inquire, learn, practice, or gain insight.
-6. Apply that method as a cognitive lens for the run.
-7. Criticize the method itself and compare it with at least one contrasting practice or reasoning discipline.
-8. Synthesize a provisional improvement to the agent's reasoning stance.
-9. Close-read at least two primary texts against each other when possible.
-10. Generate at least one original idea record.
-11. Critique the idea strongly, including an anomaly that strains or breaks the model.
-12. Add at least one falsifiable prediction to the follow-up directions.
-13. Score the idea for research value, treating novelty as provisional.
-14. Write observation Markdown, JSONL, run manifest, prompt, and output.
-15. Write or reuse an Insights distillation under `publication/distillations.jsonl`: exact idea link, proverb headline, one-sentence card summary, and 3-4 sentence At a Glance paragraph.
-16. Run the originality audit under `reviews/originality/`: near-neighbor search, primary-text comparison, unlike statement, anomaly probe, falsifiable prediction, practitioner test, cross-domain test, and recommended score adjustments.
-17. Update exploration state and next directions, including improvements to the next thinking method.
-18. Repeat every 30 minutes during the local research window.
-19. After each research run, generate publication artifacts and deploy the website.
-20. At 5pm in the machine's current local timezone, stop research for the day and write one Journal entry from the day's findings.
+3. Check the modern human-condition foundation and ask what human problem the frontier should serve.
+4. Research with Codex CLI and web search enabled.
+5. Read `state/thinking_protocol.md`.
+6. Find or reuse a practitioner-method source about how to observe, think, inquire, learn, practice, or gain insight.
+7. Apply that method as a cognitive lens for the run.
+8. Criticize the method itself and compare it with at least one contrasting practice or reasoning discipline.
+9. Synthesize a provisional improvement to the agent's reasoning stance.
+10. Close-read at least two primary texts against each other when possible.
+11. Generate at least one original idea record.
+12. Ask whether the idea clarifies a modern human problem: loneliness, addiction, compulsion, withdrawal, anxiety, depression, burnout, grief, meaning loss, digital comparison, feeling unneeded, feeling out of place, or achievement-contingent self-worth.
+13. Ask whether the idea implies a doctrine candidate, teaching principle, or practice protocol.
+14. If it implies practice, specify the target human problem, target cohort, non-fit case, what a person would do, what change is expected, what risks exist, and what observation would count against it.
+15. Run or queue a Codex/Claude dialogue pass: one agent challenges the claim, the other revises or defends it, and the system records what survived.
+16. Critique the idea strongly, including an anomaly that strains or breaks the model.
+17. Add at least one falsifiable prediction to the follow-up directions.
+18. Write or update a test record when the idea makes a prediction, derives a practice, or faces a falsification attempt.
+19. Score the idea for research value, treating novelty as provisional.
+20. Write observation Markdown, JSONL, run manifest, prompt, and output.
+21. Write or reuse an Insights distillation under `publication/distillations.jsonl`: exact idea link, proverb headline, one-sentence card summary, and 3-4 sentence At a Glance paragraph.
+22. Run the originality audit under `reviews/originality/`: near-neighbor search, primary-text comparison, unlike statement, anomaly probe, falsifiable prediction, practitioner test, cross-domain test, human-condition fit, and recommended score adjustments.
+23. Update doctrine, teaching, practice, and test ledgers as candidates, not automatic public doctrine.
+24. Update exploration state and next directions, including improvements to the next thinking method.
+25. Repeat every 30 minutes during the local research window.
+26. After each research run, generate publication artifacts and deploy the website.
+27. At 5pm in the machine's current local timezone, run the doctrine council, then write one Journal entry from the day's findings and decisions.
+
+## 5A. Teaching And Practice Cadence
+
+Findings and Insights publish during the day. Teachings and Practices promote after review.
+
+- Every 30-minute run can create or update doctrine seeds, teaching candidates, practice seeds, dialogue pressure, and test records.
+- Every 30-minute run should not automatically create a public teaching or public practice.
+- End-of-day doctrine council reviews all findings, audits, dialogues, test records, and growth records from the day.
+- The council may promote zero, one, or a few teachings to Teaching Ready.
+- Practices are derived only from Teaching Ready records.
+- Low-risk reflective practices may publish after end-of-day dialogue. Stronger practices require human review and practice reports.
+- Weekly or monthly doctrine releases should summarize what changed, what failed, what retired, and what is being tested next.
+
+## 5B. Teaching And Practice Style
+
+Teachings and Practices should be similar to Insights in plainness, but less abstract and less riddle-like. They should be practical, digestible, direct, and modern. The goal is durable clarity, not ancient-sounding authority or self-help usefulness.
+
+Style models:
+
+- The Gospels: short scenes, direct sayings, everyday images, and moral clarity.
+- Proverbs and Psalms: memorable lines that ordinary people can repeat.
+- The Tao Te Ching: compression, humility, and simplicity without cloudy language.
+- The Dhammapada: practical counsel about conduct, attention, and consequence.
+- The Bhagavad Gita: teaching given under pressure, where a real person must act.
+- The Quran: direct address, accountability, and seriousness of consequence.
+- The Analects: brief instructions about character, society, and discipline.
+- Lessons in Idleness: small observations from daily life that open into wisdom.
+- Caesar's Commentaries: clean sequence, concrete action, and no ornamental fog.
+
+Teaching rules:
+
+- Use modern speech. If it sounds like imitation scripture, rewrite it.
+- Treat each Teaching as a doctrine candidate, not doctrine.
+- State only what has enough weight to be carried for years.
+- Start from a human situation, not a theory.
+- Use ordinary nouns before abstract nouns.
+- Give the reader a concrete change in behavior or attention.
+- Name the human problem and cohort in the record.
+- Use a modern human-condition source when the claim touches mental health, loneliness, addiction, burnout, meaning, digital life, or achievement pressure.
+- Keep pressure, caveats, and revision criteria below the Teaching as disclosure.
+- Avoid phrases that sound deep but say little.
+- Avoid payoff labels such as "the payoff is" or "the cleaner version is simple."
+- Keep the public teaching body under 220 words when possible.
+- Keep weak lines under dialogue.
+
+Teaching Ready requires:
+
+- at least two promoted source findings or one promoted source finding plus a recorded dialogue thread
+- a clear contrary pressure, not only a friendly critique
+- at least one completed or human-reviewed test that does not weaken the teaching
+- enough durability that the line would still matter if no new findings appeared for a year
+
+Practice rules:
+
+- Begin with the action.
+- Begin the record with diagnosis: target human problem, target cohort, and non-fit case.
+- Use numbered steps when order matters.
+- Name duration, frequency, and minimum attempt.
+- Tell the reader what to notice.
+- Name caution, stop condition, and misuse risk.
+- Name what would weaken the practice or the teaching behind it.
 
 ## 6. Idea Evaluation
 
@@ -104,12 +186,16 @@ Novelty is provisional until the originality audit checks:
 
 ## 7. Methodology Phases
 
-1. Cartography: map deep structural claims in traditions.
-2. Convergence detection: find independent arrivals and recurring structures.
-3. Science bridge: connect only where the scientific parallel is specific and disciplined.
-4. Original synthesis: generate new distinctions, hypotheses, and models.
-5. Critique and refinement: distinguish insight from false pattern matching.
-6. Publication: promote the strongest syntheses into shareable essays.
+1. Source grounding: study science, history, traditions, practitioner methods, and lived reports.
+2. Pattern pressure: compare sources only to expose durable structures, contradictions, missing variables, and anomalies.
+3. Doctrine formation: turn strong findings into concise doctrine candidates.
+4. Practice derivation: ask what the doctrine would ask a human being to do differently.
+5. Test design: define observations, practitioner tests, behavioral predictions, and falsifying pressures.
+6. Dialogue pressure: let Codex and Claude attack, defend, revise, and synthesize.
+7. Critique and refinement: distinguish real insight from false pattern matching.
+8. Publication: promote the strongest teachings, practices, and syntheses into public form.
+
+Teaching statuses should include: seed, under dialogue, teaching ready, practice linked, revised, retired, and falsified. A falsified teaching remains visible with the evidence that broke it.
 
 ## 8. Near-Term Build Tasks
 

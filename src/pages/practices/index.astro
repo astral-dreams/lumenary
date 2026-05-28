@@ -1,0 +1,107 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getPractices } from "../../lib/content";
+import { collectionPageSchema, faqSchema, itemListSchema, type BreadcrumbItem } from "../../lib/seo";
+
+const practices = getPractices();
+const published = practices.filter((practice) => practice.status === "published" || practice.status === "revised");
+const candidates = practices.filter((practice) => ["seed", "under_dialogue"].includes(practice.status));
+const visible = published.length ? published : candidates;
+const description =
+  "The Lumenary Practices are low-risk protocols derived from teachings, with steps, observations, cautions, and tests that can weaken them.";
+const practiceFaq = [
+  {
+    question: "What are The Lumenary Practices?",
+    answer:
+      "Practices are concrete experiments in attention and conduct. Each one must say what to do, what to notice, when to stop, and what would weaken it.",
+  },
+  {
+    question: "Are these therapy or medical advice?",
+    answer:
+      "No. Practices begin as low-risk reflective experiments and are not therapy, medicine, or promises of awakening.",
+  },
+  {
+    question: "How does a Practice get published?",
+    answer:
+      "A Practice must come from a Teaching Ready record, survive dialogue pressure, name its risk, and include a weakens_if test.",
+  },
+];
+const breadcrumbs: BreadcrumbItem[] = [
+  { name: "The Lumenary", path: "/" },
+  { name: "Practices", path: "/practices/" },
+];
+const jsonLd = [
+  collectionPageSchema({
+    name: "The Lumenary Practices",
+    path: "/practices/",
+    description,
+    mainEntity: itemListSchema(
+      "The Lumenary Practices",
+      "/practices/",
+      practices.slice(0, 30).map((practice) => ({
+        name: practice.title,
+        path: `/practices/${practice.slug}/`,
+      })),
+    ),
+  }),
+  faqSchema(practiceFaq),
+];
+---
+
+<BaseLayout title="Practices" description={description} jsonLd={jsonLd} breadcrumbs={breadcrumbs}>
+  <section class="page-band doctrine-hero">
+    <p class="eyebrow">Experiments in attention</p>
+    <h1>Practices</h1>
+    <p class="lead">
+      Practices are not atmosphere. They are clear experiments: what to do, how long to do it,
+      what to notice, when to stop, and what would count against the teaching.
+    </p>
+  </section>
+
+  <section class="content-section">
+    <div class="answer-panel">
+      <h2>How A Practice Earns Its Place</h2>
+      <p>
+        A Practice starts from a Teaching, then faces safety and usefulness questions. Low-risk practices can
+        be published after review. Anything stronger waits for human review and practice reports.
+      </p>
+      <div class="answer-grid">
+        {practiceFaq.map((item) => (
+          <article>
+            <h3>{item.question}</h3>
+            <p>{item.answer}</p>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <div class="section-heading">
+      <p class="eyebrow">{published.length ? "Published" : "Under review"}</p>
+      <h2>{published.length ? "Practice Protocols" : "Candidate Practices"}</h2>
+    </div>
+    {visible.length ? (
+      <div class="practice-grid">
+        {visible.map((practice) => (
+          <article class="practice-card">
+            <div class="doctrine-card-head">
+              <span>{practice.statusLabel}</span>
+              <strong>{practice.risk_level} risk</strong>
+            </div>
+            <h3><a href={`/practices/${practice.slug}/`}>{practice.practice_line}</a></h3>
+            <p>{practice.excerpt}</p>
+            <div class="practice-meta">
+              <span>{practice.duration}</span>
+              <span>{practice.minimum_attempt}</span>
+            </div>
+          </article>
+        ))}
+      </div>
+    ) : (
+      <p class="empty-filter-message">
+        No practice records exist yet. The next 30-minute runs will begin writing low-risk candidates.
+      </p>
+    )}
+  </section>
+</BaseLayout>

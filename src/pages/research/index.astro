@@ -1,5 +1,4 @@
 ---
-import Breadcrumbs from "../../components/Breadcrumbs.astro";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import { getFrontiers, getPromotionRules, researchStats } from "../../lib/content";
 import { faqSchema, howToSchema, softwareApplicationSchema, type BreadcrumbItem } from "../../lib/seo";
@@ -221,7 +220,6 @@ const methodJsonLd = [
 ---
 
 <BaseLayout title="Research Method" description={description} jsonLd={methodJsonLd} breadcrumbs={breadcrumbs}>
-  <Breadcrumbs items={breadcrumbs} />
   <section class="page-band method-hero">
     <p class="eyebrow">Method</p>
     <h1>How The Lumenary Thinks</h1>

@@ -1,5 +1,4 @@
 ---
-import Breadcrumbs from "../../components/Breadcrumbs.astro";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import { getDailyPosts } from "../../lib/content";
 import { collectionPageSchema, itemListSchema, type BreadcrumbItem } from "../../lib/seo";
@@ -27,7 +26,6 @@ const dailyJsonLd = collectionPageSchema({
 ---
 
 <BaseLayout title="Daily Log" description={description} jsonLd={dailyJsonLd} breadcrumbs={breadcrumbs}>
-  <Breadcrumbs items={breadcrumbs} />
   <section class="page-band">
     <p class="eyebrow">Publication log</p>
     <h1>Daily Log</h1>

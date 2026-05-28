@@ -55,6 +55,59 @@ def _word_count(markdown: str) -> int:
     return len(re.findall(r"\b[\w']+\b", body))
 
 
+def _sentence_count(text: str) -> int:
+    return max(1, len(re.findall(r"[.!?](?:\s|$)", text.strip())))
+
+
+def _journal_quality_issues(markdown: str) -> list[str]:
+    issues: list[str] = []
+    clean = markdown.strip()
+    body = re.sub(r"^#\s+.+?\n+", "", clean, count=1)
+    paragraphs = [
+        paragraph.strip()
+        for paragraph in re.split(r"\n\s*\n", body)
+        if paragraph.strip() and not paragraph.strip().startswith("<!--")
+    ]
+    word_count = _word_count(markdown)
+
+    if not clean.startswith("# "):
+        issues.append("missing H1 title")
+    if word_count < 350 or word_count > 500:
+        issues.append(f"word count must be 350 to 500, got {word_count}")
+    if "—" in clean:
+        issues.append("contains em dash")
+
+    one_sentence = [paragraph for paragraph in paragraphs if _sentence_count(paragraph) <= 1]
+    if len(paragraphs) >= 6 and len(one_sentence) / len(paragraphs) > 0.35:
+        issues.append("too many one-sentence poetic paragraphs")
+
+    lower = clean.lower()
+    banned_fragments = [
+        "ownership is",
+        "the hand must",
+        "open the hand",
+        "worship the hand",
+        "refuse the crown",
+        "building a throne",
+        "private achievement",
+        "hard mercy",
+        "cleaner wound",
+    ]
+    for fragment in banned_fragments:
+        if fragment in lower:
+            issues.append(f"manifesto-like fragment: {fragment}")
+
+    coverage_terms = ["finding", "dialogue", "method", "practice", "test", "source", "teaching"]
+    coverage = sum(1 for term in coverage_terms if term in lower)
+    if coverage < 3:
+        issues.append("does not clearly reflect the day's research breadth")
+
+    if lower.count("we ") + lower.count("we\n") < 5:
+        issues.append("not enough first-person plural reflection")
+
+    return issues
+
+
 def _existing_journal_path(root: Path, date: str) -> Path | None:
     journal_dir = root / "publication" / "journal"
     for path in sorted(journal_dir.glob(f"{date}-*.md")):
@@ -128,11 +181,17 @@ Rules:
 - No bullet lists.
 - No Sanskrit, Pali, Arabic, Greek, or Chinese terms.
 - No academic hedging.
-- One idea per sentence.
+- Use normal paragraphs of 3 to 5 sentences. Do not write a poem made of single-sentence paragraphs.
+- One idea per sentence, but do not isolate every sentence on its own line.
 - Lead with the human question.
 - Let it feel personal, clear, and memorable.
 - Make the reader feel the day of learning, not the machinery behind it.
-- It should land like a proverb stretched into a short reflection.
+- This is a daily journal, not a manifesto, sermon, doctrine release, or poetic monologue.
+- Do not make the entry about one charged metaphor. Cover the day.
+- Reflect at least three concrete developments from today's records: findings, dialogues, method changes, practices, tests, sources, or teachings.
+- Do not make ownership, work, credit, property, or effort sound morally evil. If those topics appear, write with balance and precision.
+- Avoid grand final lines like "open the hand," "refuse the crown," "worship the hand," "cleaner wound," or similar theatrical language.
+- Include what changed in our thinking and where we may have been wrong.
 
 ## Writing Style
 
@@ -326,16 +385,23 @@ def generate_journal_entry(
         prompt = _build_prompt(config.root, journal_date, timezone_name)
         output = _run_codex_journal(config, prompt, run_id)
         markdown = _normalize_markdown(output)
-        count = _word_count(markdown)
-        if count < 350 or count > 500:
+        issues = _journal_quality_issues(markdown)
+        if issues:
             revision_prompt = (
                 f"{prompt}\n\n## Revision Required\n\n"
-                f"The previous draft was {count} words after the title. "
-                "Rewrite it so it is between 350 and 500 words, preserving the same voice.\n\n"
+                "The previous draft failed the Journal self-audit:\n"
+                + "\n".join(f"- {issue}" for issue in issues)
+                + "\n\nRewrite it as a clear daily journal entry, not a poetic manifesto. "
+                "Use normal paragraphs, cover the breadth of the day's research, and preserve the first-person plural voice.\n\n"
                 f"## Previous Draft\n\n{markdown}"
             )
             markdown = _normalize_markdown(
                 _run_codex_journal(config, revision_prompt, f"{run_id}-revision")
+            )
+        final_issues = _journal_quality_issues(markdown)
+        if final_issues:
+            raise RuntimeError(
+                "Journal self-audit failed after revision: " + "; ".join(final_issues)
             )
     else:
         markdown = _offline_journal(journal_date)

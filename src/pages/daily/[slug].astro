@@ -1,5 +1,4 @@
 ---
-import Breadcrumbs from "../../components/Breadcrumbs.astro";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import { getDailyPosts } from "../../lib/content";
 import { articleSchema, cleanDescription, type BreadcrumbItem } from "../../lib/seo";
@@ -29,7 +28,6 @@ const dailyPostJsonLd = articleSchema({
 ---
 
 <BaseLayout title={post.title} description={description} ogType="article" jsonLd={dailyPostJsonLd} breadcrumbs={breadcrumbs}>
-  <Breadcrumbs items={breadcrumbs} />
   <article class="article-page">
     <p class="eyebrow">{post.date}</p>
     <div class="prose" set:html={post.html} />

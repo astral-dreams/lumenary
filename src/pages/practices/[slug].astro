@@ -1,0 +1,198 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import SourceBasisList from "../../components/SourceBasisList.astro";
+import { getPractices } from "../../lib/content";
+import { articleSchema, cleanDescription, faqSchema, howToSchema, type BreadcrumbItem } from "../../lib/seo";
+
+export function getStaticPaths() {
+  return getPractices().map((practice) => ({
+    params: { slug: practice.slug },
+    props: { practice },
+  }));
+}
+
+const { practice } = Astro.props;
+const description = cleanDescription(practice.purpose || practice.practice_line);
+const practiceFaq = [
+  {
+    question: `What is the purpose of ${practice.title}?`,
+    answer: practice.purpose,
+  },
+  {
+    question: "When should someone stop or use caution?",
+    answer: practice.caution,
+  },
+  {
+    question: "What would weaken this Practice?",
+    answer: practice.weakens_if,
+  },
+];
+const breadcrumbs: BreadcrumbItem[] = [
+  { name: "The Lumenary", path: "/" },
+  { name: "Practices", path: "/practices/" },
+  { name: practice.title, path: `/practices/${practice.slug}/` },
+];
+const jsonLd = [
+  articleSchema({
+    headline: practice.title,
+    description,
+    path: `/practices/${practice.slug}/`,
+    datePublished: practice.created_at,
+    dateModified: practice.updated_at,
+    articleSection: "Practice",
+    keywords: ["practice", "attention", ...practice.tags],
+    citations: practice.source_basis.slice(0, 10),
+    relatedLinks: [
+      ...(practice.linkedTeachingSlug ? [`/teachings/${practice.linkedTeachingSlug}/`] : []),
+      ...practice.evidenceIdeas.map((idea) => `/findings/${idea.slug}/`),
+    ],
+  }),
+  howToSchema(practice.title, description, practice.steps),
+  faqSchema(practiceFaq),
+];
+---
+
+<BaseLayout title={practice.title} description={description} ogType="article" jsonLd={jsonLd} breadcrumbs={breadcrumbs}>
+  <article class="article-page practice-page">
+    <header class="article-header">
+      <p class="eyebrow">Practice / {practice.statusLabel} / {practice.risk_level} risk</p>
+      <h1>{practice.practice_line}</h1>
+      <p class="lead">{practice.purpose}</p>
+      <div class="label-row">
+        {practice.tags.map((tag) => <span>{tag}</span>)}
+      </div>
+    </header>
+
+    <section class="plain-summary practice-summary">
+      <p class="eyebrow">Before you begin</p>
+      <div class="practice-time-grid">
+        <div>
+          <span>Duration</span>
+          <strong>{practice.duration}</strong>
+        </div>
+        <div>
+          <span>Frequency</span>
+          <strong>{practice.frequency}</strong>
+        </div>
+        <div>
+          <span>Minimum attempt</span>
+          <strong>{practice.minimum_attempt}</strong>
+        </div>
+      </div>
+    </section>
+
+    {(practice.target_human_problem || practice.target_cohort || practice.non_fit) && (
+      <section class="article-section doctrine-pressure-grid">
+        {practice.target_human_problem && (
+          <div class="answer-panel">
+            <p class="eyebrow">Human problem</p>
+            <h2>What this is for</h2>
+            <p>{practice.target_human_problem}</p>
+            <a class="inline-source-link" href="/sources/#modern-human-condition">Modern human condition sources</a>
+          </div>
+        )}
+        {practice.target_cohort && (
+          <div class="answer-panel">
+            <p class="eyebrow">For</p>
+            <h2>Who may need it</h2>
+            <p>{practice.target_cohort}</p>
+          </div>
+        )}
+        {practice.non_fit && (
+          <div class="answer-panel">
+            <p class="eyebrow">Not for</p>
+            <h2>When this may not fit</h2>
+            <p>{practice.non_fit}</p>
+          </div>
+        )}
+      </section>
+    )}
+
+    <section class="article-section">
+      <h2>Steps</h2>
+      <ol class="practice-steps">
+        {practice.steps.map((step) => <li>{step}</li>)}
+      </ol>
+    </section>
+
+    <section class="article-section doctrine-pressure-grid">
+      <div class="answer-panel">
+        <p class="eyebrow">Notice</p>
+        <h2>What to watch</h2>
+        <ul class="clean-list">
+          {practice.notice.map((item) => <li>{item}</li>)}
+        </ul>
+      </div>
+      <div class="answer-panel">
+        <p class="eyebrow">Caution</p>
+        <h2>When to stop</h2>
+        <p>{practice.caution}</p>
+      </div>
+    </section>
+
+    <section class="article-section answer-panel">
+      <p class="eyebrow">Weakens if</p>
+      <h2>What would count against it</h2>
+      <p>{practice.weakens_if}</p>
+    </section>
+
+    {practice.linkedTeaching && (
+      <section class="article-section">
+        <h2>Linked Teaching</h2>
+        <div class="compact-list">
+          <a href={practice.linkedTeachingSlug ? `/teachings/${practice.linkedTeachingSlug}/` : "/teachings/"}>
+            <span>{practice.linkedTeaching.status}</span>
+            <strong>{practice.linkedTeaching.teaching_line}</strong>
+          </a>
+        </div>
+      </section>
+    )}
+
+    {practice.linkedTests.length > 0 && (
+      <section class="article-section">
+        <h2>Tests</h2>
+        <div class="test-list">
+          {practice.linkedTests.map((test) => (
+            <article class="test-card">
+              <span>{test.impactLabel}</span>
+              <h3>{test.title || test.test_type}</h3>
+              <p>{test.prediction}</p>
+              <p><strong>Next:</strong> {test.next_action}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+    )}
+
+    {practice.evidenceIdeas.length > 0 && (
+      <section class="article-section">
+        <h2>Evidence Trail</h2>
+        <div class="compact-list">
+          {practice.evidenceIdeas.map((idea) => (
+            <a href={`/findings/${idea.slug}/`}>
+              <span>{idea.date} / {idea.agent}</span>
+              <strong>{idea.title}</strong>
+            </a>
+          ))}
+        </div>
+      </section>
+    )}
+
+    <section class="article-section">
+      <h2>Source Basis</h2>
+      <SourceBasisList items={practice.source_basis} />
+    </section>
+
+    <section class="article-section answer-panel">
+      <h2>Common Questions</h2>
+      <div class="answer-grid">
+        {practiceFaq.map((item) => (
+          <article>
+            <h3>{item.question}</h3>
+            <p>{item.answer}</p>
+          </article>
+        ))}
+      </div>
+    </section>
+  </article>
+</BaseLayout>

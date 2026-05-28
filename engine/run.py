@@ -4,9 +4,11 @@ import argparse
 from datetime import datetime
 
 from .config import EngineConfig
+from .doctrine import write_candidates_from_idea
 from .distill import distill_new_ideas
 from .frontier import prepare_frontier_brief, refresh_frontiers
 from .growth import record_growth
+from .human_condition import audit_human_condition_fit
 from .librarian import Librarian
 from .prompts import build_claude_collaborative_prompt, build_originality_prompt
 from .schemas import RunManifest, now_local_iso, slugify
@@ -47,7 +49,11 @@ def run_once(config: EngineConfig, focus: str, *, use_frontier: bool = True) -> 
         enabled=use_frontier,
     )
 
-    current_state = librarian.read_optional("state/current_focus.md")
+    current_state_parts = [
+        librarian.read_optional("state/current_focus.md"),
+        librarian.read_optional("docs/modern-human-condition.md"),
+    ]
+    current_state = "\n\n".join(part for part in current_state_parts if part.strip())
     thinking_protocol = librarian.read_optional("state/thinking_protocol.md")
     codex_findings = librarian.read_optional("findings/codex-findings.md")
     claude_findings = librarian.read_optional("findings/claude-code-findings.md")
@@ -86,8 +92,20 @@ def run_once(config: EngineConfig, focus: str, *, use_frontier: bool = True) -> 
         run_id=manifest.run_id,
     )
     idea_path = librarian.save_idea(idea)
+    doctrine_counts = write_candidates_from_idea(
+        config.root,
+        idea,
+        run_id=manifest.run_id,
+    )
     manifest.generated_observations.append(str(idea_path.relative_to(config.root)))
     manifest.notes.append("Generated one draft idea record.")
+    if any(doctrine_counts.values()):
+        manifest.notes.append(
+            "Updated doctrine candidates: "
+            f"{doctrine_counts['teachings']} teaching, "
+            f"{doctrine_counts['practices']} practice, "
+            f"{doctrine_counts['tests']} test."
+        )
     manifest.completed_at = now_local_iso()
 
     output = idea.to_markdown()
@@ -99,7 +117,13 @@ def run_once(config: EngineConfig, focus: str, *, use_frontier: bool = True) -> 
         run_ids=[manifest.run_id],
         created_at=manifest.completed_at,
     )
-    if config.provider == "claude-code" and not config.dry_run:
+    audit_human_condition_fit(
+        config.root,
+        [idea],
+        execution_id=manifest.run_id,
+        run_ids=[manifest.run_id],
+    )
+    if not config.dry_run:
         distill_new_ideas(config, [idea])
     if use_frontier:
         refresh_frontiers(config.root)

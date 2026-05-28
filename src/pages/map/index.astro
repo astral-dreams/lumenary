@@ -1,7 +1,6 @@
 ---
 import LivingMap from "../../components/LivingMap.astro";
 import LumenaryMindMap from "../../components/LumenaryMindMap.astro";
-import Breadcrumbs from "../../components/Breadcrumbs.astro";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import {
   getConceptGraph,
@@ -90,7 +89,6 @@ const mapJsonLd = [
 ---
 
 <BaseLayout title="Living Map" description={description} jsonLd={mapJsonLd} breadcrumbs={breadcrumbs}>
-  <Breadcrumbs items={breadcrumbs} />
   <section class="page-band">
     <p class="eyebrow">Living atlas</p>
     <h1>Living Map</h1>

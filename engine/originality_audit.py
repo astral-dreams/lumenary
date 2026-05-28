@@ -34,6 +34,8 @@ Your job is not to praise the ideas. Your job is to find prior art, anomalies, a
 - Include a practitioner test. Ask whether the idea is obvious to a practitioner and whether it changes practice understanding.
 - Include one cross-domain prediction. If the structure is real, it should travel outside the domain that generated it.
 - Use academic sources, primary texts, and practitioner-facing sources where possible.
+- Audit the human-condition fit. Ask what modern human problem the idea clarifies, who it is for, who it is not for, and whether it would actually help with loneliness, addiction, compulsion, withdrawal, anxiety, depression, burnout, grief, meaning loss, digital comparison, feeling unneeded, feeling out of place, or achievement-contingent self-worth.
+- If the idea cannot name a cohort or a human problem, lower publishability and practice-testability.
 - Do not claim "truly unique" unless the audit has no close near-neighbor and the idea generates usable predictions.
 - Do not use em dashes. Use commas, colons, semicolons, or periods.
 
@@ -121,6 +123,8 @@ def _idea_payload(idea: IdeaRecord) -> dict[str, Any]:
         "epistemic_labels": idea.epistemic_labels,
         "scores": record["scores"],
         "next_research_directions": idea.next_research_directions,
+        "teaching_candidate": record.get("teaching_candidate"),
+        "practice_candidate": record.get("practice_candidate"),
     }
 
 

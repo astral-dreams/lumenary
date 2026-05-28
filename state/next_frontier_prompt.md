@@ -1,38 +1,47 @@
 # Active Frontier Brief
 
-Frontier: The boundary between effort and gift
+Frontier: What a method does with its own authority
 Recommended action: build_rubric
-Why now: priority 0.85; 13 related idea records; 7 originality audits; cross-agent signal; live anomaly pressure
+Why now: priority 0.86; 4 related idea records; 2 originality audits; cross-agent signal; live anomaly pressure; dialogue pressure
 
 Core claim:
-Every contemplative tradition faces a paradox it cannot avoid: if practice causes awakening, the awakening depends on something temporary; if awakening was always the case, practice seems unnecessary. The resolution of this paradox is not a peripheral doctrinal detail. It functions as a root variable from which most other features of a tradition follow: its relationship to time, what it thinks effort does, whether failure is possible, how it verifies...
+When a contemplative practice reaches its own threshold, it faces a structural question that may matter more than what it finds: can the method grant itself authority over its own result? Three patterns emerge across independent traditions. In the first, the method confirms itself. The Mandukya Upanishad analyzes waking, dreaming, and deep sleep, then identifies what persists through all three: turiya, 'invisible, beyond practical dealings, beyond...
 
 Closest prior art or near-neighbor pressure:
-- Jack Engler interview, You Must Be Somebody Before You Can Be Nobody, Inquiring Mind, https://inquiringmind.com/article/0501_1_engler-interview/: overlap: Very close. Engler says meditation requires ego strength, self-observation, and affect tolerance before no-self can be safely practiced.; difference: Engler's frame is Buddhist psychology and psychotherapy. He does not build a comparative typology of causal continuity, ontological identity, temporal collapse, and divine...
-- Pudgalavada Buddhist Philosophy, Internet Encyclopedia of Philosophy, https://iep.utm.edu/pudgalavada-buddhist-philosophy/: overlap: Very close historical prior art. Pudgalavadins argued that karma, rebirth, liberation, benevolence, and lived personhood strain a strict no-self aggregate account.; difference: This is an intra-Buddhist metaphysical and doctrinal dispute, not a general model of practice architecture across traditions.
-- Steven Collins, Selfless Persons, summary and citation, https://buddhanature.tsadra.org/index.php/Books/Selfless_Persons: overlap: Collins directly studies how Theravada constructs personal identity and continuity on the apparently impossible basis of denying self.; difference: The focus is Theravada discourse and imagery, not cross-tradition engineering constraints.
+- Joshua William Smith, Snakes and Ladders: Therapy as Liberation in Nagarjuna and Wittgenstein's Tractatus, Sophia 2021, https://ueaeprints.uea.ac.uk/id/eprint/80007/: overlap: Very close to the self-canceling core: Nagarjuna and Wittgenstein are read as shared philosophical method without theses, aimed at dissolution of philosophical problems and...; difference: Bilateral comparison only. It does not add self-confirming and self-dissolving alternatives or predict verification architecture across traditions.
+- Michael A. Sells, Mystical Languages of Unsaying, University of Chicago Press, https://press.uchicago.edu/ucp/books/book/chicago/M/bo3635525.html: overlap: Apophatic discourse is described as repeatedly turning back upon its own propositions and names, across Greek, Christian, and Islamic texts including Eckhart and Ibn Arabi.; difference: Sells studies apophatic language as discourse, not a general typology of contemplative method completion.
+- MN 22 Alagaddupama Sutta, raft simile, Thanissaro translation, https://www.dhammatalks.org/suttas/MN/MN22.html: overlap: The Dhamma is a raft for crossing, to be grasped properly and then let go. This is a direct prior structure for validated-then-abandoned method.; difference: It is not simply canceling or dissolving. It validates proper use, then releases attachment after the crossing.
 
 Open anomalies:
-- Other-power and direct-introduction traditions, such as Jodo Shinshu entrusting and Dzogchen pointing-out, appear to minimize self-powered agency while still functioning as paths.
-- Successful hybrids and dual-trained practitioners who switch methods smoothly without reported directional resistance.
-- Radical Jodo Shinshu other-power: true shinjin is not a human capacity at all, but Amida's working, and self-assessment as capacity may itself be self-power calculation.
+- Validated-then-abandoned hybrids, especially MN 22's raft, Heart Sutra reliance on Prajnaparamita after no-attainment, and Rinzai koan curriculum after kensho.
+- Dogen practice-realization identity, radical Other Power in Tannisho, inherited communal religion, and apophatic refusal in Dionysius.
+- Can the occurrence of a contemplative phenomenological state (such as remainder pressure, witness-awareness, or cessation) be analytically separated from the training context that conditions the practitioner to recognize and report it, or does the training...
+- If Advaita is internally divided between svaprakasha (self-luminosity) and shabda pramana (scriptural testimony) as the means of knowing the witness, and early Buddhism is internally divided between remainder-refusing (SN 22.59) and therapeutic...
+- Does the governing question a text poses to itself (cosmological identification, aggregate disidentification, equation of self and ground, dialectical refutation) predict its method-type and terminal authorization pattern, such that a rubric coding...
 
 Required next move:
-Recast the model as a graded variable: required receiving capacity, required agency, required memory, required reflexivity, and required post-insight integration.
+Rebuild the model as two axes: validates versus undermines, and retained versus abandoned or embodied.
 
 Required tests:
-- If: The stronger a path's final self-dissolution claim, the more explicit its safeguards should be against premature or distorted self-loss. Then: Manuals and teachers should warn against nihilism, dissociation, spiritual bypassing, false attainment...
-- If: Long, effortful paths should develop more elaborate continuity mechanisms than sudden or other-power paths. Then: Theravada stages, Sufi stations, and Advaita preparation should specify capacities, sequence, and error correction; sudden methods should...
-- If: Dual-trained practitioners should report different kinds of permitted selfhood when switching methods. Then: Vipassana permits causal observation without ownership; Advaita permits witness or Self recognition; Soto Zen discourages gaining selfhood...
-- Does your path require a functional self-capacity that its final teaching later dissolves, denies, or reframes?
-- Is this already obvious as two truths, healthy ego before no-self, practice-realization, surrender, or grace?
-- Would this rubric change how you screen students, sequence practices, verify insight, or warn against errors?
-- Therapies or pedagogies that deconstruct identity, such as trauma therapy, exposure therapy, psychedelic therapy, contemplative psychotherapy, or critical pedagogy, should have stronger screening, scaffolding, integration, and teacher-client safeguards...
-- Clients and therapists crossing modalities should show grain-specific resistance: CBT-trained clients may convert psychoanalytic free association into problem solving, somatic-therapy clients may treat cognitive restructuring as disembodiment, and...
+- If: Method-type should predict verification architecture better than tradition membership. Then: Eckhart and Nagarjuna should share more indirect, anti-possessive verification patterns with each other than Eckhart shares with more kataphatic Christian...
+- If: Dual-trained practitioners should report different relations to their own insight when switching method-types. Then: After Advaita inquiry, practitioners describe recognition as stable witness or Self. After Heart Sutra or Madhyamaka practice, they...
+- If: Hybrid traditions should show explicit boundary management between method stages. Then: Texts should mark when to use, trust, undermine, release, or embody a method. Examples would include raft language, preliminary versus main practice, koan...
+- At completion, can the method still authorize its result, or must it be released, denied, or embodied?
+- Is confirming, canceling, dissolving an obvious distinction from inside your training, or does it distort the practice?
+- Do your verification methods change depending on whether the practice confirms, cancels, or dissolves itself?
+- Methods that cancel their own frame should rely more on supervision, case judgment, paradox, and indirect signs than on checklist fidelity. Methods that confirm themselves should tolerate manuals and outcome criteria better. Methods that dissolve into...
+- Training systems that alter identity or attention should show distinct termination, supervision, relapse, and ethical-reentry patterns based on the interaction between method-boundary and custody. For example, a protocol that is later internalized should...
+
+Modern human-condition pressure:
+- Connect this frontier to a real modern human problem: loneliness, addiction, compulsion, withdrawal, anxiety, depression, burnout, meaning loss, digital comparison, grief, feeling unneeded, feeling out of place, or achievement-contingent self-worth.
+- Name the cohort affected. Do not present a targeted remedy as universal medicine.
+- If the frontier cannot yet explain why it matters to human life, make that gap the finding or lower publishability.
+- Use at least one modern human-condition source card when proposing a teaching or practice.
 
 Success criteria:
 - Advance, merge, falsify, or retire this frontier. Do not produce an unrelated one-off finding.
 - Name the closest prior argument and the exact difference from it.
 - Name one anomaly that would weaken the frontier.
+- Explain what human wound, need, or modern failure mode the idea clarifies.
 - Keep epistemic labels explicit and do not collapse analogy into evidence.
 - Return exactly one structured idea record.

@@ -1,13 +1,13 @@
 ---
-import Breadcrumbs from "../../components/Breadcrumbs.astro";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import { formatLabel, getSources, groupSourcesByFoundation } from "../../lib/content";
 import { collectionPageSchema, datasetSchema, faqSchema, type BreadcrumbItem } from "../../lib/seo";
 
 const sources = getSources();
 const groups = groupSourcesByFoundation(sources);
+const modernHumanCondition = groups.find(({ domain }) => domain.id === "modern-human-condition");
 const description =
-  "Source cards behind The Lumenary research corpus, covering spiritual traditions, comparative philosophy, consciousness science, and physics of time and matter.";
+  "Source cards behind The Lumenary research corpus, covering spiritual traditions, modern human condition research, consciousness science, and physics of time and matter.";
 const breadcrumbs: BreadcrumbItem[] = [
   { name: "The Lumenary", path: "/" },
   { name: "Sources", path: "/sources/" },
@@ -22,6 +22,11 @@ const sourcesFaq = [
     question: "How do sources constrain findings?",
     answer:
       "Sources keep the system from treating analogy as proof by making each finding show what informed the claim.",
+  },
+  {
+    question: "Why include modern human-condition sources?",
+    answer:
+      "They keep teachings and practices tied to recognizable human problems: loneliness, burnout, addiction, anxiety, grief, meaning loss, and the search for belonging.",
   },
 ];
 const sourcesJsonLd = [
@@ -41,12 +46,25 @@ const sourcesJsonLd = [
 ---
 
 <BaseLayout title="Sources" description={description} jsonLd={sourcesJsonLd} breadcrumbs={breadcrumbs}>
-  <Breadcrumbs items={breadcrumbs} />
   <section class="page-band">
     <p class="eyebrow">Grounding corpus</p>
     <h1>Source Cards</h1>
-    <p class="lead">The public source foundation behind Lumenary's spiritual, philosophical, consciousness, and physics research.</p>
+    <p class="lead">The public source foundation behind Lumenary's spiritual, philosophical, human-condition, consciousness, and physics research.</p>
   </section>
+  {modernHumanCondition && (
+    <section class="content-section">
+      <div class="answer-panel human-condition-source-panel">
+        <p class="eyebrow">Modern human condition</p>
+        <h2>The wound a teaching must answer</h2>
+        <p>
+          These sources keep The Lumenary from making beautiful ideas that solve nothing. They ground the work in
+          modern loneliness, burnout, addiction, stress, digital comparison, mental distress, and the loss of shared
+          meaning.
+        </p>
+        <a class="button" href="#modern-human-condition">Read the human-condition source cards</a>
+      </div>
+    </section>
+  )}
   <section class="content-section">
     <div class="answer-panel">
       <h2>What Are Source Cards?</h2>
@@ -83,14 +101,17 @@ const sourcesJsonLd = [
         </div>
         <div class="source-list">
           {sources.map((source) => (
-            <article class="source-card">
+            <article id={source.source_id} class="source-card">
               <div class="meta-row">
                 <span>{formatLabel(source.source_type)}</span>
                 <span>{source.source_id}</span>
               </div>
               <h3>{source.title}</h3>
               <p>{source.notes}</p>
-              {source.url && <a href={source.url} rel="noreferrer">Open source</a>}
+              <div class="source-card-actions">
+                <a href={`#${source.source_id}`}>Link to card</a>
+                {source.url && <a href={source.url} rel="noreferrer">Open source</a>}
+              </div>
             </article>
           ))}
         </div>

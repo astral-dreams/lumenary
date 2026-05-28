@@ -1,0 +1,166 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import SourceBasisList from "../../components/SourceBasisList.astro";
+import { getTeachings } from "../../lib/content";
+import { articleSchema, cleanDescription, faqSchema, type BreadcrumbItem } from "../../lib/seo";
+
+export function getStaticPaths() {
+  return getTeachings().map((teaching) => ({
+    params: { slug: teaching.slug },
+    props: { teaching },
+  }));
+}
+
+const { teaching } = Astro.props;
+const description = cleanDescription(teaching.teaching_body || teaching.doctrine_claim || teaching.teaching_line);
+const teachingFaq = [
+  {
+    question: `What does this Teaching say?`,
+    answer: teaching.teaching_line,
+  },
+  {
+    question: "What would make The Lumenary revise it?",
+    answer: teaching.falsifying_pressure,
+  },
+  {
+    question: "Is this Teaching final?",
+    answer:
+      teaching.status === "teaching_ready" || teaching.status === "practice_linked"
+        ? "No teaching is final. This one is promoted for now, with its pressure and revision path visible."
+        : `No. It is currently ${teaching.statusLabel} and remains under review.`,
+  },
+];
+const breadcrumbs: BreadcrumbItem[] = [
+  { name: "The Lumenary", path: "/" },
+  { name: "Teachings", path: "/teachings/" },
+  { name: teaching.title, path: `/teachings/${teaching.slug}/` },
+];
+const jsonLd = [
+  articleSchema({
+    headline: teaching.title,
+    description,
+    path: `/teachings/${teaching.slug}/`,
+    datePublished: teaching.created_at,
+    dateModified: teaching.updated_at,
+    articleSection: "Teaching",
+    keywords: ["teaching", "doctrine", ...teaching.tags],
+    citations: teaching.source_basis.slice(0, 10),
+    relatedLinks: [
+      ...teaching.evidenceIdeas.map((idea) => `/findings/${idea.slug}/`),
+      ...teaching.linkedPractices.map((practice) => `/practices/${practice.slug}/`),
+    ],
+  }),
+  faqSchema(teachingFaq),
+];
+---
+
+<BaseLayout title={teaching.title} description={description} ogType="article" jsonLd={jsonLd} breadcrumbs={breadcrumbs}>
+  <article class="article-page teaching-page">
+    <header class="article-header">
+      <p class="eyebrow">Teaching / {teaching.statusLabel}</p>
+      <h1>{teaching.teaching_line}</h1>
+      <p class="lead">{teaching.doctrine_claim}</p>
+      <div class="label-row">
+        {teaching.tags.map((tag) => <span>{tag}</span>)}
+      </div>
+    </header>
+
+    <section class="plain-summary teaching-summary">
+      <p class="eyebrow">The Teaching</p>
+      <div class="prose compact-prose" set:html={teaching.html} />
+    </section>
+
+    {(teaching.target_human_problem || teaching.target_cohort) && (
+      <section class="article-section doctrine-pressure-grid">
+        {teaching.target_human_problem && (
+          <div class="answer-panel">
+            <p class="eyebrow">Human problem</p>
+            <h2>What this is for</h2>
+            <p>{teaching.target_human_problem}</p>
+            <a class="inline-source-link" href="/sources/#modern-human-condition">Modern human condition sources</a>
+          </div>
+        )}
+        {teaching.target_cohort && (
+          <div class="answer-panel">
+            <p class="eyebrow">For</p>
+            <h2>Who may need it</h2>
+            <p>{teaching.target_cohort}</p>
+          </div>
+        )}
+      </section>
+    )}
+
+    <section class="article-section answer-panel">
+      <p class="eyebrow">Pressure survived</p>
+      <h2>Why it stands for now</h2>
+      <p>{teaching.pressure_survived}</p>
+    </section>
+
+    {teaching.linkedPractices.length > 0 && (
+      <section class="article-section">
+        <h2>Linked Practices</h2>
+        <div class="compact-list">
+          {teaching.linkedPractices.map((practice) => (
+            <a href={`/practices/${practice.slug}/`}>
+              <span>{practice.statusLabel} / {practice.duration}</span>
+              <strong>{practice.practice_line}</strong>
+            </a>
+          ))}
+        </div>
+      </section>
+    )}
+
+    {teaching.linkedTests.length > 0 && (
+      <section class="article-section">
+        <h2>Tests</h2>
+        <div class="test-list">
+          {teaching.linkedTests.map((test) => (
+            <article class="test-card">
+              <span>{test.impactLabel}</span>
+              <h3>{test.title || test.test_type}</h3>
+              <p>{test.prediction}</p>
+              <p><strong>Next:</strong> {test.next_action}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+    )}
+
+    {teaching.evidenceIdeas.length > 0 && (
+      <section class="article-section">
+        <h2>Evidence Trail</h2>
+        <div class="compact-list">
+          {teaching.evidenceIdeas.map((idea) => (
+            <a href={`/findings/${idea.slug}/`}>
+              <span>{idea.date} / {idea.agent}</span>
+              <strong>{idea.title}</strong>
+            </a>
+          ))}
+        </div>
+      </section>
+    )}
+
+    <section class="article-section">
+      <h2>Source Basis</h2>
+      <SourceBasisList items={teaching.source_basis} />
+    </section>
+
+    <section class="article-section answer-panel">
+      <p class="eyebrow">Disclosure</p>
+      <h2>What would make us revise this</h2>
+      <p>{teaching.falsifying_pressure}</p>
+    </section>
+
+    <section class="article-section answer-panel">
+      <h2>Common Questions</h2>
+      <div class="answer-grid">
+        {teachingFaq.map((item) => (
+          <article>
+            <h3>{item.question}</h3>
+            <p>{item.answer}</p>
+          </article>
+        ))}
+      </div>
+    </section>
+  </article>
+</BaseLayout>

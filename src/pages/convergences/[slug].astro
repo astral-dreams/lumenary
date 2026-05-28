@@ -1,5 +1,4 @@
 ---
-import Breadcrumbs from "../../components/Breadcrumbs.astro";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import { getConvergenceNotes } from "../../lib/content";
 import { articleSchema, cleanDescription, type BreadcrumbItem } from "../../lib/seo";
@@ -27,7 +26,6 @@ const convergenceJsonLd = articleSchema({
 ---
 
 <BaseLayout title={note.title} description={description} ogType="article" jsonLd={convergenceJsonLd} breadcrumbs={breadcrumbs}>
-  <Breadcrumbs items={breadcrumbs} />
   <article class="article-page">
     <p class="eyebrow">{note.path}</p>
     <div class="prose" set:html={note.html} />

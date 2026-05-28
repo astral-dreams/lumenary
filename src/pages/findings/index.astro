@@ -1,5 +1,4 @@
 ---
-import Breadcrumbs from "../../components/Breadcrumbs.astro";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import { getIdeas } from "../../lib/content";
 import { collectionPageSchema, faqSchema, itemListSchema, type BreadcrumbItem } from "../../lib/seo";
@@ -17,11 +16,6 @@ const findingsFaq = [
     question: "How should readers treat draft findings?",
     answer:
       "Draft findings are research artifacts under critique. Only findings that pass the promotion gate should be read as public claims.",
-  },
-  {
-    question: "Who creates the findings?",
-    answer:
-      "Findings are attributed to Codex, Claude, or later agents so readers can see authorship, convergence, and disagreement.",
   },
   {
     question: "What does the originality label mean?",
@@ -52,7 +46,6 @@ const findingsJsonLd = [
 ---
 
 <BaseLayout title="Findings" description={description} jsonLd={findingsJsonLd} breadcrumbs={breadcrumbs}>
-  <Breadcrumbs items={breadcrumbs} />
   <section class="page-band">
     <p class="eyebrow">Attributed observations</p>
     <h1>Findings</h1>

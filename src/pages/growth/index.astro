@@ -1,5 +1,4 @@
 ---
-import Breadcrumbs from "../../components/Breadcrumbs.astro";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import { getGrowthPeriods } from "../../lib/content";
 import { collectionPageSchema, datasetSchema, faqSchema, itemListSchema, type BreadcrumbItem } from "../../lib/seo";
@@ -49,7 +48,6 @@ const jsonLd = [
 ---
 
 <BaseLayout title="Growth" description={description} jsonLd={jsonLd} breadcrumbs={breadcrumbs}>
-  <Breadcrumbs items={breadcrumbs} />
   <section class="page-band">
     <p class="eyebrow">Research changelog</p>
     <h1>Growth</h1>

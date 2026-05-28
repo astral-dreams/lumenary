@@ -7,7 +7,14 @@ from typing import Any
 
 from .config import EngineConfig
 from .librarian import Librarian
-from .schemas import IdeaRecord, IdeaScores, now_local_iso
+from .schemas import (
+    IdeaRecord,
+    IdeaScores,
+    idea_tests_from_dict,
+    now_local_iso,
+    practice_candidate_from_dict,
+    teaching_candidate_from_dict,
+)
 
 
 def _float_score(scores: dict[str, Any], key: str) -> float:
@@ -43,6 +50,9 @@ def idea_from_json(data: dict[str, Any], *, agent: str) -> IdeaRecord:
             str(item) for item in data.get("next_research_directions", [])
         ],
         status=str(data.get("status") or "draft"),
+        teaching_candidate=teaching_candidate_from_dict(data.get("teaching_candidate")),
+        practice_candidate=practice_candidate_from_dict(data.get("practice_candidate")),
+        tests=idea_tests_from_dict(data.get("tests")),
     )
 
 
@@ -79,6 +89,19 @@ def main() -> None:
     librarian = Librarian(config.root)
     librarian.ensure_workspace()
     path = librarian.save_idea(idea)
+    from .doctrine import write_candidates_from_idea
+    from .distill import distill_new_ideas
+    from .human_condition import audit_human_condition_fit
+
+    write_candidates_from_idea(config.root, idea, run_id=f"import-{idea.identity()}")
+    audit_human_condition_fit(
+        config.root,
+        [idea],
+        execution_id=f"import-{idea.identity()}",
+        run_ids=[f"import-{idea.identity()}"],
+    )
+    distill_config = EngineConfig.load(provider="codex-cli", codex_search=False)
+    distill_new_ideas(distill_config, [idea])
     librarian.append_exploration_log(
         f"- Imported `{idea.title}` for agent `{args.agent}` at `{path.relative_to(config.root)}`."
     )

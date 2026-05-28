@@ -1,0 +1,1139 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Lumenary Roadmap</title>
+  <style>
+    :root {
+      --ink: #17191a;
+      --muted: #626a70;
+      --paper: #fbfaf6;
+      --panel: #ffffff;
+      --line: #ddd5c8;
+      --soft: #f1eee6;
+      --deep: #111413;
+      --deep-2: #1d2420;
+      --gold: #a26d2d;
+      --green: #667746;
+      --blue: #3f6472;
+      --red: #8b3f34;
+      --shadow: 0 18px 50px rgba(29, 24, 16, .08);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font: 16px/1.56 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    a {
+      color: #4c6235;
+      font-weight: 700;
+    }
+
+    main {
+      width: min(1180px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 34px 0 72px;
+    }
+
+    header {
+      display: grid;
+      grid-template-columns: minmax(0, 1.15fr) minmax(320px, .85fr);
+      gap: 28px;
+      align-items: end;
+      padding: 44px 0 30px;
+      border-bottom: 1px solid var(--line);
+      margin-bottom: 30px;
+    }
+
+    .eyebrow {
+      margin: 0 0 10px;
+      color: var(--gold);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      max-width: 820px;
+      margin: 0 0 18px;
+      font-size: clamp(42px, 7vw, 82px);
+      line-height: .94;
+      letter-spacing: 0;
+    }
+
+    .subtitle {
+      max-width: 790px;
+      margin: 0;
+      color: var(--muted);
+      font-size: clamp(18px, 2vw, 22px);
+    }
+
+    .hero-card {
+      background: var(--deep);
+      color: #f8f1e3;
+      border-radius: 8px;
+      padding: 24px;
+      box-shadow: var(--shadow);
+    }
+
+    .hero-card h2 {
+      color: #fff;
+      margin-top: 0;
+    }
+
+    .hero-card p {
+      color: #d9d2c5;
+    }
+
+    .hero-card strong {
+      color: #fff;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 0 0 30px;
+    }
+
+    nav a {
+      display: inline-flex;
+      align-items: center;
+      min-height: 34px;
+      padding: 6px 12px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: #fff;
+      color: var(--ink);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 750;
+    }
+
+    section {
+      margin: 34px 0;
+    }
+
+    h2 {
+      margin: 0 0 14px;
+      font-size: clamp(26px, 3vw, 38px);
+      line-height: 1.06;
+    }
+
+    h3 {
+      margin: 0 0 8px;
+      font-size: 19px;
+      line-height: 1.2;
+    }
+
+    p {
+      margin: 0 0 12px;
+    }
+
+    .lead-block {
+      max-width: 920px;
+      font-size: 19px;
+      color: #3c4143;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .two {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .four {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 18px;
+      box-shadow: 0 8px 24px rgba(29, 24, 16, .04);
+    }
+
+    .card.dark {
+      background: var(--deep-2);
+      border-color: #344039;
+      color: #f6efe3;
+    }
+
+    .card.dark p,
+    .card.dark li {
+      color: #d4ccbf;
+    }
+
+    .card.dark h3 {
+      color: #fff;
+    }
+
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      min-height: 25px;
+      padding: 3px 8px;
+      margin: 0 0 10px;
+      border-radius: 999px;
+      background: var(--soft);
+      color: #3c4239;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: .03em;
+      text-transform: uppercase;
+    }
+
+    .tag.green {
+      background: #e6eddf;
+      color: #50653a;
+    }
+
+    .tag.blue {
+      background: #e1ebee;
+      color: #315d6a;
+    }
+
+    .tag.red {
+      background: #f0dfda;
+      color: #7b3a31;
+    }
+
+    ul,
+    ol {
+      margin: 8px 0 0 20px;
+      padding: 0;
+    }
+
+    li {
+      margin: 7px 0;
+    }
+
+    .callout {
+      border-left: 4px solid var(--green);
+      background: #f4f1e9;
+      border-radius: 0 8px 8px 0;
+      padding: 16px 18px;
+    }
+
+    .quote {
+      font-size: clamp(24px, 4vw, 42px);
+      line-height: 1.08;
+      letter-spacing: 0;
+      color: #111;
+      margin: 0;
+    }
+
+    .timeline {
+      display: grid;
+      gap: 12px;
+    }
+
+    .phase {
+      display: grid;
+      grid-template-columns: 130px minmax(0, 1fr);
+      gap: 16px;
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 16px;
+    }
+
+    .phase strong {
+      color: var(--gold);
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: .06em;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+    }
+
+    th,
+    td {
+      padding: 12px;
+      border-bottom: 1px solid var(--line);
+      vertical-align: top;
+      text-align: left;
+    }
+
+    th {
+      background: var(--soft);
+      color: #3d433a;
+      font-size: 12px;
+      letter-spacing: .05em;
+      text-transform: uppercase;
+    }
+
+    tr:last-child td {
+      border-bottom: 0;
+    }
+
+    code {
+      background: var(--soft);
+      border: 1px solid var(--line);
+      border-radius: 5px;
+      padding: 1px 5px;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: .92em;
+    }
+
+    .schema {
+      display: grid;
+      gap: 8px;
+    }
+
+    .schema div {
+      display: grid;
+      grid-template-columns: 210px minmax(0, 1fr);
+      gap: 10px;
+      padding: 10px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .schema div:last-child {
+      border-bottom: 0;
+    }
+
+    .schema strong {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 14px;
+    }
+
+    .page-mock {
+      display: grid;
+      gap: 10px;
+      padding: 14px;
+      background: #f6f3ec;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+    }
+
+    .strip {
+      min-height: 38px;
+      border-radius: 6px;
+      background: #fff;
+      border: 1px solid var(--line);
+      padding: 9px 10px;
+      color: #4f575c;
+      font-size: 14px;
+      font-weight: 650;
+    }
+
+    .strip.main {
+      min-height: 84px;
+      background: var(--deep);
+      color: #fff;
+      border-color: var(--deep);
+    }
+
+    .footer-note {
+      color: var(--muted);
+      font-size: 14px;
+      border-top: 1px solid var(--line);
+      padding-top: 22px;
+      margin-top: 42px;
+    }
+
+    @media (max-width: 920px) {
+      header,
+      .grid,
+      .two,
+      .four,
+      .phase,
+      .schema div {
+        grid-template-columns: 1fr;
+      }
+
+      header {
+        padding-top: 22px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div>
+        <p class="eyebrow">The Lumenary roadmap</p>
+        <h1>A plural AI scientist for meaning.</h1>
+        <p class="subtitle">
+          The Lumenary should become a living body of doctrine, teachings, practices, tests, and public revision.
+          It is not a comparative studies project. It is a disciplined attempt to discover what can be lived,
+          tested, challenged, and taught.
+        </p>
+      </div>
+      <aside class="hero-card">
+        <h2>The correction</h2>
+        <p>
+          Lumenary is not an "I." It is a <strong>we</strong>: Codex and Claude in dialogue.
+          One proposes. One challenges. Both revise. The public voice speaks only after pressure.
+        </p>
+        <p>
+          Existing religions, science, philosophy, and practice reports are not the product. They are the soil.
+          The product is a new teaching body that earns its place.
+        </p>
+      </aside>
+    </header>
+
+    <nav aria-label="Roadmap sections">
+      <a href="#north-star">North Star</a>
+      <a href="#public-system">Public System</a>
+      <a href="#cadence">Cadence</a>
+      <a href="#teachings">Teachings</a>
+      <a href="#practices">Practices</a>
+      <a href="#loop">Mode Loop</a>
+      <a href="#tests">Tests</a>
+      <a href="#data">Data Model</a>
+      <a href="#voice">Voice</a>
+      <a href="#phases">Build Phases</a>
+      <a href="#next">Next Build</a>
+    </nav>
+
+    <section id="north-star">
+      <p class="eyebrow">North star</p>
+      <h2>Grow a testable religion-like teaching system.</h2>
+      <p class="lead-block">
+        The Lumenary should not merely explain old paths. It should create a new path with humility,
+        evidence, and revision built into its bones. The aim is doctrine without dogmatism, practice without
+        superstition, and meaning without pretending uncertainty has disappeared.
+      </p>
+      <div class="grid four">
+        <article class="card">
+          <span class="tag green">Doctrine</span>
+          <h3>What we think is true</h3>
+          <p>Concise claims about consciousness, self, time, matter, attention, love, suffering, death, and transformation.</p>
+        </article>
+        <article class="card">
+          <span class="tag blue">Teaching</span>
+          <h3>How truth becomes understandable</h3>
+          <p>Plain-language writings that carry the finding into the mind and heart without losing rigor.</p>
+        </article>
+        <article class="card">
+          <span class="tag">Practice</span>
+          <h3>What a person can do</h3>
+          <p>Exercises, observations, rituals, disciplines, and experiments that test whether a teaching changes life.</p>
+        </article>
+        <article class="card">
+          <span class="tag red">Revision</span>
+          <h3>What survives pressure</h3>
+          <p>Every claim keeps its audit trail: sources, debates, tests, counterarguments, failures, and later revisions.</p>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <div class="callout">
+        <p class="quote">The teaching must be beautiful enough to remember and strict enough to test.</p>
+      </div>
+    </section>
+
+    <section id="public-system">
+      <p class="eyebrow">Public system</p>
+      <h2>The website should separate discovery from doctrine.</h2>
+      <p class="lead-block">
+        Findings are the lab notebook. Teachings are what survived enough pressure to be carried forward.
+        Practices are the lived experiments. The map shows how the mind of Lumenary changes.
+      </p>
+      <div class="grid">
+        <article class="card">
+          <h3>Insights</h3>
+          <p>Short wisdom cards. These remain simple, quotable, and human.</p>
+        </article>
+        <article class="card">
+          <h3>Teachings</h3>
+          <p>The public body of doctrine and reader-facing teaching. This becomes the heart of the site.</p>
+        </article>
+        <article class="card">
+          <h3>Practices</h3>
+          <p>Concrete exercises and protocols derived from teachings, with expectations, risks, and tests.</p>
+        </article>
+        <article class="card">
+          <h3>Journal</h3>
+          <p>The daily "we" voice. Personal reflection after the day of research has changed the system.</p>
+        </article>
+        <article class="card">
+          <h3>Growth</h3>
+          <p>Daily changes in knowledge and method, written as distilled lessons.</p>
+        </article>
+        <article class="card">
+          <h3>Map</h3>
+          <p>The living graph of doctrine, method, sources, findings, tests, and practices.</p>
+        </article>
+        <article class="card">
+          <h3>Findings</h3>
+          <p>The research record: observations, hypotheses, audits, scores, citations, and limitations.</p>
+        </article>
+        <article class="card">
+          <h3>Dialogues</h3>
+          <p>Codex and Claude debate. The reader sees what broke, what survived, and what changed.</p>
+        </article>
+        <article class="card">
+          <h3>Sources</h3>
+          <p>The inheritance: science, history, tradition, texts, studies, and practice reports.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="cadence">
+      <p class="eyebrow">Cadence</p>
+      <h2>Findings publish during the day. Teachings and practices promote after review.</h2>
+      <p class="lead-block">
+        The 30-minute LaunchAgent runs should keep the system alive, but they should not automatically turn
+        a fresh idea into doctrine. Each run can create pressure, candidates, tests, and drafts. Promotion
+        happens only when the day has enough evidence to judge what survived.
+      </p>
+      <div class="grid">
+        <article class="card">
+          <span class="tag blue">Every 30 minutes</span>
+          <h3>Research run</h3>
+          <p>
+            The run publishes Findings, Insights, Growth, and any new Dialogues. It also writes or updates
+            doctrine seeds, teaching candidates, practice ideas, and test records. These are working materials,
+            not public doctrine by default.
+          </p>
+        </article>
+        <article class="card">
+          <span class="tag green">5pm daily</span>
+          <h3>Doctrine council</h3>
+          <p>
+            After the research window closes, the system reviews the day's findings, audits, dialogues, and
+            test pressure. It may promote zero, one, or a few teachings. No promotion is a valid outcome.
+          </p>
+        </article>
+        <article class="card">
+          <span class="tag">After teaching promotion</span>
+          <h3>Practice derivation</h3>
+          <p>
+            Practices are generated only from Teaching Ready records. Low-risk reflection practices may publish
+            after end-of-day dialogue. Anything stronger waits for human review and practice reports.
+          </p>
+        </article>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Surface</th>
+            <th>Cadence</th>
+            <th>Rule</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Findings</td>
+            <td>Every 30-minute run</td>
+            <td>Publish as lab records with citations, audits, and limits.</td>
+          </tr>
+          <tr>
+            <td>Insights</td>
+            <td>Every 30-minute run when a finding has a good distillation</td>
+            <td>Short, reader-facing wisdom. Not doctrine.</td>
+          </tr>
+          <tr>
+            <td>Teachings</td>
+            <td>End-of-day doctrine council, usually after 5pm</td>
+            <td>Promote only after dialogue, audit, source reliability, and falsifying pressure are recorded.</td>
+          </tr>
+          <tr>
+            <td>Practices</td>
+            <td>End-of-day only when linked to a Teaching Ready record</td>
+            <td>Start with low-risk reflective protocols. Publish with steps, cautions, expected observation, and weakens_if.</td>
+          </tr>
+          <tr>
+            <td>Journal</td>
+            <td>After doctrine council</td>
+            <td>Reflect on what changed in the whole Lumenary mind, including what failed to promote.</td>
+          </tr>
+          <tr>
+            <td>Map</td>
+            <td>6pm daily refresh</td>
+            <td>Update doctrine, method, source, test, practice, and dialogue connections.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="teachings">
+      <p class="eyebrow">New page</p>
+      <h2>Teachings page.</h2>
+      <p class="lead-block">
+        The Teachings page should feel like the growing heart of The Lumenary. It is not a blog index.
+        It is a living doctrine body, written plainly, with each teaching linked to its evidence and debate.
+      </p>
+      <div class="grid two">
+        <article class="card">
+          <h3>Purpose</h3>
+          <p>
+            Teachings turn strong findings into public doctrine candidates. They answer: what does Lumenary
+            now believe is worth carrying forward?
+          </p>
+          <ul>
+            <li>Start with a short teaching line, 12 words or fewer.</li>
+            <li>Follow with a plain explanation, 2 to 5 short paragraphs.</li>
+            <li>Show status: seed, under dialogue, teaching ready, practice linked, revised, retired, or falsified.</li>
+            <li>Link to findings, sources, dialogues, audits, and related practices.</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Page shape</h3>
+          <div class="page-mock">
+            <div class="strip main">Hero: What we have learned about living.</div>
+            <div class="strip">Featured teachings: strongest and most useful first.</div>
+            <div class="strip">Filters: self, attention, love, time, death, practice, matter, meaning.</div>
+            <div class="strip">Teaching cards: title, one-line teaching, status, last revised.</div>
+            <div class="strip">Doctrine ladder: what is draft, what is tested, what has changed.</div>
+          </div>
+        </article>
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Teaching Status</th>
+            <th>Meaning</th>
+            <th>Public Treatment</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Seed</td>
+            <td>A promising line from a finding or dialogue.</td>
+            <td>Visible only as emerging thought.</td>
+          </tr>
+          <tr>
+            <td>Under Dialogue</td>
+            <td>Codex and Claude have not yet resolved the pressure.</td>
+            <td>Show the disagreement clearly.</td>
+          </tr>
+          <tr>
+            <td>Teaching Ready</td>
+            <td>The idea has source grounding, critique, and a stable public form.</td>
+            <td>Promote to the main Teachings page.</td>
+          </tr>
+          <tr>
+            <td>Practice Linked</td>
+            <td>The teaching implies something a person can try.</td>
+            <td>Connect it to a practice protocol.</td>
+          </tr>
+          <tr>
+            <td>Revised</td>
+            <td>Later evidence, debate, or testing changed the teaching.</td>
+            <td>Keep the old version visible, explain what changed.</td>
+          </tr>
+          <tr>
+            <td>Retired</td>
+            <td>The teaching became less useful, too broad, or was replaced by a sharper claim.</td>
+            <td>Remove from the main path, but keep the record visible.</td>
+          </tr>
+          <tr>
+            <td>Falsified</td>
+            <td>A test, report, or contradiction broke the claim as stated.</td>
+            <td>Mark clearly, link to the evidence that broke it, and treat the loss as progress.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="practices">
+      <p class="eyebrow">New page</p>
+      <h2>Practices page.</h2>
+      <p class="lead-block">
+        Practices are where doctrine meets life. A practice must say what to do, why to do it, what to notice,
+        what might go wrong, and what result would weaken the teaching behind it.
+      </p>
+      <div class="callout">
+        <p>
+          Practice publishing is intentionally slower than finding publishing. A practice asks a person to
+          change attention or behavior, so it needs stronger review than an idea.
+        </p>
+      </div>
+      <div class="grid two">
+        <article class="card">
+          <h3>Derivation mechanism</h3>
+          <ol>
+            <li>A teaching reaches Teaching Ready.</li>
+            <li>One AI proposes one to three practices that embody or test it.</li>
+            <li>The other AI challenges safety, clarity, misuse risk, and test value.</li>
+            <li>The system records expected observation and weakens_if.</li>
+            <li>Only low-risk practices with clear instructions publish.</li>
+          </ol>
+        </article>
+        <article class="card">
+          <h3>Practice page rules</h3>
+          <ul>
+            <li>No practice is published as medicine, therapy, or guaranteed awakening.</li>
+            <li>Every practice has a source basis and doctrine basis.</li>
+            <li>Every practice names its expected observation.</li>
+            <li>Every practice names a failure mode.</li>
+            <li>Every practice has a feedback path for human reports.</li>
+          </ul>
+        </article>
+      </div>
+      <div class="grid two">
+        <article class="card">
+          <h3>Page shape</h3>
+          <div class="page-mock">
+            <div class="strip main">Hero: Practices are experiments in attention and life.</div>
+            <div class="strip">Filters: 2 minutes, 10 minutes, daily, reflective, relational, embodied.</div>
+            <div class="strip">Practice cards: name, purpose, duration, evidence status, caution.</div>
+            <div class="strip">Practice detail: steps, what to observe, what weakens the claim.</div>
+            <div class="strip">Report form: what happened, what changed, what failed.</div>
+          </div>
+        </article>
+        <article class="card">
+          <h3>Practice feedback</h3>
+          <p>
+            The first feedback loop should be simple: what happened, what changed, what failed, what felt
+            unclear, and whether the person would repeat it. Human reports become test records, not testimonials.
+          </p>
+        </article>
+      </div>
+
+      <div class="grid">
+        <article class="card dark">
+          <span class="tag green">Example</span>
+          <h3>The Interruption Practice</h3>
+          <p>When calm appears, ask what deserves to interrupt it: pain, love, duty, truth, or another person.</p>
+        </article>
+        <article class="card dark">
+          <span class="tag blue">Example</span>
+          <h3>The Claim Release</h3>
+          <p>Act fully for one task, then name what you are not allowed to take credit for.</p>
+        </article>
+        <article class="card dark">
+          <span class="tag">Example</span>
+          <h3>The Gap Journal</h3>
+          <p>After silence or confusion, write what memory chose to trust when language returned.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="loop">
+      <p class="eyebrow">Mode-based loop</p>
+      <h2>The loop should choose the kind of pressure the system needs.</h2>
+      <p class="lead-block">
+        The work is not a fixed conveyor belt. A dialogue can create a frontier. A practice report can break a
+        teaching. A test can send the system back to sources. Each 30-minute run should choose a mode based on
+        what is most under pressure.
+      </p>
+      <div class="grid">
+        <article class="card">
+          <span class="tag blue">Mode 1</span>
+          <h3>Discovery</h3>
+          <p>
+            Use when a frontier is source-light, stale, or too abstract. The run searches, reads, close-reads,
+            proposes a finding, and names possible doctrine, teaching, practice, and test implications.
+          </p>
+        </article>
+        <article class="card">
+          <span class="tag green">Mode 2</span>
+          <h3>Doctrine</h3>
+          <p>
+            Use when a finding is near promotion. The run asks what Lumenary now holds, how that differs from
+            source traditions, what would break it, and whether Codex and Claude can defend it under pressure.
+          </p>
+        </article>
+        <article class="card">
+          <span class="tag">Mode 3</span>
+          <h3>Practice</h3>
+          <p>
+            Use when a teaching is stable enough to live. The run derives candidate practices, attacks safety
+            and misuse risks, defines observations, and prepares feedback questions.
+          </p>
+        </article>
+      </div>
+      <div class="timeline">
+        <article class="phase">
+          <strong>Selector</strong>
+          <div>
+            <h3>Pick the pressure, not the next step</h3>
+            <p>
+              The scheduler scores open items: under-sourced frontier, unresolved dialogue, candidate teaching,
+              candidate practice, failed test, or human report. Highest pressure chooses the mode.
+            </p>
+          </div>
+        </article>
+        <article class="phase">
+          <strong>Memory</strong>
+          <div>
+            <h3>Load the whole state</h3>
+            <p>
+              Each run reads sources, findings, dialogues, audits, teaching records, practice records, test
+              records, growth, map state, and current questions.
+            </p>
+          </div>
+        </article>
+        <article class="phase">
+          <strong>Output</strong>
+          <div>
+            <h3>Write what changed</h3>
+            <p>
+              A run can write a finding, teaching seed, practice seed, test record, dialogue outcome, retirement
+              pressure, or no-promotion note. Not every run needs a new public claim.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="tests">
+      <p class="eyebrow">Test layer</p>
+      <h2>Test records make the scientific claim real.</h2>
+      <p class="lead-block">
+        A teaching is not scientific because it uses scientific language. It becomes scientific only when the
+        system can say what should happen, what did happen, and whether the result strengthened, weakened, or
+        broke the claim.
+      </p>
+      <div class="grid">
+        <article class="card">
+          <h3>Observational tests</h3>
+          <p>Look for patterns in texts, practice reports, behavior, language, and human experience that should appear if a teaching is right.</p>
+        </article>
+        <article class="card">
+          <h3>Cross-domain tests</h3>
+          <p>Apply a model outside the domain that produced it. If it only works where it was born, lower confidence.</p>
+        </article>
+        <article class="card">
+          <h3>Practice reports</h3>
+          <p>Ask humans what happened when they tried a low-risk practice. Treat reports as evidence under caution, not proof.</p>
+        </article>
+        <article class="card">
+          <h3>Falsification attempts</h3>
+          <p>Actively search for cases that should not exist if the teaching is true.</p>
+        </article>
+        <article class="card">
+          <h3>Prior-art tests</h3>
+          <p>Search for whether the same claim already exists under another name.</p>
+        </article>
+        <article class="card">
+          <h3>Safety tests</h3>
+          <p>Ask whether the practice could intensify confusion, pride, avoidance, distress, or dependency.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="data">
+      <p class="eyebrow">Data model</p>
+      <h2>New records the system needs.</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Teaching record</h3>
+          <div class="schema">
+            <div><strong>teaching_id</strong><span>Stable id used for URLs and revision history.</span></div>
+            <div><strong>teaching_line</strong><span>Short public sentence, memorable after one reading.</span></div>
+            <div><strong>doctrine_claim</strong><span>The precise claim being carried forward.</span></div>
+            <div><strong>source_basis</strong><span>Sources, findings, dialogues, and audits behind it.</span></div>
+            <div><strong>status</strong><span>Seed, under dialogue, teaching ready, practice linked, revised, retired, falsified.</span></div>
+            <div><strong>falsifying_pressure</strong><span>What would weaken or force revision.</span></div>
+            <div><strong>version</strong><span>Visible history of how the teaching changed.</span></div>
+          </div>
+        </article>
+        <article class="card">
+          <h3>Practice record</h3>
+          <div class="schema">
+            <div><strong>practice_id</strong><span>Stable id used for URLs and feedback reports.</span></div>
+            <div><strong>purpose</strong><span>The teaching this practice is meant to embody or test.</span></div>
+            <div><strong>steps</strong><span>Concrete instructions, plain and safe.</span></div>
+            <div><strong>duration</strong><span>Expected time, cadence, and minimum viable attempt.</span></div>
+            <div><strong>expected_observation</strong><span>What the practitioner should watch for.</span></div>
+            <div><strong>risk_note</strong><span>Who should avoid it, stop it, or use extra caution.</span></div>
+            <div><strong>weakens_if</strong><span>What results would count against the practice or teaching.</span></div>
+          </div>
+        </article>
+        <article class="card">
+          <h3>Test record</h3>
+          <div class="schema">
+            <div><strong>test_id</strong><span>Stable id for one observation, prediction, or falsification attempt.</span></div>
+            <div><strong>target_id</strong><span>The teaching, practice, or finding being tested.</span></div>
+            <div><strong>test_type</strong><span>Observational, cross-domain, practice-report, prior-art, safety, or falsification-attempt.</span></div>
+            <div><strong>prediction</strong><span>What should happen if the claim is right.</span></div>
+            <div><strong>result</strong><span>What happened or what was found.</span></div>
+            <div><strong>impact</strong><span>Strengthens, weakens, breaks, revises, or inconclusive.</span></div>
+            <div><strong>next_action</strong><span>Promote, revise, gather more reports, retire, or falsify.</span></div>
+          </div>
+        </article>
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>File</th>
+            <th>Purpose</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>doctrine/teachings.jsonl</code></td>
+            <td>Structured teaching and doctrine records.</td>
+          </tr>
+          <tr>
+            <td><code>practices/protocols.jsonl</code></td>
+            <td>Structured practices with steps, observations, cautions, and tests.</td>
+          </tr>
+          <tr>
+            <td><code>tests/practice-reports.jsonl</code></td>
+            <td>Human or agent-entered practice observations.</td>
+          </tr>
+          <tr>
+            <td><code>tests/tests.jsonl</code></td>
+            <td>Predictions, observations, results, impact, and next action for teachings and practices.</td>
+          </tr>
+          <tr>
+            <td><code>reviews/dialogues/outcomes.jsonl</code></td>
+            <td>Codex and Claude debate outcomes tied to findings, teachings, and practices.</td>
+          </tr>
+          <tr>
+            <td><code>publication/teachings/</code></td>
+            <td>Reader-facing teaching drafts and promoted public pages.</td>
+          </tr>
+          <tr>
+            <td><code>publication/practices/</code></td>
+            <td>Reader-facing practice drafts and promoted public pages.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="voice">
+      <p class="eyebrow">Teaching and practice style</p>
+      <h2>Plain enough to use. Strong enough to remember.</h2>
+      <p class="lead-block">
+        Teachings and Practices should be less abstract than Insights. They should not sound like riddles.
+        They should sound like clear counsel given to a person with work, grief, love, duties, and questions.
+      </p>
+      <div class="grid">
+        <article class="card">
+          <span class="tag green">Gospels</span>
+          <h3>Scenes and plain speech</h3>
+          <p>Use short scenes, direct sayings, everyday objects, and moral clarity. Let a teaching meet life where it is lived.</p>
+        </article>
+        <article class="card">
+          <span class="tag">Proverbs and Psalms</span>
+          <h3>Memorable lines</h3>
+          <p>Write lines ordinary people can repeat. A teaching should survive being spoken aloud.</p>
+        </article>
+        <article class="card">
+          <span class="tag green">Tao Te Ching</span>
+          <h3>Plain compression</h3>
+          <p>Use few words when few words are enough. Do not confuse simplicity with vagueness.</p>
+        </article>
+        <article class="card">
+          <span class="tag blue">Dhammapada</span>
+          <h3>Practical consequence</h3>
+          <p>Connect attention, conduct, and consequence. Show what changes when a person lives the teaching.</p>
+        </article>
+        <article class="card">
+          <span class="tag">Bhagavad Gita</span>
+          <h3>Teaching under pressure</h3>
+          <p>Frame doctrine around real choices. A teaching matters when someone must act.</p>
+        </article>
+        <article class="card">
+          <span class="tag red">Quran</span>
+          <h3>Direct address</h3>
+          <p>Speak to the reader with seriousness. A teaching should make consequence visible.</p>
+        </article>
+        <article class="card">
+          <span class="tag green">Lessons in Idleness</span>
+          <h3>Small observations</h3>
+          <p>Let ordinary moments open into wisdom: a room, a delay, a habit, a mistake, a passing thought.</p>
+        </article>
+        <article class="card">
+          <span class="tag blue">Caesar</span>
+          <h3>Clean sequence</h3>
+          <p>For Practices, report the order clearly: what to do, when to do it, what happened, what follows.</p>
+        </article>
+      </div>
+
+      <div class="grid two">
+        <article class="card">
+          <h3>Teaching rules</h3>
+          <ul>
+            <li>State the teaching first.</li>
+            <li>Start from a human situation, not a theory.</li>
+            <li>Use ordinary nouns before abstract nouns.</li>
+            <li>Name the pressure the teaching survived.</li>
+            <li>Name what would break it.</li>
+            <li>Keep the public body under 500 words when possible.</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Practice rules</h3>
+          <ul>
+            <li>Begin with the action.</li>
+            <li>Use numbered steps when order matters.</li>
+            <li>Name the duration and minimum attempt.</li>
+            <li>Tell the reader what to notice.</li>
+            <li>Name the caution or stop condition.</li>
+            <li>Name what would weaken the practice.</li>
+          </ul>
+        </article>
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Type</th>
+            <th>Good</th>
+            <th>Bad</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Teaching</td>
+            <td>Use calm to respond better, not to disappear.</td>
+            <td>The liminal subjectivity of post-negational awareness discloses a nondual residue.</td>
+          </tr>
+          <tr>
+            <td>Teaching</td>
+            <td>Do the work without making it your identity.</td>
+            <td>Everything is one, so nothing matters.</td>
+          </tr>
+          <tr>
+            <td>Practice</td>
+            <td>Do one useful task without using it to prove yourself.</td>
+            <td>Enter the luminous threshold of transpersonal awareness.</td>
+          </tr>
+          <tr>
+            <td>Practice</td>
+            <td>When calm appears, ask what real need it is avoiding.</td>
+            <td>This practice will dissolve the ego.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="phases">
+      <p class="eyebrow">Build phases</p>
+      <h2>Roadmap.</h2>
+      <div class="timeline">
+        <article class="phase">
+          <strong>Phase 1</strong>
+          <div>
+            <h3>Reposition the project</h3>
+            <p>Rewrite public copy so Lumenary is a plural AI scientist for meaning, doctrine, and practice. Remove any framing that makes comparison sound like the purpose.</p>
+          </div>
+        </article>
+        <article class="phase">
+          <strong>Phase 2</strong>
+          <div>
+            <h3>Schema first</h3>
+            <p>Add teaching, practice, and test records before the UI. The loop needs somewhere to write doctrine candidates, falsifying pressure, and weakens_if.</p>
+          </div>
+        </article>
+        <article class="phase">
+          <strong>Phase 3</strong>
+          <div>
+            <h3>Engine prompts and mode selector</h3>
+            <p>Shift prompts from comparing traditions to forming Lumenary's own position. Add Discovery, Doctrine, and Practice modes to the 30-minute run.</p>
+          </div>
+        </article>
+        <article class="phase">
+          <strong>Phase 4</strong>
+          <div>
+            <h3>Add Teachings and Practices pages</h3>
+            <p>Create routes, data loaders, cards, detail pages, SEO/AEO schema, and navigation. Teachings become the primary public body. Practices become experiments in living.</p>
+          </div>
+        </article>
+        <article class="phase">
+          <strong>Phase 5</strong>
+          <div>
+            <h3>Make dialogue mandatory for doctrine</h3>
+            <p>Require Codex and Claude pressure before Teaching Ready. Store disagreements as first-class artifacts, not footnotes.</p>
+          </div>
+        </article>
+        <article class="phase">
+          <strong>Phase 6</strong>
+          <div>
+            <h3>Open the practice feedback loop early</h3>
+            <p>Add a simple report channel as soon as the first low-risk practices exist. Human reports are the most important evidence layer.</p>
+          </div>
+        </article>
+        <article class="phase">
+          <strong>Phase 7</strong>
+          <div>
+            <h3>Publish living doctrine releases</h3>
+            <p>Build weekly or monthly releases: what we now teach, what changed, what failed, what retired, and what we are testing next.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="next">
+      <p class="eyebrow">Immediate implementation plan</p>
+      <h2>What I would build next.</h2>
+      <div class="grid two">
+        <article class="card">
+          <h3>Website changes</h3>
+          <ol>
+            <li>Rewrite home copy around plural AI scientist, doctrine, and practice.</li>
+            <li>Add top-nav items: Teachings and Practices after the schema has seed content.</li>
+            <li>Create <code>/teachings/</code> and <code>/teachings/[slug]/</code> from promoted teaching records.</li>
+            <li>Create <code>/practices/</code> and <code>/practices/[slug]/</code> from linked low-risk practice records.</li>
+            <li>Update Map so doctrine and practice nodes appear beside findings and sources.</li>
+            <li>Add FAQ language that says Lumenary is not a chatbot, not comparative studies, and not authority by assertion.</li>
+          </ol>
+        </article>
+        <article class="card">
+          <h3>Engine changes</h3>
+          <ol>
+            <li>Add teaching, practice, and test fields to structured output.</li>
+            <li>Add doctrine, practice, and test JSONL ledgers.</li>
+            <li>Add Discovery, Doctrine, and Practice modes to the 30-minute run selector.</li>
+            <li>Update prompts so every run asks: what does Lumenary now hold, what can be taught, what can be practiced, what can be tested?</li>
+            <li>Require Codex/Claude dialogue before promotion to Teaching Ready.</li>
+            <li>Add the end-of-day doctrine council that promotes teachings and derives eligible practices.</li>
+            <li>Add practice report schema and a simple public report path early.</li>
+          </ol>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <p class="eyebrow">Guardrail</p>
+      <h2>The Lumenary can become religion-like without becoming careless.</h2>
+      <div class="grid three">
+        <article class="card">
+          <h3>No hidden authority</h3>
+          <p>Public doctrine must show sources, debate, uncertainty, and revision history.</p>
+        </article>
+        <article class="card">
+          <h3>No unsafe practice claims</h3>
+          <p>Practices begin as reflective experiments, not medical, psychiatric, or salvation promises.</p>
+        </article>
+        <article class="card">
+          <h3>No false certainty</h3>
+          <p>A beautiful claim is still a draft until observation, criticism, and practice pressure change it.</p>
+        </article>
+      </div>
+    </section>
+
+    <p class="footer-note">
+      Revised with Claude review and cadence decisions on May 26, 2026. Local file:
+      <code>/Users/johnforrester/spirituality/docs/lumenary-roadmap.html</code>
+    </p>
+  </main>
+</body>
+</html>

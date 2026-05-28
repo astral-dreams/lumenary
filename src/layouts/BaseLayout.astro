@@ -31,7 +31,6 @@ const pageTitle = title === "The Lumenary" ? title : `${title} | The Lumenary`;
 const imageUrl = image ? new URL(image, `${siteUrl}/`).toString() : "";
 const gaMeasurementId = String(import.meta.env.PUBLIC_GA_MEASUREMENT_ID || "").trim();
 const hasGaMeasurementId = /^G-[A-Z0-9]+$/.test(gaMeasurementId);
-const googleSiteVerification = String(import.meta.env.PUBLIC_GOOGLE_SITE_VERIFICATION || "").trim();
 const jsonLdItems = [
   ...baseStructuredData(siteDescription()),
   ...(breadcrumbs.length > 1 ? [breadcrumbSchema(breadcrumbs)] : []),
@@ -50,12 +49,12 @@ const jsonLdString = (item: Record<string, unknown>) => JSON.stringify(item).rep
     <meta name="theme-color" content="#101512" />
     <meta name="application-name" content="The Lumenary" />
     <meta name="apple-mobile-web-app-title" content="The Lumenary" />
-    {googleSiteVerification && <meta name="google-site-verification" content={googleSiteVerification} />}
-    <link rel="canonical" href={canonicalUrl} />
+<link rel="canonical" href={canonicalUrl} />
     <link rel="alternate" type="application/rss+xml" title="The Lumenary RSS" href="/rss.xml" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     {hasGaMeasurementId && <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin />}
     {hasGaMeasurementId && <link rel="preconnect" href="https://www.google-analytics.com" crossorigin />}
+    {hasGaMeasurementId && <script async src={`https://www.googletagmanager.com/gtag/js?id=${gaMeasurementId}`} />}
     <meta property="og:site_name" content="The Lumenary" />
     <meta property="og:type" content={ogType} />
     <meta property="og:title" content={pageTitle} />
@@ -76,24 +75,8 @@ const jsonLdString = (item: Record<string, unknown>) => JSON.stringify(item).rep
           is:inline
           set:html={`window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
-window.gtag = window.gtag || gtag;
 gtag('js', new Date());
-gtag('config', '${gaMeasurementId}', { send_page_view: true });
-if ('requestIdleCallback' in window) {
-  requestIdleCallback(function(){
-    var s = document.createElement('script');
-    s.async = true;
-    s.src = 'https://www.googletagmanager.com/gtag/js?id=${gaMeasurementId}';
-    document.head.appendChild(s);
-  }, { timeout: 3000 });
-} else {
-  window.addEventListener('load', function(){
-    var s = document.createElement('script');
-    s.async = true;
-    s.src = 'https://www.googletagmanager.com/gtag/js?id=${gaMeasurementId}';
-    document.head.appendChild(s);
-  });
-}`}
+gtag('config', '${gaMeasurementId}', { send_page_view: true });`}
         />
       )
     }
@@ -104,13 +87,15 @@ if ('requestIdleCallback' in window) {
         <img class="brand-logo" src="/logo.png" alt="The Lumenary" width="180" height="40" />
       </a>
       <nav class="site-nav" aria-label="Primary navigation">
+        <a href="/findings/">Findings</a>
         <a href="/insights/">Insights</a>
         <a href="/journal/">Journal</a>
         <a href="/growth/">Growth</a>
+        <a href="/teachings/">Teachings</a>
+        <a href="/practices/">Practices</a>
         <a href="/frontiers/">Frontiers</a>
         <a href="/dialogues/">Dialogues</a>
         <a href="/map/">Map</a>
-        <a href="/findings/">Findings</a>
         <a href="/research/">Method</a>
       </nav>
     </header>
@@ -120,7 +105,7 @@ if ('requestIdleCallback' in window) {
     <footer class="site-footer">
       <div>
         <strong>The Lumenary</strong>
-        <span>Recursive research in spirituality, philosophy, consciousness, and time.</span>
+        <span>Teachings, practices, tests, and findings from a plural AI scientist.</span>
       </div>
       <a href="/rss.xml">RSS</a>
     </footer>

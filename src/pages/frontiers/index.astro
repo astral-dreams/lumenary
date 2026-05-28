@@ -1,5 +1,4 @@
 ---
-import Breadcrumbs from "../../components/Breadcrumbs.astro";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import { getFrontiers, researchStats } from "../../lib/content";
 import type { FrontierView } from "../../lib/content";
@@ -59,7 +58,6 @@ const jsonLd = [
 ---
 
 <BaseLayout title="Frontiers" description={description} jsonLd={jsonLd} breadcrumbs={breadcrumbs}>
-  <Breadcrumbs items={breadcrumbs} />
   <section class="page-band frontiers-hero">
     <p class="eyebrow">Frontiers</p>
     <h1>The Questions Steering The Lumenary</h1>

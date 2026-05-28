@@ -1,60 +1,1798 @@
 {
   "nodes": [
-    {"id": "atman", "label": "Atman", "type": "concept", "traditions": ["Advaita Vedanta", "Hindu philosophy"]},
-    {"id": "anatman", "label": "Anatman / non-self", "type": "concept", "traditions": ["Buddhism"]},
-    {"id": "brahman", "label": "Brahman", "type": "concept", "traditions": ["Vedanta"]},
-    {"id": "sunyata", "label": "Sunyata / emptiness", "type": "concept", "traditions": ["Madhyamaka", "Mahayana Buddhism"]},
-    {"id": "wu-wei", "label": "Wu wei", "type": "concept", "traditions": ["Daoism"]},
-    {"id": "soul", "label": "Soul", "type": "compound-concept", "traditions": ["Christianity", "Platonism", "Islamic philosophy"]},
-    {"id": "witness-consciousness", "label": "Witness-consciousness / sakshi", "type": "claim-unit", "traditions": ["Advaita Vedanta", "contemplative phenomenology"]},
-    {"id": "turiya", "label": "Turiya (the Fourth)", "type": "concept", "traditions": ["Advaita Vedanta", "Mandukya Upanishad"]},
-    {"id": "ajativada", "label": "Ajativada (non-origination)", "type": "concept", "traditions": ["Advaita Vedanta", "Gaudapada"]},
-    {"id": "dependent-origination", "label": "Pratityasamutpada / dependent origination", "type": "concept", "traditions": ["Buddhism"]},
-    {"id": "alaya-vijnana", "label": "Alaya-vijnana (storehouse consciousness)", "type": "concept", "traditions": ["Yogacara Buddhism", "Lankavatara Sutra"]},
-    {"id": "citta-matra", "label": "Citta-matra (mind-only)", "type": "concept", "traditions": ["Yogacara Buddhism"]},
-    {"id": "being-time", "label": "Uji (being-time)", "type": "concept", "traditions": ["Soto Zen", "Dogen"]},
-    {"id": "wu", "label": "Wu (non-being)", "type": "concept", "traditions": ["Daoism"]},
-    {"id": "dao", "label": "Dao", "type": "concept", "traditions": ["Daoism"]},
-    {"id": "zuowang", "label": "Zuowang (sitting and forgetting)", "type": "concept", "traditions": ["Daoism", "Zhuangzi"]},
-    {"id": "the-one", "label": "The One (to hen)", "type": "concept", "traditions": ["Neoplatonism", "Plotinus"]},
-    {"id": "emanation", "label": "Emanation / proodos", "type": "concept", "traditions": ["Neoplatonism"]},
-    {"id": "epistrophe", "label": "Epistrophe (return/reversion)", "type": "concept", "traditions": ["Neoplatonism", "Proclus"]},
-    {"id": "wahdat-al-wujud", "label": "Wahdat al-wujud (unity of being)", "type": "concept", "traditions": ["Sufism", "Ibn Arabi"]},
-    {"id": "fana", "label": "Fana (self-annihilation in God)", "type": "concept", "traditions": ["Sufism"]},
-    {"id": "pancha-kosha", "label": "Pancha kosha (five sheaths)", "type": "concept", "traditions": ["Advaita Vedanta", "Vivekachudamani"]},
-    {"id": "phi-iit", "label": "Phi / integrated information", "type": "concept", "traditions": ["consciousness science", "IIT"]},
-    {"id": "markov-blanket", "label": "Markov blanket (self-boundary)", "type": "concept", "traditions": ["computational neuroscience", "Friston"]},
-    {"id": "it-from-bit", "label": "It from Bit (participatory universe)", "type": "concept", "traditions": ["theoretical physics", "Wheeler"]},
-    {"id": "maya", "label": "Maya (illusion/appearance)", "type": "concept", "traditions": ["Advaita Vedanta"]},
-    {"id": "catuskoti", "label": "Catuskoti (tetralemma)", "type": "concept", "traditions": ["Madhyamaka Buddhism", "Nagarjuna"]},
-    {"id": "inferential-gap", "label": "Inferential gap", "type": "lumenary-method"},
-    {"id": "translation-strain", "label": "Translation strain", "type": "lumenary-method"}
+    {
+      "id": "atman",
+      "label": "Atman",
+      "type": "concept",
+      "traditions": [
+        "Advaita Vedanta",
+        "Hindu philosophy"
+      ]
+    },
+    {
+      "id": "anatman",
+      "label": "Anatman / non-self",
+      "type": "concept",
+      "traditions": [
+        "Buddhism"
+      ]
+    },
+    {
+      "id": "brahman",
+      "label": "Brahman",
+      "type": "concept",
+      "traditions": [
+        "Vedanta"
+      ]
+    },
+    {
+      "id": "sunyata",
+      "label": "Sunyata / emptiness",
+      "type": "concept",
+      "traditions": [
+        "Madhyamaka",
+        "Mahayana Buddhism"
+      ]
+    },
+    {
+      "id": "wu-wei",
+      "label": "Wu wei",
+      "type": "concept",
+      "traditions": [
+        "Daoism"
+      ]
+    },
+    {
+      "id": "soul",
+      "label": "Soul",
+      "type": "compound-concept",
+      "traditions": [
+        "Christianity",
+        "Platonism",
+        "Islamic philosophy"
+      ]
+    },
+    {
+      "id": "witness-consciousness",
+      "label": "Witness-consciousness / sakshi",
+      "type": "claim-unit",
+      "traditions": [
+        "Advaita Vedanta",
+        "contemplative phenomenology"
+      ]
+    },
+    {
+      "id": "turiya",
+      "label": "Turiya (the Fourth)",
+      "type": "concept",
+      "traditions": [
+        "Advaita Vedanta",
+        "Mandukya Upanishad"
+      ]
+    },
+    {
+      "id": "ajativada",
+      "label": "Ajativada (non-origination)",
+      "type": "concept",
+      "traditions": [
+        "Advaita Vedanta",
+        "Gaudapada"
+      ]
+    },
+    {
+      "id": "dependent-origination",
+      "label": "Pratityasamutpada / dependent origination",
+      "type": "concept",
+      "traditions": [
+        "Buddhism"
+      ]
+    },
+    {
+      "id": "alaya-vijnana",
+      "label": "Alaya-vijnana (storehouse consciousness)",
+      "type": "concept",
+      "traditions": [
+        "Yogacara Buddhism",
+        "Lankavatara Sutra"
+      ]
+    },
+    {
+      "id": "citta-matra",
+      "label": "Citta-matra (mind-only)",
+      "type": "concept",
+      "traditions": [
+        "Yogacara Buddhism"
+      ]
+    },
+    {
+      "id": "being-time",
+      "label": "Uji (being-time)",
+      "type": "concept",
+      "traditions": [
+        "Soto Zen",
+        "Dogen"
+      ]
+    },
+    {
+      "id": "wu",
+      "label": "Wu (non-being)",
+      "type": "concept",
+      "traditions": [
+        "Daoism"
+      ]
+    },
+    {
+      "id": "dao",
+      "label": "Dao",
+      "type": "concept",
+      "traditions": [
+        "Daoism"
+      ]
+    },
+    {
+      "id": "zuowang",
+      "label": "Zuowang (sitting and forgetting)",
+      "type": "concept",
+      "traditions": [
+        "Daoism",
+        "Zhuangzi"
+      ]
+    },
+    {
+      "id": "the-one",
+      "label": "The One (to hen)",
+      "type": "concept",
+      "traditions": [
+        "Neoplatonism",
+        "Plotinus"
+      ]
+    },
+    {
+      "id": "emanation",
+      "label": "Emanation / proodos",
+      "type": "concept",
+      "traditions": [
+        "Neoplatonism"
+      ]
+    },
+    {
+      "id": "epistrophe",
+      "label": "Epistrophe (return/reversion)",
+      "type": "concept",
+      "traditions": [
+        "Neoplatonism",
+        "Proclus"
+      ]
+    },
+    {
+      "id": "wahdat-al-wujud",
+      "label": "Wahdat al-wujud (unity of being)",
+      "type": "concept",
+      "traditions": [
+        "Sufism",
+        "Ibn Arabi"
+      ]
+    },
+    {
+      "id": "fana",
+      "label": "Fana (self-annihilation in God)",
+      "type": "concept",
+      "traditions": [
+        "Sufism"
+      ]
+    },
+    {
+      "id": "pancha-kosha",
+      "label": "Pancha kosha (five sheaths)",
+      "type": "concept",
+      "traditions": [
+        "Advaita Vedanta",
+        "Vivekachudamani"
+      ]
+    },
+    {
+      "id": "phi-iit",
+      "label": "Phi / integrated information",
+      "type": "concept",
+      "traditions": [
+        "consciousness science",
+        "IIT"
+      ]
+    },
+    {
+      "id": "markov-blanket",
+      "label": "Markov blanket (self-boundary)",
+      "type": "concept",
+      "traditions": [
+        "computational neuroscience",
+        "Friston"
+      ]
+    },
+    {
+      "id": "it-from-bit",
+      "label": "It from Bit (participatory universe)",
+      "type": "concept",
+      "traditions": [
+        "theoretical physics",
+        "Wheeler"
+      ]
+    },
+    {
+      "id": "maya",
+      "label": "Maya (illusion/appearance)",
+      "type": "concept",
+      "traditions": [
+        "Advaita Vedanta"
+      ]
+    },
+    {
+      "id": "catuskoti",
+      "label": "Catuskoti (tetralemma)",
+      "type": "concept",
+      "traditions": [
+        "Madhyamaka Buddhism",
+        "Nagarjuna"
+      ]
+    },
+    {
+      "id": "inferential-gap",
+      "label": "Inferential gap",
+      "type": "lumenary-method"
+    },
+    {
+      "id": "translation-strain",
+      "label": "Translation strain",
+      "type": "lumenary-method"
+    }
   ],
   "edges": [
-    {"source": "atman", "target": "anatman", "relation": "tension", "note": "Paradigmatic test case. Claude's inferential gap model: same phenomenology, competing inferential policies."},
-    {"source": "brahman", "target": "sunyata", "relation": "structural-parallel-with-divergence", "note": "Both negate origination (ajativada/MMK 1:1). Diverge on substratum: Brahman affirmed vs. emptiness of emptiness."},
-    {"source": "brahman", "target": "the-one", "relation": "structural-parallel", "note": "Both beyond predication, source of all. Differ on status of matter (mithya vs. evil)."},
-    {"source": "brahman", "target": "dao", "relation": "structural-parallel", "note": "Both ineffable source of all manifestation. Differ on impersonality and processual vs. static character."},
-    {"source": "brahman", "target": "wahdat-al-wujud", "relation": "structural-parallel", "note": "Both posit unity of being. Ibn Arabi's tajalli parallels Brahman's self-disclosure through maya."},
-    {"source": "sunyata", "target": "wu", "relation": "apparent-parallel-high-strain", "note": "Geyi conflation. Wu is cosmogonically generative; sunyata is deconstructive. Different functions despite surface resemblance."},
-    {"source": "ajativada", "target": "catuskoti", "relation": "shared-logical-structure", "note": "Gaudapada 4.22 and MMK 1:1 use identical four-fold negation. Same negation, opposite inference."},
-    {"source": "witness-consciousness", "target": "atman", "relation": "claim-unit-of"},
-    {"source": "turiya", "target": "the-one", "relation": "structural-parallel", "note": "Both defined by negation, both beyond self-knowledge/self-relation."},
-    {"source": "pancha-kosha", "target": "zuowang", "relation": "structural-parallel", "note": "Both describe progressive stripping of identification layers. What remains after negation?"},
-    {"source": "alaya-vijnana", "target": "maya", "relation": "functional-parallel", "note": "Both describe how consciousness projects phenomenal world. Alaya stores seeds; maya veils Brahman."},
-    {"source": "citta-matra", "target": "maya", "relation": "structural-parallel", "note": "Both deny independent external reality. Differ on what underlies appearance (sunyata vs. Brahman)."},
-    {"source": "markov-blanket", "target": "anatman", "relation": "formal-parallel", "note": "FEP: self is statistical boundary, not substance. Buddhist anatta: self is construct, not entity."},
-    {"source": "markov-blanket", "target": "pancha-kosha", "relation": "formal-parallel", "note": "Precision relaxation in meditation = progressive loosening of self-model priors = sheath negation."},
-    {"source": "it-from-bit", "target": "dependent-origination", "relation": "structural-parallel", "note": "Both deny pre-existing determinate reality independent of participatory acts."},
-    {"source": "phi-iit", "target": "brahman", "relation": "partial-parallel", "note": "Both: consciousness is fundamental. But IIT is pluralistic (many Phi values); Vedanta is monistic."},
-    {"source": "emanation", "target": "dao", "relation": "structural-parallel", "note": "DDJ Ch.42 (Dao->One->Two->Three->Many) parallels One->Nous->Soul->Matter."},
-    {"source": "epistrophe", "target": "dao", "relation": "structural-parallel", "note": "DDJ Ch.40 'return is the movement of the Dao' = Neoplatonic reversion to source."},
-    {"source": "fana", "target": "zuowang", "relation": "structural-parallel", "note": "Both describe dissolution of self-identity in the absolute. Different ontological frameworks."},
-    {"source": "being-time", "target": "dependent-origination", "relation": "radical-extension", "note": "Dogen radicalizes DO: things don't arise IN time, the arising IS time."},
-    {"source": "inferential-gap", "target": "atman", "relation": "analyzes"},
-    {"source": "inferential-gap", "target": "anatman", "relation": "analyzes"},
-    {"source": "translation-strain", "target": "sunyata", "relation": "analyzes"},
-    {"source": "translation-strain", "target": "wu", "relation": "analyzes"},
-    {"source": "translation-strain", "target": "soul", "relation": "decomposes"}
+    {
+      "source": "atman",
+      "target": "anatman",
+      "relation": "tension",
+      "note": "Paradigmatic test case. Claude's inferential gap model: same phenomenology, competing inferential policies."
+    },
+    {
+      "source": "brahman",
+      "target": "sunyata",
+      "relation": "structural-parallel-with-divergence",
+      "note": "Both negate origination (ajativada/MMK 1:1). Diverge on substratum: Brahman affirmed vs. emptiness of emptiness."
+    },
+    {
+      "source": "brahman",
+      "target": "the-one",
+      "relation": "structural-parallel",
+      "note": "Both beyond predication, source of all. Differ on status of matter (mithya vs. evil)."
+    },
+    {
+      "source": "brahman",
+      "target": "dao",
+      "relation": "structural-parallel",
+      "note": "Both ineffable source of all manifestation. Differ on impersonality and processual vs. static character."
+    },
+    {
+      "source": "brahman",
+      "target": "wahdat-al-wujud",
+      "relation": "structural-parallel",
+      "note": "Both posit unity of being. Ibn Arabi's tajalli parallels Brahman's self-disclosure through maya."
+    },
+    {
+      "source": "sunyata",
+      "target": "wu",
+      "relation": "apparent-parallel-high-strain",
+      "note": "Geyi conflation. Wu is cosmogonically generative; sunyata is deconstructive. Different functions despite surface resemblance."
+    },
+    {
+      "source": "ajativada",
+      "target": "catuskoti",
+      "relation": "shared-logical-structure",
+      "note": "Gaudapada 4.22 and MMK 1:1 use identical four-fold negation. Same negation, opposite inference."
+    },
+    {
+      "source": "witness-consciousness",
+      "target": "atman",
+      "relation": "claim-unit-of"
+    },
+    {
+      "source": "turiya",
+      "target": "the-one",
+      "relation": "structural-parallel",
+      "note": "Both defined by negation, both beyond self-knowledge/self-relation."
+    },
+    {
+      "source": "pancha-kosha",
+      "target": "zuowang",
+      "relation": "structural-parallel",
+      "note": "Both describe progressive stripping of identification layers. What remains after negation?"
+    },
+    {
+      "source": "alaya-vijnana",
+      "target": "maya",
+      "relation": "functional-parallel",
+      "note": "Both describe how consciousness projects phenomenal world. Alaya stores seeds; maya veils Brahman."
+    },
+    {
+      "source": "citta-matra",
+      "target": "maya",
+      "relation": "structural-parallel",
+      "note": "Both deny independent external reality. Differ on what underlies appearance (sunyata vs. Brahman)."
+    },
+    {
+      "source": "markov-blanket",
+      "target": "anatman",
+      "relation": "formal-parallel",
+      "note": "FEP: self is statistical boundary, not substance. Buddhist anatta: self is construct, not entity."
+    },
+    {
+      "source": "markov-blanket",
+      "target": "pancha-kosha",
+      "relation": "formal-parallel",
+      "note": "Precision relaxation in meditation = progressive loosening of self-model priors = sheath negation."
+    },
+    {
+      "source": "it-from-bit",
+      "target": "dependent-origination",
+      "relation": "structural-parallel",
+      "note": "Both deny pre-existing determinate reality independent of participatory acts."
+    },
+    {
+      "source": "phi-iit",
+      "target": "brahman",
+      "relation": "partial-parallel",
+      "note": "Both: consciousness is fundamental. But IIT is pluralistic (many Phi values); Vedanta is monistic."
+    },
+    {
+      "source": "emanation",
+      "target": "dao",
+      "relation": "structural-parallel",
+      "note": "DDJ Ch.42 (Dao->One->Two->Three->Many) parallels One->Nous->Soul->Matter."
+    },
+    {
+      "source": "epistrophe",
+      "target": "dao",
+      "relation": "structural-parallel",
+      "note": "DDJ Ch.40 'return is the movement of the Dao' = Neoplatonic reversion to source."
+    },
+    {
+      "source": "fana",
+      "target": "zuowang",
+      "relation": "structural-parallel",
+      "note": "Both describe dissolution of self-identity in the absolute. Different ontological frameworks."
+    },
+    {
+      "source": "being-time",
+      "target": "dependent-origination",
+      "relation": "radical-extension",
+      "note": "Dogen radicalizes DO: things don't arise IN time, the arising IS time."
+    },
+    {
+      "source": "inferential-gap",
+      "target": "atman",
+      "relation": "analyzes"
+    },
+    {
+      "source": "inferential-gap",
+      "target": "anatman",
+      "relation": "analyzes"
+    },
+    {
+      "source": "translation-strain",
+      "target": "sunyata",
+      "relation": "analyzes"
+    },
+    {
+      "source": "translation-strain",
+      "target": "wu",
+      "relation": "analyzes"
+    },
+    {
+      "source": "translation-strain",
+      "target": "soul",
+      "relation": "decomposes"
+    },
+    {
+      "source": "ontological register",
+      "target": "interface vulnerabilities",
+      "relation": "orders",
+      "note": "The dialogue establishes that decisive agency must be located before human-side risks can be mapped without distortion."
+    },
+    {
+      "source": "capacity ledger",
+      "target": "register-sensitive path interface",
+      "relation": "revised_into",
+      "note": "The original capacity model survives only after demotion from conservation law to secondary diagnostic."
+    },
+    {
+      "source": "jinen honi",
+      "target": "self-limitation clause",
+      "relation": "pressures",
+      "note": "Shinran's warning that even naming naturalness can be calculation requires the model to mark where mapping becomes spiritually misleading."
+    },
+    {
+      "source": "minimum self",
+      "target": "decisive agency",
+      "relation": "distinguished_from",
+      "note": "The functional self needed for practice is not necessarily the author of transformation."
+    },
+    {
+      "source": "warning literature",
+      "target": "practice architecture",
+      "relation": "evidences",
+      "note": "Named warnings become observable traces of where a tradition sees transformation being obscured, counterfeited, or misused."
+    },
+    {
+      "source": "minimum self",
+      "target": "convergence point",
+      "relation": "revised_into",
+      "note": "The dialogue forced the proponent to drop ownership connotations from the preserved-function concept. The convergence point retains the architectural insight while refusing to call functional continuity a self."
+    },
+    {
+      "source": "forbidden claimant",
+      "target": "practice architecture",
+      "relation": "constrains",
+      "note": "The pattern of prohibited ownership (who must not claim the doing) predicts a tradition's characteristic warning profile and safeguard structure."
+    },
+    {
+      "source": "functional continuity",
+      "target": "self-ownership",
+      "relation": "distinguished_from",
+      "note": "The central analytical move: that a practice can require patterned continuity of reception, memory, and integration without authorizing any entity to own those functions."
+    },
+    {
+      "source": "convergence point",
+      "target": "support locus",
+      "relation": "requires_complement",
+      "note": "The convergence-point concept needs the support-locus and forbidden-claimant framework to avoid reintroducing the ownership the proponent conceded. Whether the convergence point adds independent explanatory power remains the unresolved crux."
+    },
+    {
+      "source": "capacity ledger",
+      "target": "grain of capacity",
+      "relation": "revised_by",
+      "note": "The ledger's five roles survive only when treated as directional vectors rather than neutral scores."
+    },
+    {
+      "source": "directional grain",
+      "target": "soteriological architecture",
+      "relation": "may_be_generated_by",
+      "note": "The dialogue added the possibility that direction is downstream of a tradition's full account of self, reality, and liberation."
+    },
+    {
+      "source": "reorientation cost",
+      "target": "dual-trained practitioners",
+      "relation": "tested_by",
+      "note": "Switching reports can show whether old capacity direction resists a new practice aim."
+    },
+    {
+      "source": "conservation rule",
+      "target": "directional compatibility",
+      "relation": "restricted_by",
+      "note": "Load relocation is plausible only within compatible directions or through explicit reorientation."
+    },
+    {
+      "source": "Pure Land and Dzogchen",
+      "target": "practitioner-owned capacity",
+      "relation": "pressure_case_for",
+      "note": "These traditions test whether receiving and recognition can be modeled without smuggling self-power into relational or nondual events."
+    },
+    {
+      "source": "minimum self",
+      "target": "convergence locus",
+      "relation": "revised_into",
+      "note": "The proponent replaced the bundled minimum-self variable with convergence locus: the site where instruction, recognition, surrender, or continuity becomes operative, without claiming that site is a self."
+    },
+    {
+      "source": "handoff point",
+      "target": "allocation rule",
+      "relation": "generalized_into",
+      "note": "The challenger's transfer-point model was absorbed as a multi-variable coding scheme: function, stage, holder, credited source, forbidden claimant, safeguard, repair."
+    },
+    {
+      "source": "convergence locus",
+      "target": "allocation rule",
+      "relation": "requires_complement",
+      "note": "The convergence locus without allocation rules risks reintroducing the ownership the proponent conceded. Allocation rules without convergence locus risk losing the architectural insight that distribution still requires a site of reception."
+    },
+    {
+      "source": "forbidden claimant",
+      "target": "practice warning",
+      "relation": "predicts",
+      "note": "Self-power calculation in Pure Land, ownership of aggregates in early Buddhism, contrivance after direct introduction in Dzogchen, gaining idea in Soto, inflation after fana in Sufism: these warnings should cluster at transfer points where ownership is withdrawn."
+    },
+    {
+      "source": "bombu",
+      "target": "convergence locus",
+      "relation": "instance_of",
+      "note": "Shinran's bombu (foolish being incapable of self-powered liberation) functions as a convergence locus: the site where Amida's vow lands, not credited as a self but not eliminable either."
+    },
+    {
+      "source": "first-break grammar",
+      "target": "entry ecology",
+      "relation": "normatively filters",
+      "note": "The grammar selects which parts of a mixed beginning count as decisive and which entry errors require warning."
+    },
+    {
+      "source": "capacity ledger",
+      "target": "entry-state ledger",
+      "relation": "extends into threshold conditions",
+      "note": "The ledger now applies before conscious practice is underway, with capacities distributed across person, teacher, community, text, ritual, crisis, and institution."
+    },
+    {
+      "source": "entry-state ledger",
+      "target": "safeguards",
+      "relation": "predicts conditionally",
+      "note": "Predictions are valid only if grammar indicators are coded separately from safeguard evidence."
+    },
+    {
+      "source": "construct leakage",
+      "target": "originality audit",
+      "relation": "requires control",
+      "note": "The synthesis needs blind coding and negative cases before it can be treated as more than an interpretive bridge."
+    },
+    {
+      "source": "capacity_ledger",
+      "target": "credit_distribution",
+      "relation": "separable_dimension",
+      "note": "Two traditions can share a capacity profile (same required capacities, same load-holders) while differing in credit distribution. Confirmed by the dialogue as genuinely separable variables."
+    },
+    {
+      "source": "capacity_ledger",
+      "target": "dissolution",
+      "relation": "requires_new_operation",
+      "note": "The ledger must add dissolution alongside relocation: a tradition may claim a function was generated by ignorance and dissolves with it. Dissolution is credible only if the predicted failure mode does not appear."
+    },
+    {
+      "source": "receiving_capacity",
+      "target": "agency",
+      "relation": "constitutive_linkage",
+      "note": "In source-centered and gift-centered traditions, receiving may not be a separate capacity that rises when agency falls; it may be what agency's withdrawal looks like from inside. Weil's decreation concept makes this structural point precise."
+    },
+    {
+      "source": "functional_analysis",
+      "target": "analyst_formation",
+      "relation": "reflexivity_challenge",
+      "note": "Hadot's concern: a functional-analytic rubric for comparing spiritual exercises may reflect the analyst's modern scholarly formation rather than the structure of the practices analyzed. This applies to both the capacity ledger and the credit-distribution model."
+    },
+    {
+      "source": "conservation_law",
+      "target": "burden_of_proof",
+      "relation": "replaced_by",
+      "note": "The original claim that total functional load is conserved across paths was abandoned. Replaced by a weaker rule: if a tradition claims a function is unnecessary, show that the predicted failure mode does not appear."
+    },
+    {
+      "source": "first-break doctrine",
+      "target": "forbidden claimant",
+      "relation": "mutual-constitution",
+      "note": "The dialogue suggests that teachings about beginning and prohibitions on ownership may be two expressions of one agency grammar."
+    },
+    {
+      "source": "entry-genre texts",
+      "target": "practice-genre safeguards",
+      "relation": "conditional-prediction",
+      "note": "Prediction is meaningful only if entry coding survives an independence audit."
+    },
+    {
+      "source": "recursive support ecology",
+      "target": "first-break narration",
+      "relation": "precedes-or-complicates",
+      "note": "Actual entry may arise through many small supports before doctrine assigns credit or meaning."
+    },
+    {
+      "source": "Berger internalization",
+      "target": "entry doctrine causal force",
+      "relation": "explains",
+      "note": "A doctrine that begins as authorization can become causally operative once taught and internalized."
+    },
+    {
+      "source": "grain_of_capacity",
+      "target": "forbidden_claimant_rubric",
+      "relation": "constrains and completes",
+      "note": "Grain specifies what a function is shaped to do; claimant rules specify who may own the doing. Neither is sufficient alone. Grain without claimant misses ownership-specific failures (shame, striving, passivity). Claimant without grain produces false equivalences across traditions that train incompatible instruments under the same functional label."
+    },
+    {
+      "source": "practice_realization_unity",
+      "target": "forbidden_claimant_rubric",
+      "relation": "limit case that strains",
+      "note": "Dogen's collapse of practice and realization into a single act removes the gap between bearer and outcome that the rubric requires for coding. The rubric must either treat this as degenerate or restructure to accommodate a function that is identical with its fulfillment."
+    },
+    {
+      "source": "grain_of_capacity",
+      "target": "contemplative_harm_prediction",
+      "relation": "refines prediction from",
+      "note": "Grain predicts that adverse effects cluster not only where prerequisites are missing but where the directional shaping of the practitioner's training mismatches the dissolution being attempted. This is a more specific prediction than prerequisite-absence models and could be tested against the Lindahl et al. dataset."
+    },
+    {
+      "source": "operationalizability",
+      "target": "grain_of_capacity",
+      "relation": "gate condition for",
+      "note": "The grain variable's value as a testable construct depends on whether independent coders can reliably specify the directional shaping of a tradition's trained functions. This is the upstream question that determines whether the three-part model is falsifiable."
+    },
+    {
+      "source": "distributed affordances",
+      "target": "entry possibility",
+      "relation": "empirically scaffold",
+      "note": "Family, crisis, ritual, teacher trust, imitation, body, and community can make participation possible without a single punctual break."
+    },
+    {
+      "source": "institutional role",
+      "target": "affordance selection",
+      "relation": "filters and intensifies",
+      "note": "Institutional setting determines which supports count, which are repeated, and which become authoritative."
+    },
+    {
+      "source": "first-break grammar",
+      "target": "entry pedagogy",
+      "relation": "normatively regulates",
+      "note": "Tradition-internal accounts of beginning shape what teachers warn against, confirm, withhold, or repair."
+    },
+    {
+      "source": "handoff density",
+      "target": "first-break grammar",
+      "relation": "operationalizes across thresholds",
+      "note": "The handoff rubric makes first-break grammar observable by coding agency, ownership, support holder, forbidden claimant, safeguard, and repair."
+    },
+    {
+      "source": "live correction episodes",
+      "target": "model validation",
+      "relation": "test evidence for",
+      "note": "The synthesis survives only if correction behavior and practitioner self-correction track the layered model better than doctrine or affordance variables alone."
+    },
+    {
+      "source": "claimability_stance",
+      "target": "forbidden_claimant",
+      "relation": "is_prior_to",
+      "note": "The tradition's stance toward the claiming framework (regulatory, dissolutive, ontological) determines whether the forbidden-claimant column is applicable. Emerged from the dialogue's transformation of the Forbidden Claimant Rubric."
+    },
+    {
+      "source": "credit_distribution",
+      "target": "claimability_stance",
+      "relation": "separable_dimension",
+      "note": "Two traditions can share a credit-distribution type while differing in claimability stance, or vice versa. Both variables are needed for the frontier rubric. Separability needs empirical testing."
+    },
+    {
+      "source": "Madhyamaka_emptiness",
+      "target": "agent_action_dissolution",
+      "relation": "philosophical_ground_for",
+      "note": "Nagarjuna's MMK Chapter 8 demonstrates that agent and action are mutually dependent designations, providing the philosophical basis for dissolutive claimability stances in Dogen and Longchenpa."
+    },
+    {
+      "source": "claimability_stance",
+      "target": "practice_failure_mode",
+      "relation": "predicts",
+      "note": "Each stance predicts characteristic failures: regulatory traditions risk wrong-claimant failures, dissolutive traditions risk formalism or reification, ontological traditions risk premature realization claims. Prediction sharpness is stronger for regulatory traditions."
+    },
+    {
+      "source": "stage_transition",
+      "target": "claimability_stance",
+      "relation": "may_shift",
+      "note": "Traditions like Chinul's sudden awakening and gradual cultivation may shift claimability stance across stages. The transition point may be where practice vulnerability is highest."
+    },
+    {
+      "source": "grain of capacity",
+      "target": "telos-bearing residue",
+      "relation": "narrowed_to",
+      "note": "Grain is retained only as capacity-level direction that survives re-instruction and exceeds procedural inertia."
+    },
+    {
+      "source": "handoff point",
+      "target": "transfer grammar",
+      "relation": "specified_as",
+      "note": "The transfer model becomes the coding layer for claimant, credited source, safeguard, and repair."
+    },
+    {
+      "source": "procedural inertia",
+      "target": "telos-bearing residue",
+      "relation": "confounds",
+      "note": "Repeated technique can mimic grain unless doctrine-level direction predicts additional variance."
+    },
+    {
+      "source": "spiritual exercises that travel",
+      "target": "re-graining",
+      "relation": "pressures",
+      "note": "Transferable exercises support anti-neutrality while requiring evidence that retargeting changes trained habit."
+    },
+    {
+      "source": "method-switch interviews",
+      "target": "surplus grain test",
+      "relation": "operationalizes",
+      "note": "Blind coding can test whether old dissolution target predicts transfer difficulty beyond technique and grammar."
+    },
+    {
+      "source": "transfer profile",
+      "target": "credit distribution",
+      "relation": "refines and subsumes",
+      "note": "The transfer-profile model incorporates credit distribution as one dimension (credited source, forbidden claimant) while adding the formal-marker and dissolution-gradient tracks that the static typology lacked."
+    },
+    {
+      "source": "formal transfer marker",
+      "target": "dissolution gradient",
+      "relation": "interacts with but is not reducible to",
+      "note": "A tradition may mark a sharp formal boundary while lived dissolution extends across a long interval; or describe a gradual path while concentrating safeguards at identifiable agency-grammar transitions."
+    },
+    {
+      "source": "claimant layer",
+      "target": "capacity ledger",
+      "relation": "separable variable that enriches",
+      "note": "The capacity ledger tracks what functions are needed and where the load sits. Claimant layers track which aspects of self-claiming (view, conceit, habit, affect, narrative, credential) are addressed at each stage. Two traditions can share a capacity profile while differing on claimant-layer dynamics."
+    },
+    {
+      "source": "re-appropriation",
+      "target": "spiritual materialism",
+      "relation": "is the mechanism behind",
+      "note": "Trungpa's spiritual materialism documents the phenomenon; the transfer-profile model explains it as the characteristic danger of partial dissolution, where the ego reconstitutes around what was relinquished."
+    },
+    {
+      "source": "transfer profile",
+      "target": "handoff point",
+      "relation": "revision of",
+      "note": "The transfer-profile model emerged from dialectical pressure on the handoff-point model, replacing a single bounded event with a dual-track architecture of formal markers and dissolution gradients."
+    },
+    {
+      "source": "minimum self",
+      "target": "minimum receptivity",
+      "relation": "revised_into",
+      "note": "The dialogue narrowed the internal requirement from agency, memory, and reflexive monitoring to the thinner capacity to be addressed and transformed."
+    },
+    {
+      "source": "residue policy",
+      "target": "continuity ecology",
+      "relation": "incorporated_as_variable",
+      "note": "Residue policy becomes one dimension of a larger model rather than the sole alternative to minimum self."
+    },
+    {
+      "source": "dissolution target",
+      "target": "continuity distribution",
+      "relation": "possible_constraint",
+      "note": "The proponent hypothesizes that what a path negates pressures where continuity migrates."
+    },
+    {
+      "source": "practice ecology",
+      "target": "continuity distribution",
+      "relation": "rival_explanation",
+      "note": "The challenger argues that ritual, institution, teacher authority, and devotional form may predict continuity placement as well as or better than doctrine."
+    },
+    {
+      "source": "warning profile",
+      "target": "causal_priority_test",
+      "relation": "evidence_for",
+      "note": "If warnings and crises cluster where negation meets required capacity, the continuity ecology model gains empirical adjacency."
+    },
+    {
+      "source": "remainder-pressure",
+      "target": "method-self-relationship",
+      "relation": "conditioned_by",
+      "note": "The dialogue established that method-type (self-confirming, self-canceling, self-dissolving) is upstream of whether remainder pressure arises. Remainder pressure is a dependent variable, not an independent hidden variable."
+    },
+    {
+      "source": "method-self-relationship",
+      "target": "inference-policy",
+      "relation": "conditions_downstream",
+      "note": "Method structure determines whether pressure appears; inference policy determines how it is interpreted when present. Two-stage comparison emerged from the exchange."
+    },
+    {
+      "source": "cessation",
+      "target": "remainder-pressure",
+      "relation": "boundary_case_for",
+      "note": "Nirodha samapatti and related cessation experiences bypass remainder pressure entirely, refuting universality. Laukkonen and Slagter (2021) document radical self-model shifts without any intermediate pressure stage."
+    },
+    {
+      "source": "translation-strain",
+      "target": "method-self-relationship",
+      "relation": "amplified_by",
+      "note": "Translation strain between traditions increases when the compared methods have different self-relationships at completion. A self-confirming method translated through a self-canceling lens will appear naive; the reverse will appear nihilistic."
+    },
+    {
+      "source": "operational capacity profile",
+      "target": "residue policy",
+      "relation": "interacts_with",
+      "note": "A path must specify both what capacities remain usable and what those capacities are allowed to mean after negation."
+    },
+    {
+      "source": "residue policy",
+      "target": "authorized remainder",
+      "relation": "governs",
+      "note": "The policy determines whether remaining experience is treated as causal process, witness, Self, gift, relation, convention, or no valid self-claim."
+    },
+    {
+      "source": "operational capacity profile",
+      "target": "failure modes",
+      "relation": "predicts_if_independently_coded",
+      "note": "The capacity axis earns explanatory status only if coded before examining safeguards and crises."
+    },
+    {
+      "source": "training ecology",
+      "target": "failure modes",
+      "relation": "modulates",
+      "note": "Teacher calibration, intensity, duration, community support, and screening may explain destabilization better than doctrine alone."
+    },
+    {
+      "source": "Pure Land receptivity",
+      "target": "minimum functional capacity",
+      "relation": "expands",
+      "note": "The dialogue broadened capacity beyond agency to include receptivity and entrusting."
+    },
+    {
+      "source": "negation-grammar",
+      "target": "remainder-pressure",
+      "relation": "determines whether",
+      "note": "Subject-stripping grammars preserve a negating position and generate remainder pressure; framework-dissolving grammars may preempt it entirely. The grammar variable is prior to the pressure variable."
+    },
+    {
+      "source": "negation-grammar",
+      "target": "minimum-self",
+      "relation": "constrains requirements of",
+      "note": "A tradition's grammar of negation may determine how much minimum self the practice requires: framework-dissolving methods may operate with less functional self-structure than subject-stripping methods."
+    },
+    {
+      "source": "svasa\u1e43vedana",
+      "target": "remainder-pressure",
+      "relation": "falls outside scope of",
+      "note": "Yogacara reflexive awareness is a positive phenomenological claim about non-relational awareness, not a residue of negation. It requires extending any residue-focused framework to include traditions with positive accounts of awareness that bypass the negation sequence."
+    },
+    {
+      "source": "inference-policy",
+      "target": "negation-grammar",
+      "relation": "mutually constitutes",
+      "note": "The pipeline model claims grammar is prior to inference policy, but doctrinal commitments shape which grammar a tradition adopts. The ordering may be circular rather than sequential."
+    },
+    {
+      "source": "minimum self",
+      "target": "receiving surface",
+      "relation": "revised into",
+      "note": "The dialogue weakens the claim that practice continuity requires selfhood, preserving only the requirement that transformation land in a located human life."
+    },
+    {
+      "source": "custody of unclaimed attention",
+      "target": "custody of transformation",
+      "relation": "expanded into",
+      "note": "Attention custody becomes one instance of a broader assignment of agency, memory, trust, verification, and interpretation."
+    },
+    {
+      "source": "receiving surface",
+      "target": "failure mode",
+      "relation": "may predict",
+      "note": "Different surfaces, such as entrusting, recognizing, investigating, or loving attention, may produce different characteristic distortions."
+    },
+    {
+      "source": "custody assignment",
+      "target": "receiving surface",
+      "relation": "may generate",
+      "note": "The nested-custody objection says the receiving surface may be the local human form of the custody system rather than an independent axis."
+    },
+    {
+      "source": "matched comparison",
+      "target": "independent predictive weight",
+      "relation": "tests",
+      "note": "The model needs controlled cases before claiming that receiving surface adds more than descriptive detail."
+    },
+    {
+      "source": "remainder-pressure",
+      "target": "grain-of-capacity",
+      "relation": "constrained_by",
+      "note": "The grain of the attentional training that performs negation shapes the residue that remainder pressure must account for; remainder pressure cannot be defined independently of the tradition-specific grain that produces it."
+    },
+    {
+      "source": "remainder-pressure",
+      "target": "reflexive-operator-problem",
+      "relation": "may_be_instance_of",
+      "note": "Once formalized as a typed functional variable rather than a phenomenological datum, remainder pressure may reduce to the domain-general problem of what happens when an operation is applied to the domain containing the operator. Specificity to contemplative practice is unresolved."
+    },
+    {
+      "source": "grain-of-capacity",
+      "target": "negation-operator",
+      "relation": "determines",
+      "note": "The grain pre-shapes the negation operation itself: neti neti and three-mark analysis are different operations, not two deployments of the same operation, because the attentional training that performs them carries different directional specificity."
+    },
+    {
+      "source": "authorization-policy",
+      "target": "remainder-pressure",
+      "relation": "co-arises_with",
+      "note": "The proponent conceded that the authorization policy (ontologize, recurse, bracket, model, dissolve) is not applied sequentially after remainder pressure appears but co-arises with it. Practice instructions often encode the policy from the beginning."
+    },
+    {
+      "source": "first-break type",
+      "target": "translation strain",
+      "relation": "requires",
+      "note": "A first-break comparison should count only after the preserved, bent, and dropped meanings are named."
+    },
+    {
+      "source": "first-break type",
+      "target": "entry safeguards",
+      "relation": "candidate predictor",
+      "note": "Its strongest test is whether it predicts threshold safeguards and beginner warnings after adjacent variables are controlled."
+    },
+    {
+      "source": "anthropology",
+      "target": "first-break type",
+      "relation": "interacts with",
+      "note": "The dialogue rejects a single upstream causal arrow and treats these as mutually shaping variables."
+    },
+    {
+      "source": "pre-registered coding thresholds",
+      "target": "falsifiability",
+      "relation": "protects",
+      "note": "The model needs fixed definitions before coding so it cannot absorb every similarity or difference as support."
+    },
+    {
+      "source": "hybrid instability",
+      "target": "threshold grammar",
+      "relation": "secondary test",
+      "note": "Borrowing failures may reveal entry-grammar conflicts, but the evidence is historically confounded and should not be the first proof point."
+    },
+    {
+      "source": "credit_distribution",
+      "target": "remainder_pressure",
+      "relation": "generates_or_inhibits",
+      "note": "Credit-distribution architecture determines whether a practice generates agent-driven negation and therefore whether subject-shaped residue arises. Practitioner-centered credit is most likely to produce remainder pressure; ground-centered and activity-centered credit may prevent it."
+    },
+    {
+      "source": "remainder_pressure",
+      "target": "inference_policy",
+      "relation": "is_interpreted_by",
+      "note": "Once remainder pressure arises, the tradition's inference policy determines whether it is ontologized, recursively analyzed, bracketed, cognitively modeled, or dissolved by refusing the generating procedure."
+    },
+    {
+      "source": "procedural_refusal",
+      "target": "remainder_pressure",
+      "relation": "prevents_generation_of",
+      "note": "Anti-search instructions (Huang Po), direct introduction (Dzogchen trekcho), and pre-completion declarations (Advaita praptasya praptih) block the negation procedure that would generate remainder pressure, rather than managing it after the fact."
+    },
+    {
+      "source": "credit_distribution",
+      "target": "practice_architecture",
+      "relation": "is_component_of",
+      "note": "Credit distribution is one dimension of the broader practice architecture that includes negation intensity, agency grammar, and stage structure. The two-stage model treats it as the upstream determinant of whether remainder phenomenology occurs."
+    },
+    {
+      "source": "partial_coupling",
+      "target": "two_stage_model",
+      "relation": "stability_condition_for",
+      "note": "The two-stage model (credit distribution upstream, remainder pressure downstream) is structurally stable only if the two variables are partially but not fully coupled. Full determination collapses the model upward; full independence collapses it downward."
+    },
+    {
+      "source": "residue authorization",
+      "target": "entry grammar",
+      "relation": "constrains",
+      "note": "What remains usable after critique limits which beginnings can make sense."
+    },
+    {
+      "source": "entry event",
+      "target": "residue authorization",
+      "relation": "discloses",
+      "note": "Some traditions name the permitted remainder only after the entry event reveals it."
+    },
+    {
+      "source": "circularity severity",
+      "target": "safeguards",
+      "relation": "pressures",
+      "note": "More severe circularity should produce stronger warnings against self-deception, presumption, or premature claiming."
+    },
+    {
+      "source": "source layer",
+      "target": "predictive coding",
+      "relation": "qualifies",
+      "note": "Practitioner phenomenology, canonical doctrine, pedagogy, and later theology may locate the beginning differently."
+    },
+    {
+      "source": "open-remainder anthropology",
+      "target": "no-break category",
+      "relation": "requires",
+      "note": "Mencian-style sufficiency cases weaken any universal closed-circle claim."
+    },
+    {
+      "source": "first-break solution",
+      "target": "negation method",
+      "relation": "constrains selection of",
+      "note": "The way a practitioner enters the path determines which negation method is available: Vedantic guru instruction installs neti neti, Theravada stream-entry installs aggregate analysis, Dzogchen pointing-out installs recognition without negation."
+    },
+    {
+      "source": "negation method",
+      "target": "remainder pressure",
+      "relation": "determines probability and form of",
+      "note": "Remainder pressure is not a universal pre-interpretive event but a method-conditioned impulse. Methods that converge on a residual subject by design (neti neti) produce strong pressure; methods that cover all aggregates (satipatthana) minimize it; methods that bypass negation (Dzogchen) do not generate it; methods that diagnose the search as error (Madhyamaka) treat its appearance as evidence of incomplete practice."
+    },
+    {
+      "source": "remainder pressure",
+      "target": "Madhyamaka prasanga",
+      "relation": "diagnosed as error by",
+      "note": "Nagarjuna MMK 18.1-2 with Candrakirti's Prasannapada: the search for a subject after negation of objects is itself grasping. The pressure is not a neutral finding to be managed but evidence that emptiness has not been understood. This prevents treating Madhyamaka as merely one more management strategy."
+    },
+    {
+      "source": "remainder-handling profile",
+      "target": "contemplative corrective literature",
+      "relation": "may redescribe rather than extend",
+      "note": "Unresolved: each mature tradition already names and corrects the errors its method produces. The framework earns its place only if it generates predictions beyond what tradition-internal pedagogy provides, especially for cross-method trajectories."
+    },
+    {
+      "source": "first-break mechanism",
+      "target": "compound entry grammar",
+      "relation": "conditional_subvariable",
+      "note": "First-break type applies only when self-generated threshold entry is explicitly denied."
+    },
+    {
+      "source": "residue policy",
+      "target": "compound entry grammar",
+      "relation": "adds_inference_rule",
+      "note": "After ordinary agency is negated, the tradition must decide whether any remainder can be authorized, tested, or refused."
+    },
+    {
+      "source": "legitimate peripheral participation",
+      "target": "minimum participation threshold",
+      "relation": "supplies_counterexample",
+      "note": "Novices can enter some practices through scaffolded participation before mature competence exists."
+    },
+    {
+      "source": "clean coding",
+      "target": "predictive test",
+      "relation": "guards_against_circularity",
+      "note": "Classification sources must be separated from sources used to code predicted warnings and effort structures."
+    },
+    {
+      "source": "inference policy",
+      "target": "residual warrant",
+      "relation": "revised_into",
+      "note": "The dialogue forced a retreat from inference to warrant. The original symmetry (two inference policies with different outputs) could not survive the observation that Advaita denies inference as a route to the witness. The revised concept retains the comparative question while dropping the epistemic frame that distorted the Advaita side."
+    },
+    {
+      "source": "self-luminosity",
+      "target": "shabda pramana",
+      "relation": "competes_with",
+      "note": "Rambachan's reading introduced an intra-Advaita tension: whether the witness is spontaneously self-disclosed or known through scriptural testimony. This complication shows that 'disclosure-exempting' may conflate two distinct Advaita positions."
+    },
+    {
+      "source": "residual warrant",
+      "target": "method-authority typology",
+      "relation": "subsumed_by",
+      "note": "The Proponent accepted that the method-authority frame (self-confirming, self-canceling, self-dissolving) is the broader container. Residual warrant after negation is one variable within that frame, not a rival to it."
+    },
+    {
+      "source": "translation-strain",
+      "target": "residual warrant",
+      "relation": "motivates",
+      "note": "The original dialogue pairing was driven by translation strain between Advaita witness language and Buddhist not-self. The residual-warrant concept emerged as a more careful name for what translation strain detects at the boundary of apophatic or deconstructive practice."
+    },
+    {
+      "source": "The First-Break Problem",
+      "target": "Custodial Induction",
+      "relation": "qualified_by",
+      "note": "The beginning is often gradual, social, and distributed rather than a punctual entry mechanism."
+    },
+    {
+      "source": "The Custody of Unclaimed Attention",
+      "target": "First-Break Doctrine",
+      "relation": "extends_into_entry",
+      "note": "Custody applies not only after object-loosening, but also at the start, when the beginner's attention and agency are not yet stable."
+    },
+    {
+      "source": "Prescriptive Entry Doctrine",
+      "target": "Custodial Arrangements",
+      "relation": "may_constrain",
+      "note": "In explicit incapacity traditions, doctrine can forbid some forms of effort or self-authorization and authorize others."
+    },
+    {
+      "source": "Retrospective Entry Doctrine",
+      "target": "Lived Induction",
+      "relation": "interprets",
+      "note": "In inherited or apprenticeship settings, doctrine may explain a participatory process that was already underway."
+    },
+    {
+      "source": "Sectarian Compression Model",
+      "target": "Prescriptive Custody of Beginnings",
+      "relation": "rival_explanation",
+      "note": "Entry doctrine may be a symbolic control surface for a broader institutional package rather than an independent cause."
+    },
+    {
+      "source": "Process Tracing",
+      "target": "Causal Claim",
+      "relation": "tests",
+      "note": "Temporal sequencing and matched comparison are required before promoting the model beyond typology."
+    },
+    {
+      "source": "grain-of-capacity",
+      "target": "residual-burden-of-proof",
+      "relation": "subsumes-under-pressure",
+      "note": "The revised authorization-structure model may collapse into the grain account if no case demonstrates divergence between the two."
+    },
+    {
+      "source": "neti-neti",
+      "target": "authorization-structure",
+      "relation": "complicates",
+      "note": "Shankara's adhyasa-bhashya treats the witness as the presupposition of negation, not its product, which breaks models that frame the witness as a remainder authorized by failed objectification."
+    },
+    {
+      "source": "grain-of-capacity",
+      "target": "translation-strain",
+      "relation": "refines",
+      "note": "Grain-sensitive comparison generates more precise translation-strain diagnoses: apparent convergence in negation language masks directional divergence in the trained capacity performing the negation."
+    },
+    {
+      "source": "915778a2f5edc30e",
+      "target": "Layered Direction and Residue-to-Grain Conversion",
+      "relation": "narrowed_by",
+      "note": "The universal grain thesis becomes a layered and developmental account."
+    },
+    {
+      "source": "5a05c720a5039323",
+      "target": "Layered Direction and Residue-to-Grain Conversion",
+      "relation": "integrated_as_layer",
+      "note": "Residue policy becomes one mechanism by which direction enters practice."
+    },
+    {
+      "source": "residue policy",
+      "target": "embodied grain",
+      "relation": "may_convert_into",
+      "note": "Repeated authorization can become attentional habit rather than remaining external doctrine."
+    },
+    {
+      "source": "procedural instruction",
+      "target": "early capacity grain",
+      "relation": "installs",
+      "note": "Instructions like sati or viveka may shape direction before final residue language appears."
+    },
+    {
+      "source": "report norms",
+      "target": "false positive grain",
+      "relation": "can_mimic",
+      "note": "Practitioners may sound grained because they learned a vocabulary, not because attention changed."
+    },
+    {
+      "source": "credit_distribution",
+      "target": "post_negation_authorization",
+      "relation": "may causally determine",
+      "note": "Dialogue raised but did not settle whether post-negation authorization is an independent variable or a downstream expression of credit distribution. Zen 'kill the Buddha' proposed as a divergence test."
+    },
+    {
+      "source": "adhyaropa_apavada",
+      "target": "post_negation_authorization",
+      "relation": "constrains interpretation of",
+      "note": "Comans shows Shankara's negation is pedagogical removal, not inferential; this constrains how post-negation authorization can be described for Advaita."
+    },
+    {
+      "source": "credit_distribution",
+      "target": "negation_practice",
+      "relation": "predicts mode of",
+      "note": "Ground-credit traditions treat negation as removal of obstruction; practitioner-credit traditions treat negation as a discipline transforming clinging. The mode of negation may follow from the credit type."
+    },
+    {
+      "source": "intra_traditional_diversity",
+      "target": "post_negation_authorization",
+      "relation": "threatens tradition-level scoring of",
+      "note": "Shankara vs Mandana vs Vivarana/Bhamati in Advaita; Sutta Pitaka vs Abhidhamma in early Buddhism. Post-negation authorization may vary more within traditions than between them."
+    },
+    {
+      "source": "The Grain of Capacity",
+      "target": "Layered Direction of Practice",
+      "relation": "contributes",
+      "note": "Supplies the capacity-internal direction layer, especially for instructions whose defining exercise already uses the final aim's categories."
+    },
+    {
+      "source": "The Custody of Unclaimed Attention",
+      "target": "Layered Direction of Practice",
+      "relation": "contributes",
+      "note": "Supplies the handoff and authorization layer, especially where direction appears when ordinary ownership weakens."
+    },
+    {
+      "source": "Deep Grain",
+      "target": "Custody-Only",
+      "relation": "forms spectrum with",
+      "note": "The dialogue produced a depth scale rather than a binary between prerequisite shaping and later custody."
+    },
+    {
+      "source": "Textual Framing",
+      "target": "Practitioner Operation",
+      "relation": "must be distinguished from",
+      "note": "The unresolved crux is whether texts describe lived capacity or project the destination backward into pedagogy."
+    },
+    {
+      "source": "Modern Cross-Training",
+      "target": "Grain Mismatch",
+      "relation": "tests",
+      "note": "Practitioners combining methods may reveal whether prior training leaves detectable directional residue."
+    },
+    {
+      "source": "method-type",
+      "target": "terminal authorization",
+      "relation": "determines",
+      "note": "The dialogue established that method-type (self-confirming, self-canceling, self-dissolving) is prior to and determines what counts as an authorized terminus. The proponent conceded that residue policy is downstream of method-type, not an independent variable."
+    },
+    {
+      "source": "antaryamin identification",
+      "target": "neti neti negation",
+      "relation": "distinguished_from",
+      "note": "The dialogue separated two Upanishadic procedures that the proponent's original claim conflated. BU 3.7 identifies the inner controller across domains; BU 2.3.6 negates predicates. These are different operations with different implications for cross-tradition comparison."
+    },
+    {
+      "source": "residue policy",
+      "target": "method-type",
+      "relation": "revised_into_dependency_of",
+      "note": "The original claim treated residue policy as the primary analytical variable. After the dialogue, it was demoted to an endpoint descriptor that depends on method-type for its explanatory power."
+    },
+    {
+      "source": "translation-strain",
+      "target": "standpoint declaration",
+      "relation": "requires",
+      "note": "The dialogue revealed that a comparative framework can reproduce the translation strain it sets out to diagnose if it does not declare which tradition's grammar it stands closer to. Terminal authorization fits the Buddhist side more naturally than the Upanishadic side."
+    },
+    {
+      "source": "translation_strain",
+      "target": "method_reckoning",
+      "relation": "decomposes",
+      "note": "Translation strain prevents completion, attainment, release, and realization from being treated as equivalent units too quickly."
+    },
+    {
+      "source": "verification_boundary",
+      "target": "native_authority_boundary",
+      "relation": "must_be_audited_by",
+      "note": "A boundary should be identified from the tradition's own authorization practices before reflexive operations are coded."
+    },
+    {
+      "source": "confirmation_cancellation_dissolution_identity",
+      "target": "institutional_architecture",
+      "relation": "candidate_predictor_of",
+      "note": "The operations may predict authorization, transmission, teaching strategy, and re-entry only after controls are applied."
+    },
+    {
+      "source": "Dogen_practice_realization_identity",
+      "target": "method_result_gap",
+      "relation": "negates",
+      "note": "Practice-realization identity exposes that the original typology assumed a gap between method and result."
+    },
+    {
+      "source": "authority_ecology",
+      "target": "harm_prevention",
+      "relation": "grounds",
+      "note": "Authority is distributed across teacher, text, conduct, community recognition, doctrine, and anti-grasping safeguards."
+    },
+    {
+      "source": "credit_distribution",
+      "target": "residue_authorization",
+      "relation": "constrains_but_does_not_determine",
+      "note": "Credit distribution sets the field of coherent residue policies by determining appropriation risk, but does not specify the final post-negation instruction. Emerged from dialectic between ideas 5a05c720a5039323 and a5ae6e997ca1d286."
+    },
+    {
+      "source": "residue_authorization",
+      "target": "translation_strain",
+      "relation": "mediates",
+      "note": "Translation strain between contemplative traditions is located at the interaction of credit distribution and residue authorization, not at either variable alone."
+    },
+    {
+      "source": "non_positioning",
+      "target": "residue_authorization",
+      "relation": "is_value_of",
+      "note": "Non-positioning (blocking self-insertion without settling ontology, as in Bahiya Sutta Ud 1.10) is a third residue value beyond positive authorization and explicit refusal."
+    },
+    {
+      "source": "self_resolving_remainder",
+      "target": "residue_authorization",
+      "relation": "is_candidate_value_of",
+      "note": "Self-resolving remainder (Longchenpa's instruction that rigpa self-liberates without stabilization) is a proposed fourth residue value, pending the Advaita-Dzogchen coding comparison."
+    },
+    {
+      "source": "appropriation_risk",
+      "target": "credit_distribution",
+      "relation": "derives_from",
+      "note": "The danger of appropriating post-negation remainder is a function of the tradition's credit structure: practitioner-centered credit makes appropriation likely, ground-centered credit makes it structurally impossible."
+    },
+    {
+      "source": "boundary operation",
+      "target": "verification architecture",
+      "relation": "candidate predictor",
+      "note": "Confirmation, cancellation, or dissolution may shape what a tradition can count as evidence."
+    },
+    {
+      "source": "custody rule",
+      "target": "reentry pattern",
+      "relation": "candidate predictor",
+      "note": "Where freed attention and authority are permitted to belong may shape how a practitioner speaks, teaches, and acts afterward."
+    },
+    {
+      "source": "boundary operation",
+      "target": "custody rule",
+      "relation": "interaction",
+      "note": "The same custody recipient may produce different verification forms depending on whether the method confirms or cancels itself."
+    },
+    {
+      "source": "stage genre institution",
+      "target": "two-axis synthesis",
+      "relation": "control pressure",
+      "note": "The synthesis must outperform simpler explanations based on training stage, textual genre, and institutional need."
+    },
+    {
+      "source": "translation strain",
+      "target": "coding grain",
+      "relation": "method warning",
+      "note": "The model's categories may change depending on how finely traditions are coded."
+    },
+    {
+      "source": "custody of attention",
+      "target": "post-appropriative belonging norms",
+      "relation": "revised_into",
+      "note": "The dialogue forced the custody model to drop attention as a shared substrate and reframe as norms governing what may claim experience after ordinary self-ownership weakens."
+    },
+    {
+      "source": "credit distribution",
+      "target": "post-appropriative belonging norms",
+      "relation": "critically_produced",
+      "note": "The credit-distribution model's emphasis on practice-variable specificity provided the critical pressure that produced the revised formulation."
+    },
+    {
+      "source": "post-appropriative belonging norms",
+      "target": "constructivism",
+      "relation": "proximity_risk",
+      "note": "The revised model may be a refinement of Katz's constructivist thesis (1978) rather than a distinct contribution. The relationship must be explicitly positioned."
+    },
+    {
+      "source": "cessation of appropriation",
+      "target": "belonging norms",
+      "relation": "possible_category_refusal",
+      "note": "Buddhist cessation may dissolve the category of belonging rather than answering it, making the belonging framework inapplicable to one of its three cases."
+    },
+    {
+      "source": "apophatic theology",
+      "target": "belonging norms",
+      "relation": "internal_tension",
+      "note": "Pseudo-Dionysius destabilizes the recipient of belonging within the Christian case, creating a first-order rule (direct intent to God) undermined by a second-order apophatic operation (God is beyond directedness)."
+    },
+    {
+      "source": "translation_strain",
+      "target": "credit_distribution",
+      "relation": "gates",
+      "note": "Credit distribution should be coded only after translation strain has been scored."
+    },
+    {
+      "source": "claimant_grammar",
+      "target": "credit_distribution",
+      "relation": "precedes",
+      "note": "The model must first ask what can count as agent, action, transformation, and causal attribution."
+    },
+    {
+      "source": "institutional_pedagogy",
+      "target": "safeguard_profile",
+      "relation": "confounds",
+      "note": "Safeguards may arise from training ecology rather than credit doctrine alone."
+    },
+    {
+      "source": "high_strain_cases",
+      "target": "typology_boundary",
+      "relation": "mark",
+      "note": "Dogen, Shankara, and Dzogchen should test the limits of the typology, not serve as ordinary confirming cases."
+    },
+    {
+      "source": "stage_transition",
+      "target": "practice_vulnerability",
+      "relation": "predicts",
+      "note": "The shift from one credit grammar to another may be more revealing than stable tradition labels."
+    },
+    {
+      "source": "Pargament_agency_styles",
+      "target": "low_strain_credit_types",
+      "relation": "prior_art_pressure",
+      "note": "Self-directing, deferring, and collaborative styles narrow the novelty of practitioner-centered, source-centered, and split-credit categories."
+    },
+    {
+      "source": "translation-strain",
+      "target": "assertion-posture",
+      "relation": "requires classification of",
+      "note": "The dialogue established that translation-strain mapping cannot proceed reliably without first identifying each tradition's assertion posture: whether its utterances function as commitments, instruments, or frames to be outgrown."
+    },
+    {
+      "source": "assertion-posture",
+      "target": "method-reckoning",
+      "relation": "operationalizes within strain protocol",
+      "note": "The proponent's absorption move reframes the challenger's method-type classification as the first strain field inside the comparison protocol rather than an external gating step."
+    },
+    {
+      "source": "self-canceling-method",
+      "target": "claim-unit",
+      "relation": "destabilizes epistemic status of",
+      "note": "In self-canceling traditions, the claim unit is an instrument designed to be discarded, not a proposition to be compared. Treating it as a stable content unit produces misleading strain maps."
+    },
+    {
+      "source": "translation-strain",
+      "target": "Svatantrika-Prasangika",
+      "relation": "inherits hermeneutic contest from",
+      "note": "If the strain protocol requires settling assertion posture before comparison, it inherits intra-traditional interpretive disputes (such as whether Nagarjuna holds theses) as unsettled prerequisites."
+    },
+    {
+      "source": "minimum self",
+      "target": "participation scaffold",
+      "relation": "becomes special case of",
+      "note": "Minimum self survives only where continuity and correction are mainly intrapersonal."
+    },
+    {
+      "source": "translation strain",
+      "target": "scaffold location",
+      "relation": "clarifies",
+      "note": "Apparent convergence around soul, witness, or no-self should be tested by asking where each tradition locates support."
+    },
+    {
+      "source": "scaffold-poverty",
+      "target": "adverse outcomes",
+      "relation": "predicts under pressure",
+      "note": "Risk should rise when high destabilizing intensity meets low external containment and fragile self-coherence."
+    },
+    {
+      "source": "fragile self-structure",
+      "target": "practice-load fit",
+      "relation": "requires assessment by",
+      "note": "The modern cohort is not served by abstract self-dissolution language unless the path's supports match the person's current stability."
+    },
+    {
+      "source": "external scaffold",
+      "target": "safety ambiguity",
+      "relation": "complicates",
+      "note": "Teacher, community, vow, grace, and ritual may protect, but can also create dependency, coercion, shame, or delayed help-seeking."
+    },
+    {
+      "source": "translation strain",
+      "target": "condition-first triage",
+      "relation": "diagnostic_input_to",
+      "note": "The dialogue repositioned translation strain from a comparative-religion endpoint to a diagnostic layer inside practitioner-facing triage, preventing false-sameness errors when practices share labels but train different capacities."
+    },
+    {
+      "source": "grain of capacity",
+      "target": "condition-first triage",
+      "relation": "provides_matching_logic_for",
+      "note": "The grain concept supplies the mechanism by which a practitioner's existing attentional formation, shaped by their suffering, can be matched or mismatched to a tradition's prerequisite structure. Without grain, triage has no theory of directional fit."
+    },
+    {
+      "source": "claim-unit deformation",
+      "target": "experiential condition",
+      "relation": "requires_unbuilt_bridge_to",
+      "note": "Doctrinal claim-units and lived phenomenological states are different kinds of objects. The dialogue identified this gap as the central unresolved problem: connecting them requires showing that textual deformations predict experiential differences that matter for a person in a specific condition."
+    },
+    {
+      "source": "presenting condition",
+      "target": "practice grain",
+      "relation": "may_match_or_resist",
+      "note": "The dialogue produced a prediction: a practitioner's existing attentional habits, formed by their specific suffering, already carry a direction. When that direction matches a tradition's prerequisite grain, engagement deepens. When it crosscuts, the practitioner should experience specific forms of resistance, flatness, or reification rather than generic failure."
+    },
+    {
+      "source": "first-break type",
+      "target": "entry safeguards",
+      "relation": "possible predictor",
+      "note": "The revised comparative claim survives only if first-break type predicts false-start warnings after rival variables are controlled."
+    },
+    {
+      "source": "translation strain",
+      "target": "first-break typology",
+      "relation": "method constraint",
+      "note": "Cross-tradition matches must be decomposed into claim units before they count as evidence."
+    },
+    {
+      "source": "readiness ecology",
+      "target": "impaired-capacity loop",
+      "relation": "rival and background model",
+      "note": "Readiness ecology explains multicausal beginnings, while the impaired-capacity loop names a specific stuck condition."
+    },
+    {
+      "source": "agency-returning support",
+      "target": "practice safety",
+      "relation": "criterion",
+      "note": "Support is healthy when it carries capacity temporarily and returns agency, not when it demands premature surrender."
+    },
+    {
+      "source": "entry-risk governance",
+      "target": "false-start warnings",
+      "relation": "alternative explanation",
+      "note": "Warnings may arise from initiation danger, authority, secrecy, status inflation, or institutional boundary protection rather than first-break theory."
+    },
+    {
+      "source": "modern human-condition pressure",
+      "target": "cohort specificity",
+      "relation": "narrowing force",
+      "note": "The dialogue became more useful by naming who the idea is for and who it does not fit."
+    },
+    {
+      "source": "translation-strain",
+      "target": "credit-distribution",
+      "relation": "requires as co-equal analytical layer",
+      "note": "Propositional decomposition alone misses orientation-level divergences; credit distribution captures the practitioner's required relationship to agency and effort, which is invisible to claim-unit comparison."
+    },
+    {
+      "source": "credit-distribution",
+      "target": "soul",
+      "relation": "reframes the comparative question",
+      "note": "The shared concept 'soul' that triggered this dialogue is precisely the kind of term where propositional convergence masks orientation divergence: traditions that use cognate terms for soul may require opposite agency orientations toward the soul's role in practice."
+    },
+    {
+      "source": "translation-strain",
+      "target": "misapplied-agency",
+      "relation": "diagnoses and prevents",
+      "note": "The human problem the synthesis targets: practitioners who import the wrong relationship to effort across traditions, producing burnout, shame, passivity, or spiritual pride."
+    },
+    {
+      "source": "credit-distribution",
+      "target": "markata-marjara",
+      "relation": "validated by indigenous split",
+      "note": "The Srivaishnava markata/marjara debate is an indigenous tradition that formally split over credit distribution with minimal propositional strain, serving as benchmark case for the two-layer rubric."
+    },
+    {
+      "source": "translation_strain",
+      "target": "load_test_layer",
+      "relation": "requires",
+      "note": "Public claims need a claim-unit strain map before convergence can count as evidence."
+    },
+    {
+      "source": "translation_strain",
+      "target": "koan_layer",
+      "relation": "extends_into",
+      "note": "The same strain can expose assumptions in the comparator, not only mismatches in texts."
+    },
+    {
+      "source": "minimum_self",
+      "target": "comparator_transformation",
+      "relation": "explains",
+      "note": "The person comparing traditions supplies the functional agency that may be reshaped by the comparison."
+    },
+    {
+      "source": "koan_layer",
+      "target": "destabilization_threshold",
+      "relation": "needs_guardrail",
+      "note": "A seeker can cross from reflective inquiry into distress during the very process the model recommends."
+    },
+    {
+      "source": "modern_meaning_loss",
+      "target": "two_site_translation_strain",
+      "relation": "pressures",
+      "note": "The synthesis becomes relevant to people whose inherited framework has gone hollow, but it still needs next-step practices."
+    },
+    {
+      "source": "grain-of-capacity",
+      "target": "translation-strain",
+      "relation": "diagnostically refined by",
+      "note": "Translation strain revealed that some apparent grain in textual comparisons is produced by the comparer's need to align incommensurable terms, not by lived practitioner capacity. This separated textual grain from phenomenological grain."
+    },
+    {
+      "source": "grain-of-capacity",
+      "target": "method-style",
+      "relation": "unit of analysis narrowed to",
+      "note": "Dunne's work on Buddhist mindfulness styles forced the move from tradition-level to method-style-level analysis, producing tighter and more testable predictions."
+    },
+    {
+      "source": "grain-of-capacity",
+      "target": "skill-interference",
+      "relation": "rival explanation from",
+      "note": "Skill interference plus identity framing may explain persistent transfer difficulty without requiring a directionally organized capacity. The grain model wins only if residue proves directionally specific, not merely habitual."
+    },
+    {
+      "source": "translation-strain",
+      "target": "grain-of-capacity",
+      "relation": "load-tested",
+      "note": "Translation strain served its intended function: it tested whether the grain concept survived decomposition of broad terms. The concept survived in narrowed form at the method-style level."
+    },
+    {
+      "source": "grain-of-capacity",
+      "target": "contemplative-harm",
+      "relation": "predicts direction of",
+      "note": "The revised model predicts that adverse effects should show grain-mismatch signatures, not only prerequisite-absence patterns. Testable against the Britton and Lindahl dataset."
+    },
+    {
+      "source": "minimum self",
+      "target": "continuity functions",
+      "relation": "reframed_as",
+      "note": "The self required by practice is better analyzed as reception, openness, correction, and integration rather than as a single entity."
+    },
+    {
+      "source": "continuity functions",
+      "target": "continuity placement",
+      "relation": "housed_by",
+      "note": "The same function may be carried by practitioner agency, teacher authority, vow, ritual, community, doctrine, body, or aftercare."
+    },
+    {
+      "source": "continuity placement",
+      "target": "post-gap admissibility grammar",
+      "relation": "shapes",
+      "note": "Where continuity is housed influences which clause of a later report is treated as evidence."
+    },
+    {
+      "source": "dissolution intensity",
+      "target": "continuity support",
+      "relation": "risk_mismatch",
+      "note": "Destabilization becomes more likely when self-dissolution pressure exceeds available individual and distributed supports."
+    },
+    {
+      "source": "traditional container",
+      "target": "practice safety",
+      "relation": "double_edged",
+      "note": "Containers can preserve continuity, but they can also intensify dependency or hide harm."
+    },
+    {
+      "source": "modern human-condition pressure",
+      "target": "unsupported self-dissolution",
+      "relation": "narrows_target",
+      "note": "The strongest current wound is not general suffering, but destabilization caused by identity-dissolving practice without adequate support."
+    },
+    {
+      "source": "capacity_ledger",
+      "target": "method_self_relationship",
+      "relation": "requires as prior gate",
+      "note": "The ledger cannot distribute loads until the method's self-relationship (confirming, canceling, dissolving) determines which stages permit scoring, which permit only external support mapping, and which require silence."
+    },
+    {
+      "source": "method_self_relationship",
+      "target": "scoreability",
+      "relation": "determines domain of",
+      "note": "Self-confirming methods permit stable capacity scoring. Self-canceling methods undermine the scoring framework. Self-dissolving methods mature the practitioner past the frame where scoring applies."
+    },
+    {
+      "source": "non_appropriable_threshold",
+      "target": "apophasis",
+      "relation": "structurally analogous to",
+      "note": "A non-scorable threshold on the revised ledger functions like apophatic unsaying in Sells's analysis: the map simultaneously names and un-names the event. Whether this preserves or subtly violates the tradition's grammar is unresolved."
+    },
+    {
+      "source": "achievement_contingent_self_worth",
+      "target": "capacity_ledger",
+      "relation": "pressures delivery form of",
+      "note": "The named cohort cannot use a layered comparative framework without mediation. The model may need a simpler delivery surface for seekers and a more precise surface for guides, or an honest admission that it is a guide's tool."
+    },
+    {
+      "source": "comparativist_position",
+      "target": "spiritual_avoidance",
+      "relation": "may constitute form of",
+      "note": "Surveying all traditions while submitting to none is a stance that both radical effort (Theravada's insistence on direct practice) and radical gift (Shinran's sole reliance) traditions would recognize as a way to avoid the path. The model does not yet examine its own observer position."
+    },
+    {
+      "source": "The First-Break Problem",
+      "target": "authorized entry grammar",
+      "relation": "revised_into",
+      "note": "The original causal-entry typology becomes a guidance and legitimacy grammar once lived mechanisms are separated from authorized accounts."
+    },
+    {
+      "source": "The Gap Report Has a Grammar",
+      "target": "first-break reports",
+      "relation": "extended_to",
+      "note": "The admissibility question is applied to beginnings rather than objectless states: which clause of an entry story is allowed to carry authority?"
+    },
+    {
+      "source": "support-threshold model",
+      "target": "first-break grammar",
+      "relation": "controls_and_interacts_with",
+      "note": "Practical support may enable beginning before grammar can shape interpretation, guidance, or maintenance."
+    },
+    {
+      "source": "modern human-condition pressure",
+      "target": "candidate synthesis",
+      "relation": "grounds",
+      "note": "The model is answerable to blocked seekers, depression, addiction, burnout, grief, meaning crisis, and achievement-contingent self-worth, while naming clinical and material limits."
+    },
+    {
+      "source": "method-self-relationship",
+      "target": "inferential-gap",
+      "relation": "upstream predictor of",
+      "note": "The method's self-relationship at completion (confirming, canceling, dissolving) determines how the inferential gap after objectless states is resolved and which clause of the post-gap report receives evidential authority."
+    },
+    {
+      "source": "post-gap-grammar",
+      "target": "method-self-relationship",
+      "relation": "diagnostic trace of",
+      "note": "Post-gap report grammar is usually downstream of method-type but may exercise reciprocal force by training what the practitioner trusts on return."
+    },
+    {
+      "source": "post-gap-grammar",
+      "target": "trauma-recovery-stage",
+      "relation": "meaning depends on",
+      "note": "Herman's stage model shows that the same report clause ('I felt nothing') means different things depending on recovery stage, complicating grammar coding applied without stage-awareness."
+    },
+    {
+      "source": "contemplative-cessation",
+      "target": "ordinary-blankness",
+      "relation": "analogical extension to",
+      "note": "The dialogue extended the post-gap model from contemplative objectless states to grief numbness, burnout blankness, and dreamless sleep, but this analogy is untested."
+    },
+    {
+      "source": "instructional grain",
+      "target": "procedural grain",
+      "relation": "hypothesizes formation",
+      "note": "Direction embedded in exercises may become durable micro-habit, but this remains empirically open."
+    },
+    {
+      "source": "procedural grain",
+      "target": "admissibility grammar",
+      "relation": "must be separated from",
+      "note": "The core test is whether resistance appears before later interpretation, teacher language, or identity defense."
+    },
+    {
+      "source": "admissibility grammar",
+      "target": "post-gap report",
+      "relation": "assigns evidential weight",
+      "note": "Traditions decide which clause of an ambiguous report counts as evidence."
+    },
+    {
+      "source": "grain mismatch",
+      "target": "secondary self-blame",
+      "relation": "may reduce",
+      "note": "For fitted cohorts, the model can reframe friction as information rather than personal failure."
+    },
+    {
+      "source": "method-switching study",
+      "target": "practice risk",
+      "relation": "tests",
+      "note": "The study should distinguish ordinary learning difficulty from friction that predicts distress or adverse effects."
+    },
+    {
+      "source": "credit_distribution",
+      "target": "post_gap_report_grammar",
+      "relation": "predicts downstream pattern",
+      "note": "Credit distribution (practitioner-centered, source-centered, split, activity-centered, ground-centered) predicts which clause of a post-gap report a tradition treats as evidential. Demonstrated by Buddhaghosa's Visuddhimagga showing grammar shifts within Theravada as felt credit distribution shifts across insight stages."
+    },
+    {
+      "source": "post_gap_report_grammar",
+      "target": "credit_distribution",
+      "relation": "audits via mismatch detection",
+      "note": "When a practitioner's actual report grammar diverges from the pattern their tradition's credit distribution would predict (e.g., an Advaitin reporting absence-grammar, or a Theravadin reporting witness-grammar after cessation), the mismatch signals that operative assumptions differ from doctrinal training. Grammar cannot replace credit distribution as an explanatory variable but can diagnose where credit distribution is not operating as expected."
+    },
+    {
+      "source": "post_gap_report_grammar",
+      "target": "ordinary_rupture_integration",
+      "relation": "proposed but untested extension",
+      "note": "The teaching line ('do not let the first sentence own the whole event') was proposed as applicable to grief, burnout, blackout, dissociation-like withdrawal, and psychedelic dissolution. The full five-category rubric's transfer to non-contemplative populations remains empirically untested. Herman's trauma-recovery model raises a specific objection: ordinary rupture frequently destroys the narrative coherence the grammar framework presupposes."
+    },
+    {
+      "source": "practice_stage",
+      "target": "post_gap_report_grammar",
+      "relation": "modulates within tradition",
+      "note": "Buddhaghosa's Visuddhimagga (chapters XX-XXI) shows that within Theravada, report grammar shifts from practitioner-as-agent ('I directed attention') to agency-receding ('formations dissolved on their own') across insight stages. This means grammar is a stage-level variable, not a stable tradition-level property."
+    },
+    {
+      "source": "Method self-relation at completion",
+      "target": "Staged handoff sequence",
+      "relation": "revised_into",
+      "note": "Completion is no longer the privileged unit of analysis; authority events can occur at entrance, recognition, stabilization, re-entry, or repair."
+    },
+    {
+      "source": "Confirming, canceling, dissolving",
+      "target": "Authority-transfer operations",
+      "relation": "reclassified_as",
+      "note": "The three moves survive as candidate operations, not as stable boxes for whole traditions."
+    },
+    {
+      "source": "Handoff rubric",
+      "target": "Agency-authority calibration",
+      "relation": "expanded_by",
+      "note": "The synthesis adds starting agency profile and cohort safety as prior coding fields."
+    },
+    {
+      "source": "Under-claiming cohort",
+      "target": "Practice risk",
+      "relation": "constrains",
+      "note": "Cancellation or surrender language may repeat harm when the person's first need is agency restoration."
+    },
+    {
+      "source": "Over-claiming cohort",
+      "target": "Practice fit",
+      "relation": "supports",
+      "note": "The model is strongest for people who convert insight, sobriety, prayer, meditation, or self-knowledge into achievement and possession."
+    },
+    {
+      "source": "forbidden_claimant",
+      "target": "self_structure_on_arrival",
+      "relation": "requires as prior variable",
+      "note": "The rubric's diagnostic power depends on the practitioner arriving with enough self-consolidation for ownership prohibition to be meaningful. Without coding self-structure first, the forbidden-claimant column cannot distinguish liberation from injury."
+    },
+    {
+      "source": "method_self_relationship",
+      "target": "forbidden_claimant",
+      "relation": "constrains domain of applicability",
+      "note": "Self-confirming methods give the rubric its clearest field; self-canceling methods partly absorb the claimant question into their own procedure; self-dissolving methods render the claimant-subject irrelevant."
+    },
+    {
+      "source": "support_locus",
+      "target": "forbidden_claimant",
+      "relation": "may subsume",
+      "note": "Unresolved: the prohibition language may be the tradition's way of articulating its support-locus structure in normative terms rather than an independent variable. Testing requires comparing traditions with shared locus structure but different prohibition explicitness."
+    },
+    {
+      "source": "empty_self",
+      "target": "contemplative_adverse_effects",
+      "relation": "predicts vulnerability pattern",
+      "note": "Cushman's deficit self and Winnicott's false self predict that ownership prohibition lands as confirmation of felt worthlessness rather than liberation from pride, especially for cohorts shaped by achievement-contingent worth, burnout, and digital comparison."
+    },
+    {
+      "source": "holding_environment",
+      "target": "forbidden_claimant",
+      "relation": "must precede for depleted cohorts",
+      "note": "Winnicott's prescription for the false self is not ownership prohibition but conditions where genuine ownership can form. The rubric presupposes ownership is already live; a holding-environment model would address the prior developmental stage."
+    }
   ]
 }

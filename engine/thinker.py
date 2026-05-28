@@ -8,7 +8,17 @@ from typing import Any
 
 from .config import EngineConfig
 from .process_control import register_child, unregister_child
-from .schemas import IdeaRecord, IdeaScores, now_local_iso
+from .schemas import (
+    IdeaRecord,
+    IdeaScores,
+    IdeaTestRecord,
+    PracticeCandidate,
+    TeachingCandidate,
+    idea_tests_from_dict,
+    now_local_iso,
+    practice_candidate_from_dict,
+    teaching_candidate_from_dict,
+)
 
 
 class OfflineThinker:
@@ -84,6 +94,83 @@ class OfflineThinker:
                 "Create a contradiction note for traditions that insist the convergence is ontological, not phenomenological.",
             ],
             status="seed-fixture",
+            teaching_candidate=TeachingCandidate(
+                title="The Same Door Wears Different Names",
+                teaching_line="The same door may open into different rooms.",
+                doctrine_claim=(
+                    "Repeated spiritual patterns should be treated as shared pressure on human attention, "
+                    "not as proof that every path has found the same object."
+                ),
+                body=(
+                    "Agreement is not enough. When two teachings sound alike, ask what each one changes "
+                    "in a person's next choice. Similar language can hide different duties, risks, and "
+                    "hopes. The teaching is useful only if it keeps those differences visible."
+                ),
+                target_human_problem=(
+                    "People often borrow a teaching because it sounds inspiring before asking whether it fits their life."
+                ),
+                target_cohort=(
+                    "Readers comparing traditions, teachers, or practices and trying to decide what to trust."
+                ),
+                pressure_survived=(
+                    "This seed keeps the value of convergence while refusing to turn likeness into proof."
+                ),
+                falsifying_pressure=(
+                    "It weakens if close reading shows that the repeated pattern is not about attention, "
+                    "agency, salience, or boundary-making."
+                ),
+                tags=["attention", "discernment", "method"],
+            ),
+            practice_candidate=PracticeCandidate(
+                title="The Difference After Agreement",
+                practice_line="When two teachings agree, ask what each one asks you to do next.",
+                purpose=(
+                    "Test whether surface agreement hides different practical demands."
+                ),
+                target_human_problem=(
+                    "The tendency to confuse inspiring agreement with practical guidance."
+                ),
+                target_cohort=(
+                    "People choosing between teachings, practices, or advice that sound similar but may train different lives."
+                ),
+                non_fit=(
+                    "Not for moments that require urgent action, grief care, or help from another person."
+                ),
+                duration="10 minutes",
+                frequency="Once when comparing two teachings",
+                minimum_attempt="One pair of teachings",
+                steps=[
+                    "Write the shared sentence in plain language.",
+                    "Write what the first teaching asks you to do next.",
+                    "Write what the second teaching asks you to do next.",
+                    "Circle the first real difference in action, duty, danger, or hope.",
+                ],
+                notice=[
+                    "Whether the agreement becomes smaller after action is named.",
+                    "Whether one teaching asks for effort and the other asks for release.",
+                    "Whether one teaching changes conduct while the other changes attention.",
+                ],
+                caution=(
+                    "Stop if the exercise turns into proving one path superior. The task is discernment."
+                ),
+                weakens_if=(
+                    "It weakens if repeated examples show that shared language reliably leads to the same action."
+                ),
+                risk_level="low",
+                tags=["discernment", "comparison", "attention"],
+            ),
+            tests=[
+                IdeaTestRecord(
+                    title="Agreement to action test",
+                    test_type="observational",
+                    prediction=(
+                        "If this model is right, teachings that sound alike should often diverge when translated into action."
+                    ),
+                    result="not run yet",
+                    impact="pending",
+                    next_action="Apply the test to three source-card pairs before promotion.",
+                )
+            ],
         )
 
 
@@ -298,6 +385,9 @@ def _idea_from_dict(data: dict[str, Any], *, agent: str) -> IdeaRecord:
         next_research_directions=[
             str(item) for item in data.get("next_research_directions", [])
         ],
+        teaching_candidate=teaching_candidate_from_dict(data.get("teaching_candidate")),
+        practice_candidate=practice_candidate_from_dict(data.get("practice_candidate")),
+        tests=idea_tests_from_dict(data.get("tests")),
     )
 
 

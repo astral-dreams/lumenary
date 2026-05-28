@@ -1,5 +1,4 @@
 ---
-import Breadcrumbs from "../../components/Breadcrumbs.astro";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import { formatLabel, getDialogues, researchStats } from "../../lib/content";
 import { collectionPageSchema, faqSchema, itemListSchema, type BreadcrumbItem } from "../../lib/seo";
@@ -44,7 +43,6 @@ const jsonLd = [
 ---
 
 <BaseLayout title="Dialogues" description={description} jsonLd={jsonLd} breadcrumbs={breadcrumbs}>
-  <Breadcrumbs items={breadcrumbs} />
   <section class="page-band dialogues-hero">
     <p class="eyebrow">Dialogues</p>
     <h1>Where Findings Meet Pressure</h1>

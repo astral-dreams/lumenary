@@ -17,6 +17,8 @@ class Librarian:
             "corpus/science",
             "claims",
             "concepts",
+            "doctrine",
+            "doctrine/councils",
             "docs",
             "findings/claude",
             "findings/codex",
@@ -29,13 +31,17 @@ class Librarian:
             "publication/daily",
             "publication/growth",
             "publication/journal",
+            "publication/practices",
+            "publication/teachings",
             "publication/x/queue",
+            "practices",
             "reviews/dialogues",
             "reviews/originality",
             "runs",
             "sources",
             "state",
             "syntheses",
+            "tests",
         ]:
             (self.root / relative).mkdir(parents=True, exist_ok=True)
 

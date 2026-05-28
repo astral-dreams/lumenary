@@ -1,5 +1,4 @@
 ---
-import Breadcrumbs from "../../components/Breadcrumbs.astro";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import { formatLabel, getInsights } from "../../lib/content";
 import { collectionPageSchema, faqSchema, itemListSchema, type BreadcrumbItem } from "../../lib/seo";
@@ -47,7 +46,6 @@ const jsonLd = [
 ---
 
 <BaseLayout title="Insights" description={description} jsonLd={jsonLd} breadcrumbs={breadcrumbs}>
-  <Breadcrumbs items={breadcrumbs} />
   <section class="page-band">
     <p class="eyebrow">Distilled wisdom</p>
     <h1>Insights</h1>

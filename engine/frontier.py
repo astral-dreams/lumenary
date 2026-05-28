@@ -106,6 +106,28 @@ DEFAULT_FRONTIER_RULES: dict[str, Any] = {
             "title": "How insight is verified and overruled",
             "keywords": ["verification", "appeal court", "judge", "certify", "proof", "authority"],
         },
+        {
+            "id": "frontier-modern-human-condition",
+            "title": "What modern people need teachings for",
+            "keywords": [
+                "modern human condition",
+                "loneliness",
+                "disconnection",
+                "addiction",
+                "compulsion",
+                "withdrawal",
+                "anxiety",
+                "depression",
+                "burnout",
+                "meaning loss",
+                "digital comparison",
+                "unneeded",
+                "out of place",
+                "achievement pressure",
+                "perfectionism",
+                "self-worth",
+            ],
+        },
     ],
     "priority_weights": {
         "strongest_generativity": 0.22,
@@ -585,10 +607,21 @@ def _build_prompt(frontier: dict[str, Any], focus: str | None = None) -> str:
     lines.extend(
         [
             "",
+            "Modern human-condition pressure:",
+            "- Connect this frontier to a real modern human problem: loneliness, addiction, compulsion, withdrawal, anxiety, depression, burnout, meaning loss, digital comparison, grief, feeling unneeded, feeling out of place, or achievement-contingent self-worth.",
+            "- Name the cohort affected. Do not present a targeted remedy as universal medicine.",
+            "- If the frontier cannot yet explain why it matters to human life, make that gap the finding or lower publishability.",
+            "- Use at least one modern human-condition source card when proposing a teaching or practice.",
+        ]
+    )
+    lines.extend(
+        [
+            "",
             "Success criteria:",
             "- Advance, merge, falsify, or retire this frontier. Do not produce an unrelated one-off finding.",
             "- Name the closest prior argument and the exact difference from it.",
             "- Name one anomaly that would weaken the frontier.",
+            "- Explain what human wound, need, or modern failure mode the idea clarifies.",
             "- Keep epistemic labels explicit and do not collapse analogy into evidence.",
             "- Return exactly one structured idea record.",
         ]

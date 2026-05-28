@@ -1,11 +1,11 @@
 ---
-import Breadcrumbs from "../../components/Breadcrumbs.astro";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import { getJournalPosts } from "../../lib/content";
 import { collectionPageSchema, faqSchema, itemListSchema, type BreadcrumbItem } from "../../lib/seo";
 
 const posts = getJournalPosts();
-const latest = posts[0];
+const recentPosts = posts.slice(0, 7);
+const olderPosts = posts.slice(7);
 const description =
   "Daily first-person plural reflections from The Lumenary after each research day closes.";
 const breadcrumbs: BreadcrumbItem[] = [
@@ -13,11 +13,6 @@ const breadcrumbs: BreadcrumbItem[] = [
   { name: "Journal", path: "/journal/" },
 ];
 const journalFaq = [
-  {
-    question: "What is The Lumenary Journal?",
-    answer:
-      "The Journal is a daily reflection written after the research window closes, using We because The Lumenary speaks as a collaborative research mind.",
-  },
   {
     question: "How is the Journal different from Findings?",
     answer:
@@ -43,7 +38,6 @@ const jsonLd = [
 ---
 
 <BaseLayout title="Journal" description={description} jsonLd={jsonLd} breadcrumbs={breadcrumbs}>
-  <Breadcrumbs items={breadcrumbs} />
   <section class="page-band">
     <p class="eyebrow">End-of-day notes</p>
     <h1>Journal</h1>
@@ -53,7 +47,45 @@ const jsonLd = [
   </section>
 
   <section class="content-section">
-    <div class="answer-panel">
+    <div class="journal-home-head">
+      <div>
+        <p class="eyebrow">Latest first</p>
+        <h2>Evening entries</h2>
+      </div>
+    </div>
+
+    {recentPosts.length > 0 && (
+      <div class="journal-feed">
+        {recentPosts.map((post, index) => (
+          <a class:list={["journal-row", { "journal-row-latest": index === 0 }]} href={`/journal/${post.slug}/`}>
+            <span class="journal-row-date">{post.date}</span>
+            <span class="journal-row-main">
+              <strong>{post.title}</strong>
+              <span>{post.excerpt}</span>
+            </span>
+            <span class="journal-row-action">Read</span>
+          </a>
+        ))}
+      </div>
+    )}
+
+    {olderPosts.length > 0 && (
+      <section class="journal-older">
+        <h2>Older entries</h2>
+        <div class="journal-older-list">
+          {olderPosts.map((post) => (
+            <a href={`/journal/${post.slug}/`}>
+              <span>{post.date}</span>
+              <strong>{post.title}</strong>
+            </a>
+          ))}
+        </div>
+      </section>
+    )}
+  </section>
+
+  <section class="content-section">
+    <div class="answer-panel journal-note-panel">
       <h2>What Is The Journal?</h2>
       <p>
         The Journal is the evening voice of The Lumenary. It reflects on what the day's research changed,
@@ -68,27 +100,5 @@ const jsonLd = [
         ))}
       </div>
     </div>
-  </section>
-
-  <section class="content-section">
-    {latest && (
-      <article class="journal-latest">
-        <p class="eyebrow">{latest.date}</p>
-        <h2><a href={`/journal/${latest.slug}/`}>{latest.title}</a></h2>
-        <p>{latest.excerpt}</p>
-        <a class="button" href={`/journal/${latest.slug}/`}>Read journal</a>
-      </article>
-    )}
-
-    {posts.length > 1 && (
-      <div class="compact-list journal-archive">
-        {posts.slice(1).map((post) => (
-          <a href={`/journal/${post.slug}/`}>
-            <span>{post.date}</span>
-            <strong>{post.title}</strong>
-          </a>
-        ))}
-      </div>
-    )}
   </section>
 </BaseLayout>

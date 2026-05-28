@@ -1,5 +1,4 @@
 ---
-import Breadcrumbs from "../../components/Breadcrumbs.astro";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import { formatLabel, getDialogues, renderMarkdown } from "../../lib/content";
 import { articleSchema, cleanDescription, faqSchema, type BreadcrumbItem } from "../../lib/seo";
@@ -59,7 +58,6 @@ const jsonLd = [
 ---
 
 <BaseLayout title={dialogue.title} description={description} ogType="article" jsonLd={jsonLd} breadcrumbs={breadcrumbs}>
-  <Breadcrumbs items={breadcrumbs} />
   <article class="article-page dialogue-page">
     <header class="article-header">
       <p class="eyebrow">Dialogue / {dialogue.outcomeLabel} / {dialogue.date}</p>
