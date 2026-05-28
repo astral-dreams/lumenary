@@ -20,6 +20,7 @@ runs/dialectic-backfill-*/
 runs/map-refresh/
 runs/originality-audits/
 runs/*journal*/
+state/journal_last_run_date
 data/analytics/*-snapshot.json
 data/analytics/update-status.json
 

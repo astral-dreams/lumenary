@@ -895,3 +895,7 @@
 
 - Published daily draft `publication/daily/2026-05-28-the-gap-report-has-a-grammar.md`.
 - Created X draft `publication/x/queue/2026-05-28-the-gap-report-has-a-grammar.md`.
+
+## 2026-05-28T17:38:58+02:00
+
+- Wrote Journal entry `publication/journal/2026-05-28-journal-for-may-28-2026.md` after the day's research.
