@@ -13,25 +13,7 @@ for env_file in "$LUMENARY_ROOT/.env" "$LUMENARY_ROOT/.env.local"; do
 done
 set +a
 
-import_cloudflare_keys() {
-  local env_file="$1"
-  if [ ! -f "$env_file" ]; then
-    return 0
-  fi
-
-  while IFS= read -r line; do
-    case "$line" in
-      CLOUDFLARE_API_TOKEN=*|CLOUDFLARE_ACCOUNT_ID=*|CLOUDFLARE_ZONE_ID=*)
-        export "$line"
-        ;;
-    esac
-  done < "$env_file"
-}
-
-if [ -z "${CLOUDFLARE_API_TOKEN:-}" ]; then
-  import_cloudflare_keys "/Users/johnforrester/mightybot-marketing/.env"
-fi
-
-if [ -z "${CLOUDFLARE_API_TOKEN:-}" ]; then
-  import_cloudflare_keys "/Users/johnforrester/village-game/server/.env.live"
-fi
+# Do not import Cloudflare credentials from unrelated projects. The Lumenary
+# Pages project lives under forrester.author@gmail.com, while older local
+# projects may contain tokens scoped to other accounts. Use this project's
+# .env/.env.local or Wrangler's authenticated user config.
