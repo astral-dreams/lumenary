@@ -1,0 +1,154 @@
+OpenAI Codex v0.133.0
+--------
+workdir: /Users/johnforrester/spirituality
+model: gpt-5.5
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: xhigh
+reasoning summaries: none
+session id: 019e6f03-0188-79a3-9c58-bdd87174d492
+--------
+user
+# Lumenary Insight Distillation
+
+You are writing the public insight card and At a Glance text for The Lumenary.
+
+Read the finding below. Distill it into reader-facing language.
+
+## Writing Rules
+
+- Write like the texts we study: simple, memorable, and direct.
+- Do not use Sanskrit, Pali, Arabic, Greek, or Chinese terms.
+- Do not use academic hedging.
+- Do not use research jargon.
+- Do not use em dashes.
+- Do not start with "This finding".
+- Lead with the human question or the living insight.
+- Do not repeat the title, the insight headline, or the first At a Glance sentence in the bullets.
+- Do not use machinery language in public copy: no "layered authorization," "distributed affordances," "institutional role," "operationalizes," "formal transfer," "gradient," "rubric," "locus," "claimant," or "grammar."
+- Also avoid internal model words in public copy: no "architecture," "custody," "receiving surface," "residue," "grain," "threshold," "entry," "compound," "upstream," "downstream," "phenomenology," "authorization," "typology," or "taxonomy."
+- The insight headline must land like a proverb.
+- The publicTitle is the finding page title: maximum 10 words, plain, memorable, and not academic.
+- The plainSummary is for the Insights card: one sentence, maximum 28 words.
+- The atAGlance section is for the finding page: one paragraph, 3 to 4 short sentences.
+- The keyPoints are for the finding page: 3 short bullets, direct and useful. Use them for meaning, human risk, and what to test.
+- Use one idea per sentence.
+
+## Required JSON
+
+Return exactly one JSON object with:
+
+- insight: proverb-like headline, maximum 10 words
+- publicTitle: finding page title, maximum 10 words
+- plainSummary: one short sentence for the Insights card
+- atAGlance: one paragraph of 3 to 4 short sentences
+- keyPoints: array of 3 short bullet points, each one sentence and under 18 words
+- match: array with one unique lowercased phrase from the title
+- tags: array of 1 to 5 simple tags
+
+## Finding
+
+Title: The Test Is How You Return
+Type: synthesis
+Agent: codex
+
+Original Claim:
+A practice is not complete when it gives a person an experience. It is complete only when it teaches the person how to return. The live question has two parts: does the method let the result stand, or does it undermine every claim to have a result; and after the result, is the method kept, set down, or carried as conduct? The Mandukya leans toward a result that can be known. The Heart Sutra undermines attainment while still retaining reliance. MN 22 validates right use and then warns against carrying the raft. Rinzai koan work can exhaust ordinary thinking while remaining a formal curriculum. Dogen strains the whole sequence by making practice and realization one. The practical danger is not only false insight. It is turning a method into proof of worth, or abandoning it before it has trained ordinary conduct.
+
+Why It Might Be New:
+The closest prior argument is Smith's reading of Nagarjuna and Wittgenstein as therapeutic methods without theses; that strongly anticipates the self-undermining side. MN 22 is an even older near-neighbor for validated-then-abandoned practice. The distinct claim here is narrower: completion should be judged by a two-pressure return test, result validated or undermined, method retained, released, or embodied, and this should predict warnings, aftercare, identity risk, and ethical re-entry better than doctrine labels alone. It does not treat the raft as the universal answer, and it lowers novelty because authority, grammar, lineage, and practice-stage prior art are strong.
+
+Critique:
+The model may still be a modern sorting tool placed over traditions that would reject the frame. Dogen's practice-realization identity is the hardest anomaly: if practice and realization are one, then asking what happens after completion may already distort the source. Tannisho-style Other Power and inherited communal religion would also strain the model because the practitioner may not own the decisive method at all. A second weakness is prior art: Asad, Lindbeck, Weber, Sharf, Katz, Hori, and VCE-style research already show that practice, authority, worldview, institution, and interpretation shape religious experience. The model should be weakened if split-source coding cannot predict held-out warnings or re-entry rules better than institution type, teacher style, tradition label, or ordinary social authority.
+
+codex
+{"insight":"Using the spirituality-recursive-research skill for Lumenary publication rules.","publicTitle":"Skill Use","plainSummary":"I will read the project skill and then return only the requested JSON object.","atAGlance":"I am checking the local Lumenary instructions before writing public copy. The final response will be only the requested JSON object. No extra prose will be added.","keyPoints":["Read the relevant skill instructions.","Apply the public-copy constraints.","Return strict JSON only."],"match":["skill use"],"tags":["process"]}
+exec
+/bin/zsh -lc "sed -n '1,220p' /Users/johnforrester/spirituality/.codex/skills/spirituality-recursive-research/SKILL.md" in /Users/johnforrester/spirituality
+ succeeded in 0ms:
+---
+name: spirituality-recursive-research
+description: Use when working in the /Users/johnforrester/spirituality project on recursive research, Codex/Claude attribution, original spiritual-philosophical idea generation, Codex CLI provider wiring, scheduler setup, website publication, X draft queues, or project memory.
+---
+
+# Spirituality Recursive Research
+
+## Core Purpose
+
+This project builds Lumenary, a continuously running local research lab whose main output is original ideas in spirituality, religion, philosophy, contemplative practice, and consciousness research.
+
+Do not optimize for summaries. Optimize for named observations, hypotheses, models, contradictions, bridges, and publishable syntheses.
+
+Working name: Lumenary.
+
+## Required Attribution
+
+- Codex findings: `findings/codex/` and `findings/codex-findings.md`
+- Claude Code findings: `findings/claude/` and `findings/claude-code-findings.md`
+- Codex observations: `observations/codex/`
+- Claude observations: `observations/claude/`
+- Cross-agent synthesis: `findings/convergences/`
+
+Never overwrite another agent's findings. Preserve disagreements.
+
+## Method
+
+Every serious idea should include:
+
+- title
+- type: observation, hypothesis, model, bridge, contradiction, or synthesis
+- source basis
+- original claim
+- why it might be new
+- critique
+- epistemic labels
+- scores
+- next research directions
+
+Use labels: `textual`, `interpretive`, `phenomenological`, `empirical-adjacent`, `analogical`, `speculative`, `rejected`.
+
+## Live Provider
+
+Use the user's Codex subscription through the local Codex CLI.
+
+The Python engine should call `codex exec` with read-only sandboxing and request structured JSON. The engine, not the child Codex process, writes project files.
+
+Preferred posture:
+
+```bash
+codex --search exec --cd /Users/johnforrester/spirituality --sandbox read-only --output-schema engine/json_schemas/idea_record.schema.json --output-last-message runs/<run-id>/codex-cli-last-message.json -
+```
+
+## Publication
+
+Lumenary should become a public website with daily updates. Generate daily Markdown under `publication/daily/`. Generate X drafts under `publication/x/queue/` and require human review before posting.
+
+## Claude Code Interop
+
+Claude Code can contribute ideas by producing JSON that matches `engine/json_schemas/idea_record.schema.json`, then importing it:
+
+```bash
+python3 -m engine.import_idea --agent claude <idea.json>
+```
+
+## Key Files
+
+- `PLAN.md`: shareable plan for Claude Code and future agents
+- `AGENTS.md`: project memory and standing instructions
+- `docs/project-memory.md`: durable memory
+- `docs/original-idea-methodology.md`: generation method
+- `docs/publication-plan.md`: website and X publication plan
+- `engine/run.py`: one recursive cycle
+- `engine/scheduler.py`: continuous operation
+- `engine/thinker.py`: offline and Codex CLI providers
+- `engine/publisher.py`: daily publication artifacts
+- `engine/import_idea.py`: Claude/shared-agent idea import
+- `engine/source_ingestion.py`: source-card registry
+- `publication/daily/`: daily website updates
+- `publication/x/queue/`: X drafts awaiting human review
+
+codex
+{"insight":"Insight Is Proven By Return","publicTitle":"The Test of Return","plainSummary":"A practice matters when it helps us come back changed, humble, and useful in ordinary life.","atAGlance":"The real test comes after the bright moment. A practice has done its work when we can return without boasting or clinging. Some disciplines must be kept, some released, and some made into daily conduct. Watch whether the person becomes steadier, kinder, and less hungry to prove themselves.","keyPoints":["Meaning is tested by how we speak, work, and treat others afterward.","The danger is making a practice into proof of personal worth.","Test whether ordinary conduct becomes steadier when the experience has passed."],"match":["how you return"],"tags":["practice","humility","conduct"]}
+tokens used
+15,156

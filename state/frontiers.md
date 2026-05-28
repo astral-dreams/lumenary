@@ -1,6 +1,6 @@
 # Lumenary Frontiers
 
-Generated: 2026-05-28T16:27:35+02:00
+Generated: 2026-05-28T16:42:59+02:00
 
 These are live research agendas derived from idea records, originality audits, publication history, and next-loop instructions.
 
@@ -9,7 +9,7 @@ These are live research agendas derived from idea records, originality audits, p
 - Frontier ID: `frontier-method-reckoning`
 - Status: `active`
 - Stage: `source_grounding`
-- Priority: 0.9144
+- Priority: 0.9136
 - Next action: `complete_audit`
 - Agents: claude, codex
 - Idea records: 5
@@ -37,12 +37,41 @@ Rebuild the model as two axes: validates versus undermines, and retained versus 
 - Reduce novelty from 0.82 to about 0.42. The exact language is fresh, but both axes and much of the predictive burden are already present in prior Lumenary records: Method's Reckoning, Custody of Unclaimed Attention, Authority-Boundary Ecology, Custody and...
 - Do not raise novelty until the originality audit is completed.
 
+## What modern people need teachings for
+
+- Frontier ID: `frontier-modern-human-condition`
+- Status: `active`
+- Stage: `rubric`
+- Priority: 0.8282
+- Next action: `build_rubric`
+- Agents: claude, codex
+- Idea records: 4
+- Audits: 2
+
+### Core Claim
+
+Identity-reframing contemplative practices differ in where they locate the continuity that lets a practitioner receive, survive, interpret, and integrate transformation. Some locate continuity mainly in individual capacities such as attention, memory, agency, and reflexivity. Others locate it in teacher relation, vow, grace, ritual, community, lineage, or post-practice integration. The modern danger is not self-dissolution in general, but a mismatch...
+
+### Next Prompt
+
+Do not publish as a standalone doctrine claim until split-source tests show predictive gain beyond Asad, Lindbeck, Sharf, Ignatian discernment, and VCE.
+
+### Open Anomalies
+
+- Self-luminous recognition traditions and deliberate solitary practice, such as Advaita svaprakasha language, some hermit lineages, Quaker inner-light language, and practitioners who leave abusive communities because communal recognition is less trustworthy...
+- Dogen practice-realization, radical Other Power in Tannisho, inherited communal religion, and successful ordinary ethical practice without a marked peak experience.
+
+### Blockers
+
+- Lower novelty from 0.72 to 0.43. Publishability should stay provisional. Treat the idea as an applied extension of discursive-tradition, doctrine-as-grammar, Buddhist-modernism, spiritual-direction, and VCE appraisal work, not as a discovery.
+- Lower novelty from 0.58 to 0.41. The teaching line is strong and publishable only as a restrained synthesis for achievement-contingent self-worth. The research model should be treated as extended prior art until it predicts warnings, repairs, or return...
+
 ## How silence becomes evidence after the gap
 
 - Frontier ID: `frontier-gap-report`
 - Status: `active`
 - Stage: `rubric`
-- Priority: 0.8234
+- Priority: 0.8233
 - Next action: `build_rubric`
 - Agents: claude, codex
 - Idea records: 6
@@ -74,7 +103,7 @@ Test the rubric on Brihadaranyaka 2.4, 2.5, 3.7.23, SN 22.59, and SN 22.95 befor
 - Frontier ID: `frontier-inferential-gap`
 - Status: `active`
 - Stage: `rubric`
-- Priority: 0.8200
+- Priority: 0.8198
 - Next action: `build_rubric`
 - Agents: claude, codex
 - Idea records: 13
@@ -107,7 +136,7 @@ Rewrite the claim as an interpretive reconstruction unless commentarial evidence
 - Frontier ID: `frontier-remainder-pressure`
 - Status: `active`
 - Stage: `rubric`
-- Priority: 0.7931
+- Priority: 0.7929
 - Next action: `build_rubric`
 - Agents: claude, codex
 - Idea records: 8
@@ -138,7 +167,7 @@ Do not publish as doctrine. Treat as a comparative and practitioner-facing resea
 - Frontier ID: `frontier-translation-strain`
 - Status: `active`
 - Stage: `source_grounding`
-- Priority: 0.7922
+- Priority: 0.7914
 - Next action: `complete_audit`
 - Agents: claude, codex
 - Idea records: 28
@@ -171,7 +200,7 @@ Build a one-page translation-strain rubric with fields for claim unit, role, ont
 - Frontier ID: `frontier-attention-custody`
 - Status: `active`
 - Stage: `rubric`
-- Priority: 0.7733
+- Priority: 0.7731
 - Next action: `build_rubric`
 - Agents: codex
 - Idea records: 2
@@ -203,7 +232,7 @@ Close-read Dzogchen and Mahamudra instructions on rigpa or luminous awareness ag
 - Frontier ID: `frontier-effort-and-practice`
 - Status: `active`
 - Stage: `rubric`
-- Priority: 0.7213
+- Priority: 0.7212
 - Next action: `build_rubric`
 - Agents: claude, codex
 - Idea records: 22
@@ -236,7 +265,7 @@ Recast the model as a graded variable: required receiving capacity, required age
 - Frontier ID: `frontier-love-and-knowing`
 - Status: `active`
 - Stage: `source_grounding`
-- Priority: 0.6991
+- Priority: 0.6990
 - Next action: `complete_audit`
 - Agents: claude, codex
 - Idea records: 6
@@ -249,22 +278,3 @@ Every spiritual insight travels with a hidden guard: the practice that keeps the
 ### Next Prompt
 
 Build a second-personal knowing rubric with fields for: unit of knowing (individual, dyadic, collective), ontological address of what is known (within the practitioner, between persons, constituted by gathering), mode of access (attention, encounter...
-
-## What modern people need teachings for
-
-- Frontier ID: `frontier-modern-human-condition`
-- Status: `active`
-- Stage: `source_grounding`
-- Priority: 0.6572
-- Next action: `complete_audit`
-- Agents: codex
-- Idea records: 2
-- Audits: 0
-
-### Core Claim
-
-Identity-reframing contemplative practices differ in where they locate the continuity that lets a practitioner receive, survive, interpret, and integrate transformation. Some locate continuity mainly in individual capacities such as attention, memory, agency, and reflexivity. Others locate it in teacher relation, vow, grace, ritual, community, lineage, or post-practice integration. The modern danger is not self-dissolution in general, but a mismatch...
-
-### Next Prompt
-
-Create a preregistered coding rubric for continuity location, with fixed categories and negative cases before reading the next source set.

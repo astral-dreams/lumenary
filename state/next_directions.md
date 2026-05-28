@@ -447,3 +447,19 @@
 - Run the full originality audit for this finding before treating it as a discovery.
 - Search for exact structural near-neighbors, not only the general topic.
 - Add at least one anomaly probe, one practitioner test, and one cross-domain prediction.
+
+## Originality Audit Follow-Up 2026-05-28T16:42:59+02:00
+
+### A practice cannot name itself (extended)
+- Do not publish as a standalone doctrine claim until split-source tests show predictive gain beyond Asad, Lindbeck, Sharf, Ignatian discernment, and VCE.
+- Build a recognition-ecology coding sheet with fields for method, claimed shift, naming authority, correction authority, unsafe authority, no-authority, interpretation stability, warning, repair, and ordinary conduct.
+- Run interviews that ask for actual misnaming and repair cases, not agreement with the slogan.
+- Add anomaly categories for valid solitude, abusive community, self-luminous recognition, scripture-held recognition, clinician-held interpretation, and undecidable.
+- For human-condition fit, test whether the prompt reduces isolation and achievement-contingent identity in solo practitioners, and stop if it increases shame, paranoia, or dependence.
+
+### The Test Is How You Return (extended)
+- Do not publish as a discovery. Publish, if at all, as a provisional synthesis: test the return, not the peak.
+- Build a split-source codebook with fields for result stance, method fate, recognition holder, return duty, warning, repair, ordinary conduct, adverse-event risk, and analyst-frame refusal.
+- Add mandatory anomaly values for practice-realization, radical Other Power, inherited religion, no-threshold practice, no-peak ethical formation, direct recognition, and clinician-held support.
+- Run a controlled Return Check pilot against generic journaling and rest-and-plan prompts, with special monitoring for rumination, scrupulosity, and burnout.
+- Close-read Tannisho, Dogen Bendowa or Genjokoan, a Rinzai koan curriculum source, Cloud of Unknowing or Dionysius, a Dzogchen pointing-out source, and one Sufi fana or baqa source before raising source reliability.

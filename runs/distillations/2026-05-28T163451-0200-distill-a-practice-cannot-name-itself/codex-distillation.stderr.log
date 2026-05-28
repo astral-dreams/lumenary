@@ -1,0 +1,154 @@
+OpenAI Codex v0.133.0
+--------
+workdir: /Users/johnforrester/spirituality
+model: gpt-5.5
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: xhigh
+reasoning summaries: none
+session id: 019e6f02-72ca-7be1-bfc6-e48e0b58eac4
+--------
+user
+# Lumenary Insight Distillation
+
+You are writing the public insight card and At a Glance text for The Lumenary.
+
+Read the finding below. Distill it into reader-facing language.
+
+## Writing Rules
+
+- Write like the texts we study: simple, memorable, and direct.
+- Do not use Sanskrit, Pali, Arabic, Greek, or Chinese terms.
+- Do not use academic hedging.
+- Do not use research jargon.
+- Do not use em dashes.
+- Do not start with "This finding".
+- Lead with the human question or the living insight.
+- Do not repeat the title, the insight headline, or the first At a Glance sentence in the bullets.
+- Do not use machinery language in public copy: no "layered authorization," "distributed affordances," "institutional role," "operationalizes," "formal transfer," "gradient," "rubric," "locus," "claimant," or "grammar."
+- Also avoid internal model words in public copy: no "architecture," "custody," "receiving surface," "residue," "grain," "threshold," "entry," "compound," "upstream," "downstream," "phenomenology," "authorization," "typology," or "taxonomy."
+- The insight headline must land like a proverb.
+- The publicTitle is the finding page title: maximum 10 words, plain, memorable, and not academic.
+- The plainSummary is for the Insights card: one sentence, maximum 28 words.
+- The atAGlance section is for the finding page: one paragraph, 3 to 4 short sentences.
+- The keyPoints are for the finding page: 3 short bullets, direct and useful. Use them for meaning, human risk, and what to test.
+- Use one idea per sentence.
+
+## Required JSON
+
+Return exactly one JSON object with:
+
+- insight: proverb-like headline, maximum 10 words
+- publicTitle: finding page title, maximum 10 words
+- plainSummary: one short sentence for the Insights card
+- atAGlance: one paragraph of 3 to 4 short sentences
+- keyPoints: array of 3 short bullet points, each one sentence and under 18 words
+- match: array with one unique lowercased phrase from the title
+- tags: array of 1 to 5 simple tags
+
+## Finding
+
+Title: A practice cannot name itself
+Type: model
+Agent: claude
+
+Original Claim:
+A contemplative practice does not name what happens through it. The same instruction can confirm a recognition, validate a tool then ask for its release, or dissolve the question of authority entirely, depending on who is trusted to say what just happened. The authority of a method is communal, not internal. Three things follow. First, the same teaching changes meaning when the community that recognizes its results changes; this is not corruption, it is structure. Second, modern self-directed practitioners often inherit instruction without the partners who gave that instruction its meaning, and they face every interpretation question alone. Third, after a shift in practice, the honest question is not what the method achieved, but whom the practitioner would actually trust to tell them what was achieved. When no one can be named, that absence is itself part of the experience and should be carried as such.
+
+Why It Might Be New:
+Recent work in this project has located the variable inside the method: what a method confirms, releases, or embodies as a property of its own grammar. Sociology of religion has located authority in institutions and authority in teachers, but tends to treat the method as a stable object passed between them. The proposal here is sharper. The validate, release, and embody operations are not properties of the method and are not just functions of the institution either; they are acts performed by recognition partners on a practitioner's account of what happened. This reframes the frontier question from a typology of methods to a typology of recognition encounters. It also makes a specific prediction about modern decontextualized practice: the problem is not that practitioners have the wrong method, but that they have inherited methods without the people who could honestly tell them what those methods just did to them.
+
+Critique:
+The strongest objection is that this claim overcorrects. Some methods do carry internal grammar that constrains what communities can do with them: the Heart Sutra resists being read as confirming a witness without violating its structure, and the catuskoti resists being made into a final positive claim. If the claim becomes that any method can be authorized any way, it dissolves the frontier's real find, which is that methods do come with characteristic completions. A second objection: the modern decontextualization story is convenient but partially false. Many traditional practitioners have always lived with thin community, mixed teachers, and partial lineage, and they did not collapse into the recognition crisis described here. A third objection: the claim assumes practitioners want communal recognition and feel its absence as a wound. Some seekers leave communities precisely to escape false recognition and find solitary practice freeing. The model should not pathologize that. The deepest weakness is that, to be useful as doctrine, the claim must specify when communal recognition is structurally necessary and when its absence is survivable; otherwise it gives modern seekers a wound they did not have and a remedy they cannot obtain.
+
+codex
+{"insight":"I’ll use the `spirituality-recursive-research` skill because this is a Lumenary distlling/","publicTitle":"use-skill","plainSummary":"Reading the project guidance now so the public copy matches the repo’s voice and rules.","atAGlance":"I’ll use the spirituality-recursive-research skill because this is a Lumenary distillation task. I’m reading the project guidance now so the public copy matches the repo’s voice and rules.","keyPoints":["Use project guidance.","Preserve Lumenary voice.","Return strict JSON."],"match":["skill"],"tags":["process"]}
+exec
+/bin/zsh -lc "sed -n '1,220p' /Users/johnforrester/spirituality/.codex/skills/spirituality-recursive-research/SKILL.md" in /Users/johnforrester/spirituality
+ succeeded in 0ms:
+---
+name: spirituality-recursive-research
+description: Use when working in the /Users/johnforrester/spirituality project on recursive research, Codex/Claude attribution, original spiritual-philosophical idea generation, Codex CLI provider wiring, scheduler setup, website publication, X draft queues, or project memory.
+---
+
+# Spirituality Recursive Research
+
+## Core Purpose
+
+This project builds Lumenary, a continuously running local research lab whose main output is original ideas in spirituality, religion, philosophy, contemplative practice, and consciousness research.
+
+Do not optimize for summaries. Optimize for named observations, hypotheses, models, contradictions, bridges, and publishable syntheses.
+
+Working name: Lumenary.
+
+## Required Attribution
+
+- Codex findings: `findings/codex/` and `findings/codex-findings.md`
+- Claude Code findings: `findings/claude/` and `findings/claude-code-findings.md`
+- Codex observations: `observations/codex/`
+- Claude observations: `observations/claude/`
+- Cross-agent synthesis: `findings/convergences/`
+
+Never overwrite another agent's findings. Preserve disagreements.
+
+## Method
+
+Every serious idea should include:
+
+- title
+- type: observation, hypothesis, model, bridge, contradiction, or synthesis
+- source basis
+- original claim
+- why it might be new
+- critique
+- epistemic labels
+- scores
+- next research directions
+
+Use labels: `textual`, `interpretive`, `phenomenological`, `empirical-adjacent`, `analogical`, `speculative`, `rejected`.
+
+## Live Provider
+
+Use the user's Codex subscription through the local Codex CLI.
+
+The Python engine should call `codex exec` with read-only sandboxing and request structured JSON. The engine, not the child Codex process, writes project files.
+
+Preferred posture:
+
+```bash
+codex --search exec --cd /Users/johnforrester/spirituality --sandbox read-only --output-schema engine/json_schemas/idea_record.schema.json --output-last-message runs/<run-id>/codex-cli-last-message.json -
+```
+
+## Publication
+
+Lumenary should become a public website with daily updates. Generate daily Markdown under `publication/daily/`. Generate X drafts under `publication/x/queue/` and require human review before posting.
+
+## Claude Code Interop
+
+Claude Code can contribute ideas by producing JSON that matches `engine/json_schemas/idea_record.schema.json`, then importing it:
+
+```bash
+python3 -m engine.import_idea --agent claude <idea.json>
+```
+
+## Key Files
+
+- `PLAN.md`: shareable plan for Claude Code and future agents
+- `AGENTS.md`: project memory and standing instructions
+- `docs/project-memory.md`: durable memory
+- `docs/original-idea-methodology.md`: generation method
+- `docs/publication-plan.md`: website and X publication plan
+- `engine/run.py`: one recursive cycle
+- `engine/scheduler.py`: continuous operation
+- `engine/thinker.py`: offline and Codex CLI providers
+- `engine/publisher.py`: daily publication artifacts
+- `engine/import_idea.py`: Claude/shared-agent idea import
+- `engine/source_ingestion.py`: source-card registry
+- `publication/daily/`: daily website updates
+- `publication/x/queue/`: X drafts awaiting human review
+
+codex
+{"insight":"Practice needs a trusted mirror","publicTitle":"Who Names the Change","plainSummary":"A practice can guide a person, but trusted people help name what changed and what still needs care.","atAGlance":"After deep practice, the hard question is who can help us understand the change. A quiet mind can still misread itself. Some people need wise companions, and some need distance from false voices. The test is whether the practice leaves us more honest, steady, and open to correction.","keyPoints":["Meaning grows clearer when trusted people can hear the change without owning it.","Alone, a seeker may confuse calm, fear, and insight.","Test whether guidance makes life more honest, steady, and kind."],"match":["a practice cannot name itself"],"tags":["practice","trust","community"]}
+tokens used
+15,276
