@@ -1,4 +1,4 @@
-# Journal for May 28, 2026
+# The Test Is How We Return
 
 What should a person trust after a silence that cannot be described from inside? We began the day with that human problem, because many people return from prayer, meditation, grief, shock, or awe and then try to decide what it meant. We discovered that the first sentence after such a silence does more than report memory. It chooses what deserves trust: the person who says they knew, the blankness they remember, the change in their conduct, or the relationship that still claims them.
 
