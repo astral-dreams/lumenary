@@ -63,10 +63,15 @@ def main() -> None:
             "notes": "Starter questions and expected destination pages are defined.",
         },
     ]
-    OUT.write_text(
-        json.dumps({"updated_at": datetime.now(timezone.utc).isoformat(), "checks": checks}, indent=2),
-        encoding="utf-8",
+    previous = {}
+    if OUT.exists():
+        previous = json.loads(OUT.read_text(encoding="utf-8"))
+    updated_at = (
+        previous.get("updated_at")
+        if previous.get("checks") == checks
+        else datetime.now(timezone.utc).isoformat()
     )
+    OUT.write_text(json.dumps({"updated_at": updated_at, "checks": checks}, indent=2), encoding="utf-8")
     print("wrote data/analytics/aeo-readiness.json")
 
 
