@@ -542,3 +542,21 @@
 - Run practitioner interviews for concrete failure and repair cases, not agreement with the model.
 - Pilot only with safety screens for rumination, perfectionism, OCD and scrupulosity, trauma, depression, mania, dissociation, addiction withdrawal, authority harm, avoidance, and workload coercion.
 - Test against baselines: ordinary spiritual direction, clinician triage, guided self-help, routine outcome monitoring, ERP anti-reassurance rules, and prior Lumenary correction-holder models.
+
+## Originality Audit Follow-Up 2026-05-29T16:49:43+02:00
+
+### Not Every Check Should Be Yours (renamed)
+- Do not publish as a standalone discovery. Cross-index or merge with Who Holds The Gate, Keep What Can Correct You, The Test Is How You Return, and correction-holder records.
+- Build a pre-registered holder-routing codebook with fields for failure mode, current state, check holder, unsafe holder, no-check option, clinical exclusion, warning, repair, and evidence passage.
+- Use split-source coding. Do not let one passage establish holder assignment and confirm the predicted repair.
+- Add mandatory anomaly values for OCD reassurance seeking, scrupulosity, dependency, abusive authority, valid solitude, no-product practice, no-result rest, clinician-held care, and undecidable.
+- Pilot only with screening for rumination, perfectionism, OCD and scrupulosity, trauma, depression, mania, dissociation, addiction withdrawal, authority harm, avoidance, and workload coercion.
+- Interview practitioners for concrete mischeck and repair cases, not agreement with the slogan.
+
+### More Is Not The Same As Progress (renamed)
+- Do not publish as a discovery. Merge or cross-index with The Silence Has A Stopping Rule and the after-use records.
+- Implement an action-state gate in the recursive loop before generating on a frontier. If recommended_next_action is audit, merge, consolidate, rest, or handoff, block new findings unless a documented re-open rule is met.
+- Define re-open criteria: new source class, anomaly, failed merge, practitioner challenge, or explicit human override.
+- Compare against baselines: Kanban WIP limits, GTD next actions, Definition of Done, grounded theory saturation, Lakatosian progress criteria, sunset clauses, and research-integrity rules.
+- For human practice, pilot only with high-output overproducers and screen out severe depression, acute burnout, coercive workload, under-production, and shame spirals.
+- Measure completion, duplicate production, rumination, shame, and genuine novelty rather than felt productivity.

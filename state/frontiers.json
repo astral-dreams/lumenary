@@ -84,7 +84,7 @@
         "Can the occurrence of a contemplative phenomenological state (such as remainder pressure, witness-awareness, or cessation) be analytically separated from the training context that conditions the practitioner to recognize and report it, or does the training...",
         "If Advaita is internally divided between svaprakasha (self-luminosity) and shabda pramana (scriptural testimony) as the means of knowing the witness, and early Buddhism is internally divided between remainder-refusing (SN 22.59) and therapeutic..."
       ],
-      "priority": 0.8908,
+      "priority": 0.8901,
       "publication_paths": [
         "publication/daily/2026-05-28-the-method-s-reckoning-what-a-practice-does-with-its-own-authority-at-completion.md"
       ],
@@ -196,7 +196,7 @@
         "How do authorized residues, entry grammars, circularity severity, and source layers jointly predict a tradition's warnings, verification forms, and effort theory, especially for people who feel unable to begin the change they need?",
         "What observable features distinguish embodied attentional grain from doctrinal explanation, and how quickly can residue authorization become grain?"
       ],
-      "priority": 0.8133,
+      "priority": 0.8132,
       "publication_paths": [
         "publication/daily/2026-05-28-the-gap-report-has-a-grammar.md",
         "publication/daily/2026-05-29-residue-policy-in-negative-self-practice.md"
@@ -313,10 +313,11 @@
         "How can Lumenary design practices that preserve the exact capacities a method requires, refuse to overinterpret those capacities as metaphysical proof, and use teacher or community calibration to prevent premature destabilization?",
         "When a person cannot yet practice in the mature sense, what kind of entry does a tradition permit, scaffolded participation, external gift, latent capacity, self-disclosure, or refusal of any remainder claim?"
       ],
-      "priority": 0.8109,
+      "priority": 0.8107,
       "publication_paths": [
         "publication/daily/2026-05-26-the-same-negation-the-opposite-inference-logical-underdetermination-in-the-catuskoti-as-a-second-test-of-the-inferential-gap.md",
-        "publication/daily/2026-05-29-compound-entry-grammar.md"
+        "publication/daily/2026-05-29-compound-entry-grammar.md",
+        "publication/daily/2026-05-29-operational-remainder-ecology.md"
       ],
       "recommended_next_action": "build_rubric",
       "stage": "rubric",
@@ -415,7 +416,7 @@
         "Dogen-style practice-realization, inherited communal practice, and radical Other Power cases where the analyst cannot cleanly separate custody, entry, and receiving surface.",
         "Huangbo search-refusal, Dogen practice-realization, and Dzogchen direct recognition cases where the tradition rejects the search sequence rather than producing a downstream remainder to manage."
       ],
-      "priority": 0.7838,
+      "priority": 0.7837,
       "publication_paths": [],
       "recommended_next_action": "build_rubric",
       "stage": "rubric",
@@ -444,6 +445,188 @@
       },
       "title": "Remainder pressure after self-negation",
       "why_now": "priority 0.78; 8 related idea records; 4 originality audits; cross-agent signal; live anomaly pressure"
+    },
+    {
+      "agents": [
+        "claude",
+        "codex"
+      ],
+      "audit_ids": [
+        "daeecdbd22658370",
+        "8ab2c8dda0ae6f7d",
+        "f3966ec8d2c9dc68",
+        "5e22b929e230f390",
+        "ccc236ff67de7a3f",
+        "a1081d3f97040016",
+        "2942cf211db9ae34",
+        "35681329dc02292c",
+        "08ac38c26b5e49aa",
+        "4299246a4ab81e4e",
+        "756dc4935ec9d174",
+        "8a8d544ce3b6f17a",
+        "baeaa976a10337e6",
+        "3d2d262887cc1740",
+        "92ca8dca94e1acc0",
+        "a66d453d1d56cbe8",
+        "8dad9d31a3c79764"
+      ],
+      "audit_statuses": [
+        "extended",
+        "novel_synthesis",
+        "renamed"
+      ],
+      "blockers": [
+        "Reduce novelty from 0.74 to about 0.52. The cross-tradition architecture claim is a meaningful extension, but the minimum-self prerequisite, functional self, no-self continuity problem, and healthy ego before no-self are strong prior art.",
+        "Reduce novelty from 0.76 to about 0.58. The phrase grain of capacity is generative and the mismatch prediction is useful, but the anti-neutrality structure is strongly anticipated by constructivism, Buddhist mindfulness-style scholarship, participatory...",
+        "Reduce novelty from 0.61 to about 0.49. The ledger is useful and testable, but it largely extends the audited Lumenary minimum-self thesis and known work on Engler, Upaya, Buddhist personhood, self-pattern theory, and adverse meditation contexts."
+      ],
+      "closest_prior_art": [
+        {
+          "difference": "Engler's frame is Buddhist psychology and psychotherapy. He does not build a comparative typology of causal continuity, ontological identity, temporal collapse, and divine...",
+          "novelty_impact": "High reduction. The core minimum-self prerequisite is already a well-known practitioner-facing thesis.",
+          "overlap": "Very close. Engler says meditation requires ego strength, self-observation, and affect tolerance before no-self can be safely practiced.",
+          "source": "Jack Engler interview, You Must Be Somebody Before You Can Be Nobody, Inquiring Mind, https://inquiringmind.com/article/0501_1_engler-interview/"
+        },
+        {
+          "difference": "This is an intra-Buddhist metaphysical and doctrinal dispute, not a general model of practice architecture across traditions.",
+          "novelty_impact": "High reduction. The pressure between no-self and soteriological functioning is ancient, not newly discovered.",
+          "overlap": "Very close historical prior art. Pudgalavadins argued that karma, rebirth, liberation, benevolence, and lived personhood strain a strict no-self aggregate account.",
+          "source": "Pudgalavada Buddhist Philosophy, Internet Encyclopedia of Philosophy, https://iep.utm.edu/pudgalavada-buddhist-philosophy/"
+        },
+        {
+          "difference": "The focus is Theravada discourse and imagery, not cross-tradition engineering constraints.",
+          "novelty_impact": "High reduction for the Buddhist side. The Lumenary idea extends rather than originates the continuity problem.",
+          "overlap": "Collins directly studies how Theravada constructs personal identity and continuity on the apparently impossible basis of denying self.",
+          "source": "Steven Collins, Selfless Persons, summary and citation, https://buddhanature.tsadra.org/index.php/Books/Selfless_Persons"
+        }
+      ],
+      "configured_topic": true,
+      "core_claim": "Every contemplative tradition faces a paradox it cannot avoid: if practice causes awakening, the awakening depends on something temporary; if awakening was always the case, practice seems unnecessary. The resolution of this paradox is not a peripheral doctrinal detail. It functions as a root variable from which most other features of a tradition follow: its relationship to time, what it thinks effort does, whether failure is possible, how it verifies...",
+      "dialogue_count": 43,
+      "dialogue_ids": [
+        "081821a0b70e5629",
+        "0cf49cd701777b18",
+        "0e2baca9aa7b108f",
+        "36926ca9f6ab367e",
+        "3d07afbbbf9a3d4d",
+        "40539d245bd592bf",
+        "4930aebe42046fcc",
+        "52d9118cf7c22e82",
+        "54009c482f05ee02",
+        "58fec6c182359bc3",
+        "5c1c8a85bc76424f",
+        "616853e6d5faa311",
+        "61a99af325ab68d4",
+        "71f493155e785b64",
+        "807e62439bba439f",
+        "88ab6a8c24b971af",
+        "8a66f1c724c9ff1c",
+        "8a902a752a99ceae",
+        "8b15dd602f7bcc65",
+        "8c5d10b150499ca9",
+        "8f986b1b344af941",
+        "96b464bfb50f94af",
+        "a77a66f94292c81f",
+        "aa1bef7113e171d1",
+        "b89c0f0141522331",
+        "ba5bd26446b16e88",
+        "bdbb62b82cefd5ea",
+        "bfb93e45e9bbeeca",
+        "c15f20c6f638c370",
+        "c248ac37d37726ad",
+        "c2d99fd52ac864e4",
+        "c6f5a30aa341bc48",
+        "c7bd07aed1efede4",
+        "cf1bf0e51a293036",
+        "d543da45c2afa840",
+        "db4d590d76b22b68",
+        "dc9166397d4262fe",
+        "ebe491c3c2b19a93",
+        "efa34f4f6746a9fe",
+        "f170ea23290b972c",
+        "f29cde6702a2b1f5",
+        "f8d69e990a60a6ae",
+        "f97e454e1b89bb92"
+      ],
+      "dialogue_outcomes": [
+        "candidate_transcendence",
+        "revision"
+      ],
+      "frontier_id": "frontier-effort-and-practice",
+      "idea_ids": [
+        "521ab8af3468101d",
+        "6e80731e67597037",
+        "d7068c92a3ef3259",
+        "fecaa8fdc5f96b5b",
+        "e123196d533f744d",
+        "555fc22423d9a7dd",
+        "3c5caa358a09c26a",
+        "915778a2f5edc30e",
+        "a9dd2252002b7a5a",
+        "a5ae6e997ca1d286",
+        "c53042c11562b839",
+        "e2faec9c39c6a653",
+        "433dd83d436b0b13",
+        "82ff6b42c1a47d54",
+        "6dcbfd00ecc2cfaa",
+        "9ff56d58cbdbd8cf",
+        "20d4f181f0c90e09",
+        "4b75183000469586",
+        "d39a12897d0cb12a",
+        "789b98931c40f448",
+        "b34ba3414b7418e8",
+        "732bcb02b424bd36",
+        "229a9ed6ad32bbac"
+      ],
+      "last_advanced_at": "2026-05-29T16:49:43+02:00",
+      "missing_sources": [
+        "who practices if there is no self Buddhism liberation agency",
+        "Pudgalavada karma rebirth liberation person no self",
+        "Selfless Persons Theravada personal identity continuity denial of self Collins",
+        "you have to be somebody before you can be nobody Engler Buddhism meditation",
+        "functional self Buddhist no-self mindfulness trauma preliminary practice"
+      ],
+      "next_prompt": "Recast the model as a graded variable: required receiving capacity, required agency, required memory, required reflexivity, and required post-insight integration.",
+      "open_anomalies": [
+        "Other-power and direct-introduction traditions, such as Jodo Shinshu entrusting and Dzogchen pointing-out, appear to minimize self-powered agency while still functioning as paths.",
+        "Successful hybrids and dual-trained practitioners who switch methods smoothly without reported directional resistance.",
+        "Radical Jodo Shinshu other-power: true shinjin is not a human capacity at all, but Amida's working, and self-assessment as capacity may itself be self-power calculation.",
+        "Can a comparative model of transformation preserve enough structure to generate predictions while also marking the point where its own mapping stance becomes the obstacle named by the traditions it studies?",
+        "If a practice's convergence point can be coded as a simple summary of the support-locus distribution around it, does any tradition's warning literature distinguish convergence-point failures (dissociation, premature dissolution, loss of functional..."
+      ],
+      "priority": 0.7686,
+      "publication_paths": [
+        "publication/daily/2026-05-26-the-capacity-ledger-of-gift-and-effort.md",
+        "publication/daily/2026-05-26-the-forbidden-claimant-rubric.md",
+        "publication/daily/2026-05-26-the-handoff-point-is-the-variable.md"
+      ],
+      "recommended_next_action": "build_rubric",
+      "stage": "rubric",
+      "status": "active",
+      "strongest_public_claim": {
+        "idea_id": "c53042c11562b839",
+        "path": "observations/codex/2026-05-26-the-forbidden-claimant-rubric.md",
+        "promotion_stage": "Public Claim",
+        "title": "The Forbidden Claimant Rubric"
+      },
+      "tests": {
+        "cross_domain": [
+          "Therapies or pedagogies that deconstruct identity, such as trauma therapy, exposure therapy, psychedelic therapy, contemplative psychotherapy, or critical pedagogy, should have stronger screening, scaffolding, integration, and teacher-client safeguards...",
+          "Clients and therapists crossing modalities should show grain-specific resistance: CBT-trained clients may convert psychoanalytic free association into problem solving, somatic-therapy clients may treat cognitive restructuring as disembodiment, and..."
+        ],
+        "falsifiable": [
+          "If: The stronger a path's final self-dissolution claim, the more explicit its safeguards should be against premature or distorted self-loss. Then: Manuals and teachers should warn against nihilism, dissociation, spiritual bypassing, false attainment...",
+          "If: Long, effortful paths should develop more elaborate continuity mechanisms than sudden or other-power paths. Then: Theravada stages, Sufi stations, and Advaita preparation should specify capacities, sequence, and error correction; sudden methods should...",
+          "If: Dual-trained practitioners should report different kinds of permitted selfhood when switching methods. Then: Vipassana permits causal observation without ownership; Advaita permits witness or Self recognition; Soto Zen discourages gaining selfhood..."
+        ],
+        "practitioner": [
+          "Does your path require a functional self-capacity that its final teaching later dissolves, denies, or reframes?",
+          "Is this already obvious as two truths, healthy ego before no-self, practice-realization, surrender, or grace?",
+          "Would this rubric change how you screen students, sequence practices, verify insight, or warn against errors?"
+        ]
+      },
+      "title": "The boundary between effort and gift",
+      "why_now": "priority 0.73; 23 related idea records; 17 originality audits; cross-agent signal; live anomaly pressure; dialogue pressure"
     },
     {
       "agents": [
@@ -566,7 +749,7 @@
         "When a tradition internally disputes its own assertion posture (as in the Svatantrika-Prasangika contest over whether Madhyamaka holds theses), does the strain-mapping protocol need to treat posture as a continuous variable or a contested parameter rather...",
         "How can a self-transcending practice be designed so that it builds enough scaffold before it weakens the self-functions a practitioner still needs?"
       ],
-      "priority": 0.7685,
+      "priority": 0.7678,
       "publication_paths": [
         "publication/daily/2026-05-25-convergence-as-translation-strain-not-evidence-weight.md"
       ],
@@ -668,7 +851,7 @@
         "Before a person can claim, reject, or understand a path, what holds their attention and agency, and when does doctrine merely name that holding versus reshape it?",
         "Where, exactly, does a practice place direction before, during, and after loosened ownership, and can practitioners feel that placement before doctrine explains it?"
       ],
-      "priority": 0.7639,
+      "priority": 0.7638,
       "publication_paths": [],
       "recommended_next_action": "build_rubric",
       "stage": "rubric",
@@ -714,7 +897,8 @@
         "ddc62528ba3f429d",
         "6243c8e923d5f36f",
         "fc7b25df89b750ea",
-        "976d96eaa0a316f4"
+        "976d96eaa0a316f4",
+        "b9a584e898d8b829"
       ],
       "audit_statuses": [
         "extended",
@@ -770,9 +954,10 @@
         "c4bedb491c09ac97",
         "0f43230b488f18e5",
         "eb9eb4682194e725",
-        "f1f42b2a44b9a9f6"
+        "f1f42b2a44b9a9f6",
+        "774542105bd80eea"
       ],
-      "last_advanced_at": "2026-05-29T16:23:56+02:00",
+      "last_advanced_at": "2026-05-29T16:49:43+02:00",
       "missing_sources": [
         "\"discursive tradition\" \"correct form and purpose\" Asad practice authority",
         "\"Lindbeck\" \"doctrine as grammar\" religious experience community practice",
@@ -811,187 +996,7 @@
         ]
       },
       "title": "What modern people need teachings for",
-      "why_now": "priority 0.70; 13 related idea records; 11 originality audits; cross-agent signal; live anomaly pressure; dialogue pressure"
-    },
-    {
-      "agents": [
-        "claude",
-        "codex"
-      ],
-      "audit_ids": [
-        "daeecdbd22658370",
-        "8ab2c8dda0ae6f7d",
-        "f3966ec8d2c9dc68",
-        "5e22b929e230f390",
-        "ccc236ff67de7a3f",
-        "a1081d3f97040016",
-        "2942cf211db9ae34",
-        "35681329dc02292c",
-        "08ac38c26b5e49aa",
-        "4299246a4ab81e4e",
-        "756dc4935ec9d174",
-        "8a8d544ce3b6f17a",
-        "baeaa976a10337e6",
-        "3d2d262887cc1740",
-        "92ca8dca94e1acc0",
-        "a66d453d1d56cbe8"
-      ],
-      "audit_statuses": [
-        "extended",
-        "novel_synthesis",
-        "renamed"
-      ],
-      "blockers": [
-        "Reduce novelty from 0.74 to about 0.52. The cross-tradition architecture claim is a meaningful extension, but the minimum-self prerequisite, functional self, no-self continuity problem, and healthy ego before no-self are strong prior art.",
-        "Reduce novelty from 0.76 to about 0.58. The phrase grain of capacity is generative and the mismatch prediction is useful, but the anti-neutrality structure is strongly anticipated by constructivism, Buddhist mindfulness-style scholarship, participatory...",
-        "Reduce novelty from 0.61 to about 0.49. The ledger is useful and testable, but it largely extends the audited Lumenary minimum-self thesis and known work on Engler, Upaya, Buddhist personhood, self-pattern theory, and adverse meditation contexts."
-      ],
-      "closest_prior_art": [
-        {
-          "difference": "Engler's frame is Buddhist psychology and psychotherapy. He does not build a comparative typology of causal continuity, ontological identity, temporal collapse, and divine...",
-          "novelty_impact": "High reduction. The core minimum-self prerequisite is already a well-known practitioner-facing thesis.",
-          "overlap": "Very close. Engler says meditation requires ego strength, self-observation, and affect tolerance before no-self can be safely practiced.",
-          "source": "Jack Engler interview, You Must Be Somebody Before You Can Be Nobody, Inquiring Mind, https://inquiringmind.com/article/0501_1_engler-interview/"
-        },
-        {
-          "difference": "This is an intra-Buddhist metaphysical and doctrinal dispute, not a general model of practice architecture across traditions.",
-          "novelty_impact": "High reduction. The pressure between no-self and soteriological functioning is ancient, not newly discovered.",
-          "overlap": "Very close historical prior art. Pudgalavadins argued that karma, rebirth, liberation, benevolence, and lived personhood strain a strict no-self aggregate account.",
-          "source": "Pudgalavada Buddhist Philosophy, Internet Encyclopedia of Philosophy, https://iep.utm.edu/pudgalavada-buddhist-philosophy/"
-        },
-        {
-          "difference": "The focus is Theravada discourse and imagery, not cross-tradition engineering constraints.",
-          "novelty_impact": "High reduction for the Buddhist side. The Lumenary idea extends rather than originates the continuity problem.",
-          "overlap": "Collins directly studies how Theravada constructs personal identity and continuity on the apparently impossible basis of denying self.",
-          "source": "Steven Collins, Selfless Persons, summary and citation, https://buddhanature.tsadra.org/index.php/Books/Selfless_Persons"
-        }
-      ],
-      "configured_topic": true,
-      "core_claim": "Every contemplative tradition faces a paradox it cannot avoid: if practice causes awakening, the awakening depends on something temporary; if awakening was always the case, practice seems unnecessary. The resolution of this paradox is not a peripheral doctrinal detail. It functions as a root variable from which most other features of a tradition follow: its relationship to time, what it thinks effort does, whether failure is possible, how it verifies...",
-      "dialogue_count": 43,
-      "dialogue_ids": [
-        "081821a0b70e5629",
-        "0cf49cd701777b18",
-        "0e2baca9aa7b108f",
-        "36926ca9f6ab367e",
-        "3d07afbbbf9a3d4d",
-        "40539d245bd592bf",
-        "4930aebe42046fcc",
-        "52d9118cf7c22e82",
-        "54009c482f05ee02",
-        "58fec6c182359bc3",
-        "5c1c8a85bc76424f",
-        "616853e6d5faa311",
-        "61a99af325ab68d4",
-        "71f493155e785b64",
-        "807e62439bba439f",
-        "88ab6a8c24b971af",
-        "8a66f1c724c9ff1c",
-        "8a902a752a99ceae",
-        "8b15dd602f7bcc65",
-        "8c5d10b150499ca9",
-        "8f986b1b344af941",
-        "96b464bfb50f94af",
-        "a77a66f94292c81f",
-        "aa1bef7113e171d1",
-        "b89c0f0141522331",
-        "ba5bd26446b16e88",
-        "bdbb62b82cefd5ea",
-        "bfb93e45e9bbeeca",
-        "c15f20c6f638c370",
-        "c248ac37d37726ad",
-        "c2d99fd52ac864e4",
-        "c6f5a30aa341bc48",
-        "c7bd07aed1efede4",
-        "cf1bf0e51a293036",
-        "d543da45c2afa840",
-        "db4d590d76b22b68",
-        "dc9166397d4262fe",
-        "ebe491c3c2b19a93",
-        "efa34f4f6746a9fe",
-        "f170ea23290b972c",
-        "f29cde6702a2b1f5",
-        "f8d69e990a60a6ae",
-        "f97e454e1b89bb92"
-      ],
-      "dialogue_outcomes": [
-        "candidate_transcendence",
-        "revision"
-      ],
-      "frontier_id": "frontier-effort-and-practice",
-      "idea_ids": [
-        "521ab8af3468101d",
-        "6e80731e67597037",
-        "d7068c92a3ef3259",
-        "fecaa8fdc5f96b5b",
-        "e123196d533f744d",
-        "555fc22423d9a7dd",
-        "3c5caa358a09c26a",
-        "915778a2f5edc30e",
-        "a9dd2252002b7a5a",
-        "a5ae6e997ca1d286",
-        "c53042c11562b839",
-        "e2faec9c39c6a653",
-        "433dd83d436b0b13",
-        "82ff6b42c1a47d54",
-        "6dcbfd00ecc2cfaa",
-        "9ff56d58cbdbd8cf",
-        "20d4f181f0c90e09",
-        "4b75183000469586",
-        "d39a12897d0cb12a",
-        "789b98931c40f448",
-        "b34ba3414b7418e8",
-        "732bcb02b424bd36"
-      ],
-      "last_advanced_at": "2026-05-26T20:45:07-07:00",
-      "missing_sources": [
-        "who practices if there is no self Buddhism liberation agency",
-        "Pudgalavada karma rebirth liberation person no self",
-        "Selfless Persons Theravada personal identity continuity denial of self Collins",
-        "you have to be somebody before you can be nobody Engler Buddhism meditation",
-        "functional self Buddhist no-self mindfulness trauma preliminary practice"
-      ],
-      "next_prompt": "Recast the model as a graded variable: required receiving capacity, required agency, required memory, required reflexivity, and required post-insight integration.",
-      "open_anomalies": [
-        "Other-power and direct-introduction traditions, such as Jodo Shinshu entrusting and Dzogchen pointing-out, appear to minimize self-powered agency while still functioning as paths.",
-        "Successful hybrids and dual-trained practitioners who switch methods smoothly without reported directional resistance.",
-        "Radical Jodo Shinshu other-power: true shinjin is not a human capacity at all, but Amida's working, and self-assessment as capacity may itself be self-power calculation.",
-        "Can a comparative model of transformation preserve enough structure to generate predictions while also marking the point where its own mapping stance becomes the obstacle named by the traditions it studies?",
-        "If a practice's convergence point can be coded as a simple summary of the support-locus distribution around it, does any tradition's warning literature distinguish convergence-point failures (dissociation, premature dissolution, loss of functional..."
-      ],
-      "priority": 0.7118,
-      "publication_paths": [
-        "publication/daily/2026-05-26-the-capacity-ledger-of-gift-and-effort.md",
-        "publication/daily/2026-05-26-the-forbidden-claimant-rubric.md",
-        "publication/daily/2026-05-26-the-handoff-point-is-the-variable.md"
-      ],
-      "recommended_next_action": "build_rubric",
-      "stage": "rubric",
-      "status": "active",
-      "strongest_public_claim": {
-        "idea_id": "c53042c11562b839",
-        "path": "observations/codex/2026-05-26-the-forbidden-claimant-rubric.md",
-        "promotion_stage": "Public Claim",
-        "title": "The Forbidden Claimant Rubric"
-      },
-      "tests": {
-        "cross_domain": [
-          "Therapies or pedagogies that deconstruct identity, such as trauma therapy, exposure therapy, psychedelic therapy, contemplative psychotherapy, or critical pedagogy, should have stronger screening, scaffolding, integration, and teacher-client safeguards...",
-          "Clients and therapists crossing modalities should show grain-specific resistance: CBT-trained clients may convert psychoanalytic free association into problem solving, somatic-therapy clients may treat cognitive restructuring as disembodiment, and..."
-        ],
-        "falsifiable": [
-          "If: The stronger a path's final self-dissolution claim, the more explicit its safeguards should be against premature or distorted self-loss. Then: Manuals and teachers should warn against nihilism, dissociation, spiritual bypassing, false attainment...",
-          "If: Long, effortful paths should develop more elaborate continuity mechanisms than sudden or other-power paths. Then: Theravada stages, Sufi stations, and Advaita preparation should specify capacities, sequence, and error correction; sudden methods should...",
-          "If: Dual-trained practitioners should report different kinds of permitted selfhood when switching methods. Then: Vipassana permits causal observation without ownership; Advaita permits witness or Self recognition; Soto Zen discourages gaining selfhood..."
-        ],
-        "practitioner": [
-          "Does your path require a functional self-capacity that its final teaching later dissolves, denies, or reframes?",
-          "Is this already obvious as two truths, healthy ego before no-self, practice-realization, surrender, or grace?",
-          "Would this rubric change how you screen students, sequence practices, verify insight, or warn against errors?"
-        ]
-      },
-      "title": "The boundary between effort and gift",
-      "why_now": "priority 0.67; 22 related idea records; 16 originality audits; cross-agent signal; live anomaly pressure; dialogue pressure"
+      "why_now": "priority 0.70; 14 related idea records; 12 originality audits; cross-agent signal; live anomaly pressure; dialogue pressure"
     },
     {
       "agents": [
@@ -1020,7 +1025,7 @@
       "missing_sources": [],
       "next_prompt": "Build a second-personal knowing rubric with fields for: unit of knowing (individual, dyadic, collective), ontological address of what is known (within the practitioner, between persons, constituted by gathering), mode of access (attention, encounter...",
       "open_anomalies": [],
-      "priority": 0.6919,
+      "priority": 0.6918,
       "publication_paths": [],
       "recommended_next_action": "complete_audit",
       "stage": "source_grounding",
@@ -1040,7 +1045,7 @@
       "why_now": "priority 0.69; 6 related idea records; 0 originality audits; cross-agent signal"
     }
   ],
-  "generated_at": "2026-05-29T16:23:56+02:00",
+  "generated_at": "2026-05-29T16:49:43+02:00",
   "rules_version": "2026-05-26",
   "version": "2026-05-26"
 }

@@ -989,3 +989,23 @@
 
 - Published daily draft `publication/daily/2026-05-29-operational-remainder-ecology.md`.
 - Created X draft `publication/x/queue/2026-05-29-operational-remainder-ecology.md`.
+
+## 2026-05-29T16:42:06+02:00
+
+- Parallel run `20260529-163436-claude-generate-an-original-lumenary-doctrine-building-` generated `More Is Not The Same As Progress`.
+- Observation file: `observations/claude/2026-05-29-more-is-not-the-same-as-progress.md`.
+
+## 2026-05-29T16:42:06+02:00
+
+- Parallel run `20260529-163436-codex-generate-an-original-lumenary-doctrine-building-` generated `Not Every Check Should Be Yours`.
+- Observation file: `observations/codex/2026-05-29-not-every-check-should-be-yours.md`.
+
+## 2026-05-29T16:49:43+02:00
+
+- Originality audit completed for `Not Every Check Should Be Yours`, `More Is Not The Same As Progress`.
+- Audit records: `reviews/originality/2026-05-29-not-every-check-should-be-yours-b9a584e898d8b829.md`, `reviews/originality/2026-05-29-more-is-not-the-same-as-progress-8dad9d31a3c79764.md`.
+
+## 2026-05-29T16:49:43+02:00
+
+- Published daily draft `publication/daily/2026-05-29-two-directions-into-the-same-wall.md`.
+- Created X draft `publication/x/queue/2026-05-29-two-directions-into-the-same-wall.md`.

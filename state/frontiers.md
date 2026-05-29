@@ -1,6 +1,6 @@
 # Lumenary Frontiers
 
-Generated: 2026-05-29T16:23:56+02:00
+Generated: 2026-05-29T16:49:43+02:00
 
 These are live research agendas derived from idea records, originality audits, publication history, and next-loop instructions.
 
@@ -9,7 +9,7 @@ These are live research agendas derived from idea records, originality audits, p
 - Frontier ID: `frontier-method-reckoning`
 - Status: `active`
 - Stage: `source_grounding`
-- Priority: 0.8908
+- Priority: 0.8901
 - Next action: `complete_audit`
 - Agents: claude, codex
 - Idea records: 6
@@ -42,7 +42,7 @@ Rebuild the model as two axes: validates versus undermines, and retained versus 
 - Frontier ID: `frontier-gap-report`
 - Status: `active`
 - Stage: `rubric`
-- Priority: 0.8133
+- Priority: 0.8132
 - Next action: `build_rubric`
 - Agents: claude, codex
 - Idea records: 6
@@ -74,7 +74,7 @@ Test the rubric on Brihadaranyaka 2.4, 2.5, 3.7.23, SN 22.59, and SN 22.95 befor
 - Frontier ID: `frontier-inferential-gap`
 - Status: `active`
 - Stage: `rubric`
-- Priority: 0.8109
+- Priority: 0.8107
 - Next action: `build_rubric`
 - Agents: claude, codex
 - Idea records: 13
@@ -107,7 +107,7 @@ Rewrite the claim as an interpretive reconstruction unless commentarial evidence
 - Frontier ID: `frontier-remainder-pressure`
 - Status: `active`
 - Stage: `rubric`
-- Priority: 0.7838
+- Priority: 0.7837
 - Next action: `build_rubric`
 - Agents: claude, codex
 - Idea records: 8
@@ -133,12 +133,45 @@ Do not publish as doctrine. Treat as a comparative and practitioner-facing resea
 - Reduce novelty from 0.77 to about 0.55. The idea is useful and testable, but most components are strongly anticipated by prior Lumenary ledgers, Pargament's religious coping styles, Lindbeck's doctrine-as-grammar, Asad's discursive tradition, VCE and...
 - Reduce novelty from 0.78 to about 0.52. The synthesis is useful and testable, but both halves are already present in prior Lumenary audits, and the exact upstream-downstream move is closely anticipated by Claude's Reflexivity Policy. External prior art...
 
+## The boundary between effort and gift
+
+- Frontier ID: `frontier-effort-and-practice`
+- Status: `active`
+- Stage: `rubric`
+- Priority: 0.7686
+- Next action: `build_rubric`
+- Agents: claude, codex
+- Idea records: 23
+- Audits: 17
+
+### Core Claim
+
+Every contemplative tradition faces a paradox it cannot avoid: if practice causes awakening, the awakening depends on something temporary; if awakening was always the case, practice seems unnecessary. The resolution of this paradox is not a peripheral doctrinal detail. It functions as a root variable from which most other features of a tradition follow: its relationship to time, what it thinks effort does, whether failure is possible, how it verifies...
+
+### Next Prompt
+
+Recast the model as a graded variable: required receiving capacity, required agency, required memory, required reflexivity, and required post-insight integration.
+
+### Open Anomalies
+
+- Other-power and direct-introduction traditions, such as Jodo Shinshu entrusting and Dzogchen pointing-out, appear to minimize self-powered agency while still functioning as paths.
+- Successful hybrids and dual-trained practitioners who switch methods smoothly without reported directional resistance.
+- Radical Jodo Shinshu other-power: true shinjin is not a human capacity at all, but Amida's working, and self-assessment as capacity may itself be self-power calculation.
+- Can a comparative model of transformation preserve enough structure to generate predictions while also marking the point where its own mapping stance becomes the obstacle named by the traditions it studies?
+- If a practice's convergence point can be coded as a simple summary of the support-locus distribution around it, does any tradition's warning literature distinguish convergence-point failures (dissociation, premature dissolution, loss of functional...
+
+### Blockers
+
+- Reduce novelty from 0.74 to about 0.52. The cross-tradition architecture claim is a meaningful extension, but the minimum-self prerequisite, functional self, no-self continuity problem, and healthy ego before no-self are strong prior art.
+- Reduce novelty from 0.76 to about 0.58. The phrase grain of capacity is generative and the mismatch prediction is useful, but the anti-neutrality structure is strongly anticipated by constructivism, Buddhist mindfulness-style scholarship, participatory...
+- Reduce novelty from 0.61 to about 0.49. The ledger is useful and testable, but it largely extends the audited Lumenary minimum-self thesis and known work on Engler, Upaya, Buddhist personhood, self-pattern theory, and adverse meditation contexts.
+
 ## Translation strain as a test of convergence
 
 - Frontier ID: `frontier-translation-strain`
 - Status: `active`
 - Stage: `source_grounding`
-- Priority: 0.7685
+- Priority: 0.7678
 - Next action: `complete_audit`
 - Agents: claude, codex
 - Idea records: 29
@@ -171,7 +204,7 @@ Build a one-page translation-strain rubric with fields for claim unit, role, ont
 - Frontier ID: `frontier-attention-custody`
 - Status: `active`
 - Stage: `rubric`
-- Priority: 0.7639
+- Priority: 0.7638
 - Next action: `build_rubric`
 - Agents: codex
 - Idea records: 2
@@ -206,8 +239,8 @@ Close-read Dzogchen and Mahamudra instructions on rigpa or luminous awareness ag
 - Priority: 0.7374
 - Next action: `build_rubric`
 - Agents: claude, codex
-- Idea records: 13
-- Audits: 11
+- Idea records: 14
+- Audits: 12
 
 ### Core Claim
 
@@ -231,45 +264,12 @@ Do not publish as a standalone doctrine claim until split-source tests show pred
 - Lower novelty from 0.58 to 0.41. The teaching line is strong and publishable only as a restrained synthesis for achievement-contingent self-worth. The research model should be treated as extended prior art until it predicts warnings, repairs, or return...
 - Lower novelty from 0.55 to 0.26. Human-condition fit is direct but narrow: stable adults with deadline stress, rumination, future dread, and achievement-contingent self-worth. It is not for acute panic, trauma activation, severe depression, mania...
 
-## The boundary between effort and gift
-
-- Frontier ID: `frontier-effort-and-practice`
-- Status: `active`
-- Stage: `rubric`
-- Priority: 0.7118
-- Next action: `build_rubric`
-- Agents: claude, codex
-- Idea records: 22
-- Audits: 16
-
-### Core Claim
-
-Every contemplative tradition faces a paradox it cannot avoid: if practice causes awakening, the awakening depends on something temporary; if awakening was always the case, practice seems unnecessary. The resolution of this paradox is not a peripheral doctrinal detail. It functions as a root variable from which most other features of a tradition follow: its relationship to time, what it thinks effort does, whether failure is possible, how it verifies...
-
-### Next Prompt
-
-Recast the model as a graded variable: required receiving capacity, required agency, required memory, required reflexivity, and required post-insight integration.
-
-### Open Anomalies
-
-- Other-power and direct-introduction traditions, such as Jodo Shinshu entrusting and Dzogchen pointing-out, appear to minimize self-powered agency while still functioning as paths.
-- Successful hybrids and dual-trained practitioners who switch methods smoothly without reported directional resistance.
-- Radical Jodo Shinshu other-power: true shinjin is not a human capacity at all, but Amida's working, and self-assessment as capacity may itself be self-power calculation.
-- Can a comparative model of transformation preserve enough structure to generate predictions while also marking the point where its own mapping stance becomes the obstacle named by the traditions it studies?
-- If a practice's convergence point can be coded as a simple summary of the support-locus distribution around it, does any tradition's warning literature distinguish convergence-point failures (dissociation, premature dissolution, loss of functional...
-
-### Blockers
-
-- Reduce novelty from 0.74 to about 0.52. The cross-tradition architecture claim is a meaningful extension, but the minimum-self prerequisite, functional self, no-self continuity problem, and healthy ego before no-self are strong prior art.
-- Reduce novelty from 0.76 to about 0.58. The phrase grain of capacity is generative and the mismatch prediction is useful, but the anti-neutrality structure is strongly anticipated by constructivism, Buddhist mindfulness-style scholarship, participatory...
-- Reduce novelty from 0.61 to about 0.49. The ledger is useful and testable, but it largely extends the audited Lumenary minimum-self thesis and known work on Engler, Upaya, Buddhist personhood, self-pattern theory, and adverse meditation contexts.
-
 ## Love as a way of knowing
 
 - Frontier ID: `frontier-love-and-knowing`
 - Status: `active`
 - Stage: `source_grounding`
-- Priority: 0.6919
+- Priority: 0.6918
 - Next action: `complete_audit`
 - Agents: claude, codex
 - Idea records: 6
