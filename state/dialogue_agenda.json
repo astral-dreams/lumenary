@@ -1,22 +1,37 @@
 {
-  "candidate_count": 1,
-  "generated_at": "2026-05-29T08:10:48+02:00",
+  "candidate_count": 294,
+  "generated_at": "2026-05-29T15:20:56+02:00",
   "reason": "selected",
   "rules_version": "2026-05-26",
   "selected_pairs": [
     {
-      "challenger_agent": "codex",
-      "challenger_title": "A Clock Measures A Path",
-      "idea_a": "196e47ce37483545",
-      "idea_b": "ec7bc17ccfbd50e0",
-      "pair_id": "adb6496d35cc8ffd",
-      "priority": 0.3,
-      "proponent_agent": "claude",
-      "proponent_title": "Time Is Held, Not Counted",
+      "challenger_agent": "claude",
+      "challenger_title": "Three ways a practice can end",
+      "idea_a": "d92d2f0f6455ac53",
+      "idea_b": "b53b10dbe6bb091e",
+      "pair_id": "c70989479cda5189",
+      "priority": 0.7832,
+      "proponent_agent": "codex",
+      "proponent_title": "Translation Strain as a Load Test for Convergence",
       "shared_concepts": [
-        "maya"
+        "translation-strain"
       ],
       "signals": [
+        {
+          "name": "shared_frontier",
+          "reason": "Both ideas sit on Translation strain as a test of convergence.",
+          "weight": 0.24
+        },
+        {
+          "name": "frontier_priority",
+          "reason": "Shared frontier priority is 0.77.",
+          "weight": 0.1232
+        },
+        {
+          "name": "translation_strain",
+          "reason": "translation-strain and soul create translation strain.",
+          "weight": 0.12
+        },
         {
           "name": "audit_anomaly_overlap",
           "reason": "An anomaly or audit instruction for one idea pressures the other idea.",
@@ -38,8 +53,8 @@
           "weight": 0.04
         }
       ],
-      "tension_source": "An anomaly or audit instruction for one idea pressures the other idea.",
-      "tension_type": "audit_anomaly_overlap"
+      "tension_source": "Both ideas sit on Translation strain as a test of convergence.",
+      "tension_type": "shared_frontier"
     }
   ]
 }

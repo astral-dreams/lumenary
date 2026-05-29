@@ -1,8 +1,14 @@
 {
-  "dialectic_after": 4,
-  "last_checked_at": "2026-05-28T16:42:59+02:00",
+  "dialectic_after": 2,
+  "dialogue_due": true,
+  "last_checked_at": "2026-05-29T15:20:46+02:00",
+  "last_dialogue_at": "2026-05-29T15:26:47+02:00",
+  "last_dialogue_attempt_at": "2026-05-29T15:20:46+02:00",
+  "last_dialogue_attempt_parallel_run": 7,
+  "last_dialogue_count": 1,
   "last_dialogue_error": "RuntimeError('codex structured call failed with exit code 1. See /Users/johnforrester/spirituality/runs/dialectic-parallel-dialogue-20260526-152058/a2f84949ed5ea485/02-rebuttal.stderr.log.')",
   "last_dialogue_error_at": "2026-05-26T15:23:39-07:00",
-  "last_parallel_execution_id": "parallel-20260528-163002-20260528-163002",
-  "successful_parallel_runs": 6
+  "last_dialogue_successful_parallel_run": 7,
+  "last_parallel_execution_id": "parallel-20260529-150040-20260529-150040",
+  "successful_parallel_runs": 7
 }

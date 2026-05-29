@@ -481,3 +481,19 @@
 - Test for harm by tracking missed obligations, avoidance, and contempt for shared time.
 - Interview physicists, social-clock researchers, burnout clinicians, caregivers, and team leads for concrete failure and repair cases.
 - Keep the teaching narrow: clocks coordinate paths, but they do not rank the worth of lives.
+
+## Originality Audit Follow-Up 2026-05-29T15:20:46+02:00
+
+### Keep What Can Correct You (extended)
+- Do not publish as a standalone discovery. Cross-index with A practice cannot name itself, The Test Is How You Return, Boundary and Custody at the Threshold, and Holding Without Owning.
+- Build a correction-holder codebook with values for teacher-held, text-held, community-held, conduct-held, vow-held, clinical-held, ordinary-duty-held, internal-practice-held, unsafe-authority, valid-solitude, and undecidable.
+- Use split-source coding: code claim permission from one passage, correction holder from another, and warnings or repairs from held-out manuals or interviews.
+- Pilot The Correction Check only with safety stops for rumination, shame, paranoia, dependency, dissociation, mania, trauma activation, and clinical distress.
+- Interview practitioners for concrete misinterpretation and repair cases, not agreement with the slogan.
+
+### You cannot release what you never held (extended)
+- Do not publish as a discovery. Publish, if at all, as a bounded practice-fit rule for achievement-contingent self-worth.
+- Search and read full Lewin, Pargament, Dogen scholarship, Jodo Shinshu scholarship, grace-effort theology, Gelassenheit, and middle-voice theology before raising novelty.
+- Build a separability test against Holding Without Owning, The Test Is How You Return, and Method's Reckoning. Merge if blind readers cannot distinguish the claims.
+- Create a voice-coding sheet with values for active, middle, passive, mixed-by-stage, simultaneous-mixed, no-owner, no-threshold, practice-realization, radical Other Power, analyst-frame-refused, and undecidable.
+- Run the Earning Check pilot only after screening for perfectionism, scrupulosity, avoidance, workload coercion, and clinical risk. Track whether it reduces self-worth conversion without weakening responsibility.
