@@ -14,13 +14,6 @@
   <true/>
   <key>StartInterval</key>
   <integer>300</integer>
-  <key>StartCalendarInterval</key>
-  <dict>
-    <key>Hour</key>
-    <integer>17</integer>
-    <key>Minute</key>
-    <integer>15</integer>
-  </dict>
   <key>StandardOutPath</key>
   <string>/Users/johnforrester/spirituality/runs/daily-publish.stdout.log</string>
   <key>StandardErrorPath</key>

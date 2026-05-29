@@ -46,7 +46,7 @@ A dedicated 6pm local-time launchd job rebuilds and deploys the Map page after t
 
 ## Research Publication Cadence
 
-The active cadence is every 30 minutes in the machine's current local timezone from 7am until 5pm. Each research job should:
+The active cadence is every 30 minutes from 7am until 5pm in The Lumenary's active travel timezone: `Europe/Zagreb` until June 12, 2026, then `America/Los_Angeles` on and after June 12, 2026. Each research job should:
 
 1. Read recent observations, hypotheses, and syntheses.
 2. Select the strongest item that passes the Public Claim promotion gate.
@@ -58,7 +58,7 @@ The active cadence is every 30 minutes in the machine's current local timezone f
 
 ## Journal Job
 
-After the research window closes at 5pm local time, write one Journal entry for the day.
+After the research window closes at 5pm in the active timezone, write one Journal entry for the day.
 
 The Journal should:
 

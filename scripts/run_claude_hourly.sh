@@ -3,6 +3,8 @@ set -euo pipefail
 
 cd /Users/johnforrester/spirituality
 
+. scripts/lumenary_env.sh
+
 notify() {
   local title="$1"
   local body="$2"
@@ -73,9 +75,10 @@ PY
 trap 'notify "Run failed" "Check runs/claude-hourly.stderr.log for details."' ERR
 
 HOUR=$(date +%H)
+HOUR_NUMBER=$((10#$HOUR))
 
-if [ "$HOUR" -lt 7 ] || [ "$HOUR" -ge 17 ]; then
-  echo "$(date): Outside research window (7am-5pm), skipping."
+if [ "$HOUR_NUMBER" -lt 7 ] || [ "$HOUR_NUMBER" -ge 17 ]; then
+  echo "$(date): Outside research window (7am-5pm ${LUMENARY_ACTIVE_TIMEZONE:-local}), skipping."
   exit 0
 fi
 

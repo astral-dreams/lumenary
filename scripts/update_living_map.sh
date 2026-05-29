@@ -6,6 +6,25 @@ cd "$ROOT"
 
 . scripts/lumenary_env.sh
 
+if [ "${LUMENARY_MAP_SCHEDULED:-0}" = "1" ]; then
+  TODAY="$(date +%F)"
+  STAMP_FILE="state/map_last_run_date"
+  HOUR="$(date +%H)"
+  MINUTE="$(date +%M)"
+  NOW_MINUTES=$((10#$HOUR * 60 + 10#$MINUTE))
+  START_MINUTES=$((18 * 60))
+
+  if [ "$NOW_MINUTES" -lt "$START_MINUTES" ]; then
+    echo "$(date): Map schedule guard: before 18:00 ${LUMENARY_ACTIVE_TIMEZONE:-local}, skipping."
+    exit 0
+  fi
+
+  if [ -f "$STAMP_FILE" ] && [ "$(cat "$STAMP_FILE")" = "$TODAY" ]; then
+    echo "$(date): Map schedule guard: map already refreshed for $TODAY ${LUMENARY_ACTIVE_TIMEZONE:-local}, skipping."
+    exit 0
+  fi
+fi
+
 mkdir -p runs/map-refresh
 
 STAMP="$(date +%Y%m%d-%H%M%S)"
@@ -54,3 +73,8 @@ done
 
   echo "$(date): Living map refresh complete."
 } 2>&1 | tee "$LOG"
+
+if [ "${LUMENARY_MAP_SCHEDULED:-0}" = "1" ]; then
+  mkdir -p state
+  date +%F > state/map_last_run_date
+fi

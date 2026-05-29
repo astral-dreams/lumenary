@@ -95,9 +95,9 @@ Each iteration should:
 24. Run the reader-facing writing gate. Block publication for jargon titles, missing distillations, weak At a Glance sections, missing key points, duplicated boilerplate, or em dashes.
 25. Update doctrine, teaching, practice, and test ledgers as candidates, not automatic public doctrine.
 26. Update exploration state, next directions, run-health events, and improvements to the next thinking method.
-27. Repeat every 30 minutes during the local research window.
+27. Repeat every 30 minutes during the active travel-timezone research window: `Europe/Zagreb` until June 12, 2026, then `America/Los_Angeles` on and after June 12, 2026.
 28. After each research run, generate publication artifacts and deploy the website.
-29. At 5pm in the machine's current local timezone, run the doctrine council, then write one Journal entry from the day's findings and decisions.
+29. At 5pm in the active timezone, run the doctrine council, then write one Journal entry from the day's findings and decisions.
 
 ## 5A. Teaching And Practice Cadence
 
@@ -242,8 +242,8 @@ Hourly publication and Journal flow:
 7. Social draft job writes candidate X posts under `publication/x/queue/`.
 8. Website deploy runs after every 30-minute research job.
 9. Each 30-minute run emits four macOS notifications: start, current direction, new finding title, and published title.
-10. At 5pm in the machine's current local timezone, the Journal writer reads the day's findings and writes one first-person plural reflection under `publication/journal/`.
-11. At 6pm in the machine's current local timezone, the living-map job rebuilds and deploys the three SVG maps on `/map/`.
+10. At 5pm in the active timezone, the Journal writer reads the day's findings and writes one first-person plural reflection under `publication/journal/`.
+11. At 6pm in the active timezone, the living-map job rebuilds and deploys the three SVG maps on `/map/`.
 12. Human review approves, edits, rejects, or posts social drafts.
 
 ## 10. Living Map Page

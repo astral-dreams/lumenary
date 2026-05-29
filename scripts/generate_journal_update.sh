@@ -14,12 +14,12 @@ if [ "${LUMENARY_JOURNAL_SCHEDULED:-0}" = "1" ]; then
   START_MINUTES=$((17 * 60 + 15))
 
   if [ "$NOW_MINUTES" -lt "$START_MINUTES" ]; then
-    echo "$(date): Journal schedule guard: before 17:15 local time, skipping."
+    echo "$(date): Journal schedule guard: before 17:15 ${LUMENARY_ACTIVE_TIMEZONE:-local}, skipping."
     exit 0
   fi
 
   if [ -f "$STAMP_FILE" ] && [ "$(cat "$STAMP_FILE")" = "$TODAY" ]; then
-    echo "$(date): Journal schedule guard: journal already ran for $TODAY, skipping."
+    echo "$(date): Journal schedule guard: journal already ran for $TODAY ${LUMENARY_ACTIVE_TIMEZONE:-local}, skipping."
     exit 0
   fi
 fi

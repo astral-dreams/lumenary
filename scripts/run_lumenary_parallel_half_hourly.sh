@@ -107,9 +107,28 @@ PY
 trap 'notify "Run failed" "Check runs/parallel-research.stderr.log and runs/parallel-*.stderr.log."' ERR
 
 HOUR=$(date +%H)
+MINUTE=$(date +%M)
+HOUR_NUMBER=$((10#$HOUR))
 
-if [ "$HOUR" -lt 7 ] || [ "$HOUR" -ge 17 ]; then
-  echo "$(date): Outside research window (7am-5pm), skipping."
+if [ "$HOUR_NUMBER" -lt 7 ] || [ "$HOUR_NUMBER" -ge 17 ]; then
+  echo "$(date): Outside research window (7am-5pm ${LUMENARY_ACTIVE_TIMEZONE:-local}), skipping."
+  exit 0
+fi
+
+MINUTE_NUMBER=$((10#$MINUTE))
+if [ "$MINUTE_NUMBER" -lt 30 ]; then
+  SLOT_MINUTE="00"
+else
+  SLOT_MINUTE="30"
+fi
+
+mkdir -p state
+TODAY="$(date +%F)"
+RESEARCH_SLOT="${TODAY}T${HOUR}:${SLOT_MINUTE}:${LUMENARY_ACTIVE_TIMEZONE:-local}"
+STAMP_FILE="state/research_last_run_slot"
+
+if [ -f "$STAMP_FILE" ] && [ "$(cat "$STAMP_FILE")" = "$RESEARCH_SLOT" ]; then
+  echo "$(date): Research slot ${RESEARCH_SLOT} already ran, skipping."
   exit 0
 fi
 
@@ -121,6 +140,8 @@ if [ "$PAUSE_STATUS" -eq 2 ]; then
   notify "Research paused" "Skipping this run until ${PAUSE_UNTIL}."
   exit 0
 fi
+
+echo "$RESEARCH_SLOT" > "$STAMP_FILE"
 
 notify "Research starting" "Pulling latest and beginning a new observation..."
 

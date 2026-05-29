@@ -10,13 +10,10 @@
   </array>
   <key>WorkingDirectory</key>
   <string>/Users/johnforrester/spirituality</string>
-  <key>StartCalendarInterval</key>
-  <dict>
-    <key>Hour</key>
-    <integer>18</integer>
-    <key>Minute</key>
-    <integer>0</integer>
-  </dict>
+  <key>RunAtLoad</key>
+  <true/>
+  <key>StartInterval</key>
+  <integer>300</integer>
   <key>StandardOutPath</key>
   <string>/Users/johnforrester/spirituality/runs/map-refresh.stdout.log</string>
   <key>StandardErrorPath</key>
@@ -25,6 +22,8 @@
   <dict>
     <key>PATH</key>
     <string>/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin</string>
+    <key>LUMENARY_MAP_SCHEDULED</key>
+    <string>1</string>
   </dict>
 </dict>
 </plist>
