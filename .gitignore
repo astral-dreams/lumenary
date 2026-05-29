@@ -10,6 +10,7 @@ dist/
 .wrangler/
 runs/*.stderr.log
 runs/*.stdout.log
+runs/local-analytics-dashboard.log
 runs/scheduler-events.jsonl
 runs/*-events.jsonl
 runs/*-errors.jsonl
