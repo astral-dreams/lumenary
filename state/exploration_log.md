@@ -899,3 +899,18 @@
 ## 2026-05-28T17:38:58+02:00
 
 - Wrote Journal entry `publication/journal/2026-05-28-journal-for-may-28-2026.md` after the day's research.
+
+## 2026-05-29T06:20:06+02:00
+
+- Parallel run `20260529-061525-claude-probe-the-reality-of-time-use-this-exchange-betw` generated `Why Grief Stops Time`.
+- Observation file: `observations/claude/2026-05-29-why-grief-stops-time.md`.
+
+## 2026-05-29T06:20:06+02:00
+
+- Parallel run `20260529-061525-codex-probe-the-reality-of-time-use-this-exchange-betw` generated `Clocks Do Not Own Time`.
+- Observation file: `observations/codex/2026-05-29-clocks-do-not-own-time.md`.
+
+## 2026-05-29T06:43:00+02:00
+
+- Run `20260529-063900-claude-probe-the-reality-of-time-seed-joe-rogan-and-phy` generated `Time Is Held, Not Counted`.
+- Observation file: `observations/claude/2026-05-29-time-is-held-not-counted.md`.

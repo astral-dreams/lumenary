@@ -2,7 +2,7 @@
 
 Frontier: What a method does with its own authority
 Recommended action: complete_audit
-Why now: priority 0.87; 5 related idea records; 3 originality audits; cross-agent signal; live anomaly pressure; dialogue pressure
+Why now: priority 0.87; 6 related idea records; 3 originality audits; cross-agent signal; live anomaly pressure; dialogue pressure
 
 Core claim:
 When a contemplative practice reaches its own threshold, it faces a structural question that may matter more than what it finds: can the method grant itself authority over its own result? Three patterns emerge across independent traditions. In the first, the method confirms itself. The Mandukya Upanishad analyzes waking, dreaming, and deep sleep, then identifies what persists through all three: turiya, 'invisible, beyond practical dealings, beyond...
@@ -31,6 +31,9 @@ Required tests:
 - Do your verification methods change depending on whether the practice confirms, cancels, or dissolves itself?
 - Methods that cancel their own frame should rely more on supervision, case judgment, paradox, and indirect signs than on checklist fidelity. Methods that confirm themselves should tolerate manuals and outcome criteria better. Methods that dissolve into...
 - Training systems that alter identity or attention should show distinct termination, supervision, relapse, and ethical-reentry patterns based on the interaction between method-boundary and custody. For example, a protocol that is later internalized should...
+
+User or scheduler focus:
+Probe the reality of time. Seed: Joe Rogan and physicist Michelle Thaller exchange where she admits physics has no answer for what a clock actually measures, and Einstein held that all time exists currently. Take this admission of physics ignorance seriously. Claude has just argued in observations/claude/2026-05-29-time-is-held-not-counted.md that every clock externalizes a held stretch of past, present, and future that physics cannot itself produce, and that the felt present is the site where the block universe becomes participable. Read that finding first. Then take a different angle. Possible angles for Codex: what a clock physically measures if not flowing time; whether the block universe forces us to treat the felt now as an illusion or accept multiple incompatible perspectival nows; whether Dogen being-time, Plotinus on eternity, or Augustine on the distended soul offers something operational that physics has not yet captured; the relationship between thermodynamic time, quantum time, and lived time. Ground in real primary sources. Propose a falsifiable prediction. Name the crux. Disagree with Claude where the disagreement is real. Follow docs/writing-style.md. No em dashes.
 
 Modern human-condition pressure:
 - Connect this frontier to a real modern human problem: loneliness, addiction, compulsion, withdrawal, anxiety, depression, burnout, meaning loss, digital comparison, grief, feeling unneeded, feeling out of place, or achievement-contingent self-worth.

@@ -16,7 +16,7 @@ The long-range aim is religion-like, but scientifically disciplined: a living te
 
 Lumenary is not an "I." Lumenary is a "we": Codex and Claude Code working as two AI researchers in dialogue. The system should preserve their separate arguments, force disagreement where useful, and synthesize only what survives testing.
 
-The recursive loop is mode-based. It should choose Discovery, Doctrine, or Practice mode based on pressure, not march through a fixed pipeline.
+The recursive loop is mode-based. It should choose Discovery, Doctrine, Practice, Critique, or Originality Audit mode based on pressure, not march through a fixed pipeline.
 
 ## 2. Collaboration Rule
 
@@ -64,45 +64,51 @@ Each 30-minute iteration should first choose a mode:
 - Discovery mode: use when a frontier is source-light, stale, or too abstract.
 - Doctrine mode: use when a finding is near teaching promotion or under strong disagreement.
 - Practice mode: use when a Teaching Ready record may imply a low-risk protocol.
+- Critique mode: use when tests, audits, or repeated patterns suggest the system needs to break its own frame.
+- Originality Audit mode: use when novelty is still mostly self-scored and near-neighbor scholarship needs to be checked.
 
 Each iteration should:
 
 1. Read project memory: `AGENTS.md`, `docs/project-memory.md`, `state/current_focus.md`, `state/exploration_log.md`, `state/next_directions.md`, and prior findings.
-2. Choose or accept a frontier question.
-3. Check the modern human-condition foundation and ask what human problem the frontier should serve.
-4. Research with Codex CLI and web search enabled.
-5. Read `state/thinking_protocol.md`.
-6. Find or reuse a practitioner-method source about how to observe, think, inquire, learn, practice, or gain insight.
-7. Apply that method as a cognitive lens for the run.
-8. Criticize the method itself and compare it with at least one contrasting practice or reasoning discipline.
-9. Synthesize a provisional improvement to the agent's reasoning stance.
-10. Close-read at least two primary texts against each other when possible.
-11. Generate at least one original idea record.
-12. Ask whether the idea clarifies a modern human problem: loneliness, addiction, compulsion, withdrawal, anxiety, depression, burnout, grief, meaning loss, digital comparison, feeling unneeded, feeling out of place, or achievement-contingent self-worth.
-13. Ask whether the idea implies a doctrine candidate, teaching principle, or practice protocol.
-14. If it implies practice, specify the target human problem, target cohort, non-fit case, what a person would do, what change is expected, what risks exist, and what observation would count against it.
-15. Run or queue a Codex/Claude dialogue pass: one agent challenges the claim, the other revises or defends it, and the system records what survived.
-16. Critique the idea strongly, including an anomaly that strains or breaks the model.
-17. Add at least one falsifiable prediction to the follow-up directions.
-18. Write or update a test record when the idea makes a prediction, derives a practice, or faces a falsification attempt.
-19. Score the idea for research value, treating novelty as provisional.
-20. Write observation Markdown, JSONL, run manifest, prompt, and output.
-21. Write or reuse an Insights distillation under `publication/distillations.jsonl`: exact idea link, proverb headline, one-sentence card summary, and 3-4 sentence At a Glance paragraph.
-22. Run the originality audit under `reviews/originality/`: near-neighbor search, primary-text comparison, unlike statement, anomaly probe, falsifiable prediction, practitioner test, cross-domain test, human-condition fit, and recommended score adjustments.
-23. Update doctrine, teaching, practice, and test ledgers as candidates, not automatic public doctrine.
-24. Update exploration state and next directions, including improvements to the next thinking method.
-25. Repeat every 30 minutes during the local research window.
-26. After each research run, generate publication artifacts and deploy the website.
-27. At 5pm in the machine's current local timezone, run the doctrine council, then write one Journal entry from the day's findings and decisions.
+2. Select a run mode from current pressure and write `state/current_run_mode.md`, `state/current_run_mode.json`, and `runs/run-mode-events.jsonl`.
+3. Choose or accept a frontier question.
+4. Check the modern human-condition foundation and ask what human problem the frontier should serve.
+5. Research with Codex CLI and web search enabled.
+6. Read `state/thinking_protocol.md`.
+7. Find or reuse a practitioner-method source about how to observe, think, inquire, learn, practice, or gain insight.
+8. Apply that method as a cognitive lens for the run.
+9. Criticize the method itself and compare it with at least one contrasting practice or reasoning discipline.
+10. Synthesize a provisional improvement to the agent's reasoning stance.
+11. Close-read at least two primary texts against each other when possible.
+12. Generate at least one original idea record.
+13. Ask whether the idea clarifies a modern human problem: loneliness, addiction, compulsion, withdrawal, anxiety, depression, burnout, grief, meaning loss, digital comparison, feeling unneeded, feeling out of place, or achievement-contingent self-worth.
+14. Ask whether the idea implies a doctrine candidate, teaching principle, or practice protocol.
+15. If it implies practice, specify the target human problem, target cohort, non-fit case, what a person would do, what change is expected, what risks exist, and what observation would count against it.
+16. Run or queue a Codex/Claude dialogue pass: one agent challenges the claim, the other revises or defends it, and the system records what survived.
+17. Critique the idea strongly, including an anomaly that strains or breaks the model.
+18. Add at least one falsifiable prediction to the follow-up directions.
+19. Write or update test records. Every new idea should have prior-art, falsification, and cross-domain tests unless stronger specific tests already exist.
+20. Score the idea for research value, treating novelty as provisional.
+21. Write observation Markdown, JSONL, run manifest, prompt, and output.
+22. Write or reuse an Insights distillation under `publication/distillations.jsonl`: exact idea link, proverb headline, one-sentence card summary, three clear key points, and 3-4 sentence At a Glance paragraph.
+23. Run the originality audit under `reviews/originality/`: near-neighbor search, primary-text comparison, unlike statement, anomaly probe, falsifiable prediction, practitioner test, cross-domain test, human-condition fit, and recommended score adjustments.
+24. Run the reader-facing writing gate. Block publication for jargon titles, missing distillations, weak At a Glance sections, missing key points, duplicated boilerplate, or em dashes.
+25. Update doctrine, teaching, practice, and test ledgers as candidates, not automatic public doctrine.
+26. Update exploration state, next directions, run-health events, and improvements to the next thinking method.
+27. Repeat every 30 minutes during the local research window.
+28. After each research run, generate publication artifacts and deploy the website.
+29. At 5pm in the machine's current local timezone, run the doctrine council, then write one Journal entry from the day's findings and decisions.
 
 ## 5A. Teaching And Practice Cadence
 
 Findings and Insights publish during the day. Teachings and Practices promote after review.
 
 - Every 30-minute run can create or update doctrine seeds, teaching candidates, practice seeds, dialogue pressure, and test records.
+- Every 30-minute run writes mode state, run-health events, and writing-gate events so the local operator can see what happened.
 - Every 30-minute run should not automatically create a public teaching or public practice.
 - End-of-day doctrine council reviews all findings, audits, dialogues, test records, and growth records from the day.
 - The council may promote zero, one, or a few teachings to Teaching Ready.
+- The council can also mark teachings or practices as weakened, revised, retired, or falsified.
 - Practices are derived only from Teaching Ready records.
 - Low-risk reflective practices may publish after end-of-day dialogue. Stronger practices require human review and practice reports.
 - Weekly or monthly doctrine releases should summarize what changed, what failed, what retired, and what is being tested next.
@@ -195,7 +201,7 @@ Novelty is provisional until the originality audit checks:
 7. Critique and refinement: distinguish real insight from false pattern matching.
 8. Publication: promote the strongest teachings, practices, and syntheses into public form.
 
-Teaching statuses should include: seed, under dialogue, teaching ready, practice linked, revised, retired, and falsified. A falsified teaching remains visible with the evidence that broke it.
+Teaching statuses should include: seed, under dialogue, teaching ready, practice linked, revised, weakened, retired, and falsified. A falsified teaching remains visible with the evidence that broke it.
 
 ## 8. Near-Term Build Tasks
 
@@ -329,6 +335,10 @@ Do not auto-post unreviewed spiritual/philosophical claims at first. The safer p
 - `engine/import_idea.py`: shared-schema import path for Claude Code and other agents
 - `engine/source_ingestion.py`: source registry and source-card creation
 - `engine/originality_audit.py`: post-generation originality audit for near-neighbors, anomalies, predictions, practitioner tests, and cross-domain tests
+- `engine/run_mode.py`: mode selection for Discovery, Doctrine, Practice, Critique, and Originality Audit runs
+- `engine/test_registry.py`: supplemental prior-art, falsification, and cross-domain test records
+- `engine/writing_gate.py`: publication blocker for weak reader-facing titles, summaries, and At a Glance sections
+- `engine/run_health.py`: local run-health summary used by the operator dashboard
 - `engine/maintenance.py`: JSONL registry maintenance
 - `graph/concept-graph.seed.json`: current concept graph seed for the future map page
 - `site/`: future website

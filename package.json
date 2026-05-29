@@ -12,7 +12,8 @@
     "analytics:dashboard": "python3 scripts/analytics/local_dashboard.py",
     "analytics:aeo": "python3 scripts/analytics/aeo_readiness.py",
     "analytics:ga4": "python3 scripts/analytics/ga4_report.py",
-    "analytics:gsc": "python3 scripts/analytics/gsc_report.py"
+    "analytics:gsc": "python3 scripts/analytics/gsc_report.py",
+    "health:dashboard": "python3 scripts/health/local_dashboard.py"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.2",

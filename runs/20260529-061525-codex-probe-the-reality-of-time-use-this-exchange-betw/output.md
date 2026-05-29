@@ -1,0 +1,200 @@
+# Clocks Do Not Own Time
+
+Agent: codex
+Date: 2026-05-29T06:20:06+02:00
+Type: synthesis
+Idea ID: 1a1331ff84b2228b
+Status: draft
+
+## Original Claim
+
+When a clock works, it has not answered what time is. It has made one relation shareable: this event, this body, this signal, and this record can be compared. The felt present is not a private hallucination inside a finished block, and it is not a magical slice that alone exists. It is the place where relations become answerable to action. In that place a promise can be kept, a message can be sent, a body can rest, and a mistake can be repaired. Physics gives the external half through synchronization, proper time, and relational observables. Augustine gives the inward half through memory, attention, and expectation. Dogen gives the refusal to place the person outside time as a spectator. The crux is method authority: clocks can authorize coordination without authorizing a final metaphysics of flow, block, or self.
+
+## Why It Might Be New
+
+The nearest neighbors already deny that clocks measure a substance called time. Relational time, emergent clock-time, and Dogen-block-universe comparisons all reach parts of the claim. The exact difference is narrower: a successful timing method should be trusted for coordination but refused as a ruler over metaphysics or personal worth. Existing prior art asks what time is, whether all moments exist, or how clock-time can be reconstructed. This finding asks what a working method is allowed to authorize, then ties that limit to a modern wound: people letting schedules and future projections act as verdicts on the self.
+
+## Source Basis
+
+- Mode: Discovery mode. Seed: Joe Rogan and Michelle Thaller exchange on all time existing and uncertainty over what clocks measure; treated as a prompt about the authority and limits of measurement methods, not as a physics source.
+- Primary physics: Einstein, On the Electrodynamics of Moving Bodies, section 1 defines time for distant events through clocks and light-signal synchronization, then denies absolute synchronism; https://en.wikisource.org/wiki/On_the_Electrodynamics_of_Moving_Bodies_(1920_edition).
+- Primary physics: Minkowski, Space and Time, replaces independent space and time with a four-dimensional world and treats laws through relations among world-lines; https://en.wikisource.org/wiki/Translation:Space_and_Time.
+- Technical near-neighbors: Rovelli, Partial Observables, and Page and Wootters, Evolution without evolution, treat physical time through relations or correlations rather than an independent flow; https://arxiv.org/abs/gr-qc/0110035 and https://cds.cern.ch/record/143641?ln=en.
+- Closest prior argument found in novelty search: Sumaya-Martinez, Fisher-Informational Time, submitted May 5, 2026, says clock time is reconstructed from physical distinguishability, not measured as a substance; https://arxiv.org/abs/2605.03958. Difference: this finding is about method authority and lived answerability, not a new physical parameter.
+- Primary contemplative comparison: Augustine, Confessions XI, compares time with memory, attention, and expectation, showing that measurement of duration depends on a stretched mind; https://www.newadvent.org/fathers/110111.htm.
+- Primary contemplative comparison: Dogen, Shobogenzo Uji source card notes that being and time are not separate and that time should not be treated as merely flying away; notes/source-cards/buddhism-dogen-uji.md.
+- Primary-text close reading: Einstein makes time shareable by synchronization between clocks; Augustine finds measurable duration in expectation, attention, and memory; Dogen refuses the spectator who stands outside time. The comparison reveals three different authorizations: coordination, inward measurement, and non-separation.
+- Practitioner-method source: Augustine's close inward observation was used as the thinking method. I bracketed the word time and watched what lets a duration be measured. Critique of method: introspection can mistake human attention for cosmic structure, so Einstein and Rovelli were used as counterweight.
+- Modern human-condition grounding: APA Stress in America 2024 source card and public reports on future, economy, and work stress; notes/source-cards/modern-human-condition-apa-stress-in-america-2024.md and https://www.prnewswire.com/news-releases/apa-poll-future-of-nation-economy-and-presidentential-election-top-us-stressors-302282237.html.
+- Frontier link: advances the question of method authority by placing clocks in a retained-without-crowning pattern. The method validates coordination and must be kept for shared life, but its metaphysical overreach should be abandoned.
+
+## Critique
+
+The model may smuggle ethics into physics. In relativity a clock measures proper time along a worldline, and in metrology an atomic clock realizes a standard with extraordinary precision; neither needs answerability to do its work. Nagarjuna's MMK chapter 19 would press harder: if past, present, and future are empty of independent existence, then calling the present the place of answerability may be another comforting construction. An anomaly that would weaken the finding is a physics or practice case where coordination improves by treating the present as only an index in a block, with no special action role, and people become less anxious and more responsible under that view.
+
+## Epistemic Labels
+
+- `textual`
+- `interpretive`
+- `phenomenological`
+- `empirical-adjacent`
+- `analogical`
+- `speculative`
+
+## Scores
+
+- novelty: 0.64
+- generativity: 0.84
+- cross_tradition_support: 0.62
+- logical_coherence: 0.78
+- explanatory_compression: 0.80
+- empirical_adjacency: 0.58
+- practice_testability: 0.67
+- counterargument_quality: 0.82
+- source_reliability: 0.76
+- publishability: 0.70
+
+
+## Teaching Candidate
+
+Status: under_dialogue
+Tags: time, method-authority, burnout, attention, physics-bridge
+
+### Teaching Line
+
+Use the clock to coordinate your life, not to decide what your life is worth.
+
+### Doctrine Claim
+
+A reliable method can govern action without earning authority over a person's value or over the whole nature of reality.
+
+### Teaching Body
+
+Look at the hour. It can tell you when a train arrives, when a meeting starts, when a dose is due, or when rest is needed. It cannot tell you that you are late to your own life.
+
+The number on the clock is a tool for shared action. Treat it as a servant of promises and care. When it becomes a verdict on your worth, it has been given authority it did not earn.
+
+### Human Problem
+
+Anxiety, burnout, future dread, and self-worth chained to schedules, deadlines, and visible productivity.
+
+### For
+
+Students, knowledge workers, caregivers, founders, and professionals who experience time as a judge rather than a coordination tool.
+
+### Pressure Survived
+
+Survived primary comparison between Einstein's operational clock, Augustine's inward measurement, and Dogen's refusal to stand outside time; also survived prior-art pressure from relational and emergent time by narrowing to method authority.
+
+### Falsifying Pressure
+
+If people under deadline pressure become less responsible or more avoidant when the clock is treated as only a coordination tool, the teaching should be revised or retired.
+
+
+
+## Practice Candidate
+
+Status: seed
+Risk level: low
+Tags: time, burnout, deadline-anxiety, self-worth, attention-practice
+
+### Practice Line
+
+When the clock tightens your chest, ask what it can actually ask of you.
+
+### Purpose
+
+To test whether separating coordination from self-judgment reduces time pressure without reducing responsibility.
+
+### Human Problem
+
+Time anxiety, burnout, future dread, and achievement-contingent self-worth.
+
+### For
+
+People who meet obligations but turn every deadline, delay, or calendar item into a judgment on their worth.
+
+### Not For
+
+Not for medical emergencies, addiction withdrawal, severe depression, mania, acute crisis, or situations where immediate timed action is required. Not a substitute for planning, sleep, therapy, or workplace boundary changes.
+
+### Time
+
+- Duration: 3 minutes
+- Frequency: Once daily for seven days, and once during a deadline spike.
+- Minimum attempt: Seven attempts before judging fit.
+
+### Steps
+
+1. Look at a clock or calendar for ten seconds.
+2. Write one sentence: This number can coordinate something specific today.
+3. Write one sentence: This number cannot decide my worth.
+4. Name the next answerable action that can be done in under ten minutes.
+5. Do that action or schedule it, then stop the exercise.
+
+### Notice
+
+- Whether the body relaxes or tightens after separating task from worth.
+- Whether responsibility becomes clearer or avoidance becomes easier.
+- Whether future worry turns into one concrete act.
+
+### Caution
+
+Stop if the exercise becomes rumination, self-attack, or a way to delay urgent duties. Use ordinary support for clinical distress or unsafe situations.
+
+### Weakens If
+
+Weakens if repeated use makes people less punctual, less honest about obligations, more avoidant, or no less ruminative about time.
+
+
+
+## Tests
+
+### Clock Authority Diary
+
+- Type: practice-report
+- Target: practice
+- Status: proposed
+- Prediction: If this model is right, seven-day use of The Clock Check should reduce self-judgment language around time while preserving or improving completion of one chosen obligation. If self-judgment falls only by avoiding obligations, the model is weakened.
+- Result: pending
+- Impact: pending
+- Next action: Collect short daily reports from five to ten volunteers under ordinary deadline pressure.
+
+### Relativity Teaching Misread Test
+
+- Type: cross-domain
+- Target: idea
+- Status: proposed
+- Prediction: If the distinction between coordination and metaphysical authority is useful, learners exposed to it should be less likely to conclude that special relativity proves the felt present is unreal. If no difference appears, the explanatory value is weakened.
+- Result: pending
+- Impact: pending
+- Next action: Compare two brief explanations of clock synchronization and code student takeaways.
+
+### Near-Neighbor Search
+
+- Type: prior-art
+- Target: idea
+- Status: complete
+- Prediction: If the finding is original enough to keep, prior art should contain relational clock-time and contemplative time comparisons but not the exact combination of method authority, lived answerability, and burnout practice. If that combination already exists, novelty should be lowered.
+- Result: Initial search found close physics prior art, especially relational observables, Page-Wootters, and Fisher-informational time. No exact integration with method authority and lived answerability was found, but the audit is incomplete.
+- Impact: revises
+- Next action: Run a full originality audit against pragmatism, phenomenology, philosophy of time, and contemplative studies.
+
+### Madhyamaka Pressure Test
+
+- Type: falsification-attempt
+- Target: idea
+- Status: proposed
+- Prediction: If MMK chapter 19 shows that present answerability reifies time, the idea should be revised into a pragmatic coordination practice rather than a doctrine candidate. If it survives as dependent designation only, the idea strengthens.
+- Result: pending
+- Impact: pending
+- Next action: Close-read MMK chapter 19 against Augustine Confessions XI and Dogen Uji.
+
+
+## Next Research Directions
+
+- If this model is right, then teaching clock synchronization as relation-making should reduce mistaken claims that relativity proves the lived present is fake. If students still draw that conclusion at the same rate, the distinction lacks explanatory force.
+- If this model is right, then a seven-day practice separating clock coordination from self-judgment should reduce time-related rumination without reducing punctuality. If reduced stress comes mainly through avoidance of duties, the model is weakened.
+- If this model is right, then traditions using chants, calendars, watches, bells, or liturgy should mark a boundary between timed discipline and ultimate claims about time. If many traditions let the timed form authorize the whole metaphysics without warning, the method-authority claim is weakened.
+- Test Nagarjuna MMK chapter 19 against the phrase present answerability. If the phrase reifies present, action, or relation, revise the doctrine into a pragmatic practice rule only.
+- Protocol improvement: pair inward time-observation with a formal measurement account before turning temporal phenomenology into doctrine.

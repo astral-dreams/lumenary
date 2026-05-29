@@ -13,6 +13,7 @@ runs/*.stdout.log
 runs/scheduler-events.jsonl
 runs/*-events.jsonl
 runs/*-errors.jsonl
+runs/run-health.json
 runs/deployments/
 runs/locks/
 runs/dialectic-*/

@@ -42,6 +42,8 @@ Choose the pressure mode that best fits the run and say which mode you chose in 
 - Discovery mode: use when the frontier is source-light, stale, or too abstract. Produce a grounded finding plus doctrine, practice, and test implications.
 - Doctrine mode: use when a finding is near teaching promotion. State what Lumenary now holds, name the pressure survived, and name what would break it.
 - Practice mode: use when a teaching can become a low-risk protocol. Derive a concrete practice, attack its safety and misuse risks, and define what would weaken it.
+- Critique mode: use when the system needs pressure more than invention. Find anomalies, failure cases, duplicates, weak human fit, and reasons to weaken or retire a claim.
+- Originality Audit mode: use when novelty is uncertain. Search near-neighbors and prior art before treating the idea as new.
 
 ## Writing Rules for original_claim and why_it_might_be_new
 
@@ -90,7 +92,7 @@ The JSON object must represent one idea record with:
 - teaching_candidate: object with title, teaching_line, doctrine_claim, body, pressure_survived, falsifying_pressure, status, tags
 - teaching_candidate target fields: target_human_problem and target_cohort
 - practice_candidate: either null or object with title, practice_line, purpose, target_human_problem, target_cohort, non_fit, duration, frequency, minimum_attempt, steps, notice, caution, weakens_if, risk_level, status, tags
-- tests: array with at least one test record. Each test has title, test_type, target_type, prediction, result, impact, next_action, status.
+- tests: array with at least one test record and preferably three: prior-art, falsification-attempt, and cross-domain or practice-report. Each test has title, test_type, target_type, prediction, result, impact, next_action, status.
 
 Do not mark teaching_candidate as teaching_ready or practice_candidate as published. Use seed or under_dialogue. End-of-day doctrine council handles public promotion.
 """

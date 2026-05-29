@@ -2080,8 +2080,9 @@ export function getPractices(): PracticeView[] {
         under_dialogue: 1,
         seed: 2,
         revised: 3,
-        retired: 4,
-        falsified: 5,
+        weakened: 4,
+        retired: 5,
+        falsified: 6,
       };
       return (
         (statusRank[a.status] ?? 9) - (statusRank[b.status] ?? 9) ||
@@ -2133,8 +2134,9 @@ export function getTeachings(): TeachingView[] {
         under_dialogue: 2,
         seed: 3,
         revised: 4,
-        retired: 5,
-        falsified: 6,
+        weakened: 5,
+        retired: 6,
+        falsified: 7,
       };
       return (
         (statusRank[a.status] ?? 9) - (statusRank[b.status] ?? 9) ||

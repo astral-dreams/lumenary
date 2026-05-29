@@ -200,6 +200,7 @@
             "teaching_ready",
             "practice_linked",
             "revised",
+            "weakened",
             "retired",
             "falsified"
           ]
@@ -310,10 +311,11 @@
               "enum": [
                 "seed",
                 "under_dialogue",
-                "published",
-                "revised",
-                "retired",
-                "falsified"
+            "published",
+            "revised",
+            "weakened",
+            "retired",
+            "falsified"
               ]
             },
             "tags": {

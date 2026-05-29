@@ -27,8 +27,12 @@ from .originality_audit import audit_new_ideas, write_incomplete_audits
 from .prompts import build_claude_collaborative_prompt, build_originality_prompt
 from .publisher import generate_daily_update
 from .run import _gather_codex_observations, build_run_id
+from .run_health import record_run_event
+from .run_mode import mode_prompt, select_run_mode
 from .schemas import IdeaRecord, RunManifest, now_local_iso
+from .test_registry import ensure_test_records
 from .thinker import get_thinker
+from .writing_gate import validate_public_writing, write_writing_gate_event
 
 
 @dataclass
@@ -64,6 +68,11 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--unload-after-stop", action="store_true")
     parser.add_argument("--skip-deploy", action="store_true")
     parser.add_argument("--skip-originality-audit", action="store_true")
+    parser.add_argument(
+        "--mode",
+        default=os.getenv("LUMENARY_RUN_MODE", "auto"),
+        help="Run mode: auto, discovery, doctrine, practice, critique, or originality_audit.",
+    )
     parser.add_argument("--no-frontier", action="store_true")
     parser.add_argument(
         "--dialectic-after",
@@ -400,7 +409,13 @@ def _commit_and_push(root: Path) -> None:
     _run_command(root, ["git", "push", "origin", "main"], label="git-push")
 
 
-def _publish_and_deploy(root: Path, *, skip_deploy: bool) -> None:
+def _publish_and_deploy(
+    root: Path,
+    *,
+    skip_deploy: bool,
+    generated_ideas: list[IdeaRecord],
+    execution_id: str,
+) -> None:
     config = EngineConfig.load(root=root, agent="codex", provider="codex-cli")
     try:
         daily_path, x_path = generate_daily_update(config)
@@ -443,6 +458,15 @@ def _publish_and_deploy(root: Path, *, skip_deploy: bool) -> None:
         ),
         flush=True,
     )
+
+    writing_issues = validate_public_writing(root, generated_ideas, require_distillation=True)
+    write_writing_gate_event(root, writing_issues, execution_id=execution_id)
+    blockers = [issue for issue in writing_issues if issue.severity == "block"]
+    if blockers:
+        raise RuntimeError(
+            "Refusing to build public site because writing gate failed: "
+            + "; ".join(issue.message for issue in blockers[:5])
+        )
 
     _run_command(root, ["npm", "run", "build"], label="build")
     _scan_public_copy(root)
@@ -495,6 +519,14 @@ def main() -> None:
         return
 
     try:
+        run_execution_id = f"parallel-{datetime.now().astimezone().strftime('%Y%m%d-%H%M%S')}"
+        record_run_event(
+            root,
+            event="parallel-research",
+            execution_id=run_execution_id,
+            status="started",
+            detail={"focus": args.focus, "mode": args.mode},
+        )
         _pull_latest_if_available(root)
         codex_config = EngineConfig.load(
             root=root,
@@ -509,12 +541,24 @@ def main() -> None:
             provider="claude-code",
             claude_model=args.claude_model,
         )
+        run_mode = select_run_mode(root, requested=args.mode, focus=args.focus)
+        record_run_event(
+            root,
+            event="mode-selected",
+            execution_id=run_execution_id,
+            status="complete",
+            detail={"mode": run_mode["mode"], "reason": run_mode["reason"]},
+        )
         frontier_brief = prepare_frontier_brief(
             root,
             focus=args.focus,
-            execution_id=f"parallel-{datetime.now().astimezone().strftime('%Y%m%d-%H%M%S')}",
+            execution_id=run_execution_id,
             enabled=not args.no_frontier,
         )
+        if frontier_brief:
+            frontier_brief = f"{mode_prompt(run_mode)}\n\n{frontier_brief}"
+        else:
+            frontier_brief = mode_prompt(run_mode)
         configs = [codex_config, claude_config]
         generated: list[GeneratedIdea] = []
         errors: list[str] = []
@@ -601,6 +645,19 @@ def main() -> None:
                 ideas=[item.idea for item in generated],
                 run_ids=[item.manifest.run_id for item in generated],
                 created_at=now_local_iso(),
+            )
+            test_count = ensure_test_records(
+                root,
+                [item.idea for item in generated],
+                execution_id=execution_id,
+                run_ids=[item.manifest.run_id for item in generated],
+            )
+            print(
+                json.dumps(
+                    {"event": "test-records", "count": test_count},
+                    sort_keys=True,
+                ),
+                flush=True,
             )
             human_condition_count = audit_human_condition_fit(
                 root,
@@ -701,10 +758,31 @@ def main() -> None:
         if generated:
             if not distillation_ok:
                 raise RuntimeError("Refusing to deploy because insight distillation failed quality gates.")
-            _publish_and_deploy(root, skip_deploy=args.skip_deploy)
+            _publish_and_deploy(
+                root,
+                skip_deploy=args.skip_deploy,
+                generated_ideas=[item.idea for item in generated],
+                execution_id=execution_id,
+            )
+            record_run_event(
+                root,
+                event="parallel-research",
+                execution_id=execution_id,
+                status="complete",
+                detail={"titles": [item.idea.title for item in generated]},
+            )
         else:
             raise RuntimeError("No agents produced an idea.")
 
+    except Exception as exc:
+        record_run_event(
+            root,
+            event="parallel-research",
+            execution_id=locals().get("execution_id", locals().get("run_execution_id", "parallel-unknown")),
+            status="error",
+            detail={"error": repr(exc)},
+        )
+        raise
     finally:
         _release_lock(lock_dir)
 

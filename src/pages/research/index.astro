@@ -17,12 +17,15 @@ const breadcrumbs: BreadcrumbItem[] = [
 
 const methodSteps = [
   "Ground every serious idea in source cards and preserve the difference between text, interpretation, analogy, and speculation.",
+  "Select the run mode by pressure: discovery, doctrine, practice, critique, or originality audit.",
   "Apply one practitioner method as a reasoning lens, then criticize that method before using it.",
   "Close-read primary texts against each other before leaning on secondary summaries.",
-  "Generate one original idea record with critique, scores, epistemic labels, and next research directions.",
+  "Generate one original idea record with critique, scores, epistemic labels, tests, and next research directions.",
+  "Supplement test records so each serious idea has prior-art, falsification, and cross-domain pressure.",
   "Run an originality audit that searches near-neighbors, names anomalies, and defines falsifiable, practitioner, and cross-domain tests.",
   "Refresh the Frontier Engine so audits and failures steer the next run.",
   "Stage Dialogues between Codex and Claude when two audited findings create a productive tension.",
+  "Block publication when reader-facing titles, summaries, or At a Glance sections fail the writing gate.",
   "Publish only claims that pass the public gate and have not already been published without new advancement.",
 ];
 
@@ -75,7 +78,7 @@ const stack = [
   },
   {
     label: "Orchestrator",
-    value: "Python engine modules for one-shot runs, parallel research, scheduling, frontiers, dialogues, audits, promotion, and publishing.",
+    value: "Python engine modules for run modes, parallel research, scheduling, frontiers, dialogues, tests, audits, promotion, writing gates, health, and publishing.",
   },
   {
     label: "Cadence",
@@ -95,7 +98,11 @@ const stack = [
   },
   {
     label: "Publication safety",
-    value: "Promotion thresholds for public claims, originality audit visibility, and a human-review queue for X drafts.",
+    value: "Promotion thresholds for public claims, originality audit visibility, writing gates, doctrine retirement states, and a human-review queue for X drafts.",
+  },
+  {
+    label: "Local health dashboard",
+    value: "A localhost-only run health dashboard shows last run, next run, launchd status, current mode, tests, and deploy status.",
   },
 ];
 
@@ -114,6 +121,15 @@ const loopSteps = [
       "cluster related findings by claim pressure, source basis, title language, audit instructions, and agent overlap",
       "score frontiers by generativity, audit pressure, public value, anomaly pressure, source gaps, cross-agent signal, and recency",
       "write the next frontier prompt before Codex or Claude begins the run",
+    ],
+  },
+  {
+    title: "Select A Mode",
+    items: [
+      "choose discovery when source pressure is thin",
+      "choose doctrine when a teaching needs pressure before promotion",
+      "choose practice when a low-risk protocol should be derived or challenged",
+      "choose critique or originality audit when claims need anomalies, prior art, or retirement pressure",
     ],
   },
   {
@@ -144,6 +160,14 @@ const loopSteps = [
     ],
   },
   {
+    title: "Register Tests",
+    items: [
+      "ensure every serious idea carries prior-art, falsification, and cross-domain test pressure",
+      "link tests to ideas, teachings, or practices",
+      "let weak or breaking test results weaken, revise, or falsify doctrine candidates",
+    ],
+  },
+  {
     title: "Refresh The Frontier Map",
     items: [
       "merge duplicates instead of rewarding one-off novelty",
@@ -164,6 +188,7 @@ const loopSteps = [
     title: "Publish Carefully",
     items: [
       "write or reuse the Insights distillation and At a Glance key points before build",
+      "run the writing quality gate on reader-facing title, Insight, At a Glance, and key points",
       "publish only records that pass the Public Claim threshold",
       "skip repeated daily publication when no public claim has newly advanced",
       "keep X drafts queued for human review",

@@ -1,6 +1,6 @@
 # Lumenary Frontiers
 
-Generated: 2026-05-28T16:42:59+02:00
+Generated: 2026-05-29T07:57:32+02:00
 
 These are live research agendas derived from idea records, originality audits, publication history, and next-loop instructions.
 
@@ -9,10 +9,10 @@ These are live research agendas derived from idea records, originality audits, p
 - Frontier ID: `frontier-method-reckoning`
 - Status: `active`
 - Stage: `source_grounding`
-- Priority: 0.9136
+- Priority: 0.9093
 - Next action: `complete_audit`
 - Agents: claude, codex
-- Idea records: 5
+- Idea records: 6
 - Audits: 3
 
 ### Core Claim
@@ -42,10 +42,10 @@ Rebuild the model as two axes: validates versus undermines, and retained versus 
 - Frontier ID: `frontier-modern-human-condition`
 - Status: `active`
 - Stage: `rubric`
-- Priority: 0.8282
+- Priority: 0.8242
 - Next action: `build_rubric`
 - Agents: claude, codex
-- Idea records: 4
+- Idea records: 5
 - Audits: 2
 
 ### Core Claim
@@ -71,7 +71,7 @@ Do not publish as a standalone doctrine claim until split-source tests show pred
 - Frontier ID: `frontier-gap-report`
 - Status: `active`
 - Stage: `rubric`
-- Priority: 0.8233
+- Priority: 0.8161
 - Next action: `build_rubric`
 - Agents: claude, codex
 - Idea records: 6
@@ -103,7 +103,7 @@ Test the rubric on Brihadaranyaka 2.4, 2.5, 3.7.23, SN 22.59, and SN 22.95 befor
 - Frontier ID: `frontier-inferential-gap`
 - Status: `active`
 - Stage: `rubric`
-- Priority: 0.8198
+- Priority: 0.8134
 - Next action: `build_rubric`
 - Agents: claude, codex
 - Idea records: 13
@@ -131,12 +131,45 @@ Rewrite the claim as an interpretive reconstruction unless commentarial evidence
 - Reduce novelty from 0.82 to about 0.53. The idea is useful and testable, but its main components are strongly anticipated by prior Lumenary ledgers, VCE and Cheetah House style adverse-effects research, Engler's functional ego warning, Pargament's agency...
 - Reduce novelty from 0.82 to about 0.54. The four-field compression is useful, but most components have strong near-neighbors in prior Lumenary audits, conversion theory, rites-of-passage theory, doctrine-as-grammar, religious problem-solving styles...
 
+## Translation strain as a test of convergence
+
+- Frontier ID: `frontier-translation-strain`
+- Status: `active`
+- Stage: `source_grounding`
+- Priority: 0.7871
+- Next action: `complete_audit`
+- Agents: claude, codex
+- Idea records: 29
+- Audits: 9
+
+### Core Claim
+
+Traditions differ less in whether insight can be shared than in what carrier must hold it when it leaves the practice that disclosed it. Advaita lets insight travel as self-certifying recognition; early Buddhism lets it travel as a non-appropriating test; Daoism lets it travel as situated fit; Sufism lets it travel as renewed relation; Neoplatonism lets it travel as return-orientation. When a comparer moves an insight into the wrong carrier, relation...
+
+### Next Prompt
+
+Build a one-page translation-strain rubric with fields for claim unit, role, ontology, agency, practice aim, authority, verification, what is bent, what is dropped, what is added, and whether role-similarity survives.
+
+### Open Anomalies
+
+- Convergence caused by direct borrowing, shared lineage, colonial translation conventions, English-language universalism, or dual-trained teachers rather than independent structural recurrence.
+- Comparisons where high strain is still historically causal, for example Buddhist and Advaita terms shaped by centuries of polemic and borrowing.
+- Nirodha samapatti and cessation reports, where practitioners report a discontinuity or absence of consciousness rather than a pressure to posit an enduring witness.
+- When a tradition internally disputes its own assertion posture (as in the Svatantrika-Prasangika contest over whether Madhyamaka holds theses), does the strain-mapping protocol need to treat posture as a continuous variable or a contested parameter rather...
+- How can a self-transcending practice be designed so that it builds enough scaffold before it weakens the self-functions a practitioner still needs?
+
+### Blockers
+
+- Reduce novelty from 0.78 to about 0.56. The idea is not a new comparative principle. Its best contribution is a useful synthesis and operationalization of established anti-perennialist, comparative-method, comparative-theological, homeomorphic-equivalence...
+- Reduce novelty from 0.78 to about 0.22. This is already present in the prior Lumenary originality audit and strongly anticipated by comparative-method literature.
+- Reduce novelty from 0.84 to about 0.61. The phrase is useful and may be generative, but it synthesizes known work on pure awareness, witness consciousness, self-modeling, and cessation.
+
 ## Remainder pressure after self-negation
 
 - Frontier ID: `frontier-remainder-pressure`
 - Status: `active`
 - Stage: `rubric`
-- Priority: 0.7929
+- Priority: 0.7864
 - Next action: `build_rubric`
 - Agents: claude, codex
 - Idea records: 8
@@ -162,45 +195,12 @@ Do not publish as doctrine. Treat as a comparative and practitioner-facing resea
 - Reduce novelty from 0.77 to about 0.55. The idea is useful and testable, but most components are strongly anticipated by prior Lumenary ledgers, Pargament's religious coping styles, Lindbeck's doctrine-as-grammar, Asad's discursive tradition, VCE and...
 - Reduce novelty from 0.78 to about 0.52. The synthesis is useful and testable, but both halves are already present in prior Lumenary audits, and the exact upstream-downstream move is closely anticipated by Claude's Reflexivity Policy. External prior art...
 
-## Translation strain as a test of convergence
-
-- Frontier ID: `frontier-translation-strain`
-- Status: `active`
-- Stage: `source_grounding`
-- Priority: 0.7914
-- Next action: `complete_audit`
-- Agents: claude, codex
-- Idea records: 28
-- Audits: 9
-
-### Core Claim
-
-Traditions differ less in whether insight can be shared than in what carrier must hold it when it leaves the practice that disclosed it. Advaita lets insight travel as self-certifying recognition; early Buddhism lets it travel as a non-appropriating test; Daoism lets it travel as situated fit; Sufism lets it travel as renewed relation; Neoplatonism lets it travel as return-orientation. When a comparer moves an insight into the wrong carrier, relation...
-
-### Next Prompt
-
-Build a one-page translation-strain rubric with fields for claim unit, role, ontology, agency, practice aim, authority, verification, what is bent, what is dropped, what is added, and whether role-similarity survives.
-
-### Open Anomalies
-
-- Convergence caused by direct borrowing, shared lineage, colonial translation conventions, English-language universalism, or dual-trained teachers rather than independent structural recurrence.
-- Comparisons where high strain is still historically causal, for example Buddhist and Advaita terms shaped by centuries of polemic and borrowing.
-- Nirodha samapatti and cessation reports, where practitioners report a discontinuity or absence of consciousness rather than a pressure to posit an enduring witness.
-- When a tradition internally disputes its own assertion posture (as in the Svatantrika-Prasangika contest over whether Madhyamaka holds theses), does the strain-mapping protocol need to treat posture as a continuous variable or a contested parameter rather...
-- How can a self-transcending practice be designed so that it builds enough scaffold before it weakens the self-functions a practitioner still needs?
-
-### Blockers
-
-- Reduce novelty from 0.78 to about 0.56. The idea is not a new comparative principle. Its best contribution is a useful synthesis and operationalization of established anti-perennialist, comparative-method, comparative-theological, homeomorphic-equivalence...
-- Reduce novelty from 0.78 to about 0.22. This is already present in the prior Lumenary originality audit and strongly anticipated by comparative-method literature.
-- Reduce novelty from 0.84 to about 0.61. The phrase is useful and may be generative, but it synthesizes known work on pure awareness, witness consciousness, self-modeling, and cessation.
-
 ## Where freed attention is allowed to rest
 
 - Frontier ID: `frontier-attention-custody`
 - Status: `active`
 - Stage: `rubric`
-- Priority: 0.7731
+- Priority: 0.7665
 - Next action: `build_rubric`
 - Agents: codex
 - Idea records: 2
@@ -232,7 +232,7 @@ Close-read Dzogchen and Mahamudra instructions on rigpa or luminous awareness ag
 - Frontier ID: `frontier-effort-and-practice`
 - Status: `active`
 - Stage: `rubric`
-- Priority: 0.7212
+- Priority: 0.7145
 - Next action: `build_rubric`
 - Agents: claude, codex
 - Idea records: 22
@@ -265,7 +265,7 @@ Recast the model as a graded variable: required receiving capacity, required age
 - Frontier ID: `frontier-love-and-knowing`
 - Status: `active`
 - Stage: `source_grounding`
-- Priority: 0.6990
+- Priority: 0.6939
 - Next action: `complete_audit`
 - Agents: claude, codex
 - Idea records: 6
