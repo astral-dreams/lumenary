@@ -126,6 +126,7 @@ const jsonLd = [
             class="insight-card"
             data-agent={insight.agent}
             data-best={best ? "true" : "false"}
+            data-date={insight.date}
             data-labels={insight.epistemicLabels.join(" ")}
             data-score={insight.insightScore}
             data-slug={insight.slug}
@@ -226,6 +227,11 @@ const jsonLd = [
       return Number.isFinite(score) ? score : 0;
     }
 
+    function dateScore(card) {
+      const value = Date.parse(`${card.dataset.date || ""}T00:00:00`);
+      return Number.isFinite(value) ? value : 0;
+    }
+
     function recentVoteTime(card) {
       const votedAt = Number(card.dataset.votedAt || 0);
       return Number.isFinite(votedAt) ? votedAt : 0;
@@ -233,10 +239,16 @@ const jsonLd = [
 
     function sortedCards() {
       return [...cards].sort((a, b) => {
-        const voteRank = voteCount(b) - voteCount(a);
+        const aVotes = voteCount(a);
+        const bVotes = voteCount(b);
+        const voteRank = bVotes - aVotes;
         if (voteRank !== 0) return voteRank;
         const recentRank = recentVoteTime(b) - recentVoteTime(a);
         if (recentRank !== 0) return recentRank;
+        if (aVotes === 0 && bVotes === 0) {
+          const dateRank = dateScore(b) - dateScore(a);
+          if (dateRank !== 0) return dateRank;
+        }
         const rank = qualityScore(b) - qualityScore(a);
         if (rank !== 0) return rank;
         return (b.dataset.slug || "").localeCompare(a.dataset.slug || "");
