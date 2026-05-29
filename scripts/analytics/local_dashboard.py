@@ -987,7 +987,6 @@ def overview_page():
 
 
 def acquisition_page():
-    channels = read_json("data/analytics/acquisition-channels.json", [])
     ga4 = ga4_snapshot()
     gsc = gsc_snapshot()
     acquisition = ga4.get("acquisition", {}).get("rows", [])
@@ -1070,16 +1069,6 @@ def acquisition_page():
         ),
         snapshot_meta(gsc, "GSC snapshot has not been pulled yet."),
     )
-    source_rules = ""
-    for channel in channels:
-        source_rules += (
-            '<div class="setup-row">'
-            f"<strong>{escape(channel.get('channel', ''))}</strong>"
-            f"<p>{escape(channel.get('source_rule', ''))}</p>"
-            f"<p>{escape(channel.get('what_to_watch', ''))}<br><code>{escape(channel.get('first_action', ''))}</code></p>"
-            "</div>"
-        )
-    body += panel("Source Rules", f'<div class="setup-list">{source_rules}</div>')
     body += "</div>"
     return page_shell("Acquisition", "Acquisition", body)
 
