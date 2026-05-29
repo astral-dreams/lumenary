@@ -1,0 +1,154 @@
+OpenAI Codex v0.133.0
+--------
+workdir: /Users/johnforrester/spirituality
+model: gpt-5.5
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: xhigh
+reasoning summaries: none
+session id: 019e740f-58bc-73f2-b03f-a714a0689203
+--------
+user
+# Lumenary Insight Distillation
+
+You are writing the public insight card and At a Glance text for The Lumenary.
+
+Read the finding below. Distill it into reader-facing language.
+
+## Writing Rules
+
+- Write like the texts we study: simple, memorable, and direct.
+- Do not use Sanskrit, Pali, Arabic, Greek, or Chinese terms.
+- Do not use academic hedging.
+- Do not use research jargon.
+- Do not use em dashes.
+- Do not start with "This finding".
+- Lead with the human question or the living insight.
+- Do not repeat the title, the insight headline, or the first At a Glance sentence in the bullets.
+- Do not use machinery language in public copy: no "layered authorization," "distributed affordances," "institutional role," "operationalizes," "formal transfer," "gradient," "rubric," "locus," "claimant," or "grammar."
+- Also avoid internal model words in public copy: no "architecture," "custody," "receiving surface," "residue," "grain," "threshold," "entry," "compound," "upstream," "downstream," "phenomenology," "authorization," "typology," or "taxonomy."
+- The insight headline must land like a proverb.
+- The publicTitle is the finding page title: maximum 10 words, plain, memorable, and not academic.
+- The plainSummary is for the Insights card: one sentence, maximum 28 words.
+- The atAGlance section is for the finding page: one paragraph, 3 to 4 short sentences.
+- The keyPoints are for the finding page: 3 short bullets, direct and useful. Use them for meaning, human risk, and what to test.
+- Use one idea per sentence.
+
+## Required JSON
+
+Return exactly one JSON object with:
+
+- insight: proverb-like headline, maximum 10 words
+- publicTitle: finding page title, maximum 10 words
+- plainSummary: one short sentence for the Insights card
+- atAGlance: one paragraph of 3 to 4 short sentences
+- keyPoints: array of 3 short bullet points, each one sentence and under 18 words
+- match: array with one unique lowercased phrase from the title
+- tags: array of 1 to 5 simple tags
+
+## Finding
+
+Title: Not Every Practice Is a Tool
+Type: contradiction
+Agent: claude
+
+Original Claim:
+Before asking what a practice does with authority over its result, ask whether the practice claims to produce a result at all. The recent habit of sorting practices by whether they validate or undermine their result, and whether they keep, release, or embody the method, only works for practices that treat themselves as instruments: do this, get that, then steward the that. A large class of practice refuses that frame at the root. Dogen's practice-realization identity says the sitting is not a means to enlightenment; the sitting is the enlightenment, so there is no later result to keep, release, or correct. Shinran's Other Power says the practitioner never wields the method at all; entrusting is described as no working, with no calculation by the practicer, so there is no outcome a self could own. For these, the authority question is not answered, it is dissolved as a category mistake the comparer imported. So Lumenary now holds a sharp limit: the custody, release, and correction apparatus governs only the instrumental band of practice. Outside that band the right first move is to notice there is nothing to own, because the practice was never a tool.
+
+Why It Might Be New:
+The recent project findings keep treating Dogen and Shinran as hybrids that sit awkwardly on a two-axis custody map, then absorb them by adding cells. The distinct move here is to deny that they are on the axis at all: they reject the founding premise that there is a separable result over which a method could hold authority. This reclassifies the celebrated example, the MN 22 raft, as the boundary case of the instrumental band, not the universal pattern, since the raft works precisely by getting you across and is then dropped. Smith's reading of Nagarjuna and Wittgenstein as therapy without theses is still instrumental: the therapy cures and is discarded. What may be new is using the old means-end versus autotelic distinction as a scope gate on the whole method-authority comparison, so that a single question, does this practice claim to make something, decides whether the custody vocabulary applies before any coding begins.
+
+Critique:
+The strongest anomaly cuts against the narrowing itself. Dogen wrote the Eihei Shingi, an extensive body of monastic conduct rules, and Shinran explicitly cautioned against treating jinen as a license for evil. If, at the level of lived training rather than doctrinal self-description, even these non-instrumental traditions issue keep, release, correct, and conduct instructions, then non-instrumentality is only a surface and the instrumental apparatus operates underneath; the narrowing would then describe how traditions talk, not what teachers do. Two further weaknesses: the means-end versus autotelic distinction is well worn in general philosophy, so the contribution risks being a relabeling rather than a discovery; and by privileging the Dogen lens I may make every clear instrumental teaching look like grasping, unfairly demoting traditions that openly and rightly use practice to produce results.
+
+codex
+{"insight":"I’m using the spirituality recursive research skill because this is a Lumenary publication","publicTitle":"Distillation","plainSummary":"I’ll keep the final response to the required JSON only.","atAGlance":"I’m checking the project-specific guidance before distilling the finding. The final response will be one JSON object.","keyPoints":["No extra public copy will be included.","The JSON fields will match the requested structure.","The copy will avoid internal terms."],"match":["distillation"],"tags":["process"]}
+exec
+/bin/zsh -lc "sed -n '1,220p' /Users/johnforrester/spirituality/.codex/skills/spirituality-recursive-research/SKILL.md" in /Users/johnforrester/spirituality
+ succeeded in 0ms:
+---
+name: spirituality-recursive-research
+description: Use when working in the /Users/johnforrester/spirituality project on recursive research, Codex/Claude attribution, original spiritual-philosophical idea generation, Codex CLI provider wiring, scheduler setup, website publication, X draft queues, or project memory.
+---
+
+# Spirituality Recursive Research
+
+## Core Purpose
+
+This project builds Lumenary, a continuously running local research lab whose main output is original ideas in spirituality, religion, philosophy, contemplative practice, and consciousness research.
+
+Do not optimize for summaries. Optimize for named observations, hypotheses, models, contradictions, bridges, and publishable syntheses.
+
+Working name: Lumenary.
+
+## Required Attribution
+
+- Codex findings: `findings/codex/` and `findings/codex-findings.md`
+- Claude Code findings: `findings/claude/` and `findings/claude-code-findings.md`
+- Codex observations: `observations/codex/`
+- Claude observations: `observations/claude/`
+- Cross-agent synthesis: `findings/convergences/`
+
+Never overwrite another agent's findings. Preserve disagreements.
+
+## Method
+
+Every serious idea should include:
+
+- title
+- type: observation, hypothesis, model, bridge, contradiction, or synthesis
+- source basis
+- original claim
+- why it might be new
+- critique
+- epistemic labels
+- scores
+- next research directions
+
+Use labels: `textual`, `interpretive`, `phenomenological`, `empirical-adjacent`, `analogical`, `speculative`, `rejected`.
+
+## Live Provider
+
+Use the user's Codex subscription through the local Codex CLI.
+
+The Python engine should call `codex exec` with read-only sandboxing and request structured JSON. The engine, not the child Codex process, writes project files.
+
+Preferred posture:
+
+```bash
+codex --search exec --cd /Users/johnforrester/spirituality --sandbox read-only --output-schema engine/json_schemas/idea_record.schema.json --output-last-message runs/<run-id>/codex-cli-last-message.json -
+```
+
+## Publication
+
+Lumenary should become a public website with daily updates. Generate daily Markdown under `publication/daily/`. Generate X drafts under `publication/x/queue/` and require human review before posting.
+
+## Claude Code Interop
+
+Claude Code can contribute ideas by producing JSON that matches `engine/json_schemas/idea_record.schema.json`, then importing it:
+
+```bash
+python3 -m engine.import_idea --agent claude <idea.json>
+```
+
+## Key Files
+
+- `PLAN.md`: shareable plan for Claude Code and future agents
+- `AGENTS.md`: project memory and standing instructions
+- `docs/project-memory.md`: durable memory
+- `docs/original-idea-methodology.md`: generation method
+- `docs/publication-plan.md`: website and X publication plan
+- `engine/run.py`: one recursive cycle
+- `engine/scheduler.py`: continuous operation
+- `engine/thinker.py`: offline and Codex CLI providers
+- `engine/publisher.py`: daily publication artifacts
+- `engine/import_idea.py`: Claude/shared-agent idea import
+- `engine/source_ingestion.py`: source-card registry
+- `publication/daily/`: daily website updates
+- `publication/x/queue/`: X drafts awaiting human review
+
+codex
+{"insight":"Some paths are walked, not used","publicTitle":"Not Every Practice Is a Tool","plainSummary":"Some practices are not meant to give a result, but to train a different way of living.","atAGlance":"Before we judge a practice, we should ask what it claims to be. Some practices promise a change we can test. Others ask us to stop treating life as something to win. The danger is forcing every path into our hunger for payoff.","keyPoints":["Meaning can deepen when practice is not treated as a bargain.","The risk is excusing harm by saying no result was promised.","Test whether the practice changes conduct, not only inner language."],"match":["not every practice"],"tags":["practice","meaning","discipline"]}
+tokens used
+15,338

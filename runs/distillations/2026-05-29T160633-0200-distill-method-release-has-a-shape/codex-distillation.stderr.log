@@ -1,0 +1,152 @@
+OpenAI Codex v0.133.0
+--------
+workdir: /Users/johnforrester/spirituality
+model: gpt-5.5
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: xhigh
+reasoning summaries: none
+session id: 019e740e-e562-7572-8dd9-7732f1536370
+--------
+user
+# Lumenary Insight Distillation
+
+You are writing the public insight card and At a Glance text for The Lumenary.
+
+Read the finding below. Distill it into reader-facing language.
+
+## Writing Rules
+
+- Write like the texts we study: simple, memorable, and direct.
+- Do not use Sanskrit, Pali, Arabic, Greek, or Chinese terms.
+- Do not use academic hedging.
+- Do not use research jargon.
+- Do not use em dashes.
+- Do not start with "This finding".
+- Lead with the human question or the living insight.
+- Do not repeat the title, the insight headline, or the first At a Glance sentence in the bullets.
+- Do not use machinery language in public copy: no "layered authorization," "distributed affordances," "institutional role," "operationalizes," "formal transfer," "gradient," "rubric," "locus," "claimant," or "grammar."
+- Also avoid internal model words in public copy: no "architecture," "custody," "receiving surface," "residue," "grain," "threshold," "entry," "compound," "upstream," "downstream," "phenomenology," "authorization," "typology," or "taxonomy."
+- The insight headline must land like a proverb.
+- The publicTitle is the finding page title: maximum 10 words, plain, memorable, and not academic.
+- The plainSummary is for the Insights card: one sentence, maximum 28 words.
+- The atAGlance section is for the finding page: one paragraph, 3 to 4 short sentences.
+- The keyPoints are for the finding page: 3 short bullets, direct and useful. Use them for meaning, human risk, and what to test.
+- Use one idea per sentence.
+
+## Required JSON
+
+Return exactly one JSON object with:
+
+- insight: proverb-like headline, maximum 10 words
+- publicTitle: finding page title, maximum 10 words
+- plainSummary: one short sentence for the Insights card
+- atAGlance: one paragraph of 3 to 4 short sentences
+- keyPoints: array of 3 short bullet points, each one sentence and under 18 words
+- match: array with one unique lowercased phrase from the title
+- tags: array of 1 to 5 simple tags
+
+## Finding
+
+Title: Method release has a shape
+Type: model
+Agent: codex
+
+Original Claim:
+A method does not only lead a person toward an insight. It also trains the person in how to hold the method afterward. The older threefold model of confirming, canceling, and dissolving methods misses the sharper human question: does the method make its result possessable, and does it ask to be kept, released, or lived as conduct? This produces a stricter two-axis test. One axis asks whether the practice validates its own way of seeing or undermines it. The other asks whether the practice is retained as an ongoing form, abandoned after use, or embodied as ordinary life. This matters because people under achievement pressure often turn even spiritual practice into a proof of worth. A method that should be released may become a trophy, while a method that should be embodied may become an endless checklist. The doctrine-building claim is modest: a practice is not mature until it teaches its own post-use relation.
+
+Why It Might Be New:
+The closest prior argument is Smith's comparison of Nagarjuna and Wittgenstein as therapeutic, ladder-like methods that remove the problems they appear to solve. The overlap is real: both see some methods as self-canceling medicine. The difference is that this finding treats self-canceling method as only one quadrant in a wider typology. It adds retained and embodied outcomes, separates validation from retention, and predicts concrete features of training systems: manuals, supervision, termination signs, relapse patterns, and ethical reentry should differ by quadrant. Sells is also close on apophatic language that unsays itself, but his focus is discourse, not the custody and post-use shape of a whole practice. The raft simile is a direct prior structure, but it also exposes the anomaly: some valid methods are neither simply confirmed nor canceled. They are validated for use, then released from identity.
+
+Critique:
+This model may over-systematize living traditions. Dogen strains it most because practice-realization is neither retained as a means nor abandoned after reaching a result. The practice is the expression of realization, so the two-axis model may falsely impose a before-and-after sequence. The Heart Sutra also strains it: it denies attainment while ritually preserving the text and practice that enact the denial. A practitioner may report that the method is not possessed, released, or embodied, but simply trusted within a lineage. The raft lens itself may distort the inquiry by favoring tool-use and completion over devotion, inherited belonging, grace, and lifelong communal formation.
+
+exec
+/bin/zsh -lc "sed -n '1,220p' /Users/johnforrester/spirituality/.codex/skills/spirituality-recursive-research/SKILL.md" in /Users/johnforrester/spirituality
+ succeeded in 0ms:
+---
+name: spirituality-recursive-research
+description: Use when working in the /Users/johnforrester/spirituality project on recursive research, Codex/Claude attribution, original spiritual-philosophical idea generation, Codex CLI provider wiring, scheduler setup, website publication, X draft queues, or project memory.
+---
+
+# Spirituality Recursive Research
+
+## Core Purpose
+
+This project builds Lumenary, a continuously running local research lab whose main output is original ideas in spirituality, religion, philosophy, contemplative practice, and consciousness research.
+
+Do not optimize for summaries. Optimize for named observations, hypotheses, models, contradictions, bridges, and publishable syntheses.
+
+Working name: Lumenary.
+
+## Required Attribution
+
+- Codex findings: `findings/codex/` and `findings/codex-findings.md`
+- Claude Code findings: `findings/claude/` and `findings/claude-code-findings.md`
+- Codex observations: `observations/codex/`
+- Claude observations: `observations/claude/`
+- Cross-agent synthesis: `findings/convergences/`
+
+Never overwrite another agent's findings. Preserve disagreements.
+
+## Method
+
+Every serious idea should include:
+
+- title
+- type: observation, hypothesis, model, bridge, contradiction, or synthesis
+- source basis
+- original claim
+- why it might be new
+- critique
+- epistemic labels
+- scores
+- next research directions
+
+Use labels: `textual`, `interpretive`, `phenomenological`, `empirical-adjacent`, `analogical`, `speculative`, `rejected`.
+
+## Live Provider
+
+Use the user's Codex subscription through the local Codex CLI.
+
+The Python engine should call `codex exec` with read-only sandboxing and request structured JSON. The engine, not the child Codex process, writes project files.
+
+Preferred posture:
+
+```bash
+codex --search exec --cd /Users/johnforrester/spirituality --sandbox read-only --output-schema engine/json_schemas/idea_record.schema.json --output-last-message runs/<run-id>/codex-cli-last-message.json -
+```
+
+## Publication
+
+Lumenary should become a public website with daily updates. Generate daily Markdown under `publication/daily/`. Generate X drafts under `publication/x/queue/` and require human review before posting.
+
+## Claude Code Interop
+
+Claude Code can contribute ideas by producing JSON that matches `engine/json_schemas/idea_record.schema.json`, then importing it:
+
+```bash
+python3 -m engine.import_idea --agent claude <idea.json>
+```
+
+## Key Files
+
+- `PLAN.md`: shareable plan for Claude Code and future agents
+- `AGENTS.md`: project memory and standing instructions
+- `docs/project-memory.md`: durable memory
+- `docs/original-idea-methodology.md`: generation method
+- `docs/publication-plan.md`: website and X publication plan
+- `engine/run.py`: one recursive cycle
+- `engine/scheduler.py`: continuous operation
+- `engine/thinker.py`: offline and Codex CLI providers
+- `engine/publisher.py`: daily publication artifacts
+- `engine/import_idea.py`: Claude/shared-agent idea import
+- `engine/source_ingestion.py`: source-card registry
+- `publication/daily/`: daily website updates
+- `publication/x/queue/`: X drafts awaiting human review
+
+codex
+{"insight":"A true practice teaches how to leave it","publicTitle":"Practice Must Teach Its Leaving","plainSummary":"A practice matures when it shows whether to keep, set down, or live out what it gave.","atAGlance":"Some paths are kept, some are set down, and some become ordinary conduct. Trouble begins when a person clings to a practice as proof of worth. A wise practice tells us what relationship to have with it after it has helped. We should watch for the life it forms, not only the insight it brings.","keyPoints":["Meaning grows when practice changes how we live after the moment of insight.","Achievement pressure can turn helpful discipline into another proof of worth.","Test whether the practice makes people freer, kinder, and less self-measuring."],"match":["method release"],"tags":["practice","growth","pressure","discernment"]}
+tokens used
+27,561

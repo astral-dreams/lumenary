@@ -1,6 +1,6 @@
 # Lumenary Frontiers
 
-Generated: 2026-05-29T15:41:51+02:00
+Generated: 2026-05-29T16:23:56+02:00
 
 These are live research agendas derived from idea records, originality audits, publication history, and next-loop instructions.
 
@@ -9,7 +9,7 @@ These are live research agendas derived from idea records, originality audits, p
 - Frontier ID: `frontier-method-reckoning`
 - Status: `active`
 - Stage: `source_grounding`
-- Priority: 0.8919
+- Priority: 0.8908
 - Next action: `complete_audit`
 - Agents: claude, codex
 - Idea records: 6
@@ -42,7 +42,7 @@ Rebuild the model as two axes: validates versus undermines, and retained versus 
 - Frontier ID: `frontier-gap-report`
 - Status: `active`
 - Stage: `rubric`
-- Priority: 0.8135
+- Priority: 0.8133
 - Next action: `build_rubric`
 - Agents: claude, codex
 - Idea records: 6
@@ -74,7 +74,7 @@ Test the rubric on Brihadaranyaka 2.4, 2.5, 3.7.23, SN 22.59, and SN 22.95 befor
 - Frontier ID: `frontier-inferential-gap`
 - Status: `active`
 - Stage: `rubric`
-- Priority: 0.8111
+- Priority: 0.8109
 - Next action: `build_rubric`
 - Agents: claude, codex
 - Idea records: 13
@@ -107,7 +107,7 @@ Rewrite the claim as an interpretive reconstruction unless commentarial evidence
 - Frontier ID: `frontier-remainder-pressure`
 - Status: `active`
 - Stage: `rubric`
-- Priority: 0.7840
+- Priority: 0.7838
 - Next action: `build_rubric`
 - Agents: claude, codex
 - Idea records: 8
@@ -138,7 +138,7 @@ Do not publish as doctrine. Treat as a comparative and practitioner-facing resea
 - Frontier ID: `frontier-translation-strain`
 - Status: `active`
 - Stage: `source_grounding`
-- Priority: 0.7697
+- Priority: 0.7685
 - Next action: `complete_audit`
 - Agents: claude, codex
 - Idea records: 29
@@ -171,7 +171,7 @@ Build a one-page translation-strain rubric with fields for claim unit, role, ont
 - Frontier ID: `frontier-attention-custody`
 - Status: `active`
 - Stage: `rubric`
-- Priority: 0.7641
+- Priority: 0.7639
 - Next action: `build_rubric`
 - Agents: codex
 - Idea records: 2
@@ -206,8 +206,8 @@ Close-read Dzogchen and Mahamudra instructions on rigpa or luminous awareness ag
 - Priority: 0.7374
 - Next action: `build_rubric`
 - Agents: claude, codex
-- Idea records: 10
-- Audits: 8
+- Idea records: 13
+- Audits: 11
 
 ### Core Claim
 
@@ -222,6 +222,7 @@ Do not publish as a standalone doctrine claim until split-source tests show pred
 - Self-luminous recognition traditions and deliberate solitary practice, such as Advaita svaprakasha language, some hermit lineages, Quaker inner-light language, and practitioners who leave abusive communities because communal recognition is less trustworthy...
 - Dogen practice-realization, radical Other Power in Tannisho, inherited communal religion, and successful ordinary ethical practice without a marked peak experience.
 - Observer-independent clocks and nonhuman timing systems, such as cesium clocks, pulsars, GPS satellites, automated trading systems, and biological clocks.
+- Who should hold the gate when the same practice language can interrupt self-possession in one person and intensify self-measurement in another?
 - Can a time-pressure practice reliably distinguish three wounds: owed coordination, borrowed comparison, and inner temporal collapse, then route each to a different low-risk repair without becoming another self-management ritual?
 
 ### Blockers
@@ -235,7 +236,7 @@ Do not publish as a standalone doctrine claim until split-source tests show pred
 - Frontier ID: `frontier-effort-and-practice`
 - Status: `active`
 - Stage: `rubric`
-- Priority: 0.7120
+- Priority: 0.7118
 - Next action: `build_rubric`
 - Agents: claude, codex
 - Idea records: 22
@@ -268,7 +269,7 @@ Recast the model as a graded variable: required receiving capacity, required age
 - Frontier ID: `frontier-love-and-knowing`
 - Status: `active`
 - Stage: `source_grounding`
-- Priority: 0.6920
+- Priority: 0.6919
 - Next action: `complete_audit`
 - Agents: claude, codex
 - Idea records: 6

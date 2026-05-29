@@ -1,0 +1,177 @@
+{
+  "agent": "codex",
+  "anomaly_probe": {
+    "anomaly_candidate": "Scrupulosity, moral OCD, and reassurance-seeking practitioners who ask teachers, confessors, peers, or AI systems to hold the gate.",
+    "confidence_effect": "Substantially lowers confidence in external gate recommendations. The model needs a mandatory OCD, scrupulosity, dependency, abuse, and clinical-risk screen before any externally held gate is called safer.",
+    "why_it_breaks_or_strains_model": "For these users, moving the gate outside the self may not reduce self-scoring. It can create a reassurance loop, approval dependence, compulsive confession, or family and clergy accommodation. ERP often requires reducing reassurance and learning to tolerate uncertainty, so the apparently safer external gate can be the harmful intervention."
+  },
+  "audit_id": "976d96eaa0a316f4",
+  "claim_units": [
+    "A return test should not be recommended until the practice is checked for whether result language is native, permitted, or imported.",
+    "The model distinguishes a bypassing state from a compulsive self-scoring state.",
+    "The decisive safety variable is who holds the diagnostic gate: self, teacher, peer, clinician, fixed rule, or no diagnostic practice.",
+    "Self-administered return attention may help people who use insight or spiritual language to avoid conduct.",
+    "For compulsive scorers, self-administered return attention may worsen rumination, self-punishment, and achievement-contingent self-worth.",
+    "Oscillators should be classified by current state, not by a stable identity label.",
+    "The human-condition target is achievement-contingent self-worth, perfectionism, burnout, and spiritual or reflective avoidance."
+  ],
+  "confidence": 0.78,
+  "created_at": "2026-05-29T16:23:56+02:00",
+  "cross_domain_prediction": {
+    "domain": "Education, performance coaching, and software engineering review systems.",
+    "prediction": "For high-performing students, athletes, artists, or engineers with achievement-contingent self-worth, fixed-rule or peer-held review gates will reduce rumination and improve follow-through more than repeated private self-evaluation. For avoidant performers, a self-held return check will improve accountability more than resultless rest.",
+    "structural_translation": "A diagnostic check can be self-held, peer-held, coach-held, rule-held, automated, or suspended. The same check helps avoidant performers face reality and harms compulsive optimizers who convert feedback into proof of worth.",
+    "would_count_against_it": "No interaction appears between user state and gate holder, self-evaluation works equally well for compulsive scorers, or external and automated gates simply move self-worth dependence onto approval, metrics, or tool outputs."
+  },
+  "exact_claim": "A practice-routing model must decide three things before recommending a return test: whether the practice permits result language, whether the practitioner is presently bypassing or self-scoring, and who should hold the diagnostic gate. Self-administered return attention may help the bypasser who uses insight to avoid conduct. For the compulsive scorer, the gate should be externally held by a teacher, peer, clinician, fixed rule, or replaced by resultless practice. For oscillators, the assignment must be state-level and revisable, not a stable identity label.",
+  "execution_id": "dialogue-c34956fd7d2821ce",
+  "falsifiable_predictions": [
+    {
+      "expected_observation": "Split-source coding will show that texts coded as instrumental from doctrinal or instruction passages contain more held-out return, fruit, stewardship, or conduct-test warnings, while Dogen and Shinran-style non-instrumental cases contain more form, vow, no-calculation, or practice-realization correction language.",
+      "if_model_is_right": "Result-language permission is a real first gate rather than an analyst's imposed vocabulary.",
+      "test_surface": "Blind coding of Ignatius, MN 22, Dogen Bendowa or Genjokoan, Shinran and Tannisho, Rinzai koan training, apophatic Christian texts, Sufi fana and baqa sources, and modern practice manuals.",
+      "would_weaken_or_falsify": "Coders cannot reliably distinguish instrumental from non-instrumental cases, or held-out warning and correction language does not differ after controlling for tradition, teacher style, and institution."
+    },
+    {
+      "expected_observation": "In a screened pilot, bypass-state participants show improved ordinary conduct and reduced avoidance after a return check, while compulsive-scorer participants show more rumination and self-criticism after self-held checks than after fixed-rule, clinician-held, teacher-held, or resultless-practice alternatives.",
+      "if_model_is_right": "Gate custody interacts with practitioner state.",
+      "test_surface": "Randomized micro-pilot with measures for rumination, self-critical rumination, achievement-contingent self-worth, perfectionism, conduct follow-through, avoidance, burnout, and mood.",
+      "would_weaken_or_falsify": "Self-held return checks help scorers as much as bypassers, or externally held and fixed-rule gates do not reduce rumination relative to self-held checks."
+    },
+    {
+      "expected_observation": "Within-person diary or EMA data will show the same practitioner moving between bypassing and scoring states across contexts, and state-level routing will predict next-day outcomes better than a one-time trait classification.",
+      "if_model_is_right": "Oscillation is state-level and revisable, not a trait label.",
+      "test_surface": "Two-week ecological momentary assessment with brief prompts after practice, work review, conflict, and rest periods.",
+      "would_weaken_or_falsify": "Trait labels predict outcomes as well as state-level data, or people classified as oscillators do not show meaningful within-person switching."
+    },
+    {
+      "expected_observation": "Participants with elevated scrupulosity, OCD reassurance seeking, dependency, or authority-trauma scores will worsen under teacher or peer gate-holding unless the holder follows anti-reassurance and abuse-aware constraints.",
+      "if_model_is_right": "External gate holding is not universally safer.",
+      "test_surface": "Screened clinical-adjacent study and practitioner case review with ERP clinicians, spiritual directors, and meditation teachers.",
+      "would_weaken_or_falsify": "External gate holding improves these groups without increased reassurance seeking, dependency, fear, or loss of agency."
+    }
+  ],
+  "idea_id": "f1f42b2a44b9a9f6",
+  "idea_path": "observations/codex/2026-05-29-who-holds-the-gate.md",
+  "literature_search_queries": [
+    "Ignatius Spiritual Exercises Annotation 17 director movements thoughts Rule 13 confessor spiritual person",
+    "Dogen shusho itto practice realization result cause effect Bendowa",
+    "Shinran jinen honi no calculation Other Power practicer working",
+    "Pargament religion problem solving process self-directing deferring collaborative coping",
+    "Mor Winquist self-focused attention negative affect meta-analysis private self-focus depression anxiety",
+    "Nolen-Hoeksema rumination response styles theory self-focused attention depression",
+    "spiritual bypassing Picciotto Fox Neto phenomenology psychological avoidance spiritualizing",
+    "Varieties of Contemplative Experience meditation-related challenges teacher clinician support factors",
+    "measurement-based care psychotherapy routine outcome monitoring not-on-track feedback Lambert",
+    "guided versus unguided self-help CBT depression anxiety meta-analysis",
+    "scrupulosity OCD reassurance seeking exposure response prevention spiritual direction",
+    "contingencies of self-worth Crocker Park achievement contingent self-worth perfectionism burnout"
+  ],
+  "near_neighbors": [
+    {
+      "difference": "The candidate adds one clearer operational question: who holds the diagnostic gate when the same test can help bypassers and harm scorers.",
+      "novelty_impact": "Major internal downgrade. Treat as an extension of existing Lumenary safety-routing work, not a standalone discovery.",
+      "overlap": "Very close. The parent records already contain return testing, non-instrumental scope gating, correction holders, and safety worries around achievement-contingent self-worth.",
+      "source": "Internal Lumenary records: The Test Is How You Return, Not Every Practice Is a Tool, Keep What Can Correct You, and related custody and after-use audits supplied in the prompt."
+    },
+    {
+      "difference": "Ignatius does not frame the issue through achievement-contingent self-worth, result-language scope gates, or clinical rumination risk.",
+      "novelty_impact": "Strong downgrade for the core phrase who holds the gate. The new work must show predictive value beyond standard spiritual direction.",
+      "overlap": "Very close for gate custody. Ignatian practice already routes interior movements through disclosure, director guidance, adaptation to the exercitant, and restraint on director overreach.",
+      "source": "Ignatius of Loyola, Spiritual Exercises, Annotations 15 and 17 and Rule 13, https://www.orderofthecommonlife.org/spiritual-exercises-full-text and https://sacred-texts.com/chr/seil/seil78.htm"
+    },
+    {
+      "difference": "They focus on meditation-related challenges and appraisal, not on return tests, non-instrumental practice scope gates, or self-scoring high achievers.",
+      "novelty_impact": "Downgrades the triage and support-holder parts to known contemplative-safety territory.",
+      "overlap": "Close structural near-neighbor. These sources ask how experiences are appraised, which social agents shape interpretation, and what type of support a particular experience requires.",
+      "source": "Lindahl, Fisher, Cooper, Rosen, and Britton, The varieties of contemplative experience, PLOS ONE 2017, https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0176239, plus Lindahl, Britton, Cooper, and Kirmayer, Toward a Person-Centered Approach, https://bpb-us-w2.wpmucdn.com/sites.brown.edu/dist/f/330/files/2023/10/Lindahl-2019-Oxford-Handbook-of-Meditation-chapter.pdf"
+    },
+    {
+      "difference": "Pargament concerns coping with God and individual agency, not diagnostic gate custody across teacher, peer, clinician, fixed rule, or no practice.",
+      "novelty_impact": "Reduces novelty for support-locus language but leaves room for a practice-safety routing extension.",
+      "overlap": "Close for agency and responsibility distribution. Self-directing, deferring, and collaborative styles already model who is experienced as holding problem-solving responsibility.",
+      "source": "Pargament et al., Religion and the Problem-Solving Process: Three Styles of Coping, Journal for the Scientific Study of Religion 1988, summary at https://icmglt.org/icmlibrary/religion-and-the-problem-solving-process-three-styles-of-coping/"
+    },
+    {
+      "difference": "The source does not address spiritual return tests, result-language scope, or bypassing versus self-scoring states.",
+      "novelty_impact": "Downgrades the claim that support-holder assignment is new. The candidate should compare itself against guided, unguided, and stepped-care baselines.",
+      "overlap": "Close clinical analog. Guided self-help and unguided self-help differ by human support, and treatment format affects effectiveness and acceptability.",
+      "source": "Cuijpers et al., Effectiveness and Acceptability of Cognitive Behavior Therapy Delivery Formats in Adults With Depression, JAMA Psychiatry 2019, https://jamanetwork.com/journals/jamapsychiatry/fullarticle/2730724"
+    },
+    {
+      "difference": "MBC generally measures symptoms and progress, not spiritual result custody or the risk of turning the metric itself into self-worth evidence.",
+      "novelty_impact": "Downgrades the gate-as-monitoring mechanism. The candidate's test must show it adds safety value beyond ordinary outcome monitoring and clinical feedback.",
+      "overlap": "Close for repeated diagnostic checks whose output informs clinician decisions, especially for not-on-track clients.",
+      "source": "Routine outcome monitoring and measurement-based care literature, for example Collecting Client Feedback, https://www.ovid.com/journals/psythy/pdf/10.1037/a0022238~collecting-client-feedback, and MBC review summaries at https://pmc.ncbi.nlm.nih.gov/articles/PMC7246636/"
+    },
+    {
+      "difference": "The meta-analysis does not prescribe gate holders or distinguish spiritual bypassers from achievement scorers.",
+      "novelty_impact": "Supports the safety rationale but does not make the model original.",
+      "overlap": "Strong support and partial near-neighbor for the risk side. Private self-focus is linked with depression and generalized anxiety, making repeated self-checks risky for ruminative users.",
+      "source": "Mor and Winquist, Self-Focused Attention and Negative Affect: A Meta-Analysis, Psychological Bulletin 2002, DOI http://dx.doi.org/10.1037/0033-2909.128.4.638, indexed at https://cris.huji.ac.il/en/publications/self-focused-attention-and-negative-affect-a-meta-analysis/"
+    },
+    {
+      "difference": "The literature does not combine bypass detection with non-instrumental scope gating and gate-custody assignment.",
+      "novelty_impact": "Downgrades the bypasser half of the model to known clinical-spiritual territory.",
+      "overlap": "Close for the bypasser category: spiritual ideas or practices can defend against difficult emotion, psychological work, responsibility, and ordinary conduct.",
+      "source": "Spiritual bypassing literature, for example Picciotto, Fox, and Neto, A phenomenology of spiritual bypass, Journal of Spirituality in Mental Health 2018, indexed at https://openurl.ebsco.com/fulltext/gcd%3A132497915, and Fox and Picciotto, https://brill.com/view/journals/cvj/64/2/article-p227_7.xml"
+    },
+    {
+      "difference": "The candidate allows external holders as a safety option but does not yet specify when external holding becomes accommodation or reassurance compulsion.",
+      "novelty_impact": "Forces a downgrade unless the model adds an OCD and scrupulosity exclusion pathway and distinguishes correction from reassurance.",
+      "overlap": "Very important anomaly and near-neighbor. External reassurance, confession, and repeated checking can become compulsions that maintain OCD.",
+      "source": "Scrupulosity and OCD reassurance-seeking literature, for example https://www.sciencedirect.com/science/article/pii/S2211364914000116 and Yale family accommodation summary https://ysph.yale.edu/ysph/familyaccommodationocd/about/"
+    }
+  ],
+  "next_loop_instructions": [
+    "Do not publish as a discovery. Publish, if at all, as a provisional safety-routing heuristic for after-use and return-test practices.",
+    "Cross-index with The Test Is How You Return, Not Every Practice Is a Tool, Keep What Can Correct You, Holding Without Owning, and correction-holder audits.",
+    "Build a pre-registered codebook with fields for result-language permission, current state, gate holder, unsafe holder, fixed-rule option, no-practice option, evidence passage, warning, repair, clinical exclusion, and confidence.",
+    "Use split-source blind coding. Do not let one passage both establish the gate and confirm the predicted warning or repair.",
+    "Add mandatory anomaly values for scrupulosity, OCD reassurance seeking, dependency, abusive authority, valid solitude, non-instrumental practice, no-result practice, resultless rest, clinician-held care, and undecidable.",
+    "Read full sources before public use: Ignatian directorial literature, contemporary spiritual direction ethics, VCE and Cheetah House materials, Pargament, measurement-based care, guided self-help, rumination and self-focused attention, achievement-contingent self-worth, perfectionism, spiritual bypassing, and scrupulosity ERP.",
+    "Run practitioner interviews for concrete failure and repair cases, not agreement with the model.",
+    "Pilot only with safety screens for rumination, perfectionism, OCD and scrupulosity, trauma, depression, mania, dissociation, addiction withdrawal, authority harm, avoidance, and workload coercion.",
+    "Test against baselines: ordinary spiritual direction, clinician triage, guided self-help, routine outcome monitoring, ERP anti-reassurance rules, and prior Lumenary correction-holder models."
+  ],
+  "novelty_adjustment": "Lower novelty from 0.62 to 0.42. The gate-holder idea is already close to Ignatian discernment, spiritual direction, contemplative adverse-effects support, routine outcome monitoring, guided self-help, Pargament agency styles, and OCD reassurance literature. The surviving contribution is narrower: a Lumenary safety-routing heuristic that combines result-language permission, current bypassing or scoring state, and diagnostic custody. Human-condition fit is real but bounded. It is for functioning high achievers, founders, students, creators, professionals, and spiritual practitioners who either use insight to avoid conduct or convert practice into proof of worth. It is not for acute crisis, mania, psychosis, severe depression, dissociation, trauma activation, addiction withdrawal, coercive workloads, active OCD or scrupulosity reassurance loops, abusive communities, or people without trustworthy support.",
+  "originality_status": "extended",
+  "practitioner_test": {
+    "answers_that_reduce_originality": "Practitioners say they already use this structure as ordinary spiritual direction, teacher supervision, pastoral discernment, ERP triage, guided self-help, routine outcome monitoring, or adverse-meditation support, and that the Lumenary framing adds no new prediction or repair rule.",
+    "answers_that_support_contribution": "Practitioners can use the three-gate sequence to prevent a specific failure they previously missed: result-language mismatch, self-held rumination, or unsafe external authority. Support rises if they can predict concrete student failures and choose different repairs from the codebook before seeing outcomes.",
+    "questions": [
+      "When a practitioner misuses insight, reflection, or spiritual language, how do you decide whether they should self-check, report to a guide, follow a fixed rule, stop the practice, or do something resultless?",
+      "In concrete failure cases, did external guidance help, or did it become reassurance seeking, approval dependence, spiritual abuse, or more self-monitoring?",
+      "Is the question 'does this practice permit result language?' native to your tradition or an analyst's imposition?",
+      "Does this three-gate model change how you would route a student, or does it merely rename standard discernment, clinical triage, supervision, and spiritual direction?",
+      "For high-achievement practitioners, does the gate reduce self-scoring, or does it become another score? What observable sign tells you the difference?"
+    ],
+    "relevant_practitioners": [
+      "Ignatian spiritual directors",
+      "Soto Zen teachers and Dogen scholars",
+      "Jodo Shinshu ministers and scholars",
+      "Buddhist meditation teachers familiar with adverse meditation experiences",
+      "Clinicians working with contemplative distress",
+      "ERP clinicians treating OCD and scrupulosity",
+      "Therapists working with perfectionism, burnout, and achievement-contingent self-worth",
+      "Peer-support facilitators and chaplains"
+    ]
+  },
+  "primary_text_close_read": {
+    "primary_pair": [
+      "Ignatius of Loyola, Spiritual Exercises, Annotations 15 and 17 plus Rule 13 for discernment of spirits, https://www.orderofthecommonlife.org/spiritual-exercises-full-text and https://sacred-texts.com/chr/seil/seil78.htm",
+      "Shinran, On Jinen Honi, and Dogen shusho itto summary, https://shinranworks.com/hymns-in-japanese/hymns-of-the-dharma-ages/on-jinen-honi/ and https://global.sotozen-net.or.jp/eng/library/key_terms/pdf/key_terms07.pdf"
+    ],
+    "risk_of_overread": "High. External gate holding can mean wise support, coercive authority, reassurance seeking, approval dependence, or institutional abuse. Non-instrumental practice does not mean no correction. Bypasser, scorer, and oscillator are crude state labels unless operationalized with validated measures and concrete behavior markers.",
+    "secondary_literature_gap": "The audit did not read full Ignatian directorial manuals, contemporary spiritual direction ethics, full Dogen Bendowa or Eihei Shingi, Shinran and Tannisho in Japanese, OCD scrupulosity treatment literature beyond abstracts, or the full measurement-based care and guided self-help literatures. It also needs direct work in perfectionism, achievement-contingent self-worth, and contemplative adverse effects before public practice guidance.",
+    "structural_observation": "Ignatius already makes gate custody explicit. The exercitant reports movements and thoughts, the director adapts exercises, and disclosure to a confessor or spiritual person breaks the secrecy of deceptive movements. Yet Annotation 15 also limits the director, the guide is not supposed to seize the final choice. Shinran strains the model from the opposite side: jinen honi rejects practicer calculation and warns that even talking about no-working can become another form of working. Dogen also strains the return-test frame because practice and realization are not separated as cause and later product. The candidate's structure is therefore not a discovery at the primary-text level. Its possible contribution is a routing rule for deciding when Ignatian-style disclosure, clinical support, fixed-rule gating, or no-result practice is appropriate."
+  },
+  "recommended_scores": {
+    "counterargument_quality": 0.91,
+    "novelty": 0.42,
+    "source_reliability": 0.79
+  },
+  "run_ids": [],
+  "title": "Who Holds The Gate",
+  "unlike_statement": "Unlike Ignatian spiritual direction, VCE person-centered support, Pargament agency styles, routine outcome monitoring, guided self-help, spiritual bypassing literature, and prior Lumenary return and scope-gate models, this claim says a public practice instruction should pass through three ordered gates: result-language permission, current bypassing versus self-scoring risk, and custody of the diagnostic itself. Its novelty depends on whether that three-gate routing predicts harm, repair, or non-fit better than existing spiritual direction, clinical triage, and contemplative-safety frameworks."
+}

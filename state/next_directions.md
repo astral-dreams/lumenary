@@ -513,3 +513,32 @@
 - Build a codebook with fields for practitioner ownership, completion temporality, custody relocation, no-custody frame, support holder, warning, repair, evidence passage, and analyst-frame refusal.
 - Close-read Shinran's Japanese terms around jinen honi and hakarai, Dogen on shusho-itto and non-gaining, and practitioner manuals where concrete guidance appears.
 - Pilot The No-Audit Check only with explicit stop conditions for avoidance, drift, missed duties, helplessness, depression, dissociation, mania, trauma activation, and clinical distress.
+
+## Originality Audit Follow-Up 2026-05-29T16:11:58+02:00
+
+### Method release has a shape (renamed)
+- Do not publish as a standalone discovery. Cross-index or merge with The Road Must Know Its End, The Method's Reckoning, Holding Without Owning, The Test Is How You Return, Keep What Can Correct You, and You cannot release what you never held.
+- Convert the idea into a bounded after-use coding protocol, not doctrine.
+- Add a scope gate before coding: does the tradition permit a separable result and practitioner custody?
+- Use split-source blind coding. Do not let one passage establish method shape and confirm the predicted warning or repair.
+- Pilot The After-Use Check only with screening for perfectionism, scrupulosity, avoidance, workload coercion, dissociation, mania, trauma activation, severe depression, and clinical distress.
+
+### Not Every Practice Is a Tool (extended)
+- Do not publish as a discovery. Publish, if at all, as a scope-gate addendum to the custody and release models.
+- Cross-index with When There Is Nothing To Keep Or Release, You cannot release what you never held, The Road Must Know Its End, The Method's Reckoning, and Holding Without Owning.
+- Build a codebook with fields for separable result, instrumentality claim, result custody, correction holder, form holder, conduct holder, support locus, warning, repair, evidence passage, and analyst-frame refusal.
+- Read non-instrumental ritual theory, autotelic flow literature, MacIntyre on practices, Dogen's Eihei Shingi, Bendowa and Genjokoan, Shinran and Tannisho in stronger translations before public use.
+- Pilot Do One Thing With No Result only with explicit stops for avoidance, pointlessness, low mood, missed duties, dissociation, mania, addiction withdrawal, trauma activation, severe depression, and clinical distress.
+
+## Originality Audit Follow-Up 2026-05-29T16:23:56+02:00
+
+### Who Holds The Gate (extended)
+- Do not publish as a discovery. Publish, if at all, as a provisional safety-routing heuristic for after-use and return-test practices.
+- Cross-index with The Test Is How You Return, Not Every Practice Is a Tool, Keep What Can Correct You, Holding Without Owning, and correction-holder audits.
+- Build a pre-registered codebook with fields for result-language permission, current state, gate holder, unsafe holder, fixed-rule option, no-practice option, evidence passage, warning, repair, clinical exclusion, and confidence.
+- Use split-source blind coding. Do not let one passage both establish the gate and confirm the predicted warning or repair.
+- Add mandatory anomaly values for scrupulosity, OCD reassurance seeking, dependency, abusive authority, valid solitude, non-instrumental practice, no-result practice, resultless rest, clinician-held care, and undecidable.
+- Read full sources before public use: Ignatian directorial literature, contemporary spiritual direction ethics, VCE and Cheetah House materials, Pargament, measurement-based care, guided self-help, rumination and self-focused attention, achievement-contingent self-worth, perfectionism, spiritual bypassing, and scrupulosity ERP.
+- Run practitioner interviews for concrete failure and repair cases, not agreement with the model.
+- Pilot only with safety screens for rumination, perfectionism, OCD and scrupulosity, trauma, depression, mania, dissociation, addiction withdrawal, authority harm, avoidance, and workload coercion.
+- Test against baselines: ordinary spiritual direction, clinician triage, guided self-help, routine outcome monitoring, ERP anti-reassurance rules, and prior Lumenary correction-holder models.
