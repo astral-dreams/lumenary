@@ -91,10 +91,44 @@ def weighted_average(report: dict, metric: str, weight: str) -> float:
     return weighted_total / weight_total if weight_total else 0.0
 
 
+def full_day_rows(report: dict) -> list[dict]:
+    today_key = datetime.now().strftime("%Y%m%d")
+    return [row for row in report.get("rows", []) if str(row.get("date", "")) < today_key]
+
+
+def full_day_report(report: dict) -> dict:
+    copy = dict(report)
+    copy["rows"] = full_day_rows(report)
+    return copy
+
+
+def first_visit_rows(snapshot: dict) -> list[dict]:
+    rows = [
+        row
+        for row in snapshot.get("first_visit_pages", {}).get("rows", [])
+        if row.get("eventName") == "first_visit" and row.get("landingPage") not in {"", "(not set)"}
+    ]
+    if rows:
+        return sorted(rows, key=lambda row: num(row.get("eventCount")), reverse=True)
+    # Fallback for snapshots collected before the first_visit_pages report existed.
+    return [
+        {
+            "landingPage": row.get("landingPage", ""),
+            "eventCount": row.get("sessions", 0),
+            "totalUsers": row.get("totalUsers", 0),
+        }
+        for row in snapshot.get("landing_pages", {}).get("rows", [])
+        if row.get("landingPage") not in {"", "(not set)"}
+    ]
+
+
 def snapshot_meta(snapshot: dict, missing_label: str) -> str:
     collected = snapshot.get("collected_at")
     if not collected:
         return missing_label
+    end_date = snapshot.get("end_date")
+    if end_date:
+        return f"Through {end_date}; collected {collected}"
     return f"Collected {collected}"
 
 
@@ -418,10 +452,18 @@ def traffic_chart(rows: list[dict]) -> str:
             continue
         x = left + (index / max(1, len(sorted_rows) - 1)) * plot_width
         labels += f'<text x="{x:.1f}" y="{height - 10}" text-anchor="middle">{escape(format_date(row.get("date", "")))}</text>'
+    y_labels = ""
+    for tick in [0, maximum / 2, maximum]:
+        y = top + plot_height - (tick / maximum) * plot_height
+        y_labels += (
+            f'<line class="grid-line" x1="{left}" y1="{y:.1f}" x2="{width - right}" y2="{y:.1f}" />'
+            f'<text x="{left - 8}" y="{y + 4:.1f}" text-anchor="end">{whole(tick)}</text>'
+        )
 
     return f"""
       <div class="chart-shell">
         <svg class="traffic-chart" viewBox="0 0 {width} {height}" role="img" aria-label="Daily sessions and users">
+          {y_labels}
           <line x1="{left}" y1="{top + plot_height}" x2="{width - right}" y2="{top + plot_height}" />
           <line x1="{left}" y1="{top}" x2="{left}" y2="{top + plot_height}" />
           <polyline class="line sessions" points="{points(values)}" />
@@ -767,6 +809,9 @@ def page_shell(title: str, active: str, body: str) -> bytes:
         stroke: #e5e7eb;
         stroke-width: 1;
       }}
+      .traffic-chart .grid-line {{
+        stroke: #f3f4f6;
+      }}
       .traffic-chart text {{
         fill: var(--faint);
         font-size: 12px;
@@ -842,7 +887,7 @@ def page_shell(title: str, active: str, body: str) -> bytes:
           <p class="kicker">Localhost only</p>
         </div>
         <div class="header-actions">
-          <span class="range-chip">28 days</span>
+          <span class="range-chip">28 full days</span>
           <button class="update-button" data-update type="button">Collect Data</button>
           <span class="update-status {status_class}" data-update-status>{escape(status_text)}</span>
         </div>
@@ -887,15 +932,11 @@ def page_shell(title: str, active: str, body: str) -> bytes:
 
 
 def overview_page():
-    setup = read_json("data/analytics/setup-status.json", {})
-    readiness = read_json("data/analytics/aeo-readiness.json", {"checks": []})
-    queries = read_json("data/analytics/aeo-queries.json", [])
     ga4 = ga4_snapshot()
     gsc = gsc_snapshot()
-    overview = ga4.get("overview", {})
-    ideas = read_jsonl("hypotheses/ideas.jsonl")
-    sources = read_jsonl("sources/sources_index.jsonl")
+    overview = full_day_report(ga4.get("overview", {}))
     gsc_rows = gsc.get("rows", [])
+    first_pages = first_visit_rows(ga4)
     sessions = metric_sum(overview, "sessions")
     users = metric_sum(overview, "totalUsers")
     views = metric_sum(overview, "screenPageViews")
@@ -914,20 +955,19 @@ def overview_page():
 
     body += '<div class="two-col">'
     body += panel("28-Day Traffic", traffic_chart(overview.get("rows", [])), "Sessions and users")
-    landing_rows = []
-    for row in ga4.get("landing_pages", {}).get("rows", [])[:10]:
-        landing_rows.append(
+    first_visit_table_rows = []
+    for row in first_pages[:12]:
+        first_visit_table_rows.append(
             [
                 f"<code>{escape(row.get('landingPage', '(not set)'))}</code>",
-                whole(row.get("sessions")),
+                whole(row.get("eventCount")),
                 whole(row.get("totalUsers")),
-                whole(row.get("screenPageViews")),
             ]
         )
     body += panel(
-        "Top Landing Pages",
-        table(["Page", "Sessions", "Users", "Views"], landing_rows, "No GA4 landing page rows are available yet."),
-        "GA4",
+        "First Visit First Pages",
+        table(["Page", "First visits", "Users"], first_visit_table_rows, "No first-visit landing page rows are available yet."),
+        "Previous full days only",
     )
     body += "</div>"
 
@@ -942,44 +982,6 @@ def overview_page():
             '<p class="empty-state">Search Console is verified and the sitemap is submitted, but Google has not returned query data yet. This is normal immediately after verification.</p>',
         )
 
-    body += '<section class="score-grid">'
-    body += card("Sessions", whole(sessions), "Total GA4 sessions.")
-    body += card("Users", whole(users), "Total GA4 users.")
-    body += card("Page views", whole(views), "Screen/page views.")
-    body += card("GSC rows", whole(len(gsc_rows)), "Query/page rows returned.")
-    body += card("Promoted claims", str(public_claim_count(ideas)), "Findings passing the public-claim gate.")
-    body += card("Idea records", str(len(ideas)), "Structured observations in the corpus.")
-    body += card("Source cards", str(len(sources)), "Grounding sources available to the loop.")
-    body += card("AEO queries", str(len(queries)), "Starter citation questions.")
-    body += "</section>"
-
-    setup_rows = ""
-    setup_items = [
-        ("GA4", setup.get("ga4", {}).get("reporting_status", setup.get("ga4", {}).get("status", "waiting")), setup.get("ga4", {}).get("notes", "")),
-        ("Search Console", setup.get("gsc", {}).get("reporting_status", setup.get("gsc", {}).get("status", "waiting")), setup.get("gsc", {}).get("notes", "")),
-        ("AEO", setup.get("aeo", {}).get("status", "ready"), "Referral events, llms.txt, schema, sitemap, and query inventory are wired."),
-        ("Sitemap", "ready", setup.get("gsc", {}).get("sitemap", "https://thelumenary.org/sitemap-index.xml")),
-    ]
-    for label, value, detail in setup_items:
-        setup_rows += (
-            '<div class="setup-row">'
-            f"<strong>{escape(label)}</strong>"
-            f"{badge(status_label(value), status_class(value))}"
-            f"<p>{escape(detail)}</p>"
-            "</div>"
-        )
-    body += panel("Analytics Setup", f'<div class="setup-list">{setup_rows}</div>')
-
-    check_rows = ""
-    for check in readiness.get("checks", []):
-        check_rows += (
-            '<div class="setup-row">'
-            f"<strong>{escape(check.get('label', ''))}</strong>"
-            f"{badge(check.get('status', ''), status_class(check.get('status', '')))}"
-            f"<p>{escape(check.get('notes', ''))}<br><code>{escape(check.get('path', ''))}</code></p>"
-            "</div>"
-        )
-    body += panel("AEO Setup Checks", f'<div class="setup-list">{check_rows}</div>')
     body += "</div>"
     return page_shell("Marketing Analytics", "Overview", body)
 
