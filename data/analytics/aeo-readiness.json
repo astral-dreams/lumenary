@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-26T14:39:52.786760+00:00",
+  "updated_at": "2026-05-29T07:14:28.001223+00:00",
   "checks": [
     {
       "label": "llms.txt",
@@ -23,7 +23,7 @@
       "label": "structured data",
       "status": "ready",
       "path": "sitewide",
-      "notes": "Home, Findings, Map, Method, Agent, and article pages emit schema."
+      "notes": "Home, Findings, Map, Method, and article pages emit schema."
     },
     {
       "label": "answer-engine referrals",

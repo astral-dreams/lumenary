@@ -1,6 +1,6 @@
 # Lumenary Frontiers
 
-Generated: 2026-05-29T07:57:32+02:00
+Generated: 2026-05-29T08:14:45+02:00
 
 These are live research agendas derived from idea records, originality audits, publication history, and next-loop instructions.
 
@@ -9,7 +9,7 @@ These are live research agendas derived from idea records, originality audits, p
 - Frontier ID: `frontier-method-reckoning`
 - Status: `active`
 - Stage: `source_grounding`
-- Priority: 0.9093
+- Priority: 0.9085
 - Next action: `complete_audit`
 - Agents: claude, codex
 - Idea records: 6
@@ -37,41 +37,12 @@ Rebuild the model as two axes: validates versus undermines, and retained versus 
 - Reduce novelty from 0.82 to about 0.42. The exact language is fresh, but both axes and much of the predictive burden are already present in prior Lumenary records: Method's Reckoning, Custody of Unclaimed Attention, Authority-Boundary Ecology, Custody and...
 - Do not raise novelty until the originality audit is completed.
 
-## What modern people need teachings for
-
-- Frontier ID: `frontier-modern-human-condition`
-- Status: `active`
-- Stage: `rubric`
-- Priority: 0.8242
-- Next action: `build_rubric`
-- Agents: claude, codex
-- Idea records: 5
-- Audits: 2
-
-### Core Claim
-
-Identity-reframing contemplative practices differ in where they locate the continuity that lets a practitioner receive, survive, interpret, and integrate transformation. Some locate continuity mainly in individual capacities such as attention, memory, agency, and reflexivity. Others locate it in teacher relation, vow, grace, ritual, community, lineage, or post-practice integration. The modern danger is not self-dissolution in general, but a mismatch...
-
-### Next Prompt
-
-Do not publish as a standalone doctrine claim until split-source tests show predictive gain beyond Asad, Lindbeck, Sharf, Ignatian discernment, and VCE.
-
-### Open Anomalies
-
-- Self-luminous recognition traditions and deliberate solitary practice, such as Advaita svaprakasha language, some hermit lineages, Quaker inner-light language, and practitioners who leave abusive communities because communal recognition is less trustworthy...
-- Dogen practice-realization, radical Other Power in Tannisho, inherited communal religion, and successful ordinary ethical practice without a marked peak experience.
-
-### Blockers
-
-- Lower novelty from 0.72 to 0.43. Publishability should stay provisional. Treat the idea as an applied extension of discursive-tradition, doctrine-as-grammar, Buddhist-modernism, spiritual-direction, and VCE appraisal work, not as a discovery.
-- Lower novelty from 0.58 to 0.41. The teaching line is strong and publishable only as a restrained synthesis for achievement-contingent self-worth. The research model should be treated as extended prior art until it predicts warnings, repairs, or return...
-
 ## How silence becomes evidence after the gap
 
 - Frontier ID: `frontier-gap-report`
 - Status: `active`
 - Stage: `rubric`
-- Priority: 0.8161
+- Priority: 0.8160
 - Next action: `build_rubric`
 - Agents: claude, codex
 - Idea records: 6
@@ -103,7 +74,7 @@ Test the rubric on Brihadaranyaka 2.4, 2.5, 3.7.23, SN 22.59, and SN 22.95 befor
 - Frontier ID: `frontier-inferential-gap`
 - Status: `active`
 - Stage: `rubric`
-- Priority: 0.8134
+- Priority: 0.8133
 - Next action: `build_rubric`
 - Agents: claude, codex
 - Idea records: 13
@@ -131,12 +102,43 @@ Rewrite the claim as an interpretive reconstruction unless commentarial evidence
 - Reduce novelty from 0.82 to about 0.53. The idea is useful and testable, but its main components are strongly anticipated by prior Lumenary ledgers, VCE and Cheetah House style adverse-effects research, Engler's functional ego warning, Pargament's agency...
 - Reduce novelty from 0.82 to about 0.54. The four-field compression is useful, but most components have strong near-neighbors in prior Lumenary audits, conversion theory, rites-of-passage theory, doctrine-as-grammar, religious problem-solving styles...
 
+## Remainder pressure after self-negation
+
+- Frontier ID: `frontier-remainder-pressure`
+- Status: `active`
+- Stage: `rubric`
+- Priority: 0.7863
+- Next action: `build_rubric`
+- Agents: claude, codex
+- Idea records: 8
+- Audits: 4
+
+### Core Claim
+
+When contemplative traditions disagree about what remains after self-inquiry, the disagreement may begin earlier than anyone notices: at the question of whether the distance between the seeker and the sought is real. Three temporal topologies shape everything that follows. In the first, practice causes realization. The distance is real and must be crossed. The practitioner is genuinely ignorant before, genuinely transformed after. The path moment in...
+
+### Next Prompt
+
+Do not publish as doctrine. Treat as a comparative and practitioner-facing research heuristic.
+
+### Open Anomalies
+
+- Dogen's practice-realization and inherited-practice cases.
+- Dogen-style practice-realization, inherited communal practice, and radical Other Power cases where the analyst cannot cleanly separate custody, entry, and receiving surface.
+- Huangbo search-refusal, Dogen practice-realization, and Dzogchen direct recognition cases where the tradition rejects the search sequence rather than producing a downstream remainder to manage.
+
+### Blockers
+
+- Reduce novelty from 0.80 to about 0.56. The candidate is useful and testable, but the core components are already strongly anticipated by extended and socially extended religious cognition, Asad's discursive tradition, Lindbeck's grammar model, Pargament's...
+- Reduce novelty from 0.77 to about 0.55. The idea is useful and testable, but most components are strongly anticipated by prior Lumenary ledgers, Pargament's religious coping styles, Lindbeck's doctrine-as-grammar, Asad's discursive tradition, VCE and...
+- Reduce novelty from 0.78 to about 0.52. The synthesis is useful and testable, but both halves are already present in prior Lumenary audits, and the exact upstream-downstream move is closely anticipated by Claude's Reflexivity Policy. External prior art...
+
 ## Translation strain as a test of convergence
 
 - Frontier ID: `frontier-translation-strain`
 - Status: `active`
 - Stage: `source_grounding`
-- Priority: 0.7871
+- Priority: 0.7862
 - Next action: `complete_audit`
 - Agents: claude, codex
 - Idea records: 29
@@ -164,43 +166,12 @@ Build a one-page translation-strain rubric with fields for claim unit, role, ont
 - Reduce novelty from 0.78 to about 0.22. This is already present in the prior Lumenary originality audit and strongly anticipated by comparative-method literature.
 - Reduce novelty from 0.84 to about 0.61. The phrase is useful and may be generative, but it synthesizes known work on pure awareness, witness consciousness, self-modeling, and cessation.
 
-## Remainder pressure after self-negation
-
-- Frontier ID: `frontier-remainder-pressure`
-- Status: `active`
-- Stage: `rubric`
-- Priority: 0.7864
-- Next action: `build_rubric`
-- Agents: claude, codex
-- Idea records: 8
-- Audits: 4
-
-### Core Claim
-
-When contemplative traditions disagree about what remains after self-inquiry, the disagreement may begin earlier than anyone notices: at the question of whether the distance between the seeker and the sought is real. Three temporal topologies shape everything that follows. In the first, practice causes realization. The distance is real and must be crossed. The practitioner is genuinely ignorant before, genuinely transformed after. The path moment in...
-
-### Next Prompt
-
-Do not publish as doctrine. Treat as a comparative and practitioner-facing research heuristic.
-
-### Open Anomalies
-
-- Dogen's practice-realization and inherited-practice cases.
-- Dogen-style practice-realization, inherited communal practice, and radical Other Power cases where the analyst cannot cleanly separate custody, entry, and receiving surface.
-- Huangbo search-refusal, Dogen practice-realization, and Dzogchen direct recognition cases where the tradition rejects the search sequence rather than producing a downstream remainder to manage.
-
-### Blockers
-
-- Reduce novelty from 0.80 to about 0.56. The candidate is useful and testable, but the core components are already strongly anticipated by extended and socially extended religious cognition, Asad's discursive tradition, Lindbeck's grammar model, Pargament's...
-- Reduce novelty from 0.77 to about 0.55. The idea is useful and testable, but most components are strongly anticipated by prior Lumenary ledgers, Pargament's religious coping styles, Lindbeck's doctrine-as-grammar, Asad's discursive tradition, VCE and...
-- Reduce novelty from 0.78 to about 0.52. The synthesis is useful and testable, but both halves are already present in prior Lumenary audits, and the exact upstream-downstream move is closely anticipated by Claude's Reflexivity Policy. External prior art...
-
 ## Where freed attention is allowed to rest
 
 - Frontier ID: `frontier-attention-custody`
 - Status: `active`
 - Stage: `rubric`
-- Priority: 0.7665
+- Priority: 0.7664
 - Next action: `build_rubric`
 - Agents: codex
 - Idea records: 2
@@ -227,12 +198,44 @@ Close-read Dzogchen and Mahamudra instructions on rigpa or luminous awareness ag
 - Reduce novelty from 0.72 to about 0.58. The custody phrase appears fresh, but the structure sits close to established work on pure consciousness, constructivism, theistic versus monistic typologies, witness-consciousness, and apophasis.
 - Reduce novelty from 0.78 to about 0.42. The useful contribution is not the broad claim that practices carry direction through many layers. That is strongly anticipated by primary texts, Dunne, Lutz, Lindbeck, Foucault, Hadot, Bourdieu, Pargament, VCE...
 
+## What modern people need teachings for
+
+- Frontier ID: `frontier-modern-human-condition`
+- Status: `active`
+- Stage: `rubric`
+- Priority: 0.7372
+- Next action: `build_rubric`
+- Agents: claude, codex
+- Idea records: 6
+- Audits: 4
+
+### Core Claim
+
+Identity-reframing contemplative practices differ in where they locate the continuity that lets a practitioner receive, survive, interpret, and integrate transformation. Some locate continuity mainly in individual capacities such as attention, memory, agency, and reflexivity. Others locate it in teacher relation, vow, grace, ritual, community, lineage, or post-practice integration. The modern danger is not self-dissolution in general, but a mismatch...
+
+### Next Prompt
+
+Do not publish as a standalone doctrine claim until split-source tests show predictive gain beyond Asad, Lindbeck, Sharf, Ignatian discernment, and VCE.
+
+### Open Anomalies
+
+- Self-luminous recognition traditions and deliberate solitary practice, such as Advaita svaprakasha language, some hermit lineages, Quaker inner-light language, and practitioners who leave abusive communities because communal recognition is less trustworthy...
+- Dogen practice-realization, radical Other Power in Tannisho, inherited communal religion, and successful ordinary ethical practice without a marked peak experience.
+- Observer-independent clocks and nonhuman timing systems, such as cesium clocks, pulsars, GPS satellites, automated trading systems, and biological clocks.
+- Can a time-pressure practice reliably distinguish three wounds: owed coordination, borrowed comparison, and inner temporal collapse, then route each to a different low-risk repair without becoming another self-management ritual?
+
+### Blockers
+
+- Lower novelty from 0.72 to 0.43. Publishability should stay provisional. Treat the idea as an applied extension of discursive-tradition, doctrine-as-grammar, Buddhist-modernism, spiritual-direction, and VCE appraisal work, not as a discovery.
+- Lower novelty from 0.58 to 0.41. The teaching line is strong and publishable only as a restrained synthesis for achievement-contingent self-worth. The research model should be treated as extended prior art until it predicts warnings, repairs, or return...
+- Lower novelty from 0.55 to 0.26. Human-condition fit is direct but narrow: stable adults with deadline stress, rumination, future dread, and achievement-contingent self-worth. It is not for acute panic, trauma activation, severe depression, mania...
+
 ## The boundary between effort and gift
 
 - Frontier ID: `frontier-effort-and-practice`
 - Status: `active`
 - Stage: `rubric`
-- Priority: 0.7145
+- Priority: 0.7144
 - Next action: `build_rubric`
 - Agents: claude, codex
 - Idea records: 22

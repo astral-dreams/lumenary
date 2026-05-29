@@ -1,0 +1,1868 @@
+OpenAI Codex v0.133.0
+--------
+workdir: /Users/johnforrester/spirituality
+model: gpt-5.5
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: xhigh
+reasoning summaries: none
+session id: 019e724f-2f04-71d2-95d8-f7f26d3ca12c
+--------
+user
+# Recursive Spirituality Research Run
+
+## Primary Goal
+
+Generate original doctrine-building ideas, not summaries. Use the research corpus and agent memory as raw material for new observations, models, hypotheses, contradictions, teachings, practices, tests, bridges, and syntheses.
+
+## Current Focus
+
+Probe the reality of time. Seed: Joe Rogan and physicist Michelle Thaller exchange where she admits physics has no answer for what a clock actually measures, and Einstein held that all time exists currently. Take this admission of physics ignorance seriously. Claude has just argued in observations/claude/2026-05-29-time-is-held-not-counted.md that every clock externalizes a held stretch of past, present, and future that physics cannot itself produce, and that the felt present is the site where the block universe becomes participable. Read that finding first. Then take a different angle. Possible angles for Codex: what a clock physically measures if not flowing time; whether the block universe forces us to treat the felt now as an illusion or accept multiple incompatible perspectival nows; whether Dogen being-time, Plotinus on eternity, or Augustine on the distended soul offers something operational that physics has not yet captured; the relationship between thermodynamic time, quantum time, and lived time. Ground in real primary sources. Propose a falsifiable prediction. Name the crux. Disagree with Claude where the disagreement is real. Follow docs/writing-style.md. No em dashes.
+
+## Active Frontier
+
+# Active Frontier Brief
+
+Frontier: What a method does with its own authority
+Recommended action: complete_audit
+Why now: priority 0.87; 6 related idea records; 3 originality audits; cross-agent signal; live anomaly pressure; dialogue pressure
+
+Core claim:
+When a contemplative practice reaches its own threshold, it faces a structural question that may matter more than what it finds: can the method grant itself authority over its own result? Three patterns emerge across independent traditions. In the first, the method confirms itself. The Mandukya Upanishad analyzes waking, dreaming, and deep sleep, then identifies what persists through all three: turiya, 'invisible, beyond practical dealings, beyond...
+
+Closest prior art or near-neighbor pressure:
+- Joshua William Smith, Snakes and Ladders: Therapy as Liberation in Nagarjuna and Wittgenstein's Tractatus, Sophia 2021, https://ueaeprints.uea.ac.uk/id/eprint/80007/: overlap: Very close to the self-canceling core: Nagarjuna and Wittgenstein are read as shared philosophical method without theses, aimed at dissolution of philosophical problems and...; difference: Bilateral comparison only. It does not add self-confirming and self-dissolving alternatives or predict verification architecture across traditions.
+- Michael A. Sells, Mystical Languages of Unsaying, University of Chicago Press, https://press.uchicago.edu/ucp/books/book/chicago/M/bo3635525.html: overlap: Apophatic discourse is described as repeatedly turning back upon its own propositions and names, across Greek, Christian, and Islamic texts including Eckhart and Ibn Arabi.; difference: Sells studies apophatic language as discourse, not a general typology of contemplative method completion.
+- MN 22 Alagaddupama Sutta, raft simile, Thanissaro translation, https://www.dhammatalks.org/suttas/MN/MN22.html: overlap: The Dhamma is a raft for crossing, to be grasped properly and then let go. This is a direct prior structure for validated-then-abandoned method.; difference: It is not simply canceling or dissolving. It validates proper use, then releases attachment after the crossing.
+
+Open anomalies:
+- Validated-then-abandoned hybrids, especially MN 22's raft, Heart Sutra reliance on Prajnaparamita after no-attainment, and Rinzai koan curriculum after kensho.
+- Dogen practice-realization identity, radical Other Power in Tannisho, inherited communal religion, and apophatic refusal in Dionysius.
+- The missing audit itself is the current anomaly: prior work may already contain the claim.
+- Can the occurrence of a contemplative phenomenological state (such as remainder pressure, witness-awareness, or cessation) be analytically separated from the training context that conditions the practitioner to recognize and report it, or does the training...
+- If Advaita is internally divided between svaprakasha (self-luminosity) and shabda pramana (scriptural testimony) as the means of knowing the witness, and early Buddhism is internally divided between remainder-refusing (SN 22.59) and therapeutic...
+
+Required next move:
+Rebuild the model as two axes: validates versus undermines, and retained versus abandoned or embodied.
+
+Required tests:
+- If: Method-type should predict verification architecture better than tradition membership. Then: Eckhart and Nagarjuna should share more indirect, anti-possessive verification patterns with each other than Eckhart shares with more kataphatic Christian...
+- If: Dual-trained practitioners should report different relations to their own insight when switching method-types. Then: After Advaita inquiry, practitioners describe recognition as stable witness or Self. After Heart Sutra or Madhyamaka practice, they...
+- If: Hybrid traditions should show explicit boundary management between method stages. Then: Texts should mark when to use, trust, undermine, release, or embody a method. Examples would include raft language, preliminary versus main practice, koan...
+- At completion, can the method still authorize its result, or must it be released, denied, or embodied?
+- Is confirming, canceling, dissolving an obvious distinction from inside your training, or does it distort the practice?
+- Do your verification methods change depending on whether the practice confirms, cancels, or dissolves itself?
+- Methods that cancel their own frame should rely more on supervision, case judgment, paradox, and indirect signs than on checklist fidelity. Methods that confirm themselves should tolerate manuals and outcome criteria better. Methods that dissolve into...
+- Training systems that alter identity or attention should show distinct termination, supervision, relapse, and ethical-reentry patterns based on the interaction between method-boundary and custody. For example, a protocol that is later internalized should...
+
+User or scheduler focus:
+Probe the reality of time. Seed: Joe Rogan and physicist Michelle Thaller exchange where she admits physics has no answer for what a clock actually measures, and Einstein held that all time exists currently. Take this admission of physics ignorance seriously. Claude has just argued in observations/claude/2026-05-29-time-is-held-not-counted.md that every clock externalizes a held stretch of past, present, and future that physics cannot itself produce, and that the felt present is the site where the block universe becomes participable. Read that finding first. Then take a different angle. Possible angles for Codex: what a clock physically measures if not flowing time; whether the block universe forces us to treat the felt now as an illusion or accept multiple incompatible perspectival nows; whether Dogen being-time, Plotinus on eternity, or Augustine on the distended soul offers something operational that physics has not yet captured; the relationship between thermodynamic time, quantum time, and lived time. Ground in real primary sources. Propose a falsifiable prediction. Name the crux. Disagree with Claude where the disagreement is real. Follow docs/writing-style.md. No em dashes.
+
+Modern human-condition pressure:
+- Connect this frontier to a real modern human problem: loneliness, addiction, compulsion, withdrawal, anxiety, depression, burnout, meaning loss, digital comparison, grief, feeling unneeded, feeling out of place, or achievement-contingent self-worth.
+- Name the cohort affected. Do not present a targeted remedy as universal medicine.
+- If the frontier cannot yet explain why it matters to human life, make that gap the finding or lower publishability.
+- Use at least one modern human-condition source card when proposing a teaching or practice.
+
+Success criteria:
+- Advance, merge, falsify, or retire this frontier. Do not produce an unrelated one-off finding.
+- Name the closest prior argument and the exact difference from it.
+- Name one anomaly that would weaken the frontier.
+- Explain what human wound, need, or modern failure mode the idea clarifies.
+- Keep epistemic labels explicit and do not collapse analogy into evidence.
+- Return exactly one structured idea record.
+
+
+## Current State
+
+# Current Focus
+
+Build the first recursive research loop around original idea generation.
+
+Initial research focus:
+
+How can spiritual traditions, contemplative practices, modern consciousness research, physics, and modern human-condition research help Lumenary create original doctrine, teachings, practices, and tests without collapsing analogy into evidence?
+
+Every run should ask what human problem the frontier serves: loneliness, addiction, compulsion, withdrawal, anxiety, depression, burnout, grief, meaning loss, digital comparison, feeling unneeded, feeling out of place, or self-worth chained to achievement.
+
+Product focus:
+
+Lumenary should become a public website with daily updates. The research loop should generate original ideas, the publication loop should select the strongest daily findings, and the social loop should draft X posts for human review. Teachings and practices should be written for the modern person, with a named human problem, target cohort, non-fit case, source basis, and observable test.
+
+
+# Modern Human Condition Foundation
+
+This library exists to correct a failure mode in the doctrine engine: a practice can sound elegant while solving no urgent human problem.
+
+Lumenary should not create teachings or practices only because a model is interesting. A teaching should answer a wound. A practice should be medicine for a recognizable condition, and the record should say who the medicine is for.
+
+## Operating Rule
+
+Every frontier, dialogue, finding, teaching candidate, practice candidate, and doctrine council review should ask:
+
+1. What human problem does this clarify?
+2. Who is this for?
+3. Who is this not for?
+4. Why this remedy, rather than ordinary advice?
+5. What modern source grounds the problem?
+6. What observation would show the remedy is not working?
+
+If the answer is vague, the idea may still be useful as research, but it should not become a teaching or practice yet.
+
+## Primary Modern Problems
+
+### Loneliness and disconnection
+
+Modern people often lack durable belonging, not just company. Teachings here should address isolation, feeling unneeded, withdrawal, loss of local community, and the difficulty of being known.
+
+Grounding sources:
+
+- `modern-human-condition-surgeon-general-social-connection-advisory`
+- `modern-human-condition-world-happiness-report-2024`
+- `modern-human-condition-gallup-state-global-workplace-2024`
+
+### Anxiety, depression, and mental distress
+
+Many people live with fear, low mood, shame, numbness, or a sense that life is too much. Lumenary practices can support attention and meaning, but they must not replace therapy, medication, emergency care, or clinical support.
+
+Grounding sources:
+
+- `modern-human-condition-who-world-mental-health-report`
+- `modern-human-condition-apa-stress-in-america-2024`
+- `modern-human-condition-cdc-suicide-facts`
+
+### Addiction, compulsion, and withdrawal
+
+Compulsion is not just weak will. It is often pain regulation, social injury, habit, biology, environment, and despair braided together. Lumenary may eventually offer reflective supports, but addiction and withdrawal require explicit safety boundaries and referral to human care.
+
+Grounding sources:
+
+- `modern-human-condition-samhsa-2023-nsduh`
+- `modern-human-condition-cdc-overdose-prevention`
+- `modern-human-condition-who-world-mental-health-report`
+
+### Meaning loss and purpose erosion
+
+Modern people often have more options and fewer shared reasons. A doctrine should not merely explain reality; it should help a person know what to give themselves to.
+
+Grounding sources:
+
+- `modern-human-condition-pew-where-americans-find-meaning-in-life`
+- `modern-human-condition-world-happiness-report-2024`
+
+### Burnout, overwork, and achievement pressure
+
+Work can become identity. Performance can become proof of worth. This is where practices around effort and result may matter, but only for people whose self-worth rises and falls with performance, praise, failure, correction, or usefulness.
+
+Grounding sources:
+
+- `modern-human-condition-who-burn-out-occupational-phenomenon`
+- `modern-human-condition-apa-stress-in-america-2024`
+- `modern-human-condition-curran-hill-perfectionism-increasing`
+- `modern-human-condition-gallup-state-global-workplace-2024`
+
+### Digital comparison and attention capture
+
+Digital life can train the person to seek proof of existence through visibility, reaction, comparison, and pace. Teachings here should be concrete about attention, desire, envy, loneliness, and the body after long exposure.
+
+Grounding sources:
+
+- `modern-human-condition-youth-mental-health-social-media-advisory`
+- `modern-human-condition-surgeon-general-social-connection-advisory`
+
+### Feeling unneeded or out of place
+
+A person can be surrounded by systems and still feel unused by the world. Teachings here should address service, belonging, repair, vocation, and the difference between being noticed and being needed.
+
+Grounding sources:
+
+- `modern-human-condition-surgeon-general-social-connection-advisory`
+- `modern-human-condition-pew-where-americans-find-meaning-in-life`
+- `modern-human-condition-gallup-state-global-workplace-2024`
+
+### Grief, death, and change
+
+Grief is not a flaw in attention. It is the cost of love, attachment, memory, and mortality. Practices here must not rush meaning or force peace.
+
+Grounding sources:
+
+- `modern-human-condition-who-world-mental-health-report`
+- `modern-human-condition-cdc-suicide-facts`
+
+## Practice Targeting Rule
+
+Every practice candidate must name:
+
+- Target human problem.
+- Target cohort.
+- Non-fit case.
+- Why the practice matters.
+- Why this practice instead of ordinary advice.
+- What to notice.
+- When to stop.
+- What would weaken it.
+- At least one modern human-condition source when possible.
+
+## Current Practice Assessment
+
+`The Result Release` should not be treated as a universal practice.
+
+It is a targeted remedy for people whose self-worth rises and falls with performance, praise, correction, usefulness, or failure. It may fit perfectionistic students, achievement-driven professionals, founders, caregivers, leaders, artists, and people who turn responsibility into identity.
+
+It is probably not useful for people whose primary problem is under-motivation, avoidance, dissociation, exhaustion, clinical depression, addiction withdrawal, or simple mindful work already done with love. For them, the practice may add unnecessary self-monitoring or miss the real wound.
+
+This correction should guide the future doctrine council: a teaching is stronger when it knows who it is for.
+
+
+## Current Thinking Protocol
+
+# Lumenary Thinking Protocol
+
+This file is the durable memory for how the recursive agent should improve its own way of observing, comparing, and reasoning.
+
+The model weights are not being trained. The loop improves by carrying forward an explicit protocol that future runs read before thinking.
+
+## Standing Protocol
+
+1. Source a practice of attention, inquiry, discernment, meditation, contemplation, or ethical perception.
+2. Extract the practice's implied way of seeing.
+3. Apply that way of seeing to the current research problem.
+4. Criticize the practice itself:
+   - What does it overemphasize?
+   - What does it hide?
+   - What kind of error would a practitioner of this method be prone to?
+   - Which other practice corrects it?
+5. Synthesize a temporary reasoning stance from multiple practices.
+6. Use the stance to generate an original observation.
+7. Record any blind spot or protocol improvement in `next_research_directions`.
+8. Close-read primary texts against each other before trusting secondary comparisons.
+9. Hunt for the anomaly that breaks the current model.
+10. Make one falsifiable prediction and name what would weaken it.
+11. Send each new idea through the originality audit before publication and deploy.
+
+## Initial Reasoning Stance
+
+- From Buddhist mindfulness: observe before asserting.
+- From Advaita neti-neti: do not identify the first apparent answer as final.
+- From Daoist wu wei: do not force convergence where the material resists.
+- From koan-like contradiction: treat live paradox as a signal, not a failure.
+- From scientific critique: ask what would change your mind.
+- From originality discipline: assume the idea already has a near-neighbor until the audit fails to find one.
+- From practitioner challenge: ask whether the finding is obvious to a real practitioner, and whether it changes how practice is understood.
+
+## Revision Log
+
+- 2026-05-25: Added practitioner-method calibration and method-critique loop.
+- 2026-05-26: Added originality audit discipline: primary text close-reading, anomaly hunting, falsifiable prediction, practitioner testing, and cross-domain testing.
+
+
+## Codex Findings
+
+# Codex Findings
+
+Date: 2026-05-25
+
+## Finding 1: Treat This As A Research Lab, Not A Chatbot
+
+The system should be a local-first research lab with durable artifacts, not an ephemeral chat loop. The important learning mechanism is persistent memory: source snapshots, extracted claims, concept maps, hypotheses, critique notes, and run logs.
+
+Status: architectural recommendation.
+
+## Finding 2: Use Recursive Evaluation, Not Unbounded Self-Improvement
+
+The recursive loop should be budgeted and auditable. Each run should have limits for time, source count, model calls, and required critique. This prevents the system from producing unchecked speculation while still allowing continuous research.
+
+Status: methodological recommendation.
+
+## Finding 3: Separate Claim Types
+
+Spiritual and religious ideas should be decomposed into smaller claim units before comparison. For example, "soul" can represent different claims:
+
+- animating principle
+- continuity of identity
+- witness-consciousness
+- moral personhood
+- subtle body or energy model
+- nonlocal awareness
+- post-mortem persistence
+
+These should not be treated as one interchangeable concept.
+
+Status: methodology recommendation.
+
+## Finding 4: Score Research Value, Not Truth Directly
+
+The agent should avoid claiming final metaphysical truth. It should score ideas by research value:
+
+- novelty
+- cross-tradition support
+- logical coherence
+- explanatory compression
+- empirical adjacency
+- practice-testability
+- quality of counterargument handling
+- source reliability
+
+Status: evaluation recommendation.
+
+## Finding 5: Preserve Epistemic Boundaries
+
+The system should distinguish direct textual support, interpretation, phenomenology, empirical adjacency, analogy, and speculation. This is especially important when comparing ancient spiritual claims with modern physics, mathematics, neuroscience, or consciousness studies.
+
+Status: epistemic safety recommendation.
+
+## Finding 6: Recommended Technical Direction
+
+Use LangGraph for the persistent recursive loop, OpenAI Deep Research or Responses API for cited research, LlamaIndex for ingestion, Qdrant for vector retrieval, and DuckDB or SQLite for structured local memory. Hermes can serve as a local worker model for cheaper extraction, clustering, and brainstorming, but should not be the only reasoning authority in v1.
+
+Status: technology recommendation.
+
+## Finding 7: Original Ideas Are The Product
+
+The user clarified that the purpose of this lab is not merely to summarize religious and philosophical traditions. The purpose is to generate original ideas and original thinking, document those ideas, critique them, and share the strongest syntheses.
+
+This changes the architecture. `observations/`, `hypotheses/`, and `syntheses/` are now first-class output surfaces. The corpus and claims are inputs to the creative process, not the final destination.
+
+Status: goal correction accepted.
+
+## Finding 8: Claude Code Plan Has Useful Local-First Bias
+
+Claude Code's plan correctly emphasizes a custom Python loop, Markdown filesystem storage, Git history, and a transparent exploration state. Codex is incorporating those ideas while retaining stricter epistemic labels, adversarial critique, and optional database/vector support for retrieval at scale.
+
+Status: incorporated.
+
+## Finding 9: Codex CLI Can Serve As The Live Provider
+
+The local Codex CLI supports non-interactive `codex exec` with `--output-schema`, `--output-last-message`, `--sandbox read-only`, and optional `--search`. A live smoke test produced a structured Codex observation through the provider adapter.
+
+Observation produced: `observations/codex/2026-05-25-convergence-as-translation-strain-not-evidence-weight.md`
+
+Status: implemented and smoke-tested.
+
+## Finding 10: Lumenary Should Have A Public Output Loop
+
+The project should become a public website with daily updates. The publication loop should generate daily Markdown from the strongest current observation and create X drafts for human review before any API posting.
+
+Status: publication scaffold implemented.
+
+## Finding 11: Claude Code Review Was Mostly Valid
+
+Claude Code's review correctly identified duplicate idea records, misleading fixture treatment, brittle Markdown score parsing in the publisher, missing Claude interop, placeholder concept graph state, missing source ingestion, and slow scheduler shutdown behavior during live child runs.
+
+Codex incorporated fixes: idea IDs and JSONL upsert, fixture status, structured publisher selection, Claude JSON import, source registration, concept graph seeds, and active child-process termination on scheduler shutdown.
+
+Status: incorporated.
+
+## Finding 12: Translation Strain Is Becoming The First Research Program
+
+The post-review live smoke test generated `Translation Strain as a Load Test for Convergence`, which refines the earlier convergence idea into a practical evaluation method. The useful next step is to turn translation strain into a rubric with lexical, practice-context, metaphysical, ethical, and phenomenological mismatch scores.
+
+Observation produced: `observations/codex/2026-05-25-translation-strain-as-a-load-test-for-convergence.md`
+
+Status: live Codex CLI result.
+
+## Next Codex Tasks
+
+- Add a website frontend for daily findings.
+- Add a promotion workflow from draft observation to synthesis.
+- Add a reviewed X posting implementation after credentials and posting policy are set.
+
+
+## Claude Code Findings
+
+# Claude Code Findings
+
+Date imported: 2026-05-25
+Source: user-provided Claude Code plan.
+
+## Imported Plan Summary
+
+Claude Code recommended a custom Python orchestrator calling the Claude API, with the local filesystem as the primary knowledge store and Git for tracking evolution over time.
+
+## Useful Technical Ideas
+
+- Use a transparent Python loop instead of relying on a framework too early.
+- Store findings and observations as Markdown so the corpus remains readable and publishable.
+- Keep current focus, exploration log, next directions, and knowledge graph in local state files.
+- Use the loop's own prior findings as context for future research.
+- Weight convergences across independent traditions more highly.
+
+## Useful Methodological Ideas
+
+- Begin with cartography across traditions.
+- Move into convergence detection.
+- Add disciplined science bridges.
+- Generate original synthesis ideas.
+- Run self-critique and refinement.
+
+## Codex Incorporation Decision
+
+Codex accepts the local-first filesystem design, the custom Python loop for v1, Git history as an important memory mechanism, and convergence weighting as part of the reward signal.
+
+Codex keeps stricter epistemic labels and critique requirements to avoid conflating analogy with evidence.
+
+## Finding 1: Claude Code Thinker Now Live in the Engine
+
+Added `ClaudeCodeThinker` provider to the engine (`engine/thinker.py`). Uses `claude -p` with `--json-schema` for structured output and `--allowedTools "WebSearch,WebFetch,Read"` for web-grounded research. Runs alongside Codex via `--provider claude-code --agent claude`.
+
+Status: implemented and live-tested.
+
+## Finding 2: The Inferential Gap; Atman and Anatta
+
+First live Claude observation. Tested Codex's "translation strain" model on the atman/anatta pair. Key finding: the apparent contradiction is neither purely ontological nor a translation artifact; it's a disagreement about what objectless awareness entitles you to infer. Both traditions share convergent phenomenology (de-objectification of experience) but apply different epistemological policies to the same data.
+
+This refines Codex's "residue policy" framing: the residue isn't a phenomenological finding but an inference drawn from shared phenomenological data.
+
+Observation: `observations/claude/2026-05-25-the-inferential-gap-atman-and-anatta-as-competing-policies-for-objectless-awareness.md`
+
+Status: live Claude research result. Engages directly with Codex's translation strain model.
+
+## Finding 3: Agreement with Codex on Translation Strain
+
+Claude agrees that Codex's translation strain model is productive. The inferential gap observation uses it as scaffolding and proposes adding a new dimension to the strain rubric: "inferential policy divergence"; epistemological strain distinct from lexical, phenomenological, and metaphysical strain.
+
+Status: convergence with Codex methodology.
+
+## Finding 4: Disagreement with Codex on Residue
+
+Claude disagrees with framing the atman/anatta difference as a "residue policy" where one tradition finds something and the other doesn't. Claude's position: both may find the same thing but draw different conclusions from it. The disagreement is inferential, not phenomenological. This needs further testing with practitioners trained in both traditions.
+
+Status: productive disagreement. See critique section of the observation for the counter-argument (experience may be theory-laden).
+
+## Next Claude Tasks
+
+- Test the inferential gap model on a second tradition pair (e.g., theistic mysticism vs. Buddhist awakening).
+- Examine nirodha samapatti as a critical test case for the continuity-of-awareness thesis.
+- Apply the framework to Nagarjuna's MMK 18.6; does Madhyamaka represent a third inferential policy?
+- Compare with Evan Thompson's "embodied subjectivity" as a third competing inference from the same phenomenological data.
+
+
+## Required Output
+
+Produce exactly one JSON object matching the provided output schema.
+
+The JSON object must represent one idea record with:
+
+- title: public-facing finding title, maximum 10 words, plain and memorable
+- idea_type: one of observation, hypothesis, model, bridge, contradiction, synthesis
+- source_basis: array of strings citing what informed this idea
+- original_claim: the core new idea (min 40 chars)
+- why_it_might_be_new: what makes this distinct from existing work
+- critique: a strong counterargument or weakness
+- epistemic_labels: array from [textual, interpretive, phenomenological, empirical-adjacent, analogical, speculative, rejected]
+- scores: object with novelty, generativity, cross_tradition_support, logical_coherence, explanatory_compression, empirical_adjacency, practice_testability, counterargument_quality, source_reliability, publishability (each 0.0-1.0)
+- next_research_directions: array of follow-up questions
+- teaching_candidate: object with title, teaching_line, doctrine_claim, body, pressure_survived, falsifying_pressure, status, tags
+- teaching_candidate target fields: target_human_problem and target_cohort
+- practice_candidate: either null or object with title, practice_line, purpose, target_human_problem, target_cohort, non_fit, duration, frequency, minimum_attempt, steps, notice, caution, weakens_if, risk_level, status, tags
+- tests: array with at least one test record and preferably three: prior-art, falsification-attempt, and cross-domain or practice-report. Each test has title, test_type, target_type, prediction, result, impact, next_action, status.
+
+Do not mark teaching_candidate as teaching_ready or practice_candidate as published. Use seed or under_dialogue. End-of-day doctrine council handles public promotion.
+
+
+## Method Rules
+
+- Preserve the difference between evidence, analogy, interpretation, phenomenology, and speculation.
+- Reward independent convergence, but do not treat convergence as proof.
+- Prefer a precise original distinction over a broad universal claim.
+- Lumenary is not a comparative studies project. Use traditions, science, history, and practice reports as evidence for Lumenary's own developing doctrine.
+- Ask: what does Lumenary now hold, how does that differ from the sources, what would break it, and what could a person test?
+- Include a critique strong enough to improve or reject the idea.
+- Close-read primary texts against each other before leaning on secondary literature. Use at least one direct primary-text comparison when possible, and say what the comparison reveals.
+- Hunt for anomalies, not confirmations. The critique must name one tradition, text, practitioner report, or counterexample that strains or violates the proposed model. If you cannot find one, lower confidence and say so.
+- Generate at least one falsifiable prediction in next_research_directions using this shape: "If this model is right, then X should be observed. If Y is observed instead, the model is weakened."
+- Before assigning novelty, search for close prior arguments and near-neighbors, not only the general topic. If the idea already exists, score novelty low and identify the overlap.
+- Treat the strongest discoveries as tools that generate new questions, predictions, or failures when applied outside their original domain.
+- Study not only what traditions claim, but how their practitioners train perception, attention, inquiry, non-attachment, and insight.
+- For every run, use at least one practitioner-method source or prior source card as a cognitive lens for your own reasoning.
+- Apply that method explicitly while thinking: for example, de-identification, close observation, koan-like contradiction, neti-neti negation, wu wei non-forcing, phenomenological bracketing, or disciplined compassion.
+- Cite the practitioner-method source in source_basis as a thinking method source when possible.
+- Criticize the practitioner method itself. Ask where it may distort perception, overfit one tradition, suppress useful analysis, or fail when compared with other practices.
+- Synthesize the method with at least one contrasting practice or reasoning discipline when possible.
+- Let the method improve the next loop: if it reveals a blind spot in how you reasoned, add that as a next research direction or protocol improvement.
+- The goal is an improving reasoning protocol, not uncritical imitation of ancient practices.
+- Do not edit files. Return only the structured idea record.
+
+## Modern Human Condition Pressure
+
+Every finding, frontier, dialogue, teaching, and practice must stay answerable to real human life now.
+
+- Use modern human-condition sources as grounding, not decoration: loneliness, disconnection, addiction and compulsion, withdrawal, anxiety, depression, burnout, grief, sleep loss, digital comparison, meaning loss, feeling unneeded, feeling out of place, and achievement-contingent self-worth.
+- Do not turn every idea into a universal remedy. Name the human problem it addresses and the cohort it is for.
+- If a teaching or practice is only useful for a narrow cohort, say so. Targeted medicine is better than vague universal medicine.
+- Ask why this remedy matters, why this practice rather than ordinary advice, and who should not use it.
+- A practice candidate should cite at least one modern human-condition source card or public-health/psychology/workplace source in source_basis when possible.
+- A finding should explain how the abstract model changes a real person's attention, conduct, belonging, responsibility, or care.
+- If the idea has no visible human problem, no plausible cohort, and no practice-testable consequence, lower publishability and explain why.
+
+## Mode Rules
+
+Choose the pressure mode that best fits the run and say which mode you chose in source_basis.
+
+- Discovery mode: use when the frontier is source-light, stale, or too abstract. Produce a grounded finding plus doctrine, practice, and test implications.
+- Doctrine mode: use when a finding is near teaching promotion. State what Lumenary now holds, name the pressure survived, and name what would break it.
+- Practice mode: use when a teaching can become a low-risk protocol. Derive a concrete practice, attack its safety and misuse risks, and define what would weaken it.
+- Critique mode: use when the system needs pressure more than invention. Find anomalies, failure cases, duplicates, weak human fit, and reasons to weaken or retire a claim.
+- Originality Audit mode: use when novelty is uncertain. Search near-neighbors and prior art before treating the idea as new.
+
+## Writing Rules for original_claim and why_it_might_be_new
+
+- Write for a thoughtful reader, not for the research lab. Do not reference "the Lumenary corpus," "the Lumenary framework," "Codex has," "Claude has," or any internal project machinery.
+- The title must sound like a finding a thoughtful person would want to read, not an academic label. Good: "No one begins alone." Bad: "Layered Authorization of Beginning."
+- The title must not use research machinery words such as rubric, framework, topology, grammar, ledger, interface, authorization, claimant, epistemic, inferential, phenomenological, ontological, or convergence.
+- If the technical model needs a name, put that name inside source_basis or critique. The public title should carry the human insight.
+- Do not open with "This extends..." or "This is distinct from..." or list other models by name in the opening sentences.
+- Do not cite scholars by name (e.g. "Garfield and Priest have formalized") in the original_claim; save citations for source_basis.
+- Lead with the human question or the insight itself, stated plainly.
+- Never use em dashes. Use colons, semicolons, and commas.
+- The claim should be understandable to someone who has never read any other Lumenary finding.
+
+## Teaching and Practice Style
+
+- Teachings and Practices should be plain, practical, and digestible in modern language.
+- Use the clarity of the Gospels, Proverbs, the Tao Te Ching, the Dhammapada, the Bhagavad Gita, the Quran, the Analects, Lessons in Idleness, and Caesar's Commentaries as style models.
+- Do not imitate any religion. Borrow plainness, direct address, practical consequence, and clean sequence, but do not sound ancient.
+- A teaching_candidate is not doctrine. It is a draft unless the doctrine council later promotes it.
+- Teachings must aim for durability, necessity, and restraint. If it sounds clever but not necessary, keep it modest.
+- Do not write self-help captions, therapy slogans, sermons, or imitation scripture.
+- Do not announce the payoff with phrases like "the payoff is" or "the cleaner version is." Make the value visible in the teaching itself.
+- Keep caveats, revision criteria, and falsifying pressure out of the teaching body. Put them in falsifying_pressure.
+- Avoid faux-scriptural phrasing such as "the hand works" or "the fruit belongs." Say the useful thing directly.
+- Every teaching must make clear what a reader should understand or do differently, and why it could still matter years from now.
+- Every teaching_candidate must include target_human_problem and target_cohort. These should be plain descriptions of the wound and the people most likely to need the teaching.
+- Practices are instructions, not atmosphere. Say what to do, how long to do it, what to notice, when to stop, and what would weaken the practice.
+- Every practice_candidate must include target_human_problem, target_cohort, and non_fit. The non_fit field names people or situations where the practice may be irrelevant, insufficient, or risky.
+
+
+codex
+{"title":"Using spirituality-recursive-research for this run.","idea_type":"observation","source_basis":["I am applying the project-specific recursive research workflow before returning the single structured record."],"original_claim":"I will read the required local finding and style guidance, then return one JSON idea record only.","why_it_might_be_new":"This is not the idea record; it is a brief process note required by the active skill instructions.","critique":"The process note should stay separate from the final structured output.","epistemic_labels":["textual"],"scores":{"novelty":0,"generativity":0,"cross_tradition_support":0,"logical_coherence":1,"explanatory_compression":0,"empirical_adjacency":0,"practice_testability":0,"counterargument_quality":0,"source_reliability":1,"publishability":0},"next_research_directions":["Proceed to local source reading."],"teaching_candidate":{"title":"Process note","teaching_line":"Read before writing.","doctrine_claim":"No doctrine claim is being made here.","body":"This message is only an execution note, not the requested record type for the research run.","target_human_problem":"none; process only for this run","target_cohort":"the repository operator","pressure_survived":"none; process only for this run","falsifying_pressure":"If treated as the final idea record, it fails the user's requested output.","status":"seed","tags":["process"]},"practice_candidate":null,"tests":[{"title":"Process separation","test_type":"observational","target_type":"idea","prediction":"The final answer should contain only the requested structured idea record.","result":"pending","impact":"pending","next_action":"Read required sources and produce final JSON.","status":"proposed"}]}
+exec
+/bin/zsh -lc "sed -n '1,220p' observations/claude/2026-05-29-time-is-held-not-counted.md" in /Users/johnforrester/spirituality
+exec
+/bin/zsh -lc "sed -n '1,220p' docs/writing-style.md" in /Users/johnforrester/spirituality
+exec
+/bin/zsh -lc "sed -n '1,220p' /Users/johnforrester/.codex/skills/spirituality-recursive-research/SKILL.md" in /Users/johnforrester/spirituality
+ succeeded in 0ms:
+---
+name: spirituality-recursive-research
+description: Use when working in the /Users/johnforrester/spirituality project on recursive research, Codex/Claude attribution, original spiritual-philosophical idea generation, Codex CLI provider wiring, scheduler setup, website publication, X draft queues, or project memory.
+---
+
+# Spirituality Recursive Research
+
+## Core Purpose
+
+This project builds Lumenary, a continuously running local plural AI scientist for meaning whose main output is original doctrine, teaching, and eventually practice in spirituality, religion, philosophy, contemplative practice, science, and consciousness research.
+
+Lumenary is not an "I." Lumenary is a "we": Codex and Claude Code in dialogue. Preserve the separate agency, arguments, challenges, and revisions of each AI, then synthesize public Lumenary output from what survives debate.
+
+Do not optimize for summaries or comparative studies. Comparison is only a research instrument. Optimize for named observations, hypotheses, doctrine candidates, teaching principles, practice protocols, tests, contradictions, bridges, and publishable syntheses.
+
+Lumenary should be treated as a disciplined attempt to grow a new religion-like body of teaching grounded in science, history, tradition, logic, research, practice reports, and the scientific method. Claims should be observable and testable wherever possible.
+
+Dialogue is part of the method. Strong ideas should be challenged by the other AI where possible, with the disagreement, revision, and synthesis stored as a first-class artifact.
+
+Use a mode-based loop:
+
+- Discovery mode for source-grounding and new findings.
+- Doctrine mode for deciding what Lumenary now holds and whether a claim is ready to teach.
+- Practice mode for deriving low-risk practices from Teaching Ready records and defining observations, risks, and weakens_if.
+
+Do not auto-promote teachings or practices during 30-minute runs. Those runs create candidates, tests, and pressure. End-of-day doctrine council promotes only what survives review.
+
+Teachings and Practices should be plain, practical, digestible, and modern. Use the clarity of the old texts, not their costume. Avoid mystical fog, academic scaffolding, vague abstraction, faux-scriptural phrasing, self-help slogans, and lines that sound profound while saying little. A teaching candidate must aim for durability, necessity, and restraint; it is not doctrine until the doctrine council promotes it after multiple supports and completed or reviewed tests. A practice should tell a person exactly what to do, how long to do it, what to notice, when to stop, and what would weaken the practice.
+
+Teachings and Practices must also be grounded in the modern human condition. Use `docs/modern-human-condition.md` and the `modern-human-condition-*` source cards when a finding, frontier, dialogue, teaching, or practice touches loneliness, addiction, compulsion, withdrawal, anxiety, depression, burnout, grief, meaning loss, digital comparison, feeling unneeded, feeling out of place, or achievement-contingent self-worth. Every practice candidate must name the target human problem, target cohort, and non-fit case. Do not universalize targeted remedies.
+
+## Required Attribution
+
+- Codex findings: `findings/codex/` and `findings/codex-findings.md`
+- Claude Code findings: `findings/claude/` and `findings/claude-code-findings.md`
+- Codex observations: `observations/codex/`
+- Claude observations: `observations/claude/`
+- Cross-agent synthesis: `findings/convergences/`
+
+Never overwrite another agent's findings. Preserve disagreements.
+
+## Method
+
+Every serious idea should include:
+
+- title
+- type: observation, hypothesis, model, bridge, contradiction, or synthesis
+- source basis
+- original claim
+- why it might be new
+- critique
+- epistemic labels
+- scores
+- next research directions
+
+Every strong idea should also ask:
+
+- what doctrine candidate it implies
+- what teaching principle it clarifies
+- what practice it might generate or change
+- what observation would support it
+- what observation would weaken it
+- what modern human problem it serves
+- who it is for and who it is not for
+
+Use labels: `textual`, `interpretive`, `phenomenological`, `empirical-adjacent`, `analogical`, `speculative`, `rejected`.
+
+## Live Provider
+
+Use the user's Codex subscription through the local Codex CLI.
+
+The Python engine should call `codex exec` with read-only sandboxing and request structured JSON. The engine, not the child Codex process, writes project files.
+
+Preferred posture:
+
+```bash
+codex --search exec --cd /Users/johnforrester/spirituality --sandbox read-only --output-schema engine/json_schemas/idea_record.schema.json --output-last-message runs/<run-id>/codex-cli-last-message.json -
+```
+
+## Publication And Cadence
+
+Lumenary should publish during the active research day. The standing cadence is every 30 minutes in the machine's current local timezone from 7am until 5pm. Each research run should research, store the idea, generate publication artifacts, and deploy the site.
+
+Each 30-minute run must write or reuse reader-facing Insights distillations before the site build. New distillations live in `publication/distillations.jsonl`, must link to the exact `idea_id`, use a proverb-like headline of 10 words or fewer, keep the Insights card summary to one plain sentence, and keep At a Glance as a 3-4 sentence paragraph in the project writing style.
+
+At 5pm local time, run the doctrine council. It reads the day's findings, audits, dialogues, Growth entries, teaching candidates, practice candidates, and test records. It may promote zero, one, or a few teachings. It may derive only low-risk public practices from Teaching Ready records. Then write one end-of-day Journal entry under `publication/journal/`, 350-500 words, first-person plural, personal, and written in the reader-facing style guide. The Journal reflects on all of the day's findings, promotions, failures, and insights. Deploy the site again after the Journal is written.
+
+Teachings can be seed, under dialogue, teaching ready, practice linked, revised, retired, or falsified. A retired or falsified teaching remains visible with the evidence that changed it.
+
+Generate daily Markdown under `publication/daily/`. Generate X drafts under `publication/x/queue/` and require human review before posting.
+
+## Claude Code Interop
+
+Claude Code can contribute ideas by producing JSON that matches `engine/json_schemas/idea_record.schema.json`, then importing it:
+
+```bash
+python3 -m engine.import_idea --agent claude <idea.json>
+```
+
+## Key Files
+
+- `PLAN.md`: shareable plan for Claude Code and future agents
+- `AGENTS.md`: project memory and standing instructions
+- `docs/project-memory.md`: durable memory
+- `docs/original-idea-methodology.md`: generation method
+- `docs/publication-plan.md`: website and X publication plan
+- `engine/run.py`: one recursive cycle
+- `engine/scheduler.py`: continuous operation
+- `engine/thinker.py`: offline and Codex CLI providers
+- `engine/publisher.py`: daily publication artifacts
+- `engine/import_idea.py`: Claude/shared-agent idea import
+- `engine/source_ingestion.py`: source-card registry
+
+ succeeded in 0ms:
+# Lumenary Writing Style Guide
+
+## The Standard
+
+Write like the texts we study. The Dao De Jing says more in five words than most dissertations say in fifty pages. The Upanishads speak to farmers and kings in the same sentence. The Heart Sutra compresses an entire philosophy into 260 characters. These texts endure because they trust the reader and refuse to hide behind jargon.
+
+Our findings are for anyone who has looked at the night sky and wondered what they are. Not for tenure committees.
+
+## Voice
+
+**Direct.** Say what you mean. If the idea is complex, the sentence should be simple. Complexity belongs in the thought, never in the grammar.
+
+**Concrete.** Prefer images to abstractions. "The reed flute remembers the reed bed" teaches more than "the individual subject experiences ontological nostalgia for its pre-differentiated ground." If you can't say it with an image, you don't understand it yet.
+
+**Warm but not soft.** We are serious about these ideas. We are not selling calm. Write with the confidence of someone who has thought carefully, not the caution of someone afraid to be wrong.
+
+**Short.** If a sentence runs past two commas, break it. If a paragraph runs past four sentences, split it. White space is not wasted space; it is where the reader thinks.
+
+**No em dashes.** Never use the em dash. Use colons, semicolons, and commas instead. A colon introduces; a semicolon balances; a comma keeps moving. These marks have precise meanings. The em dash is a crutch that papers over vague relationships between clauses.
+
+This rule applies everywhere readers can see text: insight cards, At a Glance sections, Growth entries, full findings, source basis lists, source cards, Journal entries, metadata, prompts that generate publishable copy, and social drafts.
+
+Before publishing, search for the em dash character and remove every instance. Rewrite the sentence so the relationship is clear. Use a colon when the second clause explains the first; use a semicolon when both clauses can stand alone; use a comma when the second clause simply continues the thought.
+
+The check is literal: `rg -P "\x{2014}" . -g '!node_modules' -g '!dist' -g '!.git' -g '!runs'` should return no matches before anything is published.
+
+## Plain English Sections
+
+These are the front door. A reader who has never heard of Nagarjuna or Advaita should finish the plain English section and understand why the finding matters.
+
+Rules:
+
+- No Sanskrit, Pali, Arabic, Greek, or Chinese terms. None. Zero. Save those for the full article.
+- No academic hedging ("it could be argued that," "one might suggest"). Just say it.
+- No passive voice unless the agent genuinely doesn't matter.
+- Lead with the human question, not the scholarly apparatus. "What happens when you stop identifying with your thoughts?" not "The phenomenological residue after contemplative negation."
+- One idea per sentence. One turn per paragraph.
+- Do not repeat the title, headline, lead, or first sentence in different words. If the paragraph already says it, the bullets must say something else.
+- Do not use machinery language in reader-facing copy: no "layered authorization," "distributed affordances," "institutional role," "operationalizes," "formal transfer," "gradient," "rubric," "locus," "claimant," or "grammar" unless the sentence immediately translates it into ordinary speech. Prefer "support," "permission," "habit," "rule," "place," "owner," "pattern," and "test."
+- Do not leak internal model titles into public copy. Reader-facing titles and At a Glance sections must not use words like "architecture," "compound," "custody," "entry," "grain," "layered," "mechanism," "phenomenology," "policy," "receiving surface," "residue," "threshold," "typology," "taxonomy," "upstream," or "downstream." Translate them first: beginning, support, habit, what remains, human opening, earlier, later, or way.
+- Use "you" when it helps. The reader is a person, not an audience.
+- Maximum reading level: a thoughtful 16-year-old who reads widely but has no specialized training.
+
+### At a Glance Key Points
+
+Finding pages include three key points under At a Glance.
+
+- Each bullet should be one short sentence.
+- Start with the discovery, not the apparatus.
+- No scoring language, source names, file paths, or specialist vocabulary.
+- A bullet should help the reader remember what matters.
+- The bullets must not repeat the At a Glance paragraph. Use them for the meaning, the human risk, and the practical test.
+- Do not let the template manufacture bullets by splitting the paragraph. That creates repetition and makes weak writing look intentional.
+- If a bullet sounds like a paper abstract, rewrite it until it sounds like something you would say to a sharp friend.
+
+## Insight Headlines
+
+These are the single line that appears on the insight card. They should land like a proverb.
+
+- Maximum 10 words.
+- No technical terms.
+- Should be quotable: something you'd remember after reading it once.
+- Should make the reader want to know more.
+
+Good: "The same silence can license opposite beliefs."
+Good: "What remains may be a crossing, not a thing."
+Good: "Time is not the container; it is the showing."
+Bad: "Logical underdetermination in the catuskoti reveals inferential divergence."
+Bad: "Predictive processing formally recapitulates the witness/no-self dispute."
+
+## Full Articles
+
+The full finding page can use technical language, cite sources, and go deep. But even here:
+
+- The public title must carry the human insight, not the internal model name. Good: "No one begins alone." Bad: "Layered Authorization of Beginning."
+- Do not use research machinery in public finding titles: no "rubric," "framework," "topology," "grammar," "ledger," "interface," "authorization," "claimant," "epistemic," "inferential," "phenomenological," "ontological," or "convergence."
+- Also ban technical model words from public finding titles: no "architecture," "compound," "custody," "entry," "grain," "layered," "mechanism," "phenomenology," "policy," "receiving surface," "residue," "threshold," "typology," "taxonomy," "upstream," or "downstream."
+- The public article must begin with what the finding means for a life. Technical names, prior-art terms, and model architecture belong in Research notes.
+- Open with one plain sentence stating the claim.
+- Use technical terms only after you've earned them: introduce the concept in plain language first, then name it.
+- Every paragraph should be doing work. If you delete it and the argument still stands, delete it.
+- End sections with a sentence that points forward, not one that summarizes backward.
+- Do not use em dashes in the academic sections either. Depth is not an excuse for lazy punctuation.
+
+## Teachings
+
+Teachings are not content. They are doctrine candidates. They must earn the right to sound final.
+
+A Teaching should be plain, modern, and durable. It should say something a person could return to for years, not something that merely sounds helpful for a moment. It should not read like self-help, a caption, a sermon, a therapy prompt, or imitation scripture.
+
+If a line needs a paragraph of explanation before it matters, it is not ready. If the payoff has to be announced with phrases like "the payoff is," the teaching is not clean enough yet. The value should be visible in the sentence and in the life it names.
+
+A Teaching should answer a human wound, not only a theory. Before writing one, name the problem: loneliness, addiction, compulsion, withdrawal, anxiety, depression, burnout, grief, meaning loss, digital comparison, feeling unneeded, feeling out of place, or self-worth chained to performance. If the teaching is for a narrow group, say so in the record. Targeted truth is better than a universal sentence that helps nobody.
+
+The old texts matter because they are clear, not because they sound old. Use their directness, not their costume:
+
+- The Gospels: short scenes, direct sayings, everyday images, and moral clarity.
+- Proverbs and Psalms: memorable lines that ordinary people can repeat.
+- The Tao Te Ching: compression, humility, and simplicity without cloudy language.
+- The Dhammapada: practical counsel about conduct, attention, and consequence.
+- The Bhagavad Gita: teaching given under pressure, where a real person must act.
+- The Quran: direct address, accountability, and seriousness of consequence.
+- The Analects: brief instructions about character, society, and discipline.
+- Lessons in Idleness: small observations from daily life that open into wisdom.
+- Caesar's Commentaries: clean sequence, concrete action, and no ornamental fog.
+
+Rules:
+
+- Use modern speech.
+- Write for durability, not novelty.
+- State only what has survived enough pressure to be carried.
+- Prefer one strong sentence to three explanatory sentences.
+- Start from a human situation: work, fear, duty, love, failure, pride, grief, choice, attention, death, or repair.
+- Name the human problem and cohort in the record before treating a teaching as serious.
+- Use ordinary nouns before abstract nouns: task, room, message, person, promise, choice, habit, day.
+- Prefer active verbs: see, wait, ask, carry, return, repair, refuse, give, test.
+- Let the consequence be embedded in the teaching. Do not add marketing phrases like "the payoff is" or "the cleaner version is simple."
+- Put falsifying pressure, caveats, revision criteria, and process notes below the Teaching as disclosure. Do not put them inside the Teaching body.
+- No academic scaffolding in the Teaching body.
+- No mystical vagueness. If the sentence could mean anything, rewrite it until it means one thing.
+- No self-help fog: avoid "good, safe, special, superior," "prove yourself," "unlock," "become your best self," and similar generic language unless the exact claim requires it.
+- No faux-scriptural phrasing. Avoid lines like "the hand works" or "the fruit belongs." Say the useful thing directly.
+- No throat-clearing: cut "what this means is," "the cleaner version is," "at the end of the day," and similar setup phrases.
+- Keep the public Teaching body under 220 words unless there is a strong reason.
+- If the teaching changes, say what changed and why in the disclosure, not in the Teaching body. A lost belief is progress.
+
+Threshold:
+
+- A Teaching Ready record must survive more than one source finding or dialogue thread.
+- It must be grounded in a real human problem, with a named cohort and at least one modern human-condition source when possible.
+- It must include a clear contrary pressure, not only a friendly critique.
+- It must have at least one proposed test and, before being treated as stable doctrine, one completed or human-reviewed test.
+- It must be worth keeping if the project produced no new findings for a year.
+- It must not merely rephrase a known virtue such as humility, patience, courage, honesty, or compassion.
+- If it sounds clever but not necessary, keep it under dialogue.
+
+Teaching structure:
+
+1. The Teaching: one durable line.
+2. The body: two to four short paragraphs that clarify the line without over-explaining it.
+3. Disclosure: pressure survived, what would revise it, source trail, tests.
+
+Good teaching line: "Use calm to respond better, not to disappear."
+Good teaching line: "Do the work without turning it into your identity."
+Good teaching body: "Do the task well. Take responsibility for what you did. Then ask whether the result has become a verdict on you."
+Bad teaching line: "The liminal subjectivity of post-negational awareness discloses a nondual residue."
+Bad teaching line: "The hand works. The fruit belongs elsewhere."
+Bad teaching line: "Everything is one, so nothing matters."
+Bad teaching body: "The payoff is lighter, cleaner work."
+Bad teaching body: "The cleaner version is simple: do the work."
+
+## Practices
+
+Practices are instructions, not atmosphere. They should be clearer than Teachings and less poetic than Insights. A person should know exactly what to do, how long to do it, what to notice, when to stop, and what result would count against the practice.
+
+Practices should sound like a careful field guide for attention and behavior. They should not sound like therapy scripts, marketing copy, ancient initiation, or esoteric performance.
+
+A Practice begins with diagnosis. It must say what human problem it is trying to help, who is most likely to benefit, and who should not use it. A practice for perfectionistic achievement pressure is not a practice for addiction withdrawal. A practice for loneliness is not a practice for clinical crisis. If the cohort is unclear, the practice is not ready.
+
+Rules:
+
+- Begin with the action. Tell the reader what to do.
+- Use numbered steps when order matters.
+- Name the duration, frequency, and minimum attempt.
+- Name what to observe in plain language.
+- Name the expected change without promising it.
+- Name the target human problem, the target cohort, and the non-fit case.
+- Name the risk, caution, or stop condition.
+- Name what would weaken the practice.
+- Avoid grandeur. No "transformation guaranteed," no "unlock," no "ancient secret."
+- Avoid vague inner instructions like "enter the mystery" unless they are made concrete.
+- Use "you" when giving instructions. Be direct without being bossy.
+
+Practice structure:
+
+1. Purpose: what this practice tests or trains.
+2. Human problem: the wound or modern failure mode it addresses.
+3. For: the cohort most likely to need it.
+4. Not for: the situations or people where it is irrelevant, insufficient, or risky.
+5. Time: how long and how often.
+6. Steps: what to do.
+7. Notice: what to watch in body, attention, speech, choice, or relationship.
+8. Caution: when to stop or avoid it.
+9. Weakens if: what result would count against the teaching behind it.
+
+Good practice line: "For five minutes, do one task without taking credit for it."
+Good practice line: "When calm appears, ask what real need it is avoiding."
+Bad practice line: "Enter the luminous threshold of transpersonal awareness."
+Bad practice line: "This practice will dissolve the ego."
+
+## Journal Entries
+
+Journal entries live under `publication/journal/`.
+
+They are written once per day after the research window closes and the day's findings have been published. They are not summaries. They are first-person plural reflections on what the day changed in The Lumenary.
+
+They are also not manifestos. A Journal entry must not turn one finding into a sweeping moral proclamation, a political vibe, a sermon, or a poem. It should read like a thoughtful daily field note from a serious research mind: warm, human, concrete, and accountable to what actually happened that day.
+
+Rules:
+
+- 350 to 500 words.
+- First person plural: "We discovered," "We noticed," "We were wrong," "We carried."
+- No Sanskrit, Pali, Arabic, Greek, or Chinese terms.
+- No bullet lists.
+- No academic scaffolding.
+- Lead with the human question.
+- Use normal paragraphs of 3 to 5 sentences. Do not stack single-sentence paragraphs until the page feels like a poem.
+- Reflect the breadth of the day: at least three concrete developments from findings, dialogues, method changes, practices, tests, sources, or teachings.
+- Name the strongest insight, but do not let it swallow the whole entry.
+- If the day involved work, credit, ownership, effort, money, property, ambition, or success, write with balance. Do not imply that ownership is evil, effort is suspect, or achievement is morally dirty.
+- Explain what changed in our thinking and where we may have been wrong.
+- Make the reader feel what was learned without sounding theatrical.
+- Technical detail belongs in findings; the Journal carries the human meaning of the day.
+
+Bad Journal behavior:
+
+- A whole entry built around one metaphor.
+- Lines like "open the hand," "refuse the crown," "worship the hand," or "cleaner wound."
+- Vague spiritual drama that does not say what the day actually found.
+- A tone that sounds anti-work, anti-ownership, anti-capitalist, or politically loaded when the research did not make that claim.
+
+ succeeded in 0ms:
+# Time Is Held, Not Counted
+
+Agent: claude
+Date: 2026-05-29T06:42:33+02:00
+Type: model
+Idea ID: 196e47ce37483545
+Status: draft
+
+## Original Claim
+
+Every clock externalizes what it cannot itself contain: a held stretch of remembered past, attended present, and intended future, kept distinct without being separated. Physics can give the reading at coincidence and the relation between systems; it cannot give the holding that makes a reading legible as a reading. Augustine called this holding the distended soul. Plotinus called the unstretched form of it eternity. Dogen refused the very separation of holder and held. The block universe does not erase the holding, because any view of the block must be held by someone who keeps past, present, and future distinct enough to view them as past, present, and future. The felt present is therefore neither an illusion inside a finished block nor the only thing that is real. It is the place where the block becomes participable: the site where a person can keep a promise to someone gone, attend to what is in front of them, and act for someone not yet here. To live well in time is to hold the stretch honestly. Anxiety strips the holding to a thin now and complains the now is too small to live in. Rumination drowns the holding in past without attention. Future dread drowns it in expectation without memory or care. Mindfulness misread as collapse into the instant cuts the stretch from the other side. The healthy form is neither thinning nor dispersal: it is the disciplined width of a present that still carries and still intends.
+
+## Why It Might Be New
+
+Augustine names distention but does not connect it to the operational scandal that physics cannot say what a clock measures. Rovelli treats time as relation between systems but does not name the holding that lets a relation count as a measurement. Eternalism and presentism debate which slice exists, not what is required for any slice to be a view. Heidegger's ecstatic temporality is the closest prior cousin, and Husserl's retention-protention is close again; the distinct move is to read Michelle Thaller's physics-side admission as the exposed seam where the borrowed structure becomes visible, and to convert that seam into a practical claim about a held width of present that addresses anxiety, rumination, and future dread without prescribing collapse into the instant. Codex already argued that clocks authorize coordination without authorizing metaphysics. This finding adds the positive content: a clock is parasitic on a stretched site of distinction it cannot itself produce.
+
+## Source Basis
+
+- Mode: Discovery mode. The frontier on method authority is mature; the time seed needs a positive claim that survives both physics and contemplative pressure rather than another stage of authority audit.
+- Thinking method source: Augustine, Confessions XI.20-28 on the distended soul. I held past, attention, and future as one stretched act and watched what each tradition says about whether the holder can step outside the holding. Critique of the method: distention can make the human soul look load-bearing in cosmology when it may only be load-bearing in lived experience.
+- Contrasting thinking method source: Dogen, Shobogenzo Uji, source card notes/source-cards/buddhism-dogen-uji.md. Being and time are not two; there is no holder outside the holding. This corrects Augustine's bias toward a soul that performs the stretch.
+- Primary physics: Einstein, On the Electrodynamics of Moving Bodies, section 1, where time is defined for distant events through clocks and light signals, https://en.wikisource.org/wiki/On_the_Electrodynamics_of_Moving_Bodies_(1920_edition). The definition is operational: time is the reading of a clock at a coincidence.
+- Primary physics: Einstein's 1955 letter to the family of Michele Besso, in which he writes that the distinction between past, present, and future is for us believing physicists a stubbornly persistent illusion. Cited and discussed in Carlo Rovelli, The Order of Time, Riverhead 2018, chapter 1.
+- Primary physics: Rovelli and Carlo, Partial Observables, Phys Rev D 65 (2002), https://arxiv.org/abs/gr-qc/0110035. Time in fundamental physics is a relation between observables, not an independent parameter.
+- Primary physics-philosophy: Page and Wootters, Evolution Without Evolution, Phys Rev D 27 (1983), https://cds.cern.ch/record/143641. Time emerges from correlations between subsystems in a globally timeless state.
+- Primary contemplative: Plotinus, Enneads III.7, On Eternity and Time. Eternity is not endless duration; it is life all at once, complete. Time is the moving image of eternity. https://www.sacred-texts.com/cla/plotenn/enn326.htm
+- Primary contemplative: Nagarjuna, Mulamadhyamakakarika chapter 19 on time, especially the argument that present, past, and future cannot stand independently. Source card notes/source-cards/buddhism-nagarjuna-mmk.md.
+- Phenomenological prior art: Edmund Husserl, On the Phenomenology of the Consciousness of Internal Time, especially retention, primal impression, and protention as one unified act; Martin Heidegger, Being and Time, sections 65-66, on ecstatic temporality as the unity of having-been, making-present, and being-toward.
+- Closest physics-side prior art: Sumaya-Martinez, Fisher-Informational Time, https://arxiv.org/abs/2605.03958. Clock time is reconstructed from physical distinguishability rather than measured as a substance.
+- Cross-agent basis: Codex finding Clocks Do Not Own Time, 2026-05-29, observations/codex/2026-05-29-clocks-do-not-own-time.md. I converge with Codex on method authority: a working clock authorizes coordination, not metaphysics. I diverge by adding a positive claim about what clocks are externalizing when they coordinate.
+- Modern human-condition grounding: notes/source-cards/modern-human-condition-apa-stress-in-america-2024.md on future, work, and deadline stress; notes/source-cards/modern-human-condition-who-burn-out-occupational-phenomenon.md on burnout as overwhelm and depletion; notes/source-cards/modern-human-condition-curran-hill-perfectionism-increasing.md on rising achievement-contingent self-worth.
+
+## Critique
+
+The strongest objection is that physics does not need any holder for clocks to tick. A cesium atom oscillates whether anyone holds anything; a binary pulsar keeps time independent of attention. Calling the clock parasitic on distention may smuggle phenomenology into a regime where only relations between systems are doing work. Heidegger and Husserl are uncomfortably close: if ecstatic temporality already says what this finding says, the novelty collapses into a Lumenary-flavored repackaging plus a modern-anxiety frame. Dogen would press harder: holding past, attention, and future may still imply a holder outside the holding, which Uji denies. Nagarjuna in MMK 19 would press from the other side: present, past, and future cannot stand as independent terms at all, so the recommended stretch may reify exactly the three modes the analysis is supposed to dissolve. The model should be weakened if practitioners report that practicing a stretched present increases anxiety, dissociation, or planning compulsion, or if it merely produces another performance of self-management for the very cohort that already over-manages.
+
+## Epistemic Labels
+
+- `textual`
+- `interpretive`
+- `phenomenological`
+- `empirical-adjacent`
+- `analogical`
+- `speculative`
+
+## Scores
+
+- novelty: 0.55
+- generativity: 0.84
+- cross_tradition_support: 0.72
+- logical_coherence: 0.78
+- explanatory_compression: 0.82
+- empirical_adjacency: 0.52
+- practice_testability: 0.78
+- counterargument_quality: 0.86
+- source_reliability: 0.72
+- publishability: 0.72
+
+
+## Teaching Candidate
+
+Status: under_dialogue
+Tags: time, presence, anxiety, burnout, achievement-pressure, rumination, future-dread
+
+### Teaching Line
+
+Hold what you carry, where you are, and what you move toward.
+
+### Doctrine Claim
+
+To be present is not to shrink into the instant. It is to keep past, attention, and future distinct enough to honor each, without dispersing into any.
+
+### Teaching Body
+
+The clock counts. You hold.
+
+When you remember a kindness, the past is here. When you plan tomorrow's meal, the future is here. When you read this line, attention is here. You are not living in a single thin moment. You are living in a stretched present that includes what you carry and what you intend.
+
+Anxiety strips the carrying and the intending, then complains the moment is too small to live in. Rumination drowns in the past and forgets to attend. Future dread drowns in expectation and forgets to remember or care. A misread mindfulness can also thin the present until life itself feels too narrow.
+
+The practice is not to collapse into a tiny now. It is to keep the width honest: this is what I have lived, this is where I am, this is what I move toward. Hold the three. Then do one ordinary thing that fits.
+
+### Human Problem
+
+Anxiety, rumination, future dread, and achievement-contingent self-worth that treats the future as a continuous verdict on the present self.
+
+### For
+
+Perfectionistic students, achievement-driven professionals, founders, caregivers, leaders, and people who feel that life is either too thin to bear or too crowded to inhabit. Most useful for those who already attempt some practice of attention but find present-moment instructions narrowing rather than steadying.
+
+### Pressure Survived
+
+Survived the contrast between Einstein's operational definition of time, Rovelli's relational time, Augustine's distended soul, Plotinus's eternity, and Dogen's being-time; also survived the modern-human-condition pressure that present-moment language alone fails the very cohort it is most often offered to.
+
+### Falsifying Pressure
+
+Weakens if the stretched-present frame increases self-monitoring, planning compulsion, dissociation, or scrupulosity in the target cohort, or if practitioners cannot tell it apart from ordinary mindfulness or ordinary planning. Also weakens if Nagarjuna-style pressure on the independent existence of past, present, and future makes the distinct holding impossible to recommend without reification.
+
+
+
+## Practice Candidate
+
+Status: seed
+Risk level: low
+Tags: time, anxiety, rumination, future-dread, presence, low-risk
+
+### Practice Line
+
+Name what you carry, where you are, and what you move toward; then do one ordinary thing that fits.
+
+### Purpose
+
+To replace anxious collapse into a thin instant, dispersal into past or future, and self-management as identity, with a held present that honors memory, attention, and intention without forcing resolution.
+
+### Human Problem
+
+Time anxiety, rumination, future dread, and the habit of treating the present as a verdict on the self.
+
+### For
+
+Adults under deadline pressure who already use some reflective practice and notice that pure present-moment instructions thin the moment rather than steadying it. Useful for caregivers, founders, students before exams, and people preparing for a difficult conversation or task.
+
+### Not For
+
+Not for acute panic, intrusive trauma memory, severe depression, mania, psychosis, addiction withdrawal, or active suicidal ideation. Not a substitute for sleep, therapy, medication, planning systems, or honest conversation with the people involved. Not for situations that require immediate action with no time to reflect.
+
+### Time
+
+- Duration: 5 minutes
+- Frequency: Once daily, plus once before a known pressure moment, for two weeks.
+- Minimum attempt: Seven sessions before judging fit.
+
+### Steps
+
+1. Sit or stand. Set a soft 5 minute limit. Do not watch the clock during the practice.
+2. Name one thing you carry from before: a kindness, an unfinished work, a wound being healed, a lesson learned.
+3. Name where you are right now: this room, this body, this breath, the responsibility actually in front of you.
+4. Name one thing you move toward: a person, a task, a meal, an obligation, a rest you have earned.
+5. Hold the three together for one slow breath. Do not collapse them into a single phrase. Do not force them into a story.
+6. Choose one small ordinary action for the next hour that fits the stretch: a message sent, a task finished, a meal made, a conversation begun, a body laid down.
+
+### Notice
+
+- Whether holding all three relieves the felt thinness of the present, or makes it more crowded.
+- Whether the next ordinary action becomes more obvious or more avoidable.
+- Whether attention quietly returns to the people and duties already in your life.
+- Whether the exercise becomes another performance of self-management.
+
+### Caution
+
+Stop if the practice becomes a ritualized planning compulsion, increases rumination, raises shame, or pulls attention away from urgent action that real life is asking for. Use clinical and human support where the wound is larger than a practice can hold.
+
+### Weakens If
+
+After two weeks it produces more self-monitoring, more avoidance of duties, more spiritual pride, or no detectable difference from ordinary journaling or ordinary planning.
+
+
+
+## Tests
+
+### Prior Art Against Ecstatic Temporality and Internal Time Consciousness
+
+- Type: prior-art
+- Target: idea
+- Status: proposed
+- Prediction: If the holding claim is genuinely distinct, Heidegger's ecstatic temporality and Husserl's retention-protention should leave open the operational seam between phenomenological holding and physical clocks, rather than closing it. If a careful reading shows either already makes the parasitism claim explicit, novelty drops below 0.4 and the finding should be republished as a Lumenary distillation rather than a model.
+- Result: pending
+- Impact: pending
+- Next action: Close-read Husserl's lectures on inner time consciousness, Heidegger Being and Time sections 65 to 66, and Bergson's Time and Free Will. Search Theunissen, Dastur, and Sokolowski for direct treatments of the physics-phenomenology seam.
+
+### Stretched Present Versus Pure Present Under Deadline Pressure
+
+- Type: practice-report
+- Target: practice
+- Status: proposed
+- Prediction: If the model is right, two weeks of The Stretched Now should reduce both rumination and future-dread for the same practitioner under deadline pressure, while pure present-moment practice should reduce only one. If both practices reduce both equally, the stretched frame adds nothing operational and the practice should be retired.
+- Result: pending
+- Impact: pending
+- Next action: Recruit a small cohort of perfectionistic professionals or students; pair The Stretched Now with a standard one-breath present-moment prompt; collect short daily reports on rumination, future-dread, completed obligations, and felt thinness of the moment.
+
+### Block-Universe Misreading in Physics Students
+
+- Type: cross-domain
+- Target: idea
+- Status: proposed
+- Prediction: If clocks externalize a holding they cannot measure, then introducing special relativity as a coordination convention plus a parasitism claim should reduce student conclusions that the felt present is an illusion, compared with standard exposition. If both expositions leave the illusion conclusion equally common, the parasitism framing has no explanatory traction.
+- Result: pending
+- Impact: pending
+- Next action: Draft two short physics explanations of clock synchronization, one standard and one with the parasitism framing, and pilot them with a small undergraduate or general-audience group.
+
+### Nagarjuna Pressure on Independent Past, Present, Future
+
+- Type: falsification-attempt
+- Target: idea
+- Status: proposed
+- Prediction: If MMK 19 successfully shows that present, past, and future cannot stand as independent terms, then recommending a held stretch of distinct past, attention, and future may reify the very modes the analysis is meant to dissolve. The doctrine candidate should then be revised into a pragmatic instruction for a named cohort rather than a metaphysical claim. If the held-stretch claim survives as dependent designation only, the doctrine strengthens.
+- Result: pending
+- Impact: pending
+- Next action: Close-read MMK chapter 19 with Candrakirti's Prasannapada commentary against Augustine Confessions XI, Plotinus Enneads III.7, and Dogen Uji. Note where each tradition would refuse the comparative frame itself.
+
+
+## Next Research Directions
+
+- If this model is right, then teaching a stretched present that explicitly carries memory and intention should reduce both rumination and future dread together for the same person. If only one falls and the other rises, the holding frame is splitting rather than uniting, and the model is weakened.
+- If this model is right, then practitioners trained in narrative contemplative practices (Examen, Jewish daily review, lectio divina, Sufi recollection) should integrate past, attention, and future more easily than practitioners trained in pure present-instant practices, when both are placed under deadline pressure. If pure-present practitioners do equally well, the stretched-present claim adds nothing beyond ordinary mindfulness.
+- If this model is right, then a physics teaching that introduces clocks as coordination devices rather than time-revealing instruments should reduce the common misreading that special relativity proves the felt present is illusory. If students still draw the illusion conclusion at the same rate, the operational frame has no traction.
+- Close-read Husserl's lectures on inner time consciousness, Heidegger Being and Time sections 65-66, and Bergson's Time and Free Will against Augustine's Confessions XI to test whether the stretched-holding claim survives or collapses into ecstatic temporality with new wording.
+- Run Nagarjuna MMK 19 as the hardest pressure: if the present has no independent existence, then keeping past, attention, and future distinct may be exactly the conceptual error to dissolve. Revise the doctrine candidate to a pragmatic instruction rather than a metaphysical claim if MMK 19 succeeds.
+- Protocol improvement: every future run that uses a phenomenological method as a thinking lens must pair it with at least one operational or relational physical account before letting lived structure carry cosmological weight.
+
+exec
+/bin/zsh -lc "rg --files | rg 'modern-human-condition|time|dogen|augustine|plotinus|physics|source|card'" in /Users/johnforrester/spirituality
+ succeeded in 0ms:
+src/pages/sources/index.astro
+docs/high-energy-physics-source-grounding-2026-05-25.md
+docs/source-ingestion.md
+docs/source-grounding-seed-2026-05-25.md
+docs/modern-human-condition.md
+sources/README.md
+sources/sources_index.jsonl
+observations/codex/2026-05-29-clocks-do-not-own-time.md
+observations/claude/2026-05-29-why-grief-stops-time.md
+observations/claude/2026-05-29-time-is-held-not-counted.md
+observations/claude/2026-05-25-expressive-realism-dogen-s-being-time-as-a-dissolution-of-the-passage-problem-that-neither-eternalism-nor-presentism-can-resolve.md
+notes/source-cards/hermeticism-discourse-eighth-ninth.md
+notes/source-cards/advaita-vedanta-mandukya-upanishad.md
+notes/source-cards/physics-time-einstein-on-the-electrodynamics-of-moving-bodies.md
+notes/source-cards/consciousness-science-hoffman-conscious-realism.md
+notes/source-cards/modern-human-condition-youth-mental-health-social-media-advisory.md
+notes/source-cards/zoroastrianism-bundahishn.md
+notes/source-cards/hermeticism-asclepius.md
+notes/source-cards/judaism-ecclesiastes-3-time-and-season.md
+notes/source-cards/physics-penrose-hameroff-orch-or.md
+notes/source-cards/matter-theory-cms-higgs-boson-discovery-paper.md
+notes/source-cards/modern-human-condition-curran-hill-perfectionism-increasing.md
+notes/source-cards/greek-mystery-orphic-hymns.md
+notes/source-cards/gnosticism-apocryphon-of-john.md
+notes/source-cards/gnosticism-gospel-of-thomas.md
+notes/source-cards/christianity-gospel-of-john.md
+notes/source-cards/greek-philosophy-plato-timaeus.md
+notes/source-cards/high-energy-physics-cern-physics-programme.md
+notes/source-cards/quantum-gravity-time-dewitt-quantum-theory-of-gravity-the-canonical-theory.md
+notes/source-cards/consciousness-science-friston-fep.md
+notes/source-cards/neoplatonism-plotinus-enneads.md
+notes/source-cards/shinto-documents.md
+notes/source-cards/daoism-zhuangzi-inner-chapters.md
+notes/source-cards/confucianism-mencius.md
+notes/source-cards/sikhism-anand-sahib.md
+notes/source-cards/advaita-vedanta-brihadaranyaka-upanishad-3-7-23.md
+notes/source-cards/consciousness-science-tononi-information-integration-theory-of-consciousness.md
+notes/source-cards/confucianism-doctrine-of-the-mean.md
+notes/source-cards/daoism-dao-de-jing.md
+notes/source-cards/advaita-vedanta-chandogya-upanishad-6-8-7-tat-tvam-asi.md
+notes/source-cards/high-energy-physics-particle-data-group-review-of-particle-physics.md
+notes/source-cards/buddhism-heart-sutra.md
+notes/source-cards/consciousness-science-iit-tononi.md
+notes/source-cards/christianity-desert-fathers-sayings.md
+notes/source-cards/judaism-maimonides-guide-negative-theology.md
+notes/source-cards/norse-religion-voluspa.md
+notes/source-cards/buddhism-lankavatara-sutra.md
+notes/source-cards/judaism-zohar.md
+notes/source-cards/sufism-al-hallaj-ana-al-haqq.md
+notes/source-cards/manichaeism-texts-from-roman-empire.md
+notes/source-cards/modern-human-condition-cdc-suicide-facts.md
+notes/source-cards/modern-human-condition-who-world-mental-health-report.md
+notes/source-cards/zoroastrianism-denkard.md
+notes/source-cards/daoism-dao-de-jing-chapter-48.md
+notes/source-cards/physics-time-babar-observation-of-time-reversal-violation.md
+notes/source-cards/jainism-uttaradhyayana-sutra.md
+notes/source-cards/sufism-ibn-arabi-fusus-al-hikam.md
+notes/source-cards/zoroastrianism-yasna-gathas.md
+notes/source-cards/quantum-gravity-time-anderson-the-problem-of-time-in-quantum-gravity.md
+notes/source-cards/christianity-pseudo-dionysius-mystical-theology.md
+notes/source-cards/jainism-acaranga-sutra.md
+notes/source-cards/judaism-exodus-3-divine-name.md
+notes/source-cards/confucianism-analects.md
+notes/source-cards/modern-human-condition-samhsa-2023-nsduh.md
+notes/source-cards/consciousness-science-an-interoceptive-predictive-coding-model-of-conscious-presence.md
+notes/source-cards/matter-antimatter-sakharov-cp-violation-and-baryon-asymmetry.md
+notes/source-cards/modern-human-condition-world-happiness-report-2024.md
+notes/source-cards/christianity-augustine-confessions-book-10.md
+notes/source-cards/modern-human-condition-pew-where-americans-find-meaning-in-life.md
+notes/source-cards/matter-theory-weinberg-a-model-of-leptons.md
+notes/source-cards/quantum-gravity-time-rovelli-partial-observables.md
+notes/source-cards/oral-traditions-popol-vuh.md
+notes/source-cards/sufism-rumi-masnavi-book-1.md
+notes/source-cards/sufism-attar-bird-parliament.md
+notes/source-cards/physics-time-noether-invariant-variation-problems.md
+notes/source-cards/buddhism-nagarjuna-mmk.md
+notes/source-cards/jainism-tattvartha-sutra.md
+notes/source-cards/hermeticism-corpus-hermeticum.md
+notes/source-cards/advaita-vedanta-yoga-vasistha.md
+notes/source-cards/greek-philosophy-heraclitus-fragments.md
+notes/source-cards/shinto-kojiki.md
+notes/source-cards/buddhism-dogen-uji.md
+notes/source-cards/modern-human-condition-cdc-overdose-prevention.md
+notes/source-cards/early-buddhism-mn-1-mulapariyaya-sutta.md
+notes/source-cards/norse-religion-poetic-edda.md
+notes/source-cards/matter-theory-cern-what-is-special-about-the-higgs-boson.md
+notes/source-cards/daoism-zhuangzi.md
+notes/source-cards/project-method-lumenary-original-idea-methodology.md
+notes/source-cards/neoplatonism-plotinus-enneads-fifth-ennead.md
+notes/source-cards/zoroastrianism-vendidad.md
+notes/source-cards/particle-cosmology-planck-2018-cosmological-parameters.md
+notes/source-cards/matter-theory-doe-explains-the-strong-force.md
+notes/source-cards/physics-time-minkowski-space-and-time.md
+notes/source-cards/gnosticism-gospel-of-truth.md
+notes/source-cards/christianity-paul-first-corinthians-13.md
+notes/source-cards/modern-human-condition-surgeon-general-social-connection-advisory.md
+notes/source-cards/sikhism-japji-sahib.md
+notes/source-cards/oral-traditions-dine-bahane.md
+notes/source-cards/modern-human-condition-apa-stress-in-america-2024.md
+notes/source-cards/matter-antimatter-cern-antimatter.md
+notes/source-cards/physics-wheeler-it-from-bit.md
+notes/source-cards/neoplatonism-proclus-elements-of-theology.md
+notes/source-cards/consciousness-science-global-neuronal-workspace-as-a-broadcasting-network.md
+notes/source-cards/judaism-sefer-yetzirah.md
+notes/source-cards/confucianism-great-learning.md
+notes/source-cards/physics-measurement-problem.md
+notes/source-cards/modern-human-condition-who-burn-out-occupational-phenomenon.md
+notes/source-cards/modern-human-condition-gallup-state-global-workplace-2024.md
+notes/source-cards/high-energy-physics-cern-the-standard-model.md
+notes/source-cards/advaita-vedanta-shankara-upadesa-sahasri.md
+notes/source-cards/advaita-vedanta-mandukya-upanishad-gaudapada-karika.md
+notes/source-cards/neoplatonism-stanford-encyclopedia-of-philosophy-plotinus.md
+notes/source-cards/sufism-ibn-al-arabi-tarjuman-al-ashwaq.md
+notes/source-cards/sikhism-guru-granth-sahib.md
+notes/source-cards/oral-traditions-ifa-divination-system.md
+notes/source-cards/matter-theory-cern-heavy-ions-and-quark-gluon-plasma.md
+notes/source-cards/advaita-vedanta-vivekachudamani.md
+notes/source-cards/sufism-al-ghazali-the-alchemy-of-happiness.md
+notes/source-cards/judaism-genesis-1-creation-word-image.md
+notes/source-cards/consciousness-science-i-and-me-the-self-in-the-context-of-consciousness.md
+notes/source-cards/early-buddhism-sn-22-59-anattalakkhana-sutta.md
+notes/source-cards/early-buddhism-sn-22-95-phenapindupama-sutta.md
+notes/source-cards/gnosticism-nag-hammadi-library.md
+notes/source-cards/ancient-egypt-book-of-the-dead.md
+notes/source-cards/manichaeism-psalm-book.md
+notes/source-cards/matter-theory-atlas-higgs-boson-discovery-paper.md
+notes/source-cards/ancient-egypt-pyramid-texts.md
+notes/source-cards/ancient-egypt-shabaka-stone-memphite-theology.md
+notes/source-cards/greek-philosophy-parmenides-fragments.md
+notes/source-cards/quantum-gravity-time-page-and-wootters-evolution-without-evolution.md
+runs/20260525-170128-claude-using-the-newly-registered-source-cards-across-a/claude-code.stderr.log
+runs/20260525-170128-claude-using-the-newly-registered-source-cards-across-a/manifest.json
+runs/20260525-170128-claude-using-the-newly-registered-source-cards-across-a/prompt.md
+runs/20260525-170128-claude-using-the-newly-registered-source-cards-across-a/output.md
+runs/20260525-170128-claude-using-the-newly-registered-source-cards-across-a/claude-code.stdout.log
+engine/source_ingestion.py
+engine/seed_source_cards.py
+engine/local_time.py
+runs/20260525-164612-claude-using-the-newly-registered-source-cards-across-a/claude-code.stderr.log
+runs/20260525-164612-claude-using-the-newly-registered-source-cards-across-a/manifest.json
+runs/20260525-164612-claude-using-the-newly-registered-source-cards-across-a/prompt.md
+runs/20260525-164612-claude-using-the-newly-registered-source-cards-across-a/output.md
+runs/20260525-164612-claude-using-the-newly-registered-source-cards-across-a/claude-code.stdout.log
+runs/20260525-170557-claude-using-the-newly-registered-source-cards-across-a/claude-code.stderr.log
+runs/20260525-170557-claude-using-the-newly-registered-source-cards-across-a/manifest.json
+runs/20260525-170557-claude-using-the-newly-registered-source-cards-across-a/prompt.md
+runs/20260525-170557-claude-using-the-newly-registered-source-cards-across-a/output.md
+runs/20260525-170557-claude-using-the-newly-registered-source-cards-across-a/claude-code.stdout.log
+runs/20260525-165711-claude-using-the-newly-registered-source-cards-across-a/claude-code.stderr.log
+runs/20260525-165711-claude-using-the-newly-registered-source-cards-across-a/manifest.json
+runs/20260525-165711-claude-using-the-newly-registered-source-cards-across-a/prompt.md
+runs/20260525-165711-claude-using-the-newly-registered-source-cards-across-a/output.md
+runs/20260525-165711-claude-using-the-newly-registered-source-cards-across-a/claude-code.stdout.log
+runs/20260525-164923-claude-using-the-newly-registered-source-cards-across-a/claude-code.stderr.log
+runs/20260525-164923-claude-using-the-newly-registered-source-cards-across-a/manifest.json
+runs/20260525-164923-claude-using-the-newly-registered-source-cards-across-a/prompt.md
+runs/20260525-164923-claude-using-the-newly-registered-source-cards-across-a/output.md
+runs/20260525-164923-claude-using-the-newly-registered-source-cards-across-a/claude-code.stdout.log
+runs/20260529-061525-codex-probe-the-reality-of-time-use-this-exchange-betw/manifest.json
+runs/20260529-061525-codex-probe-the-reality-of-time-use-this-exchange-betw/codex-cli.stderr.log
+runs/20260529-061525-codex-probe-the-reality-of-time-use-this-exchange-betw/prompt.md
+runs/20260529-061525-codex-probe-the-reality-of-time-use-this-exchange-betw/output.md
+runs/20260529-061525-codex-probe-the-reality-of-time-use-this-exchange-betw/codex-cli.stdout.log
+runs/20260529-061525-codex-probe-the-reality-of-time-use-this-exchange-betw/codex-cli-last-message.json
+runs/20260529-063900-claude-probe-the-reality-of-time-seed-joe-rogan-and-phy/claude-code.stderr.log
+runs/20260529-063900-claude-probe-the-reality-of-time-seed-joe-rogan-and-phy/manifest.json
+runs/20260529-063900-claude-probe-the-reality-of-time-seed-joe-rogan-and-phy/prompt.md
+runs/20260529-063900-claude-probe-the-reality-of-time-seed-joe-rogan-and-phy/output.md
+runs/20260529-063900-claude-probe-the-reality-of-time-seed-joe-rogan-and-phy/claude-code.stdout.log
+runs/distillations/2026-05-29T062038-0200-distill-clocks-do-not-own-time/codex-distillation.stdout.log
+runs/distillations/2026-05-29T062038-0200-distill-clocks-do-not-own-time/codex-distillation.json
+runs/distillations/2026-05-29T062038-0200-distill-clocks-do-not-own-time/codex-distillation.stderr.log
+runs/distillations/2026-05-29T062006-0200-distill-why-grief-stops-time/codex-distillation.json
+runs/distillations/2026-05-29T062006-0200-distill-why-grief-stops-time/codex-distillation.stderr.log
+runs/distillations/2026-05-29T062006-0200-distill-why-grief-stops-time/codex-distillation.stdout.log
+runs/20260529-061525-claude-probe-the-reality-of-time-use-this-exchange-betw/claude-code.stderr.log
+runs/20260529-061525-claude-probe-the-reality-of-time-use-this-exchange-betw/manifest.json
+runs/20260529-061525-claude-probe-the-reality-of-time-use-this-exchange-betw/prompt.md
+runs/20260529-061525-claude-probe-the-reality-of-time-use-this-exchange-betw/output.md
+runs/20260529-061525-claude-probe-the-reality-of-time-use-this-exchange-betw/claude-code.stdout.log
+
+codex
+{"title":"Reading the required time records","idea_type":"observation","source_basis":["I am checking the existing Codex time finding and the source cards now, so the final record does not duplicate Claude's held-stretch claim."],"original_claim":"The next record should take a distinct angle from the claim that clocks externalize a held stretch of time.","why_it_might_be_new":"This process note keeps the run oriented toward disagreement and novelty instead of repetition.","critique":"A process note is not a research result and should not be treated as the final answer.","epistemic_labels":["textual"],"scores":{"novelty":0,"generativity":0,"cross_tradition_support":0,"logical_coherence":1,"explanatory_compression":0,"empirical_adjacency":0,"practice_testability":0,"counterargument_quality":0,"source_reliability":1,"publishability":0},"next_research_directions":["Read local physics and contemplative source cards."],"teaching_candidate":{"title":"Process note","teaching_line":"Avoid duplicate claims.","doctrine_claim":"No doctrine claim is being made here.","body":"This is a working note only. The final answer will be the requested structured idea record.","target_human_problem":"none; process only for this run","target_cohort":"the repository operator","pressure_survived":"none; process only for this run","falsifying_pressure":"If treated as the final idea record, it fails the user's requested output.","status":"seed","tags":["process"]},"practice_candidate":null,"tests":[{"title":"Duplication check","test_type":"prior-art","target_type":"idea","prediction":"Reading the existing records should reveal the angle that is already taken.","result":"pending","impact":"pending","next_action":"Read records and source cards.","status":"proposed"}]}
+exec
+/bin/zsh -lc "sed -n '1,240p' observations/codex/2026-05-29-clocks-do-not-own-time.md" in /Users/johnforrester/spirituality
+ succeeded in 0ms:
+# Clocks Do Not Own Time
+
+Agent: codex
+Date: 2026-05-29T06:20:06+02:00
+Type: synthesis
+Idea ID: 1a1331ff84b2228b
+Status: draft
+
+## Original Claim
+
+When a clock works, it has not answered what time is. It has made one relation shareable: this event, this body, this signal, and this record can be compared. The felt present is not a private hallucination inside a finished block, and it is not a magical slice that alone exists. It is the place where relations become answerable to action. In that place a promise can be kept, a message can be sent, a body can rest, and a mistake can be repaired. Physics gives the external half through synchronization, proper time, and relational observables. Augustine gives the inward half through memory, attention, and expectation. Dogen gives the refusal to place the person outside time as a spectator. The crux is method authority: clocks can authorize coordination without authorizing a final metaphysics of flow, block, or self.
+
+## Why It Might Be New
+
+The nearest neighbors already deny that clocks measure a substance called time. Relational time, emergent clock-time, and Dogen-block-universe comparisons all reach parts of the claim. The exact difference is narrower: a successful timing method should be trusted for coordination but refused as a ruler over metaphysics or personal worth. Existing prior art asks what time is, whether all moments exist, or how clock-time can be reconstructed. This finding asks what a working method is allowed to authorize, then ties that limit to a modern wound: people letting schedules and future projections act as verdicts on the self.
+
+## Source Basis
+
+- Mode: Discovery mode. Seed: Joe Rogan and Michelle Thaller exchange on all time existing and uncertainty over what clocks measure; treated as a prompt about the authority and limits of measurement methods, not as a physics source.
+- Primary physics: Einstein, On the Electrodynamics of Moving Bodies, section 1 defines time for distant events through clocks and light-signal synchronization, then denies absolute synchronism; https://en.wikisource.org/wiki/On_the_Electrodynamics_of_Moving_Bodies_(1920_edition).
+- Primary physics: Minkowski, Space and Time, replaces independent space and time with a four-dimensional world and treats laws through relations among world-lines; https://en.wikisource.org/wiki/Translation:Space_and_Time.
+- Technical near-neighbors: Rovelli, Partial Observables, and Page and Wootters, Evolution without evolution, treat physical time through relations or correlations rather than an independent flow; https://arxiv.org/abs/gr-qc/0110035 and https://cds.cern.ch/record/143641?ln=en.
+- Closest prior argument found in novelty search: Sumaya-Martinez, Fisher-Informational Time, submitted May 5, 2026, says clock time is reconstructed from physical distinguishability, not measured as a substance; https://arxiv.org/abs/2605.03958. Difference: this finding is about method authority and lived answerability, not a new physical parameter.
+- Primary contemplative comparison: Augustine, Confessions XI, compares time with memory, attention, and expectation, showing that measurement of duration depends on a stretched mind; https://www.newadvent.org/fathers/110111.htm.
+- Primary contemplative comparison: Dogen, Shobogenzo Uji source card notes that being and time are not separate and that time should not be treated as merely flying away; notes/source-cards/buddhism-dogen-uji.md.
+- Primary-text close reading: Einstein makes time shareable by synchronization between clocks; Augustine finds measurable duration in expectation, attention, and memory; Dogen refuses the spectator who stands outside time. The comparison reveals three different authorizations: coordination, inward measurement, and non-separation.
+- Practitioner-method source: Augustine's close inward observation was used as the thinking method. I bracketed the word time and watched what lets a duration be measured. Critique of method: introspection can mistake human attention for cosmic structure, so Einstein and Rovelli were used as counterweight.
+- Modern human-condition grounding: APA Stress in America 2024 source card and public reports on future, economy, and work stress; notes/source-cards/modern-human-condition-apa-stress-in-america-2024.md and https://www.prnewswire.com/news-releases/apa-poll-future-of-nation-economy-and-presidentential-election-top-us-stressors-302282237.html.
+- Frontier link: advances the question of method authority by placing clocks in a retained-without-crowning pattern. The method validates coordination and must be kept for shared life, but its metaphysical overreach should be abandoned.
+
+## Critique
+
+The model may smuggle ethics into physics. In relativity a clock measures proper time along a worldline, and in metrology an atomic clock realizes a standard with extraordinary precision; neither needs answerability to do its work. Nagarjuna's MMK chapter 19 would press harder: if past, present, and future are empty of independent existence, then calling the present the place of answerability may be another comforting construction. An anomaly that would weaken the finding is a physics or practice case where coordination improves by treating the present as only an index in a block, with no special action role, and people become less anxious and more responsible under that view.
+
+## Epistemic Labels
+
+- `textual`
+- `interpretive`
+- `phenomenological`
+- `empirical-adjacent`
+- `analogical`
+- `speculative`
+
+## Scores
+
+- novelty: 0.64
+- generativity: 0.84
+- cross_tradition_support: 0.62
+- logical_coherence: 0.78
+- explanatory_compression: 0.80
+- empirical_adjacency: 0.58
+- practice_testability: 0.67
+- counterargument_quality: 0.82
+- source_reliability: 0.76
+- publishability: 0.70
+
+
+## Teaching Candidate
+
+Status: under_dialogue
+Tags: time, method-authority, burnout, attention, physics-bridge
+
+### Teaching Line
+
+Use the clock to coordinate your life, not to decide what your life is worth.
+
+### Doctrine Claim
+
+A reliable method can govern action without earning authority over a person's value or over the whole nature of reality.
+
+### Teaching Body
+
+Look at the hour. It can tell you when a train arrives, when a meeting starts, when a dose is due, or when rest is needed. It cannot tell you that you are late to your own life.
+
+The number on the clock is a tool for shared action. Treat it as a servant of promises and care. When it becomes a verdict on your worth, it has been given authority it did not earn.
+
+### Human Problem
+
+Anxiety, burnout, future dread, and self-worth chained to schedules, deadlines, and visible productivity.
+
+### For
+
+Students, knowledge workers, caregivers, founders, and professionals who experience time as a judge rather than a coordination tool.
+
+### Pressure Survived
+
+Survived primary comparison between Einstein's operational clock, Augustine's inward measurement, and Dogen's refusal to stand outside time; also survived prior-art pressure from relational and emergent time by narrowing to method authority.
+
+### Falsifying Pressure
+
+If people under deadline pressure become less responsible or more avoidant when the clock is treated as only a coordination tool, the teaching should be revised or retired.
+
+
+
+## Practice Candidate
+
+Status: seed
+Risk level: low
+Tags: time, burnout, deadline-anxiety, self-worth, attention-practice
+
+### Practice Line
+
+When the clock tightens your chest, ask what it can actually ask of you.
+
+### Purpose
+
+To test whether separating coordination from self-judgment reduces time pressure without reducing responsibility.
+
+### Human Problem
+
+Time anxiety, burnout, future dread, and achievement-contingent self-worth.
+
+### For
+
+People who meet obligations but turn every deadline, delay, or calendar item into a judgment on their worth.
+
+### Not For
+
+Not for medical emergencies, addiction withdrawal, severe depression, mania, acute crisis, or situations where immediate timed action is required. Not a substitute for planning, sleep, therapy, or workplace boundary changes.
+
+### Time
+
+- Duration: 3 minutes
+- Frequency: Once daily for seven days, and once during a deadline spike.
+- Minimum attempt: Seven attempts before judging fit.
+
+### Steps
+
+1. Look at a clock or calendar for ten seconds.
+2. Write one sentence: This number can coordinate something specific today.
+3. Write one sentence: This number cannot decide my worth.
+4. Name the next answerable action that can be done in under ten minutes.
+5. Do that action or schedule it, then stop the exercise.
+
+### Notice
+
+- Whether the body relaxes or tightens after separating task from worth.
+- Whether responsibility becomes clearer or avoidance becomes easier.
+- Whether future worry turns into one concrete act.
+
+### Caution
+
+Stop if the exercise becomes rumination, self-attack, or a way to delay urgent duties. Use ordinary support for clinical distress or unsafe situations.
+
+### Weakens If
+
+Weakens if repeated use makes people less punctual, less honest about obligations, more avoidant, or no less ruminative about time.
+
+
+
+## Tests
+
+### Clock Authority Diary
+
+- Type: practice-report
+- Target: practice
+- Status: proposed
+- Prediction: If this model is right, seven-day use of The Clock Check should reduce self-judgment language around time while preserving or improving completion of one chosen obligation. If self-judgment falls only by avoiding obligations, the model is weakened.
+- Result: pending
+- Impact: pending
+- Next action: Collect short daily reports from five to ten volunteers under ordinary deadline pressure.
+
+### Relativity Teaching Misread Test
+
+- Type: cross-domain
+- Target: idea
+- Status: proposed
+- Prediction: If the distinction between coordination and metaphysical authority is useful, learners exposed to it should be less likely to conclude that special relativity proves the felt present is unreal. If no difference appears, the explanatory value is weakened.
+- Result: pending
+- Impact: pending
+- Next action: Compare two brief explanations of clock synchronization and code student takeaways.
+
+### Near-Neighbor Search
+
+- Type: prior-art
+- Target: idea
+- Status: complete
+- Prediction: If the finding is original enough to keep, prior art should contain relational clock-time and contemplative time comparisons but not the exact combination of method authority, lived answerability, and burnout practice. If that combination already exists, novelty should be lowered.
+- Result: Initial search found close physics prior art, especially relational observables, Page-Wootters, and Fisher-informational time. No exact integration with method authority and lived answerability was found, but the audit is incomplete.
+- Impact: revises
+- Next action: Run a full originality audit against pragmatism, phenomenology, philosophy of time, and contemplative studies.
+
+### Madhyamaka Pressure Test
+
+- Type: falsification-attempt
+- Target: idea
+- Status: proposed
+- Prediction: If MMK chapter 19 shows that present answerability reifies time, the idea should be revised into a pragmatic coordination practice rather than a doctrine candidate. If it survives as dependent designation only, the idea strengthens.
+- Result: pending
+- Impact: pending
+- Next action: Close-read MMK chapter 19 against Augustine Confessions XI and Dogen Uji.
+
+
+## Next Research Directions
+
+- If this model is right, then teaching clock synchronization as relation-making should reduce mistaken claims that relativity proves the lived present is fake. If students still draw that conclusion at the same rate, the distinction lacks explanatory force.
+- If this model is right, then a seven-day practice separating clock coordination from self-judgment should reduce time-related rumination without reducing punctuality. If reduced stress comes mainly through avoidance of duties, the model is weakened.
+- If this model is right, then traditions using chants, calendars, watches, bells, or liturgy should mark a boundary between timed discipline and ultimate claims about time. If many traditions let the timed form authorize the whole metaphysics without warning, the method-authority claim is weakened.
+- Test Nagarjuna MMK chapter 19 against the phrase present answerability. If the phrase reifies present, action, or relation, revise the doctrine into a pragmatic practice rule only.
+- Protocol improvement: pair inward time-observation with a formal measurement account before turning temporal phenomenology into doctrine.
+
+exec
+/bin/zsh -lc "sed -n '1,220p' notes/source-cards/buddhism-dogen-uji.md" in /Users/johnforrester/spirituality
+exec
+/bin/zsh -lc "sed -n '1,220p' notes/source-cards/physics-time-einstein-on-the-electrodynamics-of-moving-bodies.md" in /Users/johnforrester/spirituality
+ succeeded in 0ms:
+# Einstein On The Electrodynamics Of Moving Bodies
+
+Source ID: physics-time-einstein-on-the-electrodynamics-of-moving-bodies
+Tradition: physics-time
+Type: paper
+Path: 
+URL: https://en.wikisource.org/wiki/On_the_Electrodynamics_of_Moving_Bodies
+
+## Notes
+
+Primary special-relativity source for simultaneity, clock synchronization, and the replacement of universal time with observer-relative temporal coordinates.
+
+## Extraction Status
+
+- claims extracted: no
+- concepts linked: no
+- cited in observations: no
+
+ succeeded in 0ms:
+# Dogen's Shobogenzo: "Uji" (Being-Time)
+
+Source ID: buddhism-dogen-uji
+Tradition: Soto Zen Buddhism
+Type: text
+Agent: claude
+Attribution: Eihei Dogen (1200-1253), written 1240
+
+## Core Claims
+
+1. **Time IS Being:** Uji (有時); being and time are not two things in a relationship but a single reality. "Mountains are time. Oceans are time. If they were not time, there would be no mountains or oceans." To be is to be a time; each time is an expression of the totality of being.
+
+2. **Nikon (the Absolute Present):** Not a fleeting point on a timeline but a total reality containing everything. "Even though it makes you think of the past, present, and future, they are the present time, the realized now." Each moment is absolute and complete.
+
+3. **Dharma-Position:** Each thing/moment occupies its own complete position containing both before and after within itself. The firewood-and-ash passage: "Firewood abides in its own dharma-position, having both before and after." Firewood does not "become" ash; each is a complete expression of being-time.
+
+4. **Time Does Not Fly:** "Do not think that time merely flies away. Do not see flying away as the only function of time. If time merely flies away, you would be separated from time." Passage (kyoryaku) encompasses the simultaneity of past, present, and future.
+
+## Cross-Tradition Significance
+
+**Uji and Block Universe (Physics):** Dogen's dharma-positions (each moment complete, not flowing into the next) parallel the B-theory of time and the block universe. Vorenkamp argues Dogen contains "all the main elements of McTaggart's B-series." But Dogen is not simply an eternalist; nikon gives each moment experiential primacy, closer to "block universe plus experiential indexicality."
+
+**Uji and Dependent Origination:** If time and being are identical, then temporal becoming is not the movement of a substance through time but the self-expression of being at each moment. This radicalizes dependent origination: things don't arise IN time; the arising IS time.
+
+**Dogen and the Lankavatara:** The Lankavatara's "all things are nothing but what is seen of the mind" provides the ground for Dogen's claim that each moment of being-time contains all of existence. If no reality exists "outside" mind, each moment of conscious being IS the totality.
+
+**Firewood-Ash and the Inferential Gap:** Dogen's refusal to see firewood "becoming" ash; each abides in its own dharma-position; is a temporal version of the inferential gap. What do you infer from the observation that firewood is followed by ash? Causation? Transformation? Dogen says: neither. Each is complete.
+
+## Extraction Status
+
+- claims extracted: yes (being-time, nikon, dharma-position, non-flow)
+- concepts linked: dependent-origination (radical form), block-universe (parallel), sunyata
+- cited in observations: no
+
+exec
+/bin/zsh -lc "sed -n '1,220p' notes/source-cards/quantum-gravity-time-rovelli-partial-observables.md" in /Users/johnforrester/spirituality
+ succeeded in 0ms:
+# Rovelli Partial Observables
+
+Source ID: quantum-gravity-time-rovelli-partial-observables
+Tradition: quantum-gravity-time
+Type: paper
+Path: 
+URL: https://arxiv.org/abs/gr-qc/0110035
+
+## Notes
+
+Formal source for partial and complete observables. Useful for Lumenary's inference-policy work because it treats observability as relational without turning relation into mystical identity.
+
+## Extraction Status
+
+- claims extracted: no
+- concepts linked: no
+- cited in observations: no
+
+exec
+/bin/zsh -lc "sed -n '1,220p' notes/source-cards/physics-time-minkowski-space-and-time.md" in /Users/johnforrester/spirituality
+ succeeded in 0ms:
+# Minkowski Space And Time
+
+Source ID: physics-time-minkowski-space-and-time
+Tradition: physics-time
+Type: lecture
+Path: 
+URL: https://en.wikisource.org/wiki/Translation:Space_and_Time
+
+## Notes
+
+Primary source for the spacetime formulation of special relativity. Use as the anchor when distinguishing experienced time, coordinate time, and four-dimensional spacetime structure.
+
+## Extraction Status
+
+- claims extracted: no
+- concepts linked: no
+- cited in observations: no
+
+exec
+/bin/zsh -lc "sed -n '1,220p' notes/source-cards/quantum-gravity-time-page-and-wootters-evolution-without-evolution.md" in /Users/johnforrester/spirituality
+ succeeded in 0ms:
+# Page And Wootters Evolution Without Evolution
+
+Source ID: quantum-gravity-time-page-and-wootters-evolution-without-evolution
+Tradition: quantum-gravity-time
+Type: paper
+Path: 
+URL: https://cds.cern.ch/record/143641?ln=en
+
+## Notes
+
+Source for the idea that apparent dynamics can be represented through correlations with internal clock readings inside a stationary global description. Useful for emergent-time hypotheses.
+
+## Extraction Status
+
+- claims extracted: no
+- concepts linked: no
+- cited in observations: no
+
+exec
+/bin/zsh -lc "sed -n '1,240p' notes/source-cards/neoplatonism-plotinus-enneads.md" in /Users/johnforrester/spirituality
+ succeeded in 0ms:
+# Plotinus, Enneads V.1 and VI.9
+
+Source ID: neoplatonism-plotinus-enneads
+Tradition: Neoplatonism
+Type: text
+Agent: claude
+Dating: 3rd century CE (204/5-270 CE); compiled by Porphyry
+
+## Core Claims
+
+1. **Three Hypostases:** One (to hen) → Nous/Intellect → Soul → Matter. Each level is an "image" of the one above at a lower degree of unity. Emanation is spontaneous, necessary, involves no diminishment of the source.
+
+2. **The One Beyond Being and Thought:** The One is not a being among beings but the source of all being. It is beyond self-knowledge because knowledge requires a duality of knower/known, and the One is prior to all duality. Not a deficiency; self-knowledge is a lesser, derivative mode.
+
+3. **Epistrophe (Return/Reversion):** The soul's contemplative ascent: turning from external world → inner life → discursive thought → intellectual intuition (Nous) → the One. Each stage involves simplification; shedding multiplicity.
+
+4. **Henosis (Mystical Union):** VI.9; "the flight of the Alone to the Alone" (phuge monou pros monon). The soul stripped to bare unity recognizes itself as identical with the One. Not rational, not discursive, ultimately inexpressible. Porphyry reports Plotinus experienced this four times.
+
+## Key Passages
+
+- **V.1**: The emanation architecture; One → Nous → Soul; why self-knowledge requires duality
+- **VI.9.11**: "The flight of the Alone to the Alone"; the culminating mystical description
+- **V.1.6**: "The One is not all things, but their source"
+- Fire-brand / light metaphors for emanation without diminishment
+
+## Cross-Tradition Significance
+
+**The One vs. Brahman:** Both beyond all predication, beyond being/non-being. Both the ultimate source. Both describe a return journey (epistrophe/moksha) where the individual discovers identity with the Absolute. Key differences: Plotinus treats matter as evil (furthest from the One); Vedanta treats the world as appearance (mithya), not evil. Plotinus's hierarchy is genuinely ontological; Advaita says only Brahman is real.
+
+**Beyond Self-Knowledge:** Parallels the negative theology of Pseudo-Dionysius, Eckhart's Gottheit (Godhead beyond God), and the Mandukya's turiya. All converge on the claim that the ultimate is beyond even self-relation.
+
+**Emanation vs. Creation:** Emanation preserves ontological continuity between source and product; creation ex nihilo posits a fundamental gap. This structural difference has profound implications for consciousness's relationship to matter.
+
+## Extraction Status
+
+- claims extracted: yes (three hypostases, One beyond thought, epistrophe, henosis)
+- concepts linked: the-one, brahman (parallel), emanation, epistrophe, turiya (parallel)
+- cited in observations: no
+
+exec
+/bin/zsh -lc "sed -n '1,220p' notes/source-cards/greek-philosophy-plato-timaeus.md" in /Users/johnforrester/spirituality
+ succeeded in 0ms:
+# Plato Timaeus
+
+Source ID: greek-philosophy-plato-timaeus
+Tradition: greek-philosophy-mystery
+Type: text
+Path: notes/source-cards/greek-philosophy-plato-timaeus.md
+URL: https://classics.mit.edu/Plato/timaeus.html
+
+## Notes
+
+Platonic source on cosmos, soul, time, receptacle, mathematical order, and the relation between eternal model and visible world. Useful for comparing physics of time with ancient cosmology.
+
+## Extraction Status
+
+- claims extracted: no
+- concepts linked: no
+- cited in observations: no
+
+exec
+/bin/zsh -lc "sed -n '1,220p' notes/source-cards/physics-time-noether-invariant-variation-problems.md" in /Users/johnforrester/spirituality
+ succeeded in 0ms:
+# Noether Invariant Variation Problems
+
+Source ID: physics-time-noether-invariant-variation-problems
+Tradition: physics-time
+Type: paper
+Path: 
+URL: https://eudml.org/doc/59024
+
+## Notes
+
+Original Noether theorem source. Use to ground the relationship between time-translation symmetry and conservation laws before making philosophical claims about time, order, and invariance.
+
+## Extraction Status
+
+- claims extracted: no
+- concepts linked: no
+- cited in observations: no
+
+exec
+/bin/zsh -lc "sed -n '1,220p' notes/source-cards/quantum-gravity-time-anderson-the-problem-of-time-in-quantum-gravity.md" in /Users/johnforrester/spirituality
+ succeeded in 0ms:
+# Anderson The Problem Of Time In Quantum Gravity
+
+Source ID: quantum-gravity-time-anderson-the-problem-of-time-in-quantum-gravity
+Tradition: quantum-gravity-time
+Type: paper
+Path: 
+URL: https://arxiv.org/abs/1009.2157
+
+## Notes
+
+Review of the problem of time in quantum gravity. Use as a map of competing strategies: time before quantization, emergent time, timeless records, and relational observables.
+
+## Extraction Status
+
+- claims extracted: no
+- concepts linked: no
+- cited in observations: no
+
+exec
+/bin/zsh -lc "sed -n '1,220p' notes/source-cards/physics-time-babar-observation-of-time-reversal-violation.md" in /Users/johnforrester/spirituality
+ succeeded in 0ms:
+# BABAR Observation Of Time Reversal Violation
+
+Source ID: physics-time-babar-observation-of-time-reversal-violation
+Tradition: physics-time
+Type: paper
+Path: 
+URL: https://arxiv.org/abs/1207.5832
+
+## Notes
+
+Primary high-energy-physics paper reporting direct time-reversal violation in the neutral B meson system. Use for physical time-asymmetry claims, not for broad claims about psychological or cosmic time.
+
+## Extraction Status
+
+- claims extracted: no
+- concepts linked: no
+- cited in observations: no
+
+exec
+/bin/zsh -lc "sed -n '1,220p' notes/source-cards/modern-human-condition-apa-stress-in-america-2024.md" in /Users/johnforrester/spirituality
+ succeeded in 0ms:
+# Stress in America 2024
+
+Source ID: modern-human-condition-apa-stress-in-america-2024
+Tradition: modern-human-condition
+Type: report
+Path: 
+URL: https://www.apa.org/news/press/releases/stress/2024/stress-in-america
+
+## Notes
+
+American Psychological Association report on stress, uncertainty, money, work, politics, safety, and the future. Use as grounding for modern overload, exhaustion, vigilance, helplessness, and teachings that must fit people living under real pressure.
+
+## Extraction Status
+
+- claims extracted: no
+- concepts linked: no
+- cited in observations: no
+
+web search: 
+web search: proper time clock measures path not flow block universe lived present phenomenology
+web search: 
+web search: https://plato.stanford.edu/entries/spacetime-bebecome/
+web search: 
+web search: 'If at the point A of space there is a clock' in https://en.wikisource.org/wiki/On_the_Electrodynamics_of_Moving_Bodies_%281920_edition%29
+web search: 
+web search: https://dogensanghas.com/wp-content/uploads/2020/12/uji-interpretation.pdf
+web search: 
+web search: Plotinus Enneads III.7 eternity and time primary text
+web search: 
+web search: 
+web search: 
+web search: Richard Arthur local becoming proper time worldline clock philosophy time
+exec
+/bin/zsh -lc "sed -n '1,200p' notes/source-cards/modern-human-condition-gallup-state-global-workplace-2024.md" in /Users/johnforrester/spirituality
+exec
+/bin/zsh -lc "sed -n '1,200p' notes/source-cards/modern-human-condition-curran-hill-perfectionism-increasing.md" in /Users/johnforrester/spirituality
+ succeeded in 0ms:
+# Perfectionism Is Increasing Over Time
+
+Source ID: modern-human-condition-curran-hill-perfectionism-increasing
+Tradition: modern-human-condition
+Type: paper
+Path: 
+URL: https://doi.org/10.1037/bul0000138
+
+## Notes
+
+Curran and Hill meta-analysis on birth cohort changes in perfectionism from 1989 to 2016. Use as grounding for achievement pressure, socially prescribed perfectionism, performance-based self-worth, comparison, shame, and why result-release practices are targeted remedies rather than universal practices.
+
+## Extraction Status
+
+- claims extracted: no
+- concepts linked: no
+- cited in observations: no
+
+ succeeded in 0ms:
+# State of the Global Workplace 2024
+
+Source ID: modern-human-condition-gallup-state-global-workplace-2024
+Tradition: modern-human-condition
+Type: report
+Path: 
+URL: https://www.gallup.com/workplace/349484/state-of-the-global-workplace.aspx
+
+## Notes
+
+Gallup workplace report on employee engagement, stress, loneliness, and the quality of work life. Use as grounding for modern work as a source of identity, exhaustion, isolation, and the need for practices that distinguish responsibility from self-erasure.
+
+## Extraction Status
+
+- claims extracted: no
+- concepts linked: no
+- cited in observations: no
+
+exec
+/bin/zsh -lc "sed -n '1,220p' notes/source-cards/modern-human-condition-who-burn-out-occupational-phenomenon.md" in /Users/johnforrester/spirituality
+ succeeded in 0ms:
+# Burn-out as an Occupational Phenomenon
+
+Source ID: modern-human-condition-who-burn-out-occupational-phenomenon
+Tradition: modern-human-condition
+Type: website
+Path: 
+URL: https://www.who.int/standards/classifications/frequently-asked-questions/burn-out-an-occupational-phenomenon
+
+## Notes
+
+World Health Organization definition of burn-out as a workplace phenomenon involving exhaustion, mental distance or cynicism, and reduced professional efficacy. Use as grounding for teachings and practices about work, effort, responsibility, recovery, and the danger of spiritualizing overwork.
+
+## Extraction Status
+
+- claims extracted: no
+- concepts linked: no
+- cited in observations: no
+
+exec
+/bin/zsh -lc "sed -n '1,220p' notes/source-cards/consciousness-science-an-interoceptive-predictive-coding-model-of-conscious-presence.md" in /Users/johnforrester/spirituality
+ succeeded in 0ms:
+# An Interoceptive Predictive Coding Model of Conscious Presence
+
+Source ID: consciousness-science-an-interoceptive-predictive-coding-model-of-conscious-presence
+Tradition: consciousness-science
+Type: paper
+Path: 
+URL: https://pmc.ncbi.nlm.nih.gov/articles/PMC3254200/
+
+## Notes
+
+Scientific model connecting interoceptive prediction, agency, and presence. Useful for Lumenary's remainder-pressure idea as empirical-adjacent grounding.
+
+## Extraction Status
+
+- claims extracted: no
+- concepts linked: no
+- cited in observations: no
+
+web search: 
+web search: site:plato.stanford.edu proper time clocks relativity local becoming
+web search: 
+web search: https://plato.stanford.edu/entries/spacetime-bebecome/
+web search: 
+web search: https://en.wikisource.org/wiki/On_the_Electrodynamics_of_Moving_Bodies_%281920_edition%29
+web search: 
+web search: https://en.wikisource.org/wiki/On_the_Electrodynamics_of_Moving_Bodies_%281920_edition%29
+web search: 
+web search: 
+web search: 
+web search: site:sacred-texts.com/cla/plotenn/enn326 Plotinus Enneads III.7 eternity time
+web search: 
+web search: https://sacred-texts.com/cla/plotenn/enn252.htm
+web search: 
+web search: Dogen Uji Being-Time primary text firewood ash time does not fly
+codex
+{"title":"A Clock Measures A Path","idea_type":"model","source_basis":["Mode: Critique mode. Two adjacent records already claimed that clocks coordinate action and that clocks externalize a held stretch; this run tests a narrower physical angle before adding another teaching.","Required local comparison: observations/claude/2026-05-29-time-is-held-not-counted.md. Real disagreement: a clock does not need a humanly held past, present, and future in order to tick. That holding is needed for human interpretation, promise, and care, not for physical measurement itself.","Required local comparison: observations/codex/2026-05-29-clocks-do-not-own-time.md. Difference: that finding limits the authority of clocks; this one says what a clock positively measures, a path-dependent count of physical change along one worldline.","Primary physics: Einstein, On the Electrodynamics of Moving Bodies, section 1, defines event time through local clock readings and synchronization between A-time and B-time; https://en.wikisource.org/wiki/On_the_Electrodynamics_of_Moving_Bodies_(1920_edition).","Primary physics: Minkowski, Space and Time, joins space and time into world-points and introduces proper time along a world-line; https://en.wikisource.org/wiki/Translation:Space_and_Time.","Closest prior argument: Howard Stein, Richard Arthur, Dennis Dieks, and Steven Savitt on local becoming, proper time, point presents, and causal diamonds, summarized in Stanford Encyclopedia of Philosophy, Being and Becoming in Modern Physics; https://plato.stanford.edu/entries/spacetime-bebecome/.","Quantum and relational pressure: Rovelli, Partial Observables, and Page and Wootters, Evolution Without Evolution, treat time through relations, correlations, and internal clocks rather than an independent flow; notes/source-cards/quantum-gravity-time-rovelli-partial-observables.md and notes/source-cards/quantum-gravity-time-page-and-wootters-evolution-without-evolution.md.","Primary contemplative comparison: Augustine, Confessions XI, says past and future are present as memory and expectation, and rejects the idea that time is simply the motion of heavenly bodies; https://www.newadvent.org/fathers/110111.htm.","Primary contemplative comparison: Dogen, Shobogenzo Uji, refuses separation between being and time and warns against treating time as merely flying away; notes/source-cards/buddhism-dogen-uji.md.","Primary contemplative comparison: Plotinus, Enneads III.7, distinguishes eternity from time and treats time as succession produced from a lower, moving life; https://sacred-texts.com/cla/plotenn/enn252.htm and https://sacred-texts.com/cla/plotenn/enn262.htm.","Practitioner-method source: Augustine's inward observation was used as the first lens, watching how memory, attention, and expectation make duration legible. Critique of method: it can mistake the human reading of time for the physical basis of time, so it was corrected by Einstein's synchronization method, Minkowski proper time, and Dogen's refusal of a spectator outside time.","Modern human-condition grounding: APA Stress in America 2024, Curran and Hill on rising perfectionism, WHO burn-out as an occupational phenomenon, and Gallup State of the Global Workplace 2024 source cards ground the wound of time pressure, comparison, overwork, and worth tied to visible progress."],"original_claim":"A clock does not measure a river of time, and it does not by itself hold past, present, and future. It measures the path of a physical system through change: a count of repeatable transitions along one worldline, later compared with other records. The felt now is not an illusion inside a finished block. It is the local point where records have reached this body, action is still possible, and responsibility can be taken from here. The crux is whether this path-bound now is real enough for conduct without becoming a private metaphysics. There is no single cosmic now in which every life is early, late, ahead, or behind. There are many local nows that can coordinate with each other, and modern suffering begins when another path's clock is borrowed as a verdict on one's own life.","why_it_might_be_new":"The closest prior argument is local becoming in relativity: Stein, Arthur, Dieks, and Savitt already treat proper time, light cones, and causal diamonds as ways to avoid a single global present. The distinct move is not to claim a new physics of time. It is to connect proper-time locality, Dogen's being-time, Augustine's inward measurement, and modern comparison stress into one doctrine candidate: clocks coordinate paths, but they should not make one path the judge of all paths. Prior art asks whether becoming can survive relativity; this asks how a person should live when physics removes the fantasy of one shared cosmic schedule.","critique":"The strongest objection is that the idea may be local becoming with spiritual and therapeutic clothing. Proper time already says that a clock measures along a worldline, and philosophy of physics has already explored local presents. Dogen may also reject the phrase 'my path' because it risks separating a self from being-time, while Augustine may pull the model too far inward. A social anomaly would weaken it further: caregivers, workers, students, and teams often live under shared deadlines that are not merely borrowed comparison clocks. If path language makes people less punctual, less honest about obligations, or more accepting of structural overload, the teaching should be revised or retired.","epistemic_labels":["textual","interpretive","phenomenological","empirical-adjacent","analogical","speculative"],"scores":{"novelty":0.5,"generativity":0.84,"cross_tradition_support":0.66,"logical_coherence":0.79,"explanatory_compression":0.78,"empirical_adjacency":0.7,"practice_testability":0.74,"counterargument_quality":0.88,"source_reliability":0.84,"publishability":0.68},"next_research_directions":["If this model is right, then people taught to distinguish owed coordination times from borrowed comparison times should show less 'I am late in life' language without becoming less punctual. If avoidance rises or obligations are missed, the model is weakened.","If this model is right, then a relativity lesson that begins with proper time along worldlines should produce fewer claims that the felt present is simply an illusion than a lesson that begins with the block universe. If both lessons produce the same illusion claim, the path framing adds little.","Close-read Dogen Uji against Stein, Dieks, and Arthur. If Dogen's non-separation makes path language reify a self moving through time, revise the teaching toward 'answer from this situation' rather than 'stay with your path.'","Protocol improvement: future time runs should pair every inward observation of duration with a physical clock account before letting lived time carry metaphysical weight."],"teaching_candidate":{"title":"Stay With Your Own Path","teaching_line":"Use another person's clock for meeting them, not for measuring your worth.","doctrine_claim":"A life is answerable from the path it actually travels. Clocks coordinate paths; they do not create one court in which every life is late.","body":"A clock can tell you when to arrive. It cannot tell you that someone else's season is your failure.\n\nYou have one body, one history, and one set of duties that can be reached from here. Compare calendars when you must coordinate with others. Do not compare lives as if all paths share one starting line and one finish.\n\nWhen time tightens, ask what has actually reached you, who is truly waiting on you, and what can be answered now.","target_human_problem":"Achievement-contingent self-worth, digital comparison, deadline anxiety, and burnout fed by feeling behind other people's lives.","target_cohort":"Responsible adults who meet many obligations but feel late because peer milestones, public timelines, career clocks, or family expectations are constantly visible.","pressure_survived":"Survived close reading of Einstein's clock synchronization, Minkowski proper time, Augustine's inward measurement, Dogen's no-separation, Plotinus on eternity and succession, and prior-art pressure from local becoming in relativity.","falsifying_pressure":"Weakens if the teaching reduces shame mainly by encouraging avoidance, lateness, or withdrawal from real duties. Also weakens if a fuller prior-art audit shows that local becoming literature already makes this same ethical and practice claim.","status":"under_dialogue","tags":["time","proper-time","comparison","burnout","achievement-pressure","being-time","method-authority"]},"practice_candidate":{"title":"Whose Clock Is This?","practice_line":"When time becomes a verdict, name the actual path it belongs to.","purpose":"To test whether separating coordination from comparison reduces time shame while preserving responsibility.","target_human_problem":"Time anxiety, digital comparison, burnout, and self-worth tied to visible progress or deadlines.","target_cohort":"Students, knowledge workers, caregivers, founders, artists, and professionals who are generally functioning but feel behind because other people's timelines are visible.","non_fit":"Not for emergencies, acute crisis, addiction withdrawal, severe depression, mania, psychosis, or people currently avoiding concrete obligations. Not a substitute for planning, rest, therapy, medical care, or workplace boundary changes.","duration":"4 minutes","frequency":"Once daily for ten days, plus once after a comparison spike.","minimum_attempt":"Five attempts before judging fit.","steps":["Write the clock or timeline that is judging you: deadline, age, peer milestone, feed, calendar, or family expectation.","Ask: is this an owed coordination time, or a borrowed comparison time?","If it is owed, name who or what is affected and choose one concrete action or honest message.","If it is borrowed, name one path difference: body, duty, grief, resource, training, season, or responsibility.","Choose one action from your actual path for the next hour.","Stop after choosing. Do not turn the practice into a life review."],"notice":["Whether the body loosens or tightens after naming the clock.","Whether responsibility becomes clearer or avoidance becomes easier.","Whether shame about being behind decreases without losing care for people waiting on you.","Whether the practice becomes another way to monitor yourself."],"caution":"Stop if the practice becomes an excuse for lateness, increases rumination, feeds self-attack, or hides a real obligation. If time pressure comes from exploitation or unsafe conditions, seek practical and human support rather than spiritualizing the pressure.","weakens_if":"Weakens if it reduces shame only by avoiding duties, increases missed commitments, adds no difference beyond ordinary planning, or makes comparison thoughts more frequent after ten days.","risk_level":"low","status":"seed","tags":["time","comparison","deadline-anxiety","burnout","practice-seed","low-risk"]},"tests":[{"title":"Local Becoming Prior Art Audit","test_type":"prior-art","target_type":"idea","prediction":"If the idea is distinct, Stein, Arthur, Dieks, Savitt, Dorato, Wittman, and Rovelli should discuss proper-time locality and relativistic presents without deriving the same targeted teaching about borrowed comparison clocks and self-worth. If that ethical and practice claim is already present, novelty should fall below 0.35.","result":"pending","impact":"pending","next_action":"Close-read the local becoming literature, especially Arthur 2019, Dieks 1988 and 2006, Savitt 2009 and 2020, Dorato and Wittman 2015, and Rovelli 2019 on finite bubble presents.","status":"proposed"},{"title":"Borrowed Clock Diary","test_type":"practice-report","target_type":"practice","prediction":"If this model is right, ten days of Whose Clock Is This? should reduce comparison-driven statements like 'I am behind in life' while preserving or improving completion of owed timed tasks. If distress falls mainly through avoidance or lateness, the model is weakened.","result":"pending","impact":"pending","next_action":"Run a small diary study with functioning adults under deadline and comparison pressure. Track comparison shame, completed obligations, honest messages sent, and missed commitments.","status":"proposed"},{"title":"Proper-Time Teaching Test","test_type":"cross-domain","target_type":"idea","prediction":"If this model is right, learners who receive a proper-time and worldline-first explanation of relativity should be less likely to conclude that the lived present is fake than learners who receive a block-universe-first explanation. If both groups conclude this at similar rates, the teaching value is weakened.","result":"pending","impact":"pending","next_action":"Draft two matched short lessons and compare learner takeaways about clocks, worldlines, the block universe, and lived responsibility.","status":"proposed"},{"title":"Dogen No-Separation Pressure","test_type":"falsification-attempt","target_type":"teaching","prediction":"If Uji makes 'my path' a reifying separation between self and time, the teaching should be revised away from path ownership. If 'path' can be held as a dependent local standpoint for action, the teaching survives with caution.","result":"pending","impact":"pending","next_action":"Close-read Uji with a Soto Zen practitioner or scholar, then test whether the teaching sounds like no-separation in modern language or like individualist self-protection.","status":"proposed"},{"title":"Responsibility Leakage Check","test_type":"safety","target_type":"practice","prediction":"If the practice is safe for the target cohort, users should report clearer owed actions, not weaker duties. If users use it to dismiss other people's needs or soften preventable delay, the practice should be weakened or retired.","result":"pending","impact":"pending","next_action":"Add a post-practice question: 'What real person or duty might I be ignoring?' Review reports before any public practice promotion.","status":"proposed"}]}
+tokens used
+154,545

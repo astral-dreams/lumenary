@@ -1,20 +1,27 @@
 {
   "candidate_count": 1,
-  "generated_at": "2026-05-26T23:17:38-07:00",
+  "generated_at": "2026-05-29T08:10:48+02:00",
   "reason": "selected",
   "rules_version": "2026-05-26",
   "selected_pairs": [
     {
-      "challenger_agent": "claude",
-      "challenger_title": "The Method's Reckoning: What a Practice Does With Its Own Authority at Completion",
-      "idea_a": "c53042c11562b839",
-      "idea_b": "75a5718aa9a991ec",
-      "pair_id": "02601e2069f877c2",
-      "priority": 0.18,
-      "proponent_agent": "codex",
-      "proponent_title": "The Forbidden Claimant Rubric",
-      "shared_concepts": [],
+      "challenger_agent": "codex",
+      "challenger_title": "A Clock Measures A Path",
+      "idea_a": "196e47ce37483545",
+      "idea_b": "ec7bc17ccfbd50e0",
+      "pair_id": "adb6496d35cc8ffd",
+      "priority": 0.3,
+      "proponent_agent": "claude",
+      "proponent_title": "Time Is Held, Not Counted",
+      "shared_concepts": [
+        "maya"
+      ],
       "signals": [
+        {
+          "name": "audit_anomaly_overlap",
+          "reason": "An anomaly or audit instruction for one idea pressures the other idea.",
+          "weight": 0.12
+        },
         {
           "name": "near_neighbor_conflict",
           "reason": "Originality audits share near-neighbor or prior-art pressure.",
@@ -31,8 +38,8 @@
           "weight": 0.04
         }
       ],
-      "tension_source": "Originality audits share near-neighbor or prior-art pressure.",
-      "tension_type": "near_neighbor_conflict"
+      "tension_source": "An anomaly or audit instruction for one idea pressures the other idea.",
+      "tension_type": "audit_anomaly_overlap"
     }
   ]
 }

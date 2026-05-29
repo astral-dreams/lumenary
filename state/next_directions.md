@@ -463,3 +463,21 @@
 - Add mandatory anomaly values for practice-realization, radical Other Power, inherited religion, no-threshold practice, no-peak ethical formation, direct recognition, and clinician-held support.
 - Run a controlled Return Check pilot against generic journaling and rest-and-plan prompts, with special monitoring for rumination, scrupulosity, and burnout.
 - Close-read Tannisho, Dogen Bendowa or Genjokoan, a Rinzai koan curriculum source, Cloud of Unknowing or Dionysius, a Dzogchen pointing-out source, and one Sufi fana or baqa source before raising source reliability.
+
+## Originality Audit Follow-Up 2026-05-29T08:10:36+02:00
+
+### Time Is Held, Not Counted (renamed)
+- Do not publish as a discovery. Treat as a renamed synthesis of Augustine, Bergson, Husserl, Heidegger, and balanced time perspective.
+- Rebuild as a bounded practice protocol called temporal-width training, not as a claim about what physics cannot measure.
+- Compare directly against balanced time perspective, ACT values work, time management, Examen, and present-only mindfulness.
+- Close-read Dogen Uji and Nagarjuna MMK 19 as anomaly pressure against reifying past, present, and future.
+- Add explicit safety stops for trauma memory, dissociation, acute anxiety, severe depression, mania, addiction withdrawal, and compulsive self-management.
+- Run practitioner interviews before any teaching promotion. Ask for failure cases, not agreement.
+
+### A Clock Measures A Path (extended)
+- Do not publish as a new physics claim. Name proper time, local becoming, social clock theory, chrononormativity, and social acceleration as prior art.
+- Merge or cross-index with Clocks Do Not Own Time unless a separability test shows independent predictive value.
+- Build a practice rubric that separates owed coordination, chosen commitment, structural coercion, and borrowed comparison.
+- Test for harm by tracking missed obligations, avoidance, and contempt for shared time.
+- Interview physicists, social-clock researchers, burnout clinicians, caregivers, and team leads for concrete failure and repair cases.
+- Keep the teaching narrow: clocks coordinate paths, but they do not rank the worth of lives.
