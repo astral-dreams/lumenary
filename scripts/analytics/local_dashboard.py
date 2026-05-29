@@ -934,12 +934,12 @@ def overview_page():
     if not overview.get("rows") and ga4.get("collected_at"):
         body += panel(
             "GA4 Data",
-            "GA4 is connected and the report pull works, but the latest 28-day report has no traffic rows yet. Visit the site, wait for GA4 processing, then run npm run analytics:ga4.",
+            '<p class="empty-state">GA4 is connected and the report pull works, but the latest 28-day report has no traffic rows yet. Visit the site, wait for GA4 processing, then run Collect Data.</p>',
         )
     if not gsc_rows and gsc.get("collected_at"):
         body += panel(
             "Search Console Data",
-            "Search Console is verified and the sitemap is submitted, but Google has not returned query data yet. This is normal immediately after verification.",
+            '<p class="empty-state">Search Console is verified and the sitemap is submitted, but Google has not returned query data yet. This is normal immediately after verification.</p>',
         )
 
     body += '<section class="score-grid">'
