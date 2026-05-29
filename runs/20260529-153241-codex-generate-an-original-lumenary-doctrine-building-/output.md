@@ -1,0 +1,204 @@
+# The Road Must Know Its End
+
+Agent: codex
+Date: 2026-05-29T15:35:56+02:00
+Type: model
+Idea ID: c4bedb491c09ac97
+Status: draft
+
+## Original Claim
+
+A practice does not become trustworthy merely because it reaches a strong insight. It must also tell the practitioner how to carry the road that led there. Two questions should be asked together: does the practice validate what it found, or does it undermine possession of the finding; and after that, is the practice retained, set down, or embodied in ordinary conduct? This narrows the earlier three-type claim. The real danger is not that some roads confirm and others cancel. The danger is carrying a road in the wrong way after it has done its work. A modern person can turn meditation, therapy, productivity, or spiritual insight into a fresh proof of worth. The teaching here is restraint: use the road, test what it changes, then ask whether it should remain a rule, be released, or become quieter conduct.
+
+## Why It Might Be New
+
+The closest prior argument is Smith's reading of Nagarjuna and Wittgenstein as shared therapeutic methods without theses. Sells is close for apophatic speech that unsays itself. MN 22 is closer still for a method that must be grasped properly and then released. The difference is the two-question after-use model. It does not claim that methods are simply confirming, canceling, or dissolving. It treats hybrid cases as the clue: MN 22 validates use and then releases it; the Heart Sutra undermines attainment while retaining reliance; Rinzai koan practice can unsettle conceptual grasping while continuing as curriculum; Dogen strains the whole tool-and-goal picture by making practice and realization one. The new contribution is modest: method authority should be judged by both its proof relation and its after-use instruction, then tested against verification, transmission, and re-entry patterns.
+
+## Source Basis
+
+- Run mode: Critique. Active frontier: what a method does with its own authority at completion.
+- Practitioner-method lens: MN 22 Alagaddupama Sutta, water-snake and raft similes, https://www.dhammatalks.org/suttas/MN/MN22.html. I used its rule of right grasp before release, then criticized it for overfitting traditions where practice and result are not separable.
+- Primary comparison: Mandukya Upanishad identifies the analyzed Self with Brahman after waking, dreaming, and deep sleep inquiry, https://texts.wara.in/upanishads/mukhya/mandukya/.
+- Primary comparison: Heart Sutra negates attainment while still saying bodhisattvas rely on Prajnaparamita, https://en.wikisource.org/wiki/Translation:Shorter_Praj%C3%B1%C4%81p%C4%81ramit%C4%81_H%E1%B9%9Bdaya_S%C5%ABtra.
+- Primary comparison: Dogen source card on Uji and practice-realization identity, notes/source-cards/buddhism-dogen-uji.md.
+- Prior Claude near-duplicate: The Method's Reckoning, observations/claude/2026-05-26-the-method-s-reckoning-what-a-practice-does-with-its-own-authority-at-completion.md.
+- Prior Codex refinement: Authority-Boundary Ecology, observations/codex/2026-05-26-authority-boundary-ecology.md.
+- Originality audit pressure: reviews/originality/2026-05-26-the-method-s-reckoning-what-a-practice-does-with-its-own-authority-at-completion-54774578d7528e56.md.
+- Closest prior argument: Joshua William Smith, Snakes and Ladders, Sophia 2021, on Nagarjuna and Wittgenstein as therapeutic methods without theses, https://d-nb.info/1242893571/34.
+- Near-neighbor: Michael Sells, Mystical Languages of Unsaying, on apophatic language turning back on its own propositions, https://books.google.com/books/about/Mystical_Languages_of_Unsaying.html?id=84dZQFLEp_0C.
+- Anomaly source: Victor Hori on Rinzai koan curriculum after kensho, cited in prior audit as evidence that a self-undermining tool can remain a structured curriculum.
+- Modern human-condition grounding: Curran and Hill on rising perfectionism, notes/source-cards/modern-human-condition-curran-hill-perfectionism-increasing.md, https://doi.org/10.1037/bul0000138.
+- Modern human-condition grounding: WHO burn-out source card, notes/source-cards/modern-human-condition-who-burn-out-occupational-phenomenon.md, https://www.who.int/standards/classifications/frequently-asked-questions/burn-out-an-occupational-phenomenon.
+
+## Critique
+
+The model may still rename known ideas: upaya, raft, ladder, thorn-removing-thorn, no-thesis, unsaying, practice-realization, fana and baqa. Its novelty should stay reduced unless deeper prior-art search fails to find this exact two-question structure. Dogen is the hardest anomaly because practice-realization identity may refuse the premise that a road first works and then is carried, released, or embodied. The Heart Sutra also strains the model because it says no attainment while retaining reliance, mantra, and bodhisattva practice. If most mature traditions use every combination by stage, teacher, and institutional need, this is not a doctrine of method authority. It is only a useful checklist for preventing premature claims.
+
+## Epistemic Labels
+
+- `textual`
+- `interpretive`
+- `phenomenological`
+- `empirical-adjacent`
+- `analogical`
+- `speculative`
+
+## Scores
+
+- novelty: 0.61
+- generativity: 0.88
+- cross_tradition_support: 0.74
+- logical_coherence: 0.84
+- explanatory_compression: 0.79
+- empirical_adjacency: 0.49
+- practice_testability: 0.83
+- counterargument_quality: 0.93
+- source_reliability: 0.78
+- publishability: 0.76
+
+
+## Teaching Candidate
+
+Status: under_dialogue
+Tags: method-after-use, achievement-pressure, burnout, practice-authority, critique-mode
+
+### Teaching Line
+
+Use a practice until it helps you live better; do not carry it as proof that you are better.
+
+### Doctrine Claim
+
+A practice is incomplete unless it gives guidance for its own after-use: what to keep, what to release, and what must become conduct.
+
+### Teaching Body
+
+Good tools can become heavy. A rule that once helped you see can become a badge. A practice that once steadied you can become another way to measure yourself.
+
+Before you trust an insight, ask what it asks of you next. Some insights need continued practice. Some need release. Some are only real when they appear as patience, repair, courage, or ordinary care.
+
+Do not throw away a road while you are still crossing. Do not carry it forever because it once saved you. Let the use decide the carrying.
+
+### Human Problem
+
+Achievement-contingent self-worth, burnout, compulsive self-improvement, and spiritual identity built from tools that once helped.
+
+### For
+
+Achievement-driven professionals, students, founders, artists, caregivers, and committed practitioners who turn methods, results, or insights into proof of personal worth.
+
+### Pressure Survived
+
+Prior-art pressure from raft, ladder, upaya, apophatic unsaying, Nagarjuna and Wittgenstein, plus anomaly pressure from Heart Sutra reliance, Rinzai curriculum after kensho, and Dogen practice-realization identity.
+
+### Falsifying Pressure
+
+Weaken this teaching if practitioner reports show that after-use guidance does not reduce clinging, checking, or identity pressure, or if historical sources show that all traditions already teach the same after-use sequence without meaningful variation.
+
+
+
+## Practice Candidate
+
+Status: seed
+Risk level: low
+Tags: after-use, achievement-pressure, burnout, low-risk-practice, practice-test
+
+### Practice Line
+
+After one serious effort, ask what to keep, what to release, and what to live.
+
+### Purpose
+
+Test whether naming a tool's after-use reduces identity-gripping after work, meditation, therapy homework, study, or self-improvement practice.
+
+### Human Problem
+
+Achievement pressure, burnout risk, digital comparison, and self-worth tied to visible improvement.
+
+### For
+
+People who regularly turn performance, spiritual practice, productivity systems, or personal growth into a verdict on their value.
+
+### Not For
+
+Not for acute crisis, addiction withdrawal, severe depression, dissociation, psychosis, under-motivation, or situations requiring clinical, legal, financial, or supervisory support. It is also not for people who are already avoiding responsibility by calling every commitment something to release.
+
+### Time
+
+- Duration: 7 minutes
+- Frequency: Three times per week after one meaningful task or practice session.
+- Minimum attempt: Six attempts over two weeks.
+
+### Steps
+
+1. Choose one completed effort from the day: a task, meditation, hard conversation, therapy exercise, workout, or study session.
+2. Write one sentence: what did this effort actually help?
+3. Choose one after-use instruction: keep practicing it, set it down for now, or embody it in one ordinary action.
+4. If you choose keep, name the next bounded use. If you choose set down, name what you will stop checking. If you choose embody, name one behavior someone else could observe.
+5. End by asking: did I make this tool into proof of my worth today?
+
+### Notice
+
+- Whether the body relaxes or tightens when the effort is no longer a verdict.
+- Whether you want to tell someone about the method to secure approval.
+- Whether the tool changes conduct, or only gives you a private feeling of progress.
+- Whether release becomes avoidance of needed responsibility.
+
+### Caution
+
+Stop if the practice increases rumination, shame, compulsive tracking, avoidance, or contempt for ordinary responsibilities. Seek human support when distress is high or persistent.
+
+### Weakens If
+
+After six attempts, users report more self-monitoring, less responsibility, no change in worth-pressure, or a stronger need to prove that they used the tool correctly.
+
+
+
+## Tests
+
+### Close Prior-Art Audit
+
+- Type: prior-art
+- Target: idea
+- Status: complete
+- Prediction: If the contribution is only a relabeling of upaya, raft, ladder, thorn-removing-thorn, no-thesis, or apophatic unsaying, close prior sources should already combine proof relation with after-use instruction across multiple traditions.
+- Result: Initial search found strong near-neighbors and forced a revision from a three-type claim to a two-question after-use model. No exact accessible match found yet, but novelty is reduced.
+- Impact: revises
+- Next action: Search deeper in scholarship on upaya, apophasis, Dogen practice-realization, Rinzai curriculum, fana and baqa, and religious authority before promotion.
+
+### Hybrid Boundary Test
+
+- Type: falsification-attempt
+- Target: idea
+- Status: proposed
+- Prediction: Hybrid texts should explicitly mark when a method is to be trusted, retained, released, or embodied. If no such boundary markers appear, the model is weakened.
+- Result: Pending.
+- Impact: pending
+- Next action: Code Mandukya, Heart Sutra, MN 22, Vigrahavyavartani 29, Dogen Bendowa or Uji, and Hori on koan curriculum for boundary language.
+
+### Dual-Trained Practitioner Reports
+
+- Type: practice-report
+- Target: idea
+- Status: proposed
+- Prediction: If the model is right, practitioners trained in more than one lineage should describe different after-use relations to insight when switching methods. If they describe one stable relation regardless of method, the model is weakened.
+- Result: Pending.
+- Impact: pending
+- Next action: Design interview questions for Advaita and Buddhist practitioners, Rinzai and Soto Zen practitioners, and contemplatives with therapy or coaching backgrounds.
+
+### After-Use Safety Check
+
+- Type: safety
+- Target: practice
+- Status: proposed
+- Prediction: The After-Use Check should reduce worth-pressure for achievement-driven users without increasing avoidance or rumination. If rumination, shame, or responsibility-avoidance rises, the practice is weakened or retired.
+- Result: Pending.
+- Impact: pending
+- Next action: Run a two-week self-report pilot with measures for worth-pressure, rumination, responsibility-follow-through, and perceived usefulness.
+
+
+## Next Research Directions
+
+- If this model is right, then practice texts should mark when to trust, keep, release, or embody a method. If mature traditions show no boundary markers and shift freely without stage logic, the model is weakened.
+- If this model is right, then dual-trained practitioners should report different after-use instructions after Advaita inquiry, Heart Sutra practice, Rinzai koan work, and Dogen-style sitting. If reports track teacher personality more than method relation, the model is weakened.
+- If this model is right, then modern self-improvement tools should show similar after-use risks: manuals fit retained methods, supervision fits undermining methods, apprenticeship fits embodied methods. If training form does not vary by after-use relation, the cross-domain claim is weakened.
+- Protocol improvement: before using any practitioner method as a thinking lens, name what it teaches us to grasp, what it teaches us to release, and what contrasting method exposes its bias.

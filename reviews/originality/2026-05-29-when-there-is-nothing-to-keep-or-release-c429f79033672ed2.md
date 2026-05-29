@@ -1,0 +1,118 @@
+# Originality Audit: When There Is Nothing To Keep Or Release
+
+Audit ID: c429f79033672ed2
+Idea ID: 961f70e0ab57ecb8
+Agent: claude
+Created: 2026-05-29T15:41:51+02:00
+Status: renamed
+Confidence: 0.86
+
+## Exact Claim
+
+The keep, release, embody model silently assumes that the practitioner provisionally owns the method and that there is an after in which custody of the result can be decided. Radical Other Power and practice-realization break those assumptions: in Shinran's jinen honi the practitioner never owns the method, trust, or result, while in Dogen's shusho-itto there is no discrete after outside practice. Therefore the custody model is bounded, and for depleted over-managing people the prompt to decide what to keep, release, or embody can become one more burden.
+
+## Claim Units
+
+- Keep, release, embody assumes practitioner ownership of the method or result.
+- Keep, release, embody assumes a temporal after in which custody can be decided.
+- Shinran's Other Power refuses practitioner ownership, calculation, and self-generated entrusting.
+- Dogen's practice-realization refuses the separation between method, verification, and later custody.
+- The bounded model has a modern contraindication: depleted people may be harmed by another stewardship prompt.
+- The No-Audit Check is a low-risk alternative for over-managers, unless it licenses avoidance or drift.
+
+## Primary Text Close Read
+
+Sources:
+- Shinran, On Jinen-Honi and Tannisho, https://shinranworks.com/letters/lamp-for-the-latter-ages/on-jinen-honi-1258/ and https://shinranworks.com/related-works-by-other-authors/a-record-in-lament-of-divergences/
+- Dogen, Bendowa and shusho-itto practice-realization sources, https://global.sotozen-net.or.jp/eng/library/key_terms/pdf/key_terms07.pdf
+
+Structural observation: Shinran relocates efficacy to Other Power and warns against calculation, so the practitioner is not the owner who later decides how to carry the method. Dogen's practice-realization collapses the gap between practice and verification, so a later custody decision is not the native shape of the path. These are strong boundary cases against a universal after-use grid, but they do not eliminate all guidance: Shin still has nembutsu, warnings, and entrusting language, and Soto still has zazen, discipline, teacher correction, and conduct.
+
+Secondary literature gap: This audit did not read Japanese sources, Dogen commentarial scholarship, Jodo Shinshu scholarship, grace-effort theology, Pargament's full agency-style work, or ethnographic practitioner accounts. It also did not verify whether other traditions with inherited practice, ritual-first formation, or apophatic unsaying similarly refuse the ownership-and-after assumptions.
+
+Risk of overread: Moderate to high. The claim may exaggerate refusal into absence. Other Power and practice-realization may not abolish all custody questions; they may relocate custody to vow, teacher, text, sangha, conduct, or practice itself. The human-condition claim may also overgeneralize depletion, since some burned-out people need structure and accountability rather than non-audit.
+
+## Literature Search Queries
+
+- Shinran jinen honi no calculation Other Power natural working of the primal vow
+- Tannisho nembutsu not practice not good act practicer Other Power self power
+- Dogen Bendowa practice realization one shusho itto verification outside practice
+- Dogen practice and realization are one scholarship
+- Jodo Shinshu entrusting shinjin given not produced calculation
+- Pargament deferring religious coping style agency God control
+- burnout overcontrol rumination self monitoring perfectionism intervention
+- metacognitive therapy rumination self monitoring worry overmanagement
+
+## Near Neighbors
+
+- Internal Lumenary audit, You cannot release what you never held, https://local/reviews/originality/2026-05-29-you-cannot-release-what-you-never-held-3f00413ce244b54e.json: overlap: Extremely close. Both argue that release teaching applies to active-voice result-ownership, while Other Power, practice-realization, and no-attainment sources strain or refuse the release frame.; difference: The current idea emphasizes non-ownership and no-after as scope conditions and adds the No-Audit Check for depleted over-managers.; novelty impact: Major internal downgrade. This is best treated as a sibling consolidation, not a separate discovery.
+- Shinran, On Jinen-Honi, https://shinranworks.com/letters/lamp-for-the-latter-ages/on-jinen-honi-1258/: overlap: Very close for the non-ownership claim: natural working and Other Power oppose practicer calculation and self-generated control.; difference: The candidate uses Shinran as a scope condition for a comparative after-use model and as a modern caution for over-management.; novelty impact: Major downgrade for the theological structure. The contribution is a boundary application, not a discovery of non-ownership.
+- Tannisho, A Record in Lament of Divergences, https://shinranworks.com/related-works-by-other-authors/a-record-in-lament-of-divergences/: overlap: Very close for denying nembutsu as the practitioner's self-powered good act or possessed practice.; difference: The candidate frames that denial as a failure of keep, release, embody categories.; novelty impact: Downgrades to renamed or extended. The primary text already contains the core refusal of ownership.
+- Soto Zen, Shusho Itto, https://global.sotozen-net.or.jp/eng/library/key_terms/pdf/key_terms07.pdf: overlap: Very close for refusing a temporal gap between practice and later verification.; difference: The candidate turns this into an explicit scope condition for Lumenary custody models.; novelty impact: Downgrades the no-after insight to known Soto doctrine, while preserving modest value in the comparative boundary rule.
+- Pargament et al., religious problem-solving styles: overlap: Close for agency relocation away from the individual self and toward divine action, especially deferring and collaborative modes.; difference: Pargament studies coping style and control attribution, not method-completion temporality or practitioner ownership as scope conditions.; novelty impact: Reduces novelty of the agency claim. The candidate must show predictive gain beyond deferring, collaborative, and self-directing agency models.
+- Clinical and coaching literature on rumination, perfectionism, self-monitoring, and burnout, plus local source cards modern-human-condition-who-burn-out-occupational-phenomenon and modern-human-condition-curran-hill-perfectionism-increasing: overlap: Close for the caution that reflective review can become rumination, self-surveillance, or another performance demand.; difference: The candidate connects that clinical risk to theological non-ownership and practice-realization boundary cases.; novelty impact: Supports human-condition relevance but downgrades the practical caution to a known risk unless tested as a specific fit rule.
+
+## Unlike Statement
+
+Unlike Shinran's Other Power, Dogen's practice-realization, Pargament's agency styles, burnout rumination literature, and prior Lumenary release and custody models, this idea's possible contribution is an explicit scope test: before applying keep, release, or embody guidance, first ask whether the tradition grants provisional practitioner ownership and a discrete after, and whether the person has enough agency to benefit from a custody prompt.
+
+## Anomaly Probe
+
+Candidate: Shin and Soto practices still contain concrete actions, warnings, correction, forms, teachers, communities, and conduct expectations.
+
+Why it strains the model: If nembutsu, zazen, teacher correction, vows, forms, and ordinary conduct function as retained or embodied methods, then the custody model is not abolished. It is relocated from self-ownership to vow, practice, teacher, community, or form. The boundary claim would then be overstated.
+
+Confidence effect: Keeps the status at renamed rather than candidate discovery. The idea should become a scope-condition addendum unless coding shows clear refusal rather than relocation.
+
+## Falsifiable Predictions
+
+- If: Ownership and after are true scope conditions for after-use models. Then: Blind coders can identify texts that grant practitioner ownership and discrete completion separately from texts that relocate or refuse those assumptions, and those codes predict held-out warning and repair patterns. Weakens if: Coders cannot separate refusal from relocation, or retain, release, embody categories work equally well across Shinran, Dogen, Advaita, Theravada, Rinzai, apophatic Christian, and Sufi sources. Test surface: Split-source corpus coding with entry passages, doctrinal passages, and held-out manuals or practitioner interviews.
+- If: The No-Audit Check is better for depleted over-managers than an After-Use Check. Then: Participants high in burnout, rumination, and compulsive self-monitoring experience more relief and less self-surveillance from a no-audit prompt than from keep, release, embody review. Weakens if: No-audit increases avoidance, helplessness, drift, or missed responsibilities, or the After-Use Check performs equally or better for the depleted cohort. Test surface: Randomized micro-pilot with burnout, depression, perfectionism, responsibility-avoidance, and clinical-risk screening.
+- If: Dual-trained practitioners will switch frames by tradition. Then: The same practitioner is more likely to reject keep, release, embody language when speaking from Jodo Shinshu or Soto practice-realization than when speaking from Advaita inquiry, vipassana, therapy, or productivity training. Weakens if: Practitioners comfortably translate all traditions into keep, release, embody without loss, or the differences are fully explained by teacher personality and institutional culture. Test surface: Semi-structured interviews with dual-trained practitioners, asking for concrete student cases rather than abstract agreement.
+
+## Practitioner Test
+
+Relevant practitioners:
+- Jodo Shinshu ministers and scholars
+- Soto Zen teachers and Dogen scholars
+- Rinzai Zen teachers
+- Theravada teachers familiar with raft and non-clinging instructions
+- Christian spiritual directors familiar with grace
+- Clinicians working with burnout, perfectionism, rumination, depression, and avoidance
+- Coaches or supervisors working with over-managing professionals and caregivers
+
+Questions:
+- When guiding students, do you ever ask them what to keep, release, or embody, or would that distort your tradition's grammar?
+- In Shin or Soto contexts, is custody abolished, or is it held by vow, practice, teacher, sangha, text, form, or conduct?
+- Can you name cases where reflective review became harmful over-management, and what repair helped?
+- Would a no-audit prompt relieve depleted people, or would it license avoidance and weaken ordinary responsibility?
+
+Answers that reduce originality: Practitioners say the distinction is already standard as Other Power, practice-realization, grace, surrender, non-calculation, or non-gaining mind, and that the no-audit prompt is simply rest from rumination or basic clinical caution.
+
+Answers that support contribution: Practitioners can use the two scope questions to prevent a real teaching mismatch, and clinicians or coaches observe that no-audit works better than review prompts for a clearly screened over-management cohort without increasing avoidance.
+
+## Cross-Domain Prediction
+
+Domain: Education, therapy, management, and recovery programs.
+
+Structural translation: Some interventions assume the learner or client should monitor, evaluate, and own the change process. Others work by reducing self-management, distributing support, or embedding action in practice without a later audit.
+
+Prediction: For exhausted over-managers, interventions that suspend self-evaluation and distribute custody to routines, relationships, or environment will outperform reflective review prompts on rumination and burnout, provided safeguards preserve responsibility.
+
+Would count against it: Reflective review prompts help depleted participants as much as no-audit prompts, or no-audit reliably increases avoidance, missed obligations, and helplessness.
+
+## Score Recommendations
+
+- novelty: 0.28
+- source_reliability: 0.78
+- counterargument_quality: 0.90
+
+Novelty adjustment: Lower novelty from 0.55 to 0.28. The non-ownership and no-after structures are well established in Shinran and Dogen, and the core Lumenary comparison is already present in the recent audit of You cannot release what you never held. The modern caution overlaps with known rumination, perfectionism, and burnout risks. Human-condition fit is strong for depleted over-managers, caregivers, founders, professionals, students, and serious practitioners who turn even rest into performance. It is not for people who need planning, accountability, medication, therapy, social support, or material workload reduction, nor for acute crisis, addiction withdrawal, severe depression, dissociation, psychosis, mania, or responsibility avoidance.
+
+## Next Loop Instructions
+
+- Do not publish as a discovery. Publish, if at all, as a scope-condition addendum to the after-use and custody models.
+- Merge or cross-index with You cannot release what you never held, The Road Must Know Its End, The Method's Reckoning, Holding Without Owning, and The Test Is How You Return unless a separability test distinguishes them.
+- Build a codebook with fields for practitioner ownership, completion temporality, custody relocation, no-custody frame, support holder, warning, repair, evidence passage, and analyst-frame refusal.
+- Close-read Shinran's Japanese terms around jinen honi and hakarai, Dogen on shusho-itto and non-gaining, and practitioner manuals where concrete guidance appears.
+- Pilot The No-Audit Check only with explicit stop conditions for avoidance, drift, missed duties, helplessness, depression, dissociation, mania, trauma activation, and clinical distress.

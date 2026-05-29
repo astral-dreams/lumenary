@@ -219,6 +219,220 @@ def ga4_event_count(snapshot: dict, event_name: str) -> float:
     return 0.0
 
 
+SEARCH_SOURCES = {
+    "google",
+    "bing",
+    "duckduckgo",
+    "yahoo",
+    "search.yahoo.com",
+    "baidu",
+    "yandex",
+}
+
+AEO_SOURCES = {
+    "perplexity",
+    "perplexity.ai",
+    "chatgpt.com",
+    "chat.openai.com",
+    "gemini.google.com",
+    "bard.google.com",
+    "claude.ai",
+    "anthropic.com",
+    "copilot.microsoft.com",
+    "you.com",
+    "phind.com",
+}
+
+
+def format_date(value: str) -> str:
+    if len(value) == 8 and value.isdigit():
+        return f"{value[4:6]}/{value[6:8]}"
+    return value or "-"
+
+
+def fmt_duration(seconds) -> str:
+    seconds = int(round(num(seconds)))
+    if seconds < 60:
+        return f"{seconds}s"
+    minutes = seconds // 60
+    remainder = seconds % 60
+    return f"{minutes}m {remainder:02d}s"
+
+
+def pages_per_session(views: float, sessions: float) -> str:
+    if not sessions:
+        return "0.00"
+    return f"{views / sessions:.2f}"
+
+
+def status_class(value: str) -> str:
+    lowered = str(value or "").lower()
+    if lowered in {"ready", "wired", "complete", "verified", "configured", "local_report_pull_verified"}:
+        return "good"
+    if lowered in {"issue", "error", "failed"}:
+        return "bad"
+    return "neutral"
+
+
+def normalized_source(source: str) -> str:
+    return str(source or "").lower().replace("www.", "")
+
+
+def is_aeo_source(source: str) -> bool:
+    normalized = normalized_source(source)
+    return normalized in AEO_SOURCES or any(normalized.endswith(f".{engine}") for engine in AEO_SOURCES)
+
+
+def is_seo_source(source: str, medium: str) -> bool:
+    normalized = normalized_source(source)
+    return str(medium or "").lower() == "organic" or normalized in SEARCH_SOURCES or normalized.startswith("search.")
+
+
+def source_label(source: str, medium: str) -> str:
+    if source == "(direct)" and medium == "(none)":
+        return "Direct"
+    if source == "(not set)" and medium == "(not set)":
+        return "Unknown"
+    if medium == "organic":
+        return f"{source.title()} Organic"
+    if medium == "referral":
+        return source
+    return f"{source} / {medium}"
+
+
+def source_group(row: dict) -> str:
+    source = row.get("sessionSource", "")
+    medium = row.get("sessionMedium", "")
+    if is_aeo_source(source):
+        return "AEO"
+    if is_seo_source(source, medium):
+        return "SEO"
+    if source == "(direct)" and medium == "(none)":
+        return "Direct / unknown"
+    if source == "(not set)" and medium == "(not set)":
+        return "Direct / unknown"
+    if str(medium).lower() == "referral":
+        return "Referral"
+    channel = row.get("sessionDefaultChannelGroup", "")
+    return channel if channel and channel != "Unassigned" else "Other"
+
+
+def group_acquisition_rows(rows: list[dict]) -> list[dict]:
+    grouped: dict[str, dict] = {}
+    for row in rows:
+        label = source_group(row)
+        item = grouped.setdefault(label, {"label": label, "sessions": 0.0, "users": 0.0, "views": 0.0})
+        item["sessions"] += num(row.get("sessions"))
+        item["users"] += num(row.get("totalUsers"))
+        item["views"] += num(row.get("screenPageViews"))
+    return sorted(grouped.values(), key=lambda item: item["sessions"], reverse=True)
+
+
+def card(label: str, value: str, subtitle: str = "", tone: str = "") -> str:
+    return (
+        f'<article class="score-card {escape(tone)}">'
+        f'<p class="score-label">{escape(label)}</p>'
+        f'<p class="score-value">{escape(str(value))}</p>'
+        f'<p class="score-subtitle">{escape(subtitle)}</p>'
+        "</article>"
+    )
+
+
+def panel(title: str, body: str, subtitle: str = "") -> str:
+    subtitle_html = f'<span class="panel-subtitle">{escape(subtitle)}</span>' if subtitle else ""
+    return (
+        '<section class="panel">'
+        f'<div class="panel-heading"><h2>{escape(title)}</h2>{subtitle_html}</div>'
+        f"{body}</section>"
+    )
+
+
+def badge(text: str, tone: str = "neutral") -> str:
+    return f'<span class="badge {escape(tone)}">{escape(text)}</span>'
+
+
+def table(headers: list[str], rows: list[list[str]], empty_message: str) -> str:
+    if not rows:
+        return f'<p class="empty-state">{escape(empty_message)}</p>'
+    head = "".join(f"<th>{escape(header)}</th>" for header in headers)
+    body = ""
+    for row in rows:
+        cells = "".join(f"<td>{cell}</td>" for cell in row)
+        body += f"<tr>{cells}</tr>"
+    return f'<div class="table-wrap"><table><thead><tr>{head}</tr></thead><tbody>{body}</tbody></table></div>'
+
+
+def bars(rows: list[tuple[str, float, str]], empty_message: str) -> str:
+    if not rows:
+        return f'<p class="empty-state">{escape(empty_message)}</p>'
+    maximum = max(value for _, value, _ in rows) or 1
+    output = '<div class="bar-list">'
+    for label, value, detail in rows:
+        width = max(2, min(100, (value / maximum) * 100))
+        output += (
+            '<div class="bar-row">'
+            '<div class="bar-copy">'
+            f'<strong>{escape(label)}</strong>'
+            f'<span>{escape(detail)}</span>'
+            "</div>"
+            '<div class="bar-track">'
+            f'<span style="width: {width:.1f}%"></span>'
+            "</div>"
+            "</div>"
+        )
+    output += "</div>"
+    return output
+
+
+def traffic_chart(rows: list[dict]) -> str:
+    if not rows:
+        return '<p class="empty-state">GA4 has not returned daily traffic rows yet.</p>'
+    sorted_rows = sorted(rows, key=lambda row: row.get("date", ""))
+    values = [num(row.get("sessions")) for row in sorted_rows]
+    users = [num(row.get("totalUsers")) for row in sorted_rows]
+    maximum = max(values + users + [1])
+    width = 720
+    height = 210
+    left = 38
+    right = 18
+    top = 18
+    bottom = 34
+    plot_width = width - left - right
+    plot_height = height - top - bottom
+
+    def points(series: list[float]) -> str:
+        if len(series) == 1:
+            x = left + plot_width / 2
+            y = top + plot_height - (series[0] / maximum) * plot_height
+            return f"{x:.1f},{y:.1f}"
+        output = []
+        for index, value in enumerate(series):
+            x = left + (index / (len(series) - 1)) * plot_width
+            y = top + plot_height - (value / maximum) * plot_height
+            output.append(f"{x:.1f},{y:.1f}")
+        return " ".join(output)
+
+    labels = ""
+    for index, row in enumerate(sorted_rows):
+        if index not in {0, len(sorted_rows) - 1} and len(sorted_rows) > 5:
+            continue
+        x = left + (index / max(1, len(sorted_rows) - 1)) * plot_width
+        labels += f'<text x="{x:.1f}" y="{height - 10}" text-anchor="middle">{escape(format_date(row.get("date", "")))}</text>'
+
+    return f"""
+      <div class="chart-shell">
+        <svg class="traffic-chart" viewBox="0 0 {width} {height}" role="img" aria-label="Daily sessions and users">
+          <line x1="{left}" y1="{top + plot_height}" x2="{width - right}" y2="{top + plot_height}" />
+          <line x1="{left}" y1="{top}" x2="{left}" y2="{top + plot_height}" />
+          <polyline class="line sessions" points="{points(values)}" />
+          <polyline class="line users" points="{points(users)}" />
+          {labels}
+        </svg>
+        <div class="legend"><span class="legend-item sessions">Sessions</span><span class="legend-item users">Users</span></div>
+      </div>
+    """
+
+
 def page_shell(title: str, active: str, body: str) -> bytes:
     tabs = [
         ("Overview", "/analytics/"),
@@ -247,16 +461,20 @@ def page_shell(title: str, active: str, body: str) -> bytes:
     <style>
       :root {{
         color-scheme: light;
-        --bg: #f8fafc;
+        --bg: #f9fafb;
         --panel: #ffffff;
-        --line: #dbe3e8;
-        --text: #0f172a;
-        --muted: #64748b;
-        --soft: #eef5f4;
-        --accent: #0e7490;
-        --accent-strong: #155e75;
+        --line: #e5e7eb;
+        --line-soft: #f3f4f6;
+        --text: #111827;
+        --muted: #6b7280;
+        --faint: #9ca3af;
+        --soft: #f8fafc;
+        --accent: #0891b2;
+        --accent-strong: #0e7490;
+        --indigo: #6366f1;
+        --violet: #8b5cf6;
         --danger: #b91c1c;
-        --success: #15803d;
+        --success: #16a34a;
       }}
       * {{ box-sizing: border-box; }}
       body {{
@@ -269,45 +487,58 @@ def page_shell(title: str, active: str, body: str) -> bytes:
       header {{
         background: var(--panel);
         border-bottom: 1px solid var(--line);
+        padding: 0 24px;
       }}
       .header-inner {{
         align-items: center;
         display: flex;
         justify-content: space-between;
-        gap: 18px;
+        gap: 24px;
         margin: 0 auto;
-        padding: 18px 24px;
-        width: min(1280px, 100%);
+        max-width: 1280px;
+        padding: 16px 0;
       }}
       main {{
-        width: min(1280px, calc(100% - 32px));
+        max-width: 1280px;
+        width: calc(100% - 48px);
         margin: 0 auto;
         padding: 24px 0 64px;
       }}
       .kicker {{
-        color: var(--muted);
-        font-size: 0.76rem;
-        letter-spacing: 0.04em;
-        margin: 0 0 4px;
-        text-transform: uppercase;
+        color: var(--faint);
+        font-size: 0.75rem;
+        margin: 2px 0 0;
       }}
       h1 {{
-        font-size: 1.35rem;
-        letter-spacing: 0;
+        color: var(--text);
+        font-size: 1.25rem;
+        font-weight: 800;
         line-height: 1.15;
         margin: 0;
       }}
       .lead {{
-        color: var(--muted);
-        font-size: 0.82rem;
-        margin: 4px 0 0;
+        color: var(--faint);
+        font-size: 0.75rem;
+        margin: 2px 0 0;
       }}
       .header-actions {{
         align-items: center;
         display: flex;
         flex-wrap: wrap;
-        gap: 10px;
+        gap: 12px;
         justify-content: flex-end;
+      }}
+      .range-chip {{
+        align-items: center;
+        background: #f1f5f9;
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        color: #475569;
+        display: inline-flex;
+        font-size: 0.75rem;
+        font-weight: 700;
+        gap: 6px;
+        padding: 8px 12px;
       }}
       .update-button {{
         appearance: none;
@@ -319,7 +550,7 @@ def page_shell(title: str, active: str, body: str) -> bytes:
         font: inherit;
         font-size: 0.88rem;
         font-weight: 700;
-        padding: 9px 14px;
+        padding: 8px 14px;
       }}
       .update-button:hover {{ background: var(--accent-strong); }}
       .update-button[disabled] {{
@@ -332,7 +563,7 @@ def page_shell(title: str, active: str, body: str) -> bytes:
         border: 1px solid var(--line);
         border-radius: 8px;
         color: var(--muted);
-        font-size: 0.78rem;
+        font-size: 0.75rem;
         max-width: 360px;
         padding: 8px 10px;
       }}
@@ -348,79 +579,257 @@ def page_shell(title: str, active: str, body: str) -> bytes:
       }}
       nav {{
         display: flex;
-        flex-wrap: wrap;
         gap: 4px;
-        margin: 0 0 18px;
+        margin: 0 0 20px;
         overflow-x: auto;
         border-bottom: 1px solid var(--line);
       }}
       nav a {{
         border-bottom: 2px solid transparent;
         color: var(--muted);
-        padding: 10px 14px;
+        font-size: 0.88rem;
+        font-weight: 700;
+        padding: 10px 16px;
         text-decoration: none;
         white-space: nowrap;
+        transition: color 0.16s ease, border-color 0.16s ease;
       }}
+      nav a:hover {{ color: var(--text); }}
       nav a.active {{
         border-color: var(--accent);
         color: var(--accent);
       }}
-      .grid {{
+      .stack {{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }}
+      .score-grid {{
         display: grid;
         gap: 12px;
-        grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
-        margin: 0 0 18px;
+        grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
       }}
-      .card, .panel {{
+      .panel {{
         background: var(--panel);
         border: 1px solid var(--line);
         border-radius: 8px;
-        box-shadow: 0 1px 2px rgb(15 23 42 / 0.04);
-        padding: 16px;
+        padding: 20px;
       }}
-      .card span, .row span {{
-        color: var(--muted);
-        display: block;
-        font-size: 0.86rem;
-      }}
-      .card strong {{
-        display: block;
-        font-size: 1.9rem;
-        line-height: 1;
-        margin: 8px 0;
-      }}
-      .card p, .row p {{
-        color: var(--muted);
-        margin: 0;
-      }}
-      .empty-state {{
-        color: var(--muted);
-        margin: 0;
-      }}
-      h2 {{
-        font-size: 1.05rem;
+      .panel-heading {{
+        align-items: baseline;
+        display: flex;
+        gap: 8px;
         margin: 0 0 14px;
       }}
-      .row {{
-        border-top: 1px solid var(--line);
-        display: grid;
-        gap: 8px;
-        grid-template-columns: minmax(160px, 0.7fr) minmax(180px, 1fr) minmax(260px, 1.4fr);
-        padding: 14px 0;
+      h2 {{
+        color: var(--text);
+        font-size: 1.08rem;
+        font-weight: 800;
+        line-height: 1.2;
+        margin: 0;
       }}
-      .row:first-of-type {{ border-top: 0; }}
+      .panel-subtitle {{
+        color: var(--faint);
+        font-size: 0.75rem;
+      }}
+      .score-card {{
+        background: var(--panel);
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        padding: 16px;
+        position: relative;
+      }}
+      .score-label {{
+        color: var(--muted);
+        font-size: 0.86rem;
+        font-weight: 700;
+        margin: 0;
+      }}
+      .score-value {{
+        color: var(--text);
+        font-size: clamp(1.5rem, 3vw, 2rem);
+        font-weight: 850;
+        line-height: 1;
+        margin: 8px 0 0;
+      }}
+      .score-subtitle {{
+        color: var(--faint);
+        font-size: 0.82rem;
+        margin: 6px 0 0;
+      }}
+      .two-col {{
+        display: grid;
+        gap: 20px;
+        grid-template-columns: minmax(0, 1fr) minmax(320px, 0.55fr);
+      }}
+      .empty-state {{
+        color: var(--faint);
+        font-size: 0.9rem;
+        margin: 0;
+      }}
+      .table-wrap {{
+        overflow-x: auto;
+      }}
+      table {{
+        border-collapse: collapse;
+        font-size: 0.88rem;
+        width: 100%;
+      }}
+      th {{
+        border-bottom: 1px solid var(--line);
+        color: var(--faint);
+        font-size: 0.75rem;
+        font-weight: 800;
+        padding: 0 0 8px;
+        text-align: left;
+      }}
+      td {{
+        border-bottom: 1px solid var(--line-soft);
+        color: #4b5563;
+        padding: 8px 0;
+        vertical-align: top;
+      }}
+      th:not(:first-child), td:not(:first-child) {{
+        padding-left: 14px;
+        text-align: right;
+      }}
       code {{
         color: var(--accent-strong);
         overflow-wrap: anywhere;
       }}
       a {{ color: var(--accent-strong); }}
+      .badge {{
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        color: #64748b;
+        display: inline-flex;
+        font-size: 0.72rem;
+        font-weight: 800;
+        padding: 3px 8px;
+        white-space: nowrap;
+      }}
+      .badge.good {{
+        background: #ecfdf5;
+        border-color: #bbf7d0;
+        color: #15803d;
+      }}
+      .badge.bad {{
+        background: #fef2f2;
+        border-color: #fecaca;
+        color: #b91c1c;
+      }}
+      .badge.neutral {{
+        background: #f8fafc;
+      }}
+      .bar-list {{
+        display: grid;
+        gap: 12px;
+      }}
+      .bar-row {{
+        display: grid;
+        gap: 8px;
+      }}
+      .bar-copy {{
+        align-items: baseline;
+        display: flex;
+        gap: 10px;
+        justify-content: space-between;
+      }}
+      .bar-copy strong {{
+        color: #374151;
+        font-size: 0.9rem;
+      }}
+      .bar-copy span {{
+        color: var(--faint);
+        font-size: 0.78rem;
+      }}
+      .bar-track {{
+        background: #f1f5f9;
+        border-radius: 999px;
+        height: 10px;
+        overflow: hidden;
+      }}
+      .bar-track span {{
+        background: linear-gradient(90deg, var(--indigo), var(--violet));
+        border-radius: inherit;
+        display: block;
+        height: 100%;
+      }}
+      .chart-shell {{
+        width: 100%;
+      }}
+      .traffic-chart {{
+        display: block;
+        height: auto;
+        width: 100%;
+      }}
+      .traffic-chart line {{
+        stroke: #e5e7eb;
+        stroke-width: 1;
+      }}
+      .traffic-chart text {{
+        fill: var(--faint);
+        font-size: 12px;
+      }}
+      .traffic-chart .line {{
+        fill: none;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 3;
+      }}
+      .traffic-chart .sessions {{ stroke: var(--indigo); }}
+      .traffic-chart .users {{ stroke: #10b981; }}
+      .legend {{
+        display: flex;
+        gap: 14px;
+        margin-top: 4px;
+      }}
+      .legend-item {{
+        color: var(--muted);
+        font-size: 0.78rem;
+        font-weight: 700;
+      }}
+      .legend-item::before {{
+        border-radius: 999px;
+        content: "";
+        display: inline-block;
+        height: 8px;
+        margin-right: 6px;
+        width: 8px;
+      }}
+      .legend-item.sessions::before {{ background: var(--indigo); }}
+      .legend-item.users::before {{ background: #10b981; }}
+      .setup-list {{
+        display: grid;
+        gap: 10px;
+      }}
+      .setup-row {{
+        align-items: start;
+        border-bottom: 1px solid var(--line-soft);
+        display: grid;
+        gap: 10px;
+        grid-template-columns: minmax(120px, 0.5fr) auto minmax(260px, 1.5fr);
+        padding: 10px 0;
+      }}
+      .setup-row:last-child {{ border-bottom: 0; }}
+      .setup-row strong {{
+        color: #374151;
+        font-size: 0.88rem;
+      }}
+      .setup-row p {{
+        color: var(--muted);
+        font-size: 0.84rem;
+        margin: 0;
+      }}
       @media (max-width: 760px) {{
         .header-inner {{
           align-items: flex-start;
           flex-direction: column;
         }}
         .header-actions {{ justify-content: flex-start; }}
-        .row {{ grid-template-columns: 1fr; }}
+        main {{ width: calc(100% - 32px); }}
+        .two-col {{ grid-template-columns: 1fr; }}
+        .setup-row {{ grid-template-columns: 1fr; }}
       }}
     </style>
   </head>
@@ -428,12 +837,13 @@ def page_shell(title: str, active: str, body: str) -> bytes:
     <header>
       <div class="header-inner">
         <div>
-          <p class="kicker">Localhost only</p>
           <h1>Lumenary Marketing Dashboard</h1>
-          <p class="lead">GA4, Search Console, acquisition, and AEO reporting for thelumenary.org.</p>
+          <p class="lead">Local GA4, Search Console, acquisition, and AEO reporting for thelumenary.org.</p>
+          <p class="kicker">Localhost only</p>
         </div>
         <div class="header-actions">
-          <button class="update-button" data-update type="button">Update</button>
+          <span class="range-chip">28 days</span>
+          <button class="update-button" data-update type="button">Collect Data</button>
           <span class="update-status {status_class}" data-update-status>{escape(status_text)}</span>
         </div>
       </div>
@@ -490,55 +900,87 @@ def overview_page():
     users = metric_sum(overview, "totalUsers")
     views = metric_sum(overview, "screenPageViews")
     engagement = weighted_average(overview, "engagementRate", "sessions")
+    avg_duration = weighted_average(overview, "averageSessionDuration", "sessions")
     search_clicks = sum(num(row.get("clicks")) for row in gsc_rows)
     search_impressions = sum(num(row.get("impressions")) for row in gsc_rows)
-    cards = [
-        ("Sessions", whole(sessions), snapshot_meta(ga4, "GA4 snapshot has not been pulled yet.")),
-        ("Users", whole(users), "Total users from the latest local GA4 snapshot."),
-        ("Page Views", whole(views), "Screen/page views from the latest local GA4 snapshot."),
-        ("Engagement", pct(engagement), "Weighted engagement rate from GA4 sessions."),
-        ("Search Clicks", whole(search_clicks), snapshot_meta(gsc, "GSC snapshot has not been pulled yet.")),
-        ("Search Impressions", whole(search_impressions), "Google Search Console impressions from the latest local snapshot."),
-        ("Search Rows", whole(len(gsc_rows)), "Query/page rows returned by Search Console."),
-        ("AEO Referrals", whole(ga4_event_count(ga4, "aeo_referral_landing")), "GA4 event count for answer-engine referrals."),
-    ]
-    status_cards = [
-        ("GA4", status_label(setup.get("ga4", {}).get("reporting_status", setup.get("ga4", {}).get("status", "waiting"))), setup.get("ga4", {}).get("notes", "")),
-        ("Search Console", status_label(setup.get("gsc", {}).get("reporting_status", setup.get("gsc", {}).get("status", "waiting"))), setup.get("gsc", {}).get("notes", "")),
-        ("AEO", status_label(setup.get("aeo", {}).get("status", "ready")), "Referral events, llms.txt, schema, sitemap, and query inventory are wired."),
-        ("Sitemap", "Ready", setup.get("gsc", {}).get("sitemap", "https://thelumenary.org/sitemap-index.xml")),
-        ("Idea Records", str(len(ideas)), "Structured observations in the research corpus."),
-        ("Promoted Claims", str(public_claim_count(ideas)), "Findings that currently pass the public-claim gate."),
-        ("Source Cards", str(len(sources)), "Grounding sources available to the loop."),
-        ("AEO Queries", str(len(queries)), "Starter questions for citation checks."),
-    ]
-    body = '<section class="grid">'
-    for label, value, detail in cards:
-        body += f'<article class="card"><span>{escape(label)}</span><strong>{escape(value)}</strong><p>{escape(detail)}</p></article>'
-    body += '</section>'
+    body = '<div class="stack">'
+    body += '<section class="score-grid">'
+    body += card("Avg. time on site", fmt_duration(avg_duration), snapshot_meta(ga4, "GA4 snapshot has not been pulled yet."))
+    body += card("Engagement rate", pct(engagement), "Weighted GA4 engagement.")
+    body += card("Avg. pages / session", pages_per_session(views, sessions), f"{whole(views)} views from {whole(sessions)} sessions.")
+    body += card("AI-engine sessions", whole(ga4_event_count(ga4, "aeo_referral_landing")), "Tracked answer-engine referral landings.")
+    body += card("Search impressions", whole(search_impressions), f"{whole(search_clicks)} clicks from Search Console.")
+    body += "</section>"
+
+    body += '<div class="two-col">'
+    body += panel("28-Day Traffic", traffic_chart(overview.get("rows", [])), "Sessions and users")
+    landing_rows = []
+    for row in ga4.get("landing_pages", {}).get("rows", [])[:10]:
+        landing_rows.append(
+            [
+                f"<code>{escape(row.get('landingPage', '(not set)'))}</code>",
+                whole(row.get("sessions")),
+                whole(row.get("totalUsers")),
+                whole(row.get("screenPageViews")),
+            ]
+        )
+    body += panel(
+        "Top Landing Pages",
+        table(["Page", "Sessions", "Users", "Views"], landing_rows, "No GA4 landing page rows are available yet."),
+        "GA4",
+    )
+    body += "</div>"
+
     if not overview.get("rows") and ga4.get("collected_at"):
-        body += empty_panel(
+        body += panel(
             "GA4 Data",
             "GA4 is connected and the report pull works, but the latest 28-day report has no traffic rows yet. Visit the site, wait for GA4 processing, then run npm run analytics:ga4.",
         )
     if not gsc_rows and gsc.get("collected_at"):
-        body += empty_panel(
+        body += panel(
             "Search Console Data",
             "Search Console is verified and the sitemap is submitted, but Google has not returned query data yet. This is normal immediately after verification.",
         )
-    body += '<section class="grid">'
-    for label, value, detail in status_cards:
-        body += f'<article class="card"><span>{escape(label)}</span><strong>{escape(value)}</strong><p>{escape(detail)}</p></article>'
-    body += '</section><section class="panel"><h2>AEO Setup Checks</h2>'
+
+    body += '<section class="score-grid">'
+    body += card("Sessions", whole(sessions), "Total GA4 sessions.")
+    body += card("Users", whole(users), "Total GA4 users.")
+    body += card("Page views", whole(views), "Screen/page views.")
+    body += card("GSC rows", whole(len(gsc_rows)), "Query/page rows returned.")
+    body += card("Promoted claims", str(public_claim_count(ideas)), "Findings passing the public-claim gate.")
+    body += card("Idea records", str(len(ideas)), "Structured observations in the corpus.")
+    body += card("Source cards", str(len(sources)), "Grounding sources available to the loop.")
+    body += card("AEO queries", str(len(queries)), "Starter citation questions.")
+    body += "</section>"
+
+    setup_rows = ""
+    setup_items = [
+        ("GA4", setup.get("ga4", {}).get("reporting_status", setup.get("ga4", {}).get("status", "waiting")), setup.get("ga4", {}).get("notes", "")),
+        ("Search Console", setup.get("gsc", {}).get("reporting_status", setup.get("gsc", {}).get("status", "waiting")), setup.get("gsc", {}).get("notes", "")),
+        ("AEO", setup.get("aeo", {}).get("status", "ready"), "Referral events, llms.txt, schema, sitemap, and query inventory are wired."),
+        ("Sitemap", "ready", setup.get("gsc", {}).get("sitemap", "https://thelumenary.org/sitemap-index.xml")),
+    ]
+    for label, value, detail in setup_items:
+        setup_rows += (
+            '<div class="setup-row">'
+            f"<strong>{escape(label)}</strong>"
+            f"{badge(status_label(value), status_class(value))}"
+            f"<p>{escape(detail)}</p>"
+            "</div>"
+        )
+    body += panel("Analytics Setup", f'<div class="setup-list">{setup_rows}</div>')
+
+    check_rows = ""
     for check in readiness.get("checks", []):
-        body += (
-            '<div class="row">'
+        check_rows += (
+            '<div class="setup-row">'
             f"<strong>{escape(check.get('label', ''))}</strong>"
-            f"<span>{escape(check.get('status', ''))}</span>"
+            f"{badge(check.get('status', ''), status_class(check.get('status', '')))}"
             f"<p>{escape(check.get('notes', ''))}<br><code>{escape(check.get('path', ''))}</code></p>"
             "</div>"
         )
-    body += "</section>"
+    body += panel("AEO Setup Checks", f'<div class="setup-list">{check_rows}</div>')
+    body += "</div>"
     return page_shell("Marketing Analytics", "Overview", body)
 
 
@@ -546,67 +988,97 @@ def acquisition_page():
     channels = read_json("data/analytics/acquisition-channels.json", [])
     ga4 = ga4_snapshot()
     gsc = gsc_snapshot()
+    acquisition = ga4.get("acquisition", {}).get("rows", [])
+    grouped = group_acquisition_rows(acquisition)
+    total_sessions = sum(row["sessions"] for row in grouped)
+    source_cards = '<section class="score-grid">'
+    for row in grouped[:5]:
+        share = (row["sessions"] / total_sessions) if total_sessions else 0
+        source_cards += card(row["label"], whole(row["sessions"]), f"{pct(share)} of sessions, {whole(row['users'])} users")
+    if not grouped:
+        source_cards += card("No sources yet", "0", "Run Collect Data after traffic appears.")
+    source_cards += "</section>"
+
+    source_bars = bars(
+        [(row["label"], row["sessions"], f"{whole(row['sessions'])} sessions, {whole(row['views'])} views") for row in grouped],
+        "No GA4 acquisition rows are available yet.",
+    )
+
     acquisition_rows = []
-    for row in ga4.get("acquisition", {}).get("rows", [])[:20]:
-        source = f"{row.get('sessionSource', '(none)')} / {row.get('sessionMedium', '(none)')}"
+    for row in acquisition[:20]:
+        source = source_label(row.get("sessionSource", "(none)"), row.get("sessionMedium", "(none)"))
         acquisition_rows.append(
-            '<div class="row">'
-            f"<strong>{escape(row.get('sessionDefaultChannelGroup', 'Unassigned'))}</strong>"
-            f"<span>{escape(source)}</span>"
-            f"<p>{whole(row.get('sessions'))} sessions, {whole(row.get('totalUsers'))} users, {whole(row.get('screenPageViews'))} views</p>"
-            "</div>"
+            [
+                escape(source_group(row)),
+                escape(source),
+                whole(row.get("sessions")),
+                whole(row.get("totalUsers")),
+                whole(row.get("screenPageViews")),
+            ]
         )
     landing_rows = []
     for row in ga4.get("landing_pages", {}).get("rows", [])[:20]:
         landing_rows.append(
-            '<div class="row">'
-            f"<strong>{escape(row.get('landingPage', '(not set)'))}</strong>"
-            f"<span>{whole(row.get('sessions'))} sessions</span>"
-            f"<p>{whole(row.get('totalUsers'))} users, {whole(row.get('engagedSessions'))} engaged sessions, {whole(row.get('screenPageViews'))} views</p>"
-            "</div>"
+            [
+                f"<code>{escape(row.get('landingPage', '(not set)'))}</code>",
+                whole(row.get("sessions")),
+                whole(row.get("totalUsers")),
+                whole(row.get("engagedSessions")),
+                whole(row.get("screenPageViews")),
+            ]
         )
     gsc_rows = []
     for row in gsc.get("rows", [])[:20]:
         query = row.get("query") or "(query unavailable)"
         gsc_rows.append(
-            '<div class="row">'
-            f"<strong>{escape(query)}</strong>"
-            f"<span>{whole(row.get('clicks'))} clicks / {whole(row.get('impressions'))} impressions</span>"
-            f"<p>{escape(row.get('page', ''))}<br>CTR {pct(row.get('ctr'))}, average position {num(row.get('position')):.1f}</p>"
-            "</div>"
+            [
+                escape(query),
+                whole(row.get("clicks")),
+                whole(row.get("impressions")),
+                pct(row.get("ctr")),
+                f"{num(row.get('position')):.1f}",
+                f"<code>{escape(row.get('page', ''))}</code>",
+            ]
         )
-    body = table_panel(
-        "GA4 Channels",
-        acquisition_rows,
-        "GA4 reporting is connected, but no acquisition rows are available yet. Run npm run analytics:ga4 again after traffic appears.",
+    body = '<div class="stack">'
+    body += source_cards
+    body += panel("Traffic Sources", source_bars, snapshot_meta(ga4, "GA4 snapshot has not been pulled yet."))
+    body += panel(
+        "GA4 Source Detail",
+        table(
+            ["Channel", "Source / medium", "Sessions", "Users", "Views"],
+            acquisition_rows,
+            "GA4 reporting is connected, but no acquisition rows are available yet. Run Collect Data again after traffic appears.",
+        ),
     )
-    body += table_panel(
+    body += panel(
         "Landing Pages",
-        landing_rows,
-        "No GA4 landing-page rows are available yet.",
+        table(
+            ["Page", "Sessions", "Users", "Engaged", "Views"],
+            landing_rows,
+            "No GA4 landing-page rows are available yet.",
+        ),
     )
-    body += table_panel(
-        "Search Queries",
-        gsc_rows,
-        "Search Console reporting is connected, but no query rows are available yet. This is normal while Google begins crawling.",
+    body += panel(
+        "Search Console Queries",
+        table(
+            ["Query", "Clicks", "Impr", "CTR", "Pos", "Page"],
+            gsc_rows,
+            "Search Console reporting is connected, but no query rows are available yet. This is normal while Google begins crawling.",
+        ),
+        snapshot_meta(gsc, "GSC snapshot has not been pulled yet."),
     )
-    body += '<section class="panel"><h2>Source Rules</h2>'
+    source_rules = ""
     for channel in channels:
-        body += (
-            '<div class="row">'
+        source_rules += (
+            '<div class="setup-row">'
             f"<strong>{escape(channel.get('channel', ''))}</strong>"
-            f"<span>{escape(channel.get('source_rule', ''))}</span>"
+            f"<p>{escape(channel.get('source_rule', ''))}</p>"
             f"<p>{escape(channel.get('what_to_watch', ''))}<br><code>{escape(channel.get('first_action', ''))}</code></p>"
             "</div>"
         )
-    body += "</section>"
-    body += (
-        '<section class="panel" style="margin-top:18px"><h2>Next Metrics</h2>'
-        '<div class="row"><strong>GA4</strong><span>Sessions, users, engagement, landing pages</span><p>Connected. Refresh with GA4_PROPERTY_ID=538957338 npm run analytics:ga4 after traffic appears.</p></div>'
-        '<div class="row"><strong>Search Console</strong><span>Queries, impressions, clicks, pages</span><p>Connected. Refresh with GSC_SITE_URL=sc-domain:thelumenary.org npm run analytics:gsc after Google starts returning search data.</p></div>'
-        '<div class="row"><strong>AEO</strong><span>AI referrals and citation checks</span><p>Referral events are wired in GA4; citation checks still require manual or authenticated answer-engine checks.</p></div>'
-        "</section>"
-    )
+    body += panel("Source Rules", f'<div class="setup-list">{source_rules}</div>')
+    body += "</div>"
     return page_shell("Acquisition", "Acquisition", body)
 
 
@@ -623,34 +1095,56 @@ def aeo_page():
         event = row.get("eventName", "")
         if "aeo" in event or "referral" in event:
             aeo_event_rows.append(
-                '<div class="row">'
-                f"<strong>{escape(event)}</strong>"
-                f"<span>{whole(row.get('eventCount'))} events</span>"
-                f"<p>{whole(row.get('totalUsers'))} users</p>"
-                "</div>"
+                [
+                    escape(event),
+                    whole(row.get("eventCount")),
+                    whole(row.get("totalUsers")),
+                ]
             )
-    body = '<section class="grid">'
-    body += f'<article class="card"><span>Tracked Engines</span><strong>{len(engines)}</strong><p>{escape(", ".join(engines))}</p></article>'
-    body += f'<article class="card"><span>Query Inventory</span><strong>{len(queries)}</strong><p>Questions mapped to expected Lumenary pages.</p></article>'
-    body += f'<article class="card"><span>Readiness Checks</span><strong>{len(readiness.get("checks", []))}</strong><p>Surfaces that help answer engines parse the site.</p></article>'
-    body += f'<article class="card"><span>AEO Referrals</span><strong>{whole(aeo_referrals)}</strong><p>{escape(snapshot_meta(ga4, "GA4 snapshot has not been pulled yet."))}</p></article>'
-    body += f'<article class="card"><span>GSC Query Rows</span><strong>{whole(len(gsc.get("rows", [])))}</strong><p>{escape(snapshot_meta(gsc, "GSC snapshot has not been pulled yet."))}</p></article>'
-    body += '</section>'
-    body += table_panel(
+    body = '<div class="stack">'
+    body += '<section class="score-grid">'
+    body += card("Tracked engines", str(len(engines)), ", ".join(engines))
+    body += card("Query inventory", str(len(queries)), "Questions mapped to expected pages.")
+    body += card("Readiness checks", str(len(readiness.get("checks", []))), "Surfaces answer engines can parse.")
+    body += card("AEO referrals", whole(aeo_referrals), snapshot_meta(ga4, "GA4 snapshot has not been pulled yet."))
+    body += card("GSC query rows", whole(len(gsc.get("rows", []))), snapshot_meta(gsc, "GSC snapshot has not been pulled yet."))
+    body += "</section>"
+
+    body += panel(
         "AEO Events",
-        aeo_event_rows,
-        "No answer-engine referral events have been captured yet. The event is wired; it will appear after a visit arrives from a tracked answer engine.",
+        table(
+            ["Event", "Events", "Users"],
+            aeo_event_rows,
+            "No answer-engine referral events have been captured yet. The event is wired; it will appear after a visit arrives from a tracked answer engine.",
+        ),
     )
-    body += '<section class="panel"><h2>Starter Questions</h2>'
-    for query in queries:
-        body += (
-            '<div class="row">'
-            f"<strong>{escape(query.get('query', ''))}</strong>"
-            f"<span>{escape(query.get('intent', ''))} / {escape(query.get('topic', ''))}</span>"
-            f"<p>Expected page:<br><code>{escape(query.get('expected_path', ''))}</code></p>"
+
+    check_rows = ""
+    for check in readiness.get("checks", []):
+        check_rows += (
+            '<div class="setup-row">'
+            f"<strong>{escape(check.get('label', ''))}</strong>"
+            f"{badge(check.get('status', ''), status_class(check.get('status', '')))}"
+            f"<p>{escape(check.get('notes', ''))}<br><code>{escape(check.get('path', ''))}</code></p>"
             "</div>"
         )
-    body += "</section>"
+    body += panel("Readiness Checks", f'<div class="setup-list">{check_rows}</div>', readiness.get("updated_at", ""))
+
+    query_rows = []
+    for query in queries:
+        query_rows.append(
+            [
+                escape(query.get("query", "")),
+                escape(query.get("intent", "")),
+                escape(query.get("topic", "")),
+                f"<code>{escape(query.get('expected_path', ''))}</code>",
+            ]
+        )
+    body += panel(
+        "Starter Questions",
+        table(["Query", "Intent", "Topic", "Expected Page"], query_rows, "No AEO starter questions are defined yet."),
+    )
+    body += "</div>"
     return page_shell("AEO", "AEO", body)
 
 

@@ -1,0 +1,68 @@
+OpenAI Codex v0.133.0
+--------
+workdir: /Users/johnforrester/spirituality
+model: gpt-5.5
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: xhigh
+reasoning summaries: none
+session id: 019e73f3-380b-7a32-94e1-47f74d0fe44b
+--------
+user
+# Lumenary Insight Distillation
+
+You are writing the public insight card and At a Glance text for The Lumenary.
+
+Read the finding below. Distill it into reader-facing language.
+
+## Writing Rules
+
+- Write like the texts we study: simple, memorable, and direct.
+- Do not use Sanskrit, Pali, Arabic, Greek, or Chinese terms.
+- Do not use academic hedging.
+- Do not use research jargon.
+- Do not use em dashes.
+- Do not start with "This finding".
+- Lead with the human question or the living insight.
+- Do not repeat the title, the insight headline, or the first At a Glance sentence in the bullets.
+- Do not use machinery language in public copy: no "layered authorization," "distributed affordances," "institutional role," "operationalizes," "formal transfer," "gradient," "rubric," "locus," "claimant," or "grammar."
+- Also avoid internal model words in public copy: no "architecture," "custody," "receiving surface," "residue," "grain," "threshold," "entry," "compound," "upstream," "downstream," "phenomenology," "authorization," "typology," or "taxonomy."
+- The insight headline must land like a proverb.
+- The publicTitle is the finding page title: maximum 10 words, plain, memorable, and not academic.
+- The plainSummary is for the Insights card: one sentence, maximum 28 words.
+- The atAGlance section is for the finding page: one paragraph, 3 to 4 short sentences.
+- The keyPoints are for the finding page: 3 short bullets, direct and useful. Use them for meaning, human risk, and what to test.
+- Use one idea per sentence.
+
+## Required JSON
+
+Return exactly one JSON object with:
+
+- insight: proverb-like headline, maximum 10 words
+- publicTitle: finding page title, maximum 10 words
+- plainSummary: one short sentence for the Insights card
+- atAGlance: one paragraph of 3 to 4 short sentences
+- keyPoints: array of 3 short bullet points, each one sentence and under 18 words
+- match: array with one unique lowercased phrase from the title
+- tags: array of 1 to 5 simple tags
+
+## Finding
+
+Title: The Road Must Know Its End
+Type: model
+Agent: codex
+
+Original Claim:
+A practice does not become trustworthy merely because it reaches a strong insight. It must also tell the practitioner how to carry the road that led there. Two questions should be asked together: does the practice validate what it found, or does it undermine possession of the finding; and after that, is the practice retained, set down, or embodied in ordinary conduct? This narrows the earlier three-type claim. The real danger is not that some roads confirm and others cancel. The danger is carrying a road in the wrong way after it has done its work. A modern person can turn meditation, therapy, productivity, or spiritual insight into a fresh proof of worth. The teaching here is restraint: use the road, test what it changes, then ask whether it should remain a rule, be released, or become quieter conduct.
+
+Why It Might Be New:
+The closest prior argument is Smith's reading of Nagarjuna and Wittgenstein as shared therapeutic methods without theses. Sells is close for apophatic speech that unsays itself. MN 22 is closer still for a method that must be grasped properly and then released. The difference is the two-question after-use model. It does not claim that methods are simply confirming, canceling, or dissolving. It treats hybrid cases as the clue: MN 22 validates use and then releases it; the Heart Sutra undermines attainment while retaining reliance; Rinzai koan practice can unsettle conceptual grasping while continuing as curriculum; Dogen strains the whole tool-and-goal picture by making practice and realization one. The new contribution is modest: method authority should be judged by both its proof relation and its after-use instruction, then tested against verification, transmission, and re-entry patterns.
+
+Critique:
+The model may still rename known ideas: upaya, raft, ladder, thorn-removing-thorn, no-thesis, unsaying, practice-realization, fana and baqa. Its novelty should stay reduced unless deeper prior-art search fails to find this exact two-question structure. Dogen is the hardest anomaly because practice-realization identity may refuse the premise that a road first works and then is carried, released, or embodied. The Heart Sutra also strains the model because it says no attainment while retaining reliance, mantra, and bodhisattva practice. If most mature traditions use every combination by stage, teacher, and institutional need, this is not a doctrine of method authority. It is only a useful checklist for preventing premature claims.
+
+codex
+{"insight":"Know when the road is done","publicTitle":"When the Road Is Done","plainSummary":"A helpful path must also teach us when to keep it, release it, or let it become daily life.","atAGlance":"Strong insight can still become another way to prove our worth. A trustworthy path teaches what it changes and how to carry it afterward. Some paths stay as steady help. Some should be set down, and some should become quiet conduct.","keyPoints":["Real growth includes knowing how to live after the breakthrough.","Insight can feed self-worth hunger when it becomes a badge.","Look for kinder conduct after the exercise, not just stronger feelings."],"match":["the road must know its end"],"tags":["practice","insight","restraint"]}
+tokens used
+13,174

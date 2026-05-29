@@ -944,3 +944,23 @@
 
 - Published daily draft `publication/daily/2026-05-29-residue-policy-in-negative-self-practice.md`.
 - Created X draft `publication/x/queue/2026-05-29-residue-policy-in-negative-self-practice.md`.
+
+## 2026-05-29T15:36:18+02:00
+
+- Parallel run `20260529-153241-claude-generate-an-original-lumenary-doctrine-building-` generated `When There Is Nothing To Keep Or Release`.
+- Observation file: `observations/claude/2026-05-29-when-there-is-nothing-to-keep-or-release.md`.
+
+## 2026-05-29T15:36:18+02:00
+
+- Parallel run `20260529-153241-codex-generate-an-original-lumenary-doctrine-building-` generated `The Road Must Know Its End`.
+- Observation file: `observations/codex/2026-05-29-the-road-must-know-its-end.md`.
+
+## 2026-05-29T15:41:51+02:00
+
+- Originality audit completed for `The Road Must Know Its End`, `When There Is Nothing To Keep Or Release`.
+- Audit records: `reviews/originality/2026-05-29-the-road-must-know-its-end-ddc62528ba3f429d.md`, `reviews/originality/2026-05-29-when-there-is-nothing-to-keep-or-release-c429f79033672ed2.md`.
+
+## 2026-05-29T15:41:51+02:00
+
+- Published daily draft `publication/daily/2026-05-29-compound-entry-grammar.md`.
+- Created X draft `publication/x/queue/2026-05-29-compound-entry-grammar.md`.

@@ -497,3 +497,19 @@
 - Build a separability test against Holding Without Owning, The Test Is How You Return, and Method's Reckoning. Merge if blind readers cannot distinguish the claims.
 - Create a voice-coding sheet with values for active, middle, passive, mixed-by-stage, simultaneous-mixed, no-owner, no-threshold, practice-realization, radical Other Power, analyst-frame-refused, and undecidable.
 - Run the Earning Check pilot only after screening for perfectionism, scrupulosity, avoidance, workload coercion, and clinical risk. Track whether it reduces self-worth conversion without weakening responsibility.
+
+## Originality Audit Follow-Up 2026-05-29T15:41:51+02:00
+
+### The Road Must Know Its End (renamed)
+- Do not publish as a discovery. Treat as a bounded after-use rubric and practice-fit rule.
+- Build a split-source codebook with fields for proof relation, carrying relation, ownership assumption, temporal completion assumption, warning, repair, evidence passage, and analyst-frame refusal.
+- Merge or cross-index with The Method's Reckoning, Holding Without Owning, The Test Is How You Return, Keep What Can Correct You, Boundary and Custody at the Threshold, and You cannot release what you never held unless separability testing shows independent predictive gain.
+- Run practitioner interviews for concrete post-insight failures and repairs, not agreement with the slogan.
+- Pilot The After-Use Check only with screening for perfectionism, scrupulosity, avoidance, workload coercion, dissociation, mania, trauma activation, severe depression, and clinical distress.
+
+### When There Is Nothing To Keep Or Release (renamed)
+- Do not publish as a discovery. Publish, if at all, as a scope-condition addendum to the after-use and custody models.
+- Merge or cross-index with You cannot release what you never held, The Road Must Know Its End, The Method's Reckoning, Holding Without Owning, and The Test Is How You Return unless a separability test distinguishes them.
+- Build a codebook with fields for practitioner ownership, completion temporality, custody relocation, no-custody frame, support holder, warning, repair, evidence passage, and analyst-frame refusal.
+- Close-read Shinran's Japanese terms around jinen honi and hakarai, Dogen on shusho-itto and non-gaining, and practitioner manuals where concrete guidance appears.
+- Pilot The No-Audit Check only with explicit stop conditions for avoidance, drift, missed duties, helplessness, depression, dissociation, mania, trauma activation, and clinical distress.
