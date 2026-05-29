@@ -129,7 +129,7 @@ notify "Researching" "$DIRECTION"
 
 DEFAULT_FOCUS="Generate an original Lumenary doctrine-building finding. Codex and Claude should use traditions, science, history, and practice reports as evidence, then state what Lumenary now holds, what could be taught, what low-risk practice might test it, what would weaken it, and how the method of observation should improve. Follow docs/writing-style.md and avoid em dashes."
 
-DIALECTIC_ARGS=(--dialectic-after "${SPIRITUALITY_DIALECTIC_AFTER:-4}")
+DIALECTIC_ARGS=(--dialectic-after "${SPIRITUALITY_DIALECTIC_AFTER:-2}")
 if [ "${SPIRITUALITY_NO_DIALECTIC:-0}" = "1" ]; then
   DIALECTIC_ARGS=(--no-dialectic)
 fi

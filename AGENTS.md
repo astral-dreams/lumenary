@@ -41,7 +41,7 @@ Working project name: Lumenary.
 - High-energy physics sources are available for time and matter grounding. Use them as empirical/formal constraints, especially around Standard Model fields, Higgs/QCD mass, antimatter asymmetry, relativity, Noether symmetry, T-violation, and quantum-gravity time.
 - Each run should ask whether the finding can become part of Lumenary doctrine, teaching, or practice. If yes, name the doctrine candidate, the practical implication, and at least one observable test or falsifying pressure.
 - Each run should also ask what human problem the finding serves and who it is for. If the answer is not clear, keep the idea as research and do not convert it into a teaching or practice.
-- Each run should either create, use, or queue a Codex/Claude dialogue step: one agent proposes, the other challenges, then the system records what survived.
+- Each run should either create, use, or queue a Codex/Claude dialogue step: one agent proposes, the other challenges, then the system records what survived. The half-hourly wrapper should attempt a dialogue at least every two successful parallel runs, and retry on the next successful run if the dialogue sidecar fails.
 - Test records are first-class artifacts. Each test should name its target, type, prediction, result, impact, and next action.
 - Each new finding must have proposed prior-art, falsification, and cross-domain tests unless stronger specific tests already exist.
 - Teachings and practices can be revised, weakened, retired, or falsified. A broken teaching remains visible with the evidence that broke it.

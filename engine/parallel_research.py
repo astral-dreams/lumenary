@@ -312,10 +312,13 @@ def _maybe_run_dialectic_sidecar(
             state = {"successful_parallel_runs": 0}
 
     count = int(state.get("successful_parallel_runs") or 0) + 1
-    due = count % int(args.dialectic_after) == 0
+    cadence = int(args.dialectic_after)
+    last_successful_dialogue_run = int(state.get("last_dialogue_successful_parallel_run") or 0)
+    due = count - last_successful_dialogue_run >= cadence
     state.update(
         {
-            "dialectic_after": int(args.dialectic_after),
+            "dialogue_due": due,
+            "dialectic_after": cadence,
             "last_parallel_execution_id": execution_id,
             "last_checked_at": now_local_iso(),
             "successful_parallel_runs": count,
@@ -327,6 +330,12 @@ def _maybe_run_dialectic_sidecar(
     )
     if not due:
         return
+    state["last_dialogue_attempt_parallel_run"] = count
+    state["last_dialogue_attempt_at"] = now_local_iso()
+    state_path.write_text(
+        json.dumps(state, indent=2, ensure_ascii=True, sort_keys=True) + "\n",
+        encoding="utf-8",
+    )
 
     dialectic_config = EngineConfig.load(
         root=root,
@@ -346,6 +355,7 @@ def _maybe_run_dialectic_sidecar(
         )
         state["last_dialogue_at"] = now_local_iso()
         state["last_dialogue_count"] = len(dialogues)
+        state["last_dialogue_successful_parallel_run"] = count
         state_path.write_text(
             json.dumps(state, indent=2, ensure_ascii=True, sort_keys=True) + "\n",
             encoding="utf-8",

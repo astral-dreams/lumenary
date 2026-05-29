@@ -84,7 +84,7 @@ Each iteration should:
 13. Ask whether the idea clarifies a modern human problem: loneliness, addiction, compulsion, withdrawal, anxiety, depression, burnout, grief, meaning loss, digital comparison, feeling unneeded, feeling out of place, or achievement-contingent self-worth.
 14. Ask whether the idea implies a doctrine candidate, teaching principle, or practice protocol.
 15. If it implies practice, specify the target human problem, target cohort, non-fit case, what a person would do, what change is expected, what risks exist, and what observation would count against it.
-16. Run or queue a Codex/Claude dialogue pass: one agent challenges the claim, the other revises or defends it, and the system records what survived.
+16. Run or queue a Codex/Claude dialogue pass: one agent challenges the claim, the other revises or defends it, and the system records what survived. The launchd wrapper should attempt this at least every two successful parallel runs, and retry after a failed dialogue sidecar instead of waiting for a distant cadence slot.
 17. Critique the idea strongly, including an anomaly that strains or breaks the model.
 18. Add at least one falsifiable prediction to the follow-up directions.
 19. Write or update test records. Every new idea should have prior-art, falsification, and cross-domain tests unless stronger specific tests already exist.
