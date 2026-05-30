@@ -2,18 +2,18 @@
 
 Hunt for anomalies, near-duplicates, prior art, and failures. The best output may weaken, retire, or sharply narrow an existing claim.
 
-Selection reason: Selected by pressure scores: critique=32.48, discovery=10.94, doctrine=8.95, originality_audit=1.00, practice=0.00.
+Selection reason: Selected by pressure scores: critique=34.40, discovery=10.89, doctrine=10.45, originality_audit=1.00, practice=0.00.
 
 Current pressure metrics:
 - frontier_count: 9
-- high_priority_frontier: 0.8682
-- idea_count: 117
+- high_priority_frontier: 0.807
+- idea_count: 120
 - incomplete_audits: 4
 - latest_idea_age_days: 0.01
-- latest_source_age_days: 3.3
+- latest_source_age_days: 3.32
 - missing_source_frontiers: 40
-- pending_tests: 376
+- pending_tests: 385
 - ready_teachings_without_practice: 0
 - source_count: 121
-- teaching_pressure_count: 21
-- weak_tests: 2
+- teaching_pressure_count: 23
+- weak_tests: 3

@@ -2,7 +2,7 @@
 
 Frontier: Inferential policy after objectless awareness
 Recommended action: build_rubric
-Why now: priority 0.77; 13 related idea records; 3 originality audits; cross-agent signal; live anomaly pressure; dialogue pressure
+Why now: priority 0.83; 14 related idea records; 4 originality audits; cross-agent signal; live anomaly pressure; dialogue pressure
 
 Core claim:
 The Free Energy Principle's predictive processing framework, when applied to contemplative self-negation, does not resolve the atman/anatta dispute but formally reproduces it at a higher level of abstraction. Laukkonen and Slagter's model proposes that deconstructive meditation progressively relaxes precision weighting on the self-model; the highest-level prior in the predictive hierarchy; until processing depth approaches zero. The critical question...

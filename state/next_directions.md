@@ -646,3 +646,22 @@
 - Use split-source coding. Do not let one source both establish relational custody and confirm the predicted warning or repair.
 - Run the proposed four-arm pilot, but add an ERP-informed anti-reassurance condition and explicit stop rules for OCD, scrupulosity, dependency, shame, dissociation, mania, severe depression, trauma activation, addiction withdrawal, unsafe authority, and medical concern.
 - Design a low-barrier relational option for isolated participants, then test whether it helps without becoming dependency or reassurance outsourcing.
+
+## Originality Audit Follow-Up 2026-05-30T10:01:16+02:00
+
+### The Brain Model Already Took a Side (extended)
+- Do not publish as a discovery. Publish, if at all, as a bounded critique of predictive-processing translation strain.
+- Build a split-field codebook with fields for mechanism claim, identity verdict, level of explanation, self vocabulary, metaphysical commitment, and practitioner risk.
+- Close-read Shankara's Adhyasa Bhashya, BSB 2.3.7, BSB 2.2.28, Bahiya, SN 22.59, and Laukkonen and Slagter before public wording.
+- Ask active-inference modelers to attempt a non-reductive svaprakasha formalization before claiming structural impossibility.
+- Pilot Separate the Mechanism From the Verdict only with stable adults and stop for depersonalization, derealization, psychosis, mania, panic, trauma activation, OCD or scrupulosity, and medical blackout concerns.
+- For human-condition fit, keep the target wound narrow: neuroscience-mediated meaning loss, identity distress, and overinterpretation after quiet states.
+
+### Stop Making Silence Judge You (renamed)
+- Do not publish as a standalone discovery. Merge or cross-index with The Audit You Cannot Hold Alone, No Silence Proves Itself, Silence Needs Correction, Not Every Check Should Be Yours, and The Test Is How You Return.
+- Rename as a bounded practice protocol: no-verdict return for stable overinterpreters after quiet states.
+- Build one codebook with fields for event description, identity verdict, classification urge, care act, support holder, unsafe holder, conduct return, warning, repair, clinical exclusion, and evidence passage.
+- Use split-source coding. Do not let one passage or practitioner report both establish the post-gap claim and confirm the predicted repair.
+- Run the four-arm pilot only with safety screens for OCD, scrupulosity, panic, dissociation, trauma activation, severe depression, mania, psychosis, addiction withdrawal, medical blackout, unsafe authority, and coercive workload.
+- Add a direct-recognition anomaly set before public use: Advaita, Dzogchen, Mahamudra, clear-light sleep, and competent teacher-held recognition.
+- For human-condition fit, state the cohort and non-fit cases plainly. This serves loneliness, unsupported interpretation, anxiety after gaps, meaning loss, and achievement-contingent self-worth, not all silence or all practice.

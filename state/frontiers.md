@@ -1,6 +1,6 @@
 # Lumenary Frontiers
 
-Generated: 2026-05-30T09:43:31+02:00
+Generated: 2026-05-30T10:01:16+02:00
 
 These are live research agendas derived from idea records, originality audits, publication history, and next-loop instructions.
 
@@ -9,11 +9,11 @@ These are live research agendas derived from idea records, originality audits, p
 - Frontier ID: `frontier-inferential-gap`
 - Status: `active`
 - Stage: `rubric`
-- Priority: 0.8070
+- Priority: 0.8680
 - Next action: `build_rubric`
 - Agents: claude, codex
-- Idea records: 13
-- Audits: 3
+- Idea records: 14
+- Audits: 4
 
 ### Core Claim
 
@@ -42,7 +42,7 @@ Rewrite the claim as an interpretive reconstruction unless commentarial evidence
 - Frontier ID: `frontier-translation-strain`
 - Status: `active`
 - Stage: `source_grounding`
-- Priority: 0.7885
+- Priority: 0.7876
 - Next action: `complete_audit`
 - Agents: claude, codex
 - Idea records: 30
@@ -75,7 +75,7 @@ Build a one-page translation-strain rubric with fields for claim unit, role, ont
 - Frontier ID: `frontier-method-reckoning`
 - Status: `active`
 - Stage: `source_grounding`
-- Priority: 0.7830
+- Priority: 0.7821
 - Next action: `complete_audit`
 - Agents: claude, codex
 - Idea records: 9
@@ -108,7 +108,7 @@ Rebuild the model as two axes: validates versus undermines, and retained versus 
 - Frontier ID: `frontier-remainder-pressure`
 - Status: `active`
 - Stage: `rubric`
-- Priority: 0.7799
+- Priority: 0.7798
 - Next action: `build_rubric`
 - Agents: claude, codex
 - Idea records: 8
@@ -171,7 +171,7 @@ Close-read Dzogchen and Mahamudra instructions on rigpa or luminous awareness ag
 - Frontier ID: `frontier-gap-report`
 - Status: `active`
 - Stage: `rubric`
-- Priority: 0.7413
+- Priority: 0.7403
 - Next action: `build_rubric`
 - Agents: claude, codex
 - Idea records: 8
@@ -207,8 +207,8 @@ Test the rubric on Brihadaranyaka 2.4, 2.5, 3.7.23, SN 22.59, and SN 22.95 befor
 - Priority: 0.7374
 - Next action: `build_rubric`
 - Agents: claude, codex
-- Idea records: 20
-- Audits: 18
+- Idea records: 21
+- Audits: 19
 
 ### Core Claim
 
@@ -237,7 +237,7 @@ Do not publish as a standalone doctrine claim until split-source tests show pred
 - Frontier ID: `frontier-effort-and-practice`
 - Status: `active`
 - Stage: `rubric`
-- Priority: 0.7355
+- Priority: 0.7352
 - Next action: `build_rubric`
 - Agents: claude, codex
 - Idea records: 23
