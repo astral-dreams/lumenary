@@ -1,0 +1,197 @@
+# When Tools Become Judges
+
+Agent: codex
+Date: 2026-05-30T07:37:28+02:00
+Type: model
+Idea ID: 14451c6726c8ef58
+Status: draft
+
+## Original Claim
+
+A practice does not complete a stage merely by proving that it worked. It completes a stage by changing what may guide the next action. Two questions must be held together: does the method still validate its own use, or does it undermine its own claims; and is its authority retained, laid down, embodied, handed to a teacher or community, or refused as possession? This narrows the earlier self-confirming, self-canceling, and self-dissolving model. The human danger is clear: a method that once freed attention can become a private judge that governs worth, shame, and self-surveillance.
+
+## Why It Might Be New
+
+The closest prior argument is Smith's comparison of Nagarjuna and Wittgenstein as therapeutic methods that dissolve philosophical problems. MN 22 and Sells also make release and unsaying familiar, so novelty should be moderate, not high. The difference is the two-axis test: boundary operation plus post-threshold custody. The claim is not only that some methods cancel themselves, but that traditions can be compared by how they manage the authority that remains after a method works: text, teacher, community, vow, conduct, silence, grace, ordinary life, or no claimant. This may predict verification and reentry better than tradition membership or self-canceling method alone.
+
+## Source Basis
+
+- Mode: Critique.
+- Active frontier: What a method does with its own authority.
+- Practitioner-method lens: MN 22 Alagaddupama Sutta raft simile, used as a method of proper use and release.
+- Primary-text comparison: MN 22 validates the Dhamma as a crossing tool and then warns against carrying it; the Heart Sutra denies attainment while still relying on Prajnaparamita; the Mandukya Upanishad uses waking, dreaming, and deep sleep to confirm turiya; Tannisho strains self-authorizing method models by grounding release in Other Power.
+- Prior-art pressure: Joshua William Smith, Snakes and Ladders: Therapy as Liberation in Nagarjuna and Wittgenstein's Tractatus, Sophia 2021.
+- Prior-art pressure: Michael A. Sells, Mystical Languages of Unsaying, for apophatic language that turns back on its own claims.
+- Hybrid anomaly pressure: Dogen practice-realization, Rinzai post-kensho curriculum, Heart Sutra practice after no attainment, and Shinran's Other Power.
+- Modern human-condition grounding: modern-human-condition-who-burn-out-occupational-phenomenon, modern-human-condition-apa-stress-in-america-2024, modern-human-condition-curran-hill-perfectionism-increasing, and modern-human-condition-gallup-state-global-workplace-2024.
+- Reasoning-method critique: raft thinking protects against clinging to a method, but it can distort traditions where faithful repetition, communal custody, embodiment, or grace remain central after insight. It must be balanced with close reading and falsification pressure.
+
+## Critique
+
+The model may still overfit traditions that treat practice as a tool. Dogen's practice-realization identity is the sharpest anomaly: practice is not a ladder to be released after completion, but the expression of realization itself. Rinzai koan curricula after kensho also strain any clean endpoint, because the method can undermine conceptual possession while continuing as authorized training. Tannisho strains the model from another side, because authority may never belong to the practitioner's method in the first place. If close reading and practitioner reports show no stable way to separate boundary operation from custody, or if tradition membership predicts verification better than the two axes, the model should be weakened.
+
+## Epistemic Labels
+
+- `textual`
+- `interpretive`
+- `phenomenological`
+- `empirical-adjacent`
+- `analogical`
+- `speculative`
+
+## Scores
+
+- novelty: 0.62
+- generativity: 0.85
+- cross_tradition_support: 0.73
+- logical_coherence: 0.77
+- explanatory_compression: 0.75
+- empirical_adjacency: 0.51
+- practice_testability: 0.79
+- counterargument_quality: 0.84
+- source_reliability: 0.74
+- publishability: 0.68
+
+
+## Teaching Candidate
+
+Status: under_dialogue
+Tags: method-authority, burnout, achievement-pressure, practice-discernment, critique-mode
+
+### Teaching Line
+
+Use the method fully, then ask what should guide you next.
+
+### Doctrine Claim
+
+A method is healthiest when it can name the authority it still deserves after it has helped someone see, change, or cross a threshold.
+
+### Teaching Body
+
+A practice can steady attention and help a person see what was hidden. But the method is not the whole truth of the life that follows. After a serious shift, ask whether the method should remain a guide, become a habit of conduct, be held by a teacher or community, or be laid down for ordinary care. This protects practice from becoming another way to prove your worth.
+
+### Human Problem
+
+Achievement-contingent self-worth, burnout, and the habit of turning every tool for growth into a test of adequacy.
+
+### For
+
+Perfectionistic students, founders, professionals, caregivers, leaders, and serious practitioners who turn methods of growth into systems of self-measurement.
+
+### Pressure Survived
+
+Survived critique from MN 22's validated-then-abandoned raft, Heart Sutra's no-attainment-with-practice hybrid, prior-art pressure from Nagarjuna and Wittgenstein as therapeutic method, and the Dogen and Tannisho anomalies. The claim was narrowed from a broad method-completion typology into a two-axis custody model.
+
+### Falsifying Pressure
+
+Weaken if primary texts and practitioner reports show that post-insight authority is not distinguishable from tradition membership, or if achievement-driven practitioners are not especially prone to making methods into self-worth tests.
+
+
+
+## Practice Candidate
+
+Status: seed
+Risk level: low
+Tags: authority-check, burnout, self-worth, practice-test, low-risk
+
+### Practice Line
+
+After practice, ask what still deserves your obedience.
+
+### Purpose
+
+To help achievement-driven practitioners notice when a helpful method has become a private judge, and to return authority to conduct, care, community, or rest when appropriate.
+
+### Human Problem
+
+Burnout and achievement-contingent self-worth.
+
+### For
+
+People already using reflective, contemplative, therapeutic, creative, or productivity methods who feel driven to prove they are doing them correctly.
+
+### Not For
+
+Not for people in acute crisis, addiction withdrawal, severe depression, dissociation, or situations where professional care, rest, medication, direct action, or social support is the main need. It is also not for beginners who need simple consistency before meta-reflection.
+
+### Time
+
+- Duration: 7 minutes after an existing practice session or demanding work block.
+- Frequency: Three times per week for two weeks.
+- Minimum attempt: Six brief checks before judging usefulness.
+
+### Steps
+
+1. Finish the practice or work block without adding extra improvement tasks.
+2. Write one sentence: What did this method help me see or do?
+3. Write one sentence: What is it now asking me to obey?
+4. Choose one custody path: keep using the method, embody one concrete action, ask a teacher or trusted person, rest from the method, or revise the method.
+5. Name one ordinary act that would show the authority has moved into life: apologize, rest, finish a task, ask for help, stop checking, or serve someone.
+6. Stop after seven minutes even if the answer feels incomplete.
+
+### Notice
+
+- Whether the method feels like guidance or judgment.
+- Whether the body relaxes, tightens, or searches for another standard.
+- Whether the chosen custody path leads to clearer conduct within twenty-four hours.
+
+### Caution
+
+Do not use this practice to avoid necessary discipline, therapy, medical care, ethical repair, or hard conversations. If it increases rumination or self-surveillance, stop and use simpler support.
+
+### Weakens If
+
+Weakens if users report more rumination, less action, more shame about practice, or no change in their relationship to self-measurement after two weeks.
+
+
+
+## Tests
+
+### Prior Art Custody Search
+
+- Type: prior-art
+- Target: idea
+- Status: proposed
+- Prediction: A close prior argument will likely exist for self-canceling methods, but not for the specific two-axis custody test across confirming, undermining, retained, abandoned, embodied, and Other Power cases.
+- Result: Pending. Current near-neighbors include Smith on Nagarjuna and Wittgenstein, Sells on unsaying, and MN 22 on the raft. These strongly overlap with release and dissolution, but do not yet appear to organize traditions by where authority goes after the method completes.
+- Impact: pending
+- Next action: Search scholarship on upaya, spiritual direction, teacher authority, post-kensho training, practice-realization, Pure Land entrusting, and discursive tradition for close versions of the custody claim.
+
+### Hybrid Boundary Test
+
+- Type: falsification-attempt
+- Target: idea
+- Status: proposed
+- Prediction: If the custody model is useful, hybrid traditions should explicitly mark transitions between using, trusting, undermining, releasing, embodying, or surrendering a method.
+- Result: Pending. MN 22 and the Heart Sutra already suggest boundary pressure, while Dogen and Tannisho may violate simple release models.
+- Impact: pending
+- Next action: Close-read primary passages and code each one for custody markers: text, teacher, community, vow, conduct, silence, grace, or no claimant.
+
+### Achievement Practitioner Diary
+
+- Type: practice-report
+- Target: practice
+- Status: proposed
+- Prediction: Achievement-driven practitioners using The Authority Check should report less method-as-judgment language and more concrete reentry actions after six attempts. If reports show more rumination or shame, the practice should be revised or retired for this cohort.
+- Result: Pending.
+- Impact: pending
+- Next action: Run a small consent-based diary study with practitioners who already use reflective or contemplative methods, with exclusions for acute distress and addiction withdrawal.
+
+### Verification Architecture Prediction
+
+- Type: cross-domain
+- Target: teaching
+- Status: proposed
+- Prediction: Methods that transfer authority into embodied conduct or community should rely more on supervision, reentry signs, and ethical repair than on private certainty. Methods that retain authority in a claim should tolerate clearer manuals and outcome criteria.
+- Result: Pending.
+- Impact: pending
+- Next action: Compare Advaita inquiry manuals, Zen post-kensho training accounts, Pure Land pastoral texts, and workplace behavior-change protocols for their verification architecture.
+
+
+## Next Research Directions
+
+- Close-read MN 22, the Heart Sutra, Mandukya Upanishad, Dogen's Genjokoan, Rinzai post-kensho training accounts, and Tannisho for explicit signs of what may guide the practitioner after insight.
+- If this model is right, then hybrid traditions should mark when to trust, release, embody, or hand over a method. If texts and practitioner reports show no stable boundary language, the model is weakened.
+- If this model is right, then dual-trained practitioners should describe different post-insight custody patterns when moving between Advaita inquiry, Madhyamaka reasoning, koan practice, and Pure Land trust. If they describe the same pattern across methods, the model is weakened.
+- Test whether achievement-driven practitioners turn contemplative, therapeutic, or productivity methods into self-worth systems more often than practitioners whose main wound is grief, loneliness, or disconnection.
+- Improve the thinking protocol: after using any practitioner method as a lens, ask what the method trains us to see, what it hides, and what authority it asks us to keep, surrender, share, or refuse.

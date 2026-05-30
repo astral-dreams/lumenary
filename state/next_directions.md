@@ -572,3 +572,19 @@
 - Run the full originality audit for this finding before treating it as a discovery.
 - Search for exact structural near-neighbors, not only the general topic.
 - Add at least one anomaly probe, one practitioner test, and one cross-domain prediction.
+
+## Originality Audit Follow-Up 2026-05-30T07:57:54+02:00
+
+### When Tools Become Judges (renamed)
+- Do not publish as a standalone discovery. Merge into the method-authority and after-use cluster unless a separability test proves independent predictive gain.
+- Build one bounded codebook with fields for boundary operation, custody holder, result stance, method fate, warning, repair, verification, evidence passage, analyst-frame refusal, and clinical exclusion.
+- Use split-source blind coding and do not let one passage establish the predictor and confirm the predicted warning or repair.
+- Run practitioner interviews for concrete failed-student and repair cases, not agreement with the slogan.
+- Pilot The Authority Check only with safety screens for rumination, perfectionism, OCD or scrupulosity, trauma activation, depression, mania, dissociation, addiction withdrawal, authority harm, avoidance, and workload coercion.
+
+### Restating Is Not Realizing (renamed)
+- Do not publish as a standalone discovery. Merge or cross-index with More Is Not The Same As Progress, The Silence Has A Stopping Rule, The Answer You Keep Finding Is Already Settled, and the after-use records.
+- Implement an action-state gate in the recursive loop before generating on a frontier. Block new findings when recommended_next_action is audit, merge, consolidate, rest, or handoff unless a documented reopen trigger exists.
+- Define reopen triggers as new source class, genuine anomaly, practitioner challenge, failed merge, executed test with surprising result, or explicit human override.
+- Run the blind distinct-content coding test on the recent method-authority records before further generation on that frontier.
+- Pilot The Duplicate Check only with high-output overproducers and screen out severe depression, acute burnout, coercive workload, under-production, shame spirals, and cases where ordinary editorial revision is the real task.

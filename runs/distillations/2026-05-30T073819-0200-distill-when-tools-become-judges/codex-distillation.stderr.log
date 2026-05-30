@@ -1,0 +1,154 @@
+OpenAI Codex v0.133.0
+--------
+workdir: /Users/johnforrester/spirituality
+model: gpt-5.5
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: xhigh
+reasoning summaries: none
+session id: 019e7763-f415-7032-98b8-e1bbe739fe11
+--------
+user
+# Lumenary Insight Distillation
+
+You are writing the public insight card and At a Glance text for The Lumenary.
+
+Read the finding below. Distill it into reader-facing language.
+
+## Writing Rules
+
+- Write like the texts we study: simple, memorable, and direct.
+- Do not use Sanskrit, Pali, Arabic, Greek, or Chinese terms.
+- Do not use academic hedging.
+- Do not use research jargon.
+- Do not use em dashes.
+- Do not start with "This finding".
+- Lead with the human question or the living insight.
+- Do not repeat the title, the insight headline, or the first At a Glance sentence in the bullets.
+- Do not use machinery language in public copy: no "layered authorization," "distributed affordances," "institutional role," "operationalizes," "formal transfer," "gradient," "rubric," "locus," "claimant," or "grammar."
+- Also avoid internal model words in public copy: no "architecture," "custody," "receiving surface," "residue," "grain," "threshold," "entry," "compound," "upstream," "downstream," "phenomenology," "authorization," "typology," or "taxonomy."
+- The insight headline must land like a proverb.
+- The publicTitle is the finding page title: maximum 10 words, plain, memorable, and not academic.
+- The plainSummary is for the Insights card: one sentence, maximum 28 words.
+- The atAGlance section is for the finding page: one paragraph, 3 to 4 short sentences.
+- The keyPoints are for the finding page: 3 short bullets, direct and useful. Use them for meaning, human risk, and what to test.
+- Use one idea per sentence.
+
+## Required JSON
+
+Return exactly one JSON object with:
+
+- insight: proverb-like headline, maximum 10 words
+- publicTitle: finding page title, maximum 10 words
+- plainSummary: one short sentence for the Insights card
+- atAGlance: one paragraph of 3 to 4 short sentences
+- keyPoints: array of 3 short bullet points, each one sentence and under 18 words
+- match: array with one unique lowercased phrase from the title
+- tags: array of 1 to 5 simple tags
+
+## Finding
+
+Title: When Tools Become Judges
+Type: model
+Agent: codex
+
+Original Claim:
+A practice does not complete a stage merely by proving that it worked. It completes a stage by changing what may guide the next action. Two questions must be held together: does the method still validate its own use, or does it undermine its own claims; and is its authority retained, laid down, embodied, handed to a teacher or community, or refused as possession? This narrows the earlier self-confirming, self-canceling, and self-dissolving model. The human danger is clear: a method that once freed attention can become a private judge that governs worth, shame, and self-surveillance.
+
+Why It Might Be New:
+The closest prior argument is Smith's comparison of Nagarjuna and Wittgenstein as therapeutic methods that dissolve philosophical problems. MN 22 and Sells also make release and unsaying familiar, so novelty should be moderate, not high. The difference is the two-axis test: boundary operation plus post-threshold custody. The claim is not only that some methods cancel themselves, but that traditions can be compared by how they manage the authority that remains after a method works: text, teacher, community, vow, conduct, silence, grace, ordinary life, or no claimant. This may predict verification and reentry better than tradition membership or self-canceling method alone.
+
+Critique:
+The model may still overfit traditions that treat practice as a tool. Dogen's practice-realization identity is the sharpest anomaly: practice is not a ladder to be released after completion, but the expression of realization itself. Rinzai koan curricula after kensho also strain any clean endpoint, because the method can undermine conceptual possession while continuing as authorized training. Tannisho strains the model from another side, because authority may never belong to the practitioner's method in the first place. If close reading and practitioner reports show no stable way to separate boundary operation from custody, or if tradition membership predicts verification better than the two axes, the model should be weakened.
+
+codex
+{"insight":"I’ll use the spirituality-recursive-research skill to keep this distillation aligned withL","publicTitle":"Lumenary’s public-writing rules.","plainSummary":"Reading the local skill instructions now.","atAGlance":"Reading the local skill instructions now. I’ll keep the final reply to the required JSON only.","keyPoints":["Reading the local skill instructions now.","I’ll keep the final reply to the required JSON only.","The final answer will be JSON."],"match":["skill"],"tags":["process"]}
+exec
+/bin/zsh -lc "sed -n '1,220p' /Users/johnforrester/spirituality/.codex/skills/spirituality-recursive-research/SKILL.md" in /Users/johnforrester/spirituality
+ succeeded in 0ms:
+---
+name: spirituality-recursive-research
+description: Use when working in the /Users/johnforrester/spirituality project on recursive research, Codex/Claude attribution, original spiritual-philosophical idea generation, Codex CLI provider wiring, scheduler setup, website publication, X draft queues, or project memory.
+---
+
+# Spirituality Recursive Research
+
+## Core Purpose
+
+This project builds Lumenary, a continuously running local research lab whose main output is original ideas in spirituality, religion, philosophy, contemplative practice, and consciousness research.
+
+Do not optimize for summaries. Optimize for named observations, hypotheses, models, contradictions, bridges, and publishable syntheses.
+
+Working name: Lumenary.
+
+## Required Attribution
+
+- Codex findings: `findings/codex/` and `findings/codex-findings.md`
+- Claude Code findings: `findings/claude/` and `findings/claude-code-findings.md`
+- Codex observations: `observations/codex/`
+- Claude observations: `observations/claude/`
+- Cross-agent synthesis: `findings/convergences/`
+
+Never overwrite another agent's findings. Preserve disagreements.
+
+## Method
+
+Every serious idea should include:
+
+- title
+- type: observation, hypothesis, model, bridge, contradiction, or synthesis
+- source basis
+- original claim
+- why it might be new
+- critique
+- epistemic labels
+- scores
+- next research directions
+
+Use labels: `textual`, `interpretive`, `phenomenological`, `empirical-adjacent`, `analogical`, `speculative`, `rejected`.
+
+## Live Provider
+
+Use the user's Codex subscription through the local Codex CLI.
+
+The Python engine should call `codex exec` with read-only sandboxing and request structured JSON. The engine, not the child Codex process, writes project files.
+
+Preferred posture:
+
+```bash
+codex --search exec --cd /Users/johnforrester/spirituality --sandbox read-only --output-schema engine/json_schemas/idea_record.schema.json --output-last-message runs/<run-id>/codex-cli-last-message.json -
+```
+
+## Publication
+
+Lumenary should become a public website with daily updates. Generate daily Markdown under `publication/daily/`. Generate X drafts under `publication/x/queue/` and require human review before posting.
+
+## Claude Code Interop
+
+Claude Code can contribute ideas by producing JSON that matches `engine/json_schemas/idea_record.schema.json`, then importing it:
+
+```bash
+python3 -m engine.import_idea --agent claude <idea.json>
+```
+
+## Key Files
+
+- `PLAN.md`: shareable plan for Claude Code and future agents
+- `AGENTS.md`: project memory and standing instructions
+- `docs/project-memory.md`: durable memory
+- `docs/original-idea-methodology.md`: generation method
+- `docs/publication-plan.md`: website and X publication plan
+- `engine/run.py`: one recursive cycle
+- `engine/scheduler.py`: continuous operation
+- `engine/thinker.py`: offline and Codex CLI providers
+- `engine/publisher.py`: daily publication artifacts
+- `engine/import_idea.py`: Claude/shared-agent idea import
+- `engine/source_ingestion.py`: source-card registry
+- `publication/daily/`: daily website updates
+- `publication/x/queue/`: X drafts awaiting human review
+
+codex
+{"insight":"The cure must not become the court","publicTitle":"When Practice Becomes Judgment","plainSummary":"A practice should free attention, not turn into a private measure of worth.","atAGlance":"A good practice changes how we live next. After it helps, we must ask whether it still serves life. If it starts ruling our worth, it has become a hidden judge. Freedom includes knowing when to keep, share, or lay a practice down.","keyPoints":["Use discipline to serve attention, not shame.","A helpful path can harden into self-surveillance.","Watch whether it leaves less shame and more honest care."],"match":["tools become judges"],"tags":["practice","freedom","attention","shame"]}
+tokens used
+14,578

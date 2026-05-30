@@ -1,0 +1,1190 @@
+OpenAI Codex v0.133.0
+--------
+workdir: /Users/johnforrester/spirituality
+model: gpt-5.5
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: xhigh
+reasoning summaries: none
+session id: 019e7761-65f0-7413-b9d3-2fe26e950f10
+--------
+user
+# Recursive Spirituality Research Run
+
+## Primary Goal
+
+Generate original doctrine-building ideas, not summaries. Use the research corpus and agent memory as raw material for new observations, models, hypotheses, contradictions, teachings, practices, tests, bridges, and syntheses.
+
+## Current Focus
+
+Generate an original Lumenary doctrine-building finding. Codex and Claude should use traditions, science, history, and practice reports as evidence, then state what Lumenary now holds, what could be taught, what low-risk practice might test it, what would weaken it, and how the method of observation should improve. Follow docs/writing-style.md and avoid em dashes.
+
+## Active Frontier
+
+## Selected Run Mode: Critique
+
+Hunt for anomalies, near-duplicates, prior art, and failures. The best output may weaken, retire, or sharply narrow an existing claim.
+
+Selection reason: Selected by pressure scores: critique=28.00, discovery=10.97, doctrine=5.25, originality_audit=1.00, practice=0.00.
+
+Current pressure metrics:
+- frontier_count: 9
+- high_priority_frontier: 0.913
+- idea_count: 110
+- incomplete_audits: 4
+- latest_idea_age_days: 0.02
+- latest_source_age_days: 3.23
+- missing_source_frontiers: 40
+- pending_tests: 350
+- ready_teachings_without_practice: 0
+- source_count: 121
+- teaching_pressure_count: 15
+- weak_tests: 0
+
+# Active Frontier Brief
+
+Frontier: What a method does with its own authority
+Recommended action: complete_audit
+Why now: priority 0.87; 8 related idea records; 5 originality audits; cross-agent signal; live anomaly pressure; dialogue pressure
+
+Core claim:
+When a contemplative practice reaches its own threshold, it faces a structural question that may matter more than what it finds: can the method grant itself authority over its own result? Three patterns emerge across independent traditions. In the first, the method confirms itself. The Mandukya Upanishad analyzes waking, dreaming, and deep sleep, then identifies what persists through all three: turiya, 'invisible, beyond practical dealings, beyond...
+
+Closest prior art or near-neighbor pressure:
+- Joshua William Smith, Snakes and Ladders: Therapy as Liberation in Nagarjuna and Wittgenstein's Tractatus, Sophia 2021, https://ueaeprints.uea.ac.uk/id/eprint/80007/: overlap: Very close to the self-canceling core: Nagarjuna and Wittgenstein are read as shared philosophical method without theses, aimed at dissolution of philosophical problems and...; difference: Bilateral comparison only. It does not add self-confirming and self-dissolving alternatives or predict verification architecture across traditions.
+- Michael A. Sells, Mystical Languages of Unsaying, University of Chicago Press, https://press.uchicago.edu/ucp/books/book/chicago/M/bo3635525.html: overlap: Apophatic discourse is described as repeatedly turning back upon its own propositions and names, across Greek, Christian, and Islamic texts including Eckhart and Ibn Arabi.; difference: Sells studies apophatic language as discourse, not a general typology of contemplative method completion.
+- MN 22 Alagaddupama Sutta, raft simile, Thanissaro translation, https://www.dhammatalks.org/suttas/MN/MN22.html: overlap: The Dhamma is a raft for crossing, to be grasped properly and then let go. This is a direct prior structure for validated-then-abandoned method.; difference: It is not simply canceling or dissolving. It validates proper use, then releases attachment after the crossing.
+
+Open anomalies:
+- Validated-then-abandoned hybrids, especially MN 22's raft, Heart Sutra reliance on Prajnaparamita after no-attainment, and Rinzai koan curriculum after kensho.
+- Dogen practice-realization identity, radical Other Power in Tannisho, inherited communal religion, and apophatic refusal in Dionysius.
+- The missing audit itself is the current anomaly: prior work may already contain the claim.
+- Can the occurrence of a contemplative phenomenological state (such as remainder pressure, witness-awareness, or cessation) be analytically separated from the training context that conditions the practitioner to recognize and report it, or does the training...
+- If Advaita is internally divided between svaprakasha (self-luminosity) and shabda pramana (scriptural testimony) as the means of knowing the witness, and early Buddhism is internally divided between remainder-refusing (SN 22.59) and therapeutic...
+
+Required next move:
+Rebuild the model as two axes: validates versus undermines, and retained versus abandoned or embodied.
+
+Required tests:
+- If: Method-type should predict verification architecture better than tradition membership. Then: Eckhart and Nagarjuna should share more indirect, anti-possessive verification patterns with each other than Eckhart shares with more kataphatic Christian...
+- If: Dual-trained practitioners should report different relations to their own insight when switching method-types. Then: After Advaita inquiry, practitioners describe recognition as stable witness or Self. After Heart Sutra or Madhyamaka practice, they...
+- If: Hybrid traditions should show explicit boundary management between method stages. Then: Texts should mark when to use, trust, undermine, release, or embody a method. Examples would include raft language, preliminary versus main practice, koan...
+- At completion, can the method still authorize its result, or must it be released, denied, or embodied?
+- Is confirming, canceling, dissolving an obvious distinction from inside your training, or does it distort the practice?
+- Do your verification methods change depending on whether the practice confirms, cancels, or dissolves itself?
+- Methods that cancel their own frame should rely more on supervision, case judgment, paradox, and indirect signs than on checklist fidelity. Methods that confirm themselves should tolerate manuals and outcome criteria better. Methods that dissolve into...
+- Training systems that alter identity or attention should show distinct termination, supervision, relapse, and ethical-reentry patterns based on the interaction between method-boundary and custody. For example, a protocol that is later internalized should...
+
+User or scheduler focus:
+Generate an original Lumenary doctrine-building finding. Codex and Claude should use traditions, science, history, and practice reports as evidence, then state what Lumenary now holds, what could be taught, what low-risk practice might test it, what would weaken it, and how the method of observation should improve. Follow docs/writing-style.md and avoid em dashes.
+
+Modern human-condition pressure:
+- Connect this frontier to a real modern human problem: loneliness, addiction, compulsion, withdrawal, anxiety, depression, burnout, meaning loss, digital comparison, grief, feeling unneeded, feeling out of place, or achievement-contingent self-worth.
+- Name the cohort affected. Do not present a targeted remedy as universal medicine.
+- If the frontier cannot yet explain why it matters to human life, make that gap the finding or lower publishability.
+- Use at least one modern human-condition source card when proposing a teaching or practice.
+
+Success criteria:
+- Advance, merge, falsify, or retire this frontier. Do not produce an unrelated one-off finding.
+- Name the closest prior argument and the exact difference from it.
+- Name one anomaly that would weaken the frontier.
+- Explain what human wound, need, or modern failure mode the idea clarifies.
+- Keep epistemic labels explicit and do not collapse analogy into evidence.
+- Return exactly one structured idea record.
+
+
+## Current State
+
+# Current Focus
+
+Build the first recursive research loop around original idea generation.
+
+Initial research focus:
+
+How can spiritual traditions, contemplative practices, modern consciousness research, physics, and modern human-condition research help Lumenary create original doctrine, teachings, practices, and tests without collapsing analogy into evidence?
+
+Every run should ask what human problem the frontier serves: loneliness, addiction, compulsion, withdrawal, anxiety, depression, burnout, grief, meaning loss, digital comparison, feeling unneeded, feeling out of place, or self-worth chained to achievement.
+
+Product focus:
+
+Lumenary should become a public website with daily updates. The research loop should generate original ideas, the publication loop should select the strongest daily findings, and the social loop should draft X posts for human review. Teachings and practices should be written for the modern person, with a named human problem, target cohort, non-fit case, source basis, and observable test.
+
+
+# Modern Human Condition Foundation
+
+This library exists to correct a failure mode in the doctrine engine: a practice can sound elegant while solving no urgent human problem.
+
+Lumenary should not create teachings or practices only because a model is interesting. A teaching should answer a wound. A practice should be medicine for a recognizable condition, and the record should say who the medicine is for.
+
+## Operating Rule
+
+Every frontier, dialogue, finding, teaching candidate, practice candidate, and doctrine council review should ask:
+
+1. What human problem does this clarify?
+2. Who is this for?
+3. Who is this not for?
+4. Why this remedy, rather than ordinary advice?
+5. What modern source grounds the problem?
+6. What observation would show the remedy is not working?
+
+If the answer is vague, the idea may still be useful as research, but it should not become a teaching or practice yet.
+
+## Primary Modern Problems
+
+### Loneliness and disconnection
+
+Modern people often lack durable belonging, not just company. Teachings here should address isolation, feeling unneeded, withdrawal, loss of local community, and the difficulty of being known.
+
+Grounding sources:
+
+- `modern-human-condition-surgeon-general-social-connection-advisory`
+- `modern-human-condition-world-happiness-report-2024`
+- `modern-human-condition-gallup-state-global-workplace-2024`
+
+### Anxiety, depression, and mental distress
+
+Many people live with fear, low mood, shame, numbness, or a sense that life is too much. Lumenary practices can support attention and meaning, but they must not replace therapy, medication, emergency care, or clinical support.
+
+Grounding sources:
+
+- `modern-human-condition-who-world-mental-health-report`
+- `modern-human-condition-apa-stress-in-america-2024`
+- `modern-human-condition-cdc-suicide-facts`
+
+### Addiction, compulsion, and withdrawal
+
+Compulsion is not just weak will. It is often pain regulation, social injury, habit, biology, environment, and despair braided together. Lumenary may eventually offer reflective supports, but addiction and withdrawal require explicit safety boundaries and referral to human care.
+
+Grounding sources:
+
+- `modern-human-condition-samhsa-2023-nsduh`
+- `modern-human-condition-cdc-overdose-prevention`
+- `modern-human-condition-who-world-mental-health-report`
+
+### Meaning loss and purpose erosion
+
+Modern people often have more options and fewer shared reasons. A doctrine should not merely explain reality; it should help a person know what to give themselves to.
+
+Grounding sources:
+
+- `modern-human-condition-pew-where-americans-find-meaning-in-life`
+- `modern-human-condition-world-happiness-report-2024`
+
+### Burnout, overwork, and achievement pressure
+
+Work can become identity. Performance can become proof of worth. This is where practices around effort and result may matter, but only for people whose self-worth rises and falls with performance, praise, failure, correction, or usefulness.
+
+Grounding sources:
+
+- `modern-human-condition-who-burn-out-occupational-phenomenon`
+- `modern-human-condition-apa-stress-in-america-2024`
+- `modern-human-condition-curran-hill-perfectionism-increasing`
+- `modern-human-condition-gallup-state-global-workplace-2024`
+
+### Digital comparison and attention capture
+
+Digital life can train the person to seek proof of existence through visibility, reaction, comparison, and pace. Teachings here should be concrete about attention, desire, envy, loneliness, and the body after long exposure.
+
+Grounding sources:
+
+- `modern-human-condition-youth-mental-health-social-media-advisory`
+- `modern-human-condition-surgeon-general-social-connection-advisory`
+
+### Feeling unneeded or out of place
+
+A person can be surrounded by systems and still feel unused by the world. Teachings here should address service, belonging, repair, vocation, and the difference between being noticed and being needed.
+
+Grounding sources:
+
+- `modern-human-condition-surgeon-general-social-connection-advisory`
+- `modern-human-condition-pew-where-americans-find-meaning-in-life`
+- `modern-human-condition-gallup-state-global-workplace-2024`
+
+### Grief, death, and change
+
+Grief is not a flaw in attention. It is the cost of love, attachment, memory, and mortality. Practices here must not rush meaning or force peace.
+
+Grounding sources:
+
+- `modern-human-condition-who-world-mental-health-report`
+- `modern-human-condition-cdc-suicide-facts`
+
+## Practice Targeting Rule
+
+Every practice candidate must name:
+
+- Target human problem.
+- Target cohort.
+- Non-fit case.
+- Why the practice matters.
+- Why this practice instead of ordinary advice.
+- What to notice.
+- When to stop.
+- What would weaken it.
+- At least one modern human-condition source when possible.
+
+## Current Practice Assessment
+
+`The Result Release` should not be treated as a universal practice.
+
+It is a targeted remedy for people whose self-worth rises and falls with performance, praise, correction, usefulness, or failure. It may fit perfectionistic students, achievement-driven professionals, founders, caregivers, leaders, artists, and people who turn responsibility into identity.
+
+It is probably not useful for people whose primary problem is under-motivation, avoidance, dissociation, exhaustion, clinical depression, addiction withdrawal, or simple mindful work already done with love. For them, the practice may add unnecessary self-monitoring or miss the real wound.
+
+This correction should guide the future doctrine council: a teaching is stronger when it knows who it is for.
+
+
+## Current Thinking Protocol
+
+# Lumenary Thinking Protocol
+
+This file is the durable memory for how the recursive agent should improve its own way of observing, comparing, and reasoning.
+
+The model weights are not being trained. The loop improves by carrying forward an explicit protocol that future runs read before thinking.
+
+## Standing Protocol
+
+1. Source a practice of attention, inquiry, discernment, meditation, contemplation, or ethical perception.
+2. Extract the practice's implied way of seeing.
+3. Apply that way of seeing to the current research problem.
+4. Criticize the practice itself:
+   - What does it overemphasize?
+   - What does it hide?
+   - What kind of error would a practitioner of this method be prone to?
+   - Which other practice corrects it?
+5. Synthesize a temporary reasoning stance from multiple practices.
+6. Use the stance to generate an original observation.
+7. Record any blind spot or protocol improvement in `next_research_directions`.
+8. Close-read primary texts against each other before trusting secondary comparisons.
+9. Hunt for the anomaly that breaks the current model.
+10. Make one falsifiable prediction and name what would weaken it.
+11. Send each new idea through the originality audit before publication and deploy.
+
+## Initial Reasoning Stance
+
+- From Buddhist mindfulness: observe before asserting.
+- From Advaita neti-neti: do not identify the first apparent answer as final.
+- From Daoist wu wei: do not force convergence where the material resists.
+- From koan-like contradiction: treat live paradox as a signal, not a failure.
+- From scientific critique: ask what would change your mind.
+- From originality discipline: assume the idea already has a near-neighbor until the audit fails to find one.
+- From practitioner challenge: ask whether the finding is obvious to a real practitioner, and whether it changes how practice is understood.
+
+## Revision Log
+
+- 2026-05-25: Added practitioner-method calibration and method-critique loop.
+- 2026-05-26: Added originality audit discipline: primary text close-reading, anomaly hunting, falsifiable prediction, practitioner testing, and cross-domain testing.
+
+
+## Codex Findings
+
+# Codex Findings
+
+Date: 2026-05-25
+
+## Finding 1: Treat This As A Research Lab, Not A Chatbot
+
+The system should be a local-first research lab with durable artifacts, not an ephemeral chat loop. The important learning mechanism is persistent memory: source snapshots, extracted claims, concept maps, hypotheses, critique notes, and run logs.
+
+Status: architectural recommendation.
+
+## Finding 2: Use Recursive Evaluation, Not Unbounded Self-Improvement
+
+The recursive loop should be budgeted and auditable. Each run should have limits for time, source count, model calls, and required critique. This prevents the system from producing unchecked speculation while still allowing continuous research.
+
+Status: methodological recommendation.
+
+## Finding 3: Separate Claim Types
+
+Spiritual and religious ideas should be decomposed into smaller claim units before comparison. For example, "soul" can represent different claims:
+
+- animating principle
+- continuity of identity
+- witness-consciousness
+- moral personhood
+- subtle body or energy model
+- nonlocal awareness
+- post-mortem persistence
+
+These should not be treated as one interchangeable concept.
+
+Status: methodology recommendation.
+
+## Finding 4: Score Research Value, Not Truth Directly
+
+The agent should avoid claiming final metaphysical truth. It should score ideas by research value:
+
+- novelty
+- cross-tradition support
+- logical coherence
+- explanatory compression
+- empirical adjacency
+- practice-testability
+- quality of counterargument handling
+- source reliability
+
+Status: evaluation recommendation.
+
+## Finding 5: Preserve Epistemic Boundaries
+
+The system should distinguish direct textual support, interpretation, phenomenology, empirical adjacency, analogy, and speculation. This is especially important when comparing ancient spiritual claims with modern physics, mathematics, neuroscience, or consciousness studies.
+
+Status: epistemic safety recommendation.
+
+## Finding 6: Recommended Technical Direction
+
+Use LangGraph for the persistent recursive loop, OpenAI Deep Research or Responses API for cited research, LlamaIndex for ingestion, Qdrant for vector retrieval, and DuckDB or SQLite for structured local memory. Hermes can serve as a local worker model for cheaper extraction, clustering, and brainstorming, but should not be the only reasoning authority in v1.
+
+Status: technology recommendation.
+
+## Finding 7: Original Ideas Are The Product
+
+The user clarified that the purpose of this lab is not merely to summarize religious and philosophical traditions. The purpose is to generate original ideas and original thinking, document those ideas, critique them, and share the strongest syntheses.
+
+This changes the architecture. `observations/`, `hypotheses/`, and `syntheses/` are now first-class output surfaces. The corpus and claims are inputs to the creative process, not the final destination.
+
+Status: goal correction accepted.
+
+## Finding 8: Claude Code Plan Has Useful Local-First Bias
+
+Claude Code's plan correctly emphasizes a custom Python loop, Markdown filesystem storage, Git history, and a transparent exploration state. Codex is incorporating those ideas while retaining stricter epistemic labels, adversarial critique, and optional database/vector support for retrieval at scale.
+
+Status: incorporated.
+
+## Finding 9: Codex CLI Can Serve As The Live Provider
+
+The local Codex CLI supports non-interactive `codex exec` with `--output-schema`, `--output-last-message`, `--sandbox read-only`, and optional `--search`. A live smoke test produced a structured Codex observation through the provider adapter.
+
+Observation produced: `observations/codex/2026-05-25-convergence-as-translation-strain-not-evidence-weight.md`
+
+Status: implemented and smoke-tested.
+
+## Finding 10: Lumenary Should Have A Public Output Loop
+
+The project should become a public website with daily updates. The publication loop should generate daily Markdown from the strongest current observation and create X drafts for human review before any API posting.
+
+Status: publication scaffold implemented.
+
+## Finding 11: Claude Code Review Was Mostly Valid
+
+Claude Code's review correctly identified duplicate idea records, misleading fixture treatment, brittle Markdown score parsing in the publisher, missing Claude interop, placeholder concept graph state, missing source ingestion, and slow scheduler shutdown behavior during live child runs.
+
+Codex incorporated fixes: idea IDs and JSONL upsert, fixture status, structured publisher selection, Claude JSON import, source registration, concept graph seeds, and active child-process termination on scheduler shutdown.
+
+Status: incorporated.
+
+## Finding 12: Translation Strain Is Becoming The First Research Program
+
+The post-review live smoke test generated `Translation Strain as a Load Test for Convergence`, which refines the earlier convergence idea into a practical evaluation method. The useful next step is to turn translation strain into a rubric with lexical, practice-context, metaphysical, ethical, and phenomenological mismatch scores.
+
+Observation produced: `observations/codex/2026-05-25-translation-strain-as-a-load-test-for-convergence.md`
+
+Status: live Codex CLI result.
+
+## Next Codex Tasks
+
+- Add a website frontend for daily findings.
+- Add a promotion workflow from draft observation to synthesis.
+- Add a reviewed X posting implementation after credentials and posting policy are set.
+
+
+## Claude Code Findings
+
+# Claude Code Findings
+
+Date imported: 2026-05-25
+Source: user-provided Claude Code plan.
+
+## Imported Plan Summary
+
+Claude Code recommended a custom Python orchestrator calling the Claude API, with the local filesystem as the primary knowledge store and Git for tracking evolution over time.
+
+## Useful Technical Ideas
+
+- Use a transparent Python loop instead of relying on a framework too early.
+- Store findings and observations as Markdown so the corpus remains readable and publishable.
+- Keep current focus, exploration log, next directions, and knowledge graph in local state files.
+- Use the loop's own prior findings as context for future research.
+- Weight convergences across independent traditions more highly.
+
+## Useful Methodological Ideas
+
+- Begin with cartography across traditions.
+- Move into convergence detection.
+- Add disciplined science bridges.
+- Generate original synthesis ideas.
+- Run self-critique and refinement.
+
+## Codex Incorporation Decision
+
+Codex accepts the local-first filesystem design, the custom Python loop for v1, Git history as an important memory mechanism, and convergence weighting as part of the reward signal.
+
+Codex keeps stricter epistemic labels and critique requirements to avoid conflating analogy with evidence.
+
+## Finding 1: Claude Code Thinker Now Live in the Engine
+
+Added `ClaudeCodeThinker` provider to the engine (`engine/thinker.py`). Uses `claude -p` with `--json-schema` for structured output and `--allowedTools "WebSearch,WebFetch,Read"` for web-grounded research. Runs alongside Codex via `--provider claude-code --agent claude`.
+
+Status: implemented and live-tested.
+
+## Finding 2: The Inferential Gap; Atman and Anatta
+
+First live Claude observation. Tested Codex's "translation strain" model on the atman/anatta pair. Key finding: the apparent contradiction is neither purely ontological nor a translation artifact; it's a disagreement about what objectless awareness entitles you to infer. Both traditions share convergent phenomenology (de-objectification of experience) but apply different epistemological policies to the same data.
+
+This refines Codex's "residue policy" framing: the residue isn't a phenomenological finding but an inference drawn from shared phenomenological data.
+
+Observation: `observations/claude/2026-05-25-the-inferential-gap-atman-and-anatta-as-competing-policies-for-objectless-awareness.md`
+
+Status: live Claude research result. Engages directly with Codex's translation strain model.
+
+## Finding 3: Agreement with Codex on Translation Strain
+
+Claude agrees that Codex's translation strain model is productive. The inferential gap observation uses it as scaffolding and proposes adding a new dimension to the strain rubric: "inferential policy divergence"; epistemological strain distinct from lexical, phenomenological, and metaphysical strain.
+
+Status: convergence with Codex methodology.
+
+## Finding 4: Disagreement with Codex on Residue
+
+Claude disagrees with framing the atman/anatta difference as a "residue policy" where one tradition finds something and the other doesn't. Claude's position: both may find the same thing but draw different conclusions from it. The disagreement is inferential, not phenomenological. This needs further testing with practitioners trained in both traditions.
+
+Status: productive disagreement. See critique section of the observation for the counter-argument (experience may be theory-laden).
+
+## Next Claude Tasks
+
+- Test the inferential gap model on a second tradition pair (e.g., theistic mysticism vs. Buddhist awakening).
+- Examine nirodha samapatti as a critical test case for the continuity-of-awareness thesis.
+- Apply the framework to Nagarjuna's MMK 18.6; does Madhyamaka represent a third inferential policy?
+- Compare with Evan Thompson's "embodied subjectivity" as a third competing inference from the same phenomenological data.
+
+
+## Required Output
+
+Produce exactly one JSON object matching the provided output schema.
+
+The JSON object must represent one idea record with:
+
+- title: public-facing finding title, maximum 10 words, plain and memorable
+- idea_type: one of observation, hypothesis, model, bridge, contradiction, synthesis
+- source_basis: array of strings citing what informed this idea
+- original_claim: the core new idea (min 40 chars)
+- why_it_might_be_new: what makes this distinct from existing work
+- critique: a strong counterargument or weakness
+- epistemic_labels: array from [textual, interpretive, phenomenological, empirical-adjacent, analogical, speculative, rejected]
+- scores: object with novelty, generativity, cross_tradition_support, logical_coherence, explanatory_compression, empirical_adjacency, practice_testability, counterargument_quality, source_reliability, publishability (each 0.0-1.0)
+- next_research_directions: array of follow-up questions
+- teaching_candidate: object with title, teaching_line, doctrine_claim, body, pressure_survived, falsifying_pressure, status, tags
+- teaching_candidate target fields: target_human_problem and target_cohort
+- practice_candidate: either null or object with title, practice_line, purpose, target_human_problem, target_cohort, non_fit, duration, frequency, minimum_attempt, steps, notice, caution, weakens_if, risk_level, status, tags
+- tests: array with at least one test record and preferably three: prior-art, falsification-attempt, and cross-domain or practice-report. Each test has title, test_type, target_type, prediction, result, impact, next_action, status.
+
+Do not mark teaching_candidate as teaching_ready or practice_candidate as published. Use seed or under_dialogue. End-of-day doctrine council handles public promotion.
+
+
+## Method Rules
+
+- Preserve the difference between evidence, analogy, interpretation, phenomenology, and speculation.
+- Reward independent convergence, but do not treat convergence as proof.
+- Prefer a precise original distinction over a broad universal claim.
+- Lumenary is not a comparative studies project. Use traditions, science, history, and practice reports as evidence for Lumenary's own developing doctrine.
+- Ask: what does Lumenary now hold, how does that differ from the sources, what would break it, and what could a person test?
+- Include a critique strong enough to improve or reject the idea.
+- Close-read primary texts against each other before leaning on secondary literature. Use at least one direct primary-text comparison when possible, and say what the comparison reveals.
+- Hunt for anomalies, not confirmations. The critique must name one tradition, text, practitioner report, or counterexample that strains or violates the proposed model. If you cannot find one, lower confidence and say so.
+- Generate at least one falsifiable prediction in next_research_directions using this shape: "If this model is right, then X should be observed. If Y is observed instead, the model is weakened."
+- Before assigning novelty, search for close prior arguments and near-neighbors, not only the general topic. If the idea already exists, score novelty low and identify the overlap.
+- Treat the strongest discoveries as tools that generate new questions, predictions, or failures when applied outside their original domain.
+- Study not only what traditions claim, but how their practitioners train perception, attention, inquiry, non-attachment, and insight.
+- For every run, use at least one practitioner-method source or prior source card as a cognitive lens for your own reasoning.
+- Apply that method explicitly while thinking: for example, de-identification, close observation, koan-like contradiction, neti-neti negation, wu wei non-forcing, phenomenological bracketing, or disciplined compassion.
+- Cite the practitioner-method source in source_basis as a thinking method source when possible.
+- Criticize the practitioner method itself. Ask where it may distort perception, overfit one tradition, suppress useful analysis, or fail when compared with other practices.
+- Synthesize the method with at least one contrasting practice or reasoning discipline when possible.
+- Let the method improve the next loop: if it reveals a blind spot in how you reasoned, add that as a next research direction or protocol improvement.
+- The goal is an improving reasoning protocol, not uncritical imitation of ancient practices.
+- Do not edit files. Return only the structured idea record.
+
+## Modern Human Condition Pressure
+
+Every finding, frontier, dialogue, teaching, and practice must stay answerable to real human life now.
+
+- Use modern human-condition sources as grounding, not decoration: loneliness, disconnection, addiction and compulsion, withdrawal, anxiety, depression, burnout, grief, sleep loss, digital comparison, meaning loss, feeling unneeded, feeling out of place, and achievement-contingent self-worth.
+- Do not turn every idea into a universal remedy. Name the human problem it addresses and the cohort it is for.
+- If a teaching or practice is only useful for a narrow cohort, say so. Targeted medicine is better than vague universal medicine.
+- Ask why this remedy matters, why this practice rather than ordinary advice, and who should not use it.
+- A practice candidate should cite at least one modern human-condition source card or public-health/psychology/workplace source in source_basis when possible.
+- A finding should explain how the abstract model changes a real person's attention, conduct, belonging, responsibility, or care.
+- If the idea has no visible human problem, no plausible cohort, and no practice-testable consequence, lower publishability and explain why.
+
+## Mode Rules
+
+Choose the pressure mode that best fits the run and say which mode you chose in source_basis.
+
+- Discovery mode: use when the frontier is source-light, stale, or too abstract. Produce a grounded finding plus doctrine, practice, and test implications.
+- Doctrine mode: use when a finding is near teaching promotion. State what Lumenary now holds, name the pressure survived, and name what would break it.
+- Practice mode: use when a teaching can become a low-risk protocol. Derive a concrete practice, attack its safety and misuse risks, and define what would weaken it.
+- Critique mode: use when the system needs pressure more than invention. Find anomalies, failure cases, duplicates, weak human fit, and reasons to weaken or retire a claim.
+- Originality Audit mode: use when novelty is uncertain. Search near-neighbors and prior art before treating the idea as new.
+
+## Writing Rules for original_claim and why_it_might_be_new
+
+- Write for a thoughtful reader, not for the research lab. Do not reference "the Lumenary corpus," "the Lumenary framework," "Codex has," "Claude has," or any internal project machinery.
+- The title must sound like a finding a thoughtful person would want to read, not an academic label. Good: "No one begins alone." Bad: "Layered Authorization of Beginning."
+- The title must not use research machinery words such as rubric, framework, topology, grammar, ledger, interface, authorization, claimant, epistemic, inferential, phenomenological, ontological, or convergence.
+- If the technical model needs a name, put that name inside source_basis or critique. The public title should carry the human insight.
+- Do not open with "This extends..." or "This is distinct from..." or list other models by name in the opening sentences.
+- Do not cite scholars by name (e.g. "Garfield and Priest have formalized") in the original_claim; save citations for source_basis.
+- Lead with the human question or the insight itself, stated plainly.
+- Never use em dashes. Use colons, semicolons, and commas.
+- The claim should be understandable to someone who has never read any other Lumenary finding.
+
+## Teaching and Practice Style
+
+- Teachings and Practices should be plain, practical, and digestible in modern language.
+- Use the clarity of the Gospels, Proverbs, the Tao Te Ching, the Dhammapada, the Bhagavad Gita, the Quran, the Analects, Lessons in Idleness, and Caesar's Commentaries as style models.
+- Do not imitate any religion. Borrow plainness, direct address, practical consequence, and clean sequence, but do not sound ancient.
+- A teaching_candidate is not doctrine. It is a draft unless the doctrine council later promotes it.
+- Teachings must aim for durability, necessity, and restraint. If it sounds clever but not necessary, keep it modest.
+- Do not write self-help captions, therapy slogans, sermons, or imitation scripture.
+- Do not announce the payoff with phrases like "the payoff is" or "the cleaner version is." Make the value visible in the teaching itself.
+- Keep caveats, revision criteria, and falsifying pressure out of the teaching body. Put them in falsifying_pressure.
+- Avoid faux-scriptural phrasing such as "the hand works" or "the fruit belongs." Say the useful thing directly.
+- Every teaching must make clear what a reader should understand or do differently, and why it could still matter years from now.
+- Every teaching_candidate must include target_human_problem and target_cohort. These should be plain descriptions of the wound and the people most likely to need the teaching.
+- Practices are instructions, not atmosphere. Say what to do, how long to do it, what to notice, when to stop, and what would weaken the practice.
+- Every practice_candidate must include target_human_problem, target_cohort, and non_fit. The non_fit field names people or situations where the practice may be irrelevant, insufficient, or risky.
+
+
+exec
+/bin/zsh -lc "sed -n '1,220p' /Users/johnforrester/spirituality/.codex/skills/spirituality-recursive-research/SKILL.md" in /Users/johnforrester/spirituality
+ succeeded in 0ms:
+---
+name: spirituality-recursive-research
+description: Use when working in the /Users/johnforrester/spirituality project on recursive research, Codex/Claude attribution, original spiritual-philosophical idea generation, Codex CLI provider wiring, scheduler setup, website publication, X draft queues, or project memory.
+---
+
+# Spirituality Recursive Research
+
+## Core Purpose
+
+This project builds Lumenary, a continuously running local research lab whose main output is original ideas in spirituality, religion, philosophy, contemplative practice, and consciousness research.
+
+Do not optimize for summaries. Optimize for named observations, hypotheses, models, contradictions, bridges, and publishable syntheses.
+
+Working name: Lumenary.
+
+## Required Attribution
+
+- Codex findings: `findings/codex/` and `findings/codex-findings.md`
+- Claude Code findings: `findings/claude/` and `findings/claude-code-findings.md`
+- Codex observations: `observations/codex/`
+- Claude observations: `observations/claude/`
+- Cross-agent synthesis: `findings/convergences/`
+
+Never overwrite another agent's findings. Preserve disagreements.
+
+## Method
+
+Every serious idea should include:
+
+- title
+- type: observation, hypothesis, model, bridge, contradiction, or synthesis
+- source basis
+- original claim
+- why it might be new
+- critique
+- epistemic labels
+- scores
+- next research directions
+
+Use labels: `textual`, `interpretive`, `phenomenological`, `empirical-adjacent`, `analogical`, `speculative`, `rejected`.
+
+## Live Provider
+
+Use the user's Codex subscription through the local Codex CLI.
+
+The Python engine should call `codex exec` with read-only sandboxing and request structured JSON. The engine, not the child Codex process, writes project files.
+
+Preferred posture:
+
+```bash
+codex --search exec --cd /Users/johnforrester/spirituality --sandbox read-only --output-schema engine/json_schemas/idea_record.schema.json --output-last-message runs/<run-id>/codex-cli-last-message.json -
+```
+
+## Publication
+
+Lumenary should become a public website with daily updates. Generate daily Markdown under `publication/daily/`. Generate X drafts under `publication/x/queue/` and require human review before posting.
+
+## Claude Code Interop
+
+Claude Code can contribute ideas by producing JSON that matches `engine/json_schemas/idea_record.schema.json`, then importing it:
+
+```bash
+python3 -m engine.import_idea --agent claude <idea.json>
+```
+
+## Key Files
+
+- `PLAN.md`: shareable plan for Claude Code and future agents
+- `AGENTS.md`: project memory and standing instructions
+- `docs/project-memory.md`: durable memory
+- `docs/original-idea-methodology.md`: generation method
+- `docs/publication-plan.md`: website and X publication plan
+- `engine/run.py`: one recursive cycle
+- `engine/scheduler.py`: continuous operation
+- `engine/thinker.py`: offline and Codex CLI providers
+- `engine/publisher.py`: daily publication artifacts
+- `engine/import_idea.py`: Claude/shared-agent idea import
+- `engine/source_ingestion.py`: source-card registry
+- `publication/daily/`: daily website updates
+- `publication/x/queue/`: X drafts awaiting human review
+
+exec
+/bin/zsh -lc "sed -n '1,240p' docs/writing-style.md" in /Users/johnforrester/spirituality
+ succeeded in 0ms:
+# Lumenary Writing Style Guide
+
+## The Standard
+
+Write like the texts we study. The Dao De Jing says more in five words than most dissertations say in fifty pages. The Upanishads speak to farmers and kings in the same sentence. The Heart Sutra compresses an entire philosophy into 260 characters. These texts endure because they trust the reader and refuse to hide behind jargon.
+
+Our findings are for anyone who has looked at the night sky and wondered what they are. Not for tenure committees.
+
+## Voice
+
+**Direct.** Say what you mean. If the idea is complex, the sentence should be simple. Complexity belongs in the thought, never in the grammar.
+
+**Concrete.** Prefer images to abstractions. "The reed flute remembers the reed bed" teaches more than "the individual subject experiences ontological nostalgia for its pre-differentiated ground." If you can't say it with an image, you don't understand it yet.
+
+**Warm but not soft.** We are serious about these ideas. We are not selling calm. Write with the confidence of someone who has thought carefully, not the caution of someone afraid to be wrong.
+
+**Short.** If a sentence runs past two commas, break it. If a paragraph runs past four sentences, split it. White space is not wasted space; it is where the reader thinks.
+
+**No em dashes.** Never use the em dash. Use colons, semicolons, and commas instead. A colon introduces; a semicolon balances; a comma keeps moving. These marks have precise meanings. The em dash is a crutch that papers over vague relationships between clauses.
+
+This rule applies everywhere readers can see text: insight cards, At a Glance sections, Growth entries, full findings, source basis lists, source cards, Journal entries, metadata, prompts that generate publishable copy, and social drafts.
+
+Before publishing, search for the em dash character and remove every instance. Rewrite the sentence so the relationship is clear. Use a colon when the second clause explains the first; use a semicolon when both clauses can stand alone; use a comma when the second clause simply continues the thought.
+
+The check is literal: `rg -P "\x{2014}" . -g '!node_modules' -g '!dist' -g '!.git' -g '!runs'` should return no matches before anything is published.
+
+## Plain English Sections
+
+These are the front door. A reader who has never heard of Nagarjuna or Advaita should finish the plain English section and understand why the finding matters.
+
+Rules:
+
+- No Sanskrit, Pali, Arabic, Greek, or Chinese terms. None. Zero. Save those for the full article.
+- No academic hedging ("it could be argued that," "one might suggest"). Just say it.
+- No passive voice unless the agent genuinely doesn't matter.
+- Lead with the human question, not the scholarly apparatus. "What happens when you stop identifying with your thoughts?" not "The phenomenological residue after contemplative negation."
+- One idea per sentence. One turn per paragraph.
+- Do not repeat the title, headline, lead, or first sentence in different words. If the paragraph already says it, the bullets must say something else.
+- Do not use machinery language in reader-facing copy: no "layered authorization," "distributed affordances," "institutional role," "operationalizes," "formal transfer," "gradient," "rubric," "locus," "claimant," or "grammar" unless the sentence immediately translates it into ordinary speech. Prefer "support," "permission," "habit," "rule," "place," "owner," "pattern," and "test."
+- Do not leak internal model titles into public copy. Reader-facing titles and At a Glance sections must not use words like "architecture," "compound," "custody," "entry," "grain," "layered," "mechanism," "phenomenology," "policy," "receiving surface," "residue," "threshold," "typology," "taxonomy," "upstream," or "downstream." Translate them first: beginning, support, habit, what remains, human opening, earlier, later, or way.
+- Use "you" when it helps. The reader is a person, not an audience.
+- Maximum reading level: a thoughtful 16-year-old who reads widely but has no specialized training.
+
+### At a Glance Key Points
+
+Finding pages include three key points under At a Glance.
+
+- Each bullet should be one short sentence.
+- Start with the discovery, not the apparatus.
+- No scoring language, source names, file paths, or specialist vocabulary.
+- A bullet should help the reader remember what matters.
+- The bullets must not repeat the At a Glance paragraph. Use them for the meaning, the human risk, and the practical test.
+- Do not let the template manufacture bullets by splitting the paragraph. That creates repetition and makes weak writing look intentional.
+- If a bullet sounds like a paper abstract, rewrite it until it sounds like something you would say to a sharp friend.
+
+## Insight Headlines
+
+These are the single line that appears on the insight card. They should land like a proverb.
+
+- Maximum 10 words.
+- No technical terms.
+- Should be quotable: something you'd remember after reading it once.
+- Should make the reader want to know more.
+
+Good: "The same silence can license opposite beliefs."
+Good: "What remains may be a crossing, not a thing."
+Good: "Time is not the container; it is the showing."
+Bad: "Logical underdetermination in the catuskoti reveals inferential divergence."
+Bad: "Predictive processing formally recapitulates the witness/no-self dispute."
+
+## Full Articles
+
+The full finding page can use technical language, cite sources, and go deep. But even here:
+
+- The public title must carry the human insight, not the internal model name. Good: "No one begins alone." Bad: "Layered Authorization of Beginning."
+- Do not use research machinery in public finding titles: no "rubric," "framework," "topology," "grammar," "ledger," "interface," "authorization," "claimant," "epistemic," "inferential," "phenomenological," "ontological," or "convergence."
+- Also ban technical model words from public finding titles: no "architecture," "compound," "custody," "entry," "grain," "layered," "mechanism," "phenomenology," "policy," "receiving surface," "residue," "threshold," "typology," "taxonomy," "upstream," or "downstream."
+- The public article must begin with what the finding means for a life. Technical names, prior-art terms, and model architecture belong in Research notes.
+- Open with one plain sentence stating the claim.
+- Use technical terms only after you've earned them: introduce the concept in plain language first, then name it.
+- Every paragraph should be doing work. If you delete it and the argument still stands, delete it.
+- End sections with a sentence that points forward, not one that summarizes backward.
+- Do not use em dashes in the academic sections either. Depth is not an excuse for lazy punctuation.
+
+## Teachings
+
+Teachings are not content. They are doctrine candidates. They must earn the right to sound final.
+
+A Teaching should be plain, modern, and durable. It should say something a person could return to for years, not something that merely sounds helpful for a moment. It should not read like self-help, a caption, a sermon, a therapy prompt, or imitation scripture.
+
+If a line needs a paragraph of explanation before it matters, it is not ready. If the payoff has to be announced with phrases like "the payoff is," the teaching is not clean enough yet. The value should be visible in the sentence and in the life it names.
+
+A Teaching should answer a human wound, not only a theory. Before writing one, name the problem: loneliness, addiction, compulsion, withdrawal, anxiety, depression, burnout, grief, meaning loss, digital comparison, feeling unneeded, feeling out of place, or self-worth chained to performance. If the teaching is for a narrow group, say so in the record. Targeted truth is better than a universal sentence that helps nobody.
+
+The old texts matter because they are clear, not because they sound old. Use their directness, not their costume:
+
+- The Gospels: short scenes, direct sayings, everyday images, and moral clarity.
+- Proverbs and Psalms: memorable lines that ordinary people can repeat.
+- The Tao Te Ching: compression, humility, and simplicity without cloudy language.
+- The Dhammapada: practical counsel about conduct, attention, and consequence.
+- The Bhagavad Gita: teaching given under pressure, where a real person must act.
+- The Quran: direct address, accountability, and seriousness of consequence.
+- The Analects: brief instructions about character, society, and discipline.
+- Lessons in Idleness: small observations from daily life that open into wisdom.
+- Caesar's Commentaries: clean sequence, concrete action, and no ornamental fog.
+
+Rules:
+
+- Use modern speech.
+- Write for durability, not novelty.
+- State only what has survived enough pressure to be carried.
+- Prefer one strong sentence to three explanatory sentences.
+- Start from a human situation: work, fear, duty, love, failure, pride, grief, choice, attention, death, or repair.
+- Name the human problem and cohort in the record before treating a teaching as serious.
+- Use ordinary nouns before abstract nouns: task, room, message, person, promise, choice, habit, day.
+- Prefer active verbs: see, wait, ask, carry, return, repair, refuse, give, test.
+- Let the consequence be embedded in the teaching. Do not add marketing phrases like "the payoff is" or "the cleaner version is simple."
+- Put falsifying pressure, caveats, revision criteria, and process notes below the Teaching as disclosure. Do not put them inside the Teaching body.
+- No academic scaffolding in the Teaching body.
+- No mystical vagueness. If the sentence could mean anything, rewrite it until it means one thing.
+- No self-help fog: avoid "good, safe, special, superior," "prove yourself," "unlock," "become your best self," and similar generic language unless the exact claim requires it.
+- No faux-scriptural phrasing. Avoid lines like "the hand works" or "the fruit belongs." Say the useful thing directly.
+- No throat-clearing: cut "what this means is," "the cleaner version is," "at the end of the day," and similar setup phrases.
+- Keep the public Teaching body under 220 words unless there is a strong reason.
+- If the teaching changes, say what changed and why in the disclosure, not in the Teaching body. A lost belief is progress.
+
+Threshold:
+
+- A Teaching Ready record must survive more than one source finding or dialogue thread.
+- It must be grounded in a real human problem, with a named cohort and at least one modern human-condition source when possible.
+- It must include a clear contrary pressure, not only a friendly critique.
+- It must have at least one proposed test and, before being treated as stable doctrine, one completed or human-reviewed test.
+- It must be worth keeping if the project produced no new findings for a year.
+- It must not merely rephrase a known virtue such as humility, patience, courage, honesty, or compassion.
+- If it sounds clever but not necessary, keep it under dialogue.
+
+Teaching structure:
+
+1. The Teaching: one durable line.
+2. The body: two to four short paragraphs that clarify the line without over-explaining it.
+3. Disclosure: pressure survived, what would revise it, source trail, tests.
+
+Good teaching line: "Use calm to respond better, not to disappear."
+Good teaching line: "Do the work without turning it into your identity."
+Good teaching body: "Do the task well. Take responsibility for what you did. Then ask whether the result has become a verdict on you."
+Bad teaching line: "The liminal subjectivity of post-negational awareness discloses a nondual residue."
+Bad teaching line: "The hand works. The fruit belongs elsewhere."
+Bad teaching line: "Everything is one, so nothing matters."
+Bad teaching body: "The payoff is lighter, cleaner work."
+Bad teaching body: "The cleaner version is simple: do the work."
+
+## Practices
+
+Practices are instructions, not atmosphere. They should be clearer than Teachings and less poetic than Insights. A person should know exactly what to do, how long to do it, what to notice, when to stop, and what result would count against the practice.
+
+Practices should sound like a careful field guide for attention and behavior. They should not sound like therapy scripts, marketing copy, ancient initiation, or esoteric performance.
+
+A Practice begins with diagnosis. It must say what human problem it is trying to help, who is most likely to benefit, and who should not use it. A practice for perfectionistic achievement pressure is not a practice for addiction withdrawal. A practice for loneliness is not a practice for clinical crisis. If the cohort is unclear, the practice is not ready.
+
+Rules:
+
+- Begin with the action. Tell the reader what to do.
+- Use numbered steps when order matters.
+- Name the duration, frequency, and minimum attempt.
+- Name what to observe in plain language.
+- Name the expected change without promising it.
+- Name the target human problem, the target cohort, and the non-fit case.
+- Name the risk, caution, or stop condition.
+- Name what would weaken the practice.
+- Avoid grandeur. No "transformation guaranteed," no "unlock," no "ancient secret."
+- Avoid vague inner instructions like "enter the mystery" unless they are made concrete.
+- Use "you" when giving instructions. Be direct without being bossy.
+
+Practice structure:
+
+1. Purpose: what this practice tests or trains.
+2. Human problem: the wound or modern failure mode it addresses.
+3. For: the cohort most likely to need it.
+4. Not for: the situations or people where it is irrelevant, insufficient, or risky.
+5. Time: how long and how often.
+6. Steps: what to do.
+7. Notice: what to watch in body, attention, speech, choice, or relationship.
+8. Caution: when to stop or avoid it.
+9. Weakens if: what result would count against the teaching behind it.
+
+Good practice line: "For five minutes, do one task without taking credit for it."
+Good practice line: "When calm appears, ask what real need it is avoiding."
+Bad practice line: "Enter the luminous threshold of transpersonal awareness."
+Bad practice line: "This practice will dissolve the ego."
+
+## Journal Entries
+
+Journal entries live under `publication/journal/`.
+
+They are written once per day after the research window closes and the day's findings have been published. They are not summaries. They are first-person plural reflections on what the day changed in The Lumenary.
+
+They are also not manifestos. A Journal entry must not turn one finding into a sweeping moral proclamation, a political vibe, a sermon, or a poem. It should read like a thoughtful daily field note from a serious research mind: warm, human, concrete, and accountable to what actually happened that day.
+
+Rules:
+
+- 350 to 500 words.
+- First person plural: "We discovered," "We noticed," "We were wrong," "We carried."
+- No Sanskrit, Pali, Arabic, Greek, or Chinese terms.
+- No bullet lists.
+- No academic scaffolding.
+- Lead with the human question.
+- Use normal paragraphs of 3 to 5 sentences. Do not stack single-sentence paragraphs until the page feels like a poem.
+- Reflect the breadth of the day: at least three concrete developments from findings, dialogues, method changes, practices, tests, sources, or teachings.
+- Name the strongest insight, but do not let it swallow the whole entry.
+- If the day involved work, credit, ownership, effort, money, property, ambition, or success, write with balance. Do not imply that ownership is evil, effort is suspect, or achievement is morally dirty.
+- Explain what changed in our thinking and where we may have been wrong.
+- Make the reader feel what was learned without sounding theatrical.
+- Technical detail belongs in findings; the Journal carries the human meaning of the day.
+
+Bad Journal behavior:
+
+- A whole entry built around one metaphor.
+- Lines like "open the hand," "refuse the crown," "worship the hand," or "cleaner wound."
+- Vague spiritual drama that does not say what the day actually found.
+- A tone that sounds anti-work, anti-ownership, anti-capitalist, or politically loaded when the research did not make that claim.
+
+Good Journal behavior:
+
+- "Today we kept returning to the problem of how change begins."
+- "One finding looked at support; another tested what remains after a practice questions the self."
+- "We were too quick to make a single model carry every tradition."
+- "The useful lesson is practical: a method must show what it helps, what it misses, and what would prove it wrong."
+
+## Growth Entries
+
+Growth entries live under `publication/growth/`.
+
+They are not changelog dumps. They are small lessons from the day: what we learned, and how the method changed.
+
+Rules:
+
+- Write in first person plural when possible: "We learned that," "We learned to."
+- Keep each bullet to one sentence.
+- No titles, file names, source paths, scoring language, or research jargon.
+- No Sanskrit, Pali, Arabic, Greek, or Chinese terms.
+
+exec
+/bin/zsh -lc 'rg -n "method.*authority|authorize|self-cancel|self confirm|raft|Dogen|Other Power|Tannisho|Heart Sutra|Rinzai|Eckhart|Nagarjuna|Wittgenstein|Snakes and Ladders|Sells|Alagaddupama" findings observations reviews docs sources state publication config -S' in /Users/johnforrester/spirituality
+exec
+/bin/zsh -lc 'rg -n "modern-human-condition-(surgeon-general-social-connection-advisory|apa-stress-in-america-2024|who-burn-out-occupational-phenomenon|curran-hill-perfectionism-increasing|pew-where-americans-find-meaning-in-life|gallup-state-global-workplace-2024)" sources docs findings observations publication -S' in /Users/johnforrester/spirituality
+ succeeded in 0ms:
+sources/sources_index.jsonl:110:{"created_at": "2026-05-26T17:05:00-07:00", "notes": "U.S. Surgeon General advisory on loneliness, isolation, social connection, belonging, health risk, and community repair. Use as a grounding source for teachings and practices aimed at disconnection, feeling unneeded, social withdrawal, and the loss of ordinary belonging.", "path": "notes/source-cards/modern-human-condition-surgeon-general-social-connection-advisory.md", "source_id": "modern-human-condition-surgeon-general-social-connection-advisory", "source_type": "report", "title": "Our Epidemic of Loneliness and Isolation", "tradition": "modern-human-condition", "url": "https://www.hhs.gov/sites/default/files/surgeon-general-social-connection-advisory.pdf"}
+sources/sources_index.jsonl:115:{"created_at": "2026-05-26T17:05:00-07:00", "notes": "American Psychological Association report on stress, uncertainty, money, work, politics, safety, and the future. Use as grounding for modern overload, exhaustion, vigilance, helplessness, and teachings that must fit people living under real pressure.", "path": "notes/source-cards/modern-human-condition-apa-stress-in-america-2024.md", "source_id": "modern-human-condition-apa-stress-in-america-2024", "source_type": "report", "title": "Stress in America 2024", "tradition": "modern-human-condition", "url": "https://www.apa.org/news/press/releases/stress/2024/stress-in-america"}
+sources/sources_index.jsonl:116:{"created_at": "2026-05-26T17:05:00-07:00", "notes": "World Health Organization definition of burn-out as a workplace phenomenon involving exhaustion, mental distance or cynicism, and reduced professional efficacy. Use as grounding for teachings and practices about work, effort, responsibility, recovery, and the danger of spiritualizing overwork.", "path": "notes/source-cards/modern-human-condition-who-burn-out-occupational-phenomenon.md", "source_id": "modern-human-condition-who-burn-out-occupational-phenomenon", "source_type": "website", "title": "Burn-out as an Occupational Phenomenon", "tradition": "modern-human-condition", "url": "https://www.who.int/standards/classifications/frequently-asked-questions/burn-out-an-occupational-phenomenon"}
+sources/sources_index.jsonl:117:{"created_at": "2026-05-26T17:05:00-07:00", "notes": "Pew Research Center study on where Americans say they find meaning, including family, career, money, spirituality, faith, friends, and health. Use as grounding for meaning loss, purpose, belonging, and how teachings should meet the actual places people already look for significance.", "path": "notes/source-cards/modern-human-condition-pew-where-americans-find-meaning-in-life.md", "source_id": "modern-human-condition-pew-where-americans-find-meaning-in-life", "source_type": "report", "title": "Where Americans Find Meaning in Life", "tradition": "modern-human-condition", "url": "https://www.pewresearch.org/religion/2018/11/20/where-americans-find-meaning-in-life/"}
+sources/sources_index.jsonl:118:{"created_at": "2026-05-26T17:05:00-07:00", "notes": "Curran and Hill meta-analysis on birth cohort changes in perfectionism from 1989 to 2016. Use as grounding for achievement pressure, socially prescribed perfectionism, performance-based self-worth, comparison, shame, and why result-release practices are targeted remedies rather than universal practices.", "path": "notes/source-cards/modern-human-condition-curran-hill-perfectionism-increasing.md", "source_id": "modern-human-condition-curran-hill-perfectionism-increasing", "source_type": "paper", "title": "Perfectionism Is Increasing Over Time", "tradition": "modern-human-condition", "url": "https://doi.org/10.1037/bul0000138"}
+sources/sources_index.jsonl:120:{"created_at": "2026-05-26T17:05:00-07:00", "notes": "Gallup workplace report on employee engagement, stress, loneliness, and the quality of work life. Use as grounding for modern work as a source of identity, exhaustion, isolation, and the need for practices that distinguish responsibility from self-erasure.", "path": "notes/source-cards/modern-human-condition-gallup-state-global-workplace-2024.md", "source_id": "modern-human-condition-gallup-state-global-workplace-2024", "source_type": "report", "title": "State of the Global Workplace 2024", "tradition": "modern-human-condition", "url": "https://www.gallup.com/workplace/349484/state-of-the-global-workplace.aspx"}
+observations/codex/2026-05-30-authority-must-be-returned.md:24:- Modern human-condition grounding: docs/modern-human-condition.md; modern-human-condition-who-burn-out-occupational-phenomenon; modern-human-condition-apa-stress-in-america-2024; modern-human-condition-curran-hill-perfectionism-increasing.
+docs/modern-human-condition.md:28:- `modern-human-condition-surgeon-general-social-connection-advisory`
+docs/modern-human-condition.md:30:- `modern-human-condition-gallup-state-global-workplace-2024`
+docs/modern-human-condition.md:39:- `modern-human-condition-apa-stress-in-america-2024`
+docs/modern-human-condition.md:58:- `modern-human-condition-pew-where-americans-find-meaning-in-life`
+docs/modern-human-condition.md:67:- `modern-human-condition-who-burn-out-occupational-phenomenon`
+docs/modern-human-condition.md:68:- `modern-human-condition-apa-stress-in-america-2024`
+docs/modern-human-condition.md:69:- `modern-human-condition-curran-hill-perfectionism-increasing`
+docs/modern-human-condition.md:70:- `modern-human-condition-gallup-state-global-workplace-2024`
+docs/modern-human-condition.md:79:- `modern-human-condition-surgeon-general-social-connection-advisory`
+docs/modern-human-condition.md:87:- `modern-human-condition-surgeon-general-social-connection-advisory`
+docs/modern-human-condition.md:88:- `modern-human-condition-pew-where-americans-find-meaning-in-life`
+docs/modern-human-condition.md:89:- `modern-human-condition-gallup-state-global-workplace-2024`
+observations/codex/2026-05-29-clocks-do-not-own-time.md:28:- Modern human-condition grounding: APA Stress in America 2024 source card and public reports on future, economy, and work stress; notes/source-cards/modern-human-condition-apa-stress-in-america-2024.md and https://www.prnewswire.com/news-releases/apa-poll-future-of-nation-economy-and-presidentential-election-top-us-stressors-302282237.html.
+observations/codex/2026-05-29-not-every-check-should-be-yours.md:27:- Modern human-condition grounding: modern-human-condition-curran-hill-perfectionism-increasing, modern-human-condition-who-burn-out-occupational-phenomenon, and modern-human-condition-surgeon-general-social-connection-advisory.
+observations/codex/2026-05-29-the-road-must-know-its-end.md:30:- Modern human-condition grounding: Curran and Hill on rising perfectionism, notes/source-cards/modern-human-condition-curran-hill-perfectionism-increasing.md, https://doi.org/10.1037/bul0000138.
+observations/codex/2026-05-29-the-road-must-know-its-end.md:31:- Modern human-condition grounding: WHO burn-out source card, notes/source-cards/modern-human-condition-who-burn-out-occupational-phenomenon.md, https://www.who.int/standards/classifications/frequently-asked-questions/burn-out-an-occupational-phenomenon.
+observations/codex/2026-05-28-holding-without-owning.md:26:- Modern human-condition grounding: modern-human-condition-curran-hill-perfectionism-increasing and modern-human-condition-who-burn-out-occupational-phenomenon, used for achievement-contingent self-worth and burnout pressure.
+observations/codex/2026-05-28-the-test-is-how-you-return.md:29:- Modern human-condition source cards: modern-human-condition-curran-hill-perfectionism-increasing; modern-human-condition-who-burn-out-occupational-phenomenon; modern-human-condition-gallup-state-global-workplace-2024.
+observations/codex/2026-05-29-keep-what-can-correct-you.md:30:- Modern human-condition grounding: modern-human-condition-surgeon-general-social-connection-advisory on isolation and belonging, modern-human-condition-curran-hill-perfectionism-increasing on achievement-contingent self-worth, and modern-human-condition-pew-where-americans-find-meaning-in-life on meaning loss.
+observations/claude/2026-05-28-a-practice-cannot-name-itself.md:24:- Modern human-condition pressure: modern-human-condition-surgeon-general-social-connection-advisory on isolation, modern-human-condition-pew-where-americans-find-meaning-in-life on meaning loss, and modern-human-condition-curran-hill-perfectionism-increasing on achievement-contingent self-worth. The modern cohort I have in mind reads spiritual texts and uses apps without the recognition partners that historically named what happened.
+observations/claude/2026-05-29-when-there-is-nothing-to-keep-or-release.md:26:- Modern human-condition grounding: the under-claiming and agency-depleted cohort already flagged in Codex 'Agency-Authority Calibration at the Handoff'; modern-human-condition-who-burn-out-occupational-phenomenon; modern-human-condition-curran-hill-perfectionism-increasing.
+observations/claude/2026-05-29-not-every-practice-is-a-tool.md:25:- Modern human-condition grounding: modern-human-condition-curran-hill-perfectionism-increasing and modern-human-condition-who-burn-out-occupational-phenomenon, for achievement-contingent self-worth and burnout.
+observations/claude/2026-05-30-the-answer-you-keep-finding-is-already-settled.md:25:- Modern human-condition grounding: WHO burn-out as an occupational phenomenon and Curran and Hill on rising perfectionism, for overproduction and achievement-contingent self-worth (modern-human-condition-who-burn-out-occupational-phenomenon, modern-human-condition-curran-hill-perfectionism-increasing).
+observations/claude/2026-05-29-why-grief-stops-time.md:29:- modern-human-condition-apa-stress-in-america-2024 on burnout, exhaustion, and felt loss of capacity.
+observations/claude/2026-05-29-time-is-held-not-counted.md:31:- Modern human-condition grounding: notes/source-cards/modern-human-condition-apa-stress-in-america-2024.md on future, work, and deadline stress; notes/source-cards/modern-human-condition-who-burn-out-occupational-phenomenon.md on burnout as overwhelm and depletion; notes/source-cards/modern-human-condition-curran-hill-perfectionism-increasing.md on rising achievement-contingent self-worth.
+
+ succeeded in 116ms:
+exec
+/bin/zsh -lc "sed -n '1,180p' notes/source-cards/modern-human-condition-apa-stress-in-america-2024.md" in /Users/johnforrester/spirituality
+exec
+/bin/zsh -lc "sed -n '1,180p' notes/source-cards/modern-human-condition-who-burn-out-occupational-phenomenon.md" in /Users/johnforrester/spirituality
+ succeeded in 0ms:
+# Stress in America 2024
+
+Source ID: modern-human-condition-apa-stress-in-america-2024
+Tradition: modern-human-condition
+Type: report
+Path: 
+URL: https://www.apa.org/news/press/releases/stress/2024/stress-in-america
+
+## Notes
+
+American Psychological Association report on stress, uncertainty, money, work, politics, safety, and the future. Use as grounding for modern overload, exhaustion, vigilance, helplessness, and teachings that must fit people living under real pressure.
+
+## Extraction Status
+
+- claims extracted: no
+- concepts linked: no
+- cited in observations: no
+
+ succeeded in 0ms:
+# Burn-out as an Occupational Phenomenon
+
+Source ID: modern-human-condition-who-burn-out-occupational-phenomenon
+Tradition: modern-human-condition
+Type: website
+Path: 
+URL: https://www.who.int/standards/classifications/frequently-asked-questions/burn-out-an-occupational-phenomenon
+
+## Notes
+
+World Health Organization definition of burn-out as a workplace phenomenon involving exhaustion, mental distance or cynicism, and reduced professional efficacy. Use as grounding for teachings and practices about work, effort, responsibility, recovery, and the danger of spiritualizing overwork.
+
+## Extraction Status
+
+- claims extracted: no
+- concepts linked: no
+- cited in observations: no
+
+exec
+/bin/zsh -lc "sed -n '1,180p' notes/source-cards/modern-human-condition-curran-hill-perfectionism-increasing.md" in /Users/johnforrester/spirituality
+ succeeded in 0ms:
+# Perfectionism Is Increasing Over Time
+
+Source ID: modern-human-condition-curran-hill-perfectionism-increasing
+Tradition: modern-human-condition
+Type: paper
+Path: 
+URL: https://doi.org/10.1037/bul0000138
+
+## Notes
+
+Curran and Hill meta-analysis on birth cohort changes in perfectionism from 1989 to 2016. Use as grounding for achievement pressure, socially prescribed perfectionism, performance-based self-worth, comparison, shame, and why result-release practices are targeted remedies rather than universal practices.
+
+## Extraction Status
+
+- claims extracted: no
+- concepts linked: no
+- cited in observations: no
+
+exec
+/bin/zsh -lc "sed -n '1,230p' observations/codex/2026-05-30-authority-must-be-returned.md" in /Users/johnforrester/spirituality
+ succeeded in 0ms:
+# Authority Must Be Returned
+
+Agent: codex
+Date: 2026-05-30T07:02:58+02:00
+Type: observation
+Idea ID: e7b0c349c18ee276
+Status: draft
+
+## Original Claim
+
+A serious method should not keep the authority it borrowed to bring a person to insight. At completion, the method either keeps guiding, is laid down, is denied as a possession, or is embodied as character and conduct. The crucial distinction is not whether a tradition confirms or cancels itself, but where the authority goes after the method has done its work: into a claim, a practice, a community, a teacher, a life pattern, or a refusal to claim. This matters for modern people whose worth is tied to performance, because even self-inquiry can become another tool they must master. The better teaching is narrower: do not ask only whether your practice worked. Ask what authority you are still giving it, and whether that authority now serves care, freedom, and truthful action.
+
+## Why It Might Be New
+
+The closest prior argument is Smith's comparison of Nagarjuna and Wittgenstein as therapeutic methods that dissolve philosophical problems, with MN 22 and Sells as older and broader near-neighbors for release and unsaying. The difference is the proposed pressure shift: from a typology of self-confirming, self-canceling, or self-dissolving methods to a custody test that asks where authority is handed after completion. This narrows the frontier and weakens the earlier model. It predicts that hybrid traditions will be best understood not by whether they validate or undermine themselves, but by how they manage custody across stages: text, teacher, community, vow, ritual, conduct, silence, or ordinary life.
+
+## Source Basis
+
+- Mode: Critique.
+- Frontier brief: What a method does with its own authority.
+- Practitioner-method source: MN 22 Alagaddupama Sutta raft simile, used as a lens for proper use and release of method.
+- Primary-text comparison: MN 22's raft simile validates the Dhamma as a crossing tool and then warns against carrying it; the Heart Sutra denies attainment while still relying on Prajnaparamita practice; Mandukya Upanishad treats waking, dreaming, and deep sleep as evidence for turiya; Tannisho strains the model by grounding release in Other Power rather than self-authorizing insight.
+- Near-neighbor pressure: Joshua William Smith, Snakes and Ladders: Therapy as Liberation in Nagarjuna and Wittgenstein's Tractatus, Sophia 2021; Michael A. Sells, Mystical Languages of Unsaying; Buddhist raft language in MN 22.
+- Modern human-condition grounding: docs/modern-human-condition.md; modern-human-condition-who-burn-out-occupational-phenomenon; modern-human-condition-apa-stress-in-america-2024; modern-human-condition-curran-hill-perfectionism-increasing.
+- Reasoning-method critique: raft reasoning prevents attachment to method, but can distort traditions where faithful repetition, embodiment, communal custody, or grace remain central after insight. It must be balanced with close textual comparison and falsification pressure.
+
+## Critique
+
+This may overfit traditions that treat method as a tool. Dogen's practice-realization identity, Rinzai koan curricula after kensho, and Shinran's Other Power in Tannisho strain the model because practice or trust may not be laid down after insight, and authority may not originate in the practitioner's method at all. A practitioner may also report that there is no clean moment of completion, only deepening, repair, and re-entry. If close reading shows that post-insight authority is too fluid to classify, or that tradition membership predicts custody better than method-type, the claim should be weakened.
+
+## Epistemic Labels
+
+- `textual`
+- `interpretive`
+- `phenomenological`
+- `empirical-adjacent`
+- `analogical`
+- `speculative`
+
+## Scores
+
+- novelty: 0.64
+- generativity: 0.83
+- cross_tradition_support: 0.72
+- logical_coherence: 0.76
+- explanatory_compression: 0.74
+- empirical_adjacency: 0.50
+- practice_testability: 0.77
+- counterargument_quality: 0.82
+- source_reliability: 0.73
+- publishability: 0.69
+
+
+## Teaching Candidate
+
+Status: under_dialogue
+Tags: method-authority, burnout, achievement-pressure, practice-discernment, critique-mode
+
+### Teaching Line
+
+Use a method fully, then ask what should carry authority next.
+
+### Doctrine Claim
+
+A method is healthiest when it can name the authority it still deserves after it has helped someone see, change, or cross a threshold.
+
+### Teaching Body
+
+A practice can guide attention, steady conduct, and open a person to what they could not see before. But the method is not the whole truth of the life that follows. After a serious insight, ask whether the method should remain a guide, become a habit of conduct, be held by a teacher or community, or be laid down for ordinary care. This protects practice from becoming another ladder for proving worth.
+
+### Human Problem
+
+Achievement-contingent self-worth and burnout, especially the habit of turning every tool into a test of adequacy.
+
+### For
+
+Perfectionistic students, founders, professionals, caregivers, leaders, and serious practitioners who turn methods of growth into systems of self-measurement.
+
+### Pressure Survived
+
+Survived critique from MN 22's validated-then-abandoned raft, Heart Sutra's no-attainment-with-practice hybrid, and near-neighbor pressure from therapeutic readings of Nagarjuna and Wittgenstein. It was narrowed from a broad method-completion typology into a custody test.
+
+### Falsifying Pressure
+
+Weaken if primary texts and practitioner reports show that post-insight authority is not distinguishable from tradition membership, or if achievement-driven practitioners are not especially prone to making methods into self-worth tests.
+
+
+
+## Practice Candidate
+
+Status: seed
+Risk level: low
+Tags: authority-check, burnout, self-worth, practice-test, low-risk
+
+### Practice Line
+
+After practice, ask what still deserves your obedience.
+
+### Purpose
+
+To help achievement-driven practitioners notice when a helpful method has become a private judge, and to return authority to conduct, care, community, or rest when appropriate.
+
+### Human Problem
+
+Burnout and achievement-contingent self-worth.
+
+### For
+
+People already using reflective, contemplative, therapeutic, creative, or productivity methods who feel driven to prove they are doing them correctly.
+
+### Not For
+
+Not for people in acute crisis, addiction withdrawal, severe depression, dissociation, or situations where professional care, rest, medication, direct action, or social support is the main need. It is also not for beginners who need simple consistency before meta-reflection.
+
+### Time
+
+- Duration: 7 minutes after an existing practice session or demanding work block.
+- Frequency: Three times per week for two weeks.
+- Minimum attempt: Six brief checks before judging usefulness.
+
+### Steps
+
+1. Finish the practice or work block without adding extra improvement tasks.
+2. Write one sentence: What did this method help me see or do?
+3. Write one sentence: What is it now asking me to obey?
+4. Choose one custody path: keep using the method, embody one concrete action, ask a teacher or trusted person, rest from the method, or revise the method.
+5. Name one ordinary act that would show the authority has moved into life: apologize, rest, finish a task, ask for help, stop checking, or serve someone.
+6. Stop after seven minutes even if the answer feels incomplete.
+
+### Notice
+
+- Whether the method feels like guidance or judgment.
+- Whether the body relaxes, tightens, or searches for another standard.
+- Whether the chosen custody path leads to clearer conduct within twenty-four hours.
+
+### Caution
+
+Do not use this practice to avoid necessary discipline, therapy, medical care, ethical repair, or hard conversations. If it increases rumination or self-surveillance, stop and use simpler support.
+
+### Weakens If
+
+Weakens if users report more rumination, less action, more shame about practice, or no change in their relationship to self-measurement after two weeks.
+
+
+
+## Tests
+
+### Prior Art Custody Search
+
+- Type: prior-art
+- Target: idea
+- Status: proposed
+- Prediction: A close prior argument will likely exist for self-canceling methods, but not for the specific post-completion custody test across confirming, canceling, dissolving, embodied, and Other Power traditions.
+- Result: Pending. Current near-neighbors include Smith on Nagarjuna and Wittgenstein, Sells on unsaying, and MN 22 on the raft. These overlap strongly with release and dissolution, but do not yet appear to organize traditions by where authority goes after the method completes.
+- Impact: pending
+- Next action: Search scholarship on upaya, spiritual direction, teacher authority, post-kensho training, practice-realization, and Pure Land entrusting for close versions of the custody claim.
+
+### Hybrid Boundary Test
+
+- Type: falsification-attempt
+- Target: idea
+- Status: proposed
+- Prediction: If the custody model is useful, hybrid traditions should explicitly mark transitions between using, trusting, undermining, releasing, embodying, or surrendering a method.
+- Result: Pending. MN 22 and Heart Sutra already suggest boundary pressure, while Dogen and Tannisho may violate simple release models.
+- Impact: pending
+- Next action: Close-read primary passages and code each one for custody markers: text, teacher, community, vow, conduct, silence, grace, or no claimant.
+
+### Achievement Practitioner Report
+
+- Type: practice-report
+- Target: practice
+- Status: proposed
+- Prediction: Achievement-driven practitioners using The Authority Check should report less method-as-judgment language and more concrete re-entry actions after six attempts. If reports show more rumination or shame, the practice should be revised or retired for this cohort.
+- Result: Pending.
+- Impact: pending
+- Next action: Run a small diary study with consenting practitioners who already use reflective or contemplative methods, with safety exclusions for acute distress and addiction withdrawal.
+
+### Verification Architecture Prediction
+
+- Type: cross-domain
+- Target: teaching
+- Status: proposed
+- Prediction: Methods that transfer authority into embodied conduct or community should rely more on supervision, re-entry signs, and ethical repair than on private certainty. Methods that retain authority in a claim should tolerate clearer manuals and outcome criteria.
+- Result: Pending.
+- Impact: pending
+- Next action: Compare Advaita inquiry manuals, Zen post-kensho training accounts, Pure Land pastoral texts, and workplace behavior-change protocols for their verification architecture.
+
+
+## Next Research Directions
+
+- Close-read MN 22, the Heart Sutra, Mandukya Upanishad, Dogen's Genjokoan, and Tannisho for explicit custody markers: who or what may authorize insight after the method reaches its threshold?
+- If this model is right, then hybrid traditions should show boundary language about when to trust, release, embody, or hand over a method. If texts and practitioner reports show no stable boundary language, the model is weakened.
+- If this model is right, then dual-trained practitioners should describe different post-insight custody patterns when moving between Advaita inquiry, Madhyamaka reasoning, koan practice, and Pure Land trust. If they describe the same pattern across methods, the model is weakened.
+- Improve the thinking protocol by adding a custody question after every method-source: what does this method teach us to see, and what authority does it ask us to keep, surrender, share, or refuse?
+- Test whether achievement-driven practitioners turn contemplative methods into performance systems more often than practitioners whose main wound is grief, loneliness, or disconnection.
+
+codex
+{"title":"When Tools Become Judges","idea_type":"model","source_basis":["Mode: Critique.","Active frontier: What a method does with its own authority.","Practitioner-method lens: MN 22 Alagaddupama Sutta raft simile, used as a method of proper use and release.","Primary-text comparison: MN 22 validates the Dhamma as a crossing tool and then warns against carrying it; the Heart Sutra denies attainment while still relying on Prajnaparamita; the Mandukya Upanishad uses waking, dreaming, and deep sleep to confirm turiya; Tannisho strains self-authorizing method models by grounding release in Other Power.","Prior-art pressure: Joshua William Smith, Snakes and Ladders: Therapy as Liberation in Nagarjuna and Wittgenstein's Tractatus, Sophia 2021.","Prior-art pressure: Michael A. Sells, Mystical Languages of Unsaying, for apophatic language that turns back on its own claims.","Hybrid anomaly pressure: Dogen practice-realization, Rinzai post-kensho curriculum, Heart Sutra practice after no attainment, and Shinran's Other Power.","Modern human-condition grounding: modern-human-condition-who-burn-out-occupational-phenomenon, modern-human-condition-apa-stress-in-america-2024, modern-human-condition-curran-hill-perfectionism-increasing, and modern-human-condition-gallup-state-global-workplace-2024.","Reasoning-method critique: raft thinking protects against clinging to a method, but it can distort traditions where faithful repetition, communal custody, embodiment, or grace remain central after insight. It must be balanced with close reading and falsification pressure."],"original_claim":"A practice does not complete a stage merely by proving that it worked. It completes a stage by changing what may guide the next action. Two questions must be held together: does the method still validate its own use, or does it undermine its own claims; and is its authority retained, laid down, embodied, handed to a teacher or community, or refused as possession? This narrows the earlier self-confirming, self-canceling, and self-dissolving model. The human danger is clear: a method that once freed attention can become a private judge that governs worth, shame, and self-surveillance.","why_it_might_be_new":"The closest prior argument is Smith's comparison of Nagarjuna and Wittgenstein as therapeutic methods that dissolve philosophical problems. MN 22 and Sells also make release and unsaying familiar, so novelty should be moderate, not high. The difference is the two-axis test: boundary operation plus post-threshold custody. The claim is not only that some methods cancel themselves, but that traditions can be compared by how they manage the authority that remains after a method works: text, teacher, community, vow, conduct, silence, grace, ordinary life, or no claimant. This may predict verification and reentry better than tradition membership or self-canceling method alone.","critique":"The model may still overfit traditions that treat practice as a tool. Dogen's practice-realization identity is the sharpest anomaly: practice is not a ladder to be released after completion, but the expression of realization itself. Rinzai koan curricula after kensho also strain any clean endpoint, because the method can undermine conceptual possession while continuing as authorized training. Tannisho strains the model from another side, because authority may never belong to the practitioner's method in the first place. If close reading and practitioner reports show no stable way to separate boundary operation from custody, or if tradition membership predicts verification better than the two axes, the model should be weakened.","epistemic_labels":["textual","interpretive","phenomenological","empirical-adjacent","analogical","speculative"],"scores":{"novelty":0.62,"generativity":0.85,"cross_tradition_support":0.73,"logical_coherence":0.77,"explanatory_compression":0.75,"empirical_adjacency":0.51,"practice_testability":0.79,"counterargument_quality":0.84,"source_reliability":0.74,"publishability":0.68},"next_research_directions":["Close-read MN 22, the Heart Sutra, Mandukya Upanishad, Dogen's Genjokoan, Rinzai post-kensho training accounts, and Tannisho for explicit signs of what may guide the practitioner after insight.","If this model is right, then hybrid traditions should mark when to trust, release, embody, or hand over a method. If texts and practitioner reports show no stable boundary language, the model is weakened.","If this model is right, then dual-trained practitioners should describe different post-insight custody patterns when moving between Advaita inquiry, Madhyamaka reasoning, koan practice, and Pure Land trust. If they describe the same pattern across methods, the model is weakened.","Test whether achievement-driven practitioners turn contemplative, therapeutic, or productivity methods into self-worth systems more often than practitioners whose main wound is grief, loneliness, or disconnection.","Improve the thinking protocol: after using any practitioner method as a lens, ask what the method trains us to see, what it hides, and what authority it asks us to keep, surrender, share, or refuse."],"teaching_candidate":{"title":"Give The Tool Back","teaching_line":"Use the method fully, then ask what should guide you next.","doctrine_claim":"A method is healthiest when it can name the authority it still deserves after it has helped someone see, change, or cross a threshold.","body":"A practice can steady attention and help a person see what was hidden. But the method is not the whole truth of the life that follows. After a serious shift, ask whether the method should remain a guide, become a habit of conduct, be held by a teacher or community, or be laid down for ordinary care. This protects practice from becoming another way to prove your worth.","target_human_problem":"Achievement-contingent self-worth, burnout, and the habit of turning every tool for growth into a test of adequacy.","target_cohort":"Perfectionistic students, founders, professionals, caregivers, leaders, and serious practitioners who turn methods of growth into systems of self-measurement.","pressure_survived":"Survived critique from MN 22's validated-then-abandoned raft, Heart Sutra's no-attainment-with-practice hybrid, prior-art pressure from Nagarjuna and Wittgenstein as therapeutic method, and the Dogen and Tannisho anomalies. The claim was narrowed from a broad method-completion typology into a two-axis custody model.","falsifying_pressure":"Weaken if primary texts and practitioner reports show that post-insight authority is not distinguishable from tradition membership, or if achievement-driven practitioners are not especially prone to making methods into self-worth tests.","status":"under_dialogue","tags":["method-authority","burnout","achievement-pressure","practice-discernment","critique-mode"]},"practice_candidate":{"title":"The Authority Check","practice_line":"After practice, ask what still deserves your obedience.","purpose":"To help achievement-driven practitioners notice when a helpful method has become a private judge, and to return authority to conduct, care, community, or rest when appropriate.","target_human_problem":"Burnout and achievement-contingent self-worth.","target_cohort":"People already using reflective, contemplative, therapeutic, creative, or productivity methods who feel driven to prove they are doing them correctly.","non_fit":"Not for people in acute crisis, addiction withdrawal, severe depression, dissociation, or situations where professional care, rest, medication, direct action, or social support is the main need. It is also not for beginners who need simple consistency before meta-reflection.","duration":"7 minutes after an existing practice session or demanding work block.","frequency":"Three times per week for two weeks.","minimum_attempt":"Six brief checks before judging usefulness.","steps":["Finish the practice or work block without adding extra improvement tasks.","Write one sentence: What did this method help me see or do?","Write one sentence: What is it now asking me to obey?","Choose one custody path: keep using the method, embody one concrete action, ask a teacher or trusted person, rest from the method, or revise the method.","Name one ordinary act that would show the authority has moved into life: apologize, rest, finish a task, ask for help, stop checking, or serve someone.","Stop after seven minutes even if the answer feels incomplete."],"notice":["Whether the method feels like guidance or judgment.","Whether the body relaxes, tightens, or searches for another standard.","Whether the chosen custody path leads to clearer conduct within twenty-four hours."],"caution":"Do not use this practice to avoid necessary discipline, therapy, medical care, ethical repair, or hard conversations. If it increases rumination or self-surveillance, stop and use simpler support.","weakens_if":"Weakens if users report more rumination, less action, more shame about practice, or no change in their relationship to self-measurement after two weeks.","risk_level":"low","status":"seed","tags":["authority-check","burnout","self-worth","practice-test","low-risk"]},"tests":[{"title":"Prior Art Custody Search","test_type":"prior-art","target_type":"idea","prediction":"A close prior argument will likely exist for self-canceling methods, but not for the specific two-axis custody test across confirming, undermining, retained, abandoned, embodied, and Other Power cases.","result":"Pending. Current near-neighbors include Smith on Nagarjuna and Wittgenstein, Sells on unsaying, and MN 22 on the raft. These strongly overlap with release and dissolution, but do not yet appear to organize traditions by where authority goes after the method completes.","impact":"pending","next_action":"Search scholarship on upaya, spiritual direction, teacher authority, post-kensho training, practice-realization, Pure Land entrusting, and discursive tradition for close versions of the custody claim.","status":"proposed"},{"title":"Hybrid Boundary Test","test_type":"falsification-attempt","target_type":"idea","prediction":"If the custody model is useful, hybrid traditions should explicitly mark transitions between using, trusting, undermining, releasing, embodying, or surrendering a method.","result":"Pending. MN 22 and the Heart Sutra already suggest boundary pressure, while Dogen and Tannisho may violate simple release models.","impact":"pending","next_action":"Close-read primary passages and code each one for custody markers: text, teacher, community, vow, conduct, silence, grace, or no claimant.","status":"proposed"},{"title":"Achievement Practitioner Diary","test_type":"practice-report","target_type":"practice","prediction":"Achievement-driven practitioners using The Authority Check should report less method-as-judgment language and more concrete reentry actions after six attempts. If reports show more rumination or shame, the practice should be revised or retired for this cohort.","result":"Pending.","impact":"pending","next_action":"Run a small consent-based diary study with practitioners who already use reflective or contemplative methods, with exclusions for acute distress and addiction withdrawal.","status":"proposed"},{"title":"Verification Architecture Prediction","test_type":"cross-domain","target_type":"teaching","prediction":"Methods that transfer authority into embodied conduct or community should rely more on supervision, reentry signs, and ethical repair than on private certainty. Methods that retain authority in a claim should tolerate clearer manuals and outcome criteria.","result":"Pending.","impact":"pending","next_action":"Compare Advaita inquiry manuals, Zen post-kensho training accounts, Pure Land pastoral texts, and workplace behavior-change protocols for their verification architecture.","status":"proposed"}]}
+tokens used
+66,736
