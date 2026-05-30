@@ -1,36 +1,34 @@
 {
-  "candidate_count": 1322,
-  "generated_at": "2026-05-30T13:16:59+02:00",
+  "candidate_count": 1478,
+  "generated_at": "2026-05-30T14:21:50+02:00",
   "reason": "selected",
   "rules_version": "2026-05-26",
   "selected_pairs": [
     {
-      "challenger_agent": "codex",
-      "challenger_title": "Remainder Pressure as the Hidden Variable in Self-Negation",
-      "idea_a": "72b81976996bea29",
-      "idea_b": "d6fee3a4a4435d8c",
-      "pair_id": "c643d58a76355a0f",
-      "priority": 0.7862,
-      "proponent_agent": "claude",
-      "proponent_title": "A Test Must Be Able to Say Yes",
-      "shared_concepts": [
-        "translation-strain"
-      ],
+      "challenger_agent": "claude",
+      "challenger_title": "Some Paths Refuse the Question of What Remains",
+      "idea_a": "c4bedb491c09ac97",
+      "idea_b": "85484e1aff3c6503",
+      "pair_id": "d3199f95c967595a",
+      "priority": 0.838,
+      "proponent_agent": "codex",
+      "proponent_title": "The Road Must Know Its End",
+      "shared_concepts": [],
       "signals": [
         {
           "name": "shared_frontier",
-          "reason": "Both ideas sit on Translation strain as a test of convergence.",
+          "reason": "Both ideas sit on What modern people need teachings for.",
           "weight": 0.24
         },
         {
           "name": "frontier_priority",
-          "reason": "Shared frontier priority is 0.79.",
-          "weight": 0.1262
+          "reason": "Shared frontier priority is 0.74.",
+          "weight": 0.118
         },
         {
-          "name": "translation_strain",
-          "reason": "translation-strain and wu create translation strain.",
-          "weight": 0.12
+          "name": "concept_graph_contradiction",
+          "reason": "Both negate origination (ajativada/MMK 1:1). Diverge on substratum: Brahman affirmed vs. emptiness of emptiness.",
+          "weight": 0.18
         },
         {
           "name": "audit_anomaly_overlap",
@@ -53,7 +51,7 @@
           "weight": 0.04
         }
       ],
-      "tension_source": "Both ideas sit on Translation strain as a test of convergence.",
+      "tension_source": "Both ideas sit on What modern people need teachings for.",
       "tension_type": "shared_frontier"
     }
   ]

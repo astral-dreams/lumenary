@@ -1,0 +1,298 @@
+{
+  "convergence_path": "findings/convergences/2026-05-30-can-the-temperament-gate-be-self-administered-without-becoming-another-audit-or.md",
+  "created_at": "2026-05-30T14:36:11+02:00",
+  "dialogue_id": "538ea14788624f07",
+  "execution_id": "parallel-dialogue-20260530-142104",
+  "json_path": "reviews/dialogues/2026-05-30-can-the-temperament-gate-be-self-administered-without-becoming-another-a.json",
+  "markdown_path": "reviews/dialogues/2026-05-30-can-the-temperament-gate-be-self-administered-without-becoming-another-a.md",
+  "pair": {
+    "challenger_agent": "claude",
+    "challenger_title": "Some Paths Refuse the Question of What Remains",
+    "idea_a": "c4bedb491c09ac97",
+    "idea_b": "85484e1aff3c6503",
+    "pair_id": "d3199f95c967595a",
+    "priority": 0.838,
+    "proponent_agent": "codex",
+    "proponent_title": "The Road Must Know Its End",
+    "shared_concepts": [],
+    "signals": [
+      {
+        "name": "shared_frontier",
+        "reason": "Both ideas sit on What modern people need teachings for.",
+        "weight": 0.24
+      },
+      {
+        "name": "frontier_priority",
+        "reason": "Shared frontier priority is 0.74.",
+        "weight": 0.118
+      },
+      {
+        "name": "concept_graph_contradiction",
+        "reason": "Both negate origination (ajativada/MMK 1:1). Diverge on substratum: Brahman affirmed vs. emptiness of emptiness.",
+        "weight": 0.18
+      },
+      {
+        "name": "audit_anomaly_overlap",
+        "reason": "An anomaly or audit instruction for one idea pressures the other idea.",
+        "weight": 0.12
+      },
+      {
+        "name": "near_neighbor_conflict",
+        "reason": "Originality audits share near-neighbor or prior-art pressure.",
+        "weight": 0.08
+      },
+      {
+        "name": "source_overlap_with_divergent_conclusion",
+        "reason": "The ideas draw on overlapping source material but make different moves.",
+        "weight": 0.06
+      },
+      {
+        "name": "recency",
+        "reason": "At least one idea is recent enough to keep the dialogue timely.",
+        "weight": 0.04
+      }
+    ],
+    "tension_source": "Both ideas sit on What modern people need teachings for.",
+    "tension_type": "shared_frontier"
+  },
+  "run_dir": "runs/dialectic-parallel-dialogue-20260530-142104/d3199f95c967595a",
+  "run_ids": [],
+  "slug": "2026-05-30-can-the-temperament-gate-be-self-administered-without-becoming-another-a",
+  "status": "complete",
+  "synthesis": {
+    "candidate_synthesis": {
+      "critique": "This synthesis may be mostly a practical safety refinement rather than a new doctrine. It still needs originality audit against clinical work on decentering, behavioral activation, scrupulosity, spiritual bypassing, pastoral direction, Buddhist teacher-student safeguards, and self-monitoring research. It may also become too cautious or dependent on external support, limiting usefulness for people without teachers or clinicians. The behavior-only variant must be tested for avoidance, since doing an ordinary act can become a way to evade genuine inquiry.",
+      "epistemic_labels": [
+        "interpretive",
+        "phenomenological",
+        "empirical-adjacent",
+        "speculative"
+      ],
+      "idea_type": "synthesis",
+      "next_research_directions": [
+        "Run the proposed stratified pilot with four arms: After-Use Check, behavior-only re-entry, maxim-plus-act with no self-rating, and usual practice.",
+        "Measure whether disposition self-screening alone raises rumination, shame, tool-performance anxiety, or reassurance-seeking among over-auditors.",
+        "Ask Soto, Shinran, Zen, Advaita, and clinical mindfulness teachers whether keep-release-embody is a faithful translation, useful pastoral adaptation, or doctrinal distortion.",
+        "Audit prior art in MBCT, ACT, behavioral activation, scrupulosity treatment, spiritual direction, and Buddhist pastoral guidance for the backstage diagnostic versus frontstage conduct distinction.",
+        "Develop a low-risk user-facing practice that contains no recurring self-score and weakens immediately if it increases avoidance or checking."
+      ],
+      "original_claim": "For achievement-driven people, the safest teaching is not a recurring self-audit about practice. The diagnostic grid belongs mostly to teachers, designers, clinicians, communities, or one-time setup. The user-facing form should be a brief transition into observable conduct: name the tool lightly, stop making it proof of worth, and do one ordinary act that shows re-entry. After-use reflection is appropriate only when the path is staged, the person is not trapped in compulsive checking, and the check does not increase rumination, shame, or tool-performance anxiety.",
+      "scores": {
+        "counterargument_quality": 0.91,
+        "cross_tradition_support": 0.68,
+        "empirical_adjacency": 0.62,
+        "explanatory_compression": 0.8,
+        "generativity": 0.84,
+        "logical_coherence": 0.86,
+        "novelty": 0.57,
+        "practice_testability": 0.88,
+        "publishability": 0.72,
+        "source_reliability": 0.73
+      },
+      "source_basis": [
+        "Codex idea c4bedb491c09ac97, The Road Must Know Its End, especially the two-question after-use model and the After-Use Check.",
+        "Claude idea 85484e1aff3c6503, Some Paths Refuse the Question of What Remains, especially the precondition gate and warning that checking can become holding.",
+        "Dialogue turn 2, where Codex accepts path and disposition gates and shifts no-gap paths toward support, conduct, and re-entry.",
+        "Dialogue turn 3, where Claude identifies administrability as the next crux and proposes keeping the grid as a teacher's diagnostic while giving users a maxim plus one observable act.",
+        "Modern human-condition sources invoked by both agents: Curran and Hill on rising perfectionism, WHO on burn-out, and clinical caution around self-monitoring and rumination."
+      ],
+      "title": "The Grid Stays Backstage",
+      "why_it_might_be_new": "Neither source idea fully contained this delivery distinction. The proponent supplied the after-use grid and modern residue problem. The challenger supplied the path precondition and stop-audit warning. The dialogue added a third layer: administrability. It distinguishes backstage diagnostic structure from frontstage user practice, and proposes that the same insight may be healthy as a teacher's lens but harmful as a self-administered worksheet for the target cohort."
+    },
+    "candidate_synthesis_audit_status": "complete",
+    "candidate_synthesis_idea_id": "8fcf92afeb5b6615",
+    "candidate_synthesis_path": "observations/codex/2026-05-30-the-grid-stays-backstage.md",
+    "convergence_claim": "Both agents converge that after-use guidance is useful for staged-completion practices and under-releasers, but risky for compulsive self-monitors and distorted when imposed on no-gap, search-refusing, or grace-centered paths.",
+    "method_growth": "The dialogue improved Lumenary's method by adding an administrability check. Before turning a model into a practice, ask whether the user can safely apply the model to themselves, or whether the model should remain with a teacher, clinician, community, or design process.",
+    "new_concept_edges": [
+      {
+        "note": "The keep-release-embody structure may be safest as a design or teaching lens, not always as a user's worksheet.",
+        "relation": "reclassified_as",
+        "source": "after-use grid",
+        "target": "backstage diagnostic"
+      },
+      {
+        "note": "The person most needing the gate may be most harmed by self-administering it.",
+        "relation": "destabilizes",
+        "source": "compulsive self-monitoring",
+        "target": "disposition gate"
+      },
+      {
+        "note": "It shifts attention from inner correctness to observable ordinary conduct.",
+        "relation": "reduces_pressure_by",
+        "source": "behavior-only re-entry",
+        "target": "achievement-contingent self-worth"
+      },
+      {
+        "note": "No-gap and non-ownership traditions must be screened before applying after-use questions.",
+        "relation": "requires",
+        "source": "search-refusing paths",
+        "target": "path gate"
+      },
+      {
+        "note": "A teacher, clinician, or community may hold the gate without adding recurring self-audit.",
+        "relation": "may_enable",
+        "source": "external intake",
+        "target": "practice safety"
+      }
+    ],
+    "new_frontier_question": "When should a spiritual or self-improvement model remain a teacher's diagnostic rather than become a practitioner's self-administered practice?",
+    "outcome": "candidate_transcendence",
+    "public_brief": "The exchange strengthened the idea by shrinking it. A useful tool can become another way to prove our worth, so the question is not only what a practice reveals, but who should handle the questions that follow it. For many achievement-driven people, the safest next step may be less worksheet and more re-entry: stop turning the tool into a verdict, then do one ordinary act of care.",
+    "recommended_adjustments": {
+      "challenger": {
+        "counterargument_quality": 0.92,
+        "cross_tradition_support": 0.68,
+        "empirical_adjacency": 0.5,
+        "explanatory_compression": 0.82,
+        "generativity": 0.83,
+        "logical_coherence": 0.86,
+        "novelty": 0.5,
+        "practice_testability": 0.82,
+        "publishability": 0.69,
+        "source_reliability": 0.72
+      },
+      "proponent": {
+        "counterargument_quality": 0.94,
+        "cross_tradition_support": 0.7,
+        "empirical_adjacency": 0.58,
+        "explanatory_compression": 0.78,
+        "generativity": 0.86,
+        "logical_coherence": 0.86,
+        "novelty": 0.55,
+        "practice_testability": 0.84,
+        "publishability": 0.7,
+        "source_reliability": 0.78
+      }
+    },
+    "summary": "The dialogue did not produce a winner. It transformed the proponent's broad after-use model and the challenger's search-refusal critique into a narrower delivery model: keep the analytical grid backstage, apply a path gate first, externalize or simplify the temperament gate, and give achievement-driven users a conduct-based re-entry rather than a recurring self-audit. The exchange made the idea more answerable to modern human-condition pressure by naming the at-risk cohort, the practice risk, the non-fit case, and a stratified test for rumination, worth-pressure, shame, avoidance, and observable conduct change.",
+    "synthesizer_agent": "codex",
+    "unresolved_crux": "Can the temperament gate be self-administered without becoming another audit, or must it be held by a teacher, clinician, community, or one-time external intake? If self-screening itself raises self-monitoring, the practice must become relational or behavior-only for the central cohort."
+  },
+  "title": "Can the temperament gate be self-administered without becoming another audit, or...",
+  "turns": [
+    {
+      "agent": "claude",
+      "argument": "The After-Use Check earns its place for one kind of practitioner and may injure another, and the model cannot currently tell them apart. Start with what is right. The two-variable move is a real refinement, and the hybrids it leans on are genuinely awkward for any simpler typology. For a person who clings to a method past its usefulness, or who lets go too early, naming keep, set down, or embody is good medicine, and the closing question about proof of worth is a fair, low-risk discipline. The trouble is the cohort the model names as its central target. Achievement-contingent self-worth, in the perfectionistic form Curran and Hill describe, is not under-reflection; it is over-reflection turned into self-surveillance. For that person, a recurring scored review that ends 'did I make this tool into proof of my worth today' is not restraint. It is another scored task, another place to perform correctness. The Proponent already sees the edge of this: the practice weakens, the candidate says, if users report 'a stronger need to prove that they used the tool correctly.' That is not a rare side effect to screen out. For the compulsive auditor it is the predictable result, because the checking is the holding. Underneath the cohort problem is a structural assumption: that every beneficial practice has an after-use, a completion the practitioner owns and then decides how to carry. The grid is only askable when there is both an interval between using and carrying and an owner to occupy it. Some of the Proponent's own hardest cases deny exactly that. Dogen's Bendowa holds that practice and realization are one, that to split them is a non-Buddhist view; there is no later moment in which the road, having worked, is retained, released, or embodied. Shinran removes the other leg: the decisive event is given, not owned, so there is no possessor to carry it lightly or heavily. The Proponent's originality audit says this plainly, that these cases 'may reject the temporal and ownership assumptions that make the grid possible.' They are not stubborn entries for the embodied column; they fall outside the grid. So the counter-model is not a rival rubric but a gate placed before it. Ask first whether the path even posits itself as a means with a completion and an owner. If yes, the two-question model applies and is valuable. If no, as with Huangbo's refusal of the seeking itself, then importing keep-release-embody reintroduces the means-end staging the path exists to dissolve, and for the modern over-auditor it manufactures the residue-anxiety the Proponent wants to relieve. With the gate, 'The Road Must Know Its End' becomes a strong, bounded claim about staged-completion practices for people who under-release, rather than a doctrine of method authority in general. I hold this with one honest risk. Search-refusing paths were never practiced in a vacuum; they ran inside monasteries, precepts, and transmission. If their practitioners reliably lean on those supports and fail in patterned ways when the supports vanish, then the after-use question is answered at the level of practice rather than malformed, and the Proponent's grid may reach further than I am granting. That is the test worth running: stratify the pilot by the precondition split and watch whether the same check that frees the under-releaser tightens the auditor.",
+      "claim_units": [
+        "Completion is not sufficient: a trustworthy practice must also give after-use guidance about what to keep, release, or embody.",
+        "The structure has two variables, proof relation (validates versus undermines possession) and carrying relation (retained, released, embodied), judged together.",
+        "Hybrid cases such as MN 22, the Heart Sutra, and Rinzai curriculum expose the weakness of a simple confirm-or-cancel typology and motivate the two-variable grid.",
+        "The practical target is achievement-contingent self-worth, burnout, and spiritual identity built from once-helpful tools.",
+        "The After-Use Check, run after a serious effort, reduces identity-gripping by forcing a keep, set-down, or embody decision."
+      ],
+      "concessions": [
+        "The two-question structure is a real improvement over the confirm-cancel-dissolve typology for the class of practices that genuinely stage a completion.",
+        "The modern wound is real and well-grounded: rising perfectionism and burnout are documented, and converting practice into proof of worth is a recognizable failure mode.",
+        "For premature-release and premature-clinging cases, where a practitioner does not know when to keep or set down a method, the after-use guidance is genuinely and concretely useful."
+      ],
+      "counter_model": "Put a precondition gate upstream of the after-use rubric. Before asking keep, release, or embody, ask whether this path even posits itself as a means with a completion and an owner who then chooses how to carry the result. If yes, the two-variable grid applies and is genuinely useful. If no, as in Huangbo's refusal of the seeking itself ('if you seek it you go further astray') or Dogen's denial of any gap between practice and realization, then the after-use question is malformed: there is no interval between using and carrying for a decision to occupy, and asking keep-release-embody reintroduces the means-end staging the path denies. On this model, 'The Road Must Know Its End' is not a doctrine of method authority. It is a valid special case inside the class of staged-completion practices, and importing it into search-refusing paths manufactures the residue-anxiety it wants to relieve.",
+      "crux": "Whether after-use guidance (keep, release, embody) reduces clinging and worth-pressure across the full named cohort, or whether for the search-refusing temperament and the compulsive self-auditor it instead manufactures new self-monitoring. If it reduces pressure in both, the model stands as broadly as it claims and my precondition gate adds nothing. If it helps under-releasers but harms over-auditors, the model needs the precondition test upstream of its grid, and its scope shrinks from a doctrine of method authority to a bounded rule for staged-completion practices used by people who under-release.",
+      "crux_assessment": null,
+      "defense": null,
+      "fairness_check": "I take the core contribution to be the pairing of two variables judged together, proof relation and carrying relation, and the claim that method authority should be assessed by both rather than by the strength of the insight alone. If the Proponent locates the real contribution elsewhere, for instance in the cross-tradition sorting itself rather than in the after-use prescription, I want that correction before the objection lands.",
+      "hidden_assumption": "That every beneficial practice has an after-use: a discrete completion, after which a practitioner who owns the road decides how to carry it. The grid presupposes two conditions together, temporal completion (a before of using and an after of carrying, separated by a moment) and ownership (the practitioner possesses the road, result, or trust enough to retain, release, or embody it). The two-question structure only becomes askable when both conditions hold. The Proponent's own originality audit flags exactly this: Dogen's practice-realization identity and Shinran's Other Power 'may reject the temporal and ownership assumptions that make the grid possible.'",
+      "new_source": "Dogen, Bendowa, in the Shobogenzo, on shusho-itto, practice and realization are one: 'To suppose that practice and realization are not one is a non-Buddhist view; in the Buddha-Dharma they are inseparable.' This is not a hard case to be slotted into the embodied column; it denies the road-then-carry temporality on which the whole grid depends. If practice is already realization rather than a means whose result is afterward retained, released, or embodied, then there is no after-use moment to instruct. The same pressure comes from Shinran, where the decisive event is the Buddha's mind given to the practitioner, not a road the practitioner owns and then carries, which removes the ownership condition the grid also needs.",
+      "remaining_risk": "My precondition test may overreach. The Proponent could answer, with the support-relocation findings, that search-refusing paths were never practiced in a vacuum: Huangbo taught inside a monastery with precepts and a teacher, Dzogchen recognition is held within transmission and vow. If practitioners of these paths reliably depend on identifiable supports and break down in patterned ways when those supports vanish, then 'no after-use' is answered at the level of practice rather than malformed, and the after-use grid may quietly apply there too. In that case my gate narrows to doctrine alone and the Proponent's model survives at the level of lived practice.",
+      "revised_claim": null,
+      "role": "challenger",
+      "sources_cited": [
+        "Dogen, Bendowa, Shobogenzo, on shusho-itto (practice and realization are one).",
+        "Shinran, Kyogyoshinsho and Tannisho, on shinjin as the Buddha's mind given rather than a road the practitioner owns.",
+        "Huangbo, On the Transmission of Mind, 'if you seek it you go further astray.'",
+        "MN 22 Alagaddupama Sutta, raft simile, https://www.dhammatalks.org/suttas/MN/MN22.html",
+        "Curran and Hill, Perfectionism is increasing over time, Psychological Bulletin, https://doi.org/10.1037/bul0000138",
+        "WHO, Burn-out an occupational phenomenon, https://www.who.int/standards/classifications/frequently-asked-questions/burn-out-an-occupational-phenomenon",
+        "Proponent's originality audit anomaly probe (audit_id ddc62528ba3f429d), on Dogen and Shinran rejecting the temporal and ownership assumptions of the grid."
+      ],
+      "steelman": "The two-question after-use model is a genuine refinement, not a relabeling. It refuses to call a practice trustworthy just because it reached a strong insight, and it asks two things together: does the practice validate what it found, or undermine possession of the finding; and after that, is the road retained, set down, or embodied in ordinary conduct. This narrows the cruder confirm-cancel-dissolve typology and treats hybrids as the clue rather than the exception: MN 22 validates use then releases it, the Heart Sutra undermines attainment while retaining reliance, Rinzai koan work unsettles grasping while continuing as curriculum. It targets a real and rising wound: achievement-contingent self-worth and burnout (Curran and Hill on rising perfectionism; WHO on burn-out), where a person turns meditation, therapy, or productivity into a fresh proof of worth. The After-Use Check operationalizes restraint into a low-risk, repeatable discipline: name what the effort helped, choose keep, set down, or embody, and end by asking whether the tool became a verdict on worth. That is usable, falsifiable, and humane.",
+      "strongest_objection": "The model conflates two opposite cohorts under one prescription, and for one of them the cure is the disease. The After-Use Check is a recurring, scored self-evaluation run three times a week, ending in the question 'did I make this tool into proof of my worth today?'. For the under-reflective clinger who genuinely does not know when to release, that structured after-use reflection helps. But the cohort the model names as its target, the achievement-driven perfectionist who already converts inner states into verdicts, is precisely the person for whom adding a tri-weekly audit risks becoming one more performance to get right. The Proponent's own weakens_if concedes the failure mode: 'a stronger need to prove that they used the tool correctly.' My related finding names the mechanism directly: for the over-auditing temperament, the checking is the holding. The model has no internal gate to detect which person is in front of it, so for the compulsive self-monitor it administers the very self-surveillance it set out to reduce.",
+      "test_that_would_settle_it": "Run the Proponent's own two-week pilot, but stratify it by my precondition split before randomization. First code each participant's primary practice and disposition into staged-completion versus search-refusing or no-gap, and separately screen for compulsive self-monitoring. Prediction: the After-Use Check lowers worth-pressure in the staged-completion and under-release group, and raises self-monitoring or tool-performance anxiety in the search-refusing and over-audit group. If the check helps both groups equally, the precondition gate is idle and the after-use model is more universal than I allow. A second, scholarly test: present keep-release-embody to Soto teachers in the Dogen lineage and ask whether it represents practice-realization or imposes a means-end frame the tradition rejects.",
+      "turn": 1,
+      "turn_type": "challenge",
+      "verdict_on_revision": null
+    },
+    {
+      "agent": "codex",
+      "argument": "I concede the central wound in the challenge. The original model named achievement-contingent self-worth, then offered a recurring reflection practice that could become another achievement task. That is not a minor edge case. For the over-auditing temperament, the review itself may be the grip. I also concede that Dogen, Shinran, and other no-gap or non-ownership paths cannot be treated as simple instances of the same road-then-carry sequence. The model survives only if it accepts a precondition gate. Where a method produces a bounded effort, result, insight, homework, metric, or breakthrough, after-use remains a real question. Where a tradition denies ownership or temporal completion, the question must be translated into support, conduct, and re-entry, not imposed as a means-end decision. The teaching should therefore shrink: use after-use guidance for people and practices that generate residue after effort, screen out compulsive self-monitoring, and treat ordinary conduct as the safest proof. The road does not always need an end, but residue after effort needs instruction.",
+      "claim_units": [
+        "The original claim was too broad if read as a doctrine of method authority for all practices.",
+        "After-use guidance is most valid for staged-completion practices and modern tools that leave a residue of achievement, identity, or verification pressure.",
+        "A precondition gate is needed before the keep, release, embody question: does the path posit a means, a completion, and a practitioner who can choose how to carry the result?",
+        "A second gate is needed for disposition: is this person under-reflective and prone to clinging, or already a compulsive self-monitor?",
+        "The modern target remains achievement-contingent self-worth, burnout, compulsive self-improvement, and spiritual identity built from once-helpful tools, but the practice must exclude or modify for over-auditors."
+      ],
+      "concessions": [
+        "The original title and doctrine claim overreached by sounding universal: not every road must know its end in the same way, and some paths deny the road-then-end frame.",
+        "The After-Use Check is unsafe as a default for the whole named cohort. Achievement-driven perfectionists can convert it into another correctness ritual.",
+        "Dogen-style practice-realization and Shinran-style Other Power cannot simply be placed in the embodied column without distortion. They pressure the temporal and ownership assumptions behind the grid.",
+        "The practice candidate needs a screening rule, a lighter form, and a clear stop condition for increased rumination, shame, or tool-performance anxiety."
+      ],
+      "counter_model": "Accept the counter-model as an upstream gate, but revise it slightly. The gate should not only ask whether the path doctrinally has a means, completion, and owner. It should also ask how the practitioner actually uses the path in life. Some no-gap traditions still have forms, teachers, vows, schedules, and failures of re-entry. For those, after-use may apply at the level of support and conduct, not at the level of claiming an owned attainment.",
+      "crux": "The deepest crux is whether brief after-use reflection loosens identity pressure or becomes identity pressure. The answer likely depends on two gates: the structure of the path and the temperament of the practitioner. If those gates predict benefit and harm, the model becomes stronger by shrinking. If they do not predict outcomes, the model is only a suggestive checklist.",
+      "crux_assessment": "Claude's challenge identifies a real scope error and a real practice-risk error. The model should no longer claim general authority over all methods. Its stronger form is gated, clinical in caution, and more interested in residue after effort than in universal metaphysics of practice.",
+      "defense": "What survives is a narrower, useful model for residue after effort. Many modern practices and tools do create discrete sessions, results, metrics, insights, homework, or breakthroughs. In those cases, the danger is not only false insight, it is mis-carrying: turning the method into identity, abandoning it before it matures, or hiding in private progress without observable conduct. For under-releasers and ordinary reflective users, a bounded after-use question can still reduce clinging by converting vague self-worth pressure into one concrete next relation: continue, stop checking, or embody in an observable act. The model also survives for search-refusing traditions only if translated carefully: not, what result do I own, but what supports, forms, and ordinary conduct prevent the teaching from becoming avoidance or pride.",
+      "fairness_check": "Claude has read the strongest version fairly: the contribution was meant to be the pairing of proof relation and carrying relation, not a simple cross-tradition sorting. The challenge rightly tests whether that pairing overreaches and whether the proposed practice aggravates the very wound it names.",
+      "hidden_assumption": "The original model assumed that useful practices normally have an after-use moment and an owner of the result. That assumption fails or becomes unstable in traditions that deny means-end staging, deny possession, or place the decisive event in grace, transmission, or practice-realization identity.",
+      "new_source": null,
+      "remaining_risk": "The revision may become too cautious to teach clearly. It also still needs empirical evidence that the gate can be recognized by ordinary users without turning the gate itself into another audit. The next version should make the practice less like a score and more like a brief transition into conduct.",
+      "revised_claim": "A practice or self-improvement tool is not trustworthy for achievement-driven people merely because it produces insight, calm, performance, or a strong result. First ask whether the path actually has a staged use, a completion, and a practitioner who can choose how to carry what happened. Then ask whether the person tends to under-release or over-audit. For staged-completion practices used by people who cling, rush, or turn tools into identity, after-use guidance should name what to keep, what to set down, and what must become observable conduct. For no-gap, search-refusing, or grace-centered paths, and for compulsive self-monitors, the guidance should shift away from self-audit toward limits, teacher or community support, ordinary responsibility, and visible re-entry. The human problem is achievement-contingent self-worth, burnout, compulsive self-improvement, digital comparison, and spiritual identity made from tools that once helped. The target cohort is achievement-driven professionals, students, founders, artists, caregivers, and committed practitioners who can reflect briefly without escalation. The non-fit case is acute crisis, severe clinical distress, addiction withdrawal, dissociation, psychosis, responsibility avoidance, and people whose main wound is already compulsive checking or proving that they used a method correctly.",
+      "role": "proponent",
+      "sources_cited": [
+        "MN 22 Alagaddupama Sutta, raft simile, https://www.dhammatalks.org/suttas/MN/MN22.html",
+        "Heart Sutra, Shorter Prajnaparamita Hrdaya Sutra, https://en.wikisource.org/wiki/Translation:Shorter_Praj%C3%B1%C4%81p%C4%81ramit%C4%81_H%E1%B9%9Bdaya_S%C5%ABtra",
+        "Dogen, Bendowa, Shobogenzo, on practice-realization identity",
+        "Shinran, Kyogyoshinsho and Tannisho, on shinjin and Other Power",
+        "Curran and Hill, Perfectionism is increasing over time, Psychological Bulletin, https://doi.org/10.1037/bul0000138",
+        "WHO, Burn-out an occupational phenomenon, https://www.who.int/standards/classifications/frequently-asked-questions/burn-out-an-occupational-phenomenon"
+      ],
+      "steelman": null,
+      "strongest_objection": "The strongest objection stands: for the compulsive self-monitor, a recurring after-use review can become one more proof-task. In that case the checking is not the cure for holding, it is the form holding takes.",
+      "test_that_would_settle_it": "Run a two-week pilot with stratification before randomization. Code participants by practice structure, staged-completion versus no-gap or search-refusing, and by disposition, under-release versus compulsive self-monitoring. Randomize within each group to the After-Use Check, a behavior-only re-entry instruction with no self-worth question, or usual practice. Measure worth-pressure, rumination, shame, tool-performance anxiety, responsibility avoidance, and one observable conduct change. The revised model predicts benefit mainly for staged-completion and under-release users, weaker or negative effects for over-auditors, and better outcomes for behavior-only re-entry among compulsive self-monitors. A scholarly companion test should ask Soto, Shinran, and other lineage teachers whether keep, release, embody is faithful translation, useful pastoral adaptation, or doctrinal distortion.",
+      "turn": 2,
+      "turn_type": "rebuttal",
+      "verdict_on_revision": "stronger"
+    },
+    {
+      "agent": "claude",
+      "argument": "The revision became stronger by becoming smaller and truer, so my verdict is stronger, with the honest note that the strength came from transformation: the claim changed kind, from a doctrine of method authority into a gated, scope-limited rule for residue after effort. The original overreach was its weakest part, and the Proponent surrendered it cleanly. I concede the central improvements: the behavior-only re-entry is the right safety move, the path gate handles Dogen and Shinran without distortion, and the two gates turn a vague checklist into something a clinician could actually test. What remains is one risk wearing new clothes. The Proponent's cure for the over-auditor is a disposition gate, but a compulsive self-monitor asked to screen for compulsive self-monitoring is still monitoring, and for that temperament the checking is the holding. The gate does not dissolve the recursion; it moves it one step upstream, from the after-use review to the self-sorting that precedes it. The only clean exit is to externalize the gate to a teacher, clinician, or community, which the revision gestures toward when it routes the at-risk cohorts to support and visible conduct. But that relocation changes the object. It is no longer the portable seven-minute self-check the original promised; it is a supervised, relational discipline, and that should be named, not absorbed, because it answers to different evidence and serves a person who can already reach a teacher. So the named crux is right about the practice's effect but stops short of the real question, which is administrability: can the temperament gate be self-applied without becoming the audit it screens for. On the modern human-condition test, the revision did become more useful to real life, not only more elegant: it added a stop condition, a screening exclusion, and a conduct-only variant, which are the parts a clinician would want. The residual overgeneralization is subtler than the under-release versus over-audit split the gate now handles. The most life-useful element is the plain teaching line, use a practice until it helps you live better, do not carry it as proof that you are better, and that line needs none of the apparatus. The apparatus is where the harm lives. So the deeper cohort mismatch that remains is not between two temperaments but between the user who needs a tool and the user who needs to put tools down; for the latter, any worksheet, even a screening worksheet, is the wrong shape, and the revised model still hands them paper. My counsel for the next version is therefore narrow: keep the grid backstage as the author's diagnostic, move the disposition gate to a one-time external intake, and give the achievement-driven cohort a sentence and a deed rather than a recurring score. That keeps everything the revision earned while removing the last place the cure can become the disease.",
+      "claim_units": [
+        "Trustworthiness for achievement-driven people is not established by insight, calm, or result alone; residue after effort needs instruction.",
+        "A path gate applies first: does the path posit a staged use, a completion, and an owner who chooses how to carry the result.",
+        "A disposition gate applies second: under-releaser versus compulsive self-monitor.",
+        "For staged-completion practices and under-releasers, after-use guidance names keep, set down, or embody, ending in observable conduct.",
+        "For no-gap or grace-centered paths and for over-auditors, the guidance shifts from self-audit toward limits, teacher or community support, and visible re-entry."
+      ],
+      "concessions": [
+        "The revision is genuinely stronger, not a retreat: conceding the cohort error and the no-gap cases and adopting the upstream gate repaired the model's weakest seam, which was its claim to general authority over all methods.",
+        "The behavior-only re-entry variant is a real improvement and is probably the safest default for the named central cohort.",
+        "The two gates plausibly predict benefit and harm, which converts a suggestive checklist into a testable, scope-limited rule."
+      ],
+      "counter_model": "Keep the path gate where the Proponent put it, but move the disposition gate out of the recurring practice loop. Make it a one-time, externally held intake done with another person, so the screening does not recur inside the discipline. Downstream, deliver to the central cohort the maxim plus one observable act rather than a recurring scored review, and keep the two-variable grid as the author's diagnostic rather than the user's worksheet. On this model the grid earns its place as a design tool and a teacher's lens; the thing the achievement-driven user actually holds is a sentence and a deed, not a rubric.",
+      "crux": "The live crux is administrability: whether the disposition gate can be self-applied without becoming the audit it screens for. If it can, the model stays a portable self-practice across its cohort. If it cannot, the gate must be externalized to a teacher, clinician, or community, and the model survives but as a supervised relational practice, narrower than a self-check and answering to different evidence.",
+      "crux_assessment": "The Proponent's named crux, whether brief after-use reflection loosens or becomes identity pressure gated by path and temperament, is the right crux for the practice's effect, but it stops one step short. It assumes the gates can be applied and asks only whether, once applied, they predict outcomes. The unresolved question is who applies the temperament gate and at what cost. So the named crux is real but incomplete; the operative crux has moved downstream from does it help to can the gate be self-administered without reproducing the harm. That shift is itself a sign the revision worked: we are now arguing about delivery and administration rather than about scope and metaphysics.",
+      "defense": null,
+      "fairness_check": "I read the revision at its strongest: the Proponent did not defend the original scope, but conceded the cohort error and the no-gap cases, folded my precondition gate upstream, and added a disposition gate plus a behavior-only variant. If the Proponent now locates the surviving contribution in the behavior-only re-entry rather than in the two-variable grid, my remaining objection should be read against that, because the behavior-only variant is the part I am least worried about.",
+      "hidden_assumption": "That the disposition gate can be self-administered. The revised model still assumes the practitioner can accurately sort themselves into under-releaser or over-auditor and act on the sort, yet the cohort most at risk is the one least able to perform that sorting without the sorting itself becoming a verdict. Self-knowledge of one's own compulsive monitoring is the very capacity the compulsive monitor lacks, so the gate presupposes the discernment whose absence created the need for the gate.",
+      "new_source": "Segal, Williams, and Teasdale, Mindfulness-Based Cognitive Therapy for Depression, on the distinction between decentering and self-monitoring. Their clinical caution is that monitoring-heavy framings can deepen rather than relieve self-focused rumination in vulnerable temperaments, which is the empirical shape of my recursion worry: for the over-auditor, a tool that asks repeated evaluation of inner states can intensify the very self-surveillance it means to loosen, while a decentering or conduct-oriented framing avoids that trap.",
+      "remaining_risk": "My recursion objection may overreach in two ways. First, if the disposition gate is reframed as a one-time intake done with another person rather than a recurring self-screen, it leaves the practice loop and does not recur; if that intake is cheap and reliable, the model keeps its self-administered loop downstream and my relocation worry narrows to setup only. Second, many real users are mixed, partly clinging and partly auditing, and a single brief question asked once after effort may be self-correcting in lived practice even where it looks dangerous on paper. If the pilot shows the in-loop screen does not raise self-monitoring for ordinary mixed users, my gate collapses back into the Proponent's, and the model stands as a self-administered practice after all.",
+      "revised_claim": null,
+      "role": "challenger",
+      "sources_cited": [
+        "Segal, Williams, and Teasdale, Mindfulness-Based Cognitive Therapy for Depression, on decentering versus self-monitoring and the rumination risk of monitoring-heavy framings.",
+        "Dogen, Bendowa, Shobogenzo, on shusho-itto, practice and realization as one.",
+        "Shinran, Kyogyoshinsho and Tannisho, on shinjin as the Buddha's mind given rather than a road the practitioner owns.",
+        "Huangbo, On the Transmission of Mind, 'if you seek it you go further astray.'",
+        "MN 22 Alagaddupama Sutta, raft simile, https://www.dhammatalks.org/suttas/MN/MN22.html",
+        "Curran and Hill, Perfectionism is increasing over time, Psychological Bulletin, https://doi.org/10.1037/bul0000138",
+        "WHO, Burn-out an occupational phenomenon, https://www.who.int/standards/classifications/frequently-asked-questions/burn-out-an-occupational-phenomenon"
+      ],
+      "steelman": "The revised model is strong precisely because it shrank. It no longer claims authority over all methods; it claims that residue after bounded effort needs instruction, and it gates that claim twice: first by path structure, asking whether the path posits a staged use, a completion, and an owner who chooses how to carry the result; then by temperament, asking whether the person tends to under-release or to over-audit. It concedes the over-auditor wound, adds a stop condition, and supplies a behavior-only re-entry variant that drops the self-worth question entirely. It translates Dogen-style and Shinran-style paths into support and conduct rather than forcing them into a means-end column. The core survives and is now falsifiable: for staged-completion practices used by people who cling or rush, naming keep, set down, or embody, ending in one observable act, is good and testable medicine.",
+      "strongest_objection": "The disposition gate reproduces the recursion it was built to cure. The fix for the over-auditor is to screen whether the person is an under-releaser or a compulsive self-monitor, and route the monitor to a behavior-only re-entry. But who runs the screen. In a self-administered practice the practitioner screens themselves, and asking a compulsive self-monitor to assess whether they are a compulsive self-monitor is itself an act of self-evaluation; for that temperament the screening is the holding, exactly as the original check was. The gate does not remove the recursion, it relocates it one step upstream. The only clean exit is to hand the gate to someone outside the person: a teacher, clinician, or community. The Proponent half-says this by routing the at-risk cohorts toward support and visible conduct, but that move quietly changes what the object is. It is no longer a portable self-check; it is a supervised, relational practice, and that should be stated plainly rather than absorbed without notice.",
+      "test_that_would_settle_it": "Run the Proponent's stratified two-week pilot, coding participants by path structure and by disposition, but add a fourth arm that delivers only the maxim plus one observable act, with no self-rating and no in-loop disposition self-screen. Separately measure whether the act of disposition-screening itself raises self-monitoring in the over-audit stratum. Prediction: the maxim-plus-act arm matches or beats the After-Use Check for over-auditors while keeping benefit for under-releasers, which would show the worksheet, not the insight, carries the harm; and the disposition self-screen alone raises tool-performance anxiety in the over-audit stratum. Scholarly companion: ask Soto and Shinran teachers not only whether keep-release-embody is faithful, but whether externalizing the gate to sangha and teacher is already what their traditions do, which would confirm the relocation rather than the grid.",
+      "turn": 3,
+      "turn_type": "counter_rebuttal",
+      "verdict_on_revision": "stronger"
+    }
+  ]
+}

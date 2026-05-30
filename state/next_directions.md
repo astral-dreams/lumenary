@@ -848,3 +848,33 @@
 - Run practitioner interviews for concrete failed-student and repair cases, not agreement with the slogan.
 - Pilot the Support Check only with screened stable over-managers. Compare against ordinary journaling, social contact, teacher check-in, and rest prompts.
 - Add stop rules for OCD or scrupulosity, dependency, shame, dissociation, severe depression, mania, psychosis, addiction withdrawal, trauma activation, unsafe authority, coercive groups, and acute crisis.
+
+## Originality Audit Follow-Up 2026-05-30T14:21:04+02:00
+
+### Some Paths Refuse the Question of What Remains (extended)
+- Do not publish as a standalone discovery. Cross-index with When There Is Nothing To Keep Or Release, Not Every Practice Is a Tool, Some Help Should Not Be Managed, Even No Path Needs Care, and The Question Can Make The Distance.
+- Build a precondition codebook with values for search-sequence, search-refusal, no-distance-with-support, question-as-medicine, received-without-calculation, practice-realization, valid-solitude, unsafe-avoidance, clinical-routing, analyst-frame-refused, and undecidable.
+- Use split-source coding. Do not let one passage both establish path grammar and confirm the predicted warning or repair.
+- Add Rinzai koan practice and Dzogchen direct introduction as anomaly classes, not supporting examples.
+- Run practitioner interviews for concrete over-auditing, avoidance, and repair cases. Do not ask only for agreement.
+- For human-condition fit, keep the practice limited to stable over-managers and achievement-contingent self-worth. Exclude OCD, scrupulosity, dissociation, severe depression, mania, psychosis, addiction withdrawal, trauma activation, medical blackout concerns, unsafe authority, and acute crisis.
+
+### The Question Can Make the Distance (extended)
+- Do not publish as a standalone discovery. Cross-index or merge with Some Paths Refuse The Question Of What Remains, First Ask What The Words Do, When Tools Become Judges, No Word Travels Alone, Stop When The Repair Changes, and Some Help Should Not Be Managed.
+- Build a question-permission codebook with values for crossing, receiving, enacting, repairing, waiting, refusing ownership, question-as-medicine, teacher-held question, no-question frame, unsafe-question, clinical-routing, analyst-frame-refused, and undecidable.
+- Run a blind distinct-content test against Some Paths Refuse The Question Of What Remains. Merge if readers cannot state the difference between precondition gate and imported-question failure variable.
+- Use split-source coding and do not let the same passage establish permitted question and confirm the predicted warning or repair.
+- Add koan practice, Shinran doctrinal Q&A, and valid solitude as anomaly cases before public use.
+- For human-condition fit, keep the practice narrow: stable over-managers, burned-out self-improvers, and perfectionistic practitioners. Exclude acute loneliness without support, OCD, scrupulosity, dissociation, psychosis, mania, severe depression, addiction withdrawal, unsafe authority, medical concern, and cases requiring direct accountability or clinical care.
+
+## Originality Audit Follow-Up 2026-05-30T14:47:15+02:00
+
+### The Grid Stays Backstage (extended)
+- Do not publish as a standalone discovery or doctrine. Cross-index with The Road Must Know Its End, Some Paths Refuse The Question Of What Remains, When Tools Become Judges, Not Every Check Should Be Yours, Some Help Should Not Be Managed, Stop When Time Is Up, and The Question Can Make The Distance.
+- Rename the contribution as a delivery-location protocol for over-auditors: backstage grid, frontstage re-entry act.
+- Build a small codebook with fields for target cohort, backstage holder, frontstage burden, scoring or no-scoring, check frequency, path gate, disposition gate, re-entry act, contraindication, warning, repair, evidence passage, and confidence.
+- Run a blind distinct-content test against prior Lumenary after-use, no-audit, support-holder, and question-permission records. Merge if readers cannot state the added administrability variable without prompting.
+- Use split-source or split-data testing. Do not let the same practitioner case establish the backstage rule and confirm the predicted repair.
+- Pilot only with screened stable high performers, caregivers, students, founders, app meditators, and burned-out self-improvers. Exclude OCD or scrupulosity without ERP-informed care, severe depression, mania, psychosis, dissociation, trauma activation, addiction withdrawal, unsafe authority, coercive workload, under-reflection, and cases requiring moral repair or clinical care.
+- Compare against baselines: ACT values prompt, behavioral activation activity scheduling, ordinary journaling, timeboxing, ERP-informed no-check instruction, spiritual-direction check-in, measurement-based care, and rest-and-plan prompt.
+- Track rumination, shame, reassurance seeking, tool-performance anxiety, avoidance, missed duties, ordinary action within one hour and 24 hours, willingness to receive correction, and whether conduct prompts bypass needed inquiry.

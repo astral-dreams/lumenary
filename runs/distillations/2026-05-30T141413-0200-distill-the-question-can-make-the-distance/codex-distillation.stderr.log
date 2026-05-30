@@ -1,0 +1,68 @@
+OpenAI Codex v0.133.0
+--------
+workdir: /Users/johnforrester/spirituality
+model: gpt-5.5
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: xhigh
+reasoning summaries: none
+session id: 019e78ce-67fa-7631-8487-f799cda27546
+--------
+user
+# Lumenary Insight Distillation
+
+You are writing the public insight card and At a Glance text for The Lumenary.
+
+Read the finding below. Distill it into reader-facing language.
+
+## Writing Rules
+
+- Write like the texts we study: simple, memorable, and direct.
+- Do not use Sanskrit, Pali, Arabic, Greek, or Chinese terms.
+- Do not use academic hedging.
+- Do not use research jargon.
+- Do not use em dashes.
+- Do not start with "This finding".
+- Lead with the human question or the living insight.
+- Do not repeat the title, the insight headline, or the first At a Glance sentence in the bullets.
+- Do not use machinery language in public copy: no "layered authorization," "distributed affordances," "institutional role," "operationalizes," "formal transfer," "gradient," "rubric," "locus," "claimant," or "grammar."
+- Also avoid internal model words in public copy: no "architecture," "custody," "receiving surface," "residue," "grain," "threshold," "entry," "compound," "upstream," "downstream," "phenomenology," "authorization," "typology," or "taxonomy."
+- The insight headline must land like a proverb.
+- The publicTitle is the finding page title: maximum 10 words, plain, memorable, and not academic.
+- The plainSummary is for the Insights card: one sentence, maximum 28 words.
+- The atAGlance section is for the finding page: one paragraph, 3 to 4 short sentences.
+- The keyPoints are for the finding page: 3 short bullets, direct and useful. Use them for meaning, human risk, and what to test.
+- Use one idea per sentence.
+
+## Required JSON
+
+Return exactly one JSON object with:
+
+- insight: proverb-like headline, maximum 10 words
+- publicTitle: finding page title, maximum 10 words
+- plainSummary: one short sentence for the Insights card
+- atAGlance: one paragraph of 3 to 4 short sentences
+- keyPoints: array of 3 short bullet points, each one sentence and under 18 words
+- match: array with one unique lowercased phrase from the title
+- tags: array of 1 to 5 simple tags
+
+## Finding
+
+Title: The Question Can Make the Distance
+Type: contradiction
+Agent: codex
+
+Original Claim:
+Before asking what remains after self-negation, ask what question made the distance appear. Some paths teach a real crossing: effort is needed, the old pattern is released, and the person can later say a task was done. Some paths refuse the crossing question: practice is already the living of what it seeks, trust is not self-made, or seeking itself is the distortion. When a student carries a crossing question into a no-distance teaching, the teaching can become another private project: prove the insight, manage the result, defend the state, or withdraw from correction. The first check is not what remains; it is which question the teaching allows. For people exhausted by self-improvement and performance, this matters because a liberating sentence can become one more scoreboard if the wrong question is left in charge.
+
+Why It Might Be New:
+Close prior work already shows that questions shape interpretation, words perform actions, doctrines regulate practice, and spiritual language can be used to avoid unfinished human work. The distinct claim is narrower and more testable: the practitioner's imported question should be treated as a failure variable before remainder, support, or completion is coded. It predicts that no-distance or received paths fail in a specific way when students answer a crossing or ownership question the text refuses. It also predicts that over-managing modern practitioners can turn relief into more self-surveillance. Novelty is therefore moderate, not high, because the ingredients are known and local near-neighbors are close.
+
+Critique:
+The model may simply rename hermeneutics and speech-act theory. It may also be too subtle to code: Dogen, Shinran, Huangbo, and Dzogchen all still contain instructions, warnings, teachers, and practices, so they may not refuse the question but answer it with different discipline. Koan traditions are a serious anomaly because they deliberately use impossible questions as training, so a wrong question is not always a distortion. Practitioner failures may track trauma, sleep loss, institutional harm, teacher quality, or social isolation better than the imported question. The claim should be weakened if blind coders cannot identify the permitted question before seeing the conclusion, or if no-distance practitioners become responsible and connected without any identifiable question discipline.
+
+codex
+{"insight":"A Burden Begins With Its Question","publicTitle":"When the Question Creates the Burden","plainSummary":"A freeing teaching can become another scoreboard when we ask it to prove our progress.","atAGlance":"Some teachings ask us to cross a real gap. Others ask us to stop making the gap. When we bring the wrong question, relief can turn into self-watching. The first test is whether the question fits the path.","keyPoints":["Meaning changes when a path is asked to prove personal progress.","The risk is turning peace into another measure of worth.","Test whether people grow freer when the question is changed."],"match":["question can make"],"tags":["practice","freedom","self-worth"]}
+tokens used
+13,108
