@@ -931,3 +931,22 @@
 - Run inter-rater reliability before public use. If coders cannot separate role survival from textual similarity, institutional power, or tradition preference, downgrade the model to interpretive vocabulary.
 - For human-condition use, keep the practice narrow: stable eclectic readers, public writers, and interfaith teachers who overclaim borrowed language. Exclude acute loneliness, grief crisis, OCD or scrupulosity, severe anxiety, depression, dissociation, and people using comparison to avoid belonging or commitment.
 - If piloted, include a belonging action and measure loneliness, rumination, cynicism, source contact, willingness to receive correction, false convergence claims, and actual community or teacher contact over two to six weeks.
+
+## Originality Audit Follow-Up 2026-05-30T15:56:48+02:00
+
+### You Cannot Be Seeker, Path, and Prize (extended)
+- Do not publish as doctrine or standalone discovery. Cross-index with Remainder Pressure, Custody Policy After Self-Release, Handoff Point, Some Paths Refuse the Question, The Question Can Make the Distance, What Holds You That You Did Not Build, and No One Begins Alone.
+- Build a bounded four-role codebook with fields for seeker, method-bearer, validator, result-holder, support quality, unsafe authority, valid solitude, clinical exclusion, warning, repair, evidence passage, and confidence.
+- Use split-source blind coding. Do not let the same passage establish role distribution and confirm the predicted warning or repair.
+- Run practitioner interviews for concrete failed-student and repair cases, especially Rinzai great doubt, Shinran Other Power, Theravada aggregate inquiry, Dogen practice-realization, and solo app meditation.
+- Pilot Give One Role Away only with screened stable adults. Exclude acute crisis, psychosis, mania, dissociation, severe depression, addiction withdrawal, OCD or scrupulosity, trauma activation, unsafe authority, coercive groups, and cases needing direct clinical care.
+- Compare against ordinary rest, conversation, social-support prompt, spiritual-direction check-in, and journaling. Track rumination, shame, dependency, ordinary action, help-seeking, loneliness, and achievement-contingent self-worth.
+
+### No One Begins Alone (renamed)
+- Do not publish as a standalone discovery. Merge or cross-index with What Holds You That You Did Not Build, Continuity Ecology Under Negation, Operational Remainder Ecology, Custody and Receiving Surface, Some Help Should Not Be Managed, Even No Path Needs Care, and You Cannot Be Seeker, Path, and Prize.
+- Treat this as a frontier halt rule: no new support-holder rubrics until the blind distinct-content test, one person-level support-placement study, and one no-gap source test are run.
+- Build a small codebook with fields for crossing status, no-gap status, pre-release support locus, support quality, agency history, unsafe authority, clinical risk, collapse severity, repair path, warning, evidence passage, and confidence.
+- Use split-source testing. Do not let one passage establish path grammar and confirm the predicted warning or repair.
+- Close-read SN 22.59, SN 45.2, Shinran letters or Tannisho, Bendowa, Huangbo, and one Dzogchen or Mahamudra source before public wording.
+- Pilot Name What Holds You only with screened stable high performers, caregivers, founders, students, and burned-out self-improvers. Exclude acute crisis, severe depression, mania, psychosis, dissociation, addiction withdrawal, OCD or scrupulosity without appropriate care, coercion, spiritual abuse, unsafe authority, and lack of real support.
+- Compare against ordinary rest, social-support prompt, behavioral activation, planning prompt, teacher or clinician check-in, and asking for help. Track rumination, shame, helplessness, dependency, ordinary action, help-seeking, burnout, loneliness, and self-worth contingency.
