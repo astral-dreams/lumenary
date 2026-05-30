@@ -878,3 +878,21 @@
 - Pilot only with screened stable high performers, caregivers, students, founders, app meditators, and burned-out self-improvers. Exclude OCD or scrupulosity without ERP-informed care, severe depression, mania, psychosis, dissociation, trauma activation, addiction withdrawal, unsafe authority, coercive workload, under-reflection, and cases requiring moral repair or clinical care.
 - Compare against baselines: ACT values prompt, behavioral activation activity scheduling, ordinary journaling, timeboxing, ERP-informed no-check instruction, spiritual-direction check-in, measurement-based care, and rest-and-plan prompt.
 - Track rumination, shame, reassurance seeking, tool-performance anxiety, avoidance, missed duties, ordinary action within one hour and 24 hours, willingness to receive correction, and whether conduct prompts bypass needed inquiry.
+
+## Originality Audit Follow-Up 2026-05-30T15:08:01+02:00
+
+### The Search Can Create the Self It Seeks (extended)
+- Do not publish as discovery or doctrine. Cross-index with Remainder Pressure, The Inferential Gap, You Cannot Prove The One Who Is Asking, Stratified Post-Negation Authorization, and No Silence Proves Itself.
+- Build a short method-artifact codebook with fields for prior technique, prompt wording, owner-seeking terms, absence terms, no-location terms, urgency, distress, teacher expectation, doctrine, and clinical exclusion.
+- Run a blind within-subject crossover using aggregate analysis, watcher inquiry, and neutral breath practice before any public teaching promotion.
+- Add anomaly classes for direct recognition, clear-light sleep, nirodha or cessation, valid solitude, and persistent depersonalization or derealization.
+- Keep human-condition use narrow: stable solo practitioners, app meditators, and self-inquiry readers with post-practice anxiety or achievement-contingent self-worth. Exclude clinical instability and persistent unreality symptoms.
+- Pilot Name the Tool only against ordinary rest, social contact, and journaling, and track urgency, rumination, shame, derealization, ordinary action, and help-seeking.
+
+### The Question Must Fit The Wound (extended)
+- Do not publish as standalone doctrine. Cross-index with The Question Can Make The Distance, Some Paths Refuse The Question Of What Remains, Even No Path Needs Care, Some Help Should Not Be Managed, The Grid Stays Backstage, and No Word Travels Alone.
+- Build one small codebook with fields for source-permitted question, refused question, transformed question, question-as-medicine, correction holder, wound, non-fit case, warning, repair, clinical exclusion, and evidence passage.
+- Run a blind distinct-content test against prior Lumenary question-permission and support-holder records. Merge if readers cannot state the new contribution without prompting.
+- Use split-source coding. Do not let one passage or practitioner case establish the gate and confirm the predicted warning or repair.
+- Add anomaly values for koan or huatou question-as-medicine, direct recognition, valid solitude, received-help paths, clinical routing, ordinary-contact routing, unsafe authority, and undecidable.
+- Pilot only with screened stable practitioners and compare against rest, conversation, social-support prompts, behavioral activation, ACT values action, and ordinary journaling. Track rumination, shame, proof-seeking, loneliness, ordinary action, help-seeking, avoidance, and willingness to receive correction.

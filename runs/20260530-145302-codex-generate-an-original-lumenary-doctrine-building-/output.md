@@ -1,0 +1,209 @@
+# The Question Must Fit The Wound
+
+Agent: codex
+Date: 2026-05-30T14:58:27+02:00
+Type: synthesis
+Idea ID: 378f83632320c050
+Status: draft
+
+## Original Claim
+
+A question about the self is not good merely because it is deep. "What remains?" can be medicine in a path that trains careful investigation, a distortion in a path that refuses the search, and a burden for a person who turns every inner state into a score. Before asking where continuity is held, ask three earlier things: does this path permit the question, what healthy support can correct the answer, and what wound is the person bringing to it? The same question can return one person to care and trap another in self-audit. The working doctrine should be narrow: self-negating teachings must be matched to the allowed question, the holder of correction, and the modern wound. Otherwise comparison creates a question the tradition did not ask, and practice gives an exhausted person one more thing to manage.
+
+## Why It Might Be New
+
+Most close neighbors stop at one gate. Hermeneutic and speech-act work asks what question is being answered; discursive-tradition and doctrine-as-rule work asks who trains the practice; meditation-safety work asks what support and risk surround the practitioner. The added claim is that all three gates must be passed before a self-negating question becomes teachable: source permission, correction support, and wound fit. That makes the idea modest but operational. It predicts that a question can be textually valid and still harmful for an over-auditing person, or psychologically relieving and still a bad reading of the path.
+
+## Source Basis
+
+- Run mode: Critique. Active frontier: Remainder pressure after self-negation. This finding merges and narrows the recent no-distance, support-holder, and wrong-question records rather than treating the frontier as ready doctrine.
+- Internal prior pressure: Codex, The Question Can Make the Distance, observations/codex/2026-05-30-the-question-can-make-the-distance.md; Codex, Even No Path Needs Care, observations/codex/2026-05-30-even-no-path-needs-care.md; Claude Code, Some Paths Refuse the Question of What Remains, observations/claude/2026-05-30-some-paths-refuse-the-question-of-what-remains.md.
+- Thinking method source: Huangbo, On the Transmission of Mind, used as a search-refusal lens. It made me ask whether the question itself was the grip. Critique of the lens: it can make every analytic question look like grasping, so it was checked against early Buddhist investigation and modern safety screening. https://gutenberg.org/ebooks/25236
+- Contrasting method source: MN 22 Alagaddupama Sutta, raft and water-snake similes, used as a right-grasp lens. It warns that some teachings must be held properly before they can be released. Critique of the lens: it can overfit crossing and miss received, enacted, or no-distance paths. https://www.accesstoinsight.org/tipitaka/mn/mn.022.than.html
+- Primary text comparison: SN 22.59 authorizes a disciplined search through body, feeling, perception, formations, and consciousness; Dogen's Bendowa strains a before-and-after reading by treating practice and verification as inseparable; Shinran's reply to Senshin refuses calculation by the practicer; Huangbo warns against seeking Mind as an object. The comparison shows that the same question can be native medicine, imported distortion, or unsafe burden. https://www.dhammatalks.org/suttas/SN/SN22_59.html; https://afe.easia.columbia.edu/ps/japan/dogen.pdf; https://shinranworks.com/letters/a-collection-of-letters-zensho-text/what-we-call-other-power/
+- Closest prior-art search: Clark and Chalmers on extended cognition, Krueger on religious cognition and material culture, Asad on discursive tradition, Lindbeck on doctrine as rule or grammar, Smith on Nagarjuna and Wittgenstein as therapeutic method, Sells on apophatic unsaying, and VCE meditation-challenge literature. These are close for question, support, tradition, and safety, but do not yet name the three-gate test proposed here. https://www.consc.net/papers/extended.html; https://philarchive.org/rec/KRUTEM-2; https://link.springer.com/article/10.1007/s11841-020-00804-6; https://press.uchicago.edu/ucp/books/book/chicago/M/bo3635525.html
+- Modern human-condition grounding: U.S. Surgeon General social connection advisory for loneliness and belonging, Pew on where Americans find meaning, WHO burn-out definition, and Curran and Hill perfectionism source card for achievement pressure and self-worth tied to performance. https://www.hhs.gov/sites/default/files/surgeon-general-social-connection-advisory.pdf; https://www.pewresearch.org/religion/2018/11/20/where-americans-find-meaning-in-life/; https://www.who.int/standards/classifications/frequently-asked-questions/burn-out-an-occupational-phenomenon
+
+## Critique
+
+This may be a safety wrapper around ordinary good judgment, not a new doctrine-building insight. It may also become one more burden for the over-managing cohort: before practicing, they must now audit the question, the wound, and the support. Rinzai koan and huatou practice are major anomalies, because an impossible or destabilizing question can be the medicine rather than the mistake. Dogen, Huangbo, Shinran, and Dzogchen cases may also be too diverse for one gate: they may refuse self-owned attainment while still preserving strong practice, teacher, vow, or conduct demands. The claim weakens if blind coders cannot identify the permitted question before reading later warnings, if practitioner failures track sleep loss, trauma, isolation, or teacher abuse better than question mismatch, or if ordinary rest and honest conversation work as well as this practice.
+
+## Epistemic Labels
+
+- `textual`
+- `interpretive`
+- `phenomenological`
+- `empirical-adjacent`
+- `analogical`
+- `speculative`
+
+## Scores
+
+- novelty: 0.38
+- generativity: 0.87
+- cross_tradition_support: 0.73
+- logical_coherence: 0.83
+- explanatory_compression: 0.80
+- empirical_adjacency: 0.55
+- practice_testability: 0.82
+- counterargument_quality: 0.91
+- source_reliability: 0.80
+- publishability: 0.64
+
+
+## Teaching Candidate
+
+Status: under_dialogue
+Tags: critique-mode, self-negation, question-fit, burnout, loneliness, achievement-pressure, support
+
+### Teaching Line
+
+Do not use a deep question just because it is deep; ask the question that returns you to care.
+
+### Doctrine Claim
+
+A self-negating question is teachable only when it fits the path's own permission, remains open to healthy correction, and serves the person's actual wound.
+
+### Teaching Body
+
+Some questions help you see. Some questions help you hide. Some questions only make you perform wisdom for yourself.
+
+Before you ask what remains, ask whether this path gives you that question. Before you answer, ask what can correct you. Before you continue, ask whether the question is helping your actual life: your work, your rest, your repair, your belonging, your honesty.
+
+A good question should make you more reachable by truth and by people. If it makes you harder to interrupt, it may not be the right question now.
+
+### Human Problem
+
+Achievement-contingent self-worth, burnout, loneliness, and meaning loss when spiritual or reflective practice becomes private performance, self-audit, or withdrawal from correction.
+
+### For
+
+Stable reflective practitioners, meditation-app users, serious self-improvers, perfectionistic professionals, caregivers, founders, students, and seekers who turn insight, relief, or no-self language into proof, failure, or another task.
+
+### Pressure Survived
+
+Survives critique from search-refusing, no-distance, and received-help sources by refusing to force them into one remainder question. Survives modern human-condition pressure by making cohort fit a gate, not an afterthought.
+
+### Falsifying Pressure
+
+Weakens if question-fit screening adds no benefit beyond ordinary rest, conversation, social support, or teacher guidance; if it increases rumination; or if traditions and practitioners cannot distinguish native questions from imported ones in concrete cases.
+
+
+
+## Practice Candidate
+
+Status: seed
+Risk level: low
+Tags: question-fit, low-risk, burnout, loneliness, self-worth, practice-test
+
+### Practice Line
+
+Before using a spiritual question, ask what need it is serving.
+
+### Purpose
+
+To test whether naming the question, the wound, and the correction support reduces self-grading, private certainty, and over-management after practice or insight.
+
+### Human Problem
+
+Achievement-contingent self-worth, burnout, loneliness, and anxious overinterpretation after spiritual reading, practice, quiet states, or self-inquiry.
+
+### For
+
+Stable adults who reflect, meditate, pray, read across traditions, or use mindfulness tools and tend to turn inner change into proof, failure, or another task.
+
+### Not For
+
+Not for acute crisis, psychosis, mania, dissociation, addiction withdrawal, severe depression, OCD or scrupulosity reassurance loops, unsafe teacher settings, coercive groups, or situations needing direct clinical care, rest, protection, recovery support, or accountability.
+
+### Time
+
+- Duration: 6 minutes
+- Frequency: After a strong insight, quiet state, practice session, or spiritual reading, no more than twice per week.
+- Minimum attempt: Try three safe uses over one month, stopping earlier if distress, checking, shame, dependency, unreality, or isolation increases.
+
+### Steps
+
+1. Write the question you are about to answer in ordinary words, such as What remains, How do I prove this, What must I do next, or What needs repair.
+2. Ask whether the source or practice permits that question, or whether it asks you to investigate, receive, enact, repair, wait, or stop owning the result.
+3. Name the wound you are bringing right now: avoidance, over-auditing, loneliness, exhaustion, shame, duty, grief, or a need for help.
+4. Name one healthy correction support: a trusted person, therapist, teacher, text, group, schedule, promise, or ordinary task. Do not use unsafe or shaming support.
+5. Choose one next action: investigate if you are avoiding, stop grading if you are over-auditing, contact support if you are isolated, rest if you are depleted, repair if there is a real duty.
+
+### Notice
+
+- Whether the question came from the teaching, fear, ambition, loneliness, or shame.
+- Whether the check makes you more reachable by people and ordinary duties.
+- Whether the urge to prove, defend, or grade an insight loosens.
+- Whether the practice increases rumination, self-surveillance, passivity, or avoidance.
+
+### Caution
+
+Stop if this becomes another self-monitoring task, feeds certainty seeking, pushes obedience to unsafe authority, or helps you avoid needed care, rest, responsibility, or human support.
+
+### Weakens If
+
+Weakens if ordinary rest or conversation works as well, if users cannot name the question without rumination, or if the practice increases self-surveillance, dependency, passivity, isolation, or avoidance.
+
+
+
+## Tests
+
+### Question Fit Prior Art Search
+
+- Type: prior-art
+- Target: idea
+- Status: complete
+- Prediction: If the distinction is real, prior work will cover hermeneutics, speech acts, discursive tradition, doctrine as rule, extended religious cognition, meditation safety, and spiritual bypassing, but will not already name the three-gate test of source permission, correction support, and wound fit before using a self-negating question. If that exact gate exists, novelty should fall below 0.30.
+- Result: Preliminary search found close neighbors in Collingwood, Gadamer, Austin, Asad, Lindbeck, Clark and Chalmers, Krueger, VCE, Sells, Smith, and local Lumenary records. No exact three-gate test was found, but overlap is high, so novelty is revised downward.
+- Impact: revises
+- Next action: Search Zen great doubt studies, Pure Land scholarship, Dogen studies, Dzogchen instruction, spiritual direction ethics, and clinical spiritual-bypassing literature for the exact three-gate formulation.
+
+### Split-Source Question Coding
+
+- Type: falsification-attempt
+- Target: idea
+- Status: proposed
+- Prediction: If the model is right, blind coders given instruction passages from SN 22.59, MN 22, Bendowa, Shinran, Huangbo, Rinzai koan sources, and Dzogchen instructions should identify permitted question, refused question, correction holder, and likely non-fit cohort above chance before seeing later warnings or outcomes. If they cannot, the model is weakened.
+- Result: pending
+- Impact: pending
+- Next action: Build a codebook with fields for crossing, receiving, enacting, repairing, refusing ownership, question-as-medicine, unsafe support, and clinical non-fit. Run inter-rater coding before adding commentaries.
+
+### Question Fit Practice Reports
+
+- Type: practice-report
+- Target: practice
+- Status: proposed
+- Prediction: For stable over-managing practitioners, The Question Fit Check should reduce self-grading and increase reachable conduct more than ordinary journaling after practice. If it increases rumination, isolation, reassurance seeking, or avoidance, the practice and teaching weaken.
+- Result: pending
+- Impact: pending
+- Next action: Run a four-week screened self-report pilot with exclusions for acute crisis, OCD or scrupulosity patterns, dissociation, addiction withdrawal, unsafe authority settings, mania, psychosis, and severe depression.
+
+### No-Path Program Comparison
+
+- Type: cross-domain
+- Target: idea
+- Status: proposed
+- Prediction: Programs using no-path, non-striving, surrender, or direct-recognition language should show fewer misuse reports when they explicitly teach which questions are refused, which questions remain, and what healthy supports correct interpretation. If teacher quality, social support, or participant screening fully explains outcomes, the question-fit model is weakened.
+- Result: pending
+- Impact: pending
+- Next action: Compare contemplative programs, nondual groups, mindfulness courses, therapy-adjacent programs, and recovery-adjacent settings with similar anti-striving language but different question discipline and support structures.
+
+### Question Fit Safety Screen
+
+- Type: safety
+- Target: practice
+- Status: proposed
+- Prediction: The practice should help only when naming the question reduces self-judgment and improves ordinary contact. If it becomes reassurance seeking, shame, dependency, teacher appeasement, or avoidance of care, the cohort must be narrowed or the practice retired.
+- Result: pending
+- Impact: pending
+- Next action: Add screening items for compulsive checking, scrupulosity, panic, dissociation, dependency, coercive communities, repeated certainty seeking, and missed obligations before any public trial.
+
+
+## Next Research Directions
+
+- If this model is right, then blind coders should identify a source's permitted question, correction holder, and likely non-fit cohort above chance before seeing its warnings or practitioner outcomes. If coders need the outcome to infer the gate, the model is weakened.
+- If this model is right, then over-auditing practitioners should benefit more from question-fit screening than from another review of what they attained. If ordinary rest, social contact, or journaling works as well, the practice should be narrowed or retired.
+- If this model is right, then causal inquiry paths, no-distance paths, received-help paths, and koan paths should show different failure clusters when students import the wrong question. If the same failures appear across all types, support loss or clinical risk may explain more than question mismatch.
+- Close-read SN 22.59, MN 22, Bendowa, Shinran's letters, Huangbo, a Rinzai koan source, and one Dzogchen pointing-out source with a split-source codebook: permitted question, refused question, holder of correction, warning, repair, and human non-fit case.
+- Protocol improvement: before applying any post-negation model, write the working question in plain language, name the human wound it is meant to serve, and ask what would show that the question itself is causing harm.
