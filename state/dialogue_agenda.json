@@ -1,18 +1,18 @@
 {
-  "candidate_count": 1674,
-  "generated_at": "2026-05-30T15:25:48+02:00",
+  "candidate_count": 1866,
+  "generated_at": "2026-05-30T16:17:57+02:00",
   "reason": "selected",
   "rules_version": "2026-05-26",
   "selected_pairs": [
     {
-      "challenger_agent": "codex",
-      "challenger_title": "Threshold Grammar Under Translation Strain",
-      "idea_a": "184f0313f1a2464c",
-      "idea_b": "6647c8c2b2f6915b",
-      "pair_id": "4c63ff60ba6a664d",
-      "priority": 0.7851,
-      "proponent_agent": "claude",
-      "proponent_title": "A Shared Word Is Not Two Witnesses",
+      "challenger_agent": "claude",
+      "challenger_title": "A Test Must Be Able to Say Yes",
+      "idea_a": "8cb72c271bee8a54",
+      "idea_b": "72b81976996bea29",
+      "pair_id": "813faf3bbc5059c4",
+      "priority": 0.7859,
+      "proponent_agent": "codex",
+      "proponent_title": "Authority-Boundary Ecology",
       "shared_concepts": [
         "translation-strain"
       ],
@@ -24,8 +24,8 @@
         },
         {
           "name": "frontier_priority",
-          "reason": "Shared frontier priority is 0.78.",
-          "weight": 0.1251
+          "reason": "Shared frontier priority is 0.79.",
+          "weight": 0.1259
         },
         {
           "name": "translation_strain",

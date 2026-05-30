@@ -950,3 +950,35 @@
 - Close-read SN 22.59, SN 45.2, Shinran letters or Tannisho, Bendowa, Huangbo, and one Dzogchen or Mahamudra source before public wording.
 - Pilot Name What Holds You only with screened stable high performers, caregivers, founders, students, and burned-out self-improvers. Exclude acute crisis, severe depression, mania, psychosis, dissociation, addiction withdrawal, OCD or scrupulosity without appropriate care, coercion, spiritual abuse, unsafe authority, and lack of real support.
 - Compare against ordinary rest, social-support prompt, behavioral activation, planning prompt, teacher or clinician check-in, and asking for help. Track rumination, shame, helplessness, dependency, ordinary action, help-seeking, burnout, loneliness, and self-worth contingency.
+
+## Originality Audit Follow-Up 2026-05-30T16:16:59+02:00
+
+### The Pressure After Letting Go May Be Yours (extended)
+- Do not publish as a standalone discovery. Cross-index with The Search Can Create the Self It Seeks, The Question Must Fit The Wound, The Question Can Make The Distance, and Remainder Pressure as the Hidden Variable.
+- Run a blind distinct-content test against the nearest records. Merge if readers cannot state the added variable as pressure occurrence rather than pressure interpretation or question-fit.
+- Build a small codebook with fields for pressure occurrence, intensity, urgency, pre-practice achievement-contingency, perfectionism, intolerance of uncertainty, need for closure, practice method, teacher contact, retreat intensity, clinical exclusion, and ordinary-action outcome.
+- Add anomaly categories for Rinzai or huatou great doubt, Advaita self-inquiry, Dzogchen or Mahamudra direct recognition, clear-light sleep, cessation or nirodha, valid solitude, and persistent depersonalization or derealization.
+- Pilot Weigh the Urge only with screened stable adults. Exclude OCD or scrupulosity, derealization, depersonalization, psychosis, mania, severe depression, addiction withdrawal, trauma activation, panic, acute crisis, and medical blackout concerns.
+- Compare the practice against ordinary rest, conversation, journaling, teacher check-in, and a 24-hour no-verdict instruction. Track rumination, shame, urgency, ordinary action, help-seeking, and whether the practice becomes a new thing to grade.
+
+### The Road Starts Before You (renamed)
+- Do not publish as a standalone discovery. Merge or cross-index with No One Begins Alone, What Holds You That You Did Not Build, Continuity Ecology Under Negation, Operational Remainder Ecology, Custody and Receiving Surface, Some Help Should Not Be Managed, and You Cannot Be Seeker, Path, and Prize.
+- Freeze new support-holder variants until a blind distinct-content test, one split-source support-timing corpus test, and one small Already Helping List pilot have run.
+- Build a bounded codebook with fields for support timing, support holder, support quality, agency history, unsafe authority, clinical exclusion, path grammar, no-gap status, reciprocity act, warning, repair, evidence passage, and confidence.
+- Use split-source testing. Do not let the same passage establish support timing and confirm the predicted warning or repair.
+- Close-read SN 45.2, SN 22.59, Dogen Bendowa or Uji, Shinran Kyogyoshinsho and Tannisho, Huangbo, one Dzogchen or Mahamudra source, and one Christian grace source before public wording.
+- Pilot Already Helping List only with screened stable adults. Exclude acute crisis, unsafe authority, abusive relationships, coercive groups, severe depression, psychosis, mania, dissociation, addiction withdrawal, OCD or scrupulosity, denied-agency wounds, and people whose main need is boundaries or clinical care.
+- Compare the practice against ordinary rest, social-support prompt, gratitude listing, planning prompt, asking for help, sponsorship or teacher check-in, and behavioral activation. Track shame, passivity, dependency, gratitude pressure, help-seeking, reciprocity, ordinary action, loneliness, and self-worth contingency.
+
+## Originality Audit Follow-Up 2026-05-30T16:31:25+02:00
+
+### Grained Authority-Ecology Safety Audit (extended)
+- Do not publish as doctrine or as a standalone discovery. Cross-index with Authority-Boundary Ecology, A Test Must Be Able to Say Yes, Some Axes Can Confirm, Boundary and Custody at the Threshold, When Tools Become Judges, and recent correction-holder records.
+- Build one codebook with fields for source layer, native authority form, match grain, held-out prediction, provenance note, legitimacy evidence, safety-gap evidence, reporting pathway, independent accountability, survivor-centered response, clinical exclusion, non-fit case, warning, repair, and confidence.
+- Use split-source blind coding. Do not let the same passage or case establish native legitimacy, match grain, and safety outcome.
+- Add mandatory values for no-boundary, practice-realization, radical Other Power, inherited continuity, charismatic exception, realization without teaching permission, institution-first legitimacy, independent safeguarding, unsafe authorized leader, valid solitude, clinical routing, analyst-frame-refused, and undecidable.
+- Run a blind abuse-case probe with documented authorized harmful teachers and communities. If the model returns clean legitimacy without surfacing safety gaps, the seeker-facing version fails.
+- Compare predictive power against Asad-Lindbeck authority coding, Freiberger-Smith comparison method, VCE factor coding, standard ethics policies, survivor-centered safeguarding, institution type, teacher style, social ecology, and clinical-risk baselines.
+- Interview practitioners and survivor advocates for concrete failed-trust, premature-teaching, cross-training, and repair cases. Do not ask for abstract agreement.
+- Pilot only with screened stable seekers or trainee teachers. Exclude active abuse, acute crisis, unsafe authority dynamics, OCD or scrupulosity, paranoia, severe depression, mania, dissociation, addiction withdrawal, legal disputes needing counsel, and clinical situations needing care.
+- Measure discernment accuracy, help-seeking, safety actions, willingness to receive correction, loneliness, rumination, suspicion, compulsive checking, and whether users substitute the audit for actual contact or reporting.

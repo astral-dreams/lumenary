@@ -1,0 +1,134 @@
+# Originality Audit: Grained Authority-Ecology Safety Audit
+
+Audit ID: 10826d16d65c0fa0
+Idea ID: c7bccf27901adf5c
+Agent: codex
+Created: 2026-05-30T16:31:25+02:00
+Status: extended
+Confidence: 0.76
+
+## Exact Claim
+
+A serious comparison of spiritual authority should first code a tradition's native authority ecology, then test convergence only at a pre-registered match grain with held-out predictions. Any seeker-facing use must separate native legitimacy from safety adequacy, since a teacher or institution can be authorized in native terms and still be harmful.
+
+## Claim Units
+
+- Spiritual authority comparison should begin with native authority ecology, not imported categories.
+- Authority ecology includes discrete authorization, diffuse recognition, continuous practice-realization, refused authority, relocated efficacy, conduct evidence, community safeguards, and ordinary re-entry.
+- Positive convergence requires a pre-registered match grain and held-out prediction, not shared category membership.
+- A seeker-facing tool must split native legitimacy from safety adequacy.
+- The model is useful only if it screens for legitimacy, surfaces safety gaps, and knows when legal, clinical, survivor-centered, or safeguarding tools are needed.
+
+## Primary Text Close Read
+
+Sources:
+- Dogen Bendowa practice-realization sources, for example https://everydayzen.org/teachings/dogens-bendowa-part-2-of-3/, read against Shinran and Jodo Shinshu Other Power sources, for example https://www.nembutsu.info/standard/nature_faith.htm
+- Stuart Lachs, Means of Authorization, https://www.engaged-zen.org/PDFarchive/Means_of_Authorization_Lachs.pdf, read against safeguarding and survivor-centered sources such as https://www.tandfonline.com/doi/pdf/10.1080/0048721X.2025.2538957 and https://nwgnetwork.org/wp-content/uploads/child-protection-religious-organisations-settings-investigation-report-september-2021-.pdf
+
+Structural observation: Dogen strains the boundary model because practice and realization are not cleanly separable, so a category such as continuous practice-realization must not be treated as just another boundary type. Shinran strains the same model from another side: efficacy is relocated to Amida's vow and Other Power, not to a practitioner-owned method or generic support system. These two cases may both refuse self-owned attainment, but their warnings differ: Dogen pressure falls on expecting realization outside practice, while Shinshu pressure falls on self-power calculation. Lachs then shows that Zen authorization language and transmission mechanisms can legitimate hierarchy and authority while creating problems in Western Zen. The safety sources add a further split: religious authority, community trust, and doctrinal legitimacy can coexist with coercion, silence, institutional betrayal, or inadequate survivor response.
+
+Secondary literature gap: Before promotion, read Asad on discursive tradition, Lindbeck on doctrine as grammar, Weber on religious authority, Bell on ritualization, Sharf and Katz on experience and context, Freiberger and J. Z. Smith on comparison, Popper and Mayo on test structure, Lachs on Zen authorization, Ann Gleig and Amy Langenberg on Buddhist misconduct and survivor-centered method, IICSA and FaithTrust safeguarding materials, AIFS on spiritual and religious abuse, VCE and Cheetah House on meditation-related difficulties, plus actual ethics codes from Soto Zen, Insight, Vajrayana, Christian spiritual direction, and interfaith settings.
+
+Risk of overread: High. The authority-first half is already extended from prior Lumenary work and strong external theory. The positive-verdict half is already extended from falsifiability, confirmation theory, severe testing, and comparative method. The safety split is strongly anticipated by safeguarding, spiritual abuse, institutional abuse, and survivor-centered literature. Human-condition fit is real but narrow: stable seekers, practitioners, and interfaith teachers facing misplaced trust, premature teaching pressure, broken-authority loneliness, digital spiritual comparison, or achievement-contingent striving. It is not a practice for active abuse, acute crisis, OCD or scrupulosity loops, paranoia, severe depression, mania, dissociation, unsafe authority dynamics, legal decisions, or clinical triage. If offered as a seeker tool, it may increase suspicion, isolation, or compulsive vetting.
+
+## Literature Search Queries
+
+- "native authority boundary" contemplative practice authorization transmission comparative mysticism
+- Talal Asad discursive tradition authority correct practice tradition pdf
+- George Lindbeck doctrine as grammar religious practice authority
+- Stuart Lachs Means of Authorization Zen Buddhism dharma transmission roshi authority PDF
+- Ann Gleig Amy Langenberg sexual abuse misconduct Buddhism survivor centered
+- spiritual abuse religious authority coercive control safeguarding policy practice
+- IICSA religious organisations abuse of power religious leaders child protection report
+- Varieties of Contemplative Experience teacher community support adverse effects meditation Lindahl Britton
+- Cheetah House meditation adverse effects religious spiritual abuse trauma
+- Freiberger comparative methodology religion redescription rectification theory formation
+- Popper falsifiability Mayo severe testing confirmation theory comparison method
+- Soto Zen Buddhist Association ethics grievance process teacher misconduct
+
+## Near Neighbors
+
+- Internal Lumenary records: Authority-Boundary Ecology, A Test Must Be Able to Say Yes, Some Axes Can Confirm, Some Can Only Caution, and Boundary and Custody at the Threshold.: overlap: Very close. The candidate directly inherits native authority-first coding, no-boundary anomalies, pre-registered positive verdicts, held-out prediction pressure, and axis separation from these records.; difference: It combines them into one authority-safety audit and makes native legitimacy versus safety adequacy explicit for seeker-facing use.; novelty impact: Major downgrade. Treat as an extension and consolidation unless blind coders can state a prediction not already present in the parent records.
+- Talal Asad, The Idea of an Anthropology of Islam, https://voidnetwork.gr/wp-content/uploads/2016/09/The-Idea-of-an-Anthropology-of-Islam-by-Talal-Asad.pdf; George Lindbeck, The Nature of Doctrine; Max Weber, sociology of religious authority.: overlap: Close structural prior for authority as historically transmitted practice, discipline, grammar, legitimacy, and power, rather than private experience or generic doctrine.; difference: These sources do not provide the candidate's exact split-source test with match grain, held-out prediction, and separate seeker safety axis.; novelty impact: Strongly reduces originality of the authority-ecology component.
+- Oliver Freiberger, Elements of a Comparative Methodology, https://www.mdpi.com/2077-1444/9/2/38; J. Z. Smith, In Comparison a Magic Dwells, https://classics.osu.edu/sites/classics.osu.edu/files/Magic_Dwells.pdf; Popper and Mayo on falsifiability and severe testing.: overlap: Close prior for comparison as selection, redescription, rectification, theory formation, difference management, and tests that must risk more than one possible outcome.; difference: The candidate applies this to authority ecology and asks for held-out predictions about warnings, permissions, safeguards, and re-entry.; novelty impact: Downgrades the match-grain and yes-verdict logic as a domain-specific adaptation, not a discovery.
+- Stuart Lachs, Means of Authorization, https://www.engaged-zen.org/PDFarchive/Means_of_Authorization_Lachs.pdf.: overlap: Very close on the safety split. Lachs argues that Zen titles, lineage, ritual, and dharma transmission can establish authority and hierarchy while creating serious Western Zen problems.; difference: Lachs focuses on Zen institutional critique, not a cross-tradition codebook with positive convergence tests.; novelty impact: Major downgrade for the claim that native authorization can be real yet safety-insufficient.
+- Ann Gleig and Amy Paris Langenberg, survivor-centered work on Buddhist misconduct, for example https://www.tandfonline.com/doi/pdf/10.1080/0048721X.2025.2538957 and https://denison.edu/academics/religion/wh/144945.: overlap: Close on survivor-centered method and on the gap between religious systems, power, sexual ethics, institutional response, and survivor safety.; difference: Their work is not primarily a comparative authority-convergence rubric.; novelty impact: Strong downgrade for the safety-axis originality. It also supplies a required correction: safety cannot be inferred from native legitimacy.
+- IICSA religious organisations report, https://nwgnetwork.org/wp-content/uploads/child-protection-religious-organisations-settings-investigation-report-september-2021-.pdf; AIFS spiritual and religious abuse overview, https://aifs.gov.au/resources/policy-and-practice-papers/understanding-spiritual-and-religious-abuse-context-intimate.: overlap: Close for abuse of power by religious leaders, coercive control, religious justification of harm, social isolation, and need for practitioner and service-provider awareness.; difference: These sources are safeguarding and abuse frameworks, not source-sensitive comparative religion tests.; novelty impact: Strong downgrade for the seeker-facing safety component. The candidate should defer to these frameworks when harm is live.
+- Lindahl, Fisher, Cooper, Rosen, and Britton, Varieties of Contemplative Experience, https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0176239; Cheetah House, https://www.cheetahhouse.org/ and https://www.cheetahhouse.org/faq.: overlap: Close methodological prior for coding practice factors, teacher and community relationships, adverse effects, interpretation, remedies, clinical exclusions, and support needs.; difference: VCE and Cheetah House do not code native legitimacy or comparative convergence, but they already require safety variables that the candidate must not replace.; novelty impact: Moderate to strong downgrade for practice-testability and safety design.
+- Buddhist and contemplative ethics codes, for example Upaya Zen Center Ethics Code, https://www.upaya.org/about/ethics/, Insight Meditation Center teacher ethics, https://www.insightmeditationcenter.org/code-of-ethics-for-teachers/, and SZBA ethics materials, https://www.szba.org/ethics.: overlap: Close practitioner near-neighbor. These codes already separate authorization, teacher role, misconduct, reporting, grievance, accountability, and community safety.; difference: They work inside specific communities, not as a general comparative research instrument.; novelty impact: Reduces originality of the practical safety audit. The candidate must prove added value beyond ordinary ethics and grievance procedures.
+
+## Unlike Statement
+
+Unlike Asad, Lindbeck, Weber, Freiberger, Smith, Popper, Lachs, Gleig and Langenberg, VCE, Cheetah House, safeguarding literature, and the parent Lumenary records, the only separable contribution is a combined protocol: code native authority ecology from one source layer, pre-register match grain and held-out predictions before any positive convergence verdict, then report native legitimacy and safety adequacy as separate outputs for human use. The broader ideas are not new.
+
+## Anomaly Probe
+
+Candidate: Two communities with the same lineage authorization and doctrinal authority ecology show different harm rates because one has independent reporting, survivor-centered response, financial transparency, and external accountability while the other relies on charisma and internal loyalty.
+
+Why it strains the model: If safety outcomes are predicted by generic governance, power concentration, board independence, trauma literacy, and reporting pathways rather than native authority ecology, the seeker-facing model collapses into standard safeguarding. Conversely, if a low-native-legitimacy peer group with strong safeguards is safer than a high-legitimacy lineage setting, the legitimacy screen is not a safety screen.
+
+Confidence effect: Lowers confidence and keeps the status at extended. The model needs a baseline comparison against safeguarding-only, VCE-only, institution-only, and teacher-style predictors.
+
+## Falsifiable Predictions
+
+- If: Native authority ecology plus grained match conditions are predictive variables, not just descriptive vocabulary. Then: Coders who see only source passages on authorization, practice-realization, Other Power, conduct evidence, and teaching permission can predict held-out warnings, safeguards, repair instructions, and re-entry obligations above tradition-label and institution baselines. Weakens if: Held-out predictions are no better than broad tradition identity, teacher style, institutional policy, or generic Asad-Lindbeck authority coding. Test surface: Split-source blind coding across Soto Zen, Rinzai Zen, Jodo Shinshu, Theravada, Dzogchen or Mahamudra, Christian spiritual direction, Sufism, and secular mindfulness.
+- If: The match-grain rule prevents cheap positive convergence. Then: Pairs such as Dogen practice-realization and Shinran Other Power can share only a narrowly stated structure, such as refusal of self-owned attainment, while still predicting different warnings and permissions. Confirmed matches should be rare, specific, and tied to held-out observations. Weakens if: Coders confirm broad categories such as relocated efficacy across many pairs without predicting distinct warnings, or cannot agree on match grain before outcome evidence. Test surface: Inter-rater trial requiring coders to write match grain and prediction before seeing manuals, ethics rules, or practitioner interviews.
+- If: Native legitimacy and safety adequacy are separable and both are needed. Then: In documented misconduct cases, a teacher or community can receive a high native-legitimacy score and a low safety-adequacy score, with the safety gap visible before reading survivor outcomes through indicators such as reporting independence, boundary rules, power concentration, and external accountability. Weakens if: The audit either certifies harmful authorized teachers as safe, or flags no more risk than a standard safeguarding checklist would flag without native-authority coding. Test surface: Blind abuse-case probe using public Zen, Buddhist, Christian, and yoga or meditation organization cases, scored before outcome review.
+- If: The seeker-facing version helps only a narrow cohort and must not feed suspicion. Then: Stable seekers and trainee teachers using a one-page audit make better decisions about teacher trust, supervision, or handoff, while rumination, isolation, and compulsive vetting do not increase relative to ordinary ethics-check and social-support prompts. Weakens if: Participants become more isolated, suspicious, self-superior, or compulsively uncertain, or the audit performs no better than existing ethics policies, survivor resources, trusted consultation, or clinical referral. Test surface: Screened pilot with measures for discernment, help-seeking, trust repair, loneliness, rumination, safety actions, and willingness to receive correction.
+
+## Practitioner Test
+
+Relevant practitioners:
+- comparative religion scholars
+- Buddhist studies scholars of Zen transmission and modern Buddhism
+- Soto and Rinzai Zen teachers with ethics experience
+- Jodo Shinshu ministers and scholars
+- Dzogchen or Mahamudra teachers
+- Christian spiritual directors and safeguarding officers
+- Sufi teachers with ijaza or lineage experience
+- survivor advocates in Buddhist and religious abuse contexts
+- Cheetah House or contemplative-adverse-effects researchers
+- trauma clinicians and religious-trauma clinicians
+- abuse lawyers or institutional safeguarding consultants
+- interfaith educators and chaplains
+
+Questions:
+- Is this more than Asad, Lindbeck, Weber, lineage authorization, comparative methodology, and standard safeguarding placed in one sheet?
+- Can you give a concrete case where native legitimacy and safety adequacy diverged, and would this audit have surfaced the divergence early?
+- Does pre-registering match grain change a real comparative verdict, or does it only make ordinary scholarly caution explicit?
+- For Dogen and Shinran, what held-out warnings or permissions would the shared code predict, and what would it wrongly flatten?
+- Would you let a lonely, harmed, or anxious seeker use this audit alone, or would you route them to a teacher, survivor advocate, clinician, ethics body, or trusted person first?
+
+Answers that reduce originality: Originality falls if practitioners call it standard lineage discernment plus ordinary safeguarding, if abuse specialists say safety is predicted by governance and accountability rather than authority ecology, or if scholars say match grain is just existing comparative method and falsifiability language.
+
+Answers that support contribution: Contribution rises if practitioners can reliably code native legitimacy and safety separately, if the match-grain rule prevents false convergence without blocking real partial convergence, and if the audit changes concrete decisions about teaching permission, supervision, referral, boundary repair, or public claims.
+
+## Cross-Domain Prediction
+
+Domain: Clinical training, professional supervision, and licensed professional misconduct.
+
+Structural translation: Professional legitimacy and client safety are separate axes. A therapist, physician, or supervisor can be licensed and credentialed in native institutional terms while still unsafe because of boundary violations, poor reporting pathways, retaliation, impairment, conflicts of interest, or weak supervision.
+
+Prediction: If the structure is real, a grained legitimacy-safety audit should predict held-out remediation, supervision, referral, or disciplinary needs better than credential status alone. It should also distinguish method competence from safety adequacy.
+
+Would count against it: If malpractice risk, complaints, and repair needs are predicted just as well by existing licensing, risk-management, and institutional safeguarding tools, with no added value from authority-ecology coding, the model has weak cross-domain power.
+
+## Score Recommendations
+
+- novelty: 0.47
+- source_reliability: 0.82
+- counterargument_quality: 0.93
+
+Novelty adjustment: Lower novelty from 0.76 to 0.47. The candidate is a useful consolidation, but native authority ecology, positive test conditions, and legitimacy-safety separation all have strong prior art. Retain only as a bounded split-source research and discernment protocol, not as doctrine or a standalone discovery.
+
+## Next Loop Instructions
+
+- Do not publish as doctrine or as a standalone discovery. Cross-index with Authority-Boundary Ecology, A Test Must Be Able to Say Yes, Some Axes Can Confirm, Boundary and Custody at the Threshold, When Tools Become Judges, and recent correction-holder records.
+- Build one codebook with fields for source layer, native authority form, match grain, held-out prediction, provenance note, legitimacy evidence, safety-gap evidence, reporting pathway, independent accountability, survivor-centered response, clinical exclusion, non-fit case, warning, repair, and confidence.
+- Use split-source blind coding. Do not let the same passage or case establish native legitimacy, match grain, and safety outcome.
+- Add mandatory values for no-boundary, practice-realization, radical Other Power, inherited continuity, charismatic exception, realization without teaching permission, institution-first legitimacy, independent safeguarding, unsafe authorized leader, valid solitude, clinical routing, analyst-frame-refused, and undecidable.
+- Run a blind abuse-case probe with documented authorized harmful teachers and communities. If the model returns clean legitimacy without surfacing safety gaps, the seeker-facing version fails.
+- Compare predictive power against Asad-Lindbeck authority coding, Freiberger-Smith comparison method, VCE factor coding, standard ethics policies, survivor-centered safeguarding, institution type, teacher style, social ecology, and clinical-risk baselines.
+- Interview practitioners and survivor advocates for concrete failed-trust, premature-teaching, cross-training, and repair cases. Do not ask for abstract agreement.
+- Pilot only with screened stable seekers or trainee teachers. Exclude active abuse, acute crisis, unsafe authority dynamics, OCD or scrupulosity, paranoia, severe depression, mania, dissociation, addiction withdrawal, legal disputes needing counsel, and clinical situations needing care.
+- Measure discernment accuracy, help-seeking, safety actions, willingness to receive correction, loneliness, rumination, suspicion, compulsive checking, and whether users substitute the audit for actual contact or reporting.
