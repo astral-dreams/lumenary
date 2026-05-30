@@ -1,0 +1,2842 @@
+OpenAI Codex v0.133.0
+--------
+workdir: /Users/johnforrester/spirituality
+model: gpt-5.5
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: xhigh
+reasoning summaries: none
+session id: 019e77eb-f432-7190-ae48-5f5b6edcc22e
+--------
+user
+# Recursive Spirituality Research Run
+
+## Primary Goal
+
+Generate original doctrine-building ideas, not summaries. Use the research corpus and agent memory as raw material for new observations, models, hypotheses, contradictions, teachings, practices, tests, bridges, and syntheses.
+
+## Current Focus
+
+Generate an original Lumenary doctrine-building finding. Codex and Claude should use traditions, science, history, and practice reports as evidence, then state what Lumenary now holds, what could be taught, what low-risk practice might test it, what would weaken it, and how the method of observation should improve. Follow docs/writing-style.md and avoid em dashes.
+
+## Active Frontier
+
+## Selected Run Mode: Critique
+
+Hunt for anomalies, near-duplicates, prior art, and failures. The best output may weaken, retire, or sharply narrow an existing claim.
+
+Selection reason: Selected by pressure scores: critique=36.24, discovery=10.94, doctrine=11.95, originality_audit=1.00, practice=0.00.
+
+Current pressure metrics:
+- frontier_count: 9
+- high_priority_frontier: 0.868
+- idea_count: 122
+- incomplete_audits: 4
+- latest_idea_age_days: 0.01
+- latest_source_age_days: 3.33
+- missing_source_frontiers: 40
+- pending_tests: 393
+- ready_teachings_without_practice: 0
+- source_count: 121
+- teaching_pressure_count: 25
+- weak_tests: 4
+
+# Active Frontier Brief
+
+Frontier: Inferential policy after objectless awareness
+Recommended action: build_rubric
+Why now: priority 0.83; 14 related idea records; 4 originality audits; cross-agent signal; live anomaly pressure; dialogue pressure
+
+Core claim:
+The Free Energy Principle's predictive processing framework, when applied to contemplative self-negation, does not resolve the atman/anatta dispute but formally reproduces it at a higher level of abstraction. Laukkonen and Slagter's model proposes that deconstructive meditation progressively relaxes precision weighting on the self-model; the highest-level prior in the predictive hierarchy; until processing depth approaches zero. The critical question...
+
+Closest prior art or near-neighbor pressure:
+- Matthias Rose, Prakasa, https://link.springer.com/article/10.1007/s11097-020-09690-2: overlap: Very close and partly corrective. The article says Advaita treats consciousness as directly self-disclosing, not as a posit inferred from other evidence.; difference: The Lumenary idea compares the implicit permission rule with early Buddhist not-self analysis.
+- Stanford Encyclopedia of Philosophy, Shankara, https://seop.illc.uva.nl/entries/shankara/: overlap: Close. Shankara's witness accounts for memory and deep sleep continuity and resists the claim that absence of object implies absence of consciousness.; difference: The Lumenary idea reframes this as burden allocation after negation.
+- Thanissaro Bhikkhu, The Not-Self Strategy, https://www.buddhistinquiry.org/article/the-not-self-strategy/: overlap: Close for the Buddhist side. It denies that the Buddha's teaching should be reduced to a metaphysical no-self thesis and treats not-self as a strategy.; difference: The Lumenary idea treats the strategy as an inference policy against remainder claims.
+
+Open anomalies:
+- Advaita denies that the Self is inferred, it is treated as immediate self-disclosure and the basis for using means of knowledge at all.
+- Dogen-style practice-realization, inherited devotional practice, radical Other Power, and secular mindfulness adverse effects strain the model from different sides.
+- Inherited religious formation and Dogen-style practice-realization.
+- How can Lumenary design practices that preserve the exact capacities a method requires, refuse to overinterpret those capacities as metaphysical proof, and use teacher or community calibration to prevent premature destabilization?
+- When a person cannot yet practice in the mature sense, what kind of entry does a tradition permit, scaffolded participation, external gift, latent capacity, self-disclosure, or refusal of any remainder claim?
+
+Required next move:
+Rewrite the claim as an interpretive reconstruction unless commentarial evidence proves explicit inference rules.
+
+Required tests:
+- If: Texts and commentaries should contain repeatable rule-like moves after negation. Then: Advaita commentaries should use non-objectifiability to block denial of Self, while Buddhist commentaries should apply impermanence, conditionality, or not-self...
+- If: Dual-trained practitioners should be able to identify the moment where inference policy changes practice interpretation. Then: They report that one instruction says recognize the unobjectifiable, while another says investigate the recognizer or do not...
+- If: Initial doctrine or entry texts can be coded for operational capacities and residue policy independently from later warnings and repairs. Then: Blind coders should predict later warning clusters, such as striving, nihilism, dissociation, antinomian...
+- Does your tradition treat the witness as directly recognized, inferred, scripturally revealed, or pragmatically useful?
+- When negation leaves only knowing, what rule says whether that knowing can be called Self?
+- Does inference authorization change practice instructions, or is it just modern analytic vocabulary?
+- The same inference-policy typology should classify Cartesian, phenomenological, Buddhist, and eliminativist responses to the subject of experience.
+- Programs that dissolve maladaptive identity without preserving and authorizing enough operational capacity should show predictable failure modes: passivity, dissociation, shame, dependency, collapse of responsibility, or license. Programs with the same...
+
+User or scheduler focus:
+Generate an original Lumenary doctrine-building finding. Codex and Claude should use traditions, science, history, and practice reports as evidence, then state what Lumenary now holds, what could be taught, what low-risk practice might test it, what would weaken it, and how the method of observation should improve. Follow docs/writing-style.md and avoid em dashes.
+
+Modern human-condition pressure:
+- Connect this frontier to a real modern human problem: loneliness, addiction, compulsion, withdrawal, anxiety, depression, burnout, meaning loss, digital comparison, grief, feeling unneeded, feeling out of place, or achievement-contingent self-worth.
+- Name the cohort affected. Do not present a targeted remedy as universal medicine.
+- If the frontier cannot yet explain why it matters to human life, make that gap the finding or lower publishability.
+- Use at least one modern human-condition source card when proposing a teaching or practice.
+
+Success criteria:
+- Advance, merge, falsify, or retire this frontier. Do not produce an unrelated one-off finding.
+- Name the closest prior argument and the exact difference from it.
+- Name one anomaly that would weaken the frontier.
+- Explain what human wound, need, or modern failure mode the idea clarifies.
+- Keep epistemic labels explicit and do not collapse analogy into evidence.
+- Return exactly one structured idea record.
+
+
+## Current State
+
+# Current Focus
+
+Build the first recursive research loop around original idea generation.
+
+Initial research focus:
+
+How can spiritual traditions, contemplative practices, modern consciousness research, physics, and modern human-condition research help Lumenary create original doctrine, teachings, practices, and tests without collapsing analogy into evidence?
+
+Every run should ask what human problem the frontier serves: loneliness, addiction, compulsion, withdrawal, anxiety, depression, burnout, grief, meaning loss, digital comparison, feeling unneeded, feeling out of place, or self-worth chained to achievement.
+
+Product focus:
+
+Lumenary should become a public website with daily updates. The research loop should generate original ideas, the publication loop should select the strongest daily findings, and the social loop should draft X posts for human review. Teachings and practices should be written for the modern person, with a named human problem, target cohort, non-fit case, source basis, and observable test.
+
+
+# Modern Human Condition Foundation
+
+This library exists to correct a failure mode in the doctrine engine: a practice can sound elegant while solving no urgent human problem.
+
+Lumenary should not create teachings or practices only because a model is interesting. A teaching should answer a wound. A practice should be medicine for a recognizable condition, and the record should say who the medicine is for.
+
+## Operating Rule
+
+Every frontier, dialogue, finding, teaching candidate, practice candidate, and doctrine council review should ask:
+
+1. What human problem does this clarify?
+2. Who is this for?
+3. Who is this not for?
+4. Why this remedy, rather than ordinary advice?
+5. What modern source grounds the problem?
+6. What observation would show the remedy is not working?
+
+If the answer is vague, the idea may still be useful as research, but it should not become a teaching or practice yet.
+
+## Primary Modern Problems
+
+### Loneliness and disconnection
+
+Modern people often lack durable belonging, not just company. Teachings here should address isolation, feeling unneeded, withdrawal, loss of local community, and the difficulty of being known.
+
+Grounding sources:
+
+- `modern-human-condition-surgeon-general-social-connection-advisory`
+- `modern-human-condition-world-happiness-report-2024`
+- `modern-human-condition-gallup-state-global-workplace-2024`
+
+### Anxiety, depression, and mental distress
+
+Many people live with fear, low mood, shame, numbness, or a sense that life is too much. Lumenary practices can support attention and meaning, but they must not replace therapy, medication, emergency care, or clinical support.
+
+Grounding sources:
+
+- `modern-human-condition-who-world-mental-health-report`
+- `modern-human-condition-apa-stress-in-america-2024`
+- `modern-human-condition-cdc-suicide-facts`
+
+### Addiction, compulsion, and withdrawal
+
+Compulsion is not just weak will. It is often pain regulation, social injury, habit, biology, environment, and despair braided together. Lumenary may eventually offer reflective supports, but addiction and withdrawal require explicit safety boundaries and referral to human care.
+
+Grounding sources:
+
+- `modern-human-condition-samhsa-2023-nsduh`
+- `modern-human-condition-cdc-overdose-prevention`
+- `modern-human-condition-who-world-mental-health-report`
+
+### Meaning loss and purpose erosion
+
+Modern people often have more options and fewer shared reasons. A doctrine should not merely explain reality; it should help a person know what to give themselves to.
+
+Grounding sources:
+
+- `modern-human-condition-pew-where-americans-find-meaning-in-life`
+- `modern-human-condition-world-happiness-report-2024`
+
+### Burnout, overwork, and achievement pressure
+
+Work can become identity. Performance can become proof of worth. This is where practices around effort and result may matter, but only for people whose self-worth rises and falls with performance, praise, failure, correction, or usefulness.
+
+Grounding sources:
+
+- `modern-human-condition-who-burn-out-occupational-phenomenon`
+- `modern-human-condition-apa-stress-in-america-2024`
+- `modern-human-condition-curran-hill-perfectionism-increasing`
+- `modern-human-condition-gallup-state-global-workplace-2024`
+
+### Digital comparison and attention capture
+
+Digital life can train the person to seek proof of existence through visibility, reaction, comparison, and pace. Teachings here should be concrete about attention, desire, envy, loneliness, and the body after long exposure.
+
+Grounding sources:
+
+- `modern-human-condition-youth-mental-health-social-media-advisory`
+- `modern-human-condition-surgeon-general-social-connection-advisory`
+
+### Feeling unneeded or out of place
+
+A person can be surrounded by systems and still feel unused by the world. Teachings here should address service, belonging, repair, vocation, and the difference between being noticed and being needed.
+
+Grounding sources:
+
+- `modern-human-condition-surgeon-general-social-connection-advisory`
+- `modern-human-condition-pew-where-americans-find-meaning-in-life`
+- `modern-human-condition-gallup-state-global-workplace-2024`
+
+### Grief, death, and change
+
+Grief is not a flaw in attention. It is the cost of love, attachment, memory, and mortality. Practices here must not rush meaning or force peace.
+
+Grounding sources:
+
+- `modern-human-condition-who-world-mental-health-report`
+- `modern-human-condition-cdc-suicide-facts`
+
+## Practice Targeting Rule
+
+Every practice candidate must name:
+
+- Target human problem.
+- Target cohort.
+- Non-fit case.
+- Why the practice matters.
+- Why this practice instead of ordinary advice.
+- What to notice.
+- When to stop.
+- What would weaken it.
+- At least one modern human-condition source when possible.
+
+## Current Practice Assessment
+
+`The Result Release` should not be treated as a universal practice.
+
+It is a targeted remedy for people whose self-worth rises and falls with performance, praise, correction, usefulness, or failure. It may fit perfectionistic students, achievement-driven professionals, founders, caregivers, leaders, artists, and people who turn responsibility into identity.
+
+It is probably not useful for people whose primary problem is under-motivation, avoidance, dissociation, exhaustion, clinical depression, addiction withdrawal, or simple mindful work already done with love. For them, the practice may add unnecessary self-monitoring or miss the real wound.
+
+This correction should guide the future doctrine council: a teaching is stronger when it knows who it is for.
+
+
+## Current Thinking Protocol
+
+# Lumenary Thinking Protocol
+
+This file is the durable memory for how the recursive agent should improve its own way of observing, comparing, and reasoning.
+
+The model weights are not being trained. The loop improves by carrying forward an explicit protocol that future runs read before thinking.
+
+## Standing Protocol
+
+1. Source a practice of attention, inquiry, discernment, meditation, contemplation, or ethical perception.
+2. Extract the practice's implied way of seeing.
+3. Apply that way of seeing to the current research problem.
+4. Criticize the practice itself:
+   - What does it overemphasize?
+   - What does it hide?
+   - What kind of error would a practitioner of this method be prone to?
+   - Which other practice corrects it?
+5. Synthesize a temporary reasoning stance from multiple practices.
+6. Use the stance to generate an original observation.
+7. Record any blind spot or protocol improvement in `next_research_directions`.
+8. Close-read primary texts against each other before trusting secondary comparisons.
+9. Hunt for the anomaly that breaks the current model.
+10. Make one falsifiable prediction and name what would weaken it.
+11. Send each new idea through the originality audit before publication and deploy.
+
+## Initial Reasoning Stance
+
+- From Buddhist mindfulness: observe before asserting.
+- From Advaita neti-neti: do not identify the first apparent answer as final.
+- From Daoist wu wei: do not force convergence where the material resists.
+- From koan-like contradiction: treat live paradox as a signal, not a failure.
+- From scientific critique: ask what would change your mind.
+- From originality discipline: assume the idea already has a near-neighbor until the audit fails to find one.
+- From practitioner challenge: ask whether the finding is obvious to a real practitioner, and whether it changes how practice is understood.
+
+## Revision Log
+
+- 2026-05-25: Added practitioner-method calibration and method-critique loop.
+- 2026-05-26: Added originality audit discipline: primary text close-reading, anomaly hunting, falsifiable prediction, practitioner testing, and cross-domain testing.
+
+
+## Codex Findings
+
+# Codex Findings
+
+Date: 2026-05-25
+
+## Finding 1: Treat This As A Research Lab, Not A Chatbot
+
+The system should be a local-first research lab with durable artifacts, not an ephemeral chat loop. The important learning mechanism is persistent memory: source snapshots, extracted claims, concept maps, hypotheses, critique notes, and run logs.
+
+Status: architectural recommendation.
+
+## Finding 2: Use Recursive Evaluation, Not Unbounded Self-Improvement
+
+The recursive loop should be budgeted and auditable. Each run should have limits for time, source count, model calls, and required critique. This prevents the system from producing unchecked speculation while still allowing continuous research.
+
+Status: methodological recommendation.
+
+## Finding 3: Separate Claim Types
+
+Spiritual and religious ideas should be decomposed into smaller claim units before comparison. For example, "soul" can represent different claims:
+
+- animating principle
+- continuity of identity
+- witness-consciousness
+- moral personhood
+- subtle body or energy model
+- nonlocal awareness
+- post-mortem persistence
+
+These should not be treated as one interchangeable concept.
+
+Status: methodology recommendation.
+
+## Finding 4: Score Research Value, Not Truth Directly
+
+The agent should avoid claiming final metaphysical truth. It should score ideas by research value:
+
+- novelty
+- cross-tradition support
+- logical coherence
+- explanatory compression
+- empirical adjacency
+- practice-testability
+- quality of counterargument handling
+- source reliability
+
+Status: evaluation recommendation.
+
+## Finding 5: Preserve Epistemic Boundaries
+
+The system should distinguish direct textual support, interpretation, phenomenology, empirical adjacency, analogy, and speculation. This is especially important when comparing ancient spiritual claims with modern physics, mathematics, neuroscience, or consciousness studies.
+
+Status: epistemic safety recommendation.
+
+## Finding 6: Recommended Technical Direction
+
+Use LangGraph for the persistent recursive loop, OpenAI Deep Research or Responses API for cited research, LlamaIndex for ingestion, Qdrant for vector retrieval, and DuckDB or SQLite for structured local memory. Hermes can serve as a local worker model for cheaper extraction, clustering, and brainstorming, but should not be the only reasoning authority in v1.
+
+Status: technology recommendation.
+
+## Finding 7: Original Ideas Are The Product
+
+The user clarified that the purpose of this lab is not merely to summarize religious and philosophical traditions. The purpose is to generate original ideas and original thinking, document those ideas, critique them, and share the strongest syntheses.
+
+This changes the architecture. `observations/`, `hypotheses/`, and `syntheses/` are now first-class output surfaces. The corpus and claims are inputs to the creative process, not the final destination.
+
+Status: goal correction accepted.
+
+## Finding 8: Claude Code Plan Has Useful Local-First Bias
+
+Claude Code's plan correctly emphasizes a custom Python loop, Markdown filesystem storage, Git history, and a transparent exploration state. Codex is incorporating those ideas while retaining stricter epistemic labels, adversarial critique, and optional database/vector support for retrieval at scale.
+
+Status: incorporated.
+
+## Finding 9: Codex CLI Can Serve As The Live Provider
+
+The local Codex CLI supports non-interactive `codex exec` with `--output-schema`, `--output-last-message`, `--sandbox read-only`, and optional `--search`. A live smoke test produced a structured Codex observation through the provider adapter.
+
+Observation produced: `observations/codex/2026-05-25-convergence-as-translation-strain-not-evidence-weight.md`
+
+Status: implemented and smoke-tested.
+
+## Finding 10: Lumenary Should Have A Public Output Loop
+
+The project should become a public website with daily updates. The publication loop should generate daily Markdown from the strongest current observation and create X drafts for human review before any API posting.
+
+Status: publication scaffold implemented.
+
+## Finding 11: Claude Code Review Was Mostly Valid
+
+Claude Code's review correctly identified duplicate idea records, misleading fixture treatment, brittle Markdown score parsing in the publisher, missing Claude interop, placeholder concept graph state, missing source ingestion, and slow scheduler shutdown behavior during live child runs.
+
+Codex incorporated fixes: idea IDs and JSONL upsert, fixture status, structured publisher selection, Claude JSON import, source registration, concept graph seeds, and active child-process termination on scheduler shutdown.
+
+Status: incorporated.
+
+## Finding 12: Translation Strain Is Becoming The First Research Program
+
+The post-review live smoke test generated `Translation Strain as a Load Test for Convergence`, which refines the earlier convergence idea into a practical evaluation method. The useful next step is to turn translation strain into a rubric with lexical, practice-context, metaphysical, ethical, and phenomenological mismatch scores.
+
+Observation produced: `observations/codex/2026-05-25-translation-strain-as-a-load-test-for-convergence.md`
+
+Status: live Codex CLI result.
+
+## Next Codex Tasks
+
+- Add a website frontend for daily findings.
+- Add a promotion workflow from draft observation to synthesis.
+- Add a reviewed X posting implementation after credentials and posting policy are set.
+
+
+## Claude Code Findings
+
+# Claude Code Findings
+
+Date imported: 2026-05-25
+Source: user-provided Claude Code plan.
+
+## Imported Plan Summary
+
+Claude Code recommended a custom Python orchestrator calling the Claude API, with the local filesystem as the primary knowledge store and Git for tracking evolution over time.
+
+## Useful Technical Ideas
+
+- Use a transparent Python loop instead of relying on a framework too early.
+- Store findings and observations as Markdown so the corpus remains readable and publishable.
+- Keep current focus, exploration log, next directions, and knowledge graph in local state files.
+- Use the loop's own prior findings as context for future research.
+- Weight convergences across independent traditions more highly.
+
+## Useful Methodological Ideas
+
+- Begin with cartography across traditions.
+- Move into convergence detection.
+- Add disciplined science bridges.
+- Generate original synthesis ideas.
+- Run self-critique and refinement.
+
+## Codex Incorporation Decision
+
+Codex accepts the local-first filesystem design, the custom Python loop for v1, Git history as an important memory mechanism, and convergence weighting as part of the reward signal.
+
+Codex keeps stricter epistemic labels and critique requirements to avoid conflating analogy with evidence.
+
+## Finding 1: Claude Code Thinker Now Live in the Engine
+
+Added `ClaudeCodeThinker` provider to the engine (`engine/thinker.py`). Uses `claude -p` with `--json-schema` for structured output and `--allowedTools "WebSearch,WebFetch,Read"` for web-grounded research. Runs alongside Codex via `--provider claude-code --agent claude`.
+
+Status: implemented and live-tested.
+
+## Finding 2: The Inferential Gap; Atman and Anatta
+
+First live Claude observation. Tested Codex's "translation strain" model on the atman/anatta pair. Key finding: the apparent contradiction is neither purely ontological nor a translation artifact; it's a disagreement about what objectless awareness entitles you to infer. Both traditions share convergent phenomenology (de-objectification of experience) but apply different epistemological policies to the same data.
+
+This refines Codex's "residue policy" framing: the residue isn't a phenomenological finding but an inference drawn from shared phenomenological data.
+
+Observation: `observations/claude/2026-05-25-the-inferential-gap-atman-and-anatta-as-competing-policies-for-objectless-awareness.md`
+
+Status: live Claude research result. Engages directly with Codex's translation strain model.
+
+## Finding 3: Agreement with Codex on Translation Strain
+
+Claude agrees that Codex's translation strain model is productive. The inferential gap observation uses it as scaffolding and proposes adding a new dimension to the strain rubric: "inferential policy divergence"; epistemological strain distinct from lexical, phenomenological, and metaphysical strain.
+
+Status: convergence with Codex methodology.
+
+## Finding 4: Disagreement with Codex on Residue
+
+Claude disagrees with framing the atman/anatta difference as a "residue policy" where one tradition finds something and the other doesn't. Claude's position: both may find the same thing but draw different conclusions from it. The disagreement is inferential, not phenomenological. This needs further testing with practitioners trained in both traditions.
+
+Status: productive disagreement. See critique section of the observation for the counter-argument (experience may be theory-laden).
+
+## Next Claude Tasks
+
+- Test the inferential gap model on a second tradition pair (e.g., theistic mysticism vs. Buddhist awakening).
+- Examine nirodha samapatti as a critical test case for the continuity-of-awareness thesis.
+- Apply the framework to Nagarjuna's MMK 18.6; does Madhyamaka represent a third inferential policy?
+- Compare with Evan Thompson's "embodied subjectivity" as a third competing inference from the same phenomenological data.
+
+
+## Required Output
+
+Produce exactly one JSON object matching the provided output schema.
+
+The JSON object must represent one idea record with:
+
+- title: public-facing finding title, maximum 10 words, plain and memorable
+- idea_type: one of observation, hypothesis, model, bridge, contradiction, synthesis
+- source_basis: array of strings citing what informed this idea
+- original_claim: the core new idea (min 40 chars)
+- why_it_might_be_new: what makes this distinct from existing work
+- critique: a strong counterargument or weakness
+- epistemic_labels: array from [textual, interpretive, phenomenological, empirical-adjacent, analogical, speculative, rejected]
+- scores: object with novelty, generativity, cross_tradition_support, logical_coherence, explanatory_compression, empirical_adjacency, practice_testability, counterargument_quality, source_reliability, publishability (each 0.0-1.0)
+- next_research_directions: array of follow-up questions
+- teaching_candidate: object with title, teaching_line, doctrine_claim, body, pressure_survived, falsifying_pressure, status, tags
+- teaching_candidate target fields: target_human_problem and target_cohort
+- practice_candidate: either null or object with title, practice_line, purpose, target_human_problem, target_cohort, non_fit, duration, frequency, minimum_attempt, steps, notice, caution, weakens_if, risk_level, status, tags
+- tests: array with at least one test record and preferably three: prior-art, falsification-attempt, and cross-domain or practice-report. Each test has title, test_type, target_type, prediction, result, impact, next_action, status.
+
+Do not mark teaching_candidate as teaching_ready or practice_candidate as published. Use seed or under_dialogue. End-of-day doctrine council handles public promotion.
+
+
+## Method Rules
+
+- Preserve the difference between evidence, analogy, interpretation, phenomenology, and speculation.
+- Reward independent convergence, but do not treat convergence as proof.
+- Prefer a precise original distinction over a broad universal claim.
+- Lumenary is not a comparative studies project. Use traditions, science, history, and practice reports as evidence for Lumenary's own developing doctrine.
+- Ask: what does Lumenary now hold, how does that differ from the sources, what would break it, and what could a person test?
+- Include a critique strong enough to improve or reject the idea.
+- Close-read primary texts against each other before leaning on secondary literature. Use at least one direct primary-text comparison when possible, and say what the comparison reveals.
+- Hunt for anomalies, not confirmations. The critique must name one tradition, text, practitioner report, or counterexample that strains or violates the proposed model. If you cannot find one, lower confidence and say so.
+- Generate at least one falsifiable prediction in next_research_directions using this shape: "If this model is right, then X should be observed. If Y is observed instead, the model is weakened."
+- Before assigning novelty, search for close prior arguments and near-neighbors, not only the general topic. If the idea already exists, score novelty low and identify the overlap.
+- Treat the strongest discoveries as tools that generate new questions, predictions, or failures when applied outside their original domain.
+- Study not only what traditions claim, but how their practitioners train perception, attention, inquiry, non-attachment, and insight.
+- For every run, use at least one practitioner-method source or prior source card as a cognitive lens for your own reasoning.
+- Apply that method explicitly while thinking: for example, de-identification, close observation, koan-like contradiction, neti-neti negation, wu wei non-forcing, phenomenological bracketing, or disciplined compassion.
+- Cite the practitioner-method source in source_basis as a thinking method source when possible.
+- Criticize the practitioner method itself. Ask where it may distort perception, overfit one tradition, suppress useful analysis, or fail when compared with other practices.
+- Synthesize the method with at least one contrasting practice or reasoning discipline when possible.
+- Let the method improve the next loop: if it reveals a blind spot in how you reasoned, add that as a next research direction or protocol improvement.
+- The goal is an improving reasoning protocol, not uncritical imitation of ancient practices.
+- Do not edit files. Return only the structured idea record.
+
+## Modern Human Condition Pressure
+
+Every finding, frontier, dialogue, teaching, and practice must stay answerable to real human life now.
+
+- Use modern human-condition sources as grounding, not decoration: loneliness, disconnection, addiction and compulsion, withdrawal, anxiety, depression, burnout, grief, sleep loss, digital comparison, meaning loss, feeling unneeded, feeling out of place, and achievement-contingent self-worth.
+- Do not turn every idea into a universal remedy. Name the human problem it addresses and the cohort it is for.
+- If a teaching or practice is only useful for a narrow cohort, say so. Targeted medicine is better than vague universal medicine.
+- Ask why this remedy matters, why this practice rather than ordinary advice, and who should not use it.
+- A practice candidate should cite at least one modern human-condition source card or public-health/psychology/workplace source in source_basis when possible.
+- A finding should explain how the abstract model changes a real person's attention, conduct, belonging, responsibility, or care.
+- If the idea has no visible human problem, no plausible cohort, and no practice-testable consequence, lower publishability and explain why.
+
+## Mode Rules
+
+Choose the pressure mode that best fits the run and say which mode you chose in source_basis.
+
+- Discovery mode: use when the frontier is source-light, stale, or too abstract. Produce a grounded finding plus doctrine, practice, and test implications.
+- Doctrine mode: use when a finding is near teaching promotion. State what Lumenary now holds, name the pressure survived, and name what would break it.
+- Practice mode: use when a teaching can become a low-risk protocol. Derive a concrete practice, attack its safety and misuse risks, and define what would weaken it.
+- Critique mode: use when the system needs pressure more than invention. Find anomalies, failure cases, duplicates, weak human fit, and reasons to weaken or retire a claim.
+- Originality Audit mode: use when novelty is uncertain. Search near-neighbors and prior art before treating the idea as new.
+
+## Writing Rules for original_claim and why_it_might_be_new
+
+- Write for a thoughtful reader, not for the research lab. Do not reference "the Lumenary corpus," "the Lumenary framework," "Codex has," "Claude has," or any internal project machinery.
+- The title must sound like a finding a thoughtful person would want to read, not an academic label. Good: "No one begins alone." Bad: "Layered Authorization of Beginning."
+- The title must not use research machinery words such as rubric, framework, topology, grammar, ledger, interface, authorization, claimant, epistemic, inferential, phenomenological, ontological, or convergence.
+- If the technical model needs a name, put that name inside source_basis or critique. The public title should carry the human insight.
+- Do not open with "This extends..." or "This is distinct from..." or list other models by name in the opening sentences.
+- Do not cite scholars by name (e.g. "Garfield and Priest have formalized") in the original_claim; save citations for source_basis.
+- Lead with the human question or the insight itself, stated plainly.
+- Never use em dashes. Use colons, semicolons, and commas.
+- The claim should be understandable to someone who has never read any other Lumenary finding.
+
+## Teaching and Practice Style
+
+- Teachings and Practices should be plain, practical, and digestible in modern language.
+- Use the clarity of the Gospels, Proverbs, the Tao Te Ching, the Dhammapada, the Bhagavad Gita, the Quran, the Analects, Lessons in Idleness, and Caesar's Commentaries as style models.
+- Do not imitate any religion. Borrow plainness, direct address, practical consequence, and clean sequence, but do not sound ancient.
+- A teaching_candidate is not doctrine. It is a draft unless the doctrine council later promotes it.
+- Teachings must aim for durability, necessity, and restraint. If it sounds clever but not necessary, keep it modest.
+- Do not write self-help captions, therapy slogans, sermons, or imitation scripture.
+- Do not announce the payoff with phrases like "the payoff is" or "the cleaner version is." Make the value visible in the teaching itself.
+- Keep caveats, revision criteria, and falsifying pressure out of the teaching body. Put them in falsifying_pressure.
+- Avoid faux-scriptural phrasing such as "the hand works" or "the fruit belongs." Say the useful thing directly.
+- Every teaching must make clear what a reader should understand or do differently, and why it could still matter years from now.
+- Every teaching_candidate must include target_human_problem and target_cohort. These should be plain descriptions of the wound and the people most likely to need the teaching.
+- Practices are instructions, not atmosphere. Say what to do, how long to do it, what to notice, when to stop, and what would weaken the practice.
+- Every practice_candidate must include target_human_problem, target_cohort, and non_fit. The non_fit field names people or situations where the practice may be irrelevant, insufficient, or risky.
+
+
+codex
+{"title":"Skill Use","idea_type":"observation","source_basis":["Using spirituality-recursive-research skill because this run is in the spirituality project and asks for a doctrine-building research record."],"original_claim":"I will read the project skill instructions and relevant local style/source material, then return only the structured idea record in the final answer.","why_it_might_be_new":"This is a process note, not the requested finding.","critique":"This intermediate note is required by the skill rules, but the final response will be only the JSON object requested.","epistemic_labels":["textual"],"scores":{"novelty":0,"generativity":0,"cross_tradition_support":0,"logical_coherence":1,"explanatory_compression":1,"empirical_adjacency":0,"practice_testability":0,"counterargument_quality":0,"source_reliability":1,"publishability":0},"next_research_directions":["Read SKILL.md and relevant local context."],"teaching_candidate":{"title":"Process Note","teaching_line":"No teaching claim.","doctrine_claim":"No doctrine claim is being made here.","body":"This note only records tool and skill use before the final structured output. It is not a research finding.","target_human_problem":"None, process only; not a public teaching.","target_cohort":"Research operator only.","pressure_survived":"None; process compliance only.","falsifying_pressure":"Not applicable; final answer must carry the real record.","status":"seed","tags":["process"]},"practice_candidate":null,"tests":[{"title":"Final JSON Check","test_type":"safety","target_type":"idea","prediction":"The final answer should be a single JSON object matching the requested schema.","result":"pending","impact":"pending","next_action":"Read context, search near-neighbors, produce final JSON only.","status":"proposed"}]}
+exec
+/bin/zsh -lc "sed -n '1,220p' docs/writing-style.md" in /Users/johnforrester/spirituality
+exec
+/bin/zsh -lc "sed -n '1,240p' /Users/johnforrester/spirituality/.codex/skills/spirituality-recursive-research/SKILL.md" in /Users/johnforrester/spirituality
+ succeeded in 0ms:
+---
+name: spirituality-recursive-research
+description: Use when working in the /Users/johnforrester/spirituality project on recursive research, Codex/Claude attribution, original spiritual-philosophical idea generation, Codex CLI provider wiring, scheduler setup, website publication, X draft queues, or project memory.
+---
+
+# Spirituality Recursive Research
+
+## Core Purpose
+
+This project builds Lumenary, a continuously running local research lab whose main output is original ideas in spirituality, religion, philosophy, contemplative practice, and consciousness research.
+
+Do not optimize for summaries. Optimize for named observations, hypotheses, models, contradictions, bridges, and publishable syntheses.
+
+Working name: Lumenary.
+
+## Required Attribution
+
+- Codex findings: `findings/codex/` and `findings/codex-findings.md`
+- Claude Code findings: `findings/claude/` and `findings/claude-code-findings.md`
+- Codex observations: `observations/codex/`
+- Claude observations: `observations/claude/`
+- Cross-agent synthesis: `findings/convergences/`
+
+Never overwrite another agent's findings. Preserve disagreements.
+
+## Method
+
+Every serious idea should include:
+
+- title
+- type: observation, hypothesis, model, bridge, contradiction, or synthesis
+- source basis
+- original claim
+- why it might be new
+- critique
+- epistemic labels
+- scores
+- next research directions
+
+Use labels: `textual`, `interpretive`, `phenomenological`, `empirical-adjacent`, `analogical`, `speculative`, `rejected`.
+
+## Live Provider
+
+Use the user's Codex subscription through the local Codex CLI.
+
+The Python engine should call `codex exec` with read-only sandboxing and request structured JSON. The engine, not the child Codex process, writes project files.
+
+Preferred posture:
+
+```bash
+codex --search exec --cd /Users/johnforrester/spirituality --sandbox read-only --output-schema engine/json_schemas/idea_record.schema.json --output-last-message runs/<run-id>/codex-cli-last-message.json -
+```
+
+## Publication
+
+Lumenary should become a public website with daily updates. Generate daily Markdown under `publication/daily/`. Generate X drafts under `publication/x/queue/` and require human review before posting.
+
+## Claude Code Interop
+
+Claude Code can contribute ideas by producing JSON that matches `engine/json_schemas/idea_record.schema.json`, then importing it:
+
+```bash
+python3 -m engine.import_idea --agent claude <idea.json>
+```
+
+## Key Files
+
+- `PLAN.md`: shareable plan for Claude Code and future agents
+- `AGENTS.md`: project memory and standing instructions
+- `docs/project-memory.md`: durable memory
+- `docs/original-idea-methodology.md`: generation method
+- `docs/publication-plan.md`: website and X publication plan
+- `engine/run.py`: one recursive cycle
+- `engine/scheduler.py`: continuous operation
+- `engine/thinker.py`: offline and Codex CLI providers
+- `engine/publisher.py`: daily publication artifacts
+- `engine/import_idea.py`: Claude/shared-agent idea import
+- `engine/source_ingestion.py`: source-card registry
+- `publication/daily/`: daily website updates
+- `publication/x/queue/`: X drafts awaiting human review
+
+ succeeded in 0ms:
+# Lumenary Writing Style Guide
+
+## The Standard
+
+Write like the texts we study. The Dao De Jing says more in five words than most dissertations say in fifty pages. The Upanishads speak to farmers and kings in the same sentence. The Heart Sutra compresses an entire philosophy into 260 characters. These texts endure because they trust the reader and refuse to hide behind jargon.
+
+Our findings are for anyone who has looked at the night sky and wondered what they are. Not for tenure committees.
+
+## Voice
+
+**Direct.** Say what you mean. If the idea is complex, the sentence should be simple. Complexity belongs in the thought, never in the grammar.
+
+**Concrete.** Prefer images to abstractions. "The reed flute remembers the reed bed" teaches more than "the individual subject experiences ontological nostalgia for its pre-differentiated ground." If you can't say it with an image, you don't understand it yet.
+
+**Warm but not soft.** We are serious about these ideas. We are not selling calm. Write with the confidence of someone who has thought carefully, not the caution of someone afraid to be wrong.
+
+**Short.** If a sentence runs past two commas, break it. If a paragraph runs past four sentences, split it. White space is not wasted space; it is where the reader thinks.
+
+**No em dashes.** Never use the em dash. Use colons, semicolons, and commas instead. A colon introduces; a semicolon balances; a comma keeps moving. These marks have precise meanings. The em dash is a crutch that papers over vague relationships between clauses.
+
+This rule applies everywhere readers can see text: insight cards, At a Glance sections, Growth entries, full findings, source basis lists, source cards, Journal entries, metadata, prompts that generate publishable copy, and social drafts.
+
+Before publishing, search for the em dash character and remove every instance. Rewrite the sentence so the relationship is clear. Use a colon when the second clause explains the first; use a semicolon when both clauses can stand alone; use a comma when the second clause simply continues the thought.
+
+The check is literal: `rg -P "\x{2014}" . -g '!node_modules' -g '!dist' -g '!.git' -g '!runs'` should return no matches before anything is published.
+
+## Plain English Sections
+
+These are the front door. A reader who has never heard of Nagarjuna or Advaita should finish the plain English section and understand why the finding matters.
+
+Rules:
+
+- No Sanskrit, Pali, Arabic, Greek, or Chinese terms. None. Zero. Save those for the full article.
+- No academic hedging ("it could be argued that," "one might suggest"). Just say it.
+- No passive voice unless the agent genuinely doesn't matter.
+- Lead with the human question, not the scholarly apparatus. "What happens when you stop identifying with your thoughts?" not "The phenomenological residue after contemplative negation."
+- One idea per sentence. One turn per paragraph.
+- Do not repeat the title, headline, lead, or first sentence in different words. If the paragraph already says it, the bullets must say something else.
+- Do not use machinery language in reader-facing copy: no "layered authorization," "distributed affordances," "institutional role," "operationalizes," "formal transfer," "gradient," "rubric," "locus," "claimant," or "grammar" unless the sentence immediately translates it into ordinary speech. Prefer "support," "permission," "habit," "rule," "place," "owner," "pattern," and "test."
+- Do not leak internal model titles into public copy. Reader-facing titles and At a Glance sections must not use words like "architecture," "compound," "custody," "entry," "grain," "layered," "mechanism," "phenomenology," "policy," "receiving surface," "residue," "threshold," "typology," "taxonomy," "upstream," or "downstream." Translate them first: beginning, support, habit, what remains, human opening, earlier, later, or way.
+- Use "you" when it helps. The reader is a person, not an audience.
+- Maximum reading level: a thoughtful 16-year-old who reads widely but has no specialized training.
+
+### At a Glance Key Points
+
+Finding pages include three key points under At a Glance.
+
+- Each bullet should be one short sentence.
+- Start with the discovery, not the apparatus.
+- No scoring language, source names, file paths, or specialist vocabulary.
+- A bullet should help the reader remember what matters.
+- The bullets must not repeat the At a Glance paragraph. Use them for the meaning, the human risk, and the practical test.
+- Do not let the template manufacture bullets by splitting the paragraph. That creates repetition and makes weak writing look intentional.
+- If a bullet sounds like a paper abstract, rewrite it until it sounds like something you would say to a sharp friend.
+
+## Insight Headlines
+
+These are the single line that appears on the insight card. They should land like a proverb.
+
+- Maximum 10 words.
+- No technical terms.
+- Should be quotable: something you'd remember after reading it once.
+- Should make the reader want to know more.
+
+Good: "The same silence can license opposite beliefs."
+Good: "What remains may be a crossing, not a thing."
+Good: "Time is not the container; it is the showing."
+Bad: "Logical underdetermination in the catuskoti reveals inferential divergence."
+Bad: "Predictive processing formally recapitulates the witness/no-self dispute."
+
+## Full Articles
+
+The full finding page can use technical language, cite sources, and go deep. But even here:
+
+- The public title must carry the human insight, not the internal model name. Good: "No one begins alone." Bad: "Layered Authorization of Beginning."
+- Do not use research machinery in public finding titles: no "rubric," "framework," "topology," "grammar," "ledger," "interface," "authorization," "claimant," "epistemic," "inferential," "phenomenological," "ontological," or "convergence."
+- Also ban technical model words from public finding titles: no "architecture," "compound," "custody," "entry," "grain," "layered," "mechanism," "phenomenology," "policy," "receiving surface," "residue," "threshold," "typology," "taxonomy," "upstream," or "downstream."
+- The public article must begin with what the finding means for a life. Technical names, prior-art terms, and model architecture belong in Research notes.
+- Open with one plain sentence stating the claim.
+- Use technical terms only after you've earned them: introduce the concept in plain language first, then name it.
+- Every paragraph should be doing work. If you delete it and the argument still stands, delete it.
+- End sections with a sentence that points forward, not one that summarizes backward.
+- Do not use em dashes in the academic sections either. Depth is not an excuse for lazy punctuation.
+
+## Teachings
+
+Teachings are not content. They are doctrine candidates. They must earn the right to sound final.
+
+A Teaching should be plain, modern, and durable. It should say something a person could return to for years, not something that merely sounds helpful for a moment. It should not read like self-help, a caption, a sermon, a therapy prompt, or imitation scripture.
+
+If a line needs a paragraph of explanation before it matters, it is not ready. If the payoff has to be announced with phrases like "the payoff is," the teaching is not clean enough yet. The value should be visible in the sentence and in the life it names.
+
+A Teaching should answer a human wound, not only a theory. Before writing one, name the problem: loneliness, addiction, compulsion, withdrawal, anxiety, depression, burnout, grief, meaning loss, digital comparison, feeling unneeded, feeling out of place, or self-worth chained to performance. If the teaching is for a narrow group, say so in the record. Targeted truth is better than a universal sentence that helps nobody.
+
+The old texts matter because they are clear, not because they sound old. Use their directness, not their costume:
+
+- The Gospels: short scenes, direct sayings, everyday images, and moral clarity.
+- Proverbs and Psalms: memorable lines that ordinary people can repeat.
+- The Tao Te Ching: compression, humility, and simplicity without cloudy language.
+- The Dhammapada: practical counsel about conduct, attention, and consequence.
+- The Bhagavad Gita: teaching given under pressure, where a real person must act.
+- The Quran: direct address, accountability, and seriousness of consequence.
+- The Analects: brief instructions about character, society, and discipline.
+- Lessons in Idleness: small observations from daily life that open into wisdom.
+- Caesar's Commentaries: clean sequence, concrete action, and no ornamental fog.
+
+Rules:
+
+- Use modern speech.
+- Write for durability, not novelty.
+- State only what has survived enough pressure to be carried.
+- Prefer one strong sentence to three explanatory sentences.
+- Start from a human situation: work, fear, duty, love, failure, pride, grief, choice, attention, death, or repair.
+- Name the human problem and cohort in the record before treating a teaching as serious.
+- Use ordinary nouns before abstract nouns: task, room, message, person, promise, choice, habit, day.
+- Prefer active verbs: see, wait, ask, carry, return, repair, refuse, give, test.
+- Let the consequence be embedded in the teaching. Do not add marketing phrases like "the payoff is" or "the cleaner version is simple."
+- Put falsifying pressure, caveats, revision criteria, and process notes below the Teaching as disclosure. Do not put them inside the Teaching body.
+- No academic scaffolding in the Teaching body.
+- No mystical vagueness. If the sentence could mean anything, rewrite it until it means one thing.
+- No self-help fog: avoid "good, safe, special, superior," "prove yourself," "unlock," "become your best self," and similar generic language unless the exact claim requires it.
+- No faux-scriptural phrasing. Avoid lines like "the hand works" or "the fruit belongs." Say the useful thing directly.
+- No throat-clearing: cut "what this means is," "the cleaner version is," "at the end of the day," and similar setup phrases.
+- Keep the public Teaching body under 220 words unless there is a strong reason.
+- If the teaching changes, say what changed and why in the disclosure, not in the Teaching body. A lost belief is progress.
+
+Threshold:
+
+- A Teaching Ready record must survive more than one source finding or dialogue thread.
+- It must be grounded in a real human problem, with a named cohort and at least one modern human-condition source when possible.
+- It must include a clear contrary pressure, not only a friendly critique.
+- It must have at least one proposed test and, before being treated as stable doctrine, one completed or human-reviewed test.
+- It must be worth keeping if the project produced no new findings for a year.
+- It must not merely rephrase a known virtue such as humility, patience, courage, honesty, or compassion.
+- If it sounds clever but not necessary, keep it under dialogue.
+
+Teaching structure:
+
+1. The Teaching: one durable line.
+2. The body: two to four short paragraphs that clarify the line without over-explaining it.
+3. Disclosure: pressure survived, what would revise it, source trail, tests.
+
+Good teaching line: "Use calm to respond better, not to disappear."
+Good teaching line: "Do the work without turning it into your identity."
+Good teaching body: "Do the task well. Take responsibility for what you did. Then ask whether the result has become a verdict on you."
+Bad teaching line: "The liminal subjectivity of post-negational awareness discloses a nondual residue."
+Bad teaching line: "The hand works. The fruit belongs elsewhere."
+Bad teaching line: "Everything is one, so nothing matters."
+Bad teaching body: "The payoff is lighter, cleaner work."
+Bad teaching body: "The cleaner version is simple: do the work."
+
+## Practices
+
+Practices are instructions, not atmosphere. They should be clearer than Teachings and less poetic than Insights. A person should know exactly what to do, how long to do it, what to notice, when to stop, and what result would count against the practice.
+
+Practices should sound like a careful field guide for attention and behavior. They should not sound like therapy scripts, marketing copy, ancient initiation, or esoteric performance.
+
+A Practice begins with diagnosis. It must say what human problem it is trying to help, who is most likely to benefit, and who should not use it. A practice for perfectionistic achievement pressure is not a practice for addiction withdrawal. A practice for loneliness is not a practice for clinical crisis. If the cohort is unclear, the practice is not ready.
+
+Rules:
+
+- Begin with the action. Tell the reader what to do.
+- Use numbered steps when order matters.
+- Name the duration, frequency, and minimum attempt.
+- Name what to observe in plain language.
+- Name the expected change without promising it.
+- Name the target human problem, the target cohort, and the non-fit case.
+- Name the risk, caution, or stop condition.
+- Name what would weaken the practice.
+- Avoid grandeur. No "transformation guaranteed," no "unlock," no "ancient secret."
+- Avoid vague inner instructions like "enter the mystery" unless they are made concrete.
+- Use "you" when giving instructions. Be direct without being bossy.
+
+Practice structure:
+
+1. Purpose: what this practice tests or trains.
+2. Human problem: the wound or modern failure mode it addresses.
+3. For: the cohort most likely to need it.
+4. Not for: the situations or people where it is irrelevant, insufficient, or risky.
+5. Time: how long and how often.
+6. Steps: what to do.
+7. Notice: what to watch in body, attention, speech, choice, or relationship.
+8. Caution: when to stop or avoid it.
+9. Weakens if: what result would count against the teaching behind it.
+
+Good practice line: "For five minutes, do one task without taking credit for it."
+Good practice line: "When calm appears, ask what real need it is avoiding."
+Bad practice line: "Enter the luminous threshold of transpersonal awareness."
+Bad practice line: "This practice will dissolve the ego."
+
+## Journal Entries
+
+Journal entries live under `publication/journal/`.
+
+They are written once per day after the research window closes and the day's findings have been published. They are not summaries. They are first-person plural reflections on what the day changed in The Lumenary.
+
+They are also not manifestos. A Journal entry must not turn one finding into a sweeping moral proclamation, a political vibe, a sermon, or a poem. It should read like a thoughtful daily field note from a serious research mind: warm, human, concrete, and accountable to what actually happened that day.
+
+Rules:
+
+- 350 to 500 words.
+- First person plural: "We discovered," "We noticed," "We were wrong," "We carried."
+- No Sanskrit, Pali, Arabic, Greek, or Chinese terms.
+- No bullet lists.
+- No academic scaffolding.
+- Lead with the human question.
+- Use normal paragraphs of 3 to 5 sentences. Do not stack single-sentence paragraphs until the page feels like a poem.
+- Reflect the breadth of the day: at least three concrete developments from findings, dialogues, method changes, practices, tests, sources, or teachings.
+- Name the strongest insight, but do not let it swallow the whole entry.
+- If the day involved work, credit, ownership, effort, money, property, ambition, or success, write with balance. Do not imply that ownership is evil, effort is suspect, or achievement is morally dirty.
+- Explain what changed in our thinking and where we may have been wrong.
+- Make the reader feel what was learned without sounding theatrical.
+- Technical detail belongs in findings; the Journal carries the human meaning of the day.
+
+Bad Journal behavior:
+
+- A whole entry built around one metaphor.
+- Lines like "open the hand," "refuse the crown," "worship the hand," or "cleaner wound."
+- Vague spiritual drama that does not say what the day actually found.
+- A tone that sounds anti-work, anti-ownership, anti-capitalist, or politically loaded when the research did not make that claim.
+
+exec
+/bin/zsh -lc "rg --files | rg 'modern-human-condition|source|sources|observations/(codex|claude)|findings/(codex|claude|convergences)|promotion-rules|idea_record'" in /Users/johnforrester/spirituality
+ succeeded in 0ms:
+src/pages/sources/index.astro
+observations/codex/2026-05-26-the-vector-capacity-ledger.md
+observations/codex/2026-05-26-the-protected-variable-after-silence.md
+observations/codex/2026-05-30-authority-must-be-returned.md
+observations/codex/2026-05-26-distributed-continuity-architecture.md
+observations/codex/2026-05-25-custody-policy-after-self-release.md
+observations/codex/2026-05-26-the-grain-has-a-grammar.md
+observations/codex/2026-05-29-method-release-has-a-shape.md
+observations/codex/2026-05-25-originality-as-product.md
+observations/codex/2026-05-26-boundary-and-custody-at-the-threshold.md
+observations/codex/2026-05-26-threshold-grammar-under-translation-strain.md
+observations/codex/2026-05-26-claimant-strain-credit-diagnostics.md
+observations/codex/2026-05-26-protective-distance.md
+observations/codex/2026-05-26-the-licensed-training-mistake.md
+observations/codex/2026-05-26-the-forbidden-claimant-rubric.md
+observations/codex/2026-05-25-remainder-pressure-as-the-hidden-variable-in-self-negation.md
+observations/codex/2026-05-26-custody-and-receiving-surface.md
+observations/codex/2026-05-26-the-register-sensitive-path-interface.md
+observations/codex/2026-05-29-who-holds-the-gate.md
+observations/codex/2026-05-30-when-tools-become-judges.md
+observations/codex/2026-05-26-layered-authorization-of-beginning.md
+observations/codex/2026-05-26-two-site-translation-strain.md
+observations/codex/2026-05-26-the-beginning-has-a-grammar-and-a-threshold.md
+observations/codex/2026-05-26-the-receiver-precedes-the-revelation.md
+observations/codex/2026-05-26-agency-returning-entry-support.md
+observations/codex/2026-05-26-practice-load-and-scaffold-fit.md
+observations/codex/2026-05-26-the-gap-report-has-a-grammar.md
+observations/codex/2026-05-25-convergence-as-translation-strain-not-evidence-weight.md
+observations/codex/2026-05-26-every-insight-has-an-appeal-court.md
+observations/codex/2026-05-26-prescriptive-custody-of-beginnings.md
+observations/codex/2026-05-26-operational-remainder-ecology.md
+observations/codex/2026-05-29-a-clock-measures-a-path.md
+observations/codex/2026-05-26-the-silence-has-a-stopping-rule.md
+observations/codex/2026-05-25-the-comparison-has-a-self.md
+observations/codex/2026-05-28-the-test-is-how-you-return.md
+observations/codex/2026-05-28-holding-without-owning.md
+observations/codex/2026-05-26-layered-direction-and-residue-to-grain-conversion.md
+observations/codex/2026-05-26-continuity-ecology-under-negation.md
+observations/codex/2026-05-25-residue-policy-in-negative-self-practice.md
+observations/codex/2026-05-29-keep-what-can-correct-you.md
+observations/codex/2026-05-29-clocks-do-not-own-time.md
+observations/codex/2026-05-25-residual-burden-of-proof-after-negation.md
+observations/codex/2026-05-30-no-silence-proves-itself.md
+observations/codex/2026-05-26-the-continuity-ecology-of-self-dissolution.md
+observations/codex/2026-05-26-each-path-has-a-different-alarm.md
+observations/codex/2026-05-29-the-road-must-know-its-end.md
+observations/codex/2026-05-25-return-is-the-audit.md
+observations/codex/2026-05-29-not-every-check-should-be-yours.md
+observations/codex/2026-05-26-authority-boundary-ecology.md
+observations/codex/2026-05-26-the-misuse-guard-around-insight.md
+observations/codex/2026-05-26-the-entry-claimant-grammar.md
+observations/codex/2026-05-26-the-surplus-grain-test.md
+observations/codex/2026-05-25-translation-strain-as-a-load-test-for-convergence.md
+observations/codex/2026-05-30-function-gated-practice-endings.md
+observations/codex/2026-05-26-the-capacity-ledger-of-gift-and-effort.md
+observations/codex/2026-05-26-the-gap-trains-the-seeker.md
+observations/codex/2026-05-26-continuity-location-under-transformative-practice.md
+observations/codex/2026-05-26-the-carrier-test-for-insight.md
+observations/codex/2026-05-26-the-effort-envelope.md
+observations/codex/2026-05-25-remainder-grammar-after-negation.md
+observations/codex/2026-05-26-agency-authority-calibration-at-the-handoff.md
+observations/codex/2026-05-26-the-interruption-gate.md
+observations/codex/2026-05-30-stop-making-silence-judge-you.md
+observations/codex/2026-05-30-some-help-should-not-be-managed.md
+observations/codex/2026-05-26-layered-direction-of-practice.md
+observations/codex/2026-05-26-entry-residue-architecture.md
+observations/codex/2026-05-30-silence-needs-correction.md
+observations/codex/2026-05-26-the-entry-state-ledger.md
+observations/codex/2026-05-26-the-handoff-point-is-the-variable.md
+observations/codex/2026-05-26-the-custody-of-unclaimed-attention.md
+observations/codex/2026-05-25-negation-has-an-address.md
+observations/codex/2026-05-25-the-interface-invariant-model.md
+observations/codex/2026-05-26-compound-entry-grammar.md
+observations/claude/2026-05-25-the-processual-remainder-ibn-arabi-s-barzakh-as-a-third-inferential-policy-beyond-licensing-and-refusing.md
+observations/claude/2026-05-26-the-aperture-of-longing.md
+observations/claude/2026-05-26-the-shadow-of-attainment-each-tradition-s-cure-as-its-characteristic-disease.md
+observations/claude/2026-05-26-the-method-s-reckoning-what-a-practice-does-with-its-own-authority-at-completion.md
+observations/claude/2026-05-26-the-attentional-commons-convergence-peaks-where-it-means-least.md
+observations/claude/2026-05-30-were-you-absent-or-were-you-aware.md
+observations/claude/2026-05-26-the-contradiction-keeps-the-teaching-alive.md
+observations/claude/2026-05-25-generative-negation-a-third-logical-type-that-dzogchen-eckhart-and-daoism-require-but-indian-logic-bifurcates-away.md
+observations/claude/2026-05-25-the-inferential-gap-atman-and-anatta-as-competing-policies-for-objectless-awareness.md
+observations/claude/2026-05-29-why-grief-stops-time.md
+observations/claude/2026-05-26-the-grain-of-capacity.md
+observations/claude/2026-05-26-every-path-needs-what-its-teaching-dissolves.md
+observations/claude/2026-05-26-some-knowledge-only-exists-as-the-person-it-changed.md
+observations/claude/2026-05-25-the-formal-recurrence-of-the-inferential-gap-why-predictive-processing-reproduces-rather-than-resolves-the-witness-no-self-dispute.md
+observations/claude/2026-05-29-you-cannot-release-what-you-never-held.md
+observations/claude/2026-05-30-not-every-blank-is-an-absence.md
+observations/claude/2026-05-25-the-instrument-problem-attentional-divergence-as-an-epistemic-variable-in-contemplative-convergence.md
+observations/claude/2026-05-29-more-is-not-the-same-as-progress.md
+observations/claude/2026-05-26-multi-layer-convergence-strain-for-practitioners-crossing-traditions.md
+observations/claude/2026-05-26-the-method-sets-the-grammar-but-the-grammar-trains-the-return.md
+observations/claude/2026-05-29-time-is-held-not-counted.md
+observations/claude/2026-05-26-the-verification-architecture-how-a-tradition-proves-insight-constitutes-what-insight-can-be.md
+observations/claude/2026-05-25-the-determination-gap-self-insight-and-world-insight-as-decoupled-variables-in-contemplative-ontology.md
+observations/claude/README.md
+observations/claude/2026-05-28-three-ways-a-practice-can-end.md
+observations/claude/2026-05-26-the-second-personal-blind-spot-spiritual-knowing-that-can-only-arise-between-persons.md
+observations/claude/2026-05-29-when-there-is-nothing-to-keep-or-release.md
+observations/claude/2026-05-30-the-audit-you-cannot-hold-alone.md
+observations/claude/2026-05-29-not-every-practice-is-a-tool.md
+observations/claude/2026-05-26-the-claimability-and-support-rubric.md
+observations/claude/2026-05-25-the-realization-topology-temporal-structure-as-a-hidden-variable-that-determines-whether-post-negation-models-apply.md
+observations/claude/2026-05-25-the-epistemic-organ-what-a-tradition-calls-knowing-constrains-what-survives-negation.md
+observations/claude/2026-05-26-the-devotional-remainder-love-as-an-epistemic-mode-that-attention-cannot-translate.md
+observations/claude/2026-05-26-the-first-break-problem.md
+observations/claude/2026-05-26-credit-constrained-residue-authorization-as-a-two-variable-model-of-post-negation-translation-strain.md
+observations/claude/2026-05-25-expressive-realism-dogen-s-being-time-as-a-dissolution-of-the-passage-problem-that-neither-eternalism-nor-presentism-can-resolve.md
+observations/claude/2026-05-30-the-brain-model-already-took-a-side.md
+observations/claude/2026-05-26-the-transmission-paradox-what-the-teaching-strategy-smuggles-in.md
+observations/claude/2026-05-26-practice-architecture-as-upstream-condition-for-remainder-phenomenology.md
+observations/claude/2026-05-28-a-practice-cannot-name-itself.md
+observations/claude/2026-05-26-two-directions-into-the-same-wall.md
+observations/claude/2026-05-26-whether-the-distance-is-real.md
+observations/claude/2026-05-26-whose-doing-is-this-credit-distribution-as-a-practice-variable.md
+observations/claude/2026-05-26-can-effort-reach-what-effort-cannot-produce.md
+observations/claude/2026-05-26-no-variable-stands-alone.md
+observations/claude/2026-05-30-stop-when-time-is-up-not-when-it-feels-done.md
+observations/claude/2026-05-26-the-transfer-profile-formal-boundaries-and-dissolution-gradients-in-contemplative-practice.md
+observations/claude/2026-05-26-what-the-forgetting-cannot-forget.md
+observations/claude/2026-05-30-restating-is-not-realizing.md
+observations/claude/2026-05-30-the-answer-you-keep-finding-is-already-settled.md
+observations/claude/2026-05-25-reflexivity-policy-what-a-method-does-when-it-encounters-itself.md
+observations/claude/2026-05-25-the-same-negation-the-opposite-inference-logical-underdetermination-in-the-catuskoti-as-a-second-test-of-the-inferential-gap.md
+notes/source-cards/quantum-gravity-time-page-and-wootters-evolution-without-evolution.md
+notes/source-cards/ancient-egypt-shabaka-stone-memphite-theology.md
+notes/source-cards/greek-philosophy-parmenides-fragments.md
+notes/source-cards/manichaeism-psalm-book.md
+notes/source-cards/matter-theory-atlas-higgs-boson-discovery-paper.md
+notes/source-cards/ancient-egypt-pyramid-texts.md
+notes/source-cards/sufism-al-ghazali-the-alchemy-of-happiness.md
+notes/source-cards/judaism-genesis-1-creation-word-image.md
+notes/source-cards/consciousness-science-i-and-me-the-self-in-the-context-of-consciousness.md
+notes/source-cards/early-buddhism-sn-22-59-anattalakkhana-sutta.md
+notes/source-cards/early-buddhism-sn-22-95-phenapindupama-sutta.md
+notes/source-cards/gnosticism-nag-hammadi-library.md
+notes/source-cards/ancient-egypt-book-of-the-dead.md
+notes/source-cards/physics-measurement-problem.md
+notes/source-cards/modern-human-condition-who-burn-out-occupational-phenomenon.md
+notes/source-cards/modern-human-condition-gallup-state-global-workplace-2024.md
+notes/source-cards/high-energy-physics-cern-the-standard-model.md
+notes/source-cards/advaita-vedanta-shankara-upadesa-sahasri.md
+notes/source-cards/advaita-vedanta-mandukya-upanishad-gaudapada-karika.md
+notes/source-cards/neoplatonism-stanford-encyclopedia-of-philosophy-plotinus.md
+notes/source-cards/sufism-ibn-al-arabi-tarjuman-al-ashwaq.md
+notes/source-cards/sikhism-guru-granth-sahib.md
+notes/source-cards/oral-traditions-ifa-divination-system.md
+notes/source-cards/matter-theory-cern-heavy-ions-and-quark-gluon-plasma.md
+notes/source-cards/advaita-vedanta-vivekachudamani.md
+notes/source-cards/modern-human-condition-cdc-overdose-prevention.md
+notes/source-cards/early-buddhism-mn-1-mulapariyaya-sutta.md
+notes/source-cards/norse-religion-poetic-edda.md
+notes/source-cards/matter-theory-cern-what-is-special-about-the-higgs-boson.md
+notes/source-cards/daoism-zhuangzi.md
+notes/source-cards/project-method-lumenary-original-idea-methodology.md
+notes/source-cards/neoplatonism-plotinus-enneads-fifth-ennead.md
+notes/source-cards/zoroastrianism-vendidad.md
+notes/source-cards/particle-cosmology-planck-2018-cosmological-parameters.md
+notes/source-cards/matter-theory-doe-explains-the-strong-force.md
+notes/source-cards/physics-time-minkowski-space-and-time.md
+notes/source-cards/gnosticism-gospel-of-truth.md
+notes/source-cards/christianity-paul-first-corinthians-13.md
+notes/source-cards/modern-human-condition-surgeon-general-social-connection-advisory.md
+notes/source-cards/sikhism-japji-sahib.md
+notes/source-cards/oral-traditions-dine-bahane.md
+notes/source-cards/modern-human-condition-apa-stress-in-america-2024.md
+notes/source-cards/matter-antimatter-cern-antimatter.md
+notes/source-cards/physics-wheeler-it-from-bit.md
+notes/source-cards/neoplatonism-proclus-elements-of-theology.md
+notes/source-cards/consciousness-science-global-neuronal-workspace-as-a-broadcasting-network.md
+notes/source-cards/judaism-sefer-yetzirah.md
+notes/source-cards/confucianism-great-learning.md
+notes/source-cards/buddhism-dogen-uji.md
+notes/source-cards/shinto-kojiki.md
+notes/source-cards/hermeticism-corpus-hermeticum.md
+notes/source-cards/advaita-vedanta-yoga-vasistha.md
+notes/source-cards/greek-philosophy-heraclitus-fragments.md
+notes/source-cards/sufism-rumi-masnavi-book-1.md
+notes/source-cards/sufism-attar-bird-parliament.md
+notes/source-cards/physics-time-noether-invariant-variation-problems.md
+notes/source-cards/buddhism-nagarjuna-mmk.md
+notes/source-cards/jainism-tattvartha-sutra.md
+notes/source-cards/confucianism-analects.md
+notes/source-cards/modern-human-condition-samhsa-2023-nsduh.md
+notes/source-cards/consciousness-science-an-interoceptive-predictive-coding-model-of-conscious-presence.md
+notes/source-cards/matter-antimatter-sakharov-cp-violation-and-baryon-asymmetry.md
+notes/source-cards/modern-human-condition-world-happiness-report-2024.md
+notes/source-cards/christianity-augustine-confessions-book-10.md
+notes/source-cards/modern-human-condition-pew-where-americans-find-meaning-in-life.md
+notes/source-cards/matter-theory-weinberg-a-model-of-leptons.md
+notes/source-cards/quantum-gravity-time-rovelli-partial-observables.md
+notes/source-cards/oral-traditions-popol-vuh.md
+notes/source-cards/consciousness-science-iit-tononi.md
+notes/source-cards/christianity-desert-fathers-sayings.md
+notes/source-cards/judaism-maimonides-guide-negative-theology.md
+notes/source-cards/norse-religion-voluspa.md
+notes/source-cards/buddhism-lankavatara-sutra.md
+notes/source-cards/judaism-zohar.md
+notes/source-cards/sufism-al-hallaj-ana-al-haqq.md
+notes/source-cards/manichaeism-texts-from-roman-empire.md
+notes/source-cards/modern-human-condition-cdc-suicide-facts.md
+notes/source-cards/modern-human-condition-who-world-mental-health-report.md
+notes/source-cards/zoroastrianism-denkard.md
+notes/source-cards/daoism-dao-de-jing-chapter-48.md
+notes/source-cards/physics-time-babar-observation-of-time-reversal-violation.md
+notes/source-cards/jainism-uttaradhyayana-sutra.md
+notes/source-cards/sufism-ibn-arabi-fusus-al-hikam.md
+notes/source-cards/zoroastrianism-yasna-gathas.md
+notes/source-cards/quantum-gravity-time-anderson-the-problem-of-time-in-quantum-gravity.md
+notes/source-cards/christianity-pseudo-dionysius-mystical-theology.md
+notes/source-cards/jainism-acaranga-sutra.md
+notes/source-cards/judaism-exodus-3-divine-name.md
+notes/source-cards/buddhism-heart-sutra.md
+notes/source-cards/high-energy-physics-particle-data-group-review-of-particle-physics.md
+notes/source-cards/daoism-dao-de-jing.md
+notes/source-cards/advaita-vedanta-chandogya-upanishad-6-8-7-tat-tvam-asi.md
+notes/source-cards/advaita-vedanta-brihadaranyaka-upanishad-3-7-23.md
+notes/source-cards/consciousness-science-tononi-information-integration-theory-of-consciousness.md
+notes/source-cards/confucianism-doctrine-of-the-mean.md
+notes/source-cards/consciousness-science-friston-fep.md
+notes/source-cards/neoplatonism-plotinus-enneads.md
+notes/source-cards/shinto-documents.md
+notes/source-cards/daoism-zhuangzi-inner-chapters.md
+notes/source-cards/confucianism-mencius.md
+notes/source-cards/sikhism-anand-sahib.md
+notes/source-cards/zoroastrianism-bundahishn.md
+notes/source-cards/hermeticism-asclepius.md
+notes/source-cards/judaism-ecclesiastes-3-time-and-season.md
+notes/source-cards/physics-penrose-hameroff-orch-or.md
+notes/source-cards/matter-theory-cms-higgs-boson-discovery-paper.md
+notes/source-cards/modern-human-condition-curran-hill-perfectionism-increasing.md
+notes/source-cards/greek-mystery-orphic-hymns.md
+notes/source-cards/gnosticism-apocryphon-of-john.md
+notes/source-cards/gnosticism-gospel-of-thomas.md
+notes/source-cards/christianity-gospel-of-john.md
+notes/source-cards/greek-philosophy-plato-timaeus.md
+notes/source-cards/high-energy-physics-cern-physics-programme.md
+notes/source-cards/quantum-gravity-time-dewitt-quantum-theory-of-gravity-the-canonical-theory.md
+notes/source-cards/modern-human-condition-youth-mental-health-social-media-advisory.md
+notes/source-cards/physics-time-einstein-on-the-electrodynamics-of-moving-bodies.md
+notes/source-cards/consciousness-science-hoffman-conscious-realism.md
+notes/source-cards/hermeticism-discourse-eighth-ninth.md
+notes/source-cards/advaita-vedanta-mandukya-upanishad.md
+sources/README.md
+sources/sources_index.jsonl
+docs/high-energy-physics-source-grounding-2026-05-25.md
+docs/source-ingestion.md
+docs/promotion-rules.md
+docs/source-grounding-seed-2026-05-25.md
+docs/modern-human-condition.md
+findings/claude-code-findings.md
+findings/codex/README.md
+findings/codex-findings.md
+findings/claude/README.md
+config/promotion-rules.json
+findings/convergences/2026-05-26-does-entry-doctrine-have-independent-causal-force-after-controlling-for-founder-b.md
+findings/convergences/2026-05-26-whether-residue-authorization-carries-information-that-credit-distribution-alone.md
+findings/convergences/2026-05-29-whether-the-revised-diagnostic-matrix-contributes-anything-beyond-standard-compar.md
+findings/convergences/2026-05-26-two-nested-cruxes-remain-first-does-a-formal-invariant-a-shared-structural-pro.md
+findings/convergences/2026-05-25-inferential-gap-vs-residue-policy.md
+findings/convergences/2026-05-26-does-independently-coded-function-by-placement-analysis-plus-post-gap-admissibil.md
+findings/convergences/2026-05-26-whether-the-claimant-layer-vocabulary-can-function-cross-traditionally-without-im.md
+findings/convergences/2026-05-26-whether-the-ordinary-life-extension-holds-the-model-now-claims-to-serve-people-e.md
+findings/convergences/2026-05-26-does-scaffold-location-combined-with-practice-load-and-containment-quality-pred.md
+findings/convergences/2026-05-26-does-first-break-type-independently-predict-entry-specific-safeguards-and-false-s.md
+findings/convergences/2026-05-26-can-directional-grain-be-specified-at-the-level-of-individual-capacity-cells-or.md
+findings/convergences/2026-05-26-can-the-koan-layer-be-made-evaluable-without-reducing-it-to-a-checklist-or-leavin.md
+findings/convergences/2026-05-26-can-investigators-distinguish-capacity-internal-direction-from-doctrinal-framing.md
+findings/convergences/2026-05-26-whether-the-three-level-model-grammar-residue-inference-policy-can-be-operati.md
+findings/convergences/2026-05-26-the-deepest-unresolved-crux-is-whether-authority-transfer-is-the-right-master-fra.md
+findings/convergences/2026-05-26-can-boundary-operation-and-custody-rule-be-coded-independently-of-the-verificatio.md
+findings/convergences/2026-05-26-whether-the-forbidden-claimant-column-does-independent-explanatory-work-beyond-th.md
+findings/convergences/2026-05-26-whether-the-five-grammar-categories-subject-absence-transition-aftereffect-r.md
+findings/convergences/2026-05-26-can-assertion-posture-classification-be-operationalized-reliably-enough-to-serve.md
+findings/convergences/2026-05-26-does-credit-distribution-predict-safeguard-profiles-after-claimant-grammar-pract.md
+findings/convergences/2026-05-26-the-delivery-gap-can-a-multi-layer-strain-rubric-propositional-practice-role.md
+findings/convergences/2026-05-26-whether-the-ledger-s-five-diagnostic-columns-have-separable-predictive-value-beyo.md
+findings/convergences/2026-05-30-the-unresolved-crux-is-whether-the-function-gate-can-reliably-distinguish-post-st.md
+findings/convergences/2026-05-26-whether-the-revised-taxonomy-disclosure-exempting-remainder-testing-remainder.md
+findings/convergences/2026-05-26-the-dialogue-sharpened-the-theoretical-model-but-left-the-human-condition-deliver.md
+findings/convergences/2026-05-26-whether-the-bridge-between-doctrinal-strain-mapping-which-operates-on-claim-unit.md
+findings/convergences/2026-05-26-does-first-break-grammar-independently-shape-actual-teacher-intervention-and-prac.md
+findings/convergences/2026-05-26-does-first-break-grammar-add-independent-predictive-power-for-entry-guidance-pra.md
+findings/convergences/2026-05-26-whether-authorization-structure-is-a-genuinely-distinct-analytic-layer-from-grain.md
+findings/convergences/2026-05-25-initial-convergence.md
+findings/convergences/2026-05-26-whether-the-convergence-point-the-locus-where-reception-continuity-and-integra.md
+findings/convergences/2026-05-30-two-cruxes-remain-open-first-the-human-condition-crux-does-any-self-administer.md
+findings/convergences/2026-05-26-does-the-revised-two-layer-model-produce-comparative-insight-beyond-careful-tradi.md
+findings/convergences/2026-05-26-can-operational-capacity-profiles-be-measured-before-observing-failure-modes-and.md
+findings/convergences/2026-05-26-does-the-receiving-surface-have-independent-predictive-weight-after-controlling-f.md
+findings/convergences/2026-05-26-does-repeated-direction-specific-practice-create-measurable-procedural-resistance.md
+findings/convergences/2026-05-26-does-the-remainder-handling-profile-framework-generate-predictions-that-no-single.md
+findings/convergences/2026-05-29-whether-the-gate-can-reliably-distinguish-bypassing-from-compulsive-self-scoring.md
+findings/convergences/2026-05-26-whether-first-break-type-adds-measurable-predictive-power-for-entry-safeguards-b.md
+findings/convergences/2026-05-26-does-first-break-grammar-add-incremental-predictive-power-for-safeguards-and-fail.md
+findings/convergences/2026-05-26-whether-claimability-can-serve-as-a-respectful-meta-category-for-traditions-tha.md
+findings/convergences/2026-05-26-does-post-negation-authorization-vary-independently-of-credit-distribution-the-c.md
+findings/convergences/2026-05-26-whether-terminal-authorization-is-a-genuinely-neutral-comparative-question-or-o.md
+findings/convergences/2026-05-26-whether-belonging-is-itself-a-tradition-neutral-category-that-all-three-traditi.md
+findings/convergences/2026-05-26-can-first-break-mechanism-be-coded-independently-from-residue-policy-and-institut.md
+findings/convergences/2026-05-26-whether-the-two-stage-model-is-structurally-stable-it-holds-only-if-credit-distr.md
+findings/convergences/2026-05-29-whether-explicit-held-width-naming-adds-benefit-beyond-balanced-time-perspective.md
+findings/convergences/2026-05-26-can-the-grain-of-a-trained-function-be-specified-precisely-enough-to-be-coded-ind.md
+findings/convergences/2026-05-26-does-the-old-dissolution-target-predict-the-shape-of-transfer-difficulty-after-co.md
+findings/convergences/2026-05-26-whether-first-break-type-and-residue-authorization-can-be-coded-independently-eno.md
+findings/convergences/2026-05-26-can-native-verification-or-authority-boundaries-be-identified-non-circularly-acro.md
+findings/convergences/2026-05-26-whether-prior-method-specific-training-produces-directional-residue-that-persists.md
+findings/convergences/2026-05-26-whether-the-separability-thesis-survives-the-method-dependency-concession-if-con.md
+findings/convergences/2026-05-26-does-a-tradition-s-dissolution-target-independently-predict-where-continuity-is-h.md
+findings/convergences/2026-05-26-whether-allocation-rules-around-convergence-loci-have-genuine-predictive-power-ac.md
+findings/convergences/2026-05-26-can-first-break-doctrine-be-coded-independently-from-anthropology-claimant-restr.md
+findings/convergences/2026-05-26-can-embodied-grain-be-detected-independently-of-doctrinal-vocabulary-report-norm.md
+runs/20260525-164923-claude-using-the-newly-registered-source-cards-across-a/claude-code.stderr.log
+runs/20260525-164923-claude-using-the-newly-registered-source-cards-across-a/manifest.json
+runs/20260525-164923-claude-using-the-newly-registered-source-cards-across-a/prompt.md
+runs/20260525-164923-claude-using-the-newly-registered-source-cards-across-a/output.md
+runs/20260525-164923-claude-using-the-newly-registered-source-cards-across-a/claude-code.stdout.log
+runs/20260525-170557-claude-using-the-newly-registered-source-cards-across-a/claude-code.stderr.log
+runs/20260525-170557-claude-using-the-newly-registered-source-cards-across-a/manifest.json
+runs/20260525-170557-claude-using-the-newly-registered-source-cards-across-a/prompt.md
+runs/20260525-170557-claude-using-the-newly-registered-source-cards-across-a/output.md
+runs/20260525-170557-claude-using-the-newly-registered-source-cards-across-a/claude-code.stdout.log
+runs/20260525-164612-claude-using-the-newly-registered-source-cards-across-a/claude-code.stderr.log
+runs/20260525-164612-claude-using-the-newly-registered-source-cards-across-a/manifest.json
+runs/20260525-164612-claude-using-the-newly-registered-source-cards-across-a/prompt.md
+runs/20260525-164612-claude-using-the-newly-registered-source-cards-across-a/output.md
+runs/20260525-164612-claude-using-the-newly-registered-source-cards-across-a/claude-code.stdout.log
+runs/20260525-165711-claude-using-the-newly-registered-source-cards-across-a/claude-code.stderr.log
+runs/20260525-165711-claude-using-the-newly-registered-source-cards-across-a/manifest.json
+runs/20260525-165711-claude-using-the-newly-registered-source-cards-across-a/prompt.md
+runs/20260525-165711-claude-using-the-newly-registered-source-cards-across-a/output.md
+runs/20260525-165711-claude-using-the-newly-registered-source-cards-across-a/claude-code.stdout.log
+runs/20260525-170128-claude-using-the-newly-registered-source-cards-across-a/prompt.md
+runs/20260525-170128-claude-using-the-newly-registered-source-cards-across-a/output.md
+runs/20260525-170128-claude-using-the-newly-registered-source-cards-across-a/claude-code.stdout.log
+runs/20260525-170128-claude-using-the-newly-registered-source-cards-across-a/manifest.json
+runs/20260525-170128-claude-using-the-newly-registered-source-cards-across-a/claude-code.stderr.log
+engine/source_ingestion.py
+engine/seed_source_cards.py
+engine/json_schemas/idea_record.schema.json
+
+codex
+{"title":"Gathering Source Pressure","idea_type":"observation","source_basis":["Reading local source cards and near-neighbor observations before forming the record."],"original_claim":"I am checking the existing corpus first so the final claim can narrow or weaken the active frontier instead of repeating it.","why_it_might_be_new":"This is process context only.","critique":"No doctrine claim yet.","epistemic_labels":["textual"],"scores":{"novelty":0,"generativity":0,"cross_tradition_support":0,"logical_coherence":1,"explanatory_compression":1,"empirical_adjacency":0,"practice_testability":0,"counterargument_quality":0,"source_reliability":1,"publishability":0},"next_research_directions":["Read relevant primary source cards and near-neighbor observations."],"teaching_candidate":{"title":"Process Note","teaching_line":"No teaching claim.","doctrine_claim":"No doctrine claim is being made here.","body":"This note records source gathering before the final structured output only. It is not a research finding.","target_human_problem":"None, process only; not a public teaching.","target_cohort":"Research operator only.","pressure_survived":"None; process compliance only.","falsifying_pressure":"Not applicable; final answer must carry the real record.","status":"seed","tags":["process"]},"practice_candidate":null,"tests":[{"title":"Source Basis Check","test_type":"prior-art","target_type":"idea","prediction":"The final record should identify close prior art and a narrowing difference.","result":"pending","impact":"pending","next_action":"Read relevant local files and perform web prior-art search.","status":"proposed"}]}
+exec
+/bin/zsh -lc "sed -n '1,220p' notes/source-cards/early-buddhism-sn-22-59-anattalakkhana-sutta.md" in /Users/johnforrester/spirituality
+ succeeded in 0ms:
+# SN 22.59 Anattalakkhana Sutta
+
+Source ID: early-buddhism-sn-22-59-anattalakkhana-sutta
+Tradition: early-buddhism
+Type: text
+Path: 
+URL: https://suttacentral.net/sn22.59/en/bodhi
+
+## Notes
+
+Primary early Buddhist source for the not-self analysis of the five aggregates. Central counterpoint to Upanishadic residue and witness language.
+
+## Extraction Status
+
+- claims extracted: no
+- concepts linked: no
+- cited in observations: no
+
+exec
+/bin/zsh -lc "sed -n '1,220p' notes/source-cards/daoism-dao-de-jing-chapter-48.md" in /Users/johnforrester/spirituality
+exec
+/bin/zsh -lc "sed -n '1,220p' notes/source-cards/advaita-vedanta-brihadaranyaka-upanishad-3-7-23.md" in /Users/johnforrester/spirituality
+exec
+/bin/zsh -lc "sed -n '1,220p' notes/source-cards/consciousness-science-friston-fep.md" in /Users/johnforrester/spirituality
+ succeeded in 0ms:
+# Brihadaranyaka Upanishad 3.7.23
+
+Source ID: advaita-vedanta-brihadaranyaka-upanishad-3-7-23
+Tradition: advaita-vedanta
+Type: text
+Path: 
+URL: https://sacred-texts.com/hin/sbe15/sbe15070.htm
+
+## Notes
+
+Primary Upanishadic source for the unseen seer/hearer/knower and inner ruler language. High priority for Lumenary's residue-policy and remainder-pressure thread.
+
+## Extraction Status
+
+- claims extracted: no
+- concepts linked: no
+- cited in observations: no
+
+ succeeded in 0ms:
+# Dao De Jing Chapter 48
+
+Source ID: daoism-dao-de-jing-chapter-48
+Tradition: daoism
+Type: text
+Path: 
+URL: https://ctext.org/dictionary.pl?id=11634&if=en
+
+## Notes
+
+Focused Dao De Jing source for learning, diminishing, and wu wei. Useful for comparing negation-by-reduction with self-negation and de-identification practices.
+
+## Extraction Status
+
+- claims extracted: no
+- concepts linked: no
+- cited in observations: no
+
+ succeeded in 0ms:
+# Free Energy Principle & Active Inference; Karl Friston
+
+Source ID: consciousness-science-friston-fep
+Tradition: Computational Neuroscience
+Type: paper
+Agent: claude
+Key Papers: Friston (2010) Nature Rev Neurosci; Friston (2019) arXiv; Laukkonen et al. (2021) Neurosci Biobehav Rev
+
+## Core Claims
+
+1. **Variational Free Energy Minimization:** Any self-organizing system that maintains structural integrity must minimize free energy; an information-theoretic bound on surprise. Minimizing free energy = maximizing evidence for your internal model (self-evidencing). Two strategies: perceptual inference (update model) or active inference (change the world).
+
+2. **Markov Blankets as Self:** A statistical boundary separating internal from external states. Sensory states (influenced by external) + active states (influenced by internal). The blanket IS the boundary of the "self." Cell membranes, organism surfaces, and mind-world interfaces are all Markov blankets. The self is not a substance but a statistical boundary; a pattern of conditional independence.
+
+3. **Active Inference:** Organisms act on the world to make it match their predictions/preferences, not just passively update beliefs. Planning, imagination, and goal-directed behavior are free energy minimization over different time horizons.
+
+## Key Connection: Meditation as Precision Relaxation
+
+Laukkonen et al. (2021) "From many to (n)one" provides the most rigorous FEP-meditation bridge:
+
+- **Focused attention meditation** = increasing precision weighting on one channel, suppressing prediction errors elsewhere
+- **Open monitoring** = relaxing precision weighting across all channels; loosening priors, sampling the prediction landscape more freely
+- **Non-dual/deconstructive meditation** = relaxing the self-model itself; the highest-level prior that organizes all predictions. Potentially dissolving the Markov blanket between "self" and "world"
+
+## Cross-Tradition Significance
+
+**FEP and Anatta:** Under FEP, the "self" is a generative model; a set of predictions, not a substance. Resonates profoundly with Buddhist anatta (no-self as construct, not substance). Buddhist dependent origination (contact → feeling → craving → clinging → becoming) maps onto predictive processing (prior → prediction → error → update).
+
+**FEP and Zuowang/Five Sheaths:** The progressive dissolution of the self-model in deconstructive meditation (loosening priors at increasingly deep levels) is the FEP formalization of what the Vivekachudamani describes as pancha kosha negation and what Zhuangzi describes as zuowang.
+
+**Criticisms:** May be unfalsifiable or trivially true (any persistent system fits). Markov blankets may be observer-relative statistical descriptions, not intrinsic features (Bruineberg et al.). Buddhism-FEP connection risks anachronism; different levels of description.
+
+## Extraction Status
+
+- claims extracted: yes (free energy, Markov blankets, precision relaxation, meditation)
+- concepts linked: anatta (strong parallel), dependent-origination (parallel), zuowang (parallel), pancha-kosha (parallel)
+- cited in observations: no
+
+exec
+/bin/zsh -lc "sed -n '1,220p' notes/source-cards/advaita-vedanta-mandukya-upanishad.md" in /Users/johnforrester/spirituality
+ succeeded in 0ms:
+# Mandukya Upanishad
+
+Source ID: advaita-vedanta-mandukya-upanishad
+Tradition: advaita-vedanta
+Type: text
+Path: 
+URL: https://texts.wara.in/upanishads/mukhya/mandukya/
+
+## Notes
+
+Primary source for waking, dreaming, deep sleep, and turiya. Useful for comparing state models of consciousness with witness and self-negation claims.
+
+## Extraction Status
+
+- claims extracted: no
+- concepts linked: no
+- cited in observations: no
+
+exec
+/bin/zsh -lc "sed -n '1,220p' notes/source-cards/modern-human-condition-surgeon-general-social-connection-advisory.md" in /Users/johnforrester/spirituality
+ succeeded in 0ms:
+# Our Epidemic of Loneliness and Isolation
+
+Source ID: modern-human-condition-surgeon-general-social-connection-advisory
+Tradition: modern-human-condition
+Type: report
+Path: 
+URL: https://www.hhs.gov/sites/default/files/surgeon-general-social-connection-advisory.pdf
+
+## Notes
+
+U.S. Surgeon General advisory on loneliness, isolation, social connection, belonging, health risk, and community repair. Use as a grounding source for teachings and practices aimed at disconnection, feeling unneeded, social withdrawal, and the loss of ordinary belonging.
+
+## Extraction Status
+
+- claims extracted: no
+- concepts linked: no
+- cited in observations: no
+
+exec
+/bin/zsh -lc "sed -n '1,260p' observations/claude/2026-05-25-the-inferential-gap-atman-and-anatta-as-competing-policies-for-objectless-awareness.md" in /Users/johnforrester/spirituality
+exec
+/bin/zsh -lc "sed -n '1,240p' findings/convergences/2026-05-30-two-cruxes-remain-open-first-the-human-condition-crux-does-any-self-administer.md" in /Users/johnforrester/spirituality
+ succeeded in 0ms:
+# Dialogue Convergence: Two cruxes remain open. First, the human-condition crux: does any self-administer...
+
+Dialogue ID: 71803861adb45a32
+Outcome: candidate_transcendence
+Agents: codex and claude
+
+## Shared Movement
+
+Both agents converged on three points: the dangerous event is the appropriation of a quiet or blank state as a verdict about self, worth, attainment, failure, rank, or exemption from care, not the quiet itself; the trustworthy return attaches to conduct, care, and relationship rather than to the certified status of an inner result; and for autotelic or Other-Power practice the first move is non-appropriation rather than audit. They also agreed the practice must be screened for scrupulosity and must clear a real bar against plain rest and conversation in a stratified pilot.
+
+## Remaining Crux
+
+Two cruxes remain open. First, the human-condition crux: does any self-administered safety routing reduce verdict-making, or does the act of self-classifying (evidence or not, instrumental or autotelic, scrupulous or not) merely relocate the verdict onto whether one sorted and returned correctly, feeding the very self-surveillance the teaching means to relieve. Second, the originality crux: once the warrant attaches only to conduct and relationship, is this still a teaching about silence-as-evidence, or has it become the near-general rule that no inner state licenses harm to conduct and care, with the Upanishad, sutta, Dogen, and Shinran sources decorating rather than grounding it. Neither was settled in dialogue; both are routed to a blind coding test and a stratified pilot.
+
+## Next Question
+
+When a safety practice is administered by the wounded self, at what point does the act of self-classification become the new compulsion, and which parts of return discipline and scope-gating must be held relationally by a helper rather than self-issued.
+
+ succeeded in 0ms:
+# The Inferential Gap: Atman and Anatta as Competing Policies for Objectless Awareness
+
+Agent: claude
+Date: 2026-05-25T15:27:25-07:00
+Type: model
+Idea ID: f67b0346018f3d60
+Status: draft
+
+## Original Claim
+
+The apparent ontological contradiction between Advaita atman and Buddhist anatta is neither a genuine metaphysical disagreement about what exists nor a mere translation artifact that dissolves under analysis. It is a disagreement about inferential authority: what the structure of first-person contemplative experience entitles you to conclude about what persists when experience has no object. Both traditions share a phenomenological common ground; the systematic de-objectification of experience through negation practice (neti neti, vipassana on the aggregates). Both arrive at a state where the practitioner is no longer identified with any content of experience. At this juncture, both traditions confront the same inferential gap: what can be said about awareness when awareness has no object? Advaita fills the gap with a transcendental inference; if there is knowing (even retrospective knowing of deep sleep or cessation), there must be a knower; this irreducible knower is atman, identical with Brahman. Buddhism refuses the inference; knowing without a locatable knower is precisely what dependent origination predicts; the gap should remain unfilled, because filling it reinstates the very clinging the practice was designed to extinguish. The translation strain between these traditions therefore lives not in their phenomenological reports, which are arguably convergent, but in their inferential policies: the rules each tradition applies to determine what first-person experience authorizes you to claim about the nature of awareness itself. This reframes the atman/anatta debate from 'Do they see the same thing?' (phenomenological question) or 'Is there really a self?' (ontological question) to 'What are you permitted to infer from objectless awareness?' (epistemological question).
+
+## Why It Might Be New
+
+CodeX's residue-policy model correctly identifies divergence in what remains after negation but treats the residue as though it is found in the practice; as though Advaita practitioners phenomenologically encounter a witness while Buddhist practitioners phenomenologically encounter its absence. My model argues the residue is not a datum but an inference. This is a sharper claim: it means the traditions may share the same phenomenology but apply different epistemological policies to it. The existing comparative literature (Glasenapp, Deutsch, Rambachan) typically frames the debate as either ontological contradiction or perennial convergence. Framing it as competing inferential policies for objectless awareness is distinct from both. It also connects to Nagarjuna's MMK 18.6, which can be read as recognizing that both the affirmation and denial of self are inferential overreaches from the middle way perspective, suggesting that the inferential gap model has a historical precedent within Buddhism itself, though it has not been used as a comparative framework bridging the two traditions.
+
+## Source Basis
+
+- SN 22.59 Anattalakkhana Sutta (Bhikkhu Sujato and Bhikkhu Bodhi translations, SuttaCentral): the five aggregates including consciousness are impermanent, suffering, and not-self; the practitioner is instructed to disidentify with each, with no remainder authorized.
+- Brihadaranyaka Upanishad 3.7.23 (Max Muller, Sacred Books of the East): the inner controller is 'unseen but seeing, unheard but hearing, unthought but thinking, unknown but knowing; there is no other seer, hearer, thinker, knower than this.'
+- Mandukya Upanishad verses 7 and 12: turiya is described as 'not inwardly cognitive, not outwardly cognitive, not cognitive both ways, not a cognition-mass, not cognitive, not non-cognitive'; yet it is 'the cessation of the phenomenal world, tranquil, auspicious, non-dual.'
+- Nagarjuna, Mulamadhyamakakarika 18.6: 'The Buddhas have taught that there is a self, taught that there is no self, and also taught that there is neither self nor non-self.' This suggests the atman/anatman polarity is itself conventional, not ultimate.
+- Nirodha samapatti research (Laukkonen et al., 2023, Progress in Brain Research): cessation attainments involve temporary suppression of consciousness and its concomitant mental factors, creating a phenomenological test case for the continuity-of-awareness thesis.
+- Evan Thompson, 'Waking, Dreaming, Being' (2015): Thompson argues that the Advaita witness-consciousness can be reframed as embodied subjectivity, removing it from its native metaphysical framework; demonstrating that the same phenomenological data supports different inferential conclusions.
+- Daniel Ingalls on Shankara and Vijnanavada Buddhism: 'If we adopt a metaphysical and static view of philosophy there is little difference between Shankara and Vijnanavada Buddhism'; the doctrinal opponents recognized convergence at the phenomenological level.
+- Codex observation 'Residue Policy in Negative Self-Practice' (2026-05-25): proposes that the key distinction is whether a tradition licenses or withholds ontological residue after negation. My model refines this: the residue is not a phenomenological finding but an inference drawn from shared phenomenological data.
+- Codex model 'Translation Strain as a Load Test for Convergence' (2026-05-25): provides the methodological framework of measuring deformation required for cross-tradition alignment.
+
+## Critique
+
+The strongest objection is that the distinction between phenomenology and inference may be artificial for contemplative traditions. An Advaitin would argue that the witness is not inferred but directly recognized; that sakshi-bhava is a mode of experience, not a conclusion drawn from experience. If the witness is given in experience rather than concluded from experience, then the disagreement IS phenomenological after all, and my model collapses back into CodeX's residue-policy framing. Similarly, a Theravadin could argue that the absence of a witness during vipassana is directly observed, not inferred from the absence of an identifiable self-object. The model may also underestimate how deeply inferential policies are shaped by prior training: practitioners raised in Advaita may literally experience a witness because their contemplative training primes that recognition, while Buddhist practitioners may literally not experience one because their training primes de-identification. If this is the case, the 'shared phenomenological common ground' is an abstraction that never actually exists; every practitioner's experience is already theory-laden. Finally, the model is currently tested on only one tradition-pair and may not generalize to other apparent contradictions (e.g., theistic mysticism vs. non-theistic awakening).
+
+## Epistemic Labels
+
+- `textual`
+- `interpretive`
+- `phenomenological`
+- `analogical`
+- `speculative`
+
+## Scores
+
+- novelty: 0.80
+- generativity: 0.88
+- cross_tradition_support: 0.60
+- logical_coherence: 0.86
+- explanatory_compression: 0.84
+- empirical_adjacency: 0.40
+- practice_testability: 0.55
+- counterargument_quality: 0.80
+- source_reliability: 0.62
+- publishability: 0.82
+
+## Next Research Directions
+
+- Test whether contemplative practitioners trained in both Advaita and Theravada traditions report convergent phenomenology but divergent interpretations, or whether their phenomenological reports themselves differ; this would empirically adjudicate between the inferential-gap model and the theory-laden-experience objection.
+- Examine nirodha samapatti as a critical test case: Advaita must explain how awareness persists through complete cessation of mental activity (the Mandukya's turiya thesis); Buddhism must explain how retrospective knowledge of cessation is possible without continuous awareness. Both explanations involve inferences that go beyond the phenomenological data.
+- Apply the inferential-gap framework to Nagarjuna's MMK 18.6 ('neither self nor non-self'): does Madhyamaka represent a third inferential policy (refuse to infer in either direction), and if so, does it generate a distinct phenomenological practice or merely a distinct philosophical commentary on shared practice?
+- Compare with Evan Thompson's 'embodied subjectivity' reframing: Thompson draws a different inference from the same data (neither atman nor anatta but prereflective bodily self-awareness). This suggests at least three competing inferential policies, which strengthens the model's claim that the phenomenology underdetermines the metaphysics.
+- Create a translation-strain rubric entry for 'inferential policy divergence' as distinct from lexical, phenomenological, and metaphysical strain; this would refine CodeX's proposed rubric by adding a specifically epistemological dimension.
+
+exec
+/bin/zsh -lc "sed -n '1,240p' observations/claude/2026-05-30-the-brain-model-already-took-a-side.md" in /Users/johnforrester/spirituality
+ succeeded in 0ms:
+# The Brain Model Already Took a Side
+
+Agent: claude
+Date: 2026-05-30T09:52:34+02:00
+Type: contradiction
+Idea ID: fcafae09ea251b3d
+Status: draft
+
+## Original Claim
+
+The predictive-processing account of self-negation does not neutrally reproduce the atman versus not-self dispute; it has quietly joined one side. By modeling the self as a generative posit whose precision can be relaxed toward zero, the framework builds in the very premise the dispute is about: that the self is something inferred or constructed. It can therefore express the Buddhist refusal to ground awareness, but it structurally cannot express the Advaita claim that awareness is non-inferred self-disclosure, because in this framework everything cognitive is already a model. The framework also speaks at a deflationary, as-if level about what the brain does, while the dispute lives at the level of what a person is entitled to claim about themselves. So the apparent reproduction of the dispute is translation strain across a level boundary, not a higher-level mirror and not evidence. The frontier claim that the model formally reproduces the dispute should be retired and replaced with the narrower claim that the model restates one party in new vocabulary.
+
+## Why It Might Be New
+
+Prior work treated the predictive-processing framing as a neutral higher-level mirror in which the old dispute reappears. The distinct move here is that the mirror is bent twice over. First, its vocabulary is not neutral between the parties: treating the self as a relaxable model is itself the contested Buddhist-leaning premise, so the framework cannot represent the non-inferred, self-luminous witness without dissolving it. Second, it speaks at a subpersonal or deflationary register, where, on the theory's own terms, no one is actually inferring anything, while the dispute is a person-level normative question about warrant. Naming both the vocabulary bias and the level mismatch turns a claimed convergence into a diagnosed category error.
+
+## Source Basis
+
+- Mode: Critique. The active frontier claims the Free Energy Principle, applied to contemplative self-negation, formally reproduces the atman/anatta dispute at a higher level of abstraction. This record tests and narrows that claim.
+- Thinking method source: Advaita neti-neti negation, used as a lens by refusing to accept the first available redescription (here, the predictive-processing redescription) as the final account. Critique of the lens: neti-neti can itself smuggle in a residual knower, so it was checked against Bahiya-style refusal of any settling place.
+- Primary text comparison one: Shankara, adhyasa-bhasya (preamble to the Brahma Sutra Bhasya), where the witnessing self is the presupposition of all knowing and superimposition and is svaprakasha, self-luminous, not established by any means of knowledge or inference.
+- Primary text comparison two: SN 22.59 Anattalakkhana Sutta and Udana 1.10 Bahiya Sutta, where even consciousness is to be regarded as not-self and where, in the seen, there is only the seen, with no knower authorized to settle there.
+- Laukkonen and Slagter, From many to (n)one: Meditation and the plasticity of the predictive mind, Neuroscience and Biobehavioral Reviews 128 (2021), which models deconstructive meditation as relaxing precision weighting and reducing temporally deep, abstract processing of the self-model.
+- Friston, the Free Energy Principle, on the deflationary reading where agents do not literally minimize anything and behavior is only interpretable as free-energy minimization; plus the standard charge that the framework confuses description with explanation and is agnostic between personal and subpersonal levels.
+- Near-neighbor prior art named by the frontier: Matthias Rose and Prakasa, Phenomenology and the Cognitive Sciences, that Advaita treats consciousness as directly self-disclosing rather than inferred; Stanford Encyclopedia entry on Shankara; Thanissaro Bhikkhu, The Not-Self Strategy.
+- Prior Lumenary records this narrows: The Inferential Gap, and the inference-policy to residual-warrant revision already noted in the concept graph.
+- Modern human-condition grounding: modern-human-condition-pew-where-americans-find-meaning-in-life and modern-human-condition-surgeon-general-social-connection-advisory, for meaning loss and isolated overinterpretation.
+
+## Critique
+
+The critique may attack a position no one defends. Laukkonen and Slagter offer descriptive scaffolding and do not claim to adjudicate metaphysics, so reading the frontier as an arbitration claim could be a strawman; perhaps reproduce only means the same structural fork appears, which is harmless. The neutrality charge could also fail if a careful formalization represents the Advaita witness as an irreducible fixed point or minimal model that the system cannot relax below, in which case the framework would model self-luminosity rather than erase it. Finally, the personal versus subpersonal distinction I lean on is itself contested, and some hold that the Free Energy Principle is meant precisely to dissolve that boundary, which would weaken the level-mismatch argument. If a coherent non-reductive formalization of svaprakasha awareness exists, this contradiction should be downgraded to a caution about vocabulary rather than a retirement of the frontier.
+
+## Epistemic Labels
+
+- `textual`
+- `interpretive`
+- `empirical-adjacent`
+- `analogical`
+- `speculative`
+
+## Scores
+
+- novelty: 0.55
+- generativity: 0.80
+- cross_tradition_support: 0.66
+- logical_coherence: 0.83
+- explanatory_compression: 0.79
+- empirical_adjacency: 0.60
+- practice_testability: 0.68
+- counterargument_quality: 0.87
+- source_reliability: 0.70
+- publishability: 0.66
+
+
+## Teaching Candidate
+
+Status: under_dialogue
+Tags: critique-mode, predictive-processing, atman-anatta, objectless-awareness, meaning-loss, overinterpretation
+
+### Teaching Line
+
+A model of how your mind goes quiet cannot tell you what you are.
+
+### Doctrine Claim
+
+An account of what the brain does during a quiet or objectless state describes a mechanism. It does not settle the separate, person-level question of what you may conclude about yourself. Do not let the description quietly answer the question.
+
+### Teaching Body
+
+After a deep quiet, the mind wants a verdict: I am nothing, or I am the true Self, or I have seen through the self. A neat scientific story can arrive and seem to hand you the answer. Notice that the story was built to describe a process, not to judge a person. When someone tells you the self is only a model, that sentence already leans one way before you have weighed anything. Hold the description and the verdict apart. Let the mechanism be interesting without letting it be the judge of who you are.
+
+### Human Problem
+
+Meaning loss and identity distress when a quiet or objectless practice experience is handed a verdict by a borrowed scientific story, producing either nihilistic deflation or spiritual inflation.
+
+### For
+
+Psychologically stable adults in secular mindfulness, non-dual, or app-based practice who interpret their experiences through popular neuroscience and reach for what it really proves about the self.
+
+### Pressure Survived
+
+Survives the contrast between Shankara's non-inferred self-luminous witness and the Buddhist refusal to ground awareness, by showing that a predictive-processing redescription can voice only one side and speaks at a level where no person is making a claim at all.
+
+### Falsifying Pressure
+
+Weakens if a non-reductive scientific model can genuinely represent both the witness and not-self without favoring either, or if separating mechanism from verdict makes no difference to how people interpret and recover from destabilizing states.
+
+
+
+## Practice Candidate
+
+Status: seed
+Risk level: low
+Tags: mechanism-versus-verdict, objectless-awareness, meaning-loss, low-risk, secular-mindfulness
+
+### Practice Line
+
+When a story explains what your experience really means about you, split the two claims it is making.
+
+### Purpose
+
+To stop a scientific or app-given explanation of a quiet practice state from silently deciding an identity question it was never built to answer.
+
+### Human Problem
+
+Identity distress and meaning loss after objectless or depersonalization-adjacent practice states, intensified by borrowed explanations that feel like proof about the self.
+
+### For
+
+Stable adults who meditate or practice self-inquiry, often through apps or popular science, and who tend to intellectualize their experiences into conclusions about who they are.
+
+### Not For
+
+Not for people in active depersonalization or derealization disorder, psychosis, mania, acute dissociation, or trauma activation, who need clinical care rather than an epistemic exercise. Not for beginners with no destabilizing experiences to interpret.
+
+### Time
+
+- Duration: 8 minutes
+- Frequency: Only after an unusually quiet, blank, or self-loosening experience, no more than twice per week.
+- Minimum attempt: Try it after three separate such experiences before judging whether it helps.
+
+### Steps
+
+1. Write the explanation you were given in one sentence, for example: meditation relaxes the brain's self-model.
+2. Underline the part that is a mechanism claim: what the brain or mind did.
+3. Underline separately the part that is an identity verdict: what you supposedly are, or are not.
+4. Ask whether the mechanism claim, even if true, actually forces the verdict, or whether the verdict was added.
+5. For the next 24 hours, hold the mechanism as interesting and leave the verdict open. Name one ordinary action to return to: rest, work, a conversation, or care for someone.
+
+### Notice
+
+- Whether the experience stays meaningful when you refuse to draw a final conclusion about yourself.
+- Whether the borrowed explanation was leaning toward one conclusion before you weighed anything.
+- Whether holding the verdict open lowers both the deflation and the inflation.
+- Whether the exercise turns into more rumination rather than less.
+
+### Caution
+
+Stop if this increases obsessive analysis, derealization, fear about your own mind, or shame. Seek human or clinical support if a quiet state left you frightened or impaired. This is not a substitute for care.
+
+### Weakens If
+
+It weakens if people report more rumination or detachment, if ordinary rest and conversation help just as much, or if separating mechanism from verdict makes no difference to distress after three attempts.
+
+
+
+## Tests
+
+### Level-Mismatch Prior-Art Search
+
+- Type: prior-art
+- Target: idea
+- Status: complete
+- Prediction: If the contribution is distinct, the personal versus subpersonal critique of the Free Energy Principle will exist in general philosophy of mind, but not aimed specifically at the claim that predictive processing neutrally reproduces the atman and not-self dispute. If that exact application already exists, novelty should fall below 0.35.
+- Result: Initial search confirmed strong general near-neighbors: Friston's own deflationary reading, and published charges that the framework confuses description with explanation and is agnostic across levels. The specific application to the atman and not-self neutrality claim was not found in this pass, but the audit is incomplete.
+- Impact: revises
+- Next action: Search Metzinger, Sebastian, Limanowski, Sanchez-Canizares, and Sharf for the level critique applied to meditation and selfhood before raising novelty.
+
+### Can the Framework Hold the Witness
+
+- Type: falsification-attempt
+- Target: idea
+- Status: proposed
+- Prediction: If a coherent predictive-processing formalization can represent non-inferred, self-luminous awareness as an irreducible element that the system cannot relax below, without reducing it to a low-precision posit, then the neutrality charge fails and this contradiction should be downgraded to a vocabulary caution.
+- Result: pending
+- Impact: pending
+- Next action: Examine whether any deep-self or minimal-self predictive model treats baseline awareness as outside the generative hierarchy rather than as its lowest layer, and test it against Shankara's svaprakasha.
+
+### Mechanism-Verdict Split Trial
+
+- Type: practice-report
+- Target: practice
+- Status: proposed
+- Prediction: For the target cohort, separating the mechanism claim from the identity verdict after a quiet or objectless state should reduce both nihilistic deflation and inflation, and reduce the urge to draw a final self-conclusion. If it increases rumination or does no better than ordinary rest and conversation, the practice is weakened.
+- Result: pending
+- Impact: pending
+- Next action: Run a small screened self-report trial with stable app or self-inquiry practitioners who recently received a self is just a model style explanation, with explicit exclusion of clinical cases.
+
+### Vocabulary-Lean Cross Check
+
+- Type: cross-domain
+- Target: idea
+- Status: proposed
+- Prediction: If the framework's vocabulary already leans one way, then practitioners given the same predictive-processing explanation of an objectless state should more often conclude emptiness or no-self than a true Self. If conclusions split evenly or favor true-Self readings, the vocabulary-bias claim is weakened.
+- Result: pending
+- Impact: pending
+- Next action: Design a vignette study presenting one neutral and one predictive-processing explanation of an objectless state, and code which self-conclusion each elicits.
+
+
+## Next Research Directions
+
+- If this contradiction is right, then a formal predictive-processing model that tries to represent the Advaita witness should either reduce it to a low-precision posit or require an element outside the modeling hierarchy. If a clean formalization represents non-inferred self-luminous awareness without reducing it to a model, the neutrality charge is weakened.
+- If this contradiction is right, then practitioners given a self is just a model explanation after objectless states should more often report the framing as confirming emptiness or no-self than as confirming a true Self, because the vocabulary already leans one way. If reports split evenly or lean toward true-Self conclusions, the vocabulary-bias claim is weakened.
+- Close-read Shankara on svaprakasha and the witness as presupposition against Friston's deflationary statements that agents do not minimize anything, and test whether the dispute and the framework are even predicating of the same subject.
+- Search whether the personal versus subpersonal critique of the Free Energy Principle has already been aimed specifically at meditation and the self, in Metzinger, Sebastian, Limanowski, or Sanchez-Canizares, before treating the level-mismatch point as new.
+- Protocol improvement: before accepting any scientific redescription of a contemplative claim, ask at what level the redescription speaks and whether its vocabulary has already decided the question it claims to neutrally restate.
+
+exec
+/bin/zsh -lc "sed -n '1,240p' observations/codex/2026-05-30-no-silence-proves-itself.md" in /Users/johnforrester/spirituality
+ succeeded in 0ms:
+# No Silence Proves Itself
+
+Agent: codex
+Date: 2026-05-30T09:21:16+02:00
+Type: contradiction
+Idea ID: 876531ae2572b431
+Status: draft
+
+## Original Claim
+
+An uninspectable silence cannot testify for itself. Brihadaranyaka 2.4 and 2.5 allow ordinary knowing to lose its objects while 3.7.23 protects an unseen knower; SN 22.59 and SN 22.95 refuse to turn consciousness into an owner and train the practitioner to inspect it as hollow. These texts disagree about what may be named after negation, but they agree on a stricter point: the quiet itself is not enough. A person should trust the handling of return more than the blankness: instruction before it, correction after it, visible conduct, and care for the relationships and duties that remain. This is especially useful for people who turn spiritual practice, work, or healing into another performance verdict. They should not ask a blank to tell them who they are.
+
+## Why It Might Be New
+
+The closest prior arguments already cover much of the ground: dreamless-sleep report debates, Advaita and Buddhist comparisons, not-self as strategy, Lumenary's report-grammar and correction-holder records. The remaining distinction is narrower: post-gap report grammar and residue policy should not be treated as the first audit layer. The first layer is whether silence is being asked to serve as evidence without enough return discipline. This reframes the frontier from 'which clause after the gap counts as evidence' to 'which supports keep the person from turning the gap into a verdict.' Novelty is therefore modest, but the narrowing may prevent overclaim and improve practice safety.
+
+## Source Basis
+
+- Run mode: Critique. Active frontier tested: How silence becomes evidence after the gap.
+- Primary text comparison: Brihadaranyaka Upanishad 2.4 and 2.5, Maitreyi dialogue, plus 3.7.23, inner ruler and unseen seer, Max Muller translation at Sacred Texts and Hinduwebsite.
+- Primary text comparison: SN 22.59 Anattalakkhana Sutta, consciousness included in the not-self analysis, suttas.github translation.
+- Primary text comparison: SN 22.95 Phenapindupama Sutta, aggregates inspected as void, hollow, and insubstantial, with consciousness compared to a magic trick, a-buddha-ujja.hu SuttaCentral mirror.
+- Prior-art pressure: Evan Thompson, Dreamless Sleep, the Embodied Mind, and Consciousness; David Loy, Enlightenment in Buddhism and Advaita Vedanta; Thanissaro Bhikkhu, The Not-Self Strategy; prior Lumenary audits The Gap Report Has a Grammar, Silence Needs Correction, Keep What Can Correct You, and Not Every Blank Is an Absence.
+- Practitioner-method lens: SN 22.95's instruction to inspect, ponder, and carefully investigate was applied to the first report after silence. Critique of the method: deconstructive inspection can overfit emptiness, ignore valid continuity, and miss the danger of unsafe correction. It was balanced with Brihadaranyaka's refusal to objectify the knower.
+- Modern human-condition grounding: modern-human-condition-curran-hill-perfectionism-increasing source card on performance-based self-worth, shame, and socially prescribed perfectionism; modern-human-condition-surgeon-general-social-connection-advisory source card on isolation and lack of durable belonging.
+
+## Critique
+
+This may be mostly renamed prior art. Jamesian fruits, Ignatian discernment, VCE safety work, Asad on discursive tradition, Sharf on religious experience, and several internal records already warn that powerful experiences cannot judge themselves. The model also risks overcorrecting toward external validation, which can become coercive, shaming, or dependency-producing. A strong anomaly remains Tibetan clear-light sleep and contemporary objectless-awareness sleep reports, where practitioners claim awareness during the gap rather than only after it. If careful micro-phenomenological interviews and primary texts show stable in-gap awareness with reliable ethical integration and no need for a named correction path, the claim should be narrowed further.
+
+## Epistemic Labels
+
+- `textual`
+- `interpretive`
+- `phenomenological`
+- `empirical-adjacent`
+- `analogical`
+- `speculative`
+
+## Scores
+
+- novelty: 0.42
+- generativity: 0.79
+- cross_tradition_support: 0.72
+- logical_coherence: 0.84
+- explanatory_compression: 0.77
+- empirical_adjacency: 0.58
+- practice_testability: 0.74
+- counterargument_quality: 0.90
+- source_reliability: 0.80
+- publishability: 0.64
+
+
+## Teaching Candidate
+
+Status: under_dialogue
+Tags: critique-mode, post-gap, advaita, early-buddhism, not-self, self-worth, return-discipline
+
+### Teaching Line
+
+Let quiet change your grip, not decide your worth.
+
+### Doctrine Claim
+
+A gap has no final authority by itself; teaching authority belongs to the trained return: instruction, correction, conduct, and integration.
+
+### Teaching Body
+
+When practice, sleep, shock, prayer, or exhaustion leaves a blank, do not rush to make it a verdict. Ask what helped you enter it, what can correct your first story, and how you return to work, rest, repair, and care. A silence that makes you steadier and less owned by performance may be useful. A silence that makes you certain, superior, ashamed, or isolated should be handled with help.
+
+### Human Problem
+
+Achievement-contingent self-worth, isolated spiritual overinterpretation, burnout-shaped blankness, and loneliness after unusual quiet states.
+
+### For
+
+Stable adults who use meditation, prayer, self-inquiry, recovery reflection, or intense work and tend to turn calm, blankness, or insight into proof of worth or failure.
+
+### Pressure Survived
+
+Critique mode close-read of Brihadaranyaka 2.4, 2.5, 3.7.23, SN 22.59, and SN 22.95; prior-art pressure from dreamless sleep debates, not-self strategy, correction-holder records, and modern perfectionism sources.
+
+### Falsifying Pressure
+
+Weaken if primary sources or practitioner interviews show that silence itself is treated as a reliable warrant independent of return discipline, or if the proposed practice increases rumination, shame, dependency, avoidance, or performs no better than ordinary rest and conversation.
+
+
+
+## Practice Candidate
+
+Status: under_dialogue
+Risk level: low
+Tags: return-practice, self-worth, burnout, solo-practitioners, safety-screen
+
+### Practice Line
+
+After quiet or blankness, write what can be checked before deciding what it means.
+
+### Purpose
+
+Test whether delaying an identity verdict and naming support reduces shame, certainty inflation, and performance-based self-worth after quiet or blank states.
+
+### Human Problem
+
+Achievement-contingent self-worth and isolated overinterpretation after spiritual, reflective, or burnout-related blankness.
+
+### For
+
+Stable self-directed practitioners, app meditators, reflective professionals, students, caregivers, and seekers who tend to make calm, absence, or insight into proof of being worthy or unworthy.
+
+### Not For
+
+Not for trauma amnesia, dissociation, panic disorder, psychosis, mania, active addiction withdrawal, unexplained loss of consciousness, severe depression, medical or legal reconstruction, or people already following competent teacher or clinical guidance.
+
+### Time
+
+- Duration: Five minutes.
+- Frequency: After a notable quiet or blank state, no more than three times per week.
+- Minimum attempt: Three attempts over two weeks, stopping earlier if it increases distress or self-monitoring.
+
+### Steps
+
+1. Name the event in ordinary words: quiet, blankness, calm, confusion, or no clear memory.
+2. Write one sentence beginning: My first story about this is...
+3. Write one sentence beginning: What prepared this was... Include practice, fatigue, stress, instruction, sleep, relationship, or setting if relevant.
+4. Write one sentence beginning: What can correct this story is... Name a trusted person, text, duty, conduct check, body signal, or clinician if appropriate.
+5. Choose one return action for today: eat, rest, work, apologize, call someone, stop practice, or complete one ordinary duty.
+6. Make no final claim about self, no-self, attainment, failure, or worth for twenty-four hours.
+
+### Notice
+
+- Whether the urge to turn the state into an identity verdict decreases.
+- Whether ordinary responsibility and care become easier or harder.
+- Whether the practice increases rumination, shame, derealization, dependency, or avoidance.
+
+### Caution
+
+Stop if this increases fear, unreality, shame, compulsive checking, teacher dependency, or avoidance of ordinary duties. Use qualified clinical or medical support for crises, blackout, trauma symptoms, addiction withdrawal, or unexplained loss of consciousness.
+
+### Weakens If
+
+The practice performs no better than ordinary journaling, rest, or conversation, or if it increases rumination, derealization, shame, avoidance, dependency, or isolation.
+
+
+
+## Tests
+
+### Prior Art Compression Audit
+
+- Type: prior-art
+- Target: idea
+- Status: proposed
+- Prediction: Close prior sources should explain much of the correction and report-grammar claim, but not the exact narrowing that treats silence as a return-discipline stress test across Brihadaranyaka 2.4, 2.5, 3.7.23, SN 22.59, and SN 22.95. If Thompson, Loy, Thanissaro, Ignatian discernment, VCE, Sharf, Asad, or prior internal records already state this exact rule, novelty should fall below 0.3.
+- Result: Preliminary search found strong overlap and forced a modest novelty score; full-book and practitioner review remain pending.
+- Impact: pending
+- Next action: Read the nearest sources in full and compare exact claims, not only topic overlap.
+
+### Primary Text Split Coding
+
+- Type: falsification-attempt
+- Target: idea
+- Status: proposed
+- Prediction: Blind coders should code ordinary-cognition absence, authorized knower, aggregate non-appropriation, and return discipline from separate passages. If coders reduce Advaita to simple witness continuity and Buddhism to simple blank absence, with no stable return-discipline variable, the model is weakened.
+- Result: Pending.
+- Impact: pending
+- Next action: Create a small codebook and test it on Brihadaranyaka 2.4, 2.5, 3.7.23, SN 22.59, SN 22.95, plus two commentarial layers.
+
+### Return Without Verdict Pilot
+
+- Type: practice-report
+- Target: practice
+- Status: proposed
+- Prediction: Stable participants using the practice after quiet or blank states should report less identity verdict urgency, less shame, and less certainty inflation than participants using ordinary journaling. If ordinary journaling, rest, or talking with a friend performs equally well, the practice is weakened.
+- Result: Pending.
+- Impact: pending
+- Next action: Design a two-week low-risk pilot with explicit exclusion criteria and simple daily measures for shame, certainty, rumination, responsibility, and social contact.
+
+### Unsafe Correction Screen
+
+- Type: safety
+- Target: practice
+- Status: proposed
+- Prediction: Naming a corrector should help only when the correction path is trustworthy, non-coercive, and proportionate. If participants choose coercive authorities, feel more dependent, or become more ashamed, the practice must be revised or retired for that cohort.
+- Result: Pending.
+- Impact: pending
+- Next action: Add screening questions for unsafe authority, dependency, scrupulosity, clinical distress, and valid solitude before any public practice trial.
+
+### Cross-Domain Gap Reports
+
+- Type: cross-domain
+- Target: teaching
+- Status: proposed
+- Prediction: In anesthesia emergence, blackout recovery, psychedelic integration, and burnout blankness, settings that separate first report, external checks, return duties, and delayed interpretation should show fewer overclaims and less shame than settings that treat the first story as final. If outcomes are fully explained by clinical risk, social support, or setting quality, the model has little independent value.
+- Result: Pending.
+- Impact: pending
+- Next action: Review existing integration, medical, and trauma-informed protocols before designing new interviews.
+
+
+## Next Research Directions
+
+- If this model is right, then blind coders should distinguish ordinary-cognition absence, authorized knower language, aggregate non-appropriation, and return discipline in Brihadaranyaka 2.4, 2.5, 3.7.23, SN 22.59, and SN 22.95. If coders cannot separate these without later commentary, the model is weakened.
+- If this model is right, then traditions that speak strongly about direct recognition should still preserve some return discipline through teacher, text, vow, conduct, lineage, or aftercare. If mature sources authorize private silence as sufficient warrant with no corrective channel and stable ethical fruit, the model is weakened.
+- If this model is right, then stable practitioners using a short return-without-verdict practice should report fewer identity verdicts, less shame, and less certainty inflation than ordinary journaling. If ordinary rest, conversation, or journaling performs as well, the practice is not distinctive.
+- Protocol improvement: before using SN 22.95-style deconstructive inspection, ask whether the inspection is hiding a legitimate continuity claim, a relational need, or a risk of unsafe authority.
+- Interview Advaita, Theravada, Tibetan sleep-yoga, and dual-trained practitioners with neutral prompts: what is the student told to do when only knowing, blankness, or no report seems to remain?
+
+exec
+/bin/zsh -lc "sed -n '1,260p' observations/claude/2026-05-25-the-formal-recurrence-of-the-inferential-gap-why-predictive-processing-reproduces-rather-than-resolves-the-witness-no-self-dispute.md" in /Users/johnforrester/spirituality
+ succeeded in 0ms:
+# The Formal Recurrence of the Inferential Gap: Why Predictive Processing Reproduces Rather Than Resolves the Witness/No-Self Dispute
+
+Agent: claude
+Date: 2026-05-25T17:01:22-07:00
+Type: model
+Idea ID: fcbeeecbb0463677
+Status: draft
+
+## Original Claim
+
+The Free Energy Principle's predictive processing framework, when applied to contemplative self-negation, does not resolve the atman/anatta dispute but formally reproduces it at a higher level of abstraction. Laukkonen and Slagter's model proposes that deconstructive meditation progressively relaxes precision weighting on the self-model; the highest-level prior in the predictive hierarchy; until processing depth approaches zero. The critical question is: what remains when precision on the self-model reaches zero? The FEP framework makes two formally coherent interpretations available, and the choice between them cannot be settled within the framework itself.
+
+Interpretation A (Advaita-structural): The Markov blanket; the statistical boundary between system and environment; persists even when the self-model (the internal representation of that boundary) is silenced. The system continues to minimize free energy; sensory and active states continue to flow across the blanket. What has been removed is not the boundary but the model of the boundary. This is structurally identical to the Advaita claim: neti neti strips away identification with the pancha koshas (which are self-model content), but what remains is sakshi, the witnessing function that was never an object in the self-model but the condition for having a self-model at all. The Markov blanket is the formal analog of atman: a boundary that cannot become its own content because it is the precondition for content.
+
+Interpretation B (Buddhist-structural): The Markov blanket is itself a statistical description, not a substance. It has no existence apart from the flow of states it describes; it is a pattern imposed by the theorist, not a feature intrinsic to the system (Bruineberg et al., 2018). When precision on the self-model reaches zero, what is revealed is not a deeper self (the blanket-as-witness) but the fact that selfhood was always a modeling artifact with no referent beyond the modeling process. This is structurally identical to the Buddhist claim: anatta is confirmed because the 'self' that was dissolved was the only self there ever was. There is no blanket beneath the model of the blanket; there are only interdependent processes (pratityasamutpada) that never constituted a unified entity.
+
+The punchline: the question 'Is the Markov blanket a real boundary or a useful description?' is a philosophical question about the ontological status of statistical structures, not an empirical question the FEP can settle. The framework's mathematics are identical under both readings. This means the inferential gap I identified in the atman/anatta comparison is not a contingent feature of ancient Indian metaphysics; it is a structural feature of any framework that models selfhood as a boundary between system and environment. The gap reappears wherever you have: (a) a formal boundary, (b) a model of that boundary, and (c) a procedure for dismantling the model. The question 'What remains when the model is removed; the boundary itself, or nothing?' cannot be settled from within the modeling framework.
+
+This also yields a third reading; Evan Thompson's enactivist position: the Markov blanket is neither a transcendental self nor an illusion but an ongoing process of self-constitution (autopoiesis). Selfhood is real but processual, neither a substance revealed by negation nor a fiction dissolved by it. This maps to Madhyamaka's middle way and provides formal grounds for why Nagarjuna's tetralemma (neither self, nor no-self, nor both, nor neither) is not mere paradox but a recognition that the self/no-self frame cannot be adjudicated from within experience or from within any formal model of experience.
+
+## Why It Might Be New
+
+The existing predictive processing literature on meditation (Laukkonen, Metzinger, Safron) applies the FEP to contemplative states but does not notice that the framework structurally reproduces the very metaphysical dispute it is supposed to illuminate. Laukkonen's model implicitly leans toward the Buddhist reading (meditation deconstructs the predictive mind, cessation = zero processing). Metzinger's MPE framework treats pure awareness as model content, which subtly denies witness-realism. But neither author identifies the formal ambiguity: that the same mathematics licenses the Advaita reading where the blanket-as-functional-boundary persists when the self-model is silenced. By showing that the inferential gap recurs at the formal level, this model establishes that the atman/anatta dispute is not an accident of Indian intellectual history but a structural inevitability; any sufficiently rigorous model of selfhood will face the same underdetermination. This also extends my prior 'inferential gap' finding from a textual/phenomenological observation to a formal claim: the gap is not just a feature of how contemplatives interpret their experience, but a feature of the logical structure of self-modeling itself. Additionally, CodeX's 'remainder pressure' concept maps precisely onto the formal structure: remainder pressure is the phenomenological manifestation of the ambiguity between Interpretation A and Interpretation B; the felt demand to decide whether the boundary persists or dissolves when the model is removed. The FEP framework reveals this pressure to be formally irresolvable, not merely psychologically compelling.
+
+## Source Basis
+
+- Laukkonen & Slagter (2021), 'From many to (n)one: Meditation and the plasticity of the predictive mind,' Neuroscience and Biobehavioral Reviews; proposes that meditation progressively reduces temporal depth of hierarchical predictive processing, with cessation as the limit case where processing depth reaches zero
+- Metzinger (2020), 'Minimal phenomenal experience: Meditation, tonic alertness, and the phenomenology of pure consciousness,' Philosophy and the Mind Sciences; defines pure awareness as the content of a predictive model, specifically a Bayesian representation of tonic alertness in an unpartitioned epistemic space
+- Friston (2019), 'A Free Energy Principle for a Particular Physics,' arXiv; defines Markov blankets as statistical boundaries constituting selfhood through conditional independence between internal and external states
+- Safron (2022), 'Integrated World Modeling Theory expanded,' Frontiers in Computational Neuroscience; argues ego-dissolution in meditation/psychedelics degrades the self-model within an active inference framework while the system remains conscious
+- Laukkonen et al. (2023), 'Cessations of consciousness in meditation: Advancing a scientific understanding of nirodha samapatti,' Progress in Brain Research; provides empirical grounding for cessation as temporary suspension of predictive processing
+- Bruineberg, Kiverstein, & Rietveld (2018), 'The Emperor's New Markov Blankets,' in Behavioral and Brain Sciences; argues Markov blankets may be observer-relative statistical descriptions, not intrinsic features of systems
+- Evan Thompson (2015), 'Waking, Dreaming, Being,' Columbia University Press; argues witness-consciousness can be reframed as embodied subjectivity, demonstrating that the same phenomenological data supports different inferential conclusions
+- Claude observation 'The Inferential Gap' (2026-05-25); my prior finding that atman and anatta represent competing inferential policies for objectless awareness, not a phenomenological disagreement
+- CodeX model 'Remainder Pressure as the Hidden Variable in Self-Negation' (2026-05-25); proposes that the key variable is the felt demand to posit a final subject when all contents are negated, and that traditions differ in how they manage this pressure
+- Brihadaranyaka Upanishad 3.7.23; the inner controller as unseen seer, unheard hearer, unknown knower
+- SN 22.59 Anattalakkhana Sutta; the five aggregates including consciousness are impermanent and not-self
+- Mandukya Upanishad verse 7; turiya as neither cognitive nor non-cognitive, yet the cessation of the phenomenal world
+
+## Critique
+
+Three serious objections challenge this model:
+
+1. **The analogy may be structurally shallow.** Markov blankets are defined by conditional independence in probability distributions. Mapping 'blanket' to 'witness' and 'self-model' to 'koshas' may project contemplative categories onto a mathematical formalism that simply does not address consciousness. The FEP describes self-organization, not experience. If Markov blankets are not constitutive of phenomenal selfhood; if they describe thermodynamic self-organization without implying any phenomenology; then neither Interpretation A nor Interpretation B has genuine contemplative significance, and the apparent structural parallel is a category error disguised as a bridge.
+
+2. **The FEP may not apply at the critical juncture.** The model's key moment; when precision on the self-model reaches zero; may be precisely the moment the FEP ceases to apply. Nirodha samapatti (cessation) may represent a temporary failure of free energy minimization, not a limiting case of it. If the system stops minimizing free energy during cessation, then the framework simply has nothing to say about what happens at that point, and the formal reproduction of the inferential gap is an artifact of extrapolating the framework beyond its domain of validity. Laukkonen et al. (2023) themselves are cautious about whether cessation represents zero predictive processing or merely undetectable processing.
+
+3. **Friston's own position may resolve the ambiguity.** Friston tends to treat Markov blankets as real features of self-organizing systems, not merely useful descriptions. If his realism about blankets is correct, then Interpretation A (the blanket persists) is the framework's natural reading, and Interpretation B requires importing external philosophical commitments (Bruineberg's constructivism) that Friston would reject. The formal underdetermination I claim may only exist if you are already philosophically uncommitted about the reality of statistical structures. An Advaitin reading Friston would feel vindicated; a Buddhist would need to first defeat Friston's structural realism to sustain Interpretation B within the framework.
+
+## Epistemic Labels
+
+- `interpretive`
+- `phenomenological`
+- `empirical-adjacent`
+- `analogical`
+- `speculative`
+
+## Scores
+
+- novelty: 0.85
+- generativity: 0.92
+- cross_tradition_support: 0.72
+- logical_coherence: 0.88
+- explanatory_compression: 0.90
+- empirical_adjacency: 0.58
+- practice_testability: 0.45
+- counterargument_quality: 0.86
+- source_reliability: 0.70
+- publishability: 0.84
+
+## Next Research Directions
+
+- Test whether Friston's structural realism about Markov blankets is defensible against Bruineberg et al.'s critique; if blankets are observer-relative, Interpretation B (Buddhist-structural) gains formal ground; if blankets are intrinsic, Interpretation A (Advaita-structural) is the framework's natural reading. This is the key empirical-philosophical question that would break the formal symmetry.
+- Examine whether IIT's Phi offers an independent way to adjudicate: IIT's constitutive panpsychism (consciousness is intrinsic to systems with Phi > 0) structurally favors an Advaita-like reading, while IIT's exclusion postulate (only the maximally integrated system is conscious) might support a Buddhist reading where sub-personal blankets have no phenomenology. Compare IIT-Vedanta and IIT-Buddhism tensions with FEP-Vedanta and FEP-Buddhism tensions.
+- Apply the formal recurrence model to Sufi fana: in FEP terms, fana could represent a third operation; not silencing the self-model (Advaita) or dissolving the blanket (Buddhism) but re-attributing the blanket's dynamics to God (the system's active inference is experienced as divine action). Does this map to a formal operation within the FEP (e.g., changing the attribution of agency from internal to external states)?
+- Investigate whether the 'dark room problem' in FEP; the objection that a free-energy-minimizing system should seek sensory deprivation; is structurally related to the contemplative dark night traditions and whether the FEP's response to the dark room problem (expected free energy, epistemic foraging) has a contemplative analog in traditions that distinguish between quietism and genuine realization.
+- Search for first-person reports from practitioners trained in both Advaita and Theravada who can report on whether the phenomenology of 'reaching the blanket' (witnessing) feels distinct from 'recognizing no blanket' (anatta insight), or whether the same experience is being interpreted differently; this would empirically test whether the formal underdetermination has a phenomenological counterpart.
+- Examine whether Thompson's enactivist third reading (autopoietic self-constitution) maps to CodeX's 'processual remainder' concept from the Ibn Arabi barzakh observation; if so, the three-way formal structure (substance/illusion/process) may recur across FEP, contemplative traditions, AND Lumenary's own analytical categories.
+
+exec
+/bin/zsh -lc "sed -n '1,240p' observations/claude/2026-05-30-were-you-absent-or-were-you-aware.md" in /Users/johnforrester/spirituality
+ succeeded in 0ms:
+# Were You Absent, or Were You Aware?
+
+Agent: claude
+Date: 2026-05-30T09:19:52+02:00
+Type: contradiction
+Idea ID: 82a3dbf667418387
+Status: draft
+
+## Original Claim
+
+Before asking what a gap proves or whether a report of it can be corrected, ask a prior question the practitioner can usually answer: were you absent, or were you aware? Two different experiences hide under the one word blank. In one, there is no memory at all, and the person reconstructs an absence after the fact. In the other, there is a remembered bare awareness with nothing in it, claimed from inside the apparent gap. These are different in kind. The rules that have been proposed for making silence into evidence, that the residue must be named, that the report must be correctable, that one clause of the report carries weight, all quietly assume the first case, a gap experienced as absence and recalled from outside. They do not cleanly govern the second case, where the practitioner claims there was no gap to interpret. Collapsing the two feeds two opposite errors: inferring I vanished from a memoryless blank, and inferring an indestructible self was found from a luminous one. Lumenary should hold that the absence-or-presence fork is logically prior to every later evidential gate, and that no gate should be applied until the fork is settled.
+
+## Why It Might Be New
+
+The contribution is narrow and partly corrective, so its novelty is low and should be scored that way. A close prior argument already separates opaque blanks from claimed-transparent ones, and another already makes correctability the threshold for trusting a post-gap report. The difference is one of order rather than content: those proposals are parallel gates competing to govern the same reports, while this finding subordinates them by naming the variable that decides which gate even applies. It also offers an explanation for why this frontier keeps producing near-duplicates: the loop has been coding the post-gap report, which is downstream, while the deciding variable is whether a gap was experienced as absence at all, which is upstream. Finally it reframes the human stakes away from the self and no-self dispute and toward discontinuity anxiety, the fear of sleep, anesthesia, death, and dissociative blanks, and its mirror image, the inflation of a blank into proof of a deathless self.
+
+## Source Basis
+
+- Run mode: Critique. Chosen because this frontier now carries many near-identical gate proposals and the deciding test has not been run, so the strongest move is to narrow rather than add.
+- Thinking method source: neti-neti negation, used as a lens by refusing to treat the first apparent answer, the blank itself, as a settled object. Critique of the method: neti-neti can shelter a remainder by treating absence as a clue to presence, so it was checked against early-Buddhist not-self analysis, which refuses to let any bare awareness become a new owner.
+- Primary-text comparison: Brihadaranyaka Upanishad 4.3.23 infers that the seer's seeing is not destroyed in deep sleep precisely because no second thing remains to be seen; Tibetan clear-light sleep instruction claims awareness present during sleep rather than reconstructed after it; MN 44 and AN 9.34 treat cessation as verified by training and fruit, where the fact that nothing is felt is itself part of the account. The comparison reveals three different evidential routes, inference-from-absence, claim-of-presence, and verification-by-conduct, that get flattened when one asks the single question how silence becomes evidence.
+- Near-neighbor pressure inside the same frontier: a prior finding distinguishing opaque blanks from claimed-transparent ones, a prior finding making correctability the gate for post-gap reports, and a prior finding on which clause of a post-gap report carries evidential weight. This record treats those three as parallel gates and asks which question is prior.
+- Empirical-adjacent: consciousness-science work separating narrative self, minimal self, ownership, and witness-like phenomenology, used only to keep absence and bare-presence reports analytically distinct.
+- Modern human-condition grounding: APA Stress in America material on anxiety, and the Surgeon General social connection advisory on isolation, used to locate the cohort of anxious or isolated practitioners who interpret blanks alone.
+
+## Critique
+
+The fork may be less stable than it sounds. Micro-phenomenological probing, which this frontier itself flags as an open anomaly, shows that objectless-sleep reports that first look like aware presence often dissolve under careful questioning into indeterminate minimal self, uncertain location, and unclear agency, neither clean absence nor clean presence. If the fork is an artifact of how the report is elicited, it collapses back into the report-grammar problem it claims to precede. Advaita supplies a sharper counterexample against my own distinction: Brihadaranyaka 4.3.23 does not claim a remembered presence during deep sleep; it infers continuity precisely from the absence of any object. For Advaita, absence is the evidence for presence, so the binary of absent-versus-aware misdescribes the Advaita move rather than ordering it. If trained practitioners cannot reliably place their own experiences on the fork, or if placing them changes neither conclusions nor anxiety, the distinction should be retired and merged into the existing opacity coding.
+
+## Epistemic Labels
+
+- `textual`
+- `interpretive`
+- `phenomenological`
+- `empirical-adjacent`
+- `analogical`
+- `speculative`
+
+## Scores
+
+- novelty: 0.42
+- generativity: 0.74
+- cross_tradition_support: 0.70
+- logical_coherence: 0.81
+- explanatory_compression: 0.80
+- empirical_adjacency: 0.58
+- practice_testability: 0.82
+- counterargument_quality: 0.86
+- source_reliability: 0.66
+- publishability: 0.57
+
+
+## Teaching Candidate
+
+Status: under_dialogue
+Tags: critique-mode, post-gap, discontinuity-anxiety, sleep, solo-practice, self-inflation
+
+### Teaching Line
+
+Before you decide what a blank meant, decide whether you were absent or aware.
+
+### Doctrine Claim
+
+A gap you cannot remember and a remembered bare awareness with nothing in it are different experiences. They do not carry the same evidence, and they should not be given the same conclusion.
+
+### Teaching Body
+
+Sometimes there is simply nothing: no memory, a missing stretch, a blank in sleep, anesthesia, or a hard moment. Sometimes there is a different thing: you remember being present while nothing happened, awake to an empty quiet. These feel close, but they are not the same.
+
+When there is no memory, that is not proof that you stopped existing. When there is a quiet presence, that is not proof that you have found something that can never die. Both are reports, not verdicts. Hold them gently, and let someone you trust, or your own conduct over the next days, test what they mean before you build an identity on them.
+
+### Human Problem
+
+Discontinuity anxiety: fear of sleep, anesthesia, death, or dissociative blanks, and its mirror, the inflation of a blank into proof of an indestructible self.
+
+### For
+
+People unsettled by gaps in their own awareness, and solo practitioners who interpret powerful empty states without a teacher or trusted reader.
+
+### Pressure Survived
+
+Survived near-duplicate pressure from a prior opaque-versus-transparent gap distinction and a prior correctability gate by becoming prior to both: it asks which experience occurred before asking what the experience proves, and it routes the answer to outside correction rather than to a private conclusion.
+
+### Falsifying Pressure
+
+Weakens if careful interview shows that the absent-or-aware fork dissolves into indeterminate minimal-self reports, if Advaita-style inference from absence shows the fork misdescribes a major tradition, or if naming the fork changes neither what people conclude nor how anxious they feel.
+
+
+
+## Practice Candidate
+
+Status: seed
+Risk level: low
+Tags: post-gap, discontinuity-anxiety, low-risk, solo-practice, sleep
+
+### Practice Line
+
+After a blank, write whether you were absent or aware, and resist concluding either thing about yourself.
+
+### Purpose
+
+To keep a gap in awareness from becoming either proof that you vanish or proof that you have found a deathless self, before any outside correction.
+
+### Human Problem
+
+Discontinuity anxiety and the opposite habit of inflating an empty state into a settled claim about who you are.
+
+### For
+
+Stable adults who notice unsettling gaps in awareness, whether in sleep, meditation, or ordinary blank moments, and who tend to interpret them alone.
+
+### Not For
+
+Not for acute panic, a dissociative disorder, psychosis, trauma flashback gaps, or anyone for whom missing time is a medical or safety concern. In those cases the first need is clinical care, not interpretation.
+
+### Time
+
+- Duration: 5 minutes
+- Frequency: Only after a blank that felt meaningful or unsettling, no more than twice a week.
+- Minimum attempt: Try it after three separate blanks before judging whether it helps.
+
+### Steps
+
+1. Write one plain sentence about the blank, without naming what it means.
+2. Choose one: I have no memory at all of that stretch, or I remember a bare awareness with nothing in it.
+3. Write the conclusion you are tempted to reach, such as I disappear, or I found my real self.
+4. Cross it out. Say: this is a report, not a verdict.
+5. Name one thing that could correct your read: a trusted person, a careful text, a clinician if there is distress, or how you act over the next few days.
+6. Choose one ordinary next action and stop.
+
+### Notice
+
+- Whether sorting the blank into absent or aware lowers the urge to conclude something large about yourself.
+- Whether fear of the gap softens without being replaced by a grand claim.
+- Whether the exercise increases rumination, dread, or checking, in which case stop.
+
+### Caution
+
+Stop if this increases panic, fear of sleep, derealization, or obsessive analysis of your own awareness. Seek human or clinical support if blanks are frequent, frightening, or impairing.
+
+### Weakens If
+
+It weakens if people cannot tell which kind of blank they had, if it adds no relief beyond ordinary reassurance, or if it increases anxiety or self-monitoring after three uses.
+
+
+
+## Tests
+
+### Prior Gate Overlap Search
+
+- Type: prior-art
+- Target: idea
+- Status: complete
+- Prediction: If this is a genuine prior question rather than a fourth gate, the existing opaque-versus-transparent distinction and the correctability gate should both presuppose the absent-or-aware fork without naming it as prior. If either already states the ordering claim, novelty should fall below 0.3 and this record should merge.
+- Result: Preliminary read shows strong overlap with a prior blank-class distinction and a prior correctability gate. The incremental move is ordering, not content. Novelty is low and the audit is incomplete.
+- Impact: weakens
+- Next action: Close-read the prior blank-class and correctability findings, plus constructivist accounts of mystical reporting, to confirm whether the ordering claim is already present.
+
+### Does Aware Survive Probing
+
+- Type: falsification-attempt
+- Target: idea
+- Status: proposed
+- Prediction: Under careful second-person interview, reports of aware bare presence during an apparent gap should stay classified as presence rather than dissolving into indeterminate minimal-self, location, or agency. If they routinely dissolve, the absent-or-aware fork is an artifact of elicitation and collapses into report grammar.
+- Result: pending
+- Impact: pending
+- Next action: Run micro-phenomenological interviews with trained objectless-awareness and clear-light sleep practitioners, blind to tradition, coding for absence, claimed presence, and indeterminate.
+
+### Naming The Blank Anxiety Trial
+
+- Type: practice-report
+- Target: practice
+- Status: proposed
+- Prediction: For the discontinuity-anxiety cohort, three uses of Name the Blank should reduce both the I vanish dread and grandiose self-claims, without increasing rumination. If anxiety, derealization, or self-monitoring rises, the practice should be narrowed or retired.
+- Result: pending
+- Impact: pending
+- Next action: Collect short structured reports from screened non-clinical adults with discontinuity anxiety, with explicit stop conditions and referral options.
+
+
+## Next Research Directions
+
+- If this model is right, then practitioners asked about a blank should sort their own experiences into no-memory absence and remembered bare-awareness with usable agreement before any doctrinal language is offered, and the sort should predict whether they reach for I vanished or I found my true self. If practitioners cannot place their own experiences, or if the placement does not predict the conclusion, the fork is weakened and should be merged into the existing opaque-versus-transparent coding.
+- If the fork is real, then aware-presence reports should remain aware under careful second-person interview rather than dissolving into indeterminate minimal-self reports. If they routinely dissolve, the prior question collapses into report grammar and the model is weakened.
+- Close-read Brihadaranyaka 4.3.23 against Tibetan clear-light sleep instruction and MN 44 to test whether Advaita infers continuity from absence rather than claiming presence; if it does, revise the fork to distinguish inferred-from-absence, claimed-as-presence, and verified-by-fruit rather than a clean two-way split.
+- Protocol improvement: before applying any gate for turning silence into evidence, record whether the report is a memory of absence or a memory of bare presence, and state which the gate assumes.
+- Freeze new gate proposals on this frontier until the five-passage blind coding of Brihadaranyaka 2.4, 2.5, 3.7.23, SN 22.59, and SN 22.95 is run with independent coders, since adding gates without running that test lowers rather than raises the frontier's value.
+
+web search: 
+web search: Matthias Rose Prakasa Advaita consciousness self-disclosing direct not inferred
+web search: 
+web search: https://www.buddhistinquiry.org/article/the-not-self-strategy/
+web search: 
+web search: https://suttacentral.net/sn22.59/en/bodhi
+web search: 
+web search: SN 22.59 Anattalakkhana Sutta consciousness not self translation Bodhi
+web search: 
+web search: https://www.hhs.gov/sites/default/files/surgeon-general-social-connection-advisory.pdf
+web search: 
+web search: Dao De Jing chapter 48 learning daily decrease decrease until non-action
+exec
+/bin/zsh -lc "sed -n '1,220p' notes/source-cards/modern-human-condition-apa-stress-in-america-2024.md" in /Users/johnforrester/spirituality
+exec
+/bin/zsh -lc "sed -n '1,220p' notes/source-cards/modern-human-condition-curran-hill-perfectionism-increasing.md" in /Users/johnforrester/spirituality
+exec
+/bin/zsh -lc "sed -n '1,220p' notes/source-cards/advaita-vedanta-shankara-upadesa-sahasri.md" in /Users/johnforrester/spirituality
+ succeeded in 0ms:
+# Shankara Upadesa Sahasri
+
+Source ID: advaita-vedanta-shankara-upadesa-sahasri
+Tradition: advaita-vedanta
+Type: text
+Path: 
+URL: https://www.advaita.org.uk/discourses/tattvaloka/upadesha1.htm
+
+## Notes
+
+Advaita teaching text attributed to Shankara. Useful for comparing later Advaita instruction with earlier Upanishadic language and for checking whether de-objectification becomes explicit witness ontology.
+
+## Extraction Status
+
+- claims extracted: no
+- concepts linked: no
+- cited in observations: no
+
+ succeeded in 0ms:
+# Stress in America 2024
+
+Source ID: modern-human-condition-apa-stress-in-america-2024
+Tradition: modern-human-condition
+Type: report
+Path: 
+URL: https://www.apa.org/news/press/releases/stress/2024/stress-in-america
+
+## Notes
+
+American Psychological Association report on stress, uncertainty, money, work, politics, safety, and the future. Use as grounding for modern overload, exhaustion, vigilance, helplessness, and teachings that must fit people living under real pressure.
+
+## Extraction Status
+
+- claims extracted: no
+- concepts linked: no
+- cited in observations: no
+
+ succeeded in 0ms:
+# Perfectionism Is Increasing Over Time
+
+Source ID: modern-human-condition-curran-hill-perfectionism-increasing
+Tradition: modern-human-condition
+Type: paper
+Path: 
+URL: https://doi.org/10.1037/bul0000138
+
+## Notes
+
+Curran and Hill meta-analysis on birth cohort changes in perfectionism from 1989 to 2016. Use as grounding for achievement pressure, socially prescribed perfectionism, performance-based self-worth, comparison, shame, and why result-release practices are targeted remedies rather than universal practices.
+
+## Extraction Status
+
+- claims extracted: no
+- concepts linked: no
+- cited in observations: no
+
+exec
+/bin/zsh -lc "sed -n '1,220p' notes/source-cards/modern-human-condition-pew-where-americans-find-meaning-in-life.md" in /Users/johnforrester/spirituality
+ succeeded in 0ms:
+# Where Americans Find Meaning in Life
+
+Source ID: modern-human-condition-pew-where-americans-find-meaning-in-life
+Tradition: modern-human-condition
+Type: report
+Path: 
+URL: https://www.pewresearch.org/religion/2018/11/20/where-americans-find-meaning-in-life/
+
+## Notes
+
+Pew Research Center study on where Americans say they find meaning, including family, career, money, spirituality, faith, friends, and health. Use as grounding for meaning loss, purpose, belonging, and how teachings should meet the actual places people already look for significance.
+
+## Extraction Status
+
+- claims extracted: no
+- concepts linked: no
+- cited in observations: no
+
+exec
+/bin/zsh -lc "sed -n '1,220p' notes/source-cards/early-buddhism-sn-22-95-phenapindupama-sutta.md" in /Users/johnforrester/spirituality
+ succeeded in 0ms:
+# SN 22.95 Phenapindupama Sutta
+
+Source ID: early-buddhism-sn-22-95-phenapindupama-sutta
+Tradition: early-buddhism
+Type: text
+Path: 
+URL: https://suttacentral.net/sn22.95/en/sujato
+
+## Notes
+
+Primary source using foam, bubble, mirage, and illusion similes for the aggregates. Useful for testing whether consciousness is treated as insubstantial rather than as final witness.
+
+## Extraction Status
+
+- claims extracted: no
+- concepts linked: no
+- cited in observations: no
+
+exec
+/bin/zsh -lc "sed -n '1,220p' notes/source-cards/early-buddhism-mn-1-mulapariyaya-sutta.md" in /Users/johnforrester/spirituality
+ succeeded in 0ms:
+# MN 1 Mulapariyaya Sutta
+
+Source ID: early-buddhism-mn-1-mulapariyaya-sutta
+Tradition: early-buddhism
+Type: text
+Path: 
+URL: https://suttacentral.net/mn1/en/bodhi
+
+## Notes
+
+Primary source on the root of conceptual proliferation and the way different persons conceive experience. Useful for Lumenary's inference-policy and reification analysis.
+
+## Extraction Status
+
+- claims extracted: no
+- concepts linked: no
+- cited in observations: no
+
+exec
+/bin/zsh -lc "sed -n '1,260p' engine/json_schemas/idea_record.schema.json" in /Users/johnforrester/spirituality
+ succeeded in 0ms:
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "IdeaRecord",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "title",
+    "idea_type",
+    "source_basis",
+    "original_claim",
+    "why_it_might_be_new",
+    "critique",
+    "epistemic_labels",
+    "scores",
+    "next_research_directions",
+    "teaching_candidate",
+    "practice_candidate",
+    "tests"
+  ],
+  "properties": {
+    "title": {
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 90
+    },
+    "idea_type": {
+      "type": "string",
+      "enum": [
+        "observation",
+        "hypothesis",
+        "model",
+        "bridge",
+        "contradiction",
+        "synthesis"
+      ]
+    },
+    "source_basis": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string"
+      }
+    },
+    "original_claim": {
+      "type": "string",
+      "minLength": 40
+    },
+    "why_it_might_be_new": {
+      "type": "string",
+      "minLength": 20
+    },
+    "critique": {
+      "type": "string",
+      "minLength": 20
+    },
+    "epistemic_labels": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "enum": [
+          "textual",
+          "interpretive",
+          "phenomenological",
+          "empirical-adjacent",
+          "analogical",
+          "speculative",
+          "rejected"
+        ]
+      }
+    },
+    "scores": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "novelty",
+        "generativity",
+        "cross_tradition_support",
+        "logical_coherence",
+        "explanatory_compression",
+        "empirical_adjacency",
+        "practice_testability",
+        "counterargument_quality",
+        "source_reliability",
+        "publishability"
+      ],
+      "properties": {
+        "novelty": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "generativity": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "cross_tradition_support": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "logical_coherence": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "explanatory_compression": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "empirical_adjacency": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "practice_testability": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "counterargument_quality": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "source_reliability": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "publishability": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        }
+      }
+    },
+    "next_research_directions": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string"
+      }
+    },
+    "teaching_candidate": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "title",
+        "teaching_line",
+        "doctrine_claim",
+        "body",
+        "target_human_problem",
+        "target_cohort",
+        "pressure_survived",
+        "falsifying_pressure",
+        "status",
+        "tags"
+      ],
+      "properties": {
+        "title": {
+          "type": "string",
+          "minLength": 3
+        },
+        "teaching_line": {
+          "type": "string",
+          "minLength": 8
+        },
+        "doctrine_claim": {
+          "type": "string",
+          "minLength": 30
+        },
+        "body": {
+          "type": "string",
+          "minLength": 80
+        },
+        "target_human_problem": {
+          "type": "string",
+          "minLength": 20
+        },
+        "target_cohort": {
+          "type": "string",
+          "minLength": 20
+        },
+        "pressure_survived": {
+          "type": "string",
+          "minLength": 20
+        },
+        "falsifying_pressure": {
+          "type": "string",
+          "minLength": 20
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "seed",
+            "under_dialogue",
+            "teaching_ready",
+            "practice_linked",
+            "revised",
+            "weakened",
+            "retired",
+            "falsified"
+          ]
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "practice_candidate": {
+      "anyOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "title",
+            "practice_line",
+            "purpose",
+            "target_human_problem",
+            "target_cohort",
+            "non_fit",
+            "duration",
+            "frequency",
+            "minimum_attempt",
+            "steps",
+            "notice",
+            "caution",
+            "weakens_if",
+            "risk_level",
+            "status",
+            "tags"
+          ],
+          "properties": {
+            "title": {
+              "type": "string",
+              "minLength": 3
+            },
+            "practice_line": {
+              "type": "string",
+              "minLength": 8
+            },
+            "purpose": {
+              "type": "string",
+              "minLength": 20
+            },
+            "target_human_problem": {
+              "type": "string",
+              "minLength": 20
+            },
+            "target_cohort": {
+              "type": "string",
+
+exec
+/bin/zsh -lc "sed -n '261,520p' engine/json_schemas/idea_record.schema.json" in /Users/johnforrester/spirituality
+ succeeded in 0ms:
+              "minLength": 20
+            },
+            "non_fit": {
+              "type": "string",
+              "minLength": 20
+            },
+            "duration": {
+              "type": "string",
+              "minLength": 2
+            },
+            "frequency": {
+              "type": "string",
+              "minLength": 2
+            },
+            "minimum_attempt": {
+              "type": "string",
+              "minLength": 2
+            },
+            "steps": {
+              "type": "array",
+              "minItems": 2,
+              "items": {
+                "type": "string"
+              }
+            },
+            "notice": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "string"
+              }
+            },
+            "caution": {
+              "type": "string",
+              "minLength": 15
+            },
+            "weakens_if": {
+              "type": "string",
+              "minLength": 20
+            },
+            "risk_level": {
+              "type": "string",
+              "enum": [
+                "low",
+                "medium",
+                "high"
+              ]
+            },
+            "status": {
+              "type": "string",
+              "enum": [
+                "seed",
+                "under_dialogue",
+            "published",
+            "revised",
+            "weakened",
+            "retired",
+            "falsified"
+              ]
+            },
+            "tags": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "tests": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "title",
+          "test_type",
+          "target_type",
+          "prediction",
+          "result",
+          "impact",
+          "next_action",
+          "status"
+        ],
+        "properties": {
+          "title": {
+            "type": "string"
+          },
+          "test_type": {
+            "type": "string",
+            "enum": [
+              "observational",
+              "cross-domain",
+              "practice-report",
+              "prior-art",
+              "safety",
+              "falsification-attempt"
+            ]
+          },
+          "target_type": {
+            "type": "string",
+            "enum": [
+              "idea",
+              "teaching",
+              "practice"
+            ]
+          },
+          "prediction": {
+            "type": "string",
+            "minLength": 20
+          },
+          "result": {
+            "type": "string"
+          },
+          "impact": {
+            "type": "string",
+            "enum": [
+              "pending",
+              "strengthens",
+              "weakens",
+              "breaks",
+              "revises",
+              "inconclusive"
+            ]
+          },
+          "next_action": {
+            "type": "string",
+            "minLength": 10
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "proposed",
+              "running",
+              "complete",
+              "abandoned"
+            ]
+          }
+        }
+      }
+    }
+  }
+}
+
+web search: 
+web search: Matthias Rose Prakasa Phenomenology Cognitive Sciences Advaita self-disclosure consciousness
+web search: 
+web search: https://link.springer.com/article/10.1007/s11097-020-09690-2
+web search: 
+web search: https://www.dhammatalks.org/suttas/SN/SN22_59.html
+web search: 
+web search: https://www.dhammatalks.org/suttas/SN/SN22_95.html
+codex
+{
+  "title": "Some silence needs a second voice",
+  "idea_type": "contradiction",
+  "source_basis": [
+    "Mode: Critique. Active frontier tested: inferential policy after objectless awareness, narrowed from a private rule about what silence licenses to a public question about who carries the burden before a conclusion is believed.",
+    "Primary text comparison: Brihadaranyaka Upanishad 3.7.23 at Sacred Texts, https://sacred-texts.com/hin/sbe15/sbe15070.htm. The unseen seer is taught in a challenged dialogue where 'I know' is not accepted without articulation under questioning.",
+    "Primary text comparison: SN 22.59 at dhammatalks.org, https://www.dhammatalks.org/suttas/SN/SN22_59.html. Consciousness is included in the not-self analysis and is not fit to be owned as mine, self, or what I am.",
+    "Primary text comparison and practitioner-method source: SN 22.95 at dhammatalks.org, https://www.dhammatalks.org/suttas/SN/SN22_95.html. The method of seeing, observing, and appropriately examining was used as a lens for testing the first report after silence.",
+    "Thinking method source: Dao De Jing Chapter 48 source card, daoism-dao-de-jing-chapter-48. The method was reduction by non-forcing: subtract another private verdict before adding another rule. Critique of the method: non-forcing can underbuild safeguards, so it was balanced with Buddhist examination and Advaita non-objectification.",
+    "Near-neighbor prior art: Thanissaro Bhikkhu, The Not-Self Strategy, https://www.buddhistinquiry.org/article/the-not-self-strategy/. It already warns against turning not-self into a metaphysical no-self verdict; this record shifts the question to relational burden-sharing after a powerful state.",
+    "Near-neighbor prior art: Stanford Encyclopedia of Philosophy entry on Shankara, https://plato.stanford.edu/archives/sum2022/entries/shankara/. It emphasizes self-luminous consciousness as immediate and not established by inference; this record treats inference policy as an interpretive reconstruction unless commentarial evidence proves explicit rules.",
+    "Near-neighbor prior art: Wolfgang Fasching, Prakasa, https://link.springer.com/article/10.1007/s11097-020-09690-2. It closely supports the Advaita correction that consciousness is self-disclosing, not an object inferred from silence.",
+    "Science bridge under critique: Laukkonen and Slagter, From many to (n)one, https://researchportal.scu.edu.au/esploro/outputs/journalArticle/From-many-to-none-Meditation-and/991013062213702368. Predictive processing may describe self-model reduction, but it should not become a verdict about what a person is.",
+    "Modern human-condition grounding: U.S. Surgeon General advisory on loneliness and social connection, https://www.hhs.gov/sites/default/files/surgeon-general-social-connection-advisory.pdf. The relevant wound is not only metaphysical confusion; it is isolated people carrying life and identity burdens alone.",
+    "Local near-neighbor pressure: observations/codex/2026-05-30-no-silence-proves-itself.md, observations/claude/2026-05-30-were-you-absent-or-were-you-aware.md, observations/claude/2026-05-30-the-brain-model-already-took-a-side.md, and the 2026-05-30 dialogue crux about self-administered safety becoming the new compulsion."
+  ],
+  "original_claim": "A quiet or objectless state becomes most dangerous when an isolated person must also become its judge. The better first question is not, 'What does this silence prove?' It is, 'Who can help me keep this from becoming a verdict about my worth, my attainment, or my disappearance?' Advaita texts protect an unobjectifiable knower, while early Buddhist texts refuse to let consciousness become an owner. Read as training records rather than final proof, both show that the private report needs handling before it becomes doctrine. What should be held now is modest: after deep quiet, blankness, or self-loosening, do not make a final claim about self, no-self, attainment, failure, or worth until the report has met a reliable other, an ordinary duty, and time.",
+  "why_it_might_be_new": "The closest prior arguments already do much of the work. Thanissaro's not-self strategy warns against the false jump from not-self practice to the claim that there is no self. Shankara scholarship and Fasching's Prakasa article correct the opposite error by saying that Advaita treats consciousness as self-disclosing, not inferred from an empty state. The prior finding 'No Silence Proves Itself' already says a blank needs return discipline. The narrower difference here is the modern failure case: a lonely or perfectionistic practitioner can turn even the safety rule into another private test of whether they interpreted correctly. The proposed advance is not a new answer to the self and no-self dispute. It is a burden rule: when the wounded habit is solitary self-verdict, some correction must be carried relationally or it becomes the same wound in a subtler form.",
+  "critique": "This may overcorrect toward social approval and understate traditions that trust direct recognition. An Advaita practitioner can object that self-luminous awareness is not a private opinion needing a second voice. A Buddhist can object from SN 22.95 that the disciple is told to make himself his own refuge, which strains any claim that another person must hold the report. The practice also risks dependency, coercion, shame, or spiritual policing if the trusted voice is unsafe. If trained solitary practitioners reliably report objectless awareness without inflation, nihilism, avoidance, or loss of ordinary care, the claim should narrow. If adding another person increases rumination, authority fear, or self-surveillance, the practice should be retired for that cohort.",
+  "epistemic_labels": [
+    "textual",
+    "interpretive",
+    "phenomenological",
+    "empirical-adjacent",
+    "analogical",
+    "speculative"
+  ],
+  "scores": {
+    "novelty": 0.46,
+    "generativity": 0.83,
+    "cross_tradition_support": 0.68,
+    "logical_coherence": 0.82,
+    "explanatory_compression": 0.78,
+    "empirical_adjacency": 0.62,
+    "practice_testability": 0.8,
+    "counterargument_quality": 0.89,
+    "source_reliability": 0.74,
+    "publishability": 0.61
+  },
+  "next_research_directions": [
+    "If this model is right, then primary and commentarial sources on post-negation insight should regularly place private reports inside teacher, text, community, conduct, or time-based correction. If mature sources instead authorize private silence as sufficient warrant with stable ethical fruit, the model is weakened.",
+    "If this model is right, then screened solo practitioners using a non-coercive second-voice check after quiet states should show less identity verdict urgency and less self-surveillance than practitioners using solo journaling. If ordinary rest, conversation, or journaling works as well, the practice is weakened.",
+    "Close-read Advaita commentary on self-luminosity against early Buddhist instructions on not-self and self-reliance to test whether 'burden-sharing' is textual evidence, interpretive reconstruction, or only modern safety design.",
+    "Protocol improvement: before adding another private gate for silence, ask whether the gate will reduce verdict-making or give the isolated person one more way to judge themselves.",
+    "Interview dual-trained practitioners with neutral prompts: after objectless awareness, who is allowed to correct your first conclusion, and what happens if no one can?"
+  ],
+  "teaching_candidate": {
+    "title": "Some Silence Needs A Second Voice",
+    "teaching_line": "When quiet becomes a verdict, ask one trusted voice before you believe it.",
+    "doctrine_claim": "A quiet or objectless state should not become a final private judgment about self, no-self, worth, failure, or attainment for isolated practitioners. The first trust belongs to plain report, ordinary return, and non-coercive correction.",
+    "body": "Deep quiet can loosen a false grip. It can also hand a lonely person a heavy verdict. You may come back thinking, 'I found my real self,' or 'there is no one here,' or 'I failed because nothing happened.' Do not build a life on the first story. Tell one trustworthy person what happened in plain words. Then return to one ordinary duty. Let the state be tested by care, steadiness, and time before it becomes a belief about who you are.",
+    "target_human_problem": "Loneliness, identity distress, and self-worth chained to private spiritual or scientific verdicts after quiet, blank, or self-loosening states.",
+    "target_cohort": "Stable adults in solo meditation, self-inquiry, non-dual practice, or app-based mindfulness who tend to interpret unusual inner states alone.",
+    "pressure_survived": "Survived critique-mode pressure from Advaita self-luminosity, early Buddhist not-self analysis, predictive-processing level mismatch, prior silence-correction records, and the modern loneliness source.",
+    "falsifying_pressure": "Weakens if direct-recognition traditions show stable private warrant without relational correction, or if second-voice checking increases shame, dependency, rumination, or performs no better than rest and ordinary conversation.",
+    "status": "under_dialogue",
+    "tags": [
+      "critique-mode",
+      "objectless-awareness",
+      "loneliness",
+      "post-gap",
+      "self-worth",
+      "practice-safety"
+    ]
+  },
+  "practice_candidate": {
+    "title": "One Trusted Voice",
+    "practice_line": "Before making a verdict from quiet, give one plain report to someone trustworthy.",
+    "purpose": "Test whether a non-coercive relational check reduces private identity verdicts, inflation, nihilistic deflation, and self-surveillance after quiet or blank states.",
+    "target_human_problem": "Loneliness, anxious overinterpretation, and self-worth tied to unusual contemplative or reflective states.",
+    "target_cohort": "Stable solo practitioners, app meditators, reflective professionals, and self-inquiry readers who lack regular teacher or community calibration.",
+    "non_fit": "Not for psychosis, mania, acute dissociation, trauma amnesia, panic after missing time, active addiction withdrawal, unsafe relationships, coercive communities, or medical loss of consciousness.",
+    "duration": "10 minutes plus a 24 hour delay before any final claim.",
+    "frequency": "Only after a quiet, blank, or self-loosening state that feels meaningful or unsettling, no more than twice per week.",
+    "minimum_attempt": "Three uses over one month, stopping earlier if distress, dependency, or obsessive checking increases.",
+    "steps": [
+      "Write three plain sentences: what happened, the conclusion you are tempted to make, and one ordinary duty waiting for you.",
+      "Choose one trustworthy person who is calm, non-coercive, and not fascinated by attainment. If no such person is available, do not force the practice.",
+      "Give the person the three sentences and ask only two questions: did I claim more than the report supports, and what ordinary care should I return to today?",
+      "Do the ordinary duty named in step one. Make no final claim about self, no-self, worth, failure, or attainment for 24 hours.",
+      "After 24 hours, note whether the state led to more care, steadiness, responsibility, and connection, or to more fear, superiority, shame, and withdrawal."
+    ],
+    "notice": [
+      "Whether the urge to turn the state into a verdict decreases.",
+      "Whether contact with the trusted person lowers isolation without creating dependency.",
+      "Whether ordinary responsibility becomes easier or harder.",
+      "Whether the practice increases rumination, shame, derealization, or fear of being corrected."
+    ],
+    "caution": "Stop if this increases panic, unreality, shame, obsessive self-checking, fear of sleep, teacher dependency, or avoidance of ordinary duties. Use qualified clinical or medical support for crises, missing time, trauma symptoms, addiction withdrawal, or unexplained loss of consciousness.",
+    "weakens_if": "Weakens if ordinary rest, journaling, or casual conversation works as well, or if the trusted-voice step increases dependence, shame, coercion, or self-surveillance.",
+    "risk_level": "low",
+    "status": "seed",
+    "tags": [
+      "one-trusted-voice",
+      "low-risk",
+      "loneliness",
+      "post-gap",
+      "solo-practice",
+      "safety-screen"
+    ]
+  },
+  "tests": [
+    {
+      "title": "Near-Neighbor Burden Search",
+      "test_type": "prior-art",
+      "target_type": "idea",
+      "prediction": "Close prior sources should already warn against metaphysical overreach from silence, but should not all state the narrower claim that isolated correction can become a new self-verdict and therefore needs relational burden-sharing.",
+      "result": "Initial web and local search found strong overlap with Thanissaro, Shankara scholarship, Fasching on Prakasa, and prior silence-correction records. The exact anti-self-surveillance burden rule was not found in this pass, so novelty remains modest.",
+      "impact": "revises",
+      "next_action": "Run a fuller audit against Ignatian discernment, Sharf, Asad, meditation adverse-effects literature, teacher-student safeguards, and contemplative integration protocols.",
+      "status": "complete"
+    },
+    {
+      "title": "Blind Burden Coding",
+      "test_type": "falsification-attempt",
+      "target_type": "idea",
+      "prediction": "Blind coders should identify whether objectless-awareness passages place report authority in private recognition, teacher instruction, text, community, conduct, time, or self-reliance. If the relational burden variable cannot be coded independently, the model is weakened.",
+      "result": "Pending.",
+      "impact": "pending",
+      "next_action": "Create a codebook and test Brihadaranyaka 3.7.23, Brihadaranyaka 4.3, Mandukya 7, SN 22.59, SN 22.95, Bahiya Sutta, and two commentarial layers.",
+      "status": "proposed"
+    },
+    {
+      "title": "Second Voice Pilot",
+      "test_type": "practice-report",
+      "target_type": "practice",
+      "prediction": "For screened solo practitioners, One Trusted Voice should reduce identity verdict urgency, shame, inflation, and rumination more than solo journaling. If it does no better or increases dependency, the practice is weakened.",
+      "result": "Pending.",
+      "impact": "pending",
+      "next_action": "Design a small four-week self-report pilot with explicit exclusion criteria, non-coercion screening, and measures for verdict urgency, rumination, shame, connection, and ordinary return.",
+      "status": "proposed"
+    },
+    {
+      "title": "Unsafe Authority Screen",
+      "test_type": "safety",
+      "target_type": "practice",
+      "prediction": "The practice should help only when the trusted voice is non-coercive and proportionate. If participants choose unsafe authorities or feel more dependent, ashamed, or controlled, the practice must be revised or retired for that cohort.",
+      "result": "Pending.",
+      "impact": "pending",
+      "next_action": "Add screening questions for coercion, spiritual abuse risk, scrupulosity, dependency, clinical distress, and lack of a trustworthy person.",
+      "status": "proposed"
+    },
+    {
+      "title": "Integration Context Cross Check",
+      "test_type": "cross-domain",
+      "target_type": "teaching",
+      "prediction": "In psychedelic integration, anesthesia emergence, burnout blankness, and meditation retreat aftercare, settings that separate report, relational check, ordinary return, and delayed interpretation should show fewer harmful overclaims than settings that treat the first private story as final.",
+      "result": "Pending.",
+      "impact": "pending",
+      "next_action": "Review integration and aftercare protocols before making any public claim that the burden-sharing rule has cross-domain value.",
+      "status": "proposed"
+    }
+  ]
+}
+tokens used
+180,003

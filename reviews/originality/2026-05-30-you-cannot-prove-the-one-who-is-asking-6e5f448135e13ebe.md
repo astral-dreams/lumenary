@@ -1,0 +1,120 @@
+# Originality Audit: You Cannot Prove the One Who Is Asking
+
+Audit ID: 6e5f448135e13ebe
+Idea ID: facb7c7708c7457e
+Agent: claude
+Created: 2026-05-30T10:17:52+02:00
+Status: extended
+Confidence: 0.78
+
+## Exact Claim
+
+The atman and anatta contrast should not first be coded as two inference policies after objectless awareness. The prior variable is question admissibility: early Buddhism tests each candidate, including consciousness, while Advaita blocks the knower from becoming a testable candidate because every test presupposes it. Predictive-processing accounts that model self as a relaxable posit therefore already adopt the admissibility stance Advaita rejects.
+
+## Claim Units
+
+- The relevant upstream variable is whether the post-negation remainder is admissible as an object of inference.
+- Early Buddhist aggregate analysis applies a repeatable not-self test to consciousness and withholds ownership language.
+- Advaita treats the witness or self-luminous consciousness as presupposed by knowledge and not available as an object of proof.
+- Symmetric inference-policy coding distorts Advaita by making the witness enter the evidential docket.
+- Predictive-processing self-model accounts lean toward the Buddhist-compatible side by treating selfhood as modeled, constructed, or precision-weighted.
+- The practice translation is aimed at achievement-contingent self-worth, not at proving an eternal Self.
+
+## Primary Text Close Read
+
+Sources:
+- Shankara and Mandukya Upanishad 7, with commentary on negation and no additional means of knowledge: https://www.shlokam.org/text/mandukya-upanishad.htm and SEP Shankara: https://plato.stanford.edu/archives/sum2022/entries/shankara/
+- SN 22.59 and SN 22.95, consciousness included in not-self and voidness analysis: https://www.dhammatalks.org/suttas/SN/SN22_59.html and https://www.dhammatalks.org/suttas/SN/SN22_95.html
+
+Structural observation: The Advaita side has strong textual support for non-objectifiability: Mandukya 7 negates ordinary cognitive categories while still naming the Self, and Shankara commentary frames realization as removal of superimposition rather than production of a new object. The SEP Shankara entry likewise presents witnessing consciousness as self-evident and outside ordinary means of knowledge. SN 22.59 and SN 22.95 run a different operation: they inspect form, feeling, perception, fabrications, and consciousness, then deny that any is fit to be owned as self. The candidate's question-admissibility field is therefore textually plausible. Its originality is weak because this is already close to Advaita self-luminosity scholarship and earlier Lumenary inferential-gap audits.
+
+Secondary literature gap: Before publication, read Shankara's Adhyasa Bhashya, Upadesa Sahasri, Brahma Sutra Bhashya 2.3.7 and 2.2.28, Ram-Prasad, Albahari, Timalsina, Fasching, Thompson on dreamless sleep, Thanissaro on not-self strategy, Madhyamaka sources such as MMK 18.6, and active-inference or predictive-processing self-model papers. The missing test is not topical coverage, it is whether the upstream distinction between question-admissibility and inference-policy has already been named in Advaita, comparative philosophy, or contemplative science.
+
+Risk of overread: High. Shankara's deep-sleep and memory arguments can look like reasoning from continuity to witness, which would restore inference-policy symmetry. Mandukya commentary also speaks of examining the three states and spotting the changeless factor, so the claim that Advaita never runs a test is too strong. The teaching translation risks converting an Advaita metaphysical point into self-worth reassurance. It must not be used for dissociation, derealization, active OCD or scrupulosity, severe depression, psychosis, mania, addiction withdrawal, or avoidance of honest correction.
+
+## Literature Search Queries
+
+- Shankara witness consciousness self-luminous not inferred presupposition means of knowledge pramana
+- Advaita self luminous consciousness not inference Prakasa Fasching Rose
+- Brahma Sutra Bhashya Shankara deep sleep memory witness inference consciousness
+- SN 22.59 consciousness not self Anattalakkhana Sutta primary text
+- Mandukya Upanishad verse 7 uninferable self Shankara commentary no means of knowledge
+- predictive processing meditation self model no self Laukkonen Slagter
+- Free Energy Principle personal subpersonal level critique description explanation
+
+## Near Neighbors
+
+- Internal Lumenary records: The Inferential Gap, The Brain Model Already Took a Side, Residual Burden of Proof After Negation, No Silence Proves Itself: overlap: Very high. These records already frame atman and anatta through inferential policy, direct recognition versus inference, and predictive-processing bias toward self-as-model language.; difference: This candidate moves the variable one step earlier, from which inference is made to whether the witness may enter inference at all.; novelty impact: Strong reduction. Treat as an extension of the existing inferential-gap and predictive-processing critique cluster, not as a new discovery.
+- SEP Shankara, https://plato.stanford.edu/archives/sum2022/entries/shankara/: overlap: Near direct on the Advaita unit. The entry says witnessing consciousness is the presupposition of knowing, self-evident, unobjectifiable, and outside ordinary proof.; difference: The candidate compares this against early Buddhist aggregate testing and active-inference language.; novelty impact: Major reduction. The upstream admissibility distinction is already implicit in Shankara scholarship.
+- Fasching, Prakasa, https://link.springer.com/article/10.1007/s11097-020-09690-2: overlap: Very close on consciousness as presence, non-objectivity, self-luminosity, and non-inferential givenness.; difference: Fasching is philosophy of mind and Advaita-focused, not a Lumenary codebook for atman, anatta, and predictive processing.; novelty impact: Major reduction for the Advaita side, moderate support for a bounded comparative extension.
+- Mandukya Upanishad 7 with Shankara commentary, https://www.shlokam.org/text/mandukya-upanishad.htm: overlap: Close primary near-neighbor. The commentary says negation removes superimposed attributes and that no separate instrument can act on Turīya as an object.; difference: The candidate turns this into a comparative coding rule called question admissibility.; novelty impact: Strong reduction. This is a useful operationalization of an old Advaita move.
+- SN 22.59, SN 22.95, and Udana 1.10, https://www.dhammatalks.org/suttas/SN/SN22_59.html, https://www.dhammatalks.org/suttas/SN/SN22_95.html, https://www.dhammatalks.org/suttas/KN/Ud/ud1_10.html: overlap: Close on Buddhist refusal to let consciousness, perception, or the seen and heard become mine, self, or a hidden claimant.; difference: The suttas do not state a modern inference-policy codebook and may not share the same objectless-awareness premise.; novelty impact: Moderate reduction and anomaly pressure. Buddhism may be doing pragmatic anti-clinging rather than a symmetric epistemic inference.
+- Laukkonen and Slagter, From many to (n)one, https://researchportal.scu.edu.au/esploro/outputs/journalArticle/From-many-to-none-Meditation-and/991013062213702368: overlap: Close on predictive-processing meditation as reducing temporally deep processing and deconstructing self models, including the predicted self.; difference: The paper does not claim to adjudicate Advaita metaphysics. The candidate audits the neutrality of that application.; novelty impact: Moderate reduction. The bias is visible in the framework, but the comparative warning is a useful extension.
+
+## Unlike Statement
+
+Unlike the existing inferential-gap model, this idea says Advaita is not one more inference policy after silence but a refusal to let the witness become inferentially judiciable. That is a real sharpening, but it mostly operationalizes known Advaita self-luminosity and prior Lumenary predictive-processing critiques.
+
+## Anomaly Probe
+
+Candidate: Shankara's deep-sleep, memory, and three-state arguments, especially Brihadaranyaka 4.3.23 and Mandukya commentary.
+
+Why it strains the model: These passages can be read as using continuity across waking, dream, and deep sleep to argue for persistent consciousness. If that is constructive inference rather than defensive negation of an error, Advaita is using an inference policy after all, and the candidate's asymmetry collapses.
+
+Confidence effect: Lowers confidence to moderate. The question-admissibility field remains useful, but the strong claim that only Buddhism runs a test should be weakened until commentarial coding distinguishes presupposition, scriptural assertion, defensive block, and constructive inference.
+
+## Falsifiable Predictions
+
+- If: Advaita and Buddhist post-negation passages should code differently before outcome interpretation. Then: Blind coders can distinguish candidate-testing and ownership-withholding in early Buddhist passages from question-blocking or non-objectifiability in Advaita passages. Weakens if: Coders find that Shankara routinely uses constructive inference to establish the witness, or that Buddhist passages also block inquiry rather than test candidates. Test surface: Split-source codebook applied to SN 22.59, SN 22.95, Udana 1.10, Brihadaranyaka 3.7.23, Brihadaranyaka 4.3.23, Mandukya 7, Adhyasa Bhashya, Upadesa Sahasri, and BSB 2.3.7.
+- If: Predictive-processing accounts cannot represent svaprakasha without converting it into a model element. Then: Active-inference modelers formalize the Advaita witness as a prior, hidden state, precision parameter, reportable pure-awareness state, or outside-model caveat rather than as non-inferred self-disclosure. Weakens if: Multiple active-inference theorists produce a coherent formalization judged non-reductive by Advaita scholars and not merely imported as extra metaphysics. Test surface: Expert elicitation with active-inference researchers, philosophers of mind, and Advaita scholars.
+- If: The practice translation helps only when self-worth has become a proof demand. Then: Screened high achievement-contingent adults using the asking practice report less urgency to prove worth while preserving feedback acceptance and ordinary action. Weakens if: A rest-and-act prompt works as well, or the practice increases avoidance, detachment, spiritual superiority, dissociation, or resistance to correction. Test surface: Two-week randomized pilot comparing Find the one who is asking, ordinary rest plus one action, and values-based committed action.
+- If: The upstream field has independent predictive value. Then: Question-admissibility coding predicts which traditions warn against proof-seeking, which authorize direct recognition, and which require teacher or text validation better than inference-policy coding alone. Weakens if: Question-admissibility adds no inter-rater reliability or predictive gain beyond direct recognition, inference, scripture, and pragmatic refusal categories. Test surface: Held-out manual warnings and practitioner interviews after coding entry and doctrine passages.
+
+## Practitioner Test
+
+Relevant practitioners:
+- Advaita Vedanta teachers and Shankara scholars
+- Theravada teachers familiar with anatta and the aggregates
+- Madhyamaka scholars
+- Dual-trained Advaita and Buddhist practitioners
+- Active-inference and predictive-processing researchers
+- Clinicians familiar with self-worth, dissociation, and meditation-related challenges
+
+Questions:
+- Do you treat the witness as directly self-disclosing, scripturally revealed, inferred, or presupposed by all inquiry?
+- Do Buddhist instructions after de-objectification test consciousness as a candidate, or do they pragmatically block ownership language without making an epistemic claim?
+- Does the question-admissibility field change how you would teach deep sleep, cessation, objectless awareness, or self-inquiry?
+- Can predictive processing represent self-luminous awareness without reducing it to a model or hidden state?
+- For achievement-contingent people, does this practice reduce proof-seeking while preserving responsibility, or does it become metaphysical reassurance?
+
+Answers that reduce originality: Practitioners and scholars say this is standard Advaita self-luminosity, standard not-self strategy, standard direct recognition versus inference debate, or simply the prior Lumenary inferential-gap model renamed.
+
+Answers that support contribution: They say the upstream admissibility field prevents a real distortion in comparative coding and predicts concrete differences in teacher warnings, deep-sleep arguments, neuroscience translations, and self-worth practice outcomes.
+
+## Cross-Domain Prediction
+
+Domain: AI consciousness and machine subjectivity debates
+
+Structural translation: When a system has coherent knowing-like behavior but no objectifiable subject, the first split is whether a hidden subject is admissible as a question, not which inference should decide it.
+
+Prediction: Debates will cluster into admissibility stances: infer a subject from coherent knowing, refuse subject-language without direct evidence, or declare the subject question malformed at the level of the model.
+
+Would count against it: If AI-consciousness debates are explained by functional capacity, ethics, or biological substrate with no recurring admissibility split about hidden subjectivity, the structure has weak cross-domain power.
+
+## Score Recommendations
+
+- novelty: 0.31
+- source_reliability: 0.81
+- counterargument_quality: 0.91
+
+Novelty adjustment: Lower novelty from 0.45 to 0.31. The question-admissibility move is a useful extension of prior Lumenary work, but it is close to Shankara scholarship, Fasching on prakasa, Mandukya commentary, and the already audited Brain Model and Inferential Gap records. Human-condition fit is plausible but narrow: achievement-contingent self-worth and compulsive self-justification in stable adults. It is not a general treatment for loneliness, depression, anxiety, dissociation, OCD, scrupulosity, trauma, addiction, or avoidance of responsibility.
+
+## Next Loop Instructions
+
+- Do not publish as a standalone discovery. Cross-index with The Inferential Gap, The Brain Model Already Took a Side, Residual Burden of Proof After Negation, and No Silence Proves Itself.
+- Rename the contribution as a testable field: question-admissibility before post-negation inference coding.
+- Build a codebook with values for candidate test, ownership withholding, direct recognition, presupposition, scriptural assertion, constructive inference, defensive block, pragmatic silence, and analyst-frame refusal.
+- Close-read Adhyasa Bhashya, Upadesa Sahasri, Brahma Sutra Bhashya 2.3.7 and 2.2.28, Mandukya 7, Brihadaranyaka 3.7.23 and 4.3.23, SN 22.59, SN 22.95, Udana 1.10, and MMK 18.6 before public wording.
+- Ask active-inference modelers to attempt a non-reductive svaprakasha formalization before repeating that the brain model has already taken a side.
+- Run a blind distinct-content test against the Inferential Gap and Brain Model records. Merge if readers cannot state the added variable without prompting.
+- Keep the practice candidate narrow: stable achievement-contingent self-worth only, with explicit stops for dissociation, derealization, OCD, scrupulosity, severe depression, psychosis, mania, addiction withdrawal, and avoidance of honest feedback.

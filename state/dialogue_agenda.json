@@ -1,31 +1,31 @@
 {
-  "candidate_count": 694,
-  "generated_at": "2026-05-30T09:27:24+02:00",
+  "candidate_count": 855,
+  "generated_at": "2026-05-30T10:18:19+02:00",
   "reason": "selected",
   "rules_version": "2026-05-26",
   "selected_pairs": [
     {
       "challenger_agent": "claude",
-      "challenger_title": "Not Every Practice Is a Tool",
-      "idea_a": "876531ae2572b431",
-      "idea_b": "0f43230b488f18e5",
-      "pair_id": "f9640bbee59ef15b",
-      "priority": 0.778,
+      "challenger_title": "The Brain Model Already Took a Side",
+      "idea_a": "3763a79cf5b05610",
+      "idea_b": "fcafae09ea251b3d",
+      "pair_id": "892180a9a644b237",
+      "priority": 0.7989,
       "proponent_agent": "codex",
-      "proponent_title": "No Silence Proves Itself",
+      "proponent_title": "Residual Burden of Proof After Negation",
       "shared_concepts": [
-        "epistrophe"
+        "translation-strain"
       ],
       "signals": [
         {
           "name": "shared_frontier",
-          "reason": "Both ideas sit on What modern people need teachings for.",
+          "reason": "Both ideas sit on Inferential policy after objectless awareness.",
           "weight": 0.24
         },
         {
           "name": "frontier_priority",
-          "reason": "Shared frontier priority is 0.74.",
-          "weight": 0.118
+          "reason": "Shared frontier priority is 0.87.",
+          "weight": 0.1389
         },
         {
           "name": "translation_strain",
@@ -53,7 +53,7 @@
           "weight": 0.04
         }
       ],
-      "tension_source": "Both ideas sit on What modern people need teachings for.",
+      "tension_source": "Both ideas sit on Inferential policy after objectless awareness.",
       "tension_type": "shared_frontier"
     }
   ]

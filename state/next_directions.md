@@ -665,3 +665,37 @@
 - Run the four-arm pilot only with safety screens for OCD, scrupulosity, panic, dissociation, trauma activation, severe depression, mania, psychosis, addiction withdrawal, medical blackout, unsafe authority, and coercive workload.
 - Add a direct-recognition anomaly set before public use: Advaita, Dzogchen, Mahamudra, clear-light sleep, and competent teacher-held recognition.
 - For human-condition fit, state the cohort and non-fit cases plainly. This serves loneliness, unsupported interpretation, anxiety after gaps, meaning loss, and achievement-contingent self-worth, not all silence or all practice.
+
+## Originality Audit Follow-Up 2026-05-30T10:17:52+02:00
+
+### You Cannot Prove the One Who Is Asking (extended)
+- Do not publish as a standalone discovery. Cross-index with The Inferential Gap, The Brain Model Already Took a Side, Residual Burden of Proof After Negation, and No Silence Proves Itself.
+- Rename the contribution as a testable field: question-admissibility before post-negation inference coding.
+- Build a codebook with values for candidate test, ownership withholding, direct recognition, presupposition, scriptural assertion, constructive inference, defensive block, pragmatic silence, and analyst-frame refusal.
+- Close-read Adhyasa Bhashya, Upadesa Sahasri, Brahma Sutra Bhashya 2.3.7 and 2.2.28, Mandukya 7, Brihadaranyaka 3.7.23 and 4.3.23, SN 22.59, SN 22.95, Udana 1.10, and MMK 18.6 before public wording.
+- Ask active-inference modelers to attempt a non-reductive svaprakasha formalization before repeating that the brain model has already taken a side.
+- Run a blind distinct-content test against the Inferential Gap and Brain Model records. Merge if readers cannot state the added variable without prompting.
+- Keep the practice candidate narrow: stable achievement-contingent self-worth only, with explicit stops for dissociation, derealization, OCD, scrupulosity, severe depression, psychosis, mania, addiction withdrawal, and avoidance of honest feedback.
+
+### Some silence needs a second voice (renamed)
+- Do not publish as a standalone discovery. Merge or cross-index with The Audit You Cannot Hold Alone, No Silence Proves Itself, Stop Making Silence Judge You, Not Every Check Should Be Yours, Who Holds The Gate, and Keep What Can Correct You.
+- Rename the contribution as a bounded protocol: one trusted voice for post-gap overadjudication.
+- Build a codebook with fields for event description, tempted verdict, self-verdict risk, helper availability, helper safety, reassurance-seeking risk, ordinary duty, delay period, clinical exclusion, warning, repair, and evidence passage.
+- Use split-source coding. Do not let one source both establish second-voice need and confirm the predicted repair.
+- Run a four-arm pilot with an ERP-informed anti-reassurance condition and explicit stop rules for OCD, scrupulosity, dependency, shame, dissociation, mania, severe depression, psychosis, trauma activation, addiction withdrawal, unsafe authority, and medical concern.
+- Design a low-barrier relational option for isolated participants, then test whether it helps without becoming dependency or reassurance outsourcing.
+- Add direct-recognition and valid-solitude anomaly sets before public use: Advaita, Dzogchen, Mahamudra, clear-light sleep, trained solitary practice, and competent teacher-held recognition.
+
+## Originality Audit Follow-Up 2026-05-30T10:28:23+02:00
+
+### Stratified Post-Negation Authorization (novel_synthesis)
+- Do not publish as doctrine or candidate discovery. Treat as a methodological synthesis and test protocol.
+- Cross-index with Residual Burden of Proof After Negation, The Inferential Gap, The Brain Model Already Took a Side, You Cannot Prove the One Who Is Asking, No Silence Proves Itself, and Stop Making Silence Judge You.
+- Build a source-stratified codebook with fields for source layer, genre, negation target, post-negation seeming, authorization mode, level of claim, permitted counsel, warning, repair, evidence passage, analyst-frame refusal, clinical exclusion, and confidence.
+- Add mandatory values for recognition, self-luminosity, inference, scriptural assertion, recursive investigation, pragmatic bracketing, denial, non-positioning, direct introduction, teacher-held authorization, neuroscience mechanism-only, clinical routing, analyst-frame refused, and undecidable.
+- Use split-source blind coding. Do not let the same passage establish authorization mode and confirm the predicted warning or repair.
+- Close-read Brihadaranyaka 3.7.23 and 4.3.23 separately from Shankara's Adhyasa Bhashya, Upadesa Sahasri, and Brahma Sutra Bhashya. Close-read SN 22.59, SN 22.95, Udana 1.10, and MMK 18.6 as Buddhist and Madhyamaka pressure.
+- Compare predictive value against Katz contextualism, Sharf, Lindbeck, Asad, Madhyamaka scholarship, Advaita svaprakasha studies, VCE, Cheetah House materials, Pargament agency styles, and prior Lumenary correction-holder models.
+- Run inter-rater reliability before public use. If coders cannot distinguish authorization mode from tradition label or source genre, downgrade to interpretive vocabulary only.
+- Run practitioner interviews for concrete cases of misauthorization and repair, not agreement with the model.
+- Pilot only with screened stable adults and stop for increased rumination, shame, dissociation, depersonalization, inflation, nihilistic deflation, OCD or scrupulosity, panic, psychosis, mania, severe depression, trauma activation, addiction withdrawal, medical blackout concerns, or avoidance of ordinary duty.
