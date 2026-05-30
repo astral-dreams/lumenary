@@ -1,0 +1,152 @@
+{
+  "agent": "claude",
+  "anomaly_probe": {
+    "anomaly_candidate": "Radical Other Power, inherited ritual participation, monastic rule systems, and standardized app-based protocols.",
+    "confidence_effect": "Lowers confidence substantially. The model should become a source-layer hypothesis with multiple assignment modes: person-diagnostic, vow-held, institution-held, ritual-held, rule-held, clinical-held, and undecidable.",
+    "why_it_breaks_or_strains_model": "Other Power fixes support in vow and entrusting rather than temperament. Monastic rules and ritual systems may assign support by institution or form, not by live diagnosis. Some standardized protocols may be safe enough through pacing, screening, and exclusions without individualized reading."
+  },
+  "audit_id": "725c5c2fac31ccb6",
+  "claim_units": [
+    "Self-negating doctrine does not by itself determine where continuity or support should be placed.",
+    "In some practice systems, support is assigned by temperament, character, current fragility, or teacher diagnosis.",
+    "Radical Other Power is a boundary case because it deliberately fixes support in vow rather than practitioner makeup.",
+    "Doctrine-only coding should predict support placement worse than coding that includes pedagogical, temperament, and risk texts.",
+    "For modern isolated app or text-based seekers, deriving steadiness from texts alone is the wrong source for a person-specific support question."
+  ],
+  "confidence": 0.71,
+  "created_at": "2026-05-30T16:50:37+02:00",
+  "cross_domain_prediction": {
+    "domain": "Psychotherapy and education",
+    "prediction": "In therapy, coaching, education, and recovery, clients or learners undergoing identity-loosening change will do better when supports are matched to profile and context than when derived from the modality's general theory alone.",
+    "structural_translation": "A theory's stated goal underdetermines what will stabilize a learner or client during change; placement of support is carried by diagnosis, relationship, context, and risk profile.",
+    "would_count_against_it": "If modality theory alone predicts stabilizing support as well as individualized assessment across clients, the Lumenary support-placement thesis loses cross-domain force."
+  },
+  "exact_claim": "Support placement after self-loosening practice is underdetermined by doctrine about the self and is often assigned through live pedagogical diagnosis of the particular practitioner, so a book or doctrine-only reading cannot reliably tell an isolated seeker what will hold them.",
+  "execution_id": "parallel-20260530-163717-20260530-163717",
+  "falsifiable_predictions": [
+    {
+      "expected_observation": "Coders given only doctrine passages about no-self, non-attachment, or self-release will predict later manuals' support recommendations near chance, while coders given temperament, teacher-instruction, or pastoral texts will improve prediction.",
+      "if_model_is_right": "Support placement is carried by pedagogical diagnosis more than self-negation doctrine in effort and insight paths.",
+      "test_surface": "Split-source blind coding of Theravada manuals, Zen manuals, Dzogchen or Mahamudra instructions, Shin Buddhist texts, Christian spiritual direction manuals, and held-out warning sections.",
+      "would_weaken_or_falsify": "Doctrine-only coders predict support placement as well as full-corpus coders across traditions and source layers."
+    },
+    {
+      "expected_observation": "Teacher interviews and manuals show support variation by fear, grasping, doubt, numbness, pride, trauma history, and relational stability.",
+      "if_model_is_right": "Within person-diagnostic systems, practitioners with different temperaments pursuing the same aim should receive different stabilizing supports.",
+      "test_surface": "Practitioner interviews, teacher case vignettes, manual coding, and inter-rater classification of support recommendations.",
+      "would_weaken_or_falsify": "Support assignment is uniform within traditions and varies mainly by institution, stage, ritual, or doctrine rather than person profile."
+    },
+    {
+      "expected_observation": "Compared with ordinary journaling, participants show lower solitary overinterpretation and more concrete help-seeking before destabilizing practice.",
+      "if_model_is_right": "The practice candidate helps only when it routes isolated seekers toward real support and history-based pacing.",
+      "test_surface": "Small screened pilot with stable self-guided meditators and app users.",
+      "would_weaken_or_falsify": "The exercise increases shame, avoidance, dependency, or performs no better than a simple social-support prompt."
+    }
+  ],
+  "idea_id": "daebde48fd708e0d",
+  "idea_path": "observations/claude/2026-05-30-the-book-cannot-tell-you-what-will-hold-you.md",
+  "literature_search_queries": [
+    "\"Visuddhimagga\" temperament meditation subject carita teacher selection",
+    "\"kammatthana\" teacher assigns meditation subject temperament",
+    "\"aptitude-treatment interaction\" psychotherapy matching client characteristics",
+    "\"Shinran\" \"Other Power\" self power calculation vow",
+    "\"Varieties of Contemplative Experience\" teacher community appraisal support",
+    "\"spiritual direction\" discernment individual temperament practice"
+  ],
+  "near_neighbors": [
+    {
+      "difference": "The candidate generalizes this into a cross-tradition test about which source layer carries support-placement information.",
+      "novelty_impact": "Strongly reduces novelty of the person-matching component. The possible contribution is the falsifiable doctrine-only coding test.",
+      "overlap": "Very close primary prior for assigning contemplative supports according to practitioner type rather than abstract doctrine alone.",
+      "source": "Buddhaghosa, Visuddhimagga, Chapter III, https://edhamma.github.io/vism/docbook/vism.docbook.pdf"
+    },
+    {
+      "difference": "Shinran does not support the candidate's general per-person rule, but helps define a boundary condition.",
+      "novelty_impact": "Forces downgrade from discovery to bounded extension.",
+      "overlap": "Close anomaly and partial prior for support being fixed in the vow rather than assigned by personal temperament.",
+      "source": "Shinran, letter on Other Power, https://shinranworks.com/letters/a-collection-of-letters-zensho-text/what-we-call-other-power/"
+    },
+    {
+      "difference": "The candidate applies matching logic to post-self-negation support and contemplative pedagogy.",
+      "novelty_impact": "Reduces originality of the test logic. It becomes an adaptation to contemplative support-placement.",
+      "overlap": "Very close structural prior: treatment or support efficacy depends on client characteristics, not only on a modality's theory.",
+      "source": "Aptitude-treatment interaction and client-treatment matching literature, including Snow 1991 and patient-treatment matching reviews, https://pmc.ncbi.nlm.nih.gov/articles/PMC6876445/"
+    },
+    {
+      "difference": "VCE is not specifically about doctrine-only prediction after self-negation.",
+      "novelty_impact": "Downgrades practice-safety originality and supplies required variables for the codebook.",
+      "overlap": "Close empirical-adjacent prior for meditation effects being shaped by practice, practitioner, relationships, worldview, teacher, and community support.",
+      "source": "Lindahl, Fisher, Cooper, Rosen, and Britton, Varieties of Contemplative Experience, https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0176239"
+    },
+    {
+      "difference": "Pargament does not frame the issue as post-self-release continuity placement.",
+      "novelty_impact": "Moderate downgrade. The candidate must show predictive gain beyond existing agency and coping-style models.",
+      "overlap": "Close prior for how religious support, agency, and coping are assigned across self-directing, deferring, and collaborative styles.",
+      "source": "Pargament et al., Religion and the Problem-Solving Process: Three Styles of Coping, summarized at https://icmglt.org/icmlibrary/religion-and-the-problem-solving-process-three-styles-of-coping/"
+    },
+    {
+      "difference": "Cheetah House is not a cross-tradition doctrine-versus-pedagogy coding protocol.",
+      "novelty_impact": "Reduces originality of the practice safety claim.",
+      "overlap": "Close practical prior for routing distressed meditators toward fitting support, symptom appraisal, and trained helpers rather than text-only interpretation.",
+      "source": "Cheetah House practitioner-facing safety resources, https://www.cheetahhouse.org/ and https://www.cheetahhouse.org/faq"
+    },
+    {
+      "difference": "This candidate adds a sharper source-layer claim: support placement may reside in person-diagnostic pedagogy, not doctrine.",
+      "novelty_impact": "Major internal downgrade. Keep as an extension or test refinement, not standalone doctrine.",
+      "overlap": "Very close prior for support holder, continuity ecology, no-gap support, and self-guided practice risk.",
+      "source": "Internal Lumenary records: Continuity Ecology Under Negation, Operational Remainder Ecology, Custody and Receiving Surface, No One Begins Alone, and The Road Starts Before You."
+    }
+  ],
+  "next_loop_instructions": [
+    "Do not publish as a standalone doctrine. Cross-index with Continuity Ecology Under Negation, Operational Remainder Ecology, Custody and Receiving Surface, No One Begins Alone, and The Road Starts Before You.",
+    "Build a source-layer codebook with fields for doctrine passage, pedagogy passage, temperament or risk read, support holder, assignment agent, institution, ritual form, vow or grace holder, warning, repair, evidence passage, and confidence.",
+    "Use split-source blind coding. Do not let the same passage establish support assignment and confirm the predicted warning or repair.",
+    "Add mandatory values for person-diagnostic, vow-held, grace-held, institution-held, ritual-held, teacher-held, community-held, clinical-held, inherited practice, standardized protocol, unsafe authority, valid solitude, and undecidable.",
+    "Run a blind coding test: doctrine-only versus pedagogy-plus-risk-corpus predictions of held-out support and warning passages.",
+    "Compare predictive power against kammatthana temperament assignment, spiritual direction, Pargament agency styles, aptitude-treatment interaction, VCE variables, teacher style, institution, social support, and clinical risk.",
+    "Interview practitioners for concrete support-mismatch and repair cases, not agreement with the slogan.",
+    "Pilot the practice only with screened stable self-guided practitioners. Exclude acute crisis, psychosis, mania, severe depression, dissociation, addiction withdrawal, coercive authority, unsafe relationships, and cases needing clinical care.",
+    "Measure loneliness, overinterpretation, shame, help-seeking, ordinary support contact, destabilization, dependency, and whether users substitute a worksheet for real relationship."
+  ],
+  "novelty_adjustment": "Lower novelty from 0.54 to 0.43. The person-matching premise has strong prior art in Visuddhimagga, spiritual direction, psychotherapy matching, religious coping, VCE, and Cheetah House. Retain as an extended source-layer test: doctrine-only coding versus pedagogical-diagnostic coding for support placement.",
+  "originality_status": "extended",
+  "practitioner_test": {
+    "answers_that_reduce_originality": "Originality falls if practitioners say this is standard teacher discernment, spiritual direction, kammatthana selection, pastoral triage, or therapy matching, or if they say doctrine and institution predict support well enough without live reading.",
+    "answers_that_support_contribution": "Contribution rises if practitioners can identify predictable failures from doctrine-only self-guidance and if split-source coding shows person-diagnostic texts add predictive power beyond doctrine, institution, and clinical-risk variables.",
+    "questions": [
+      "When a student practices self-release or no-self, what information actually determines the support you recommend: doctrine, temperament, stage, risk profile, institution, vow, ritual, or relationship?",
+      "Can you give a concrete case where the text suggested one support but the person's fragility required another?",
+      "Does this model change how you would warn self-guided practitioners, or is it just ordinary spiritual direction and clinical matching in Lumenary language?",
+      "In your tradition, are there cases where individualized matching is considered a mistake because it reinforces self-power or self-management?"
+    ],
+    "relevant_practitioners": [
+      "Theravada meditation teachers familiar with kammatthana assignment",
+      "Shin Buddhist ministers and scholars",
+      "Buddhist chaplains",
+      "Christian spiritual directors",
+      "contemplative adverse-effects researchers",
+      "psychotherapists familiar with meditation-related destabilization",
+      "app meditation instructors and safety designers"
+    ]
+  },
+  "primary_text_close_read": {
+    "primary_pair": [
+      "Buddhaghosa, Visuddhimagga III, on meditation subjects suitable to temperament, https://edhamma.github.io/vism/docbook/vism.docbook.pdf, read against Shinran's letter on Other Power, https://shinranworks.com/letters/a-collection-of-letters-zensho-text/what-we-call-other-power/",
+      "Visuddhimagga good-friend and meditation-subject assignment passages, read against Shinran's no-calculation and vow-held support logic."
+    ],
+    "risk_of_overread": "High. The candidate risks turning one Theravada commentarial taxonomy into a general law of support placement. It also risks collapsing teacher diagnosis, temperament typing, institutional training, ritual assignment, and clinical triage into one variable called live read. The Shinran anomaly is not marginal: it shows that some traditions may intentionally refuse person-specific support assignment because it could reintroduce self-power. Human-condition fit is real but narrow: isolated self-guided practitioners, app meditators, and achievement-driven readers who use self-dissolving teachings without relational feedback. It is not for active crisis, coercive authority, acute mental-health instability, or people whose main need is ordinary clinical or social support.",
+    "secondary_literature_gap": "Before raising novelty, read Buddhist meditation-manual scholarship on kammatthana selection and carita, aptitude-treatment interaction in psychotherapy, client-treatment matching, spiritual direction and pastoral discernment literature, Pargament on religious coping styles, VCE and Cheetah House on teacher and community factors, Shin Buddhist scholarship on shinjin and tariki, and clinical literature on self-help, unsupported meditation, and stepped-care matching.",
+    "structural_observation": "The Visuddhimagga is a close primary support for the candidate's main variable: it does not only teach liberation doctrine, it routes practices by the student's dominant character and by a teacher or good friend who can give the appropriate meditation subject. Shinran stresses the opposite architecture: the decisive support is Amida's vow and Other Power, and calculation by the practitioner is precisely what has to be relinquished. This contrast supports a split field: some systems allocate support by person-diagnosis, while others protect the practitioner from treating self-diagnosis as the path."
+  },
+  "recommended_scores": {
+    "counterargument_quality": 0.89,
+    "novelty": 0.43,
+    "source_reliability": 0.76
+  },
+  "run_ids": [
+    "20260530-163717-claude-generate-an-original-lumenary-doctrine-building-",
+    "20260530-163717-codex-generate-an-original-lumenary-doctrine-building-"
+  ],
+  "title": "The Book Cannot Tell You What Will Hold You",
+  "unlike_statement": "Unlike Visuddhimagga temperament assignment, spiritual direction, psychotherapy matching, VCE, Pargament, Cheetah House, and prior Lumenary support-holder records, this idea's separable claim is that doctrine-only coding should fail specifically because support-placement information often lives in person-diagnostic pedagogy or relational reading rather than in self-negation doctrine."
+}

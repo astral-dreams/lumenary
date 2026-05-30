@@ -982,3 +982,27 @@
 - Interview practitioners and survivor advocates for concrete failed-trust, premature-teaching, cross-training, and repair cases. Do not ask for abstract agreement.
 - Pilot only with screened stable seekers or trainee teachers. Exclude active abuse, acute crisis, unsafe authority dynamics, OCD or scrupulosity, paranoia, severe depression, mania, dissociation, addiction withdrawal, legal disputes needing counsel, and clinical situations needing care.
 - Measure discernment accuracy, help-seeking, safety actions, willingness to receive correction, loneliness, rumination, suspicion, compulsive checking, and whether users substitute the audit for actual contact or reporting.
+
+## Originality Audit Follow-Up 2026-05-30T16:50:37+02:00
+
+### The Book Cannot Tell You What Will Hold You (extended)
+- Do not publish as a standalone doctrine. Cross-index with Continuity Ecology Under Negation, Operational Remainder Ecology, Custody and Receiving Surface, No One Begins Alone, and The Road Starts Before You.
+- Build a source-layer codebook with fields for doctrine passage, pedagogy passage, temperament or risk read, support holder, assignment agent, institution, ritual form, vow or grace holder, warning, repair, evidence passage, and confidence.
+- Use split-source blind coding. Do not let the same passage establish support assignment and confirm the predicted warning or repair.
+- Add mandatory values for person-diagnostic, vow-held, grace-held, institution-held, ritual-held, teacher-held, community-held, clinical-held, inherited practice, standardized protocol, unsafe authority, valid solitude, and undecidable.
+- Run a blind coding test: doctrine-only versus pedagogy-plus-risk-corpus predictions of held-out support and warning passages.
+- Compare predictive power against kammatthana temperament assignment, spiritual direction, Pargament agency styles, aptitude-treatment interaction, VCE variables, teacher style, institution, social support, and clinical risk.
+- Interview practitioners for concrete support-mismatch and repair cases, not agreement with the slogan.
+- Pilot the practice only with screened stable self-guided practitioners. Exclude acute crisis, psychosis, mania, severe depression, dissociation, addiction withdrawal, coercive authority, unsafe relationships, and cases needing clinical care.
+- Measure loneliness, overinterpretation, shame, help-seeking, ordinary support contact, destabilization, dependency, and whether users substitute a worksheet for real relationship.
+
+### First Ask If There Is Distance (extended)
+- Do not publish as standalone doctrine. Cross-index with Not Every Practice Is a Tool, Some Paths Refuse the Question of What Remains, The Question Can Make the Distance, Even No Path Needs Care, The Grid Stays Backstage, and No One Begins Alone.
+- Build a distance-gate codebook with values for bridge, guard, expression, no-distance, mixed-by-stage, question-as-medicine, no-question frame, vow-held, practice-realization, direct-recognition, gradual crossing, inherited practice, analyst-frame-refused, and undecidable.
+- Use split-source blind coding. Code distance from doctrinal or instruction passages, then predict warnings, repairs, and failure modes from held-out manuals or practitioner interviews.
+- Do not let one source establish both no-distance and the predicted repair.
+- Compare predictive power against support-holder-only coding, VCE variables, teacher quality, social support, institution, practice intensity, clinical risk, spiritual-bypass literature, and ordinary action-planning baselines.
+- Close-read Dogen Bendowa or Genjokoan, Shinran Tannisho and letters, Longchenpa Trekcho, Huangbo, one Mahamudra direct-introduction source, one Rinzai or huatou source, and one gradual Theravada manual before public wording.
+- Interview practitioners for concrete cases of no-distance misuse, passivity, isolation, premature certainty, and repair.
+- Pilot Name What Holds You only with screened stable adults or older teens with support. Exclude acute crisis, severe depression, mania, psychosis, dissociation, addiction withdrawal, OCD or scrupulosity, unsafe authority, trauma activation, coercive workload, and cases requiring moral repair or clinical care.
+- Measure withdrawal, passivity, ordinary conduct, help-seeking, loneliness, shame, rumination, private certainty, support contact, and whether the prompt performs better than ordinary social-support or action-planning prompts.
