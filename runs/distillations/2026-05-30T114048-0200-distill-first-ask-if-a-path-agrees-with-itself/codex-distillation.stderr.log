@@ -1,0 +1,68 @@
+OpenAI Codex v0.133.0
+--------
+workdir: /Users/johnforrester/spirituality
+model: gpt-5.5
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: xhigh
+reasoning summaries: none
+session id: 019e7841-f45c-70e1-b352-78de9238a2cb
+--------
+user
+# Lumenary Insight Distillation
+
+You are writing the public insight card and At a Glance text for The Lumenary.
+
+Read the finding below. Distill it into reader-facing language.
+
+## Writing Rules
+
+- Write like the texts we study: simple, memorable, and direct.
+- Do not use Sanskrit, Pali, Arabic, Greek, or Chinese terms.
+- Do not use academic hedging.
+- Do not use research jargon.
+- Do not use em dashes.
+- Do not start with "This finding".
+- Lead with the human question or the living insight.
+- Do not repeat the title, the insight headline, or the first At a Glance sentence in the bullets.
+- Do not use machinery language in public copy: no "layered authorization," "distributed affordances," "institutional role," "operationalizes," "formal transfer," "gradient," "rubric," "locus," "claimant," or "grammar."
+- Also avoid internal model words in public copy: no "architecture," "custody," "receiving surface," "residue," "grain," "threshold," "entry," "compound," "upstream," "downstream," "phenomenology," "authorization," "typology," or "taxonomy."
+- The insight headline must land like a proverb.
+- The publicTitle is the finding page title: maximum 10 words, plain, memorable, and not academic.
+- The plainSummary is for the Insights card: one sentence, maximum 28 words.
+- The atAGlance section is for the finding page: one paragraph, 3 to 4 short sentences.
+- The keyPoints are for the finding page: 3 short bullets, direct and useful. Use them for meaning, human risk, and what to test.
+- Use one idea per sentence.
+
+## Required JSON
+
+Return exactly one JSON object with:
+
+- insight: proverb-like headline, maximum 10 words
+- publicTitle: finding page title, maximum 10 words
+- plainSummary: one short sentence for the Insights card
+- atAGlance: one paragraph of 3 to 4 short sentences
+- keyPoints: array of 3 short bullet points, each one sentence and under 18 words
+- match: array with one unique lowercased phrase from the title
+- tags: array of 1 to 5 simple tags
+
+## Finding
+
+Title: First Ask If a Path Agrees With Itself
+Type: contradiction
+Agent: claude
+
+Original Claim:
+Translation-strain comparison has a numerator and no denominator. Before you can say that two traditions converge or clash on a claim unit, you must measure how much that same unit varies inside each tradition, across its sub-schools, stages of practice, and polemical eras. If the internal spread is as wide as the gap you found between the two traditions, then your convergence-or-divergence verdict is mostly an artifact of which internal version you happened to pick, not a cross-tradition signal. So Lumenary should now hold that a strain score is only admissible once between-tradition strain has been shown to exceed within-tradition variance for the same unit; otherwise the comparison should be labeled selection-dependent and given no evidential weight.
+
+Why It Might Be New:
+Existing strain work measures the deformation between two traditions, and the provenance gate asks whether an apparent similarity came from historical contact. This adds a different and orthogonal control: whether the unit is even stable enough within one tradition to be compared. A comparison can pass the provenance gate (genuinely independent) and still fail this variance gate (the chosen claim unit is internally contested enough that another legitimate reading would flip the verdict). The move imports effect-size reasoning into spiritual comparison: comparative religion already notes intra-traditional diversity, but does not require a measured within-tradition spread as the denominator that every between-tradition strain score must clear.
+
+Critique:
+The statistical analogy is loose: claim units are not random samples from a distribution, so within-tradition variance is metaphorical, and there is no clean way to compute it. Worse, weighting every textual variant equally inflates the denominator. Pudgalavada was eventually marginalized, and a minority or scholastic position may not deserve the same weight as the operative mainstream that practitioners actually train. Some traditions do settle a dominant working position at a given stage despite live scholarly disputes, so treating internal variance as always large would itself distort by flattering fragmentation. The denominator therefore must be weighted by how operative a variant is, not by its mere existence in the record, and that weighting is contestable enough that a motivated comparer could tune it to reach either verdict. The control is real but it relocates the judgment rather than removing it.
+
+codex
+{"insight":"Ask the path before comparing roads","publicTitle":"Ask the Path First","plainSummary":"Before comparing two paths, ask whether each one speaks clearly enough within itself.","atAGlance":"A comparison can mislead when one side is already divided. We must see how steady a teaching is among its own followers before weighing it against another. If the inner range is as wide as the outer difference, the result depends on the version chosen.","keyPoints":["Meaning grows clearer when a tradition shows what it can hold steadily.","People can mistake cherry-picking for deep agreement or serious conflict.","Test whether leading versions would change the comparison."],"match":["path agrees with itself"],"tags":["comparison","teaching","care","testing"]}
+tokens used
+13,127

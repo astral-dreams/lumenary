@@ -1,0 +1,172 @@
+{
+  "agent": "claude",
+  "anomaly_probe": {
+    "anomaly_candidate": "Stage-specific and operative-consensus cases, such as breath attention in early Buddhist practice, basic Vinaya rules, or a catechism-level Christian confession.",
+    "confidence_effect": "Lowers confidence in any simple variance metric. Raises the need for operative weighting and inter-rater reliability before the gate can carry public evidential weight.",
+    "why_it_breaks_or_strains_model": "A tradition can have enormous textual and historical variance while still giving practitioners a narrow operative instruction at a defined stage. If the denominator counts every variant equally, it will falsely mark stable practice instructions as selection-dependent. If it weights only operative variants, the model becomes dependent on disputed judgments about authority, institution, stage, and living practice."
+  },
+  "audit_id": "67802a7a8e6bf629",
+  "claim_units": [
+    "Between-tradition strain is unreliable without within-tradition variance.",
+    "Traditions vary across sub-schools, stages, genres, institutions, and polemical eras.",
+    "If internal variance rivals the cross-tradition gap, the verdict depends on which internal variant was selected.",
+    "Within-tradition variance must be weighted by operative practice centrality, not raw textual existence.",
+    "A comparison can pass a provenance gate but fail a variance gate."
+  ],
+  "confidence": 0.73,
+  "created_at": "2026-05-30T11:47:12+02:00",
+  "cross_domain_prediction": {
+    "domain": "Political ideology and psychotherapy comparison.",
+    "prediction": "For high-variance categories, slogan-level comparisons will flip depending on which internal school, stage, or institution is selected. Weighted internal-variance coding will reduce false convergence and false opposition.",
+    "structural_translation": "Before comparing capitalism and socialism, CBT and ACT, or secular mindfulness and Buddhist meditation, one must check whether each category varies internally more than the alleged cross-category gap.",
+    "would_count_against_it": "Cross-domain comparison verdicts remain stable across internal variants, or ordinary category labels explain outcomes better than weighted internal-variance scores."
+  },
+  "exact_claim": "A translation-strain score needs a denominator. Before claiming that two traditions converge or clash on a claim unit, Lumenary must measure weighted within-tradition variance for the same unit. If internal spread is as wide as the between-tradition gap, the comparison is selection-dependent and should receive no evidential weight.",
+  "execution_id": "parallel-20260530-113437-20260530-113437",
+  "falsifiable_predictions": [
+    {
+      "expected_observation": "Coders assigned Theravada anatta versus Pudgalavada person, and Shankara-style self-recognition versus scriptural-testimony Advaita, will return contradictory convergence or divergence verdicts for the Atman and anatta comparison.",
+      "if_model_is_right": "High internal-variance units should produce unstable convergence verdicts.",
+      "test_surface": "Blind coder experiment with controlled claim units and assigned internal variants.",
+      "would_weaken_or_falsify": "Convergence verdicts stay stable no matter which legitimate internal variant is selected."
+    },
+    {
+      "expected_observation": "Comparisons on narrower practice instructions, such as attending to breath, ethical restraint, or confession of fault, will show stronger agreement among coders than metaphysical self comparisons.",
+      "if_model_is_right": "Low internal-variance units should produce stable verdicts.",
+      "test_surface": "Inter-rater comparison study across high-variance and low-variance claim units.",
+      "would_weaken_or_falsify": "Verdict stability is not predicted by internal-variance scores, or low-variance units produce just as much disagreement."
+    },
+    {
+      "expected_observation": "Weighting variants by living practice centrality, stage, institution, and teacher use will change which comparisons fail the variance gate.",
+      "if_model_is_right": "Operative weighting matters more than raw textual spread.",
+      "test_surface": "Expert and practitioner weighting exercise with inter-rater reliability analysis.",
+      "would_weaken_or_falsify": "Raw textual variance and operative weighted variance produce the same decisions, or experts cannot agree on weights above chance."
+    },
+    {
+      "expected_observation": "Some comparisons will be historically independent but internally unstable, while others will be internally stable but historically entangled through borrowing, shared translators, or modern discourse.",
+      "if_model_is_right": "The variance gate is orthogonal to the provenance gate.",
+      "test_surface": "Paired application of provenance-first coding and variance-gate coding to the same comparison set.",
+      "would_weaken_or_falsify": "Provenance and internal variance always move together, making the new gate redundant."
+    },
+    {
+      "expected_observation": "Stable reflective readers exposed to online comparative slogans show less all-is-one universalism and less cynical dismissal, while still choosing one concrete practice action within a week.",
+      "if_model_is_right": "The self-agreement check helps a specific modern cohort without becoming avoidance.",
+      "test_surface": "Small randomized pilot with measures for rumination, action completion, cynicism, false-harmony endorsement, and practice commitment.",
+      "would_weaken_or_falsify": "The practice increases rumination, paralysis, distrust, or avoidance of commitment compared with a simple source-humility prompt."
+    }
+  ],
+  "idea_id": "5bca4594ea00fa13",
+  "idea_path": "observations/claude/2026-05-30-first-ask-if-a-path-agrees-with-itself.md",
+  "literature_search_queries": [
+    "religious comparison internal diversity representative selection comparands tertium comparationis within tradition variation",
+    "Oliver Freiberger comparative methodology religion scale scope selection description juxtaposition redescription rectification",
+    "Jonathan Z Smith comparison religion redescription map territory selection comparands",
+    "world religions paradigm critique essentialism intragroup diversity internal diversity religion",
+    "Wilfred Cantwell Smith religion reification cumulative tradition personal faith diversity",
+    "Pudgalavada person neither same nor different aggregates Kathavatthu Puggalakatha",
+    "Svatantrika Prasangika distinction Bhaviveka Candrakirti independent argument reductio",
+    "effect size between group difference within group variance heterogeneity multilevel modeling"
+  ],
+  "near_neighbors": [
+    {
+      "difference": "The candidate adds an explicit admissibility threshold: between-tradition strain must exceed weighted internal variance.",
+      "novelty_impact": "Substantial downgrade, but the denominator rule may still be a useful synthesis.",
+      "overlap": "Very close on selection of comparands, scale, scope, and the need to defend what is being compared.",
+      "source": "Oliver Freiberger, Elements of a Comparative Methodology in the Study of Religion, https://www.mdpi.com/2077-1444/9/2/38"
+    },
+    {
+      "difference": "The candidate makes selection-dependence testable through internal-variance controls.",
+      "novelty_impact": "Reduces novelty of the selection-artifact warning.",
+      "overlap": "Close on comparison being an act of scholarly redescription shaped by selected examples rather than a neutral discovery of natural sameness.",
+      "source": "Jonathan Z. Smith, In Comparison a Magic Dwells and related comparison essays, https://classics.osu.edu/sites/classics.osu.edu/files/Magic_Dwells.pdf"
+    },
+    {
+      "difference": "The candidate applies the critique to claim-unit scoring and requires a variance denominator before convergence evidence is admitted.",
+      "novelty_impact": "Internal diversity itself is known prior art.",
+      "overlap": "Close on abstracted religions flattening internal diversity and hybrid lived practice.",
+      "source": "World Religions Paradigm critiques, for example context and essentialism discussion at https://journals.sagepub.com/doi/10.1177/20503032241226966"
+    },
+    {
+      "difference": "The candidate moves from anti-reification to a scoring protocol for specific comparative claims.",
+      "novelty_impact": "Supports extended or synthesis status, not discovery.",
+      "overlap": "Close on resisting static treatment of a religion as one thing with one essence.",
+      "source": "Wilfred Cantwell Smith on religion as reified category, overview at https://en.wikipedia.org/wiki/Wilfred_Cantwell_Smith"
+    },
+    {
+      "difference": "The candidate imports the structure into religious comparison and adds operative-practice weighting.",
+      "novelty_impact": "The denominator structure is known, but its application to translation strain is a novel synthesis.",
+      "overlap": "Near exact structural model outside the domain: a between-group difference must be interpreted against within-group variation and measurement noise.",
+      "source": "Statistical effect size, heterogeneity, and multilevel reasoning, general reference at https://en.wikipedia.org/wiki/Effect_size"
+    },
+    {
+      "difference": "This is evidence for the gate, not the gate itself.",
+      "novelty_impact": "Raises source relevance but also exposes weighting problems because Pudgalavada is historically important but not a living mainstream lineage.",
+      "overlap": "Provides the internal Buddhist variance case the model relies on: not-self sutta discipline versus a real or inexpressible person in Buddhist scholastic debate.",
+      "source": "Pudgalavada Buddhist Philosophy, IEP, https://iep.utm.edu/pudgalavada-buddhist-philosophy/; Kathavatthu PDF, https://www.abhidhamma.com/Kathavatthu_en.pdf"
+    },
+    {
+      "difference": "Again an example of internal spread rather than a full comparative scoring method.",
+      "novelty_impact": "Supports the anomaly pressure against broad tradition labels.",
+      "overlap": "Shows internal contest over assertion posture, independent argument, and reductio within a broad Madhyamaka family.",
+      "source": "Madhyamaka, SEP, https://plato.stanford.edu/archives/spr2022/entries/madhyamaka/; Dreyfus and McClintock, The Svatantrika-Prasangika Distinction, publisher listing https://wisdomexperience.org/product/svatantrika-prasangika-distinction/"
+    },
+    {
+      "difference": "This candidate adds a denominator gate that asks whether each side is internally stable enough to compare.",
+      "novelty_impact": "Keeps this as novel_synthesis rather than candidate discovery.",
+      "overlap": "Close on provenance, role, authority, verification, and translation strain before granting convergence.",
+      "source": "Internal Lumenary prior: Translation Strain as a Load Test for Convergence and A Shared Word Is Not Two Witnesses from project memory."
+    }
+  ],
+  "next_loop_instructions": [
+    "Do not publish as doctrine. Treat as a methodological control for translation-strain scoring.",
+    "Build a variance-gate codebook with fields for claim unit, tradition, source layer, genre, stage, institution, internal variants, operative weight, evidence passage, between-tradition strain, within-tradition variance, provenance status, and confidence.",
+    "Require operative weighting and inter-rater reliability before using the gate publicly.",
+    "Test first on Atman and anatta, Buddhist personhood, Advaita self-knowledge, Madhyamaka assertion posture, breath attention, ethical restraint, and a low-variance ritual instruction.",
+    "Run the variance gate and provenance gate on the same comparison set to test orthogonality.",
+    "Add safety limits to The Self-Agreement Check: no more than twice weekly, stop for rumination, paralysis, cynicism, distrust, or avoidance of concrete practice.",
+    "Compare against baselines: Freiberger selection and scope review, ordinary source criticism, world-religions anti-essentialism, provenance-first coding, and a simple source-humility prompt."
+  ],
+  "novelty_adjustment": "Lower novelty from 0.60 to 0.52. The idea combines known internal-diversity critique, comparative-method selection theory, anti-essentialism, and statistical effect-size logic. The possible contribution is the explicit denominator gate for Lumenary translation-strain scoring. Human-condition fit is moderate: it serves reflective readers unsettled by digital comparison and meaning loss, but it is not a practice for acute distress or for people using analysis to avoid commitment.",
+  "originality_status": "novel_synthesis",
+  "practitioner_test": {
+    "answers_that_reduce_originality": "Scholars say careful comparativists already do this under selection, scale, scope, representativeness, and anti-essentialism, or practitioners say operative teaching is much narrower than textual variance. Originality also falls if coders cannot weight variants reliably.",
+    "answers_that_support_contribution": "Practitioners and scholars identify cases where the variance gate flips comparison verdicts, catches false AI or influencer summaries, and predicts when comparison will destabilize seekers without improving practice.",
+    "questions": [
+      "Would this variance gate change any comparison decision you would not already change through ordinary selection, scope, and internal-diversity cautions?",
+      "How should marginal, extinct, polemical, minority, stage-specific, and living-practice variants be weighted?",
+      "Can you name a comparison that passes provenance but fails internal-variance stability?",
+      "Can you name a comparison whose internal disputes are pedagogical registers rather than real divergence?",
+      "For modern seekers, does this check reduce false certainty, or does it feed analysis paralysis and avoidance of practice?"
+    ],
+    "relevant_practitioners": [
+      "comparative religion scholars",
+      "comparative theologians",
+      "Buddhist studies scholars",
+      "Advaita Vedanta scholars",
+      "Madhyamaka scholars",
+      "interfaith educators",
+      "lineage teachers who train beginners",
+      "statisticians or social scientists familiar with variance and effect size"
+    ]
+  },
+  "primary_text_close_read": {
+    "primary_pair": [
+      "SN 22.59, https://www.accesstoinsight.org/ati/tipitaka/sn/sn22/sn22.059.nymo.html, read against Kathavatthu Puggalakatha and Pudgalavada reconstruction, https://www.abhidhamma.com/Kathavatthu_en.pdf and https://iep.utm.edu/pudgalavada-buddhist-philosophy/",
+      "Brihadaranyaka Upanishad 3.7.23, https://sacred-texts.com/hin/sbe15/sbe15070.htm, read against internal Advaita questions of self-luminosity, scripture, and recognition, with Madhyamaka assertion-posture pressure from SEP, https://plato.stanford.edu/archives/spr2022/entries/madhyamaka/"
+    ],
+    "risk_of_overread": "Medium high. The variance analogy can inflate marginal, extinct, polemical, or purely scholastic variants and make every tradition look too unstable to compare. Some internal differences are stage-specific pedagogy, genre difference, or skillful means rather than contradiction. Operative weighting is essential but contestable. Human-condition fit is modest: it helps digitally unsettled readers resist false harmony and cynical dismissal, but it can worsen analysis paralysis in over-reflective people who need commitment more than more comparison.",
+    "secondary_literature_gap": "Before raising novelty, read Freiberger on selection, scale, scope, and comparands; Jonathan Z. Smith on comparison and redescription; Wilfred Cantwell Smith on reification of religion; world religions paradigm critiques; Clooney and Cornille on comparative theology; Dreyfus and McClintock on Svatantrika-Prasangika; Priestley or other Pudgalavada scholarship; Shankara and Advaita studies on svaprakasha and shabda pramana; and statistical literature on effect size, heterogeneity, multilevel models, and within-group versus between-group variance.",
+    "structural_observation": "SN 22.59 trains disidentification from form, feeling, perception, formations, and consciousness. Pudgalavada sources and reconstructions preserve a Buddhist person that is neither identical with nor different from the aggregates, partly to protect karma, rebirth, liberation, and ordinary person-talk. That intra-Buddhist spread complicates any single Buddhism versus Atman comparison. Brihadaranyaka 3.7.23 authorizes an unseen seer and knower, while Advaita disputes about recognition, self-luminosity, and scripture complicate how that knower is established. The Madhyamaka Bhaviveka and Candrakirti dispute adds a second internal variable: a tradition's assertion posture may be contested rather than fixed."
+  },
+  "recommended_scores": {
+    "counterargument_quality": 0.89,
+    "novelty": 0.52,
+    "source_reliability": 0.74
+  },
+  "run_ids": [
+    "20260530-113437-codex-generate-an-original-lumenary-doctrine-building-",
+    "20260530-113437-claude-generate-an-original-lumenary-doctrine-building-"
+  ],
+  "title": "First Ask If a Path Agrees With Itself",
+  "unlike_statement": "Unlike ordinary internal-diversity cautions, Freiberger's selection framework, Smith's redescription model, and world-religions essentialism critiques, this candidate proposes a specific admissibility test: a cross-tradition strain score has evidential weight only when between-tradition strain exceeds weighted within-tradition variance for the same claim unit."
+}

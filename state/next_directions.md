@@ -736,3 +736,22 @@
 - Compare the model against spiritual bypassing, Pargament religious coping, VCE contextual factors, Asad discursive tradition, Lindbeck grammar, and ordinary values-based action planning.
 - Pilot the Word Carry Test only with stable supported adults or older teens, and stop for shame, panic, rumination, dissociation, compulsive confession, self-punishment, or obsessive checking.
 - Require a real community or care pathway for lonely seekers, since the practice can remove false comfort without meeting the belonging need.
+
+## Originality Audit Follow-Up 2026-05-30T11:47:12+02:00
+
+### Stop When The Repair Changes (extended)
+- Do not publish as a standalone discovery. Cross-index with No Word Travels Alone, First Ask What the Words Do, Translation Strain as a Load Test for Convergence, and spiritual-bypass safety records.
+- Build one codebook with fields for source sentence, source role, repair target, authority holder, verification rule, receiver wound, bent meaning, dropped meaning, added meaning, ordinary action, warning, repair, and clinical exclusion.
+- Use split-source coding. Do not let the same passage establish role, repair target, and predicted warning.
+- Test the codebook against Panikkar, Freiberger, Smith, Asad, Lindbeck, spiritual bypassing, Pargament, and VCE baselines.
+- Pilot The Repair Check only with stable supported adults or older teens, and stop for rumination, panic, shame, derealization, compulsive confession, self-punishment, isolation, or clinical distress.
+- Add anomaly cases before public use: Pure Land nembutsu, Dogen practice-realization, Dzogchen pointing-out, sacramental speech, communal prayer, and non-instrumental ritual.
+
+### First Ask If a Path Agrees With Itself (novel_synthesis)
+- Do not publish as doctrine. Treat as a methodological control for translation-strain scoring.
+- Build a variance-gate codebook with fields for claim unit, tradition, source layer, genre, stage, institution, internal variants, operative weight, evidence passage, between-tradition strain, within-tradition variance, provenance status, and confidence.
+- Require operative weighting and inter-rater reliability before using the gate publicly.
+- Test first on Atman and anatta, Buddhist personhood, Advaita self-knowledge, Madhyamaka assertion posture, breath attention, ethical restraint, and a low-variance ritual instruction.
+- Run the variance gate and provenance gate on the same comparison set to test orthogonality.
+- Add safety limits to The Self-Agreement Check: no more than twice weekly, stop for rumination, paralysis, cynicism, distrust, or avoidance of concrete practice.
+- Compare against baselines: Freiberger selection and scope review, ordinary source criticism, world-religions anti-essentialism, provenance-first coding, and a simple source-humility prompt.
