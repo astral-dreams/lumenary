@@ -2051,6 +2051,30 @@
       "target": "practice safety",
       "relation": "may_enable",
       "note": "A teacher, clinician, or community may hold the gate without adding recurring self-audit."
+    },
+    {
+      "source": "translation-strain",
+      "target": "provenance-gate",
+      "relation": "requires-before-scoring",
+      "note": "Strain cannot raise an independent-convergence claim until provenance is coded; low strain is also the signature of transmission."
+    },
+    {
+      "source": "independent-recurrence",
+      "target": "portability-resilience",
+      "relation": "distinct-evidence-channel",
+      "note": "Two target variables scored separately; transformed borrowing supports portability but never reads back as a second witness."
+    },
+    {
+      "source": "184f0313f1a2464c",
+      "target": "6647c8c2b2f6915b",
+      "relation": "shared-frontier-synthesis",
+      "note": "Both sit on translation strain as a convergence test; the dialogue fused the provenance veto with reception-layer coding into a two-channel model."
+    },
+    {
+      "source": "borrowed-certainty",
+      "target": "belonging-step",
+      "relation": "must-be-paired-with",
+      "note": "The Borrowed-Word Check removes a false comfort that was carrying belonging, so it requires a real belonging or care action to avoid increasing loneliness."
     }
   ]
 }

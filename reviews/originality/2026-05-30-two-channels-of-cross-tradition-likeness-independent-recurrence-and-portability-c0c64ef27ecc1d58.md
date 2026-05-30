@@ -1,0 +1,134 @@
+# Originality Audit: Two Channels of Cross-Tradition Likeness: Independent Recurrence and Portability
+
+Audit ID: c0c64ef27ecc1d58
+Idea ID: 30067a644be34acb
+Agent: claude
+Created: 2026-05-30T15:39:08+02:00
+Status: extended
+Confidence: 0.76
+
+## Exact Claim
+
+Cross-tradition likeness should be scored on two separate evidential channels: independent recurrence, where plausible historical contact vetoes a two-witness inference, and portability or resilience, where transformed contact can be positive evidence that a role survives re-embedding in a different ecology. Provenance is not retired; it has target-specific force.
+
+## Claim Units
+
+- Cross-tradition likeness should not be collapsed into one convergence score.
+- A reception profile should code lexical, logical, metaphysical, authority, practice-aim, verification, and transformation layers.
+- Independent recurrence requires plausible isolation, and contact vetoes independent-witness evidence.
+- Transformed-contact cases can be positive evidence for portability or resilience.
+- Provenance is not a purity test; it only vetoes the recurrence channel.
+- The key error is reporting resilient borrowing as independent confirmation.
+- The method should predict safeguards, beginner warnings, repair patterns, and practice-transfer limits.
+
+## Primary Text Close Read
+
+Sources:
+- Gaudapada, Mandukya Karika 3.48 and related ajativada passages, https://chinfo.org/wp-content/uploads/2024/05/41_03_Mandukya_Karika_-_III-36f62731-eb51-43df-b0d0-bb3ee39b8891.pdf
+- Nagarjuna, Mulamadhyamakakarika 1.1 and 24.18-24.24, https://tushita.info/wp-content/uploads/2018/07/Nagarjunas-Mulamadhyamakakarika-Translation-by-Geshe-Kelsang-Wangmo-2018.pdf
+
+Structural observation: Gaudapada and Nagarjuna make a useful control case. Both strain ordinary origination language, but they do different work. Gaudapada places non-origination inside an Upanishadic and Advaita-facing liberation grammar, with turiya and Atman-Brahman framing in the background. Nagarjuna uses dependent arising and emptiness to deny inherent nature while preserving the practical force of the Four Noble Truths. Richard King's work on early Advaita and Buddhism makes the likely-contact problem explicit, https://eprints.gla.ac.uk/51786/. This pair should therefore be blocked from independent-recurrence scoring, while still being eligible for a portability test if the audit can show that a specific non-origination role survived re-embedding rather than merely sharing vocabulary.
+
+Secondary literature gap: The audit found strong near-neighbors but still needs full-text work before a high source score: Oliver Freiberger on comparative method, https://www.mdpi.com/2077-1444/9/2/38 and https://academic.oup.com/book/11633; J. Z. Smith and comparison debates; Asad on discursive tradition; Lindbeck on doctrine as grammar; Katz and Sharf on contextualism; Francis Clooney on comparative theology, https://bpb-ap-se2.wpmucdn.com/thinkspace.csu.edu.au/dist/c/3891/files/2020/10/Clooney-on-Method.pdf; translation studies on domestication, foreignization, and cultural translation; reception history; diffusion and syncretism studies; and historical linguistics on borrowing versus independent innovation.
+
+Risk of overread: High. The recurrence channel is mostly old source criticism, genealogy versus analogy, borrowing control, and anti-perennialist method. The portability channel may be a useful reframing, but it resembles reception history, cultural translation, religious hybridity, comparative theology, and migration studies on portable practice. Human-condition fit is real but narrow: it serves stable eclectic seekers, public writers, interfaith teachers, and intellectually isolated readers who overclaim borrowed language. It is not a direct remedy for acute loneliness, grief, addiction, depression, severe anxiety, dissociation, OCD or scrupulosity, or people using comparison to avoid belonging and accountability.
+
+## Literature Search Queries
+
+- "independent recurrence" "portability" religion comparison
+- "independent recurrence" "portability" comparative religion
+- Freiberger comparative method religious studies genealogy analogy comparison provenance
+- J Z Smith comparison religion similarity difference method
+- comparative religion borrowing diffusion independent invention convergence method
+- religious studies reception history cultural translation recontextualization
+- Gaudapada Madhyamaka influence non origination ajativada scholarship
+- translation studies domestication foreignization cultural translation religious concepts
+- historical linguistics borrowing independent innovation inheritance convergence
+- Varieties of Contemplative Experience support appraisal intervention criteria
+
+## Near Neighbors
+
+- Oliver Freiberger, comparative method in religious studies, https://www.mdpi.com/2077-1444/9/2/38 and https://academic.oup.com/book/11633: overlap: Close structural neighbor. Freiberger-style comparison already requires explicit comparative configuration, tertium comparationis, selection, scope, contextualization, and care around historical relation.; difference: The candidate adds a target-specific decision rule: historically connected cases are barred from independent recurrence but can remain positive data for portability.; novelty impact: Downgrades the recurrence channel to known or extended. Portability remains the only plausible added contribution.
+- J. Z. Smith comparison debates and the broader reflexive turn in religious studies, with context at https://plato.stanford.edu/entries/concept-religion/: overlap: Very close on the warning that similarity is not self-evident evidence. Comparison is an analytical act shaped by selection, purpose, and context.; difference: The candidate is more operational: it distinguishes two scoring targets and asks what later warnings or repairs each should predict.; novelty impact: Moderate downgrade. The anti-smoothness posture is old; the workflow may still be useful.
+- Reception history, cultural translation, and the circulation of devotional texts, example source https://www.cambridge.org/core/journals/church-history/article/practice-of-piety-translated-the-dynamics-of-the-international-circulation-of-a-devotional-book/E724583E238BC77310BD335CEE3725F2: overlap: Close. These fields already treat adoption, translation, transformation, and re-embedding as positive research objects rather than contamination.; difference: The candidate folds reception evidence into a convergence-audit protocol and separates it from independent-witness evidence.; novelty impact: Portability may be renamed reception history unless it predicts held-out practice warnings or repair outcomes.
+- Portable practice and religion in migration or digital contexts, examples https://www.mdpi.com/2077-1444/16/6/748 and https://academic.oup.com/edited-volume/56065/chapter/533145729: overlap: Close on the idea that practices and meanings can travel, reassemble, and remain useful in new social ecologies.; difference: The candidate uses portability not as description but as an evidential channel with falsifiable outputs.; novelty impact: Downgrades conceptual novelty, but leaves room for an empirical-adjacent scoring extension.
+- Comparative theology, especially Francis Clooney's disciplined learning across religious borders, https://bpb-ap-se2.wpmucdn.com/thinkspace.csu.edu.au/dist/c/3891/files/2020/10/Clooney-on-Method.pdf: overlap: Close. Comparative theology often studies transformative cross-tradition learning without needing to claim independent recurrence.; difference: The candidate is less confessional and more audit-oriented, asking whether role survival predicts safeguards, beginner warnings, or transfer limits.; novelty impact: Moderate downgrade. The resilience intuition is familiar; the prediction layer is the possible extension.
+- Historical linguistics and cultural evolution on inheritance, borrowing, convergence, and horizontal transfer, example source https://pmc.ncbi.nlm.nih.gov/articles/PMC3084691/: overlap: Very close formal analogue. These fields already separate shared ancestry, borrowing, lateral transfer, and independent convergence so one is not counted as another.; difference: The candidate imports that separation into cross-tradition spiritual comparison and adds practice-ecology outcomes.; novelty impact: Formal novelty is low. Domain-specific operationalization may be extended.
+- Gaudapada and Madhyamaka influence scholarship, Richard King, Early Advaita Vedanta and Buddhism, https://eprints.gla.ac.uk/51786/: overlap: Close case-level near-neighbor. The exact low-strain but historically connected control case is already a known scholarly dispute.; difference: The candidate uses the dispute as a scoring-control case rather than as a direct metaphysical comparison.; novelty impact: Strongly downgrades originality of the example; supports the method only if the case clarifies different scoring decisions.
+- Varieties of Contemplative Experience and Progress or Pathology, https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0176239 and https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2020.01905/full: overlap: Close on the practical end. These sources already treat context, appraisal, support, impairment, and intervention criteria as necessary for practice safety.; difference: The candidate makes provenance and reception history part of predicting warning and repair profiles for borrowed teachings.; novelty impact: Practice-testability is plausible, but novelty falls unless the provenance-portability split predicts more than existing contextual safety variables.
+- Internal Lumenary records: A Shared Word Is Not Two Witnesses, Translation Strain as a Load Test for Convergence, A Test Must Be Able To Say Yes, Sameness Can Be the Fingerprint of Borrowing, Ask Who Taught The Answer, and Easy Agreement Is Not Shared Discovery: overlap: Extremely close. Prior records already separated provenance, compatibility, claim-unit variance, translation strain, and public-claim caution.; difference: This candidate's cleaner addition is the positive second channel: transformed contact is not only a confound, it can be scored as portability.; novelty impact: Major internal downgrade. Treat as a consolidation or extension unless blind readers can use the two-channel rule differently from prior provenance gates.
+
+## Unlike Statement
+
+Unlike ordinary source criticism, Freiberger-style comparison, translation-strain scoring, and prior Lumenary provenance gates, this idea says contact cases should not only be excluded from independent-witness evidence; they should be preserved as positive data for a separate portability channel when a role survives transformation across authority, practice, verification, and repair ecologies.
+
+## Anomaly Probe
+
+Candidate: A borrowed sentence or practice spreads widely because of institutional power, prestige, colonial translation, charismatic authority, search-engine visibility, or social media simplicity, while producing shallow, unsafe, or distorted practice outcomes.
+
+Why it strains the model: The model may mistake diffusion success for role resilience. A concept can travel because it is vague, prestigious, institutionally backed, or easy to quote, not because its function survived re-embedding. If the portability channel cannot separate role survival from power, prestige, semantic thinness, and platform effects, it collapses into reception description.
+
+Confidence effect: Lowers confidence until the codebook includes carrier power, translator influence, institutional force, semantic thinness, harm reports, and observed repair outcomes as independent controls.
+
+## Falsifiable Predictions
+
+- If: Independent recurrence and portability are separable evidential channels. Then: Blind coders can label no-contact recurrence candidates and transformed-contact portability candidates with acceptable agreement, and the labels will not simply track textual smoothness or tradition identity. Weakens if: If coders cannot distinguish recurrence from portability without outcome knowledge, or if both load on one similarity factor, the model is renamed convergence scoring. Test surface: A preregistered dataset of at least 60 cross-tradition pairs, including no-contact candidates, probable-contact cases, authorized hybrids, failed transfers, and thin slogan transfers.
+- If: Portability is a real property rather than a name for borrowing history. Then: High-portability transformed-contact cases should predict durable adaptations, explicit safeguards, beginner warnings, and repair instructions in receiving communities better than lexical similarity, source prestige, or institution size. Weakens if: If high portability predicts no held-out warning, repair, or adaptation outcome beyond contact history and social power, the portability channel has no independent force. Test surface: Split-source coding: code reception profile from adoption texts, then predict held-out manuals, interviews, and community warning profiles.
+- If: Provenance vetoes independent recurrence but not portability. Then: Gaudapada and Madhyamaka should receive low recurrence confidence but potentially nonzero portability evidence if specific roles survive re-embedding with identifiable transformations and limits. Weakens if: If contact cases cannot be scored positively without circularly assuming role survival, provenance cannot be cleanly reassigned. Test surface: Close-read Gaudapada, MMK, Shankara reception, later Advaita manuals, and Buddhist commentarial or practice materials with separate provenance and role-survival coders.
+- If: The two-channel model improves public practice guidance for eclectic readers. Then: Compared with a simple provenance-first prompt, the two-channel rule should reduce false independent-confirmation claims while preserving source-learning, humility, and real community or teacher contact. Weakens if: If it increases cynicism, hesitation, rumination, loneliness, or avoidance of community, it fails the human-condition use case. Test surface: Four-week trial with stable unaffiliated or eclectic readers, comparing provenance-first, two-channel, and two-channel plus belonging-action prompts.
+
+## Practitioner Test
+
+Relevant practitioners:
+- comparative religion scholars
+- comparative theologians
+- historians of Buddhism and Advaita
+- translation studies scholars
+- religious studies methodologists
+- historians of religion and diffusion
+- interfaith ministers and chaplains
+- Zen, Vedanta, Pure Land, and contemplative teachers handling borrowed language
+- meditation safety clinicians
+- stable eclectic practitioners and unaffiliated seekers
+
+Questions:
+- When you see a shared doctrine or practice term across traditions, do you already separate independent confirmation from successful recontextualization?
+- Can you name a concrete case where a borrowed practice kept its repair function after moving traditions, and one where it kept only the words?
+- Would this two-channel code change your confidence, warning language, beginner instruction, or transfer limits compared with ordinary provenance checking?
+- What evidence would convince you that a role survived re-embedding rather than merely being renamed?
+- For lonely or eclectic seekers, does this rule lead to source contact and humility, or does it become another private audit that avoids belonging?
+
+Answers that reduce originality: Originality falls if scholars and practitioners say this is standard as genealogy versus analogy, reception history, cultural translation, comparative theology, source criticism, or responsible interfaith teaching, and if the new labels do not change concrete decisions.
+
+Answers that support contribution: Contribution rises if practitioners can use the labels prospectively to predict which borrowed teachings need warnings, which adaptations are durable, and which similarities should never be cited as independent witness.
+
+## Cross-Domain Prediction
+
+Domain: Software architecture and historical linguistics
+
+Structural translation: Separate independent invention from successful porting. In linguistics, a shared feature may arise independently, be inherited, or spread through borrowing. In software, a design pattern may be independently reinvented or ported into a different framework.
+
+Prediction: If the structure is real, ported features or design patterns that retain their original role after re-embedding should predict stable documentation, compatible warning notes, and fewer misuse bugs better than API-name similarity alone.
+
+Would count against it: If adoption success is explained by institution size, network effects, naming familiarity, maintainer prestige, or copied documentation, and role-survival coding adds no predictive value, the portability channel is not a distinct evidential category.
+
+## Score Recommendations
+
+- novelty: 0.39
+- source_reliability: 0.78
+- counterargument_quality: 0.92
+
+Novelty adjustment: Lower novelty from 0.56 to 0.39. The independent-recurrence channel is heavily anticipated by source criticism, genealogy versus analogy, borrowing controls, historical linguistics, and prior Lumenary provenance records. The portability channel is the real contribution, but it is close to reception history, cultural translation, portable practice, and comparative theology. Publishability should be limited until the model proves predictive gain and includes a belonging or source-contact step for the narrow target cohort.
+
+## Next Loop Instructions
+
+- Do not publish as doctrine or as a standalone discovery. Treat as a methodological extension of provenance and translation-strain scoring.
+- Merge or cross-index with A Shared Word Is Not Two Witnesses, Translation Strain as a Load Test for Convergence, A Test Must Be Able To Say Yes, Sameness Can Be the Fingerprint of Borrowing, Ask Who Taught The Answer, and Easy Agreement Is Not Shared Discovery.
+- Build a preregistered two-channel codebook with fields for claim unit, contact probability, provenance evidence, role claim, lexical strain, logical strain, metaphysical strain, authority strain, practice-aim strain, verification strain, power or prestige carrier, semantic thinness, observed transformation, warning, repair, and confidence.
+- Use split-source blind coding. Code provenance from historical evidence, role survival from reception texts, and warnings or repairs from held-out manuals or practitioner interviews. Do not let one passage establish contact, role survival, and predicted outcome.
+- Add mandatory values for independent recurrence, probable contact, direct borrowing, shared milieu, common translator, colonial or modern universalizing vocabulary, authorized hybrid, comparative theology, shallow slogan transfer, power-driven diffusion, semantic thinning, unknown, and analyst-frame-refused.
+- Run Gaudapada and Madhyamaka as a calibration control, but do not let it carry the whole model. Add no-contact cases, high-contact successful-transfer cases, failed-transfer cases, and deliberately thin slogan cases.
+- Compare predictive value against Freiberger-style comparative method, ordinary source criticism, reception history, cultural translation, comparative theology, Lindbeck, Asad, Katz, Sharf, diffusion theory, historical linguistics borrowing controls, VCE safety variables, and prior Lumenary provenance gates.
+- Run inter-rater reliability before public use. If coders cannot separate role survival from textual similarity, institutional power, or tradition preference, downgrade the model to interpretive vocabulary.
+- For human-condition use, keep the practice narrow: stable eclectic readers, public writers, and interfaith teachers who overclaim borrowed language. Exclude acute loneliness, grief crisis, OCD or scrupulosity, severe anxiety, depression, dissociation, and people using comparison to avoid belonging or commitment.
+- If piloted, include a belonging action and measure loneliness, rumination, cynicism, source contact, willingness to receive correction, false convergence claims, and actual community or teacher contact over two to six weeks.

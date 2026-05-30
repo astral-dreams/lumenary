@@ -2,7 +2,7 @@
 
 Frontier: Remainder pressure after self-negation
 Recommended action: build_rubric
-Why now: priority 0.84; 10 related idea records; 5 originality audits; cross-agent signal; live anomaly pressure
+Why now: priority 0.83; 10 related idea records; 5 originality audits; cross-agent signal; live anomaly pressure
 
 Core claim:
 When contemplative traditions disagree about what remains after self-inquiry, the disagreement may begin earlier than anyone notices: at the question of whether the distance between the seeker and the sought is real. Three temporal topologies shape everything that follows. In the first, practice causes realization. The distance is real and must be crossed. The practitioner is genuinely ignorant before, genuinely transformed after. The path moment in...

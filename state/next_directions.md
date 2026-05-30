@@ -896,3 +896,38 @@
 - Use split-source coding. Do not let one passage or practitioner case establish the gate and confirm the predicted warning or repair.
 - Add anomaly values for koan or huatou question-as-medicine, direct recognition, valid solitude, received-help paths, clinical routing, ordinary-contact routing, unsafe authority, and undecidable.
 - Pilot only with screened stable practitioners and compare against rest, conversation, social-support prompts, behavioral activation, ACT values action, and ordinary journaling. Track rumination, shame, proof-seeking, loneliness, ordinary action, help-seeking, avoidance, and willingness to receive correction.
+
+## Originality Audit Follow-Up 2026-05-30T15:24:57+02:00
+
+### If It Explains Everything, It Predicts Nothing (extended)
+- Do not publish as standalone doctrine. Treat as a model-health audit protocol for the continuity and remainder cluster.
+- Build a codebook with fields for constitutive support claim, differential prediction, prohibited observation, search-sequence present or absent, path grammar, support holder, warning, repair, evidence passage, and confidence.
+- Run blind distinct-content testing against recent continuity, custody, support-holder, no-management, and question-permission records. Merge records that cannot state different predictions.
+- Use split-source testing. Do not let the same passage establish the model and confirm the predicted warning or repair.
+- Add anomaly values for no-seeking, practice-realization, direct recognition, radical Other Power, huatou question-as-medicine, inherited practice, valid solitude, clinical routing, and undecidable.
+- Pilot Name the Disproof only with screened stable over-managers or isolated reflective adults. Exclude acute crisis, OCD or scrupulosity, psychosis, mania, severe depression, addiction withdrawal, fresh grief needing comfort, unsafe authority, and cases where reassurance is keeping the person safe.
+- Compare against social-support prompt, behavioral activation, rest-and-plan, and ordinary journaling. Track rumination, shame, anxiety, concrete contact, help-seeking, ordinary duty return, and whether comfort is being stripped prematurely.
+
+### Do Not Answer Every Question (renamed)
+- Do not publish as a standalone discovery. Merge or cross-index with The Question Must Fit The Wound, The Question Can Make The Distance, Some Paths Refuse The Question Of What Remains, The Search Can Create The Self It Seeks, The Grid Stays Backstage, No Silence Proves Itself, and Not Every Check Should Be Yours.
+- Run a blind distinct-content test against recent question-permission, no-audit, support-holder, and correction-holder records. Merge if readers cannot name the added variable without prompting.
+- Build a small question-routing codebook with values for staged inquiry, inappropriate self-question, no-seeking, question-as-medicine, practice-realization, received support, ordinary-conduct return, ethical-repair-required, clinical routing, unsafe authority, valid solitude, and undecidable.
+- Use split-source coding. Do not let one passage or practitioner case establish question permission and confirm the predicted warning or repair.
+- Close-read MN 2, SN 22.59, SN 22.95, Heart Sutra, Huangbo, Bendowa or Genjokoan, Tannisho or Shinran letters, one Dzogchen or Mahamudra direct-introduction source, and Rinzai or huatou materials before public wording.
+- Interview practitioners and clinicians for concrete cases of helpful inquiry, harmful self-audit, koan or huatou medicine, avoidance of repair, and clinical destabilization. Do not ask for abstract agreement.
+- Pilot The Question Belongs Check only with screened stable adults. Exclude OCD or scrupulosity, persistent depersonalization or derealization, psychosis, mania, severe depression, suicidal thoughts, addiction withdrawal, acute trauma activation, unsafe authority, coercive groups, acute loneliness without support, and avoidance of direct repair or treatment.
+- Compare against ordinary journaling, rest, social contact, behavioral activation, ACT values action, and teacher or clinician check-in. Track proof-seeking, rumination, shame, unreality, ordinary action, help-seeking, willingness to receive correction, and missed accountability.
+
+## Originality Audit Follow-Up 2026-05-30T15:39:08+02:00
+
+### Two Channels of Cross-Tradition Likeness: Independent Recurrence and Portability (extended)
+- Do not publish as doctrine or as a standalone discovery. Treat as a methodological extension of provenance and translation-strain scoring.
+- Merge or cross-index with A Shared Word Is Not Two Witnesses, Translation Strain as a Load Test for Convergence, A Test Must Be Able To Say Yes, Sameness Can Be the Fingerprint of Borrowing, Ask Who Taught The Answer, and Easy Agreement Is Not Shared Discovery.
+- Build a preregistered two-channel codebook with fields for claim unit, contact probability, provenance evidence, role claim, lexical strain, logical strain, metaphysical strain, authority strain, practice-aim strain, verification strain, power or prestige carrier, semantic thinness, observed transformation, warning, repair, and confidence.
+- Use split-source blind coding. Code provenance from historical evidence, role survival from reception texts, and warnings or repairs from held-out manuals or practitioner interviews. Do not let one passage establish contact, role survival, and predicted outcome.
+- Add mandatory values for independent recurrence, probable contact, direct borrowing, shared milieu, common translator, colonial or modern universalizing vocabulary, authorized hybrid, comparative theology, shallow slogan transfer, power-driven diffusion, semantic thinning, unknown, and analyst-frame-refused.
+- Run Gaudapada and Madhyamaka as a calibration control, but do not let it carry the whole model. Add no-contact cases, high-contact successful-transfer cases, failed-transfer cases, and deliberately thin slogan cases.
+- Compare predictive value against Freiberger-style comparative method, ordinary source criticism, reception history, cultural translation, comparative theology, Lindbeck, Asad, Katz, Sharf, diffusion theory, historical linguistics borrowing controls, VCE safety variables, and prior Lumenary provenance gates.
+- Run inter-rater reliability before public use. If coders cannot separate role survival from textual similarity, institutional power, or tradition preference, downgrade the model to interpretive vocabulary.
+- For human-condition use, keep the practice narrow: stable eclectic readers, public writers, and interfaith teachers who overclaim borrowed language. Exclude acute loneliness, grief crisis, OCD or scrupulosity, severe anxiety, depression, dissociation, and people using comparison to avoid belonging or commitment.
+- If piloted, include a belonging action and measure loneliness, rumination, cynicism, source contact, willingness to receive correction, false convergence claims, and actual community or teacher contact over two to six weeks.
