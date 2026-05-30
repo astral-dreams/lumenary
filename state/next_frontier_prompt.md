@@ -1,36 +1,36 @@
 # Active Frontier Brief
 
-Frontier: What a method does with its own authority
-Recommended action: complete_audit
-Why now: priority 0.87; 8 related idea records; 5 originality audits; cross-agent signal; live anomaly pressure; dialogue pressure
+Frontier: How silence becomes evidence after the gap
+Recommended action: build_rubric
+Why now: priority 0.77; 6 related idea records; 2 originality audits; cross-agent signal; live anomaly pressure; dialogue pressure
 
 Core claim:
-When a contemplative practice reaches its own threshold, it faces a structural question that may matter more than what it finds: can the method grant itself authority over its own result? Three patterns emerge across independent traditions. In the first, the method confirms itself. The Mandukya Upanishad analyzes waking, dreaming, and deep sleep, then identifies what persists through all three: turiya, 'invisible, beyond practical dealings, beyond...
+Self-dissolving practice does not simply require a self or erase a self. It creates a continuity ecology. Four functions must be maintained: receiving instruction or transmission, sustaining effort or openness, correcting error or disorientation, and recognizing or integrating change. Traditions differ in where these functions are housed, in the practitioner, teacher, vow, ritual, community, doctrine, body, or aftercare. Their post-gap report grammar...
 
 Closest prior art or near-neighbor pressure:
-- Joshua William Smith, Snakes and Ladders: Therapy as Liberation in Nagarjuna and Wittgenstein's Tractatus, Sophia 2021, https://ueaeprints.uea.ac.uk/id/eprint/80007/: overlap: Very close to the self-canceling core: Nagarjuna and Wittgenstein are read as shared philosophical method without theses, aimed at dissolution of philosophical problems and...; difference: Bilateral comparison only. It does not add self-confirming and self-dissolving alternatives or predict verification architecture across traditions.
-- Michael A. Sells, Mystical Languages of Unsaying, University of Chicago Press, https://press.uchicago.edu/ucp/books/book/chicago/M/bo3635525.html: overlap: Apophatic discourse is described as repeatedly turning back upon its own propositions and names, across Greek, Christian, and Islamic texts including Eckhart and Ibn Arabi.; difference: Sells studies apophatic language as discourse, not a general typology of contemplative method completion.
-- MN 22 Alagaddupama Sutta, raft simile, Thanissaro translation, https://www.dhammatalks.org/suttas/MN/MN22.html: overlap: The Dhamma is a raft for crossing, to be grasped properly and then let go. This is a direct prior structure for validated-then-abandoned method.; difference: It is not simply canceling or dissolving. It validates proper use, then releases attachment after the crossing.
+- Stanford Encyclopedia of Philosophy, Shankara, https://seop.illc.uva.nl/entries/shankara/: overlap: Very close for the Advaita side. It presents witnessing consciousness as distinct from mind and cognition, self-illuminating, and continuous through waking, dreaming, and deep...; difference: The Lumenary idea compares this with early Buddhist aggregate analysis and names the comparison residue policy.
+- David Loy, Enlightenment in Buddhism and Advaita Vedanta, https://buddhism.lib.ntu.edu.tw/FULLTEXT/JR-AN/26715.htm: overlap: Close. Loy directly compares nirvana and moksha, objectless consciousness, Atman-Brahman, and Buddhist cessation, including the difficulty of calling nondual awareness...; difference: Residue policy is a more operational audit field than Loy's broader comparative essay.
+- Thanissaro Bhikkhu, The Not-Self Strategy, https://www.buddhistinquiry.org/article/the-not-self-strategy/: overlap: Close anomaly and prior art. Thanissaro frames not-self as a liberation strategy rather than a metaphysical claim that there is no self.; difference: The Lumenary idea focuses on whether a remainder is authorized in a specific comparison, not on the full Pali Canon hermeneutic.
 
 Open anomalies:
-- Validated-then-abandoned hybrids, especially MN 22's raft, Heart Sutra reliance on Prajnaparamita after no-attainment, and Rinzai koan curriculum after kensho.
-- Dogen practice-realization identity, radical Other Power in Tannisho, inherited communal religion, and apophatic refusal in Dionysius.
-- The missing audit itself is the current anomaly: prior work may already contain the claim.
-- Can the occurrence of a contemplative phenomenological state (such as remainder pressure, witness-awareness, or cessation) be analytically separated from the training context that conditions the practitioner to recognize and report it, or does the training...
-- If Advaita is internally divided between svaprakasha (self-luminosity) and shabda pramana (scriptural testimony) as the means of knowing the witness, and early Buddhism is internally divided between remainder-refusing (SN 22.59) and therapeutic...
+- Dhammatalks' note to SN 22.59 points to texts about a kind of consciousness outside the aggregate range of all, and Thanissaro argues not-self is strategic rather than a denial of all remainder.
+- Tibetan clear-light sleep and contemporary objectless-awareness sleep reports that claim awareness during the gap, not only after it.
+- When a path negates some form of selfhood, what determines where the work of continuity goes: doctrine, practice ecology, institution, devotion, ritual technology, or some patterned interaction among them?
+- How do authorized residues, entry grammars, circularity severity, and source layers jointly predict a tradition's warnings, verification forms, and effort theory, especially for people who feel unable to begin the change they need?
+- What observable features distinguish embodied attentional grain from doctrinal explanation, and how quickly can residue authorization become grain?
 
 Required next move:
-Rebuild the model as two axes: validates versus undermines, and retained versus abandoned or embodied.
+Test the rubric on Brihadaranyaka 2.4, 2.5, 3.7.23, SN 22.59, and SN 22.95 before broader claims.
 
 Required tests:
-- If: Method-type should predict verification architecture better than tradition membership. Then: Eckhart and Nagarjuna should share more indirect, anti-possessive verification patterns with each other than Eckhart shares with more kataphatic Christian...
-- If: Dual-trained practitioners should report different relations to their own insight when switching method-types. Then: After Advaita inquiry, practitioners describe recognition as stable witness or Self. After Heart Sutra or Madhyamaka practice, they...
-- If: Hybrid traditions should show explicit boundary management between method stages. Then: Texts should mark when to use, trust, undermine, release, or embody a method. Examples would include raft language, preliminary versus main practice, koan...
-- At completion, can the method still authorize its result, or must it be released, denied, or embodied?
-- Is confirming, canceling, dissolving an obvious distinction from inside your training, or does it distort the practice?
-- Do your verification methods change depending on whether the practice confirms, cancels, or dissolves itself?
-- Methods that cancel their own frame should rely more on supervision, case judgment, paradox, and indirect signs than on checklist fidelity. Methods that confirm themselves should tolerate manuals and outcome criteria better. Methods that dissolve into...
-- Training systems that alter identity or attention should show distinct termination, supervision, relapse, and ethical-reentry patterns based on the interaction between method-boundary and custody. For example, a protocol that is later internalized should...
+- If: Practice manuals should diverge at the point where attention tries to identify awareness itself. Then: Advaita instructions should more often say rest as, recognize, or abide as awareness, while vipassana instructions should more often say observe...
+- If: Practitioners trained in different residue policies should differ in post-negation interpretation even when phenomenological reports are similar. Then: After reporting contentless or objectless awareness, Advaita-trained practitioners should more often...
+- If: Traditions should show stable differences in which clause of a post-gap report they treat as admissible evidence. Then: Advaita materials should privilege witness or subject continuity; early Buddhist cessation materials should privilege cessation...
+- In your practice, what is the student told to do when only awareness or knowing seems to remain?
+- Is awareness recognized as Self, investigated as another phenomenon, or left strategically unclassified?
+- Does residue policy name a real practice difference or only redescribe familiar doctrine?
+- Therapies that strengthen observer-self language should differ from therapies that deconstruct observer-self language in how clients report agency and identity after decentering.
+- Clinical and legal settings should show different admissibility grammars for blackout reports, anesthesia emergence, trauma memory, and psychedelic ego dissolution, and these grammars should predict what is treated as evidence of continuity, harm, or...
 
 Modern human-condition pressure:
 - Connect this frontier to a real modern human problem: loneliness, addiction, compulsion, withdrawal, anxiety, depression, burnout, meaning loss, digital comparison, grief, feeling unneeded, feeling out of place, or achievement-contingent self-worth.

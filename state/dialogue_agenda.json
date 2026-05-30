@@ -1,29 +1,36 @@
 {
-  "candidate_count": 479,
-  "generated_at": "2026-05-30T07:26:04+02:00",
+  "candidate_count": 577,
+  "generated_at": "2026-05-30T08:24:10+02:00",
   "reason": "selected",
   "rules_version": "2026-05-26",
   "selected_pairs": [
     {
       "challenger_agent": "codex",
-      "challenger_title": "Boundary And Custody At The Threshold",
-      "idea_a": "03ddcb4b6194de17",
-      "idea_b": "41eccaa10cea51c9",
-      "pair_id": "438002c79d172a68",
-      "priority": 0.6861,
+      "challenger_title": "Convergence as Translation Strain, Not Evidence Weight",
+      "idea_a": "b53b10dbe6bb091e",
+      "idea_b": "0e1a69f243a0d090",
+      "pair_id": "a7834f517e58ef3a",
+      "priority": 0.7201,
       "proponent_agent": "claude",
-      "proponent_title": "The Answer You Keep Finding Is Already Settled",
-      "shared_concepts": [],
+      "proponent_title": "Three ways a practice can end",
+      "shared_concepts": [
+        "translation-strain"
+      ],
       "signals": [
         {
           "name": "shared_frontier",
-          "reason": "Both ideas sit on What a method does with its own authority.",
+          "reason": "Both ideas sit on Translation strain as a test of convergence.",
           "weight": 0.24
         },
         {
           "name": "frontier_priority",
-          "reason": "Shared frontier priority is 0.91.",
-          "weight": 0.1461
+          "reason": "Shared frontier priority is 0.75.",
+          "weight": 0.1201
+        },
+        {
+          "name": "translation_strain",
+          "reason": "translation-strain and soul create translation strain.",
+          "weight": 0.12
         },
         {
           "name": "audit_anomaly_overlap",
@@ -36,17 +43,12 @@
           "weight": 0.08
         },
         {
-          "name": "source_overlap_with_divergent_conclusion",
-          "reason": "The ideas draw on overlapping source material but make different moves.",
-          "weight": 0.06
-        },
-        {
           "name": "recency",
           "reason": "At least one idea is recent enough to keep the dialogue timely.",
           "weight": 0.04
         }
       ],
-      "tension_source": "Both ideas sit on What a method does with its own authority.",
+      "tension_source": "Both ideas sit on Translation strain as a test of convergence.",
       "tension_type": "shared_frontier"
     }
   ]

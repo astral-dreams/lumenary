@@ -588,3 +588,19 @@
 - Define reopen triggers as new source class, genuine anomaly, practitioner challenge, failed merge, executed test with surprising result, or explicit human override.
 - Run the blind distinct-content coding test on the recent method-authority records before further generation on that frontier.
 - Pilot The Duplicate Check only with high-output overproducers and screen out severe depression, acute burnout, coercive workload, under-production, shame spirals, and cases where ordinary editorial revision is the real task.
+
+## Originality Audit Follow-Up 2026-05-30T08:23:51+02:00
+
+### Some Help Should Not Be Managed (extended)
+- Do not publish as a standalone discovery. Cross-index with When There Is Nothing To Keep Or Release, When Tools Become Judges, Who Holds The Gate, Not Every Check Should Be Yours, and Keep What Can Correct You.
+- Build the three-condition fit gate as a codebook: provisional ownership, completion temporality, and spare agency, with explicit alternative holders and contraindications.
+- Use split-source coding: code ownership and temporality from entry or doctrinal passages, then predict held-out warnings, repairs, and verification from manuals or concrete practitioner cases.
+- Run a small No-Audit Check pilot only with screened over-managers. Track rumination, self-surveillance, shame, avoidance, missed duties, and ordinary action within one hour.
+- Interview practitioners for concrete harm and repair cases rather than abstract agreement. Include clinicians so clinical reassurance seeking and avoidance are not spiritualized.
+
+### Stop When Time Is Up, Not When It Feels Done (renamed)
+- Do not publish as a standalone discovery. Cross-index with More Is Not The Same As Progress, Restating Is Not Realizing, The Silence Has A Stopping Rule, Not Every Check Should Be Yours, and The Answer You Keep Finding Is Already Settled.
+- Rewrite as a bounded practice-fit protocol for over-reflection, not as a general teaching about method surrender.
+- Add a triage gate before the practice: over-reflection versus avoidance, grief, moral repair, trauma, OCD or scrupulosity, and non-instrumental practice.
+- Compare directly against mood-as-input stop-rule training, ERP response prevention, rumination-focused CBT, metacognitive therapy, timeboxing, WIP limits, implementation intentions, and ordinary journaling limits.
+- Pilot only with screened non-clinical over-reflectors. Track reopening frequency, anxiety, ritualization, avoidance, shame, action completion, and whether the closing act becomes compulsive.

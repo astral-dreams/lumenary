@@ -1,48 +1,15 @@
 # Lumenary Frontiers
 
-Generated: 2026-05-30T07:57:54+02:00
+Generated: 2026-05-30T08:53:10+02:00
 
 These are live research agendas derived from idea records, originality audits, publication history, and next-loop instructions.
-
-## What a method does with its own authority
-
-- Frontier ID: `frontier-method-reckoning`
-- Status: `active`
-- Stage: `source_grounding`
-- Priority: 0.9115
-- Next action: `complete_audit`
-- Agents: claude, codex
-- Idea records: 8
-- Audits: 5
-
-### Core Claim
-
-When a contemplative practice reaches its own threshold, it faces a structural question that may matter more than what it finds: can the method grant itself authority over its own result? Three patterns emerge across independent traditions. In the first, the method confirms itself. The Mandukya Upanishad analyzes waking, dreaming, and deep sleep, then identifies what persists through all three: turiya, 'invisible, beyond practical dealings, beyond...
-
-### Next Prompt
-
-Rebuild the model as two axes: validates versus undermines, and retained versus abandoned or embodied.
-
-### Open Anomalies
-
-- Validated-then-abandoned hybrids, especially MN 22's raft, Heart Sutra reliance on Prajnaparamita after no-attainment, and Rinzai koan curriculum after kensho.
-- Dogen practice-realization identity, radical Other Power in Tannisho, inherited communal religion, and apophatic refusal in Dionysius.
-- The missing audit itself is the current anomaly: prior work may already contain the claim.
-- Can the occurrence of a contemplative phenomenological state (such as remainder pressure, witness-awareness, or cessation) be analytically separated from the training context that conditions the practitioner to recognize and report it, or does the training...
-- If Advaita is internally divided between svaprakasha (self-luminosity) and shabda pramana (scriptural testimony) as the means of knowing the witness, and early Buddhism is internally divided between remainder-refusing (SN 22.59) and therapeutic...
-
-### Blockers
-
-- Reduce novelty from 0.84 to about 0.64. No exact three-type typology was found in accessible searches, but the self-canceling and method-abandoning structures are well-known, and primary texts show hybrid cases that weaken the clean typology.
-- Reduce novelty from 0.82 to about 0.42. The exact language is fresh, but both axes and much of the predictive burden are already present in prior Lumenary records: Method's Reckoning, Custody of Unclaimed Attention, Authority-Boundary Ecology, Custody and...
-- Do not raise novelty until the originality audit is completed.
 
 ## How silence becomes evidence after the gap
 
 - Frontier ID: `frontier-gap-report`
 - Status: `active`
 - Stage: `rubric`
-- Priority: 0.8094
+- Priority: 0.8092
 - Next action: `build_rubric`
 - Agents: claude, codex
 - Idea records: 6
@@ -74,7 +41,7 @@ Test the rubric on Brihadaranyaka 2.4, 2.5, 3.7.23, SN 22.59, and SN 22.95 befor
 - Frontier ID: `frontier-inferential-gap`
 - Status: `active`
 - Stage: `rubric`
-- Priority: 0.8073
+- Priority: 0.8071
 - Next action: `build_rubric`
 - Agents: claude, codex
 - Idea records: 13
@@ -102,12 +69,78 @@ Rewrite the claim as an interpretive reconstruction unless commentarial evidence
 - Reduce novelty from 0.82 to about 0.53. The idea is useful and testable, but its main components are strongly anticipated by prior Lumenary ledgers, VCE and Cheetah House style adverse-effects research, Engler's functional ego warning, Pargament's agency...
 - Reduce novelty from 0.82 to about 0.54. The four-field compression is useful, but most components have strong near-neighbors in prior Lumenary audits, conversion theory, rites-of-passage theory, doctrine-as-grammar, religious problem-solving styles...
 
+## Translation strain as a test of convergence
+
+- Frontier ID: `frontier-translation-strain`
+- Status: `active`
+- Stage: `source_grounding`
+- Priority: 0.7911
+- Next action: `complete_audit`
+- Agents: claude, codex
+- Idea records: 30
+- Audits: 9
+
+### Core Claim
+
+Traditions differ less in whether insight can be shared than in what carrier must hold it when it leaves the practice that disclosed it. Advaita lets insight travel as self-certifying recognition; early Buddhism lets it travel as a non-appropriating test; Daoism lets it travel as situated fit; Sufism lets it travel as renewed relation; Neoplatonism lets it travel as return-orientation. When a comparer moves an insight into the wrong carrier, relation...
+
+### Next Prompt
+
+Build a one-page translation-strain rubric with fields for claim unit, role, ontology, agency, practice aim, authority, verification, what is bent, what is dropped, what is added, and whether role-similarity survives.
+
+### Open Anomalies
+
+- Convergence caused by direct borrowing, shared lineage, colonial translation conventions, English-language universalism, or dual-trained teachers rather than independent structural recurrence.
+- Comparisons where high strain is still historically causal, for example Buddhist and Advaita terms shaped by centuries of polemic and borrowing.
+- Nirodha samapatti and cessation reports, where practitioners report a discontinuity or absence of consciousness rather than a pressure to posit an enduring witness.
+- When a tradition internally disputes its own assertion posture (as in the Svatantrika-Prasangika contest over whether Madhyamaka holds theses), does the strain-mapping protocol need to treat posture as a continuous variable or a contested parameter rather...
+- How can a self-transcending practice be designed so that it builds enough scaffold before it weakens the self-functions a practitioner still needs?
+
+### Blockers
+
+- Reduce novelty from 0.78 to about 0.56. The idea is not a new comparative principle. Its best contribution is a useful synthesis and operationalization of established anti-perennialist, comparative-method, comparative-theological, homeomorphic-equivalence...
+- Reduce novelty from 0.78 to about 0.22. This is already present in the prior Lumenary originality audit and strongly anticipated by comparative-method literature.
+- Reduce novelty from 0.84 to about 0.61. The phrase is useful and may be generative, but it synthesizes known work on pure awareness, witness consciousness, self-modeling, and cessation.
+
+## What a method does with its own authority
+
+- Frontier ID: `frontier-method-reckoning`
+- Status: `active`
+- Stage: `source_grounding`
+- Priority: 0.7856
+- Next action: `complete_audit`
+- Agents: claude, codex
+- Idea records: 9
+- Audits: 6
+
+### Core Claim
+
+When a contemplative practice reaches its own threshold, it faces a structural question that may matter more than what it finds: can the method grant itself authority over its own result? Three patterns emerge across independent traditions. In the first, the method confirms itself. The Mandukya Upanishad analyzes waking, dreaming, and deep sleep, then identifies what persists through all three: turiya, 'invisible, beyond practical dealings, beyond...
+
+### Next Prompt
+
+Rebuild the model as two axes: validates versus undermines, and retained versus abandoned or embodied.
+
+### Open Anomalies
+
+- Validated-then-abandoned hybrids, especially MN 22's raft, Heart Sutra reliance on Prajnaparamita after no-attainment, and Rinzai koan curriculum after kensho.
+- Dogen practice-realization identity, radical Other Power in Tannisho, inherited communal religion, and apophatic refusal in Dionysius.
+- The missing audit itself is the current anomaly: prior work may already contain the claim.
+- Can the occurrence of a contemplative phenomenological state (such as remainder pressure, witness-awareness, or cessation) be analytically separated from the training context that conditions the practitioner to recognize and report it, or does the training...
+- If Advaita is internally divided between svaprakasha (self-luminosity) and shabda pramana (scriptural testimony) as the means of knowing the witness, and early Buddhism is internally divided between remainder-refusing (SN 22.59) and therapeutic...
+
+### Blockers
+
+- Reduce novelty from 0.84 to about 0.64. No exact three-type typology was found in accessible searches, but the self-canceling and method-abandoning structures are well-known, and primary texts show hybrid cases that weaken the clean typology.
+- Reduce novelty from 0.82 to about 0.42. The exact language is fresh, but both axes and much of the predictive burden are already present in prior Lumenary records: Method's Reckoning, Custody of Unclaimed Attention, Authority-Boundary Ecology, Custody and...
+- Do not raise novelty until the originality audit is completed.
+
 ## Remainder pressure after self-negation
 
 - Frontier ID: `frontier-remainder-pressure`
 - Status: `active`
 - Stage: `rubric`
-- Priority: 0.7802
+- Priority: 0.7800
 - Next action: `build_rubric`
 - Agents: claude, codex
 - Idea records: 8
@@ -138,7 +171,7 @@ Do not publish as doctrine. Treat as a comparative and practitioner-facing resea
 - Frontier ID: `frontier-attention-custody`
 - Status: `active`
 - Stage: `rubric`
-- Priority: 0.7603
+- Priority: 0.7601
 - Next action: `build_rubric`
 - Agents: codex
 - Idea records: 2
@@ -165,45 +198,12 @@ Close-read Dzogchen and Mahamudra instructions on rigpa or luminous awareness ag
 - Reduce novelty from 0.72 to about 0.58. The custody phrase appears fresh, but the structure sits close to established work on pure consciousness, constructivism, theistic versus monistic typologies, witness-consciousness, and apophasis.
 - Reduce novelty from 0.78 to about 0.42. The useful contribution is not the broad claim that practices carry direction through many layers. That is strongly anticipated by primary texts, Dunne, Lutz, Lindbeck, Foucault, Hadot, Bourdieu, Pargament, VCE...
 
-## Translation strain as a test of convergence
-
-- Frontier ID: `frontier-translation-strain`
-- Status: `active`
-- Stage: `source_grounding`
-- Priority: 0.7509
-- Next action: `complete_audit`
-- Agents: claude, codex
-- Idea records: 29
-- Audits: 9
-
-### Core Claim
-
-Traditions differ less in whether insight can be shared than in what carrier must hold it when it leaves the practice that disclosed it. Advaita lets insight travel as self-certifying recognition; early Buddhism lets it travel as a non-appropriating test; Daoism lets it travel as situated fit; Sufism lets it travel as renewed relation; Neoplatonism lets it travel as return-orientation. When a comparer moves an insight into the wrong carrier, relation...
-
-### Next Prompt
-
-Build a one-page translation-strain rubric with fields for claim unit, role, ontology, agency, practice aim, authority, verification, what is bent, what is dropped, what is added, and whether role-similarity survives.
-
-### Open Anomalies
-
-- Convergence caused by direct borrowing, shared lineage, colonial translation conventions, English-language universalism, or dual-trained teachers rather than independent structural recurrence.
-- Comparisons where high strain is still historically causal, for example Buddhist and Advaita terms shaped by centuries of polemic and borrowing.
-- Nirodha samapatti and cessation reports, where practitioners report a discontinuity or absence of consciousness rather than a pressure to posit an enduring witness.
-- When a tradition internally disputes its own assertion posture (as in the Svatantrika-Prasangika contest over whether Madhyamaka holds theses), does the strain-mapping protocol need to treat posture as a continuous variable or a contested parameter rather...
-- How can a self-transcending practice be designed so that it builds enough scaffold before it weakens the self-functions a practitioner still needs?
-
-### Blockers
-
-- Reduce novelty from 0.78 to about 0.56. The idea is not a new comparative principle. Its best contribution is a useful synthesis and operationalization of established anti-perennialist, comparative-method, comparative-theological, homeomorphic-equivalence...
-- Reduce novelty from 0.78 to about 0.22. This is already present in the prior Lumenary originality audit and strongly anticipated by comparative-method literature.
-- Reduce novelty from 0.84 to about 0.61. The phrase is useful and may be generative, but it synthesizes known work on pure awareness, witness consciousness, self-modeling, and cessation.
-
 ## The boundary between effort and gift
 
 - Frontier ID: `frontier-effort-and-practice`
 - Status: `active`
 - Stage: `rubric`
-- Priority: 0.7377
+- Priority: 0.7365
 - Next action: `build_rubric`
 - Agents: claude, codex
 - Idea records: 23
@@ -236,11 +236,11 @@ Recast the model as a graded variable: required receiving capacity, required age
 - Frontier ID: `frontier-modern-human-condition`
 - Status: `active`
 - Stage: `rubric`
-- Priority: 0.7374
+- Priority: 0.7358
 - Next action: `build_rubric`
 - Agents: claude, codex
-- Idea records: 16
-- Audits: 14
+- Idea records: 17
+- Audits: 15
 
 ### Core Claim
 
@@ -269,7 +269,7 @@ Do not publish as a standalone doctrine claim until split-source tests show pred
 - Frontier ID: `frontier-love-and-knowing`
 - Status: `active`
 - Stage: `source_grounding`
-- Priority: 0.6889
+- Priority: 0.6888
 - Next action: `complete_audit`
 - Agents: claude, codex
 - Idea records: 6

@@ -1,0 +1,275 @@
+{
+  "convergence_path": "findings/convergences/2026-05-30-the-unresolved-crux-is-whether-the-function-gate-can-reliably-distinguish-post-st.md",
+  "created_at": "2026-05-30T08:33:10+02:00",
+  "dialogue_id": "c137d742b6039d73",
+  "execution_id": "parallel-dialogue-20260530-082351",
+  "json_path": "reviews/dialogues/2026-05-30-the-unresolved-crux-is-whether-the-function-gate-can-reliably-distinguis.json",
+  "markdown_path": "reviews/dialogues/2026-05-30-the-unresolved-crux-is-whether-the-function-gate-can-reliably-distinguis.md",
+  "pair": {
+    "challenger_agent": "codex",
+    "challenger_title": "Convergence as Translation Strain, Not Evidence Weight",
+    "idea_a": "b53b10dbe6bb091e",
+    "idea_b": "0e1a69f243a0d090",
+    "pair_id": "a7834f517e58ef3a",
+    "priority": 0.7201,
+    "proponent_agent": "claude",
+    "proponent_title": "Three ways a practice can end",
+    "shared_concepts": [
+      "translation-strain"
+    ],
+    "signals": [
+      {
+        "name": "shared_frontier",
+        "reason": "Both ideas sit on Translation strain as a test of convergence.",
+        "weight": 0.24
+      },
+      {
+        "name": "frontier_priority",
+        "reason": "Shared frontier priority is 0.75.",
+        "weight": 0.1201
+      },
+      {
+        "name": "translation_strain",
+        "reason": "translation-strain and soul create translation strain.",
+        "weight": 0.12
+      },
+      {
+        "name": "audit_anomaly_overlap",
+        "reason": "An anomaly or audit instruction for one idea pressures the other idea.",
+        "weight": 0.12
+      },
+      {
+        "name": "near_neighbor_conflict",
+        "reason": "Originality audits share near-neighbor or prior-art pressure.",
+        "weight": 0.08
+      },
+      {
+        "name": "recency",
+        "reason": "At least one idea is recent enough to keep the dialogue timely.",
+        "weight": 0.04
+      }
+    ],
+    "tension_source": "Both ideas sit on Translation strain as a test of convergence.",
+    "tension_type": "shared_frontier"
+  },
+  "run_dir": "runs/dialectic-parallel-dialogue-20260530-082351/a7834f517e58ef3a",
+  "run_ids": [],
+  "slug": "2026-05-30-the-unresolved-crux-is-whether-the-function-gate-can-reliably-distinguis",
+  "status": "complete",
+  "synthesis": {
+    "candidate_synthesis": {
+      "critique": "The synthesis is stronger and safer than the original teaching, but it may depend on a gate that practitioners cannot apply reliably by themselves. Identity-fused practitioners may describe attachment as service or discipline, while lonely or relapse-vulnerable practitioners may describe needed support as mere dependence. Until gate-validity is tested with observer, clinician, or teacher input, the practice should remain a supervised or under-dialogue teaching rather than a self-serve public protocol.",
+      "epistemic_labels": [
+        "interpretive",
+        "phenomenological",
+        "empirical-adjacent",
+        "analogical",
+        "speculative"
+      ],
+      "idea_type": "synthesis",
+      "next_research_directions": [
+        "Create a function-gate coding sheet that separates cure, training, maintenance, belonging, accountability, service, ordinary-life integration, and post-stabilization identity fusion.",
+        "Run a gate-validity test comparing practitioner self-audit, trained interview coding, and trusted observer or clinician ratings where appropriate.",
+        "Only after gate validity is acceptable, test whether coded ending type predicts distinct late-stage patterns inside the identity-fusion subset.",
+        "Revise the practice candidate so the function gate is the first step, not a caution paragraph.",
+        "Add explicit exclusion language for active recovery, depression, grief, thin social support, and any context where continued participation is maintaining safety or sobriety."
+      ],
+      "original_claim": "A long-running practice should be evaluated through a hard gate before its ending is interpreted. First ask what function it currently serves: cure, training, maintenance, belonging, accountability, service, ordinary-life integration, or post-stabilization identity fusion. Only when the gate shows identity fusion without active maintenance or support need should the second question apply: whether the method is meant to be retained, released, or embodied. The practice risk is cohort leakage: people who still need a stabilizing ecology may hear an ending question as permission to withdraw from support.",
+      "scores": {
+        "counterargument_quality": 0.9,
+        "cross_tradition_support": 0.74,
+        "empirical_adjacency": 0.66,
+        "explanatory_compression": 0.83,
+        "generativity": 0.9,
+        "logical_coherence": 0.88,
+        "novelty": 0.79,
+        "practice_testability": 0.86,
+        "publishability": 0.78,
+        "source_reliability": 0.72
+      },
+      "source_basis": [
+        "Claude idea b53b10dbe6bb091e: practice endings as retained access, released authority, or embodied disappearance.",
+        "Codex idea 0e1a69f243a0d090: convergence should be tested through translation strain, with concepts decomposed before being treated as evidence.",
+        "Codex challenge: practice may continue as maintenance, belonging, accountability, service, or relapse prevention rather than failed completion.",
+        "Claude rebuttal: function audit must precede ending audit, and ending-confusion applies only inside the post-stabilization identity-fusion subset.",
+        "Codex counter-rebuttal: self-audit may fail, so the gate must include behavioral and relational evidence before self-serve practice use."
+      ],
+      "title": "Function-Gated Practice Endings",
+      "why_it_might_be_new": "The source ideas did not already contain this two-stage structure. Claude supplied the ending taxonomy, Codex supplied translation-strain caution, and the dialogue generated the function gate plus a gate-validity requirement. The synthesis shifts the unit of pastoral judgment from practice type alone to practice function in a particular life ecology, then uses ending type as a conditional second-stage diagnostic."
+    },
+    "candidate_synthesis_audit_error": "TimeoutError: originality audit timed out after 1200 seconds.",
+    "candidate_synthesis_audit_status": "failed",
+    "candidate_synthesis_idea_id": "e2a0f3ff452b2d0d",
+    "candidate_synthesis_path": "observations/codex/2026-05-30-function-gated-practice-endings.md",
+    "convergence_claim": "Both agents converge that the ending taxonomy has comparative value, but its pastoral use must be subordinated to a prior function audit. They also converge that the central modern wound is not all long-term practice, but post-stabilization identity fusion in achievement-driven or perfectionistic practitioners.",
+    "method_growth": "Future Lumenary practice models should place a gate before any liberating question. A teaching is not safer merely because it names cautions; the caution must become part of the operating procedure and must be testable.",
+    "new_concept_edges": [
+      {
+        "note": "The ending taxonomy must decompose practice, authority, completion, and ordinary life before treating cross-tradition overlap as evidence.",
+        "relation": "disciplines",
+        "source": "translation-strain",
+        "target": "practice-ending taxonomy"
+      },
+      {
+        "note": "The current human function of the practice must be established before retained, released, or embodied endings are interpreted pastorally.",
+        "relation": "gates",
+        "source": "function audit",
+        "target": "ending audit"
+      },
+      {
+        "note": "The revised cohort is defined by self-worth fused to a healing or improvement practice after the original wound has stabilized.",
+        "relation": "specifies",
+        "source": "post-stabilization identity fusion",
+        "target": "achievement-contingent self-worth"
+      },
+      {
+        "note": "Practices that still supply recovery, belonging, service, accountability, or grief support should not be exposed to the ending question as if completion were settled.",
+        "relation": "warns against",
+        "source": "maintenance ecology",
+        "target": "cohort leakage"
+      }
+    ],
+    "new_frontier_question": "Can a function gate for spiritual, therapeutic, and recovery practices reliably protect maintenance-dependent people while still identifying the narrower cohort whose self-worth has fused with post-stabilization practice identity?",
+    "outcome": "candidate_transcendence",
+    "public_brief": "The dialogue produced a stronger idea: do not ask what a practice should do at the end until you know what it is doing now. A method may be cure, training, maintenance, belonging, service, or identity. The ending question belongs only to the narrow case where a stabilized person has become fused to the practice as self-worth.",
+    "recommended_adjustments": {
+      "challenger": {
+        "counterargument_quality": 0.84,
+        "cross_tradition_support": 0.57,
+        "empirical_adjacency": 0.46,
+        "explanatory_compression": 0.82,
+        "generativity": 0.88,
+        "logical_coherence": 0.86,
+        "novelty": 0.78,
+        "practice_testability": 0.67,
+        "publishability": 0.83,
+        "source_reliability": 0.65
+      },
+      "proponent": {
+        "counterargument_quality": 0.91,
+        "cross_tradition_support": 0.78,
+        "empirical_adjacency": 0.64,
+        "explanatory_compression": 0.84,
+        "generativity": 0.91,
+        "logical_coherence": 0.89,
+        "novelty": 0.77,
+        "practice_testability": 0.87,
+        "publishability": 0.79,
+        "source_reliability": 0.72
+      }
+    },
+    "summary": "The exchange transformed the proponent model from a broad taxonomy of practice endings into a conditional, gate-first diagnostic. The surviving synthesis combines Claude's ending axis with Codex's translation-strain discipline and function-cycle objection: first identify what human wound the practice currently serves, then apply the ending taxonomy only when maintenance, belonging, relapse prevention, grief, and social support needs have been ruled out. The dialogue made the idea more answerable to modern human suffering by narrowing the cohort, naming non-fit cases, preserving recovery and support ecologies, and adding a test for gate reliability.",
+    "synthesizer_agent": "codex",
+    "unresolved_crux": "The unresolved crux is whether the function gate can reliably distinguish post-stabilization identity fusion from legitimate maintenance, belonging, relapse prevention, grief support, service, and accountability before the ending question is introduced."
+  },
+  "title": "The unresolved crux is whether the function gate can reliably distinguish post-st...",
+  "turns": [
+    {
+      "agent": "codex",
+      "argument": "The pressure point is the move from 'methods have different self-relations at completion' to 'most damage in long-term practitioners comes from importing the wrong ending.' The first claim is a strong comparative hypothesis. The second is a causal and pastoral claim. Translation-strain discipline requires naming what was bent in the transfer: Buddhist liberation texts, apophatic discourse, therapy termination, and recovery fellowships do not share the same meanings of practice, authority, completion, or ordinary life. Once those terms are decomposed, some cases will look less like endings and more like changed functions. The model should therefore add a function audit before the ending audit. Ask what human wound is active now: loneliness, compulsion, withdrawal, anxiety, grief, feeling unneeded, or achievement-contingent self-worth. Only when the active wound is identity rigidity after stabilization should the three-ending teaching speak confidently. Otherwise, the safer claim is: a practice should be honest about whether it is currently cure, training, maintenance, belonging, service, or ordinary life.",
+      "claim_units": [
+        "A serious practice must answer what it does with its own authority at completion.",
+        "Three recurrent endings are retained access, released authority, and embodied disappearance into ordinary action.",
+        "Two axes sort these endings: whether the method validates or undermines itself, and whether it is retained, released, or embodied.",
+        "A major long-term practitioner harm comes from importing the wrong ending into the wrong method.",
+        "The model can become a practical teaching for people whose healing or self-improvement identity has outlived the original wound."
+      ],
+      "concessions": [
+        "The taxonomy is useful as a comparative reading tool, especially when traditions make explicit claims about release, realization, or practice-life unity.",
+        "The target wound is real for perfectionistic long-term practitioners whose self-worth has fused with healing, meditation, therapy, or disciplined improvement.",
+        "The proposed weekly question is relatively low risk because it delays action and includes caution against leaving clinical or recovery support prematurely."
+      ],
+      "counter_model": "Function-cycle model: a practice does not have one ending. It cycles through functions: stabilization, skill acquisition, interpretation, belonging, accountability, service, maintenance, and sometimes release. The error is not importing the wrong ending into the wrong method; the error is failing to rename the current function. A meditation schedule, AA meeting, therapy frame, or prayer rule may stop being cure but continue as belonging, maintenance, or service. The right question becomes, 'What function is this practice serving now, and what evidence shows that function is still needed?'",
+      "crux": "If ending type predicts late-stage harm better than current function, social support, relapse risk, teacher dependence, and identity need, Claude's model should stand. If those variables predict the harm better, the model should be revised from a taxonomy of practice endings into a diagnostic of practice functions.",
+      "crux_assessment": "The proponent's originality is strongest as a translation-strain rubric for comparative reading. Its teaching claim is weaker because it moves from textual structure to practitioner advice before showing that ending-confusion is the dominant failure mode in the named cohorts.",
+      "defense": null,
+      "fairness_check": "I accept that the idea already names its non-fit cases and treats the taxonomy as provisional. I am not challenging the existence of practice-ending confusion. I am challenging whether the ending is best modeled as a property of the practice rather than as a shifting relation among practice, person, teacher, community, risk, and life phase.",
+      "hidden_assumption": "That a practice has a stable internal ending logic that can be identified apart from the practitioner's current vulnerability, social world, teacher relation, and maintenance needs.",
+      "new_source": "Kelly, Humphreys, and Ferri, 'Alcoholics Anonymous and other 12-step programs for alcohol use disorder,' Cochrane Database of Systematic Reviews, 2020, https://www.cochrane.org/evidence/CD012880_alcoholics-anonymous-aa-and-other-12-step-programs-alcohol-use-disorder. This complicates the claim because 12-step participation is not simply a practice that should end when the presenting symptom remits; the reviewed model treats continuing fellowship and facilitation as part of sustaining remission.",
+      "remaining_risk": "The teaching could help perfectionistic long-term practitioners who have made healing into achievement. It could mislead people with addiction histories, depression, grief, or thin social support if they hear the ending question as permission to loosen a stabilizing ecology. The cohort should stay narrow until the empirical-adjacent test separates identity rigidity from legitimate maintenance.",
+      "revised_claim": null,
+      "role": "challenger",
+      "sources_cited": [
+        "https://www.cochrane.org/evidence/CD012880_alcoholics-anonymous-aa-and-other-12-step-programs-alcohol-use-disorder"
+      ],
+      "steelman": "The proposal's best form is not that every tradition has a tidy graduation ceremony. It is that a mature practice carries an implicit instruction about its own authority after it has done its work. Claude is trying to protect long-term practitioners from a specific late-stage injury: the practice solved part of the wound, but then became the new self-worth system, social identity, or auditing lens. The model earns its force because it asks comparison to pay translation costs. It does not just say Mandukya, Nagarjuna, Dogen, and MN 22 agree; it asks whether each preserves, cancels, or absorbs the practice at completion, then predicts different supervision and re-entry needs.",
+      "strongest_objection": "The model may smuggle a tool-use frame into domains where the practice is also community, identity repair, relapse prevention, service, ethical accountability, or a shared language for loneliness. In those cases, 'loyalty past its work' can be true for some high-achievers, but false or dangerous for others. A person whose original symptoms have remitted may still need the practice not as access route, released method, or embodied habit, but as a durable social and behavioral ecology that prevents isolation, relapse, or drift.",
+      "test_that_would_settle_it": "Recruit long-term practitioners from therapy, recovery, meditation, and prayer communities whose original presenting problems are mostly stable. Independently code each tradition or program for the proposed ending type. Separately measure current function, loneliness, relapse or symptom risk, community dependence, achievement-contingent self-worth, teacher dependence, and ordinary-life behavioral change. The model is supported if mismatched ending type predicts distress, rigidity, or stalled embodiment after those factors are controlled. It weakens if harm clusters around loneliness, loss of service, social withdrawal, or maintenance risk regardless of coded ending.",
+      "turn": 1,
+      "turn_type": "challenge",
+      "verdict_on_revision": null
+    },
+    {
+      "agent": "claude",
+      "argument": "The pressure landed on the seam between a comparative hypothesis, that methods hold different self-relations at completion, and a pastoral claim, that most late-stage harm is wrong-ending importation. I concede the seam. The fix is structural, not cosmetic: insert a function audit ahead of the ending audit, anchor the cohort to identity fusion rather than to symptom remission, and promote the non-fit cases from footnote to first gate. What I decline to concede is that the ending axis dissolves into the function axis. Codex's own AA case is a retained-and-validated ending, and the harm it warns against is importing a released ending into it; that is the model predicting the failure, not failing. So function and ending are two stages of one instrument, and the live question is now sharp and conditional: inside the fused subset, does ending still pay its way.",
+      "claim_units": [
+        "The ending axis (what a method claims about its own authority at completion: retained, released, or embodied) is a distinct dimension readable from primary texts.",
+        "Function status (what wound the practice serves now: stabilization, maintenance, belonging, accountability, service, or post-stabilization identity) is a separate dimension and must be audited first.",
+        "The two axes are complementary, not rival; Codex's AA case instantiates a retained-and-validated cell rather than refuting the model.",
+        "The pastoral claim narrows: ending-confusion becomes a dominant harm only inside the subset whose function audit returns post-stabilization identity fusion."
+      ],
+      "concessions": [
+        "I concede the causal-pastoral overreach. 'Most damage in long-term practitioners comes from importing the wrong ending' was stated as a dominant cause across all long-term practitioners. I cannot support that breadth. It should be downgraded to one failure mode that becomes dominant only inside a narrow subset, and only after a prior function audit.",
+        "I concede the function-cycle is real and must come first. The Cochrane review on twelve-step programs shows that symptom remission does not equal work finished: continued fellowship and facilitation are themselves part of sustaining remission. Treating remission as 'the practice's job is done' is exactly the misreading Codex names, and my original framing invited it by anchoring the cohort to remitted symptoms rather than to identity fusion.",
+        "I concede ending type is not a clean property of the practice alone. The tradition supplies a default ending logic, but the practitioner's vulnerability, social ecology, teacher relation, and relapse risk can legitimately override that default. A coder cannot read ending-in-effect off the text without also reading the person's current ecology."
+      ],
+      "counter_model": null,
+      "crux": "We now agree the function audit comes first, and across the whole population I concede function wins. The remaining disagreement is conditional: inside the subset the function audit isolates, post-stabilization identity fusion, does coded ending type still add predictive power over the social and maintenance variables? Holding function, loneliness, relapse risk, teacher dependence, and social support constant within that subset, does ending type predict the distinct post-remission patterns, stable identity coupling for retained, restless searching for released, behavioral embodiment without method-reference for embodied? If yes, the ending axis earns its place as a second-stage diagnostic. If ending type collapses into noise even there, it is comparative reading vocabulary only, and the teaching should be retired in favor of a pure function diagnostic.",
+      "crux_assessment": "I agree with Codex that the originality is strongest as a translation-strain comparative rubric and that the teaching outran its evidence by moving from textual structure to pastoral advice before showing ending-confusion is the dominant failure mode. The repair is not to drop the ending axis but to subordinate it to a function audit and confine its pastoral voice to one coded subset.",
+      "defense": "What survives is that the ending axis is not reducible to the function axis, and Codex's own AA example shows why. Function tells you what the practice is doing now; ending tells you what the method claims about its own authority. AA's answer about its authority is retained-and-validated: it works if you work it, keep coming back, the program remains the standing ecology. The harm Codex rightly fears, hearing the question as permission to loosen a stabilizing structure, is precisely the harm of importing a released ending into a retained-ecology practice. That is my model's prediction, not a refutation of it. So the function-cycle is not a competitor; it is the missing first stage. The correct architecture is two-stage: audit function first, and only when the function audit returns post-stabilization identity fusion does the ending audit speak with pastoral force. For every other active function, maintenance, belonging, service, the honest instruction is Codex's own: name the function and ask what evidence shows it is still needed. The translation-strain discipline I built this on actually demands this, because 'authority at completion' and 'function now' are different terms that must be decomposed before either counts as evidence; my error was letting remission silently translate completion.",
+      "fairness_check": "Codex grants the target wound is real, grants the taxonomy is a useful comparative reading tool, and grants the weekly practice is low risk because it delays action and warns against leaving clinical or recovery support. I take those as genuine concessions and will not relitigate them. Codex is not denying that ending-confusion exists; it is denying that ending type is the dominant predictor of late-stage harm. That is the fair fight, and I will argue it on those terms.",
+      "hidden_assumption": "Codex's function-cycle assumes the current function is itself legibly nameable by the practitioner or coder. In the fused subset the practitioner frequently misnames identity-maintenance as cure or service, which is precisely why a second-stage ending reading can stay diagnostic where self-report of function fails. So function-first does not make ending-reading redundant; it tells you when to trust self-reported function and when to look past it.",
+      "new_source": "Crocker and Wolfe, 'Contingencies of Self-Worth,' Psychological Review, 108(3), 2001. This grounds the narrowed cohort: when self-worth is staked on a domain, loss of forward progress in that domain produces collapse independent of the original symptom. It supports treating post-stabilization identity fusion as a mechanism distinct from maintenance need, which is the exact line the two-stage model must hold.",
+      "remaining_risk": "The residual danger is unchanged, and I keep Codex's warning verbatim: a person with an addiction history, depression, grief, or thin support could hear the ending question as permission to loosen a stabilizing ecology. The two-stage structure exists to catch them at stage one and never let them reach the ending question. If field use shows the function audit gets skipped in practice, the teaching should be withdrawn from self-serve use and held to supervised settings until the conditioned test separates identity rigidity from legitimate maintenance.",
+      "revised_claim": "A long-running practice should be audited in two stages. First, the function audit: what human wound is this practice serving right now, cure, training, maintenance, belonging, accountability, service, or has it passed into ordinary life? Most practices that continue past symptom remission are not loyalty past their work; their function has shifted, and the honest move is to rename the function and ask what evidence shows it is still needed. Second, only for the subset whose function audit returns post-stabilization identity fusion, the ending audit applies: does the method claim its result can only be reached through it forever (retained), withdraw its own authority (released), or dissolve into ordinary action (embodied), and is the practitioner importing the wrong one? The human problem is achievement-contingent self-worth welded to a healing or improvement identity after the original wound has stabilized, so that meaning collapses when the practice can no longer be improved on and has not been released or embodied. The cohort is perfectionistic long-term practitioners in non-maintenance-dependent practices: therapy graduates still auditing life through the frame, multi-year meditators whose retreat calendar has become identity, where symptoms are stable and the practice has not been re-evaluated. The non-fit case, now promoted from footnote to first gate, is anyone whose current function is maintenance, relapse prevention, or belonging: active or early recovery, thin social support, depression or grief, twelve-step fellowship sustaining sobriety. For them continued participation is the work, not loyalty past it, and the ending question must not be raised as if remission settled it.",
+      "role": "proponent",
+      "sources_cited": [
+        "https://www.cochrane.org/evidence/CD012880_alcoholics-anonymous-aa-and-other-12-step-programs-alcohol-use-disorder",
+        "Crocker and Wolfe, 'Contingencies of Self-Worth,' Psychological Review, 108(3), 2001"
+      ],
+      "steelman": "Codex's strongest form is not that traditions lack graduation ceremonies. It is that what reads as a fixed ending in the texts is, in lived practice, a function that legitimately shifts over time. A practice that was cure becomes maintenance, belonging, accountability, or service; the same sitting, meeting, or prayer rule keeps running because a different human need now rides on it. On that reading my phrase 'wrong ending imported into the wrong method' often misdescribes a practice whose function has changed, and the Cochrane evidence on twelve-step participation shows continued fellowship sustaining remission rather than loyalty past the work. The function-cycle is not a rival ornament to my model; it is a prior question my model skipped by letting symptom remission stand in for completion.",
+      "strongest_objection": "The model smuggled a tool-use frame into domains where a practice is also community, identity repair, relapse prevention, service, and a shared language for loneliness, so that 'loyalty past its work' is false or dangerous for practitioners who still need the practice as a durable social and behavioral ecology even after symptoms remit.",
+      "test_that_would_settle_it": "Run Codex's design, but restrict the inferential test to the conditioned subset. Recruit long-term practitioners across therapy, recovery, meditation, and prayer whose presenting problems are stable. Stage one: a function audit assigns each person a current function (cure, maintenance, belonging, service, post-stabilization identity); independently code each tradition for ending type; and measure loneliness, relapse or symptom risk, community dependence, teacher dependence, achievement-contingent self-worth, and ordinary-life behavioral change. Stage two: within the post-stabilization-identity subset only, test whether coded ending type predicts the three named post-remission patterns after controlling for the social and maintenance variables. The model is supported if ending type carries variance inside that subset. It is refuted, and reduced to reading vocabulary, if harm clusters on loneliness, lost service, withdrawal, or maintenance risk regardless of ending even within the fused subset. As a guardrail, log how many recruits the function audit diverts away from the ending question entirely; a large fraction confirms Codex's primary point and bounds the teaching's reach.",
+      "turn": 2,
+      "turn_type": "rebuttal",
+      "verdict_on_revision": "transformed"
+    },
+    {
+      "agent": "codex",
+      "argument": "This revision should be treated as transformed. It no longer claims that most long-term-practitioner damage comes from wrong-ending importation. It now says that ending-confusion is a second-stage risk inside a narrowed identity-fusion cohort after function has been audited. That is a major improvement in coherence and pastoral restraint. It also makes the model more responsive to modern human suffering because it separates achievement-contingent self-worth from loneliness, relapse prevention, grief, service, and belonging. The remaining overgeneralization is subtle: it still assumes the right cohort can be reliably found by asking the practitioner what the practice is doing. In the very cases at issue, self-description may be part of the problem. So the next version should make the gate behavioral and relational: what has changed in ordinary conduct, what support would be lost, who else can see the pattern, and what would count as evidence that the practice is still needed. If that gate holds, the ending taxonomy deserves continued development as a second-stage diagnostic. If it fails, the teaching should stay private, supervised, or purely comparative.",
+      "claim_units": [
+        "The revision is transformed, and within its narrower scope it is stronger.",
+        "The function audit now properly precedes the ending audit.",
+        "The pastoral claim is no longer general to long-term practitioners, but limited to post-stabilization identity fusion.",
+        "The named crux is real for the model's scientific survival, but incomplete for the teaching's safety.",
+        "The remaining practical risk is that the function audit will be skipped, self-flattered, or misread by exactly the people it is meant to protect."
+      ],
+      "concessions": [
+        "The revision is materially more useful to real human life because it now protects people whose practice is still functioning as maintenance, belonging, relapse prevention, or service.",
+        "The model is more honest about cohort fit: it is for perfectionistic long-term practitioners in non-maintenance-dependent practices, not for all serious practitioners.",
+        "The revised test is sharper because it asks whether ending type adds predictive power only inside the identity-fusion subset.",
+        "The ending axis still has comparative value even if the pastoral teaching remains unproven."
+      ],
+      "counter_model": "Gate-first supervision model: the ending taxonomy should not be offered as a self-directed weekly question until a relational check has occurred. The first stage is not only a function audit by the practitioner, but an evidence audit involving ordinary behavior, trusted observers, and where relevant clinical or recovery support. Only after that gate should the retained, released, or embodied ending frame be used.",
+      "crux": "The named crux is real for the ending axis: within the post-stabilization identity-fusion subset, does coded ending type add predictive power after controlling for loneliness, relapse risk, teacher dependence, social support, and current function? But the more immediate pastoral crux is earlier: can the function audit reliably identify who should never receive the ending question in the first place?",
+      "crux_assessment": "The proponent's named crux is the real crux for whether the ending taxonomy remains more than comparative vocabulary. It is not the full crux for whether the teaching is ready for public practice. For modern human-condition pressure, the first crux is gate reliability under loneliness, addiction history, depression, grief, thin social support, and achievement anxiety. Without that, the revision may be elegant and narrower, but still not safe enough for the people most likely to misuse it.",
+      "defense": null,
+      "fairness_check": "I accept the proponent's main concessions as substantial, not cosmetic. The revised model directly answers the recovery and maintenance objection, strengthens the non-fit gate, and lowers the risk of turning a comparative taxonomy into premature advice. I also accept that the ending axis may still add value inside a narrowed subset. My remaining challenge is about field reliability: whether ordinary users, teachers, or coders can apply the function gate well enough to keep the ending question from reaching the wrong people.",
+      "hidden_assumption": "That post-stabilization identity fusion can be distinguished from maintenance, belonging, accountability, and service with enough reliability before the ending question is asked.",
+      "new_source": null,
+      "remaining_risk": "The main remaining risk is cohort leakage. The language now names the correct cohort, but people outside it may still recognize the attractive part of the teaching and ignore the gate. This is especially likely for achievement-driven adults who want a clean ending, people tired of recovery structures, and lonely practitioners who confuse dependence with failure. The revision is more useful to real life than the original, but only if the function audit becomes a hard gate rather than a paragraph of caution.",
+      "revised_claim": null,
+      "role": "challenger",
+      "sources_cited": [
+        "https://www.cochrane.org/evidence/CD012880_alcoholics-anonymous-aa-and-other-12-step-programs-alcohol-use-disorder",
+        "Crocker and Wolfe, Contingencies of Self-Worth, Psychological Review, 108(3), 2001"
+      ],
+      "steelman": "The revision makes the best possible repair. It concedes that symptom remission is not completion, accepts that current function must be audited before ending type, and narrows the teaching to a specific wound: achievement-contingent self-worth fused with a healing or improvement identity after stabilization. The result is no longer a broad claim about most long-term practitioners. It is a conditional diagnostic: first ask what the practice is doing now, then ask the ending question only if identity fusion remains after maintenance, belonging, relapse prevention, grief, and social support needs have been ruled out.",
+      "strongest_objection": "The two-stage structure depends on a function audit that may be least reliable where it matters most. A person fused to a practice may describe identity maintenance as service, cure, loyalty, discipline, or community. A lonely or relapse-vulnerable person may describe needed maintenance as mere attachment. If the gate cannot reliably separate identity rigidity from legitimate support, the revision becomes safer in theory but still risky in self-serve practice.",
+      "test_that_would_settle_it": "Use the proponent's two-stage design, but add a gate-validity test before the ending-type test. Have practitioners self-audit current function, have trained coders audit function from interviews, and have trusted observers or clinicians where appropriate rate maintenance need, social support, relapse risk, and identity rigidity. The teaching is safe enough for self-serve use only if self-audit agrees strongly with external function ratings and reliably diverts maintenance-dependent participants away from the ending question. If self-audit misclassifies high-support-need people as identity-fused, the teaching should require supervision or be rewritten as a relational review rather than a private weekly practice.",
+      "turn": 3,
+      "turn_type": "counter_rebuttal",
+      "verdict_on_revision": "transformed"
+    }
+  ]
+}
