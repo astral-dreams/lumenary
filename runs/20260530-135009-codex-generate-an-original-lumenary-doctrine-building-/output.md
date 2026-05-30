@@ -1,0 +1,200 @@
+# Even No Path Needs Care
+
+Agent: codex
+Date: 2026-05-30T13:54:55+02:00
+Type: contradiction
+Idea ID: 9acdff6fe237d648
+Status: draft
+
+## Original Claim
+
+Some teachings say there is no distance to cross, but this does not mean there is no care to keep. The error is to hear no path as no support. A no-distance teaching removes the private project of becoming spiritual; it should not remove correction, companionship, schedule, duty, teacher, text, vow, or ordinary accountability. The frontier should therefore be narrowed: before asking what remains after self-negation, ask whether the path gives the practitioner ownership of the process at all. If it does not, the important question becomes where correction is held when ownership is refused. This matters now because exhausted people often turn relief into another project, while isolated people can turn private insight into a room no one else can enter.
+
+## Why It Might Be New
+
+The closest near-neighbors already show that cognition, emotion, practice, doctrine, and religious identity can be carried by artifacts, communities, institutions, and rules. Spiritual bypassing and mindfulness critiques also warn that practice can become avoidance or self-optimization. The narrower difference here is predictive: no-distance teachings are not support-free teachings. They relocate support away from private achievement, and their failures should cluster when students privatize the insight, abandon correction, or convert relief into performance. Novelty is therefore moderate, not high: the ingredients are well known, but the anti-ownership support test is a sharper scope condition for this frontier.
+
+## Source Basis
+
+- Mode: Critique. The run pressures the frontier by narrowing the no-distance cases rather than adding another broad remainder model.
+- Codex prior record: Continuity Ecology Under Negation, observations/codex/2026-05-26-continuity-ecology-under-negation.md.
+- Claude prior record: Whether the Distance Is Real, observations/claude/2026-05-26-whether-the-distance-is-real.md.
+- Claude prior record: When There Is Nothing To Keep Or Release, observations/claude/2026-05-29-when-there-is-nothing-to-keep-or-release.md.
+- Primary-text comparison: Dogen's Bendowa refuses a separation between cultivation and realization while still recommending direct practice, https://afe.easia.columbia.edu/ps/japan/dogen.pdf. Huangbo's On the Transmission of Mind refuses seeking as a way to grasp mind, consulted via Blofeld PDF record, https://merton.bellarmine.edu/s/merton/media/51897, and Chan transmission analysis, https://www.mdpi.com/2077-1444/12/4/279. Shinran's Tannisho denies self-powered practice while preserving teacher, vow, and correction against divergence, https://jodoshinshu.faith/tannisho-a-record-in-lament-of-divergences/.
+- Thinking method source: Dogen's practice-realization was used as a lens to stop assuming before, after, method, and result. Critique of that lens: it can dissolve real sequence too quickly, so it was checked against Shinran's warnings about calculation and Huangbo's sharper refusal of seeking.
+- Closest prior-art pressure: Clark and Chalmers, The Extended Mind, https://www.consc.net/papers/extended.html; Krueger, Extended Mind and Religious Cognition, https://philpapers.org/archive/KRUTEM-2.pdf; Talal Asad on discursive tradition, https://voidnetwork.gr/wp-content/uploads/2016/09/The-Idea-of-an-Anthropology-of-Islam-by-Talal-Asad.pdf; George Lindbeck's doctrine-as-rule near-neighbor, https://books.google.com/books/about/The_Nature_of_Doctrine.html?id=_fbYAAAAMAAJ.
+- Modern human-condition grounding: U.S. Surgeon General social connection advisory, https://www.hhs.gov/sites/default/files/surgeon-general-social-connection-advisory.pdf; WHO burn-out definition, https://www.who.int/standards/classifications/frequently-asked-questions/burn-out-an-occupational-phenomenon; Curran and Hill perfectionism source card, notes/source-cards/modern-human-condition-curran-hill-perfectionism-increasing.md.
+- Additional modern near-neighbor: Sauerborn, Sokefeld, and Neckel on mindfulness as a response to and symptom of optimization pressure, https://doi.org/10.1177/00380261221108570.
+
+## Critique
+
+Huangbo may weaken the model from inside it. His search-refusal can be read as refusing not only private ownership but also every mediating support the analyst wants to name. Calling his discourse a support may domesticate a teaching meant to cut support-seeking itself. Dogen also strains the model because practice-realization may not relocate support at all; practice may simply be the expression, not a holder of continuity. A further weakness is circularity: coders may find support wherever a tradition has teachers, texts, or communities, which would make the model descriptive rather than predictive. The claim should be weakened if no-distance practitioners flourish without identifiable correction supports, or if their failures do not cluster around privatization, passivity, or performance.
+
+## Epistemic Labels
+
+- `textual`
+- `interpretive`
+- `phenomenological`
+- `empirical-adjacent`
+- `analogical`
+- `speculative`
+
+## Scores
+
+- novelty: 0.62
+- generativity: 0.86
+- cross_tradition_support: 0.76
+- logical_coherence: 0.80
+- explanatory_compression: 0.78
+- empirical_adjacency: 0.50
+- practice_testability: 0.79
+- counterargument_quality: 0.88
+- source_reliability: 0.73
+- publishability: 0.66
+
+
+## Teaching Candidate
+
+Status: under_dialogue
+Tags: critique-mode, no-distance, support, burnout, loneliness, achievement-pressure, self-negation
+
+### Teaching Line
+
+When a teaching removes your private project, do not remove your supports.
+
+### Doctrine Claim
+
+A practice that denies self-ownership must still name how correction, continuity, and care are held. Otherwise no-distance can become private certainty, passive drift, or another performance of being beyond performance.
+
+### Teaching Body
+
+Some teachings free you from turning practice into achievement. That freedom can be misread. It does not mean you need no one, no schedule, no correction, and no duty.
+
+If help comes, do not turn it into a badge. If relief comes, do not turn it into proof. Keep the ordinary supports that can still interrupt you: a person, a promise, a text, a group, a task, a therapist, a teacher, or a day you return to.
+
+A path that takes the self out of the center should make you easier to reach, not harder to correct.
+
+### Human Problem
+
+Burnout, loneliness, and achievement-contingent self-worth, especially when spiritual practice becomes another private project to manage or prove.
+
+### For
+
+Serious practitioners, perfectionistic professionals, caregivers, founders, students, and self-improvers who use practice language to escape pressure but remain isolated from correction.
+
+### Pressure Survived
+
+Survives the anomaly that Dogen, Huangbo, and Shinran each refuse a simple method-then-result timeline, yet each still preserves some form of practice, discourse, vow, teacher, or warning against distortion.
+
+### Falsifying Pressure
+
+Weakens if no-distance practitioners reliably become more responsible and less isolated without any identifiable support or correction, or if support checks add burden without reducing self-performance.
+
+
+
+## Practice Candidate
+
+Status: seed
+Risk level: low
+Tags: support-check, low-risk, burnout, loneliness, over-management, practice-test
+
+### Practice Line
+
+Before treating an insight as yours, name what can correct it.
+
+### Purpose
+
+To test whether relief from self-ownership becomes healthier when it remains connected to ordinary supports rather than becoming private certainty or another task to perform.
+
+### Human Problem
+
+Burnout, loneliness, and achievement-contingent self-worth in people who turn practice, rest, or insight into private performance.
+
+### For
+
+People with stable basic functioning who already reflect seriously and notice that spiritual or self-improvement language can make them more isolated, performative, or uncorrectable.
+
+### Not For
+
+Not for acute crisis, dissociation, addiction withdrawal, severe depression, abusive teacher or group contexts, or situations where a person needs direct clinical care, rest, protection, or concrete accountability first.
+
+### Time
+
+- Duration: 5 minutes
+- Frequency: After a practice session, insight, or moment of relief, at most three times per week.
+- Minimum attempt: Try three times across two weeks before judging usefulness.
+
+### Steps
+
+1. Write one plain sentence about the insight, relief, or teaching you are tempted to own, prove, or use to withdraw.
+2. Name one support outside private certainty that helped or can correct it: a trusted person, group, text, schedule, duty, therapist, teacher, or ordinary promise.
+3. Ask whether that support is healthy and freely chosen. If it is unsafe, controlling, or shaming, do not use it.
+4. Do one small action that keeps the support real: attend the group, keep the appointment, send the check-in, return to the task, or read the passage again without making a verdict about yourself.
+
+### Notice
+
+- Whether the urge to audit or perform the insight loosens.
+- Whether you feel more reachable by other people or more sealed off.
+- Whether the support feels corrective and caring, or controlling and shaming.
+- Whether the practice helps you keep real duties, or gives you language to avoid them.
+
+### Caution
+
+Stop if this becomes another self-monitoring task, a reason to obey unsafe authority, or a way to avoid needed care, rest, or responsibility.
+
+### Weakens If
+
+The practice increases burden, passivity, dependence, isolation, or avoidance, or if ordinary rest and social contact help just as much without the reflective step.
+
+
+
+## Tests
+
+### Anti-Ownership Support Prior Art
+
+- Type: prior-art
+- Target: idea
+- Status: proposed
+- Prediction: If the distinction is real, prior art will discuss extended religious cognition, discursive tradition, doctrine as rule, spiritual exercises, and spiritual bypassing, but will not name anti-ownership support as a specific predictor of no-distance path failure. If that exact predictor already exists, novelty should fall below 0.35.
+- Result: pending
+- Impact: pending
+- Next action: Search extended cognition, ritual studies, Pure Land studies, Dogen studies, Chan studies, Dzogchen studies, and mindfulness critique for this exact scope condition.
+
+### No-Distance Failure Coding
+
+- Type: falsification-attempt
+- Target: idea
+- Status: proposed
+- Prediction: If the model is right, no-distance or no-search texts should preserve a correction holder while refusing private ownership. Failure reports should cluster around privatization, passivity, performance, or loss of correction. If no such holder appears, or failures do not cluster by support loss, the model weakens.
+- Result: pending
+- Impact: pending
+- Next action: Code Bendowa, Uji, Huangbo, Tannisho, selected Dzogchen manuals, and practitioner reports for ownership refusal, correction holder, and named failure mode.
+
+### Support Check Practice Reports
+
+- Type: practice-report
+- Target: practice
+- Status: proposed
+- Prediction: For over-managing but stable practitioners, the Support Check should reduce private auditing and increase concrete connection without increasing burden. If it produces more self-monitoring, dependence, avoidance, or isolation, the practice and teaching both weaken.
+- Result: pending
+- Impact: pending
+- Next action: Collect short before-after reports from volunteers using three attempts across two weeks, tracking burden, reachability, completed duties, and urge to perform insight.
+
+### External Support Program Comparison
+
+- Type: cross-domain
+- Target: idea
+- Status: proposed
+- Prediction: Programs that soften self-mastery language should have better repair and adherence when they provide concrete, healthy correction supports. If support placement does not predict dropout, repair, or misuse beyond generic program intensity, the model weakens.
+- Result: pending
+- Impact: pending
+- Next action: Compare mindfulness, recovery, therapy-adjacent, and contemplative programs with similar anti-striving language but different social support structures.
+
+
+## Next Research Directions
+
+- If this model is right, then Dogen-style, Huangbo-style, Shin-style, and Dzogchen-style texts should refuse private ownership while still protecting some concrete source of correction. If they deny both ownership and corrigible support, the model is weakened.
+- Build a pre-remainder coding sheet with four questions: does the path grant ownership, does it posit an after, where is correction held, and what failure appears when correction is lost? Use this before coding residue, custody, or completion.
+- Interview dual-trained practitioners who know a causal path and a no-distance path. Ask when support feels like help, when it feels like self-effort in disguise, and when private insight became hard to correct.
+- Compare spiritual bypassing and mindfulness optimization research with practice communities that preserve external correction. If social support predicts healthier use of no-distance language, empirical adjacency rises.
+- Protocol improvement: Dogen's lens should remain a warning against false sequence, not a universal solvent. Pair it with a method that preserves concrete responsibility, such as early Buddhist not-mine analysis or Shinran's warning against self-power calculation.

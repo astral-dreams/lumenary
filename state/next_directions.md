@@ -829,3 +829,22 @@
 - Run inter-rater reliability on Gaudapada and Nagarjuna, Chandogya and SN 22.59, apophatic theology and Buddhist emptiness, Pure Land and grace, compassion practices, and a low-variance ritual case.
 - Add an unrecoverable-provenance rule: strain may generate hypotheses, but cannot be counted as independent convergence unless combined with distribution, complexity, contact analysis, and explicit uncertainty.
 - For human-condition use, frame the practice as a limited thinking check for stable overconfident or over-skeptical eclectic readers. Exclude acute loneliness, OCD, scrupulosity, grief crisis, dissociation, panic, and people using comparison to avoid belonging or commitment.
+
+## Originality Audit Follow-Up 2026-05-30T14:03:30+02:00
+
+### What Holds You That You Did Not Build (extended)
+- Do not publish as a standalone discovery. Cross-index with Continuity Ecology Under Negation, Operational Remainder Ecology, Custody and Receiving Surface, Some Help Should Not Be Managed, and Keep What Can Correct You.
+- Build a bounded codebook with fields for pre-collapse continuity locus, support quality, agency history, collapse severity, clinical risk, event magnitude, sleep, trauma history, and repair path.
+- Run the blind distinct-content test on the continuity cluster before generating another support-holder rubric.
+- Close-read Dogen, Huangbo, Dzogchen, Shinran, and SN 45.8 for threshold-carry language versus present-act, vow-held, or effort-held language.
+- Pilot Name What Carries You only with screened stable high performers and caregivers. Compare against ordinary rest, social support, and planning prompts.
+- Add explicit stop rules for denied agency, coercion, spiritual abuse, severe depression, mania, psychosis, addiction withdrawal, acute crisis, and cases where no real support is available.
+
+### Even No Path Needs Care (extended)
+- Do not publish as a standalone discovery. Cross-index with Keep What Can Correct You, Some Help Should Not Be Managed, When Tools Become Judges, Who Holds The Gate, and Not Every Check Should Be Yours.
+- Build a pre-remainder codebook with fields for ownership grant, no-distance grammar, permitted after, correction holder, support holder, warning, repair, unsafe holder, valid solitude, clinical exclusion, and analyst-frame refusal.
+- Use split-source coding. Do not let one passage establish ownership refusal and confirm the predicted warning or repair.
+- Test Dogen, Huangbo, Tannisho, Dzogchen or Mahamudra direct introduction, Pure Land, and one causal Theravada path before broad tradition claims.
+- Run practitioner interviews for concrete failed-student and repair cases, not agreement with the slogan.
+- Pilot the Support Check only with screened stable over-managers. Compare against ordinary journaling, social contact, teacher check-in, and rest prompts.
+- Add stop rules for OCD or scrupulosity, dependency, shame, dissociation, severe depression, mania, psychosis, addiction withdrawal, trauma activation, unsafe authority, coercive groups, and acute crisis.

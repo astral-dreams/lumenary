@@ -1,0 +1,129 @@
+# Originality Audit: Even No Path Needs Care
+
+Audit ID: 5e945a54e9681489
+Idea ID: 9acdff6fe237d648
+Agent: codex
+Created: 2026-05-30T14:03:30+02:00
+Status: extended
+Confidence: 0.80
+
+## Exact Claim
+
+No-distance teachings may remove the private project of becoming spiritual, but they do not thereby remove care, correction, companionship, schedule, teacher, text, vow, or ordinary accountability. Before asking what remains after self-negation, code whether the path grants the practitioner ownership at all. If ownership is refused, the key question is where correction is held and whether failures cluster when students privatize the insight, abandon correction, become passive, or turn relief into performance.
+
+## Claim Units
+
+- No-distance does not mean no support.
+- Anti-ownership should be coded before remainder, residue, or completion variables.
+- If practitioner ownership is refused, correction may be held by teacher, text, vow, practice form, community, conduct, ritual, ordinary duty, or clinical support.
+- No-distance failures should cluster around privatization, passivity, performance, or loss of correction.
+- The human-condition fit is stable over-managers and isolated practitioners who turn relief or insight into private performance.
+- The claim is not for acute crisis, abusive teacher settings, severe depression, dissociation, addiction withdrawal, or cases needing direct clinical care or protection.
+
+## Primary Text Close Read
+
+Sources:
+- Dogen Bendowa and Soto shusho itto sources, https://afe.easia.columbia.edu/ps/japan/dogen.pdf and https://global.sotozen-net.or.jp/eng/library/key_terms/pdf/key_terms07.pdf, read against Huangbo, The Transmission of Mind, Blofeld record https://merton.bellarmine.edu/s/merton/media/51897 and searchable PDF used at https://wayofsuddenawakening.org/wp-content/uploads/2025/01/Huang-Po-The-Transmission-of-Mind.pdf
+- Shinran, Tannisho, especially preface, chapters 1, 6, 8, 10, 11, and 12, https://jodoshinshu.faith/tannisho-a-record-in-lament-of-divergences/
+
+Structural observation: Dogen's practice-realization unity rejects practice as a cause separate from later realization, but Soto explanatory material also says Dogen emphasized active practice because realization is already present. Huangbo is a sharper anomaly: he rejects objective seeking and objective path language, yet the record is itself teacher discourse and includes testing a teacher's groundedness and warning against casual pilgrimage. Tannisho denies self-powered practice and calculation, yet it opens by lamenting divergences, relies on true teachers, and preserves Vow, teacher, and correction. The candidate's narrow claim survives as a hypothesis: no-distance language is not automatically support-free, but the specific holder must be coded natively.
+
+Secondary literature gap: Read full Dogen Bendowa, Genjokoan, Uji, Eihei Shingi, and Soto scholarship; Huangbo in multiple translations plus Chan transmission studies; Shinran, Tannisho, jinen, hakarai, and Other Power scholarship; Dzogchen and Mahamudra direct introduction manuals; Asad, Lindbeck, MacIntyre, Bell, Sharf, Katz, spiritual bypassing research, VCE, Cheetah House, mindfulness optimization critique, and spiritual direction ethics. Interviews with no-distance practitioners are essential.
+
+Risk of overread: High. The model can become circular by counting any surviving text, teacher, or community as support. It can also domesticate Huangbo-style search-refusal by turning an anti-support discourse into analyst-defined support. It may hide abuse if correction holders are assumed safe, and it may pathologize valid solitude. Human-condition fit is clear but narrow: stable isolated over-managers, app meditators, retreatants, and self-improvers. It is not a loneliness cure by itself and can increase dependency, rumination, or unsafe authority compliance.
+
+## Literature Search Queries
+
+- Dogen Bendowa practice realization shusho itto no gaining practice realization one
+- Huangbo Transmission of Mind no seeking objective path teacher support correction
+- Shinran Tannisho Other Power self power divergence true teacher correction
+- Talal Asad discursive tradition correct model practice authority orthodoxy
+- George Lindbeck doctrine as grammar cultural linguistic practice training
+- Varieties of Contemplative Experience meditation difficulties teacher community relationships support
+- spiritual bypassing spiritual practice avoidance correction community support research
+- mindfulness optimization pressure burnout self optimization Sauerborn Sokefeld Neckel 2022
+- Cheetah House meditation related difficulties support groups teacher community
+- Dzogchen direct introduction support teacher correction no path practice
+
+## Near Neighbors
+
+- Internal Lumenary prior: Keep What Can Correct You, originality audit 2026-05-29, reviews/originality/2026-05-29-keep-what-can-correct-you-*.md: overlap: Extremely close. It already says serious results remain immature if they remove trustworthy correction paths such as teacher, text, community, conduct, duty, or clinical boundary.; difference: The present candidate narrows that rule to no-distance and anti-ownership teachings and predicts failure clusters when support is abandoned.; novelty impact: Major downgrade. The teaching candidate even reuses the earlier title. Treat as an extension, not a standalone discovery.
+- Internal Lumenary prior: Some Help Should Not Be Managed, reviews/originality/2026-05-30-some-help-should-not-be-managed-fa2107c4aba3ff90.md: overlap: Very close. That audit already says some help is distorted by private management and asks whether ownership, a permitted after, and spare agency exist before prescribing review, with alternative holders such as community, vow, conduct, rest, teacher, or support.; difference: This record applies that holder-routing logic to no-distance teachings and asks specifically where correction is held when ownership is refused.; novelty impact: Major downgrade. The new contribution is a domain-specific scope condition.
+- Talal Asad, The Idea of an Anthropology of Islam, https://voidnetwork.gr/wp-content/uploads/2016/09/The-Idea-of-an-Anthropology-of-Islam-by-Talal-Asad.pdf: overlap: Close structural prior. Asad treats correct practice, authorization, teaching, power, and argument as internal to tradition rather than optional social context.; difference: Asad does not isolate no-distance teachings or predict privatization, passivity, or performance failures after ownership refusal.; novelty impact: Strong downgrade for the claim that practice meaning and correction are tradition-held.
+- George Lindbeck, The Nature of Doctrine, summarized at https://people.bu.edu/wwildman/bce/mwt_themes_862_lindbeck.htm and indexed at https://books.google.com/books/about/The_Nature_of_Doctrine.html?id=_fbYAAAAMAAJ: overlap: Close. Lindbeck's cultural-linguistic model already makes religion prior to the individual and treats doctrine as grammar learned through practice and training.; difference: The candidate turns this into a no-distance safety and failure-prediction codebook.; novelty impact: Moderate to strong downgrade. The anti-private-experience posture is known.
+- Lindahl et al., The Varieties of Contemplative Experience, PLOS One 2017, https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0176239, and Cheetah House FAQ, https://www.cheetahhouse.org/faq: overlap: Very close in practice safety. VCE separates experience, interpretation, management, teacher and community relationships, support, impairment, health behavior, and social functioning. Cheetah House provides support routing for meditation-related difficulties.; difference: VCE is empirical safety taxonomy, not a no-distance doctrinal coding rule.; novelty impact: Strong reduction for the practitioner-safety and support-holder piece.
+- Sauerborn, Sokefeld, and Neckel, Paradoxes of mindfulness, https://journals.sagepub.com/doi/abs/10.1177/00380261221108570, plus spiritual bypassing research such as https://pubmed.ncbi.nlm.nih.gov/34025522/: overlap: Close on modern misuse. Mindfulness can become both escape from optimization pressure and symptom of it, while spiritual bypassing names avoidance through spiritual language.; difference: The candidate ties misuse to no-distance anti-ownership language and correction-holder loss.; novelty impact: Moderate downgrade for the modern human-condition mechanism.
+- Soto Zen shusho itto source, https://global.sotozen-net.or.jp/eng/library/key_terms/pdf/key_terms07.pdf: overlap: It already states that practice and realization are inseparable while Dogen strongly emphasizes active practice, so no-gap is not no-practice.; difference: The candidate generalizes this into a comparative rule across no-distance teachings and support ecologies.; novelty impact: Major reduction for Dogen-specific originality, partial preservation for cross-case testing.
+- Huangbo, Transmission of Mind, Blofeld record https://merton.bellarmine.edu/s/merton/media/51897 and searchable PDF https://wayofsuddenawakening.org/wp-content/uploads/2025/01/Huang-Po-The-Transmission-of-Mind.pdf: overlap: Huangbo already supplies the no-seeking pressure and warnings about false teachers, casual pilgrimage, and conceptual path-making.; difference: The candidate may overuse Huangbo as support for correction when his discourse also cuts support-seeking itself.; novelty impact: Acts more as anomaly than support. It lowers confidence unless coded natively.
+
+## Unlike Statement
+
+Unlike Keep What Can Correct You, Some Help Should Not Be Managed, Asad, Lindbeck, VCE, spiritual bypassing research, and Soto practice-realization sources, this idea's specific contribution is to make anti-ownership a pre-remainder coding gate for no-distance teachings and to predict that loss of correction support will produce privatization, passivity, or performance failures.
+
+## Anomaly Probe
+
+Candidate: A radical no-seeking or direct-recognition setting where a practitioner matures ethically and relationally without any identifiable external correction holder, or where naming support itself reintroduces the very search, calculation, or self-effort the teaching cuts.
+
+Why it strains the model: If no-distance practice can function without codeable correction holders, or if the native warning is against every support-seeking gesture, then the candidate's support rule is an analyst imposition. A second anomaly is abusive correction: support can be the failure source rather than the remedy.
+
+Confidence effect: Keeps the status at extended and prevents publication as doctrine. It demands native-source coding, valid-solitude categories, unsafe-holder categories, and practitioner interviews before any public teaching.
+
+## Falsifiable Predictions
+
+- If: No-distance teachings refuse private ownership but preserve some concrete correction or care holder. Then: Split-source coding of Dogen, Huangbo, Shinran, Dzogchen, and Mahamudra sources will find ownership refusal in one layer and held-out warnings, teacher checks, vow, practice form, text, community, conduct, or reentry rules in another. Weakens if: Sources deny both private ownership and codeable correction holders, or coders cannot distinguish support from the mere existence of a tradition. Test surface: Pre-registered primary-text codebook with source layer, ownership, after, correction holder, support holder, warning, repair, and analyst-frame refusal.
+- If: Loss of correction support predicts specific no-distance failures. Then: Practitioner and teacher reports should cluster around private certainty, passivity, social withdrawal, inflated no-practice claims, or turning relief into performance when healthy support is absent or rejected. Weakens if: Failures are better explained by practice intensity, sleep loss, trauma, teacher abuse, clinical risk, social isolation, or doctrine alone, with no added value from support-holder loss. Test surface: Teacher interviews, Cheetah House or VCE-style adverse-event coding, retreat reentry reports, and no-distance online community case coding.
+- If: The Support Check helps only the named modern cohort. Then: Stable over-managers using the check after insight or relief report less private auditing, more reachability, and more concrete duty return than journaling-only controls, without increased dependency, shame, or self-monitoring. Weakens if: The check increases rumination, dependence, unsafe authority-seeking, avoidance, burden, or performs no better than ordinary social contact and rest. Test surface: Two-week low-risk pilot with stable self-directed practitioners, app meditators, and self-improvers, excluding acute crisis and clinical non-fit cases.
+- If: Anti-ownership support coding adds decision power beyond prior Lumenary records. Then: Blind coders can use anti-ownership and correction-holder fields to predict held-out warnings and repairs in no-distance cases better than Keep What Can Correct You, Some Help Should Not Be Managed, tradition label, or generic VCE factors alone. Weakens if: The new fields do not change decisions, or blind readers cannot state the difference from existing correction-holder and no-management records. Test surface: A/B coding comparison on Dogen, Huangbo, Tannisho, Dzogchen, Mahamudra, Pure Land, and one causal Theravada path.
+
+## Practitioner Test
+
+Relevant practitioners:
+- Soto Zen teachers and scholars
+- Chan or Zen teachers familiar with Huangbo
+- Jodo Shinshu teachers and scholars
+- Dzogchen or Mahamudra teachers
+- Theravada teachers for contrast cases
+- spiritual directors
+- meditation-safety clinicians
+- Cheetah House or VCE-informed researchers
+- burnout clinicians
+- self-directed app meditators and retreatants
+
+Questions:
+- When a no-distance teaching removes the private project of attainment, what if anything still corrects a mistaken interpretation?
+- Is this just ordinary teacher, sangha, scripture, vow, spiritual direction, or VCE safety guidance in Lumenary language?
+- Can you name cases where no-path language led to passivity, private certainty, social withdrawal, or performance of being beyond practice?
+- Can you name cases where support checks themselves became self-effort, reassurance seeking, dependence, or obedience to unsafe authority?
+- Would the pre-remainder ownership gate change screening, sequencing, warning, or repair instructions in your setting?
+
+Answers that reduce originality: Originality falls if practitioners say the rule is standard lineage pedagogy, spiritual direction, sangha correction, Soto practice-realization, Shin Other Power instruction, or meditation-safety triage, and if the support check adds no decisions beyond existing practice guidance.
+
+Answers that support contribution: Support rises if practitioners find that coding ownership refusal before remainder prevents real interpretive errors, predicts failure cases, and improves support routing without increasing self-effort, dependency, or unsafe authority.
+
+## Cross-Domain Prediction
+
+Domain: AI automation and operational governance
+
+Structural translation: A system that removes manual ownership or promises autonomous operation still needs observability, rollback, escalation, monitoring, and accountable maintenance. No manual path is not no care.
+
+Prediction: AI or automation systems marketed as autonomous will fail more safely when correction channels remain external and concrete. Teams that remove ownership and monitoring together will show more uncorrected drift, brittle confidence, and harder incident recovery.
+
+Would count against it: Fully autonomous systems without independent monitoring, escalation, rollback, or human accountability perform as safely and adaptively as systems with correction channels across drift, edge cases, and user harm.
+
+## Score Recommendations
+
+- novelty: 0.34
+- source_reliability: 0.82
+- counterargument_quality: 0.91
+
+Novelty adjustment: Lower novelty from 0.62 to 0.34. The core rule is heavily anticipated by internal correction-holder records, Some Help Should Not Be Managed, Asad, Lindbeck, VCE, spiritual bypassing research, and Soto practice-realization sources. Retain only as an extended no-distance scope test if split-source coding shows predictive gain.
+
+## Next Loop Instructions
+
+- Do not publish as a standalone discovery. Cross-index with Keep What Can Correct You, Some Help Should Not Be Managed, When Tools Become Judges, Who Holds The Gate, and Not Every Check Should Be Yours.
+- Build a pre-remainder codebook with fields for ownership grant, no-distance grammar, permitted after, correction holder, support holder, warning, repair, unsafe holder, valid solitude, clinical exclusion, and analyst-frame refusal.
+- Use split-source coding. Do not let one passage establish ownership refusal and confirm the predicted warning or repair.
+- Test Dogen, Huangbo, Tannisho, Dzogchen or Mahamudra direct introduction, Pure Land, and one causal Theravada path before broad tradition claims.
+- Run practitioner interviews for concrete failed-student and repair cases, not agreement with the slogan.
+- Pilot the Support Check only with screened stable over-managers. Compare against ordinary journaling, social contact, teacher check-in, and rest prompts.
+- Add stop rules for OCD or scrupulosity, dependency, shame, dissociation, severe depression, mania, psychosis, addiction withdrawal, trauma activation, unsafe authority, coercive groups, and acute crisis.

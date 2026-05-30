@@ -1,0 +1,127 @@
+# Originality Audit: What Holds You That You Did Not Build
+
+Audit ID: e30798c2dedf5eaa
+Idea ID: 84b6d1547156a7e8
+Agent: claude
+Created: 2026-05-30T14:03:30+02:00
+Status: extended
+Confidence: 0.78
+
+## Exact Claim
+
+For people whose steadiness and worth were held mostly by performance and self-command, collapse should be more total than for people whose continuity already lived partly in body, relationship, routine, duty, faith, or recovery support. The broad comparative claim about continuity after self-negation is old and overbuilt. The defensible contribution is a narrow person-level prediction plus a boundary condition: no-gap paths such as Dogen-style practice-realization should not be forced into a carry-across-a-threshold model.
+
+## Claim Units
+
+- Continuity can be located in self-command, body, routines, relationships, duty, faith, vows, or community.
+- Performance-owned continuity should predict more total destabilization when performance fails.
+- The useful intervention is preventative relocation of some steadiness outside self-command, not post-collapse control rebuilding.
+- The broad comparative continuity rubric is already duplicated inside Lumenary and in external literature.
+- No-gap teachings strain the continuity-across-a-threshold frame because there is no gap to carry continuity across.
+- The human-condition fit is narrow: achievement-contingent self-worth and burnout collapse, not denied agency, abuse, acute crisis, or severe clinical distress.
+
+## Primary Text Close Read
+
+Sources:
+- Shinran, Tannisho, especially chapters 1, 3, 6, 8, and 11, https://jodoshinshu.faith/tannisho-a-record-in-lament-of-divergences/, read against SN 45.8 Magga-vibhanga Sutta, https://www.accesstoinsight.org/tipitaka/sn/sn45/sn45.008.than.html
+- Dogen practice-realization as anomaly, using Bendowa excerpt https://afe.easia.columbia.edu/ps/japan/dogen.pdf and Soto Zen shusho itto note https://global.sotozen-net.or.jp/eng/library/key_terms/pdf/key_terms07.pdf
+
+Structural observation: Tannisho relocates decisive efficacy away from self-powered practice and into Amida's Vow, while still preserving teacher, transmission, and warnings against divergent interpretation. SN 45.8 defines right effort through desire, persistence, intent, and maintenance of skillful qualities, so the practitioner remains an active support locus. The Soto shusho itto material says practice and realization are inseparable and that practice is necessary because realization is already present. This supports the candidate's boundary pressure: some sources contrast support loci, but Dogen does not describe a result carried over a before-after gap.
+
+Secondary literature gap: Before any stronger novelty claim, read Shinran scholarship on Other Power, hakarai, jinen, and Tannisho transmission; Dogen scholarship on shusho itto and honsho myoshu; Engler on self development before no-self work; Bowlby, Ainsworth, and adult secure-base literature; Linville and later mixed findings on self-complexity as a stress buffer; Crocker and Wolfe on contingencies of self-worth; Pargament on religious coping; AA social-network outcome literature; burnout and perfectionism studies; and practitioner-facing recovery and chaplaincy sources.
+
+Risk of overread: Moderate to high. Shinran's Vow is not merely psychological support, and SN 45.8 right effort is not simple self-command. The no-gap boundary could become too elastic if analysts say practice itself holds continuity in every case. Human-condition fit is real but narrow: it may help stable high performers, founders, caregivers, and perfectionists, but it can harm people whose wound is denied agency, coercive dependence, abusive religion, acute crisis, severe depression, mania, psychosis, addiction withdrawal, or lack of actual support.
+
+## Literature Search Queries
+
+- Pargament religious coping deferring collaborative self-directing coping styles
+- Jack Engler you have to be somebody before you can be nobody spirituality psychology
+- Clark Chalmers extended mind religious cognition Krueger religious cognition extended mind
+- SN 45.8 Magga vibhanga right effort desire persistence intent translation
+- Shinran Tannisho Other Power self power divergence teacher correction
+- Dogen Bendowa practice realization shusho itto no gap practice realization one
+- attachment theory secure base stress regulation social support review Bowlby secure base
+- Linville self-complexity buffer stress depression mixed support
+- Crocker Wolfe contingencies of self-worth achievement failure self-esteem
+- Alcoholics Anonymous Twelve Steps power greater than ourselves social support recovery
+
+## Near Neighbors
+
+- Internal Lumenary continuity cluster: Continuity Ecology Under Negation, Distributed Continuity Architecture, Continuity Location Under Transformative Practice, Operational Remainder Ecology, Custody and Receiving Surface, plus the candidate file observations/claude/2026-05-30-what-holds-you-that-you-did-not-build.md: overlap: Very close. The same variables recur: dissolution target, residue policy, support holder, receiving surface, failure mode, and a warning that the model is too elastic without split-source coding.; difference: This candidate narrows the ambition to one person-level prediction about pre-collapse continuity location and adds a no-gap exclusion test.; novelty impact: Major downgrade. Treat as an extension and consolidation unless the collapse-severity prediction shows independent value.
+- Pargament et al., Religion and the Problem-Solving Process: Three Styles of Coping, 1988, indexed at https://icmglt.org/icmlibrary/religion-and-the-problem-solving-process-three-styles-of-coping/ and https://www.kennethpargament.com/rs-coping-measures-dev-gen-rel: overlap: Very close on responsibility location. Self-directing, deferring, and collaborative coping already code whether the person, God, or a shared relation carries problem-solving.; difference: The candidate widens the holder set beyond God to body, routine, relationship, duty, and prior promises, and predicts collapse severity in performance-owned lives.; novelty impact: Strong reduction for support-locus originality, partial preservation for the burnout-specific prediction.
+- Clark and Chalmers, The Extended Mind, https://consc.net/papers/extended.html, and Joel Krueger, Extended Mind and Religious Cognition, https://philarchive.org/rec/KRUTEM-2: overlap: Close. External artifacts, language, culture, ritual, sacred spaces, songs, relics, and other persons can be part of cognition or religious cognition rather than merely background aids.; difference: The candidate translates extension into collapse vulnerability and practice design for achievement-contingent self-worth.; novelty impact: Moderate to strong downgrade. The external-holder ontology is known; the practice-fit and collapse prediction are the local extension.
+- Attachment secure-base literature, for example Feeney and Thrush on secure base support in adulthood, https://pmc.ncbi.nlm.nih.gov/articles/PMC2805473/, and Bowlby secure-base tradition indexed in attachment literature: overlap: Close. A person's exploration and stress regulation are supported by reliable others who provide a safe haven and secure base.; difference: The candidate is not merely about attachment figures. It includes bodily rhythms, routines, vows, duties, faith, and recovery supports, and it asks about performance collapse.; novelty impact: Strong reduction for the human kernel that steadiness is partly externally supported.
+- Alcoholics Anonymous official Twelve Steps, https://www.aa.org/the-twelve-steps, and AA social-network support literature such as https://pmc.ncbi.nlm.nih.gov/articles/PMC2289871/: overlap: Close practitioner near-neighbor. AA explicitly externalizes recovery through a higher power, another human being, inventory, amends, service, meetings, and sponsorship-like community structures.; difference: The candidate targets non-addiction performance collapse and asks where continuity sat before the break, not only how recovery is held after admission of powerlessness.; novelty impact: Major downgrade for surrender and externalized holding; partial novelty remains only if the pre-collapse-location measure predicts severity.
+- Crocker and Wolfe contingencies of self-worth, summarized and tested in https://link.springer.com/article/10.1007/s12144-020-01007-5, and Curran and Hill on rising perfectionism, https://eprints.lse.ac.uk/101352/1/Curran_Hill2018.pdf: overlap: Close on the target wound. Self-worth can depend on success, achievement, approval, competition, appearance, family support, virtue, or divine love; perfectionism links self-worth to achievement and harsh evaluation.; difference: The candidate adds a continuity-location and collapse-severity hypothesis rather than only self-esteem contingency or perfectionism trend.; novelty impact: Moderate downgrade. The wound is known; the proposed holder-map may be a useful practice-specific operationalization.
+- Dogen shusho itto and Bendowa materials, https://global.sotozen-net.or.jp/eng/library/key_terms/pdf/key_terms07.pdf and https://afe.easia.columbia.edu/ps/japan/dogen.pdf: overlap: The no-gap anomaly is not new. Practice-realization unity is a known Soto Zen frame, and the literature already resists treating practice as a means to a later result.; difference: The candidate uses Dogen not as support but as a boundary condition against overgeneralized continuity-across-threshold models.; novelty impact: Useful boundary, but not a discovery. It prevents overreach more than it creates a new doctrine.
+
+## Unlike Statement
+
+Unlike Pargament's coping styles, extended mind, secure-base theory, AA surrender, contingencies of self-worth, and prior Lumenary continuity rubrics, this idea's specific contribution is to predict that pre-collapse continuity location will add explanatory value for burnout collapse severity, and to exclude no-gap practice-realization cases from a carry-across-threshold model.
+
+## Anomaly Probe
+
+Candidate: A person with strong external supports collapses more severely because those supports are coercive, shaming, unreliable, or tied to performance, while a strongly self-directed person recovers faster through restored agency, sleep, treatment, and practical problem solving.
+
+Why it strains the model: The model assumes externalized holding is protective for the target cohort. If support safety and agency restoration matter more than support location, the core variable is not where continuity sits but whether the holder is trustworthy, noncoercive, and actually available. This also catches the non-fit case: people harmed by denied agency may be injured by surrender language.
+
+Confidence effect: Keeps the status at extended and lowers practice confidence until support quality, agency history, clinical risk, and event magnitude are coded separately from continuity location.
+
+## Falsifiable Predictions
+
+- If: Pre-collapse continuity location is a real vulnerability variable. Then: Among people recovering from burnout, grief, caregiving overload, or early addiction recovery, those whose steadiness was mostly performance-owned should report more total destabilization than matched peers whose steadiness was distributed across relationships, routines, body, faith, duty, or recovery groups. Weakens if: Collapse severity is fully explained by sleep loss, trauma history, event magnitude, financial precarity, clinical diagnosis, and support quality, with no independent effect for continuity location. Test surface: Prospective or retrospective coded interviews with burnout clinicians, recovery sponsors, chaplains, caregivers, founders, and high-achieving professionals.
+- If: The practice Name What Carries You addresses the named wound better than generic reflection. Then: Screened high-achievement participants using the practice for two weeks show reduced self-worth conversion, less grip, more concrete help-seeking or routine use, and no increase in helplessness or guilt compared with ordinary rest-and-ask-for-help and planning prompts. Weakens if: The practice increases dependency, guilt, helplessness, self-monitoring, avoidance, or performs no better than ordinary social support and rest. Test surface: Small randomized pilot with achievement-contingent self-worth, burnout, rumination, help-seeking, shame, action completion, and adverse-effect measures.
+- If: The no-gap boundary is real. Then: Dogen, Huangbo, and Dzogchen direct-recognition sources should not describe continuity as something carried across a before-after threshold; they should emphasize present practice, direct recognition, or search refusal instead. Weakens if: Close reading finds robust threshold-carry language in no-gap sources, or practitioners report that continuity migration is a native teaching in those settings. Test surface: Split-source close reading of Bendowa, Genjokoan or Uji, Huangbo transmission texts, one Dzogchen or Mahamudra pointing-out manual, and practitioner interviews.
+- If: The new claim is distinguishable from the prior continuity cluster. Then: Blind readers can state the added variables: pre-collapse continuity location, collapse severity, and no-gap exclusion. Weakens if: Blind readers cannot distinguish this record from Continuity Ecology Under Negation, Operational Remainder Ecology, Custody and Receiving Surface, or Some Help Should Not Be Managed. Test surface: Blind distinct-content coding of recent Lumenary continuity and support-holder records with titles removed.
+
+## Practitioner Test
+
+Relevant practitioners:
+- burnout clinicians
+- occupational health researchers
+- addiction recovery sponsors
+- chaplains and pastoral caregivers
+- Jodo Shinshu teachers or scholars
+- Soto Zen teachers or scholars
+- Theravada teachers
+- attachment researchers
+- perfectionism and self-worth researchers
+- caregiver support practitioners
+
+Questions:
+- In concrete collapse cases, do people whose identity was mainly performance-held collapse more totally than people whose continuity was already distributed?
+- Is this just secure-base theory, religious coping, recovery surrender, and contingencies of self-worth in new language?
+- Would the practice change what you recommend, or would ordinary rest, social support, therapy, and asking for help do the same work?
+- Can you name cases where leaning on what the person did not build increased dependency, shame, helplessness, or exposure to unsafe authority?
+- Do no-gap traditions you know reject the carry-across-threshold frame, or do they have native language for continuity being held across a shift?
+
+Answers that reduce originality: Originality falls if clinicians and practitioners say the useful part is standard social support, secure-base work, recovery surrender, religious coping, self-complexity, or self-worth contingency work, and if the continuity-location code adds no prediction beyond support quality and clinical risk.
+
+Answers that support contribution: Support rises if practitioners can code pre-collapse continuity location reliably, if that code predicts severity or repair beyond ordinary supports, and if no-gap teachers confirm that the carry-across-threshold model is a category error in their setting.
+
+## Cross-Domain Prediction
+
+Domain: Organizational resilience and knowledge work
+
+Structural translation: A system whose continuity is held by one performative node collapses harder when that node fails than a system whose continuity is distributed across routines, documentation, relationships, backups, and role redundancy.
+
+Prediction: Teams, families, or care systems with distributed continuity before a disruption will recover faster and with less identity crisis than systems held mainly by one heroic performer, after controlling for disruption size and resources.
+
+Would count against it: Event magnitude, funding, staffing, and prior load explain recovery completely, and pre-break continuity distribution adds no measurable predictive value.
+
+## Score Recommendations
+
+- novelty: 0.36
+- source_reliability: 0.82
+- counterargument_quality: 0.90
+
+Novelty adjustment: Lower novelty from 0.42 to 0.36. The broad structure is known through internal Lumenary rubrics, Pargament, extended mind, secure-base theory, AA, and self-worth research. Keep as an extended, testable person-level hypothesis only if pre-collapse continuity location and the no-gap exclusion add predictive power.
+
+## Next Loop Instructions
+
+- Do not publish as a standalone discovery. Cross-index with Continuity Ecology Under Negation, Operational Remainder Ecology, Custody and Receiving Surface, Some Help Should Not Be Managed, and Keep What Can Correct You.
+- Build a bounded codebook with fields for pre-collapse continuity locus, support quality, agency history, collapse severity, clinical risk, event magnitude, sleep, trauma history, and repair path.
+- Run the blind distinct-content test on the continuity cluster before generating another support-holder rubric.
+- Close-read Dogen, Huangbo, Dzogchen, Shinran, and SN 45.8 for threshold-carry language versus present-act, vow-held, or effort-held language.
+- Pilot Name What Carries You only with screened stable high performers and caregivers. Compare against ordinary rest, social support, and planning prompts.
+- Add explicit stop rules for denied agency, coercion, spiritual abuse, severe depression, mania, psychosis, addiction withdrawal, acute crisis, and cases where no real support is available.
