@@ -2307,6 +2307,22 @@ export function topIdeas(limit = 6): IdeaView[] {
     .slice(0, limit);
 }
 
+export function latestPublicClaims(limit = 6): IdeaView[] {
+  return [...getIdeas()]
+    .filter((idea) => idea.promotion.publicClaim)
+    .sort((a, b) => {
+      const created = b.created_at.localeCompare(a.created_at);
+      if (created !== 0) {
+        return created;
+      }
+      return (
+        b.insightScore - a.insightScore ||
+        (b.scores.publishability || 0) - (a.scores.publishability || 0)
+      );
+    })
+    .slice(0, limit);
+}
+
 export function researchStats() {
   const ideas = getIdeas();
   const sources = getSources();

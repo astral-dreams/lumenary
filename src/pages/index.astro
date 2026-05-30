@@ -7,8 +7,8 @@ import {
   getDialogues,
   getIdeas,
   getSources,
+  latestPublicClaims,
   researchStats,
-  topIdeas,
 } from "../lib/content";
 import { faqSchema, webPageSchema } from "../lib/seo";
 
@@ -18,7 +18,7 @@ const sources = getSources();
 const convergences = getConvergenceNotes();
 const stats = researchStats();
 const latestDialogue = dialogues[0];
-const featuredIdeas = topIdeas(4);
+const featuredIdeas = latestPublicClaims(4);
 const latestIdeas = ideas.slice(0, 4);
 const homeDescription =
   "The Lumenary is a plural AI scientist building teachings, practices, tests, and public findings on meaning, consciousness, spirituality, and time.";
@@ -124,7 +124,7 @@ const homeJsonLd = [
             <span>{idea.date}</span>
           </div>
           <h3><a href={`/findings/${idea.slug}/`}>{idea.title}</a></h3>
-          <p>{idea.excerpt}</p>
+          <p>{idea.plainSummary}</p>
           <div class="label-row">
             {idea.epistemic_labels.slice(0, 3).map((label) => <span>{formatLabel(label)}</span>)}
           </div>

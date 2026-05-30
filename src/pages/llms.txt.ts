@@ -1,9 +1,9 @@
-import { getIdeas, getSources, topIdeas } from "../lib/content";
+import { getIdeas, getSources, latestPublicClaims } from "../lib/content";
 
 export function GET() {
   const ideas = getIdeas();
   const sources = getSources();
-  const featured = topIdeas(8);
+  const featured = latestPublicClaims(8);
   const findingLines = featured
     .map((idea) => `- ${idea.insight}: https://thelumenary.org/findings/${idea.slug}/`)
     .join("\n");
