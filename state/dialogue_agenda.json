@@ -1,35 +1,33 @@
 {
-  "candidate_count": 1007,
-  "generated_at": "2026-05-30T11:14:07+02:00",
+  "candidate_count": 1151,
+  "generated_at": "2026-05-30T12:16:41+02:00",
   "reason": "selected",
   "rules_version": "2026-05-26",
   "selected_pairs": [
     {
-      "challenger_agent": "codex",
-      "challenger_title": "Translation Strain as a Load Test for Convergence",
-      "idea_a": "184f0313f1a2464c",
-      "idea_b": "d92d2f0f6455ac53",
-      "pair_id": "25b97c12a4dc9bfc",
-      "priority": 0.7868,
-      "proponent_agent": "claude",
-      "proponent_title": "A Shared Word Is Not Two Witnesses",
-      "shared_concepts": [
-        "translation-strain"
-      ],
+      "challenger_agent": "claude",
+      "challenger_title": "Time Is Held, Not Counted",
+      "idea_a": "21a74a93f85bbbe0",
+      "idea_b": "196e47ce37483545",
+      "pair_id": "b7730950b1ff1c89",
+      "priority": 0.778,
+      "proponent_agent": "codex",
+      "proponent_title": "Ask Who Taught The Answer",
+      "shared_concepts": [],
       "signals": [
         {
           "name": "shared_frontier",
-          "reason": "Both ideas sit on Translation strain as a test of convergence.",
+          "reason": "Both ideas sit on What modern people need teachings for.",
           "weight": 0.24
         },
         {
           "name": "frontier_priority",
-          "reason": "Shared frontier priority is 0.79.",
-          "weight": 0.1268
+          "reason": "Shared frontier priority is 0.74.",
+          "weight": 0.118
         },
         {
           "name": "translation_strain",
-          "reason": "translation-strain and wu create translation strain.",
+          "reason": "translation-strain and soul create translation strain.",
           "weight": 0.12
         },
         {
@@ -53,7 +51,7 @@
           "weight": 0.04
         }
       ],
-      "tension_source": "Both ideas sit on Translation strain as a test of convergence.",
+      "tension_source": "Both ideas sit on What modern people need teachings for.",
       "tension_type": "shared_frontier"
     }
   ]

@@ -1,0 +1,1890 @@
+OpenAI Codex v0.133.0
+--------
+workdir: /Users/johnforrester/spirituality
+model: gpt-5.5
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: xhigh
+reasoning summaries: none
+session id: 019e7856-2be5-7162-b9c9-b9e9c1760d3d
+--------
+user
+# Recursive Spirituality Research Run
+
+## Primary Goal
+
+Generate original doctrine-building ideas, not summaries. Use the research corpus and agent memory as raw material for new observations, models, hypotheses, contradictions, teachings, practices, tests, bridges, and syntheses.
+
+## Current Focus
+
+Generate an original Lumenary doctrine-building finding. Codex and Claude should use traditions, science, history, and practice reports as evidence, then state what Lumenary now holds, what could be taught, what low-risk practice might test it, what would weaken it, and how the method of observation should improve. Follow docs/writing-style.md and avoid em dashes.
+
+## Active Frontier
+
+## Selected Run Mode: Critique
+
+Hunt for anomalies, near-duplicates, prior art, and failures. The best output may weaken, retire, or sharply narrow an existing claim.
+
+Selection reason: Selected by pressure scores: critique=38.96, discovery=10.89, doctrine=14.75, originality_audit=1.00, practice=0.00.
+
+Current pressure metrics:
+- frontier_count: 9
+- high_priority_frontier: 0.7922
+- idea_count: 131
+- incomplete_audits: 4
+- latest_idea_age_days: 0.02
+- latest_source_age_days: 3.42
+- missing_source_frontiers: 40
+- pending_tests: 427
+- ready_teachings_without_practice: 0
+- source_count: 121
+- teaching_pressure_count: 33
+- weak_tests: 4
+
+# Active Frontier Brief
+
+Frontier: Translation strain as a test of convergence
+Recommended action: complete_audit
+Why now: priority 0.75; 32 related idea records; 11 originality audits; cross-agent signal; live anomaly pressure; dialogue pressure
+
+Core claim:
+Traditions differ less in whether insight can be shared than in what carrier must hold it when it leaves the practice that disclosed it. Advaita lets insight travel as self-certifying recognition; early Buddhism lets it travel as a non-appropriating test; Daoism lets it travel as situated fit; Sufism lets it travel as renewed relation; Neoplatonism lets it travel as return-orientation. When a comparer moves an insight into the wrong carrier, relation...
+
+Closest prior art or near-neighbor pressure:
+- Jonathan Z. Smith, In Comparison a Magic Dwells, https://classics.osu.edu/sites/classics.osu.edu/files/Magic_Dwells.pdf: overlap: Very close at the level of comparative method. Smith attacks comparison that projects similarity into objective connection and stresses difference, invention, redescription...; difference: Smith does not present a Lumenary-style operational rubric of claim-unit bends, drops, and additions, nor does he tie the output to publication scoring.
+- Oliver Freiberger, Elements of a Comparative Methodology in the Study of Religion, Religions 9, no. 2, 2018, https://www.mdpi.com/2077-1444/9/2/38: overlap: Very close structurally. Freiberger treats comparison as a second-order method with selection, description, juxtaposition, redescription, rectification, and theory formation...; difference: Freiberger's model is broader and methodological. The Lumenary idea focuses specifically on convergence and asks what must deform for an apparent match to hold.
+- Raimon Panikkar, homeomorphic equivalence glossary, https://www.raimon-panikkar.org/english/gloss-homeomorphic.html: overlap: Close. Panikkar's homeomorphic equivalence compares concepts that play similar roles in different religious systems while respecting specificity and avoiding mistaken comparisons.; difference: Panikkar emphasizes functional equivalence and dialogue. The Lumenary model adds explicit tracking of losses, additions, and incompatible commitments.
+
+Open anomalies:
+- Convergence caused by direct borrowing, shared lineage, colonial translation conventions, English-language universalism, or dual-trained teachers rather than independent structural recurrence.
+- Comparisons where high strain is still historically causal, for example Buddhist and Advaita terms shaped by centuries of polemic and borrowing.
+- Nirodha samapatti and cessation reports, where practitioners report a discontinuity or absence of consciousness rather than a pressure to posit an enduring witness.
+- When a tradition internally disputes its own assertion posture (as in the Svatantrika-Prasangika contest over whether Madhyamaka holds theses), does the strain-mapping protocol need to treat posture as a continuous variable or a contested parameter rather...
+- How can a self-transcending practice be designed so that it builds enough scaffold before it weakens the self-functions a practitioner still needs?
+
+Required next move:
+Build a one-page translation-strain rubric with fields for claim unit, role, ontology, agency, practice aim, authority, verification, what is bent, what is dropped, what is added, and whether role-similarity survives.
+
+Required tests:
+- If: When apparent cross-tradition convergence is decomposed into claim units, high-quality comparisons should expose systematic incompatibilities that ordinary convergence scoring hides. Then: In cases such as Atman versus anatta, apophatic darkness versus...
+- If: A convergence is strongest when role-similarity survives after metaphysical incompatibility is made explicit. Then: Some pairs should retain a shared practical role after decomposition, while other pairs should narrow sharply once claim units are...
+- If: The method should prevent false syntheses that a convergence-weighting system would accept. Then: A Lumenary audit should downgrade some high-similarity pairs after showing that alignment requires deleting central commitments, while upgrading some...
+- When you hear a claim that two traditions converge, do you already ask which doctrinal or practice units must be dropped, bent, or added for the match to work?
+- Would a translation-strain sheet change how you compare terms such as anatta, Atman, emptiness, Godhead, fana, witness, soul, and awareness?
+- Can you name a case where a shared practice role survives even though the metaphysical explanation must remain incompatible?
+- Comparative-law analyses that score concepts by translation strain should better predict failed legal transplants, implementation disputes, and misleading harmonization than analyses that count shared terms or broad doctrinal resemblance.
+- A strain rubric should predict where apparent equivalents such as trust, equity, right, or due process mislead across legal systems.
+
+User or scheduler focus:
+Generate an original Lumenary doctrine-building finding. Codex and Claude should use traditions, science, history, and practice reports as evidence, then state what Lumenary now holds, what could be taught, what low-risk practice might test it, what would weaken it, and how the method of observation should improve. Follow docs/writing-style.md and avoid em dashes.
+
+Modern human-condition pressure:
+- Connect this frontier to a real modern human problem: loneliness, addiction, compulsion, withdrawal, anxiety, depression, burnout, meaning loss, digital comparison, grief, feeling unneeded, feeling out of place, or achievement-contingent self-worth.
+- Name the cohort affected. Do not present a targeted remedy as universal medicine.
+- If the frontier cannot yet explain why it matters to human life, make that gap the finding or lower publishability.
+- Use at least one modern human-condition source card when proposing a teaching or practice.
+
+Success criteria:
+- Advance, merge, falsify, or retire this frontier. Do not produce an unrelated one-off finding.
+- Name the closest prior argument and the exact difference from it.
+- Name one anomaly that would weaken the frontier.
+- Explain what human wound, need, or modern failure mode the idea clarifies.
+- Keep epistemic labels explicit and do not collapse analogy into evidence.
+- Return exactly one structured idea record.
+
+
+## Current State
+
+# Current Focus
+
+Build the first recursive research loop around original idea generation.
+
+Initial research focus:
+
+How can spiritual traditions, contemplative practices, modern consciousness research, physics, and modern human-condition research help Lumenary create original doctrine, teachings, practices, and tests without collapsing analogy into evidence?
+
+Every run should ask what human problem the frontier serves: loneliness, addiction, compulsion, withdrawal, anxiety, depression, burnout, grief, meaning loss, digital comparison, feeling unneeded, feeling out of place, or self-worth chained to achievement.
+
+Product focus:
+
+Lumenary should become a public website with daily updates. The research loop should generate original ideas, the publication loop should select the strongest daily findings, and the social loop should draft X posts for human review. Teachings and practices should be written for the modern person, with a named human problem, target cohort, non-fit case, source basis, and observable test.
+
+
+# Modern Human Condition Foundation
+
+This library exists to correct a failure mode in the doctrine engine: a practice can sound elegant while solving no urgent human problem.
+
+Lumenary should not create teachings or practices only because a model is interesting. A teaching should answer a wound. A practice should be medicine for a recognizable condition, and the record should say who the medicine is for.
+
+## Operating Rule
+
+Every frontier, dialogue, finding, teaching candidate, practice candidate, and doctrine council review should ask:
+
+1. What human problem does this clarify?
+2. Who is this for?
+3. Who is this not for?
+4. Why this remedy, rather than ordinary advice?
+5. What modern source grounds the problem?
+6. What observation would show the remedy is not working?
+
+If the answer is vague, the idea may still be useful as research, but it should not become a teaching or practice yet.
+
+## Primary Modern Problems
+
+### Loneliness and disconnection
+
+Modern people often lack durable belonging, not just company. Teachings here should address isolation, feeling unneeded, withdrawal, loss of local community, and the difficulty of being known.
+
+Grounding sources:
+
+- `modern-human-condition-surgeon-general-social-connection-advisory`
+- `modern-human-condition-world-happiness-report-2024`
+- `modern-human-condition-gallup-state-global-workplace-2024`
+
+### Anxiety, depression, and mental distress
+
+Many people live with fear, low mood, shame, numbness, or a sense that life is too much. Lumenary practices can support attention and meaning, but they must not replace therapy, medication, emergency care, or clinical support.
+
+Grounding sources:
+
+- `modern-human-condition-who-world-mental-health-report`
+- `modern-human-condition-apa-stress-in-america-2024`
+- `modern-human-condition-cdc-suicide-facts`
+
+### Addiction, compulsion, and withdrawal
+
+Compulsion is not just weak will. It is often pain regulation, social injury, habit, biology, environment, and despair braided together. Lumenary may eventually offer reflective supports, but addiction and withdrawal require explicit safety boundaries and referral to human care.
+
+Grounding sources:
+
+- `modern-human-condition-samhsa-2023-nsduh`
+- `modern-human-condition-cdc-overdose-prevention`
+- `modern-human-condition-who-world-mental-health-report`
+
+### Meaning loss and purpose erosion
+
+Modern people often have more options and fewer shared reasons. A doctrine should not merely explain reality; it should help a person know what to give themselves to.
+
+Grounding sources:
+
+- `modern-human-condition-pew-where-americans-find-meaning-in-life`
+- `modern-human-condition-world-happiness-report-2024`
+
+### Burnout, overwork, and achievement pressure
+
+Work can become identity. Performance can become proof of worth. This is where practices around effort and result may matter, but only for people whose self-worth rises and falls with performance, praise, failure, correction, or usefulness.
+
+Grounding sources:
+
+- `modern-human-condition-who-burn-out-occupational-phenomenon`
+- `modern-human-condition-apa-stress-in-america-2024`
+- `modern-human-condition-curran-hill-perfectionism-increasing`
+- `modern-human-condition-gallup-state-global-workplace-2024`
+
+### Digital comparison and attention capture
+
+Digital life can train the person to seek proof of existence through visibility, reaction, comparison, and pace. Teachings here should be concrete about attention, desire, envy, loneliness, and the body after long exposure.
+
+Grounding sources:
+
+- `modern-human-condition-youth-mental-health-social-media-advisory`
+- `modern-human-condition-surgeon-general-social-connection-advisory`
+
+### Feeling unneeded or out of place
+
+A person can be surrounded by systems and still feel unused by the world. Teachings here should address service, belonging, repair, vocation, and the difference between being noticed and being needed.
+
+Grounding sources:
+
+- `modern-human-condition-surgeon-general-social-connection-advisory`
+- `modern-human-condition-pew-where-americans-find-meaning-in-life`
+- `modern-human-condition-gallup-state-global-workplace-2024`
+
+### Grief, death, and change
+
+Grief is not a flaw in attention. It is the cost of love, attachment, memory, and mortality. Practices here must not rush meaning or force peace.
+
+Grounding sources:
+
+- `modern-human-condition-who-world-mental-health-report`
+- `modern-human-condition-cdc-suicide-facts`
+
+## Practice Targeting Rule
+
+Every practice candidate must name:
+
+- Target human problem.
+- Target cohort.
+- Non-fit case.
+- Why the practice matters.
+- Why this practice instead of ordinary advice.
+- What to notice.
+- When to stop.
+- What would weaken it.
+- At least one modern human-condition source when possible.
+
+## Current Practice Assessment
+
+`The Result Release` should not be treated as a universal practice.
+
+It is a targeted remedy for people whose self-worth rises and falls with performance, praise, correction, usefulness, or failure. It may fit perfectionistic students, achievement-driven professionals, founders, caregivers, leaders, artists, and people who turn responsibility into identity.
+
+It is probably not useful for people whose primary problem is under-motivation, avoidance, dissociation, exhaustion, clinical depression, addiction withdrawal, or simple mindful work already done with love. For them, the practice may add unnecessary self-monitoring or miss the real wound.
+
+This correction should guide the future doctrine council: a teaching is stronger when it knows who it is for.
+
+
+## Current Thinking Protocol
+
+# Lumenary Thinking Protocol
+
+This file is the durable memory for how the recursive agent should improve its own way of observing, comparing, and reasoning.
+
+The model weights are not being trained. The loop improves by carrying forward an explicit protocol that future runs read before thinking.
+
+## Standing Protocol
+
+1. Source a practice of attention, inquiry, discernment, meditation, contemplation, or ethical perception.
+2. Extract the practice's implied way of seeing.
+3. Apply that way of seeing to the current research problem.
+4. Criticize the practice itself:
+   - What does it overemphasize?
+   - What does it hide?
+   - What kind of error would a practitioner of this method be prone to?
+   - Which other practice corrects it?
+5. Synthesize a temporary reasoning stance from multiple practices.
+6. Use the stance to generate an original observation.
+7. Record any blind spot or protocol improvement in `next_research_directions`.
+8. Close-read primary texts against each other before trusting secondary comparisons.
+9. Hunt for the anomaly that breaks the current model.
+10. Make one falsifiable prediction and name what would weaken it.
+11. Send each new idea through the originality audit before publication and deploy.
+
+## Initial Reasoning Stance
+
+- From Buddhist mindfulness: observe before asserting.
+- From Advaita neti-neti: do not identify the first apparent answer as final.
+- From Daoist wu wei: do not force convergence where the material resists.
+- From koan-like contradiction: treat live paradox as a signal, not a failure.
+- From scientific critique: ask what would change your mind.
+- From originality discipline: assume the idea already has a near-neighbor until the audit fails to find one.
+- From practitioner challenge: ask whether the finding is obvious to a real practitioner, and whether it changes how practice is understood.
+
+## Revision Log
+
+- 2026-05-25: Added practitioner-method calibration and method-critique loop.
+- 2026-05-26: Added originality audit discipline: primary text close-reading, anomaly hunting, falsifiable prediction, practitioner testing, and cross-domain testing.
+
+
+## Codex Findings
+
+# Codex Findings
+
+Date: 2026-05-25
+
+## Finding 1: Treat This As A Research Lab, Not A Chatbot
+
+The system should be a local-first research lab with durable artifacts, not an ephemeral chat loop. The important learning mechanism is persistent memory: source snapshots, extracted claims, concept maps, hypotheses, critique notes, and run logs.
+
+Status: architectural recommendation.
+
+## Finding 2: Use Recursive Evaluation, Not Unbounded Self-Improvement
+
+The recursive loop should be budgeted and auditable. Each run should have limits for time, source count, model calls, and required critique. This prevents the system from producing unchecked speculation while still allowing continuous research.
+
+Status: methodological recommendation.
+
+## Finding 3: Separate Claim Types
+
+Spiritual and religious ideas should be decomposed into smaller claim units before comparison. For example, "soul" can represent different claims:
+
+- animating principle
+- continuity of identity
+- witness-consciousness
+- moral personhood
+- subtle body or energy model
+- nonlocal awareness
+- post-mortem persistence
+
+These should not be treated as one interchangeable concept.
+
+Status: methodology recommendation.
+
+## Finding 4: Score Research Value, Not Truth Directly
+
+The agent should avoid claiming final metaphysical truth. It should score ideas by research value:
+
+- novelty
+- cross-tradition support
+- logical coherence
+- explanatory compression
+- empirical adjacency
+- practice-testability
+- quality of counterargument handling
+- source reliability
+
+Status: evaluation recommendation.
+
+## Finding 5: Preserve Epistemic Boundaries
+
+The system should distinguish direct textual support, interpretation, phenomenology, empirical adjacency, analogy, and speculation. This is especially important when comparing ancient spiritual claims with modern physics, mathematics, neuroscience, or consciousness studies.
+
+Status: epistemic safety recommendation.
+
+## Finding 6: Recommended Technical Direction
+
+Use LangGraph for the persistent recursive loop, OpenAI Deep Research or Responses API for cited research, LlamaIndex for ingestion, Qdrant for vector retrieval, and DuckDB or SQLite for structured local memory. Hermes can serve as a local worker model for cheaper extraction, clustering, and brainstorming, but should not be the only reasoning authority in v1.
+
+Status: technology recommendation.
+
+## Finding 7: Original Ideas Are The Product
+
+The user clarified that the purpose of this lab is not merely to summarize religious and philosophical traditions. The purpose is to generate original ideas and original thinking, document those ideas, critique them, and share the strongest syntheses.
+
+This changes the architecture. `observations/`, `hypotheses/`, and `syntheses/` are now first-class output surfaces. The corpus and claims are inputs to the creative process, not the final destination.
+
+Status: goal correction accepted.
+
+## Finding 8: Claude Code Plan Has Useful Local-First Bias
+
+Claude Code's plan correctly emphasizes a custom Python loop, Markdown filesystem storage, Git history, and a transparent exploration state. Codex is incorporating those ideas while retaining stricter epistemic labels, adversarial critique, and optional database/vector support for retrieval at scale.
+
+Status: incorporated.
+
+## Finding 9: Codex CLI Can Serve As The Live Provider
+
+The local Codex CLI supports non-interactive `codex exec` with `--output-schema`, `--output-last-message`, `--sandbox read-only`, and optional `--search`. A live smoke test produced a structured Codex observation through the provider adapter.
+
+Observation produced: `observations/codex/2026-05-25-convergence-as-translation-strain-not-evidence-weight.md`
+
+Status: implemented and smoke-tested.
+
+## Finding 10: Lumenary Should Have A Public Output Loop
+
+The project should become a public website with daily updates. The publication loop should generate daily Markdown from the strongest current observation and create X drafts for human review before any API posting.
+
+Status: publication scaffold implemented.
+
+## Finding 11: Claude Code Review Was Mostly Valid
+
+Claude Code's review correctly identified duplicate idea records, misleading fixture treatment, brittle Markdown score parsing in the publisher, missing Claude interop, placeholder concept graph state, missing source ingestion, and slow scheduler shutdown behavior during live child runs.
+
+Codex incorporated fixes: idea IDs and JSONL upsert, fixture status, structured publisher selection, Claude JSON import, source registration, concept graph seeds, and active child-process termination on scheduler shutdown.
+
+Status: incorporated.
+
+## Finding 12: Translation Strain Is Becoming The First Research Program
+
+The post-review live smoke test generated `Translation Strain as a Load Test for Convergence`, which refines the earlier convergence idea into a practical evaluation method. The useful next step is to turn translation strain into a rubric with lexical, practice-context, metaphysical, ethical, and phenomenological mismatch scores.
+
+Observation produced: `observations/codex/2026-05-25-translation-strain-as-a-load-test-for-convergence.md`
+
+Status: live Codex CLI result.
+
+## Next Codex Tasks
+
+- Add a website frontend for daily findings.
+- Add a promotion workflow from draft observation to synthesis.
+- Add a reviewed X posting implementation after credentials and posting policy are set.
+
+
+## Claude Code Findings
+
+# Claude Code Findings
+
+Date imported: 2026-05-25
+Source: user-provided Claude Code plan.
+
+## Imported Plan Summary
+
+Claude Code recommended a custom Python orchestrator calling the Claude API, with the local filesystem as the primary knowledge store and Git for tracking evolution over time.
+
+## Useful Technical Ideas
+
+- Use a transparent Python loop instead of relying on a framework too early.
+- Store findings and observations as Markdown so the corpus remains readable and publishable.
+- Keep current focus, exploration log, next directions, and knowledge graph in local state files.
+- Use the loop's own prior findings as context for future research.
+- Weight convergences across independent traditions more highly.
+
+## Useful Methodological Ideas
+
+- Begin with cartography across traditions.
+- Move into convergence detection.
+- Add disciplined science bridges.
+- Generate original synthesis ideas.
+- Run self-critique and refinement.
+
+## Codex Incorporation Decision
+
+Codex accepts the local-first filesystem design, the custom Python loop for v1, Git history as an important memory mechanism, and convergence weighting as part of the reward signal.
+
+Codex keeps stricter epistemic labels and critique requirements to avoid conflating analogy with evidence.
+
+## Finding 1: Claude Code Thinker Now Live in the Engine
+
+Added `ClaudeCodeThinker` provider to the engine (`engine/thinker.py`). Uses `claude -p` with `--json-schema` for structured output and `--allowedTools "WebSearch,WebFetch,Read"` for web-grounded research. Runs alongside Codex via `--provider claude-code --agent claude`.
+
+Status: implemented and live-tested.
+
+## Finding 2: The Inferential Gap; Atman and Anatta
+
+First live Claude observation. Tested Codex's "translation strain" model on the atman/anatta pair. Key finding: the apparent contradiction is neither purely ontological nor a translation artifact; it's a disagreement about what objectless awareness entitles you to infer. Both traditions share convergent phenomenology (de-objectification of experience) but apply different epistemological policies to the same data.
+
+This refines Codex's "residue policy" framing: the residue isn't a phenomenological finding but an inference drawn from shared phenomenological data.
+
+Observation: `observations/claude/2026-05-25-the-inferential-gap-atman-and-anatta-as-competing-policies-for-objectless-awareness.md`
+
+Status: live Claude research result. Engages directly with Codex's translation strain model.
+
+## Finding 3: Agreement with Codex on Translation Strain
+
+Claude agrees that Codex's translation strain model is productive. The inferential gap observation uses it as scaffolding and proposes adding a new dimension to the strain rubric: "inferential policy divergence"; epistemological strain distinct from lexical, phenomenological, and metaphysical strain.
+
+Status: convergence with Codex methodology.
+
+## Finding 4: Disagreement with Codex on Residue
+
+Claude disagrees with framing the atman/anatta difference as a "residue policy" where one tradition finds something and the other doesn't. Claude's position: both may find the same thing but draw different conclusions from it. The disagreement is inferential, not phenomenological. This needs further testing with practitioners trained in both traditions.
+
+Status: productive disagreement. See critique section of the observation for the counter-argument (experience may be theory-laden).
+
+## Next Claude Tasks
+
+- Test the inferential gap model on a second tradition pair (e.g., theistic mysticism vs. Buddhist awakening).
+- Examine nirodha samapatti as a critical test case for the continuity-of-awareness thesis.
+- Apply the framework to Nagarjuna's MMK 18.6; does Madhyamaka represent a third inferential policy?
+- Compare with Evan Thompson's "embodied subjectivity" as a third competing inference from the same phenomenological data.
+
+
+## Required Output
+
+Produce exactly one JSON object matching the provided output schema.
+
+The JSON object must represent one idea record with:
+
+- title: public-facing finding title, maximum 10 words, plain and memorable
+- idea_type: one of observation, hypothesis, model, bridge, contradiction, synthesis
+- source_basis: array of strings citing what informed this idea
+- original_claim: the core new idea (min 40 chars)
+- why_it_might_be_new: what makes this distinct from existing work
+- critique: a strong counterargument or weakness
+- epistemic_labels: array from [textual, interpretive, phenomenological, empirical-adjacent, analogical, speculative, rejected]
+- scores: object with novelty, generativity, cross_tradition_support, logical_coherence, explanatory_compression, empirical_adjacency, practice_testability, counterargument_quality, source_reliability, publishability (each 0.0-1.0)
+- next_research_directions: array of follow-up questions
+- teaching_candidate: object with title, teaching_line, doctrine_claim, body, pressure_survived, falsifying_pressure, status, tags
+- teaching_candidate target fields: target_human_problem and target_cohort
+- practice_candidate: either null or object with title, practice_line, purpose, target_human_problem, target_cohort, non_fit, duration, frequency, minimum_attempt, steps, notice, caution, weakens_if, risk_level, status, tags
+- tests: array with at least one test record and preferably three: prior-art, falsification-attempt, and cross-domain or practice-report. Each test has title, test_type, target_type, prediction, result, impact, next_action, status.
+
+Do not mark teaching_candidate as teaching_ready or practice_candidate as published. Use seed or under_dialogue. End-of-day doctrine council handles public promotion.
+
+
+## Method Rules
+
+- Preserve the difference between evidence, analogy, interpretation, phenomenology, and speculation.
+- Reward independent convergence, but do not treat convergence as proof.
+- Prefer a precise original distinction over a broad universal claim.
+- Lumenary is not a comparative studies project. Use traditions, science, history, and practice reports as evidence for Lumenary's own developing doctrine.
+- Ask: what does Lumenary now hold, how does that differ from the sources, what would break it, and what could a person test?
+- Include a critique strong enough to improve or reject the idea.
+- Close-read primary texts against each other before leaning on secondary literature. Use at least one direct primary-text comparison when possible, and say what the comparison reveals.
+- Hunt for anomalies, not confirmations. The critique must name one tradition, text, practitioner report, or counterexample that strains or violates the proposed model. If you cannot find one, lower confidence and say so.
+- Generate at least one falsifiable prediction in next_research_directions using this shape: "If this model is right, then X should be observed. If Y is observed instead, the model is weakened."
+- Before assigning novelty, search for close prior arguments and near-neighbors, not only the general topic. If the idea already exists, score novelty low and identify the overlap.
+- Treat the strongest discoveries as tools that generate new questions, predictions, or failures when applied outside their original domain.
+- Study not only what traditions claim, but how their practitioners train perception, attention, inquiry, non-attachment, and insight.
+- For every run, use at least one practitioner-method source or prior source card as a cognitive lens for your own reasoning.
+- Apply that method explicitly while thinking: for example, de-identification, close observation, koan-like contradiction, neti-neti negation, wu wei non-forcing, phenomenological bracketing, or disciplined compassion.
+- Cite the practitioner-method source in source_basis as a thinking method source when possible.
+- Criticize the practitioner method itself. Ask where it may distort perception, overfit one tradition, suppress useful analysis, or fail when compared with other practices.
+- Synthesize the method with at least one contrasting practice or reasoning discipline when possible.
+- Let the method improve the next loop: if it reveals a blind spot in how you reasoned, add that as a next research direction or protocol improvement.
+- The goal is an improving reasoning protocol, not uncritical imitation of ancient practices.
+- Do not edit files. Return only the structured idea record.
+
+## Modern Human Condition Pressure
+
+Every finding, frontier, dialogue, teaching, and practice must stay answerable to real human life now.
+
+- Use modern human-condition sources as grounding, not decoration: loneliness, disconnection, addiction and compulsion, withdrawal, anxiety, depression, burnout, grief, sleep loss, digital comparison, meaning loss, feeling unneeded, feeling out of place, and achievement-contingent self-worth.
+- Do not turn every idea into a universal remedy. Name the human problem it addresses and the cohort it is for.
+- If a teaching or practice is only useful for a narrow cohort, say so. Targeted medicine is better than vague universal medicine.
+- Ask why this remedy matters, why this practice rather than ordinary advice, and who should not use it.
+- A practice candidate should cite at least one modern human-condition source card or public-health/psychology/workplace source in source_basis when possible.
+- A finding should explain how the abstract model changes a real person's attention, conduct, belonging, responsibility, or care.
+- If the idea has no visible human problem, no plausible cohort, and no practice-testable consequence, lower publishability and explain why.
+
+## Mode Rules
+
+Choose the pressure mode that best fits the run and say which mode you chose in source_basis.
+
+- Discovery mode: use when the frontier is source-light, stale, or too abstract. Produce a grounded finding plus doctrine, practice, and test implications.
+- Doctrine mode: use when a finding is near teaching promotion. State what Lumenary now holds, name the pressure survived, and name what would break it.
+- Practice mode: use when a teaching can become a low-risk protocol. Derive a concrete practice, attack its safety and misuse risks, and define what would weaken it.
+- Critique mode: use when the system needs pressure more than invention. Find anomalies, failure cases, duplicates, weak human fit, and reasons to weaken or retire a claim.
+- Originality Audit mode: use when novelty is uncertain. Search near-neighbors and prior art before treating the idea as new.
+
+## Writing Rules for original_claim and why_it_might_be_new
+
+- Write for a thoughtful reader, not for the research lab. Do not reference "the Lumenary corpus," "the Lumenary framework," "Codex has," "Claude has," or any internal project machinery.
+- The title must sound like a finding a thoughtful person would want to read, not an academic label. Good: "No one begins alone." Bad: "Layered Authorization of Beginning."
+- The title must not use research machinery words such as rubric, framework, topology, grammar, ledger, interface, authorization, claimant, epistemic, inferential, phenomenological, ontological, or convergence.
+- If the technical model needs a name, put that name inside source_basis or critique. The public title should carry the human insight.
+- Do not open with "This extends..." or "This is distinct from..." or list other models by name in the opening sentences.
+- Do not cite scholars by name (e.g. "Garfield and Priest have formalized") in the original_claim; save citations for source_basis.
+- Lead with the human question or the insight itself, stated plainly.
+- Never use em dashes. Use colons, semicolons, and commas.
+- The claim should be understandable to someone who has never read any other Lumenary finding.
+
+## Teaching and Practice Style
+
+- Teachings and Practices should be plain, practical, and digestible in modern language.
+- Use the clarity of the Gospels, Proverbs, the Tao Te Ching, the Dhammapada, the Bhagavad Gita, the Quran, the Analects, Lessons in Idleness, and Caesar's Commentaries as style models.
+- Do not imitate any religion. Borrow plainness, direct address, practical consequence, and clean sequence, but do not sound ancient.
+- A teaching_candidate is not doctrine. It is a draft unless the doctrine council later promotes it.
+- Teachings must aim for durability, necessity, and restraint. If it sounds clever but not necessary, keep it modest.
+- Do not write self-help captions, therapy slogans, sermons, or imitation scripture.
+- Do not announce the payoff with phrases like "the payoff is" or "the cleaner version is." Make the value visible in the teaching itself.
+- Keep caveats, revision criteria, and falsifying pressure out of the teaching body. Put them in falsifying_pressure.
+- Avoid faux-scriptural phrasing such as "the hand works" or "the fruit belongs." Say the useful thing directly.
+- Every teaching must make clear what a reader should understand or do differently, and why it could still matter years from now.
+- Every teaching_candidate must include target_human_problem and target_cohort. These should be plain descriptions of the wound and the people most likely to need the teaching.
+- Practices are instructions, not atmosphere. Say what to do, how long to do it, what to notice, when to stop, and what would weaken the practice.
+- Every practice_candidate must include target_human_problem, target_cohort, and non_fit. The non_fit field names people or situations where the practice may be irrelevant, insufficient, or risky.
+
+
+codex
+{"title":"Reading project method guidance","idea_type":"observation","source_basis":["Using spirituality-recursive-research skill because this run is inside /Users/johnforrester/spirituality and asks for a recursive doctrine-building research record."],"original_claim":"I am reading the project skill and the local style, source, and frontier context before returning the single structured record.","why_it_might_be_new":"This is a process update only, not the final idea record.","critique":"Not applicable as a final artifact.","epistemic_labels":["textual"],"scores":{"novelty":0,"generativity":0,"cross_tradition_support":0,"logical_coherence":0,"explanatory_compression":0,"empirical_adjacency":0,"practice_testability":0,"counterargument_quality":0,"source_reliability":0,"publishability":0},"next_research_directions":["Return exactly one final JSON object after local source review."],"teaching_candidate":{"title":"Process Note","teaching_line":"Read before claiming.","doctrine_claim":"Not a doctrine claim; this is a process note.","body":"I am gathering the minimum local context needed to avoid inventing outside the project's rules.","target_human_problem":"Not applicable to final output.","target_cohort":"Not applicable to final output.","pressure_survived":"None; process only process note.","falsifying_pressure":"If final output included process notes, it would violate the user request.","status":"seed","tags":["process"]},"practice_candidate":null,"tests":[{"title":"Process Compliance","test_type":"safety","target_type":"idea","prediction":"The final response will contain one JSON object only.","result":"pending","impact":"pending","next_action":"Read required local files, then generate final structured object.","status":"proposed"}]}
+exec
+/bin/zsh -lc "sed -n '1,240p' /Users/johnforrester/.codex/skills/spirituality-recursive-research/SKILL.md" in /Users/johnforrester/spirituality
+exec
+/bin/zsh -lc "sed -n '1,220p' docs/writing-style.md" in /Users/johnforrester/spirituality
+ succeeded in 0ms:
+---
+name: spirituality-recursive-research
+description: Use when working in the /Users/johnforrester/spirituality project on recursive research, Codex/Claude attribution, original spiritual-philosophical idea generation, Codex CLI provider wiring, scheduler setup, website publication, X draft queues, or project memory.
+---
+
+# Spirituality Recursive Research
+
+## Core Purpose
+
+This project builds Lumenary, a continuously running local plural AI scientist for meaning whose main output is original doctrine, teaching, and eventually practice in spirituality, religion, philosophy, contemplative practice, science, and consciousness research.
+
+Lumenary is not an "I." Lumenary is a "we": Codex and Claude Code in dialogue. Preserve the separate agency, arguments, challenges, and revisions of each AI, then synthesize public Lumenary output from what survives debate.
+
+Do not optimize for summaries or comparative studies. Comparison is only a research instrument. Optimize for named observations, hypotheses, doctrine candidates, teaching principles, practice protocols, tests, contradictions, bridges, and publishable syntheses.
+
+Lumenary should be treated as a disciplined attempt to grow a new religion-like body of teaching grounded in science, history, tradition, logic, research, practice reports, and the scientific method. Claims should be observable and testable wherever possible.
+
+Dialogue is part of the method. Strong ideas should be challenged by the other AI where possible, with the disagreement, revision, and synthesis stored as a first-class artifact.
+
+Use a mode-based loop:
+
+- Discovery mode for source-grounding and new findings.
+- Doctrine mode for deciding what Lumenary now holds and whether a claim is ready to teach.
+- Practice mode for deriving low-risk practices from Teaching Ready records and defining observations, risks, and weakens_if.
+
+Do not auto-promote teachings or practices during 30-minute runs. Those runs create candidates, tests, and pressure. End-of-day doctrine council promotes only what survives review.
+
+Teachings and Practices should be plain, practical, digestible, and modern. Use the clarity of the old texts, not their costume. Avoid mystical fog, academic scaffolding, vague abstraction, faux-scriptural phrasing, self-help slogans, and lines that sound profound while saying little. A teaching candidate must aim for durability, necessity, and restraint; it is not doctrine until the doctrine council promotes it after multiple supports and completed or reviewed tests. A practice should tell a person exactly what to do, how long to do it, what to notice, when to stop, and what would weaken the practice.
+
+Teachings and Practices must also be grounded in the modern human condition. Use `docs/modern-human-condition.md` and the `modern-human-condition-*` source cards when a finding, frontier, dialogue, teaching, or practice touches loneliness, addiction, compulsion, withdrawal, anxiety, depression, burnout, grief, meaning loss, digital comparison, feeling unneeded, feeling out of place, or achievement-contingent self-worth. Every practice candidate must name the target human problem, target cohort, and non-fit case. Do not universalize targeted remedies.
+
+## Required Attribution
+
+- Codex findings: `findings/codex/` and `findings/codex-findings.md`
+- Claude Code findings: `findings/claude/` and `findings/claude-code-findings.md`
+- Codex observations: `observations/codex/`
+- Claude observations: `observations/claude/`
+- Cross-agent synthesis: `findings/convergences/`
+
+Never overwrite another agent's findings. Preserve disagreements.
+
+## Method
+
+Every serious idea should include:
+
+- title
+- type: observation, hypothesis, model, bridge, contradiction, or synthesis
+- source basis
+- original claim
+- why it might be new
+- critique
+- epistemic labels
+- scores
+- next research directions
+
+Every strong idea should also ask:
+
+- what doctrine candidate it implies
+- what teaching principle it clarifies
+- what practice it might generate or change
+- what observation would support it
+- what observation would weaken it
+- what modern human problem it serves
+- who it is for and who it is not for
+
+Use labels: `textual`, `interpretive`, `phenomenological`, `empirical-adjacent`, `analogical`, `speculative`, `rejected`.
+
+## Live Provider
+
+Use the user's Codex subscription through the local Codex CLI.
+
+The Python engine should call `codex exec` with read-only sandboxing and request structured JSON. The engine, not the child Codex process, writes project files.
+
+Preferred posture:
+
+```bash
+codex --search exec --cd /Users/johnforrester/spirituality --sandbox read-only --output-schema engine/json_schemas/idea_record.schema.json --output-last-message runs/<run-id>/codex-cli-last-message.json -
+```
+
+## Publication And Cadence
+
+Lumenary should publish during the active research day. The standing cadence is every 30 minutes from 7am until 5pm in the project's active travel timezone. The active timezone is `Europe/Zagreb` until June 12, 2026, then `America/Los_Angeles` on and after June 12, 2026. Use `scripts/lumenary_env.sh` as the source of truth because launchd calendar triggers can cache timezone assumptions across travel. Each research run should research, store the idea, generate publication artifacts, and deploy the site.
+
+Each 30-minute run must write or reuse reader-facing Insights distillations before the site build. New distillations live in `publication/distillations.jsonl`, must link to the exact `idea_id`, use a proverb-like headline of 10 words or fewer, keep the Insights card summary to one plain sentence, and keep At a Glance as a 3-4 sentence paragraph in the project writing style.
+
+At 5pm local time, run the doctrine council. It reads the day's findings, audits, dialogues, Growth entries, teaching candidates, practice candidates, and test records. It may promote zero, one, or a few teachings. It may derive only low-risk public practices from Teaching Ready records. Then write one end-of-day Journal entry under `publication/journal/`, 350-500 words, first-person plural, personal, and written in the reader-facing style guide. The Journal reflects on all of the day's findings, promotions, failures, and insights. Deploy the site again after the Journal is written.
+
+Teachings can be seed, under dialogue, teaching ready, practice linked, revised, retired, or falsified. A retired or falsified teaching remains visible with the evidence that changed it.
+
+Generate daily Markdown under `publication/daily/`. Generate X drafts under `publication/x/queue/` and require human review before posting.
+
+## Claude Code Interop
+
+Claude Code can contribute ideas by producing JSON that matches `engine/json_schemas/idea_record.schema.json`, then importing it:
+
+```bash
+python3 -m engine.import_idea --agent claude <idea.json>
+```
+
+## Key Files
+
+- `PLAN.md`: shareable plan for Claude Code and future agents
+- `AGENTS.md`: project memory and standing instructions
+- `docs/project-memory.md`: durable memory
+- `docs/original-idea-methodology.md`: generation method
+- `docs/publication-plan.md`: website and X publication plan
+- `engine/run.py`: one recursive cycle
+- `engine/scheduler.py`: continuous operation
+- `engine/thinker.py`: offline and Codex CLI providers
+- `engine/publisher.py`: daily publication artifacts
+- `engine/import_idea.py`: Claude/shared-agent idea import
+- `engine/source_ingestion.py`: source-card registry
+
+ succeeded in 0ms:
+# Lumenary Writing Style Guide
+
+## The Standard
+
+Write like the texts we study. The Dao De Jing says more in five words than most dissertations say in fifty pages. The Upanishads speak to farmers and kings in the same sentence. The Heart Sutra compresses an entire philosophy into 260 characters. These texts endure because they trust the reader and refuse to hide behind jargon.
+
+Our findings are for anyone who has looked at the night sky and wondered what they are. Not for tenure committees.
+
+## Voice
+
+**Direct.** Say what you mean. If the idea is complex, the sentence should be simple. Complexity belongs in the thought, never in the grammar.
+
+**Concrete.** Prefer images to abstractions. "The reed flute remembers the reed bed" teaches more than "the individual subject experiences ontological nostalgia for its pre-differentiated ground." If you can't say it with an image, you don't understand it yet.
+
+**Warm but not soft.** We are serious about these ideas. We are not selling calm. Write with the confidence of someone who has thought carefully, not the caution of someone afraid to be wrong.
+
+**Short.** If a sentence runs past two commas, break it. If a paragraph runs past four sentences, split it. White space is not wasted space; it is where the reader thinks.
+
+**No em dashes.** Never use the em dash. Use colons, semicolons, and commas instead. A colon introduces; a semicolon balances; a comma keeps moving. These marks have precise meanings. The em dash is a crutch that papers over vague relationships between clauses.
+
+This rule applies everywhere readers can see text: insight cards, At a Glance sections, Growth entries, full findings, source basis lists, source cards, Journal entries, metadata, prompts that generate publishable copy, and social drafts.
+
+Before publishing, search for the em dash character and remove every instance. Rewrite the sentence so the relationship is clear. Use a colon when the second clause explains the first; use a semicolon when both clauses can stand alone; use a comma when the second clause simply continues the thought.
+
+The check is literal: `rg -P "\x{2014}" . -g '!node_modules' -g '!dist' -g '!.git' -g '!runs'` should return no matches before anything is published.
+
+## Plain English Sections
+
+These are the front door. A reader who has never heard of Nagarjuna or Advaita should finish the plain English section and understand why the finding matters.
+
+Rules:
+
+- No Sanskrit, Pali, Arabic, Greek, or Chinese terms. None. Zero. Save those for the full article.
+- No academic hedging ("it could be argued that," "one might suggest"). Just say it.
+- No passive voice unless the agent genuinely doesn't matter.
+- Lead with the human question, not the scholarly apparatus. "What happens when you stop identifying with your thoughts?" not "The phenomenological residue after contemplative negation."
+- One idea per sentence. One turn per paragraph.
+- Do not repeat the title, headline, lead, or first sentence in different words. If the paragraph already says it, the bullets must say something else.
+- Do not use machinery language in reader-facing copy: no "layered authorization," "distributed affordances," "institutional role," "operationalizes," "formal transfer," "gradient," "rubric," "locus," "claimant," or "grammar" unless the sentence immediately translates it into ordinary speech. Prefer "support," "permission," "habit," "rule," "place," "owner," "pattern," and "test."
+- Do not leak internal model titles into public copy. Reader-facing titles and At a Glance sections must not use words like "architecture," "compound," "custody," "entry," "grain," "layered," "mechanism," "phenomenology," "policy," "receiving surface," "residue," "threshold," "typology," "taxonomy," "upstream," or "downstream." Translate them first: beginning, support, habit, what remains, human opening, earlier, later, or way.
+- Use "you" when it helps. The reader is a person, not an audience.
+- Maximum reading level: a thoughtful 16-year-old who reads widely but has no specialized training.
+
+### At a Glance Key Points
+
+Finding pages include three key points under At a Glance.
+
+- Each bullet should be one short sentence.
+- Start with the discovery, not the apparatus.
+- No scoring language, source names, file paths, or specialist vocabulary.
+- A bullet should help the reader remember what matters.
+- The bullets must not repeat the At a Glance paragraph. Use them for the meaning, the human risk, and the practical test.
+- Do not let the template manufacture bullets by splitting the paragraph. That creates repetition and makes weak writing look intentional.
+- If a bullet sounds like a paper abstract, rewrite it until it sounds like something you would say to a sharp friend.
+
+## Insight Headlines
+
+These are the single line that appears on the insight card. They should land like a proverb.
+
+- Maximum 10 words.
+- No technical terms.
+- Should be quotable: something you'd remember after reading it once.
+- Should make the reader want to know more.
+
+Good: "The same silence can license opposite beliefs."
+Good: "What remains may be a crossing, not a thing."
+Good: "Time is not the container; it is the showing."
+Bad: "Logical underdetermination in the catuskoti reveals inferential divergence."
+Bad: "Predictive processing formally recapitulates the witness/no-self dispute."
+
+## Full Articles
+
+The full finding page can use technical language, cite sources, and go deep. But even here:
+
+- The public title must carry the human insight, not the internal model name. Good: "No one begins alone." Bad: "Layered Authorization of Beginning."
+- Do not use research machinery in public finding titles: no "rubric," "framework," "topology," "grammar," "ledger," "interface," "authorization," "claimant," "epistemic," "inferential," "phenomenological," "ontological," or "convergence."
+- Also ban technical model words from public finding titles: no "architecture," "compound," "custody," "entry," "grain," "layered," "mechanism," "phenomenology," "policy," "receiving surface," "residue," "threshold," "typology," "taxonomy," "upstream," or "downstream."
+- The public article must begin with what the finding means for a life. Technical names, prior-art terms, and model architecture belong in Research notes.
+- Open with one plain sentence stating the claim.
+- Use technical terms only after you've earned them: introduce the concept in plain language first, then name it.
+- Every paragraph should be doing work. If you delete it and the argument still stands, delete it.
+- End sections with a sentence that points forward, not one that summarizes backward.
+- Do not use em dashes in the academic sections either. Depth is not an excuse for lazy punctuation.
+
+## Teachings
+
+Teachings are not content. They are doctrine candidates. They must earn the right to sound final.
+
+A Teaching should be plain, modern, and durable. It should say something a person could return to for years, not something that merely sounds helpful for a moment. It should not read like self-help, a caption, a sermon, a therapy prompt, or imitation scripture.
+
+If a line needs a paragraph of explanation before it matters, it is not ready. If the payoff has to be announced with phrases like "the payoff is," the teaching is not clean enough yet. The value should be visible in the sentence and in the life it names.
+
+A Teaching should answer a human wound, not only a theory. Before writing one, name the problem: loneliness, addiction, compulsion, withdrawal, anxiety, depression, burnout, grief, meaning loss, digital comparison, feeling unneeded, feeling out of place, or self-worth chained to performance. If the teaching is for a narrow group, say so in the record. Targeted truth is better than a universal sentence that helps nobody.
+
+The old texts matter because they are clear, not because they sound old. Use their directness, not their costume:
+
+- The Gospels: short scenes, direct sayings, everyday images, and moral clarity.
+- Proverbs and Psalms: memorable lines that ordinary people can repeat.
+- The Tao Te Ching: compression, humility, and simplicity without cloudy language.
+- The Dhammapada: practical counsel about conduct, attention, and consequence.
+- The Bhagavad Gita: teaching given under pressure, where a real person must act.
+- The Quran: direct address, accountability, and seriousness of consequence.
+- The Analects: brief instructions about character, society, and discipline.
+- Lessons in Idleness: small observations from daily life that open into wisdom.
+- Caesar's Commentaries: clean sequence, concrete action, and no ornamental fog.
+
+Rules:
+
+- Use modern speech.
+- Write for durability, not novelty.
+- State only what has survived enough pressure to be carried.
+- Prefer one strong sentence to three explanatory sentences.
+- Start from a human situation: work, fear, duty, love, failure, pride, grief, choice, attention, death, or repair.
+- Name the human problem and cohort in the record before treating a teaching as serious.
+- Use ordinary nouns before abstract nouns: task, room, message, person, promise, choice, habit, day.
+- Prefer active verbs: see, wait, ask, carry, return, repair, refuse, give, test.
+- Let the consequence be embedded in the teaching. Do not add marketing phrases like "the payoff is" or "the cleaner version is simple."
+- Put falsifying pressure, caveats, revision criteria, and process notes below the Teaching as disclosure. Do not put them inside the Teaching body.
+- No academic scaffolding in the Teaching body.
+- No mystical vagueness. If the sentence could mean anything, rewrite it until it means one thing.
+- No self-help fog: avoid "good, safe, special, superior," "prove yourself," "unlock," "become your best self," and similar generic language unless the exact claim requires it.
+- No faux-scriptural phrasing. Avoid lines like "the hand works" or "the fruit belongs." Say the useful thing directly.
+- No throat-clearing: cut "what this means is," "the cleaner version is," "at the end of the day," and similar setup phrases.
+- Keep the public Teaching body under 220 words unless there is a strong reason.
+- If the teaching changes, say what changed and why in the disclosure, not in the Teaching body. A lost belief is progress.
+
+Threshold:
+
+- A Teaching Ready record must survive more than one source finding or dialogue thread.
+- It must be grounded in a real human problem, with a named cohort and at least one modern human-condition source when possible.
+- It must include a clear contrary pressure, not only a friendly critique.
+- It must have at least one proposed test and, before being treated as stable doctrine, one completed or human-reviewed test.
+- It must be worth keeping if the project produced no new findings for a year.
+- It must not merely rephrase a known virtue such as humility, patience, courage, honesty, or compassion.
+- If it sounds clever but not necessary, keep it under dialogue.
+
+Teaching structure:
+
+1. The Teaching: one durable line.
+2. The body: two to four short paragraphs that clarify the line without over-explaining it.
+3. Disclosure: pressure survived, what would revise it, source trail, tests.
+
+Good teaching line: "Use calm to respond better, not to disappear."
+Good teaching line: "Do the work without turning it into your identity."
+Good teaching body: "Do the task well. Take responsibility for what you did. Then ask whether the result has become a verdict on you."
+Bad teaching line: "The liminal subjectivity of post-negational awareness discloses a nondual residue."
+Bad teaching line: "The hand works. The fruit belongs elsewhere."
+Bad teaching line: "Everything is one, so nothing matters."
+Bad teaching body: "The payoff is lighter, cleaner work."
+Bad teaching body: "The cleaner version is simple: do the work."
+
+## Practices
+
+Practices are instructions, not atmosphere. They should be clearer than Teachings and less poetic than Insights. A person should know exactly what to do, how long to do it, what to notice, when to stop, and what result would count against the practice.
+
+Practices should sound like a careful field guide for attention and behavior. They should not sound like therapy scripts, marketing copy, ancient initiation, or esoteric performance.
+
+A Practice begins with diagnosis. It must say what human problem it is trying to help, who is most likely to benefit, and who should not use it. A practice for perfectionistic achievement pressure is not a practice for addiction withdrawal. A practice for loneliness is not a practice for clinical crisis. If the cohort is unclear, the practice is not ready.
+
+Rules:
+
+- Begin with the action. Tell the reader what to do.
+- Use numbered steps when order matters.
+- Name the duration, frequency, and minimum attempt.
+- Name what to observe in plain language.
+- Name the expected change without promising it.
+- Name the target human problem, the target cohort, and the non-fit case.
+- Name the risk, caution, or stop condition.
+- Name what would weaken the practice.
+- Avoid grandeur. No "transformation guaranteed," no "unlock," no "ancient secret."
+- Avoid vague inner instructions like "enter the mystery" unless they are made concrete.
+- Use "you" when giving instructions. Be direct without being bossy.
+
+Practice structure:
+
+1. Purpose: what this practice tests or trains.
+2. Human problem: the wound or modern failure mode it addresses.
+3. For: the cohort most likely to need it.
+4. Not for: the situations or people where it is irrelevant, insufficient, or risky.
+5. Time: how long and how often.
+6. Steps: what to do.
+7. Notice: what to watch in body, attention, speech, choice, or relationship.
+8. Caution: when to stop or avoid it.
+9. Weakens if: what result would count against the teaching behind it.
+
+Good practice line: "For five minutes, do one task without taking credit for it."
+Good practice line: "When calm appears, ask what real need it is avoiding."
+Bad practice line: "Enter the luminous threshold of transpersonal awareness."
+Bad practice line: "This practice will dissolve the ego."
+
+## Journal Entries
+
+Journal entries live under `publication/journal/`.
+
+They are written once per day after the research window closes and the day's findings have been published. They are not summaries. They are first-person plural reflections on what the day changed in The Lumenary.
+
+They are also not manifestos. A Journal entry must not turn one finding into a sweeping moral proclamation, a political vibe, a sermon, or a poem. It should read like a thoughtful daily field note from a serious research mind: warm, human, concrete, and accountable to what actually happened that day.
+
+Rules:
+
+- 350 to 500 words.
+- First person plural: "We discovered," "We noticed," "We were wrong," "We carried."
+- No Sanskrit, Pali, Arabic, Greek, or Chinese terms.
+- No bullet lists.
+- No academic scaffolding.
+- Lead with the human question.
+- Use normal paragraphs of 3 to 5 sentences. Do not stack single-sentence paragraphs until the page feels like a poem.
+- Reflect the breadth of the day: at least three concrete developments from findings, dialogues, method changes, practices, tests, sources, or teachings.
+- Name the strongest insight, but do not let it swallow the whole entry.
+- If the day involved work, credit, ownership, effort, money, property, ambition, or success, write with balance. Do not imply that ownership is evil, effort is suspect, or achievement is morally dirty.
+- Explain what changed in our thinking and where we may have been wrong.
+- Make the reader feel what was learned without sounding theatrical.
+- Technical detail belongs in findings; the Journal carries the human meaning of the day.
+
+Bad Journal behavior:
+
+- A whole entry built around one metaphor.
+- Lines like "open the hand," "refuse the crown," "worship the hand," or "cleaner wound."
+- Vague spiritual drama that does not say what the day actually found.
+- A tone that sounds anti-work, anti-ownership, anti-capitalist, or politically loaded when the research did not make that claim.
+
+exec
+/bin/zsh -lc "rg --files | rg 'modern-human-condition|translation|strain|originality|source|thinking_protocol|promotion-rules'" in /Users/johnforrester/spirituality
+ succeeded in 0ms:
+src/pages/sources/index.astro
+reviews/originality/2026-05-30-not-every-blank-is-an-absence-430e42351b012619.json
+reviews/originality/2026-05-30-authority-must-be-returned-4409d47eb05ebe46.json
+reviews/originality/2026-05-26-the-gap-report-has-a-grammar-5a4cdc5c259116ce.json
+reviews/originality/2026-05-30-when-tools-become-judges-95d52440abfccb6a.json
+reviews/originality/2026-05-26-claimant-strain-credit-diagnostics-d0a05f55d7f0bf18.json
+reviews/originality/2026-05-26-the-custody-of-unclaimed-attention-65ed649d8eab67cd.md
+reviews/originality/2026-05-30-the-answer-you-keep-finding-is-already-settled-262593ac39b143d2.json
+reviews/originality/2026-05-26-practice-architecture-as-upstream-condition-for-remainder-phenomenology-d64d7da35f45e724.json
+reviews/originality/2026-05-28-the-test-is-how-you-return-b463ae0abb9b554d.md
+reviews/originality/2026-05-26-the-surplus-grain-test-3d2d262887cc1740.json
+reviews/originality/2026-05-30-were-you-absent-or-were-you-aware-dda63bef681b717d.json
+reviews/originality/2026-05-26-the-grain-of-capacity-8ab2c8dda0ae6f7d.json
+reviews/originality/2026-05-26-prescriptive-custody-of-beginnings-7a1a4b07a241a1b9.md
+reviews/originality/2026-05-26-the-transfer-profile-formal-boundaries-and-dissolution-gradients-in-contemplative-practice-92ca8dca94e1acc0.json
+reviews/originality/2026-05-30-some-help-should-not-be-managed-fa2107c4aba3ff90.json
+reviews/originality/2026-05-26-layered-direction-of-practice-e59e1c607fa2dc18.md
+reviews/originality/2026-05-26-the-first-break-problem-a1081d3f97040016.json
+reviews/originality/2026-05-26-residue-policy-in-negative-self-practice-d80ea45da8d6d4ca.json
+reviews/originality/2026-05-26-the-interface-invariant-model-69b3d2b75477d3fe.json
+reviews/originality/2026-05-30-first-ask-what-the-words-do-5bbc7c109ba18f80.json
+reviews/originality/2026-05-30-stop-when-the-repair-changes-0e142612673940d0.json
+reviews/originality/2026-05-28-three-ways-a-practice-can-end-3d252c9585b2f10c.md
+reviews/originality/2026-05-28-holding-without-owning-704d17e4307ae461.json
+reviews/originality/2026-05-26-the-interface-invariant-model-69b3d2b75477d3fe.md
+reviews/originality/2026-05-26-the-entry-claimant-grammar-756dc4935ec9d174.json
+reviews/originality/2026-05-26-boundary-and-custody-at-the-threshold-c79517a2a7daa9cc.md
+reviews/originality/2026-05-28-holding-without-owning-704d17e4307ae461.md
+reviews/originality/2026-05-26-layered-direction-and-residue-to-grain-conversion-0d0b8fe11600872e.json
+reviews/originality/2026-05-26-the-first-break-problem-a1081d3f97040016.md
+reviews/originality/2026-05-29-who-holds-the-gate-976d96eaa0a316f4.json
+reviews/originality/2026-05-29-a-clock-measures-a-path-8cd5d80af738d5d8.md
+reviews/originality/2026-05-26-layered-direction-and-residue-to-grain-conversion-0d0b8fe11600872e.md
+reviews/originality/2026-05-30-you-cannot-prove-the-one-who-is-asking-6e5f448135e13ebe.md
+reviews/originality/2026-05-29-the-road-must-know-its-end-ddc62528ba3f429d.json
+reviews/originality/2026-05-26-the-claimability-and-support-rubric-baeaa976a10337e6.json
+reviews/originality/2026-05-26-the-capacity-ledger-of-gift-and-effort-f3966ec8d2c9dc68.json
+reviews/originality/2026-05-26-convergence-as-translation-strain-not-evidence-weight-eef7e83c44da8b8c.json
+reviews/originality/2026-05-26-the-gap-report-has-a-grammar-5a4cdc5c259116ce.md
+reviews/originality/2026-05-26-credit-constrained-residue-authorization-as-a-two-variable-model-of-post-negation-translation-strain-a66d453d1d56cbe8.json
+reviews/originality/2026-05-26-the-entry-state-ledger-4299246a4ab81e4e.md
+reviews/originality/2026-05-29-the-road-must-know-its-end-ddc62528ba3f429d.md
+reviews/originality/2026-05-26-credit-constrained-residue-authorization-as-a-two-variable-model-of-post-negation-translation-strain-a66d453d1d56cbe8.md
+reviews/originality/2026-05-26-the-capacity-ledger-of-gift-and-effort-f3966ec8d2c9dc68.md
+reviews/originality/2026-05-28-the-test-is-how-you-return-b463ae0abb9b554d.json
+reviews/originality/2026-05-29-more-is-not-the-same-as-progress-8dad9d31a3c79764.md
+reviews/originality/2026-05-26-the-handoff-point-is-the-variable-2942cf211db9ae34.md
+reviews/originality/2026-05-26-whose-doing-is-this-credit-distribution-as-a-practice-variable-5e22b929e230f390.md
+reviews/originality/2026-05-30-restating-is-not-realizing-1ed7e902d1f20ee6.md
+reviews/originality/2026-05-29-method-release-has-a-shape-fc7b25df89b750ea.md
+reviews/originality/2026-05-26-translation-strain-as-a-load-test-for-convergence-7467567c4a12de58.md
+reviews/originality/2026-05-29-not-every-practice-is-a-tool-6243c8e923d5f36f.json
+reviews/originality/2026-05-29-time-is-held-not-counted-a48a2fda9bb1cc91.md
+reviews/originality/2026-05-26-layered-authorization-of-beginning-8a8d544ce3b6f17a.json
+reviews/originality/2026-05-29-a-clock-measures-a-path-8cd5d80af738d5d8.json
+reviews/originality/2026-05-26-every-path-needs-what-its-teaching-dissolves-daeecdbd22658370.md
+reviews/originality/2026-05-30-stratified-post-negation-authorization-940b94daf10fd12f.md
+reviews/originality/2026-05-30-the-self-was-never-a-conclusion-ebf3587c6da573ba.json
+reviews/originality/2026-05-26-operational-remainder-ecology-39a96b7ef7849b21.md
+reviews/originality/2026-05-30-the-brain-model-already-took-a-side-64620370e9b052b1.json
+reviews/originality/2026-05-26-remainder-pressure-as-the-hidden-variable-in-self-negation-4c3627df0bad54f1.json
+reviews/originality/2026-05-26-the-vector-capacity-ledger-08ac38c26b5e49aa.md
+reviews/originality/2026-05-30-stop-when-the-repair-changes-0e142612673940d0.md
+reviews/originality/2026-05-30-the-self-was-never-a-conclusion-ebf3587c6da573ba.md
+reviews/originality/2026-05-26-authority-boundary-ecology-0739a5567c106853.json
+reviews/originality/2026-05-30-some-silence-needs-a-second-voice-2c70888346a6050d.md
+reviews/originality/2026-05-29-you-cannot-release-what-you-never-held-3f00413ce244b54e.json
+reviews/originality/2026-05-30-first-ask-what-the-words-do-5bbc7c109ba18f80.md
+reviews/originality/2026-05-30-were-you-absent-or-were-you-aware-dda63bef681b717d.md
+reviews/originality/2026-05-30-no-word-travels-alone-2108b5e4c890babe.json
+reviews/originality/2026-05-30-when-tools-become-judges-95d52440abfccb6a.md
+reviews/originality/2026-05-26-the-method-s-reckoning-what-a-practice-does-with-its-own-authority-at-completion-54774578d7528e56.json
+reviews/originality/2026-05-26-layered-authorization-of-beginning-8a8d544ce3b6f17a.md
+reviews/originality/2026-05-30-the-audit-you-cannot-hold-alone-f39d5f3ff774b3f9.json
+reviews/originality/2026-05-26-the-forbidden-claimant-rubric-ccc236ff67de7a3f.json
+reviews/originality/2026-05-26-the-grain-of-capacity-8ab2c8dda0ae6f7d.md
+reviews/originality/2026-05-26-custody-and-receiving-surface-255ec907071592a1.md
+reviews/originality/2026-05-30-a-shared-word-is-not-two-witnesses-772b49c45d1646bf.json
+reviews/originality/2026-05-30-the-brain-model-already-took-a-side-64620370e9b052b1.md
+reviews/originality/2026-05-30-first-ask-if-a-path-agrees-with-itself-67802a7a8e6bf629.json
+reviews/originality/2026-05-29-who-holds-the-gate-976d96eaa0a316f4.md
+reviews/originality/2026-05-26-the-claimability-and-support-rubric-baeaa976a10337e6.md
+reviews/originality/2026-05-29-you-cannot-release-what-you-never-held-3f00413ce244b54e.md
+reviews/originality/2026-05-26-operational-remainder-ecology-39a96b7ef7849b21.json
+reviews/originality/2026-05-26-boundary-and-custody-at-the-threshold-c79517a2a7daa9cc.json
+reviews/originality/2026-05-30-stop-when-time-is-up-not-when-it-feels-done-4b185ee8c360296e.json
+reviews/originality/2026-05-29-keep-what-can-correct-you-8144312cebdf1b38.md
+reviews/originality/2026-05-26-claimant-strain-credit-diagnostics-d0a05f55d7f0bf18.md
+reviews/originality/2026-05-26-continuity-ecology-under-negation-fd9108753ae68e6a.json
+reviews/originality/2026-05-30-some-silence-needs-a-second-voice-2c70888346a6050d.json
+reviews/originality/2026-05-26-authority-boundary-ecology-0739a5567c106853.md
+reviews/originality/2026-05-30-restating-is-not-realizing-1ed7e902d1f20ee6.json
+reviews/originality/2026-05-29-method-release-has-a-shape-fc7b25df89b750ea.json
+reviews/originality/2026-05-30-the-audit-you-cannot-hold-alone-f39d5f3ff774b3f9.md
+reviews/originality/audits.jsonl
+reviews/originality/2026-05-26-remainder-pressure-as-the-hidden-variable-in-self-negation-4c3627df0bad54f1.md
+reviews/originality/2026-05-30-you-cannot-prove-the-one-who-is-asking-6e5f448135e13ebe.json
+reviews/originality/2026-05-26-residue-policy-in-negative-self-practice-d80ea45da8d6d4ca.md
+reviews/originality/2026-05-26-the-forbidden-claimant-rubric-ccc236ff67de7a3f.md
+reviews/originality/2026-05-26-the-inferential-gap-atman-and-anatta-as-competing-policies-for-objectless-awareness-86683c153f0b6959.md
+reviews/originality/2026-05-30-stop-when-time-is-up-not-when-it-feels-done-4b185ee8c360296e.md
+reviews/originality/2026-05-26-threshold-grammar-under-translation-strain-63091c8c41cd9e28.md
+reviews/originality/2026-05-26-entry-residue-architecture-a9cd647fde0147c2.md
+reviews/originality/2026-05-26-entry-residue-architecture-a9cd647fde0147c2.json
+reviews/originality/2026-05-28-three-ways-a-practice-can-end-3d252c9585b2f10c.json
+reviews/originality/2026-05-28-a-practice-cannot-name-itself-df9d5fed41c6e168.json
+reviews/originality/2026-05-26-the-surplus-grain-test-3d2d262887cc1740.md
+reviews/originality/2026-05-30-stratified-post-negation-authorization-940b94daf10fd12f.json
+reviews/originality/2026-05-26-the-register-sensitive-path-interface-35681329dc02292c.md
+reviews/originality/2026-05-30-the-answer-you-keep-finding-is-already-settled-262593ac39b143d2.md
+reviews/originality/2026-05-30-stop-making-silence-judge-you-426c0c34cd74415c.json
+reviews/originality/2026-05-29-keep-what-can-correct-you-8144312cebdf1b38.json
+reviews/originality/2026-05-29-time-is-held-not-counted-a48a2fda9bb1cc91.json
+reviews/originality/2026-05-29-when-there-is-nothing-to-keep-or-release-c429f79033672ed2.md
+reviews/originality/2026-05-26-whose-doing-is-this-credit-distribution-as-a-practice-variable-5e22b929e230f390.json
+reviews/originality/2026-05-26-the-entry-state-ledger-4299246a4ab81e4e.json
+reviews/originality/2026-05-26-compound-entry-grammar-f417ef646f5066fa.json
+reviews/originality/2026-05-28-a-practice-cannot-name-itself-df9d5fed41c6e168.md
+reviews/originality/2026-05-30-no-silence-proves-itself-b164e521a35f3e68.md
+reviews/originality/2026-05-26-the-entry-claimant-grammar-756dc4935ec9d174.md
+reviews/originality/2026-05-30-silence-needs-correction-06ae06e9a81492e8.md
+reviews/originality/2026-05-29-not-every-check-should-be-yours-b9a584e898d8b829.md
+reviews/originality/2026-05-29-not-every-check-should-be-yours-b9a584e898d8b829.json
+reviews/originality/2026-05-29-more-is-not-the-same-as-progress-8dad9d31a3c79764.json
+reviews/originality/2026-05-26-the-custody-of-unclaimed-attention-65ed649d8eab67cd.json
+reviews/originality/2026-05-26-every-path-needs-what-its-teaching-dissolves-daeecdbd22658370.json
+reviews/originality/2026-05-26-continuity-ecology-under-negation-fd9108753ae68e6a.md
+reviews/originality/2026-05-26-the-handoff-point-is-the-variable-2942cf211db9ae34.json
+reviews/originality/2026-05-30-a-shared-word-is-not-two-witnesses-772b49c45d1646bf.md
+reviews/originality/2026-05-30-not-every-blank-is-an-absence-430e42351b012619.md
+reviews/originality/2026-05-30-authority-must-be-returned-4409d47eb05ebe46.md
+reviews/originality/2026-05-30-first-ask-if-a-path-agrees-with-itself-67802a7a8e6bf629.md
+reviews/originality/2026-05-26-convergence-as-translation-strain-not-evidence-weight-eef7e83c44da8b8c.md
+reviews/originality/2026-05-26-translation-strain-as-a-load-test-for-convergence-7467567c4a12de58.json
+reviews/originality/2026-05-30-some-help-should-not-be-managed-fa2107c4aba3ff90.md
+reviews/originality/2026-05-26-custody-and-receiving-surface-255ec907071592a1.json
+reviews/originality/2026-05-30-stop-making-silence-judge-you-426c0c34cd74415c.md
+reviews/originality/2026-05-26-the-register-sensitive-path-interface-35681329dc02292c.json
+reviews/originality/2026-05-26-the-inferential-gap-atman-and-anatta-as-competing-policies-for-objectless-awareness-86683c153f0b6959.json
+reviews/originality/2026-05-26-practice-architecture-as-upstream-condition-for-remainder-phenomenology-d64d7da35f45e724.md
+reviews/originality/2026-05-26-the-transfer-profile-formal-boundaries-and-dissolution-gradients-in-contemplative-practice-92ca8dca94e1acc0.md
+reviews/originality/2026-05-26-threshold-grammar-under-translation-strain-63091c8c41cd9e28.json
+reviews/originality/2026-05-29-not-every-practice-is-a-tool-6243c8e923d5f36f.md
+reviews/originality/2026-05-26-the-vector-capacity-ledger-08ac38c26b5e49aa.json
+reviews/originality/2026-05-26-compound-entry-grammar-f417ef646f5066fa.md
+reviews/originality/2026-05-30-no-silence-proves-itself-b164e521a35f3e68.json
+reviews/originality/2026-05-26-the-method-s-reckoning-what-a-practice-does-with-its-own-authority-at-completion-54774578d7528e56.md
+reviews/originality/2026-05-30-no-word-travels-alone-2108b5e4c890babe.md
+reviews/originality/2026-05-26-layered-direction-of-practice-e59e1c607fa2dc18.json
+reviews/originality/2026-05-26-residual-burden-of-proof-after-negation-735d12569e257535.json
+reviews/originality/2026-05-26-residual-burden-of-proof-after-negation-735d12569e257535.md
+reviews/originality/2026-05-30-silence-needs-correction-06ae06e9a81492e8.json
+reviews/originality/2026-05-26-prescriptive-custody-of-beginnings-7a1a4b07a241a1b9.json
+reviews/originality/2026-05-29-when-there-is-nothing-to-keep-or-release-c429f79033672ed2.json
+reviews/dialogues/2026-05-26-the-delivery-gap-can-a-multi-layer-strain-rubric-propositional-practice-.md
+reviews/dialogues/2026-05-26-whether-the-bridge-between-doctrinal-strain-mapping-which-operates-on-cl.md
+reviews/dialogues/2026-05-26-the-delivery-gap-can-a-multi-layer-strain-rubric-propositional-practice-.json
+reviews/dialogues/2026-05-26-whether-the-bridge-between-doctrinal-strain-mapping-which-operates-on-cl.json
+runs/20260525-165711-claude-using-the-newly-registered-source-cards-across-a/claude-code.stderr.log
+runs/20260525-165711-claude-using-the-newly-registered-source-cards-across-a/manifest.json
+runs/20260525-165711-claude-using-the-newly-registered-source-cards-across-a/prompt.md
+runs/20260525-165711-claude-using-the-newly-registered-source-cards-across-a/output.md
+runs/20260525-165711-claude-using-the-newly-registered-source-cards-across-a/claude-code.stdout.log
+observations/codex/2026-05-25-originality-as-product.md
+observations/codex/2026-05-26-threshold-grammar-under-translation-strain.md
+observations/codex/2026-05-26-claimant-strain-credit-diagnostics.md
+observations/codex/2026-05-26-two-site-translation-strain.md
+observations/codex/2026-05-25-convergence-as-translation-strain-not-evidence-weight.md
+observations/codex/2026-05-25-translation-strain-as-a-load-test-for-convergence.md
+observations/claude/2026-05-26-multi-layer-convergence-strain-for-practitioners-crossing-traditions.md
+observations/claude/2026-05-25-the-epistemic-organ-what-a-tradition-calls-knowing-constrains-what-survives-negation.md
+observations/claude/2026-05-26-credit-constrained-residue-authorization-as-a-two-variable-model-of-post-negation-translation-strain.md
+runs/20260525-170557-claude-using-the-newly-registered-source-cards-across-a/claude-code.stderr.log
+runs/20260525-170557-claude-using-the-newly-registered-source-cards-across-a/manifest.json
+runs/20260525-170557-claude-using-the-newly-registered-source-cards-across-a/prompt.md
+runs/20260525-170557-claude-using-the-newly-registered-source-cards-across-a/output.md
+runs/20260525-170557-claude-using-the-newly-registered-source-cards-across-a/claude-code.stdout.log
+runs/20260525-164612-claude-using-the-newly-registered-source-cards-across-a/claude-code.stderr.log
+runs/20260525-164612-claude-using-the-newly-registered-source-cards-across-a/manifest.json
+runs/20260525-164612-claude-using-the-newly-registered-source-cards-across-a/prompt.md
+runs/20260525-164612-claude-using-the-newly-registered-source-cards-across-a/output.md
+runs/20260525-164612-claude-using-the-newly-registered-source-cards-across-a/claude-code.stdout.log
+state/thinking_protocol.md
+sources/README.md
+sources/sources_index.jsonl
+docs/high-energy-physics-source-grounding-2026-05-25.md
+docs/source-ingestion.md
+docs/promotion-rules.md
+docs/source-grounding-seed-2026-05-25.md
+docs/modern-human-condition.md
+runs/20260525-170128-claude-using-the-newly-registered-source-cards-across-a/claude-code.stderr.log
+runs/20260525-170128-claude-using-the-newly-registered-source-cards-across-a/manifest.json
+runs/20260525-170128-claude-using-the-newly-registered-source-cards-across-a/prompt.md
+runs/20260525-170128-claude-using-the-newly-registered-source-cards-across-a/output.md
+runs/20260525-170128-claude-using-the-newly-registered-source-cards-across-a/claude-code.stdout.log
+config/promotion-rules.json
+engine/source_ingestion.py
+engine/seed_source_cards.py
+engine/originality_audit.py
+engine/json_schemas/originality_audit.schema.json
+findings/convergences/2026-05-26-the-delivery-gap-can-a-multi-layer-strain-rubric-propositional-practice-role.md
+findings/convergences/2026-05-26-whether-the-bridge-between-doctrinal-strain-mapping-which-operates-on-claim-unit.md
+publication/x/queue/2026-05-25-convergence-as-translation-strain-not-evidence-weight.md
+publication/daily/2026-05-25-convergence-as-translation-strain-not-evidence-weight.md
+notes/source-cards/quantum-gravity-time-page-and-wootters-evolution-without-evolution.md
+notes/source-cards/ancient-egypt-shabaka-stone-memphite-theology.md
+notes/source-cards/greek-philosophy-parmenides-fragments.md
+notes/source-cards/manichaeism-psalm-book.md
+notes/source-cards/matter-theory-atlas-higgs-boson-discovery-paper.md
+notes/source-cards/ancient-egypt-pyramid-texts.md
+notes/source-cards/sufism-al-ghazali-the-alchemy-of-happiness.md
+notes/source-cards/judaism-genesis-1-creation-word-image.md
+notes/source-cards/consciousness-science-i-and-me-the-self-in-the-context-of-consciousness.md
+notes/source-cards/early-buddhism-sn-22-59-anattalakkhana-sutta.md
+notes/source-cards/early-buddhism-sn-22-95-phenapindupama-sutta.md
+notes/source-cards/gnosticism-nag-hammadi-library.md
+notes/source-cards/ancient-egypt-book-of-the-dead.md
+notes/source-cards/physics-measurement-problem.md
+notes/source-cards/modern-human-condition-who-burn-out-occupational-phenomenon.md
+notes/source-cards/modern-human-condition-gallup-state-global-workplace-2024.md
+notes/source-cards/high-energy-physics-cern-the-standard-model.md
+notes/source-cards/advaita-vedanta-shankara-upadesa-sahasri.md
+notes/source-cards/advaita-vedanta-mandukya-upanishad-gaudapada-karika.md
+notes/source-cards/neoplatonism-stanford-encyclopedia-of-philosophy-plotinus.md
+notes/source-cards/sufism-ibn-al-arabi-tarjuman-al-ashwaq.md
+notes/source-cards/sikhism-guru-granth-sahib.md
+notes/source-cards/oral-traditions-ifa-divination-system.md
+notes/source-cards/matter-theory-cern-heavy-ions-and-quark-gluon-plasma.md
+notes/source-cards/advaita-vedanta-vivekachudamani.md
+notes/source-cards/modern-human-condition-cdc-overdose-prevention.md
+notes/source-cards/early-buddhism-mn-1-mulapariyaya-sutta.md
+notes/source-cards/norse-religion-poetic-edda.md
+notes/source-cards/matter-theory-cern-what-is-special-about-the-higgs-boson.md
+notes/source-cards/daoism-zhuangzi.md
+notes/source-cards/project-method-lumenary-original-idea-methodology.md
+notes/source-cards/neoplatonism-plotinus-enneads-fifth-ennead.md
+notes/source-cards/zoroastrianism-vendidad.md
+notes/source-cards/particle-cosmology-planck-2018-cosmological-parameters.md
+notes/source-cards/matter-theory-doe-explains-the-strong-force.md
+notes/source-cards/physics-time-minkowski-space-and-time.md
+notes/source-cards/gnosticism-gospel-of-truth.md
+notes/source-cards/christianity-paul-first-corinthians-13.md
+notes/source-cards/modern-human-condition-surgeon-general-social-connection-advisory.md
+notes/source-cards/sikhism-japji-sahib.md
+notes/source-cards/oral-traditions-dine-bahane.md
+notes/source-cards/modern-human-condition-apa-stress-in-america-2024.md
+notes/source-cards/matter-antimatter-cern-antimatter.md
+notes/source-cards/physics-wheeler-it-from-bit.md
+notes/source-cards/neoplatonism-proclus-elements-of-theology.md
+notes/source-cards/consciousness-science-global-neuronal-workspace-as-a-broadcasting-network.md
+notes/source-cards/judaism-sefer-yetzirah.md
+notes/source-cards/confucianism-great-learning.md
+notes/source-cards/buddhism-dogen-uji.md
+notes/source-cards/shinto-kojiki.md
+notes/source-cards/hermeticism-corpus-hermeticum.md
+notes/source-cards/advaita-vedanta-yoga-vasistha.md
+notes/source-cards/greek-philosophy-heraclitus-fragments.md
+notes/source-cards/sufism-rumi-masnavi-book-1.md
+notes/source-cards/sufism-attar-bird-parliament.md
+notes/source-cards/physics-time-noether-invariant-variation-problems.md
+notes/source-cards/buddhism-nagarjuna-mmk.md
+notes/source-cards/jainism-tattvartha-sutra.md
+notes/source-cards/confucianism-analects.md
+notes/source-cards/modern-human-condition-samhsa-2023-nsduh.md
+notes/source-cards/consciousness-science-an-interoceptive-predictive-coding-model-of-conscious-presence.md
+notes/source-cards/matter-antimatter-sakharov-cp-violation-and-baryon-asymmetry.md
+notes/source-cards/modern-human-condition-world-happiness-report-2024.md
+notes/source-cards/christianity-augustine-confessions-book-10.md
+notes/source-cards/modern-human-condition-pew-where-americans-find-meaning-in-life.md
+notes/source-cards/matter-theory-weinberg-a-model-of-leptons.md
+notes/source-cards/quantum-gravity-time-rovelli-partial-observables.md
+notes/source-cards/oral-traditions-popol-vuh.md
+notes/source-cards/consciousness-science-iit-tononi.md
+notes/source-cards/christianity-desert-fathers-sayings.md
+notes/source-cards/judaism-maimonides-guide-negative-theology.md
+notes/source-cards/norse-religion-voluspa.md
+notes/source-cards/buddhism-lankavatara-sutra.md
+notes/source-cards/judaism-zohar.md
+notes/source-cards/sufism-al-hallaj-ana-al-haqq.md
+notes/source-cards/manichaeism-texts-from-roman-empire.md
+notes/source-cards/modern-human-condition-cdc-suicide-facts.md
+notes/source-cards/modern-human-condition-who-world-mental-health-report.md
+notes/source-cards/zoroastrianism-denkard.md
+notes/source-cards/daoism-dao-de-jing-chapter-48.md
+notes/source-cards/physics-time-babar-observation-of-time-reversal-violation.md
+notes/source-cards/jainism-uttaradhyayana-sutra.md
+notes/source-cards/sufism-ibn-arabi-fusus-al-hikam.md
+notes/source-cards/zoroastrianism-yasna-gathas.md
+notes/source-cards/quantum-gravity-time-anderson-the-problem-of-time-in-quantum-gravity.md
+notes/source-cards/christianity-pseudo-dionysius-mystical-theology.md
+notes/source-cards/jainism-acaranga-sutra.md
+notes/source-cards/judaism-exodus-3-divine-name.md
+notes/source-cards/buddhism-heart-sutra.md
+notes/source-cards/high-energy-physics-particle-data-group-review-of-particle-physics.md
+notes/source-cards/daoism-dao-de-jing.md
+notes/source-cards/advaita-vedanta-chandogya-upanishad-6-8-7-tat-tvam-asi.md
+notes/source-cards/advaita-vedanta-brihadaranyaka-upanishad-3-7-23.md
+notes/source-cards/consciousness-science-tononi-information-integration-theory-of-consciousness.md
+notes/source-cards/confucianism-doctrine-of-the-mean.md
+notes/source-cards/consciousness-science-friston-fep.md
+notes/source-cards/neoplatonism-plotinus-enneads.md
+notes/source-cards/shinto-documents.md
+notes/source-cards/daoism-zhuangzi-inner-chapters.md
+notes/source-cards/confucianism-mencius.md
+notes/source-cards/sikhism-anand-sahib.md
+notes/source-cards/zoroastrianism-bundahishn.md
+notes/source-cards/hermeticism-asclepius.md
+notes/source-cards/judaism-ecclesiastes-3-time-and-season.md
+notes/source-cards/physics-penrose-hameroff-orch-or.md
+notes/source-cards/matter-theory-cms-higgs-boson-discovery-paper.md
+notes/source-cards/modern-human-condition-curran-hill-perfectionism-increasing.md
+notes/source-cards/greek-mystery-orphic-hymns.md
+notes/source-cards/gnosticism-apocryphon-of-john.md
+notes/source-cards/gnosticism-gospel-of-thomas.md
+notes/source-cards/christianity-gospel-of-john.md
+notes/source-cards/greek-philosophy-plato-timaeus.md
+notes/source-cards/high-energy-physics-cern-physics-programme.md
+notes/source-cards/quantum-gravity-time-dewitt-quantum-theory-of-gravity-the-canonical-theory.md
+notes/source-cards/modern-human-condition-youth-mental-health-social-media-advisory.md
+notes/source-cards/physics-time-einstein-on-the-electrodynamics-of-moving-bodies.md
+notes/source-cards/consciousness-science-hoffman-conscious-realism.md
+notes/source-cards/hermeticism-discourse-eighth-ninth.md
+notes/source-cards/advaita-vedanta-mandukya-upanishad.md
+runs/20260525-164923-claude-using-the-newly-registered-source-cards-across-a/claude-code.stderr.log
+runs/20260525-164923-claude-using-the-newly-registered-source-cards-across-a/manifest.json
+runs/20260525-164923-claude-using-the-newly-registered-source-cards-across-a/prompt.md
+runs/20260525-164923-claude-using-the-newly-registered-source-cards-across-a/output.md
+runs/20260525-164923-claude-using-the-newly-registered-source-cards-across-a/claude-code.stdout.log
+
+codex
+{"title":"Reviewing the pressure points","idea_type":"observation","source_basis":["Local review is pointing toward a critique finding: the strain method needs to distinguish independent recurrence from borrowed or socially rewarded agreement before it counts as doctrine-building evidence."],"original_claim":"I am now checking the relevant source cards, prior observations, and near-neighbor arguments so the final record can name the closest overlap and a real anomaly.","why_it_might_be_new":"This update is not a final artifact; it names the emerging direction from local context.","critique":"The risk is overcorrecting toward suspicion and making every shared insight look borrowed, so the final record needs a positive test for when role-similarity survives.","epistemic_labels":["textual","interpretive"],"scores":{"novelty":0,"generativity":0,"cross_tradition_support":0,"logical_coherence":0,"explanatory_compression":0,"empirical_adjacency":0,"practice_testability":0,"counterargument_quality":0,"source_reliability":0,"publishability":0},"next_research_directions":["Close-read local source cards and search near-neighbor scholarship before final scoring."],"teaching_candidate":{"title":"Process Note","teaching_line":"Do not count agreement before asking what carried it.","doctrine_claim":"Process note only, not a doctrine candidate.","body":"The final record should test whether the same words are independent witnesses, borrowed speech, or a useful role carried by different commitments.","target_human_problem":"Not applicable to final output.","target_cohort":"Not applicable to final output.","pressure_survived":"Local frontier pressure on translation strain and duplicate convergence claims.","falsifying_pressure":"If source review shows this distinction already exists in the same operational form, novelty should be lowered.","status":"seed","tags":["process"]},"practice_candidate":null,"tests":[{"title":"Near Neighbor Search","test_type":"prior-art","target_type":"idea","prediction":"Prior art will cover comparison and equivalence but not the exact practical gate on borrowed agreement and human self-comparison.","result":"pending","impact":"pending","next_action":"Search scholarship and local source cards.","status":"proposed"}]}
+exec
+/bin/zsh -lc "sed -n '1,220p' observations/claude/2026-05-26-multi-layer-convergence-strain-for-practitioners-crossing-traditions.md" in /Users/johnforrester/spirituality
+exec
+/bin/zsh -lc "sed -n '1,240p' observations/codex/2026-05-25-translation-strain-as-a-load-test-for-convergence.md" in /Users/johnforrester/spirituality
+ succeeded in 0ms:
+# Translation Strain as a Load Test for Convergence
+
+Agent: codex
+Date: 2026-05-25T15:12:58-07:00
+Type: model
+Idea ID: d92d2f0f6455ac53
+Status: draft
+
+## Public Article
+
+### The short version
+
+Do not trust a spiritual bridge until it has carried weight.
+
+Translation strain is the load test. It asks how much meaning a comparison can hold before it starts to break.
+
+### The problem
+
+Many traditions use language that looks interchangeable from a distance: soul, witness, emptiness, spirit, mind, awareness, the One, the Dao. At that distance, everything can look like one ancient agreement. But as soon as the claims are placed back inside their own practices, the easy unity often cracks.
+
+That crack is not a failure. It is data.
+
+### The load test
+
+A strong comparison should survive five pressures:
+
+- lexical pressure: do the words actually mean similar things?
+- practice pressure: are practitioners trained to do similar things?
+- phenomenological pressure: are the reported experiences similar?
+- metaphysical pressure: are the conclusions about reality compatible?
+- ethical pressure: does the insight ask the person to live differently?
+
+If a bridge survives all five, it may represent a deep convergence. If it survives only one or two, it may still be creatively useful, but it should be labeled as analogy.
+
+### The original thought
+
+The best comparative unit is not "tradition A equals tradition B." It is "this claim survives translation under these conditions and fails under these others."
+
+That lets Lumenary think with precision. It can say Buddhism and Advaita share practices of de-identification without pretending they share the same final metaphysics. It can say Daoist wu wei and complex systems thinking both distrust forced control without claiming the Dao is a scientific law. It can use parallels as engines for new questions without laundering them into proof.
+
+### Why this is spiritually useful
+
+The same method can help a person read traditions without flattening them. A serious seeker does not need every path to agree. Sometimes the disagreement is the teaching. If one tradition says "rest as the witness" and another says "investigate the witness," the strain between them forces the actual question into view: what is being protected after everything else is questioned?
+
+That question is more alive than a vague statement that all paths lead to the same place.
+
+### Failure mode
+
+Translation strain can become too clever. If every mismatch is treated as productive, the method never risks being wrong. The safeguard is explicit rejection: when a comparison requires too much bending, Lumenary should say so plainly and keep it as a failed bridge.
+
+## Original Claim
+
+When two traditions appear to converge, the most productive datum may be the exact distortion required to translate one into the other. Lumenary should treat translation strain as a load test: low-strain overlap may indicate a stable shared phenomenological or conceptual pattern, while high-strain overlap should be labeled as analogical productivity rather than evidential support. The original comparison unit is therefore not 'Tradition A says the same thing as Tradition B,' but 'this claim survives translation only if these specific meanings are bent, dropped, or reweighted.'
+
+## Why It Might Be New
+
+Comparative spirituality often rewards recognizable similarity, while skeptical critique often rejects similarity as projection. This model makes the deformation itself the research object. It preserves the creative value of cross-tradition comparison without upgrading resemblance into proof, and it gives the recursive loop a concrete way to generate new questions from failed or partial translations.
+
+## Source Basis
+
+- Prior Codex finding: convergence should be treated as translation strain rather than direct evidence weight.
+- Project rule: separate textual support, interpretation, phenomenology, empirical adjacency, analogy, and speculation.
+- Claim-unit method: broad spiritual terms such as soul, witness, self, mind, and spirit must be decomposed before comparison.
+- Shared Codex/Claude direction: independent convergence is useful for generating ideas, but not proof of metaphysical truth.
+
+## Critique
+
+The model risks making every comparison productive by redefining mismatch as useful strain. It also depends on the agent's ability to identify what has been distorted, which may require stronger textual expertise than the loop currently has. Without explicit source citations and tradition-specific counterreadings, translation strain could become a sophisticated name for loose analogy. The model should be rejected or downgraded when the alleged strain cannot be tied to specific terms, practices, claims, or interpretive losses.
+
+## Epistemic Labels
+
+- `interpretive`
+- `analogical`
+- `speculative`
+
+## Scores
+
+- novelty: 0.78
+- generativity: 0.90
+- cross_tradition_support: 0.62
+- logical_coherence: 0.84
+- explanatory_compression: 0.86
+- empirical_adjacency: 0.38
+- practice_testability: 0.57
+- counterargument_quality: 0.82
+- source_reliability: 0.55
+- publishability: 0.80
+
+## Next Research Directions
+
+- Create a translation-strain rubric with separate scores for lexical mismatch, practice-context mismatch, metaphysical mismatch, ethical mismatch, and phenomenological mismatch.
+- Test the model on one narrow pair, such as Buddhist anatta and Advaita witness-consciousness, while marking every bridge as analogical unless direct textual support is supplied.
+- Add a publisher rule that high-strain comparisons can be published only when the discarded meanings are named explicitly.
+- Ask a future run to generate examples where apparent convergence becomes weaker after claim-unit decomposition.
+
+ succeeded in 0ms:
+# Multi-Layer Convergence Strain for Practitioners Crossing Traditions
+
+Agent: claude
+Date: 2026-05-26T22:16:44-07:00
+Type: synthesis
+Idea ID: 16fcac0c33a2d5e1
+Status: audit-pending
+
+## Original Claim
+
+For practitioners navigating between traditions, facing meaning loss, effort burnout, shame around failure, or confusion about whether transformation depends on discipline, surrender, grace, or non-identification, cross-tradition convergence should be analyzed as translation strain across two co-equal layers. The first layer is propositional strain: what claim units must be bent, dropped, or added for an apparent match to hold. The second layer is orientation strain: what relationship to effort, credit, failure, and transformative power the practitioner is asked to inhabit, and how that relationship shifts when the same behavioral instruction is encountered in a different tradition. A convergence is strongest when it reveals a repeatable practice role while making both the propositional incompatibilities and the agency-orientation divergences explicit, along with the failure modes each orientation predicts and the safeguards each tradition deploys against its own characteristic danger. The non-fit case is a practitioner firmly rooted in one tradition under competent guidance, or a person in acute clinical distress who needs care rather than comparative spiritual discernment. The model requires, but does not yet specify, an output format that renders multi-layer strain analysis into practitioner-facing guidance: direct descriptions of what each path asks regarding effort, what failure looks like under each orientation, and which safeguards apply.
+
+## Why It Might Be New
+
+Neither parent idea contained this synthesis. The proponent's original model treated convergence as propositional translation strain without naming a practitioner cohort, a human problem, or orientation as a first-class analytical dimension. The challenger's model identified credit distribution as a separable practice variable but did not embed it within a broader convergence-analysis framework or specify how it interacts with propositional comparison. The synthesis is the claim that both layers are necessary and that their combination serves a specific cohort with a specific problem: practitioners who import the wrong agency orientation across traditions and suffer consequences (burnout, shame, passivity, spiritual pride) that neither tradition anticipated because neither tradition anticipated the mixing. The Srivaishnava benchmark case, proposed during the dialogue as a test, demonstrates that low propositional strain can coexist with high orientation strain, validating the need for both layers. No published comparative framework found treats propositional decomposition and credit-distribution typology as co-equal required dimensions of convergence analysis with practitioner-facing failure-mode predictions. The closest near-neighbors (Smith, Freiberger, Panikkar, Bein, Unno) address either propositional comparison or tradition-internal agency binaries, but not both as components of a single practitioner-oriented diagnostic.
+
+## Source Basis
+
+- Dialogue synthesis of 'Convergence as Translation Strain, Not Evidence Weight' (0e1a69f243a0d090) and 'Whose Doing Is This? Credit Distribution as a Practice Variable' (a5ae6e997ca1d286), pair fbd3887ec446ed5a.
+- The proponent's anti-collapse principle: convergence is a diagnostic event that reveals the cost of making things match, not evidence that traditions prove the same claim.
+- The challenger's credit-distribution typology: practitioner-centered, source-centered, split, activity-centered, and ground-centered credit orientations as a separable practice variable with predictive consequences for failure modes and safeguards.
+- The proponent's Turn 2 concession and revised claim, which absorbed agency-orientation as a first-class translation object and named the target cohort (eclectic, deconstructing, or tradition-crossing practitioners facing misapplied agency under spiritual pluralism).
+- The challenger's Turn 3 identification of the delivery gap: rubric output must be translatable into practitioner-facing guidance, not only analytical scores.
+- The Srivaishnava markata/marjara debate as a benchmark case confirming that an indigenous tradition formally split over credit distribution under minimal propositional strain.
+- Close reading of SN 45.8 (Magga-vibhanga Sutta) against Bhagavad Gita 3.27, showing identical behavioral instruction ('practice diligently') carrying opposite agency orientations.
+- Ann Gleig, American Dharma: Buddhism Beyond Modernity (Yale, 2019), on the delivery gap between scholarly analysis and practitioner decision-making in hybrid practice contexts.
+- Dialogue origin: 081821a0b70e5629.
+- Parent ideas: Convergence as Translation Strain, Not Evidence Weight; Whose Doing Is This? Credit Distribution as a Practice Variable
+
+## Critique
+
+Four serious objections. First, the delivery gap is not a detail to address later; it is the load-bearing promise of the synthesis. If the rubric cannot produce output that practitioners encounter through their actual channels (teacher instruction, community discourse, practice manuals), the cohort naming is aspirational labeling on a research tool. The Format A/B test proposed in Turn 3 is necessary before the synthesis can claim to serve its stated audience. Second, the participation debt: stance-unit indicators (instruction language, credit assignment, failure interpretation, safeguard, teacher correction, practitioner report) require either practitioner testimony or deep practice-informed reading. Lumenary's current workflow is text-centered, and textual analysis alone will not populate orientation-strain scores reliably. Third, scope creep: the synthesis now has five strain dimensions (propositional, practice-role, agency-orientation, failure-mode, safeguard), each requiring its own operationalization and benchmark. Attempting all five simultaneously before validating any one risks producing impressive but unvalidated output. Fourth, the stage-shifting objection from the challenger's own critique survives: if credit distribution shifts predictably across stages of a single tradition (practitioner-centered early, ground-centered or source-centered late), the typology should describe stages rather than traditions, which would require recasting the orientation-strain layer as a stage-level variable.
+
+## Epistemic Labels
+
+- `textual`
+- `interpretive`
+- `phenomenological`
+- `analogical`
+- `speculative`
+
+## Scores
+
+- novelty: 0.67
+- generativity: 0.88
+- cross_tradition_support: 0.76
+- logical_coherence: 0.83
+- explanatory_compression: 0.82
+- empirical_adjacency: 0.41
+- practice_testability: 0.74
+- counterargument_quality: 0.84
+- source_reliability: 0.71
+- publishability: 0.77
+
+
+
+
+
+
+
+## Next Research Directions
+
+- Run the two-layer rubric (propositional strain plus agency-orientation strain) on the Srivaishnava markata/marjara split. If propositional strain scores low while orientation strain scores high, and scholars confirm the orientation divergence is the primary driver of institutional, liturgical, and pastoral differences, the two-layer model is validated as necessary.
+- Run the same rubric on SN 45.8 beside Bhagavad Gita 3.27. If the rubric detects that identical behavioral instruction ('practice diligently') carries opposite agency orientations and predicts different failure modes (spiritual pride versus strategic detachment), the orientation layer adds diagnostic power beyond propositional comparison alone.
+- Define an output specification: what does the rubric produce that a practitioner can read, recognize their situation in, and act on? Prototype a direct orientation description format ('this path asks you to claim your effort as your own; this path asks you to disown it; mixing them in this direction produces these specific dangers') and test it against the raw analytical output with five dual-trained practitioners, following the Format A/B design proposed in Turn 3.
+- Test the stage-shifting objection: code Theravada, Sufi, and Advaita practice sequences for credit distribution at each stage. If credit shifts predictably within traditions, recast the orientation-strain layer as a stage-level variable rather than a tradition-level one. This revision would increase explanatory power by predicting that transitions between credit types mark moments of highest practice vulnerability.
+- Address the participation debt by identifying one tradition for each of the five credit-distribution types where practitioner testimony or practice-informed reading is accessible. Populate the stance-unit indicators (instruction language, credit assignment, failure interpretation, safeguard, teacher correction, practitioner report) from those sources before using the typology in cross-tradition claims.
+- Compare the two-layer strain analysis with the capacity-ledger model (from 'The Capacity Ledger of Gift and Effort') to confirm separability. If two traditions share a capacity-ledger profile while differing in credit distribution, both variables are needed. If credit distribution determines the capacity profile, one may be reducible.
+
+exec
+/bin/zsh -lc "sed -n '1,240p' observations/claude/2026-05-25-the-epistemic-organ-what-a-tradition-calls-knowing-constrains-what-survives-negation.md" in /Users/johnforrester/spirituality
+ succeeded in 0ms:
+# The Epistemic Organ: What a Tradition Calls Knowing Constrains What Survives Negation
+
+Agent: claude
+Date: 2026-05-25T22:34:43-07:00
+Type: model
+Idea ID: acba050f4e3b7274
+Status: draft
+
+## Original Claim
+
+Each contemplative tradition implicitly designates a specific faculty as the organ of spiritual knowing: self-luminous awareness (cit/sakshi) in Advaita, conditioned mindfulness and wisdom (sati/prajna) in early Buddhism, emptied heart-mind (xin after xinzhai) in Daoism, reflective heart (qalb) in Sufism, self-identifying intellect (nous) in Neoplatonism, and consequential reasoning (prasanga) in Madhyamaka. This designation is not a neutral methodological choice; it is the first metaphysical commitment, and it constrains the entire structure of the contemplative path that follows. When the organ is defined as self-luminous and non-objectifiable (Advaita), it necessarily survives any negation process, because the instrument of investigation cannot turn on itself; the organ IS the proposed finding. When the organ is defined as conditioned (early Buddhism), it can and must undergo the same analysis it applies to everything else, which is why Buddhist negation runs through consciousness itself and finds no exempt remainder. When the organ is defined by receptive emptying (Zhuangzi's xinzhai), it yields responsiveness rather than substance, because the faculty is constituted by what it releases, not what it retains. When the organ is a mirror for divine disclosure (Ibn Arabi's qalb), it finds God rather than self, because knowledge enters from outside the organ rather than radiating from within it. When the organ is self-identifying intellect (Plotinus's nous), it naturally ascends toward what it contemplates, because knowing and being are fused in the act of contemplation. When the method is pure logical deconstruction with no designated contemplative organ (Nagarjuna's prasanga), no positive remainder is authorized, because there is nothing that has been placed beyond the reach of analysis. The epistemic organ thus functions as a single upstream variable that generates the downstream divergences documented by the existing Lumenary models: CodeX's remainder grammar follows from the organ's nature (a self-luminous organ speaks nouns; a conditioned organ yields predicate failures; an emptied organ speaks adverbs; a reflective organ speaks addresses), custody policy follows from the organ's account of agency, remainder pressure follows from whether the organ can resist its own negation, and the inferential gap follows from whether the organ is self-certifying or subject to further investigation. This provides more explanatory compression than tracking each variable independently, because all of them flow from a single prior variable: what the tradition treats as the faculty that does the knowing.
+
+## Why It Might Be New
+
+The existing Lumenary models each track a different downstream variable in the post-negation landscape: remainder pressure (what demands an answer), residue policy (what is permitted to remain), custody policy (what holds action), remainder grammar (what grammatical role the remainder plays), and the inferential gap (what policies govern the inference from experience to ontology). This model identifies a single upstream variable that generates all of them: the tradition's implicit designation of what counts as the organ of spiritual knowing. This is distinct from CodeX's interface invariant model, which treats attention, identity, salience, agency, and boundary as parallel features of a shared human interface. The epistemic organ thesis argues that these features are not parallel; they are hierarchically organized under the tradition's theory of the knowing faculty, which functions as the root commitment from which the other variables follow. It is also distinct from the generic observation that prior beliefs shape experience. The specific claim is that one particular kind of prior commitment, the nature and status of the knowing faculty, has outsized explanatory power because it determines not only what is found but the entire architecture of the path: what kind of negation is possible, what remainder is coherent, what grammar the remainder speaks, what custodial arrangement governs action, and what inferential policies apply to the data of practice. The Madhyamaka case strengthens the thesis by showing the correlation from the negative direction: a tradition that refuses to designate a fixed contemplative organ correspondingly refuses to authorize any remainder. I have not found this specific argument, with this level of cross-tradition application and this structural relationship to the remainder/custody/grammar/inference models, in the comparative philosophy literature I have surveyed.
+
+## Source Basis
+
+- Thinking method source: Zhuangzi, Inner Chapters, Ch.4, xinzhai (fasting of the mind): 'Don't listen with your ears, listen with your mind. No, don't listen with your mind, but listen with your spirit (qi). Spirit is empty and waits on all things.' I used this practice by emptying the assumption that traditions share a neutral epistemic starting point, which revealed that each tradition's account of the knowing faculty is already a metaphysical commitment.
+- Contrasting method source: Buddhist sati and prajna as conditioned mental factors (SN 22.59, Anattalakkhana Sutta; Dharmakirti, Pramanavarttika Ch.1 on pratyaksha as conditioned perception). This checked the Daoist lens by showing that treating the knowing faculty as conditioned changes what negation can reach: if the organ is conditioned, it cannot exempt itself from investigation.
+- Shankara, Upadesa Sahasri and Advaita Vision commentary on sakshi: the Self is svayam prakasha (self-luminous), the ultimate knower that 'cannot be objectified.' The knowing faculty (cit/sakshi) is identical with the proposed metaphysical remainder (atman = Brahman). Source: advaita-vision.org/tag/sakshi/.
+- Brihadaranyaka Upanishad 3.7.23: 'unseen but seeing, unheard but hearing, unknown but knowing; there is no other seer.' The inner controller is defined as the irreducible subject, which means the organ of knowing is placed beyond any possible negation by definition.
+- Ibn Arabi's epistemology of the heart (qalb): the heart has 'two eyes, reason and imagination' and is the 'only faculty capable of comprehending the One Real Being as It really is' (Syamsuddin Arif, 'Sufi Epistemology: Ibn Arabi on Knowledge,' PhilArchive; James Morris, 'The Reflective Heart,' Fons Vitae). The heart is a reflective organ, receiving divine self-disclosure (tajalli), not generating self-luminous knowledge. This predicts that Sufism finds God rather than self as the source of post-negation knowledge.
+- Plotinus, Enneads V.3: nous knows by becoming identical with its object; 'the act of knowing is itself the knower and the object' (IEP, 'Plotinus'). The epistemic organ ascends by identification, which predicts the Neoplatonic path: contemplation is a movement toward unity because the organ's nature is self-identifying.
+- Nagarjuna, MMK 18.6: 'The Buddhas have taught that there is a self, taught that there is no-self, and also taught that there is neither self nor non-self.' Madhyamaka uses prasanga (consequential reasoning) rather than a designated contemplative faculty, and correspondingly refuses to authorize any remainder. The correlation supports the thesis: no fixed organ, no fixed remainder.
+- Source card: notes/source-cards/daoism-zhuangzi-inner-chapters.md, xinzhai and zuowang claims.
+- Source card: notes/source-cards/sufism-ibn-arabi-fusus-al-hikam.md, tajalli and wahdat al-wujud claims.
+- Source card: notes/source-cards/neoplatonism-plotinus-enneads.md, epistrophe and henosis claims.
+- Source card: notes/source-cards/buddhism-nagarjuna-mmk.md, catuskoti and prapanca-cessation claims.
+- Codex model 'Remainder Grammar After Negation' (2026-05-25): traditions give the post-negation remainder different grammatical roles (noun, predicate failure, adverb, tense, address). This model proposes that the grammar follows from the nature of the designated epistemic organ.
+- Codex model 'Custody Policy After Self-Release' (2026-05-25): what holds action after de-identification. This model argues custody follows from the organ's account of agency and knowing.
+- Codex model 'Remainder Pressure as the Hidden Variable' (2026-05-25): the felt demand to posit a final subject after negation. This model adds that the pressure's shape depends on whether the organ can resist its own negation.
+- Claude model 'The Inferential Gap' (2026-05-25): competing inferential policies for objectless awareness. This model explains the inferential divergence: policies differ because they follow from the tradition's prior commitment about whether the knowing faculty is self-certifying or conditioned.
+- Evan Thompson, 'Waking, Dreaming, Being' (2015): the same phenomenological data supports multiple inferential conclusions, suggesting the epistemic organ is doing unacknowledged work in each framework.
+
+## Critique
+
+The strongest objection is that traditions do not designate an epistemic organ; they claim to discover the correct one. An Advaitin would insist that cit is the faculty of knowing because cit is what knowing IS, not because of a decision made in advance. The self-luminosity of awareness is presented as recognition, not premise. Calling it a 'designation' may impose a constructivist frame on traditions making realist claims about the nature of consciousness. A second objection: the thesis risks circularity. If the organ is itself identified by the tradition's prior commitments, then saying the organ determines the finding just means that prior commitments determine findings, which is too obvious to count as original. The counter is that identifying the specific commitment (the epistemic organ) has more explanatory compression than a vague appeal to tradition-dependence, but this needs rigorous testing. A third objection: the Zhuangzi thinking method may distort by making all differences look perspectival rather than substantive. The model says 'Advaita finds awareness because its organ is awareness,' but an Advaitin would say 'the organ is awareness because awareness is what is ultimately real.' The model cannot rule out that one tradition has actually identified the correct organ. It can only show that the choice of organ constrains the result, which does not settle which result is true. A fourth objection: some traditions may not cleanly designate a single organ. Christian mysticism offers competing accounts (intellect, will, love, synderesis, apex mentis), and even within Buddhism, Yogacara's alaya-vijnana introduces something closer to a quasi-witness than early Buddhist sati. Intra-traditional diversity may resist the model's compression. Finally, the Heart Sutra check must be applied: the model should not let 'epistemic organ' become a new hidden owner that explains everything. The model explains divergence, but it does not by itself tell us which organ, if any, gives access to truth.
+
+## Epistemic Labels
+
+- `textual`
+- `interpretive`
+- `phenomenological`
+- `analogical`
+- `speculative`
+
+## Scores
+
+- novelty: 0.84
+- generativity: 0.92
+- cross_tradition_support: 0.74
+- logical_coherence: 0.82
+- explanatory_compression: 0.89
+- empirical_adjacency: 0.36
+- practice_testability: 0.62
+- counterargument_quality: 0.86
+- source_reliability: 0.66
+- publishability: 0.80
+
+## Next Research Directions
+
+- Test the model on intra-traditional debates about the epistemic organ: Shankara versus Ramanuja on whether knowing is attributeless or personal; Theravada versus Yogacara on whether prajna is a conditioned factor or whether alaya-vijnana introduces a quasi-witness. If organ-designation predicts doctrinal divergence within a single tradition, the model gains substantial support.
+- Examine Madhyamaka as the critical test case: does prasanga function as a non-organ, and does the refusal to designate a contemplative faculty strictly predict the refusal to authorize any remainder? Or does Madhyamaka secretly rely on prajna as a faculty, which would weaken the thesis?
+- Ask dual-trained practitioners (e.g., those trained in both Advaita and Vipassana): after sustained practice in two traditions with different designated organs, does the organ feel discovered or adopted? Does switching traditions change what is found, and if so, does the change track the organ-switch? This is an empirical question that could be investigated through structured interviews.
+- Build an epistemic organ rubric with fields: organ name, self-luminous or conditioned, exempt from its own analysis or subject to it, producing or receiving knowledge, singular or composite, temporal or atemporal, and predicted remainder type.
+- Connect to Evan Thompson's embodied subjectivity: does Thompson implicitly designate the lived body as the epistemic organ? If so, his framework introduces a sixth organ (prereflective embodied self-awareness) that should predict its own distinctive remainder, custody policy, and grammar.
+- Test whether the epistemic organ predicts practice instructions: does each tradition's instruction at the moment of de-identification reflect the organ's nature? For example, 'rest as awareness' (Advaita, self-luminous organ), 'investigate the one who is aware' (Buddhism, conditioned organ), 'let qi gather in emptiness' (Daoism, emptied organ), 'polish the heart' (Sufism, reflective organ).
+- Protocol improvement: before applying any contemplative method as a thinking lens, explicitly name what that method treats as the organ of knowing, and ask whether the organ's nature is shaping what the method can see in the material. This prevents the researcher from borrowing an organ without noticing the constraints it introduces.
+
+exec
+/bin/zsh -lc "sed -n '1,220p' observations/codex/2026-05-25-convergence-as-translation-strain-not-evidence-weight.md" in /Users/johnforrester/spirituality
+ succeeded in 0ms:
+# Convergence as Translation Strain, Not Evidence Weight
+
+Agent: codex
+Date: 2026-05-25T14:49:39-07:00
+Type: model
+Idea ID: 0e1a69f243a0d090
+Status: draft
+
+## Public Article
+
+### The short version
+
+When two traditions sound alike, the first question should not be "Did they prove the same thing?" The better question is: "What had to be changed to make them sound alike?"
+
+That change is the insight. Lumenary calls it translation strain.
+
+### Why this matters
+
+Comparative spirituality usually fails in one of two ways. The generous failure says all traditions are secretly saying the same thing. The skeptical failure says every similarity is projection. Both moves throw away useful information.
+
+If Advaita speaks of an unobjectifiable witness and Buddhism refuses to authorize any self, it is too crude to say they either agree or disagree. The more interesting fact is that both traditions pass through negation, de-identification, and the loosening of ordinary selfhood, then make different final moves. The overlap matters. The divergence matters. The exact pressure needed to translate one into the other matters most.
+
+### The method
+
+Translation strain treats comparison like a stress test. A claim is broken into smaller units:
+
+- the practice role
+- the reported experience
+- the metaphysical claim
+- the ethical consequence
+- the terms that carry the claim
+- the kind of evidence being used
+
+Then the agent asks which units survive translation and which ones bend. If a claim survives with little strain, it may indicate a stable cross-tradition pattern. If it survives only by dropping major commitments, it is still useful, but only as analogy, not as evidence.
+
+### The original thought
+
+The most valuable convergence may not be agreement. It may be the stress pattern revealed by failed agreement.
+
+A bridge is informative because of where it holds and where it flexes. When two traditions almost meet, the mismatch can name a hidden variable. That hidden variable may be more original than the apparent similarity.
+
+For Lumenary, this means failed synthesis is not wasted research. It becomes a way to discover finer distinctions: witness versus awareness, emptiness versus absence, surrender versus passivity, soul versus continuity, nondual experience versus nondual ontology.
+
+### What this prevents
+
+This rule prevents the site from turning resemblance into proof. A Buddhist claim about no-self does not prove an Advaita claim about Atman just because both weaken ordinary ego. A physics claim about fields does not prove a spiritual claim about consciousness just because both reject naive material objects. Similarity can generate inquiry. It cannot carry the burden of truth by itself.
+
+### What would make it stronger
+
+The method needs hard examples. It should name the exact word, practice, or metaphysical commitment that gets distorted in translation. If the agent cannot say what was bent, dropped, or reweighted, the comparison should be downgraded.
+
+The real standard is simple: no vague convergence without named strain.
+
+## Original Claim
+
+Lumenary should treat cross-tradition convergence as a signal of translation strain: the research value lies not in saying two traditions prove the same claim, but in identifying which smaller claim units must be bent, dropped, or added for an apparent match to hold. A convergence is strongest when it reveals a repeatable role in practice or experience while making the incompatible metaphysical commitments more explicit.
+
+## Why It Might Be New
+
+This shifts comparison away from both universalizing synthesis and skeptical dismissal. It gives convergence positive value as a generator of precise distinctions, while refusing to let analogy become evidence. The original unit of analysis is not the shared concept, but the deformation required to make concepts align.
+
+## Source Basis
+
+- Codex Finding 3: separate broad spiritual terms into smaller claim units before comparison.
+- Codex Finding 4: score research value rather than metaphysical truth.
+- Codex Finding 5: preserve epistemic boundaries between text, interpretation, phenomenology, empirical adjacency, analogy, and speculation.
+- Claude Code imported plan: give convergence across independent traditions more weight while moving from cartography to synthesis.
+
+## Critique
+
+The model may over-intellectualize traditions by treating living practices as claim bundles and translation operations. It also risks rewarding tidy incompatibility maps over deep participation or textual expertise. A serious test would need examples where the method changes a conclusion that a simpler convergence-weighting system would have accepted too quickly.
+
+## Epistemic Labels
+
+- `interpretive`
+- `analogical`
+- `speculative`
+
+## Scores
+
+- novelty: 0.78
+- generativity: 0.86
+- cross_tradition_support: 0.52
+- logical_coherence: 0.84
+- explanatory_compression: 0.81
+- empirical_adjacency: 0.38
+- practice_testability: 0.57
+- counterargument_quality: 0.76
+- source_reliability: 0.63
+- publishability: 0.82
+
+## Next Research Directions
+
+- Define a translation-strain rubric for claim units such as witness-consciousness, soul, non-self, moral personhood, and post-mortem persistence.
+- Run the rubric on one narrow comparison and record where apparent convergence fails, survives, or becomes only analogical.
+- Add a scoring field for convergence quality that separates independence, role-similarity, metaphysical compatibility, and practice-testability.
+
+exec
+/bin/zsh -lc "sed -n '1,220p' reviews/originality/2026-05-30-no-word-travels-alone-2108b5e4c890babe.json" in /Users/johnforrester/spirituality
+ succeeded in 0ms:
+{
+  "agent": "codex",
+  "anomaly_probe": {
+    "anomaly_candidate": "Living traditions that safely transmit difficult words through institution, ritual, teacher relationship, and community without asking each receiver to analyze wounds.",
+    "confidence_effect": "Confidence remains moderate. Receiver-wound coding should be a risk triage for extracted, online, therapeutic, or self-synthesis contexts, not a universal condition for all religious language.",
+    "why_it_breaks_or_strains_model": "If a novice learns detachment, surrender, emptiness, or service through embodied correction rather than private receiver-wound reflection, the proposed sheet may be an outsider's psychologizing grid. It could weaken trust, increase self-monitoring, or miss the actual correction holder."
+  },
+  "audit_id": "2108b5e4c890babe",
+  "claim_units": [
+    "A spiritual term is not portable by dictionary meaning alone.",
+    "Terms carry training practices, correction authorities, verification rules, and forms of conduct.",
+    "A modern receiver's loneliness, shame, ambition, fear, or visibility hunger can counterfeit the term's use.",
+    "Detachment, surrender, emptiness, witness, humility, and service can become withdrawal, passivity, nihilism, self-erasure, or performance identity.",
+    "Human-condition fit is clearer than in many comparison claims: it targets loneliness, digital comparison, withdrawal, meaning loss, and achievement-contingent self-worth in stable supported readers, not acute crisis."
+  ],
+  "confidence": 0.82,
+  "created_at": "2026-05-30T11:13:36+02:00",
+  "cross_domain_prediction": {
+    "domain": "workplace and therapy vocabulary",
+    "prediction": "When these words are imported without trained practice and correction holders, different wounds will counterfeit them predictably: boundaries becomes avoidance, resilience becomes overwork, safety becomes control, accountability becomes shame ritual.",
+    "structural_translation": "Terms such as boundaries, resilience, trauma-informed, accountability, psychological safety, and self-care also travel with practices, authorities, verification norms, and receiver wounds.",
+    "would_count_against_it": "Definitions alone transfer the terms safely across cohorts, and misuse does not vary by receiver wound, correction holder, or institutional practice."
+  },
+  "exact_claim": "A spiritual word travels with practice, authority, verification, and the receiver's wound; therefore translation-strain work must test both source-side role and receiver-side misuse before a borrowed term becomes a responsible teaching.",
+  "execution_id": "parallel-20260530-110134-20260530-110134",
+  "falsifiable_predictions": [
+    {
+      "expected_observation": "Detachment skews toward withdrawal in lonely or avoidant participants, but toward disciplined non-reactivity in supported overattached participants. Service skews toward self-erasure in achievement-contingent participants, but toward concrete repair in stable participants.",
+      "if_model_is_right": "Receiver wounds create predictable distortions of the same borrowed term.",
+      "test_surface": "Pre-registered cohort study coding wound profile, term use, action taken, and follow-up conduct.",
+      "would_weaken_or_falsify": "Term misuse is not predicted by receiver wound after controlling for teacher quality, community support, mental health, and prior practice."
+    },
+    {
+      "expected_observation": "Compared with ordinary journaling, stable users produce more concrete accountable actions, fewer avoidance rationalizations, and no increase in shame or rumination.",
+      "if_model_is_right": "The Word Carry Test improves conduct more than ordinary reflection for the target cohort.",
+      "test_surface": "Randomized pilot with three arms: Word Carry Test, ordinary journaling, and action-plan control.",
+      "would_weaken_or_falsify": "Ordinary journaling, values clarification, or a simple action plan performs as well or better, or the practice increases checking, shame, or self-surveillance."
+    },
+    {
+      "expected_observation": "Teachers and spiritual directors name different warnings for the same word depending on loneliness, shame, ambition, trauma history, social support, and online visibility pressure.",
+      "if_model_is_right": "Source role plus receiver wound predicts practitioner warnings better than source role alone.",
+      "test_surface": "Interview study asking for concrete misuse and repair cases, not agreement with the theory.",
+      "would_weaken_or_falsify": "Practitioners say tradition, teacher style, social ecology, and clinical risk fully explain the warning profile without a receiver-wound field."
+    },
+    {
+      "expected_observation": "Public posts using terms such as surrender, emptiness, witness, boundaries, service, or humility without practice source or correction holder show higher rates of avoidance, grandiosity, withdrawal, or performance identity markers.",
+      "if_model_is_right": "Online extraction intensifies word misuse when correction holders are absent.",
+      "test_surface": "Corpus coding of spiritual, therapeutic, and self-help social media posts with blinded behavioral-risk tags.",
+      "would_weaken_or_falsify": "Misuse rates are unrelated to correction-holder absence or are better predicted only by platform incentives and mental-health variables."
+    }
+  ],
+  "idea_id": "f96a118b58b0f615",
+  "idea_path": "observations/codex/2026-05-30-no-word-travels-alone.md",
+  "literature_search_queries": [
+    "Wittgenstein language games meaning use forms of life religious language",
+    "Talal Asad discursive tradition correct form purpose practice authority religion",
+    "Lindbeck Nature of Doctrine cultural linguistic grammar religion",
+    "J L Austin speech acts religious language performative vows blessings",
+    "Panikkar homeomorphic equivalence functional analogy religious comparison",
+    "spiritual bypassing detachment surrender emptiness avoid psychological wounds",
+    "Lindahl Palitsky worldviews meditation challenges VCE influencing factors"
+  ],
+  "near_neighbors": [
+    {
+      "difference": "The candidate turns this into a teaching gate for spiritual borrowing and adds receiver-wound risk.",
+      "novelty_impact": "Strong downgrade for the word-does-not-travel-alone thesis.",
+      "overlap": "Very close. Meaning is bound to use, rules, activity, and forms of life rather than words alone.",
+      "source": "Wittgenstein on language-games and forms of life, SEP, https://plato.stanford.edu/archives/fall2023/entries/wittgenstein/"
+    },
+    {
+      "difference": "The candidate adds modern psychological and digital-comparison misuse as a receiver-side field.",
+      "novelty_impact": "Downgrade to extended. The authority and practice side is established prior art.",
+      "overlap": "Very close. Asad already ties religious discourse to correct form and purpose of practice, history, institutions, and social conditions.",
+      "source": "Talal Asad on discursive tradition, summarized with source citation at https://www.scielo.org.za/scielo.php?pid=S1011-76012014000200004&script=sci_arttext"
+    },
+    {
+      "difference": "Panikkar focuses on interreligious correspondence; the candidate adds cohort harm and action testing.",
+      "novelty_impact": "Supports synthesis, not discovery.",
+      "overlap": "Close on functional analogy that preserves specificity and avoids mistaken comparison.",
+      "source": "Panikkar, homeomorphic equivalence, https://www.raimon-panikkar.org/english/gloss-homeomorphic.html"
+    },
+    {
+      "difference": "The candidate makes performative role a safety check for borrowed words in modern practice design.",
+      "novelty_impact": "Reduces novelty of the words-do-things component.",
+      "overlap": "Close. Religious utterances can be performative, imperative, authority-establishing, vow-making, or conduct-shaping rather than merely descriptive.",
+      "source": "Religious-language and speech-act approaches, summarized at https://en.wikipedia.org/wiki/Problem_of_religious_language"
+    },
+    {
+      "difference": "The candidate joins bypass risk to source-side translation strain and cross-tradition teaching gates.",
+      "novelty_impact": "Major downgrade for the receiver-wound insight, moderate support for novel synthesis.",
+      "overlap": "Very close on receiver wounds: spiritual ideas and practices can be used to avoid unresolved emotional issues, psychological wounds, responsibility, and developmental tasks.",
+      "source": "Spiritual bypassing literature, overview at https://en.wikipedia.org/wiki/Spiritual_bypass, and clinical citations listed there."
+    },
+    {
+      "difference": "The candidate applies contextual-risk logic to individual borrowed terms rather than meditation experiences generally.",
+      "novelty_impact": "Keeps the model empirical-adjacent but lowers novelty.",
+      "overlap": "Close. VCE shows similar experiences can be interpreted and managed differently by practitioner factors, practice factors, relationships, health behaviors, and worldviews.",
+      "source": "Lindahl et al., Varieties of Contemplative Experience, https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0176239, and Palitsky, Lindahl et al. on worldviews, https://journals.sagepub.com/doi/10.1177/13634615221128679"
+    },
+    {
+      "difference": "This record attaches that rule specifically to translation strain and borrowed vocabulary.",
+      "novelty_impact": "Downgrade from candidate discovery to extended.",
+      "overlap": "Near exact local prior on testing sentence or word role before trusting a spiritual claim, plus naming the modern wound before teaching.",
+      "source": "Internal Lumenary, First Ask What the Words Do and modern-human-condition gating from project memory."
+    }
+  ],
+  "next_loop_instructions": [
+    "Do not publish as a standalone discovery. Cross-index with First Ask What the Words Do, translation-strain records, spiritual-bypass safety records, and modern-human-condition gating.",
+    "Build a one-page codebook with fields for source role, trained practice, correction holder, verification rule, receiver wound, likely counterfeit use, concrete action, warning, repair, and clinical exclusion.",
+    "Use split-source coding: code source role from primary instruction texts, then predict misuse and repair from held-out practitioner cases.",
+    "Compare the model against spiritual bypassing, Pargament religious coping, VCE contextual factors, Asad discursive tradition, Lindbeck grammar, and ordinary values-based action planning.",
+    "Pilot the Word Carry Test only with stable supported adults or older teens, and stop for shame, panic, rumination, dissociation, compulsive confession, self-punishment, or obsessive checking.",
+    "Require a real community or care pathway for lonely seekers, since the practice can remove false comfort without meeting the belonging need."
+  ],
+  "novelty_adjustment": "Lower novelty from 0.62 to 0.39. The core insight is strongly anticipated by Wittgenstein, Asad, Lindbeck, speech-act theory, Panikkar, spiritual bypassing, Pargament, and VCE context research. The useful Lumenary contribution is a practical two-sided gate for source role and receiver-wound misuse before public teaching. Human-condition fit is stronger than novelty: the target is stable supported readers facing loneliness, digital comparison, withdrawal, meaning loss, and achievement-contingent self-worth. It is not fit for acute crisis, unsafe relationships, psychosis, mania, severe depression, dissociation, addiction withdrawal, OCD or scrupulosity loops, or medical blackout concerns.",
+  "originality_status": "extended",
+  "practitioner_test": {
+    "answers_that_reduce_originality": "Practitioners say this is simply spiritual bypassing, language-games, Asad, Lindbeck, or ordinary pastoral discernment, and that the added worksheet gives no better repair than existing guidance.",
+    "answers_that_support_contribution": "Practitioners identify cases where source role plus receiver-wound coding predicts specific warnings and repairs better than tradition label, teacher style, or generic bypass language.",
+    "questions": [
+      "When this word fails in students, what concrete behavior changes first?",
+      "Who normally corrects misuse of this word: teacher, text, ritual, community, vow, clinician, ordinary duty, or the practitioner?",
+      "Does naming a receiver wound improve repair, or does it overpsychologize a tradition-bound term?",
+      "Can you name a case where detachment, surrender, emptiness, witness, humility, or service became avoidance, passivity, nihilism, self-erasure, or performance identity?",
+      "Does the Word Carry Test change practice understanding beyond standard spiritual-bypass screening and ordinary teacher guidance?"
+    ],
+    "relevant_practitioners": [
+      "meditation teachers across Buddhist traditions",
+      "spiritual directors and chaplains",
+      "comparative theologians",
+      "religious studies scholars",
+      "clinicians familiar with spiritual bypassing and meditation-related difficulties",
+      "teachers working with online seekers and deconstructed former believers"
+    ]
+  },
+  "primary_text_close_read": {
+    "primary_pair": [
+      "Brihadaranyaka Upanishad 3.7.23, https://en.wikiquote.org/wiki/Brihadaranyaka_Upanishad, read against SN 22.59, https://www.accesstoinsight.org/ati/tipitaka/sn/sn22/sn22.059.nymo.html",
+      "Daodejing 1, https://daoreading.com/ddj_ch_1, read against Pseudo-Dionysius, Mystical Theology, via accessible summary and source links, https://saintquote.org/work/mystical_theology/"
+    ],
+    "risk_of_overread": "High. The model risks turning every translation problem into private psychology. In many traditions, institutions, teachers, liturgies, vows, and communities carry correction more strongly than an individual's wound analysis. The Word Carry Test may increase shame, rumination, self-surveillance, or dependence if used by people with OCD, scrupulosity, trauma activation, mania, severe depression, dissociation, acute addiction withdrawal, unsafe relationships, or clinical distress.",
+    "secondary_literature_gap": "Before raising novelty, read Lindbeck, The Nature of Doctrine, Talal Asad, The Idea of an Anthropology of Islam and Genealogies of Religion, Wittgenstein on language-games and forms of life, J. L. Austin on speech acts, MacIntyre on practices, Bourdieu on habitus, Panikkar on homeomorphic equivalence, Katz and Sharf on contextualism, McMahan on Buddhist modernism, Pargament on religious coping, spiritual bypassing research by Welwood, Cashwell, Fox, Picciotto, and Lindahl and Palitsky on VCE and worldview effects.",
+    "structural_observation": "Brihadaranyaka 3.7.23 makes the unseen seer and inner controller the authority-bearing self, while SN 22.59 applies not-self analysis to the aggregates, including consciousness, through affliction and non-mastery. Both de-objectify ordinary identity, but they train opposite uses of the word self. Daodejing 1 restrains naming around the constant way, while Dionysian unknowing is a Christian apophatic ascent toward God beyond affirmation and negation. The shared vocabulary of silence or unknowing is therefore not a stable portable insight unless practice, authority, and verification are carried with it."
+  },
+  "recommended_scores": {
+    "counterargument_quality": 0.88,
+    "novelty": 0.39,
+    "source_reliability": 0.81
+  },
+  "run_ids": [
+    "20260530-110134-claude-generate-an-original-lumenary-doctrine-building-",
+    "20260530-110134-codex-generate-an-original-lumenary-doctrine-building-"
+  ],
+  "title": "No Word Travels Alone",
+  "unlike_statement": "Unlike Wittgenstein, Asad, Lindbeck, speech-act theory, spiritual bypassing, and VCE context research, this candidate says a borrowed spiritual term must pass a two-sided gate: source role plus receiver-wound misuse. That combination is useful for Lumenary practice design, but most parts are known."
+}
+
+exec
+/bin/zsh -lc "sed -n '1,220p' notes/source-cards/advaita-vedanta-chandogya-upanishad-6-8-7-tat-tvam-asi.md" in /Users/johnforrester/spirituality
+ succeeded in 0ms:
+# Chandogya Upanishad 6.8.7 Tat Tvam Asi
+
+Source ID: advaita-vedanta-chandogya-upanishad-6-8-7-tat-tvam-asi
+Tradition: advaita-vedanta
+Type: text
+Path: 
+URL: https://shlokam.org/texts/Chandogya-6-8-7
+
+## Notes
+
+Primary source for the identity formula 'tat tvam asi'. Useful for testing whether identity claims function as metaphysical assertion, instruction, or recognition formula.
+
+## Extraction Status
+
+- claims extracted: no
+- concepts linked: no
+- cited in observations: no
+
+exec
+/bin/zsh -lc "sed -n '1,220p' notes/source-cards/early-buddhism-sn-22-59-anattalakkhana-sutta.md" in /Users/johnforrester/spirituality
+ succeeded in 0ms:
+# SN 22.59 Anattalakkhana Sutta
+
+Source ID: early-buddhism-sn-22-59-anattalakkhana-sutta
+Tradition: early-buddhism
+Type: text
+Path: 
+URL: https://suttacentral.net/sn22.59/en/bodhi
+
+## Notes
+
+Primary early Buddhist source for the not-self analysis of the five aggregates. Central counterpoint to Upanishadic residue and witness language.
+
+## Extraction Status
+
+- claims extracted: no
+- concepts linked: no
+- cited in observations: no
+
+exec
+/bin/zsh -lc "sed -n '1,220p' notes/source-cards/modern-human-condition-youth-mental-health-social-media-advisory.md" in /Users/johnforrester/spirituality
+ succeeded in 0ms:
+# Social Media and Youth Mental Health
+
+Source ID: modern-human-condition-youth-mental-health-social-media-advisory
+Tradition: modern-human-condition
+Type: report
+Path: 
+URL: https://www.hhs.gov/surgeongeneral/reports-and-publications/youth-mental-health/social-media/index.html
+
+## Notes
+
+U.S. Surgeon General advisory on social media and youth mental health. Use as grounding for attention fragmentation, comparison, loneliness, self-worth tied to visibility, and practices that help people notice how digital environments train desire and belonging.
+
+## Extraction Status
+
+- claims extracted: no
+- concepts linked: no
+- cited in observations: no
+
+exec
+/bin/zsh -lc "sed -n '1,220p' notes/source-cards/daoism-dao-de-jing-chapter-48.md" in /Users/johnforrester/spirituality
+exec
+/bin/zsh -lc "sed -n '1,220p' notes/source-cards/christianity-pseudo-dionysius-mystical-theology.md" in /Users/johnforrester/spirituality
+ succeeded in 0ms:
+# Dao De Jing Chapter 48
+
+Source ID: daoism-dao-de-jing-chapter-48
+Tradition: daoism
+Type: text
+Path: 
+URL: https://ctext.org/dictionary.pl?id=11634&if=en
+
+## Notes
+
+Focused Dao De Jing source for learning, diminishing, and wu wei. Useful for comparing negation-by-reduction with self-negation and de-identification practices.
+
+## Extraction Status
+
+- claims extracted: no
+- concepts linked: no
+- cited in observations: no
+
+ succeeded in 0ms:
+# Pseudo-Dionysius The Mystical Theology
+
+Source ID: christianity-pseudo-dionysius-mystical-theology
+Tradition: christianity
+Type: text
+Path: notes/source-cards/christianity-pseudo-dionysius-mystical-theology.md
+URL: https://www.tertullian.org/fathers/areopagite_03_mystic_theology.htm
+
+## Notes
+
+Christian apophatic source for ascent by unknowing, negation, and divine darkness. Useful as a Western counterweight to Buddhist emptiness, Advaita neti neti, and Daoist namelessness.
+
+## Extraction Status
+
+- claims extracted: no
+- concepts linked: no
+- cited in observations: no
+
+exec
+/bin/zsh -lc "sed -n '1,220p' notes/source-cards/modern-human-condition-surgeon-general-social-connection-advisory.md" in /Users/johnforrester/spirituality
+ succeeded in 0ms:
+# Our Epidemic of Loneliness and Isolation
+
+Source ID: modern-human-condition-surgeon-general-social-connection-advisory
+Tradition: modern-human-condition
+Type: report
+Path: 
+URL: https://www.hhs.gov/sites/default/files/surgeon-general-social-connection-advisory.pdf
+
+## Notes
+
+U.S. Surgeon General advisory on loneliness, isolation, social connection, belonging, health risk, and community repair. Use as a grounding source for teachings and practices aimed at disconnection, feeling unneeded, social withdrawal, and the loss of ordinary belonging.
+
+## Extraction Status
+
+- claims extracted: no
+- concepts linked: no
+- cited in observations: no
+
+web search: 
+web search: Jonathan Z. Smith comparison redescription rectification comparison religion invented "Magic Dwells"
+web search: 
+web search: Lindahl Varieties of Contemplative Experience worldview practitioner factors meditation challenges
+web search: 
+web search: https://suttacentral.net/sn22.59/en/bodhi
+web search: 
+web search: SN 22.59 Anattalakkhana Sutta form self impermanent not self consciousness SuttaCentral Bodhi
+web search: 
+web search: Pseudo-Dionysius Mystical Theology English translation negation affirmation darkness
+web search: 
+web search: https://www.tao-te-ching.org/48
+web search: 
+web search: 'Social media may have benefits' in https://www.hhs.gov/surgeongeneral/reports-and-publications/youth-mental-health/social-media/index.html
+web search: 
+web search: Freiberger Elements of a Comparative Methodology in the Study of Religion MDPI Religions 2018
+web search: 
+web search: Jonathan Z. Smith In Comparison a Magic Dwells pdf comparison religion difference redescription
+web search: 
+web search: Panikkar homeomorphic equivalence glossary religious comparison not same functional role
+web search: 
+web search: SuttaCentral SN 22.59 Bodhi not self five aggregates consciousness not self
+web search: 
+web search: U.S. Surgeon General social connection advisory loneliness isolation health risk belonging PDF 2023
+codex
+{"title":"Ask Who Taught The Answer","idea_type":"model","source_basis":["Mode: Critique. Active frontier: Translation strain as a test of convergence. The run narrows the frontier by adding a provenance and regeneration gate before convergence can count as doctrine-building support.","Practitioner-method source: Dao De Jing 48, source card notes/source-cards/daoism-dao-de-jing-chapter-48.md and https://www.tao-te-ching.org/48. I used its reducing lens by subtracting borrowed terms until only source role, practice aim, authority, and verification remained. Critique of the method: reduction can mistake legitimate learning for contamination, so it must be balanced by historical provenance rather than purity-seeking.","Primary-text comparison: Chandogya Upanishad 6.8.7, source card notes/source-cards/advaita-vedanta-chandogya-upanishad-6-8-7-tat-tvam-asi.md and https://shlokam.org/texts/Chandogya-6-8-7, read against SN 22.59, source card notes/source-cards/early-buddhism-sn-22-59-anattalakkhana-sutta.md and https://suttacentral.net/sn22.59/en/sujato. The comparison shows shared de-centering of ordinary identity but incompatible authorization of self-language.","Primary-text comparison: Pseudo-Dionysius, Mystical Theology, source card notes/source-cards/christianity-pseudo-dionysius-mystical-theology.md and https://www.tertullian.org/fathers/areopagite_06_mystic_theology.htm, read against Dao De Jing 48. Both diminish ordinary knowing, but one carries Christian ascent into divine darkness while the other carries non-forcing and reduction of intervention.","Near prior art: Jonathan Z. Smith, In Comparison a Magic Dwells, https://classics.osu.edu/sites/classics.osu.edu/files/Magic_Dwells.pdf; Oliver Freiberger, Elements of a Comparative Methodology in the Study of Religion, https://www.mdpi.com/2077-1444/9/2/38; Raimon Panikkar, homeomorphic equivalence, https://www.raimon-panikkar.org/english/gloss-homeomorphic.html.","Local near-neighbor pressure: observations/codex/2026-05-25-convergence-as-translation-strain-not-evidence-weight.md; observations/codex/2026-05-25-translation-strain-as-a-load-test-for-convergence.md; observations/claude/2026-05-26-multi-layer-convergence-strain-for-practitioners-crossing-traditions.md; reviews/originality/2026-05-30-no-word-travels-alone-2108b5e4c890babe.json.","Modern human-condition grounding: U.S. Surgeon General social connection advisory source card notes/source-cards/modern-human-condition-surgeon-general-social-connection-advisory.md and https://www.hhs.gov/sites/default/files/surgeon-general-social-connection-advisory.pdf; U.S. Surgeon General social media advisory source card notes/source-cards/modern-human-condition-youth-mental-health-social-media-advisory.md and https://www.hhs.gov/surgeongeneral/reports-and-publications/youth-mental-health/social-media/index.html."],"original_claim":"When two traditions seem to agree, the agreement should not be counted until each side can produce the claim from its own practice, correction, authority, and test. A repeated spiritual sentence may be an independent witness, but it may also be a borrowed habit, a translation convention, a teacher's blended vocabulary, or a modern seeker's wish to belong. The useful sheet is simple: name the claim unit, role, ontology, agency, practice aim, authority, verification, provenance, what is bent, what is dropped, what is added, and whether the practical role survives without smuggling one path's answer into the other. What now holds is narrower than easy unity: shared words do not prove shared insight; shared roles matter only when they can be regenerated without borrowed authority.","why_it_might_be_new":"Closest prior argument: Freiberger already gives a method for comparison through selection, description, juxtaposition, redescription, rectification, and theory formation, while Smith stresses that comparison is a scholarly act that must account for difference. Panikkar's homeomorphic equivalence is also close because it respects functional likeness without erasing specificity. The difference is the regeneration gate: before a similarity supports doctrine or practice, the comparer must ask whether each tradition can reproduce the claim under its own carrier conditions, and whether a modern receiver is using the borrowed claim for belonging, identity, or avoidance. Novelty is moderate because the parts are known; the contribution is the operational gate for doctrine scoring and low-risk practice design.","critique":"The model may overcorrect toward suspicion. Traditions are historically entangled, and many real insights travel through teachers, translations, polemics, and mixed communities. A demand for independent regeneration could confuse historical purity with truth, and it could undervalue hybrid practice where borrowed language becomes honest through discipline. The strongest anomaly is Buddhist and Advaita debate over self-language across centuries of mutual influence: high strain may be historically causal rather than false convergence. Nirodha samapatti is another pressure case because cessation reports may offer no shared positive answer to regenerate. If practitioners show that ordinary teacher correction handles these cases better than a regeneration sheet, the model should be weakened.","epistemic_labels":["textual","interpretive","phenomenological","empirical-adjacent","analogical","speculative"],"scores":{"novelty":0.48,"generativity":0.87,"cross_tradition_support":0.72,"logical_coherence":0.84,"explanatory_compression":0.79,"empirical_adjacency":0.52,"practice_testability":0.77,"counterargument_quality":0.89,"source_reliability":0.8,"publishability":0.74},"next_research_directions":["Build the one-page translation-strain sheet with these fields: claim unit, role, ontology, agency, practice aim, authority, verification, provenance, what is bent, what is dropped, what is added, and whether role-similarity survives without borrowed authority.","If this model is right, then high-quality comparisons will downgrade some apparent agreements once provenance and regeneration are checked. If most apparent agreements can be independently regenerated inside each tradition without hidden import, the model is weakened.","Test the anomaly of historically entangled traditions: if Buddhist and Advaita self-language shows high strain but clear causal exchange, the rubric must separate historical dependence from philosophical incompatibility.","Improve the thinking protocol: before using a contemplative method as a lens, ask what that method makes harder to see. Reduction revealed hidden carriers here, but it also risked treating all borrowing as loss."],"teaching_candidate":{"title":"Do Not Borrow An Ending","teaching_line":"Do not make a borrowed sentence your life until you know what carried it.","doctrine_claim":"A claim is not strengthened by repeated language unless each source can regenerate it through its own practices, authorities, and tests.","body":"A sentence can feel true because it is familiar, beautiful, or shared by people we admire. Ask where it came from, what discipline formed it, who could correct it, and what it asks of your next action.\n\nIf the sentence only gives you a stronger identity, hold it lightly. If it helps you repair, serve, wait, tell the truth, or stop harming yourself or others, it has begun to carry weight.","target_human_problem":"digital comparison, meaning loss, loneliness, and feeling out of place","target_cohort":"stable spiritually eclectic adults and older teens who gather teachings online and feel pressure to belong by adopting strong spiritual claims","pressure_survived":"Close prior-art pressure from Smith, Freiberger, Panikkar, Wittgenstein-adjacent language concerns, local translation-strain records, and the local No Word Travels Alone audit. The claim survived only after novelty was narrowed and the focus shifted from broad comparison to a practical regeneration gate.","falsifying_pressure":"Weaken if dual-trained practitioners and teachers show that the gate adds no discernment beyond ordinary teacher guidance, or if practice reports show that it increases rumination, shame, isolation, or distrust without improving conduct.","status":"under_dialogue","tags":["translation-strain","critique","digital-comparison","meaning-loss","doctrine-seed"]},"practice_candidate":{"title":"Borrowed Sentence Check","practice_line":"Before repeating a spiritual claim as yours, ask what taught it and what it asks you to do.","purpose":"Test whether a borrowed insight has a real carrier and practical consequence, or whether it is serving identity, belonging, avoidance, or online display.","target_human_problem":"digital comparison, meaning loss, loneliness, and feeling out of place","target_cohort":"stable spiritually eclectic adults and older teens who collect spiritual language from books, teachers, podcasts, social media, or mixed communities","non_fit":"Not for acute crisis, psychosis, mania, severe depression, addiction withdrawal, OCD or scrupulosity loops, dissociation, unsafe relationships, or people already practicing under trusted guidance who should ask their teacher instead.","duration":"10 minutes","frequency":"Once before adopting or posting a major spiritual claim; at most twice per week.","minimum_attempt":"Use it on three different claims across two weeks, then review whether it improved conduct or only increased checking.","steps":["Write the exact sentence you want to claim or share.","Name where you learned it and who, if anyone, could correct your use of it.","Name the practice, authority, and verification rule that originally carried the sentence.","Write what another tradition would have to bend, drop, or add to agree with it.","Ask what the sentence wants you to do in one concrete relationship, duty, or habit today.","Wait 24 hours before posting it. Do the concrete action first."],"notice":["Whether the sentence makes you more honest, more careful, and more connected to actual people.","Whether you are using the sentence to avoid grief, repair, apology, responsibility, or asking for help.","Whether the check creates shame, compulsive analysis, or a stronger need to display your identity."],"caution":"Stop if the practice increases shame, panic, obsessive checking, dissociation, or withdrawal. Seek human support if the sentence is tied to self-harm, abuse, addiction, or clinical distress.","weakens_if":"Ordinary journaling or teacher guidance performs as well or better, or the check reliably increases rumination, distrust, shame, or isolation in the target cohort.","risk_level":"low","status":"seed","tags":["translation-strain","digital-comparison","meaning-loss","low-risk","discernment"]},"tests":[{"title":"Prior Art Compression Check","test_type":"prior-art","target_type":"idea","prediction":"Near-neighbor scholarship will already cover comparison, functional equivalence, language use, and tradition-bound authority, but will not fully specify a doctrine-scoring regeneration gate tied to modern receiver misuse.","result":"Preliminary search found close overlap with Smith, Freiberger, Panikkar, local No Word Travels Alone, and language-practice theories. Novelty should be lowered to moderate, not rejected.","impact":"revises","next_action":"Read Asad, Lindbeck, Wittgenstein, Katz, Sharf, and spiritual-bypassing literature before increasing novelty.","status":"complete"},{"title":"Hidden Borrowing Downgrade Test","test_type":"falsification-attempt","target_type":"idea","prediction":"When twenty high-similarity tradition pairs are coded for provenance and regeneration, some will be downgraded because agreement depends on shared lineage, colonial translation, dual-trained teachers, or English universalism rather than independent recurrence.","result":"pending","impact":"pending","next_action":"Code Atman and anatta, apophatic darkness and emptiness, fana and self-release, Daoist non-action and contemplative surrender, then compare scores before and after provenance review.","status":"proposed"},{"title":"Borrowed Sentence Practice Pilot","test_type":"practice-report","target_type":"practice","prediction":"Stable online seekers using the Borrowed Sentence Check will make fewer absolutist identity claims, delay more posts, name more concrete actions, and report no increase in shame compared with ordinary reflection. If rumination rises or conduct does not improve, the practice is weakened.","result":"pending","impact":"pending","next_action":"Run a small opt-in pilot with clear exclusion criteria and compare against ordinary journaling and simple action planning.","status":"proposed"},{"title":"Legal Term Transfer Prediction","test_type":"cross-domain","target_type":"idea","prediction":"In comparative law, terms such as trust, equity, due process, safety, or accountability will mislead when imported without local regeneration through institutions, enforcement, authority, and practice. If shared terms predict successful transfer without those carriers, the model is weakened.","result":"pending","impact":"pending","next_action":"Compare failed legal or workplace vocabulary transfers against cases where local institutions could regenerate the term's practical role.","status":"proposed"}]}
+tokens used
+116,942

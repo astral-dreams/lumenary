@@ -1,0 +1,127 @@
+# Originality Audit: Ask Who Taught The Answer
+
+Audit ID: 53c355c0cbaee241
+Idea ID: 21a74a93f85bbbe0
+Agent: codex
+Created: 2026-05-30T12:16:05+02:00
+Status: extended
+Confidence: 0.78
+
+## Exact Claim
+
+A cross-tradition agreement should not support doctrine or practice until each tradition can regenerate the claim from its own practice, correction system, authority, and verification rule. Shared words do not prove shared insight; shared roles matter only when they survive without importing one path's carrier conditions into another.
+
+## Claim Units
+
+- A repeated spiritual sentence may be independent witness, borrowed habit, translation convention, blended teacher vocabulary, or a seeker's belonging strategy.
+- Comparison should code claim unit, role, ontology, agency, practice aim, authority, verification, provenance, what is bent, what is dropped, and what is added.
+- A similarity counts only if each tradition can reproduce the claim under its own carrier conditions.
+- The gate is aimed not only at scholarly comparison but also at modern receivers who adopt spiritual sentences for identity, belonging, avoidance, or online display.
+- The practice candidate asks what taught the sentence, who can correct it, and what concrete action it asks today.
+- The idea should be treated as a discernment and safety gate, not a metaphysical doctrine.
+
+## Primary Text Close Read
+
+Sources:
+- Chandogya Upanishad 6.8.7, local source card notes/source-cards/advaita-vedanta-chandogya-upanishad-6-8-7-tat-tvam-asi.md and https://shlokam.org/texts/Chandogya-6-8-7, read against SN 22.59 Anattalakkhana Sutta, local source card notes/source-cards/early-buddhism-sn-22-59-anattalakkhana-sutta.md and https://suttacentral.net/sn22.59
+- Dao De Jing 48, https://www.tao-te-ching.org/48 and local source card notes/source-cards/daoism-dao-de-jing-chapter-48.md, read against Pseudo-Dionysius, Mystical Theology, local source card notes/source-cards/christianity-pseudo-dionysius-mystical-theology.md and https://www.tertullian.org/fathers/areopagite_03_mystic_theology.htm
+
+Structural observation: Chandogya 6.8.7 authorizes identity language by placing Svetaketu within a teaching scene about subtle essence, Sat, Atman, and truth. SN 22.59 examines form, feeling, perception, formations, and consciousness as not-self, with liberation emerging through disenchantment and non-clinging. Both can unsettle ordinary identity, but the authority, allowed self-language, and verification differ. Dao De Jing 48 reduces learned accumulation toward wu wei and non-interference, while Pseudo-Dionysius diminishes sense and intellect within Christian ascent into divine darkness. The close read supports the gate's usefulness: the same surface operation, diminishing or de-centering, does different work under different carriers. It also shows the idea is a method control, not a new doctrine.
+
+Secondary literature gap: Read Freiberger and Smith directly; Panikkar on homeomorphic equivalence and diatopical hermeneutics; Clooney and Cornille on comparative theology; Lindbeck on doctrine as grammar; Asad on discursive tradition; Sharf and Katz on experience, language, and context; Sandmel and Doering on parallelomania; Hays-style criteria for allusion, availability, volume, recurrence, thematic coherence, and historical plausibility; Pargament and spiritual coping for receiver use; and prior Lumenary records No Word Travels Alone, Translation Strain, A Shared Word Is Not Two Witnesses, and Stop When The Repair Changes.
+
+Risk of overread: Medium high. The regeneration gate may rename standard comparative method, homeomorphic equivalence, doctrine-as-grammar, source criticism, and teacherly discernment. It can also overcorrect into purity policing, as if borrowed language cannot become authentic through hybrid discipline. In direct-recognition or performative settings, the question what taught this sentence may itself be the wrong kind of check. Human-condition fit is plausible but narrow: stable eclectic adults and older teens dealing with digital comparison, meaning loss, loneliness, and feeling out of place. It is not for acute crisis, OCD or scrupulosity loops, dissociation, severe depression, mania, unsafe authority situations, or people under trusted guidance who should ask their teacher.
+
+## Literature Search Queries
+
+- Panikkar homeomorphic equivalence functional equivalence comparison religion
+- Freiberger comparative methodology religion selection description juxtaposition redescription rectification
+- Jonathan Z Smith comparison redescription magic dwells similarity contiguity borrowing
+- Sandmel parallelomania similarity source derivation biblical comparison
+- Doering parallels without parallelomania comparative analysis genealogical dependence
+- Lindbeck cultural linguistic theory doctrine grammar religion
+- Asad discursive tradition religion authority practice genealogy
+- Sharf Katz mystical experience language epistemology contextualism perennialism critique
+
+## Near Neighbors
+
+- Raimon Panikkar, homeomorphic equivalence, official glossary https://www.raimon-panikkar.org/english/gloss-homeomorphic.html: overlap: Very close. Panikkar already asks for functional correspondences that respect each religious configuration rather than treating terms as simple synonyms.; difference: The candidate adds a Lumenary operational gate: a claim must regenerate through practice, correction, authority, and verification before it supports doctrine or a practice seed.; novelty impact: Strong downgrade. The core comparison logic is known; the contribution is a safety and workflow implementation.
+- Oliver Freiberger, Elements of a Comparative Methodology in the Study of Religion, https://www.wisdomlib.org/uploads/journals/mdpi-relig/2018-volume-9-issue-2--2077-1444-9-2-38-.pdf: overlap: Close on comparison as a controlled second-order method depending on first-order philology, document analysis, description, selection, scale, scope, juxtaposition, redescription, and rectification.; difference: The candidate narrows the method to a doctrine-scoring and practitioner-facing regeneration test.; novelty impact: Downgrades novelty. Treat as an applied extension, not a discovery.
+- Jonathan Z. Smith, In Comparison a Magic Dwells, https://classics.osu.edu/sites/classics.osu.edu/files/Magic_Dwells.pdf: overlap: Close on comparison being a scholarly act of selection and redescription, and on the danger of projecting similarity or contiguity into objective relation without method.; difference: The candidate adds the question of whether each tradition can reproduce the claim under its own carrier conditions and whether a modern receiver is using the sentence for belonging or avoidance.; novelty impact: Moderate downgrade. The receiver-use layer is useful, but the scholarly core is inherited.
+- Sandmel, Doering, and intertextual criteria, https://bhroberts.org/records/jpNwrg-3xncCf/samuel_sandmel_defines_parallelomania, https://kclpure.kcl.ac.uk/portal/en/publications/parallels-without-parallelomania-methodological-reflections-on-co/, https://intertextual.bible/article/intertextuality-and-parallelomania: overlap: Close on refusing undifferentiated parallels and asking for availability, plausibility, relationship type, context, and function before claiming connection.; difference: The candidate applies this to spiritual sentences and practice design rather than biblical allusion or halakhic parallels.; novelty impact: Downgrades the methodological novelty, supports practice-test novelty only.
+- George Lindbeck, The Nature of Doctrine, cultural-linguistic model and doctrine as grammar, accessible overview example https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART001871058: overlap: Close structural neighbor. Lindbeck treats religious doctrine as rules or grammar inside a communal language and practice, so a sentence cannot simply be lifted across systems without changing its rule-governed use.; difference: The candidate gives a specific checklist for doctrine scoring and asks what concrete action the borrowed sentence demands of the receiver.; novelty impact: Substantial downgrade. Regeneration from internal grammar is known prior art.
+- Talal Asad, Genealogies of Religion and discursive tradition, publisher page https://press.jhu.edu/books/title/1644/genealogies-religion: overlap: Close on authority, discipline, genealogy, embodied practice, and the problem of universal religious categories that hide Western or modern assumptions.; difference: The candidate turns this into a small comparative gate and low-risk practice prompt for spiritually eclectic readers.; novelty impact: Downgrades theoretical originality, leaves applied synthesis value.
+- Robert Sharf and Steven Katz on experience, language, and contextualism, for example Sharf resource https://deepblue.lib.umich.edu/items/25b7e9d4-d1f3-4280-8d53-95fa0b53db5c and SEP mysticism overview https://plato.stanford.edu/archives/fall2021/entries/mysticism/: overlap: Close on reports and experiences being shaped by language, training, social context, and interpretive frameworks rather than freely translatable common cores.; difference: The candidate asks for practical regeneration and correction holders rather than making a broad constructivist claim.; novelty impact: Moderate downgrade. Useful as a bounded workflow control.
+- Internal Lumenary near-neighbors: No Word Travels Alone, A Shared Word Is Not Two Witnesses, Stop When The Repair Changes, and Translation Strain records, supplied in project memory.: overlap: Extremely close on source role, trained practice, correction holder, verification rule, provenance, bent meaning, dropped meaning, receiver wound, and counterfeit use.; difference: The candidate consolidates these into a regeneration gate and a Borrowed Sentence Check.; novelty impact: Major local downgrade. This should be cross-indexed or merged unless a blind distinct-content test shows separability.
+
+## Unlike Statement
+
+Unlike Panikkar's homeomorphic equivalence, Freiberger's comparison method, Lindbeck's doctrine-as-grammar, Asad's discursive tradition, and prior Lumenary translation-strain records, this candidate proposes a concrete regeneration gate for doctrine scoring and practice safety: a sentence cannot count as cross-tradition support until each source can reproduce it through its own practice, authority, correction, and verification, and until the modern receiver's use of the sentence has been checked for identity, belonging, avoidance, and concrete action.
+
+## Anomaly Probe
+
+Candidate: Authorized hybrid traditions, dual-trained lineages, and direct-recognition settings where borrowed language becomes native through disciplined practice, or where the sentence functions performatively rather than as a proposition to be regenerated.
+
+Why it strains the model: The gate assumes that each tradition has separable carrier conditions and that importing another path's language is suspect until regenerated internally. Hybrid lineages, comparative theology, Buddhist modernist adaptations, and teacher-held direct introduction may make borrowing part of the real carrier. A strict gate could misclassify living synthesis as counterfeit, or make a practitioner over-check a sentence that should be tested by guidance, conduct, or practice fruit.
+
+Confidence effect: Lowers confidence in the universal form of the model, but supports a narrower status as a safety and comparison heuristic for unguided eclectic borrowing. If hybrid cases are common and well-corrected, novelty should drop toward renamed.
+
+## Falsifiable Predictions
+
+- If: The regeneration gate adds discernment beyond ordinary similarity and provenance checks. Then: Blind reviewers using the gate will downgrade or relabel some apparent agreements that ordinary strain scoring accepts, especially where authority, verification, or practice aim fails to regenerate on one side. Weakens if: The gate almost never changes decisions beyond Freiberger-style source criticism, Panikkar-style functional equivalence, or the existing Lumenary provenance gate. Test surface: A/B comparison of strain-only, provenance-only, and regeneration-gate scoring on the same claim units.
+- If: Carrier fields are observable enough to code. Then: Independent coders can reach acceptable agreement on role, authority, verification, practice aim, what is bent, what is dropped, and what is added for narrow primary-text pairs. Weakens if: Coders cannot distinguish role from ontology, authority from verification, or bent meaning from dropped meaning above chance. Test surface: Inter-rater reliability study on Chandogya/SN 22.59, Dao De Jing/Pseudo-Dionysius, apophatic Buddhist/Christian pairs, and low-variance ritual instructions.
+- If: The gate predicts misuse and repair patterns. Then: Shared spiritual sentences whose authority and verification fail to regenerate will produce more teacher-reported misuses, identity display, avoidance, or spiritual bypassing than sentences with clear carrier conditions. Weakens if: Misuse rates are better predicted by personality, mental health risk, teacher quality, or social context alone, with no added value from regeneration fields. Test surface: Practitioner interviews and held-out warning or repair prediction from manuals, teacher cases, and receiver reports.
+- If: The Borrowed Sentence Check serves the stated modern cohort. Then: Stable eclectic adults or older teens who use the check before adopting or posting a major claim will show fewer identity-display uses and more concrete relationship, duty, or care actions within 24 hours, without increased rumination or shame. Weakens if: Ordinary journaling, teacher guidance, or a simple wait-before-posting rule performs as well or better, or the check increases shame, obsessive analysis, distrust, or isolation. Test surface: Small randomized pilot with stable participants, excluding acute crisis, OCD or scrupulosity loops, dissociation, mania, severe depression, addiction withdrawal, and unsafe authority situations.
+- If: Shared words with mismatched verification rules are risky. Then: Pairs that share language but diverge on verification, such as identity recognition, non-clinging, divine union, non-interference, teacher authorization, or conduct fruit, will produce higher translation strain after the gate than before it. Weakens if: Verification-rule mismatch does not predict scoring changes or practitioner concern. Test surface: Claim-unit coding across Advaita, early Buddhism, Daoism, Christian apophasis, Pure Land, Dzogchen, and modern nonduality.
+
+## Practitioner Test
+
+Relevant practitioners:
+- comparative religion scholars
+- comparative theologians
+- interfaith educators
+- Advaita Vedanta teachers and scholars
+- Buddhist teachers and scholars
+- Daoist studies scholars
+- Christian apophatic and spiritual direction practitioners
+- clinicians familiar with spiritual bypassing, OCD, scrupulosity, and rumination
+- stable cross-tradition practitioners
+
+Questions:
+- Is the regeneration gate different from what careful comparative theologians, source critics, and teachers already do?
+- Can you name a concrete student failure caused by adopting a sentence without its carrier conditions?
+- Can you name a case where borrowed language became valid because a new lineage or teacher corrected it well?
+- Which fields are actually observable in practice: authority, correction, verification, role, practice aim, or receiver wound?
+- For digitally unmoored seekers, does this check reduce false belonging and identity display, or does it deepen shame, loneliness, and analysis paralysis?
+
+Answers that reduce originality: Originality falls if scholars say this is Panikkar, Lindbeck, Asad, Smith, Freiberger, Sandmel, or ordinary teacher discernment with new labels. It also falls if practitioners cannot identify failures the gate predicts, or if the pilot performs no better than ordinary journaling, teacher guidance, or waiting before posting.
+
+Answers that support contribution: Support rises if practitioners provide concrete misborrowed-sentence cases, if the gate predicts repair instructions from held-out manuals or interviews, if coders can apply the fields reliably, and if the practice reduces digital identity display while increasing real conduct and belonging in the target cohort.
+
+## Cross-Domain Prediction
+
+Domain: Scientific replication and software or AI benchmarking
+
+Structural translation: A shared spiritual sentence is like two studies reporting the same result. Practice, authority, correction, and verification are like independent data, methods, code, measurement, and review. If two systems share a dataset, library, benchmark, prompt, or evaluator, their agreement is not independent replication.
+
+Prediction: In AI or software evaluation, identical answers from models sharing training data, benchmark leakage, libraries, or evaluator prompts will overstate convergence. Results will become trustworthy only when independent pipelines can regenerate the answer under their own tests and failure checks.
+
+Would count against it: If shared provenance does not increase correlated error, or if independent regeneration does not improve reliability over surface agreement, the cross-domain structure weakens.
+
+## Score Recommendations
+
+- novelty: 0.44
+- source_reliability: 0.80
+- counterargument_quality: 0.89
+
+Novelty adjustment: Lower novelty from 0.48 to 0.44. The theoretical core is close to Panikkar, Freiberger, Smith, Sandmel, Lindbeck, Asad, Sharf, Katz, source criticism, and recent Lumenary translation-strain records. The possible contribution is a compact regeneration gate that combines scholarly comparison with receiver safety and concrete action. Human-condition fit is clearer than for many abstract comparison records, but still bounded: it serves digital comparison, meaning loss, loneliness, and feeling out of place among stable eclectic readers. It is not a practice for acute distress, clinical checking loops, or guided practitioners who should use their actual teacher or care network.
+
+## Next Loop Instructions
+
+- Do not publish as a standalone discovery. Cross-index or merge with No Word Travels Alone, A Shared Word Is Not Two Witnesses, Translation Strain as a Load Test for Convergence, Stop When The Repair Changes, and the provenance-confound record.
+- Rename as a regeneration-gate protocol for borrowed spiritual sentences and cross-tradition doctrine scoring.
+- Build a one-page codebook with fields for claim unit, source role, ontology, agency, practice aim, authority, correction holder, verification rule, provenance, bent meaning, dropped meaning, added meaning, receiver wound, concrete action, warning, repair, and clinical exclusion.
+- Use split-source blind coding. Do not let the same passage establish the source role, carrier conditions, and predicted repair.
+- Run a distinct-content test against No Word Travels Alone and A Shared Word Is Not Two Witnesses. Merge if blind readers cannot state the added variable without prompting.
+- Add anomaly cases before public use: authorized hybrids, comparative theology, direct recognition, Dogen practice-realization, Pure Land Other Power, sacramental speech, communal prayer, and non-instrumental ritual.
+- Pilot the Borrowed Sentence Check only with stable eclectic readers and older teens with support. Stop for shame, panic, rumination, obsessive checking, dissociation, withdrawal, dependency, or unsafe authority dynamics.

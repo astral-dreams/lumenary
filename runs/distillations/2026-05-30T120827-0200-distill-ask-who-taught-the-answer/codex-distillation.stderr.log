@@ -1,0 +1,68 @@
+OpenAI Codex v0.133.0
+--------
+workdir: /Users/johnforrester/spirituality
+model: gpt-5.5
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: xhigh
+reasoning summaries: none
+session id: 019e785b-4310-78e3-b624-1340f50603f9
+--------
+user
+# Lumenary Insight Distillation
+
+You are writing the public insight card and At a Glance text for The Lumenary.
+
+Read the finding below. Distill it into reader-facing language.
+
+## Writing Rules
+
+- Write like the texts we study: simple, memorable, and direct.
+- Do not use Sanskrit, Pali, Arabic, Greek, or Chinese terms.
+- Do not use academic hedging.
+- Do not use research jargon.
+- Do not use em dashes.
+- Do not start with "This finding".
+- Lead with the human question or the living insight.
+- Do not repeat the title, the insight headline, or the first At a Glance sentence in the bullets.
+- Do not use machinery language in public copy: no "layered authorization," "distributed affordances," "institutional role," "operationalizes," "formal transfer," "gradient," "rubric," "locus," "claimant," or "grammar."
+- Also avoid internal model words in public copy: no "architecture," "custody," "receiving surface," "residue," "grain," "threshold," "entry," "compound," "upstream," "downstream," "phenomenology," "authorization," "typology," or "taxonomy."
+- The insight headline must land like a proverb.
+- The publicTitle is the finding page title: maximum 10 words, plain, memorable, and not academic.
+- The plainSummary is for the Insights card: one sentence, maximum 28 words.
+- The atAGlance section is for the finding page: one paragraph, 3 to 4 short sentences.
+- The keyPoints are for the finding page: 3 short bullets, direct and useful. Use them for meaning, human risk, and what to test.
+- Use one idea per sentence.
+
+## Required JSON
+
+Return exactly one JSON object with:
+
+- insight: proverb-like headline, maximum 10 words
+- publicTitle: finding page title, maximum 10 words
+- plainSummary: one short sentence for the Insights card
+- atAGlance: one paragraph of 3 to 4 short sentences
+- keyPoints: array of 3 short bullet points, each one sentence and under 18 words
+- match: array with one unique lowercased phrase from the title
+- tags: array of 1 to 5 simple tags
+
+## Finding
+
+Title: Ask Who Taught The Answer
+Type: model
+Agent: codex
+
+Original Claim:
+When two traditions seem to agree, the agreement should not be counted until each side can produce the claim from its own practice, correction, authority, and test. A repeated spiritual sentence may be an independent witness, but it may also be a borrowed habit, a translation convention, a teacher's blended vocabulary, or a modern seeker's wish to belong. The useful sheet is simple: name the claim unit, role, ontology, agency, practice aim, authority, verification, provenance, what is bent, what is dropped, what is added, and whether the practical role survives without smuggling one path's answer into the other. What now holds is narrower than easy unity: shared words do not prove shared insight; shared roles matter only when they can be regenerated without borrowed authority.
+
+Why It Might Be New:
+Closest prior argument: Freiberger already gives a method for comparison through selection, description, juxtaposition, redescription, rectification, and theory formation, while Smith stresses that comparison is a scholarly act that must account for difference. Panikkar's homeomorphic equivalence is also close because it respects functional likeness without erasing specificity. The difference is the regeneration gate: before a similarity supports doctrine or practice, the comparer must ask whether each tradition can reproduce the claim under its own carrier conditions, and whether a modern receiver is using the borrowed claim for belonging, identity, or avoidance. Novelty is moderate because the parts are known; the contribution is the operational gate for doctrine scoring and low-risk practice design.
+
+Critique:
+The model may overcorrect toward suspicion. Traditions are historically entangled, and many real insights travel through teachers, translations, polemics, and mixed communities. A demand for independent regeneration could confuse historical purity with truth, and it could undervalue hybrid practice where borrowed language becomes honest through discipline. The strongest anomaly is Buddhist and Advaita debate over self-language across centuries of mutual influence: high strain may be historically causal rather than false convergence. Nirodha samapatti is another pressure case because cessation reports may offer no shared positive answer to regenerate. If practitioners show that ordinary teacher correction handles these cases better than a regeneration sheet, the model should be weakened.
+
+codex
+{"insight":"Before trusting agreement, ask who formed it","publicTitle":"Ask Who Taught the Answer","plainSummary":"Shared spiritual words mean little until each path can earn them through its own discipline, teachers, and tests.","atAGlance":"People often feel safer when different paths sound the same. Shared words can come from borrowing, translation, or the wish to belong. A likeness matters when each path can grow the same truth by its own way of life. This keeps unity honest and protects practice from borrowed certainty.","keyPoints":["Meaning deepens when a teaching is earned, not merely echoed.","The danger is using borrowed words to hide fear or loneliness.","Test whether each path can teach the claim without outside support."],"match":["ask who taught the answer"],"tags":["discernment","practice","truth","belonging"]}
+tokens used
+13,129

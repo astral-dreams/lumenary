@@ -755,3 +755,37 @@
 - Run the variance gate and provenance gate on the same comparison set to test orthogonality.
 - Add safety limits to The Self-Agreement Check: no more than twice weekly, stop for rumination, paralysis, cynicism, distrust, or avoidance of concrete practice.
 - Compare against baselines: Freiberger selection and scope review, ordinary source criticism, world-religions anti-essentialism, provenance-first coding, and a simple source-humility prompt.
+
+## Originality Audit Follow-Up 2026-05-30T12:16:05+02:00
+
+### Sameness Can Be the Fingerprint of Borrowing (extended)
+- Do not publish as a standalone discovery or doctrine claim. Cross-index with A Shared Word Is Not Two Witnesses, Translation Strain as a Load Test for Convergence, First Ask If a Path Agrees With Itself, and No Word Travels Alone.
+- Rename the contribution as a provenance-confound rule for translation-strain scoring.
+- Build a provenance-first codebook with values for independent, shared source, direct borrowing, common translator, shared polemical milieu, teacher cross-training, colonial or modern universalizing vocabulary, parallel development, uncertain, and analyst-frame-refused.
+- Do not let strain score count as evidence for convergence until provenance has been coded independently from historical sources.
+- Run the Gaudapada and Nagarjuna close-read with Sanskrit term checks, chapter dating notes, Shankara attribution caveats, and specialist review.
+- Add no-contact anomaly cases before public use, including geographically separated apophatic negation, independent ritual similarities, and convergent cognitive or phenomenological cases.
+- Pilot The Borrowed-Likeness Check only with stable spiritually eclectic readers. Stop for increased cynicism, isolation, contempt, rumination, panic, or withdrawal from real relationships.
+
+### Ask Who Taught The Answer (extended)
+- Do not publish as a standalone discovery. Cross-index or merge with No Word Travels Alone, A Shared Word Is Not Two Witnesses, Translation Strain as a Load Test for Convergence, Stop When The Repair Changes, and the provenance-confound record.
+- Rename as a regeneration-gate protocol for borrowed spiritual sentences and cross-tradition doctrine scoring.
+- Build a one-page codebook with fields for claim unit, source role, ontology, agency, practice aim, authority, correction holder, verification rule, provenance, bent meaning, dropped meaning, added meaning, receiver wound, concrete action, warning, repair, and clinical exclusion.
+- Use split-source blind coding. Do not let the same passage establish the source role, carrier conditions, and predicted repair.
+- Run a distinct-content test against No Word Travels Alone and A Shared Word Is Not Two Witnesses. Merge if blind readers cannot state the added variable without prompting.
+- Add anomaly cases before public use: authorized hybrids, comparative theology, direct recognition, Dogen practice-realization, Pure Land Other Power, sacramental speech, communal prayer, and non-instrumental ritual.
+- Pilot the Borrowed Sentence Check only with stable eclectic readers and older teens with support. Stop for shame, panic, rumination, obsessive checking, dissociation, withdrawal, dependency, or unsafe authority dynamics.
+
+## Originality Audit Follow-Up 2026-05-30T12:30:07+02:00
+
+### Contact Before Claim (extended)
+- Do not publish as a standalone discovery. Cross-index with Ask Who Taught The Answer, No Word Travels Alone, Stop When The Repair Changes, Not Every Check Should Be Yours, Some Help Should Not Be Managed, and the translation-strain records.
+- Rename the contribution as a routing protocol: public-claim provenance, private-orientation contact.
+- Build a one-page decision gate with fields for use type, receiver wound, public-authority risk, source safety, relationship safety, clinical exclusion, contact option, conduct option, correction holder, delayed provenance review, warning, and repair.
+- Add a mandatory pre-contact safety screen: unsafe authority, abusive relationship, extremist community, coercive group, clinical crisis, OCD or scrupulosity, dissociation, mania, psychosis, severe depression, addiction withdrawal, medical concern, and lack of safe helper.
+- Use split-source blind coding. Do not let the same passage establish the borrowed sentence, receiver wound, contact instruction, and predicted repair.
+- Run a blind distinct-content test against prior Lumenary records. Merge if readers cannot state the routing variable without prompting.
+- Run the four-arm pilot only with screened stable adults or older teens with support: provenance-first, solo carry-first, contact-first carry-first, and ordinary journaling plus social-support prompt.
+- Measure loneliness, rumination, shame, identity-display posts, real conversations, help-seeking, repair actions, unsafe-contact incidents, willingness to receive correction, and delayed provenance-review outcomes at two and six weeks.
+- Interview practitioners for concrete wrong-routing cases and repairs, not agreement with the slogan.
+- Do not derive a public practice until the cohort, non-fit cases, safety screen, and measurable benefit over ordinary social-support prompts are clear.
