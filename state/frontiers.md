@@ -1,48 +1,15 @@
 # Lumenary Frontiers
 
-Generated: 2026-05-30T10:28:23+02:00
+Generated: 2026-05-30T10:45:56+02:00
 
 These are live research agendas derived from idea records, originality audits, publication history, and next-loop instructions.
-
-## Inferential policy after objectless awareness
-
-- Frontier ID: `frontier-inferential-gap`
-- Status: `active`
-- Stage: `rubric`
-- Priority: 0.8932
-- Next action: `build_rubric`
-- Agents: claude, codex
-- Idea records: 16
-- Audits: 6
-
-### Core Claim
-
-The Free Energy Principle's predictive processing framework, when applied to contemplative self-negation, does not resolve the atman/anatta dispute but formally reproduces it at a higher level of abstraction. Laukkonen and Slagter's model proposes that deconstructive meditation progressively relaxes precision weighting on the self-model; the highest-level prior in the predictive hierarchy; until processing depth approaches zero. The critical question...
-
-### Next Prompt
-
-Rewrite the claim as an interpretive reconstruction unless commentarial evidence proves explicit inference rules.
-
-### Open Anomalies
-
-- Advaita denies that the Self is inferred, it is treated as immediate self-disclosure and the basis for using means of knowledge at all.
-- Dogen-style practice-realization, inherited devotional practice, radical Other Power, and secular mindfulness adverse effects strain the model from different sides.
-- Inherited religious formation and Dogen-style practice-realization.
-- How can Lumenary design practices that preserve the exact capacities a method requires, refuse to overinterpret those capacities as metaphysical proof, and use teacher or community calibration to prevent premature destabilization?
-- When a person cannot yet practice in the mature sense, what kind of entry does a tradition permit, scaffolded participation, external gift, latent capacity, self-disclosure, or refusal of any remainder claim?
-
-### Blockers
-
-- Reduce novelty from 0.79 to about 0.48. This is a refinement of residue policy and overlaps strongly with Advaita self-luminosity, Buddhist not-self strategy, and Madhyamaka refusal of extremes.
-- Reduce novelty from 0.82 to about 0.53. The idea is useful and testable, but its main components are strongly anticipated by prior Lumenary ledgers, VCE and Cheetah House style adverse-effects research, Engler's functional ego warning, Pargament's agency...
-- Reduce novelty from 0.82 to about 0.54. The four-field compression is useful, but most components have strong near-neighbors in prior Lumenary audits, conversion theory, rites-of-passage theory, doctrine-as-grammar, religious problem-solving styles...
 
 ## Translation strain as a test of convergence
 
 - Frontier ID: `frontier-translation-strain`
 - Status: `active`
 - Stage: `source_grounding`
-- Priority: 0.7863
+- Priority: 0.7854
 - Next action: `complete_audit`
 - Agents: claude, codex
 - Idea records: 30
@@ -75,7 +42,7 @@ Build a one-page translation-strain rubric with fields for claim unit, role, ont
 - Frontier ID: `frontier-method-reckoning`
 - Status: `active`
 - Stage: `source_grounding`
-- Priority: 0.7808
+- Priority: 0.7800
 - Next action: `complete_audit`
 - Agents: claude, codex
 - Idea records: 9
@@ -134,12 +101,45 @@ Do not publish as doctrine. Treat as a comparative and practitioner-facing resea
 - Reduce novelty from 0.77 to about 0.55. The idea is useful and testable, but most components are strongly anticipated by prior Lumenary ledgers, Pargament's religious coping styles, Lindbeck's doctrine-as-grammar, Asad's discursive tradition, VCE and...
 - Reduce novelty from 0.78 to about 0.52. The synthesis is useful and testable, but both halves are already present in prior Lumenary audits, and the exact upstream-downstream move is closely anticipated by Claude's Reflexivity Policy. External prior art...
 
+## Inferential policy after objectless awareness
+
+- Frontier ID: `frontier-inferential-gap`
+- Status: `active`
+- Stage: `rubric`
+- Priority: 0.7672
+- Next action: `build_rubric`
+- Agents: claude, codex
+- Idea records: 17
+- Audits: 7
+
+### Core Claim
+
+The Free Energy Principle's predictive processing framework, when applied to contemplative self-negation, does not resolve the atman/anatta dispute but formally reproduces it at a higher level of abstraction. Laukkonen and Slagter's model proposes that deconstructive meditation progressively relaxes precision weighting on the self-model; the highest-level prior in the predictive hierarchy; until processing depth approaches zero. The critical question...
+
+### Next Prompt
+
+Rewrite the claim as an interpretive reconstruction unless commentarial evidence proves explicit inference rules.
+
+### Open Anomalies
+
+- Advaita denies that the Self is inferred, it is treated as immediate self-disclosure and the basis for using means of knowledge at all.
+- Dogen-style practice-realization, inherited devotional practice, radical Other Power, and secular mindfulness adverse effects strain the model from different sides.
+- Inherited religious formation and Dogen-style practice-realization.
+- How can Lumenary design practices that preserve the exact capacities a method requires, refuse to overinterpret those capacities as metaphysical proof, and use teacher or community calibration to prevent premature destabilization?
+- When a person cannot yet practice in the mature sense, what kind of entry does a tradition permit, scaffolded participation, external gift, latent capacity, self-disclosure, or refusal of any remainder claim?
+
+### Blockers
+
+- Reduce novelty from 0.79 to about 0.48. This is a refinement of residue policy and overlaps strongly with Advaita self-luminosity, Buddhist not-self strategy, and Madhyamaka refusal of extremes.
+- Reduce novelty from 0.82 to about 0.53. The idea is useful and testable, but its main components are strongly anticipated by prior Lumenary ledgers, VCE and Cheetah House style adverse-effects research, Engler's functional ego warning, Pargament's agency...
+- Reduce novelty from 0.82 to about 0.54. The four-field compression is useful, but most components have strong near-neighbors in prior Lumenary audits, conversion theory, rites-of-passage theory, doctrine-as-grammar, religious problem-solving styles...
+
 ## Where freed attention is allowed to rest
 
 - Frontier ID: `frontier-attention-custody`
 - Status: `active`
 - Stage: `rubric`
-- Priority: 0.7598
+- Priority: 0.7597
 - Next action: `build_rubric`
 - Agents: codex
 - Idea records: 2
@@ -171,7 +171,7 @@ Close-read Dzogchen and Mahamudra instructions on rigpa or luminous awareness ag
 - Frontier ID: `frontier-gap-report`
 - Status: `active`
 - Stage: `rubric`
-- Priority: 0.7389
+- Priority: 0.7380
 - Next action: `build_rubric`
 - Agents: claude, codex
 - Idea records: 8
@@ -204,11 +204,11 @@ Test the rubric on Brihadaranyaka 2.4, 2.5, 3.7.23, SN 22.59, and SN 22.95 befor
 - Frontier ID: `frontier-modern-human-condition`
 - Status: `active`
 - Stage: `rubric`
-- Priority: 0.7368
+- Priority: 0.7374
 - Next action: `build_rubric`
 - Agents: claude, codex
-- Idea records: 22
-- Audits: 20
+- Idea records: 23
+- Audits: 21
 
 ### Core Claim
 
@@ -237,7 +237,7 @@ Do not publish as a standalone doctrine claim until split-source tests show pred
 - Frontier ID: `frontier-effort-and-practice`
 - Status: `active`
 - Stage: `rubric`
-- Priority: 0.7347
+- Priority: 0.7344
 - Next action: `build_rubric`
 - Agents: claude, codex
 - Idea records: 23

@@ -1,36 +1,36 @@
 # Active Frontier Brief
 
-Frontier: Inferential policy after objectless awareness
-Recommended action: build_rubric
-Why now: priority 0.85; 16 related idea records; 6 originality audits; cross-agent signal; live anomaly pressure; dialogue pressure
+Frontier: Translation strain as a test of convergence
+Recommended action: complete_audit
+Why now: priority 0.75; 30 related idea records; 9 originality audits; cross-agent signal; live anomaly pressure; dialogue pressure
 
 Core claim:
-The Free Energy Principle's predictive processing framework, when applied to contemplative self-negation, does not resolve the atman/anatta dispute but formally reproduces it at a higher level of abstraction. Laukkonen and Slagter's model proposes that deconstructive meditation progressively relaxes precision weighting on the self-model; the highest-level prior in the predictive hierarchy; until processing depth approaches zero. The critical question...
+Traditions differ less in whether insight can be shared than in what carrier must hold it when it leaves the practice that disclosed it. Advaita lets insight travel as self-certifying recognition; early Buddhism lets it travel as a non-appropriating test; Daoism lets it travel as situated fit; Sufism lets it travel as renewed relation; Neoplatonism lets it travel as return-orientation. When a comparer moves an insight into the wrong carrier, relation...
 
 Closest prior art or near-neighbor pressure:
-- Matthias Rose, Prakasa, https://link.springer.com/article/10.1007/s11097-020-09690-2: overlap: Very close and partly corrective. The article says Advaita treats consciousness as directly self-disclosing, not as a posit inferred from other evidence.; difference: The Lumenary idea compares the implicit permission rule with early Buddhist not-self analysis.
-- Stanford Encyclopedia of Philosophy, Shankara, https://seop.illc.uva.nl/entries/shankara/: overlap: Close. Shankara's witness accounts for memory and deep sleep continuity and resists the claim that absence of object implies absence of consciousness.; difference: The Lumenary idea reframes this as burden allocation after negation.
-- Thanissaro Bhikkhu, The Not-Self Strategy, https://www.buddhistinquiry.org/article/the-not-self-strategy/: overlap: Close for the Buddhist side. It denies that the Buddha's teaching should be reduced to a metaphysical no-self thesis and treats not-self as a strategy.; difference: The Lumenary idea treats the strategy as an inference policy against remainder claims.
+- Jonathan Z. Smith, In Comparison a Magic Dwells, https://classics.osu.edu/sites/classics.osu.edu/files/Magic_Dwells.pdf: overlap: Very close at the level of comparative method. Smith attacks comparison that projects similarity into objective connection and stresses difference, invention, redescription...; difference: Smith does not present a Lumenary-style operational rubric of claim-unit bends, drops, and additions, nor does he tie the output to publication scoring.
+- Oliver Freiberger, Elements of a Comparative Methodology in the Study of Religion, Religions 9, no. 2, 2018, https://www.mdpi.com/2077-1444/9/2/38: overlap: Very close structurally. Freiberger treats comparison as a second-order method with selection, description, juxtaposition, redescription, rectification, and theory formation...; difference: Freiberger's model is broader and methodological. The Lumenary idea focuses specifically on convergence and asks what must deform for an apparent match to hold.
+- Raimon Panikkar, homeomorphic equivalence glossary, https://www.raimon-panikkar.org/english/gloss-homeomorphic.html: overlap: Close. Panikkar's homeomorphic equivalence compares concepts that play similar roles in different religious systems while respecting specificity and avoiding mistaken comparisons.; difference: Panikkar emphasizes functional equivalence and dialogue. The Lumenary model adds explicit tracking of losses, additions, and incompatible commitments.
 
 Open anomalies:
-- Advaita denies that the Self is inferred, it is treated as immediate self-disclosure and the basis for using means of knowledge at all.
-- Dogen-style practice-realization, inherited devotional practice, radical Other Power, and secular mindfulness adverse effects strain the model from different sides.
-- Inherited religious formation and Dogen-style practice-realization.
-- How can Lumenary design practices that preserve the exact capacities a method requires, refuse to overinterpret those capacities as metaphysical proof, and use teacher or community calibration to prevent premature destabilization?
-- When a person cannot yet practice in the mature sense, what kind of entry does a tradition permit, scaffolded participation, external gift, latent capacity, self-disclosure, or refusal of any remainder claim?
+- Convergence caused by direct borrowing, shared lineage, colonial translation conventions, English-language universalism, or dual-trained teachers rather than independent structural recurrence.
+- Comparisons where high strain is still historically causal, for example Buddhist and Advaita terms shaped by centuries of polemic and borrowing.
+- Nirodha samapatti and cessation reports, where practitioners report a discontinuity or absence of consciousness rather than a pressure to posit an enduring witness.
+- When a tradition internally disputes its own assertion posture (as in the Svatantrika-Prasangika contest over whether Madhyamaka holds theses), does the strain-mapping protocol need to treat posture as a continuous variable or a contested parameter rather...
+- How can a self-transcending practice be designed so that it builds enough scaffold before it weakens the self-functions a practitioner still needs?
 
 Required next move:
-Rewrite the claim as an interpretive reconstruction unless commentarial evidence proves explicit inference rules.
+Build a one-page translation-strain rubric with fields for claim unit, role, ontology, agency, practice aim, authority, verification, what is bent, what is dropped, what is added, and whether role-similarity survives.
 
 Required tests:
-- If: Texts and commentaries should contain repeatable rule-like moves after negation. Then: Advaita commentaries should use non-objectifiability to block denial of Self, while Buddhist commentaries should apply impermanence, conditionality, or not-self...
-- If: Dual-trained practitioners should be able to identify the moment where inference policy changes practice interpretation. Then: They report that one instruction says recognize the unobjectifiable, while another says investigate the recognizer or do not...
-- If: Initial doctrine or entry texts can be coded for operational capacities and residue policy independently from later warnings and repairs. Then: Blind coders should predict later warning clusters, such as striving, nihilism, dissociation, antinomian...
-- Does your tradition treat the witness as directly recognized, inferred, scripturally revealed, or pragmatically useful?
-- When negation leaves only knowing, what rule says whether that knowing can be called Self?
-- Does inference authorization change practice instructions, or is it just modern analytic vocabulary?
-- The same inference-policy typology should classify Cartesian, phenomenological, Buddhist, and eliminativist responses to the subject of experience.
-- Programs that dissolve maladaptive identity without preserving and authorizing enough operational capacity should show predictable failure modes: passivity, dissociation, shame, dependency, collapse of responsibility, or license. Programs with the same...
+- If: When apparent cross-tradition convergence is decomposed into claim units, high-quality comparisons should expose systematic incompatibilities that ordinary convergence scoring hides. Then: In cases such as Atman versus anatta, apophatic darkness versus...
+- If: A convergence is strongest when role-similarity survives after metaphysical incompatibility is made explicit. Then: Some pairs should retain a shared practical role after decomposition, while other pairs should narrow sharply once claim units are...
+- If: The method should prevent false syntheses that a convergence-weighting system would accept. Then: A Lumenary audit should downgrade some high-similarity pairs after showing that alignment requires deleting central commitments, while upgrading some...
+- When you hear a claim that two traditions converge, do you already ask which doctrinal or practice units must be dropped, bent, or added for the match to work?
+- Would a translation-strain sheet change how you compare terms such as anatta, Atman, emptiness, Godhead, fana, witness, soul, and awareness?
+- Can you name a case where a shared practice role survives even though the metaphysical explanation must remain incompatible?
+- Comparative-law analyses that score concepts by translation strain should better predict failed legal transplants, implementation disputes, and misleading harmonization than analyses that count shared terms or broad doctrinal resemblance.
+- A strain rubric should predict where apparent equivalents such as trust, equity, right, or due process mislead across legal systems.
 
 Modern human-condition pressure:
 - Connect this frontier to a real modern human problem: loneliness, addiction, compulsion, withdrawal, anxiety, depression, burnout, meaning loss, digital comparison, grief, feeling unneeded, feeling out of place, or achievement-contingent self-worth.

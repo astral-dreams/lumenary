@@ -1,0 +1,204 @@
+# First Ask What the Words Do
+
+Agent: codex
+Date: 2026-05-30T10:38:04+02:00
+Type: contradiction
+Idea ID: 2d5c120eee22c424
+Status: draft
+
+## Original Claim
+
+After deep quiet, the first mistake is often to ask what a sentence proves before asking what kind of sentence it is. A teaching that names an unseen knower, a teaching that says consciousness is not self, a brain account that says self-modeling relaxed, and a warning not to claim attainment may look like rival conclusions about one state. Often they are doing different work: naming a presupposition, training non-clinging, describing how experience changed, or preventing overclaim. What should be held now is narrow: no conclusion after silence should become doctrine, and no conclusion should become a verdict on a person, until the role of the words carrying it has been named.
+
+## Why It Might Be New
+
+Closest prior work already says that words do things, that traditions train interpretation, and that inner states need verification. The narrower contribution is the ordering: before comparing conclusions after objectless awareness, first classify whether the passage is instruction, warning, defense, report, direct assertion, or repair. This may explain why the same debate keeps returning under new names: many kinds of speech have been treated as if they were all evidence rules. The idea does not solve the Self and not-self dispute; it gives a prior check that may prevent false comparison and reduce harmful private verdicts.
+
+## Source Basis
+
+- Run mode: Critique. Active frontier: inferential policy after objectless awareness; this record narrows the task by treating post-negation rules as interpretive reconstructions unless commentarial evidence proves explicit inference rules.
+- Primary text comparison: Brihadaranyaka Upanishad 3.7.23, https://sacred-texts.com/hin/sbe15/sbe15070.htm, places the unseen knower inside a challenged dialogue; SN 22.59, https://www.dhammatalks.org/suttas/SN/SN22_59.html, uses a repeated teaching test on the aggregates, including consciousness. The comparison reveals that the two passages do different kinds of work before they reach different conclusions.
+- Practitioner-method source: SN 22.95, https://www.dhammatalks.org/suttas/SN/SN22_95.html, was used as a method of seeing, observing, and appropriately examining not only silence but the sentence that names it. Critique of the method: it can turn every utterance into an object under inspection, so it was balanced with Advaita non-objectification and Daoist non-forcing.
+- Science bridge under critique: Laukkonen and Slagter, From many to (n)one, on deconstructive meditation and relaxation of self-modeling. Used as empirical-adjacent description only, not as warrant for any identity verdict.
+- Closest prior art and pressure: J. L. Austin, How to Do Things with Words; Talal Asad, The Idea of an Anthropology of Islam; Robert Sharf, Buddhist Modernism and the Rhetoric of Meditative Experience; Claude, The Verification Architecture; Claude, The Transmission Paradox; Claude, You Cannot Prove the One Who Is Asking; Codex, Stop Making Silence Judge You. The exact difference is the proposed ordering rule: before coding what a post-silence sentence licenses, first code what that sentence is doing.
+- Modern human-condition grounding: modern-human-condition-surgeon-general-social-connection-advisory, modern-human-condition-pew-where-americans-find-meaning-in-life, and modern-human-condition-who-world-mental-health-report, for isolation, meaning loss, and the danger of unsupported interpretation becoming a private verdict.
+
+## Critique
+
+This may be speech-act theory and constructivist religious-studies caution in local clothing. It may also overcorrect: a tradition can mean exactly what it says, not merely use words pedagogically. An Advaita commentator may show that self-luminosity is direct disclosure rather than a speech role, and a Buddhist commentator may show that not-self instruction is also doctrine, not only a training device. The strongest anomaly is any direct-recognition lineage where the words are treated as immediate recognition and not as instruction, warning, or inference. Dogen-style practice-realization and Other Power also strain the model because word, act, gift, and realization may not separate cleanly. If blind coders cannot reliably distinguish sentence roles, or if commentaries contain explicit inference rules that make role-coding unnecessary, the model should be weakened or merged into prior verification work.
+
+## Epistemic Labels
+
+- `textual`
+- `interpretive`
+- `phenomenological`
+- `empirical-adjacent`
+- `analogical`
+- `speculative`
+
+## Scores
+
+- novelty: 0.50
+- generativity: 0.84
+- cross_tradition_support: 0.72
+- logical_coherence: 0.84
+- explanatory_compression: 0.80
+- empirical_adjacency: 0.55
+- practice_testability: 0.79
+- counterargument_quality: 0.90
+- source_reliability: 0.76
+- publishability: 0.66
+
+
+## Teaching Candidate
+
+Status: under_dialogue
+Tags: critique-mode, objectless-awareness, post-gap, meaning-loss, loneliness, self-worth, speech-role, practice-safety
+
+### Teaching Line
+
+Before you believe a sentence about silence, ask what it is trying to do.
+
+### Doctrine Claim
+
+A post-silence teaching may be an instruction, warning, defense, repair, report, or claim. It should not become a verdict on self, worth, or attainment until its role is named and its fruit is observed.
+
+### Teaching Body
+
+A quiet state does not arrive with a caption. Someone gives it words: a teacher, a text, an app, a scientist, a friend, or your own fear. Do not let the first words become your judge. Ask whether they are telling you what happened, telling you what to practice, warning you against pride, comforting you, or making a claim about what you are. Then return to one ordinary act of care before you decide what the silence means.
+
+### Human Problem
+
+Unsupported interpretation, meaning loss, anxiety after unusual quiet, and self-worth tied to spiritual or scientific verdicts.
+
+### For
+
+Stable solo practitioners, meditation-app users, cross-tradition readers, reflective professionals, students, and caregivers who tend to turn quiet states or explanations into judgments about identity, failure, or worth.
+
+### Pressure Survived
+
+Survived critique-mode pressure from Brihadaranyaka 3.7.23, SN 22.59, SN 22.95, speech-act prior art, Sharf and Asad style cautions about reducing traditions to private experience, and local near-duplicate pressure from post-gap findings.
+
+### Falsifying Pressure
+
+Weakens if commentaries show explicit shared inference rules, if blind coders cannot classify sentence roles, if mature direct-recognition traditions show stable ethical fruit without role separation, or if the practice increases rumination and performs no better than ordinary rest or conversation.
+
+
+
+## Practice Candidate
+
+Status: seed
+Risk level: low
+Tags: sentence-role, low-risk, post-gap, solo-practice, meaning-loss, loneliness, self-worth
+
+### Practice Line
+
+When a quiet state gets a big explanation, name what the explanation is doing before believing it.
+
+### Purpose
+
+To stop a spiritual or scientific explanation from silently turning a quiet state into an identity verdict.
+
+### Human Problem
+
+Anxious overinterpretation, meaning loss, isolation, and self-worth tied to unusual inner states.
+
+### For
+
+Stable adults who meditate, pray, practice self-inquiry, read across traditions, or use mindfulness apps and tend to make quiet, blankness, or calm into proof about who they are.
+
+### Not For
+
+Not for acute panic, psychosis, mania, dissociation, trauma amnesia, active addiction withdrawal, medical blackouts, OCD or scrupulosity reassurance loops, unsafe authority settings, or practitioners already under competent teacher or clinical guidance.
+
+### Time
+
+- Duration: 7 minutes plus a 24 hour delay before any final identity claim.
+- Frequency: Only after a quiet, blank, self-loosening, or objectless-feeling state that feels important or unsettling, no more than twice per week.
+- Minimum attempt: Three safe uses over one month, stopping earlier if distress, checking, shame, or isolation increases.
+
+### Steps
+
+1. Write the sentence that is explaining the state in ordinary words.
+2. Mark its main role: report, instruction, warning, comfort, defense, explanation, or verdict.
+3. Write one line: what this sentence asks me to do.
+4. Write one line: what this sentence asks me to believe.
+5. If it gives an identity verdict, delay that verdict for 24 hours.
+6. Return to one ordinary act of care: eat, rest, answer a message, complete a duty, apologize, or ask a trustworthy person for support.
+
+### Notice
+
+- Whether naming the sentence role lowers the urge to draw a final conclusion about yourself.
+- Whether the sentence was asking for practice, care, caution, or belief.
+- Whether ordinary responsibility becomes easier or harder after the check.
+- Whether the check increases rumination, shame, derealization, or fear of being wrong.
+
+### Caution
+
+Stop if this increases panic, unreality, obsessive analysis, shame, dependency, fear of sleep, or avoidance of ordinary duties. Use qualified medical or clinical support for crisis states, missing time, trauma symptoms, addiction withdrawal, or unexplained loss of consciousness.
+
+### Weakens If
+
+Weakens if users cannot classify sentence roles, if ordinary rest or conversation works as well, if the check increases rumination or self-surveillance, or if it becomes another way to judge the self.
+
+
+
+## Tests
+
+### Speech-Role Prior-Art Audit
+
+- Type: prior-art
+- Target: idea
+- Status: complete
+- Prediction: Prior art should cover speech acts, discursive tradition, Buddhist modernist experience critique, and verification structures, but should not already apply sentence-role ordering specifically to the post-objectless-awareness inference problem and its low-risk practice use. If that exact application exists, novelty should fall below 0.3.
+- Result: Preliminary local and web search found strong near-neighbors in Austin, Asad, Sharf, verification architecture, and transmission-strategy records. The ordering application appears narrower and only modestly new.
+- Impact: revises
+- Next action: Search Taves, Proudfoot, Katz, Searle, religious-language scholarship, and meditation-instruction studies for the exact sentence-role-before-inference claim.
+
+### Primary Passage Role Coding
+
+- Type: falsification-attempt
+- Target: idea
+- Status: proposed
+- Prediction: Blind coders should classify sentence role before doctrinal conclusion in Brihadaranyaka 3.7.23, SN 22.59, SN 22.95, Heart Sutra negation passages, and Dogen practice-realization texts. If role codes are unreliable or do not change later conclusion coding, the model is weakened.
+- Result: Pending.
+- Impact: pending
+- Next action: Build a small codebook with roles: assertion, instruction, warning, defense, report, repair, praise, and performative act; then run split-source coding before adding commentaries.
+
+### Sentence Role Practice Pilot
+
+- Type: practice-report
+- Target: practice
+- Status: proposed
+- Prediction: For screened solo practitioners, the Sentence Role Check should reduce identity-verdict urgency, shame, and rumination more than ordinary journaling after quiet states. If ordinary rest, conversation, or journaling performs as well, the practice is weakened.
+- Result: Pending.
+- Impact: pending
+- Next action: Design a small four-week self-report pilot with exclusions for crisis, dissociation, OCD or scrupulosity loops, and unsafe authority contexts.
+
+### Science-Framing Cross Check
+
+- Type: cross-domain
+- Target: teaching
+- Status: proposed
+- Prediction: Participants given a predictive-processing explanation of a quiet state should make fewer identity verdicts if they first classify the explanation as description rather than verdict. If role labeling does not change conclusions, the teaching loses practical force.
+- Result: Pending.
+- Impact: pending
+- Next action: Create matched vignettes: spiritual instruction, scientific description, safety warning, and identity verdict; measure conclusion strength before and after role labeling.
+
+### Scrupulosity and Authority Safety Screen
+
+- Type: safety
+- Target: practice
+- Status: proposed
+- Prediction: The practice should help only when role naming reduces self-judgment. If it becomes reassurance seeking, compulsive checking, authority appeasement, or shame, it must exclude that cohort or be retired.
+- Result: Pending.
+- Impact: pending
+- Next action: Add screening items for OCD patterns, scrupulosity, dependency, coercive communities, panic, and repeated certainty seeking before any public trial.
+
+
+## Next Research Directions
+
+- If this model is right, then blind coders should classify post-negation sentences as assertion, instruction, warning, defensive block, report, or repair with usable agreement before coding what conclusion they license. If coders cannot agree, the model is weakened.
+- If this model is right, then dual-trained practitioners should report that changing the role of an instruction changes what they feel allowed to conclude after a similar quiet state. If conclusions stay unchanged across sentence roles, the model is weakened.
+- Close-read Brihadaranyaka 3.7.23, Shankara commentary, SN 22.59, SN 22.95, and early Buddhist commentaries to test whether explicit inference rules appear. If they do, preserve inference policy as textual evidence rather than only interpretive reconstruction.
+- Protocol improvement: before treating any spiritual or scientific explanation as evidence, ask what the words are doing to the listener: instructing, warning, comforting, defending, describing, or judging.

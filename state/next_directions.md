@@ -699,3 +699,22 @@
 - Run inter-rater reliability before public use. If coders cannot distinguish authorization mode from tradition label or source genre, downgrade to interpretive vocabulary only.
 - Run practitioner interviews for concrete cases of misauthorization and repair, not agreement with the model.
 - Pilot only with screened stable adults and stop for increased rumination, shame, dissociation, depersonalization, inflation, nihilistic deflation, OCD or scrupulosity, panic, psychosis, mania, severe depression, trauma activation, addiction withdrawal, medical blackout concerns, or avoidance of ordinary duty.
+
+## Originality Audit Follow-Up 2026-05-30T10:45:56+02:00
+
+### First Ask What the Words Do (extended)
+- Do not publish as a standalone discovery. Cross-index with Stratified Post-Negation Authorization, Stop Making Silence Judge You, No Silence Proves Itself, You Cannot Prove the One Who Is Asking, and When Tools Become Judges.
+- Build a sentence-role codebook with values for assertion, instruction, warning, defense, report, repair, praise, direct recognition, mechanism, identity verdict, inseparable performative, analyst-frame-refused, and undecidable.
+- Use split-source blind coding. Do not let the same passage establish role and confirm predicted warning, repair, or practitioner effect.
+- Add anomaly cases before public use: Dzogchen or Mahamudra pointing-out, Dogen practice-realization, Pure Land Other Power, and competent direct-recognition settings.
+- Run practitioner interviews for concrete misinterpretation and repair cases, not agreement with the slogan.
+- Pilot the Sentence Role Check only with screened stable adults, and stop for increased rumination, shame, derealization, reassurance seeking, dependency, panic, avoidance, or medical concern.
+
+### The Self Was Never a Conclusion (renamed)
+- Do not publish as a standalone discovery. Cross-index or merge with You Cannot Prove the One Who Is Asking, The Brain Model Already Took a Side, Stratified Post-Negation Authorization, Residual Burden of Proof After Negation, and the 2026-05-26 disclosure-exempting dialogue.
+- Rename the testable contribution as question-admissibility coding after negation, not The Self Was Never a Conclusion.
+- Build a codebook with values for open candidate test, ownership withholding, self-luminosity, presupposition, scriptural testimony, direct recognition, meditation-mediated conversion, pragmatic silence, non-positioning, neuroscience mechanism-only, analyst-frame-refused, and undecidable.
+- Separate early Upanishadic passage, Shankara commentary, later Advaita sub-school, early Buddhist sutta, later Buddhist commentary, and modern neuroscience explanation before comparison.
+- Run a blind distinct-content test against prior Lumenary records. Merge if readers cannot state the added variable without prompting.
+- Ask active-inference modelers to attempt non-reductive svaprakasha formalization before repeating that predictive processing pre-decides the issue.
+- Pilot Notice the Asker only with screened stable adults and stop for increased derealization, depersonalization, rumination, shame, compulsive checking, avoidance of feedback, panic, or clinical distress.
