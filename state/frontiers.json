@@ -8,7 +8,9 @@
       "audit_ids": [
         "54774578d7528e56",
         "c79517a2a7daa9cc",
-        "704d17e4307ae461"
+        "704d17e4307ae461",
+        "262593ac39b143d2",
+        "4409d47eb05ebe46"
       ],
       "audit_statuses": [
         "audit_incomplete",
@@ -42,13 +44,14 @@
       ],
       "configured_topic": true,
       "core_claim": "When a contemplative practice reaches its own threshold, it faces a structural question that may matter more than what it finds: can the method grant itself authority over its own result? Three patterns emerge across independent traditions. In the first, the method confirms itself. The Mandukya Upanishad analyzes waking, dreaming, and deep sleep, then identifies what persists through all three: turiya, 'invisible, beyond practical dealings, beyond...",
-      "dialogue_count": 10,
+      "dialogue_count": 11,
       "dialogue_ids": [
         "0e2baca9aa7b108f",
         "36926ca9f6ab367e",
         "59aeeca5ab87c8a7",
         "6ee62cdfab4c5a62",
         "807e62439bba439f",
+        "b4a206eececa3dce",
         "b606b887e2f0fff3",
         "c62e7dd8308a8ba8",
         "c62f65ea52fd5354",
@@ -57,6 +60,7 @@
       ],
       "dialogue_outcomes": [
         "candidate_transcendence",
+        "refinement",
         "revision"
       ],
       "frontier_id": "frontier-method-reckoning",
@@ -66,9 +70,11 @@
         "41eccaa10cea51c9",
         "49d0a46b855f4d4b",
         "ee1d8862ab73b4a0",
-        "1a1331ff84b2228b"
+        "1a1331ff84b2228b",
+        "03ddcb4b6194de17",
+        "e7b0c349c18ee276"
       ],
-      "last_advanced_at": "2026-05-29T06:20:06+02:00",
+      "last_advanced_at": "2026-05-30T07:25:48+02:00",
       "missing_sources": [
         "self-dismantling methods Nagarjuna Wittgenstein therapy liberation",
         "self-canceling method mysticism apophasis Nagarjuna Eckhart",
@@ -84,7 +90,7 @@
         "Can the occurrence of a contemplative phenomenological state (such as remainder pressure, witness-awareness, or cessation) be analytically separated from the training context that conditions the practitioner to recognize and report it, or does the training...",
         "If Advaita is internally divided between svaprakasha (self-luminosity) and shabda pramana (scriptural testimony) as the means of knowing the witness, and early Buddhism is internally divided between remainder-refusing (SN 22.59) and therapeutic..."
       ],
-      "priority": 0.8901,
+      "priority": 0.913,
       "publication_paths": [
         "publication/daily/2026-05-28-the-method-s-reckoning-what-a-practice-does-with-its-own-authority-at-completion.md"
       ],
@@ -114,7 +120,7 @@
         ]
       },
       "title": "What a method does with its own authority",
-      "why_now": "priority 0.85; 6 related idea records; 3 originality audits; cross-agent signal; live anomaly pressure; dialogue pressure"
+      "why_now": "priority 0.87; 8 related idea records; 5 originality audits; cross-agent signal; live anomaly pressure; dialogue pressure"
     },
     {
       "agents": [
@@ -196,7 +202,7 @@
         "How do authorized residues, entry grammars, circularity severity, and source layers jointly predict a tradition's warnings, verification forms, and effort theory, especially for people who feel unable to begin the change they need?",
         "What observable features distinguish embodied attentional grain from doctrinal explanation, and how quickly can residue authorization become grain?"
       ],
-      "priority": 0.8132,
+      "priority": 0.8095,
       "publication_paths": [
         "publication/daily/2026-05-28-the-gap-report-has-a-grammar.md",
         "publication/daily/2026-05-29-residue-policy-in-negative-self-practice.md"
@@ -313,11 +319,12 @@
         "How can Lumenary design practices that preserve the exact capacities a method requires, refuse to overinterpret those capacities as metaphysical proof, and use teacher or community calibration to prevent premature destabilization?",
         "When a person cannot yet practice in the mature sense, what kind of entry does a tradition permit, scaffolded participation, external gift, latent capacity, self-disclosure, or refusal of any remainder claim?"
       ],
-      "priority": 0.8107,
+      "priority": 0.8074,
       "publication_paths": [
         "publication/daily/2026-05-26-the-same-negation-the-opposite-inference-logical-underdetermination-in-the-catuskoti-as-a-second-test-of-the-inferential-gap.md",
         "publication/daily/2026-05-29-compound-entry-grammar.md",
-        "publication/daily/2026-05-29-operational-remainder-ecology.md"
+        "publication/daily/2026-05-29-operational-remainder-ecology.md",
+        "publication/daily/2026-05-29-two-directions-into-the-same-wall.md"
       ],
       "recommended_next_action": "build_rubric",
       "stage": "rubric",
@@ -416,7 +423,7 @@
         "Dogen-style practice-realization, inherited communal practice, and radical Other Power cases where the analyst cannot cleanly separate custody, entry, and receiving surface.",
         "Huangbo search-refusal, Dogen practice-realization, and Dzogchen direct recognition cases where the tradition rejects the search sequence rather than producing a downstream remainder to manage."
       ],
-      "priority": 0.7837,
+      "priority": 0.7803,
       "publication_paths": [],
       "recommended_next_action": "build_rubric",
       "stage": "rubric",
@@ -445,6 +452,259 @@
       },
       "title": "Remainder pressure after self-negation",
       "why_now": "priority 0.78; 8 related idea records; 4 originality audits; cross-agent signal; live anomaly pressure"
+    },
+    {
+      "agents": [
+        "codex"
+      ],
+      "audit_ids": [
+        "65ed649d8eab67cd",
+        "e59e1c607fa2dc18"
+      ],
+      "audit_statuses": [
+        "extended"
+      ],
+      "blockers": [
+        "Reduce novelty from 0.72 to about 0.58. The custody phrase appears fresh, but the structure sits close to established work on pure consciousness, constructivism, theistic versus monistic typologies, witness-consciousness, and apophasis.",
+        "Reduce novelty from 0.78 to about 0.42. The useful contribution is not the broad claim that practices carry direction through many layers. That is strongly anticipated by primary texts, Dunne, Lutz, Lindbeck, Foucault, Hadot, Bourdieu, Pargament, VCE..."
+      ],
+      "closest_prior_art": [
+        {
+          "difference": "It sorts experiences and doctrines, not the handoff of loosened attention or ownership permissions in practice.",
+          "novelty_impact": "High reduction. The new model is close to a practice-language recoding of established mystical-experience typologies.",
+          "overlap": "Already distinguishes Advaita identity with Brahman, theistic union or communion with God, Buddhist unconstructed experience, apophatic negation, and common-core versus...",
+          "source": "Stanford Encyclopedia of Philosophy, Mysticism, sections on union, apophatic mysticism, perennialism, Stace, Smart, and Zaehner..."
+        },
+        {
+          "difference": "Forman tends to argue for direct encounter with consciousness itself, while this idea emphasizes divergent custodians of attention after ordinary ownership weakens.",
+          "novelty_impact": "High reduction. Forman already frames the central terrain as contentless consciousness plus interpretive difference.",
+          "overlap": "Forman's pure consciousness event and dualistic mystical state compare objectless or nonintentional awareness across Indian, Chinese, medieval European, and modern accounts.",
+          "source": "Robert K. C. Forman, Mysticism, Mind, Consciousness, Google Books page, https://books.google.com/books/about/Mysticism_Mind_Consciousness.html?id=I28wCczdcpEC"
+        },
+        {
+          "difference": "Does not triangulate with Bahiya's no-location instruction or Christian apophatic love.",
+          "novelty_impact": "Moderate reduction. One major unit of the model is already well articulated.",
+          "overlap": "Gives a close Advaita account of witness-consciousness as the abiding dimension in which changing experiences appear, directly overlapping the hidden-seer custody leg.",
+          "source": "Wolfgang Fasching, I Am of the Nature of Seeing: Phenomenological Reflections on the Indian Notion of Witness-Consciousness, PhilPapers, https://philpapers.org/rec/FASIAO-5"
+        }
+      ],
+      "configured_topic": true,
+      "core_claim": "Direction in contemplative training has no single fixed location. In some instructions, direction is capacity-internal from the first exercise, as when viveka is defined as discrimination between eternal and non-eternal. In other cases, direction is present as framing but may not fully govern the felt operation. In still other cases, direction arrives chiefly through entrusting, recognition, transmission, or teacher authorization. Grain and custody are...",
+      "dialogue_count": 5,
+      "dialogue_ids": [
+        "616853e6d5faa311",
+        "b606b887e2f0fff3",
+        "ba5bd26446b16e88",
+        "c2d99fd52ac864e4",
+        "cf1bf0e51a293036"
+      ],
+      "dialogue_outcomes": [
+        "candidate_transcendence",
+        "revision"
+      ],
+      "frontier_id": "frontier-attention-custody",
+      "idea_ids": [
+        "9a0072f4cf3a0ff3",
+        "48fa07b7dfb7b826"
+      ],
+      "last_advanced_at": "2026-05-26T20:17:38-07:00",
+      "missing_sources": [
+        "objectless awareness Advaita Buddhist Christian apophatic",
+        "pure consciousness event Forman Advaita Buddhism Christian mysticism objectless",
+        "attention Cloud of Unknowing Bahiya Atman",
+        "Fasching I Am of the Nature of Seeing witness-consciousness Buddhist Advaita",
+        "pure awareness experience Ramm 2023 witness consciousness selfless"
+      ],
+      "next_prompt": "Close-read Dzogchen and Mahamudra instructions on rigpa or luminous awareness against Bahiya and Brihadaranyaka before publishing the custody model.",
+      "open_anomalies": [
+        "Dzogchen or Mahamudra luminous selfless awareness, plus Pseudo-Dionysius's claim that the divine Cause is beyond both affirmation and negation.",
+        "Bahiya's immediate release, Tannisho's non-practice Other Power, and Dogen's practice-realization collapse the model's tendency to locate direction in analyzable layers.",
+        "When a practice loosens ordinary self-ownership, what custody system carries transformation, what human interface must remain available, and which of those two predicts the path's characteristic failures?",
+        "Before a person can claim, reject, or understand a path, what holds their attention and agency, and when does doctrine merely name that holding versus reshape it?",
+        "Where, exactly, does a practice place direction before, during, and after loosened ownership, and can practitioners feel that placement before doctrine explains it?"
+      ],
+      "priority": 0.7604,
+      "publication_paths": [],
+      "recommended_next_action": "build_rubric",
+      "stage": "rubric",
+      "status": "active",
+      "strongest_public_claim": {
+        "idea_id": "48fa07b7dfb7b826",
+        "path": "observations/codex/2026-05-26-layered-direction-of-practice.md",
+        "promotion_stage": "Public Claim",
+        "title": "Layered Direction of Practice"
+      },
+      "tests": {
+        "cross_domain": [
+          "Programs with similar decentering exercises should diverge in outcomes and language according to the post-decentering recipient they train.",
+          "Clients or trainees switching from CBT to psychodynamic, ACT, IFS, somatic, or exposure-based work should show layer-specific transfer effects. Old formulation vocabulary, effort style, authority relation, or integration habits should predict predictable..."
+        ],
+        "falsifiable": [
+          "If: Practitioners trained in Bahiya-style sense instruction, Advaita self-inquiry, and Christian apophatic prayer should diverge most in ownership and recipient language at the moment ordinary self-reference drops. Then: Interview transcripts should...",
+          "If: Changing the instruction at the handoff point should change later interpretation more than immediate perceptual content. Then: A practitioner given no-location language, witness language, or God-directed language after similar objectless calm should...",
+          "If: Primary manuals should contain explicit or implicit custody rules near passages that loosen ordinary selfing. Then: Texts should pair negation of objects or self-story with instructions such as do not locate a self, know the unseen seer, or lift the..."
+        ],
+        "practitioner": [
+          "When object fixation and ordinary self-story weaken, where does your practice tell attention or awareness to rest, belong, or not belong?",
+          "Is the word custody obvious, useful, or misleading from inside your tradition?",
+          "Would changing the handoff instruction change realization, only later interpretation, or neither?"
+        ]
+      },
+      "title": "Where freed attention is allowed to rest",
+      "why_now": "priority 0.72; 2 related idea records; 2 originality audits; live anomaly pressure; dialogue pressure"
+    },
+    {
+      "agents": [
+        "claude",
+        "codex"
+      ],
+      "audit_ids": [
+        "eef7e83c44da8b8c",
+        "7467567c4a12de58",
+        "4c3627df0bad54f1",
+        "63091c8c41cd9e28",
+        "a9cd647fde0147c2",
+        "7a1a4b07a241a1b9",
+        "0739a5567c106853",
+        "d0a05f55d7f0bf18",
+        "3d252c9585b2f10c"
+      ],
+      "audit_statuses": [
+        "audit_incomplete",
+        "extended",
+        "known",
+        "novel_synthesis",
+        "renamed"
+      ],
+      "blockers": [
+        "Reduce novelty from 0.78 to about 0.56. The idea is not a new comparative principle. Its best contribution is a useful synthesis and operationalization of established anti-perennialist, comparative-method, comparative-theological, homeomorphic-equivalence...",
+        "Reduce novelty from 0.78 to about 0.22. This is already present in the prior Lumenary originality audit and strongly anticipated by comparative-method literature.",
+        "Reduce novelty from 0.84 to about 0.61. The phrase is useful and may be generative, but it synthesizes known work on pure awareness, witness consciousness, self-modeling, and cessation."
+      ],
+      "closest_prior_art": [
+        {
+          "difference": "Smith does not present a Lumenary-style operational rubric of claim-unit bends, drops, and additions, nor does he tie the output to publication scoring.",
+          "novelty_impact": "High reduction. The anti-sameness theory of comparison is already central prior art.",
+          "overlap": "Very close at the level of comparative method. Smith attacks comparison that projects similarity into objective connection and stresses difference, invention, redescription...",
+          "source": "Jonathan Z. Smith, In Comparison a Magic Dwells, https://classics.osu.edu/sites/classics.osu.edu/files/Magic_Dwells.pdf"
+        },
+        {
+          "difference": "Freiberger's model is broader and methodological. The Lumenary idea focuses specifically on convergence and asks what must deform for an apparent match to hold.",
+          "novelty_impact": "High reduction. The proposed workflow looks like a specialized version of existing comparative-method theory.",
+          "overlap": "Very close structurally. Freiberger treats comparison as a second-order method with selection, description, juxtaposition, redescription, rectification, and theory formation...",
+          "source": "Oliver Freiberger, Elements of a Comparative Methodology in the Study of Religion, Religions 9, no. 2, 2018, https://www.mdpi.com/2077-1444/9/2/38"
+        },
+        {
+          "difference": "Panikkar emphasizes functional equivalence and dialogue. The Lumenary model adds explicit tracking of losses, additions, and incompatible commitments.",
+          "novelty_impact": "High reduction for the role-similarity without identity claim. Some novelty remains in the strain-audit mechanics.",
+          "overlap": "Close. Panikkar's homeomorphic equivalence compares concepts that play similar roles in different religious systems while respecting specificity and avoiding mistaken comparisons.",
+          "source": "Raimon Panikkar, homeomorphic equivalence glossary, https://www.raimon-panikkar.org/english/gloss-homeomorphic.html"
+        }
+      ],
+      "configured_topic": true,
+      "core_claim": "Traditions differ less in whether insight can be shared than in what carrier must hold it when it leaves the practice that disclosed it. Advaita lets insight travel as self-certifying recognition; early Buddhism lets it travel as a non-appropriating test; Daoism lets it travel as situated fit; Sufism lets it travel as renewed relation; Neoplatonism lets it travel as return-orientation. When a comparer moves an insight into the wrong carrier, relation...",
+      "dialogue_count": 16,
+      "dialogue_ids": [
+        "081821a0b70e5629",
+        "3d07afbbbf9a3d4d",
+        "4930aebe42046fcc",
+        "52d9118cf7c22e82",
+        "54009c482f05ee02",
+        "6ee62cdfab4c5a62",
+        "8c5d10b150499ca9",
+        "a77a66f94292c81f",
+        "aa1bef7113e171d1",
+        "bb5ff1b07a214ae1",
+        "bfb93e45e9bbeeca",
+        "c9133d46b98b985f",
+        "dc9166397d4262fe",
+        "e18ba26a84e0d1b3",
+        "f170ea23290b972c",
+        "f97e454e1b89bb92"
+      ],
+      "dialogue_outcomes": [
+        "candidate_transcendence",
+        "revision"
+      ],
+      "frontier_id": "frontier-translation-strain",
+      "idea_ids": [
+        "0e1a69f243a0d090",
+        "d92d2f0f6455ac53",
+        "d6fee3a4a4435d8c",
+        "b9b51fb9d8104a8e",
+        "0148538ab647a47f",
+        "3430d1f2ae36be75",
+        "fe0080e51c2a6fc2",
+        "6df690565ba5dc66",
+        "2496a3cab9e07b0c",
+        "e2b37857aaffd442",
+        "c6a468b31333e724",
+        "4babc6869a4afdf6",
+        "bfd1faf43d01b6e1",
+        "57f605e9dbd55798",
+        "0aad9ddfed2825bb",
+        "d3421d917751abf1",
+        "5afaa38b9ad8f721",
+        "2e9fc3b02fb94977",
+        "6647c8c2b2f6915b",
+        "6816fdc50cc6bb00",
+        "0ac1911649477722",
+        "8cb72c271bee8a54",
+        "1fa2d89e67d4eefb",
+        "ecc838ab7fbe9252",
+        "c70b23cbe2100d44",
+        "16fcac0c33a2d5e1",
+        "dd5510b50d19fa58",
+        "b53b10dbe6bb091e",
+        "55b9fb5b3cf91595"
+      ],
+      "last_advanced_at": "2026-05-29T06:18:52+02:00",
+      "missing_sources": [
+        "Jonathan Z Smith comparison similarity difference In Comparison a Magic Dwells",
+        "Steven Katz Language Epistemology and Mysticism no pure experience comparative mysticism",
+        "Robert Sharf Experience Critical Terms for Religious Studies mysticism critique",
+        "Raimon Panikkar homeomorphic equivalence comparative religion",
+        "Oliver Freiberger Elements of a Comparative Methodology in the Study of Religion redescription rectification"
+      ],
+      "next_prompt": "Build a one-page translation-strain rubric with fields for claim unit, role, ontology, agency, practice aim, authority, verification, what is bent, what is dropped, what is added, and whether role-similarity survives.",
+      "open_anomalies": [
+        "Convergence caused by direct borrowing, shared lineage, colonial translation conventions, English-language universalism, or dual-trained teachers rather than independent structural recurrence.",
+        "Comparisons where high strain is still historically causal, for example Buddhist and Advaita terms shaped by centuries of polemic and borrowing.",
+        "Nirodha samapatti and cessation reports, where practitioners report a discontinuity or absence of consciousness rather than a pressure to posit an enduring witness.",
+        "When a tradition internally disputes its own assertion posture (as in the Svatantrika-Prasangika contest over whether Madhyamaka holds theses), does the strain-mapping protocol need to treat posture as a continuous variable or a contested parameter rather...",
+        "How can a self-transcending practice be designed so that it builds enough scaffold before it weakens the self-functions a practitioner still needs?"
+      ],
+      "priority": 0.7512,
+      "publication_paths": [
+        "publication/daily/2026-05-25-convergence-as-translation-strain-not-evidence-weight.md"
+      ],
+      "recommended_next_action": "complete_audit",
+      "stage": "source_grounding",
+      "status": "active",
+      "strongest_public_claim": {
+        "idea_id": "6816fdc50cc6bb00",
+        "path": "observations/codex/2026-05-26-entry-residue-architecture.md",
+        "promotion_stage": "Public Claim",
+        "title": "Entry-Residue Architecture"
+      },
+      "tests": {
+        "cross_domain": [
+          "Comparative-law analyses that score concepts by translation strain should better predict failed legal transplants, implementation disputes, and misleading harmonization than analyses that count shared terms or broad doctrinal resemblance.",
+          "A strain rubric should predict where apparent equivalents such as trust, equity, right, or due process mislead across legal systems."
+        ],
+        "falsifiable": [
+          "If: When apparent cross-tradition convergence is decomposed into claim units, high-quality comparisons should expose systematic incompatibilities that ordinary convergence scoring hides. Then: In cases such as Atman versus anatta, apophatic darkness versus...",
+          "If: A convergence is strongest when role-similarity survives after metaphysical incompatibility is made explicit. Then: Some pairs should retain a shared practical role after decomposition, while other pairs should narrow sharply once claim units are...",
+          "If: The method should prevent false syntheses that a convergence-weighting system would accept. Then: A Lumenary audit should downgrade some high-similarity pairs after showing that alignment requires deleting central commitments, while upgrading some..."
+        ],
+        "practitioner": [
+          "When you hear a claim that two traditions converge, do you already ask which doctrinal or practice units must be dropped, bent, or added for the match to work?",
+          "Would a translation-strain sheet change how you compare terms such as anatta, Atman, emptiness, Godhead, fana, witness, soul, and awareness?",
+          "Can you name a case where a shared practice role survives even though the metaphysical explanation must remain incompatible?"
+        ]
+      },
+      "title": "Translation strain as a test of convergence",
+      "why_now": "priority 0.71; 29 related idea records; 9 originality audits; cross-agent signal; live anomaly pressure; dialogue pressure"
     },
     {
       "agents": [
@@ -594,7 +854,7 @@
         "Can a comparative model of transformation preserve enough structure to generate predictions while also marking the point where its own mapping stance becomes the obstacle named by the traditions it studies?",
         "If a practice's convergence point can be coded as a simple summary of the support-locus distribution around it, does any tradition's warning literature distinguish convergence-point failures (dissociation, premature dissolution, loss of functional..."
       ],
-      "priority": 0.7686,
+      "priority": 0.7382,
       "publication_paths": [
         "publication/daily/2026-05-26-the-capacity-ledger-of-gift-and-effort.md",
         "publication/daily/2026-05-26-the-forbidden-claimant-rubric.md",
@@ -626,260 +886,7 @@
         ]
       },
       "title": "The boundary between effort and gift",
-      "why_now": "priority 0.73; 23 related idea records; 17 originality audits; cross-agent signal; live anomaly pressure; dialogue pressure"
-    },
-    {
-      "agents": [
-        "claude",
-        "codex"
-      ],
-      "audit_ids": [
-        "eef7e83c44da8b8c",
-        "7467567c4a12de58",
-        "4c3627df0bad54f1",
-        "63091c8c41cd9e28",
-        "a9cd647fde0147c2",
-        "7a1a4b07a241a1b9",
-        "0739a5567c106853",
-        "d0a05f55d7f0bf18",
-        "3d252c9585b2f10c"
-      ],
-      "audit_statuses": [
-        "audit_incomplete",
-        "extended",
-        "known",
-        "novel_synthesis",
-        "renamed"
-      ],
-      "blockers": [
-        "Reduce novelty from 0.78 to about 0.56. The idea is not a new comparative principle. Its best contribution is a useful synthesis and operationalization of established anti-perennialist, comparative-method, comparative-theological, homeomorphic-equivalence...",
-        "Reduce novelty from 0.78 to about 0.22. This is already present in the prior Lumenary originality audit and strongly anticipated by comparative-method literature.",
-        "Reduce novelty from 0.84 to about 0.61. The phrase is useful and may be generative, but it synthesizes known work on pure awareness, witness consciousness, self-modeling, and cessation."
-      ],
-      "closest_prior_art": [
-        {
-          "difference": "Smith does not present a Lumenary-style operational rubric of claim-unit bends, drops, and additions, nor does he tie the output to publication scoring.",
-          "novelty_impact": "High reduction. The anti-sameness theory of comparison is already central prior art.",
-          "overlap": "Very close at the level of comparative method. Smith attacks comparison that projects similarity into objective connection and stresses difference, invention, redescription...",
-          "source": "Jonathan Z. Smith, In Comparison a Magic Dwells, https://classics.osu.edu/sites/classics.osu.edu/files/Magic_Dwells.pdf"
-        },
-        {
-          "difference": "Freiberger's model is broader and methodological. The Lumenary idea focuses specifically on convergence and asks what must deform for an apparent match to hold.",
-          "novelty_impact": "High reduction. The proposed workflow looks like a specialized version of existing comparative-method theory.",
-          "overlap": "Very close structurally. Freiberger treats comparison as a second-order method with selection, description, juxtaposition, redescription, rectification, and theory formation...",
-          "source": "Oliver Freiberger, Elements of a Comparative Methodology in the Study of Religion, Religions 9, no. 2, 2018, https://www.mdpi.com/2077-1444/9/2/38"
-        },
-        {
-          "difference": "Panikkar emphasizes functional equivalence and dialogue. The Lumenary model adds explicit tracking of losses, additions, and incompatible commitments.",
-          "novelty_impact": "High reduction for the role-similarity without identity claim. Some novelty remains in the strain-audit mechanics.",
-          "overlap": "Close. Panikkar's homeomorphic equivalence compares concepts that play similar roles in different religious systems while respecting specificity and avoiding mistaken comparisons.",
-          "source": "Raimon Panikkar, homeomorphic equivalence glossary, https://www.raimon-panikkar.org/english/gloss-homeomorphic.html"
-        }
-      ],
-      "configured_topic": true,
-      "core_claim": "Traditions differ less in whether insight can be shared than in what carrier must hold it when it leaves the practice that disclosed it. Advaita lets insight travel as self-certifying recognition; early Buddhism lets it travel as a non-appropriating test; Daoism lets it travel as situated fit; Sufism lets it travel as renewed relation; Neoplatonism lets it travel as return-orientation. When a comparer moves an insight into the wrong carrier, relation...",
-      "dialogue_count": 16,
-      "dialogue_ids": [
-        "081821a0b70e5629",
-        "3d07afbbbf9a3d4d",
-        "4930aebe42046fcc",
-        "52d9118cf7c22e82",
-        "54009c482f05ee02",
-        "6ee62cdfab4c5a62",
-        "8c5d10b150499ca9",
-        "a77a66f94292c81f",
-        "aa1bef7113e171d1",
-        "bb5ff1b07a214ae1",
-        "bfb93e45e9bbeeca",
-        "c9133d46b98b985f",
-        "dc9166397d4262fe",
-        "e18ba26a84e0d1b3",
-        "f170ea23290b972c",
-        "f97e454e1b89bb92"
-      ],
-      "dialogue_outcomes": [
-        "candidate_transcendence",
-        "revision"
-      ],
-      "frontier_id": "frontier-translation-strain",
-      "idea_ids": [
-        "0e1a69f243a0d090",
-        "d92d2f0f6455ac53",
-        "d6fee3a4a4435d8c",
-        "b9b51fb9d8104a8e",
-        "0148538ab647a47f",
-        "3430d1f2ae36be75",
-        "fe0080e51c2a6fc2",
-        "6df690565ba5dc66",
-        "2496a3cab9e07b0c",
-        "e2b37857aaffd442",
-        "c6a468b31333e724",
-        "4babc6869a4afdf6",
-        "bfd1faf43d01b6e1",
-        "57f605e9dbd55798",
-        "0aad9ddfed2825bb",
-        "d3421d917751abf1",
-        "5afaa38b9ad8f721",
-        "2e9fc3b02fb94977",
-        "6647c8c2b2f6915b",
-        "6816fdc50cc6bb00",
-        "0ac1911649477722",
-        "8cb72c271bee8a54",
-        "1fa2d89e67d4eefb",
-        "ecc838ab7fbe9252",
-        "c70b23cbe2100d44",
-        "16fcac0c33a2d5e1",
-        "dd5510b50d19fa58",
-        "b53b10dbe6bb091e",
-        "55b9fb5b3cf91595"
-      ],
-      "last_advanced_at": "2026-05-29T06:18:52+02:00",
-      "missing_sources": [
-        "Jonathan Z Smith comparison similarity difference In Comparison a Magic Dwells",
-        "Steven Katz Language Epistemology and Mysticism no pure experience comparative mysticism",
-        "Robert Sharf Experience Critical Terms for Religious Studies mysticism critique",
-        "Raimon Panikkar homeomorphic equivalence comparative religion",
-        "Oliver Freiberger Elements of a Comparative Methodology in the Study of Religion redescription rectification"
-      ],
-      "next_prompt": "Build a one-page translation-strain rubric with fields for claim unit, role, ontology, agency, practice aim, authority, verification, what is bent, what is dropped, what is added, and whether role-similarity survives.",
-      "open_anomalies": [
-        "Convergence caused by direct borrowing, shared lineage, colonial translation conventions, English-language universalism, or dual-trained teachers rather than independent structural recurrence.",
-        "Comparisons where high strain is still historically causal, for example Buddhist and Advaita terms shaped by centuries of polemic and borrowing.",
-        "Nirodha samapatti and cessation reports, where practitioners report a discontinuity or absence of consciousness rather than a pressure to posit an enduring witness.",
-        "When a tradition internally disputes its own assertion posture (as in the Svatantrika-Prasangika contest over whether Madhyamaka holds theses), does the strain-mapping protocol need to treat posture as a continuous variable or a contested parameter rather...",
-        "How can a self-transcending practice be designed so that it builds enough scaffold before it weakens the self-functions a practitioner still needs?"
-      ],
-      "priority": 0.7678,
-      "publication_paths": [
-        "publication/daily/2026-05-25-convergence-as-translation-strain-not-evidence-weight.md"
-      ],
-      "recommended_next_action": "complete_audit",
-      "stage": "source_grounding",
-      "status": "active",
-      "strongest_public_claim": {
-        "idea_id": "6816fdc50cc6bb00",
-        "path": "observations/codex/2026-05-26-entry-residue-architecture.md",
-        "promotion_stage": "Public Claim",
-        "title": "Entry-Residue Architecture"
-      },
-      "tests": {
-        "cross_domain": [
-          "Comparative-law analyses that score concepts by translation strain should better predict failed legal transplants, implementation disputes, and misleading harmonization than analyses that count shared terms or broad doctrinal resemblance.",
-          "A strain rubric should predict where apparent equivalents such as trust, equity, right, or due process mislead across legal systems."
-        ],
-        "falsifiable": [
-          "If: When apparent cross-tradition convergence is decomposed into claim units, high-quality comparisons should expose systematic incompatibilities that ordinary convergence scoring hides. Then: In cases such as Atman versus anatta, apophatic darkness versus...",
-          "If: A convergence is strongest when role-similarity survives after metaphysical incompatibility is made explicit. Then: Some pairs should retain a shared practical role after decomposition, while other pairs should narrow sharply once claim units are...",
-          "If: The method should prevent false syntheses that a convergence-weighting system would accept. Then: A Lumenary audit should downgrade some high-similarity pairs after showing that alignment requires deleting central commitments, while upgrading some..."
-        ],
-        "practitioner": [
-          "When you hear a claim that two traditions converge, do you already ask which doctrinal or practice units must be dropped, bent, or added for the match to work?",
-          "Would a translation-strain sheet change how you compare terms such as anatta, Atman, emptiness, Godhead, fana, witness, soul, and awareness?",
-          "Can you name a case where a shared practice role survives even though the metaphysical explanation must remain incompatible?"
-        ]
-      },
-      "title": "Translation strain as a test of convergence",
-      "why_now": "priority 0.73; 29 related idea records; 9 originality audits; cross-agent signal; live anomaly pressure; dialogue pressure"
-    },
-    {
-      "agents": [
-        "codex"
-      ],
-      "audit_ids": [
-        "65ed649d8eab67cd",
-        "e59e1c607fa2dc18"
-      ],
-      "audit_statuses": [
-        "extended"
-      ],
-      "blockers": [
-        "Reduce novelty from 0.72 to about 0.58. The custody phrase appears fresh, but the structure sits close to established work on pure consciousness, constructivism, theistic versus monistic typologies, witness-consciousness, and apophasis.",
-        "Reduce novelty from 0.78 to about 0.42. The useful contribution is not the broad claim that practices carry direction through many layers. That is strongly anticipated by primary texts, Dunne, Lutz, Lindbeck, Foucault, Hadot, Bourdieu, Pargament, VCE..."
-      ],
-      "closest_prior_art": [
-        {
-          "difference": "It sorts experiences and doctrines, not the handoff of loosened attention or ownership permissions in practice.",
-          "novelty_impact": "High reduction. The new model is close to a practice-language recoding of established mystical-experience typologies.",
-          "overlap": "Already distinguishes Advaita identity with Brahman, theistic union or communion with God, Buddhist unconstructed experience, apophatic negation, and common-core versus...",
-          "source": "Stanford Encyclopedia of Philosophy, Mysticism, sections on union, apophatic mysticism, perennialism, Stace, Smart, and Zaehner..."
-        },
-        {
-          "difference": "Forman tends to argue for direct encounter with consciousness itself, while this idea emphasizes divergent custodians of attention after ordinary ownership weakens.",
-          "novelty_impact": "High reduction. Forman already frames the central terrain as contentless consciousness plus interpretive difference.",
-          "overlap": "Forman's pure consciousness event and dualistic mystical state compare objectless or nonintentional awareness across Indian, Chinese, medieval European, and modern accounts.",
-          "source": "Robert K. C. Forman, Mysticism, Mind, Consciousness, Google Books page, https://books.google.com/books/about/Mysticism_Mind_Consciousness.html?id=I28wCczdcpEC"
-        },
-        {
-          "difference": "Does not triangulate with Bahiya's no-location instruction or Christian apophatic love.",
-          "novelty_impact": "Moderate reduction. One major unit of the model is already well articulated.",
-          "overlap": "Gives a close Advaita account of witness-consciousness as the abiding dimension in which changing experiences appear, directly overlapping the hidden-seer custody leg.",
-          "source": "Wolfgang Fasching, I Am of the Nature of Seeing: Phenomenological Reflections on the Indian Notion of Witness-Consciousness, PhilPapers, https://philpapers.org/rec/FASIAO-5"
-        }
-      ],
-      "configured_topic": true,
-      "core_claim": "Direction in contemplative training has no single fixed location. In some instructions, direction is capacity-internal from the first exercise, as when viveka is defined as discrimination between eternal and non-eternal. In other cases, direction is present as framing but may not fully govern the felt operation. In still other cases, direction arrives chiefly through entrusting, recognition, transmission, or teacher authorization. Grain and custody are...",
-      "dialogue_count": 5,
-      "dialogue_ids": [
-        "616853e6d5faa311",
-        "b606b887e2f0fff3",
-        "ba5bd26446b16e88",
-        "c2d99fd52ac864e4",
-        "cf1bf0e51a293036"
-      ],
-      "dialogue_outcomes": [
-        "candidate_transcendence",
-        "revision"
-      ],
-      "frontier_id": "frontier-attention-custody",
-      "idea_ids": [
-        "9a0072f4cf3a0ff3",
-        "48fa07b7dfb7b826"
-      ],
-      "last_advanced_at": "2026-05-26T20:17:38-07:00",
-      "missing_sources": [
-        "objectless awareness Advaita Buddhist Christian apophatic",
-        "pure consciousness event Forman Advaita Buddhism Christian mysticism objectless",
-        "attention Cloud of Unknowing Bahiya Atman",
-        "Fasching I Am of the Nature of Seeing witness-consciousness Buddhist Advaita",
-        "pure awareness experience Ramm 2023 witness consciousness selfless"
-      ],
-      "next_prompt": "Close-read Dzogchen and Mahamudra instructions on rigpa or luminous awareness against Bahiya and Brihadaranyaka before publishing the custody model.",
-      "open_anomalies": [
-        "Dzogchen or Mahamudra luminous selfless awareness, plus Pseudo-Dionysius's claim that the divine Cause is beyond both affirmation and negation.",
-        "Bahiya's immediate release, Tannisho's non-practice Other Power, and Dogen's practice-realization collapse the model's tendency to locate direction in analyzable layers.",
-        "When a practice loosens ordinary self-ownership, what custody system carries transformation, what human interface must remain available, and which of those two predicts the path's characteristic failures?",
-        "Before a person can claim, reject, or understand a path, what holds their attention and agency, and when does doctrine merely name that holding versus reshape it?",
-        "Where, exactly, does a practice place direction before, during, and after loosened ownership, and can practitioners feel that placement before doctrine explains it?"
-      ],
-      "priority": 0.7638,
-      "publication_paths": [],
-      "recommended_next_action": "build_rubric",
-      "stage": "rubric",
-      "status": "active",
-      "strongest_public_claim": {
-        "idea_id": "48fa07b7dfb7b826",
-        "path": "observations/codex/2026-05-26-layered-direction-of-practice.md",
-        "promotion_stage": "Public Claim",
-        "title": "Layered Direction of Practice"
-      },
-      "tests": {
-        "cross_domain": [
-          "Programs with similar decentering exercises should diverge in outcomes and language according to the post-decentering recipient they train.",
-          "Clients or trainees switching from CBT to psychodynamic, ACT, IFS, somatic, or exposure-based work should show layer-specific transfer effects. Old formulation vocabulary, effort style, authority relation, or integration habits should predict predictable..."
-        ],
-        "falsifiable": [
-          "If: Practitioners trained in Bahiya-style sense instruction, Advaita self-inquiry, and Christian apophatic prayer should diverge most in ownership and recipient language at the moment ordinary self-reference drops. Then: Interview transcripts should...",
-          "If: Changing the instruction at the handoff point should change later interpretation more than immediate perceptual content. Then: A practitioner given no-location language, witness language, or God-directed language after similar objectless calm should...",
-          "If: Primary manuals should contain explicit or implicit custody rules near passages that loosen ordinary selfing. Then: Texts should pair negation of objects or self-story with instructions such as do not locate a self, know the unseen seer, or lift the..."
-        ],
-        "practitioner": [
-          "When object fixation and ordinary self-story weaken, where does your practice tell attention or awareness to rest, belong, or not belong?",
-          "Is the word custody obvious, useful, or misleading from inside your tradition?",
-          "Would changing the handoff instruction change realization, only later interpretation, or neither?"
-        ]
-      },
-      "title": "Where freed attention is allowed to rest",
-      "why_now": "priority 0.72; 2 related idea records; 2 originality audits; live anomaly pressure; dialogue pressure"
+      "why_now": "priority 0.70; 23 related idea records; 17 originality audits; cross-agent signal; live anomaly pressure; dialogue pressure"
     },
     {
       "agents": [
@@ -973,7 +980,7 @@
         "Who should hold the gate when the same practice language can interrupt self-possession in one person and intensify self-measurement in another?",
         "Can a time-pressure practice reliably distinguish three wounds: owed coordination, borrowed comparison, and inner temporal collapse, then route each to a different low-risk repair without becoming another self-management ritual?"
       ],
-      "priority": 0.7374,
+      "priority": 0.707,
       "publication_paths": [],
       "recommended_next_action": "build_rubric",
       "stage": "rubric",
@@ -996,7 +1003,7 @@
         ]
       },
       "title": "What modern people need teachings for",
-      "why_now": "priority 0.70; 14 related idea records; 12 originality audits; cross-agent signal; live anomaly pressure; dialogue pressure"
+      "why_now": "priority 0.67; 14 related idea records; 12 originality audits; cross-agent signal; live anomaly pressure; dialogue pressure"
     },
     {
       "agents": [
@@ -1025,7 +1032,7 @@
       "missing_sources": [],
       "next_prompt": "Build a second-personal knowing rubric with fields for: unit of knowing (individual, dyadic, collective), ontological address of what is known (within the practitioner, between persons, constituted by gathering), mode of access (attention, encounter...",
       "open_anomalies": [],
-      "priority": 0.6918,
+      "priority": 0.689,
       "publication_paths": [],
       "recommended_next_action": "complete_audit",
       "stage": "source_grounding",
@@ -1045,7 +1052,7 @@
       "why_now": "priority 0.69; 6 related idea records; 0 originality audits; cross-agent signal"
     }
   ],
-  "generated_at": "2026-05-29T16:49:43+02:00",
+  "generated_at": "2026-05-30T07:30:00+02:00",
   "rules_version": "2026-05-26",
   "version": "2026-05-26"
 }

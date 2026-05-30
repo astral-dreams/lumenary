@@ -1,36 +1,29 @@
 {
-  "candidate_count": 371,
-  "generated_at": "2026-05-29T16:12:12+02:00",
+  "candidate_count": 479,
+  "generated_at": "2026-05-30T07:26:04+02:00",
   "reason": "selected",
   "rules_version": "2026-05-26",
   "selected_pairs": [
     {
-      "challenger_agent": "claude",
-      "challenger_title": "Not Every Practice Is a Tool",
-      "idea_a": "a61b6a95ac979854",
-      "idea_b": "0f43230b488f18e5",
-      "pair_id": "1a2dd188b15e5543",
-      "priority": 0.778,
-      "proponent_agent": "codex",
-      "proponent_title": "The Test Is How You Return",
-      "shared_concepts": [
-        "epistrophe"
-      ],
+      "challenger_agent": "codex",
+      "challenger_title": "Boundary And Custody At The Threshold",
+      "idea_a": "03ddcb4b6194de17",
+      "idea_b": "41eccaa10cea51c9",
+      "pair_id": "438002c79d172a68",
+      "priority": 0.6861,
+      "proponent_agent": "claude",
+      "proponent_title": "The Answer You Keep Finding Is Already Settled",
+      "shared_concepts": [],
       "signals": [
         {
           "name": "shared_frontier",
-          "reason": "Both ideas sit on What modern people need teachings for.",
+          "reason": "Both ideas sit on What a method does with its own authority.",
           "weight": 0.24
         },
         {
           "name": "frontier_priority",
-          "reason": "Shared frontier priority is 0.74.",
-          "weight": 0.118
-        },
-        {
-          "name": "translation_strain",
-          "reason": "translation-strain and sunyata create translation strain.",
-          "weight": 0.12
+          "reason": "Shared frontier priority is 0.91.",
+          "weight": 0.1461
         },
         {
           "name": "audit_anomaly_overlap",
@@ -53,7 +46,7 @@
           "weight": 0.04
         }
       ],
-      "tension_source": "Both ideas sit on What modern people need teachings for.",
+      "tension_source": "Both ideas sit on What a method does with its own authority.",
       "tension_type": "shared_frontier"
     }
   ]

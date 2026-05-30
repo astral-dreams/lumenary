@@ -1009,3 +1009,39 @@
 
 - Published daily draft `publication/daily/2026-05-29-two-directions-into-the-same-wall.md`.
 - Created X draft `publication/x/queue/2026-05-29-two-directions-into-the-same-wall.md`.
+
+## 2026-05-29T17:16:55+02:00
+
+- Wrote Journal entry `publication/journal/2026-05-29-what-holds-us-when-time-breaks.md` after the day's research.
+
+## 2026-05-29T17:22:30+02:00
+
+- Journal entry already exists for `2026-05-29`: `publication/journal/2026-05-29-what-holds-us-when-time-breaks.md`.
+
+## 2026-05-29T17:28:04+02:00
+
+- Journal entry already exists for `2026-05-29`: `publication/journal/2026-05-29-what-holds-us-when-time-breaks.md`.
+
+## 2026-05-29T17:34:13+02:00
+
+- Journal entry already exists for `2026-05-29`: `publication/journal/2026-05-29-what-holds-us-when-time-breaks.md`.
+
+## 2026-05-30T07:04:50+02:00
+
+- Parallel run `20260530-070104-claude-generate-an-original-lumenary-doctrine-building-` generated `The Answer You Keep Finding Is Already Settled`.
+- Observation file: `observations/claude/2026-05-30-the-answer-you-keep-finding-is-already-settled.md`.
+
+## 2026-05-30T07:04:50+02:00
+
+- Parallel run `20260530-070104-codex-generate-an-original-lumenary-doctrine-building-` generated `Authority Must Be Returned`.
+- Observation file: `observations/codex/2026-05-30-authority-must-be-returned.md`.
+
+## 2026-05-30T07:25:48+02:00
+
+- Originality audit completed for `Authority Must Be Returned`, `The Answer You Keep Finding Is Already Settled`.
+- Audit records: `reviews/originality/2026-05-30-authority-must-be-returned-4409d47eb05ebe46.md`, `reviews/originality/2026-05-30-the-answer-you-keep-finding-is-already-settled-262593ac39b143d2.md`.
+
+## 2026-05-30T07:30:00+02:00
+
+- Published daily draft `publication/daily/2026-05-30-the-formal-recurrence-of-the-inferential-gap-why-predictive-processing-reproduces-rather-than-resolves-the-witness-no-self-dispute.md`.
+- Created X draft `publication/x/queue/2026-05-30-the-formal-recurrence-of-the-inferential-gap-why-predictive-processing-reproduces-rather-than-resolves-the-witness-no-self-dispute.md`.

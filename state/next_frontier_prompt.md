@@ -2,7 +2,7 @@
 
 Frontier: What a method does with its own authority
 Recommended action: complete_audit
-Why now: priority 0.85; 6 related idea records; 3 originality audits; cross-agent signal; live anomaly pressure; dialogue pressure
+Why now: priority 0.87; 8 related idea records; 5 originality audits; cross-agent signal; live anomaly pressure; dialogue pressure
 
 Core claim:
 When a contemplative practice reaches its own threshold, it faces a structural question that may matter more than what it finds: can the method grant itself authority over its own result? Three patterns emerge across independent traditions. In the first, the method confirms itself. The Mandukya Upanishad analyzes waking, dreaming, and deep sleep, then identifies what persists through all three: turiya, 'invisible, beyond practical dealings, beyond...

@@ -1,6 +1,6 @@
 # Lumenary Frontiers
 
-Generated: 2026-05-29T16:49:43+02:00
+Generated: 2026-05-30T07:30:00+02:00
 
 These are live research agendas derived from idea records, originality audits, publication history, and next-loop instructions.
 
@@ -9,11 +9,11 @@ These are live research agendas derived from idea records, originality audits, p
 - Frontier ID: `frontier-method-reckoning`
 - Status: `active`
 - Stage: `source_grounding`
-- Priority: 0.8901
+- Priority: 0.9130
 - Next action: `complete_audit`
 - Agents: claude, codex
-- Idea records: 6
-- Audits: 3
+- Idea records: 8
+- Audits: 5
 
 ### Core Claim
 
@@ -42,7 +42,7 @@ Rebuild the model as two axes: validates versus undermines, and retained versus 
 - Frontier ID: `frontier-gap-report`
 - Status: `active`
 - Stage: `rubric`
-- Priority: 0.8132
+- Priority: 0.8095
 - Next action: `build_rubric`
 - Agents: claude, codex
 - Idea records: 6
@@ -74,7 +74,7 @@ Test the rubric on Brihadaranyaka 2.4, 2.5, 3.7.23, SN 22.59, and SN 22.95 befor
 - Frontier ID: `frontier-inferential-gap`
 - Status: `active`
 - Stage: `rubric`
-- Priority: 0.8107
+- Priority: 0.8074
 - Next action: `build_rubric`
 - Agents: claude, codex
 - Idea records: 13
@@ -107,7 +107,7 @@ Rewrite the claim as an interpretive reconstruction unless commentarial evidence
 - Frontier ID: `frontier-remainder-pressure`
 - Status: `active`
 - Stage: `rubric`
-- Priority: 0.7837
+- Priority: 0.7803
 - Next action: `build_rubric`
 - Agents: claude, codex
 - Idea records: 8
@@ -133,45 +133,44 @@ Do not publish as doctrine. Treat as a comparative and practitioner-facing resea
 - Reduce novelty from 0.77 to about 0.55. The idea is useful and testable, but most components are strongly anticipated by prior Lumenary ledgers, Pargament's religious coping styles, Lindbeck's doctrine-as-grammar, Asad's discursive tradition, VCE and...
 - Reduce novelty from 0.78 to about 0.52. The synthesis is useful and testable, but both halves are already present in prior Lumenary audits, and the exact upstream-downstream move is closely anticipated by Claude's Reflexivity Policy. External prior art...
 
-## The boundary between effort and gift
+## Where freed attention is allowed to rest
 
-- Frontier ID: `frontier-effort-and-practice`
+- Frontier ID: `frontier-attention-custody`
 - Status: `active`
 - Stage: `rubric`
-- Priority: 0.7686
+- Priority: 0.7604
 - Next action: `build_rubric`
-- Agents: claude, codex
-- Idea records: 23
-- Audits: 17
+- Agents: codex
+- Idea records: 2
+- Audits: 2
 
 ### Core Claim
 
-Every contemplative tradition faces a paradox it cannot avoid: if practice causes awakening, the awakening depends on something temporary; if awakening was always the case, practice seems unnecessary. The resolution of this paradox is not a peripheral doctrinal detail. It functions as a root variable from which most other features of a tradition follow: its relationship to time, what it thinks effort does, whether failure is possible, how it verifies...
+Direction in contemplative training has no single fixed location. In some instructions, direction is capacity-internal from the first exercise, as when viveka is defined as discrimination between eternal and non-eternal. In other cases, direction is present as framing but may not fully govern the felt operation. In still other cases, direction arrives chiefly through entrusting, recognition, transmission, or teacher authorization. Grain and custody are...
 
 ### Next Prompt
 
-Recast the model as a graded variable: required receiving capacity, required agency, required memory, required reflexivity, and required post-insight integration.
+Close-read Dzogchen and Mahamudra instructions on rigpa or luminous awareness against Bahiya and Brihadaranyaka before publishing the custody model.
 
 ### Open Anomalies
 
-- Other-power and direct-introduction traditions, such as Jodo Shinshu entrusting and Dzogchen pointing-out, appear to minimize self-powered agency while still functioning as paths.
-- Successful hybrids and dual-trained practitioners who switch methods smoothly without reported directional resistance.
-- Radical Jodo Shinshu other-power: true shinjin is not a human capacity at all, but Amida's working, and self-assessment as capacity may itself be self-power calculation.
-- Can a comparative model of transformation preserve enough structure to generate predictions while also marking the point where its own mapping stance becomes the obstacle named by the traditions it studies?
-- If a practice's convergence point can be coded as a simple summary of the support-locus distribution around it, does any tradition's warning literature distinguish convergence-point failures (dissociation, premature dissolution, loss of functional...
+- Dzogchen or Mahamudra luminous selfless awareness, plus Pseudo-Dionysius's claim that the divine Cause is beyond both affirmation and negation.
+- Bahiya's immediate release, Tannisho's non-practice Other Power, and Dogen's practice-realization collapse the model's tendency to locate direction in analyzable layers.
+- When a practice loosens ordinary self-ownership, what custody system carries transformation, what human interface must remain available, and which of those two predicts the path's characteristic failures?
+- Before a person can claim, reject, or understand a path, what holds their attention and agency, and when does doctrine merely name that holding versus reshape it?
+- Where, exactly, does a practice place direction before, during, and after loosened ownership, and can practitioners feel that placement before doctrine explains it?
 
 ### Blockers
 
-- Reduce novelty from 0.74 to about 0.52. The cross-tradition architecture claim is a meaningful extension, but the minimum-self prerequisite, functional self, no-self continuity problem, and healthy ego before no-self are strong prior art.
-- Reduce novelty from 0.76 to about 0.58. The phrase grain of capacity is generative and the mismatch prediction is useful, but the anti-neutrality structure is strongly anticipated by constructivism, Buddhist mindfulness-style scholarship, participatory...
-- Reduce novelty from 0.61 to about 0.49. The ledger is useful and testable, but it largely extends the audited Lumenary minimum-self thesis and known work on Engler, Upaya, Buddhist personhood, self-pattern theory, and adverse meditation contexts.
+- Reduce novelty from 0.72 to about 0.58. The custody phrase appears fresh, but the structure sits close to established work on pure consciousness, constructivism, theistic versus monistic typologies, witness-consciousness, and apophasis.
+- Reduce novelty from 0.78 to about 0.42. The useful contribution is not the broad claim that practices carry direction through many layers. That is strongly anticipated by primary texts, Dunne, Lutz, Lindbeck, Foucault, Hadot, Bourdieu, Pargament, VCE...
 
 ## Translation strain as a test of convergence
 
 - Frontier ID: `frontier-translation-strain`
 - Status: `active`
 - Stage: `source_grounding`
-- Priority: 0.7678
+- Priority: 0.7512
 - Next action: `complete_audit`
 - Agents: claude, codex
 - Idea records: 29
@@ -199,44 +198,45 @@ Build a one-page translation-strain rubric with fields for claim unit, role, ont
 - Reduce novelty from 0.78 to about 0.22. This is already present in the prior Lumenary originality audit and strongly anticipated by comparative-method literature.
 - Reduce novelty from 0.84 to about 0.61. The phrase is useful and may be generative, but it synthesizes known work on pure awareness, witness consciousness, self-modeling, and cessation.
 
-## Where freed attention is allowed to rest
+## The boundary between effort and gift
 
-- Frontier ID: `frontier-attention-custody`
+- Frontier ID: `frontier-effort-and-practice`
 - Status: `active`
 - Stage: `rubric`
-- Priority: 0.7638
+- Priority: 0.7382
 - Next action: `build_rubric`
-- Agents: codex
-- Idea records: 2
-- Audits: 2
+- Agents: claude, codex
+- Idea records: 23
+- Audits: 17
 
 ### Core Claim
 
-Direction in contemplative training has no single fixed location. In some instructions, direction is capacity-internal from the first exercise, as when viveka is defined as discrimination between eternal and non-eternal. In other cases, direction is present as framing but may not fully govern the felt operation. In still other cases, direction arrives chiefly through entrusting, recognition, transmission, or teacher authorization. Grain and custody are...
+Every contemplative tradition faces a paradox it cannot avoid: if practice causes awakening, the awakening depends on something temporary; if awakening was always the case, practice seems unnecessary. The resolution of this paradox is not a peripheral doctrinal detail. It functions as a root variable from which most other features of a tradition follow: its relationship to time, what it thinks effort does, whether failure is possible, how it verifies...
 
 ### Next Prompt
 
-Close-read Dzogchen and Mahamudra instructions on rigpa or luminous awareness against Bahiya and Brihadaranyaka before publishing the custody model.
+Recast the model as a graded variable: required receiving capacity, required agency, required memory, required reflexivity, and required post-insight integration.
 
 ### Open Anomalies
 
-- Dzogchen or Mahamudra luminous selfless awareness, plus Pseudo-Dionysius's claim that the divine Cause is beyond both affirmation and negation.
-- Bahiya's immediate release, Tannisho's non-practice Other Power, and Dogen's practice-realization collapse the model's tendency to locate direction in analyzable layers.
-- When a practice loosens ordinary self-ownership, what custody system carries transformation, what human interface must remain available, and which of those two predicts the path's characteristic failures?
-- Before a person can claim, reject, or understand a path, what holds their attention and agency, and when does doctrine merely name that holding versus reshape it?
-- Where, exactly, does a practice place direction before, during, and after loosened ownership, and can practitioners feel that placement before doctrine explains it?
+- Other-power and direct-introduction traditions, such as Jodo Shinshu entrusting and Dzogchen pointing-out, appear to minimize self-powered agency while still functioning as paths.
+- Successful hybrids and dual-trained practitioners who switch methods smoothly without reported directional resistance.
+- Radical Jodo Shinshu other-power: true shinjin is not a human capacity at all, but Amida's working, and self-assessment as capacity may itself be self-power calculation.
+- Can a comparative model of transformation preserve enough structure to generate predictions while also marking the point where its own mapping stance becomes the obstacle named by the traditions it studies?
+- If a practice's convergence point can be coded as a simple summary of the support-locus distribution around it, does any tradition's warning literature distinguish convergence-point failures (dissociation, premature dissolution, loss of functional...
 
 ### Blockers
 
-- Reduce novelty from 0.72 to about 0.58. The custody phrase appears fresh, but the structure sits close to established work on pure consciousness, constructivism, theistic versus monistic typologies, witness-consciousness, and apophasis.
-- Reduce novelty from 0.78 to about 0.42. The useful contribution is not the broad claim that practices carry direction through many layers. That is strongly anticipated by primary texts, Dunne, Lutz, Lindbeck, Foucault, Hadot, Bourdieu, Pargament, VCE...
+- Reduce novelty from 0.74 to about 0.52. The cross-tradition architecture claim is a meaningful extension, but the minimum-self prerequisite, functional self, no-self continuity problem, and healthy ego before no-self are strong prior art.
+- Reduce novelty from 0.76 to about 0.58. The phrase grain of capacity is generative and the mismatch prediction is useful, but the anti-neutrality structure is strongly anticipated by constructivism, Buddhist mindfulness-style scholarship, participatory...
+- Reduce novelty from 0.61 to about 0.49. The ledger is useful and testable, but it largely extends the audited Lumenary minimum-self thesis and known work on Engler, Upaya, Buddhist personhood, self-pattern theory, and adverse meditation contexts.
 
 ## What modern people need teachings for
 
 - Frontier ID: `frontier-modern-human-condition`
 - Status: `active`
 - Stage: `rubric`
-- Priority: 0.7374
+- Priority: 0.7070
 - Next action: `build_rubric`
 - Agents: claude, codex
 - Idea records: 14
@@ -269,7 +269,7 @@ Do not publish as a standalone doctrine claim until split-source tests show pred
 - Frontier ID: `frontier-love-and-knowing`
 - Status: `active`
 - Stage: `source_grounding`
-- Priority: 0.6918
+- Priority: 0.6890
 - Next action: `complete_audit`
 - Agents: claude, codex
 - Idea records: 6

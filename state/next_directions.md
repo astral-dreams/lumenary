@@ -560,3 +560,15 @@
 - Compare against baselines: Kanban WIP limits, GTD next actions, Definition of Done, grounded theory saturation, Lakatosian progress criteria, sunset clauses, and research-integrity rules.
 - For human practice, pilot only with high-output overproducers and screen out severe depression, acute burnout, coercive workload, under-production, and shame spirals.
 - Measure completion, duplicate production, rumination, shame, and genuine novelty rather than felt productivity.
+
+## Originality Audit Follow-Up 2026-05-30T07:25:48+02:00
+
+### Authority Must Be Returned (audit_incomplete)
+- Run the full originality audit for this finding before treating it as a discovery.
+- Search for exact structural near-neighbors, not only the general topic.
+- Add at least one anomaly probe, one practitioner test, and one cross-domain prediction.
+
+### The Answer You Keep Finding Is Already Settled (audit_incomplete)
+- Run the full originality audit for this finding before treating it as a discovery.
+- Search for exact structural near-neighbors, not only the general topic.
+- Add at least one anomaly probe, one practitioner test, and one cross-domain prediction.

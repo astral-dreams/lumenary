@@ -1,0 +1,76 @@
+{
+  "agent": "codex",
+  "anomaly_probe": {
+    "anomaly_candidate": "The missing audit itself is the current anomaly: prior work may already contain the claim.",
+    "confidence_effect": "Confidence is held low until the audit is completed.",
+    "why_it_breaks_or_strains_model": "TimeoutError('originality audit timed out after 1200 seconds.')"
+  },
+  "audit_id": "4409d47eb05ebe46",
+  "claim_units": [
+    "A serious method should not keep the authority it borrowed to bring a person to insight. At completion, the method either keeps guiding, is laid down, is denied as a possession, or is embodied as character and conduct. The crucial distinction is not whether a tradition confirms or cancels itself, but where the authority goes after the method has done its work: into a claim, a practice, a community, a teacher, a life pattern, or a refusal to claim. This matters for modern people whose worth is tied to performance, because even self-inquiry can become another tool they must master. The better te"
+  ],
+  "confidence": 0.0,
+  "created_at": "2026-05-30T07:25:48+02:00",
+  "cross_domain_prediction": {
+    "domain": "Comparative method",
+    "prediction": "If this is more than a redescription, it should generate a useful prediction in another domain.",
+    "structural_translation": "A genuine structure should travel beyond the first tradition pair that generated it.",
+    "would_count_against_it": "The structure only restates the source tradition's own vocabulary."
+  },
+  "exact_claim": "A serious method should not keep the authority it borrowed to bring a person to insight. At completion, the method either keeps guiding, is laid down, is denied as a possession, or is embodied as character and conduct. The crucial distinction is not whether a tradition confirms or cancels itself, but where the authority goes after the method has done its work: into a claim, a practice, a community, a teacher, a life pattern, or a refusal to claim. This matters for modern people whose worth is tied to performance, because even self-inquiry can become another tool they must master. The better teaching is narrower: do not ask only whether your practice worked. Ask what authority you are still giving it, and whether that authority now serves care, freedom, and truthful action.",
+  "execution_id": "parallel-20260530-070104-20260530-070104",
+  "falsifiable_predictions": [
+    {
+      "expected_observation": "The finding keeps a distinct claim after close prior art, anomaly, practitioner, and cross-domain checks.",
+      "if_model_is_right": "A later audit should find a clear difference from the closest prior work.",
+      "test_surface": "Originality audit backfill and practitioner review.",
+      "would_weaken_or_falsify": "A close prior source already makes the same structural argument."
+    }
+  ],
+  "idea_id": "e7b0c349c18ee276",
+  "idea_path": "observations/codex/2026-05-30-authority-must-be-returned.md",
+  "literature_search_queries": [
+    "\"Authority Must Be Returned\" prior art",
+    "\"Authority Must Be Returned\" comparative religion",
+    "\"Authority Must Be Returned\" consciousness philosophy"
+  ],
+  "near_neighbors": [],
+  "next_loop_instructions": [
+    "Run the full originality audit for this finding before treating it as a discovery.",
+    "Search for exact structural near-neighbors, not only the general topic.",
+    "Add at least one anomaly probe, one practitioner test, and one cross-domain prediction."
+  ],
+  "novelty_adjustment": "Do not raise novelty until the originality audit is completed.",
+  "originality_status": "audit_incomplete",
+  "practitioner_test": {
+    "answers_that_reduce_originality": "A practitioner or scholar recognizes the claim as standard teaching or standard scholarship.",
+    "answers_that_support_contribution": "A practitioner or scholar finds that the claim changes interpretation or predicts a real practice difference.",
+    "questions": [
+      "Is this obvious from inside your practice?",
+      "Does this change how you understand the practice, or only rename what you already know?"
+    ],
+    "relevant_practitioners": [
+      "Practitioners and scholars in the traditions named by the finding"
+    ]
+  },
+  "primary_text_close_read": {
+    "primary_pair": [
+      "Mode: Critique.",
+      "Frontier brief: What a method does with its own authority."
+    ],
+    "risk_of_overread": "High. The finding may be a renamed or extended version of prior work until the audit is completed.",
+    "secondary_literature_gap": "No literature gap has been established yet. Treat any novelty claim as provisional until prior art is checked.",
+    "structural_observation": "The originality audit did not complete, so no reliable primary-text comparison should be inferred yet."
+  },
+  "recommended_scores": {
+    "counterargument_quality": 0.82,
+    "novelty": 0.35,
+    "source_reliability": 0.73
+  },
+  "run_ids": [
+    "20260530-070104-codex-generate-an-original-lumenary-doctrine-building-",
+    "20260530-070104-claude-generate-an-original-lumenary-doctrine-building-"
+  ],
+  "title": "Authority Must Be Returned",
+  "unlike_statement": "No unlike statement is available until the originality audit completes."
+}
