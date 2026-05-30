@@ -1,35 +1,35 @@
 {
-  "candidate_count": 855,
-  "generated_at": "2026-05-30T10:18:19+02:00",
+  "candidate_count": 1007,
+  "generated_at": "2026-05-30T11:14:07+02:00",
   "reason": "selected",
   "rules_version": "2026-05-26",
   "selected_pairs": [
     {
-      "challenger_agent": "claude",
-      "challenger_title": "The Brain Model Already Took a Side",
-      "idea_a": "3763a79cf5b05610",
-      "idea_b": "fcafae09ea251b3d",
-      "pair_id": "892180a9a644b237",
-      "priority": 0.7989,
-      "proponent_agent": "codex",
-      "proponent_title": "Residual Burden of Proof After Negation",
+      "challenger_agent": "codex",
+      "challenger_title": "Translation Strain as a Load Test for Convergence",
+      "idea_a": "184f0313f1a2464c",
+      "idea_b": "d92d2f0f6455ac53",
+      "pair_id": "25b97c12a4dc9bfc",
+      "priority": 0.7868,
+      "proponent_agent": "claude",
+      "proponent_title": "A Shared Word Is Not Two Witnesses",
       "shared_concepts": [
         "translation-strain"
       ],
       "signals": [
         {
           "name": "shared_frontier",
-          "reason": "Both ideas sit on Inferential policy after objectless awareness.",
+          "reason": "Both ideas sit on Translation strain as a test of convergence.",
           "weight": 0.24
         },
         {
           "name": "frontier_priority",
-          "reason": "Shared frontier priority is 0.87.",
-          "weight": 0.1389
+          "reason": "Shared frontier priority is 0.79.",
+          "weight": 0.1268
         },
         {
           "name": "translation_strain",
-          "reason": "translation-strain and sunyata create translation strain.",
+          "reason": "translation-strain and wu create translation strain.",
           "weight": 0.12
         },
         {
@@ -53,7 +53,7 @@
           "weight": 0.04
         }
       ],
-      "tension_source": "Both ideas sit on Inferential policy after objectless awareness.",
+      "tension_source": "Both ideas sit on Translation strain as a test of convergence.",
       "tension_type": "shared_frontier"
     }
   ]

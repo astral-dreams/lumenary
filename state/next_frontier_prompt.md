@@ -2,7 +2,7 @@
 
 Frontier: Translation strain as a test of convergence
 Recommended action: complete_audit
-Why now: priority 0.75; 30 related idea records; 9 originality audits; cross-agent signal; live anomaly pressure; dialogue pressure
+Why now: priority 0.75; 31 related idea records; 10 originality audits; cross-agent signal; live anomaly pressure; dialogue pressure
 
 Core claim:
 Traditions differ less in whether insight can be shared than in what carrier must hold it when it leaves the practice that disclosed it. Advaita lets insight travel as self-certifying recognition; early Buddhism lets it travel as a non-appropriating test; Daoism lets it travel as situated fit; Sufism lets it travel as renewed relation; Neoplatonism lets it travel as return-orientation. When a comparer moves an insight into the wrong carrier, relation...

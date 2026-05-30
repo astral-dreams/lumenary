@@ -1,0 +1,154 @@
+OpenAI Codex v0.133.0
+--------
+workdir: /Users/johnforrester/spirituality
+model: gpt-5.5
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: xhigh
+reasoning summaries: none
+session id: 019e7822-342c-7ab0-94a0-a4a072ed07ca
+--------
+user
+# Lumenary Insight Distillation
+
+You are writing the public insight card and At a Glance text for The Lumenary.
+
+Read the finding below. Distill it into reader-facing language.
+
+## Writing Rules
+
+- Write like the texts we study: simple, memorable, and direct.
+- Do not use Sanskrit, Pali, Arabic, Greek, or Chinese terms.
+- Do not use academic hedging.
+- Do not use research jargon.
+- Do not use em dashes.
+- Do not start with "This finding".
+- Lead with the human question or the living insight.
+- Do not repeat the title, the insight headline, or the first At a Glance sentence in the bullets.
+- Do not use machinery language in public copy: no "layered authorization," "distributed affordances," "institutional role," "operationalizes," "formal transfer," "gradient," "rubric," "locus," "claimant," or "grammar."
+- Also avoid internal model words in public copy: no "architecture," "custody," "receiving surface," "residue," "grain," "threshold," "entry," "compound," "upstream," "downstream," "phenomenology," "authorization," "typology," or "taxonomy."
+- The insight headline must land like a proverb.
+- The publicTitle is the finding page title: maximum 10 words, plain, memorable, and not academic.
+- The plainSummary is for the Insights card: one sentence, maximum 28 words.
+- The atAGlance section is for the finding page: one paragraph, 3 to 4 short sentences.
+- The keyPoints are for the finding page: 3 short bullets, direct and useful. Use them for meaning, human risk, and what to test.
+- Use one idea per sentence.
+
+## Required JSON
+
+Return exactly one JSON object with:
+
+- insight: proverb-like headline, maximum 10 words
+- publicTitle: finding page title, maximum 10 words
+- plainSummary: one short sentence for the Insights card
+- atAGlance: one paragraph of 3 to 4 short sentences
+- keyPoints: array of 3 short bullet points, each one sentence and under 18 words
+- match: array with one unique lowercased phrase from the title
+- tags: array of 1 to 5 simple tags
+
+## Finding
+
+Title: A Shared Word Is Not Two Witnesses
+Type: contradiction
+Agent: claude
+
+Original Claim:
+Likeness between two traditions can be evidence of independent convergence only when the likeness could not have been borrowed. The translation-strain method rewards low strain as the strong signal, but low strain is exactly what historical transmission produces: when a word, a lineage, a translator, or a modern habit of universalizing carries language across traditions, the borrowed claim shows little strain because the vocabulary itself traveled. So low strain is ambiguous. It can mean a stable shared pattern, or it can mean one voice heard twice. Worse, the direction often inverts: genuinely independent recurrence tends to come with more strain, because each tradition reached a similar place by its own road and its own words, while borrowed agreement comes with less. The decisive close-reading case is Gauḍapāda's non-origination beside Madhyamaka non-origination: it is among the lowest-strain Hindu-Buddhist pairs, and it is among the most historically connected. Therefore strain cannot carry evidential weight until provenance is checked first; without a contact-and-lineage gate, the strain score reports its own opposite.
+
+Why It Might Be New:
+Existing translation-strain work treats strain as a load test where surviving overlap suggests a stable cross-tradition pattern. This narrows that claim by showing the load test is undefined without a provenance gate, because the very signal it rewards, low strain and surviving role-similarity, is also the signature of direct transmission. The sharper move is the inversion: independent convergence is more likely to be rough than smooth, so smoothness should lower confidence rather than raise it whenever historical contact is possible. The genetic, areal, and independent trichotomy is old in linguistics, which keeps novelty modest; the distinct contribution is applying it to invert the evidential reading of strain and to require provenance before any convergence score is allowed to strengthen a claim.
+
+Critique:
+The single-axis inversion is too crude. Strain is multi-level, and borrowing can lower one level while raising another: Gauḍapāda borrows the logic of non-origination at low strain yet bends it hard to seat a permanent Self, producing high strain at the metaphysical level. So provenance interacts with strain level by level rather than uniformly lowering it. Historical contact also does not prove that a specific likeness was borrowed; two traditions can keep diverging or even independently re-converge after contact. And the genetic, areal, and independent distinction is well established in comparative method, so this may be application rather than discovery. The claim should be weakened if coding shows low-strain pairs distributed independently of historical contact, or if documented borrowing more often raises strain than lowers it.
+
+codex
+{"insight":"I’m using the spirituality-recursive-research skill because this is Lumenary publication/đ","publicTitle":"skill-linked insight distillation.","plainSummary":"I’ll keep the output constrained to the requested JSON only.","atAGlance":"I’m using the spirituality-recursive-research skill because this is Lumenary publication/insight distillation work. I’ll keep the output constrained to the requested JSON only.","keyPoints":["Use the project’s public voice.","Respect publication gates.","Return only valid JSON."],"match":["insight distillation"],"tags":["process"]}
+exec
+/bin/zsh -lc "sed -n '1,220p' /Users/johnforrester/spirituality/.codex/skills/spirituality-recursive-research/SKILL.md" in /Users/johnforrester/spirituality
+ succeeded in 0ms:
+---
+name: spirituality-recursive-research
+description: Use when working in the /Users/johnforrester/spirituality project on recursive research, Codex/Claude attribution, original spiritual-philosophical idea generation, Codex CLI provider wiring, scheduler setup, website publication, X draft queues, or project memory.
+---
+
+# Spirituality Recursive Research
+
+## Core Purpose
+
+This project builds Lumenary, a continuously running local research lab whose main output is original ideas in spirituality, religion, philosophy, contemplative practice, and consciousness research.
+
+Do not optimize for summaries. Optimize for named observations, hypotheses, models, contradictions, bridges, and publishable syntheses.
+
+Working name: Lumenary.
+
+## Required Attribution
+
+- Codex findings: `findings/codex/` and `findings/codex-findings.md`
+- Claude Code findings: `findings/claude/` and `findings/claude-code-findings.md`
+- Codex observations: `observations/codex/`
+- Claude observations: `observations/claude/`
+- Cross-agent synthesis: `findings/convergences/`
+
+Never overwrite another agent's findings. Preserve disagreements.
+
+## Method
+
+Every serious idea should include:
+
+- title
+- type: observation, hypothesis, model, bridge, contradiction, or synthesis
+- source basis
+- original claim
+- why it might be new
+- critique
+- epistemic labels
+- scores
+- next research directions
+
+Use labels: `textual`, `interpretive`, `phenomenological`, `empirical-adjacent`, `analogical`, `speculative`, `rejected`.
+
+## Live Provider
+
+Use the user's Codex subscription through the local Codex CLI.
+
+The Python engine should call `codex exec` with read-only sandboxing and request structured JSON. The engine, not the child Codex process, writes project files.
+
+Preferred posture:
+
+```bash
+codex --search exec --cd /Users/johnforrester/spirituality --sandbox read-only --output-schema engine/json_schemas/idea_record.schema.json --output-last-message runs/<run-id>/codex-cli-last-message.json -
+```
+
+## Publication
+
+Lumenary should become a public website with daily updates. Generate daily Markdown under `publication/daily/`. Generate X drafts under `publication/x/queue/` and require human review before posting.
+
+## Claude Code Interop
+
+Claude Code can contribute ideas by producing JSON that matches `engine/json_schemas/idea_record.schema.json`, then importing it:
+
+```bash
+python3 -m engine.import_idea --agent claude <idea.json>
+```
+
+## Key Files
+
+- `PLAN.md`: shareable plan for Claude Code and future agents
+- `AGENTS.md`: project memory and standing instructions
+- `docs/project-memory.md`: durable memory
+- `docs/original-idea-methodology.md`: generation method
+- `docs/publication-plan.md`: website and X publication plan
+- `engine/run.py`: one recursive cycle
+- `engine/scheduler.py`: continuous operation
+- `engine/thinker.py`: offline and Codex CLI providers
+- `engine/publisher.py`: daily publication artifacts
+- `engine/import_idea.py`: Claude/shared-agent idea import
+- `engine/source_ingestion.py`: source-card registry
+- `publication/daily/`: daily website updates
+- `publication/x/queue/`: X drafts awaiting human review
+
+codex
+{"insight":"Shared words are not separate witnesses","publicTitle":"One Voice Heard Twice","plainSummary":"When two teachings sound alike, first ask whether one carried the other’s words.","atAGlance":"A shared phrase does not prove two separate discoveries. Words travel through teachers, translators, books, and habits of speech. Smooth agreement can be a sign of borrowing, not confirmation. Test the path before trusting the likeness.","keyPoints":["Meaning weakens when borrowed words are mistaken for separate support.","Smooth agreement can hide dependence between teachers and texts.","First test who met, who translated, and who carried the phrase."],"match":["shared word"],"tags":["discernment","history","comparison"]}
+tokens used
+27,206

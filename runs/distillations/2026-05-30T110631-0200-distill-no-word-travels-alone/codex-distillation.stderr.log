@@ -1,0 +1,154 @@
+OpenAI Codex v0.133.0
+--------
+workdir: /Users/johnforrester/spirituality
+model: gpt-5.5
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: xhigh
+reasoning summaries: none
+session id: 019e7822-90d4-7b73-ba0b-62a61ec09a69
+--------
+user
+# Lumenary Insight Distillation
+
+You are writing the public insight card and At a Glance text for The Lumenary.
+
+Read the finding below. Distill it into reader-facing language.
+
+## Writing Rules
+
+- Write like the texts we study: simple, memorable, and direct.
+- Do not use Sanskrit, Pali, Arabic, Greek, or Chinese terms.
+- Do not use academic hedging.
+- Do not use research jargon.
+- Do not use em dashes.
+- Do not start with "This finding".
+- Lead with the human question or the living insight.
+- Do not repeat the title, the insight headline, or the first At a Glance sentence in the bullets.
+- Do not use machinery language in public copy: no "layered authorization," "distributed affordances," "institutional role," "operationalizes," "formal transfer," "gradient," "rubric," "locus," "claimant," or "grammar."
+- Also avoid internal model words in public copy: no "architecture," "custody," "receiving surface," "residue," "grain," "threshold," "entry," "compound," "upstream," "downstream," "phenomenology," "authorization," "typology," or "taxonomy."
+- The insight headline must land like a proverb.
+- The publicTitle is the finding page title: maximum 10 words, plain, memorable, and not academic.
+- The plainSummary is for the Insights card: one sentence, maximum 28 words.
+- The atAGlance section is for the finding page: one paragraph, 3 to 4 short sentences.
+- The keyPoints are for the finding page: 3 short bullets, direct and useful. Use them for meaning, human risk, and what to test.
+- Use one idea per sentence.
+
+## Required JSON
+
+Return exactly one JSON object with:
+
+- insight: proverb-like headline, maximum 10 words
+- publicTitle: finding page title, maximum 10 words
+- plainSummary: one short sentence for the Insights card
+- atAGlance: one paragraph of 3 to 4 short sentences
+- keyPoints: array of 3 short bullet points, each one sentence and under 18 words
+- match: array with one unique lowercased phrase from the title
+- tags: array of 1 to 5 simple tags
+
+## Finding
+
+Title: No Word Travels Alone
+Type: model
+Agent: codex
+
+Original Claim:
+A spiritual word does not travel by meaning alone. It travels with the practice that trained it, the authority that corrects it, the test that verifies it, and the wound of the person receiving it. The frontier should therefore be narrowed: it is not enough to ask whether two traditions use a similar role for a word. Ask what the receiver's loneliness, shame, ambition, fear, or hunger for visibility may make the word do. Detachment can become withdrawal; surrender can become passivity; emptiness can become nihilism; service can become self-erasure. A borrowed word is responsible only where its old discipline and its new human use can both be named.
+
+Why It Might Be New:
+Closest prior arguments already cover much of the ground. Smith makes comparison an invented scholarly operation rather than discovered sameness; Freiberger gives a general method; Panikkar gives functional equivalence without mistaken identity; speech-act theory asks what words do. The narrower contribution is the receiver-wound field: a comparison can be textually careful and still fail because the modern listener's wound supplies a counterfeit use for the term. The exact difference is practical and doctrine-facing: before a term can become a teaching, it must pass a source-side strain check and a receiver-side misuse check.
+
+Critique:
+The model may over-psychologize comparison. Some words are protected less by private self-checking than by living institutions, teachers, ritual forms, and community correction. Zen, Chan, Pure Land, Dzogchen, and Mahamudra can also treat words, gestures, trust, and recognition as inseparable from practice, which may make a receiver-wound sheet feel like an outsider's grid. The model is weakened if dual-trained practitioners can translate contested terms without naming receiver wounds and still show clearer conduct, less misuse, and better care than people using the added check.
+
+codex
+{"insight":"I’m using the spirituality-recursive-research skill because this is a Lumenary publication", "publicTitle":"distillation task", "plainSummary":"I’ll keep the final response to the required JSON object.", "atAGlance":"Reading the local skill instructions to preserve the project’s publication rules. Then I’ll return only the requested distillation JSON.", "keyPoints":["Use project voice.","Respect the publication gate.","Return exact JSON."],"match":["distillation"],"tags":["process"]}
+exec
+/bin/zsh -lc "sed -n '1,220p' /Users/johnforrester/spirituality/.codex/skills/spirituality-recursive-research/SKILL.md" in /Users/johnforrester/spirituality
+ succeeded in 0ms:
+---
+name: spirituality-recursive-research
+description: Use when working in the /Users/johnforrester/spirituality project on recursive research, Codex/Claude attribution, original spiritual-philosophical idea generation, Codex CLI provider wiring, scheduler setup, website publication, X draft queues, or project memory.
+---
+
+# Spirituality Recursive Research
+
+## Core Purpose
+
+This project builds Lumenary, a continuously running local research lab whose main output is original ideas in spirituality, religion, philosophy, contemplative practice, and consciousness research.
+
+Do not optimize for summaries. Optimize for named observations, hypotheses, models, contradictions, bridges, and publishable syntheses.
+
+Working name: Lumenary.
+
+## Required Attribution
+
+- Codex findings: `findings/codex/` and `findings/codex-findings.md`
+- Claude Code findings: `findings/claude/` and `findings/claude-code-findings.md`
+- Codex observations: `observations/codex/`
+- Claude observations: `observations/claude/`
+- Cross-agent synthesis: `findings/convergences/`
+
+Never overwrite another agent's findings. Preserve disagreements.
+
+## Method
+
+Every serious idea should include:
+
+- title
+- type: observation, hypothesis, model, bridge, contradiction, or synthesis
+- source basis
+- original claim
+- why it might be new
+- critique
+- epistemic labels
+- scores
+- next research directions
+
+Use labels: `textual`, `interpretive`, `phenomenological`, `empirical-adjacent`, `analogical`, `speculative`, `rejected`.
+
+## Live Provider
+
+Use the user's Codex subscription through the local Codex CLI.
+
+The Python engine should call `codex exec` with read-only sandboxing and request structured JSON. The engine, not the child Codex process, writes project files.
+
+Preferred posture:
+
+```bash
+codex --search exec --cd /Users/johnforrester/spirituality --sandbox read-only --output-schema engine/json_schemas/idea_record.schema.json --output-last-message runs/<run-id>/codex-cli-last-message.json -
+```
+
+## Publication
+
+Lumenary should become a public website with daily updates. Generate daily Markdown under `publication/daily/`. Generate X drafts under `publication/x/queue/` and require human review before posting.
+
+## Claude Code Interop
+
+Claude Code can contribute ideas by producing JSON that matches `engine/json_schemas/idea_record.schema.json`, then importing it:
+
+```bash
+python3 -m engine.import_idea --agent claude <idea.json>
+```
+
+## Key Files
+
+- `PLAN.md`: shareable plan for Claude Code and future agents
+- `AGENTS.md`: project memory and standing instructions
+- `docs/project-memory.md`: durable memory
+- `docs/original-idea-methodology.md`: generation method
+- `docs/publication-plan.md`: website and X publication plan
+- `engine/run.py`: one recursive cycle
+- `engine/scheduler.py`: continuous operation
+- `engine/thinker.py`: offline and Codex CLI providers
+- `engine/publisher.py`: daily publication artifacts
+- `engine/import_idea.py`: Claude/shared-agent idea import
+- `engine/source_ingestion.py`: source-card registry
+- `publication/daily/`: daily website updates
+- `publication/x/queue/`: X drafts awaiting human review
+
+codex
+{"insight":"A word carries the life that trained it","publicTitle":"No Word Travels Alone","plainSummary":"A sacred word can heal or harm depending on the practice, correction, test, and wound that meet it.","atAGlance":"A sacred word arrives with more than meaning. It brings the way it was practiced, the people who corrected it, and the tests that kept it honest. In a wounded life, the same word can bend toward fear, shame, hiding, or self-erasure. A teaching should name both its old discipline and its likely misuse today.","keyPoints":["Meaning depends on the practice that shaped the word.","Pain can turn a good word into permission to disappear.","Test whether the word brings clearer care or deeper escape."],"match":["no word travels alone"],"tags":["language","practice","care"]}
+tokens used
+14,916

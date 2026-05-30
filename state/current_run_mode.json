@@ -4,19 +4,19 @@
   "label": "Critique",
   "metrics": {
     "frontier_count": 9,
-    "high_priority_frontier": 0.8932,
-    "idea_count": 125,
+    "high_priority_frontier": 0.7854,
+    "idea_count": 127,
     "incomplete_audits": 4,
-    "latest_idea_age_days": 0.01,
-    "latest_source_age_days": 3.35,
+    "latest_idea_age_days": 0.02,
+    "latest_source_age_days": 3.37,
     "missing_source_frontiers": 40,
-    "pending_tests": 402,
+    "pending_tests": 411,
     "ready_teachings_without_practice": 0,
     "source_count": 121,
-    "teaching_pressure_count": 27,
+    "teaching_pressure_count": 29,
     "weak_tests": 4
   },
   "mode": "critique",
-  "reason": "Selected by pressure scores: critique=36.96, discovery=10.96, doctrine=12.65, originality_audit=1.00, practice=0.00.",
-  "selected_at": "2026-05-30T10:33:59+02:00"
+  "reason": "Selected by pressure scores: critique=37.68, discovery=10.88, doctrine=13.35, originality_audit=1.00, practice=0.00.",
+  "selected_at": "2026-05-30T11:01:34+02:00"
 }

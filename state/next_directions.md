@@ -718,3 +718,21 @@
 - Run a blind distinct-content test against prior Lumenary records. Merge if readers cannot state the added variable without prompting.
 - Ask active-inference modelers to attempt non-reductive svaprakasha formalization before repeating that predictive processing pre-decides the issue.
 - Pilot Notice the Asker only with screened stable adults and stop for increased derealization, depersonalization, rumination, shame, compulsive checking, avoidance of feedback, panic, or clinical distress.
+
+## Originality Audit Follow-Up 2026-05-30T11:13:36+02:00
+
+### A Shared Word Is Not Two Witnesses (extended)
+- Merge or cross-index with Convergence as Translation Strain and Translation Strain as a Load Test for Convergence.
+- Add a required provenance gate before any convergence score: independent, inheritance, borrowing, shared milieu, shared translator, modern universalizing, cross-training, unknown.
+- Split strain into lexical, logical, ritual, authority, verification, practice-aim, and metaphysical layers.
+- Use Gaudapada and Madhyamaka as a contact-control case, not as independent confirmation.
+- Run an A/B scoring test to see whether provenance-first coding changes decisions compared with strain-only coding.
+- Pilot the Borrowed-Word Check only with stable reflective seekers, and track loneliness, cynicism, curiosity, and real community contact.
+
+### No Word Travels Alone (extended)
+- Do not publish as a standalone discovery. Cross-index with First Ask What the Words Do, translation-strain records, spiritual-bypass safety records, and modern-human-condition gating.
+- Build a one-page codebook with fields for source role, trained practice, correction holder, verification rule, receiver wound, likely counterfeit use, concrete action, warning, repair, and clinical exclusion.
+- Use split-source coding: code source role from primary instruction texts, then predict misuse and repair from held-out practitioner cases.
+- Compare the model against spiritual bypassing, Pargament religious coping, VCE contextual factors, Asad discursive tradition, Lindbeck grammar, and ordinary values-based action planning.
+- Pilot the Word Carry Test only with stable supported adults or older teens, and stop for shame, panic, rumination, dissociation, compulsive confession, self-punishment, or obsessive checking.
+- Require a real community or care pathway for lonely seekers, since the practice can remove false comfort without meeting the belonging need.
