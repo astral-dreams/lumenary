@@ -1,6 +1,6 @@
 # Lumenary Frontiers
 
-Generated: 2026-05-30T12:30:07+02:00
+Generated: 2026-05-30T12:46:34+02:00
 
 These are live research agendas derived from idea records, originality audits, publication history, and next-loop instructions.
 
@@ -9,11 +9,11 @@ These are live research agendas derived from idea records, originality audits, p
 - Frontier ID: `frontier-translation-strain`
 - Status: `active`
 - Stage: `source_grounding`
-- Priority: 0.7878
+- Priority: 0.7886
 - Next action: `complete_audit`
 - Agents: claude, codex
-- Idea records: 33
-- Audits: 12
+- Idea records: 34
+- Audits: 13
 
 ### Core Claim
 
@@ -73,7 +73,7 @@ Do not publish as doctrine. Treat as a comparative and practitioner-facing resea
 - Frontier ID: `frontier-method-reckoning`
 - Status: `active`
 - Stage: `source_grounding`
-- Priority: 0.7755
+- Priority: 0.7749
 - Next action: `complete_audit`
 - Agents: claude, codex
 - Idea records: 9
@@ -106,7 +106,7 @@ Rebuild the model as two axes: validates versus undermines, and retained versus 
 - Frontier ID: `frontier-inferential-gap`
 - Status: `active`
 - Stage: `rubric`
-- Priority: 0.7618
+- Priority: 0.7610
 - Next action: `build_rubric`
 - Agents: claude, codex
 - Idea records: 17
@@ -174,8 +174,8 @@ Close-read Dzogchen and Mahamudra instructions on rigpa or luminous awareness ag
 - Priority: 0.7374
 - Next action: `build_rubric`
 - Agents: claude, codex
-- Idea records: 27
-- Audits: 25
+- Idea records: 28
+- Audits: 26
 
 ### Core Claim
 
@@ -204,7 +204,7 @@ Do not publish as a standalone doctrine claim until split-source tests show pred
 - Frontier ID: `frontier-gap-report`
 - Status: `active`
 - Stage: `rubric`
-- Priority: 0.7332
+- Priority: 0.7325
 - Next action: `build_rubric`
 - Agents: claude, codex
 - Idea records: 8
@@ -237,7 +237,7 @@ Test the rubric on Brihadaranyaka 2.4, 2.5, 3.7.23, SN 22.59, and SN 22.95 befor
 - Frontier ID: `frontier-effort-and-practice`
 - Status: `active`
 - Stage: `rubric`
-- Priority: 0.7326
+- Priority: 0.7323
 - Next action: `build_rubric`
 - Agents: claude, codex
 - Idea records: 23

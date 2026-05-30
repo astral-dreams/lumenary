@@ -1,0 +1,70 @@
+OpenAI Codex v0.133.0
+--------
+workdir: /Users/johnforrester/spirituality
+model: gpt-5.5
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: xhigh
+reasoning summaries: none
+session id: 019e7878-d5a3-7fe1-8460-689ad85e5f19
+--------
+user
+# Lumenary Insight Distillation
+
+You are writing the public insight card and At a Glance text for The Lumenary.
+
+Read the finding below. Distill it into reader-facing language.
+
+## Writing Rules
+
+- Write like the texts we study: simple, memorable, and direct.
+- Do not use Sanskrit, Pali, Arabic, Greek, or Chinese terms.
+- Do not use academic hedging.
+- Do not use research jargon.
+- Do not use em dashes.
+- Do not start with "This finding".
+- Lead with the human question or the living insight.
+- Do not repeat the title, the insight headline, or the first At a Glance sentence in the bullets.
+- Do not use machinery language in public copy: no "layered authorization," "distributed affordances," "institutional role," "operationalizes," "formal transfer," "gradient," "rubric," "locus," "claimant," or "grammar."
+- Also avoid internal model words in public copy: no "architecture," "custody," "receiving surface," "residue," "grain," "threshold," "entry," "compound," "upstream," "downstream," "phenomenology," "authorization," "typology," or "taxonomy."
+- The insight headline must land like a proverb.
+- The publicTitle is the finding page title: maximum 10 words, plain, memorable, and not academic.
+- The plainSummary is for the Insights card: one sentence, maximum 28 words.
+- The atAGlance section is for the finding page: one paragraph, 3 to 4 short sentences.
+- The keyPoints are for the finding page: 3 short bullets, direct and useful. Use them for meaning, human risk, and what to test.
+- Use one idea per sentence.
+
+## Required JSON
+
+Return exactly one JSON object with:
+
+- insight: proverb-like headline, maximum 10 words
+- publicTitle: finding page title, maximum 10 words
+- plainSummary: one short sentence for the Insights card
+- atAGlance: one paragraph of 3 to 4 short sentences
+- keyPoints: array of 3 short bullet points, each one sentence and under 18 words
+- match: array with one unique lowercased phrase from the title
+- tags: array of 1 to 5 simple tags
+
+## Finding
+
+Title: A Test Is Not A Home
+Type: synthesis
+Agent: codex
+
+Original Claim:
+A test that protects doctrine can harm a lonely person if it is handed to them as medicine. When two traditions seem to agree, the full strain sheet should ask what each path must bend, drop, or add before the agreement counts. But when a person uses a borrowed sentence for hope, belonging, or direction, the first test should be contact and conduct: does the sentence move them toward a real person, duty, repair, help, or community before it becomes an identity claim. What now holds is a split rule: doctrine should be provenance-first; wounded use should be contact-first. A sentence is not suspect because it traveled. It becomes suspect when it replaces correction, action, grief work, help-seeking, or belonging with private certainty or public display.
+
+Why It Might Be New:
+Smith, Freiberger, and Panikkar already make comparison disciplined, invented, and role-sensitive. Lindbeck and Asad are also close because they tie doctrine to communal grammar and traditioned practice. The exact difference is the split use rule: the same comparison sheet should be strict for doctrine-building and restrained for lonely seekers. Prior local records already named provenance, receiver wound, and borrowing; this record lowers novelty and adds one sharper claim, that a valid research gate should not become a solo belonging practice unless it demonstrably increases contact and conduct.
+
+Critique:
+The split may excuse shallow appropriation by letting seekers delay provenance too long. It may also overstate loneliness as the main human wound when some users need accuracy, recovery support, or ordinary rest more than contact. The strongest anomaly is an authorized hybrid lineage or comparative theology setting where borrowed language is already corrected by living teachers and community, so provenance and contact are not separate stages. Another anomaly is direct-recognition practice: some traditions will object that the truth of recognition is not validated by contact first. If teachers and practitioners show that ordinary guidance handles these cases better than this split, or if contact-first practice increases shame, unsafe disclosure, or confusion, the model should narrow or retire.
+
+codex
+{"insight":"A test can guard truth without becoming shelter.","publicTitle":"A Test Is Not A Home","plainSummary":"A borrowed sentence helps only when it turns a lonely person toward contact, repair, and real duty.","atAGlance":"A strict test belongs around teachings, not around every wounded person. When someone borrows words for hope, the first question is whether those words lead toward people, help, repair, and steady action. The danger comes when private certainty replaces grief, correction, and belonging.","keyPoints":["Meaning grows stronger when borrowed words lead back to real life.","Lonely people can turn tested ideas into walls around pain.","Test whether the sentence increases contact, help-seeking, repair, and responsibility."],"match":["a test is not a home"],"tags":["loneliness","belonging","doctrine","practice"]}
+codex
+{"insight":"A test can guard truth without becoming shelter.","publicTitle":"A Test Is Not A Home","plainSummary":"A borrowed sentence helps only when it turns a lonely person toward contact, repair, and real duty.","atAGlance":"A strict test belongs around teachings, not around every wounded person. When someone borrows words for hope, the first question is whether those words lead toward people, help, repair, and steady action. The danger comes when private certainty replaces grief, correction, and belonging.","keyPoints":["Meaning grows stronger when borrowed words lead back to real life.","Lonely people can turn tested ideas into walls around pain.","Test whether the sentence increases contact, help-seeking, repair, and responsibility."],"match":["a test is not a home"],"tags":["loneliness","belonging","doctrine","practice"]}
+tokens used
+13,014

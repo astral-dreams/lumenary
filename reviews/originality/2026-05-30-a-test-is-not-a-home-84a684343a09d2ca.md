@@ -1,0 +1,126 @@
+# Originality Audit: A Test Is Not A Home
+
+Audit ID: 84a684343a09d2ca
+Idea ID: 66a05ad78997a3d1
+Agent: codex
+Created: 2026-05-30T12:46:34+02:00
+Status: renamed
+Confidence: 0.88
+
+## Exact Claim
+
+Doctrine-facing comparison should be provenance-first and strain-sheet strict, but wounded private use of borrowed spiritual language should be contact-first and conduct-first, because a truth-protecting test can become harmful if it replaces belonging, correction, repair, grief work, help-seeking, or ordinary action.
+
+## Claim Units
+
+- The full translation-strain sheet is a doctrine and publication gate, not a direct loneliness remedy.
+- Public claims and doctrine claims should be provenance-first.
+- Private wounded use should first ask whether the sentence creates contact, conduct, correction, repair, help, or community.
+- Borrowed language becomes suspect when it becomes private certainty or public identity display instead of action and belonging.
+- The practice target is stable spiritually eclectic adults and older teens facing loneliness, meaning loss, digital comparison, or feeling out of place.
+
+## Primary Text Close Read
+
+Sources:
+- Chandogya Upanishad 6.8.7, https://shlokam.org/texts/Chandogya-6-8-7, read against SN 22.59, https://suttacentral.net/sn22.59/en/sujato and https://abuddhistview.com/suttas/SN/SN22.59
+- William James, The Varieties of Religious Experience, https://www.gutenberg.org/files/621/621-h/621-h.html, read against Ignatius of Loyola, Spiritual Exercises discernment rules, https://www.ignatianspirituality.com/making-good-decisions/discernment-of-spirits/rules-for-discernment/ and Dogen, Genjokoan, https://www.thezensite.com/ZenTeachings/Dogen_Teachings/GenjoKoan_Aitken.htm
+
+Structural observation: Chandogya authorizes identity with subtle essence and Atman, while SN 22.59 refuses ownership and self-identification for all aggregates, including consciousness. That supports a strict doctrine gate. James already shifts religious judgment toward fruits, Ignatian discernment tests movements by effects, timing, desolation safeguards, and disclosure to a competent spiritual person, and Dogen resists certifying realization apart from enacted practice. These primary sources strongly anticipate contact, conduct, and correction as tests of lived use.
+
+Secondary literature gap: Before any publication, read spiritual-direction ethics, pastoral counseling, Buddhist teacher-student guidance, comparative theology, Bucar on religious appropriation, Wuthnow on seeking versus practice-oriented spirituality, Turkle on mediated conversation, Pargament on religious coping, spiritual bypassing literature, social prescribing evidence, and OCD checking and reassurance research directly. The candidate is too close to prior Lumenary records to stand without a blind distinct-content test.
+
+Risk of overread: High. The idea can excuse shallow appropriation if delayed provenance becomes permission to use unearned language. It can also spiritualize loneliness when the person needs clinical care, safer community, ordinary rest, grief work, or protection from unsafe authority. Human-condition fit is plausible but narrow: stable lonely or digitally unmoored seekers. It is not for OCD or scrupulosity loops, acute crisis, mania, psychosis, severe depression, addiction withdrawal, dissociation, unsafe relationships, abusive groups, or cases already held by a teacher or clinician.
+
+## Literature Search Queries
+
+- exact structural near-neighbor public claim provenance private spiritual orientation contact first borrowed language
+- James fruits religious experience Ignatian discernment spiritual direction disclosure conduct test
+- comparative method religion provenance translation strain Smith Freiberger Panikkar Lindbeck Asad
+- spiritual bypassing borrowed spiritual language avoidance unresolved grief responsibility
+- social prescribing loneliness spiritual seekers Wuthnow Turkle online identity conversation
+- OCD reassurance seeking checking source auditing rumination spiritual scrupulosity
+
+## Near Neighbors
+
+- Internal Lumenary audit: Contact Before Claim, supplied project memory, reviews/originality/2026-05-30-contact-before-claim-cb3c919dd78ee510.json: overlap: Extremely close. It already states the two-track rule: public doctrine gets provenance first, stable lonely private use gets contact and conduct first, with delayed provenance before teaching or identity authority.; difference: The new title emphasizes that a valid research test can harm if converted into a belonging practice. That is a rhetorical and safety emphasis, not a new structure.; novelty impact: Major downgrade. This is mostly renamed local prior work.
+- Internal Lumenary near-neighbors: Ask Who Taught The Answer, No Word Travels Alone, Stop When The Repair Changes, Sameness Can Be the Fingerprint of Borrowing, supplied project memory: overlap: Already combine provenance, receiver wound, correction holder, repair target, and anti-overchecking constraints for borrowed spiritual sentences.; difference: This candidate compresses those into a doctrine-versus-wounded-use routing slogan.; novelty impact: Downgrades standalone originality. Merge unless blind readers can identify the added variable without prompting.
+- Jonathan Z. Smith, In Comparison a Magic Dwells, https://classics.osu.edu/sites/classics.osu.edu/files/Magic_Dwells.pdf, and Oliver Freiberger, Elements of a Comparative Methodology, https://www.mdpi.com/2077-1444/9/2/38: overlap: Close on disciplined comparison, selection, scope, redescription, rectification, and refusing easy sameness.; difference: They do not turn the research gate into a pastoral routing rule for lonely seekers.; novelty impact: Doctrine-gate originality is low. Applied human-condition routing remains the only possible contribution.
+- Raimon Panikkar, homeomorphic equivalence, https://www.raimon-panikkar.org/english/gloss-homeomorphic.html: overlap: Close on functional equivalence that preserves specificity while building bridges without mistaken comparison.; difference: Panikkar is about interreligious conceptual correspondence, not safety routing for private borrowed-sentence use.; novelty impact: Lowers novelty for role-sensitive comparison.
+- William James, The Varieties of Religious Experience, https://www.gutenberg.org/files/621/621-h/621-h.html: overlap: Close on judging religious value by lived fruits rather than origin alone.; difference: James does not split public doctrine from private wounded use or build a provenance-delay rule.; novelty impact: Strong downgrade for contact-and-conduct testing.
+- Ignatian discernment of spirits and spiritual direction, overview at https://www.ignatianspirituality.com/making-good-decisions/discernment-of-spirits/rules-for-discernment/: overlap: Close practitioner prior art: movements are tested by fruits, timing, safeguards, and disclosure to a competent spiritual person rather than private self-certification.; difference: The candidate applies this to cross-tradition borrowed language and online identity display.; novelty impact: Practice originality falls sharply.
+- Dogen, Genjokoan, https://www.thezensite.com/ZenTeachings/Dogen_Teachings/GenjoKoan_Aitken.htm: overlap: Close on enacted verification and resistance to treating realization as a possession certified before practice.; difference: Dogen is not giving a general rule for cross-tradition borrowing by eclectic seekers.; novelty impact: Supports the analogy but lowers novelty of action-before-identity logic.
+- Talal Asad, Genealogies of Religion, publisher page https://press.jhu.edu/books/title/1644/genealogies-religion, and George Lindbeck doctrine-as-grammar overview example https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART001871058: overlap: Close on tradition, communal grammar, discipline, authority, and the danger of abstracting religious language from embodied practice.; difference: The candidate converts this into a low-risk seeker routing protocol.; novelty impact: The theory is old; applied synthesis is modest.
+- Robert Wuthnow, After Heaven, review page https://www.spiritualityandpractice.com/book-reviews/view/1230/after-heaven, and Sherry Turkle, Alone Together and Reclaiming Conversation, MIT page https://news.mit.edu/2015/3-questions-sherry-turkle-reclaiming-conversation-1117: overlap: Close on modern seekers, practice-oriented spirituality, mediated identity, and the need for real conversation rather than portable self-display.; difference: The candidate specifies one spiritual-language pathway into contact and delayed provenance.; novelty impact: Human-condition fit is supported, but the diagnosis is not novel.
+- Spiritual bypassing research, example https://pmc.ncbi.nlm.nih.gov/articles/PMC8134675/, and OCD reassurance-seeking research, example https://pmc.ncbi.nlm.nih.gov/articles/PMC7339499/: overlap: Close on spiritual ideas being used to avoid unresolved needs, and on checking or reassurance loops becoming self-maintaining.; difference: The candidate uses these as exclusion and safety constraints for a borrowed-language practice.; novelty impact: Raises safety burden and lowers novelty of the anti-rumination mechanism.
+
+## Unlike Statement
+
+Unlike Smith, Freiberger, Panikkar, James, Ignatius, Dogen, Lindbeck, Asad, Wuthnow, Turkle, spiritual-bypassing literature, social prescribing, OCD reassurance research, and recent Lumenary contact-before-claim records, this candidate's only distinct claim is that a valid doctrine-protection test should not be handed to a lonely person as medicine unless it demonstrably increases safe contact, conduct, correction, and belonging.
+
+## Anomaly Probe
+
+Candidate: Authorized hybrid or comparative-theology settings where borrowed language is already embedded in living teachers, correction, practice, and provenance.
+
+Why it strains the model: In those cases provenance and contact are not separate stages. A practitioner may rightly move through teacher-held use, communal correction, and source study together, so the doctrine-first versus contact-first split becomes artificial. A second anomaly is unsafe contact: an abusive teacher, coercive community, extremist group, or clinical reassurance loop can make contact-first harmful.
+
+Confidence effect: Lowers confidence in the split as a general rule. It should become a narrow routing protocol for stable isolated seekers, with mandatory safety screening and delayed provenance, not a doctrine claim.
+
+## Falsifiable Predictions
+
+- If: Blind readers should be able to distinguish this idea from Contact Before Claim by naming the added variable: research gate versus loneliness remedy. Then: At least 70 percent of blind coders can state the distinction without seeing the title, and can assign different next actions for doctrine use versus wounded private use. Weakens if: If coders mostly describe the older public-claim versus private-orientation split, the idea is renamed rather than extended. Test surface: Blind distinct-content coding against Contact Before Claim, Ask Who Taught The Answer, No Word Travels Alone, and Stop When The Repair Changes.
+- If: Stable lonely seekers should benefit more from contact-first routing than from a full provenance sheet when the sentence is being used for private hope rather than public authority. Then: Compared with full source-audit and ordinary journaling controls, contact-first participants show more real conversations, help-seeking, repair actions, and reduced identity-display posting, with no rise in shame, rumination, unsafe disclosure, or dependency. Weakens if: No improvement over ordinary social-support prompts, increased checking, increased shame, unsafe contact, or unchanged loneliness and conduct. Test surface: Four-arm pilot: full provenance first, contact-first, ordinary journaling plus social-support prompt, and wait-before-posting rule.
+- If: The strict strain sheet should improve doctrine scoring but not necessarily private loneliness outcomes. Then: For public claims, provenance and source-language fields reduce false convergence scores and increase inter-rater agreement. For private wounded use, the same sheet increases rumination or has less benefit than contact-first routing. Weakens if: If the full sheet helps both doctrine accuracy and loneliness outcomes equally, the split is unnecessary. Test surface: Matched doctrine-coding task plus non-clinical seeker pilot.
+- If: Borrowed sentences become risky when they substitute for contact, duty, repair, grief work, help-seeking, or correction. Then: Cases with high identity-display and low real contact show worse loneliness, more rumination, and lower correction willingness than cases where the sentence produces a concrete relational or duty action. Weakens if: If public display does not correlate with isolation, rumination, or lower correction willingness, or if contact action does not mediate outcomes. Test surface: Prospective diary study of spiritually eclectic readers over two to six weeks.
+
+## Practitioner Test
+
+Relevant practitioners:
+- comparative religion scholars
+- comparative theologians
+- interfaith ministers
+- spiritual directors
+- Buddhist teachers
+- Advaita Vedanta teachers
+- Christian pastoral counselors
+- clinicians familiar with OCD, scrupulosity, rumination, grief, loneliness, depression, and trauma
+- social-prescribing practitioners
+- stable cross-tradition practitioners
+
+Questions:
+- When a student privately uses a borrowed spiritual sentence for hope, do you first ask for source provenance, or for what contact, duty, repair, counsel, or care it produces?
+- Can you name a concrete case where source-checking became avoidance, rumination, or identity display, and where a relational or conduct step was the safer first move?
+- Can you name a case where contact-first would have been unsafe because the source, relationship, teacher, community, or clinical state was dangerous?
+- Does the research-gate versus loneliness-remedy distinction change your counsel, or is it standard discernment, pastoral care, social prescribing, or CBT anti-rumination in new language?
+- What measurable outcome would convince you that this helps loneliness rather than merely reducing posting or increasing dependence?
+
+Answers that reduce originality: Originality falls if practitioners say the split is ordinary spiritual direction, pastoral triage, social prescribing, Jamesian fruits-testing, Ignatian discernment, teacher guidance, comparative theology, appropriation ethics, behavioral activation, or CBT anti-rumination in new terms. It also falls if they cannot distinguish it from Contact Before Claim.
+
+Answers that support contribution: Support rises if practitioners independently identify wrong-routing cases, recommend strict provenance for public authority but contact or conduct first for stable private loneliness, and say the distinction prevents harms that ordinary advice misses.
+
+## Cross-Domain Prediction
+
+Domain: Online political or health misinformation
+
+Structural translation: A public factual claim needs source verification before amplification, but an isolated person sharing a claim for belonging may need safe conversation, practical help, and community contact before adversarial fact-checking.
+
+Prediction: A two-track intervention, fact-check first for public authority and contact/support first for stable isolated private users, will outperform blanket fact-checking on both misinformation amplification and loneliness-mediated identity posting.
+
+Would count against it: If blanket fact-checking reduces false claims without increasing isolation, shame, or identity defensiveness, and contact-first does not reduce reposting or improve real support, the structure does not travel.
+
+## Score Recommendations
+
+- novelty: 0.32
+- source_reliability: 0.80
+- counterargument_quality: 0.92
+
+Novelty adjustment: Lower novelty from 0.44 to 0.32. The local prior Contact Before Claim already contains the same two-track routing rule. External prior art strongly covers disciplined comparison, fruits-testing, discernment, action-before-identity, traditioned grammar, social connection, spiritual bypassing, and anti-checking. Keep only as a safety-focused restatement unless blind distinct-content testing shows separability.
+
+## Next Loop Instructions
+
+- Do not publish as a standalone discovery. Merge or cross-index with Contact Before Claim, Ask Who Taught The Answer, No Word Travels Alone, Stop When The Repair Changes, and Sameness Can Be the Fingerprint of Borrowing.
+- Rename the contribution as a narrow routing protocol: research gates are not loneliness remedies.
+- Run a blind distinct-content test against the prior Lumenary records before another finding is generated on this frontier.
+- Build one decision gate with fields for use type, public authority risk, receiver wound, provenance need, contact option, conduct option, correction holder, unsafe-contact screen, clinical exclusion, delayed provenance review, warning, and repair.
+- Require safety screening before contact-first use: unsafe authority, abusive relationship, coercive group, extremist community, OCD or scrupulosity, dissociation, mania, psychosis, severe depression, addiction withdrawal, trauma activation, medical concern, lack of safe helper, and coercive workload.
+- Pilot only with stable adults or older teens with support, and compare against ordinary journaling, wait-before-posting, full provenance, and social-support prompts.
+- Measure loneliness, rumination, shame, identity-display posting, real conversations, help-seeking, repair actions, unsafe-contact incidents, willingness to receive correction, and delayed provenance outcomes.

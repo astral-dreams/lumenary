@@ -789,3 +789,24 @@
 - Measure loneliness, rumination, shame, identity-display posts, real conversations, help-seeking, repair actions, unsafe-contact incidents, willingness to receive correction, and delayed provenance-review outcomes at two and six weeks.
 - Interview practitioners for concrete wrong-routing cases and repairs, not agreement with the slogan.
 - Do not derive a public practice until the cohort, non-fit cases, safety screen, and measurable benefit over ordinary social-support prompts are clear.
+
+## Originality Audit Follow-Up 2026-05-30T12:46:34+02:00
+
+### A Test Is Not A Home (renamed)
+- Do not publish as a standalone discovery. Merge or cross-index with Contact Before Claim, Ask Who Taught The Answer, No Word Travels Alone, Stop When The Repair Changes, and Sameness Can Be the Fingerprint of Borrowing.
+- Rename the contribution as a narrow routing protocol: research gates are not loneliness remedies.
+- Run a blind distinct-content test against the prior Lumenary records before another finding is generated on this frontier.
+- Build one decision gate with fields for use type, public authority risk, receiver wound, provenance need, contact option, conduct option, correction holder, unsafe-contact screen, clinical exclusion, delayed provenance review, warning, and repair.
+- Require safety screening before contact-first use: unsafe authority, abusive relationship, coercive group, extremist community, OCD or scrupulosity, dissociation, mania, psychosis, severe depression, addiction withdrawal, trauma activation, medical concern, lack of safe helper, and coercive workload.
+- Pilot only with stable adults or older teens with support, and compare against ordinary journaling, wait-before-posting, full provenance, and social-support prompts.
+- Measure loneliness, rumination, shame, identity-display posting, real conversations, help-seeking, repair actions, unsafe-contact incidents, willingness to receive correction, and delayed provenance outcomes.
+
+### A Test Must Be Able to Say Yes (extended)
+- Do not publish as doctrine. Treat as a method-control protocol for translation-strain scoring.
+- Build the smallest codebook: claim unit, proposed shared role, positive upgrade bar, decomposition result, verdict confirmed or false or undecidable, provenance status, metaphysical remainder, practice-transfer limit, warning, and confidence.
+- Run an inter-rater test against the current downgrade-scale method. Require coders to write the upgrade bar before seeing detailed decompositions.
+- Use source-stratified cases: Chandogya and SN 22.59, Brihadaranyaka and SN 22.59, Gaudapada and Nagarjuna, apophatic theology and Buddhist emptiness, Pure Land and grace, compassion practices, and a low-variance ritual instruction.
+- Add a provenance gate so confirmed shared role, direct borrowing, shared milieu, common translator, polemic, and independent recurrence are coded separately.
+- Add a thinness control. A shared role must predict some practitioner-relevant understanding, warning, or transfer limit, otherwise it is too generic to count as confirmation.
+- Run practitioner interviews for cases where decomposition raised confidence, not only cases where it broke false similarity.
+- For human-condition use, keep the practice narrow: stable over-skeptical readers only. Exclude OCD, scrupulosity, acute crisis, under-critical perennialism, and people using comparison to avoid belonging or commitment.
