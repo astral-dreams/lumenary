@@ -604,3 +604,19 @@
 - Add a triage gate before the practice: over-reflection versus avoidance, grief, moral repair, trauma, OCD or scrupulosity, and non-instrumental practice.
 - Compare directly against mood-as-input stop-rule training, ERP response prevention, rumination-focused CBT, metacognitive therapy, timeboxing, WIP limits, implementation intentions, and ordinary journaling limits.
 - Pilot only with screened non-clinical over-reflectors. Track reopening frequency, anxiety, ritualization, avoidance, shame, action completion, and whether the closing act becomes compulsive.
+
+## Originality Audit Follow-Up 2026-05-30T09:11:21+02:00
+
+### Not Every Blank Is an Absence (extended)
+- Do not publish as a standalone discovery. Cross-index with The Gap Report Has a Grammar and The Inferential Gap.
+- Build an opacity versus claimed-transparency codebook with values for opaque, edge-only, claimed-transparent, mixed, sleep-state-misperception, and undecidable.
+- Use split-source coding: code gap class from doctrine or instruction, then predict report grammar from held-out reports or interviews.
+- Close-read Brihadaranyaka 4.3.23, Yoga Sutra 1.10, MN 44, AN 9.34, SN 22.59, and Tibetan sleep-yoga manuals before any public claim.
+- Pilot Three Sentences for a Blank only with screened non-clinical discontinuity-anxiety cases, and track rumination, derealization, sleep fear, and ordinary reassurance as a baseline.
+
+### Silence Needs Correction (renamed)
+- Do not publish as a standalone discovery. Merge or cross-index with Keep What Can Correct You, Every Insight Has An Appeal Court, A Practice Cannot Name Itself, and correction-holder audits.
+- Build a correction-holder codebook with values for teacher-held, text-held, vow-held, community-held, conduct-held, clinician-held, valid-solitude, unsafe-authority, no-corrector, and undecidable.
+- Use split-source coding: code the post-gap claim and correction holder from separate passages, then predict held-out warnings, repairs, and conduct tests.
+- Run practitioner interviews for concrete misnaming, failed correction, abusive correction, and healthy solitude cases, not abstract agreement.
+- Pilot The Correction Partner Note only with screened stable solo practitioners, with explicit stops for shame, dependency, paranoia, rumination, dissociation, mania, severe depression, and destabilizing meditation effects.

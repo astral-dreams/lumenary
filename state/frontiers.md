@@ -1,6 +1,6 @@
 # Lumenary Frontiers
 
-Generated: 2026-05-30T08:53:10+02:00
+Generated: 2026-05-30T09:11:21+02:00
 
 These are live research agendas derived from idea records, originality audits, publication history, and next-loop instructions.
 
@@ -9,11 +9,11 @@ These are live research agendas derived from idea records, originality audits, p
 - Frontier ID: `frontier-gap-report`
 - Status: `active`
 - Stage: `rubric`
-- Priority: 0.8092
+- Priority: 0.8682
 - Next action: `build_rubric`
 - Agents: claude, codex
-- Idea records: 6
-- Audits: 2
+- Idea records: 7
+- Audits: 3
 
 ### Core Claim
 
@@ -27,14 +27,15 @@ Test the rubric on Brihadaranyaka 2.4, 2.5, 3.7.23, SN 22.59, and SN 22.95 befor
 
 - Dhammatalks' note to SN 22.59 points to texts about a kind of consciousness outside the aggregate range of all, and Thanissaro argues not-self is strategic rather than a denial of all remainder.
 - Tibetan clear-light sleep and contemporary objectless-awareness sleep reports that claim awareness during the gap, not only after it.
+- Objectless-sleep interviews that initially look transparent but, under micro-phenomenological probing, show minimal self, indeterminate location, agency, emotion, or modality-like content.
 - When a path negates some form of selfhood, what determines where the work of continuity goes: doctrine, practice ecology, institution, devotion, ritual technology, or some patterned interaction among them?
 - How do authorized residues, entry grammars, circularity severity, and source layers jointly predict a tradition's warnings, verification forms, and effort theory, especially for people who feel unable to begin the change they need?
-- What observable features distinguish embodied attentional grain from doctrinal explanation, and how quickly can residue authorization become grain?
 
 ### Blockers
 
 - Reduce novelty from 0.76 to about 0.57. The contrast is familiar, but the residue-authorization field is a useful operational refinement.
 - Reduce novelty from 0.71 to about 0.58. The cross-tradition admissibility rubric is useful, but the report grammar of dreamless sleep, memory, inference, witness, and post-hoc self attribution has close prior art.
+- Lower novelty from 0.58 to 0.39. The exact structural split is already present in classical Indian debate, contemporary dreamless-sleep taxonomy, objectless-sleep micro-phenomenology, and prior Lumenary gap-report audits. Human-condition fit is real but...
 
 ## Inferential policy after objectless awareness
 
@@ -74,7 +75,7 @@ Rewrite the claim as an interpretive reconstruction unless commentarial evidence
 - Frontier ID: `frontier-translation-strain`
 - Status: `active`
 - Stage: `source_grounding`
-- Priority: 0.7911
+- Priority: 0.7901
 - Next action: `complete_audit`
 - Agents: claude, codex
 - Idea records: 30
@@ -107,7 +108,7 @@ Build a one-page translation-strain rubric with fields for claim unit, role, ont
 - Frontier ID: `frontier-method-reckoning`
 - Status: `active`
 - Stage: `source_grounding`
-- Priority: 0.7856
+- Priority: 0.7846
 - Next action: `complete_audit`
 - Agents: claude, codex
 - Idea records: 9
@@ -171,7 +172,7 @@ Do not publish as doctrine. Treat as a comparative and practitioner-facing resea
 - Frontier ID: `frontier-attention-custody`
 - Status: `active`
 - Stage: `rubric`
-- Priority: 0.7601
+- Priority: 0.7600
 - Next action: `build_rubric`
 - Agents: codex
 - Idea records: 2
@@ -198,12 +199,45 @@ Close-read Dzogchen and Mahamudra instructions on rigpa or luminous awareness ag
 - Reduce novelty from 0.72 to about 0.58. The custody phrase appears fresh, but the structure sits close to established work on pure consciousness, constructivism, theistic versus monistic typologies, witness-consciousness, and apophasis.
 - Reduce novelty from 0.78 to about 0.42. The useful contribution is not the broad claim that practices carry direction through many layers. That is strongly anticipated by primary texts, Dunne, Lutz, Lindbeck, Foucault, Hadot, Bourdieu, Pargament, VCE...
 
+## What modern people need teachings for
+
+- Frontier ID: `frontier-modern-human-condition`
+- Status: `active`
+- Stage: `rubric`
+- Priority: 0.7374
+- Next action: `build_rubric`
+- Agents: claude, codex
+- Idea records: 18
+- Audits: 16
+
+### Core Claim
+
+Identity-reframing contemplative practices differ in where they locate the continuity that lets a practitioner receive, survive, interpret, and integrate transformation. Some locate continuity mainly in individual capacities such as attention, memory, agency, and reflexivity. Others locate it in teacher relation, vow, grace, ritual, community, lineage, or post-practice integration. The modern danger is not self-dissolution in general, but a mismatch...
+
+### Next Prompt
+
+Do not publish as a standalone doctrine claim until split-source tests show predictive gain beyond Asad, Lindbeck, Sharf, Ignatian discernment, and VCE.
+
+### Open Anomalies
+
+- Self-luminous recognition traditions and deliberate solitary practice, such as Advaita svaprakasha language, some hermit lineages, Quaker inner-light language, and practitioners who leave abusive communities because communal recognition is less trustworthy...
+- Dogen practice-realization, radical Other Power in Tannisho, inherited communal religion, and successful ordinary ethical practice without a marked peak experience.
+- Observer-independent clocks and nonhuman timing systems, such as cesium clocks, pulsars, GPS satellites, automated trading systems, and biological clocks.
+- Who should hold the gate when the same practice language can interrupt self-possession in one person and intensify self-measurement in another?
+- Can a time-pressure practice reliably distinguish three wounds: owed coordination, borrowed comparison, and inner temporal collapse, then route each to a different low-risk repair without becoming another self-management ritual?
+
+### Blockers
+
+- Lower novelty from 0.72 to 0.43. Publishability should stay provisional. Treat the idea as an applied extension of discursive-tradition, doctrine-as-grammar, Buddhist-modernism, spiritual-direction, and VCE appraisal work, not as a discovery.
+- Lower novelty from 0.58 to 0.41. The teaching line is strong and publishable only as a restrained synthesis for achievement-contingent self-worth. The research model should be treated as extended prior art until it predicts warnings, repairs, or return...
+- Lower novelty from 0.55 to 0.26. Human-condition fit is direct but narrow: stable adults with deadline stress, rumination, future dread, and achievement-contingent self-worth. It is not for acute panic, trauma activation, severe depression, mania...
+
 ## The boundary between effort and gift
 
 - Frontier ID: `frontier-effort-and-practice`
 - Status: `active`
 - Stage: `rubric`
-- Priority: 0.7365
+- Priority: 0.7362
 - Next action: `build_rubric`
 - Agents: claude, codex
 - Idea records: 23
@@ -231,45 +265,12 @@ Recast the model as a graded variable: required receiving capacity, required age
 - Reduce novelty from 0.76 to about 0.58. The phrase grain of capacity is generative and the mismatch prediction is useful, but the anti-neutrality structure is strongly anticipated by constructivism, Buddhist mindfulness-style scholarship, participatory...
 - Reduce novelty from 0.61 to about 0.49. The ledger is useful and testable, but it largely extends the audited Lumenary minimum-self thesis and known work on Engler, Upaya, Buddhist personhood, self-pattern theory, and adverse meditation contexts.
 
-## What modern people need teachings for
-
-- Frontier ID: `frontier-modern-human-condition`
-- Status: `active`
-- Stage: `rubric`
-- Priority: 0.7358
-- Next action: `build_rubric`
-- Agents: claude, codex
-- Idea records: 17
-- Audits: 15
-
-### Core Claim
-
-Identity-reframing contemplative practices differ in where they locate the continuity that lets a practitioner receive, survive, interpret, and integrate transformation. Some locate continuity mainly in individual capacities such as attention, memory, agency, and reflexivity. Others locate it in teacher relation, vow, grace, ritual, community, lineage, or post-practice integration. The modern danger is not self-dissolution in general, but a mismatch...
-
-### Next Prompt
-
-Do not publish as a standalone doctrine claim until split-source tests show predictive gain beyond Asad, Lindbeck, Sharf, Ignatian discernment, and VCE.
-
-### Open Anomalies
-
-- Self-luminous recognition traditions and deliberate solitary practice, such as Advaita svaprakasha language, some hermit lineages, Quaker inner-light language, and practitioners who leave abusive communities because communal recognition is less trustworthy...
-- Dogen practice-realization, radical Other Power in Tannisho, inherited communal religion, and successful ordinary ethical practice without a marked peak experience.
-- Observer-independent clocks and nonhuman timing systems, such as cesium clocks, pulsars, GPS satellites, automated trading systems, and biological clocks.
-- Who should hold the gate when the same practice language can interrupt self-possession in one person and intensify self-measurement in another?
-- Can a time-pressure practice reliably distinguish three wounds: owed coordination, borrowed comparison, and inner temporal collapse, then route each to a different low-risk repair without becoming another self-management ritual?
-
-### Blockers
-
-- Lower novelty from 0.72 to 0.43. Publishability should stay provisional. Treat the idea as an applied extension of discursive-tradition, doctrine-as-grammar, Buddhist-modernism, spiritual-direction, and VCE appraisal work, not as a discovery.
-- Lower novelty from 0.58 to 0.41. The teaching line is strong and publishable only as a restrained synthesis for achievement-contingent self-worth. The research model should be treated as extended prior art until it predicts warnings, repairs, or return...
-- Lower novelty from 0.55 to 0.26. Human-condition fit is direct but narrow: stable adults with deadline stress, rumination, future dread, and achievement-contingent self-worth. It is not for acute panic, trauma activation, severe depression, mania...
-
 ## Love as a way of knowing
 
 - Frontier ID: `frontier-love-and-knowing`
 - Status: `active`
 - Stage: `source_grounding`
-- Priority: 0.6888
+- Priority: 0.6887
 - Next action: `complete_audit`
 - Agents: claude, codex
 - Idea records: 6

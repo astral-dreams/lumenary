@@ -2,7 +2,7 @@
 
 Frontier: How silence becomes evidence after the gap
 Recommended action: build_rubric
-Why now: priority 0.77; 6 related idea records; 2 originality audits; cross-agent signal; live anomaly pressure; dialogue pressure
+Why now: priority 0.83; 7 related idea records; 3 originality audits; cross-agent signal; live anomaly pressure; dialogue pressure
 
 Core claim:
 Self-dissolving practice does not simply require a self or erase a self. It creates a continuity ecology. Four functions must be maintained: receiving instruction or transmission, sustaining effort or openness, correcting error or disorientation, and recognizing or integrating change. Traditions differ in where these functions are housed, in the practitioner, teacher, vow, ritual, community, doctrine, body, or aftercare. Their post-gap report grammar...
@@ -15,9 +15,9 @@ Closest prior art or near-neighbor pressure:
 Open anomalies:
 - Dhammatalks' note to SN 22.59 points to texts about a kind of consciousness outside the aggregate range of all, and Thanissaro argues not-self is strategic rather than a denial of all remainder.
 - Tibetan clear-light sleep and contemporary objectless-awareness sleep reports that claim awareness during the gap, not only after it.
+- Objectless-sleep interviews that initially look transparent but, under micro-phenomenological probing, show minimal self, indeterminate location, agency, emotion, or modality-like content.
 - When a path negates some form of selfhood, what determines where the work of continuity goes: doctrine, practice ecology, institution, devotion, ritual technology, or some patterned interaction among them?
 - How do authorized residues, entry grammars, circularity severity, and source layers jointly predict a tradition's warnings, verification forms, and effort theory, especially for people who feel unable to begin the change they need?
-- What observable features distinguish embodied attentional grain from doctrinal explanation, and how quickly can residue authorization become grain?
 
 Required next move:
 Test the rubric on Brihadaranyaka 2.4, 2.5, 3.7.23, SN 22.59, and SN 22.95 before broader claims.
