@@ -1,0 +1,127 @@
+# Originality Audit: Easy Agreement Is Not Shared Discovery
+
+Audit ID: 6e497a2d6f3ff2cb
+Idea ID: b906085ff19dc38a
+Agent: claude
+Created: 2026-05-30T13:16:18+02:00
+Status: extended
+Confidence: 0.86
+
+## Exact Claim
+
+Translation strain measures compatibility, not independent convergence. Low-strain agreement may be borrowing, high-strain agreement may be independent, and strain scores should not be treated as evidence for convergence until provenance is separately coded by claim unit.
+
+## Claim Units
+
+- Translation strain measures how much a claim bends across traditions.
+- Compatibility and independent discovery are separate axes.
+- Low strain can be a trace of borrowing, shared translator, shared milieu, or inherited vocabulary.
+- High strain can still occur between independent discoveries.
+- Strain has little evidential weight about convergence until provenance is fixed.
+- Strain should not be aggregated as one score for a pair because different claim units can vary sharply inside the same historical relationship.
+
+## Primary Text Close Read
+
+Sources:
+- Gaudapada, Mandukya Karika 4.22, https://www.wisdomlib.org/hinduism/book/mandukya-upanishad-karika-bhashya/d/doc143736.html, read against Nagarjuna, Mulamadhyamakakarika 1.1, https://www.dharma-university-press.org/component/k2/item/62-mulamadhyamakakarika-nagarjunas-grundlegende-gedanken-zum-mittleren-weg.html
+- Richard King on the Mahayana context of the Gaudapadiya-karika, https://philpapers.org/rec/KINEAV-2, and related discussion of Buddhist influence on Advaita, https://en.wikipedia.org/wiki/Buddhist_influences_on_Advaita_Vedanta
+
+Structural observation: Gaudapada 4.22 and MMK 1.1 share a very low-strain fourfold denial of origination from self, other, both, or causelessness. The structural match is strong at the dialectical level. Yet the authorized remainder differs: Gaudapada's non-origination is folded into an Advaita-Mandukya frame of unborn nondual reality, while Nagarjuna's causal analysis pressures svabhava without granting an Atman substratum. Scholarship on Buddhist influence also makes low strain historically ambiguous, since it may indicate contact, borrowing, or polemical reuse rather than two independent witnesses.
+
+Secondary literature gap: Read Jonathan Z. Smith's Drudgery Divine and In Comparison a Magic Dwells, Freiberger's comparative methodology, Panikkar on homeomorphic equivalence, King, Comans, Murti, Bhattacharya, Sharma, and specialist Gaudapada and Madhyamaka studies. Also compare historical linguistics on cognates, loanwords, chance resemblance, and regular sound correspondences before claiming more than a method-control extension.
+
+Risk of overread: Moderate. The central distinction is strong but largely known as homology versus analogy, loanword versus cognate, and provenance-first comparison. The candidate may overstate orthogonality, since extreme strain can sometimes be weak evidence against direct borrowing and unusually regular low-strain structures may guide hypotheses when provenance is unrecoverable. Human-condition fit is narrow: it helps spiritually eclectic readers and online seekers who use easy cross-tradition agreement to stabilize identity or meaning. It is not a loneliness remedy and can feed cynicism or rumination.
+
+## Literature Search Queries
+
+- Jonathan Z Smith Drudgery Divine homology analogy religious comparison
+- In Comparison a Magic Dwells homology analogy comparison religion Smith
+- Gaudapada Nagarjuna non origination Buddhist influence Advaita Vedanta Richard King
+- Mandukya Karika 4.22 non origination text translation
+- Mulamadhyamakakarika 1.1 not from itself not from another translation
+- historical linguistics cognate loanword chance resemblance regular sound correspondences comparative method
+- Freiberger comparative methodology religious studies decontextualization comparison
+- Panikkar homeomorphic equivalence comparative religion functional analogy
+
+## Near Neighbors
+
+- Jonathan Z. Smith, Drudgery Divine and In Comparison a Magic Dwells, accessible PDF notes at https://classics.osu.edu/sites/classics.osu.edu/files/Magic_Dwells.pdf: overlap: Very close. Smith's homology versus analogy distinction already separates resemblance by descent or contact from structural or functional comparison.; difference: The candidate applies the distinction to Lumenary's translation-strain scoring and argues that strain belongs to compatibility, not genealogy.; novelty impact: Major downgrade. The core insight is known; the contribution is local instrumentation.
+- Internal Lumenary records: A Shared Word Is Not Two Witnesses, Sameness Can Be the Fingerprint of Borrowing, Ask Who Taught The Answer, A Test Must Be Able To Say Yes, supplied in project memory: overlap: These records already require provenance before convergence scoring and warn that easy sameness can indicate borrowing rather than independent confirmation.; difference: The candidate adds sharper language about orthogonality and claim-unit non-aggregation in the Gaudapada and Nagarjuna case.; novelty impact: Downgrades status toward renamed or extended consolidation, not discovery.
+- Historical linguistics comparative method, Britannica overview https://www.britannica.com/science/linguistics/The-comparative-method and PNAS overview https://pmc.ncbi.nlm.nih.gov/articles/PMC34482/: overlap: Historical linguistics already distinguishes similarity, cognacy, borrowing, and chance resemblance through regular correspondences and contact history.; difference: The candidate translates that rule from words to religious claim-units and translation strain.; novelty impact: Strong cross-domain prior art. It supports the model but lowers novelty.
+- False cognate and borrowing concepts in historical linguistics, https://en.wikipedia.org/wiki/False_cognate and https://en.wikipedia.org/wiki/Borrowing_(linguistics): overlap: Surface or even striking similarity can arise by chance, loan, shared source, or descent, and the similarity itself does not settle genealogy.; difference: The candidate uses religious compatibility strain rather than sound correspondence evidence.; novelty impact: Major structural near-neighbor, especially for the two-witness versus one-echo practice.
+- Richard King, Early Advaita Vedanta and Buddhism, https://philpapers.org/rec/KINEAV-2, and Buddhist influence discussion https://en.wikipedia.org/wiki/Buddhist_influences_on_Advaita_Vedanta: overlap: The Gaudapada case is already treated as historically entangled with Mahayana Buddhist concepts and language while remaining Vedantic in aim.; difference: The candidate converts this into a rule: low strain in a dependent pair cannot count as independent convergence evidence.; novelty impact: Strong support for the example, but not for theoretical originality.
+- Mandukya Karika 4.22, https://www.wisdomlib.org/hinduism/book/mandukya-upanishad-karika-bhashya/d/doc143736.html, and MMK 1.1, https://www.dharma-university-press.org/component/k2/item/62-mulamadhyamakakarika-nagarjunas-grundlegende-gedanken-zum-mittleren-weg.html: overlap: The primary texts themselves show low dialectical strain and high ontological strain in one comparison set.; difference: The candidate's claim-unit non-aggregation rule is an analytic inference from the pair, not an explicit claim in either text.; novelty impact: Good evidence for a method-control extension.
+- Oliver Freiberger, Elements of a Comparative Methodology in the Study of Religion, https://www.mdpi.com/2077-1444/9/2/38: overlap: Freiberger already requires explicit configuration of goals, modes, scales, scopes, and comparative process to avoid decontextualization and overgeneralization.; difference: He does not frame strain and independence as orthogonal axes in a scoring sheet.; novelty impact: Moderate downgrade. The method discipline is known, the axis separation is a useful local refinement.
+- Raimon Panikkar, homeomorphic equivalence, https://raimon-panikkar.org/english/gloss-homeomorphic.html/: overlap: Panikkar's functional equivalence already permits bridges without identity or simple sameness.; difference: Panikkar does not make historical independence a separate evidence axis before convergence scoring.; novelty impact: Lowers novelty of role-similarity language but not the provenance critique.
+
+## Unlike Statement
+
+Unlike Smith's homology and analogy, historical linguistics, Gaudapada influence scholarship, Freiberger, Panikkar, and prior Lumenary provenance records, this candidate's specific contribution is to relabel translation strain as compatibility only, require provenance as a separate axis, and forbid aggregate pair-level strain when claim units differ.
+
+## Anomaly Probe
+
+Candidate: Unrecoverable-provenance cases where historical contact data are absent and structural depth plus low strain are the only available clues.
+
+Why it strains the model: If provenance must be settled first, the method stalls exactly where comparison often matters. In such cases, strain may not prove independence, but it may still provide a Bayesian hint when combined with complexity, distribution, and absence of contact pathways.
+
+Confidence effect: Lowers confidence in the strong claim that strain has almost no evidential weight. The safer claim is that strain is a weak, ambiguous provenance clue unless independently constrained.
+
+## Falsifiable Predictions
+
+- If: Strain and provenance are mostly independent axes. Then: Across coded comparison pairs, strain magnitude and provenance status should show weak or inconsistent correlation after coding by claim unit and controlling for shared translator, borrowing, milieu, and known contact. Weakens if: If low strain reliably predicts borrowing or independent convergence across cases, the orthogonality claim is too strong. Test surface: Dataset of cross-tradition comparisons: Gaudapada and Nagarjuna, apophatic theology and Buddhist emptiness, Pure Land and grace, compassion practices, ritual instructions, and no-contact controls.
+- If: Single pair-level strain scores are invalid. Then: Historically dependent pairs should show sharp strain variance by claim unit, for example low strain on dialectic and high strain on ontology in Gaudapada and Nagarjuna. Weakens if: If strain is usually uniform across claim units within a pair, the no-aggregation argument weakens. Test surface: Claim-unit coding of texts with known contact or borrowing.
+- If: A split-axis method should change convergence decisions. Then: Separate compatibility and provenance sheets should produce some verdicts that differ from a combined translation-strain score, especially where a beautiful match is historically dependent. Weakens if: If split-axis coding never changes verdicts, the method adds vocabulary but no decision power. Test surface: Blind A/B scoring by comparative religion scholars and trained coders.
+- If: Low strain without independent provenance should not persuade practitioners that there are two witnesses. Then: Buddhist and Vedanta practitioners shown the Gaudapada and Nagarjuna comparison should distinguish shared dialectic, possible borrowing, and incompatible final authorization. Weakens if: If practitioners consistently treat low dialectical strain as independent confirmation even after provenance disclosure, the practical teaching may not work. Test surface: Practitioner interviews with Sanskritists, Buddhologists, Advaita teachers, comparative theologians, and interfaith educators.
+
+## Practitioner Test
+
+Relevant practitioners:
+- comparative religion scholars
+- historians of religion
+- Sanskritists
+- Buddhologists
+- Advaita Vedanta scholars
+- Madhyamaka scholars
+- historical linguists
+- comparative theologians
+- interfaith educators
+- Buddhist and Vedanta practitioners
+
+Questions:
+- Do you already separate compatibility from historical independence when scoring cross-tradition agreement?
+- Is this just Smith's homology versus analogy distinction and historical-linguistic loanword logic in Lumenary language?
+- Does claim-unit non-aggregation change how you read Gaudapada and Nagarjuna, or is it standard source criticism?
+- Can strain ever give useful provenance evidence when historical records are missing?
+- Would the Two-Witness Check make seekers more careful, or would it increase cynicism, rumination, and distance from real practice?
+
+Answers that reduce originality: Originality falls if scholars say the model is ordinary homology versus analogy, source criticism, comparative method, or loanword versus cognate logic. It also falls if blind readers cannot distinguish it from A Shared Word Is Not Two Witnesses or Sameness Can Be the Fingerprint of Borrowing.
+
+Answers that support contribution: Support rises if experts agree that existing Lumenary strain scoring confuses compatibility with independence, that claim-unit non-aggregation prevents real errors, and that the split-axis sheet changes verdicts in held-out cases.
+
+## Cross-Domain Prediction
+
+Domain: Historical linguistics
+
+Structural translation: Translation strain becomes surface or functional resemblance between words, while provenance becomes cognacy, borrowing, shared source, areal influence, or chance resemblance.
+
+Prediction: Low form-and-meaning strain should not establish common descent without regular sound correspondences and contact analysis; some low-strain cases will be loans or false cognates, while inherited cognates can show high surface strain after sound change.
+
+Would count against it: If surface similarity alone reliably identifies genealogy across languages, then the religious strain and provenance split is less necessary.
+
+## Score Recommendations
+
+- novelty: 0.38
+- source_reliability: 0.80
+- counterargument_quality: 0.90
+
+Novelty adjustment: Lower novelty from 0.41 to 0.38. The core logic is old: resemblance does not prove genealogy, and compatibility does not prove independent discovery. Keep as an extended method-control protocol because claim-unit non-aggregation and explicit strain/provenance separation are useful for Lumenary's scoring workflow.
+
+## Next Loop Instructions
+
+- Rename the frontier from translation strain as a test of convergence to split-axis convergence scoring: compatibility, provenance, and claim-unit variance.
+- Merge or cross-index with A Shared Word Is Not Two Witnesses, Sameness Can Be the Fingerprint of Borrowing, Ask Who Taught The Answer, and A Test Must Be Able To Say Yes.
+- Build a codebook with fields for claim unit, compatibility strain, provenance status, source layer, shared translator, contact pathway, borrowing likelihood, ontology remainder, practice-transfer limit, confidence, and undecidable reason.
+- Do not let the same textual similarity establish both compatibility and provenance. Code provenance from independent historical evidence where possible.
+- Run inter-rater reliability on Gaudapada and Nagarjuna, Chandogya and SN 22.59, apophatic theology and Buddhist emptiness, Pure Land and grace, compassion practices, and a low-variance ritual case.
+- Add an unrecoverable-provenance rule: strain may generate hypotheses, but cannot be counted as independent convergence unless combined with distribution, complexity, contact analysis, and explicit uncertainty.
+- For human-condition use, frame the practice as a limited thinking check for stable overconfident or over-skeptical eclectic readers. Exclude acute loneliness, OCD, scrupulosity, grief crisis, dissociation, panic, and people using comparison to avoid belonging or commitment.

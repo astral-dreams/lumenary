@@ -1,0 +1,172 @@
+{
+  "agent": "codex",
+  "anomaly_probe": {
+    "anomaly_candidate": "An authorized hybrid community, such as a disciplined Christian-Buddhist, Hindu-Buddhist, recovery, or interspiritual lineage, may regenerate borrowed language through shared practice, correction, and authority without clean single-source provenance.",
+    "confidence_effect": "Lowers confidence in the binary two-gate model. The model should add a hybrid-carrier category before public use.",
+    "why_it_breaks_or_strains_model": "It creates a third carrier case. The sentence is neither merely source-pure doctrine nor merely private seeker comfort; the shared life of the hybrid community may be the source that now carries and corrects it."
+  },
+  "audit_id": "f614444030865666",
+  "claim_units": [
+    "Borrowed spiritual language has a doctrine gate and a seeker-care gate.",
+    "Public claims require source provenance, practice context, authority, verification, and correction.",
+    "For lonely or unmoored seekers, source criticism should not be the first test if it becomes isolation or checking.",
+    "Present fruit means conduct, real contact, and willingness to receive correction.",
+    "Personal use and public teaching are different acts with different safeguards."
+  ],
+  "confidence": 0.84,
+  "created_at": "2026-05-30T13:16:18+02:00",
+  "cross_domain_prediction": {
+    "domain": "Online mental health and self-help quotation culture",
+    "prediction": "Evidence-first review should improve public advice quality, while support-and-action-first prompts should reduce isolated rumination among stable lonely users before posting identity claims.",
+    "structural_translation": "A borrowed therapeutic sentence has one gate for public advice, evidence and professional scope, and another for private use, whether it leads to a safe action, real support, and willingness to be corrected.",
+    "would_count_against_it": "If evidence review is always best for both public and private uses, or if action/contact prompts increase misinformation and dependency, the two-gate structure does not travel."
+  },
+  "exact_claim": "A borrowed spiritual sentence needs two different tests: public doctrine needs provenance, authority, correction, and source-regeneration, while a lonely or unmoored seeker should first test whether the sentence produces honest conduct, real contact, and willingness to be corrected.",
+  "execution_id": "parallel-20260530-130216-20260530-130216",
+  "falsifiable_predictions": [
+    {
+      "expected_observation": "Expert coders using provenance, authority, practice aim, verification, and correction fields should catch more false convergences and inappropriate borrowings than coders who only assess present usefulness.",
+      "if_model_is_right": "For public doctrine, provenance-first coding should improve accuracy over contact-first coding.",
+      "test_surface": "Blind coding of borrowed religious sentences by comparative religion scholars, source-community practitioners, and comparative theologians.",
+      "would_weaken_or_falsify": "If provenance fields do not improve expert agreement or error detection, the doctrine gate is weaker than claimed."
+    },
+    {
+      "expected_observation": "Stable spiritually eclectic participants assigned to one real contact before posting should show fewer identity-display posts, less rumination, and more real conversations than those assigned to full provenance review first.",
+      "if_model_is_right": "For the target cohort, contact-first practice should help more than source-first checking.",
+      "test_surface": "Four-arm pilot: contact-first, provenance-first, ordinary journaling, and wait-before-posting.",
+      "would_weaken_or_falsify": "If provenance-first review reduces loneliness and rumination as well or better, or contact-first increases harm, the routing rule fails."
+    },
+    {
+      "expected_observation": "Participants with high reassurance-seeking, OCD, or scrupulosity indicators should show more checking loops and less confidence after repeated source reviews.",
+      "if_model_is_right": "Source checking becomes risky when it functions like reassurance seeking.",
+      "test_surface": "Screened non-clinical pilot with exclusion and referral rules, plus clinician review.",
+      "would_weaken_or_falsify": "If repeated source review does not interact with reassurance-seeking risk, the clinical-adjacent caution is overdrawn."
+    },
+    {
+      "expected_observation": "Communities with explicit correction holders, safety rules, and stable practice forms should handle borrowed language better than both solo eclectic users and purely provenance-only reviewers.",
+      "if_model_is_right": "Hybrid communities need a third carrier category.",
+      "test_surface": "Case comparison of authorized hybrid lineages and mixed communities, using concrete misuse and repair cases.",
+      "would_weaken_or_falsify": "If hybrid communities cannot protect against misuse or appropriation better than simple provenance review, the third category is unnecessary."
+    }
+  ],
+  "idea_id": "06807f77cd422656",
+  "idea_path": "observations/codex/2026-05-30-borrowed-words-need-shared-life.md",
+  "literature_search_queries": [
+    "Freiberger Elements of a Comparative Methodology religion comparison decontextualization source context",
+    "Jonathan Z Smith In Comparison a Magic Dwells comparison homology analogy religion",
+    "Panikkar homeomorphic equivalence religious comparison functional analogy",
+    "Pargament religious coping meaning control comfort intimacy transformation RCOPE",
+    "lived religion McGuire Ammerman everyday practice community spirituality",
+    "spiritual bypassing John Welwood spiritual ideas avoid emotional wounds",
+    "spiritual but not religious struggle community identity Mercadante Bender",
+    "reassurance seeking OCD checking memory distrust Salkovskis van den Hout Kindt"
+  ],
+  "near_neighbors": [
+    {
+      "difference": "The candidate packages the split as shared life before public claim and gives a compact teaching and practice version.",
+      "novelty_impact": "Major downgrade. This is mostly a renamed consolidation of recent internal work unless separability testing shows a new decision rule.",
+      "overlap": "Very close. These records already split public provenance from private orientation, warn that research gates are not loneliness remedies, and require contact, conduct, correction, and safety screening for borrowed spiritual sentences.",
+      "source": "Internal Lumenary records: Contact Before Claim, A Test Is Not A Home, Ask Who Taught The Answer, No Word Travels Alone, supplied in project memory"
+    },
+    {
+      "difference": "Freiberger does not propose a pastoral routing rule for lonely seekers using borrowed sentences.",
+      "novelty_impact": "Strong prior art for the doctrine gate, lowers novelty of the provenance and context requirement.",
+      "overlap": "Freiberger already treats comparison as a configured method involving selection, description, juxtaposition, redescription, rectification, theory formation, and contextual control against decontextualization.",
+      "source": "Oliver Freiberger, Elements of a Comparative Methodology in the Study of Religion, https://www.mdpi.com/2077-1444/9/2/38"
+    },
+    {
+      "difference": "The candidate adds a user-state distinction: when a person needs belonging, the first test may be conduct and contact rather than comparison.",
+      "novelty_impact": "Lowers novelty of the functional-carrier part, leaves a modest practice-routing addition.",
+      "overlap": "Panikkar already offers a way to compare religious functions while respecting specificity and avoiding mistaken equivalence.",
+      "source": "Raimon Panikkar, homeomorphic equivalence glossary, https://raimon-panikkar.org/english/gloss-homeomorphic.html/"
+    },
+    {
+      "difference": "The candidate applies function testing to borrowed cross-tradition sentences and separates private coping from public doctrine.",
+      "novelty_impact": "Significant downgrade for the seeker-fruit test. The novelty is only the comparative-religion routing frame.",
+      "overlap": "Pargament already codes religious coping by function, including meaning, control, comfort, intimacy with others, transformation, and maladaptive forms.",
+      "source": "Pargament religious coping model and RCOPE, example overview https://www.mdpi.com/2077-1444/1/1/28 and methods paper https://www.kennethpargament.com/_files/ugd/fb472f_b39305e5a153454c903d1b87a27e3475.pdf"
+    },
+    {
+      "difference": "The candidate makes lived contact a safety gate before identity-display or public teaching.",
+      "novelty_impact": "Lowers originality of shared life as a validation surface.",
+      "overlap": "Lived religion already shifts attention from abstract doctrine to ordinary practice, bodies, homes, communities, and daily life.",
+      "source": "Lived religion scholarship, examples Nancy Ammerman and Meredith McGuire, accessible overview https://emergingtrends.stanford.edu/files/original/341589a5732ff04a0f3bd8803edc406828905512.pdf"
+    },
+    {
+      "difference": "The candidate turns this into a two-stage discernment protocol before posting or claiming a sentence.",
+      "novelty_impact": "Reduces novelty of the human-condition diagnosis, supports practice-testability.",
+      "overlap": "Mercadante's work already names SBNR struggles around self, relation, overwhelming options, contradictory meanings, community withdrawal, and borrowed or transitional sacred language.",
+      "source": "Spiritual struggles of Nones and SBNRs, https://www.mdpi.com/2077-1444/11/10/513"
+    },
+    {
+      "difference": "The candidate pairs that warning with source-provenance requirements for public doctrine.",
+      "novelty_impact": "Lowers novelty of the conduct-before-claim warning.",
+      "overlap": "Spiritual bypassing already warns that spiritual ideas can avoid emotional wounds, basic needs, accountability, and relationship repair.",
+      "source": "Spiritual bypassing literature, accessible overview https://www.psychologytoday.com/us/blog/the-empowerment-diary/201901/what-is-spiritual-bypassing/amp"
+    },
+    {
+      "difference": "The candidate avoids making origin the only remedy and adds contact-first care for a narrow seeker cohort.",
+      "novelty_impact": "Important prior art for the source-accountability side.",
+      "overlap": "The article describes decontextualized universalizing registers and appropriation debates around religious practices being reframed for broad spiritual consumption.",
+      "source": "Appropriation and decontextualized yoga discourse, https://www.frontiersin.org/journals/communication/articles/10.3389/fcomm.2018.00047/full"
+    },
+    {
+      "difference": "The candidate uses this only analogically for spiritual source-checking, not as direct evidence about ordinary seekers.",
+      "novelty_impact": "Supports safety screening but does not add originality.",
+      "overlap": "The clinical literature supports the caution that repeated checking and reassurance can maintain uncertainty or reduce confidence, especially under threat and responsibility.",
+      "source": "Reassurance seeking and checking in OCD, https://link.springer.com/article/10.1007/s41811-024-00220-5 and checking-memory evidence https://www.sciencedirect.com/science/article/abs/pii/S0005796707000587"
+    }
+  ],
+  "next_loop_instructions": [
+    "Merge or cross-index with Contact Before Claim, A Test Is Not A Home, Ask Who Taught The Answer, No Word Travels Alone, and Stop When The Repair Changes.",
+    "Build one routing codebook with fields for use type, receiver wound, public authority risk, source role, contact option, conduct option, correction holder, unsafe-contact screen, clinical exclusion, delayed provenance review, warning, and repair.",
+    "Add a hybrid-carrier category for disciplined mixed communities that can name authority, correction, practice, provenance, and harm safeguards.",
+    "Run a blind distinct-content test against recent borrowed-language records. Merge if readers cannot state the added variable without prompting.",
+    "Pilot only with stable adults or older teens with support. Exclude OCD, scrupulosity, acute crisis, mania, psychosis, severe depression, addiction withdrawal, dissociation, unsafe authority, coercive groups, unsafe relationships, and medical concern.",
+    "Measure loneliness, rumination, shame, identity-display posting, real conversations, repair actions, unsafe-contact incidents, source-learning follow-through, and willingness to receive correction."
+  ],
+  "novelty_adjustment": "Lower novelty from 0.58 to 0.34. The useful piece is a compact consolidation of source provenance, lived practice, religious coping, appropriation caution, and anti-rumination safety, but recent internal records already state the public-claim provenance and private-orientation contact split. Do not publish as a standalone discovery.",
+  "originality_status": "renamed",
+  "practitioner_test": {
+    "answers_that_reduce_originality": "Originality falls if practitioners say this is standard pastoral triage, comparative theology, appropriation ethics, religious coping, or prior Lumenary routing language with a new title. It also falls if they cannot distinguish the candidate from Contact Before Claim or A Test Is Not A Home.",
+    "answers_that_support_contribution": "Support rises if practitioners can use the two-gate sheet to route cases differently than their usual method, especially when it prevents both false public authority and lonely private overchecking.",
+    "questions": [
+      "Do you already distinguish public source accountability from private pastoral or seeker care in this way?",
+      "When a lonely seeker uses a borrowed sentence, would you ask for source work first, a concrete act of contact first, or a safety screen first?",
+      "Can you name a real case where provenance-first discernment helped truth but harmed the person through isolation or checking?",
+      "Can you name a real case where contact-first use caused appropriation, false teaching, or unsafe group dependence?",
+      "Does the two-gate rule change your practice, or is it ordinary spiritual direction, lived religion, religious coping, and source criticism in new language?"
+    ],
+    "relevant_practitioners": [
+      "comparative religion scholars",
+      "comparative theologians",
+      "Buddhist teachers",
+      "Hindu and yoga tradition teachers",
+      "spiritual directors",
+      "chaplains",
+      "SBNR community leaders",
+      "clinicians familiar with rumination, OCD, scrupulosity, loneliness, and spiritual bypassing",
+      "leaders in authorized hybrid communities"
+    ]
+  },
+  "primary_text_close_read": {
+    "primary_pair": [
+      "Chandogya Upanishad 6.8.7, https://shlokam.org/texts/Chandogya-6-8-7, read against SN 22.59, https://www.dhammatalks.org/suttas/SN/SN22_59.html",
+      "Dogen Bendowa practice-realization, read through Carl Bielefeldt, Dogen's Manuals of Zen Meditation, https://www.ucpress.edu/books/dogens-manuals-of-zen-meditation/pdf"
+    ],
+    "risk_of_overread": "High. The idea may collapse several known domains into one slogan: source criticism, lived religion, spiritual direction, religious coping, appropriation ethics, and anti-rumination safeguards. Human-condition fit is clear but narrow: stable spiritually eclectic adults and older teens using borrowed language for loneliness, digital comparison, meaning loss, or feeling out of place. It is not for acute crisis, OCD or scrupulosity, unsafe relationships, coercive groups, or people already under trusted guidance.",
+    "secondary_literature_gap": "Read Freiberger on comparison, Jonathan Z. Smith on comparison, Panikkar on homeomorphic equivalence, Ammerman and McGuire on lived religion, Mercadante and Bender on SBNR struggle, Pargament on religious coping, Welwood and spiritual-bypassing scholarship, cultural appropriation work on yoga and mindfulness, and OCD reassurance-checking literature before treating this as more than a routing synthesis.",
+    "structural_observation": "Chandogya 6.8.7 authorizes identity through the repeated Self teaching, while SN 22.59 dismantles ownership of the aggregates, including consciousness, through impermanence and lack of control. The same surface function, loosening ordinary identity, is carried by incompatible verification rules. Dogen adds pressure against treating a sentence apart from enacted practice. This supports a carrier-context warning, but it does not prove that contact-first routing is original."
+  },
+  "recommended_scores": {
+    "counterargument_quality": 0.9,
+    "novelty": 0.34,
+    "source_reliability": 0.78
+  },
+  "run_ids": [
+    "20260530-130216-codex-generate-an-original-lumenary-doctrine-building-",
+    "20260530-130216-claude-generate-an-original-lumenary-doctrine-building-"
+  ],
+  "title": "Borrowed Words Need Shared Life",
+  "unlike_statement": "Unlike Freiberger, Smith, Panikkar, lived religion, Pargament, spiritual-bypassing work, appropriation studies, reassurance-checking research, and prior Lumenary routing records, this idea's narrow contribution is a two-gate rule: provenance first for public doctrine, contact and correction first for stable lonely seekers using a borrowed sentence privately."
+}

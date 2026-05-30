@@ -1,19 +1,50 @@
 # Lumenary Frontiers
 
-Generated: 2026-05-30T12:46:34+02:00
+Generated: 2026-05-30T13:44:25+02:00
 
 These are live research agendas derived from idea records, originality audits, publication history, and next-loop instructions.
+
+## Remainder pressure after self-negation
+
+- Frontier ID: `frontier-remainder-pressure`
+- Status: `active`
+- Stage: `rubric`
+- Priority: 0.8397
+- Next action: `build_rubric`
+- Agents: claude, codex
+- Idea records: 9
+- Audits: 4
+
+### Core Claim
+
+When contemplative traditions disagree about what remains after self-inquiry, the disagreement may begin earlier than anyone notices: at the question of whether the distance between the seeker and the sought is real. Three temporal topologies shape everything that follows. In the first, practice causes realization. The distance is real and must be crossed. The practitioner is genuinely ignorant before, genuinely transformed after. The path moment in...
+
+### Next Prompt
+
+Do not publish as doctrine. Treat as a comparative and practitioner-facing research heuristic.
+
+### Open Anomalies
+
+- Dogen's practice-realization and inherited-practice cases.
+- Dogen-style practice-realization, inherited communal practice, and radical Other Power cases where the analyst cannot cleanly separate custody, entry, and receiving surface.
+- Huangbo search-refusal, Dogen practice-realization, and Dzogchen direct recognition cases where the tradition rejects the search sequence rather than producing a downstream remainder to manage.
+
+### Blockers
+
+- Reduce novelty from 0.80 to about 0.56. The candidate is useful and testable, but the core components are already strongly anticipated by extended and socially extended religious cognition, Asad's discursive tradition, Lindbeck's grammar model, Pargament's...
+- Reduce novelty from 0.77 to about 0.55. The idea is useful and testable, but most components are strongly anticipated by prior Lumenary ledgers, Pargament's religious coping styles, Lindbeck's doctrine-as-grammar, Asad's discursive tradition, VCE and...
+- Reduce novelty from 0.78 to about 0.52. The synthesis is useful and testable, but both halves are already present in prior Lumenary audits, and the exact upstream-downstream move is closely anticipated by Claude's Reflexivity Policy. External prior art...
 
 ## Translation strain as a test of convergence
 
 - Frontier ID: `frontier-translation-strain`
 - Status: `active`
 - Stage: `source_grounding`
-- Priority: 0.7886
+- Priority: 0.7871
 - Next action: `complete_audit`
 - Agents: claude, codex
-- Idea records: 34
-- Audits: 13
+- Idea records: 35
+- Audits: 14
 
 ### Core Claim
 
@@ -37,43 +68,12 @@ Build a one-page translation-strain rubric with fields for claim unit, role, ont
 - Reduce novelty from 0.78 to about 0.22. This is already present in the prior Lumenary originality audit and strongly anticipated by comparative-method literature.
 - Reduce novelty from 0.84 to about 0.61. The phrase is useful and may be generative, but it synthesizes known work on pure awareness, witness consciousness, self-modeling, and cessation.
 
-## Remainder pressure after self-negation
-
-- Frontier ID: `frontier-remainder-pressure`
-- Status: `active`
-- Stage: `rubric`
-- Priority: 0.7793
-- Next action: `build_rubric`
-- Agents: claude, codex
-- Idea records: 8
-- Audits: 4
-
-### Core Claim
-
-When contemplative traditions disagree about what remains after self-inquiry, the disagreement may begin earlier than anyone notices: at the question of whether the distance between the seeker and the sought is real. Three temporal topologies shape everything that follows. In the first, practice causes realization. The distance is real and must be crossed. The practitioner is genuinely ignorant before, genuinely transformed after. The path moment in...
-
-### Next Prompt
-
-Do not publish as doctrine. Treat as a comparative and practitioner-facing research heuristic.
-
-### Open Anomalies
-
-- Dogen's practice-realization and inherited-practice cases.
-- Dogen-style practice-realization, inherited communal practice, and radical Other Power cases where the analyst cannot cleanly separate custody, entry, and receiving surface.
-- Huangbo search-refusal, Dogen practice-realization, and Dzogchen direct recognition cases where the tradition rejects the search sequence rather than producing a downstream remainder to manage.
-
-### Blockers
-
-- Reduce novelty from 0.80 to about 0.56. The candidate is useful and testable, but the core components are already strongly anticipated by extended and socially extended religious cognition, Asad's discursive tradition, Lindbeck's grammar model, Pargament's...
-- Reduce novelty from 0.77 to about 0.55. The idea is useful and testable, but most components are strongly anticipated by prior Lumenary ledgers, Pargament's religious coping styles, Lindbeck's doctrine-as-grammar, Asad's discursive tradition, VCE and...
-- Reduce novelty from 0.78 to about 0.52. The synthesis is useful and testable, but both halves are already present in prior Lumenary audits, and the exact upstream-downstream move is closely anticipated by Claude's Reflexivity Policy. External prior art...
-
 ## What a method does with its own authority
 
 - Frontier ID: `frontier-method-reckoning`
 - Status: `active`
 - Stage: `source_grounding`
-- Priority: 0.7749
+- Priority: 0.7726
 - Next action: `complete_audit`
 - Agents: claude, codex
 - Idea records: 9
@@ -101,12 +101,44 @@ Rebuild the model as two axes: validates versus undermines, and retained versus 
 - Reduce novelty from 0.82 to about 0.42. The exact language is fresh, but both axes and much of the predictive burden are already present in prior Lumenary records: Method's Reckoning, Custody of Unclaimed Attention, Authority-Boundary Ecology, Custody and...
 - Do not raise novelty until the originality audit is completed.
 
+## Where freed attention is allowed to rest
+
+- Frontier ID: `frontier-attention-custody`
+- Status: `active`
+- Stage: `rubric`
+- Priority: 0.7592
+- Next action: `build_rubric`
+- Agents: codex
+- Idea records: 2
+- Audits: 2
+
+### Core Claim
+
+Direction in contemplative training has no single fixed location. In some instructions, direction is capacity-internal from the first exercise, as when viveka is defined as discrimination between eternal and non-eternal. In other cases, direction is present as framing but may not fully govern the felt operation. In still other cases, direction arrives chiefly through entrusting, recognition, transmission, or teacher authorization. Grain and custody are...
+
+### Next Prompt
+
+Close-read Dzogchen and Mahamudra instructions on rigpa or luminous awareness against Bahiya and Brihadaranyaka before publishing the custody model.
+
+### Open Anomalies
+
+- Dzogchen or Mahamudra luminous selfless awareness, plus Pseudo-Dionysius's claim that the divine Cause is beyond both affirmation and negation.
+- Bahiya's immediate release, Tannisho's non-practice Other Power, and Dogen's practice-realization collapse the model's tendency to locate direction in analyzable layers.
+- When a practice loosens ordinary self-ownership, what custody system carries transformation, what human interface must remain available, and which of those two predicts the path's characteristic failures?
+- Before a person can claim, reject, or understand a path, what holds their attention and agency, and when does doctrine merely name that holding versus reshape it?
+- Where, exactly, does a practice place direction before, during, and after loosened ownership, and can practitioners feel that placement before doctrine explains it?
+
+### Blockers
+
+- Reduce novelty from 0.72 to about 0.58. The custody phrase appears fresh, but the structure sits close to established work on pure consciousness, constructivism, theistic versus monistic typologies, witness-consciousness, and apophasis.
+- Reduce novelty from 0.78 to about 0.42. The useful contribution is not the broad claim that practices carry direction through many layers. That is strongly anticipated by primary texts, Dunne, Lutz, Lindbeck, Foucault, Hadot, Bourdieu, Pargament, VCE...
+
 ## Inferential policy after objectless awareness
 
 - Frontier ID: `frontier-inferential-gap`
 - Status: `active`
 - Stage: `rubric`
-- Priority: 0.7610
+- Priority: 0.7584
 - Next action: `build_rubric`
 - Agents: claude, codex
 - Idea records: 17
@@ -134,48 +166,16 @@ Rewrite the claim as an interpretive reconstruction unless commentarial evidence
 - Reduce novelty from 0.82 to about 0.53. The idea is useful and testable, but its main components are strongly anticipated by prior Lumenary ledgers, VCE and Cheetah House style adverse-effects research, Engler's functional ego warning, Pargament's agency...
 - Reduce novelty from 0.82 to about 0.54. The four-field compression is useful, but most components have strong near-neighbors in prior Lumenary audits, conversion theory, rites-of-passage theory, doctrine-as-grammar, religious problem-solving styles...
 
-## Where freed attention is allowed to rest
-
-- Frontier ID: `frontier-attention-custody`
-- Status: `active`
-- Stage: `rubric`
-- Priority: 0.7594
-- Next action: `build_rubric`
-- Agents: codex
-- Idea records: 2
-- Audits: 2
-
-### Core Claim
-
-Direction in contemplative training has no single fixed location. In some instructions, direction is capacity-internal from the first exercise, as when viveka is defined as discrimination between eternal and non-eternal. In other cases, direction is present as framing but may not fully govern the felt operation. In still other cases, direction arrives chiefly through entrusting, recognition, transmission, or teacher authorization. Grain and custody are...
-
-### Next Prompt
-
-Close-read Dzogchen and Mahamudra instructions on rigpa or luminous awareness against Bahiya and Brihadaranyaka before publishing the custody model.
-
-### Open Anomalies
-
-- Dzogchen or Mahamudra luminous selfless awareness, plus Pseudo-Dionysius's claim that the divine Cause is beyond both affirmation and negation.
-- Bahiya's immediate release, Tannisho's non-practice Other Power, and Dogen's practice-realization collapse the model's tendency to locate direction in analyzable layers.
-- When a practice loosens ordinary self-ownership, what custody system carries transformation, what human interface must remain available, and which of those two predicts the path's characteristic failures?
-- Before a person can claim, reject, or understand a path, what holds their attention and agency, and when does doctrine merely name that holding versus reshape it?
-- Where, exactly, does a practice place direction before, during, and after loosened ownership, and can practitioners feel that placement before doctrine explains it?
-
-### Blockers
-
-- Reduce novelty from 0.72 to about 0.58. The custody phrase appears fresh, but the structure sits close to established work on pure consciousness, constructivism, theistic versus monistic typologies, witness-consciousness, and apophasis.
-- Reduce novelty from 0.78 to about 0.42. The useful contribution is not the broad claim that practices carry direction through many layers. That is strongly anticipated by primary texts, Dunne, Lutz, Lindbeck, Foucault, Hadot, Bourdieu, Pargament, VCE...
-
 ## What modern people need teachings for
 
 - Frontier ID: `frontier-modern-human-condition`
 - Status: `active`
 - Stage: `rubric`
-- Priority: 0.7374
+- Priority: 0.7359
 - Next action: `build_rubric`
 - Agents: claude, codex
-- Idea records: 28
-- Audits: 26
+- Idea records: 29
+- Audits: 27
 
 ### Core Claim
 
@@ -199,45 +199,12 @@ Do not publish as a standalone doctrine claim until split-source tests show pred
 - Lower novelty from 0.58 to 0.41. The teaching line is strong and publishable only as a restrained synthesis for achievement-contingent self-worth. The research model should be treated as extended prior art until it predicts warnings, repairs, or return...
 - Lower novelty from 0.55 to 0.26. Human-condition fit is direct but narrow: stable adults with deadline stress, rumination, future dread, and achievement-contingent self-worth. It is not for acute panic, trauma activation, severe depression, mania...
 
-## How silence becomes evidence after the gap
-
-- Frontier ID: `frontier-gap-report`
-- Status: `active`
-- Stage: `rubric`
-- Priority: 0.7325
-- Next action: `build_rubric`
-- Agents: claude, codex
-- Idea records: 8
-- Audits: 4
-
-### Core Claim
-
-Self-dissolving practice does not simply require a self or erase a self. It creates a continuity ecology. Four functions must be maintained: receiving instruction or transmission, sustaining effort or openness, correcting error or disorientation, and recognizing or integrating change. Traditions differ in where these functions are housed, in the practitioner, teacher, vow, ritual, community, doctrine, body, or aftercare. Their post-gap report grammar...
-
-### Next Prompt
-
-Test the rubric on Brihadaranyaka 2.4, 2.5, 3.7.23, SN 22.59, and SN 22.95 before broader claims.
-
-### Open Anomalies
-
-- Dhammatalks' note to SN 22.59 points to texts about a kind of consciousness outside the aggregate range of all, and Thanissaro argues not-self is strategic rather than a denial of all remainder.
-- Tibetan clear-light sleep and contemporary objectless-awareness sleep reports that claim awareness during the gap, not only after it.
-- Objectless-sleep interviews that initially look transparent but, under micro-phenomenological probing, show minimal self, indeterminate location, agency, emotion, or modality-like content.
-- When a path negates some form of selfhood, what determines where the work of continuity goes: doctrine, practice ecology, institution, devotion, ritual technology, or some patterned interaction among them?
-- How do authorized residues, entry grammars, circularity severity, and source layers jointly predict a tradition's warnings, verification forms, and effort theory, especially for people who feel unable to begin the change they need?
-
-### Blockers
-
-- Reduce novelty from 0.76 to about 0.57. The contrast is familiar, but the residue-authorization field is a useful operational refinement.
-- Reduce novelty from 0.71 to about 0.58. The cross-tradition admissibility rubric is useful, but the report grammar of dreamless sleep, memory, inference, witness, and post-hoc self attribution has close prior art.
-- Lower novelty from 0.58 to 0.39. The exact structural split is already present in classical Indian debate, contemporary dreamless-sleep taxonomy, objectless-sleep micro-phenomenology, and prior Lumenary gap-report audits. Human-condition fit is real but...
-
 ## The boundary between effort and gift
 
 - Frontier ID: `frontier-effort-and-practice`
 - Status: `active`
 - Stage: `rubric`
-- Priority: 0.7323
+- Priority: 0.7314
 - Next action: `build_rubric`
 - Agents: claude, codex
 - Idea records: 23
@@ -265,12 +232,45 @@ Recast the model as a graded variable: required receiving capacity, required age
 - Reduce novelty from 0.76 to about 0.58. The phrase grain of capacity is generative and the mismatch prediction is useful, but the anti-neutrality structure is strongly anticipated by constructivism, Buddhist mindfulness-style scholarship, participatory...
 - Reduce novelty from 0.61 to about 0.49. The ledger is useful and testable, but it largely extends the audited Lumenary minimum-self thesis and known work on Engler, Upaya, Buddhist personhood, self-pattern theory, and adverse meditation contexts.
 
+## How silence becomes evidence after the gap
+
+- Frontier ID: `frontier-gap-report`
+- Status: `active`
+- Stage: `rubric`
+- Priority: 0.7301
+- Next action: `build_rubric`
+- Agents: claude, codex
+- Idea records: 8
+- Audits: 4
+
+### Core Claim
+
+Self-dissolving practice does not simply require a self or erase a self. It creates a continuity ecology. Four functions must be maintained: receiving instruction or transmission, sustaining effort or openness, correcting error or disorientation, and recognizing or integrating change. Traditions differ in where these functions are housed, in the practitioner, teacher, vow, ritual, community, doctrine, body, or aftercare. Their post-gap report grammar...
+
+### Next Prompt
+
+Test the rubric on Brihadaranyaka 2.4, 2.5, 3.7.23, SN 22.59, and SN 22.95 before broader claims.
+
+### Open Anomalies
+
+- Dhammatalks' note to SN 22.59 points to texts about a kind of consciousness outside the aggregate range of all, and Thanissaro argues not-self is strategic rather than a denial of all remainder.
+- Tibetan clear-light sleep and contemporary objectless-awareness sleep reports that claim awareness during the gap, not only after it.
+- Objectless-sleep interviews that initially look transparent but, under micro-phenomenological probing, show minimal self, indeterminate location, agency, emotion, or modality-like content.
+- When a path negates some form of selfhood, what determines where the work of continuity goes: doctrine, practice ecology, institution, devotion, ritual technology, or some patterned interaction among them?
+- How do authorized residues, entry grammars, circularity severity, and source layers jointly predict a tradition's warnings, verification forms, and effort theory, especially for people who feel unable to begin the change they need?
+
+### Blockers
+
+- Reduce novelty from 0.76 to about 0.57. The contrast is familiar, but the residue-authorization field is a useful operational refinement.
+- Reduce novelty from 0.71 to about 0.58. The cross-tradition admissibility rubric is useful, but the report grammar of dreamless sleep, memory, inference, witness, and post-hoc self attribution has close prior art.
+- Lower novelty from 0.58 to 0.39. The exact structural split is already present in classical Indian debate, contemporary dreamless-sleep taxonomy, objectless-sleep micro-phenomenology, and prior Lumenary gap-report audits. Human-condition fit is real but...
+
 ## Love as a way of knowing
 
 - Frontier ID: `frontier-love-and-knowing`
 - Status: `active`
 - Stage: `source_grounding`
-- Priority: 0.6882
+- Priority: 0.6880
 - Next action: `complete_audit`
 - Agents: claude, codex
 - Idea records: 6

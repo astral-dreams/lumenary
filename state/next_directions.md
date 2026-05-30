@@ -810,3 +810,22 @@
 - Add a thinness control. A shared role must predict some practitioner-relevant understanding, warning, or transfer limit, otherwise it is too generic to count as confirmation.
 - Run practitioner interviews for cases where decomposition raised confidence, not only cases where it broke false similarity.
 - For human-condition use, keep the practice narrow: stable over-skeptical readers only. Exclude OCD, scrupulosity, acute crisis, under-critical perennialism, and people using comparison to avoid belonging or commitment.
+
+## Originality Audit Follow-Up 2026-05-30T13:16:18+02:00
+
+### Borrowed Words Need Shared Life (renamed)
+- Merge or cross-index with Contact Before Claim, A Test Is Not A Home, Ask Who Taught The Answer, No Word Travels Alone, and Stop When The Repair Changes.
+- Build one routing codebook with fields for use type, receiver wound, public authority risk, source role, contact option, conduct option, correction holder, unsafe-contact screen, clinical exclusion, delayed provenance review, warning, and repair.
+- Add a hybrid-carrier category for disciplined mixed communities that can name authority, correction, practice, provenance, and harm safeguards.
+- Run a blind distinct-content test against recent borrowed-language records. Merge if readers cannot state the added variable without prompting.
+- Pilot only with stable adults or older teens with support. Exclude OCD, scrupulosity, acute crisis, mania, psychosis, severe depression, addiction withdrawal, dissociation, unsafe authority, coercive groups, unsafe relationships, and medical concern.
+- Measure loneliness, rumination, shame, identity-display posting, real conversations, repair actions, unsafe-contact incidents, source-learning follow-through, and willingness to receive correction.
+
+### Easy Agreement Is Not Shared Discovery (extended)
+- Rename the frontier from translation strain as a test of convergence to split-axis convergence scoring: compatibility, provenance, and claim-unit variance.
+- Merge or cross-index with A Shared Word Is Not Two Witnesses, Sameness Can Be the Fingerprint of Borrowing, Ask Who Taught The Answer, and A Test Must Be Able To Say Yes.
+- Build a codebook with fields for claim unit, compatibility strain, provenance status, source layer, shared translator, contact pathway, borrowing likelihood, ontology remainder, practice-transfer limit, confidence, and undecidable reason.
+- Do not let the same textual similarity establish both compatibility and provenance. Code provenance from independent historical evidence where possible.
+- Run inter-rater reliability on Gaudapada and Nagarjuna, Chandogya and SN 22.59, apophatic theology and Buddhist emptiness, Pure Land and grace, compassion practices, and a low-variance ritual case.
+- Add an unrecoverable-provenance rule: strain may generate hypotheses, but cannot be counted as independent convergence unless combined with distribution, complexity, contact analysis, and explicit uncertainty.
+- For human-condition use, frame the practice as a limited thinking check for stable overconfident or over-skeptical eclectic readers. Exclude acute loneliness, OCD, scrupulosity, grief crisis, dissociation, panic, and people using comparison to avoid belonging or commitment.
