@@ -1,0 +1,146 @@
+{
+  "agent": "claude",
+  "anomaly_probe": {
+    "anomaly_candidate": "Active scrupulosity or OCD where the trusted helper becomes a reassurance object, plus spiritual-abuse contexts where external custody becomes control.",
+    "confidence_effect": "Lowers confidence substantially. The model needs hard exclusions and a distinction between bounded support, reassurance accommodation, clinical care, ordinary friendship, and unsafe authority.",
+    "why_it_breaks_or_strains_model": "The model assumes relational custody relieves the wounded self. In OCD, another person can become part of the compulsion. In abusive or high-control settings, another person can become an unsafe authority. In valid solitude, self-trust may be safer than handing interpretation away."
+  },
+  "audit_id": "f39d5f3ff774b3f9",
+  "claim_units": [
+    "Unusual quiet, blank, or absorbed states can become harmful when appropriated as worth verdicts.",
+    "A solo correction-audit can reproduce the wound of solo adjudication.",
+    "The proposed safe default is a twenty-four-hour identity-verdict moratorium plus one ordinary act of care.",
+    "Classification of the state, practice type, evidence, or scope should be relationally held by a trusted other.",
+    "The model keeps return discipline and scope gating, but moves adjudication custody outside the wounded self."
+  ],
+  "confidence": 0.86,
+  "created_at": "2026-05-30T09:43:31+02:00",
+  "cross_domain_prediction": {
+    "domain": "Clinical decision support, education, software review, and organizational postmortems after ambiguous signals",
+    "prediction": "High-perfectionism students, clinicians, researchers, or engineers given a no-identity-verdict rule plus one concrete prosocial or repair action and bounded review will show less rumination, fewer defensive interpretations, and faster useful action than those asked to self-audit the meaning of the ambiguous event.",
+    "structural_translation": "When a person is vulnerable to self-worth verdicts, making them classify the meaning of an ambiguous signal can amplify the wound. A bounded second-person or rule-held review plus one concrete repair action should outperform solo meta-analysis.",
+    "would_count_against_it": "Ordinary supervision, rest, generic reflection, or standard review explains all improvement, or the second-person route increases dependency, reassurance seeking, delay, or approval hunger."
+  },
+  "exact_claim": "After an unusual quiet, blank, or absorbed state, the dangerous act for achievement-contingent, scrupulous, lonely, or over-adjudicating practitioners is not only claiming the state as a verdict, but also self-administering the audit that is supposed to prevent the verdict. For this cohort, the default should be no self or worth claim for twenty-four hours plus one ordinary act of care. Any classification of the state, practice type, evidence, or scope gate should be held by a trusted second person, teacher, peer, or clinician, not by the wounded self alone.",
+  "execution_id": "dialogue-71803861adb45a32",
+  "falsifiable_predictions": [
+    {
+      "expected_observation": "Participants assigned to solo correction-checks report more worry about whether they did the check correctly than those assigned to no-verdict plus one ordinary act of care.",
+      "if_model_is_right": "For high achievement-contingent but non-clinical overinterpreters, solo audit increases meta-checking compared with a non-adjudicating default.",
+      "test_surface": "Four-arm pilot after quiet-state practice: solo return check, no-verdict plus ordinary care, ordinary rest or conversation, and helper-held routing.",
+      "would_weaken_or_falsify": "Solo audit produces equal or lower rumination, shame, and meta-checking than the no-verdict or helper-held arms."
+    },
+    {
+      "expected_observation": "A helper protocol that refuses repeated certainty-seeking and returns the person to ordinary conduct reduces rumination more than unstructured reassurance.",
+      "if_model_is_right": "Relational custody helps only when it is bounded and non-reassuring.",
+      "test_surface": "Stratified pilot measuring reassurance seeking, intolerance of uncertainty, dependency, shame, and completed ordinary action.",
+      "would_weaken_or_falsify": "Repeated helper reassurance performs as well as bounded custody, or bounded custody increases dependency and anxiety."
+    },
+    {
+      "expected_observation": "Participants asked to classify whether a practice was instrumental, autotelic, devotional, or non-result show more state-classification loops than those given a universal no-verdict default.",
+      "if_model_is_right": "The scope-gate decision itself becomes compulsive in the target cohort.",
+      "test_surface": "Experimental comparison of classification-first instructions against universal no-verdict instructions.",
+      "would_weaken_or_falsify": "Classification improves clarity without increasing rumination, or performs better than the no-verdict default."
+    },
+    {
+      "expected_observation": "The protocol helps lonely or achievement-contingent over-reflectors most, has little effect for ordinary practitioners, and requires exclusion or clinical routing for OCD, scrupulosity, mania, dissociation, severe depression, trauma activation, addiction withdrawal, or unsafe authority contexts.",
+      "if_model_is_right": "Human-condition benefit is narrow and state-dependent.",
+      "test_surface": "Two-week screened pilot using measures of contingencies of self-worth, loneliness, intolerance of uncertainty, rumination, scrupulosity, dependency, and adverse meditation effects.",
+      "would_weaken_or_falsify": "Effects are not moderated by self-worth contingency, loneliness, or scrupulosity risk, or adverse effects cluster in the intended cohort."
+    }
+  ],
+  "idea_id": "0d41fb6f36977938",
+  "idea_path": "observations/claude/2026-05-30-the-audit-you-cannot-hold-alone.md",
+  "literature_search_queries": [
+    "scrupulosity OCD reassurance seeking spiritual direction Ciarrocchi The Doubting Disease",
+    "OCD intolerance of uncertainty checking reassurance seeking exposure response prevention self checking",
+    "Ignatius Spiritual Exercises Rule 8 consolation desolation spiritual director Annotations",
+    "Lindahl Britton Varieties of Contemplative Experience appraisal social support meditation challenges",
+    "achievement contingent self-worth perfectionism rumination Curran Hill perfectionism increasing"
+  ],
+  "near_neighbors": [
+    {
+      "difference": "The candidate compresses the cluster into one relational default and names the self-issued meta-decision itself as the compulsion.",
+      "novelty_impact": "Decisive downgrade. Treat as renamed consolidation unless a pilot shows the universal no-verdict default predicts better outcomes than the prior holder-routing model.",
+      "overlap": "Near exact. These records already contain result-language scope gating, self-scoring risk, correction holders, twenty-four-hour delay, ordinary duty, and the claim that some checks should not be self-held.",
+      "source": "Internal Lumenary records: Who Holds The Gate, Not Every Check Should Be Yours, No Silence Proves Itself, Not Every Practice Is a Tool, and Keep What Can Correct You"
+    },
+    {
+      "difference": "Ignatius frames discernment through spirits, vocation, and obedience to God, not through achievement-contingent self-worth, meta-checking, or clinical safety routing.",
+      "novelty_impact": "Strong reduction. The candidate is a modern safety restatement of a known discernment architecture.",
+      "overlap": "Very close on delayed trust in interior states, later examination before action, and second-person direction adapted to the exercitant.",
+      "source": "Ignatius of Loyola, Spiritual Exercises, Rule 8 and Annotations 6-17, https://spiritualexercises.neocities.org/ and https://sacred-texts.com/chr/seil/seil79.htm"
+    },
+    {
+      "difference": "ERP-oriented sources often reduce reassurance and accommodation, while the candidate proposes relational custody. That custody is only safe if bounded and anti-reassurance.",
+      "novelty_impact": "Major reduction and major anomaly. The model must distinguish support from accommodation.",
+      "overlap": "Close on the mechanism that checking, confession, reassurance seeking, and attempts to gain certainty can become compulsive loops, including through clergy or mentors.",
+      "source": "International OCD Foundation clergy packet on scrupulosity and OCD, https://iocdf.org/wp-content/uploads/2022/04/Clergy-Packet.pdf; Scrupulosity.com guidance for mentors, https://scrupulosity.com/to-the-spiritual-mentor-of-someone-with-religious-ocd/"
+    },
+    {
+      "difference": "VCE is descriptive and broad. The candidate gives a narrow post-blank default for high self-worth and solo-adjudication risk.",
+      "novelty_impact": "Moderate reduction. The candidate may be a practice-facing distillation, not a discovery.",
+      "overlap": "Close on meditation-related challenges, appraisal, social context, teacher and clinician support, and the question of what support a given experience requires.",
+      "source": "Lindahl et al., Varieties of Contemplative Experience, PLOS ONE 2017, https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0176239; Lindahl and Britton, Toward a Person-Centered Approach, https://bpb-us-w2.wpmucdn.com/sites.brown.edu/dist/f/330/files/2023/10/Lindahl-2019-Oxford-Handbook-of-Meditation-chapter.pdf"
+    },
+    {
+      "difference": "The suttas prescribe inspection and dispassion, not helper-held adjudication or a twenty-four-hour moratorium.",
+      "novelty_impact": "Moderate reduction for the anti-ownership unit, weak overlap for the relational-custody unit.",
+      "overlap": "Close on refusing to make consciousness or experience into self, mine, or worth-proof.",
+      "source": "SN 22.95 Foam, https://www.dhammatalks.org/suttas/SN/SN22_95.html; SN 22.59 Not-self, https://www.dhammatalks.org/suttas/SN/SN22_59.html"
+    },
+    {
+      "difference": "These sources ground cohort fit rather than the contemplative structure.",
+      "novelty_impact": "Improves human-condition fit, not originality.",
+      "overlap": "Supports the modern wound: rising perfectionism, contingent worth pressure, and social isolation make private self-verdict loops more plausible.",
+      "source": "Curran and Hill, Perfectionism Is Increasing Over Time, https://rorybatchilder.com/files/pubs/journals/releases/bul-bul0000138.pdf; U.S. Surgeon General loneliness advisory, https://www.hhs.gov/sites/default/files/surgeon-general-social-connection-advisory.pdf"
+    }
+  ],
+  "next_loop_instructions": [
+    "Do not publish as a standalone discovery. Merge or cross-index with Who Holds The Gate, Not Every Check Should Be Yours, No Silence Proves Itself, Not Every Practice Is a Tool, and Keep What Can Correct You.",
+    "Rename the contribution as a bounded safety-routing refinement: relational custody for unsafe meta-adjudication.",
+    "Build a codebook with fields for current risk state, self-verdict risk, meta-checking risk, helper availability, unsafe helper risk, reassurance-seeking risk, no-verdict default, ordinary act of care, clinical exclusion, evidence passage, warning, and repair.",
+    "Use split-source coding. Do not let one source both establish relational custody and confirm the predicted warning or repair.",
+    "Run the proposed four-arm pilot, but add an ERP-informed anti-reassurance condition and explicit stop rules for OCD, scrupulosity, dependency, shame, dissociation, mania, severe depression, trauma activation, addiction withdrawal, unsafe authority, and medical concern.",
+    "Design a low-barrier relational option for isolated participants, then test whether it helps without becoming dependency or reassurance outsourcing."
+  ],
+  "novelty_adjustment": "Lower novelty from 0.50 to 0.22. The strongest element is the safety interaction claim that self-issued meta-adjudication can be the compulsion and should not be self-held for a narrow cohort. But that structure is already present in prior Lumenary records, especially Who Holds The Gate and Not Every Check Should Be Yours, and has close external neighbors in Ignatian discernment, scrupulosity and OCD treatment, meditation-challenge support routing, and Buddhist anti-ownership practice. Human-condition fit is plausible for stable lonely, perfectionistic, achievement-contingent overinterpreters with safe relational access. It is not fit for active OCD or scrupulosity reassurance loops, dissociation, mania, psychosis, severe depression, trauma activation, addiction withdrawal, medical blackout concerns, coercive authority contexts, or people whose real need is ordinary solitude, rest, or professional care.",
+  "originality_status": "renamed",
+  "practitioner_test": {
+    "answers_that_reduce_originality": "Practitioners say this is standard spiritual direction, ERP anti-reassurance work, meditation-safety triage, sponsorship, or pastoral care, and that the wording adds no new prediction or screening rule.",
+    "answers_that_support_contribution": "Practitioners can name cases where the meta-audit itself was the compulsion and agree that a universal no-verdict default plus bounded relational custody changes routing, reduces self-checking, and prevents both overclaiming and overmanagement.",
+    "questions": [
+      "When a student or client has an unusual quiet state, do you already forbid self-verdicts and route interpretation through ordinary conduct or a bounded second person?",
+      "Does the proposed helper role reduce checking, or does it become reassurance seeking by another route?",
+      "What concrete cases show that solo correction-checks made a person worse?",
+      "What concrete cases show that second-person correction created dependency, shame, or abuse risk?",
+      "Would the twenty-four-hour no-verdict plus one act of care instruction change what you actually recommend?"
+    ],
+    "relevant_practitioners": [
+      "ERP clinicians treating OCD and scrupulosity",
+      "Ignatian spiritual directors",
+      "Buddhist meditation teachers familiar with unusual states",
+      "Clinicians familiar with meditation-related challenges",
+      "Pastoral counselors and chaplains",
+      "Spiritual-abuse advocates",
+      "Burnout and perfectionism clinicians"
+    ]
+  },
+  "primary_text_close_read": {
+    "primary_pair": [
+      "Ignatius of Loyola, Spiritual Exercises, Rules for Discernment and Annotations, https://spiritualexercises.neocities.org/ and https://sacred-texts.com/chr/seil/seil79.htm",
+      "SN 22.95 Foam and MN 44 Cula-vedalla, https://www.dhammatalks.org/suttas/SN/SN22_95.html and https://www.dhammatalks.org/suttas/MN/MN44.html"
+    ],
+    "risk_of_overread": "High. Relational custody can become dependency, reassurance seeking, authority appeasement, or spiritual abuse. The twenty-four-hour rule is plausible but arbitrary. The helper requirement may fail the loneliest people, and valid solitude can be pathologized if the model assumes every serious audit needs another person.",
+    "secondary_literature_gap": "Before publication, read full work on scrupulosity, OCD reassurance seeking, family or clergy accommodation, intolerance of uncertainty, spiritual direction ethics, VCE meditation-related challenges, achievement-contingent self-worth, perfectionism, behavioral activation, and spiritual abuse. The strongest source gap is whether bounded relational custody can be separated empirically from reassurance accommodation.",
+    "structural_observation": "Ignatian discernment is the closest primary structural neighbor. Rule 8 already separates a powerful interior consolation from later resolutions and opinions, requiring careful examination before credit or action. The Annotations give the director a real routing role while also limiting overdirection. SN 22.95 refuses to turn consciousness into substance or self-proof, and MN 44 treats cessation and self-identification through training, sequence, and path rather than private-state authority. The candidate's cohort language is modern, but delay, return, and guided discernment are old structures."
+  },
+  "recommended_scores": {
+    "counterargument_quality": 0.93,
+    "novelty": 0.22,
+    "source_reliability": 0.82
+  },
+  "run_ids": [],
+  "title": "The Audit You Cannot Hold Alone",
+  "unlike_statement": "Unlike Ignatian discernment, OCD and scrupulosity treatment, VCE support routing, and prior Lumenary gate-holder records, this idea says the audit decision itself can be unsafe for lonely or achievement-contingent over-adjudicators, so the first move is no self-verdict plus ordinary care, with classification held relationally. That is a useful safety refinement, but mostly renamed prior art."
+}

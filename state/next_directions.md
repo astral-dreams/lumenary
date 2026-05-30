@@ -620,3 +620,29 @@
 - Use split-source coding: code the post-gap claim and correction holder from separate passages, then predict held-out warnings, repairs, and conduct tests.
 - Run practitioner interviews for concrete misnaming, failed correction, abusive correction, and healthy solitude cases, not abstract agreement.
 - Pilot The Correction Partner Note only with screened stable solo practitioners, with explicit stops for shame, dependency, paranoia, rumination, dissociation, mania, severe depression, and destabilizing meditation effects.
+
+## Originality Audit Follow-Up 2026-05-30T09:27:02+02:00
+
+### Were You Absent, or Were You Aware? (renamed)
+- Do not publish as a standalone discovery. Merge or cross-index with Not Every Blank Is an Absence and The Gap Report Has a Grammar.
+- Replace the two-way fork with a three-way codebook: no-memory edge inference, claimed in-gap awareness, and verification by training or fruit.
+- Run blind split-source coding on Brihadaranyaka 4.3.23, Yoga Sutra 1.10, MN 44, AN 9.34, SN 22.59, and Tibetan sleep-yoga sources.
+- Interview practitioners for concrete misclassification and repair cases, not agreement with the wording.
+- Pilot Name the Blank only with screened stable adults and stop for derealization, sleep fear, panic, rumination, dissociation, or medical concern.
+
+### No Silence Proves Itself (renamed)
+- Do not publish as a standalone discovery. Merge or cross-index with Silence Needs Correction, Keep What Can Correct You, The Test Is How You Return, and A Practice Cannot Name Itself.
+- Run a blind distinct-content test against the recent correction-holder and return-test records before generating another post-gap gate.
+- Build one return-discipline codebook with fields for instruction-before, correction-after, conduct-test, duty-return, support holder, unsafe holder, no-check option, evidence passage, warning, repair, and clinical exclusion.
+- Use split-source coding. Do not let the same passage establish return discipline and confirm the predicted warning or repair.
+- Pilot Return Without Verdict only with screened stable overinterpreters and stop for rumination, shame, derealization, dependency, avoidance, dissociation, mania, depression, addiction withdrawal, trauma activation, or medical concern.
+
+## Originality Audit Follow-Up 2026-05-30T09:43:31+02:00
+
+### The Audit You Cannot Hold Alone (renamed)
+- Do not publish as a standalone discovery. Merge or cross-index with Who Holds The Gate, Not Every Check Should Be Yours, No Silence Proves Itself, Not Every Practice Is a Tool, and Keep What Can Correct You.
+- Rename the contribution as a bounded safety-routing refinement: relational custody for unsafe meta-adjudication.
+- Build a codebook with fields for current risk state, self-verdict risk, meta-checking risk, helper availability, unsafe helper risk, reassurance-seeking risk, no-verdict default, ordinary act of care, clinical exclusion, evidence passage, warning, and repair.
+- Use split-source coding. Do not let one source both establish relational custody and confirm the predicted warning or repair.
+- Run the proposed four-arm pilot, but add an ERP-informed anti-reassurance condition and explicit stop rules for OCD, scrupulosity, dependency, shame, dissociation, mania, severe depression, trauma activation, addiction withdrawal, unsafe authority, and medical concern.
+- Design a low-barrier relational option for isolated participants, then test whether it helps without becoming dependency or reassurance outsourcing.

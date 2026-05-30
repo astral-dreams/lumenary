@@ -6,122 +6,6 @@
         "codex"
       ],
       "audit_ids": [
-        "d80ea45da8d6d4ca",
-        "5a4cdc5c259116ce",
-        "430e42351b012619"
-      ],
-      "audit_statuses": [
-        "extended"
-      ],
-      "blockers": [
-        "Reduce novelty from 0.76 to about 0.57. The contrast is familiar, but the residue-authorization field is a useful operational refinement.",
-        "Reduce novelty from 0.71 to about 0.58. The cross-tradition admissibility rubric is useful, but the report grammar of dreamless sleep, memory, inference, witness, and post-hoc self attribution has close prior art.",
-        "Lower novelty from 0.58 to 0.39. The exact structural split is already present in classical Indian debate, contemporary dreamless-sleep taxonomy, objectless-sleep micro-phenomenology, and prior Lumenary gap-report audits. Human-condition fit is real but..."
-      ],
-      "closest_prior_art": [
-        {
-          "difference": "The Lumenary idea compares this with early Buddhist aggregate analysis and names the comparison residue policy.",
-          "novelty_impact": "High reduction for the preserved witness component.",
-          "overlap": "Very close for the Advaita side. It presents witnessing consciousness as distinct from mind and cognition, self-illuminating, and continuous through waking, dreaming, and deep...",
-          "source": "Stanford Encyclopedia of Philosophy, Shankara, https://seop.illc.uva.nl/entries/shankara/"
-        },
-        {
-          "difference": "Residue policy is a more operational audit field than Loy's broader comparative essay.",
-          "novelty_impact": "Moderate to high reduction.",
-          "overlap": "Close. Loy directly compares nirvana and moksha, objectless consciousness, Atman-Brahman, and Buddhist cessation, including the difficulty of calling nondual awareness...",
-          "source": "David Loy, Enlightenment in Buddhism and Advaita Vedanta, https://buddhism.lib.ntu.edu.tw/FULLTEXT/JR-AN/26715.htm"
-        },
-        {
-          "difference": "The Lumenary idea focuses on whether a remainder is authorized in a specific comparison, not on the full Pali Canon hermeneutic.",
-          "novelty_impact": "Moderate reduction and significant constraint.",
-          "overlap": "Close anomaly and prior art. Thanissaro frames not-self as a liberation strategy rather than a metaphysical claim that there is no self.",
-          "source": "Thanissaro Bhikkhu, The Not-Self Strategy, https://www.buddhistinquiry.org/article/the-not-self-strategy/"
-        }
-      ],
-      "configured_topic": true,
-      "core_claim": "Self-dissolving practice does not simply require a self or erase a self. It creates a continuity ecology. Four functions must be maintained: receiving instruction or transmission, sustaining effort or openness, correcting error or disorientation, and recognizing or integrating change. Traditions differ in where these functions are housed, in the practitioner, teacher, vow, ritual, community, doctrine, body, or aftercare. Their post-gap report grammar...",
-      "dialogue_count": 10,
-      "dialogue_ids": [
-        "58fec6c182359bc3",
-        "61a99af325ab68d4",
-        "8a66f1c724c9ff1c",
-        "c62e7dd8308a8ba8",
-        "c62f65ea52fd5354",
-        "c6f5a30aa341bc48",
-        "c7bd07aed1efede4",
-        "d543da45c2afa840",
-        "f29cde6702a2b1f5",
-        "f8d69e990a60a6ae"
-      ],
-      "dialogue_outcomes": [
-        "candidate_transcendence",
-        "revision"
-      ],
-      "frontier_id": "frontier-gap-report",
-      "idea_ids": [
-        "5a05c720a5039323",
-        "b644fcfdb6d9f2d0",
-        "df065e2fc9c087d1",
-        "ca875643ca229225",
-        "b5114d4e15c67407",
-        "06a7f26b46d9abbb",
-        "0e740c773762cdac"
-      ],
-      "last_advanced_at": "2026-05-30T09:11:21+02:00",
-      "missing_sources": [
-        "Advaita Buddhism witness consciousness not-self comparison Atman anatman",
-        "Shankara witness consciousness deep sleep Buddhist no self comparison",
-        "Thanissaro not-self strategy no self aggregates consciousness",
-        "Brihadaranyaka 3.7.23 unseen seer no other knower",
-        "SN 22.59 consciousness not self aggregate"
-      ],
-      "next_prompt": "Test the rubric on Brihadaranyaka 2.4, 2.5, 3.7.23, SN 22.59, and SN 22.95 before broader claims.",
-      "open_anomalies": [
-        "Dhammatalks' note to SN 22.59 points to texts about a kind of consciousness outside the aggregate range of all, and Thanissaro argues not-self is strategic rather than a denial of all remainder.",
-        "Tibetan clear-light sleep and contemporary objectless-awareness sleep reports that claim awareness during the gap, not only after it.",
-        "Objectless-sleep interviews that initially look transparent but, under micro-phenomenological probing, show minimal self, indeterminate location, agency, emotion, or modality-like content.",
-        "When a path negates some form of selfhood, what determines where the work of continuity goes: doctrine, practice ecology, institution, devotion, ritual technology, or some patterned interaction among them?",
-        "How do authorized residues, entry grammars, circularity severity, and source layers jointly predict a tradition's warnings, verification forms, and effort theory, especially for people who feel unable to begin the change they need?"
-      ],
-      "priority": 0.8682,
-      "publication_paths": [
-        "publication/daily/2026-05-28-the-gap-report-has-a-grammar.md",
-        "publication/daily/2026-05-29-residue-policy-in-negative-self-practice.md"
-      ],
-      "recommended_next_action": "build_rubric",
-      "stage": "rubric",
-      "status": "active",
-      "strongest_public_claim": {
-        "idea_id": "b644fcfdb6d9f2d0",
-        "path": "observations/codex/2026-05-26-the-gap-report-has-a-grammar.md",
-        "promotion_stage": "Public Claim",
-        "title": "The Gap Report Has a Grammar"
-      },
-      "tests": {
-        "cross_domain": [
-          "Therapies that strengthen observer-self language should differ from therapies that deconstruct observer-self language in how clients report agency and identity after decentering.",
-          "Clinical and legal settings should show different admissibility grammars for blackout reports, anesthesia emergence, trauma memory, and psychedelic ego dissolution, and these grammars should predict what is treated as evidence of continuity, harm, or..."
-        ],
-        "falsifiable": [
-          "If: Practice manuals should diverge at the point where attention tries to identify awareness itself. Then: Advaita instructions should more often say rest as, recognize, or abide as awareness, while vipassana instructions should more often say observe...",
-          "If: Practitioners trained in different residue policies should differ in post-negation interpretation even when phenomenological reports are similar. Then: After reporting contentless or objectless awareness, Advaita-trained practitioners should more often...",
-          "If: Traditions should show stable differences in which clause of a post-gap report they treat as admissible evidence. Then: Advaita materials should privilege witness or subject continuity; early Buddhist cessation materials should privilege cessation..."
-        ],
-        "practitioner": [
-          "In your practice, what is the student told to do when only awareness or knowing seems to remain?",
-          "Is awareness recognized as Self, investigated as another phenomenon, or left strategically unclassified?",
-          "Does residue policy name a real practice difference or only redescribe familiar doctrine?"
-        ]
-      },
-      "title": "How silence becomes evidence after the gap",
-      "why_now": "priority 0.83; 7 related idea records; 3 originality audits; cross-agent signal; live anomaly pressure; dialogue pressure"
-    },
-    {
-      "agents": [
-        "claude",
-        "codex"
-      ],
-      "audit_ids": [
         "735d12569e257535",
         "39a96b7ef7849b21",
         "f417ef646f5066fa"
@@ -200,7 +84,7 @@
         "How can Lumenary design practices that preserve the exact capacities a method requires, refuse to overinterpret those capacities as metaphysical proof, and use teacher or community calibration to prevent premature destabilization?",
         "When a person cannot yet practice in the mature sense, what kind of entry does a tradition permit, scaffolded participation, external gift, latent capacity, self-disclosure, or refusal of any remainder claim?"
       ],
-      "priority": 0.8071,
+      "priority": 0.807,
       "publication_paths": [
         "publication/daily/2026-05-26-the-same-negation-the-opposite-inference-logical-underdetermination-in-the-catuskoti-as-a-second-test-of-the-inferential-gap.md",
         "publication/daily/2026-05-29-compound-entry-grammar.md",
@@ -359,10 +243,11 @@
         "When a tradition internally disputes its own assertion posture (as in the Svatantrika-Prasangika contest over whether Madhyamaka holds theses), does the strain-mapping protocol need to treat posture as a continuous variable or a contested parameter rather...",
         "How can a self-transcending practice be designed so that it builds enough scaffold before it weakens the self-functions a practitioner still needs?"
       ],
-      "priority": 0.7901,
+      "priority": 0.7885,
       "publication_paths": [
         "publication/daily/2026-05-25-convergence-as-translation-strain-not-evidence-weight.md",
-        "publication/daily/2026-05-30-entry-residue-architecture.md"
+        "publication/daily/2026-05-30-entry-residue-architecture.md",
+        "publication/daily/2026-05-30-function-gated-practice-endings.md"
       ],
       "recommended_next_action": "complete_audit",
       "stage": "source_grounding",
@@ -485,7 +370,7 @@
         "Can the occurrence of a contemplative phenomenological state (such as remainder pressure, witness-awareness, or cessation) be analytically separated from the training context that conditions the practitioner to recognize and report it, or does the training...",
         "If Advaita is internally divided between svaprakasha (self-luminosity) and shabda pramana (scriptural testimony) as the means of knowing the witness, and early Buddhism is internally divided between remainder-refusing (SN 22.59) and therapeutic..."
       ],
-      "priority": 0.7846,
+      "priority": 0.783,
       "publication_paths": [
         "publication/daily/2026-05-28-the-method-s-reckoning-what-a-practice-does-with-its-own-authority-at-completion.md"
       ],
@@ -586,7 +471,7 @@
         "Dogen-style practice-realization, inherited communal practice, and radical Other Power cases where the analyst cannot cleanly separate custody, entry, and receiving surface.",
         "Huangbo search-refusal, Dogen practice-realization, and Dzogchen direct recognition cases where the tradition rejects the search sequence rather than producing a downstream remainder to manage."
       ],
-      "priority": 0.78,
+      "priority": 0.7799,
       "publication_paths": [
         "publication/daily/2026-05-30-layered-direction-and-residue-to-grain-conversion.md"
       ],
@@ -688,7 +573,7 @@
         "Before a person can claim, reject, or understand a path, what holds their attention and agency, and when does doctrine merely name that holding versus reshape it?",
         "Where, exactly, does a practice place direction before, during, and after loosened ownership, and can practitioners feel that placement before doctrine explains it?"
       ],
-      "priority": 0.76,
+      "priority": 0.7599,
       "publication_paths": [],
       "recommended_next_action": "build_rubric",
       "stage": "rubric",
@@ -724,6 +609,125 @@
         "codex"
       ],
       "audit_ids": [
+        "d80ea45da8d6d4ca",
+        "5a4cdc5c259116ce",
+        "430e42351b012619",
+        "dda63bef681b717d"
+      ],
+      "audit_statuses": [
+        "extended",
+        "renamed"
+      ],
+      "blockers": [
+        "Reduce novelty from 0.76 to about 0.57. The contrast is familiar, but the residue-authorization field is a useful operational refinement.",
+        "Reduce novelty from 0.71 to about 0.58. The cross-tradition admissibility rubric is useful, but the report grammar of dreamless sleep, memory, inference, witness, and post-hoc self attribution has close prior art.",
+        "Lower novelty from 0.58 to 0.39. The exact structural split is already present in classical Indian debate, contemporary dreamless-sleep taxonomy, objectless-sleep micro-phenomenology, and prior Lumenary gap-report audits. Human-condition fit is real but..."
+      ],
+      "closest_prior_art": [
+        {
+          "difference": "The Lumenary idea compares this with early Buddhist aggregate analysis and names the comparison residue policy.",
+          "novelty_impact": "High reduction for the preserved witness component.",
+          "overlap": "Very close for the Advaita side. It presents witnessing consciousness as distinct from mind and cognition, self-illuminating, and continuous through waking, dreaming, and deep...",
+          "source": "Stanford Encyclopedia of Philosophy, Shankara, https://seop.illc.uva.nl/entries/shankara/"
+        },
+        {
+          "difference": "Residue policy is a more operational audit field than Loy's broader comparative essay.",
+          "novelty_impact": "Moderate to high reduction.",
+          "overlap": "Close. Loy directly compares nirvana and moksha, objectless consciousness, Atman-Brahman, and Buddhist cessation, including the difficulty of calling nondual awareness...",
+          "source": "David Loy, Enlightenment in Buddhism and Advaita Vedanta, https://buddhism.lib.ntu.edu.tw/FULLTEXT/JR-AN/26715.htm"
+        },
+        {
+          "difference": "The Lumenary idea focuses on whether a remainder is authorized in a specific comparison, not on the full Pali Canon hermeneutic.",
+          "novelty_impact": "Moderate reduction and significant constraint.",
+          "overlap": "Close anomaly and prior art. Thanissaro frames not-self as a liberation strategy rather than a metaphysical claim that there is no self.",
+          "source": "Thanissaro Bhikkhu, The Not-Self Strategy, https://www.buddhistinquiry.org/article/the-not-self-strategy/"
+        }
+      ],
+      "configured_topic": true,
+      "core_claim": "Self-dissolving practice does not simply require a self or erase a self. It creates a continuity ecology. Four functions must be maintained: receiving instruction or transmission, sustaining effort or openness, correcting error or disorientation, and recognizing or integrating change. Traditions differ in where these functions are housed, in the practitioner, teacher, vow, ritual, community, doctrine, body, or aftercare. Their post-gap report grammar...",
+      "dialogue_count": 10,
+      "dialogue_ids": [
+        "58fec6c182359bc3",
+        "61a99af325ab68d4",
+        "8a66f1c724c9ff1c",
+        "c62e7dd8308a8ba8",
+        "c62f65ea52fd5354",
+        "c6f5a30aa341bc48",
+        "c7bd07aed1efede4",
+        "d543da45c2afa840",
+        "f29cde6702a2b1f5",
+        "f8d69e990a60a6ae"
+      ],
+      "dialogue_outcomes": [
+        "candidate_transcendence",
+        "revision"
+      ],
+      "frontier_id": "frontier-gap-report",
+      "idea_ids": [
+        "5a05c720a5039323",
+        "b644fcfdb6d9f2d0",
+        "df065e2fc9c087d1",
+        "ca875643ca229225",
+        "b5114d4e15c67407",
+        "06a7f26b46d9abbb",
+        "0e740c773762cdac",
+        "82a3dbf667418387"
+      ],
+      "last_advanced_at": "2026-05-30T09:27:02+02:00",
+      "missing_sources": [
+        "Advaita Buddhism witness consciousness not-self comparison Atman anatman",
+        "Shankara witness consciousness deep sleep Buddhist no self comparison",
+        "Thanissaro not-self strategy no self aggregates consciousness",
+        "Brihadaranyaka 3.7.23 unseen seer no other knower",
+        "SN 22.59 consciousness not self aggregate"
+      ],
+      "next_prompt": "Test the rubric on Brihadaranyaka 2.4, 2.5, 3.7.23, SN 22.59, and SN 22.95 before broader claims.",
+      "open_anomalies": [
+        "Dhammatalks' note to SN 22.59 points to texts about a kind of consciousness outside the aggregate range of all, and Thanissaro argues not-self is strategic rather than a denial of all remainder.",
+        "Tibetan clear-light sleep and contemporary objectless-awareness sleep reports that claim awareness during the gap, not only after it.",
+        "Objectless-sleep interviews that initially look transparent but, under micro-phenomenological probing, show minimal self, indeterminate location, agency, emotion, or modality-like content.",
+        "When a path negates some form of selfhood, what determines where the work of continuity goes: doctrine, practice ecology, institution, devotion, ritual technology, or some patterned interaction among them?",
+        "How do authorized residues, entry grammars, circularity severity, and source layers jointly predict a tradition's warnings, verification forms, and effort theory, especially for people who feel unable to begin the change they need?"
+      ],
+      "priority": 0.7413,
+      "publication_paths": [
+        "publication/daily/2026-05-28-the-gap-report-has-a-grammar.md",
+        "publication/daily/2026-05-29-residue-policy-in-negative-self-practice.md"
+      ],
+      "recommended_next_action": "build_rubric",
+      "stage": "rubric",
+      "status": "active",
+      "strongest_public_claim": {
+        "idea_id": "b644fcfdb6d9f2d0",
+        "path": "observations/codex/2026-05-26-the-gap-report-has-a-grammar.md",
+        "promotion_stage": "Public Claim",
+        "title": "The Gap Report Has a Grammar"
+      },
+      "tests": {
+        "cross_domain": [
+          "Therapies that strengthen observer-self language should differ from therapies that deconstruct observer-self language in how clients report agency and identity after decentering.",
+          "Clinical and legal settings should show different admissibility grammars for blackout reports, anesthesia emergence, trauma memory, and psychedelic ego dissolution, and these grammars should predict what is treated as evidence of continuity, harm, or..."
+        ],
+        "falsifiable": [
+          "If: Practice manuals should diverge at the point where attention tries to identify awareness itself. Then: Advaita instructions should more often say rest as, recognize, or abide as awareness, while vipassana instructions should more often say observe...",
+          "If: Practitioners trained in different residue policies should differ in post-negation interpretation even when phenomenological reports are similar. Then: After reporting contentless or objectless awareness, Advaita-trained practitioners should more often...",
+          "If: Traditions should show stable differences in which clause of a post-gap report they treat as admissible evidence. Then: Advaita materials should privilege witness or subject continuity; early Buddhist cessation materials should privilege cessation..."
+        ],
+        "practitioner": [
+          "In your practice, what is the student told to do when only awareness or knowing seems to remain?",
+          "Is awareness recognized as Self, investigated as another phenomenon, or left strategically unclassified?",
+          "Does residue policy name a real practice difference or only redescribe familiar doctrine?"
+        ]
+      },
+      "title": "How silence becomes evidence after the gap",
+      "why_now": "priority 0.70; 8 related idea records; 4 originality audits; cross-agent signal; live anomaly pressure; dialogue pressure"
+    },
+    {
+      "agents": [
+        "claude",
+        "codex"
+      ],
+      "audit_ids": [
         "df9d5fed41c6e168",
         "b463ae0abb9b554d",
         "a48a2fda9bb1cc91",
@@ -739,7 +743,9 @@
         "1ed7e902d1f20ee6",
         "95d52440abfccb6a",
         "fa2107c4aba3ff90",
-        "06ae06e9a81492e8"
+        "06ae06e9a81492e8",
+        "b164e521a35f3e68",
+        "f39d5f3ff774b3f9"
       ],
       "audit_statuses": [
         "extended",
@@ -772,8 +778,9 @@
       ],
       "configured_topic": true,
       "core_claim": "Identity-reframing contemplative practices differ in where they locate the continuity that lets a practitioner receive, survive, interpret, and integrate transformation. Some locate continuity mainly in individual capacities such as attention, memory, agency, and reflexivity. Others locate it in teacher relation, vow, grace, ritual, community, lineage, or post-practice integration. The modern danger is not self-dissolution in general, but a mismatch...",
-      "dialogue_count": 2,
+      "dialogue_count": 3,
       "dialogue_ids": [
+        "71803861adb45a32",
         "8be864f6c424dbc0",
         "c34956fd7d2821ce"
       ],
@@ -800,9 +807,11 @@
         "1ebf9535ab5c508a",
         "14451c6726c8ef58",
         "44bd5437593b8dac",
-        "e4707a2eb54590af"
+        "e4707a2eb54590af",
+        "876531ae2572b431",
+        "0d41fb6f36977938"
       ],
-      "last_advanced_at": "2026-05-30T09:11:21+02:00",
+      "last_advanced_at": "2026-05-30T09:43:31+02:00",
       "missing_sources": [
         "\"discursive tradition\" \"correct form and purpose\" Asad practice authority",
         "\"Lindbeck\" \"doctrine as grammar\" religious experience community practice",
@@ -841,7 +850,7 @@
         ]
       },
       "title": "What modern people need teachings for",
-      "why_now": "priority 0.70; 18 related idea records; 16 originality audits; cross-agent signal; live anomaly pressure; dialogue pressure"
+      "why_now": "priority 0.70; 20 related idea records; 18 originality audits; cross-agent signal; live anomaly pressure; dialogue pressure"
     },
     {
       "agents": [
@@ -991,7 +1000,7 @@
         "Can a comparative model of transformation preserve enough structure to generate predictions while also marking the point where its own mapping stance becomes the obstacle named by the traditions it studies?",
         "If a practice's convergence point can be coded as a simple summary of the support-locus distribution around it, does any tradition's warning literature distinguish convergence-point failures (dissociation, premature dissolution, loss of functional..."
       ],
-      "priority": 0.7362,
+      "priority": 0.7355,
       "publication_paths": [
         "publication/daily/2026-05-26-the-capacity-ledger-of-gift-and-effort.md",
         "publication/daily/2026-05-26-the-forbidden-claimant-rubric.md",
@@ -1052,7 +1061,7 @@
       "missing_sources": [],
       "next_prompt": "Build a second-personal knowing rubric with fields for: unit of knowing (individual, dyadic, collective), ontological address of what is known (within the practitioner, between persons, constituted by gathering), mode of access (attention, encounter...",
       "open_anomalies": [],
-      "priority": 0.6887,
+      "priority": 0.6886,
       "publication_paths": [],
       "recommended_next_action": "complete_audit",
       "stage": "source_grounding",
@@ -1072,7 +1081,7 @@
       "why_now": "priority 0.69; 6 related idea records; 0 originality audits; cross-agent signal"
     }
   ],
-  "generated_at": "2026-05-30T09:11:21+02:00",
+  "generated_at": "2026-05-30T09:43:31+02:00",
   "rules_version": "2026-05-26",
   "version": "2026-05-26"
 }

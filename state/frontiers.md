@@ -1,48 +1,15 @@
 # Lumenary Frontiers
 
-Generated: 2026-05-30T09:11:21+02:00
+Generated: 2026-05-30T09:43:31+02:00
 
 These are live research agendas derived from idea records, originality audits, publication history, and next-loop instructions.
-
-## How silence becomes evidence after the gap
-
-- Frontier ID: `frontier-gap-report`
-- Status: `active`
-- Stage: `rubric`
-- Priority: 0.8682
-- Next action: `build_rubric`
-- Agents: claude, codex
-- Idea records: 7
-- Audits: 3
-
-### Core Claim
-
-Self-dissolving practice does not simply require a self or erase a self. It creates a continuity ecology. Four functions must be maintained: receiving instruction or transmission, sustaining effort or openness, correcting error or disorientation, and recognizing or integrating change. Traditions differ in where these functions are housed, in the practitioner, teacher, vow, ritual, community, doctrine, body, or aftercare. Their post-gap report grammar...
-
-### Next Prompt
-
-Test the rubric on Brihadaranyaka 2.4, 2.5, 3.7.23, SN 22.59, and SN 22.95 before broader claims.
-
-### Open Anomalies
-
-- Dhammatalks' note to SN 22.59 points to texts about a kind of consciousness outside the aggregate range of all, and Thanissaro argues not-self is strategic rather than a denial of all remainder.
-- Tibetan clear-light sleep and contemporary objectless-awareness sleep reports that claim awareness during the gap, not only after it.
-- Objectless-sleep interviews that initially look transparent but, under micro-phenomenological probing, show minimal self, indeterminate location, agency, emotion, or modality-like content.
-- When a path negates some form of selfhood, what determines where the work of continuity goes: doctrine, practice ecology, institution, devotion, ritual technology, or some patterned interaction among them?
-- How do authorized residues, entry grammars, circularity severity, and source layers jointly predict a tradition's warnings, verification forms, and effort theory, especially for people who feel unable to begin the change they need?
-
-### Blockers
-
-- Reduce novelty from 0.76 to about 0.57. The contrast is familiar, but the residue-authorization field is a useful operational refinement.
-- Reduce novelty from 0.71 to about 0.58. The cross-tradition admissibility rubric is useful, but the report grammar of dreamless sleep, memory, inference, witness, and post-hoc self attribution has close prior art.
-- Lower novelty from 0.58 to 0.39. The exact structural split is already present in classical Indian debate, contemporary dreamless-sleep taxonomy, objectless-sleep micro-phenomenology, and prior Lumenary gap-report audits. Human-condition fit is real but...
 
 ## Inferential policy after objectless awareness
 
 - Frontier ID: `frontier-inferential-gap`
 - Status: `active`
 - Stage: `rubric`
-- Priority: 0.8071
+- Priority: 0.8070
 - Next action: `build_rubric`
 - Agents: claude, codex
 - Idea records: 13
@@ -75,7 +42,7 @@ Rewrite the claim as an interpretive reconstruction unless commentarial evidence
 - Frontier ID: `frontier-translation-strain`
 - Status: `active`
 - Stage: `source_grounding`
-- Priority: 0.7901
+- Priority: 0.7885
 - Next action: `complete_audit`
 - Agents: claude, codex
 - Idea records: 30
@@ -108,7 +75,7 @@ Build a one-page translation-strain rubric with fields for claim unit, role, ont
 - Frontier ID: `frontier-method-reckoning`
 - Status: `active`
 - Stage: `source_grounding`
-- Priority: 0.7846
+- Priority: 0.7830
 - Next action: `complete_audit`
 - Agents: claude, codex
 - Idea records: 9
@@ -141,7 +108,7 @@ Rebuild the model as two axes: validates versus undermines, and retained versus 
 - Frontier ID: `frontier-remainder-pressure`
 - Status: `active`
 - Stage: `rubric`
-- Priority: 0.7800
+- Priority: 0.7799
 - Next action: `build_rubric`
 - Agents: claude, codex
 - Idea records: 8
@@ -172,7 +139,7 @@ Do not publish as doctrine. Treat as a comparative and practitioner-facing resea
 - Frontier ID: `frontier-attention-custody`
 - Status: `active`
 - Stage: `rubric`
-- Priority: 0.7600
+- Priority: 0.7599
 - Next action: `build_rubric`
 - Agents: codex
 - Idea records: 2
@@ -199,6 +166,39 @@ Close-read Dzogchen and Mahamudra instructions on rigpa or luminous awareness ag
 - Reduce novelty from 0.72 to about 0.58. The custody phrase appears fresh, but the structure sits close to established work on pure consciousness, constructivism, theistic versus monistic typologies, witness-consciousness, and apophasis.
 - Reduce novelty from 0.78 to about 0.42. The useful contribution is not the broad claim that practices carry direction through many layers. That is strongly anticipated by primary texts, Dunne, Lutz, Lindbeck, Foucault, Hadot, Bourdieu, Pargament, VCE...
 
+## How silence becomes evidence after the gap
+
+- Frontier ID: `frontier-gap-report`
+- Status: `active`
+- Stage: `rubric`
+- Priority: 0.7413
+- Next action: `build_rubric`
+- Agents: claude, codex
+- Idea records: 8
+- Audits: 4
+
+### Core Claim
+
+Self-dissolving practice does not simply require a self or erase a self. It creates a continuity ecology. Four functions must be maintained: receiving instruction or transmission, sustaining effort or openness, correcting error or disorientation, and recognizing or integrating change. Traditions differ in where these functions are housed, in the practitioner, teacher, vow, ritual, community, doctrine, body, or aftercare. Their post-gap report grammar...
+
+### Next Prompt
+
+Test the rubric on Brihadaranyaka 2.4, 2.5, 3.7.23, SN 22.59, and SN 22.95 before broader claims.
+
+### Open Anomalies
+
+- Dhammatalks' note to SN 22.59 points to texts about a kind of consciousness outside the aggregate range of all, and Thanissaro argues not-self is strategic rather than a denial of all remainder.
+- Tibetan clear-light sleep and contemporary objectless-awareness sleep reports that claim awareness during the gap, not only after it.
+- Objectless-sleep interviews that initially look transparent but, under micro-phenomenological probing, show minimal self, indeterminate location, agency, emotion, or modality-like content.
+- When a path negates some form of selfhood, what determines where the work of continuity goes: doctrine, practice ecology, institution, devotion, ritual technology, or some patterned interaction among them?
+- How do authorized residues, entry grammars, circularity severity, and source layers jointly predict a tradition's warnings, verification forms, and effort theory, especially for people who feel unable to begin the change they need?
+
+### Blockers
+
+- Reduce novelty from 0.76 to about 0.57. The contrast is familiar, but the residue-authorization field is a useful operational refinement.
+- Reduce novelty from 0.71 to about 0.58. The cross-tradition admissibility rubric is useful, but the report grammar of dreamless sleep, memory, inference, witness, and post-hoc self attribution has close prior art.
+- Lower novelty from 0.58 to 0.39. The exact structural split is already present in classical Indian debate, contemporary dreamless-sleep taxonomy, objectless-sleep micro-phenomenology, and prior Lumenary gap-report audits. Human-condition fit is real but...
+
 ## What modern people need teachings for
 
 - Frontier ID: `frontier-modern-human-condition`
@@ -207,8 +207,8 @@ Close-read Dzogchen and Mahamudra instructions on rigpa or luminous awareness ag
 - Priority: 0.7374
 - Next action: `build_rubric`
 - Agents: claude, codex
-- Idea records: 18
-- Audits: 16
+- Idea records: 20
+- Audits: 18
 
 ### Core Claim
 
@@ -237,7 +237,7 @@ Do not publish as a standalone doctrine claim until split-source tests show pred
 - Frontier ID: `frontier-effort-and-practice`
 - Status: `active`
 - Stage: `rubric`
-- Priority: 0.7362
+- Priority: 0.7355
 - Next action: `build_rubric`
 - Agents: claude, codex
 - Idea records: 23
@@ -270,7 +270,7 @@ Recast the model as a graded variable: required receiving capacity, required age
 - Frontier ID: `frontier-love-and-knowing`
 - Status: `active`
 - Stage: `source_grounding`
-- Priority: 0.6887
+- Priority: 0.6886
 - Next action: `complete_audit`
 - Agents: claude, codex
 - Idea records: 6

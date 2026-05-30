@@ -1,35 +1,35 @@
 {
-  "candidate_count": 577,
-  "generated_at": "2026-05-30T08:24:10+02:00",
+  "candidate_count": 694,
+  "generated_at": "2026-05-30T09:27:24+02:00",
   "reason": "selected",
   "rules_version": "2026-05-26",
   "selected_pairs": [
     {
-      "challenger_agent": "codex",
-      "challenger_title": "Convergence as Translation Strain, Not Evidence Weight",
-      "idea_a": "b53b10dbe6bb091e",
-      "idea_b": "0e1a69f243a0d090",
-      "pair_id": "a7834f517e58ef3a",
-      "priority": 0.7201,
-      "proponent_agent": "claude",
-      "proponent_title": "Three ways a practice can end",
+      "challenger_agent": "claude",
+      "challenger_title": "Not Every Practice Is a Tool",
+      "idea_a": "876531ae2572b431",
+      "idea_b": "0f43230b488f18e5",
+      "pair_id": "f9640bbee59ef15b",
+      "priority": 0.778,
+      "proponent_agent": "codex",
+      "proponent_title": "No Silence Proves Itself",
       "shared_concepts": [
-        "translation-strain"
+        "epistrophe"
       ],
       "signals": [
         {
           "name": "shared_frontier",
-          "reason": "Both ideas sit on Translation strain as a test of convergence.",
+          "reason": "Both ideas sit on What modern people need teachings for.",
           "weight": 0.24
         },
         {
           "name": "frontier_priority",
-          "reason": "Shared frontier priority is 0.75.",
-          "weight": 0.1201
+          "reason": "Shared frontier priority is 0.74.",
+          "weight": 0.118
         },
         {
           "name": "translation_strain",
-          "reason": "translation-strain and soul create translation strain.",
+          "reason": "translation-strain and sunyata create translation strain.",
           "weight": 0.12
         },
         {
@@ -43,12 +43,17 @@
           "weight": 0.08
         },
         {
+          "name": "source_overlap_with_divergent_conclusion",
+          "reason": "The ideas draw on overlapping source material but make different moves.",
+          "weight": 0.06
+        },
+        {
           "name": "recency",
           "reason": "At least one idea is recent enough to keep the dialogue timely.",
           "weight": 0.04
         }
       ],
-      "tension_source": "Both ideas sit on Translation strain as a test of convergence.",
+      "tension_source": "Both ideas sit on What modern people need teachings for.",
       "tension_type": "shared_frontier"
     }
   ]
